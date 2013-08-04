@@ -21,7 +21,7 @@
 //-----------------------------------------------------------------------------
 
 // Set the name of our application
-$appName = "Server";
+$appName = "AlterVerse";
 
 // The directory it is run from
 $defaultGame = "scripts";
@@ -42,7 +42,7 @@ function createCanvas(%windowTitle)
    
    // Set the window title
    if (isObject(Canvas))
-      Canvas.setWindowTitle(getEngineName() @ " - " @ $appName);
+      Canvas.setWindowTitle($appName);
    
    return true;
 }

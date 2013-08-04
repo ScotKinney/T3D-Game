@@ -173,3 +173,24 @@ singleton GuiControlProfile (NumericHealthProfile)
    fontSize = 32;
    fontColor = "255 255 255";
 };
+
+singleton GuiControlProfile (TransparentButtonProfile)
+{
+   opaque = false;
+   fillColor = "255 255 255 0";
+   fillColorHL = "255 255 255 0";
+   fillColorSEL = "255 255 255 0";
+
+   border = 0;
+   borderThickness = 0;
+   borderColor = "225 225 225 0";
+   borderColorHL = "255 255 255 0";
+   borderColorNA = "155 155 155 0"; 
+
+   justify = "center";
+   fontColor = "225 225 225 0";
+   fontColorHL = "255 255 255 0";
+   fontColorNA = "155 155 155 0"; 
+   fontColorSEL = "255 255 255 0";
+};
+

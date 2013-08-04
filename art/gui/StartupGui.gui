@@ -4,10 +4,10 @@
    Enabled = "1";
    isContainer = "1";
    Profile = "GuiInputCtrlProfile";
-   HorizSizing = "right";
-   VertSizing = "bottom";
+   horizSizing = "width";
+   vertSizing = "height";
    position = "0 0";
-   Extent = "800 600";
+   Extent = "1024 768";
    MinExtent = "8 8";
    canSave = "1";
    Visible = "1";
@@ -20,16 +20,19 @@
    fadeoutTime = "1000";
    done = "1";
 
-   new GuiBitmapButtonCtrl() {
+   new GuiBitmapBackgroundCtrl() {
+      neverCrop = "1";
+      horizBias = "center";
+      vertBias = "center";
       canSaveDynamicFields = "1";
       internalName = "StartupLogo";
       Enabled = "1";
       isContainer = "0";
       Profile = "GuiDefaultProfile";
-      HorizSizing = "center";
-      VertSizing = "center";
-      position = "399 302";
-      Extent = "253  253";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      Extent = "1024 768";
       MinExtent = "8 2";
       canSave = "1";
       Visible = "1";
@@ -58,15 +61,29 @@
       wrap = "0";
       command = "StartupGui.click();";
    };
+   new GuiButtonCtrl() {
+      position = "0 0";
+      Extent = "1024 768";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "TransparentButtonProfile";
+      visible = "1";
+      active = "1";
+      text = "";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      command = "StartupGui.click();";
+   };
 };
 //--- OBJECT WRITE END ---
 //--- OBJECT WRITE BEGIN ---
 new GuiFadeinBitmapCtrl(BlankGui) {
    profile = "GuiInputCtrlProfile";
-   horizSizing = "right";
-   vertSizing = "bottom";
+   horizSizing = "width";
+   vertSizing = "height";
    position = "0 0";
-   extent = "800 600";
+   Extent = "1024 768";
    minExtent = "8 8";
    visible = "1";
    helpTag = "0";

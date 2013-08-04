@@ -32,15 +32,11 @@ function loadStartup()
    // A list of the splash screens and logos
    // to cycle through. Note that they have to
    // be in consecutive numerical order
-   //StartupGui.bitmap0     = "art/gui/background";
-   StartupGui.bitmap0     = "art/gui/OneWorld/owbackground.png";
-   //StartupGui.logo0       = "art/gui/Torque-3D-logo";
+   StartupGui.bitmap0     = "art/gui/black";
+   StartupGui.logo0       = "art/gui/alpha_splash";
+   StartupGui.bitmap1     = "art/gui/black";
+   StartupGui.logo1       = "art/gui/dogstarlogo";
    
-   
-   
-   StartupGui.logoPos0    = "178 251";
-   StartupGui.logoExtent0 = "443 139";
-
    // Call the next() function to set our firt
    // splash screen
    StartupGui.next();
