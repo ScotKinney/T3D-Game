@@ -73,6 +73,7 @@ function onStart()
    
    // Initialise stuff.
    exec("./scripts/client/core.cs");
+   exec("./scripts/httpObject.cs");
    initializeCore();
 
    exec("./scripts/client/client.cs");

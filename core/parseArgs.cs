@@ -59,7 +59,7 @@ function defaultParseArgs()
       {
          $userDirs = $defaultGame;
          $dirCount = 1;
-         $isDedicated = true;
+         $TAP::isDedicated = true;
       }
 
       switch$ ($arg)
@@ -106,19 +106,6 @@ function defaultParseArgs()
             $argUsed[$i]++;
             if ($hasNextArg)
             {
-               // Set the selected dir --NOTE: we no longer allow tools with this argument
-               /* 
-               if( $isDedicated )
-               {
-                  $userDirs = $nextArg;
-                  $dirCount = 1;
-               }
-               else
-               {
-                  $userDirs = "tools;" @ $nextArg;
-                  $dirCount = 2;
-               }
-               */
                $userDirs = $nextArg;
                $dirCount = 1;
                $argUsed[$i+1]++;
@@ -128,15 +115,6 @@ function defaultParseArgs()
             else
                error("Error: Missing Command Line argument. Usage: -game <game_name>");
 
-   /* deprecated SRZ 11/29/07
-         //--------------------
-         case "-show":
-            // A useful shortcut for -mod show
-            $userMods = strreplace($userMods, "show", "");
-            $userMods = pushFront($userMods, "show", ";");
-            $argUsed[$i]++;
-            $modcount++;
-   */
          //--------------------
          case "-console":
             enableWinConsole(true);
@@ -313,6 +291,17 @@ function defaultParseArgs()
          case "-genScript":
             $genScript = true;
             $argUsed[$i]++;
+            
+         //-------------------
+         case "-tap":
+            $TAP::isTappedIn = true;
+            $argUsed[$i]++;
+            $currentPlayerID = $Game::argv[$i+1];
+            $argUsed[$i+1]++;
+            $currentHash = $Game::argv[$i+2];
+            $argUsed[$i+2]++;
+            $i += 2;
+            echo("Tapped In! ID = " @ $currentPlayerID @ ", Hash = " @ $currentHash);
             
          //-------------------
          default:

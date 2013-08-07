@@ -1,0 +1,49 @@
+new GuiBitmapCtrl(TeleportGui) {
+   bitmap = "art/gui/black";
+   wrap = "0";
+   position = "0 0";
+   extent = "1280 720";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiDefaultProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "0";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+   
+   new GuiTheoraCtrl(VideoFrame)
+   {
+      position = "0 0";
+      extent = "1280 720";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      theoraFile = "art/sound/teleport.theora.ogv";
+      playOnWake = true;
+      stopOnSleep = true;
+      loopingVid = false;
+   };
+   new GuiBitmapCtrl(VideoMask) {
+      wrap = "0";
+      horizBias = "center";
+      vertBias = "center";
+      bitmap = "art/gui/Frame1600_900.png";
+      position = "0 0";
+      extent = "1280 720";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+};

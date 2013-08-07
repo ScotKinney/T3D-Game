@@ -46,7 +46,26 @@
 //-----------------------------------------------------------------------------
 // These are variables used to control the shell scripts and
 // can be overriden by mods:
+
 //-----------------------------------------------------------------------------
+function loadLocalizationFiles()
+{  // exec the localization files for chat messages and gui text
+   %msgFileName = "scripts/Lang/chatText_" @ $pref::Language @ ".cs";
+   if ( !isFile(%msgFileName) )
+   {
+      $pref::Language = "eng";
+      %msgFileName = "scripts/Lang/chatText_" @ $pref::Language @ ".cs";
+   }
+   exec(%msgFileName);
+
+   %gtFileName = "scripts/Lang/guiText_" @ $pref::Language @ ".cs";
+   if ( !isFile(%gtFileName) )
+   {
+      $pref::Language = "eng";
+      %gtFileName = "scripts/Lang/guiText_" @ $pref::Language @ ".cs";
+   }
+   exec(%gtFileName);
+}
 
 //-----------------------------------------------------------------------------
 function initClient()
@@ -64,6 +83,9 @@ function initClient()
    // from the Gui Editor.  Either of these may override any that already exist.
    exec("art/gui/defaultGameProfiles.cs");
    exec("art/gui/customProfiles.cs"); 
+   exec("art/gui/avProfiles.cs"); 
+
+   loadLocalizationFiles();   // Language specific files
    
    // The common module provides basic client functionality
    initBaseClient();
@@ -71,18 +93,21 @@ function initClient()
    // Use our prefs to configure our Canvas/Window
    configureCanvas();
 
+   // Script for localizing server mesages
+   exec("./localizedMsg.cs");
+
    // Load up the Game GUIs
-   exec("art/gui/defaultGameProfiles.cs");
    exec("art/gui/PlayGui.gui");
    exec("art/gui/ChatHud.gui");
    exec("art/gui/playerList.gui");
    exec("art/gui/hudlessGui.gui");
 
    // Load up the shell GUIs
-   exec("art/gui/mainMenuGui.gui");
-   exec("art/gui/joinServerDlg.gui");
-   exec("art/gui/endGameGui.gui");
-   exec("art/gui/StartupGui.gui");
+   //exec("art/gui/mainMenuGui.gui");
+   //exec("art/gui/joinServerDlg.gui");
+   //exec("art/gui/endGameGui.gui");
+   exec("art/gui/StartupGui.gui");           // Splash screens
+   exec("scripts/gui/startupGui.cs");
    exec("art/gui/chooseLevelDlg.gui");
    exec("art/gui/loadingGui.gui");
    exec("art/gui/optionsDlg.gui");
@@ -93,7 +118,6 @@ function initClient()
    exec("./chatHud.cs");
    exec("./messageHud.cs");
    exec("scripts/gui/playGui.cs");
-   exec("scripts/gui/startupGui.cs");
    exec("scripts/gui/chooseLevelDlg.cs");
    exec("scripts/gui/loadingGui.cs");
    exec("scripts/gui/optionsDlg.cs");
@@ -103,6 +127,7 @@ function initClient()
    exec("./game.cs");
    exec("./missionDownload.cs");
    exec("./serverConnection.cs");
+   exec("scripts/client/launchScript.cs");
 
    // Load useful Materials
    exec("./shaders.cs");
@@ -155,9 +180,17 @@ function initClient()
 
 function loadMainMenu()
 {
-   // Startup the client with the Main menu...
-   if (isObject( MainMenuGui ))
-      Canvas.setContent( MainMenuGui );
+   // Startup the client guis
+   if ( !$TAP::isLoggedIn || !$TAP::isTappedIn )
+   {
+      if ( !isObject( LoginGui ) )
+      {
+         exec("art/gui/AVFrontEnd/feProfiles.cs");
+         exec("art/gui/AVFrontEnd/login.gui");
+         exec("scripts/gui/loginGui.cs");
+      }
+      Canvas.setContent( LoginGui );
+   }
    
    Canvas.setCursor("DefaultCursor");
 

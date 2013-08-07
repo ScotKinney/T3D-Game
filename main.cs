@@ -31,7 +31,7 @@ $Pref::Video::ProfilePath = "core/profile";
 
 function createCanvas(%windowTitle)
 {
-   if ($isDedicated)
+   if ($TAP::isDedicated)
    {
       GFXInit::createNullDevice();
       return true;
@@ -68,13 +68,16 @@ function isScriptFile(%path)
 // Process command line arguments
 exec("core/parseArgs.cs");
 
-$isDedicated = false;
+$TAP::isDedicated = false;
+$TAP::isLoggedIn = false;
+$TAP::isTappedIn = false;
 $dirCount = 2;
 $userDirs = $defaultGame @ ";art;levels";
 
 // load tools scripts if we're a tool build
-if (isToolBuild())
-    $userDirs = "tools;" @ $userDirs;
+// Delay tool loading until requested
+//if (isToolBuild())
+    //$userDirs = "tools;" @ $userDirs;
 
 
 // Parse the executable arguments with the standard
@@ -90,7 +93,7 @@ if($dirCount == 0) {
 //-----------------------------------------------------------------------------
 // Display a splash window immediately to improve app responsiveness before
 // engine is initialized and main window created
-if (!$isDedicated)
+if (!$TAP::isDedicated)
    displaySplashWindow();
 
 
@@ -247,6 +250,21 @@ else {
    onStart();
    echo("Engine initialized...");
    
+   // If we were loaded through the TAP-Link, open communications
+   if ( $TAP::isTappedIn )
+   {
+      new TAPLinkGui (TAPLink) {
+         canSaveDynamicFields = "0";
+         Enabled = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "1 1";
+         Extent = "1 1";
+         Visible = "0";
+      };
+   }
+
    // Auto-load on the 360
    if( $platform $= "xenon" )
    {
