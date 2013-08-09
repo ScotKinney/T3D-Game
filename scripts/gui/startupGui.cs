@@ -40,6 +40,10 @@ function loadStartup()
    // Call the next() function to set our firt
    // splash screen
    StartupGui.next();
+   
+   // If tapped in, start the game login process
+   if ( $TAP::isTappedIn )
+      TapInStage1();
 
    // Play our startup sound
    //SFXPlayOnce(AudioGui, "art/sound/gui/startup");//SFXPlay(startsnd);

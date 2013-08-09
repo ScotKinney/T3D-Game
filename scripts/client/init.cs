@@ -152,27 +152,9 @@ function initClient()
    if( isFile( "./audioData.cs" ) )
       exec( "./audioData.cs" );
 
-   // Start up the main menu... this is separated out into a
-   // method for easier mod override.
-
-   if ($startWorldEditor || $startGUIEditor) {
-      // Editor GUI's will start up in the primary main.cs once
-      // engine is initialized.
-      return;
-   }
-
-   // Connect to server if requested.
-   if ($JoinGameAddress !$= "") {
-      // If we are instantly connecting to an address, load the
-      // loading GUI then attempt the connect.
-      loadLoadingGui();
-      connect($JoinGameAddress, "", $Pref::Player::Name);
-   }
-   else {
-      // Otherwise go to the splash screen.
-      Canvas.setCursor("DefaultCursor");
-      loadStartup();
-   }   
+   // Show the splash screen.
+   Canvas.setCursor("DefaultCursor");
+   loadStartup();
 }
 
 
@@ -181,7 +163,16 @@ function initClient()
 function loadMainMenu()
 {
    // Startup the client guis
-   if ( !$TAP::isLoggedIn || !$TAP::isTappedIn )
+   if ( $TAP::isTappedIn )
+   {
+      if ( !$TAP::isLoggedIn )
+      {  // If the login hasn't completed, delay the vid
+         schedule(250, 0, loadMainMenu);
+         return;
+      }
+      startIntroVideo();
+   }
+   else
    {
       if ( !isObject( LoginGui ) )
       {
@@ -193,27 +184,6 @@ function loadMainMenu()
    }
    
    Canvas.setCursor("DefaultCursor");
-
-   // first check if we have a level file to load
-   if ($levelToLoad !$= "")
-   {
-      %levelFile = "levels/";
-      %ext = getSubStr($levelToLoad, strlen($levelToLoad) - 3, 3);
-      if(%ext !$= "mis")
-         %levelFile = %levelFile @ $levelToLoad @ ".mis";
-      else
-         %levelFile = %levelFile @ $levelToLoad;
-
-      // Clear out the $levelToLoad so we don't attempt to load the level again
-      // later on.
-      $levelToLoad = "";
-      
-      // let's make sure the file exists
-      %file = findFirstFile(%levelFile);
-
-      if(%file !$= "")
-         createAndConnectToLocalServer( "SinglePlayer", %file );
-   }
 }
 
 function loadLoadingGui(%displayText)

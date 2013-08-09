@@ -11,10 +11,6 @@ Revision History:
 30 Arp 2013:      Revised to work with new scripts for mysql based site
 */
 
-$serverPath = "www.alterverse.com:80";
-$scriptPath = "/public_web_dev/";
-//$scriptPath = "/public_web/";
-
 // Functions for AlterVerse MainMenu/Login screen
 
 function LoginGui::onWake(%this)
@@ -249,21 +245,6 @@ function LoginGui::loginStage1(%this)
    httpLoginStage1.get( $serverPath, $scriptPath @ "avLoginStage1.php", "uname=" @ $currentUsername );
 }
 
-function LoginGui::loginStage2(%this)
-{
-   // hash our password combined with the supplied hash
-   %pwdHash = getStringMD5( $currentHash @ $currentPasswordHash );
-      
-   new HttpObject(httpLoginStage2){
-      status = "failure";
-      message = "";
-   };
-   
-   httpLoginStage2.get( $serverPath, 
-                        $scriptPath @ "avLoginStage2.php", 
-                        "uname=" @ $currentUsername @"\t"@ "pwd=" @ %pwdHash );  
-}
-
 // process the results from the stage 1 login request
 function httpLoginStage1::process( %this )
 {
@@ -277,57 +258,11 @@ function httpLoginStage1::process( %this )
       // login stage 1 complete - server has sent us a hash that we will use
       // to encrypt our password for second stage of login check      
       // move onto stage 2
-      LoginGui.loginStage2();
+      loginStage2();
    
    default:
       processLoginFailure( %this.message );
    }
    
    %this.schedule(0, delete);
-}
-
-// process the results of the login stage 2 request
-function httpLoginStage2::process(%this)
-{
-   switch$( %this.status )
-   {
-   case "success":
-      // store updated hash string
-      $currentPasswordHash = %this.hash;
-      // and the server to log into
-      $serverToJoin = %this.server;
-      // and the manifest paths
-      $manifestRoot = %this.manifestRoot;
-      $manifestFile = %this.manifestFile;
-      // is user a subscriber
-      $IsSubscriber = %this.subscriber;
-      // the clan that the user belongs to
-      $pref::Player::ClanID = %this.clan_id;
-      $pref::Player::WorldID = %this.world_id;
-      $pref::Player::SkullLevel = %this.skulls;
-      %timeLeft = %this.time_left - 3600; // Time zone issue, web reports 1 hour more than the real time
-      $AlterVerse::RoundEnd = mFloor(getSimTime() / 1000) + %timeLeft;
-      //%timeLeft = %this.time_left - (24 * 60 * 60);
-      %timeLeft = %timeLeft - (24 * 60 * 60);
-      $cutoffTime = mFloor(getSimTime() / 1000) + %timeLeft;
-      $pref::Player::Name = %this.fullName;
-      $currentUsername = $pref::Player::Name;
-
-      // login stage 2 complete
-      startIntroVideo();
-   
-   default:
-      processLoginFailure( %this.message );
-   }
-   
-   %this.schedule(0, delete);
-}
-
-// login failed for some reason
-function processLoginFailure( %message )
-{
-   error( "login failed -" SPC %message );
-   MessageBoxOK( "Login Failed", 
-                 %message, 
-                 "LoginGui.setActive(true);" );
 }
