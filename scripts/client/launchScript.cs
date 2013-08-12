@@ -314,6 +314,21 @@ function startIntroVideo()
 
 function stopIntroVideo()
 {
+   if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
+   {  // If it's a developer, bring up the server selection gui.
+      if ( !isObject(ServerSelGui) )
+      {
+         exec("art/gui/devGuis/devProfiles.cs");
+         exec("art/gui/devGuis/serverSel.gui");
+         exec("art/gui/devGuis/serverSelGui.cs");
+         canvas.pushDialog(ServerSelGui);
+         return;
+      }
+   }
+   else
+   {  // For all others load the level selected by the login script.
+   }
+   
    //Canvas.pushDialog(AvSelectionGui);
    playIntroMusic($ServerName);
    Canvas.pushDialog(LoadingGui);

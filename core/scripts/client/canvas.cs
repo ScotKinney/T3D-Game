@@ -186,3 +186,27 @@ function GuiEditorIsActive()
 {
    return ( isObject(GuiEditorGui) && Canvas.getContent() == GuiEditorGui.getId() );
 }
+
+// AlterVerse Script Modification (MAR) - re-sizing GUI elements after a resolution change
+function Canvas::onResize(%this, %newWidth, %newHeight)
+{ // The screen has been resized, adjust gui elements
+   if ( isObject( LoadingGui ) && LoadingGui.isAwake() )
+      LoadingGui.onResize(%newWidth, %newHeight);
+
+   if ( isObject( ServerSelGui ) && ServerSelGui.isAwake() )
+      ServerSelGui.onResize(%newWidth, %newHeight);
+
+   if ( isObject( AvSelectionGui ) && AvSelectionGui.isAwake() )
+      AvSelectionGui.onResize(%newWidth, %newHeight);
+
+   if ( isObject( TeleportGui ) && TeleportGui.isAwake() )
+      TeleportGui.onResize(%newWidth, %newHeight);
+
+   %mainContent = %this.getContent();
+   if ( !isObject( %mainContent ) || !%mainContent.isAwake() ||
+         !%mainContent.isMethod("onResize") )
+      return;
+
+   %mainContent.onResize(%newWidth, %newHeight);
+}
+// AlterVerse Script Modification (MAR) - re-sizing GUI elements after a resolution change

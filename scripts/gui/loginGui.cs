@@ -16,11 +16,6 @@ Revision History:
 function LoginGui::onWake(%this)
 {
    $DesignMode = false;
-   //%this-->DevText.setVisible(isDevBuild());
-   //%this-->DevBtn.setVisible(isDevBuild());
-   %this-->DevText.setVisible(false);
-   %this-->DevBtn.setVisible(false);
-
    if ( $pref::Player::Name !$= "" )
    {
       %this-->UserNameInput.setText($pref::Player::Name);
@@ -173,9 +168,9 @@ function LoginGui::onResize(%this, %newWidth, %newHeight)
    %this->PrefsText.resize(%xPos, %textYPos, %xExtent, %textYExtent);
    %this->PrefsBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
    
-   %xPos += mRound(72 * %useScale); // 54 width + 18 spacing = 72
-   %this->DevText.resize(%xPos, %textYPos, %xExtent, %textYExtent);
-   %this->DevBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
+   //%xPos += mRound(72 * %useScale); // 54 width + 18 spacing = 72
+   //%this->DevText.resize(%xPos, %textYPos, %xExtent, %textYExtent);
+   //%this->DevBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
 
    // The exit button is 54x41 and positioned at 1174,727
    %xPos = mRound(1174 * %useScale) - %cropX;

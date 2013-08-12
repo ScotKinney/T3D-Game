@@ -15,6 +15,15 @@
 <InjectDebugger>true</InjectDebugger>
 <UseSetModPaths>false</UseSetModPaths>
 </Config>
+<Config>
+<Name>TAP In</Name>
+<Executable>AlterVerse.exe</Executable>
+<Arguments>-tap 8 f0c1b1af8441227d27f7e1eb30c59a9f</Arguments>
+<HasExports>true</HasExports>
+<Precompile>true</Precompile>
+<InjectDebugger>true</InjectDebugger>
+<UseSetModPaths>false</UseSetModPaths>
+</Config>
 </Configs>
 <SearchURL/>
 <SearchProduct>TGE</SearchProduct>

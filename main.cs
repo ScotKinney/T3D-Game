@@ -71,13 +71,14 @@ exec("core/parseArgs.cs");
 $TAP::isDedicated = false;
 $TAP::isLoggedIn = false;
 $TAP::isTappedIn = false;
+$DesignMode = false;
 $dirCount = 2;
 $userDirs = $defaultGame @ ";art;levels";
 
 // load tools scripts if we're a tool build
 // Delay tool loading until requested
 //if (isToolBuild())
-    //$userDirs = "tools;" @ $userDirs;
+    $userDirs = "tools;" @ $userDirs;
 
 
 // Parse the executable arguments with the standard

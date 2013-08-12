@@ -391,6 +391,12 @@ function OptionsDlg::applyGraphics( %this, %testNeedApply )
       $pref::Video::mode = %newMode;
       $pref::Video::disableVerticalSync = %newVsync;      
       configureCanvas();
+
+      // Calling Canvas.onResize which otherwise only gets called if going from
+      // windowed to fullscreen and vice versa
+      %newResX = getWord(%newRes, 0);
+      %newResY = getWord(%newRes, 1);
+      Canvas.schedule(50, "onResize", %newResX, %newResY);
    }
    
    // Test and apply the graphics settings.

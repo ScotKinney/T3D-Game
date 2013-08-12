@@ -65,6 +65,26 @@ singleton GuiControlProfile (ChatHudTextProfile)
    canKeyFocus = true;
 };
 
+singleton GuiControlProfile (ChatHudButtonProfile)
+{
+   opaque = false;
+   fillColor = "255 255 255 0";
+   fillColorHL = "255 255 255 0";
+   fillColorSEL = "255 255 255 0";
+
+   border = 1;
+   borderThickness = 1;
+   borderColor = "225 225 225 225";
+   borderColorHL = "255 255 255 255";
+   borderColorNA = "155 155 155 225"; 
+
+   justify = "center";
+   fontColor = "225 225 225 225";
+   fontColorHL = "255 255 255 255";
+   fontColorNA = "155 155 155 225"; 
+   fontColorSEL = "255 255 255 255";
+};
+
 singleton GuiControlProfile ("ChatHudMessageProfile")
 {
    fontType = "Arial";
@@ -89,6 +109,15 @@ singleton GuiControlProfile ("ChatHudScrollProfile")
    hasBitmapArray = true;
 };
 
+singleton GuiControlProfile ("ChatHudBdrScrollProfile")
+{
+   opaque = false;
+   border = true;
+   borderThickness = 1;
+   borderColor = "225 225 225 225";
+   bitmap = "core/art/gui/images/scrollBar";
+   hasBitmapArray = true;
+};
 
 //-----------------------------------------------------------------------------
 // Core Hud profiles
@@ -149,6 +178,18 @@ singleton GuiControlProfile (HudTextNormalProfile)
    fontType = "Arial";
    fontSize = 14;
    fontColor = "255 255 255";
+   fontColorHL = "255 255 255";
+   fontColorNA = "255 255 255";
+   fontColorSEL= "255 255 255";
+
+   fillColor = "0 0 0 0";
+   fillColorHL = "0 0 0 0";
+   fillColorSEL = "0 0 0 0";
+   fillColorNA = "0 0 0 0";
+
+   borderColor = "0 0 0 0";
+   borderColorHL = "0 0 0 0";
+   borderColorNA = "0 0 0 0";
 };
 
 singleton GuiControlProfile (HudTextItalicProfile : HudTextNormalProfile)
@@ -159,6 +200,13 @@ singleton GuiControlProfile (HudTextItalicProfile : HudTextNormalProfile)
 singleton GuiControlProfile (HudTextBoldProfile : HudTextNormalProfile)
 {
    fontType = "ArialBold";
+};
+
+singleton GuiControlProfile (HudTextListProfile : HudTextNormalProfile)
+{
+   fillColorHL = "50 50 50 255";
+   fillColorSEL = "50 50 50 255";
+   borderColorHL = "50 50 50 255";
 };
 
 // -----------------------------------------------------------------------------
