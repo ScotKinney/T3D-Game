@@ -77,16 +77,20 @@ function ServerSelGui::resizeFonts(%this, %scaleFactor)
 function ServerSelGui::onSelChange(%this)
 {
    %serverID = %this-->ServerList.getSelectedId();
-   %this.selectedServer = %serverID;
-   %this-->JoinBtn.setActive(true);
+   if ( %serverID > 1 )
+      %this.selectedServer = %serverID;
+   %this-->JoinBtn.setActive(%serverID > 1);
 }
 
 function ServerSelGui::onJoinButton(%this)
 {
    %serverID = %this-->ServerList.getSelectedId();
    %this.selectedServer = %serverID;
-   %text = %this-->ServerList.getRowTextById(%serverID);
-   %canTP = getField(%text, 2);
+   if ( %serverID > 1 )
+   {
+      %text = %this-->ServerList.getRowTextById(%serverID);
+      %canTP = getField(%text, 2);
+   }
 }
 
 function ServerSelGui::onLaunchButton(%this)
@@ -134,6 +138,8 @@ function httpServerList::process( %this )
          }
          if ( %this.NumServers > 0 )
             ServerSelGui-->ServerList.sortNumerical(3, true);
+         else
+            ServerSelGui-->ServerList.addRow(1, "No servers running." TAB " " TAB "1" TAB "0");
          %hasSelected = ( -1 !=
             ServerSelGui-->ServerList.getRowNumById(ServerSelGui.selectedServer) );
          if ( %hasSelected )

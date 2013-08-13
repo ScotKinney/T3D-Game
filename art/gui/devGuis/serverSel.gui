@@ -137,7 +137,7 @@
                canSaveDynamicFields = "0";
                Enabled = "1";
                isContainer = "1";
-               Profile = "HudTextNormalProfile";
+               Profile = "AVDevListProfile";
                HorizSizing = "width";
                VertSizing = "height";
                Position = "1 1";

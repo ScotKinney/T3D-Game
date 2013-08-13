@@ -27,6 +27,28 @@ singleton GuiControlProfile (AVDevHeaderProfile)
    category = "FrontEnd";
 };
 
+singleton GuiControlProfile (AVDevListProfile)
+{
+   opaque = true;
+   //fontType = "Arial";
+   fontType = "Tahoma";
+   fontSize = 16;
+   fontColor = "225 225 225";
+   fontColorHL = "255 255 255";
+   fontColorNA = "255 255 255";
+   fontColorSEL= "100 100 255";
+
+   fillColor = "0 0 0 0";
+   fillColorHL = "0 0 120 255";
+   fillColorSEL = "0 0 0 0";
+   fillColorNA = "0 0 0 0";
+
+   borderColor = "0 0 0 0";
+   borderColorHL = "0 0 0 0";
+   borderColorNA = "0 0 0 0";
+};
+
+
 singleton GuiControlProfile (AVDevButtonProfile)
 {
    opaque = false;
