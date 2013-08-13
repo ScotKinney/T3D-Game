@@ -321,29 +321,26 @@ function stopIntroVideo()
          exec("art/gui/devGuis/devProfiles.cs");
          exec("art/gui/devGuis/serverSel.gui");
          exec("art/gui/devGuis/serverSelGui.cs");
-         canvas.pushDialog(ServerSelGui);
-         return;
       }
+      canvas.pushDialog(ServerSelGui);
    }
    else
    {  // For all others load the level selected by the login script.
+      playIntroMusic($ServerName);
+      Canvas.pushDialog(LoadingGui);
+      LoadingProgress.setValue(1);
+
+      if ( $DesignMode )
+         StartLevel($curentMission);
+      else
+         AvSelectionGui.getClanInfo();
+         //InventoryRequest();
    }
-   
-   //Canvas.pushDialog(AvSelectionGui);
-   playIntroMusic($ServerName);
-   Canvas.pushDialog(LoadingGui);
-   LoadingProgress.setValue(1);
-   //AVMainGui.setActive(true);
 
    Canvas.popDialog(TeleportGui);
    TeleportGui.delete();
    Canvas.repaint();
 
-   if ( $DesignMode )
-      StartLevel($curentMission);
-   else
-      AvSelectionGui.getClanInfo();
-      //InventoryRequest();
 }
 
 function TeleportGui::onWake(%this)

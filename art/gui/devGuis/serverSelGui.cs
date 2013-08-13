@@ -2,6 +2,14 @@
 
 function ServerSelGui::onWake(%this)
 {
+   %this.onRefreshButton();   // Fill the server list
+   
+   if ( !$TAP::isTappedIn )
+   {
+      %this->ExitText.text = "LOGOUT";
+      %this->ExitBtn.tooltip = "Click here to logout and return to the login screen.";
+   }
+   
    %screenExtent = Canvas.getExtent();
    %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
 
@@ -64,4 +72,81 @@ function ServerSelGui::resizeFonts(%this, %scaleFactor)
    // The button font is 12 point
    %fontPoint = 12 * %scaleFactor;
    AVDevHeaderProfile.fontSize = mRound(%fontPoint * %trajanMult);
+}
+
+function ServerSelGui::onSelChange(%this)
+{
+   %serverID = %this-->ServerList.getSelectedId();
+   %this.selectedServer = %serverID;
+   %this-->JoinBtn.setActive(true);
+}
+
+function ServerSelGui::onJoinButton(%this)
+{
+   %serverID = %this-->ServerList.getSelectedId();
+   %this.selectedServer = %serverID;
+   %text = %this-->ServerList.getRowTextById(%serverID);
+   %canTP = getField(%text, 2);
+}
+
+function ServerSelGui::onLaunchButton(%this)
+{
+}
+
+function ServerSelGui::onQuitButton(%this)
+{
+   if ( $TAP::isTappedIn )
+      quit();
+   else
+   {
+      LoginGui.setActive( true );
+      Canvas.popDialog(%this);
+      Canvas.schedule(10, "setContent", "LoginGui");
+   }
+}
+
+function ServerSelGui::onRefreshButton(%this)
+{
+   %this-->RefreshBtn.setActive(false);
+   %this-->JoinBtn.setActive(false);
+   new HttpObject(httpServerList){
+      status = "failure";
+      message = "";
+   };
+   
+   httpServerList.get( $serverPath, $scriptPath @ "getServerList.php", "" );
+}
+
+// process the results from the server list request
+function httpServerList::process( %this )
+{
+   switch$( %this.status )
+   {
+      case "success":
+         ServerSelGui-->ServerList.clear();
+         for (%i = 0; %i < %this.NumServers; %i++)
+         {
+            %dbID = %this.ServerID[%i];
+            %dataLine = %this.ServerName[%i] TAB %this.PlayerCount[%i] TAB %dbID TAB %this.WorldType[%i];
+
+            // Add the server to the list control
+            ServerSelGui-->ServerList.addRow(%dbID, %dataLine);
+         }
+         if ( %this.NumServers > 0 )
+            ServerSelGui-->ServerList.sortNumerical(3, true);
+         %hasSelected = ( -1 !=
+            ServerSelGui-->ServerList.getRowNumById(ServerSelGui.selectedServer) );
+         if ( %hasSelected )
+         {
+            ServerSelGui-->ServerList.setSelectedById(ServerSelGui.selectedServer);
+            ServerSelGui-->JoinBtn.setActive(true);
+         }
+
+         ServerSelGui-->RefreshBtn.setActive(true);
+      default:
+         //processLoginFailure( %this.message );
+         ServerSelGui-->RefreshBtn.setActive(true);
+   }
+   
+   %this.schedule(0, delete);
 }

@@ -165,6 +165,8 @@ function loadMainMenu()
    // Startup the client guis
    if ( $TAP::isTappedIn )
    {
+      if ( Canvas.getContent() != BlackGui.getId() ) 
+         Canvas.setContent( BlackGui );
       if ( !$TAP::isLoggedIn )
       {  // If the login hasn't completed, delay the vid
          schedule(250, 0, loadMainMenu);

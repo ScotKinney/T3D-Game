@@ -1,6 +1,6 @@
 //--- OBJECT WRITE BEGIN ---
 %guiContent = new GuiBitmapBackgroundCtrl(ServerSelGui) {
-   bitmap = "art/gui/av_bg.jpg";
+   bitmap = "art/gui/common/av_bg.jpg";
    horizBias = "center";
    vertBias = "center";
    position = "0 0";
@@ -16,6 +16,7 @@
    isContainer = "1";
    canSave = "1";
    canSaveDynamicFields = "1";
+      selectedServer = "0";
 
    new GuiContainer() {
       margin = "0 0 0 0";
@@ -62,7 +63,7 @@
          text = "Server";
          maxLength = "255";
       };
-      new GuiTextCtrl(ServerTotalCount) {
+      new GuiTextCtrl() {
          canSaveDynamicFields = "0";
          Enabled = "1";
          isContainer = "0";
@@ -132,7 +133,7 @@
             childMargin = "0 0";
             mouseWheelScrollSpeed = "-1";
 
-            new GuiTextListCtrl(ServerListGuiList) {
+            new GuiTextListCtrl() {
                canSaveDynamicFields = "0";
                Enabled = "1";
                isContainer = "1";
@@ -151,7 +152,9 @@
                columns = "3 101";
                fitParentWidth = "1";
                clipColumnText = "0";
-               altCommand = "ServerListGui.onDoubleClick();";
+               internalName = "ServerList";
+               command = "ServerSelGui.onSelChange();";
+               altCommand = "ServerSelGui.onJoinButton();";
             };
          };
       };
@@ -170,7 +173,10 @@
          hovertime = "1000";
          text = "Join Selected Server";
          groupNum = "-1";
+         tooltipprofile = "AVToolTipProfile";
+         tooltip = "Click here to launch game client and join a server.";
          buttonType = "PushButton";
+         internalName = "JoinBtn";
          useMouseEvents = "0";
          command = "ServerSelGui.onJoinButton();";
       };   
@@ -188,9 +194,11 @@
          hovertime = "1000";
          text = "Launch Local Server";
          groupNum = "-1";
+         tooltipprofile = "AVToolTipProfile";
+         tooltip = "Click here to run a local level.";
          buttonType = "PushButton";
          useMouseEvents = "0";
-         command = "ServerSelGui.onJoinButton();";
+         command = "ServerSelGui.onLaunchButton();";
       };   
       new GuiButtonCtrl() {
          canSaveDynamicFields = "0";
@@ -205,15 +213,18 @@
          Visible = "1";
          hovertime = "1000";
          text = "Refresh Server List";
+         tooltipprofile = "AVToolTipProfile";
+         tooltip = "Click here to refresh the server list.";
          groupNum = "-1";
          buttonType = "PushButton";
+         internalName = "RefreshBtn";
          useMouseEvents = "0";
-         command = "ServerSelGui.onJoinButton();";
+         command = "ServerSelGui.onRefreshButton();";
       };   
    };
 
    new GuiTextCtrl() {
-      text = "Logout";
+      text = "EXIT";
       maxLength = "1024";
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -256,7 +267,7 @@
       groupNum = "-1";
       buttonType = "PushButton";
       useMouseEvents = "1";
-      command = "quit();";
+      command = "ServerSelGui.onQuitButton();";
       internalName = "ExitBtn";
    };
    new GuiTextCtrl() {

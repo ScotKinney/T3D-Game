@@ -32,9 +32,9 @@ function loadStartup()
    // A list of the splash screens and logos
    // to cycle through. Note that they have to
    // be in consecutive numerical order
-   StartupGui.bitmap0     = "art/gui/black";
+   StartupGui.bitmap0     = "art/gui/common/black";
    StartupGui.logo0       = "art/gui/alpha_splash";
-   StartupGui.bitmap1     = "art/gui/black";
+   StartupGui.bitmap1     = "art/gui/common/black";
    StartupGui.logo1       = "art/gui/dogstarlogo";
    
    // Call the next() function to set our firt

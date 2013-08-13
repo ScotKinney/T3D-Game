@@ -1,5 +1,5 @@
 new GuiBitmapCtrl(TeleportGui) {
-   bitmap = "art/gui/black";
+   bitmap = "art/gui/common/black";
    wrap = "0";
    position = "0 0";
    extent = "1280 720";
