@@ -259,15 +259,15 @@ function ChooseLevelDlgGoBtn::onMouseUp( %this )
    if ( isObject( ServerGroup ) )
       return;
 
-   // Launch the chosen level with the editor open?
-   if ( ChooseLevelDlg.launchInEditor )
-   {
-      activatePackage( "BootEditor" );
-      ChooseLevelDlg.launchInEditor = false; 
-      StartLevel("", "SinglePlayer");
-   }
-   else
-   {
+   //// Launch the chosen level with the editor open?
+   //if ( ChooseLevelDlg.launchInEditor )
+   //{
+      //activatePackage( "BootEditor" );
+      //ChooseLevelDlg.launchInEditor = false; 
+      //StartLevel("", "SinglePlayer");
+   //}
+   //else
+   //{
       StartLevel(); 
-   }
+   //}
 }

@@ -112,10 +112,6 @@ function createServer(%serverType, %level)
       // Make sure the network port is set to the correct pref.
       portInit($Pref::Server::Port);
       allowConnections(true);
-
-//Geev 5/23/2013	
-      //if ($pref::Net::DisplayOnMaster !$= "Never" )
-         //schedule(0,0,startHeartbeat);
    }
 
    // Create the ServerGroup that will persist for the lifetime of the server.

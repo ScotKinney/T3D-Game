@@ -82,6 +82,9 @@ function initDedicated()
 {
    enableWinConsole(true);
    echo("\n--------- Starting Dedicated Server ---------");
+   
+   // Initialize the server scripts
+   initServer();
 
    // Make sure this variable reflects the correct state.
    $Server::Dedicated = true;

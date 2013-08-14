@@ -321,6 +321,11 @@ function stopIntroVideo()
          exec("art/gui/devGuis/devProfiles.cs");
          exec("art/gui/devGuis/serverSel.gui");
          exec("art/gui/devGuis/serverSelGui.cs");
+
+         if ( $pref::HostMultiPlayer $= "" )
+            $pref::HostMultiPlayer = "1";
+         exec("art/gui/devGuis/chooseLevel.gui");
+         exec("art/gui/devGuis/chooseLevelGui.cs");
       }
       canvas.pushDialog(ServerSelGui);
    }

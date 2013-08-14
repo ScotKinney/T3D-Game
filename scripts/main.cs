@@ -103,8 +103,8 @@ function onStart()
    sfxStartup();
 
    // Server gets loaded for all sessions, since clients
-   // can host in-game servers.
-   initServer();
+   // can host in-game servers, but most won't, so don't init until requested
+   // initServer();
 
    // Start up in either client, or dedicated server mode
    if ($Server::Dedicated)

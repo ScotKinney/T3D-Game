@@ -93,10 +93,6 @@ function ServerSelGui::onJoinButton(%this)
    }
 }
 
-function ServerSelGui::onLaunchButton(%this)
-{
-}
-
 function ServerSelGui::onQuitButton(%this)
 {
    if ( $TAP::isTappedIn )

@@ -47,7 +47,7 @@
          Profile = "AVDevLabelProfile";
          HorizSizing = "right";
          VertSizing = "bottom";
-         Position = "3 2";
+         Position = "8 2";
          Extent = "60 18";
          MinExtent = "8 8";
          canSave = "1";
@@ -70,8 +70,8 @@
          Profile = "AVDevLabelProfile";
          HorizSizing = "right";
          VertSizing = "bottom";
-         Position = "200 2";
-         Extent = "60 18";
+         Position = "240 2";
+         Extent = "40 18";
          MinExtent = "8 8";
          canSave = "1";
          Visible = "1";
@@ -149,7 +149,7 @@
                hovertime = "1000";
                enumerate = "0";
                resizeCell = "1";
-               columns = "3 101";
+               columns = "3 235";
                fitParentWidth = "1";
                clipColumnText = "0";
                internalName = "ServerList";
@@ -198,7 +198,7 @@
          tooltip = "Click here to run a local level.";
          buttonType = "PushButton";
          useMouseEvents = "0";
-         command = "ServerSelGui.onLaunchButton();";
+         command = "Canvas.pushDialog(ChooseLevelDlg);";
       };   
       new GuiButtonCtrl() {
          canSaveDynamicFields = "0";

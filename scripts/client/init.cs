@@ -108,7 +108,6 @@ function initClient()
    //exec("art/gui/endGameGui.gui");
    exec("art/gui/StartupGui.gui");           // Splash screens
    exec("scripts/gui/startupGui.cs");
-   exec("art/gui/chooseLevelDlg.gui");
    exec("art/gui/loadingGui.gui");
    exec("art/gui/optionsDlg.gui");
    exec("art/gui/remapDlg.gui");
@@ -118,7 +117,6 @@ function initClient()
    exec("./chatHud.cs");
    exec("./messageHud.cs");
    exec("scripts/gui/playGui.cs");
-   exec("scripts/gui/chooseLevelDlg.cs");
    exec("scripts/gui/loadingGui.cs");
    exec("scripts/gui/optionsDlg.cs");
 

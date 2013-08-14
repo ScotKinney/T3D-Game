@@ -33,14 +33,14 @@ singleton GuiControlProfile (AVDevListProfile)
    //fontType = "Arial";
    fontType = "Tahoma";
    fontSize = 16;
-   fontColor = "225 225 225";
+   fontColor = "210 210 210";
    fontColorHL = "255 255 255";
-   fontColorNA = "255 255 255";
-   fontColorSEL= "100 100 255";
+   fontColorNA = "100 0 0";
+   fontColorSEL= "255 255 255";
 
    fillColor = "0 0 0 0";
-   fillColorHL = "0 0 120 255";
-   fillColorSEL = "0 0 0 0";
+   fillColorHL = "0 0 0 0";
+   fillColorSEL = "0 0 120 255";
    fillColorNA = "0 0 0 0";
 
    borderColor = "0 0 0 0";

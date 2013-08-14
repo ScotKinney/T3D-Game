@@ -64,25 +64,25 @@ function ChooseLevelDlg::onWake( %this )
    {
       // Skip our new level/mission if we arent choosing a level
       // to launch in the editor.
-      if ( !%this.launchInEditor )
-      {
+      //if ( !%this.launchInEditor )
+      //{
          if (strstr(%file, "newMission.mis") > -1)
             continue;      
          if (strstr(%file, "newLevel.mis") > -1)
             continue;
-      }
+      //}
       
       %this.addMissionFile( %file );
    }
    
    // Also add the new level mission as defined in the world editor settings
    // if we are choosing a level to launch in the editor.
-   if ( %this.launchInEditor )
-   {
-      %file = EditorSettings.value( "WorldEditor/newLevelFile" );
-      if ( %file !$= "" )
-         %this.addMissionFile( %file );
-   }
+   //if ( %this.launchInEditor )
+   //{
+      //%file = EditorSettings.value( "WorldEditor/newLevelFile" );
+      //if ( %file !$= "" )
+         //%this.addMissionFile( %file );
+   //}
 
    // Sort our list
    CL_levelList.sort(0);
@@ -95,7 +95,7 @@ function ChooseLevelDlg::onWake( %this )
       %preview = new GuiBitmapButtonCtrl() {
          internalName = "SmallPreview" @ %i;
          Extent = "108 81";
-         bitmap = "art/gui/no-preview";
+         bitmap = "art/gui/devGuis/no-preview";
          command = "ChooseLevelWindow.previewSelected(ChooseLevelWindow->SmallPreviews->SmallPreview" @ %i @ ");";
       };
 
@@ -225,7 +225,7 @@ function ChooseLevelDlg::onSleep( %this )
 {
    // This is set from the outside, only stays true for a single wake/sleep
    // cycle.
-   %this.launchInEditor = false;
+   //%this.launchInEditor = false;
 }
 
 function ChooseLevelWindow::previewSelected(%this, %preview)
@@ -240,7 +240,7 @@ function ChooseLevelWindow::previewSelected(%this, %preview)
    if (isObject(%preview) && %preview.bitmap !$= "")
       %this->CurrentPreview.setBitmap(%preview.bitmap);
    else
-      %this->CurrentPreview.setBitmap("art/gui/no-preview");
+      %this->CurrentPreview.setBitmap("art/gui/devGuis/no-preview");
 
    // Set the current level name
    if (isObject(%preview) && %preview.levelName !$= "")

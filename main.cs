@@ -265,22 +265,6 @@ else {
          Visible = "0";
       };
    }
-
-   // Auto-load on the 360
-   if( $platform $= "xenon" )
-   {
-      %mission = "levels/Empty Terrain.mis";
-      
-      echo("Xbox360 Autoloading level: '" @ %mission @ "'");
-      
-      
-      if ($pref::HostMultiPlayer)
-         %serverType = "MultiPlayer";
-      else
-         %serverType = "SinglePlayer";
-
-      createAndConnectToLocalServer( %serverType, %mission );
-   }
 }
 
 // Display an error message for unused arguments
