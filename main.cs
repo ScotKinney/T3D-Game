@@ -71,6 +71,7 @@ exec("core/parseArgs.cs");
 $TAP::isDedicated = false;
 $TAP::isLoggedIn = false;
 $TAP::isTappedIn = false;
+$Server::Loaded = false;
 $DesignMode = false;
 $dirCount = 2;
 $userDirs = $defaultGame @ ";art;levels";

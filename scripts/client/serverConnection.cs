@@ -178,6 +178,7 @@ function GameConnection::onConnectRequestTimedOut(%this)
 
 function disconnect()
 {
+   %isServerDisconnect = $Client::missionRunning;
 //Geev 5/23/2013	
    //Winterleaf Note: The order needs to be changed to do cleanup
    //first then the rest, otherwise the system leaves artifacts in memory.
@@ -190,11 +191,24 @@ function disconnect()
       // We need to stop the client side simulation
       // else physics resources will not cleanup properly.
       physicsStopSimulation( "client" );
-
-      // Call destroyServer in case we're hosting
-      if ( isFunction("onServerDestroyed") )
-         destroyServer();
    }
+
+   // Call destroyServer in case we're hosting
+   if ( $Server::Loaded )
+      destroyServer();
+
+   if ( !%isServerDisconnect )
+      return;
+
+   if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
+   {  // If it's a developer, return to the server selection gui.
+      Canvas.setContent( $TAP::isTappedIn ? BlackGui : LoginGui );
+      Canvas.pushDialog(ServerSelGui);
+   }
+   else if ( !$TAP::isTappedIn )
+      Canvas.setContent( LoginGui );
+   else
+      quit();
 }
 
 function disconnectedCleanup()

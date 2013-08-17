@@ -79,6 +79,9 @@ function createAndConnectToLocalServer( %serverType, %level )
 /// Specify the level to load on the server
 function createServer(%serverType, %level)
 {
+   if ( !$Server::Loaded )
+      initServer();
+
    // Increase the server session number.  This is used to make sure we're
    // working with the server session we think we are.
    $Server::Session++;

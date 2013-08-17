@@ -67,6 +67,9 @@ function clientEndMission()
    if( isObject( ClientMissionCleanup ) )
       ClientMissionCleanup.delete();
       
+   if( isObject( ClientMissionSounds ) )
+      ClientMissionSounds.delete();
+
    clearClientPaths();
       
    // Done.

@@ -45,7 +45,7 @@ function ServerSelGui::onResize(%this, %newWidth, %newHeight)
    // The Prefs button is 54x41 and positioned at the bottom left of the screen
    %xExtent = mRound(54 * %useScale);
    %yExtent = mRound(41 * %useScale);
-   %xPos = 8;
+   %xPos = 12;
    %yPos = %newHeight - (%yExtent + 8);
    %textYExtent = mRound(19 * %useScale);
    %textYPos = %yPos - %textYExtent;
@@ -53,8 +53,8 @@ function ServerSelGui::onResize(%this, %newWidth, %newHeight)
    %this->PrefsBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
    
    // The exit button is 54x41 and positioned at the bottom right
-   %xPos = %newWidth - (%xExtent + 8);
-   %this->ExitText.resize(%xPos, %textYPos, %xExtent, %textYExtent);
+   %xPos = %newWidth - (%xExtent + 12);
+   %this->ExitText.resize(%xPos - 12, %textYPos, %xExtent + 24, %textYExtent);
    %this->ExitBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
 }
 
