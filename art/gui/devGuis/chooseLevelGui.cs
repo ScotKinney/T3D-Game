@@ -20,6 +20,9 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
+// Specify where the mission files are.
+$Server::MissionFileSpec = "levels/*.mis";
+
 function StartLevel( %mission, %hostingType )
 {
    if( %mission $= "" )

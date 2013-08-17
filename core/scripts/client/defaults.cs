@@ -20,11 +20,6 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-// The master server is declared with the server defaults, which is
-// loaded on both clients & dedicated servers.  If the server mod
-// is not loaded on a client, then the master must be defined. 
-// $pref::Master[0] = "2:master.garagegames.com:28002";
-
 $pref::Player::Name = "Visitor";
 $pref::Player::defaultFov = 65;
 $pref::Player::zoomSpeed = 0;

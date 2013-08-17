@@ -191,7 +191,7 @@ function GameConnection::onDrop(%client, %reason)
    
 //Geev 5/23/2013	
    // Reset the server if everyone has left the game
-   //if( $Server::PlayerCount == 0 && $Server::Dedicated)
+   //if( $Server::PlayerCount == 0 && $TAP::isDedicated)
    //   schedule(0, 0, "resetServerDefaults");
 }
 

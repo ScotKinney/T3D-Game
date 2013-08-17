@@ -192,7 +192,8 @@ function disconnect()
       physicsStopSimulation( "client" );
 
       // Call destroyServer in case we're hosting
-      destroyServer();
+      if ( isFunction("onServerDestroyed") )
+         destroyServer();
    }
 }
 

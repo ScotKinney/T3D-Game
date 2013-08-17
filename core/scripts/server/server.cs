@@ -157,10 +157,6 @@ function destroyServer()
    // Delete all the data blocks...
    deleteDataBlocks();
    
-   // Save any server settings
-   echo( "Exporting server prefs..." );
-   export( "$Pref::Server::*", "~/prefs.cs", false );
-
    // Increase the server session number.  This is used to make sure we're
    // working with the server session we think we are.
    $Server::Session++;

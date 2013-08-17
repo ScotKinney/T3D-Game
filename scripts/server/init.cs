@@ -29,7 +29,6 @@
 //
 //    (c) Server::ServerType              {SinglePlayer, MultiPlayer}
 //    (c) Server::GameType                Unique game name
-//    (c) Server::Dedicated               Bool
 //    ( ) Server::MissionFile             Mission .mis file name
 //    (c) Server::MissionName             DisplayName from .mis file
 //    (c) Server::MissionType             Not used
@@ -64,9 +63,6 @@ function initServer()
    // Turn on testing/debug script functions
    $Server::TestCheats = false;
 
-   // Specify where the mission files are.
-   $Server::MissionFileSpec = "levels/*.mis";
-
    // The common module provides the basic server functionality
    initBaseServer();
 
@@ -87,7 +83,8 @@ function initDedicated()
    initServer();
 
    // Make sure this variable reflects the correct state.
-   $Server::Dedicated = true;
+   $TAP::isDedicated = true;
+
 //Geev 5/23/2013	
 loadMaterials();
 

@@ -53,7 +53,7 @@ function parseArgs()
       {
          //--------------------
          case "-dedicated":
-            $Server::Dedicated = true;
+            $TAP::isDedicated = true;
             enableWinConsole(true);
             $argUsed[%i]++;
 
@@ -107,7 +107,7 @@ function onStart()
    // initServer();
 
    // Start up in either client, or dedicated server mode
-   if ($Server::Dedicated)
+   if ($TAP::isDedicated)
       initDedicated();
    else
       initClient();
@@ -118,19 +118,18 @@ function onExit()
    // Ensure that we are disconnected and/or the server is destroyed.
    // This prevents crashes due to the SceneGraph being deleted before
    // the objects it contains.
-   if ($Server::Dedicated)
+   if ($TAP::isDedicated)
       destroyServer();
    else
+   {
       disconnect();
+      echo("Exporting client prefs");
+      export("$pref::*", "./client/prefs.cs", False);
+   }
    
    // Destroy the physics plugin.
    physicsDestroy();
-      
-   echo("Exporting client prefs");
-   export("$pref::*", "./client/prefs.cs", False);
 
-   echo("Exporting server prefs");
-   export("$Pref::Server::*", "./server/prefs.cs", False);
    BanList::Export("./server/banlist.cs");
 
    Parent::onExit();
