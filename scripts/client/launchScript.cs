@@ -356,7 +356,7 @@ function TeleportGui::onWake(%this)
 
 function TeleportGui::onResize(%this, %newWidth, %newHeight)
 {
-   // The portal opening is 894x672 at 357, 118 on the 1600x900 frame image
+   // The portal opening is 691x691 at 455, 98 on the 1600x900 frame image
    %wideAR = 16/9;
    %cropX = 0;
    %cropY = 0;
@@ -368,8 +368,8 @@ function TeleportGui::onResize(%this, %newWidth, %newHeight)
       %frameY = 0;
       %portScale = %newHeight/900;
       %cropX = mRound(((1600 * %portScale) - %newWidth) / 2);
-      %portX = mRound(357 * %portScale) - %cropX;
-      %portY = mRound(118 * %portScale);
+      %portX = mRound(455 * %portScale) - %cropX;
+      %portY = mRound(98 * %portScale);
    }
    else
    {
@@ -379,17 +379,16 @@ function TeleportGui::onResize(%this, %newWidth, %newHeight)
       %frameX = 0;
       %portScale = %newWidth/1600;
       %cropY = mRound(((900 * %portScale) - %newHeight) / 2);
-      %portX = mRound(357 * %portScale);
-      %portY = mRound(118 * %portScale) - %cropY;
+      %portX = mRound(455 * %portScale);
+      %portY = mRound(98 * %portScale) - %cropY;
    }
-   %portWidth = mRound(894 * %portScale);
-   %portHeight = mRound(672 * %portScale);
+   %portSize = mRound(691 * %portScale);
 
-   // The video res is 1280x720
-   %vidScale = %portHeight/720;
-   %vidWidth = mRound(1280 * %vidScale);
-   %vidX = %portX - (mRound((%vidWidth - %portWidth) / 2));
+   // The video res is 1280x720, 1296x736 with frame
+   %vidScale = %portSize/736;
+   %vidWidth = mRound(1296 * %vidScale);
+   %vidX = %portX - (mRound((%vidWidth - %portSize) / 2));
 
-   VideoFrame.resize(%vidX, %portY, %vidWidth, %portHeight);
+   VideoFrame.resize(%vidX, %portY, %vidWidth, %portSize);
    VideoMask.resize(%frameX, %frameY, %frameWidth, %frameHeight);
 }

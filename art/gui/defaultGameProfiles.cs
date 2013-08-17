@@ -242,3 +242,13 @@ singleton GuiControlProfile (TransparentButtonProfile)
    fontColorSEL = "255 255 255 0";
 };
 
+singleton GuiControlProfile( GuiAwesomiumProfile )
+{
+   textOffset = "4 2";
+   autoSizeWidth = false;
+   autoSizeHeight = true;
+   justify = "left";
+   tab = true;
+   canKeyFocus = true;   
+   category = "Core";
+};
