@@ -41,7 +41,6 @@
 //    ( ) Pref::Server::AdminPassword     Password for client admins
 //    (c) Pref::Server::Info              Server description
 //    (c) Pref::Server::MaxPlayers        Max allowed players
-//    (c) Pref::Server::RegionMask        Registers this mask with master server
 //    ( ) Pref::Server::BanTime           Duration of a player ban
 //    ( ) Pref::Server::KickBanTime       Duration of a player kick & ban
 //    ( ) Pref::Server::MaxChatLen        Max chat message len

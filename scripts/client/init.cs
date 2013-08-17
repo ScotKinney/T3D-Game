@@ -33,16 +33,6 @@
 //    (?) Pref::Player::DefaultFov
 //    ( ) Pref::Input::KeyboardTurnSpeed
 
-//    (c) pref::Master[n]                 List of master servers
-//    (c) pref::Net::RegionMask
-//    (c) pref::Client::ServerFavoriteCount
-//    (c) pref::Client::ServerFavorite[FavoriteCount]
-//    .. Many more prefs... need to finish this off
-
-// Moves, not finished with this either...
-//    (c) firstPerson
-//    $mv*Action...
-
 //-----------------------------------------------------------------------------
 // These are variables used to control the shell scripts and
 // can be overriden by mods:
@@ -103,8 +93,6 @@ function initClient()
    exec("art/gui/hudlessGui.gui");
 
    // Load up the shell GUIs
-   //exec("art/gui/mainMenuGui.gui");
-   //exec("art/gui/joinServerDlg.gui");
    //exec("art/gui/endGameGui.gui");
    exec("art/gui/StartupGui.gui");           // Splash screens
    exec("scripts/gui/startupGui.cs");
@@ -152,7 +140,11 @@ function initClient()
 
    // Show the splash screen.
    Canvas.setCursor("DefaultCursor");
-   loadStartup();
+
+   if ( $TAP::isTappedIn )
+      loadMainMenu();
+   else
+      loadStartup();
 }
 
 
@@ -162,18 +154,15 @@ function loadMainMenu()
 {
    // Startup the client guis
    if ( $TAP::isTappedIn )
-   {
+   {  // If tapped in, start the game login process
+      TapInStage1();
+
       if ( Canvas.getContent() != BlackGui.getId() ) 
          Canvas.setContent( BlackGui );
-      if ( !$TAP::isLoggedIn )
-      {  // If the login hasn't completed, delay the vid
-         schedule(250, 0, loadMainMenu);
-         return;
-      }
       startIntroVideo();
    }
    else
-   {
+   {  // Otherwise show the login screen
       if ( !isObject( LoginGui ) )
       {
          exec("art/gui/AVFrontEnd/feProfiles.cs");

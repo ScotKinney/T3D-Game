@@ -20,15 +20,10 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-// List of master servers to query, each one is tried in order
-// until one responds
-$Pref::Server::RegionMask = 2;
-$pref::Master[0] = "2:master.garagegames.com:28002";
-
 // Information about the server
 //Geev 5/23/2013	
-$Pref::Server::Name = "OneWorld Server";
-$Pref::Server::Info = "This is a Torque 3D server.";
+$Pref::Server::Name = "AlterVerse Server";
+$Pref::Server::Info = "This is an AlterVerse server.";
 
 // The connection error message is transmitted to the client immediatly
 // on connection, if any further error occures during the connection

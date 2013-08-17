@@ -198,7 +198,7 @@ function disconnect()
       destroyServer();
 
    if ( !%isServerDisconnect )
-      return;
+      return;  // Called from package onExit(), app is closing.
 
    if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, return to the server selection gui.

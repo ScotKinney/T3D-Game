@@ -98,10 +98,7 @@ function processLoginFailure( %message )
    error( "login failed -" SPC %message );
    MessageBoxOK( "Login Failed", 
                  %message, 
-                 "LoginGui.setActive(true);" );
-
-   if ( $TAP::isLoggedIn )
-      quit();
+                 (($TAP::isTappedIn) ? "quit();" : "LoginGui.setActive(true);") );
 }
 
 function InventoryRequest()
@@ -314,6 +311,12 @@ function startIntroVideo()
 
 function stopIntroVideo()
 {
+   if ( !$TAP::isLoggedIn )
+   {  // If the login hasn't completed, delay loading
+      schedule(250, 0, stopIntroVideo);
+      return;
+   }
+
    if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.
       if ( !isObject(ServerSelGui) )
