@@ -25,6 +25,7 @@ $Server::MissionFileSpec = "levels/*.mis";
 
 function StartLevel( %mission, %hostingType )
 {
+   $TAP::DesignMode = true;
    if( %mission $= "" )
    {
       %id = CL_levelList.getSelectedId();
@@ -42,6 +43,14 @@ function StartLevel( %mission, %hostingType )
       else
          %serverType = "SinglePlayer";
    }
+
+   // Load mission specific audio
+   %missionRoot = FileBase(%mission);
+   $WorldPath = "art/worlds/" @ %missionRoot;
+   initWorld(%missionRoot);
+   %ambienceFile = $WorldPath @ "/" @ %missionRoot @ "Ambiences.cs";
+   if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
+      exec(%ambienceFile);
 
    // Show the loading screen immediately.
    if ( isObject( LoadingGui ) )

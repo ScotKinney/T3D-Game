@@ -298,9 +298,6 @@ function stopIntroMusic()
 
 function startIntroVideo()
 {
-   // Start connection to the chat server
-   connectClientChat();
-
    // Play the teleport video
    if ( !isObject(TeleportGui) )
       exec("art/gui/teleportGui.gui");
@@ -316,6 +313,9 @@ function stopIntroVideo()
       schedule(250, 0, stopIntroVideo);
       return;
    }
+
+   // Start connection to the chat server
+   connectClientChat();
 
    if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.

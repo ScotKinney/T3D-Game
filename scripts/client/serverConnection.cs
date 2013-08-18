@@ -51,13 +51,13 @@ function GameConnection::initialControlSet(%this)
    // and we are now ready to go.
    
    // first check if the editor is active
-   if (!isToolBuild() || !Editor::checkActiveLoadDone())
-   {
+   //if (!isToolBuild() || !Editor::checkActiveLoadDone())
+   //{
       if (Canvas.getContent() != PlayGui.getId())
       {
          Canvas.setContent(PlayGui);
       }
-   }
+   //}
 }
 
 function GameConnection::onControlObjectChange(%this)

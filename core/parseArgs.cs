@@ -97,139 +97,7 @@ function defaultParseArgs()
             }
             else
                error("Error: Missing Command Line argument. Usage: -dir <dir_name>");
-
-         //--------------------
-         // changed the default behavior of this command line arg. It now
-         // defaults to ONLY loading the game, not tools 
-         // default auto-run already loads in tools --SRZ 11/29/07
-         case "-game":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $userDirs = $nextArg;
-               $dirCount = 1;
-               $argUsed[$i+1]++;
-               $i++;
-               error($userDirs);
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -game <game_name>");
-
-         //--------------------
-         case "-console":
-            enableWinConsole(true);
-            $argUsed[$i]++;
-
-         //--------------------
-         case "-jSave":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               echo("Saving event log to journal: " @ $nextArg);
-               saveJournal($nextArg);
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -jSave <journal_name>");
-
-         //--------------------
-         case "-jPlay":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               playJournal($nextArg,false);
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -jPlay <journal_name>");
                
-         //--------------------
-         case "-jPlayToVideo":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $VideoCapture::journalName = $nextArg;
-               $VideoCapture::captureFromJournal = true;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -jPlayToVideo <journal_name>");
-               
-         //--------------------
-         case "-vidCapFile":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $VideoCapture::fileName = $nextArg;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -vidCapFile <ouput_video_name>");
-               
-         //--------------------
-         case "-vidCapFPS":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $VideoCapture::fps = $nextArg;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -vidCapFPS <ouput_video_framerate>");
-               
-         //--------------------
-         case "-vidCapEncoder":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $VideoCapture::encoder = $nextArg;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -vidCapEncoder <ouput_video_encoder>");
-               
-         //--------------------
-         case "-vidCapWidth":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $videoCapture::width = $nextArg;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -vidCapWidth <ouput_video_width>");
-               
-         //--------------------
-         case "-vidCapHeight":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               $videoCapture::height = $nextArg;
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -vidCapHeight <ouput_video_height>");
-
-         //--------------------
-         case "-jDebug":
-            $argUsed[$i]++;
-            if ($hasNextArg)
-            {
-               playJournal($nextArg,true);
-               $argUsed[$i+1]++;
-               $i++;
-            }
-            else
-               error("Error: Missing Command Line argument. Usage: -jDebug <journal_name>");
-
          //--------------------
          case "-level":
             $argUsed[$i]++;
@@ -263,16 +131,6 @@ function defaultParseArgs()
                error("Error: Missing Command Line argument. Usage: -level <level file name (no path), with or without extension>");
 
          //-------------------
-         case "-worldeditor":
-            $startWorldEditor = true;
-            $argUsed[$i]++;
-
-         //-------------------
-         case "-guieditor":
-            $startGUIEditor = true;
-            $argUsed[$i]++;
-
-         //-------------------
          case "-help":
             $displayHelp = true;
             $argUsed[$i]++;
@@ -304,34 +162,55 @@ function defaultParseArgs()
             echo("Tapped In! ID = " @ $currentPlayerID @ ", Hash = " @ $currentHash);
             
          //-------------------
+         case "-cacheDTS":
+            $generateCachedDTS = true;
+            $argUsed[$i]++;
+         
+         //-------------------
+         case "-generateItemData":
+            $generateItemData = true;
+            $argUsed[$i]++;
+         
+         //-------------------
+         case "-bindAddress": // gives the server a ip
+            $argUsed[$i]++;
+            if ($hasNextArg)
+            {
+               $AlterVerse::BindAddress = $nextArg;
+               $argUsed[$i+1]++;
+               $i++;
+            }
+
+         //-------------------
+         case "-showAddress": // The address published to the database
+            $argUsed[$i]++;
+            if ($hasNextArg)
+            {
+               $AlterVerse::ShowAddress = $nextArg;
+               $argUsed[$i+1]++;
+               $i++;
+            }
+
+         //-------------------
+         case "-startPort": // gives the first port to try binding to
+            $argUsed[$i]++;
+            if ($hasNextArg)
+            {
+               $AlterVerse::StartPort = $nextArg;
+               $argUsed[$i+1]++;
+               $i++;
+            }
+
+         //-------------------
+         case "-staging":
+            $AlterVerse::UseStaging = true;
+            $argUsed[$i]++;
+
+         //-------------------
          default:
             $argUsed[$i]++;
             if($userDirs $= "")
                $userDirs = $arg;
       }
-   }
-   
-   //-----------------------------------------------
-   // Play journal to video file?
-   if ($VideoCapture::captureFromJournal && $VideoCapture::journalName !$= "")
-   {         
-      if ($VideoCapture::fileName $= "")
-         $VideoCapture::fileName = $VideoCapture::journalName;     
-      
-      if ($VideoCapture::encoder $= "")
-         $VideoCapture::encoder = "THEORA";
-            
-      if ($VideoCapture::fps $= "")
-         $VideoCapture::fps = 30;
-               
-      if ($videoCapture::width $= "")
-         $videoCapture::width = 0;
-         
-      if ($videoCapture::height $= "")
-         $videoCapture::height = 0;
-         
-      playJournalToVideo(  $VideoCapture::journalName, $VideoCapture::fileName, 
-                           $VideoCapture::encoder, $VideoCapture::fps, 
-                           $videoCapture::width SPC $videoCapture::height );
    }
 }

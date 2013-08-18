@@ -38,6 +38,67 @@
 // can be overriden by mods:
 
 //-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// loadMaterials - load all materials.cs files
+//-----------------------------------------------------------------------------
+function loadMaterials()
+{
+   // Load any materials files for which we only have DSOs.
+   for( %file = findFirstFile( "*/materials.cs.dso" );
+        %file !$= "";
+        %file = findNextFile( "*/materials.cs.dso" ))
+   {
+      if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
+         continue;
+
+      // Only execute, if we don't have the source file.
+      %csFileName = getSubStr( %file, 0, strlen( %file ) - 4 );
+      if( !isFile( %csFileName ) )
+         exec( %csFileName );
+   }
+
+   // Load all source material files.
+   for( %file = findFirstFile( "*/materials.cs" );
+        %file !$= "";
+        %file = findNextFile( "*/materials.cs" ))
+   {
+      if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
+         continue;
+      exec( %file );
+   }
+}
+
+function loadWorldMaterials(%worldName)
+{
+   %filter = "art/worlds/" @ %worldName @ "/*/materials.cs";
+   // Load any materials files for which we only have DSOs.
+   for( %file = findFirstFile( %filter @ ".dso" );
+        %file !$= "";
+        %file = findNextFile( %filter @ ".dso" ))
+   {
+      // Only execute, if we don't have the source file.
+      %csFileName = getSubStr( %file, 0, strlen( %file ) - 4 );
+      if( !isFile( %csFileName ) )
+         exec( %csFileName );
+   }
+
+   // Load all source material files.
+   for( %file = findFirstFile( %filter );
+        %file !$= "";
+        %file = findNextFile( %filter ))
+   {
+      exec( %file );
+   }
+}
+
+function reloadMaterials()
+{
+   reloadTextures();
+   loadMaterials();
+   reInitMaterials();
+}
+
 function loadLocalizationFiles()
 {  // exec the localization files for chat messages and gui text
    %msgFileName = "scripts/Lang/chatText_" @ $pref::Language @ ".cs";
@@ -190,4 +251,43 @@ function loadLoadingGui(%displayText)
    }
 
    Canvas.repaint();
+}
+
+function initWorld(%worldName)
+{  // Mount the world and initialize textures and materials
+   if ( $MountedWorld $= %worldName )
+      return;  // We already have this world mounted and initialized
+
+   %oldGroup = $instantGroup;
+   $instantGroup = 0;
+
+   if ( $MountedWorld !$= "" )
+   {  // Remove the objects from last world
+      if( isObject( ClientWorldMaterials ) )
+         ClientWorldMaterials.delete();
+
+      // Remove textures from the pool
+      cleanupTexturePool();
+      flushTextureCache();
+
+      // Unmount the world zip
+      %zipName = strlwr("art/worlds/" @ $MountedWorld @ ".avw");
+      if ( isFile(%zipName) )
+         unmountWorld(%zipName);
+   }
+
+   // Mount the new world zip
+   %zipName = strlwr("art/worlds/" @ %worldName @ ".avw");
+   if ( isFile(%zipName) )
+      mountWorld(%zipName);
+   $MountedWorld = %worldName;
+
+   %matGroup = new SimGroup(ClientWorldMaterials);
+   $instantGroup = %matGroup;
+
+   reloadTextures();
+   loadWorldMaterials(%worldName);
+   reInitMaterials();
+
+   $instantGroup = %oldGroup;
 }

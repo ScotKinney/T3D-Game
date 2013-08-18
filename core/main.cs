@@ -72,16 +72,39 @@ function onStart()
       $pref::Video::displayDevice = "D3D9";
    
    // Initialise stuff.
-   exec("./scripts/client/core.cs");
    exec("./scripts/httpObject.cs");
-   initializeCore();
+   if( !$TAP::isDedicated )
+   {
+      exec("./scripts/client/core.cs");
+      initializeCore();
 
-   exec("./scripts/client/client.cs");
+      exec("./scripts/client/client.cs");   
+      exec("./scripts/gui/guiTreeViewCtrl.cs");
+      exec("./scripts/gui/messageBoxes/messageBox.ed.cs");
+   }
+   
    exec("./scripts/server/server.cs");
-   
-   exec("./scripts/gui/guiTreeViewCtrl.cs");
-   exec("./scripts/gui/messageBoxes/messageBox.ed.cs");
-   
+
+   if( $TAP::isDedicated )
+   {
+      exec("./scripts/client/audio.cs");
+      exec("./scripts/client/audioEnvironments.cs");
+      exec("./scripts/client/audioDescriptions.cs");
+      exec("./scripts/client/audioStates.cs");
+      exec("./scripts/client/audioAmbiences.cs");
+      exec("./scripts/client/helperfuncs.cs");
+      exec("./scripts/client/httpObject.cs");
+
+      // Now execute any mission specific audio
+      if ( $missionArg !$= "" )
+      {
+         %missionRoot = FileBase($missionArg);
+         %ambienceFile = "art/Worlds/" @ %missionRoot @ "/audioAmbiences.cs";
+         if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
+            exec(%ambienceFile);
+      }
+   }
+
    echo(" % - Initialized Core");
 }
 

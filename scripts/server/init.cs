@@ -69,6 +69,18 @@ function initServer()
    exec("./commands.cs");
    exec("./game.cs");
    $Server::Loaded = true;
+
+   if( $TAP::isDedicated )
+      exec("./db/init.cs");
+   else
+   {
+      $Server::DB::Remote = true;
+      exec("./AlterVerse/remoteDBData.cs");
+   }
+   exec("./AlterVerse/playerPersistance.cs");
+   exec("./AlterVerse/inventory.cs");
+   exec("./AlterVerse/health.cs");
+   exec("./AlterVerse/commands.cs");
 }
 
 
@@ -76,6 +88,17 @@ function initServer()
 
 function initDedicated()
 {
+   //Check to see if the server was started with the -generateItemData switch
+   //If so, generate the ItemData datablocks from the AVItems table.
+   if($generateItemData)
+   {
+      echo(" --- Generating Item Data ---");
+      GenerateItemData();
+      echo(" --- Exiting after generation ---");
+      quit();
+      return;
+   }
+
    enableWinConsole(true);
    echo("\n--------- Starting Dedicated Server ---------");
    
@@ -85,14 +108,15 @@ function initDedicated()
    // Make sure this variable reflects the correct state.
    $TAP::isDedicated = true;
 
-//Geev 5/23/2013	
-loadMaterials();
+   //Geev 5/23/2013	
+   loadMaterials();
 
    // The server isn't started unless a mission has been specified.
    if ($missionArg !$= "") {
       createServer("MultiPlayer", $missionArg);
-//Geev 5/23/2013	  
-         decalManagerLoad( $missionArg @ ".decals" ); 
+
+      //Geev 5/23/2013	  
+      decalManagerLoad( $missionArg @ ".decals" ); 
    }
    else
       echo("No mission specified (use -mission filename)");
