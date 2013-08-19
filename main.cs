@@ -276,10 +276,10 @@ for ($i = 1; $i < $Game::argc; $i++)  {
 }
 
 // Automatically start up the appropriate eidtor, if any
-if ($startWorldEditor) {
-   Canvas.setCursor("DefaultCursor");
-   Canvas.setContent(EditorChooseLevelGui);
-} else if ($startGUIEditor) {
-   Canvas.setCursor("DefaultCursor");
-   Canvas.setContent(EditorChooseGUI);
-}
+//if ($startWorldEditor) {
+   //Canvas.setCursor("DefaultCursor");
+   //Canvas.setContent(EditorChooseLevelGui);
+//} else if ($startGUIEditor) {
+   //Canvas.setCursor("DefaultCursor");
+   //Canvas.setContent(EditorChooseGUI);
+//}

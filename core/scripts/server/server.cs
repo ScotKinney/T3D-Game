@@ -41,11 +41,19 @@ function initBaseServer()
 function portInit(%port)
 {
    %failCount = 0;
-   while(%failCount < 10 && !setNetPort(%port))
+   while(%failCount < 20 && !setNetPort(%port))
    {
       echo("Port init failed on port " @ %port @ " trying next port.");
       %port++; %failCount++;
    }
+
+   // return success/failure here and record the port we ended up with
+   if(%failCount < 20)
+   {
+      $AlterVerse::serverPort = %port;
+      return true;
+   }
+   return false;
 }
 
 /// Create a server of the given type, load the given level, and then
@@ -108,12 +116,32 @@ function createServer(%serverType, %level)
    // initialized before now.
    if (%serverType $= "MultiPlayer")
    {
-      $Physics::isSinglePlayer = false;
-            
       echo("Starting multiplayer mode");
+      $Physics::isSinglePlayer = false;
+
+      // If a bind address has been set, make sure it get's used
+      if ( ($AlterVerse::BindAddress !$= "") &&
+         ($AlterVerse::BindAddress !$= "dynamic") )
+         $Pref::Net::BindAddress = $AlterVerse::BindAddress;
+      else
+         $Pref::Net::BindAddress = "";
+
+      // Set the address that we will report to the server list
+      if ( $AlterVerse::ShowAddress !$= "" )
+         $AlterVerse::serverAddress = $AlterVerse::ShowAddress;
+      else
+         $AlterVerse::serverAddress = $Pref::Net::BindAddress;
 
       // Make sure the network port is set to the correct pref.
-      portInit($Pref::Server::Port);
+      if ( $AlterVerse::StartPort $= "" )
+         $AlterVerse::StartPort = $Pref::Server::Port; 
+      if(!portInit($AlterVerse::StartPort))
+      {
+         echo("Could not initialize UDP port");
+         echo("shutting down");
+         schedule(5000, 0, quit);
+         return;
+      }
       allowConnections(true);
    }
 
@@ -125,19 +153,35 @@ function createServer(%serverType, %level)
 
    // Let the game initialize some things now that the
    // the server has been created
+   $Server::MissionFile = %level;
+   $ServerName = FileBase(%level);
+   $WorldPath = "art/worlds/" @ $ServerName;
    onServerCreated();
 
    loadMission(%level, true);
-   
+
+   // Only register with the server list if we allow connections
+   if ( %serverType $= "MultiPlayer" )
+      schedule(5000, 0, RegisterServer);
+
    return true;
 }
 
 /// Shut down the server
 function destroyServer()
 {
+   if ( ($Server::ServerType $= "MultiPlayer") && ($AlterVerse::serverId > 0) )
+   {
+      if ( $Server::DB::Remote )
+         remoteDBCommand("RemoveServer", "sID=" @ $AlterVerse::serverId, 0);
+      else
+         DB::Delete("AVServerList", "serverId='"@$AlterVerse::serverId@"'");
+      $AlterVerse::serverId = 0;
+   }
+   
    $Server::ServerType = "";
    allowConnections(false);
-   stopHeartbeat();
+   //stopHeartbeat();
    $missionRunning = false;
    
    // End any running levels
@@ -209,4 +253,124 @@ function removeFromServerGuidList( %guid )
 function onServerInfoQuery()
 {
    return "Doing Ok";
+}
+
+function RegisterServer()
+{  // Insert the server into the db server list
+   if ( $AlterVerse::allowInitialLogin $= "" )
+      $AlterVerse::allowInitialLogin = 0;
+
+   if ( isObject(theLevelInfo) && (theLevelInfo.displayName !$= "") )
+      $AlterVerse::displayName = theLevelInfo.displayName;
+   else
+      $AlterVerse::displayName = $AlterVerse::serverName;
+
+   if ( $Server::DB::Remote )
+   {
+      %args = "SvrName="@$AlterVerse::serverName@"&DspName="@$AlterVerse::displayName;
+      %args = %args @ "&AIL=" @ $AlterVerse::allowInitialLogin;
+      %args = %args @ "&wType=" @ $AlterVerse::worldType;
+      %args = %args @ "&wID=" @ $AlterVerse::worldID;
+      %args = %args @ "&wOwner=" @ $currentPlayerID;
+      %args = %args @ "&port=" @ $AlterVerse::serverPort;
+      if ( $AlterVerse::serverAddress !$= "" )
+         %args = %args @ "&addr=" @ $AlterVerse::serverAddress;
+      remoteDBCommand("RegisterServer", %args, 0);
+      return;
+   }
+
+   // See if there is already a server running with this name
+   %goodName = false;
+   %numTries = 0;
+   %testName = $AlterVerse::serverName;
+   while ( !%goodName )
+   {
+      %result = DB::Select("serverId, serverName, serverAddress, DATEDIFF(second, lastHeartbeat, GETDATE()) AS timeDiff", 
+      /*FROM*/             "AVServerList", 
+      /*WHERE*/            "serverName ='"@%testName@"' ");
+
+      if(%result.getNumRows() > 0)
+      {  // There is already a server with this name, if it hasn't pinged recently
+			// or is from the same address, we can reuse the record.
+			%curAddr = getWord( strreplace(%result.serverAddress, ":", " "), 0);
+         if ( (%result.timeDiff > 120) || ($AlterVerse::serverAddress $= %curAddr) )
+         {  // We can reuse this record
+            $AlterVerse::serverId = %result.serverId;
+            %result.delete();
+            DB::Update("AVServerList", 
+            /*SET*/    "serverAddress='" @ $AlterVerse::serverAddress @ ":" @
+            $AlterVerse::serverPort @ "'" @
+            ", displayName='" @ $AlterVerse::displayName @ "'" @
+            ", serverOwner='10'" @
+            ", worldType='" @ $AlterVerse::worldType @ "'" @
+            ", worldID='" @ $AlterVerse::worldID @ "'" @
+            ", allowInitialLogin='" @ $AlterVerse::allowInitialLogin @ "'" @
+            ", manifestRoot='" @ $AlterVerse::manifestRoot @ "'" @
+            ", manifestFile='" @ $AlterVerse::manifestFile @ "'" @
+            ", lastHeartbeat=GETDATE()",
+            /*WHERE*/  "serverId='"@$AlterVerse::serverId@"'");
+
+            // we will perform a heartbeat in 90 seconds
+            $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
+            echo("Server registered with database.");
+            ConnectToChat();
+            return;
+         }
+         else
+         {
+            %testName = $AlterVerse::serverName @ %numTries;
+            %numTries++;
+         }
+      }
+      else
+      {
+         %goodName = true;
+         $AlterVerse::serverName = %testName;
+      }
+      %result.delete();
+   }
+
+   // create a new record for this server
+   DB::Insert("AVServerList",
+      "serverAddress, allowInitialLogin, serverName, displayName, serverOwner, worldType, worldID, manifestRoot, manifestFile",
+      "'"@$AlterVerse::serverAddress@":"@$AlterVerse::serverPort@"'," @
+      "'"@$AlterVerse::allowInitialLogin@"'," @
+      "'"@$AlterVerse::serverName@"'," @
+      "'"@$AlterVerse::displayName@"'," @
+      "'10'," @
+      "'"@$AlterVerse::worldType@"'," @
+      "'"@$AlterVerse::worldID@"'," @
+      "'"@$AlterVerse::manifestRoot@"'," @
+      "'"@$AlterVerse::manifestFile@"'");
+
+   // and now get the serverId
+   %result = DB::Select("serverId",
+   /*FROM*/             "T3D_serverList",
+   /*WHERE*/            "serverName='"@$AlterVerse::serverName@"'");
+   $AlterVerse::serverId = %result.serverId;
+   echo("Server ID = " @ $AlterVerse::serverId);
+   %result.delete();
+
+   // we will perform a heartbeat in 90 seconds
+   $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
+   echo("Server registered with database.");
+   ConnectToChat();
+}
+
+// the heartbeat updates the database with the current time, and can be used
+// to decide if a server is active
+function alterVerseServerHeartbeat()
+{
+   if ( $Server::DB::Remote )
+   {
+      remoteDBCommand("ServerPing", "", 0);
+   }
+   else
+   {
+      DB::Update("AVServerList", 
+      /*SET*/    "lastHeartbeat=GETDATE()",
+      /*WHERE*/  "serverId='"@$AlterVerse::serverId@"'");
+   }
+
+   $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
 }

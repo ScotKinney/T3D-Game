@@ -26,6 +26,10 @@ $Server::MissionFileSpec = "levels/*.mis";
 function StartLevel( %mission, %hostingType )
 {
    $TAP::DesignMode = true;
+   $AlterVerse::worldType = 0;
+   $AlterVerse::worldID = 0;
+   $AlterVerse::worldOwner = $currentPlayerID;
+
    if( %mission $= "" )
    {
       %id = CL_levelList.getSelectedId();
@@ -47,6 +51,7 @@ function StartLevel( %mission, %hostingType )
    // Load mission specific audio
    %missionRoot = FileBase(%mission);
    $WorldPath = "art/worlds/" @ %missionRoot;
+   $AlterVerse::serverName = "dev" @ %missionRoot;
    initWorld(%missionRoot);
    %ambienceFile = $WorldPath @ "/" @ %missionRoot @ "Ambiences.cs";
    if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
