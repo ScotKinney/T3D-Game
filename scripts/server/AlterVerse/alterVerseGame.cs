@@ -165,7 +165,7 @@ function AlterVerseGame::onConnectRequest(%game, %client, %netAddress, %name, %p
    %incVisits = %isTransfer ? "" : ", NumVisits=NumVisits+1";
    if(!DB::Update("Players",
    /*SET*/        "IP='"@NextToken(%client.getAddress(),"",":")@"', "@
-                  "LastSeen=GetDate()"@
+                  "LastSeen=NOW()"@
                   %incVisits,
    /*WHERE*/      "ID='"@%dbUserID@"'"))
    {

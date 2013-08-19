@@ -172,6 +172,9 @@ function destroyServer()
 {
    if ( ($Server::ServerType $= "MultiPlayer") && ($AlterVerse::serverId > 0) )
    {
+      if(isEventPending($heartbeatSchedule))
+         cancel($heartbeatSchedule);
+
       if ( $Server::DB::Remote )
          remoteDBCommand("RemoveServer", "sID=" @ $AlterVerse::serverId, 0);
       else
@@ -285,7 +288,7 @@ function RegisterServer()
    %testName = $AlterVerse::serverName;
    while ( !%goodName )
    {
-      %result = DB::Select("serverId, serverName, serverAddress, DATEDIFF(second, lastHeartbeat, GETDATE()) AS timeDiff", 
+      %result = DB::Select("serverId, serverName, serverAddress, TIME_TO_SEC(TIMEDIFF(lastHeartbeat, NOW())) AS timeDiff", 
       /*FROM*/             "AVServerList", 
       /*WHERE*/            "serverName ='"@%testName@"' ");
 
@@ -307,7 +310,7 @@ function RegisterServer()
             ", allowInitialLogin='" @ $AlterVerse::allowInitialLogin @ "'" @
             ", manifestRoot='" @ $AlterVerse::manifestRoot @ "'" @
             ", manifestFile='" @ $AlterVerse::manifestFile @ "'" @
-            ", lastHeartbeat=GETDATE()",
+            ", lastHeartbeat=NOW()",
             /*WHERE*/  "serverId='"@$AlterVerse::serverId@"'");
 
             // we will perform a heartbeat in 90 seconds
@@ -363,12 +366,12 @@ function alterVerseServerHeartbeat()
 {
    if ( $Server::DB::Remote )
    {
-      remoteDBCommand("ServerPing", "", 0);
+      remoteDBCommand("ServerPing", "sID=" @ $AlterVerse::serverId, 0);
    }
    else
    {
       DB::Update("AVServerList", 
-      /*SET*/    "lastHeartbeat=GETDATE()",
+      /*SET*/    "lastHeartbeat=NOW()",
       /*WHERE*/  "serverId='"@$AlterVerse::serverId@"'");
    }
 
