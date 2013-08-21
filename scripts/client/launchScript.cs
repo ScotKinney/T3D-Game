@@ -62,16 +62,19 @@ function httpLoginStage2::process(%this)
       $currentPasswordHash = %this.hash;
       // and the server to log into
       $serverToJoin = %this.server;
+      $AlterVerse::serverPrefix = %this.filePrefix;
       // and the manifest paths
       $manifestRoot = %this.manifestRoot;
       $manifestFile = %this.manifestFile;
       // is user a subscriber
       $IsSubscriber = %this.subscriber;
       $TAP::isDev = %this.developer;
+      $TAP::localIP = %this.your_ip;
       // the clan that the user belongs to
       $pref::Player::ClanID = %this.clan_id;
       $pref::Player::WorldID = %this.world_id;
       $pref::Player::SkullLevel = %this.skulls;
+      $pref::Player::Gender = %this.gender;
       %timeLeft = %this.time_left - 3600; // Time zone issue, web reports 1 hour more than the real time
       $AlterVerse::RoundEnd = mFloor(getSimTime() / 1000) + %timeLeft;
       //%timeLeft = %this.time_left - (24 * 60 * 60);
@@ -334,9 +337,7 @@ function stopIntroVideo()
    }
    else
    {  // For all others load the level selected by the login script.
-      playIntroMusic($ServerName);
-      Canvas.pushDialog(LoadingGui);
-      LoadingProgress.setValue(1);
+      loadLoadingGui();
 
       if ( $DesignMode )
          StartLevel($curentMission);

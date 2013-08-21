@@ -238,6 +238,9 @@ function loadMainMenu()
 
 function loadLoadingGui(%displayText)
 {
+   if ( Canvas.getContent() == LoadingGui.getId() )
+      return;
+
    Canvas.setContent("LoadingGui");
    LoadingProgress.setValue(1);
 

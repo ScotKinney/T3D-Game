@@ -57,16 +57,20 @@ function StartLevel( %mission, %hostingType )
    if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
       exec(%ambienceFile);
 
-   // Show the loading screen immediately.
-   if ( isObject( LoadingGui ) )
-   {
-      Canvas.setContent("LoadingGui");
-      LoadingProgress.setValue(1);
-      LoadingProgressTxt.setValue("LOADING MISSION FILE");
-      Canvas.repaint();
-   }
+   // Get the prefix for loading art
+   buildLoadInfo(%mission);
+   if ( isObject(theLevelInfo) && (theLevelInfo.serverPrefix !$= "") )
+      $AlterVerse::serverPrefix = theLevelInfo.serverPrefix;
+   else
+      $AlterVerse::serverPrefix = %missionRoot;
+   clearLoadInfo();
 
-   createAndConnectToLocalServer( %serverType, %mission );
+   // Show the loading screen immediately.
+   loadLoadingGui("LOADING MISSION FILE");
+
+   // changed to a schedule call so screen refreshes immediatly
+   //createAndConnectToLocalServer( %serverType, %mission );
+   schedule(10, 0, "createAndConnectToLocalServer", %serverType, %mission );
 }
 
 

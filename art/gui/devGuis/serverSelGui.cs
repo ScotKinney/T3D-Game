@@ -101,7 +101,7 @@ function ServerSelGui::onQuitButton(%this)
    {
       LoginGui.setActive( true );
       Canvas.popDialog(%this);
-      Canvas.schedule(10, "setContent", "LoginGui");
+      //Canvas.schedule(10, "setContent", "LoginGui");
    }
 }
 

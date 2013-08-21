@@ -27,58 +27,6 @@
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
-// clearLoadInfo
-//
-// Clears the mission info stored
-//------------------------------------------------------------------------------
-function clearLoadInfo() {
-   if (isObject(theLevelInfo))
-      theLevelInfo.delete();
-}
-
-//------------------------------------------------------------------------------
-// buildLoadInfo
-//
-// Extract the map description from the .mis file
-//------------------------------------------------------------------------------
-function buildLoadInfo( %mission ) {
-	clearLoadInfo();
-
-	%infoObject = "";
-	%file = new FileObject();
-
-	if ( %file.openForRead( %mission ) ) {
-		%inInfoBlock = false;
-		
-		while ( !%file.isEOF() ) {
-			%line = %file.readLine();
-			%line = trim( %line );
-			
-			if( %line $= "new ScriptObject(MissionInfo) {" )
-				%inInfoBlock = true;
-         else if( %line $= "new LevelInfo(theLevelInfo) {" )
-				%inInfoBlock = true;
-			else if( %inInfoBlock && %line $= "};" ) {
-				%inInfoBlock = false;
-				%infoObject = %infoObject @ %line; 
-				break;
-			}
-			
-			if( %inInfoBlock )
-			   %infoObject = %infoObject @ %line @ " ";
-		}
-		
-		%file.close();
-	}
-	else
-	   error("Level file " @ %mission @ " not found.");
-
-   // Will create the object "MissionInfo"
-	eval( %infoObject );
-	%file.delete();
-}
-
-//------------------------------------------------------------------------------
 // dumpLoadInfo
 //
 // Echo the mission information to the console

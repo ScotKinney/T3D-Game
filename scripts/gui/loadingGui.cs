@@ -1,51 +1,87 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2012 GarageGames, LLC
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
+// Torque
+// Copyright GarageGames, LLC 2011
 //-----------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
 function LoadingGui::onAdd(%this)
 {
-   %this.qLineCount = 0;
+   //%this.qLineCount = 0;
 }
 
 //------------------------------------------------------------------------------
 function LoadingGui::onWake(%this)
 {
-   // Play sound...
-   //CloseMessagePopup();
+   // Startup the loading music
+   playIntroMusic($AlterVerse::serverPrefix);
+   
+   // Add the progress bar control
+   %this-->ProgressFrame.addGuiControl(LoadingProgress);
+   
+   // Look for a custom loading screen background for this mission
+   %backgroundFile = "art/gui/backgrounds/" @ $AlterVerse::serverPrefix @ "Background";
+   if ( !isFile(%backgroundFile @ ".png") && !isFile(%backgroundFile @ ".jpg"))
+      %backgroundFile = "art/gui/backgrounds/CavesOfWisdomBackGround";
+   LoadingGui.setBitmap(%backgroundFile);
+
+   %screenExtent = Canvas.getExtent();
+   %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+
+   // Pop/Push the chat dialog so it is on top if connected to chat server
+   if ( MainChatHud.isAwake() )
+      Canvas.popDialog(MainChatHud);
+
+   if (isObject(clientChat) && clientChat.connected)
+      Canvas.pushDialog(MainChatHud);
 }
 
 //------------------------------------------------------------------------------
 function LoadingGui::onSleep(%this)
 {
-   // Clear the load info:
-   if ( %this.qLineCount !$= "" )
-   {
-      for ( %line = 0; %line < %this.qLineCount; %line++ )
-         %this.qLine[%line] = "";
-   }      
-   %this.qLineCount = 0;
-
+   stopIntroMusic();
+   
    LoadingProgress.setValue( 0 );
-   LoadingProgressTxt.setValue( "WAITING FOR SERVER" );
+   LoadingProgressTxt.setValue( "Establishing Communications" ); // TODO: Mars. Localize
 
-   // Stop sound...
+   %this-->ProgressFrame.remove(LoadingProgress);
+}
+
+function LoadingGui::onResize(%this, %newWidth, %newHeight)
+{  // Reposition the gui contents. Sizes and positions are taken from the
+   // reference art and scaled to the current screen height (%newHeight)
+   // The reference art is 1600x900.
+   %verticalScale = %newHeight / 900;
+   %horizontalScale = %newWidth / 1600;
+
+   // Progress Frame
+   // The progress frame is 558x44 and positioned at 540,302 on the background image
+   %croppedWidth = %verticalScale > %horizontalScale;
+   %cropX = 0;
+   %cropY = 0;
+   if ( %croppedWidth )
+   {
+      %cropX = mRound(((1600 * %verticalScale) - %newWidth) / 2);
+      %useScale = %verticalScale;
+   }
+   else
+   {
+      %cropY = mRound(((900 * %horizontalScale) - %newHeight) / 2);
+      %useScale = %horizontalScale;
+   }
+   
+   // The progress text font is 20 point
+   AVProgressTextProfile.fontSize = mRound(20 * %useScale);
+
+   // The text box is 556x20 and positioned at 541, 696
+   %xExtent = mRound(556 * %useScale);
+   %yExtent = mRound(20 * %useScale);
+   %xPos = mRound(541 * %useScale) - %cropX;
+   %yPos = mRound(696 * %useScale) - %cropY;
+   LoadingProgressTxt.resize(%xPos, %yPos, %xExtent, %yExtent);
+
+   // The progress bar is 556x24 and positioned at 541, 716
+   %yExtent = mRound(24 * %useScale);
+   %yPos = mRound(716 * %useScale) - %cropY;
+   %this-->ProgressFrame.resize(%xPos, %yPos, %xExtent, %yExtent);
+   LoadingProgress.resize(0, 0, %xExtent, %yExtent);
 }

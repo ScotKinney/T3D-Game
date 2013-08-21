@@ -22,3 +22,15 @@
    {
       soundButtonDown = AvGuiSound;
    };
+
+   singleton GuiControlProfile (AVProgressTextProfile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "14";
+      justify = "center";
+      fontColor = "192 192 192 255";
+      fontType = "Arial";
+      borderThickness = "0";
+      category = "AlterVerse";
+   };

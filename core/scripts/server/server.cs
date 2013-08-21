@@ -268,10 +268,19 @@ function RegisterServer()
    else
       $AlterVerse::displayName = $AlterVerse::serverName;
 
+   if ( $AlterVerse::serverPrefix $= "" )
+   {
+      if ( isObject(theLevelInfo) && (theLevelInfo.serverPrefix !$= "") )
+         $AlterVerse::serverPrefix = theLevelInfo.serverPrefix;
+      else
+         $AlterVerse::serverPrefix = $AlterVerse::serverName;
+   }
+   
    if ( $Server::DB::Remote )
    {
       %args = "SvrName="@$AlterVerse::serverName@"&DspName="@$AlterVerse::displayName;
       %args = %args @ "&AIL=" @ $AlterVerse::allowInitialLogin;
+      %args = %args @ "&lPrefix=" @ $AlterVerse::serverPrefix;
       %args = %args @ "&wType=" @ $AlterVerse::worldType;
       %args = %args @ "&wID=" @ $AlterVerse::worldID;
       %args = %args @ "&wOwner=" @ $currentPlayerID;
@@ -304,6 +313,7 @@ function RegisterServer()
             /*SET*/    "serverAddress='" @ $AlterVerse::serverAddress @ ":" @
             $AlterVerse::serverPort @ "'" @
             ", displayName='" @ $AlterVerse::displayName @ "'" @
+            ", loadPrefix='" @ $AlterVerse::serverPrefix @ "'" @
             ", serverOwner='10'" @
             ", worldType='" @ $AlterVerse::worldType @ "'" @
             ", worldID='" @ $AlterVerse::worldID @ "'" @
@@ -335,11 +345,12 @@ function RegisterServer()
 
    // create a new record for this server
    DB::Insert("AVServerList",
-      "serverAddress, allowInitialLogin, serverName, displayName, serverOwner, worldType, worldID, manifestRoot, manifestFile",
+      "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverOwner, worldType, worldID, manifestRoot, manifestFile",
       "'"@$AlterVerse::serverAddress@":"@$AlterVerse::serverPort@"'," @
       "'"@$AlterVerse::allowInitialLogin@"'," @
       "'"@$AlterVerse::serverName@"'," @
       "'"@$AlterVerse::displayName@"'," @
+      "'"@$AlterVerse::serverPrefix@"'," @
       "'10'," @
       "'"@$AlterVerse::worldType@"'," @
       "'"@$AlterVerse::worldID@"'," @
@@ -361,7 +372,7 @@ function RegisterServer()
 }
 
 // the heartbeat updates the database with the current time, and can be used
-// to decide if a server is active
+// to determine if a server is active
 function alterVerseServerHeartbeat()
 {
    if ( $Server::DB::Remote )

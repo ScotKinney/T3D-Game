@@ -78,6 +78,91 @@ function parseArgs()
             }
             else
                error("Error: Missing Command Line argument. Usage: -connect <ip_address>");
+
+         //--------------------
+         case "-name": // gives the server a name
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::serverName = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+               error("-name used without specifying a name for the server");
+
+         //--------------------
+         // manifest file root location
+         case "-manifestRoot":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::manifestRoot = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::manifestRoot = "";
+               error("-manifestRoot used without specifying a path");
+            }
+
+         //--------------------
+         // manifest file location relative to manifest root
+         case "-manifestFile":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::manifestFile = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::manifestFile = "";
+               error("-manifestFile used without specifying a file");
+            }
+            if ( $AlterVerse::manifestRoot $= "" )
+               $AlterVerse::manifestRoot = "http://www.alterverse.com/aureus-download/stream/";
+
+         //--------------------
+         case "-initialLogin": // determines whether this server allows connections from newly logged in clients
+            $AlterVerse::allowInitialLogin = true;
+            $argUsed[%i]++;
+
+         //--------------------
+         // The type of server being launched. 0-Listen server. Greater than 0
+         // are all dedicated servers. 1-Homeworld. 2-quest level. 3-Homestead
+         case "-worldType":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::worldType = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::worldType = "3";
+               error("-worldType used without specifying a value");
+            }
+
+         //--------------------
+         // The homeworld ID for this server
+         case "-worldID":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::worldID = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::worldID = "0";
+               error("-worldID used without specifying a value");
+            }
+
       }
    }
 }

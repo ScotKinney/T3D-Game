@@ -14,7 +14,7 @@ function HTTPObject::onLine( %this, %line )
       eval("%this."@%varName@"="@"\""@%params@"\";");
    }
    // uncomment the following to output full response to the console
-   if ( $TAP::isDev )
+   if ( $pref::MarsMachine )
       warn( %line );
 }
 
