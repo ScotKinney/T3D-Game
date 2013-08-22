@@ -147,15 +147,15 @@ function GameConnection::setPlayerName(%client,%name)
       %name = "Poser";
 
    // Make sure the alias is unique, we'll hit something eventually
-   if (!isNameUnique(%name))
-   {
-      %isUnique = false;
-      for (%suffix = 1; !%isUnique; %suffix++)  {
-         %nameTry = %name @ "." @ %suffix;
-         %isUnique = isNameUnique(%nameTry);
-      }
-      %name = %nameTry;
-   }
+   //if (!isNameUnique(%name))
+   //{
+      //%isUnique = false;
+      //for (%suffix = 1; !%isUnique; %suffix++)  {
+         //%nameTry = %name @ "." @ %suffix;
+         //%isUnique = isNameUnique(%nameTry);
+      //}
+      //%name = %nameTry;
+   //}
 
    // Tag the name with the "smurf" color:
    %client.nameBase = %name;

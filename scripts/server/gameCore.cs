@@ -242,6 +242,31 @@ package GameCore
       Game.onMissionReset();
    }
 
+   function GameConnection::onConnectRequest( %client, %netAddress, %name, %passwordHash, %spawnSphere, %isTransfer )
+   {
+      echo("Connect request from: " @ %netAddress @ ", " @ %name);
+      if($Server::PlayerCount >= $pref::Server::MaxPlayers)
+         return "CR_SERVERFULL";
+
+      if ( $Server::ServerType !$= "MultiPlayer" )
+      {
+         %client.authenticated = true;
+         return ""; // No authentication done on single player servers
+      }
+
+      %client.nameBase = %name;
+      %client.transfering = %isTransfer;
+      %client.conHash = %passwordHash;
+      %client.authenticated = false;
+
+      // We can't authenticate a local client until after the server has
+      // been registered
+      if ( %client.getAddress() $= "local" )
+         return "";
+
+      return %client.AuthenticateUser();
+   } 
+
    // We also need to override function GameConnection::onConnect() from
    // "core/scripts/server/clientConnection.cs" in order to initialize, reset,
    // and pass some client scoring variables to playerList.gui -- the scoreHUD.
@@ -315,6 +340,9 @@ package GameCore
       {
          Game.onClientLeaveGame(%this);
       }
+
+      if(isObject(%this.pData))
+         %this.DisconnectUser();
    }
 
    // Need to supersede this "core" function in order to properly re-spawn a

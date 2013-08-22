@@ -261,13 +261,23 @@ function connectToLobbyServer(%serverAddress)
 }
 
 // perform the actual connection process
-function connectToServer(%serverAddress)
+function connectToServer(%serverAddress, %spawnPoint, %isTransfer)
 {
+   // If we're connecting to a homestead server on our machine, the IP addresses
+   // will be the same, so we can use the loopback address
+   %address = %serverAddress;
+   if ( $TAP::localIP !$= "" )
+   {
+      if ( $TAP::localIP $= getSubStr(%address, 0, strlen($TAP::localIP)) )
+      {
+         %address = "127.0.0.1" @ getSubStr(%address, strlen($TAP::localIP), -1);
+      }
+   }
    echo("connecting to server");
    %conn = new GameConnection(ServerConnection);
    //RootGroup.add(ServerConnection);
-   %conn.setConnectArgs($currentUsername, getStringMD5($currentPassword @ $currentPasswordHash), "", false);
-   %conn.connect(%serverAddress);
+   %conn.setConnectArgs($currentUsername, getStringMD5($currentPassword @ $currentPasswordHash), %spawnPoint, %isTransfer);
+   %conn.connect(%address);
    ServerConnection.setFirstPerson(true);
 }
 
@@ -338,12 +348,7 @@ function stopIntroVideo()
    else
    {  // For all others load the level selected by the login script.
       loadLoadingGui();
-
-      if ( $DesignMode )
-         StartLevel($curentMission);
-      else
-         AvSelectionGui.getClanInfo();
-         //InventoryRequest();
+      connectToServer($serverToJoin, "", false);
    }
 
    Canvas.popDialog(TeleportGui);

@@ -32,7 +32,7 @@ $Pref::Server::Info = "This is an AlterVerse server.";
 // usefull to the client, such as the url or ftp address of where the
 // latest version of the game can be obtained.
 $Pref::Server::ConnectionError =
-   "You do not have the correct version of the FPS starter kit or "@
+   "You do not have the correct version of AlterVerse or "@
    "the related art needed to play on this server, please contact "@
    "the server operator for more information.";
 
@@ -48,8 +48,8 @@ $Pref::Server::Password = "";
 $Pref::Server::AdminPassword = "";
 
 // Misc server settings.
-$Pref::Server::MaxPlayers = 64;
-$Pref::Server::TimeLimit = 20;               // In minutes
+$Pref::Server::MaxPlayers = 128;
+$Pref::Server::TimeLimit = 0;               // In minutes
 $Pref::Server::KickBanTime = 300;            // specified in seconds
 $Pref::Server::BanTime = 1800;               // specified in seconds
 $Pref::Server::FloodProtectionEnabled = 1;

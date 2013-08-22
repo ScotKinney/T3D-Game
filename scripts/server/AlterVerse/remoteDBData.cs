@@ -35,6 +35,8 @@ function remoteDBData::handleDBResult( %this )
          %this.saveRegistrationData();
       case "ServerPing":
       case "RemoveServer":
+      case "AuthenticateUser":
+         %this.saveAuthenticationData();
       case "GetClanData":
          %this.fillClanTable();
       default:
@@ -47,10 +49,26 @@ function remoteDBData::saveRegistrationData( %this )
    $AlterVerse::serverId = %this.serverID;
    $AlterVerse::serverName = %this.serverName;
 
+   // If we have a local client connected, authenticate them now
+   if ( isObject(LocalClientConnection) )
+   {
+      echo("Authenticating local client");
+      LocalClientConnection.AuthenticateUser();
+   }
+
    // we will perform a heartbeat in 90 seconds
    $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
    echo("Server registered with database.");
    ConnectToChat();
+}
+
+function remoteDBData::saveAuthenticationData( %this )
+{
+   %client = %this.flag;
+   %client.dbUserID = %this.dbID;
+   %client.createPersistantStats(%this.dbID, %this.dbUserName);
+   %client.subscribe = %this.dbSubscribe;
+   %client.CMDesi = %this.dbCMDesi;
 }
 
 function remoteDBData::fillClanTable( %this )

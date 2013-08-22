@@ -68,7 +68,7 @@ function createAndConnectToLocalServer( %serverType, %level )
    %conn = new GameConnection( ServerConnection );
    RootGroup.add( ServerConnection );
 
-   %conn.setConnectArgs( $pref::Player::Name );
+   %conn.setConnectArgs($currentUsername, getStringMD5($currentPassword @ $currentPasswordHash), "", false);
    %conn.setJoinPassword( $Client::Password );
    
    %result = %conn.connectLocal();
@@ -162,7 +162,12 @@ function createServer(%serverType, %level)
 
    // Only register with the server list if we allow connections
    if ( %serverType $= "MultiPlayer" )
-      schedule(5000, 0, RegisterServer);
+   {
+      //if ( $TAP::DesignMode )
+         //RegisterServer();
+      //else  // Delay registration of dedicated servers so they fully initialize
+         schedule(5000, 0, RegisterServer);
+   }
 
    return true;
 }

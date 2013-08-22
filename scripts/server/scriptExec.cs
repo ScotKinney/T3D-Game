@@ -57,6 +57,8 @@ exec("./turret.cs");
 exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
 exec("./gameDM.cs"); // Overrides GameCore with DeathMatch functionality.
 
+exec("./AlterVerse/authentication.cs"); // client authentication
+
 // IPS scripts
 exec("./gamePC.cs"); // Overrides GameCore with PointAndClick functionality.
 
