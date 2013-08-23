@@ -145,7 +145,7 @@ function serverCmdsetAFXTarget(%client, %objID)
 // BloodClans Script Modification (MAR) - Clan selection >>>
 function serverCmdSetPlayerClan(%client, %clanID, %team)
 {  // Put the user into their selected clan
-   if ( !$isDedicated )
+   if ( !$TAP::isDedicated )
    {  // Dev Mode
       %client.team = %team;
       %client.clanID = %clanID;
