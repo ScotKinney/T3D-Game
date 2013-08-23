@@ -93,7 +93,6 @@ function onStart()
       exec("./scripts/client/audioStates.cs");
       exec("./scripts/client/audioAmbiences.cs");
       exec("./scripts/client/helperfuncs.cs");
-      exec("./scripts/client/httpObject.cs");
 
       // Now execute any mission specific audio
       if ( $missionArg !$= "" )

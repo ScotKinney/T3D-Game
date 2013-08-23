@@ -65,10 +65,20 @@ function remoteDBData::saveRegistrationData( %this )
 function remoteDBData::saveAuthenticationData( %this )
 {
    %client = %this.flag;
+   if ( %this.dbID $= "0" )
+   {  // There was an authentication error
+      commandToClient(%client, 'AuthError', %this.message);
+      return;
+   }
+
    %client.dbUserID = %this.dbID;
    %client.createPersistantStats(%this.dbID, %this.dbUserName);
    %client.subscribe = %this.dbSubscribe;
    %client.CMDesi = %this.dbCMDesi;
+   %client.health = %this.health;
+   %client.skullLevel = %this.skullLevel;
+   %client.wealth = %this.wealth;
+   %client.weapon = %this.weapon;
 }
 
 function remoteDBData::fillClanTable( %this )
@@ -80,11 +90,12 @@ function remoteDBData::fillClanTable( %this )
       %name = %this.ClanName[%i];
       $Server::ClanData.teams.add(%id, %this.teamNum[%i]);
       $Server::ClanData.clan[%team] = %this.ClanName[%i];
-      $Server::ClanData.mWeapon[%id] = %this.male_weapon[%i] @ "Weapon";
-      $Server::ClanData.fWeapon[%id] = %this.female_weapon[%i] @ "Weapon";
+      //$Server::ClanData.mWeapon[%id] = %this.male_weapon[%i] @ "Weapon";
+      //$Server::ClanData.fWeapon[%id] = %this.female_weapon[%i] @ "Weapon";
    }
 
-   echo(%this.NumClans @ "active clans.");
+   echo("Flag Value = " @ %this.flag);
+   echo(%this.NumClans @ " active clans.");
    echo("Team #:ID:Clan Name");
    %numClans = $Server::ClanData.teams.count();
    for ( %i = 0; %i < %numClans; %i++ )

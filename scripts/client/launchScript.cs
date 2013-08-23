@@ -276,7 +276,8 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer)
    echo("connecting to server");
    %conn = new GameConnection(ServerConnection);
    //RootGroup.add(ServerConnection);
-   %conn.setConnectArgs($currentUsername, getStringMD5($currentPassword @ $currentPasswordHash), %spawnPoint, %isTransfer);
+   %conn.setConnectArgs($currentUsername, getStringMD5($currentHash @ $currentPasswordHash), %spawnPoint, %isTransfer);
+   //$IsOneWorld=1;
    %conn.connect(%address);
    ServerConnection.setFirstPerson(true);
 }

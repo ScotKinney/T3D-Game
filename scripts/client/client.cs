@@ -177,3 +177,12 @@ function turretMountCallback(%turret, %player, %mounted)
       turretMap.pop();
    }
 }
+
+//----------------------------------------------------------------------------
+// User authentication error
+//----------------------------------------------------------------------------
+function clientCmdAuthError(%message)
+{
+   MessageBoxOK( "Authentication Error", %message, "disconnect();", "");
+}
+

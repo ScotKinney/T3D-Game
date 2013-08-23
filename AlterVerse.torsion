@@ -24,6 +24,15 @@
 <InjectDebugger>true</InjectDebugger>
 <UseSetModPaths>false</UseSetModPaths>
 </Config>
+<Config>
+<Name>Dedicated</Name>
+<Executable>AlterVerse.exe</Executable>
+<Arguments>-dedicated -name Mars1 -initialLogin -mission levels\Empty_Terrain.mis -worldID 2 -worldType 1 -kingdom 1 -desi NZ</Arguments>
+<HasExports>true</HasExports>
+<Precompile>true</Precompile>
+<InjectDebugger>true</InjectDebugger>
+<UseSetModPaths>false</UseSetModPaths>
+</Config>
 </Configs>
 <SearchURL/>
 <SearchProduct>TGE</SearchProduct>

@@ -68,7 +68,7 @@ function createAndConnectToLocalServer( %serverType, %level )
    %conn = new GameConnection( ServerConnection );
    RootGroup.add( ServerConnection );
 
-   %conn.setConnectArgs($currentUsername, getStringMD5($currentPassword @ $currentPasswordHash), "", false);
+   %conn.setConnectArgs($currentUsername, getStringMD5($currentHash @ $currentPasswordHash), "", false);
    %conn.setJoinPassword( $Client::Password );
    
    %result = %conn.connectLocal();
@@ -162,12 +162,7 @@ function createServer(%serverType, %level)
 
    // Only register with the server list if we allow connections
    if ( %serverType $= "MultiPlayer" )
-   {
-      //if ( $TAP::DesignMode )
-         //RegisterServer();
-      //else  // Delay registration of dedicated servers so they fully initialize
          schedule(5000, 0, RegisterServer);
-   }
 
    return true;
 }
@@ -286,8 +281,10 @@ function RegisterServer()
       %args = "SvrName="@$AlterVerse::serverName@"&DspName="@$AlterVerse::displayName;
       %args = %args @ "&AIL=" @ $AlterVerse::allowInitialLogin;
       %args = %args @ "&lPrefix=" @ $AlterVerse::serverPrefix;
+      %args = %args @ "&sDesi=" @ $AlterVerse::serverDesi;
       %args = %args @ "&wType=" @ $AlterVerse::worldType;
       %args = %args @ "&wID=" @ $AlterVerse::worldID;
+      %args = %args @ "&kdom=" @ $AlterVerse::kingdom;
       %args = %args @ "&wOwner=" @ $currentPlayerID;
       %args = %args @ "&port=" @ $AlterVerse::serverPort;
       if ( $AlterVerse::serverAddress !$= "" )
@@ -319,9 +316,11 @@ function RegisterServer()
             $AlterVerse::serverPort @ "'" @
             ", displayName='" @ $AlterVerse::displayName @ "'" @
             ", loadPrefix='" @ $AlterVerse::serverPrefix @ "'" @
+            ", serverDesi='" @ $AlterVerse::serverDesi @ "'" @
             ", serverOwner='10'" @
             ", worldType='" @ $AlterVerse::worldType @ "'" @
             ", worldID='" @ $AlterVerse::worldID @ "'" @
+            ", kingdom='" @ $AlterVerse::kingdom @ "'" @
             ", allowInitialLogin='" @ $AlterVerse::allowInitialLogin @ "'" @
             ", manifestRoot='" @ $AlterVerse::manifestRoot @ "'" @
             ", manifestFile='" @ $AlterVerse::manifestFile @ "'" @
@@ -350,21 +349,23 @@ function RegisterServer()
 
    // create a new record for this server
    DB::Insert("AVServerList",
-      "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverOwner, worldType, worldID, manifestRoot, manifestFile",
+      "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverDesi, serverOwner, worldType, worldID, kingdom, manifestRoot, manifestFile",
       "'"@$AlterVerse::serverAddress@":"@$AlterVerse::serverPort@"'," @
       "'"@$AlterVerse::allowInitialLogin@"'," @
       "'"@$AlterVerse::serverName@"'," @
       "'"@$AlterVerse::displayName@"'," @
       "'"@$AlterVerse::serverPrefix@"'," @
+      "'"@$AlterVerse::serverDesi@"'," @
       "'10'," @
       "'"@$AlterVerse::worldType@"'," @
       "'"@$AlterVerse::worldID@"'," @
+      "'"@$AlterVerse::kingdom@"'," @
       "'"@$AlterVerse::manifestRoot@"'," @
       "'"@$AlterVerse::manifestFile@"'");
 
    // and now get the serverId
    %result = DB::Select("serverId",
-   /*FROM*/             "T3D_serverList",
+   /*FROM*/             "AVServerList",
    /*WHERE*/            "serverName='"@$AlterVerse::serverName@"'");
    $AlterVerse::serverId = %result.serverId;
    echo("Server ID = " @ $AlterVerse::serverId);

@@ -163,6 +163,37 @@ function parseArgs()
                error("-worldID used without specifying a value");
             }
 
+         //--------------------
+         // The kingdom # for this server
+         case "-kingdom":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::kingdom = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::kingdom = "0";
+               error("-kingdom used without specifying a value");
+            }
+
+         //--------------------
+         // The text designation for this server
+         case "-desi":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::serverDesi = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::serverDesi = "";
+               error("-desi used without specifying a text designation");
+            }
       }
    }
 }

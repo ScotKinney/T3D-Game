@@ -22,6 +22,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          desc0 = "An empty terrain ready to be populated with Torque objects.";
          levelName = "Empty Terrain";
+         displayName = "Mars Landing";
    };
    new ScatterSky() {
       skyBrightness = "30";

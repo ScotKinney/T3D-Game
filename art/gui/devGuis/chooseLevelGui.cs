@@ -28,6 +28,7 @@ function StartLevel( %mission, %hostingType )
    $TAP::DesignMode = true;
    $AlterVerse::worldType = 0;
    $AlterVerse::worldID = 0;
+   $AlterVerse::kingdom = 0;
    $AlterVerse::worldOwner = $currentPlayerID;
 
    if( %mission $= "" )

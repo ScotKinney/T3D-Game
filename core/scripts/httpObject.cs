@@ -5,6 +5,8 @@
    Guy Allard
    20 Apr 2010
 */
+$serverPath = "www.alterverse.com:80";
+$scriptPath = "/public_web_dev/";
 
 function HTTPObject::onLine( %this, %line )
 {

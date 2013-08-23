@@ -85,11 +85,16 @@ function ServerSelGui::onSelChange(%this)
 function ServerSelGui::onJoinButton(%this)
 {
    %serverID = %this-->ServerList.getSelectedId();
-   %this.selectedServer = %serverID;
+
    if ( %serverID > 1 )
    {
+      %this.selectedServer = %serverID;
       %text = %this-->ServerList.getRowTextById(%serverID);
-      %canTP = getField(%text, 2);
+      $serverToJoin = getField(%text, 4);
+      $AlterVerse::serverPrefix = getField(%text, 5);
+
+      loadLoadingGui();
+      connectToServer($serverToJoin, "", false);
    }
 }
 
@@ -127,7 +132,15 @@ function httpServerList::process( %this )
          for (%i = 0; %i < %this.NumServers; %i++)
          {
             %dbID = %this.ServerID[%i];
-            %dataLine = %this.ServerName[%i] TAB %this.PlayerCount[%i] TAB %dbID TAB %this.WorldType[%i];
+            %dataLine = %this.ServerName[%i];
+            if ( %this.ServerName[%i] !$= %this.DisplayName[%i] )
+               %dataLine = %dataLine @ " (" @ %this.DisplayName[%i] @ ")";
+            if ( %this.ServerDesi[%i] !$= "" )
+               %dataLine = %dataLine @ " - " @ %this.ServerDesi[%i];
+            %dataLine = %dataLine TAB %this.PlayerCount[%i];
+            %dataLine = %dataLine TAB %dbID TAB %this.WorldType[%i];
+            %dataLine = %dataLine TAB %this.ServerAddr[%i];
+            %dataLine = %dataLine TAB %this.prefix[%i];
 
             // Add the server to the list control
             ServerSelGui-->ServerList.addRow(%dbID, %dataLine);
