@@ -277,8 +277,9 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer)
    %conn = new GameConnection(ServerConnection);
    //RootGroup.add(ServerConnection);
    %conn.setConnectArgs($currentUsername, getStringMD5($currentHash @ $currentPasswordHash), %spawnPoint, %isTransfer);
-   //$IsOneWorld=1;
+   %conn.setJoinPassword($Client::Password);
    %conn.connect(%address);
+   $IsOneWorld=1;
    ServerConnection.setFirstPerson(true);
 }
 

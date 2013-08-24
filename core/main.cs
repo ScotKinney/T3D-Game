@@ -85,7 +85,7 @@ function onStart()
    
    exec("./scripts/server/server.cs");
 
-   if( 0 && $TAP::isDedicated )
+   if( $TAP::isDedicated )
    {
       exec("./scripts/client/audio.cs");
       exec("./scripts/client/audioEnvironments.cs");
