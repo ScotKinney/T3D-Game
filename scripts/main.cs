@@ -248,7 +248,7 @@ function onExit()
 
    BanList::Export("./server/banlist.cs");
 
-   Parent::onExit();
+   //Parent::onExit();
 }
 
 }; // package fps

@@ -394,3 +394,14 @@ function alterVerseServerHeartbeat()
 
    $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
 }
+
+function ShutdownDedicated()
+{
+   destroyServer();
+
+   if ( $Server::DB::Remote )
+      return;
+
+   $TAP::isDedicated = false;
+   schedule(1, 0, "quit");
+}

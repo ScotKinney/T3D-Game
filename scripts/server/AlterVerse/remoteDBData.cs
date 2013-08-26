@@ -35,6 +35,7 @@ function remoteDBData::handleDBResult( %this )
          %this.saveRegistrationData();
       case "ServerPing":
       case "RemoveServer":
+         %this.serverRemoved();
       case "AuthenticateUser":
          %this.saveAuthenticationData();
       case "GetClanData":
@@ -104,5 +105,14 @@ function remoteDBData::fillClanTable( %this )
       %team = $Server::ClanData.teams.getValue(%i);
       %name = $Server::ClanData.clan[%team];
       echo(%team @ ":" @ %id @ ":" @ %name);
+   }
+}
+
+function remoteDBData::serverRemoved( %this )
+{
+   if ( $TAP::isDedicated )
+   {
+      $TAP::isDedicated = false;
+      schedule(1, 0, "quit");
    }
 }

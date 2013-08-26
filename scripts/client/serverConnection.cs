@@ -162,13 +162,13 @@ function GameConnection::onConnectRequestRejected( %this, %msg )
          %error = "Connection error.  Please try another server.  Error code: (" @ %msg @ ")";
    }
    disconnectedCleanup();
-   MessageBoxOK( "REJECTED", %error);
+   MessageBoxOK( "REJECTED", %error, "$Client::missionRunning = true; disconnect();");
 }
 
 function GameConnection::onConnectRequestTimedOut(%this)
 {
    disconnectedCleanup();
-   MessageBoxOK( "TIMED OUT", "Your connection to the server timed out." );
+   MessageBoxOK( "TIMED OUT", "Your connection to the server timed out.", "$Client::missionRunning = true; disconnect();" );
 }
 
 
