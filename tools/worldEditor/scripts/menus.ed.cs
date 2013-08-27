@@ -112,22 +112,19 @@ function EditorGui::buildMenus(%this)
       barTitle = "File";
    };
    
-   if(!isWebDemo())
-   {
-      %fileMenu.appendItem("New Level" TAB "" TAB "schedule( 1, 0, \"EditorNewLevel\" );");
-      %fileMenu.appendItem("Open Level..." TAB %cmdCtrl SPC "O" TAB "schedule( 1, 0, \"EditorOpenMission\" );");
-      %fileMenu.appendItem("Save Level" TAB %cmdCtrl SPC "S" TAB "EditorSaveMissionMenu();");
-      %fileMenu.appendItem("Save Level As..." TAB "" TAB "EditorSaveMissionAs();");
-      //Geev 5/23/2013
-      %fileMenu.appendItem("Request Save Mission..." TAB "CTRL S" TAB "Remote_SaveMission();");      
-      %fileMenu.appendItem("-");
+   %fileMenu.appendItem("New Level" TAB "" TAB "schedule( 1, 0, \"EditorNewLevel\" );");
+   %fileMenu.appendItem("Open Level..." TAB %cmdCtrl SPC "O" TAB "schedule( 1, 0, \"EditorOpenMission\" );");
+   %fileMenu.appendItem("Save Level" TAB %cmdCtrl SPC "S" TAB "EditorSaveMissionMenu();");
+   %fileMenu.appendItem("Save Level As..." TAB "" TAB "EditorSaveMissionAs();");
+   //Geev 5/23/2013
+   %fileMenu.appendItem("Request Save Mission..." TAB "CTRL S" TAB "Remote_SaveMission();");      
+   %fileMenu.appendItem("-");
 
-      if( $platform $= "windows" )
-      {
-         %fileMenu.appendItem( "Open Project in Torsion" TAB "" TAB "EditorOpenTorsionProject();" );
-         %fileMenu.appendItem( "Open Level File in Torsion" TAB "" TAB "EditorOpenFileInTorsion();" );
-         %fileMenu.appendItem( "-" );
-      }
+   if( $platform $= "windows" )
+   {
+      %fileMenu.appendItem( "Open Project in Torsion" TAB "" TAB "EditorOpenTorsionProject();" );
+      %fileMenu.appendItem( "Open Level File in Torsion" TAB "" TAB "EditorOpenFileInTorsion();" );
+      %fileMenu.appendItem( "-" );
    }
    
    %fileMenu.appendItem("Create Blank Terrain" TAB "" TAB "Canvas.pushDialog( CreateNewTerrainGui );");        

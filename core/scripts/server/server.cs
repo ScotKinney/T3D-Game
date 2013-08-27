@@ -263,10 +263,13 @@ function RegisterServer()
    if ( $AlterVerse::allowInitialLogin $= "" )
       $AlterVerse::allowInitialLogin = 0;
 
-   if ( isObject(theLevelInfo) && (theLevelInfo.displayName !$= "") )
-      $AlterVerse::displayName = theLevelInfo.displayName;
-   else
-      $AlterVerse::displayName = $AlterVerse::serverName;
+   if ( $AlterVerse::displayName $= "" )
+   {
+      if ( isObject(theLevelInfo) && (theLevelInfo.displayName !$= "") )
+         $AlterVerse::displayName = theLevelInfo.displayName;
+      else
+         $AlterVerse::displayName = $AlterVerse::serverName;
+   }
 
    if ( $AlterVerse::serverPrefix $= "" )
    {
