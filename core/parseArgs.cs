@@ -162,6 +162,13 @@ function defaultParseArgs()
             echo("Tapped In! ID = " @ $currentPlayerID @ ", Hash = " @ $currentHash);
             
          //-------------------
+         case "-serverID":
+            $argUsed[$i]++;
+            $TAP::serverID = $Game::argv[$i+1];
+            $argUsed[$i+1]++;
+            $i++;
+
+         //-------------------
          case "-cacheDTS":
             $generateCachedDTS = true;
             $argUsed[$i]++;

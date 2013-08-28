@@ -46,10 +46,13 @@ function loginStage2(%this)
       status = "failure";
       message = "";
    };
-   
-   httpLoginStage2.get( $serverPath, 
-                        $scriptPath @ "avLoginStage2.php", 
-                        "uname=" @ $currentUsername @"\t"@ "pwd=" @ %pwdHash );  
+
+   %args = "uname=" @ $currentUsername @"\t"@ "pwd=" @ %pwdHash;
+
+   if ( $TAP::isTappedIn && ($TAP::serverID !$= "") )
+      %args = %args @ "\tsvrID=" @ $TAP::serverID;
+
+   httpLoginStage2.get( $serverPath, $scriptPath @ "avLoginStage2.php", %args );  
 }
 
 // process the results of the login stage 2 request

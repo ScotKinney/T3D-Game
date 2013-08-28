@@ -72,6 +72,7 @@ $TAP::isDedicated = false;
 $TAP::isLoggedIn = false;
 $TAP::isTappedIn = false;
 $TAP::DesignMode = false;
+$TAP::serverID = "";
 $Server::Loaded = false;
 
 $dirCount = 2;
