@@ -335,7 +335,7 @@ function stopIntroVideo()
    // Start connection to the chat server
    connectClientChat();
 
-   if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
+   if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.
       if ( !isObject(ServerSelGui) )
       {
@@ -366,6 +366,8 @@ function TeleportGui::onWake(%this)
 {
    %screenExtent = Canvas.getExtent();
    %this.onResize(getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+
+   PutTLOnTop();  // Bring the TL gui back onto the canvas
 }
 
 function TeleportGui::onResize(%this, %newWidth, %newHeight)

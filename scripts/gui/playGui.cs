@@ -48,6 +48,8 @@ function PlayGui::onWake(%this)
       schedule(0, 0, "refreshCenterTextCtrl");
    if ( isFunction( "refreshBottomTextCtrl" ) )
       schedule(0, 0, "refreshBottomTextCtrl");
+
+   PutTLOnTop();  // Bring the TL gui back onto the canvas
 }
 
 function PlayGui::onSleep(%this)

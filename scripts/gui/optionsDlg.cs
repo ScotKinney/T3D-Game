@@ -396,7 +396,7 @@ function OptionsDlg::applyGraphics( %this, %testNeedApply )
       // windowed to fullscreen and vice versa
       %newResX = getWord(%newRes, 0);
       %newResY = getWord(%newRes, 1);
-      Canvas.schedule(50, "onResize", %newResX, %newResY);
+      Canvas.schedule(50, "onResize", %newResX, %newResY, true);
    }
    
    // Test and apply the graphics settings.

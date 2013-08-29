@@ -188,8 +188,19 @@ function GuiEditorIsActive()
 }
 
 // AlterVerse Script Modification (MAR) - re-sizing GUI elements after a resolution change
-function Canvas::onResize(%this, %newWidth, %newHeight)
+function Canvas::onResize(%this, %newWidth, %newHeight, %forcesize)
 { // The screen has been resized, adjust gui elements
+
+   // The values passed to this function do not always reflect the
+   // mBounds.extents value for the canvas when running full screen,
+   // so get it directly.
+   if ( !%forcesize )
+   {
+      %vidMode = Canvas.getVideoMode();
+      %newWidth = getWord(%vidMode, 0);
+      %newHeight = getWord(%vidMode, 1);
+   }
+
    if ( isObject( LoadingGui ) && LoadingGui.isAwake() )
       LoadingGui.onResize(%newWidth, %newHeight);
 

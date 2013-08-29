@@ -174,7 +174,8 @@ function initClient()
    exec("./game.cs");
    exec("./missionDownload.cs");
    exec("./serverConnection.cs");
-   exec("scripts/client/launchScript.cs");
+   exec("./launchScript.cs");
+   exec("./AlterVerse/TAP-Link.cs");
 
    // Load useful Materials
    exec("./shaders.cs");
