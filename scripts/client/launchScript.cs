@@ -252,7 +252,7 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
    {
       if ( $TAP::localIP $= getSubStr(%serverAddress, 0, strlen($TAP::localIP)) )
       {
-         $LocalTries = 0; // try 3 times before giving up
+         $LocalTries = 0; // try 5 times before giving up
          ResolveLocalIP(%serverAddress, %spawnPoint, %isTransfer);
          return;
          //%address = "127.0.0.1" @ getSubStr(%address, strlen($TAP::localIP), -1);

@@ -49,7 +49,7 @@ function doJoinLocal()
          ResolveLocalIP($LocalStartAddr, $LocalSpawn, $LocalTrans);
       else
       {
-         if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
+         if ( $TAP::isDev && isObject(ServerSelGui) )
          {  // If it's a developer, return to the server selection gui.
             Canvas.setContent( $TAP::isTappedIn ? BlackGui : LoginGui );
             Canvas.pushDialog(ServerSelGui);
