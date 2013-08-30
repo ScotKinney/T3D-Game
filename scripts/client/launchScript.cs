@@ -65,6 +65,7 @@ function httpLoginStage2::process(%this)
       $currentPasswordHash = %this.hash;
       // and the server to log into
       $serverToJoin = %this.server;
+      $ServerName = %this.svrName;
       $AlterVerse::serverPrefix = %this.filePrefix;
       // and the manifest paths
       $manifestRoot = %this.manifestRoot;
@@ -242,40 +243,23 @@ function lobbyServerRequest::process( %this )
    %this.schedule(0, delete);
 }
    
-// stream required assets if needed, otherwise establish a connection immediately
-function connectToLobbyServer(%serverAddress)
-{
-   if ( $Server::PublicIP !$= "" )
-   {  // If testing a dedicated server on the same machine as the client
-      if ( $Server::PublicIP $= getSubStr(%serverAddress, 0, strlen($Server::PublicIP)) )
-      {  // Use loopback address to connect.
-         %serverAddress = "127.0.0.1" @ getSubStr(%serverAddress, strlen($Server::PublicIP), -1);
-      }
-   }
-   
-   if(!$AlterVerse::Exec::Server && $manifestFile !$= "" && $manifestRoot !$= "")
-   {  // Check manifest files for updated assets
-      Canvas.schedule(0, pushDialog, DownloadProgressGui);
-      StreamManager.streamLevelAssets($manifestRoot @ $manifestFile, $manifestRoot,
-         "Canvas.popDialog(DownloadProgressGui);connectToServer(\"" @ %serverAddress @ "\");");
-   }
-   else
-      connectToServer(%serverAddress);
-}
-
 // perform the actual connection process
-function connectToServer(%serverAddress, %spawnPoint, %isTransfer)
+function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
 {
    // If we're connecting to a homestead server on our machine, the IP addresses
    // will be the same, so we can use the loopback address
    %address = %serverAddress;
-   if ( $TAP::localIP !$= "" )
+   if ( $TAP::localIP !$= "" && !%isResolved )
    {
       if ( $TAP::localIP $= getSubStr(%address, 0, strlen($TAP::localIP)) )
       {
-         %address = "127.0.0.1" @ getSubStr(%address, strlen($TAP::localIP), -1);
+         $LocalTries = 0; // try 3 times before giving up
+         ResolveLocalIP(%serverAddress, %spawnPoint, %isTransfer);
+         return;
+         //%address = "127.0.0.1" @ getSubStr(%address, strlen($TAP::localIP), -1);
       }
    }
+
    echo("connecting to server");
    %conn = new GameConnection(ServerConnection);
    //RootGroup.add(ServerConnection);
@@ -353,13 +337,27 @@ function stopIntroVideo()
    else
    {  // For all others load the level selected by the login script.
       loadLoadingGui();
-      connectToServer($serverToJoin, "", false);
+      connectToServer($serverToJoin, "", false, false);
    }
 
    Canvas.popDialog(TeleportGui);
    TeleportGui.delete();
    Canvas.repaint();
 
+}
+
+// clientCmdServerTransfer is called by the current game server 
+// to transfer the client to a different server.
+function clientCmdServerTransfer( %address, %spawnSphere, %hash, %serverName, %serverPrefix )
+{
+   LagIcon.setVisible(false);
+   $currentPasswordHash = %hash;
+   $ServerName = %serverName;
+   $AlterVerse::serverPrefix = %serverPrefix;
+
+   schedule(0, 0, disconnect, true);
+   schedule(100, 0, loadLoadingGui);
+   schedule(100, 0, connectToServer, %address, %spawnSphere, true, false);
 }
 
 function TeleportGui::onWake(%this)

@@ -58,6 +58,8 @@ function GameConnection::initialControlSet(%this)
          Canvas.setContent(PlayGui);
       }
    //}
+   
+   $TAP::onServer = true;
 }
 
 function GameConnection::onControlObjectChange(%this)
@@ -176,7 +178,7 @@ function GameConnection::onConnectRequestTimedOut(%this)
 // Disconnect
 //-----------------------------------------------------------------------------
 
-function disconnect()
+function disconnect(%isTransfer)
 {
    %isServerDisconnect = $Client::missionRunning;
 //Geev 5/23/2013	
@@ -192,6 +194,10 @@ function disconnect()
       // else physics resources will not cleanup properly.
       physicsStopSimulation( "client" );
    }
+
+   $TAP::onServer = false;
+   if ( %isTransfer )
+      return;
 
    // Call destroyServer in case we're hosting
    if ( $Server::Loaded )

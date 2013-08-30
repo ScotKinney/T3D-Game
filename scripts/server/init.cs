@@ -81,6 +81,7 @@ function initServer()
    exec("./AlterVerse/inventory.cs");
    exec("./AlterVerse/health.cs");
    exec("./AlterVerse/commands.cs");
+   exec("./AlterVerse/serverTransfer.cs");
 }
 
 

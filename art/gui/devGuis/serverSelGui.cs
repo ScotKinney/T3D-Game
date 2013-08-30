@@ -95,7 +95,7 @@ function ServerSelGui::onJoinButton(%this)
       $AlterVerse::serverPrefix = getField(%text, 5);
 
       loadLoadingGui();
-      connectToServer($serverToJoin, "", false);
+      connectToServer($serverToJoin, "", false, false);
    }
 }
 

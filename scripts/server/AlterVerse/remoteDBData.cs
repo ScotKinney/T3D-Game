@@ -33,15 +33,17 @@ function remoteDBData::handleDBResult( %this )
    {
       case "RegisterServer":
          %this.saveRegistrationData();
-      case "ServerPing":
+      //case "ServerPing":
       case "RemoveServer":
          %this.serverRemoved();
       case "AuthenticateUser":
          %this.saveAuthenticationData();
+      case "MoveUser":
+         %this.moveUserTo();
       case "GetClanData":
          %this.fillClanTable();
       default:
-         echo("Valid command with no handler??? (" @ %result.command @ ")");
+         echo("Valid command with no handler??? (" @ %this.command @ ")");
    }
 }
 
@@ -80,6 +82,26 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.skullLevel = %this.skullLevel;
    %client.wealth = %this.wealth;
    %client.weapon = %this.weapon;
+}
+
+function remoteDBData::moveUserTo( %this )
+{
+   %client = %this.flag;
+   if ( %this.canTP $= "0" )
+   {  // Error looking up target server data
+      %client.teleDest = "";
+      return;
+   }
+
+   // Play any teleport effect here.
+
+   schedule(1000, 0, "commandToClient", %client, 
+                   'serverTransfer', 
+                   %this.sAddr, 
+                   %this.spawnPt, 
+                   %this.newHash,
+                   %this.sName,
+                   %this.sPrefix);
 }
 
 function remoteDBData::fillClanTable( %this )

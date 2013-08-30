@@ -44,13 +44,13 @@ function GameConnection::AuthenticateUser(%client)
    else if(%Results.getNumRows() > 1)
       echo("oops - username is not unique!");
 
-   %dbUserID = %Results.id;
-   %dbUserName = %Results.citizen_name;
+   %dbUserID = %Results.user_id;
+   %dbUserName = %Results.username;
    %dbSubscribe = %Results.subscribe;//epls
    %dbCMDesi = %Results.CMDesi;//epls
    %client.dbUserID = %dbUserID;
    
-   %pwd = %Results.password;
+   %pwd = %Results.user_password;
    %key = %Results.sessionKey;
    %Results.delete();
    

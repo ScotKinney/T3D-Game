@@ -3,8 +3,12 @@
 // TAP-Link Gui
 
 function TPToServer(%serverID)
-{
+{  // User has requested to teleport to another server
    echo("TPToServer(" @ %serverID @ ") Called!\n");
+   if ( !$TAP::onServer )
+      return;  // Must be on a server to teleport
+
+   CommandToServer('TeleportToServer', %serverID);
 }
 
 function PutTLOnTop()
