@@ -248,10 +248,9 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
 {
    // If we're connecting to a homestead server on our machine, the IP addresses
    // will be the same, so we can use the loopback address
-   %address = %serverAddress;
    if ( $TAP::localIP !$= "" && !%isResolved )
    {
-      if ( $TAP::localIP $= getSubStr(%address, 0, strlen($TAP::localIP)) )
+      if ( $TAP::localIP $= getSubStr(%serverAddress, 0, strlen($TAP::localIP)) )
       {
          $LocalTries = 0; // try 3 times before giving up
          ResolveLocalIP(%serverAddress, %spawnPoint, %isTransfer);
@@ -265,7 +264,7 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
    //RootGroup.add(ServerConnection);
    %conn.setConnectArgs($currentUsername, getStringMD5($currentHash @ $currentPasswordHash), %spawnPoint, %isTransfer);
    %conn.setJoinPassword($Client::Password);
-   %conn.connect(%address);
+   %conn.connect(%serverAddress);
    $IsOneWorld=1;
    ServerConnection.setFirstPerson(true);
 }

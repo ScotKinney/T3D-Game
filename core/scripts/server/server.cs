@@ -378,7 +378,7 @@ function RegisterServer()
    $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
    echo("Server registered with database.");
    ConnectToChat();
-   $ServerName = $AlterVerse::serverName;
+   $Pref::Server::Name = $AlterVerse::serverName;
 }
 
 // the heartbeat updates the database with the current time, and can be used

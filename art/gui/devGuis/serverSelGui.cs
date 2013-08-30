@@ -92,6 +92,7 @@ function ServerSelGui::onJoinButton(%this)
       %this.selectedServer = %serverID;
       %text = %this-->ServerList.getRowTextById(%serverID);
       $serverToJoin = getField(%text, 4);
+      $ServerName = getWord(%text, 0);
       $AlterVerse::serverPrefix = getField(%text, 5);
 
       loadLoadingGui();

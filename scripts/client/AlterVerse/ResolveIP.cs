@@ -3,19 +3,22 @@
 
 function ResolveLocalIP(%serverAddress, %spawnPoint, %isTransfer)
 {
+   $LocalStartAddr = %serverAddress;
    $LocalSpawn = %spawnPoint;
    $LocalTrans = %isTransfer;
    $LocalTries++;
-   
-   // Get the port # from the passed address
-   %port = getSubStr(%serverAddress, strlen($TAP::localIP), -1);
-   
+
+   // Get the port number from the passed port
+   %port = getSubStr(%serverAddress, strlen($TAP::localIP)+1, -1);
+
    // Query the lan to see who's listening on that port
    queryLANServers(
       %port,      // lanPort for local queries
       0,          // Query flags
-      $Client::GameTypeQuery,       // gameTypes
-      $Client::MissionTypeQuery,    // missionType
+      "Any",       // gameTypes
+      "Any",    // missionType
+      //$Client::GameTypeQuery,       // gameTypes
+      //$Client::MissionTypeQuery,    // missionType
       0,          // minPlayers
       120,        // maxPlayers
       0,          // maxBots
@@ -42,8 +45,8 @@ function doJoinLocal()
    %sc = getServerCount();
    if ( %sc < 1 )
    {
-      if ( $LocalTries < 3 )
-         ResolveLocalIP();
+      if ( $LocalTries < 5 )
+         ResolveLocalIP($LocalStartAddr, $LocalSpawn, $LocalTrans);
       else
       {
          if ( $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
@@ -61,7 +64,7 @@ function doJoinLocal()
    for( %i = 0; %i < %sc; %i ++ )
    {
       setServerInfo(%i);
-      if ( ($ServerInfo::Name == $ServerName) || (%i == (%sc-1)) )
+      if ( ($ServerInfo::Name $= $ServerName) || (%i == (%sc-1)) )
       {
          %localAddr = $ServerInfo::Address;
          connectToServer(%localAddr, $LocalSpawn, $LocalTrans, true);

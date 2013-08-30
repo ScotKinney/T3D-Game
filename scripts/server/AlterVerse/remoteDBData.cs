@@ -51,6 +51,7 @@ function remoteDBData::saveRegistrationData( %this )
 {
    $AlterVerse::serverId = %this.serverID;
    $AlterVerse::serverName = %this.serverName;
+   $Pref::Server::Name = %this.serverName;
 
    // If we have a local client connected, authenticate them now
    if ( isObject(LocalClientConnection) )
