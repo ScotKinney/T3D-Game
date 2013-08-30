@@ -31,7 +31,7 @@ function ResolveLocalIP(%serverAddress, %spawnPoint, %isTransfer)
 
 function onServerQueryStatus(%status, %msg, %value)
 {
-	echo("ServerQuery: " SPC %status SPC %msg SPC %value);
+	//echo("ServerQuery: " SPC %status SPC %msg SPC %value);
    // Update query status
    // States: start, update, ping, query, done
    // value = % (0-1) done for ping and query states

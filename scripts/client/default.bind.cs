@@ -430,7 +430,7 @@ function mouseButtonZoom(%val)
 
 moveMap.bind(keyboard, f, setZoomFOV); // f for field of view
 moveMap.bind(keyboard, z, toggleZoom); // z for zoom
-moveMap.bind( mouse, button1, mouseButtonZoom );
+//moveMap.bind( mouse, button1, mouseButtonZoom );
 
 //------------------------------------------------------------------------------
 // Camera & View functions
@@ -726,7 +726,7 @@ vehicleMap.bind( keyboard, down, movebackward );
 vehicleMap.bind( mouse, xaxis, yaw );
 vehicleMap.bind( mouse, yaxis, pitch );
 vehicleMap.bind( mouse, button0, mouseFire );
-vehicleMap.bind( mouse, button1, altTrigger );
+//vehicleMap.bind( mouse, button1, altTrigger );
 vehicleMap.bindCmd(keyboard, "ctrl f","getout();","");
 vehicleMap.bind(keyboard, space, brake);
 vehicleMap.bindCmd(keyboard, "l", "brakeLights();", "");
@@ -741,3 +741,34 @@ function FireballTest(%val)
    if(%val)
       CastSpellOnServer(ImpactTest);
 }
+
+// mouse cursor toggle by right mouse button
+function toggleCursor( %val ) 
+{
+   // Key bind is removed in the editor so isEditing check is no longer needed 
+   //%editing = isObject(EditorGui) && Canvas.getContent() == EditorGui.getId();
+   %playing = Canvas.getContent() == PlayGui.getId();
+   
+   //if(!%playing && !%editing)
+   if( !%playing )
+      return;
+      
+   if( %val ) 
+   {
+      if ( isEventPending(PlayGui.hoverEvent) )
+         cancel(PlayGui.hoverEvent);
+
+      if ( isObject(InfoBox) )
+      {
+         InfoBoxBackdrop.visible = false;
+         InfoBox.visible = false;
+      }
+
+      if(Canvas.isCursorOn())
+         hideCursor();
+      else
+         showCursor();
+   }
+} 
+
+globalActionMap.bind( mouse, button1, toggleCursor );
