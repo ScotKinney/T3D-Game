@@ -283,7 +283,7 @@ GlobalActionMap.bind(keyboard, "f11", toggleEditor);
 
 package EditorDisconnectOverride
 {
-   function disconnect()
+   function disconnect(%isTransfer)
    {
       if ( isObject( Editor ) && Editor.isEditorEnabled() )
       {
@@ -291,7 +291,7 @@ package EditorDisconnectOverride
             Editor.close("MainMenuGui");
       }
       
-      Parent::disconnect();  
+      Parent::disconnect(%isTransfer);  
    }
 };
 activatePackage( EditorDisconnectOverride );

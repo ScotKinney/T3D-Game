@@ -33,7 +33,6 @@ function remoteDBData::handleDBResult( %this )
    {
       case "RegisterServer":
          %this.saveRegistrationData();
-      //case "ServerPing":
       case "RemoveServer":
          %this.serverRemoved();
       case "AuthenticateUser":
@@ -42,6 +41,10 @@ function remoteDBData::handleDBResult( %this )
          %this.moveUserTo();
       case "GetClanData":
          %this.fillClanTable();
+
+      case "DisconnectUser":
+      case "ServerPing":
+
       default:
          echo("Valid command with no handler??? (" @ %this.command @ ")");
    }

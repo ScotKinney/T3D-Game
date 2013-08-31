@@ -167,7 +167,7 @@ function EditorExitMission()
 
 function EditorDoExitMission(%saveFirst)
 {
-   if(%saveFirst && !isWebDemo())
+   if(%saveFirst)
    {
       EditorSaveMissionMenu();
    }
