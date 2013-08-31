@@ -63,7 +63,7 @@ function TransferToServer(%client, %serverID, %spawnSphere)
    // update the userLogin table so that we know the client is allowed in the next server
    DB::Update("AVUserLogin", 
    /*SET*/     "nextServerId='"@%serverID@"', "@
-               "currentServerId='', ", 
+               "currentServerId='', " @ 
                "sessionKey='"@%hashKey@"'", 
    /*WHERE*/   "id='"@%client.pData.dbID@"'");
 
