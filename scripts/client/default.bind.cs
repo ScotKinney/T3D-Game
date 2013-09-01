@@ -797,3 +797,20 @@ function toggleRift(%val)
 }
 
 moveMap.bind(keyboard, "ctrl r", toggleRift);
+
+// ----------------------------------------------------------------------------
+// Oculus Rift
+// ----------------------------------------------------------------------------
+
+function OVRSensorRotEuler(%pitch, %roll, %yaw)
+{
+   //echo("Sensor euler: " @ %pitch SPC %roll SPC %yaw);
+   $mvRotZ0 = %yaw;
+   $mvRotX0 = %pitch;
+   $mvRotY0 = %roll;
+}
+
+$mvRotIsEuler0 = true;
+$OculusVR::GenerateAngleAxisRotationEvents = false;
+$OculusVR::GenerateEulerRotationEvents = true;
+moveMap.bind( oculusvr, ovr_sensorrotang0, OVRSensorRotEuler );
