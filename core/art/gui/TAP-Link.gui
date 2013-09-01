@@ -16,7 +16,7 @@
 
    new GuiControl(TLFrame) {
       position = "0 0";
-      extent = "300 500";
+      extent = "299 500";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
@@ -36,7 +36,7 @@
          HorizSizing = "right";
          VertSizing = "bottom";
          Position = "0 0";
-         Extent = "300 500";
+         Extent = "299 500";
          Visible = "1";
          isContainer = "0";
       };
@@ -48,7 +48,7 @@
          horizSizing = "right";
          vertSizing = "bottom";
          position = "0 0";
-         Extent = "300 30";
+         Extent = "299 30";
          MinExtent = "8 8";
          canSave = "1";
          Visible = "1";
