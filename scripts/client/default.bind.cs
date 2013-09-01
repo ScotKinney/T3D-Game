@@ -772,3 +772,28 @@ function toggleCursor( %val )
 } 
 
 globalActionMap.bind( mouse, button1, toggleCursor );
+
+function toggleRift(%val)
+{
+   if (!%val)
+      return;
+
+   if ( $InRiftView $= "" )
+      $InRiftView = false;
+   if ( $InRiftView )
+   {  // Show the regular HUDs
+      disableOculusVRDisplay(ServerConnection);
+      Canvas.setContent(PlayGui);
+      $InRiftView = false;
+   }
+   else
+   {  // Switch to a hudless split Rift view
+      setAllSensorPredictionTime(0.02);
+      enableOculusVRDisplay(ServerConnection, true);
+      setStandardOculusVRControlScheme(ServerConnection);
+      Canvas.setContent(HudlessPlayGui);
+      $InRiftView = true;
+   }
+}
+
+moveMap.bind(keyboard, "ctrl r", toggleRift);

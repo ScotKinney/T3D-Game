@@ -59,7 +59,7 @@ function pointCanvasToOculusVRDisplay()
 function enableOculusVRDisplay(%gameConnection, %trueStereoRendering)
 {
    setOVRHMDAsGameConnectionDisplayDevice(%gameConnection);
-   PlayGui.renderStyle = "stereo side by side";
+   HudlessPlayGui.renderStyle = "stereo side by side";
    
    if(%trueStereoRendering)
    {
@@ -79,7 +79,7 @@ function enableOculusVRDisplay(%gameConnection, %trueStereoRendering)
 function disableOculusVRDisplay(%gameConnection)
 {
    %gameConnection.clearDisplayDevice();
-   PlayGui.renderStyle = "standard";
+   HudlessPlayGui.renderStyle = "standard";
    OVRBarrelDistortionPostFX.isEnabled = false;
    OVRBarrelDistortionMonoPostFX.isEnabled = false;
 }
