@@ -135,6 +135,20 @@
       };
 
       new GuiBitmapButtonCtrl() {
+         bitmap = "core/art/gui/toolbar/connected";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "9 13";
+         Extent = "14 12";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "";
+      };
+      new GuiBitmapButtonCtrl() {
          bitmap = "core/art/gui/toolbar/down";
          buttonType = "PushButton";
          useMouseEvents = "1";
