@@ -28,16 +28,13 @@ exec( "core/scripts/client/defaults.cs" );
 // well as any overloaded core defaults here.
 $PhysXLogWarnings = false;
 
-
+// Initial TAP-Link settings
+$pref::TL::isShown = 1;    // Show the TL gui inside game
+$pref::TL::isDocked = 0;   // Full size, not docked
+$pref::TL::dockedPos = "0 0";
+$pref::TL::framePos = "0 0";
 
 // Finally load the preferences saved from the last
 // game execution if they exist.
-if ( $platform !$= "xenon" )
-{
-   if ( isFile( "./prefs.cs" ) )
-      exec( "./prefs.cs" );
-}
-else
-{
-   echo( "Not loading client prefs.cs on Xbox360" );
-}
+if ( isFile( "./prefs.cs" ) )
+   exec( "./prefs.cs" );

@@ -34,3 +34,20 @@
       borderThickness = "0";
       category = "AlterVerse";
    };
+
+   singleton GuiControlProfile( AVTAPLinkProfile )
+   {
+      justify = "left";
+      tab = true;
+      canKeyFocus = true;   
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile(AVToolbarBorderProfile)
+   {
+      category = "AlterVerse";
+      bitmap = "core/art/gui/toolbar/AVToolbarBorder.png";
+      hasBitmapArray = "1";
+      opaque = "0";
+      category = "AlterVerse";
+   };

@@ -35,7 +35,6 @@ function LoginGui::onWake(%this)
    // Pop/Push the chat dialog so it is on top if connected to chat server
    if ( MainChatHud.isAwake() )
       Canvas.popDialog(MainChatHud);
-
    if (isObject(clientChat) && clientChat.connected)
       Canvas.pushDialog(MainChatHud);
 }

@@ -213,6 +213,9 @@ function Canvas::onResize(%this, %newWidth, %newHeight, %forcesize)
    if ( isObject( TeleportGui ) && TeleportGui.isAwake() )
       TeleportGui.onResize(%newWidth, %newHeight);
 
+   if ( isObject( TAPLinkHUD ) && TAPLinkHUD.isAwake() )
+      TAPLinkHUD.onResize(%newWidth, %newHeight);
+
    %mainContent = %this.getContent();
    if ( !isObject( %mainContent ) || !%mainContent.isAwake() ||
          !%mainContent.isMethod("onResize") )

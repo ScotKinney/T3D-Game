@@ -32,6 +32,9 @@ function initBaseClient()
    
    initRenderManager();
    initLightingSystems();   
+
+   exec("core/art/gui/TAP-Link.gui");
+   exec("core/scripts/gui/TAP-Link.cs");
 }
 
 /// A helper function which will return the ghosted client object

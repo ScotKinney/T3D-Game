@@ -1,0 +1,167 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(TAPLinkHUD) {
+   position = "0 0";
+   extent = "1440 900";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiModelessDialogProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "0";
+
+   new GuiControl(TLFrame) {
+      position = "0 0";
+      extent = "300 500";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+
+      new TAPLinkGui (TAPLink) {
+         canSaveDynamicFields = "0";
+         Enabled = "1";
+         Profile = "AVTAPLinkProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "0 0";
+         Extent = "300 500";
+         Visible = "1";
+         isContainer = "0";
+      };
+
+      new GuiMouseEventCtrl(TLFrameHeader) {
+         lockMouse = "1";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         Extent = "300 30";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "GuiToolTipProfile";
+         hovertime = "1000";
+         canSaveDynamicFields = "0";
+      };
+      new GuiBitmapButtonCtrl() {
+         bitmap = "core/art/gui/toolbar/minimize";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "264 14";
+         Extent = "16 16";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TAPLinkHUD.MinimizeTL();";
+      };
+      new GuiBitmapButtonCtrl() {
+         bitmap = "core/art/gui/toolbar/Exit";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "281 15";
+         Extent = "16 15";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TAPLinkHUD.HideTL();";
+      };
+   };
+
+   new GuiControl(DockedTL) {
+      position = "0 0";
+      extent = "300 46";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+
+      new GuiBitmapCtrl() {
+         bitmap = "core/art/gui/toolbar/TLDocked.png";
+         wrap = "0";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         Extent = "300 46";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "GuiToolTipProfile";
+         hovertime = "1000";
+         canSaveDynamicFields = "0";
+      };
+
+      new GuiMouseEventCtrl(DockedTLHeader) {
+         lockMouse = "1";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         Extent = "300 46";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "GuiToolTipProfile";
+         hovertime = "1000";
+         canSaveDynamicFields = "0";
+      };
+
+      new GuiBitmapButtonCtrl() {
+         bitmap = "core/art/gui/toolbar/down";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "265 20";
+         Extent = "15 10";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TAPLinkHUD.RestoreTL();";
+      };
+      new GuiBitmapButtonCtrl() {
+         bitmap = "core/art/gui/toolbar/Exit";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "281 15";
+         Extent = "16 15";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TAPLinkHUD.HideTL();";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

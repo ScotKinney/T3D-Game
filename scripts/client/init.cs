@@ -175,7 +175,6 @@ function initClient()
    exec("./missionDownload.cs");
    exec("./serverConnection.cs");
    exec("./launchScript.cs");
-   exec("./AlterVerse/TAP-Link.cs");
    exec("./AlterVerse/ResolveIP.cs");
 
    // Load useful Materials
