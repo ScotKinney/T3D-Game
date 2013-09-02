@@ -149,8 +149,15 @@ function initClient()
 
    // Load up the Game GUIs
    exec("art/gui/PlayGui.gui");
-   exec("art/gui/ChatHud.gui");
-   exec("art/gui/playerList.gui");
+   exec("art/gui/chat/ChatHud.gui");
+   exec("./chatHud.cs");
+   exec("./chatParties.cs");
+   exec("art/gui/chat/chatPopup.gui");
+   exec("scripts/gui/chatPopupGui.cs");
+   exec("art/gui/userPopup.gui");
+   exec("scripts/gui/userPopupGui.cs");
+   exec("art/gui/chat/userList.gui");
+   exec("scripts/gui/userListGui.cs");
    exec("art/gui/hudlessGui.gui");
 
    // Load up the shell GUIs
@@ -162,8 +169,6 @@ function initClient()
    exec("art/gui/remapDlg.gui");
    
    // Gui scripts
-   exec("./playerList.cs");
-   exec("./chatHud.cs");
    exec("./messageHud.cs");
    exec("scripts/gui/playGui.cs");
    exec("scripts/gui/loadingGui.cs");
@@ -176,6 +181,7 @@ function initClient()
    exec("./serverConnection.cs");
    exec("./launchScript.cs");
    exec("./AlterVerse/ResolveIP.cs");
+   exec("./AlterVerse/clientChat.cs");
 
    // Load useful Materials
    exec("./shaders.cs");

@@ -36,18 +36,18 @@ function PlayGui::onWake(%this)
    // Message hud dialog
    if ( isObject( MainChatHud ) )
    {
+      $ChatAnchor = 40;
       Canvas.pushDialog( MainChatHud );
-      chatHud.attach(HudMessageVector);
-   }      
-   
+      MainChatHud.schedule(1000, setChatHudLength, $Pref::ChatHudLength );
+   }     
+
    // just update the action map here
+   unbindChatCommands();
    moveMap.push();
 
    // hack city - these controls are floating around and need to be clamped
    if ( isFunction( "refreshCenterTextCtrl" ) )
       schedule(0, 0, "refreshCenterTextCtrl");
-   if ( isFunction( "refreshBottomTextCtrl" ) )
-      schedule(0, 0, "refreshBottomTextCtrl");
 
    PutTLOnTop();  // Bring the TL gui back onto the canvas
 }
@@ -57,8 +57,11 @@ function PlayGui::onSleep(%this)
    if ( isObject( MainChatHud ) )
       Canvas.popDialog( MainChatHud );
    
+   $ChatAnchor = 0;
+   
    // pop the keymaps
    moveMap.pop();
+   bindChatCommands();
 }
 
 function PlayGui::clearHud( %this )

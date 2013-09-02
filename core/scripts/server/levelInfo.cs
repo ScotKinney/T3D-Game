@@ -55,3 +55,11 @@ function sendLoadInfoToClient( %client )
 
    messageClient( %client, 'MsgLoadInfoDone' );
 }
+
+// Additional fields needed by LevelInfo objects for AlterVerse
+/*
+displayName = "";  // Name to be displayed in chat and server list
+canTeleport = "0"; // Can server be double-clicked in server list (0 or 1)
+canBringHorses = "1"; // Can Horses be ridden on the level (0 or 1)
+hasTreasury = "0"; // Are there treasuries on the level (0 or 1)
+*/

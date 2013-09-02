@@ -409,3 +409,9 @@ function ShutdownDedicated()
    $TAP::isDedicated = false;
    schedule(1, 0, "quit");
 }
+
+function ConnectToChat()
+{
+   exec("scripts/server/AlterVerse/serverChat.cs");
+   connectServerChat();
+}

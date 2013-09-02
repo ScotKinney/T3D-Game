@@ -27,8 +27,6 @@
 
 //-----------------------------------------------------------------------------
 // Chat Hud profiles
-
-
 singleton GuiControlProfile (ChatHudEditProfile)
 {
    opaque = false;
@@ -45,6 +43,7 @@ singleton GuiControlProfile (ChatHudEditProfile)
    autoSizeHeight = true;
    tab = true;
    canKeyFocus = true;
+   cursorColor = "40 231 240 255";
 };
 
 singleton GuiControlProfile (ChatHudTextProfile)
@@ -85,6 +84,26 @@ singleton GuiControlProfile (ChatHudButtonProfile)
    fontColorSEL = "255 255 255 255";
 };
 
+singleton GuiControlProfile (TransparentButtonProfile)
+{
+   opaque = false;
+   fillColor = "255 255 255 0";
+   fillColorHL = "255 255 255 0";
+   fillColorSEL = "255 255 255 0";
+
+   border = 0;
+   borderThickness = 0;
+   borderColor = "225 225 225 0";
+   borderColorHL = "255 255 255 0";
+   borderColorNA = "155 155 155 0"; 
+
+   justify = "center";
+   fontColor = "225 225 225 0";
+   fontColorHL = "255 255 255 0";
+   fontColorNA = "155 155 155 0"; 
+   fontColorSEL = "255 255 255 0";
+};
+
 singleton GuiControlProfile ("ChatHudMessageProfile")
 {
    fontType = "Arial";
@@ -92,8 +111,8 @@ singleton GuiControlProfile ("ChatHudMessageProfile")
    fontColor = "44 172 181";      // default color (death msgs, scoring, inventory)
    fontColors[1] = "4 235 105";   // client join/drop, tournament mode
    fontColors[2] = "219 200 128"; // gameplay, admin/voting, pack/deployable
-   fontColors[3] = "77 253 95";   // team chat, spam protection message, client tasks
-   fontColors[4] = "40 231 240";  // global chat
+   fontColors[3] = "255 255 255";   // team chat, spam protection message, client tasks
+   fontColors[4] = "180 180 180";  // Grunt
    fontColors[5] = "200 200 50 200";  // used in single player game
    // WARNING! Colors 6-9 are reserved for name coloring
    autoSizeWidth = true;
@@ -117,6 +136,42 @@ singleton GuiControlProfile ("ChatHudBdrScrollProfile")
    borderColor = "225 225 225 225";
    bitmap = "core/art/gui/images/scrollBar";
    hasBitmapArray = true;
+};
+
+singleton GuiControlProfile( ChatTabBookProfile )
+{
+   fillColorHL = "100 100 100";
+   fillColorNA = "150 150 150";
+   fontColor = "30 30 30";
+   fontColorHL = "0 0 0";
+   fontColorNA = "50 50 50";
+   fontType = "Arial";
+   fontSize = 14;
+   //justify = "center";
+   justify = "left";
+   bitmap = "art/gui/chat/chattab";
+   tabWidth = 64;
+   tabHeight = 20;
+   tabPosition = "Top";
+   tabRotation = "Horizontal";
+   //textOffset = "0 -3";
+   textOffset = "6 0";
+   tab = true;
+   cankeyfocus = true;
+   //border = false;
+   //opaque = false;
+   category = "Core";
+};
+
+singleton GuiControlProfile( ChatTabPageProfile : GuiDefaultProfile )
+{
+   fontType = "Arial";
+   fontSize = 10;
+   justify = "center";
+   bitmap = "art/gui/chat/chattab";
+   opaque = false;
+   fillColor = "240 239 238";
+   category = "Core";
 };
 
 //-----------------------------------------------------------------------------

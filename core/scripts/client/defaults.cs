@@ -27,8 +27,10 @@ $pref::Player::zoomSpeed = 0;
 $pref::Net::LagThreshold = 400;
 $pref::Net::Port = 28000;
 
-$pref::HudMessageLogSize = 40;
+$pref::HudMessageLogSize = 400;
 $pref::ChatHudLength = 1;
+$pref::ChatLogOn = 0;
+$pref::ChatLogName = "ChatLog.txt";
 
 $pref::Input::LinkMouseSensitivity = 1;
 // DInput keyboard, mouse, and joystick prefs

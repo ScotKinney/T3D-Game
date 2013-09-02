@@ -1,138 +1,40 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2012 GarageGames, LLC
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
-//-----------------------------------------------------------------------------
-
-//-----------------------------------------------------------------------------
 // Message Hud
 //-----------------------------------------------------------------------------
 
 // chat hud sizes in lines
+$outerChatLenY[0] = 0;
 $outerChatLenY[1] = 4;
 $outerChatLenY[2] = 9;
 $outerChatLenY[3] = 13;
+$numChatLengths = 4;
 
-// Only play sound files that are <= 5000ms in length.
-$MaxMessageWavLength = 5000;
+// All messages are stored in a MessageVector, the actual
+// MainChatHud only displays the contents of these vectors.
+// Create a message vector for each chat pane
+for ( %i = 0; %i < MainChatHud.numTabPages; %i++ )
+   MainChatHud.messageVec[%i] = new MessageVector();
+//new MessageVector(HudMessageVector);
 
-// Helper function to play a sound file if the message indicates.
-// Returns starting position of wave file indicator.
-function playMessageSound(%message, %voice, %pitch)
-{
-   // Search for wav tag marker.
-   %wavStart = strstr(%message, "~w");
-   if (%wavStart == -1)
-   {
-      return -1;
-   }
-
-   %wav = getSubStr(%message, %wavStart + 2, 1000);
-   
-   if (%voice !$= "")
-   {
-      %wavFile = "art/sound/voice/" @ %voice @ "/" @ %wav;
-   }
-   else
-      %wavFile = "art/sound/" @ %wav;
-   
-   if (strstr(%wavFile, ".wav") != (strlen(%wavFile) - 4))
-      %wavFile = %wavFile @ ".wav";
-
-   // XXX This only expands to a single filepath, of course; it
-   // would be nice to support checking in each mod path if we
-   // have multiple mods active.
-   %wavFile = ExpandFilename(%wavFile);
-
-   %wavSource = sfxCreateSource(AudioMessage, %wavFile);
-
-   if (isObject(%wavSource))
-   {
-      %wavLengthMS = %wavSource.getDuration() * %pitch;
-
-      if (%wavLengthMS == 0)
-         error("** WAV file \"" @ %wavFile @ "\" is nonexistent or sound is zero-length **");
-      else if (%wavLengthMS <= $MaxMessageWavLength)
-      {
-         if (isObject($ClientChatHandle[%sender]))
-            $ClientChatHandle[%sender].delete();
-
-         $ClientChatHandle[%sender] = %wavSource;
-
-         if (%pitch != 1.0)
-            $ClientChatHandle[%sender].setPitch(%pitch);
-
-         $ClientChatHandle[%sender].play();
-      }
-      else
-         error("** WAV file \"" @ %wavFile @ "\" is too long **");
-   }
-   else
-      error("** Unable to load WAV file : \"" @ %wavFile @ "\" **");
-
-   return %wavStart;
-}
-
-
-// All messages are stored in this HudMessageVector, the actual
-// MainChatHud only displays the contents of this vector.
-
-new MessageVector(HudMessageVector);
 $LastHudTarget = 0;
+$ChatAnchor = 0;
 
 
 //-----------------------------------------------------------------------------
 function onChatMessage(%message, %voice, %pitch)
 {
-   // XXX Client objects on the server must have voiceTag and voicePitch
-   // fields for values to be passed in for %voice and %pitch... in
-   // this example mod, they don't have those fields.
-
-   // Clients are not allowed to trigger general game sounds with their
-   // chat messages... a voice directory MUST be specified.
-   if (%voice $= "") {
-      %voice = "default";
-   }
-
-   // See if there's a sound at the end of the message, and play it.
-   if ((%wavStart = playMessageSound(%message, %voice, %pitch)) != -1) {
-      // Remove the sound marker from the end of the message.
-      %message = getSubStr(%message, 0, %wavStart);
-   }
-
-   // Chat goes to the chat HUD.
+   // Chat goes to the global pane.
    if (getWordCount(%message)) {
-      ChatHud.addLine(%message);
+      %message = "\c3 " @ getTimeStr() @ " - " @ %message;
+      MainChatHud.addLine(%message, "g", true);
    }
 }
 
 function onServerMessage(%message)
 {
-   // See if there's a sound at the end of the message, and play it.
-   if ((%wavStart = playMessageSound(%message)) != -1) {
-      // Remove the sound marker from the end of the message.
-      %message = getSubStr(%message, 0, %wavStart);
-   }
-
    // Server messages go to the chat HUD too.
    if (getWordCount(%message)) {
-      ChatHud.addLine(%message);
+      MainChatHud.addLine(%message, "g", true);
    }
 }
 
@@ -144,24 +46,105 @@ function onServerMessage(%message)
 
 function MainChatHud::onWake( %this )
 {
-   // set the chat hud to the users pref
-   %this.setChatHudLength( $Pref::ChatHudLength );
+   // Attach the message vectors to the controls
+   for ( %i = 0; %i < %this.numTabPages; %i++ )
+   {
+      %paneName = "pane" @ %i;
+      %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+      if ( isObject(%paneCtrl) )
+      {
+         %chatCtrl = %paneCtrl.findObjectByInternalName("chatHud", true);
+         if ( isObject(%chatCtrl) )
+            %chatCtrl.msgVec = %this.messageVec[%i];
+      }
+   }
+   %this.schedule(100, setChatHudLength, 0 );
+
+   // Initialize the chat log
+   if ( !%this.logInit )
+      %this.initChatLog();
+   %this.logInit = true;
+
+   // Make sure the text has been localized
+   if ( !%this.localized )
+      %this.localizeText();
 }
 
 
 //------------------------------------------------------------------------------
+function MainChatHud::localizeText( %this )
+{  // Replace all static text with localized versions
 
+   // Put the tab label on all of the tabs
+   for ( %i = 0; %i < %this.numTabPages; %i++ )
+   {
+      %paneName = "pane" @ %i;
+      %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+      if ( isObject(%paneCtrl) )
+         %paneCtrl.setText(guiStrings.chatTab[%i]);
+   }
+
+   // Panes with static content need updated too
+   %this.setPartyButtons();   // Text on party page buttons
+   ChatFriendsPage.localizeText();  // Text on friends page
+
+   // Don't do it again unless the language changes
+   %this.localized = true;
+}
+
+//------------------------------------------------------------------------------
 function MainChatHud::setChatHudLength( %this, %length )
 {
-   %textHeight = ChatHud.Profile.fontSize + ChatHud.lineSpacing;
+   %textHeight = ChatHudMessageProfile.fontSize;
    if (%textHeight <= 0)
       %textHeight = 12;
    %lengthInPixels = $outerChatLenY[%length] * %textHeight;
-   %chatMargin = getWord(OuterChatHud.extent, 1) - getWord(ChatScrollHud.Extent, 1)
-                  + 2 * ChatScrollHud.profile.borderThickness;
+   %chatMargin = 27;
+   if ( %length > 0 )
+      %chatMargin += 2;
    OuterChatHud.setExtent(firstWord(OuterChatHud.extent), %lengthInPixels + %chatMargin);
-   ChatScrollHud.scrollToBottom();
-   ChatPageDown.setVisible(false);
+   ChatTabBook.setExtent(firstWord(ChatTabBook.extent), %lengthInPixels + %chatMargin - 8);
+   
+   // Now resize all of the chat panes
+   %selectedPane = ChatTabBook.getSelectedPage();
+   for ( %i = 0; %i < MainChatHud.numTabPages; %i++ )
+   {
+      %paneName = "pane" @ %i;
+      %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+      if ( isObject(%paneCtrl) )
+      {
+         %paneCtrl.setVisible((%selectedPane == %i) && (%length > 0));
+         if ((%selectedPane == %i) && (%length > 0))
+            %paneCtrl.setNotify(false);
+
+         %paneCtrl.setExtent(firstWord(%paneCtrl.extent), %lengthInPixels+2);
+         %scrollCtrl = %paneCtrl.findObjectByInternalName("scrollControl", false);
+         if ( isObject(%scrollCtrl) )
+            %scrollCtrl.setExtent(firstWord(%scrollCtrl.extent), %lengthInPixels);
+
+         // Friend pane requires some special formatting
+         if ( %i == 4 )
+         {
+            %namesCtrl = %paneCtrl.findObjectByInternalName("friendScroll", false);
+            %namesCtrl.setExtent(firstWord(%namesCtrl.extent), %lengthInPixels);
+            %tgramCtrl = %paneCtrl.findObjectByInternalName("TelegramScroll", false);
+            %tgramCtrl.setExtent(firstWord(%tgramCtrl.extent), %lengthInPixels/2);
+            %scrollCtrl.setPosition(firstWord(%scrollCtrl.position), (%lengthInPixels/2 + 1));
+            %scrollCtrl.setExtent(firstWord(%scrollCtrl.extent), %lengthInPixels/2);
+         }
+      }
+   }
+   //ChatScrollHud.scrollToBottom();
+   //ChatPageDown.setVisible(false);
+
+   %this-->ExpandButton.setVisible(%length < ($numChatLengths - 1));
+   %this-->ShrinkButton.setVisible(%length > 0);
+
+   //epls
+   %h = getWord(Canvas.getExtent(),1);
+   %h = %h - getWord(OuterChatHud.getExtent(),1) - $ChatAnchor;
+   OuterChatHud.setPosition(getWord(OuterChatHud.getPosition(),0), %h);
+   %this.currentLength = %length;
 }
 
 
@@ -169,72 +152,105 @@ function MainChatHud::setChatHudLength( %this, %length )
 
 function MainChatHud::nextChatHudLen( %this )
 {
-   %len = $pref::ChatHudLength++;
-   if ($pref::ChatHudLength == 4)
-      $pref::ChatHudLength = 1;
-   %this.setChatHudLength($pref::ChatHudLength);
+   %len = %this.currentLength + 1;
+   if (%len >= $numChatLengths)
+      %len = 0;
+   $pref::ChatHudLength = %len;
+   %this.setChatHudLength(%len);
 }
 
-
-//-----------------------------------------------------------------------------
-// ChatHud methods
-// This is the actual message vector/text control which is part of
-// the MainChatHud dialog
-//-----------------------------------------------------------------------------
-
-//-----------------------------------------------------------------------------
-
-function ChatHud::addLine(%this,%text)
+function MainChatHud::lastChatHudLen( %this )
 {
-   //first, see if we're "scrolled up"...
-   %textHeight = %this.profile.fontSize + %this.lineSpacing;
-   if (%textHeight <= 0)
-      %textHeight = 12;
-      
-   %scrollBox = %this.getGroup();
-   %chatScrollHeight = getWord(%scrollBox.extent, 1) - 2 * %scrollBox.profile.borderThickness;
-   %chatPosition = getWord(%this.extent, 1) - %chatScrollHeight + getWord(%this.position, 1) - %scrollBox.profile.borderThickness;
-   %linesToScroll = mFloor((%chatPosition / %textHeight) + 0.5);
-   if (%linesToScroll > 0)
-      %origPosition = %this.position;
+   %len = %this.currentLength - 1;
+   if (%len < 0)
+      %len = $numChatLengths - 1;
+   $pref::ChatHudLength = %len;
+   %this.setChatHudLength(%len);
+}
 
-   //remove old messages from the top only if scrolled down all the way
-   while( !chatPageDown.isVisible() && HudMessageVector.getNumLines() && (HudMessageVector.getNumLines() >= $pref::HudMessageLogSize))
+//-----------------------------------------------------------------------------
+
+function MainChatHud::addLine(%this, %text, %channel, %notify, %skipLog)
+{
+   if ( %channel $= "" )
+      %channel = "a"; // If no channel is selected, put on the active pane
+   if ( %notify $= "" )
+      %notify = false; // No notification if not specified
+   if ( %skipLog $= "" )
+      %skipLog = false; // Log message unless explicitly skipped
+
+   // Find the active chat pane
+   %activePane = ChatTabBook.getSelectedPage();
+   if ((%activePane < 0) || (%activePane >= MainChatHud.numTabPages))
+      %activePane = 0;  // If none are active, use global pane as current
+
+   // Select the message vector and chat pane to put the text into
+   switch$(%channel)
    {
-      %tag = HudMessageVector.getLineTag(0);
+      case "g":  // Global chat pane
+         %tgtIdx = 0;
+      case "l":  // Local server chat pane
+         %tgtIdx = 1;
+      case "c":  // Clan chat pane
+         %tgtIdx = 2;
+      case "p":  // Party chat pane
+         %tgtIdx = 3;
+      case "f":  // Friend chat pane
+         %tgtIdx = 4;
+      default:   // Any others go to the currently active pane
+         %tgtIdx = ((%activePane < 4) ? %activePane : 0); // But not on friends
+   }
+   %paneName = "pane" @ %tgtIdx;
+   %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+   %paneTitle = %paneCtrl.text;
+
+   //remove old messages from the top if we exceed the maximum size
+   while( %this.messageVec[%tgtIdx].getNumLines() &&
+         (%this.messageVec[%tgtIdx].getNumLines() >= $pref::HudMessageLogSize))
+   {
+      %tag = %this.messageVec[%tgtIdx].getLineTag(0);
       if(%tag != 0)
          %tag.delete();
-      HudMessageVector.popFrontLine();
+      %this.messageVec[%tgtIdx].popFrontLine();
    }
 
    //add the message...
-   HudMessageVector.pushBackLine(%text, $LastHudTarget);
+   %this.messageVec[%tgtIdx].pushBackLine(%text, $LastHudTarget);
    $LastHudTarget = 0;
 
-   //now that we've added the message, see if we need to reset the position
-   if (%linesToScroll > 0)
-   {
-      chatPageDown.setVisible(true);
-      %this.position = %origPosition;
-   }
-   else
-      chatPageDown.setVisible(false);
+   if ( isObject(%this.file) && !%skipLog )
+      %this.logChatLine("[" @ %paneTitle @ "] " @ %text);
+
+   // Set the notification if called for
+   if (%notify && ((%this.currentLength == 0) || (%tgtIdx != %activePane)))
+      %paneCtrl.setNotify(true);
 }
 
 
 //-----------------------------------------------------------------------------
 
-function ChatHud::pageUp(%this)
+function MainChatHud::pageUp(%this)
 {
+   // Find the active chat pane
+   %activePane = ChatTabBook.getSelectedPage();
+   if ((%activePane < 0) || (%activePane >= %this.numTabPages) ||
+         ($pref::ChatHudLength == 0))
+      return;  // If none are active or chat is minimized, return
+
+   // Get the pane, scroll control and chat control
+   %paneName = "pane" @ %activePane;
+   %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+   %scrollCtrl = %paneCtrl.findObjectByInternalName("scrollControl", false);
+   %chatCtrl = %paneCtrl.findObjectByInternalName("chatHud", true);
+
    // Find out the text line height
-   %textHeight = %this.profile.fontSize + %this.lineSpacing;
+   %textHeight = ChatHudMessageProfile.fontSize;
    if (%textHeight <= 0)
       %textHeight = 12;
 
-   %scrollBox = %this.getGroup();
-
    // Find out how many lines per page are visible
-   %chatScrollHeight = getWord(%scrollBox.extent, 1) - 2 * %scrollBox.profile.borderThickness;
+   %chatScrollHeight = getWord(%scrollCtrl.extent, 1) -
+         (2 * %scrollCtrl.profile.borderThickness);
    if (%chatScrollHeight <= 0)
       return;
 
@@ -243,7 +259,8 @@ function ChatHud::pageUp(%this)
       %pageLines = 1;
 
    // See how many lines we actually can scroll up:
-   %chatPosition = -1 * (getWord(%this.position, 1) - %scrollBox.profile.borderThickness);
+   %chatPosition = -1 * (getWord(%chatCtrl.position, 1) -
+         %scrollCtrl.profile.borderThickness);
    %linesToScroll = mFloor((%chatPosition / %textHeight) + 0.5);
    if (%linesToScroll <= 0)
       return;
@@ -254,26 +271,38 @@ function ChatHud::pageUp(%this)
       %scrollLines = %linesToScroll;
 
    // Now set the position
-   %this.position = firstWord(%this.position) SPC (getWord(%this.position, 1) + (%scrollLines * %textHeight));
+   %chatCtrl.position = firstWord(%chatCtrl.position) SPC
+         (getWord(%chatCtrl.position, 1) + (%scrollLines * %textHeight));
 
    // Display the pageup icon
-   chatPageDown.setVisible(true);
+   //chatPageDown.setVisible(true);
 }
 
 
 //-----------------------------------------------------------------------------
 
-function ChatHud::pageDown(%this)
+function MainChatHud::pageDown(%this)
 {
+   // Find the active chat pane
+   %activePane = ChatTabBook.getSelectedPage();
+   if ((%activePane < 0) || (%activePane >= %this.numTabPages) ||
+         ($pref::ChatHudLength == 0))
+      return;  // If none are active or chat is minimized, return
+
+   // Get the pane, scroll control and chat control
+   %paneName = "pane" @ %activePane;
+   %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+   %scrollCtrl = %paneCtrl.findObjectByInternalName("scrollControl", false);
+   %chatCtrl = %paneCtrl.findObjectByInternalName("chatHud", true);
+
    // Find out the text line height
-   %textHeight = %this.profile.fontSize + %this.lineSpacing;
+   %textHeight = ChatHudMessageProfile.fontSize;
    if (%textHeight <= 0)
       %textHeight = 12;
 
-   %scrollBox = %this.getGroup();
-
    // Find out how many lines per page are visible
-   %chatScrollHeight = getWord(%scrollBox.extent, 1) - 2 * %scrollBox.profile.borderThickness;
+   %chatScrollHeight = getWord(%scrollCtrl.extent, 1) -
+         (2 * %scrollCtrl.profile.borderThickness);
    if (%chatScrollHeight <= 0)
       return;
 
@@ -282,7 +311,8 @@ function ChatHud::pageDown(%this)
       %pageLines = 1;
 
    // See how many lines we actually can scroll down:
-   %chatPosition = getWord(%this.extent, 1) - %chatScrollHeight + getWord(%this.position, 1) - %scrollBox.profile.borderThickness;
+   %chatPosition = getWord(%chatCtrl.extent, 1) - %chatScrollHeight +
+         getWord(%chatCtrl.position, 1) - %scrollCtrl.profile.borderThickness;
    %linesToScroll = mFloor((%chatPosition / %textHeight) + 0.5);
    if (%linesToScroll <= 0)
       return;
@@ -293,13 +323,14 @@ function ChatHud::pageDown(%this)
       %scrollLines = %linesToScroll;
 
    // Now set the position
-   %this.position = firstWord(%this.position) SPC (getWord(%this.position, 1) - (%scrollLines * %textHeight));
+   %chatCtrl.position = firstWord(%chatCtrl.position) SPC
+         (getWord(%chatCtrl.position, 1) - (%scrollLines * %textHeight));
 
    // See if we have should (still) display the pagedown icon
-   if (%scrollLines < %linesToScroll)
-      chatPageDown.setVisible(true);
-   else
-      chatPageDown.setVisible(false);
+   //if (%scrollLines < %linesToScroll)
+      //chatPageDown.setVisible(true);
+   //else
+      //chatPageDown.setVisible(false);
 }
 
 
@@ -309,15 +340,114 @@ function ChatHud::pageDown(%this)
 
 function pageUpMessageHud()
 {
-   ChatHud.pageUp();
+   MainChatHud.pageUp();
 }
 
 function pageDownMessageHud()
 {
-   ChatHud.pageDown();
+   MainChatHud.pageDown();
 }
 
 function cycleMessageHudSize()
 {
    MainChatHud.nextChatHudLen();
+}
+
+function MainChatHud::initChatLog(%this)
+{
+   if ( $pref::ChatLogOn )
+   {
+      %this.openChatLog();
+      %this.schedule(500, "addLine", chatStrings.chatLogOn, "a", false, true);
+   }
+   else
+      %this.schedule(500, "addLine", chatStrings.chatLogOff, "a", false, true);
+   return;
+}
+
+function MainChatHud::onRemove(%this)
+{
+   %this.closeChatLog();
+   return;
+}
+
+function MainChatHud::openChatLog(%this)
+{
+   %file = new FileObject();      
+   if(isObject(%file))
+   {
+      if ( !%file.openForAppend($pref::ChatLogName) )
+      {
+         %file.delete();
+         return;
+      }
+      %this.file = %file;
+      
+      %ltStr = getLocalTime();
+      %dateStr = GetWord(%ltStr,0) @ "/" @ GetWord(%ltStr,1) @ "/" @ GetWord(%ltStr,2);
+      %timeStr = GetWord(%ltStr,3) @ ":" @ GetWord(%ltStr,4) @ ":" @ GetWord(%ltStr,5);
+      %this.file.WriteLine(chatStrings.chatLogOpen @ %dateStr SPC %timeStr);
+   }
+   return;
+}
+
+function MainChatHud::closeChatLog(%this)
+{
+   if( isObject(%this.file) )
+   {
+      %ltStr = getLocalTime();
+      %dateStr = GetWord(%ltStr,0) @ "/" @ GetWord(%ltStr,1) @ "/" @ GetWord(%ltStr,2);
+      %timeStr = GetWord(%ltStr,3) @ ":" @ GetWord(%ltStr,4) @ ":" @ GetWord(%ltStr,5);
+      %this.file.WriteLine(chatStrings.chatLogClosed @ %dateStr SPC %timeStr);
+      %this.file.close();
+      %this.file.delete();
+      %this.file = -1;
+   }
+   return;
+}
+
+function MainChatHud::logChatLine(%this, %text)
+{  // Strip off any control or color characters
+   %text = stripChars(%text, "\cp\co\c0\c1\c2\c3\c4\c5\c6\c7\c8\c9");
+   %this.file.WriteLine(%text);
+}
+
+function MainChatHud::toggleChatLog(%this, %toggleVar)
+{
+   if ( %toggleVar )
+      $pref::ChatLogOn = !$pref::ChatLogOn;
+
+   if ( $pref::ChatLogOn )
+   {
+      %this.openChatLog();
+      %this.addLine(chatStrings.chatLogOn, "a", false, true);
+   }
+   else
+   {
+      %this.closeChatLog();
+      %this.addLine(chatStrings.chatLogOff, "a", false, true);
+   }
+}
+
+function ChatTabBook::onTabSelected(%this, %tabText, %tabIndex)
+{  // A new tab pane has been selected. If the chat is visible, turn off
+   // notifications for this pane,
+   if ( MainChatHud.currentLength > 0 )
+   {
+      %paneName = "pane" @ %tabIndex;
+      %paneCtrl = %this.findObjectByInternalName(%paneName, true);
+      %paneCtrl.setNotify(false);
+   }
+}
+
+function GuiMessageVectorCtrl::onWake(%this)
+{  // Make sure the message vector is attached
+   if ( %this.msgVec $= "" )
+      %this.msgVec = MainChatHud.messageVec[%this.vecIdx];
+   %ret = %this.attach(%this.msgVec);
+}
+
+function GuiMessageVectorCtrl::urlClickCallback(%this, %urlText)
+{  // Open a browser with the web page they clicked on.
+   gotoWebPage(%urlText);
 }

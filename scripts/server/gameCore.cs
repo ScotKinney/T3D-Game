@@ -552,55 +552,6 @@ function GameCore::onClientEnterGame(%game, %client)
 
    // Prepare the player object.
    %game.preparePlayer(%client);
-
-   // Inform the client of all the other clients
-   %count = ClientGroup.getCount();
-   for (%cl = 0; %cl < %count; %cl++)
-   {
-      %other = ClientGroup.getObject(%cl);
-      if ((%other != %client))
-      {
-         // These should be "silent" versions of these messages...
-         messageClient(%client, 'MsgClientJoin', "",
-            %other.playerName,
-            %other,
-            %other.sendGuid,
-            %other.team,
-            %other.score,
-            %other.kills,
-            %other.deaths,
-            %other.isAIControlled(),
-            %other.isAdmin,
-            %other.isSuperAdmin);
-      }
-   }
-
-   // Inform the client we've joined up
-   messageClient(%client,
-      'MsgClientJoin', '\c2Welcome to the Torque demo app %1.',
-      %client.playerName,
-      %client,
-      %client.sendGuid,
-      %client.team,
-      %client.score,
-      %client.kills,
-      %client.deaths,
-      %client.isAiControlled(),
-      %client.isAdmin,
-      %client.isSuperAdmin);
-
-   // Inform all the other clients of the new guy
-   messageAllExcept(%client, -1, 'MsgClientJoin', '\c1%1 joined the game.',
-      %client.playerName,
-      %client,
-      %client.sendGuid,
-      %client.team,
-      %client.score,
-      %client.kills,
-      %client.deaths,
-      %client.isAiControlled(),
-      %client.isAdmin,
-      %client.isSuperAdmin);
 }
 
 function GameCore::onClientLeaveGame(%game, %client)

@@ -158,16 +158,12 @@ function GameConnection::onLeaveMissionArea(%this)
 {
    // The control objects invoke this method when they
    // move out of the mission area.
-
-   messageClient(%this, 'MsgClientJoin', '\c2Now leaving the mission area!');
 }
 
 function GameConnection::onEnterMissionArea(%this)
 {
    // The control objects invoke this method when they
    // move back into the mission area.
-
-   messageClient(%this, 'MsgClientJoin', '\c2Now entering the mission area.');
 }
 
 //-----------------------------------------------------------------------------

@@ -553,12 +553,17 @@ function EditorGui::syncEditor( %this, %newEditor, %newEditorFailed )
 function EditorGui::onWake( %this )
 {
    EHWorldEditor.setStateOn( 1 );
-   
+
    // Notify the editor plugins that the editor has started.
-   
+
    foreach( %plugin in EditorPluginSet )
       %plugin.onEditorWake();
-   
+
+   // AlterVerse Script Modification (MAR) - Remove toggleCursor() bind in editor >>>
+   globalActionMap.unbind( mouse, button1);
+   unbindChatCommands();
+   // AlterVerse Script Modification (MAR) - Remove toggleCursor() bind in editor <<<
+
    // Push the ActionMaps in the order that we want to have them
    // before activating an editor plugin, so that if the plugin
    // installs an ActionMap, it will be highest on the stack.
@@ -588,17 +593,19 @@ function EditorGui::onWake( %this )
 function EditorGui::onSleep( %this )
 {
    // Deactivate the current editor plugin.
-   
    if( %this.currentEditor.isActivated )
       %this.currentEditor.onDeactivated();
-      
+
    // Remove the editor's ActionMaps.
-      
    EditorMap.pop();
    MoveMap.pop();
 
+   // AlterVerse Script Modification (MAR) - Remove toggleCursor() bind in editor >>>
+   globalActionMap.bind( mouse, button1, toggleCursor );
+   bindChatCommands();
+   // AlterVerse Script Modification (MAR) - Remove toggleCursor() bind in editor <<<
+
    // Notify the editor plugins that the editor will be closing.
-   
    foreach( %plugin in EditorPluginSet )
       %plugin.onEditorSleep();
             

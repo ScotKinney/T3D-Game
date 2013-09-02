@@ -1,0 +1,211 @@
+//-----------------------------------------------------------------------------
+// ChatPopup - General purpose info popup for chat system messages/requests
+//-----------------------------------------------------------------------------
+
+%guiContent = new GuiControl(ChatPopup) {
+   position = "0 0";
+   extent = "1440 900";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiModelessDialogProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      keepCursor = "1";
+
+   new GuiButtonCtrl() {
+      position = "0 0";
+      extent = "1440 900";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "TransparentButtonProfile";
+      visible = "1";
+      active = "1";
+      text = "";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      command = "ChatPopup.backgroundClick();";
+   };
+
+   new GuiBitmapBorderCtrl(ChatPopupFrame) {
+      position = "655 0";
+      extent = "130 100";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "AVToolbarBorderProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+      new GuiBitmapCtrl() {
+         bitmap = "core/art/gui/images/hudfill.png";
+         wrap = "0";
+         position = "4 4";
+         extent = "122 92";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         internalName = "backFill";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiTextCtrl() {
+         text = "Select Player";
+         maxLength = "1024";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "1";
+         anchorBottom = "0";
+         anchorLeft = "1";
+         anchorRight = "0";
+         position = "4 5";
+         extent = "122 16";
+         minExtent = "8 2";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "BCPanelTextCenterBold";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         internalName = "Title";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+
+      new GuiScrollCtrl() {
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "dynamic";
+         lockHorizScroll = "1";
+         lockVertScroll = "0";
+         constantThumbHeight = "0";
+         childMargin = "2 0";
+         mouseWheelScrollSpeed = "-1";
+         margin = "0 0 0 0";
+         padding = "0 0 0 0";
+         anchorTop = "0";
+         anchorBottom = "0";
+         anchorLeft = "0";
+         anchorRight = "0";
+         position = "5 23";
+         extent = "120 72";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "ChatHudBdrScrollProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "1";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+         internalName = "scrollControl";
+
+         new GuiDynamicCtrlArrayControl() {
+            colCount = "0";
+            colSize = "120";
+            rowCount = "0";
+            rowSize = "18";
+            rowSpacing = "0";
+            colSpacing = "0";
+            frozen = "0";
+            autoCellSize = "0";
+            fillRowFirst = "1";
+            dynamicSize = "1";
+            padding = "0 0 0 0";
+            position = "1 1";
+            extent = "120 10";
+            minExtent = "8 2";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            profile = "GuiDefaultProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            internalName = "ctrlArray";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+         };
+      };
+
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ChatHudButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         Position = "1 1";
+         Extent = "80 16";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         internalName = "PushBtn0";
+         command = "";
+      };   
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ChatHudButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         Position = "1 1";
+         Extent = "80 16";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         internalName = "PushBtn1";
+         command = "";
+      };   
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ChatHudButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         Position = "1 1";
+         Extent = "80 16";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         internalName = "PushBtn2";
+         command = "";
+      };   
+   };
+};

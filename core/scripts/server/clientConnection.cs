@@ -79,46 +79,10 @@ function GameConnection::onConnect( %client, %name )
    // 
    echo("CADD: " @ %client @ " " @ %client.getAddress());
 
-   // Inform the client of all the other clients
+   // Let the chat server know that the user is on this level
    %count = ClientGroup.getCount();
-   for (%cl = 0; %cl < %count; %cl++) {
-      %other = ClientGroup.getObject(%cl);
-      if ((%other != %client)) {
-         // These should be "silent" versions of these messages...
-         messageClient(%client, 'MsgClientJoin', "", 
-               %other.playerName,
-               %other,
-               %other.sendGuid,
-               %other.team,
-               %other.score, 
-               %other.isAIControlled(),
-               %other.isAdmin, 
-               %other.isSuperAdmin);
-      }
-   }
-
-   // Inform the client we've joined up
-   messageClient(%client,
-      'MsgClientJoin', 'Welcome to a Torque application %1.', 
-      %client.playerName, 
-      %client,
-      %client.sendGuid,
-      %client.team,
-      %client.score,
-      %client.isAiControlled(), 
-      %client.isAdmin, 
-      %client.isSuperAdmin);
-
-   // Inform all the other clients of the new guy
-   messageAllExcept(%client, -1, 'MsgClientJoin', '\c1%1 joined the game.', 
-      %client.playerName, 
-      %client,
-      %client.sendGuid,
-      %client.team,
-      %client.score,
-      %client.isAiControlled(), 
-      %client.isAdmin, 
-      %client.isSuperAdmin);
+   serverChat.sendGameCmd("addusr", $AlterVerse::serverId, %client.dbUserID,
+      %count, %client.CMDesi);
 
    // If the mission is running, go ahead download it to the client
    if ($missionRunning)
@@ -181,9 +145,12 @@ function isNameUnique(%name)
 function GameConnection::onDrop(%client, %reason)
 {
    %client.onClientLeaveGame();
-   
    removeFromServerGuidList( %client.guid );
-   messageAllExcept(%client, -1, 'MsgClientDrop', '\c1%1 has left the game.', %client.playerName, %client);
+
+   // Tell chat server to remove them from the local list
+   %count = ClientGroup.getCount() - 1; // They still show in the group, so subtract 1
+   serverChat.sendGameCmd("remusr", $AlterVerse::serverId, %client.dbUserID,
+      %count);
 
    removeTaggedString(%client.playerName);
    echo("CDROP: " @ %client @ " " @ %client.getAddress());

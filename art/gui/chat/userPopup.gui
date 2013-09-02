@@ -1,0 +1,63 @@
+//-----------------------------------------------------------------------------
+// UserPopup - Menu options when clicking on a player
+//-----------------------------------------------------------------------------
+
+%guiContent = new GuiControl(UserPopup) {
+   position = "0 0";
+   extent = "1440 900";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiModelessDialogProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      keepCursor = "1";
+
+   new GuiButtonCtrl() {
+      position = "0 0";
+      extent = "1440 900";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "TransparentButtonProfile";
+      visible = "1";
+      active = "1";
+      text = "";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      command = "UserPopup.backgroundClick();";
+   };
+
+	new GuiControl()
+	{
+      HorizSizing = "right";
+      VertSizing = "bottom";
+		extent = "100 64";
+		position = "100 100";
+		profile = "HudPopupFrameProfile";
+		tooltipProfile = "GuiToolTipProfile";
+		internalName = "PopupFrame";
+
+      new GuiTextListCtrl()
+      {
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         extent = "98 62";
+         position = "1 1";
+         profile = "HudPopupProfile";
+         tooltipProfile = "GuiToolTipProfile";
+         resizeCell = "1";
+         columns = "0";
+         fitParentWidth = "0";
+         clipColumnText = "0";
+         altCommand = "UserPopup.onClick();";
+         command = "UserPopup.onClick();";
+         internalName = "ActionList";
+      };
+	};
+};
