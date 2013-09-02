@@ -51,3 +51,30 @@
       opaque = "0";
       category = "AlterVerse";
    };
+
+   singleton GuiControlProfile (AVPanelText)
+   {
+      // fill color
+      fillColor = "239 237 222";
+
+      // border color
+      borderColor   = "138 134 122";
+
+      // font
+      fontType = "Arial";
+      fontSize = 14;
+      fontColor = "255 255 255";
+
+      category = "AlterVerse";
+   };
+   singleton GuiControlProfile (AVPanelTextCenter : AVPanelText)
+   {
+      justify = "center";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile(AVPanelTextCenterBold : AVPanelTextCenter)
+   {
+      fontType = "Arial Bold";
+   };
+

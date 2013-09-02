@@ -36,7 +36,7 @@ function PlayGui::onWake(%this)
    // Message hud dialog
    if ( isObject( MainChatHud ) )
    {
-      $ChatAnchor = 40;
+      $ChatAnchor = 0;//40;
       Canvas.pushDialog( MainChatHud );
       MainChatHud.schedule(1000, setChatHudLength, $Pref::ChatHudLength );
    }     

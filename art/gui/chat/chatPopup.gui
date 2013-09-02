@@ -80,7 +80,7 @@
          minExtent = "8 2";
          horizSizing = "right";
          vertSizing = "bottom";
-         profile = "BCPanelTextCenterBold";
+         profile = "AVPanelTextCenterBold";
          visible = "1";
          active = "1";
          tooltipProfile = "GuiToolTipProfile";

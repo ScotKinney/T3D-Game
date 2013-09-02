@@ -197,7 +197,7 @@ singleton GuiControlProfile ("HudTextProfile")
 
 singleton GuiControlProfile ("ChatHudBorderProfile")
 {
-   bitmap = "core/art/gui/images/chatHudBorderArray";
+   bitmap = "/art/gui/chat/chatHudBorderArray";
    hasBitmapArray = true;
    opaque = false;
 };
@@ -221,6 +221,74 @@ singleton GuiControlProfile ("CenterPrintTextProfile")
    fontType = "Arial";
    fontSize = 12;
    fontColor = "0 255 0";
+};
+
+// -----------------------------------------------------------------------------
+// HUD popup menu
+// -----------------------------------------------------------------------------
+singleton GuiControlProfile (HudPopupProfile)
+{
+   opaque = true;
+   mouseOverSelected = 1;
+   border = 0;
+   borderThickness = 0;
+   borderColor = "0 0 0 225";
+   borderColorHL = "100 100 100 255";
+   borderColorNA = "155 155 155 225"; 
+
+   fontType = "Arial";
+   fontSize = 14;
+   fontColor = "200 200 200 225";
+   fontColorHL = "255 255 255 255";
+   fontColorNA = "155 155 155 225"; 
+   fontColorSEL = "50 50 50 255";
+
+   fillColor = "0 0 0 225";
+   fillColorHL ="100 100 100 255";
+   fillColorSEL = "0 0 0 0";
+   fillColorNA = "0 0 0 0";
+};
+
+singleton GuiControlProfile (HudPopupFrameProfile)
+{
+   opaque = false;
+   border = 1;
+   borderThickness = 1;
+   borderColor = "225 225 225 225";
+   borderColorHL = "255 255 255 0";
+   borderColorNA = "155 155 155 225"; 
+
+   fillColor = "0 0 0 0";
+   fillColorHL ="0 0 0 0";
+   fillColorSEL = "0 0 0 0";
+   fillColorNA = "0 0 0 0";
+};
+
+// -----------------------------------------------------------------------------
+// HUD buttons
+// -----------------------------------------------------------------------------
+singleton GuiControlProfile (HudTextBtnProfile)
+{
+   opaque = false;
+   fillColor = "255 255 255 0";
+   fillColorHL = "255 255 255 0";
+   fillColorSEL = "255 255 255 0";
+
+   border = 0;
+   borderThickness = 0;
+
+   justify = "left";
+   fontType = "ArialBold";
+   fontSize = 14;
+   fontColor = "225 225 225 225";
+   fontColorHL = "255 255 255 255";
+   fontColorNA = "155 155 155 225"; 
+   fontColorSEL = "255 255 255 255";
+};
+
+singleton GuiControlProfile (HudTextBtnCenterProfile : HudTextBtnProfile)
+{
+   justify = "center";
 };
 
 // -----------------------------------------------------------------------------
