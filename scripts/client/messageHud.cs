@@ -19,29 +19,29 @@ function MessageHud::onWake(%this)
          %activePane = 0;  // If none are active, use global pane as current
 
       // If we're on the friends pane, it's an IM
-      if ( %activePane == 4 )
-      {
-         %playerID = ChatFriendsPage-->FriendNames.getSelectedId();
-
-         // Make sure there's a friend selected and they're online
-         if ((%playerID == -1) || (UserListGuiList.getRowNumById(%playerID) == -1))
-         {
-            %this.schedule(100, "close");
-            return;
-         }
-
-         %this.isIMHud = true;
-         %this.imTarget = %playerID;
-         %text = ChatFriendsPage-->FriendNames.getRowTextById(%playerID);
-         %paneTitle = getField(%text, 0);
-      }
-      else
-      {
+      //if ( %activePane == 4 )
+      //{
+         //%playerID = ChatFriendsPage-->FriendNames.getSelectedId();
+//
+         //// Make sure there's a friend selected and they're online
+         //if ((%playerID == -1) || (UserListGuiList.getRowNumById(%playerID) == -1))
+         //{
+            //%this.schedule(100, "close");
+            //return;
+         //}
+//
+         //%this.isIMHud = true;
+         //%this.imTarget = %playerID;
+         //%text = ChatFriendsPage-->FriendNames.getRowTextById(%playerID);
+         //%paneTitle = getField(%text, 0);
+      //}
+      //else
+      //{
          %paneName = "pane" @ %activePane;
          %paneCtrl = MainChatHud.findObjectByInternalName(%paneName, true);
          %paneTitle = %paneCtrl.text;
          %this.chatPane = %activePane;
-      }
+      //}
 
       MessageHud_Text.setValue(%paneTitle @ ":");
    }

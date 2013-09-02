@@ -50,7 +50,7 @@ function UserListGui::addUser(%this, %userName, %dbID, %skulls, %clanName)
    {
       UserListGuiList.addRow(%dbID, %text);
       %this.numPlayers++;
-      ServerListGui.updateTotal();
+      //ServerListGui.updateTotal();
    }
    else
       UserListGuiList.setRowById(%dbID, %text);

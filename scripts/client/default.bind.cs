@@ -558,8 +558,9 @@ function resizeMessageHud( %val )
       cycleMessageHudSize();
 }
 
-moveMap.bind(keyboard, u, toggleMessageHud );
-//moveMap.bind(keyboard, y, teamMessageHud );
+globalActionMap.bind(keyboard, enter, toggleMessageHud );
+moveMap.bind(keyboard, "enter", toggleMessageHud );
+moveMap.bind(keyboard, y, teamMessageHud );
 moveMap.bind(keyboard, "pageUp", pageMessageHudUp );
 moveMap.bind(keyboard, "pageDown", pageMessageHudDown );
 moveMap.bind(keyboard, "p", resizeMessageHud );

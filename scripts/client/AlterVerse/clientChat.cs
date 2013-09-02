@@ -39,13 +39,13 @@ function clientChat::onConnected(%this)
 	%this.regClient();
 	
 	// Clear lists since they will be updated by the chat server
-   ServerListGuiList.clear();
+   //ServerListGuiList.clear();
    UserListGuiList.clear();
    UserListGui.numPlayers = 0;
    %this.inParty = 0;
    %this.partyPending = "";
 
-   %this.friendsList = new ArrayObject();
+   //%this.friendsList = new ArrayObject();
    %this.partyList = new ArrayObject();
    %this.muteList = new ArrayObject();
 }
@@ -54,7 +54,7 @@ function clientChat::onDisconnect(%this)
 {
    error("Lost connection to chat server");
 
-   %this.friendsList.delete();
+   //%this.friendsList.delete();
    %this.partyList.delete();
    %this.muteList.delete();
 

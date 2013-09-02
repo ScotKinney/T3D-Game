@@ -86,7 +86,7 @@ function MainChatHud::localizeText( %this )
 
    // Panes with static content need updated too
    %this.setPartyButtons();   // Text on party page buttons
-   ChatFriendsPage.localizeText();  // Text on friends page
+   //ChatFriendsPage.localizeText();  // Text on friends page
 
    // Don't do it again unless the language changes
    %this.localized = true;
@@ -123,15 +123,15 @@ function MainChatHud::setChatHudLength( %this, %length )
             %scrollCtrl.setExtent(firstWord(%scrollCtrl.extent), %lengthInPixels);
 
          // Friend pane requires some special formatting
-         if ( %i == 4 )
-         {
-            %namesCtrl = %paneCtrl.findObjectByInternalName("friendScroll", false);
-            %namesCtrl.setExtent(firstWord(%namesCtrl.extent), %lengthInPixels);
-            %tgramCtrl = %paneCtrl.findObjectByInternalName("TelegramScroll", false);
-            %tgramCtrl.setExtent(firstWord(%tgramCtrl.extent), %lengthInPixels/2);
-            %scrollCtrl.setPosition(firstWord(%scrollCtrl.position), (%lengthInPixels/2 + 1));
-            %scrollCtrl.setExtent(firstWord(%scrollCtrl.extent), %lengthInPixels/2);
-         }
+         //if ( %i == 4 )
+         //{
+            //%namesCtrl = %paneCtrl.findObjectByInternalName("friendScroll", false);
+            //%namesCtrl.setExtent(firstWord(%namesCtrl.extent), %lengthInPixels);
+            //%tgramCtrl = %paneCtrl.findObjectByInternalName("TelegramScroll", false);
+            //%tgramCtrl.setExtent(firstWord(%tgramCtrl.extent), %lengthInPixels/2);
+            //%scrollCtrl.setPosition(firstWord(%scrollCtrl.position), (%lengthInPixels/2 + 1));
+            //%scrollCtrl.setExtent(firstWord(%scrollCtrl.extent), %lengthInPixels/2);
+         //}
       }
    }
    //ChatScrollHud.scrollToBottom();
@@ -195,8 +195,8 @@ function MainChatHud::addLine(%this, %text, %channel, %notify, %skipLog)
          %tgtIdx = 2;
       case "p":  // Party chat pane
          %tgtIdx = 3;
-      case "f":  // Friend chat pane
-         %tgtIdx = 4;
+      //case "f":  // Friend chat pane
+         //%tgtIdx = 4;
       default:   // Any others go to the currently active pane
          %tgtIdx = ((%activePane < 4) ? %activePane : 0); // But not on friends
    }

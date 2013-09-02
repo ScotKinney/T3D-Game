@@ -53,17 +53,17 @@ function UserPopup::showPopup(%this, %userID, %userName)
    %this.userName = %userName;
 
    // Friend options
-   %isFriend = (clientChat.friendsList.getIndexFromKey(%userID) > -1);
-   if ( %isFriend )
-   {  // User is a friend, so add all friend options
-      %this-->ActionList.addRow(1, guiStrings.userOption[1]); // Remove Friend
-      // Only add IM option if the friend is currently online
-      if (UserListGuiList.getRowNumById(%userID) != -1)
-         %this-->ActionList.addRow(2, guiStrings.userOption[2]); // Send IM
-      %this-->ActionList.addRow(3, guiStrings.userOption[3]); // Send Telegram
-   }
-   else
-      %this-->ActionList.addRow(0, guiStrings.userOption[0]); // Send Friend request
+   //%isFriend = (clientChat.friendsList.getIndexFromKey(%userID) > -1);
+   //if ( %isFriend )
+   //{  // User is a friend, so add all friend options
+      //%this-->ActionList.addRow(1, guiStrings.userOption[1]); // Remove Friend
+      //// Only add IM option if the friend is currently online
+      //if (UserListGuiList.getRowNumById(%userID) != -1)
+         //%this-->ActionList.addRow(2, guiStrings.userOption[2]); // Send IM
+      //%this-->ActionList.addRow(3, guiStrings.userOption[3]); // Send Telegram
+   //}
+   //else
+      //%this-->ActionList.addRow(0, guiStrings.userOption[0]); // Send Friend request
 
    // Party Options
    if ( clientChat.inParty == $currentPlayerID )
