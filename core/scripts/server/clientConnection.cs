@@ -139,12 +139,12 @@ function isNameUnique(%name)
 //
 function GameConnection::onDrop(%client, %reason)
 {
+   // Let login table know they're not on this server anymore
+   if(isObject(%client.pData))
+      %client.DisconnectUser();
+
    %client.onClientLeaveGame();
    removeFromServerGuidList( %client.guid );
-
-   // Let login table know they're not on this server anymore
-   if(isObject(%this.pData))
-      %this.DisconnectUser();
 
    // Tell chat server to remove them from the local list
    %count = ClientGroup.getCount() - 1; // They still show in the group, so subtract 1
