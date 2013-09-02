@@ -199,5 +199,4 @@ function GameConnection::syncClock(%client, %time)
 function GameConnection::incScore(%this,%delta)
 {
    %this.score += %delta;
-   messageAll('MsgClientScoreChanged', "", %this.score, %this);
 }

@@ -42,7 +42,7 @@ moveMap.bindCmd(keyboard, "escape", "", "handleEscape();");
 function showPlayerList(%val)
 {
    if (%val)
-      PlayerListGui.toggle();
+      UserListGui.toggle();
 }
 
 moveMap.bind( keyboard, F2, showPlayerList );

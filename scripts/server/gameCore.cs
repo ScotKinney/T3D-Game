@@ -696,25 +696,16 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
 function GameCore::incKills(%game, %client, %kill, %dontMessageAll)
 {
    %client.kills += %kill;
-   
-   if( !%dontMessageAll )
-      messageAll('MsgClientScoreChanged', "", %client.score, %client.kills, %client.deaths, %client);
 }
 
 function GameCore::incDeaths(%game, %client, %death, %dontMessageAll)
 {
    %client.deaths += %death;
-
-   if( !%dontMessageAll )
-      messageAll('MsgClientScoreChanged', "", %client.score, %client.kills, %client.deaths, %client);
 }
 
 function GameCore::incScore(%game, %client, %score, %dontMessageAll)
 {
    %client.score += %score;
-
-   if( !%dontMessageAll )
-      messageAll('MsgClientScoreChanged', "", %client.score, %client.kills, %client.deaths, %client);
 }
 
 function GameCore::getScore(%client) { return %client.score; }

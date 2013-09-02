@@ -230,20 +230,11 @@ function disconnectedCleanup()
    $lightingMission = false;
    $sceneLighting::terminateLighting = true;
    
-   // Clear misc script stuff
-   HudMessageVector.clear();
-   
    //
    LagIcon.setVisible(false);
-   PlayerListGui.clear();
    
    // Clear all print messages
-   clientCmdclearBottomPrint();
    clientCmdClearCenterPrint();
-
-   // Back to the launch screen
-   if (isObject( MainMenuGui ))
-      Canvas.setContent( MainMenuGui );
 
    // Before we destroy the client physics world
    // make sure all ServerConnection objects are deleted.

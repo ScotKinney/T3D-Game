@@ -500,7 +500,7 @@ $RemapCount++;
 $RemapName[$RemapCount] = "Resize Message Hud";
 $RemapCmd[$RemapCount] = "resizeMessageHud";
 $RemapCount++;
-$RemapName[$RemapCount] = "Show Scores";
+$RemapName[$RemapCount] = "Show User List";
 $RemapCmd[$RemapCount] = "showPlayerList";
 $RemapCount++;
 $RemapName[$RemapCount] = "Animation - Wave";

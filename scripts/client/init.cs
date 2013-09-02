@@ -161,7 +161,6 @@ function initClient()
    exec("art/gui/hudlessGui.gui");
 
    // Load up the shell GUIs
-   //exec("art/gui/endGameGui.gui");
    exec("art/gui/StartupGui.gui");           // Splash screens
    exec("scripts/gui/startupGui.cs");
    exec("art/gui/loadingGui.gui");
