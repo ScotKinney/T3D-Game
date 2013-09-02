@@ -106,6 +106,11 @@ function GameConnection::AuthenticateUser(%client)
    // and we're through!
    echo(%client SPC %netAddress SPC %name SPC "successfully authenticated.");
       
+   // Let the chat server know that the user is on this level
+   %count = ClientGroup.getCount();
+   serverChat.sendGameCmd("addusr", $AlterVerse::serverId, %client.dbUserID,
+      %count, %client.CMDesi);
+
    return "";
 }
 

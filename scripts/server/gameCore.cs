@@ -340,9 +340,6 @@ package GameCore
       {
          Game.onClientLeaveGame(%this);
       }
-
-      if(isObject(%this.pData))
-         %this.DisconnectUser();
    }
 
    // Need to supersede this "core" function in order to properly re-spawn a

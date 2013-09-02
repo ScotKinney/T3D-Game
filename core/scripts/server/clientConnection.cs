@@ -79,11 +79,6 @@ function GameConnection::onConnect( %client, %name )
    // 
    echo("CADD: " @ %client @ " " @ %client.getAddress());
 
-   // Let the chat server know that the user is on this level
-   %count = ClientGroup.getCount();
-   serverChat.sendGameCmd("addusr", $AlterVerse::serverId, %client.dbUserID,
-      %count, %client.CMDesi);
-
    // If the mission is running, go ahead download it to the client
    if ($missionRunning)
    {
@@ -146,6 +141,10 @@ function GameConnection::onDrop(%client, %reason)
 {
    %client.onClientLeaveGame();
    removeFromServerGuidList( %client.guid );
+
+   // Let login table know they're not on this server anymore
+   if(isObject(%this.pData))
+      %this.DisconnectUser();
 
    // Tell chat server to remove them from the local list
    %count = ClientGroup.getCount() - 1; // They still show in the group, so subtract 1
