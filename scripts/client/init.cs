@@ -154,7 +154,7 @@ function initClient()
    exec("./chatParties.cs");
    exec("art/gui/chat/chatPopup.gui");
    exec("scripts/gui/chatPopupGui.cs");
-   exec("art/gui/userPopup.gui");
+   exec("art/gui/chat/userPopup.gui");
    exec("scripts/gui/userPopupGui.cs");
    exec("art/gui/chat/userList.gui");
    exec("scripts/gui/userListGui.cs");
