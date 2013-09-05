@@ -69,9 +69,9 @@ function loadMaterials()
    }
 }
 
-function loadWorldMaterials(%worldName)
+function loadWorldMaterials()
 {
-   %filter = "art/worlds/" @ %worldName @ "/*/materials.cs";
+   %filter = $WorldPath @ "/*/materials.cs";
    // Load any materials files for which we only have DSOs.
    for( %file = findFirstFile( %filter @ ".dso" );
         %file !$= "";
@@ -295,7 +295,7 @@ function initWorld(%worldName)
    $instantGroup = %matGroup;
 
    reloadTextures();
-   loadWorldMaterials(%worldName);
+   loadWorldMaterials();
    reInitMaterials();
 
    $instantGroup = %oldGroup;

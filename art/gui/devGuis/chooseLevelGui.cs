@@ -54,7 +54,7 @@ function StartLevel( %mission, %hostingType )
    $WorldPath = "art/worlds/" @ %missionRoot;
    $AlterVerse::serverName = "dev" @ %missionRoot;
    initWorld(%missionRoot);
-   %ambienceFile = $WorldPath @ "/" @ %missionRoot @ "Ambiences.cs";
+   %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
    if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
       exec(%ambienceFile);
 

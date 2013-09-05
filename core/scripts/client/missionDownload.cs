@@ -37,6 +37,11 @@
 
 function clientCmdMissionStartPhase1(%seq, %missionName, %musicTrack)
 {
+   // Make the world path from the level path and load any client data
+   %missionRoot = FileBase(%missionName);
+   $WorldPath = "art/worlds/" @ %missionRoot;
+   LoadMissionClientData(%missionRoot);
+
    // These need to come after the cls.
    echo ("*** New Mission: " @ %missionName);
    echo ("*** Phase 1: Download Datablocks & Targets");
@@ -122,6 +127,36 @@ function sceneLightingComplete()
 //----------------------------------------------------------------------------
 // Helper functions
 //----------------------------------------------------------------------------
+
+function LoadMissionClientData(%worldName)
+{
+	// Mount and initialize the world files
+	initWorld(%worldName);
+
+   // Create a group for the audio data blocks   
+   %oldGroup = $instantGroup;
+   $instantGroup = 0;
+   if( isObject( ClientMissionSounds ) )
+      ClientMissionSounds.delete();
+   %missionGroup = new SimGroup(ClientMissionSounds);
+   $instantGroup = %missionGroup;
+
+   // Any SFXProfiles that the mission references by name on the server
+   %sfxFile = $WorldPath @ "SFXProfiles.cs";
+   if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+      exec(%sfxFile);
+
+   // All audio ambiences used in the mission
+   if( !$TAP::DesignMode )
+   {  // If this is the server and we're launching the local client (design
+      // mode), the ambience files were loaded by the server before the mission.
+      %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
+      if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
+         exec(%ambienceFile);
+   }
+
+   $instantGroup = %oldGroup;
+}
 
 function connect(%server)
 {

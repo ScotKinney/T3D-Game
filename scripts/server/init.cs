@@ -109,11 +109,13 @@ function initDedicated()
    // Make sure this variable reflects the correct state.
    $TAP::isDedicated = true;
 
-   //Geev 5/23/2013	
-   loadMaterials();
-
    // The server isn't started unless a mission has been specified.
-   if ($missionArg !$= "") {
+   if ($missionArg !$= "")
+   {
+      //Geev 5/23/2013	
+      loadMaterials();
+      loadWorldMaterials();
+
       createServer("MultiPlayer", $missionArg);
 
       //Geev 5/23/2013	  

@@ -197,7 +197,7 @@ singleton GuiControlProfile ("HudTextProfile")
 
 singleton GuiControlProfile ("ChatHudBorderProfile")
 {
-   bitmap = "/art/gui/chat/chatHudBorderArray";
+   bitmap = "art/gui/chat/chatHudBorderArray";
    hasBitmapArray = true;
    opaque = false;
 };

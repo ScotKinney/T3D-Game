@@ -98,7 +98,8 @@ function onStart()
       if ( $missionArg !$= "" )
       {
          %missionRoot = FileBase($missionArg);
-         %ambienceFile = "art/Worlds/" @ %missionRoot @ "/audioAmbiences.cs";
+         $WorldPath = "art/worlds/" @ %missionRoot;
+         %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
          if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
             exec(%ambienceFile);
       }
