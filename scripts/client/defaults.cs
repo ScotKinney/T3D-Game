@@ -30,7 +30,7 @@ $PhysXLogWarnings = false;
 
 // Initial TAP-Link settings
 $pref::TL::isShown = 1;    // Show the TL gui inside game
-$pref::TL::isDocked = 0;   // Full size, not docked
+$pref::TL::isDocked = 1;   // Docked, not Full size
 $pref::TL::dockedPos = "0 0";
 $pref::TL::framePos = "0 0";
 
