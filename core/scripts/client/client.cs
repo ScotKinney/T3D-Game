@@ -63,3 +63,18 @@ function netSimulateLag( %msDelay, %packetLossPercent )
    commandToServer( 'NetSimulateLag', %msDelay, %packetLossPercent );
 }
 
+//----------------------------------------------------------------------------
+// Give the game scripts a chance to disconnect from the chat/login servers
+//----------------------------------------------------------------------------
+function DoGameLogout()
+{
+   $TAP::isLoggedIn = false;
+   if (isObject(clientChat) && clientChat.connected)
+   {
+      sendChatCommand("bye");
+      schedule(1000, 0, "quit");
+   }
+   else
+      schedule(1, 0, "quit");
+}
+

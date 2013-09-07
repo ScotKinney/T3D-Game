@@ -287,7 +287,7 @@ package EditorDisconnectOverride
    {
       if ( isObject( Editor ) && Editor.isEditorEnabled() )
       {
-         if (isObject( MainMenuGui ))
+         //if (isObject( MainMenuGui ))
             Editor.close("MainMenuGui");
       }
       

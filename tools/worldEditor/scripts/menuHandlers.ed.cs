@@ -140,7 +140,7 @@ function EditorClearDirty()
 
 function EditorQuitGame()
 {
-   if( EditorIsDirty() && !isWebDemo())
+   if( EditorIsDirty() )
    {
       MessageBoxYesNoCancel("Level Modified", "Would you like to save your changes before quitting?", "EditorSaveMissionMenu(); quit();", "quit();", "" );
    }

@@ -2118,7 +2118,8 @@ function Editor::open(%this)
 function Editor::close(%this, %gui)
 {
    %this.editorDisabled();
-   Canvas.setContent(%gui);
+   if(isObject(%gui))
+      Canvas.setContent(%gui);
    if(isObject(MessageHud))
       MessageHud.close();   
    EditorGui.writeCameraSettings();

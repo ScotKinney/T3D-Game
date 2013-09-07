@@ -66,8 +66,6 @@ function clientChat::onDisconnect(%this)
 function clientChat::regClient(%this)
 {
    // send the register command
-	if ( $AlterVerse::Exec::Server )
-      echo("Sending chat registration");
 	%this.send("regclient|" @ $currentPlayerID @ "|" @ $pref::Player::ClanID @
 	   "|" @ $pref::Player::SkullLevel @ "|" @ $IsSubscriber @ "|" @ $currentUsername @ "\n");	
 }
@@ -75,9 +73,6 @@ function clientChat::regClient(%this)
 // Process a line sent from the chat server
 function clientChat::onLine(%this, %line)
 {
-	if ( $AlterVerse::Exec::Server )
-      echo("Received line: " @ %line);
-
    // Get the command off the front of the line and call the handler function
    %command = getBarWord(%line, 0);
 
