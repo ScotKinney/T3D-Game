@@ -1,6 +1,6 @@
 function showImageCaptureWin(%val)
 {
-   if ( %val )
+   if ( %val && $TAP::isDev )
    {
       if ( !isObject(ImageCaptureWin) )
          exec("tools/imageCapture/imageCaptureWinGui.cs");

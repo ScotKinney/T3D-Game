@@ -1,7 +1,7 @@
 // BloodClans Script Modification (MAR) - Option tool >>>
 function runOptionTool(%val)
 {
-   if ( !%val )
+   if ( !%val || !$TAP::isDev )
       return;
 
    //if ( !checkToolPermission(6, "use the Character Customization Option Tool") )

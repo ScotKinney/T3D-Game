@@ -1,7 +1,7 @@
 // BloodClans Script Modification (MAR) - Tint tool >>>
 function runTintTool(%val)
 {
-   if ( !%val )
+   if ( !%val || !$TAP::isDev )
       return;
 
    //if ( !checkToolPermission(6, "use the Character Customization Option Tool") )
