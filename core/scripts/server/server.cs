@@ -281,6 +281,13 @@ function RegisterServer()
    
    if ( $Server::DB::Remote )
    {
+      if ( $AlterVerse::serverOwner $= "" )
+      {
+         if ( $currentPlayerID $= "" )
+            $AlterVerse::serverOwner = "10";
+         else
+            $AlterVerse::serverOwner = $currentPlayerID;
+      }
       %args = "SvrName="@$AlterVerse::serverName@"&DspName="@$AlterVerse::displayName;
       %args = %args @ "&AIL=" @ $AlterVerse::allowInitialLogin;
       %args = %args @ "&lPrefix=" @ $AlterVerse::serverPrefix;
@@ -288,7 +295,7 @@ function RegisterServer()
       %args = %args @ "&wType=" @ $AlterVerse::worldType;
       %args = %args @ "&wID=" @ $AlterVerse::worldID;
       %args = %args @ "&kdom=" @ $AlterVerse::kingdom;
-      %args = %args @ "&wOwner=" @ $currentPlayerID;
+      %args = %args @ "&wOwner=" @ $AlterVerse::serverOwner;
       %args = %args @ "&port=" @ $AlterVerse::serverPort;
       if ( $AlterVerse::serverAddress !$= "" )
          %args = %args @ "&addr=" @ $AlterVerse::serverAddress;
@@ -350,6 +357,9 @@ function RegisterServer()
       %result.delete();
    }
 
+   if ( $AlterVerse::serverOwner $= "" )
+      $AlterVerse::serverOwner = "10";
+
    // create a new record for this server
    DB::Insert("AVServerList",
       "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverDesi, serverOwner, worldType, worldID, kingdom, manifestRoot, manifestFile",
@@ -359,7 +369,7 @@ function RegisterServer()
       "'"@$AlterVerse::displayName@"'," @
       "'"@$AlterVerse::serverPrefix@"'," @
       "'"@$AlterVerse::serverDesi@"'," @
-      "'10'," @
+      "'"@$AlterVerse::serverOwner@"'," @
       "'"@$AlterVerse::worldType@"'," @
       "'"@$AlterVerse::worldID@"'," @
       "'"@$AlterVerse::kingdom@"'," @
@@ -372,6 +382,14 @@ function RegisterServer()
    /*WHERE*/            "serverName='"@$AlterVerse::serverName@"'");
    $AlterVerse::serverId = %result.serverId;
    echo("Server ID = " @ $AlterVerse::serverId);
+   %result.delete();
+
+   // and owner name
+   %result = DB::Select("username",
+   /*FROM*/             "nuke_users",
+   /*WHERE*/            "user_id='"@$AlterVerse::serverOwner@"'");
+   $AlterVerse::ownerName = %result.username;
+   echo("Owner Name = " @ $AlterVerse::ownerName);
    %result.delete();
 
    // we will perform a heartbeat in 90 seconds

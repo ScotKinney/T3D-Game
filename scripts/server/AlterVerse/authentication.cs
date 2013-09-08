@@ -15,6 +15,7 @@ function GameConnection::AuthenticateUser(%client)
       %args = %args @ "&uHash=" @ %client.conHash;
       %args = %args @ "&isTrans=" @ %client.transfering;
       %args = %args @ "&uAddr=" @ NextToken(%client.getAddress(),"",":");
+      %args = %args @ "&sOwner=" @ $AlterVerse::serverOwner;
       remoteDBCommand("AuthenticateUser", %args, %client);
       return "";
    }
@@ -101,6 +102,22 @@ function GameConnection::AuthenticateUser(%client)
       if ( %dbCMDesi !$= "" )
          %client.CMDesi = %dbCMDesi;
       echo(">>> Player is SUBSCRIBER:" SPC %name SPC "as" SPC %client.CMDesi);
+   }
+
+   // Get the players build rights
+   if ( $AlterVerse::serverOwner $= %dbUserID )
+      %client.buildRights = 1;
+   else
+   {
+      %result = DB::Select("buildRights",
+      /*FROM*/             "AVBuildRights",
+      /*WHERE*/            "ownerID='" @ $AlterVerse::serverOwner @
+                           "' AND playerID='" @ %dbUserID @ "'");
+      if(%result.getNumRows() > 0)
+         %client.buildRights = %this.buildRights;
+      else
+         %client.buildRights = 0;
+      %result.delete();
    }
 
    // and we're through!

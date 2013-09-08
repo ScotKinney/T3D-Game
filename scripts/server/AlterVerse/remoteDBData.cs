@@ -55,6 +55,7 @@ function remoteDBData::saveRegistrationData( %this )
    $AlterVerse::serverId = %this.serverID;
    $AlterVerse::serverName = %this.serverName;
    $Pref::Server::Name = %this.serverName;
+   $AlterVerse::ownerName = %this.ownerName;
 
    // If we have a local client connected, authenticate them now
    if ( isObject(LocalClientConnection) )
@@ -86,6 +87,7 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.skullLevel = %this.skullLevel;
    %client.wealth = %this.wealth;
    %client.weapon = %this.weapon;
+   %client.buildRights = %this.rights;
 
    // Let the chat server know that the user is on this level
    %count = ClientGroup.getCount();

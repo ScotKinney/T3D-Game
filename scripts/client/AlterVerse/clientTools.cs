@@ -12,11 +12,27 @@ function worldEditorToggle(%make)
    if( !$TAP::onServer || !%make )
       return;
 
-   checkToolsLoaded("world");
+   if ( isObject( Editor ) && EditorIsActive() )
+      toggleEditor();
+   else
+      commandToServer('GetBuildRights');
 }
 
 GlobalActionMap.bind( keyboard, "f10", guiEditorToggle );
 GlobalActionMap.bind(keyboard, "f11", worldEditorToggle);
+
+function clientCmdSetBuildRights(%rights, %ownerName)
+{
+   $TAP::BuildRights = %rights;
+   if ( %rights > 0 )
+      checkToolsLoaded("world");
+   else
+   {
+      %message = "You do not have build rights on this server.\n" @
+         "Request build rights from " @ %ownerName;
+      MessageBoxOK("Denied!", %message);
+   }
+}
 
 function toggleToolNow(%type)
 {

@@ -180,6 +180,22 @@ function parseArgs()
             }
 
          //--------------------
+         // The user ID for this servers owner
+         case "-owner":
+            $argUsed[%i]++;
+            if(%hasNextArg)
+            {
+               $AlterVerse::serverOwner = %nextArg;
+               $argUsed[%i+1]++;
+               %i++;
+            }
+            else
+            {
+               $AlterVerse::serverOwner = "10";
+               error("-owner used without specifying a value");
+            }
+
+         //--------------------
          // The text designation for this server
          case "-desi":
             $argUsed[%i]++;
