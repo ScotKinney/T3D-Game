@@ -68,23 +68,20 @@ function GuiEditContent( %content )
    $InGuiEditor = true;
 }
 
-function toggleGuiEditor( %make )
+function toggleGuiEditor()
 {
-   if( %make )
-   {
-      if( EditorIsActive() && !GuiEditor.toggleIntoEditorGui )
-         toggleEditor( true );
-         
-      GuiEdit();
-      
-	  // Cancel the scheduled event to prevent
-	  // the level from cycling after it's duration
-	  // has elapsed.
-      cancel($Game::Schedule);
-   }
+   if( EditorIsActive() && !GuiEditor.toggleIntoEditorGui )
+      toggleEditor( true );
+
+   GuiEdit();
+
+   // Cancel the scheduled event to prevent
+   // the level from cycling after it's duration
+   // has elapsed.
+   cancel($Game::Schedule);
 }
 
-GlobalActionMap.bind( keyboard, "f10", toggleGuiEditor );
+//GlobalActionMap.bind( keyboard, "f10", toggleGuiEditor );
 
 //=============================================================================================
 //    Methods.

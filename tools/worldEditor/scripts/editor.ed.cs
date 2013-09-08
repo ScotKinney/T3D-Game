@@ -97,19 +97,21 @@ function Editor::checkActiveLoadDone()
 }
 
 //------------------------------------------------------------------------------
-function toggleEditor(%make)
+function toggleEditor()
 {
-//Geev 5/23/2013	
-   if ($IsOneWorld)
-      {
-      forestEditorToolBar.visible = false;
-      TerrainEditorGrabTerrain.visible = false;
-      PrefabBar1.visible = false;
-      PrefabBar2.visible = false;
-      TerrainEditorGrabTerrain.visible = false;
-      btnGrabTerrain.enabled = false;
-      }
-   else
+   if (Canvas.isFullscreen())
+   {
+      MessageBoxOK("Windowed Mode Required", "Please switch to windowed mode to access the Mission Editor.");
+      return;
+   }
+   
+   %timerId = startPrecisionTimer();
+
+   if( $InGuiEditor )
+      GuiEdit();
+
+//Geev 5/23/2013			 
+   if (!$IsOneWorld)
    {
       forestEditorToolBar.visible = true;
       TerrainEditorGrabTerrain.visible = true;
@@ -117,149 +119,117 @@ function toggleEditor(%make)
       PrefabBar2.visible = true;
       TerrainEditorGrabTerrain.visible = true;
       btnGrabTerrain.enabled = true;
-   }
-   if (Canvas.isFullscreen())
-   {
-      MessageBoxOK("Windowed Mode Required", "Please switch to windowed mode to access the Mission Editor.");
-      return;
-   }
-   
-   if (%make)
-   {      
-      %timerId = startPrecisionTimer();
-      
-      if( $InGuiEditor )
-         GuiEdit();
-//Geev 5/23/2013			 
-         if (!$IsOneWorld) {
-      if( !$missionRunning )
+
+      pushInstantGroup();
+
+      if ( !isObject( Editor ) )
       {
-         // Flag saying, when level is chosen, launch it with the editor open.
-         ChooseLevelDlg.launchInEditor = true;
-         Canvas.pushDialog( ChooseLevelDlg );         
+         Editor::create();
+         MissionCleanup.add( Editor );
+         MissionCleanup.add( Editor.getUndoManager() );
       }
-      else
+         
+      if( EditorIsActive() )
       {
-         pushInstantGroup();
-         
-         if ( !isObject( Editor ) )
+         if (theLevelInfo.type $= "DemoScene") 
          {
-            Editor::create();
-            MissionCleanup.add( Editor );
-            MissionCleanup.add( Editor.getUndoManager() );
-         }
-         
-         if( EditorIsActive() )
-         {
-            if (theLevelInfo.type $= "DemoScene") 
-            {
-               commandToServer('dropPlayerAtCamera');
-               Editor.close("SceneGui");   
-            } 
-            else 
-            {
-               Editor.close("PlayGui");
-            }
-         }
+            commandToServer('dropPlayerAtCamera');
+            Editor.close("SceneGui");   
+         } 
          else 
-         {
-            if ( !$GuiEditorBtnPressed )
-            {
-               canvas.pushDialog( EditorLoadingGui );
-               canvas.repaint();
-            }
-            else
-            {
-               $GuiEditorBtnPressed = false;
-            }
-            
-            Editor.open();
-			
-			// Cancel the scheduled event to prevent
-			// the level from cycling after it's duration
-			// has elapsed.
-            cancel($Game::Schedule);
-            
-            if (theLevelInfo.type $= "DemoScene")
-               commandToServer('dropCameraAtPlayer', true);
-               
-            
-            canvas.popDialog(EditorLoadingGui);
-         }
-         
-         popInstantGroup();
+            Editor.close("PlayGui");
       }
+      else 
+      {
+         if ( !$GuiEditorBtnPressed )
+         {
+            canvas.pushDialog( EditorLoadingGui );
+            canvas.repaint();
+         }
+         else
+            $GuiEditorBtnPressed = false;
+
+         Editor.open();
+			
+         // Cancel the scheduled event to prevent
+         // the level from cycling after it's duration
+         // has elapsed.
+         cancel($Game::Schedule);
+
+         if (theLevelInfo.type $= "DemoScene")
+            commandToServer('dropCameraAtPlayer', true);
+
+
+         canvas.popDialog(EditorLoadingGui);
+      }
+
+      popInstantGroup();
+
 //Geev 5/23/2013		  
    }
    else
+   {
+      forestEditorToolBar.visible = false;
+      TerrainEditorGrabTerrain.visible = false;
+      PrefabBar1.visible = false;
+      PrefabBar2.visible = false;
+      TerrainEditorGrabTerrain.visible = false;
+      btnGrabTerrain.enabled = false;
+
+      pushInstantGroup();
+         
+      if ( !isObject( Editor ) )
       {
-         pushInstantGroup();
+         Editor::create();
+         ClientMissionCleanup.add( Editor );
+         ClientMissionCleanup.add( Editor.getUndoManager() );
+      }
          
-         if ( !isObject( Editor ) )
+      if( EditorIsActive() )
+      {
+         if (theLevelInfo.type $= "DemoScene") 
          {
-            Editor::create();
-            if (!$IsOneWorld)
-               {
-               MissionCleanup.add( Editor );
-               MissionCleanup.add( Editor.getUndoManager() );
-               }
-            else 
-               {
-               ClientMissionCleanup.add( Editor );
-               ClientMissionCleanup.add( Editor.getUndoManager() );
-               }
-         }
-         
-         if( EditorIsActive() )
-         {
-            if (theLevelInfo.type $= "DemoScene") 
-            {
-               commandToServer('dropPlayerAtCamera');
-               Editor.close("SceneGui");   
-            } 
-            else 
-            {
-               Editor.close("PlayGui");
-            }
-         }
+            commandToServer('dropPlayerAtCamera');
+            Editor.close("SceneGui");   
+         } 
          else 
+            Editor.close("PlayGui");
+      }
+      else 
+      {
+         if ( !$GuiEditorBtnPressed )
          {
-            if ( !$GuiEditorBtnPressed )
-            {
-               canvas.pushDialog( EditorLoadingGui );
-               canvas.repaint();
-            }
-            else
-            {
-               $GuiEditorBtnPressed = false;
-            }
-            
-            Editor.open();
-			
-			// Cancel the scheduled event to prevent
-			// the level from cycling after it's duration
-			// has elapsed.
-            cancel($Game::Schedule);
-            
-            if (theLevelInfo.type $= "DemoScene")
-               commandToServer('dropCameraAtPlayer', true);
+            canvas.pushDialog( EditorLoadingGui );
+            canvas.repaint();
+         }
+         else
+            $GuiEditorBtnPressed = false;
+
+         Editor.open();
+
+         // Cancel the scheduled event to prevent
+         // the level from cycling after it's duration
+         // has elapsed.
+         cancel($Game::Schedule);
+
+         if (theLevelInfo.type $= "DemoScene")
+            commandToServer('dropCameraAtPlayer', true);
                
             
-            canvas.popDialog(EditorLoadingGui);
-         }
-         
-         popInstantGroup();
-         $dropcameracount = 0; 	
+         canvas.popDialog(EditorLoadingGui);
       }
-      
-      %elapsed = stopPrecisionTimer( %timerId );
-      warn( "Time spent in toggleEditor() : " @ %elapsed / 1000.0 @ " s" );
+
+      popInstantGroup();
+      $dropcameracount = 0; 	
    }
+      
+   %elapsed = stopPrecisionTimer( %timerId );
+   warn( "Time spent in toggleEditor() : " @ %elapsed / 1000.0 @ " s" );
 }
 
 //------------------------------------------------------------------------------
 //  The editor action maps are defined in editor.bind.cs
-GlobalActionMap.bind(keyboard, "f11", toggleEditor);
+//GlobalActionMap.bind(keyboard, "f11", toggleEditor);
 
 
 // The scenario:

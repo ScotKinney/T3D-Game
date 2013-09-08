@@ -81,8 +81,8 @@ $userDirs = $defaultGame @ ";art;levels";
 
 // load tools scripts if we're a tool build
 // Delay tool loading until requested
-if (isToolBuild())
-    $userDirs = "tools;" @ $userDirs;
+//if (isToolBuild())
+    //$userDirs = "tools;" @ $userDirs;
 
 
 // Parse the executable arguments with the standard

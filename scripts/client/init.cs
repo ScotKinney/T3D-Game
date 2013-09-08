@@ -182,6 +182,9 @@ function initClient()
    exec("./AlterVerse/ResolveIP.cs");
    exec("./AlterVerse/clientChat.cs");
 
+   exec("core/art/gui/toolsLoading.gui");
+   exec("./AlterVerse/clientTools.cs");
+
    // Load useful Materials
    exec("./shaders.cs");
 

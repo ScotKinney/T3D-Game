@@ -78,3 +78,19 @@
       fontType = "Arial Bold";
    };
 
+   singleton GuiControlProfile (AVToolPanel) 
+   {
+      opaque = false;
+      border = -2;
+      bitmap = "tools/editorClasses/gui/panels/menu-fullborder";
+      category = "AlterVerse";
+   };
+
+singleton GuiControlProfile (AVToolsTextCenter)
+{
+   fontColor = "50 50 50";
+   fontType = "Arial Bold";
+   fontSize = 16;
+   justify = "center";
+   category = "Tools";
+};
