@@ -354,7 +354,7 @@
                Profile = "ToolsGuiButtonProfile";
                horizSizing = "right";
                VertSizing = "bottom";
-               position = "306 0";
+               position = "246 0";
                Extent = "28 18";
                MinExtent = "8 2";
                canSave = "1";

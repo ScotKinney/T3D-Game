@@ -552,7 +552,7 @@ function EditorGui::syncEditor( %this, %newEditor, %newEditorFailed )
 
 function EditorGui::onWake( %this )
 {
-   EHWorldEditor.setStateOn( 1 );
+   //EHWorldEditor.setStateOn( 1 );
 
    // Notify the editor plugins that the editor has started.
 

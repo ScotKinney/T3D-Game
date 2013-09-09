@@ -4,7 +4,7 @@
    Profile = "ToolsGuiDefaultProfile";
    HorizSizing = "right";
    VertSizing = "bottom";
-   Position = "306 0";
+   Position = "246 0";
    Extent = "800 40";
    MinExtent = "8 2";
    canSave = "1";
