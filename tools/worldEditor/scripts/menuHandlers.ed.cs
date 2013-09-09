@@ -29,42 +29,18 @@ $Pref::WorldEditor::FileSpec = "Torque Mission Files (*.mis)|*.mis|All Files (*.
 function EditorFileMenu::onMenuSelect(%this)
 {
 //Geev 5/23/2013	
- if($IsOneWorld) 
-    {%this.enableItem(0, false);
-     %this.enableItem(1, false);
-     %this.enableItem(2, false);
-     %this.enableItem(3, false);
-     %this.enableItem(4, true);
-     %this.enableItem(6, false);
-     %this.enableItem(7, false);
-     %this.enableItem(8, false);
-     %this.enableItem(9, false);
-     %this.enableItem(10, false);
-     %this.enableItem(11, false);
-     %this.enableItem(12, false);
-     %this.enableItem(13, false);
-     %this.enableItem(14, false);  
-     %this.enableItem(15, false);  
-     %this.enableItem(16, false);  
-    }
- else 
-    {%this.enableItem(0, true);
-     %this.enableItem(1, true);
-     %this.enableItem(2, true);
-     %this.enableItem(3, true);
-     %this.enableItem(4, false);
-     %this.enableItem(6, true);
-     %this.enableItem(7, true);
-     %this.enableItem(8, true);
-     %this.enableItem(9, true);
-     %this.enableItem(10, true);
-     %this.enableItem(11, true);
-     %this.enableItem(12, true);
-     %this.enableItem(13, true);
-     %this.enableItem(14, true);  
-     %this.enableItem(15, true);  
-     %this.enableItem(16, true);  
-    }
+   %this.enableItem(0, !$IsOneWorld);  // Save Level
+   %this.enableItem(1, $IsOneWorld);   // Remote Save Level
+   %this.enableItem(2, false);         // Seperator
+   %this.enableItem(3, !$IsOneWorld);  // Create Blank Terrain
+   %this.enableItem(4, !$IsOneWorld);  // Import Terrain Heightmap
+   %this.enableItem(5, !$IsOneWorld);  // Export Terrain Heightmap
+   %this.enableItem(6, false);         // Seperator
+   %this.enableItem(7, !$IsOneWorld);  // Export To COLLADA
+   %this.enableItem(8, false);         // Seperator
+   %this.enableItem(9, $TAP::OwnServer); // Manage Build Rights
+   %this.enableItem(10, false);        // Seperator
+   %this.enableItem(11, true);         // Close Editor
 }
 
 function ClientUpdateMenu::onMenuSelect(%this)
@@ -182,123 +158,123 @@ function EditorDoExitMission(%saveFirst)
    disconnect();
 }
 
-function EditorOpenTorsionProject( %projectFile )
-{
-   // Make sure we have a valid path to the Torsion installation.
-   
-   %torsionPath = EditorSettings.value( "WorldEditor/torsionPath" );
-   if( !isFile( %torsionPath ) )
-   {
-      MessageBoxOK(
-         "Torsion Not Found",
-         "Torsion not found at '" @ %torsionPath @ "'.  Please set the correct path in the preferences."
-      );
-      return;
-   }
-   
-   // Determine the path to the .torsion file.
-   
-   if( %projectFile $= "" )
-   {
-      %projectName = fileBase( getExecutableName() );
-      %projectFile = makeFullPath( %projectName @ ".torsion" );
-      if( !isFile( %projectFile ) )
-      {
-         %projectFile = findFirstFile( "*.torsion", false );
-         if( !isFile( %projectFile ) )
-         {
-            MessageBoxOK(
-               "Project File Not Found",
-               "Cannot find .torsion project file in '" @ getMainDotCsDir() @ "'."
-            );
-            return;
-         }
-      }
-   }
-   
-   // Open the project in Torsion.
-   
-   shellExecute( %torsionPath, "\"" @ %projectFile @ "\"" );
-}
-
-function EditorOpenFileInTorsion( %file, %line )
-{
-   // Make sure we have a valid path to the Torsion installation.
-   
-   %torsionPath = EditorSettings.value( "WorldEditor/torsionPath" );
-   if( !isFile( %torsionPath ) )
-   {
-      MessageBoxOK(
-         "Torsion Not Found",
-         "Torsion not found at '" @ %torsionPath @ "'.  Please set the correct path in the preferences."
-      );
-      return;
-   }
-   
-   // If no file was specified, take the current mission file.
-   
-   if( %file $= "" )
-      %file = makeFullPath( $Server::MissionFile );
-  
-   // Open the file in Torsion.
-   
-   %args = "\"" @ %file;
-   if( %line !$= "" )
-      %args = %args @ ":" @ %line;
-   %args = %args @ "\"";
-   
-   shellExecute( %torsionPath, %args );
-}
-
-function EditorOpenDeclarationInTorsion( %object )
-{
-   %fileName = %object.getFileName();
-   if( %fileName $= "" )
-      return;
-      
-   EditorOpenFileInTorsion( makeFullPath( %fileName ), %object.getDeclarationLine() );
-}
-
-function EditorNewLevel( %file )
-{
-   if(isWebDemo())
-      return;
-      
-   %saveFirst = false;
-//Geev 5/23/2013	
-   if (!$IsOneWorld)
-   if ( EditorIsDirty() )
-   {
-      error(knob);
-      %saveFirst = MessageBox("Mission Modified", "Would you like to save changes to the current mission \"" @
-         $Server::MissionFile @ "\" before creating a new mission?", "SaveDontSave", "Question") == $MROk;
-   }
-      
-   if(%saveFirst)
-      EditorSaveMission();
-
-   // Clear dirty flags first to avoid duplicate dialog box from EditorOpenMission()
-   if( isObject( Editor ) )
-   {
-      EditorClearDirty();
-      Editor.getUndoManager().clearAll();
-   }
-
-   if( %file $= "" )
-      %file = EditorSettings.value( "WorldEditor/newLevelFile" );
-
-   if( !$missionRunning )
-   {
-      activatePackage( "BootEditor" );
-      StartLevel( %file );
-   }
-   else
-      EditorOpenMission(%file);
-
-   //EWorldEditor.isDirty = true;
-   //ETerrainEditor.isDirty = true;
-   EditorGui.saveAs = true;
-}
+//function EditorOpenTorsionProject( %projectFile )
+//{
+   //// Make sure we have a valid path to the Torsion installation.
+   //
+   //%torsionPath = EditorSettings.value( "WorldEditor/torsionPath" );
+   //if( !isFile( %torsionPath ) )
+   //{
+      //MessageBoxOK(
+         //"Torsion Not Found",
+         //"Torsion not found at '" @ %torsionPath @ "'.  Please set the correct path in the preferences."
+      //);
+      //return;
+   //}
+   //
+   //// Determine the path to the .torsion file.
+   //
+   //if( %projectFile $= "" )
+   //{
+      //%projectName = fileBase( getExecutableName() );
+      //%projectFile = makeFullPath( %projectName @ ".torsion" );
+      //if( !isFile( %projectFile ) )
+      //{
+         //%projectFile = findFirstFile( "*.torsion", false );
+         //if( !isFile( %projectFile ) )
+         //{
+            //MessageBoxOK(
+               //"Project File Not Found",
+               //"Cannot find .torsion project file in '" @ getMainDotCsDir() @ "'."
+            //);
+            //return;
+         //}
+      //}
+   //}
+   //
+   //// Open the project in Torsion.
+   //
+   //shellExecute( %torsionPath, "\"" @ %projectFile @ "\"" );
+//}
+//
+//function EditorOpenFileInTorsion( %file, %line )
+//{
+   //// Make sure we have a valid path to the Torsion installation.
+   //
+   //%torsionPath = EditorSettings.value( "WorldEditor/torsionPath" );
+   //if( !isFile( %torsionPath ) )
+   //{
+      //MessageBoxOK(
+         //"Torsion Not Found",
+         //"Torsion not found at '" @ %torsionPath @ "'.  Please set the correct path in the preferences."
+      //);
+      //return;
+   //}
+   //
+   //// If no file was specified, take the current mission file.
+   //
+   //if( %file $= "" )
+      //%file = makeFullPath( $Server::MissionFile );
+  //
+   //// Open the file in Torsion.
+   //
+   //%args = "\"" @ %file;
+   //if( %line !$= "" )
+      //%args = %args @ ":" @ %line;
+   //%args = %args @ "\"";
+   //
+   //shellExecute( %torsionPath, %args );
+//}
+//
+//function EditorOpenDeclarationInTorsion( %object )
+//{
+   //%fileName = %object.getFileName();
+   //if( %fileName $= "" )
+      //return;
+      //
+   //EditorOpenFileInTorsion( makeFullPath( %fileName ), %object.getDeclarationLine() );
+//}
+//
+//function EditorNewLevel( %file )
+//{
+   //if(isWebDemo())
+      //return;
+      //
+   //%saveFirst = false;
+////Geev 5/23/2013	
+   //if (!$IsOneWorld)
+   //if ( EditorIsDirty() )
+   //{
+      //error(knob);
+      //%saveFirst = MessageBox("Mission Modified", "Would you like to save changes to the current mission \"" @
+         //$Server::MissionFile @ "\" before creating a new mission?", "SaveDontSave", "Question") == $MROk;
+   //}
+      //
+   //if(%saveFirst)
+      //EditorSaveMission();
+//
+   //// Clear dirty flags first to avoid duplicate dialog box from EditorOpenMission()
+   //if( isObject( Editor ) )
+   //{
+      //EditorClearDirty();
+      //Editor.getUndoManager().clearAll();
+   //}
+//
+   //if( %file $= "" )
+      //%file = EditorSettings.value( "WorldEditor/newLevelFile" );
+//
+   //if( !$missionRunning )
+   //{
+      //activatePackage( "BootEditor" );
+      //StartLevel( %file );
+   //}
+   //else
+      //EditorOpenMission(%file);
+//
+   ////EWorldEditor.isDirty = true;
+   ////ETerrainEditor.isDirty = true;
+   //EditorGui.saveAs = true;
+//}
 
 function EditorSaveMissionMenu()
 {

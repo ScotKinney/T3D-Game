@@ -114,7 +114,7 @@ function GameConnection::AuthenticateUser(%client)
       /*WHERE*/            "ownerID='" @ $AlterVerse::serverOwner @
                            "' AND playerID='" @ %dbUserID @ "'");
       if(%result.getNumRows() > 0)
-         %client.buildRights = %this.buildRights;
+         %client.buildRights = %result.buildRights;
       else
          %client.buildRights = 0;
       %result.delete();

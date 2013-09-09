@@ -21,9 +21,10 @@ function worldEditorToggle(%make)
 GlobalActionMap.bind( keyboard, "f10", guiEditorToggle );
 GlobalActionMap.bind(keyboard, "f11", worldEditorToggle);
 
-function clientCmdSetBuildRights(%rights, %ownerName)
+function clientCmdSetBuildRights(%rights, %ownerName, %ownServer)
 {
    $TAP::BuildRights = %rights;
+   $TAP::OwnServer = %ownServer;
    if ( %rights > 0 )
       checkToolsLoaded("world");
    else

@@ -265,7 +265,8 @@ function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
    %conn.setConnectArgs($currentUsername, getStringMD5($currentHash @ $currentPasswordHash), %spawnPoint, %isTransfer);
    %conn.setJoinPassword($Client::Password);
    %conn.connect(%serverAddress);
-   $IsOneWorld=1;
+   $IsOneWorld = true;
+   $TAP::BuildRights = 0;
    ServerConnection.setFirstPerson(true);
 }
 

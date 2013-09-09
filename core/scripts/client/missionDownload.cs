@@ -157,12 +157,3 @@ function LoadMissionClientData(%worldName)
 
    $instantGroup = %oldGroup;
 }
-
-function connect(%server)
-{
-   %conn = new GameConnection(ServerConnection);
-   RootGroup.add(ServerConnection);
-   %conn.setConnectArgs($pref::Player::Name);
-   %conn.setJoinPassword($Client::Password);
-   %conn.connect(%server);
-}

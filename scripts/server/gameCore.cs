@@ -248,13 +248,14 @@ package GameCore
       if($Server::PlayerCount >= $pref::Server::MaxPlayers)
          return "CR_SERVERFULL";
 
+      %client.nameBase = %name;
       if ( $Server::ServerType !$= "MultiPlayer" )
       {
          %client.authenticated = true;
+         %client.buildRights = 1;
          return ""; // No authentication done on single player servers
       }
 
-      %client.nameBase = %name;
       %client.transfering = %isTransfer;
       %client.conHash = %passwordHash;
       %client.authenticated = false;

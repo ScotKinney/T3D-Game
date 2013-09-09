@@ -40,9 +40,10 @@ function initializeWorldEditor()
    exec("./gui/ManageBookmarksWindow.ed.gui");
    exec("./gui/ManageSFXParametersWindow.ed.gui" );
    exec("./gui/TimeAdjustGui.ed.gui");
-   exec("./gui/AddFMODProjectDlg.ed.gui");
+   //exec("./gui/AddFMODProjectDlg.ed.gui");
    exec("./gui/SelectObjectsWindow.ed.gui");
    exec("./gui/ProceduralTerrainPainterGui.gui" );
+   exec("./gui/buildRights.ed.gui");
    
    // Load Scripts.
    exec("./scripts/menus.ed.cs");
@@ -59,8 +60,9 @@ function initializeWorldEditor()
    exec("./scripts/visibilityLayer.ed.cs");
    exec("./scripts/cameraBookmarks.ed.cs");
    exec("./scripts/ManageSFXParametersWindow.ed.cs");
-   exec("./scripts/AddFMODProjectDlg.ed.cs");
+   //exec("./scripts/AddFMODProjectDlg.ed.cs");
    exec("./scripts/SelectObjectsWindow.ed.cs");
+   exec("./scripts/buildRightsGui.ed.cs");
 
    // Load Custom Editors
    loadDirectory(expandFilename("./scripts/editors"));

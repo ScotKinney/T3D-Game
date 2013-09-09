@@ -112,20 +112,20 @@ function EditorGui::buildMenus(%this)
       barTitle = "File";
    };
    
-   %fileMenu.appendItem("New Level" TAB "" TAB "schedule( 1, 0, \"EditorNewLevel\" );");
-   %fileMenu.appendItem("Open Level..." TAB %cmdCtrl SPC "O" TAB "schedule( 1, 0, \"EditorOpenMission\" );");
+   //%fileMenu.appendItem("New Level" TAB "" TAB "schedule( 1, 0, \"EditorNewLevel\" );");
+   //%fileMenu.appendItem("Open Level..." TAB %cmdCtrl SPC "O" TAB "schedule( 1, 0, \"EditorOpenMission\" );");
    %fileMenu.appendItem("Save Level" TAB %cmdCtrl SPC "S" TAB "EditorSaveMissionMenu();");
-   %fileMenu.appendItem("Save Level As..." TAB "" TAB "EditorSaveMissionAs();");
+   //%fileMenu.appendItem("Save Level As..." TAB "" TAB "EditorSaveMissionAs();");
    //Geev 5/23/2013
-   %fileMenu.appendItem("Request Save Mission..." TAB "CTRL S" TAB "Remote_SaveMission();");      
+   %fileMenu.appendItem("Remote Save Level..." TAB "CTRL S" TAB "Remote_SaveMission();");      
    %fileMenu.appendItem("-");
 
-   if( ($platform $= "windows") && $TAP::isDev )
-   {
-      %fileMenu.appendItem( "Open Project in Torsion" TAB "" TAB "EditorOpenTorsionProject();" );
-      %fileMenu.appendItem( "Open Level File in Torsion" TAB "" TAB "EditorOpenFileInTorsion();" );
-      %fileMenu.appendItem( "-" );
-   }
+   //if( ($platform $= "windows") && $TAP::isDev )
+   //{
+      //%fileMenu.appendItem( "Open Project in Torsion" TAB "" TAB "EditorOpenTorsionProject();" );
+      //%fileMenu.appendItem( "Open Level File in Torsion" TAB "" TAB "EditorOpenFileInTorsion();" );
+      //%fileMenu.appendItem( "-" );
+   //}
    
    %fileMenu.appendItem("Create Blank Terrain" TAB "" TAB "Canvas.pushDialog( CreateNewTerrainGui );");        
    %fileMenu.appendItem("Import Terrain Heightmap" TAB "" TAB "Canvas.pushDialog( TerrainImportGui );");
@@ -139,13 +139,14 @@ function EditorGui::buildMenus(%this)
       //item[8] = "Export Terraform Data..." TAB "" TAB "Heightfield::saveBitmap(\"\");";
    
    %fileMenu.appendItem( "-" );
-   %fileMenu.appendItem( "Add FMOD Designer Audio..." TAB "" TAB "AddFMODProjectDlg.show();" );
+   %fileMenu.appendItem("Manage Build Rights" TAB "" TAB "Canvas.pushDialog( BuildRightsGui );");
+   //%fileMenu.appendItem( "Add FMOD Designer Audio..." TAB "" TAB "AddFMODProjectDlg.show();" );
    
    %fileMenu.appendItem("-");
-   %fileMenu.appendItem("Play Level" TAB "F11" TAB "Editor.close(\"PlayGui\");");
+   %fileMenu.appendItem("Close Editor" TAB "F11" TAB "Editor.close(\"PlayGui\");");
       
-   %fileMenu.appendItem("Exit Level" TAB "" TAB "EditorExitMission();");
-   %fileMenu.appendItem("Quit" TAB %quitShortcut TAB "EditorQuitGame();");
+   //%fileMenu.appendItem("Exit Level" TAB "" TAB "EditorExitMission();");
+   //%fileMenu.appendItem("Quit" TAB %quitShortcut TAB "EditorQuitGame();");
    %this.menuBar.insert(%fileMenu, %this.menuBar.getCount());
    
    // Edit Menu

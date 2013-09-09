@@ -163,7 +163,7 @@ function handleEscape()
          EditorGui.handleEscape();
          return;
       }
-      else if ( EditorIsDirty() )
+      else if ( ($TAP::BuildRights > 0) && EditorIsDirty() )
       {
          MessageBoxYesNoCancel( "Level Modified", "Level has been modified in the Editor. Save?",
                            "EditorDoExitMission(1);",
