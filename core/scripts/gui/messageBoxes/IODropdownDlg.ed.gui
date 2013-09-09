@@ -115,7 +115,8 @@
          };
       };
       new GuiButtonCtrl() {
-         text = "OK";
+         internalName = "Button0";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
          useMouseEvents = "0";
@@ -135,7 +136,8 @@
          canSaveDynamicFields = "0";
       };
       new GuiButtonCtrl() {
-         text = "Cancel";
+         internalName = "Button1";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
          useMouseEvents = "0";

@@ -1,23 +1,6 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2012 GarageGames, LLC
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
+// Torque
+// Copyright GarageGames, LLC 2011
 //-----------------------------------------------------------------------------
 
 
@@ -46,29 +29,6 @@ exec("./messageBoxOKCancel.ed.gui");
 exec("./messageBoxOKCancelDetailsDlg.ed.gui");
 exec("./messagePopup.ed.gui");
 exec("./IODropdownDlg.ed.gui");
-
-
-
-// --------------------------------------------------------------------
-// Message Sound
-// --------------------------------------------------------------------
-/*new SFXDescription(MessageBoxAudioDescription)
-{
-   volume      = 1.0;
-   isLooping   = false;
-   is3D        = false;
-   channel     = $GuiAudioType;
-};
-
-new SFXProfile(messageBoxBeep)
-{
-   filename    = "./messageBoxSound";
-   description = MessageBoxAudioDescription;
-   preload     = true;
-};*/
-
-
-
 
 //---------------------------------------------------------------------------------------------
 // messageCallback
@@ -139,6 +99,15 @@ function MessageBoxOK(%title, %message, %callback)
    MessageBoxOKDlg.callback = %callback;
 }
 
+function MessageBoxOKDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnOK);
+      %this.localized = $pref::Language;
+   }
+}
+
 function MessageBoxOKDlg::onSleep( %this )
 {
    %this.callback = "";
@@ -153,9 +122,20 @@ function MessageBoxOKCancel(%title, %message, %callback, %cancelCallback)
    MessageBoxOKCancelDlg.cancelCallback = %cancelCallback;
 }
 
+function MessageBoxOKCancelDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnOK);
+      %this-->Button1.setText(guiStrings.btnCancel);
+      %this.localized = $pref::Language;
+   }
+}
+
 function MessageBoxOKCancelDlg::onSleep( %this )
 {
    %this.callback = "";
+   %this.cancelCallback = "";
 }
 
 function MessageBoxOKCancelDetails(%title, %message, %details, %callback, %cancelCallback)
@@ -224,9 +204,21 @@ function MBOKCancelDetailsToggleInfoFrame()
    }
 }
 
+function MessageBoxOKCancelDetailsDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnOK);
+      %this-->Button1.setText(guiStrings.btnCancel);
+      %this-->Button2.setText(guiStrings.btnDetails);
+      %this.localized = $pref::Language;
+   }
+}
+
 function MessageBoxOKCancelDetailsDlg::onSleep( %this )
 {
    %this.callback = "";
+   %this.cancelCallback = "";
 }
 
 function MessageBoxYesNo(%title, %message, %yesCallback, %noCallback)
@@ -250,10 +242,38 @@ function MessageBoxYesNoCancel(%title, %message, %yesCallback, %noCallback, %can
    MessageBoxYesNoCancelDlg.cancelCallback = %cancelCallback;
 }
 
+function MessageBoxYesNoDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnYes);
+      %this-->Button1.setText(guiStrings.btnNo);
+      %this.localized = $pref::Language;
+   }
+}
+
 function MessageBoxYesNoDlg::onSleep( %this )
 {
    %this.yesCallback = "";
    %this.noCallback = "";
+}
+
+function MessageBoxYesNoCancelDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnYes);
+      %this-->Button1.setText(guiStrings.btnNo);
+      %this-->Button2.setText(guiStrings.btnCancel);
+      %this.localized = $pref::Language;
+   }
+}
+
+function MessageBoxYesNoCancelDlg::onSleep( %this )
+{
+   %this.yesCallback = "";
+   %this.noCallback = "";
+   %this.cancelCallback = "";
 }
 
 //---------------------------------------------------------------------------------------------
@@ -296,6 +316,16 @@ function IODropdown(%title, %message, %simgroup, %callback, %cancelCallback)
    IODropdownDlg.cancelCallback = %cancelCallback;
 }
 
+function IODropdownDlg::onWake( %this )
+{
+   if ( %this.localized !$= $pref::Language )
+   {
+      %this-->Button0.setText(guiStrings.btnOK);
+      %this-->Button1.setText(guiStrings.btnCancel);
+      %this.localized = $pref::Language;
+   }
+}
+
 function IODropdownDlg::onSleep( %this )
 {
    %this.callback = "";
@@ -306,21 +336,4 @@ function IODropdownDlg::onSleep( %this )
 function CloseMessagePopup()
 {
    Canvas.popDialog(MessagePopupDlg);
-}
-
-//---------------------------------------------------------------------------------------------
-// "Old" message box function aliases for backwards-compatibility.
-//---------------------------------------------------------------------------------------------
-
-function MessageBoxOKOld( %title, %message, %callback )
-{
-   MessageBoxOK( %title, %message, %callback );
-}
-function MessageBoxOKCancelOld( %title, %message, %callback, %cancelCallback )
-{
-   MessageBoxOKCancel( %title, %message, %callback, %cancelCallback );
-}
-function MessageBoxYesNoOld( %title, %message, %yesCallback, %noCallback )
-{
-   MessageBoxYesNo( %title, %message, %yesCallback, %noCallback );
 }

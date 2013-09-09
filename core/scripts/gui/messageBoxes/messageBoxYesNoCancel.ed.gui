@@ -49,6 +49,7 @@
          maxChars = "-1";
       };
       new GuiButtonCtrl() {
+         internalName = "Button0";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -61,11 +62,12 @@
          Command = "MessageCallback(MessageBoxYesNoCancelDlg,MessageBoxYesNoCancelDlg.yesCallback);";
          Accelerator = "return";
          hovertime = "1000";
-         text = "Yes";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };
       new GuiButtonCtrl() {
+         internalName = "Button1";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -77,11 +79,12 @@
          Visible = "1";
          Command = "MessageCallback(MessageBoxYesNoCancelDlg,MessageBoxYesNoCancelDlg.noCallback);";
          hovertime = "1000";
-         text = "No";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };
       new GuiButtonCtrl() {
+         internalName = "Button2";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -94,7 +97,7 @@
          Command = "MessageCallback(MessageBoxYesNoCancelDlg,MessageBoxYesNoCancelDlg.cancelCallback);";
          Accelerator = "escape";
          hovertime = "1000";
-         text = "Cancel";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };

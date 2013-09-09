@@ -81,6 +81,7 @@ function onStart()
       exec("./scripts/client/client.cs");   
       exec("./scripts/gui/guiTreeViewCtrl.cs");
       exec("./scripts/gui/messageBoxes/messageBox.ed.cs");
+      exec("./scripts/gui/messageBoxes/QuestMessageBox.cs");
    }
    
    exec("./scripts/server/server.cs");

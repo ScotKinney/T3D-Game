@@ -43,6 +43,7 @@
          maxChars = "-1";
 		};
 		new GuiButtonCtrl() {
+         internalName = "Button0";
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "top";
@@ -53,10 +54,11 @@
 			command = "MessageCallback(MessageBoxYesNoDlg,MessageBoxYesNoDlg.yesCallback);";
          accelerator = "return";
          helpTag = "0";
-         text = "Yes";
+         text = "";
          simpleStyle = "0";
 		};
 		new GuiButtonCtrl() {
+         internalName = "Button1";
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "top";
@@ -67,7 +69,7 @@
 			command = "MessageCallback(MessageBoxYesNoDlg,MessageBoxYesNoDlg.noCallback);";
          accelerator = "escape";
          helpTag = "0";
-         text = "No";
+         text = "";
          simpleStyle = "0";
 		};
 	};

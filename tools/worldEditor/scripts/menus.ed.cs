@@ -120,7 +120,7 @@ function EditorGui::buildMenus(%this)
    %fileMenu.appendItem("Request Save Mission..." TAB "CTRL S" TAB "Remote_SaveMission();");      
    %fileMenu.appendItem("-");
 
-   if( $platform $= "windows" )
+   if( ($platform $= "windows") && $TAP::isDev )
    {
       %fileMenu.appendItem( "Open Project in Torsion" TAB "" TAB "EditorOpenTorsionProject();" );
       %fileMenu.appendItem( "Open Level File in Torsion" TAB "" TAB "EditorOpenFileInTorsion();" );
@@ -130,16 +130,13 @@ function EditorGui::buildMenus(%this)
    %fileMenu.appendItem("Create Blank Terrain" TAB "" TAB "Canvas.pushDialog( CreateNewTerrainGui );");        
    %fileMenu.appendItem("Import Terrain Heightmap" TAB "" TAB "Canvas.pushDialog( TerrainImportGui );");
    
-   if(!isWebDemo())
-   {
-      %fileMenu.appendItem("Export Terrain Heightmap" TAB "" TAB "Canvas.pushDialog( TerrainExportGui );");
-      %fileMenu.appendItem("-");
-      %fileMenu.appendItem("Export To COLLADA..." TAB "" TAB "EditorExportToCollada();");
-         //item[5] = "Import Terraform Data..." TAB "" TAB "Heightfield::import();";
-         //item[6] = "Import Texture Data..." TAB "" TAB "Texture::import();";
-         //item[7] = "-";
-         //item[8] = "Export Terraform Data..." TAB "" TAB "Heightfield::saveBitmap(\"\");";
-   }
+   %fileMenu.appendItem("Export Terrain Heightmap" TAB "" TAB "Canvas.pushDialog( TerrainExportGui );");
+   %fileMenu.appendItem("-");
+   %fileMenu.appendItem("Export To COLLADA..." TAB "" TAB "EditorExportToCollada();");
+      //item[5] = "Import Terraform Data..." TAB "" TAB "Heightfield::import();";
+      //item[6] = "Import Texture Data..." TAB "" TAB "Texture::import();";
+      //item[7] = "-";
+      //item[8] = "Export Terraform Data..." TAB "" TAB "Heightfield::saveBitmap(\"\");";
    
    %fileMenu.appendItem( "-" );
    %fileMenu.appendItem( "Add FMOD Designer Audio..." TAB "" TAB "AddFMODProjectDlg.show();" );
@@ -147,11 +144,8 @@ function EditorGui::buildMenus(%this)
    %fileMenu.appendItem("-");
    %fileMenu.appendItem("Play Level" TAB "F11" TAB "Editor.close(\"PlayGui\");");
       
-   if(!isWebDemo())
-   {
-      %fileMenu.appendItem("Exit Level" TAB "" TAB "EditorExitMission();");
-      %fileMenu.appendItem("Quit" TAB %quitShortcut TAB "EditorQuitGame();");
-   }
+   %fileMenu.appendItem("Exit Level" TAB "" TAB "EditorExitMission();");
+   %fileMenu.appendItem("Quit" TAB %quitShortcut TAB "EditorQuitGame();");
    %this.menuBar.insert(%fileMenu, %this.menuBar.getCount());
    
    // Edit Menu

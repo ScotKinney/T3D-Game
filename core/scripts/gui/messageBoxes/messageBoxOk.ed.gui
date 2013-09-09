@@ -42,6 +42,7 @@
          maxChars = "-1";
       };
       new GuiButtonCtrl() {
+         internalName = "Button0";
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "top";
@@ -52,7 +53,7 @@
          command = "MessageCallback(MessageBoxOKDlg,MessageBoxOKDlg.callback);";
          accelerator = "return";
          helpTag = "0";
-         text = "Ok";
+         text = "";
             simpleStyle = "0";
       };
    };

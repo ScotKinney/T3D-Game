@@ -48,6 +48,7 @@
          maxChars = "-1";
       };
       new GuiButtonCtrl() {
+         internalName = "Button0";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -60,11 +61,12 @@
          Command = "MessageCallback(MessageBoxOKCancelDetailsDlg,MessageBoxOKCancelDetailsDlg.callback);";
          Accelerator = "return";
          hovertime = "1000";
-         text = "OK";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };
       new GuiButtonCtrl() {
+         internalName = "Button1";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -77,11 +79,12 @@
          Command = "MessageCallback(MessageBoxOKCancelDetailsDlg,MessageBoxOKCancelDetailsDlg.cancelCallback);";
          Accelerator = "escape";
          hovertime = "1000";
-         text = "CANCEL";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };
       new GuiButtonCtrl(MBOKCancelDetailsButton) {
+         internalName = "Button2";
          canSaveDynamicFields = "0";
          Profile = "GuiButtonProfile";
          HorizSizing = "right";
@@ -93,7 +96,7 @@
          Visible = "1";
          Command = "MBOKCancelDetailsToggleInfoFrame();";
          hovertime = "1000";
-         text = "Details";
+         text = "";
          groupNum = "-1";
          buttonType = "PushButton";
       };
