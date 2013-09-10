@@ -15,6 +15,7 @@
    canSaveDynamicFields = "1";
       enabled = "1";
       isDecoy = "0";
+      numChecks = "7";
 
    new GuiWindowCtrl() {
       text = "Manage Build Rights";
@@ -84,7 +85,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "143 30";
-         extent = "175 64";
+         extent = "175 18";
          minExtent = "8 2";
          horizSizing = "right";
          vertSizing = "bottom";
@@ -95,6 +96,7 @@
          hovertime = "1000";
          isContainer = "1";
          internalName = "PlayerList";
+         command = "BuildRightsGui.onPlayerChange();";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -116,6 +118,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck0";
+         command = "BuildRightsGui.onBoxChecked(0);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -136,6 +139,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck1";
+         command = "BuildRightsGui.onBoxChecked(1);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -156,6 +160,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck2";
+         command = "BuildRightsGui.onBoxChecked(2);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -176,6 +181,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck3";
+         command = "BuildRightsGui.onBoxChecked(3);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -196,6 +202,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck4";
+         command = "BuildRightsGui.onBoxChecked(4);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -216,6 +223,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck5";
+         command = "BuildRightsGui.onBoxChecked(5);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -236,6 +244,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "rightCheck6";
+         command = "BuildRightsGui.onBoxChecked(6);";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -257,6 +266,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "AddButton";
+         command = "BuildRightsGui.onAddButton();";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -277,6 +287,7 @@
          hovertime = "1000";
          isContainer = "0";
          internalName = "ApplyButton";
+         command = "BuildRightsGui.onApplyButton();";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -298,6 +309,7 @@
          isContainer = "0";
          canSave = "1";
          canSaveDynamicFields = "0";
+         command = "Canvas.popDialog( BuildRightsGui );";
       };
    };
 };

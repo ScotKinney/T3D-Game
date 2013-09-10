@@ -35,6 +35,18 @@ function clientCmdSetBuildRights(%rights, %ownerName, %ownServer)
    }
 }
 
+function clientCmdRightsRefused(%errNum)
+{  // A request to assign build rights has been denied
+   %message = guiStrings.mbRightsErr[%errNum];
+   MessageBoxOK("Denied!", %message, "BuildRightsGui.rightsUpdate();");
+}
+
+function clientCmdRightsAccepted()
+{  // A request to assign build rights has been accepted
+   if ( isObject(BuildRightsGui) && BuildRightsGui.isAwake() )
+      BuildRightsGui.rightsUpdate();
+}
+
 function toggleToolNow(%type)
 {
    if ( %type $= "gui" )

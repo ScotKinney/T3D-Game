@@ -116,3 +116,9 @@ guiStrings.mbFriendRemove = "Remove %1 from friends list?";
 guiStrings.mbAFXFreeTarget = "Select the target area for the %1 spell.";
 // You hit the %1 treasury for %2 arns.
 guiStrings.mbTreasuryHit = "You hit the %1 treasury for %2 arns.";
+
+// You must be on a multi-player server to assign build rights.
+guiStrings.mbRightsErr[0] = "You must be on a multi-player server to assign build rights.";
+// Error assigning build rights.
+guiStrings.mbRightsErr[1] = "Error assigning build rights.";
+
