@@ -22,6 +22,5 @@ function serverCmdAssignBuildRights(%client, %playerID, %newRights)
       return;
    }
 
-   commandToClient(%client, 'SetBuildRights', %client.buildRights,
-      $AlterVerse::ownerName, %isOwner);
+   commandToClient(%client, 'RightsAccepted');
 }

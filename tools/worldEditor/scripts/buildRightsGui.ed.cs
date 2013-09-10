@@ -123,6 +123,19 @@ function BuildRightsGui::makeCurrentRights(%this)
    return %newRights;
 }
 
+function BuildRightsGui::addPlayer(%this, %name, %playerID)
+{
+   if ( %this.numPlayers == 0 )
+      %this-->PlayerList.clear();   // Clear the no players line if it's there
+
+   %this-->PlayerList.add(%name, %playerID);
+   %this.RightsTable.add(%playerID, "0");
+   %this.numPlayers++;
+   %this.currentID = %playerID;
+   %this.currentRights = 0;
+   %this-->PlayerList.setSelected(%playerID);
+}
+
 function BuildRightsGui::fillPlayerList(%this, %result)
 {
    // Create an ArrayObject to track the build rights
