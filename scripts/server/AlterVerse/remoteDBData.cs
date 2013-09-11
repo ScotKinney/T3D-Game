@@ -173,5 +173,5 @@ function remoteDBData::updateRights( %this )
       }
    }
 
-   commandToClient(%client, 'RightsAccepted');
+   schedule( 0, 0, commandToClient, %this.flag, 'RightsAccepted');
 }

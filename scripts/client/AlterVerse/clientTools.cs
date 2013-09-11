@@ -44,7 +44,7 @@ function clientCmdRightsRefused(%errNum)
 function clientCmdRightsAccepted()
 {  // A request to assign build rights has been accepted
    if ( isObject(BuildRightsGui) && BuildRightsGui.isAwake() )
-      BuildRightsGui.rightsUpdate();
+     BuildRightsGui.rightsUpdate();
 }
 
 function toggleToolNow(%type)
