@@ -132,14 +132,15 @@ function EditorGui::buildMenus(%this)
    
    %fileMenu.appendItem("Export Terrain Heightmap" TAB "" TAB "Canvas.pushDialog( TerrainExportGui );");
    %fileMenu.appendItem("-");
-   %fileMenu.appendItem("Export To COLLADA..." TAB "" TAB "EditorExportToCollada();");
+   //%fileMenu.appendItem("Export To COLLADA..." TAB "" TAB "EditorExportToCollada();");
+   %fileMenu.appendItem("Import Content..." TAB "" TAB "");
       //item[5] = "Import Terraform Data..." TAB "" TAB "Heightfield::import();";
       //item[6] = "Import Texture Data..." TAB "" TAB "Texture::import();";
       //item[7] = "-";
       //item[8] = "Export Terraform Data..." TAB "" TAB "Heightfield::saveBitmap(\"\");";
    
    %fileMenu.appendItem( "-" );
-   %fileMenu.appendItem("Manage Build Rights" TAB "" TAB "Canvas.pushDialog( BuildRightsGui );");
+   %fileMenu.appendItem("Manage Build Rights..." TAB "" TAB "Canvas.pushDialog( BuildRightsGui );");
    //%fileMenu.appendItem( "Add FMOD Designer Audio..." TAB "" TAB "AddFMODProjectDlg.show();" );
    
    %fileMenu.appendItem("-");

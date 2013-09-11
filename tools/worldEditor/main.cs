@@ -62,6 +62,7 @@ function initializeWorldEditor()
    exec("./scripts/ManageSFXParametersWindow.ed.cs");
    //exec("./scripts/AddFMODProjectDlg.ed.cs");
    exec("./scripts/SelectObjectsWindow.ed.cs");
+   exec("./scripts/buildRights.cs");
    exec("./scripts/buildRightsGui.ed.cs");
 
    // Load Custom Editors

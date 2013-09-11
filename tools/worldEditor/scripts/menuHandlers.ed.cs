@@ -32,11 +32,11 @@ function EditorFileMenu::onMenuSelect(%this)
    %this.enableItem(0, !$IsOneWorld);  // Save Level
    %this.enableItem(1, $IsOneWorld);   // Remote Save Level
    %this.enableItem(2, false);         // Seperator
-   %this.enableItem(3, !$IsOneWorld);  // Create Blank Terrain
-   %this.enableItem(4, !$IsOneWorld);  // Import Terrain Heightmap
-   %this.enableItem(5, !$IsOneWorld);  // Export Terrain Heightmap
+   %this.enableItem(3, (($TAP::BuildRights == 1) || ($TAP::BuildRights & $Rights::TerrainBit)));  // Create Blank Terrain
+   %this.enableItem(4, (($TAP::BuildRights == 1) || ($TAP::BuildRights & $Rights::TerrainBit)));  // Import Terrain Heightmap
+   %this.enableItem(5, (($TAP::BuildRights == 1) || ($TAP::BuildRights & $Rights::TerrainBit)));  // Export Terrain Heightmap
    %this.enableItem(6, false);         // Seperator
-   %this.enableItem(7, !$IsOneWorld);  // Export To COLLADA
+   %this.enableItem(7, (($TAP::BuildRights == 1) || ($TAP::BuildRights & $Rights::ContentBit)));  // Import Content
    %this.enableItem(8, false);         // Seperator
    %this.enableItem(9, $TAP::OwnServer); // Manage Build Rights
    %this.enableItem(10, false);        // Seperator
