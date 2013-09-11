@@ -301,3 +301,12 @@ for ($i = 1; $i < $Game::argc; $i++)  {
    //Canvas.setCursor("DefaultCursor");
    //Canvas.setContent(EditorChooseGUI);
 //}
+
+function testBR()
+{
+   $currentPlayerID = 8;
+   exec("tools/worldEditor/gui/buildRights.ed.gui");
+   exec("tools/worldEditor/scripts/buildRightsGui.ed.cs");
+   Canvas.pushDialog(BuildRightsGui);
+   //testBR();
+}

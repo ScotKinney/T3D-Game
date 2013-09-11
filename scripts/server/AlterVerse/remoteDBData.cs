@@ -41,6 +41,8 @@ function remoteDBData::handleDBResult( %this )
          %this.moveUserTo();
       case "GetClanData":
          %this.fillClanTable();
+      case "AssignRights":
+         %this.updateRights();
 
       case "DisconnectUser":
       case "ServerPing":
@@ -149,4 +151,27 @@ function remoteDBData::serverRemoved( %this )
       $TAP::isDedicated = false;
       schedule(1, 0, "quit");
    }
+}
+
+function remoteDBData::updateRights( %this )
+{
+   if ( !%this.rightsAssigned )
+   {
+      commandToClient(%client, 'RightsRefused', 1);
+      return;
+   }
+
+   // If the target player is on the server, update their data
+   %count = ClientGroup.getCount();
+   for(%i = 0; %i < %count; %i++)
+   {
+      %tmpClient = ClientGroup.getObject(%i);
+      if ( %tmpClient.dbUserID == %this.playerID )
+      {
+         %tmpClient.buildRights = %this.rights;
+         break;
+      }
+   }
+
+   commandToClient(%client, 'RightsAccepted');
 }

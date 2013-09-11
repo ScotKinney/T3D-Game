@@ -143,7 +143,7 @@ function BuildRightsGui::fillPlayerList(%this, %result)
       %this.RightsTable.delete();
    %this.RightsTable = new ArrayObject();
 
-   // Clear out any existing players in the popup control
+   // Clear out any names in the popup control
    %selID = -1;
    %this-->PlayerList.clear();
    %this.numPlayers = %result.NumRights;
