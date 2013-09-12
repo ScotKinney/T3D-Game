@@ -43,6 +43,7 @@ function initializeWorldEditor()
    //exec("./gui/AddFMODProjectDlg.ed.gui");
    exec("./gui/SelectObjectsWindow.ed.gui");
    exec("./gui/ProceduralTerrainPainterGui.gui" );
+   exec("./gui/selectUser.gui");
    exec("./gui/buildRights.ed.gui");
    
    // Load Scripts.
@@ -63,6 +64,7 @@ function initializeWorldEditor()
    //exec("./scripts/AddFMODProjectDlg.ed.cs");
    exec("./scripts/SelectObjectsWindow.ed.cs");
    exec("./scripts/buildRights.cs");
+   exec("./scripts/selectUserGui.cs");
    exec("./scripts/buildRightsGui.ed.cs");
 
    // Load Custom Editors

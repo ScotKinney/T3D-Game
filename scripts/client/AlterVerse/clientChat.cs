@@ -107,7 +107,8 @@ function clientChat::onLine(%this, %line)
          %this.deleteTelegram(%line);
       //************************************************************************
       case "srchres": // Player search results are being delivered
-         AddFriend.addResults(%line);
+         if ( isObject(%this.searchCtrl) && %this.searchCtrl.isAwake() )
+            %this.searchCtrl.addSearchResults(%line);
    }
 }
 

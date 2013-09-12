@@ -64,6 +64,8 @@ function BuildRightsGui::onBoxChecked(%this, %boxNum)
 
 function BuildRightsGui::onAddButton(%this)
 {
+   SelectUserGui.callingCtrl = %this;
+   Canvas.pushDialog(SelectUserGui);
    return;
 }
 
@@ -123,8 +125,18 @@ function BuildRightsGui::makeCurrentRights(%this)
    return %newRights;
 }
 
-function BuildRightsGui::addPlayer(%this, %name, %playerID)
+function BuildRightsGui::addPlayer(%this, %result)
 {
+   if ( %result.UserID $= "0" )
+   {
+      MessageBoxOK("", "Player " @ %result.UserName @ " was not found.");
+      %this.allowInput(true);
+      return;
+   }
+
+   %playerID = %result.UserID;
+   %name = %result.UserName;
+
    if ( %this.numPlayers == 0 )
       %this-->PlayerList.clear();   // Clear the no players line if it's there
 
@@ -133,6 +145,7 @@ function BuildRightsGui::addPlayer(%this, %name, %playerID)
    %this.numPlayers++;
    %this.currentID = %playerID;
    %this.currentRights = 0;
+   %this.allowInput(true);
    %this-->PlayerList.setSelected(%playerID);
 }
 
@@ -175,12 +188,20 @@ function BuildRightsGui::rightsUpdate(%this)
    %this.SendDBCommand("GetRightsList", "sOwner="@$currentPlayerID);
 }
 
+function BuildRightsGui::userSelected(%this, %name)
+{
+   %this.allowInput(false);
+   %this.SendDBCommand("GetUserID", "uName="@%name);
+}
+
 function BuildRightsGui::handleDBResult(%this, %result)
 {
    switch$( %result.command )
    {
       case "GetRightsList":
          %this.fillPlayerList(%result);
+      case "GetUserID":
+         %this.addPlayer(%result);
       default:
          echo("Valid command with no handler??? (" @ %result.command @ ")");
    }

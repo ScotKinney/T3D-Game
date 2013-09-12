@@ -254,37 +254,6 @@ if ($displayHelp) {
 else {
    onStart();
    echo("Engine initialized...");
-   
-   // If we were loaded through the TAP-Link, open communications
-   //if ( $TAP::isTappedIn )
-   //{
-      //new GuiControl(TAPLinkHUD) {
-         //position = "0 0";
-         //extent = "1440 900";
-         //minExtent = "8 8";
-         //horizSizing = "width";
-         //vertSizing = "height";
-         //profile = "GuiModelessDialogProfile";
-         //visible = "1";
-         //active = "1";
-         //tooltipProfile = "GuiToolTipProfile";
-         //hovertime = "1000";
-         //isContainer = "1";
-         //canSave = "1";
-         //canSaveDynamicFields = "1";
-//
-         //new TAPLinkGui (TAPLink) {
-            //canSaveDynamicFields = "0";
-            //Enabled = "1";
-            //Profile = "AVTAPLinkProfile";
-            //HorizSizing = "right";
-            //VertSizing = "bottom";
-            //Position = "0 24";
-            //Extent = "300 500";
-            //Visible = "1";
-         //};
-      //};
-   //}
 }
 
 // Display an error message for unused arguments
