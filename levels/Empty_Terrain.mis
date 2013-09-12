@@ -7,6 +7,7 @@ new SimGroup(MissionGroup) {
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
       visibleDistance = "1200";
+      visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "1 1 0.6 1";
       fogDensity = "0.001";
@@ -21,8 +22,8 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          desc0 = "An empty terrain ready to be populated with Torque objects.";
-         levelName = "Empty Terrain";
          displayName = "Tortuga";
+         levelName = "Empty Terrain";
    };
    new ScatterSky() {
       skyBrightness = "30";
@@ -34,6 +35,7 @@ new SimGroup(MissionGroup) {
       ambientScale = "0.5 0.5 0.4 1";
       fogScale = "1 1 1 1";
       exposure = "0.85";
+      zoffset = "0";
       azimuth = "84";
       elevation = "54";
       moonAzimuth = "0";
