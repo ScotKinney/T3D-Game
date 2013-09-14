@@ -32,40 +32,18 @@ exec("./lights.cs");
 // Do the various effects next -- later scripts/datablocks may need them
 exec("./particles.cs");
 exec("./environment.cs");
-
 exec("./triggers.cs");
 
-// Add a rigid example
-exec("./rigidShape.cs");
+exec("./defaultEffects.cs");
 
-exec("./health.cs");
-
-// Load our supporting weapon datablocks, effects and such.  They must be
-// loaded before any weapon that uses them.
-exec("./weapon.cs");
-exec("./weapons/grenadefx.cs");
-exec("./weapons/rocketfx.cs");
-
-// Load the weapon datablocks
-exec("./weapons/Lurker.cs");
-exec("./weapons/Ryder.cs");
-exec("./weapons/ProxMine.cs");
-exec("./weapons/Turret.cs");
-
-exec("./teleporter.cs");
-
-// Load the default player datablocks
-exec("./player.cs");
+// Load the player datablocks
+$AlterVerse::AvSet = "Base";  // TODO: This should be set by level config
+exec("art/players/" @ $AlterVerse::AvSet @ "/datablock.cs");
 
 // Load our other player datablocks
-exec("./aiPlayer.cs");
-
-// Load the vehicle datablocks
-exec("./vehicles/cheetahCar.cs");
+//exec("./aiPlayer.cs");
 
 // IPS datablocks
-exec("./vehicles/cheetahCar.cs");
-
 exec("art/ParticleSystem/defaultDatablocks.cs");
 exec("art/ParticleSystem/graphExamples.cs");
 exec("art/SpellSystem/exec.cs");

@@ -55,7 +55,7 @@ function onServerCreated()
    %datablockFiles.add( "art/particles/managedParticleEmitterData.cs" );
    %datablockFiles.add( "art/decals/managedDecalData.cs" );
    %datablockFiles.add( "art/datablocks/managedDatablocks.cs" );
-   %datablockFiles.add( "art/forest/managedItemData.cs" );
+   %datablockFiles.add( $WorldPath @ "/forest/managedItemData.cs" );
    %datablockFiles.add( "art/datablocks/datablockExec.cs" );   
    loadDatablockFiles( %datablockFiles, true );
 

@@ -16,7 +16,7 @@ function PVCTextureDlg::onTextureBrowse(%this, %textureIdx)
    %this.curIndex = %textureIdx;
    %curFile = %this.textureFile[%textureIdx];
    if ( %curFile $= "" )
-      %curFile = "art/shapes/actors/tints/Tan0.png";
+      %curFile = "art/players/base/tints/Tan0.png";
    getLoadFilename( "Image Files|*.png;*.jpg|JPG Files|*.jpg|PNG Files|*.png", %this @ ".onTextureSelect", %curFile);
 }
 

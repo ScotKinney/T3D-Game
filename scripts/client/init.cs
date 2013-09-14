@@ -301,5 +301,8 @@ function initWorld(%worldName)
    loadWorldMaterials();
    reInitMaterials();
 
+   $AlterVerse::AvSet = "Base";  // TODO: This should be sent from the server
+   exec("art/players/" @ $AlterVerse::AvSet @ "/client.cs");
+
    $instantGroup = %oldGroup;
 }

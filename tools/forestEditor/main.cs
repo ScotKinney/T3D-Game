@@ -93,7 +93,7 @@ function ForestEditorPlugin::onWorldEditorStartup( %this )
 {       
    new PersistenceManager( ForestDataManager );
    
-   %brushPath = "art/forest/brushes.cs";
+   %brushPath = $WorldPath @ "/forest/brushes.cs";
    if ( !isFile( %brushPath ) )   
       createPath( %brushPath );      
       
@@ -197,7 +197,7 @@ function ForestEditorPlugin::onActivated( %this )
    }   
    
    if ( %this.showError )
-      MessageBoxOK( "Error", "Your art/forest folder does not contain a valid brushes.cs. Brushes you create will not be saved!" );
+      MessageBoxOK( "Error", "Your world/forest folder does not contain a valid brushes.cs. Brushes you create will not be saved!" );
 }
 
 function ForestEditorPlugin::onDeactivated( %this )
@@ -236,7 +236,7 @@ function ForestEditorPlugin::onSaveMission( %this, %missionFile )
    if ( isObject( theForest ) )                     
       theForest.saveDataFile();
       
-   ForestBrushGroup.save( "art/forest/brushes.cs" );
+   ForestBrushGroup.save( $WorldPath @ "/forest/brushes.cs" );
 }
 
 function ForestEditorPlugin::onEditorSleep( %this )

@@ -202,7 +202,7 @@ function ForestEditorGui::newMesh( %this )
       ForestEditMeshTree.scrollVisible( %item );
       ForestEditMeshTree.addSelection( %item );
       
-      ForestDataManager.setDirty( %name, "art/forest/managedItemData.cs" );  
+      ForestDataManager.setDirty( %name, $WorldPath @ "/forest/managedItemData.cs" );  
       
       %element = new ForestBrushElement()
       {
@@ -261,7 +261,7 @@ function ForestEditorGui::okDeleteMesh( %this, %mesh )
       return;
       }
    // Remove mesh from file
-   ForestDataManager.removeObjectFromFile( %mesh, "art/forest/managedItemData.cs" );  
+   ForestDataManager.removeObjectFromFile( %mesh, $WorldPath @ "/forest/managedItemData.cs" );  
 
    // Submitting undo actions is handled in code.
    %this.deleteMeshSafe( %mesh );   
