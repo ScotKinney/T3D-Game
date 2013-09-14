@@ -35,6 +35,7 @@ exec("./environment.cs");
 exec("./triggers.cs");
 
 exec("./defaultEffects.cs");
+exec("./player.cs");
 
 // Load the player datablocks
 $AlterVerse::AvSet = "Base";  // TODO: This should be set by level config

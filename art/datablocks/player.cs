@@ -4,47 +4,8 @@
 //-----------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------
-// Player Audio Profiles
-//----------------------------------------------------------------------------
-
-//////////////////////////////////////////////////////////////////////////
-//Pain-Death Cries - FootPrints
-//////////////////////////////////////////////////////////////////////////
-
-//MalePlayer
-datablock SFXProfile(MaleDeathCry)   
-{   
-   fileName = "art/sound/PainDeathCries/MaleDeathCry";   
-   description = AudioClosest3d;   
-   preload = false;   
-}; 
-
-datablock SFXProfile(MalePainCry)
-{
-   fileName = "art/sound/PainDeathCries/MalePainCry";
-   description = AudioClosest3d;
-   preload = false;
-};
-
-//FemalePlayer
-datablock SFXProfile(FemaleDeathCry)
-{
-   fileName = "art/sound/PainDeathCries/FemaleDeathCry";
-   description = AudioClosest3d;
-   preload = false;
-};
-
-datablock SFXProfile(FemalePainCry)
-{
-   fileName = "art/sound/PainDeathCries/FemalePainCry";
-   description = AudioClosest3d;
-   preload = false;
-};
-
-//----------------------------------------------------------------------------
-
-// ----------------------------------------------------------------------------
 // This is our default player datablock that all others will derive from.
+// Inherit and change at least the shapeFile, DeathSound and PainSound
 // ----------------------------------------------------------------------------
 datablock PlayerData(DefaultPlayerData)
 {
@@ -53,7 +14,7 @@ datablock PlayerData(DefaultPlayerData)
    renderFirstPerson = true;
 
    className = Armor;
-   shapeFile = "art/players/base/basemale/basemale1_4.dts";
+   shapeFile = "core/art/effects/debris_player.dts";
    cameraMaxDist = 3;
    computeCRC = false;
    team = 1;
@@ -70,8 +31,8 @@ datablock PlayerData(DefaultPlayerData)
 
    aiAvoidThis = true;
   
-   DeathSound = DeathCrySound;
-   PainSound = PainCrySound;
+   //DeathSound = DeathCrySound;
+   //PainSound = PainCrySound;
 
    minLookAngle = -1;
    maxLookAngle = 1;
@@ -199,36 +160,4 @@ datablock PlayerData(DefaultPlayerData)
    observeParameters = "0.5 4.5 4.5";
    
    inNeutralZone = false;
-};
-
-//epls bloodclans
-datablock PlayerData(MalePlayerData : DefaultPlayerData)
-{
-   shapeFile = "art/players/base/basemale/basemale1_4.dts";
-   //Death Cry
-   DeathSound = MaleDeathCry;
-   PainSound = MalePainCry;
-};
-
-datablock PlayerData(FemalePlayerData : DefaultPlayerData)
-{
-   shapeFile = "art/players/base/basefemale/basefemale1_4.dts";
-   //Death Cry
-   DeathSound = FemaleDeathCry;
-   PainSound = FemalePainCry;
-};
-
-// Player fishing sounds
-datablock SFXProfile(PoleCastSound)
-{
-   fileName = "art/sound/cast";
-   description = AudioClosest3d;
-   preload = false;
-};
-
-datablock SFXProfile(FishCatchSound)
-{
-   fileName = "art/sound/FishCatch";
-   description = AudioClosest3d;
-   preload = false;
 };
