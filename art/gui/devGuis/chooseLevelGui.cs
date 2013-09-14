@@ -21,7 +21,7 @@
 //-----------------------------------------------------------------------------
 
 // Specify where the mission files are.
-$Server::MissionFileSpec = "levels/*.mis";
+$Server::MissionFileSpec = "art/worlds/*/*.mis";
 
 function StartLevel( %mission, %hostingType )
 {
