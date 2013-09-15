@@ -317,7 +317,7 @@ package GameCore
       %client.armor = "Light";
       %client.race = "Human";
       %client.setPlayerName(%name);
-      %client.team = "";
+      //%client.team = "";
       %client.score = 0;
       %client.kills = 0;
       %client.deaths = 0;
@@ -601,7 +601,7 @@ function GameCore::preparePlayer(%game, %client)
 
    //Give the client and player a team
    if (%client.team $= "")
-      %client.team = 2; // No team set, make them a Renegade.
+      %client.team = 0; // No team set, make them a Renegade.
    %client.player.team = %client.team;
 
    //Put the player in a SimSet with its teammates

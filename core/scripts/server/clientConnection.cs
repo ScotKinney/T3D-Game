@@ -73,7 +73,7 @@ function GameConnection::onConnect( %client, %name )
    %client.race = "Human";
    %client.skin = addTaggedString( "base" );
    %client.setPlayerName(%name);
-   %client.team = "";
+   %client.team = "0";
    %client.score = 0;
 
    // 
