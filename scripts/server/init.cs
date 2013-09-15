@@ -77,6 +77,7 @@ function initServer()
       $Server::DB::Remote = true;
       exec("./AlterVerse/remoteDBData.cs");
    }
+   exec("./AlterVerse/clans.cs");
    exec("./AlterVerse/playerPersistance.cs");
    exec("./AlterVerse/inventory.cs");
    exec("./AlterVerse/health.cs");

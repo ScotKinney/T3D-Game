@@ -568,20 +568,34 @@ function GameCore::onClientLeaveGame(%game, %client)
 // This is a good place to initiate team selection.
 function GameCore::preparePlayer(%game, %client)
 {
-   //echo (%game @"\c4 -> "@ %game.class @" -> GameCore::preparePlayer");
+   // use spawnpoint from server transfer if specified
+   if( isObject(%client.spawnPoint) )
+   {
+      %playerSpawnPoint = %client.spawnPoint;
+      %client.spawnPoint = "";
+   }
+   else
+   {
+      if( isObject(spawnsphere001) )
+         %playerSpawnPoint = spawnsphere001;
+      else
+         %playerSpawnPoint = pickPlayerSpawnPoint($Game::DefaultPlayerSpawnGroups);
+   }
 
-   // Find a spawn point for the player
-   // This function currently relies on some helper functions defined in
-   // core/scripts/spawn.cs. For custom spawn behaviors one can either
-   // override the properties on the SpawnSphere's or directly override the
-   // functions themselves.
-   %playerSpawnPoint = pickPlayerSpawnPoint($Game::DefaultPlayerSpawnGroups);
    // Spawn a camera for this client using the found %spawnPoint
    //%client.spawnPlayer(%playerSpawnPoint);
    %game.spawnPlayer(%client, %playerSpawnPoint);
 
-   // Starting equipment
+   // Set the players starting equipment/inventory
    %game.loadOut(%client.player);
+
+   //Give the client and player a team
+   if (%client.team $= "")
+      %client.team = 2; // No team set, make them a Renegade.
+   %client.player.team = %client.team;
+
+   //Put the player in a SimSet with its teammates
+   TeamSimSets(%client.player, %client.player.team);
 }
 
 function GameCore::loadOut(%game, %player)
@@ -741,27 +755,16 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
       error("Attempting to create a player for a client that already has one!");
    }
 
+   // Defaults
+   %spawnClass      = $Game::DefaultPlayerClass;
+   if (%this.gender $= "Female" )
+      %spawnDataBlock = "FemalePlayerData";
+   else
+      %spawnDataBlock = "MalePlayerData";
+
    // Attempt to treat %spawnPoint as an object
    if (getWordCount(%spawnPoint) == 1 && isObject(%spawnPoint))
    {
-      // Defaults
-      %spawnClass      = $Game::DefaultPlayerClass;
-      %spawnDataBlock  = $Game::DefaultPlayerDataBlock;
-
-      // Overrides by the %spawnPoint
-      if (isDefined("%spawnPoint.spawnClass"))
-      {
-         %spawnClass = %spawnPoint.spawnClass;
-         %spawnDataBlock = %spawnPoint.spawnDatablock;
-      }
-      else if (isDefined("%spawnPoint.spawnDatablock"))
-      {
-         // This may seem redundant given the above but it allows
-         // the SpawnSphere to override the datablock without
-         // overriding the default player class
-         %spawnDataBlock = %spawnPoint.spawnDatablock;
-      }
-
       %spawnProperties = %spawnPoint.spawnProperties;
       %spawnScript     = %spawnPoint.spawnScript;
 
@@ -800,13 +803,8 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
    }
    else
    {
-      
       // Create a default player
-      %player = spawnObject($Game::DefaultPlayerClass, $Game::DefaultPlayerDataBlock);
-      
-      if (!%player.isMemberOfClass("Player"))
-         warn("Trying to spawn a class that does not derive from Player.");
-
+      %player = spawnObject(%spawnClass, %spawnDatablock);
       // Treat %spawnPoint as a transform
       %player.setTransform(%spawnPoint);
    }
@@ -819,6 +817,9 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
 
       return;
    }
+
+   // Customize the avatar
+   %player.setAvOptions(%client.avOptions);
 
    // Update the default camera to start with the player
    if (isObject(%client.camera) && !isDefined("%noControl"))
@@ -838,45 +839,14 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
    // future reference
    %player.client = %client;
    
-   // If the player's client has some owned turrets, make sure we let them
-   // know that we're a friend too.
-   if (%client.ownedTurrets)
-   {
-      for (%i=0; %i<%client.ownedTurrets.getCount(); %i++)
-      {
-         %turret = %client.ownedTurrets.getObject(%i);
-         %turret.addToIgnoreList(%player);
-      }
-   }
-
    // Player setup...
    if (%player.isMethod("setShapeName"))
-      %player.setShapeName(%client.playerName);
+      %player.setShapeName(%client.nameBase);
+   if ( isObject($Server::ClanData) )
+      %player.setClanName($Server::ClanData.clan[%client.team]);
 
    if (%player.isMethod("setEnergyLevel"))
       %player.setEnergyLevel(%player.getDataBlock().maxEnergy);
-
-   if (!isDefined("%client.skin"))
-   {
-      // Determine which character skins are not already in use
-      %availableSkins = %player.getDatablock().availableSkins;             // TAB delimited list of skin names
-      %count = ClientGroup.getCount();
-      for (%cl = 0; %cl < %count; %cl++)
-      {
-         %other = ClientGroup.getObject(%cl);
-         if (%other != %client)
-         {
-            %availableSkins = strreplace(%availableSkins, %other.skin, "");
-            %availableSkins = strreplace(%availableSkins, "\t\t", "");     // remove empty fields
-         }
-      }
-
-      // Choose a random, unique skin for this client
-      %count = getFieldCount(%availableSkins);
-      %client.skin = addTaggedString( getField(%availableSkins, getRandom(%count)) );
-   }
-
-   %player.setSkinName(%client.skin);
 
    // Give the client control of the player
    %client.player = %player;

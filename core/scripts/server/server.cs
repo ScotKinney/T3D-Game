@@ -162,7 +162,12 @@ function createServer(%serverType, %level)
 
    // Only register with the server list if we allow connections
    if ( %serverType $= "MultiPlayer" )
-         schedule(5000, 0, RegisterServer);
+   {
+      InitClanTable();
+      schedule(5000, 0, RegisterServer);
+   }
+   else
+      MakeClanTable();
 
    return true;
 }

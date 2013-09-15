@@ -90,6 +90,24 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.wealth = %this.wealth;
    %client.weapon = %this.weapon;
    %client.buildRights = %this.rights;
+   %client.Homeworld = %this.homeworld;
+   %client.Gender = %this.gender;
+   %client.clanID = %this.clanID;
+   %client.clanRole = %this.clanRole;
+   %client.avOptions = %this.avOpts;
+
+   %index = $Server::ClanData.teams.getIndexFromKey(%client.clanID);
+   %client.team = $Server::ClanData.teams.getValue(%index);
+
+   if ( %client.avOptions $= "" )
+   {  // They've never saved an avatar setup, get them the default
+      if ( %client.Gender $= "Male" )
+         %client.avOptions = MalePlayerData.DefaultSetup;
+      else
+         %client.avOptions = FemalePlayerData.DefaultSetup;
+   }
+   echo( %client.Gender @ " from " @ %client.Homeworld SPC 
+      $Server::ClanData.clan[%client.team] @ " Clan");
 
    // Let the chat server know that the user is on this level
    %count = ClientGroup.getCount();
@@ -123,15 +141,13 @@ function remoteDBData::fillClanTable( %this )
    for ( %i = 0; %i < %this.NumClans; %i++ )
    {
       %id = %this.ClanID[%i];
-      %team = %this.teamNum[%i];
+      %team = $Server::ClanData.nextTeam;
       %name = %this.ClanName[%i];
-      $Server::ClanData.teams.add(%id, %this.teamNum[%i]);
+      $Server::ClanData.teams.add(%id, %team);
       $Server::ClanData.clan[%team] = %this.ClanName[%i];
-      //$Server::ClanData.mWeapon[%id] = %this.male_weapon[%i] @ "Weapon";
-      //$Server::ClanData.fWeapon[%id] = %this.female_weapon[%i] @ "Weapon";
+      $Server::ClanData.nextTeam++;
    }
 
-   echo("Flag Value = " @ %this.flag);
    echo(%this.NumClans @ " active clans.");
    echo("Team #:ID:Clan Name");
    %numClans = $Server::ClanData.teams.count();
@@ -142,6 +158,7 @@ function remoteDBData::fillClanTable( %this )
       %name = $Server::ClanData.clan[%team];
       echo(%team @ ":" @ %id @ ":" @ %name);
    }
+   return;
 }
 
 function remoteDBData::serverRemoved( %this )

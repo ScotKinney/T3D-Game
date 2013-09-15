@@ -43,171 +43,14 @@ datablock SFXProfile(FemalePainCry)
 
 //----------------------------------------------------------------------------
 
-// ----------------------------------------------------------------------------
-// This is our default player datablock that all others will derive from.
-// ----------------------------------------------------------------------------
-datablock PlayerData(DefaultPlayerData)
-{
-   name = "Default Player";
-   
-   renderFirstPerson = true;
-
-   className = Armor;
-   shapeFile = "art/players/base/basemale/basemale1_4.dts";
-   cameraMaxDist = 3;
-   computeCRC = false;
-   team = 1;
-
-   canObserve = true;
-   cmdCategory = "Clients";
-
-   cameraDefaultFov = 65.0;
-   cameraMinFov = 5.0;
-   cameraMaxFov = 95.0;
-
-   debrisShapeName = "core/art/effects/debris_player.dts";
-   debris = DefaultDebris;
-
-   aiAvoidThis = true;
-  
-   DeathSound = DeathCrySound;
-   PainSound = PainCrySound;
-
-   minLookAngle = -1;
-   maxLookAngle = 1;
-   maxFreelookAngle = 3.0;
-
-   mass = 100;
-   //drag = 1.3;
-   drag = 0.3;
-   maxdrag = 0.4;
-   density = 1.1;
-   maxDamage = 300;
-   maxEnergy =  60;
-   repairRate = 0.33;
-   energyPerDamagePoint = 75.0;
-
-   rechargeRate = 0.256;
-
-   runForce = 48 * 90;
-   runEnergyDrain = 0;
-   minRunEnergy = 0;
-   maxForwardSpeed = 2;//6
-   maxBackwardSpeed = 2;//5
-   maxSideSpeed = 1;//5
-
-   sprintEnergyDrain = 0; //how much energy to drain while printing until player cannot sprint anymore
-   minSprintEnergy = 0; //the minimum amount of energy to drain
-   maxSprintForwardSpeed = 6;
-   maxSprintBackwardSpeed = 5;
-   maxSprintSideSpeed = 3;
-   sprintForce = 75 * 90;
-   sprintYawScale = 0.2;
-
-   crouchForce = 45.0 * 90;
-   maxCrouchForwardSpeed = 2.0;//4
-   maxCrouchBackwardSpeed = 2.0;
-   maxCrouchSideSpeed = 1.0;
-
-   maxUnderwaterForwardSpeed = 3.4;//8.4
-   maxUnderwaterBackwardSpeed = 2.8;//7.8
-   maxUnderwaterSideSpeed = 2.8;//7.8
-
-   jumpForce = 8.3 * 90;
-   standJumpForce = 8.3 * 90;
-   jumpEnergyDrain = 0;
-   minJumpEnergy = 0;
-   jumpDelay = 15;
-   airControl = 0.3;
-
-   recoverDelay = 9;
-   recoverRunForceScale = 1.2;
-
-   minImpactSpeed = 15; //45;  // minimum speed to generate a collision callback
-   speedDamageScale = 0.4;
-
-   boundingBox = "0.75 0.75 2.6"; // Torque Physics
-   //boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
-   crouchBoundingBox = "1 1 1.25";
-   swimBoundingBox = "1 2 2";
-   pickupRadius = 10;
-
-   // Damage location details
-   boxNormalHeadPercentage       = 0.83;
-   boxNormalTorsoPercentage      = 0.49;
-   boxHeadLeftPercentage         = 0;
-   boxHeadRightPercentage        = 1;
-   boxHeadBackPercentage         = 0;
-   boxHeadFrontPercentage        = 1;
-
-   // Foot Prints
-   decalData   = DefaultFootprint;
-   decalOffset = 0.25;
-
-   footPuffEmitter = LightPuffEmitter;
-   footPuffNumParts = 10;
-   footPuffRadius = 0.25;
-
-   dustEmitter = LiftoffDustEmitter;
-
-   splash = DefaultSplash;
-   splashVelocity = 4.0;
-   splashAngle = 67.0;
-   splashFreqMod = 300.0;
-   splashVelEpsilon = 0.60;
-   bubbleEmitTime = 0.4;
-   splashEmitter[0] = DefaultWakeEmitter;
-   splashEmitter[1] = DefaultFoamEmitter;
-   splashEmitter[2] = DefaultBubbleEmitter;
-   mediumSplashSoundVelocity = 10.0;
-   hardSplashSoundVelocity = 20.0;
-   exitSplashSoundVelocity = 5.0;
-
-   // Controls over slope of runnable/jumpable surfaces
-   runSurfaceAngle  = 50;
-   jumpSurfaceAngle = 60;
-   maxStepHeight = 1.5;  //two meters
-   minJumpSpeed = 20;
-   maxJumpSpeed = 30;
-
-   horizMaxSpeed = 68;
-   horizResistSpeed = 33;
-   horizResistFactor = 0.35;
-
-   upMaxSpeed = 80;
-   upResistSpeed = 25;
-   upResistFactor = 0.3;
-
-   footstepSplashHeight = 0.35;
-
-   //NOTE:  some sounds commented out until wav's are available
-
-   // Footstep Sounds
-
-   FootShallowSound     = FootLightShallowSplashSound;
-   FootWadingSound      = FootLightWadingSound;
-   FootUnderwaterSound  = FootLightUnderwaterSound;
-
-   groundImpactMinSpeed    = 10.0;
-   groundImpactShakeFreq   = "4.0 4.0 4.0";
-   groundImpactShakeAmp    = "1.0 1.0 1.0";
-   groundImpactShakeDuration = 0.8;
-   groundImpactShakeFalloff = 10.0;
-
-   //exitingWater         = ExitingWaterHumanSound;
-
-   observeParameters = "0.5 4.5 4.5";
-   
-   inNeutralZone = false;
-};
-
-//epls bloodclans
 datablock PlayerData(MalePlayerData : DefaultPlayerData)
 {
    shapeFile = "art/players/base/basemale/basemale1_4.dts";
    //Death Cry
    DeathSound = MaleDeathCry;
    PainSound = MalePainCry;
+   
+   DefaultSetup = "55,59,35,20,65,63,70,77";
 };
 
 datablock PlayerData(FemalePlayerData : DefaultPlayerData)
@@ -216,6 +59,8 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    //Death Cry
    DeathSound = FemaleDeathCry;
    PainSound = FemalePainCry;
+
+   DefaultSetup = "80,99,216,386,393,382,379,380,390,393,390";
 };
 
 // Player fishing sounds

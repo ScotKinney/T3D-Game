@@ -16,6 +16,7 @@ function GameConnection::AuthenticateUser(%client)
       %args = %args @ "&isTrans=" @ %client.transfering;
       %args = %args @ "&uAddr=" @ NextToken(%client.getAddress(),"",":");
       %args = %args @ "&sOwner=" @ $AlterVerse::serverOwner;
+      %args = %args @ "&avSet=" @ $AlterVerse::AvSet;
       remoteDBCommand("AuthenticateUser", %args, %client);
       return "";
    }
@@ -120,6 +121,9 @@ function GameConnection::AuthenticateUser(%client)
       %result.delete();
    }
 
+   // Get the players gender, clan and avatar setup
+   %client.GetPlayerSettings();
+
    // and we're through!
    echo(%client SPC %netAddress SPC %name SPC "successfully authenticated.");
       
@@ -145,4 +149,62 @@ function GameConnection::DisconnectUser(%client)
    //DB::SprocNoRet("sp_StatsPlayTime", "'" @ %client.pData.dbID @ "','" @ %playTime @ "'");
    //%client.writeAllPersistantStats(); 
    %client.deletePersistantStats();
+}
+
+function GameConnection::GetPlayerSettings(%client)
+{  // Get the players gender, clan, homeworld and avatar setup
+
+   // Get the users homeworld and gender from nuke_bbxdata_data
+   // Homeworld is field_id 10, Gender is  is field_id 11
+   %results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '10' AND user_id = '" @ %client.dbUserID @"'");
+   %client.Homeworld = (%results.getNumRows() > 0) ? %results.xdata_value : "Unknown";
+   %results.Delete();
+   %results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '11' AND user_id = '" @ %client.dbUserID @"'");
+   %client.Gender = (%results.getNumRows() > 0) ? %results.xdata_value : "Male";
+   %results.Delete();
+
+   // Now find a clan ID
+   %results = DB::Select("Clan_id, Clan_role_id", "AVClanMembers", "user_id = " @ %client.dbUserID);
+   if ( %results.getNumRows() > 0 )
+   {
+      %client.clanID = %results.Clan_id;
+      %client.clanRole = (%results.Clan_role_id $= "") ? "0" : %results.Clan_role_id;
+   }
+   else
+   {  // No member entry found, see if this user is a clan leader
+      %results.Delete();
+      %results = DB::Select("id", "AVClans", "owner_user_id = " @ %client.dbUserID @ " AND active=b'1'");
+      if ( %results.getNumRows() > 0 )
+      {
+         %client.clanID = %results.id;
+         %client.clanRole = -1;  // No role ID for leaders
+      }
+      else
+      {  // No entry found so they're a renegade
+         %client.clanID = 0;
+         %client.clanRole = -1;  // No roles for renegades
+      }
+   }
+   %results.Delete();
+   %index = $Server::ClanData.teams.getIndexFromKey(%client.clanID);
+   %client.team = $Server::ClanData.teams.getValue(%index);
+
+   // Now get the players avatar setup
+   %fieldName = $AlterVerse::AvSet @ %client.Gender;
+   %results = DB::Select(%fieldName, "AvatarSetup", "user_id = " @ %client.dbUserID);
+   if ( %results.getNumRows() > 0 )
+   {
+      %evalStr = %client @ ".avOptions = " @ %results @ "." @ %fieldName @ ";";
+      echo("Evaluating " @ %evalStr);
+      eval(%evalStr);
+   }
+   else
+   {  // They've never saved an avatar setup, get them the default
+      if ( %client.Gender $= "Male" )
+         %client.avOptions = MalePlayerData.DefaultSetup;
+      else
+         %client.avOptions = FemalePlayerData.DefaultSetup;
+   }
+   echo( %client.Gender @ " from " @ %client.Homeworld SPC 
+      $Server::ClanData.clan[%client.team] @ " Clan");
 }
