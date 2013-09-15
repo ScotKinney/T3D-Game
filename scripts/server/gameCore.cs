@@ -253,11 +253,12 @@ package GameCore
       {
          %client.authenticated = true;
          %client.buildRights = 1;
-         %client.Gender = "Male";
+         %client.Gender = $pref::Player::Gender;
          %client.clanID = "0";
          %client.clanRole = "0";
          %client.team = "0";
-         %client.avOptions = MalePlayerData.DefaultSetup;
+         %client.avOptions = ($pref::Player::Gender $= "Male") ? 
+            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
          return ""; // No authentication done on single player servers
       }
 
@@ -268,7 +269,12 @@ package GameCore
       // We can't authenticate a local client until after the server has
       // been registered
       if ( %client.getAddress() $= "local" )
+      {  // The player will be created already, so set default
+         %client.Gender = $pref::Player::Gender;
+         %client.avOptions = ($pref::Player::Gender $= "Male") ? 
+            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
          return "";
+      }
 
       return %client.AuthenticateUser();
    } 
@@ -308,7 +314,6 @@ package GameCore
       }
 
       // Save client preferences on the connection object for later use.
-      %client.gender = "Male";
       %client.armor = "Light";
       %client.race = "Human";
       %client.setPlayerName(%name);
@@ -732,7 +737,7 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
 
    // Defaults
    %spawnClass      = $Game::DefaultPlayerClass;
-   if (%this.gender $= "Female" )
+   if (%client.gender $= "Female" )
       %spawnDataBlock = "FemalePlayerData";
    else
       %spawnDataBlock = "MalePlayerData";

@@ -109,6 +109,9 @@ function remoteDBData::saveAuthenticationData( %this )
    echo( %client.Gender @ " from " @ %client.Homeworld SPC 
       $Server::ClanData.clan[%client.team] @ " Clan");
 
+   if ( isObject(%client.player) )
+      %client.player.setAvOptions(%client.avOptions);
+
    // Let the chat server know that the user is on this level
    %count = ClientGroup.getCount();
    serverChat.sendGameCmd("addusr", $AlterVerse::serverId, %client.dbUserID,

@@ -68,7 +68,7 @@ function GameConnection::onConnect( %client, %name )
    }
 
    // Save client preferences on the connection object for later use.
-   %client.gender = "Male";
+   //%client.gender = $pref::Player::Gender;
    %client.armor = "Light";
    %client.race = "Human";
    %client.skin = addTaggedString( "base" );
