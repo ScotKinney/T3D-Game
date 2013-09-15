@@ -78,6 +78,16 @@
       fontType = "Arial Bold";
    };
 
+   singleton GuiControlProfile(AVShapeNameHud : GuiModelessDialogProfile)
+   {
+      fontColor = "0 255 0";
+      fontColors[1] = "0 255 0"; // Human Player Names
+      fontColors[2] = "0 255 0"; // Horse Names
+      fontColors[3] = "0 255 0"; // Treasuries
+      fontColors[4] = "0 255 0"; // AI Names
+      fontColors[5] = "0 255 0"; // Not used yet
+   };
+
    singleton GuiControlProfile (AVToolPanel) 
    {
       opaque = false;
@@ -86,11 +96,11 @@
       category = "AlterVerse";
    };
 
-singleton GuiControlProfile (AVToolsTextCenter)
-{
-   fontColor = "50 50 50";
-   fontType = "Arial Bold";
-   fontSize = 16;
-   justify = "center";
-   category = "Tools";
-};
+   singleton GuiControlProfile (AVToolsTextCenter)
+   {
+      fontColor = "50 50 50";
+      fontType = "Arial Bold";
+      fontSize = 16;
+      justify = "center";
+      category = "Tools";
+   };

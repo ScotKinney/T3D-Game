@@ -120,7 +120,7 @@
       verticalOffset = "0.2";
       distanceFade = "0.1";
       isContainer = "0";
-      Profile = "GuiModelessDialogProfile";
+      Profile = "AVShapeNameHud";
       HorizSizing = "width";
       VertSizing = "height";
       position = "0 0";
