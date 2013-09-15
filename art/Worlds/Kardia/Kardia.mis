@@ -21,7 +21,7 @@ new SimGroup(MissionGroup) {
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
-         desc0 = "An empty room ready to be populated with Torque objects.";
+         desc0 = "An empty room that's not entirely unlike Kardia.";
          displayName = "Kardia";
          enabled = "1";
          levelName = "Kardia";
@@ -131,7 +131,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/shapes/rocks/boulder.dts";
+      shapeName = "art/Packs/rocks/T3D/boulder.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -147,7 +147,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/shapes/rocks/rock1.dts";
+      shapeName = "art/Packs/rocks/T3D/rock1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";

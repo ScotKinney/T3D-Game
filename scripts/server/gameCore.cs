@@ -253,6 +253,11 @@ package GameCore
       {
          %client.authenticated = true;
          %client.buildRights = 1;
+         %client.Gender = "Male";
+         %client.clanID = "0";
+         %client.clanRole = "0";
+         %client.team = "0";
+         %client.avOptions = MalePlayerData.DefaultSetup;
          return ""; // No authentication done on single player servers
       }
 
@@ -602,36 +607,6 @@ function GameCore::loadOut(%game, %player)
 {
    //echo (%game @"\c4 -> "@ %game.class @" -> GameCore::loadOut");
 
-   %player.clearWeaponCycle();
-   
-   %player.setInventory(Ryder, 1);
-   %player.setInventory(RyderClip, %player.maxInventory(RyderClip));
-   %player.setInventory(RyderAmmo, %player.maxInventory(RyderAmmo));    // Start the gun loaded
-   %player.addToWeaponCycle(Ryder);
-
-   %player.setInventory(Lurker, 1);
-   %player.setInventory(LurkerClip, %player.maxInventory(LurkerClip));
-   %player.setInventory(LurkerAmmo, %player.maxInventory(LurkerAmmo));  // Start the gun loaded
-   %player.addToWeaponCycle(Lurker);
-
-   %player.setInventory(LurkerGrenadeLauncher, 1);
-   %player.setInventory(LurkerGrenadeAmmo, %player.maxInventory(LurkerGrenadeAmmo));
-   %player.addToWeaponCycle(LurkerGrenadeLauncher);
-
-   %player.setInventory(ProxMine, %player.maxInventory(ProxMine));
-   %player.addToWeaponCycle(ProxMine);
-
-   %player.setInventory(DeployableTurret, %player.maxInventory(DeployableTurret));
-   %player.addToWeaponCycle(DeployableTurret);
-   
-   if (%player.getDatablock().mainWeapon.image !$= "")
-   {
-      %player.mountImage(%player.getDatablock().mainWeapon.image, 0);
-   }
-   else
-   {
-      %player.mountImage(Ryder, 0);
-   }
 }
 
 // Customized kill message for falling deaths

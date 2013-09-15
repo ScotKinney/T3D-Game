@@ -50,7 +50,7 @@ datablock ParticleData(DefaultSplashMist)
    times[2]      = 1.0;
 };
 
-datablock ParticleEmitterData(DefaultSplashMistEmitter)
+datablock SphereEmitterData(DefaultSplashMistEmitter)
 {
    ejectionPeriodMS = 5;
    periodVarianceMS = 0;
@@ -88,7 +88,7 @@ datablock ParticleData(DefaultBubbleParticle)
    times[2]      = 1.0;
 };
 
-datablock ParticleEmitterData(DefaultBubbleEmitter)
+datablock SphereEmitterData(DefaultBubbleEmitter)
 {
    ejectionPeriodMS = 1;
    periodVarianceMS = 0;
@@ -126,7 +126,7 @@ datablock ParticleData(DefaultFoamParticle)
    times[2]      = 1.0;
 };
 
-datablock ParticleEmitterData(DefaultFoamEmitter)
+datablock SphereEmitterData(DefaultFoamEmitter)
 {
    ejectionPeriodMS = 10;
    periodVarianceMS = 0;
@@ -162,7 +162,7 @@ datablock ParticleData( DefaultFoamDropletsParticle )
    times[2]      = 1.0;
 };
 
-datablock ParticleEmitterData( DefaultFoamDropletsEmitter )
+datablock SphereEmitterData( DefaultFoamDropletsEmitter )
 {
    ejectionPeriodMS = 7;
    periodVarianceMS = 0;
@@ -212,7 +212,7 @@ datablock ParticleData( DefaultWakeParticle )
    times[3]      = "1.0";
 };
 
-datablock ParticleEmitterData( DefaultWakeEmitter )
+datablock SphereEmitterData( DefaultWakeEmitter )
 {
    ejectionPeriodMS = "200";
    periodVarianceMS = "10";
@@ -253,7 +253,7 @@ datablock ParticleData( DefaultSplashParticle )
    times[2]      = 1.0;
 };
 
-datablock ParticleEmitterData( DefaultSplashEmitter )
+datablock SphereEmitterData( DefaultSplashEmitter )
 {
    ejectionPeriodMS = 1;
    periodVarianceMS = 0;
@@ -320,7 +320,7 @@ datablock ParticleData(LightPuff)
    times[1]      = 1.0;
 };
 
-datablock ParticleEmitterData(LightPuffEmitter)
+datablock SphereEmitterData(LightPuffEmitter)
 {
    ejectionPeriodMS = 35;
    periodVarianceMS = 10;
@@ -357,7 +357,7 @@ datablock ParticleData(LiftoffDust)
    textureName = "core/art/effects/dustParticle";
 };
 
-datablock ParticleEmitterData(LiftoffDustEmitter)
+datablock SphereEmitterData(LiftoffDustEmitter)
 {
    ejectionPeriodMS = 5;
    periodVarianceMS = 0;

@@ -21,9 +21,9 @@ new SimGroup(MissionGroup) {
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
-         desc0 = "An empty terrain ready to be populated with Torque objects.";
+         desc0 = "An empty terrain pretending to be Tortuga.";
          displayName = "Tortuga";
-         levelName = "Empty Terrain";
+         levelName = "Tortuga";
    };
    new ScatterSky() {
       skyBrightness = "30";

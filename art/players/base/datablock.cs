@@ -46,6 +46,8 @@ datablock SFXProfile(FemalePainCry)
 datablock PlayerData(MalePlayerData : DefaultPlayerData)
 {
    shapeFile = "art/players/base/basemale/basemale1_4.dts";
+   optionPath = "art/players/base";
+
    //Death Cry
    DeathSound = MaleDeathCry;
    PainSound = MalePainCry;
@@ -56,6 +58,8 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
 datablock PlayerData(FemalePlayerData : DefaultPlayerData)
 {
    shapeFile = "art/players/base/basefemale/basefemale1_4.dts";
+   optionPath = "art/players/base";
+
    //Death Cry
    DeathSound = FemaleDeathCry;
    PainSound = FemalePainCry;
