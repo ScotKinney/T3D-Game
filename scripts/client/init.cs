@@ -45,9 +45,9 @@
 function loadMaterials()
 {
    // Load any materials files for which we only have DSOs.
-   for( %file = findFirstFile( "*/materials.cs.dso" );
+   for( %file = findFirstFile( "art/*/materials.cs.dso" );
         %file !$= "";
-        %file = findNextFile( "*/materials.cs.dso" ))
+        %file = findNextFile( "art/*/materials.cs.dso" ))
    {
       if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
          continue;
@@ -59,9 +59,9 @@ function loadMaterials()
    }
 
    // Load all source material files.
-   for( %file = findFirstFile( "*/materials.cs" );
+   for( %file = findFirstFile( "art/*/materials.cs" );
         %file !$= "";
-        %file = findNextFile( "*/materials.cs" ))
+        %file = findNextFile( "art/*/materials.cs" ))
    {
       if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
          continue;

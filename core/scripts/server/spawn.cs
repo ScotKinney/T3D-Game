@@ -31,7 +31,7 @@
 // to spawn a the $Game::defaultCameraClass as the control object.
 $Game::DefaultPlayerClass        = "Player";
 $Game::DefaultPlayerDataBlock    = "DefaultPlayerData";
-$Game::DefaultPlayerSpawnGroups  = "PlayerSpawnPoints";
+$Game::DefaultPlayerSpawnGroups  = "PlayerDropPoints PlayerSpawnPoints";
 
 //-----------------------------------------------------------------------------
 // What kind of "camera" is spawned is either controlled directly by the

@@ -15,7 +15,7 @@ datablock StaticShapeData(AIPlayerMarker)
    //specified category under the "shapes" root category.
    category = "AIMarker";
    //Basic Item properties
-   shapeFile = "art/shapes/items/kit/healthkit.dts";
+   shapeFile = "core/art/shapes/simplecone.dts";
    isAiMarker = true;
 };
 

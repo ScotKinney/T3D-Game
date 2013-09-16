@@ -38,8 +38,20 @@ singleton SFXAmbience( AudioAmbienceInside )
    states[ 0 ] = AudioLocationInside;
 };
 
+///////////////////////////////////////////////
+///////////UnderWater
+////////////////////////////////////////////////////
+
+singleton SFXProfile(UnderWaterEnvSound)   
+{      
+   fileName = "art/sound/SwimUnderwater.ogg";   
+   description = AudioLoop2D;   
+   preload = false;   
+}; 
+
 singleton SFXAmbience( AudioAmbienceUnderwater )
 {
    environment = AudioEnvUnderwater;
    states[ 0 ] = AudioLocationUnderwater;
+   soundTrack = "UnderWaterEnvSound";
 };

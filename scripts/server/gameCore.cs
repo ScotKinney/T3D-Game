@@ -441,8 +441,10 @@ function GameCore::startGame(%game)
       $Game::Schedule = %game.schedule($Game::Duration * 1000, "onGameDurationEnd");
    $Game::Running = true;
 
-//    // Start the AI on the specified path
-//    AIPlayer::spawn("Path1");
+   //Prepare the AI spawn markers
+   loadMarkers();
+   //Spawn "all" AI spawn groups
+   AIPlayer::actionByGroup("all", "spawn");
 }
 
 function GameCore::endGame(%game, %client)
@@ -510,7 +512,7 @@ function GameCore::initGameVars(%game)
    //-----------------------------------------------------------------------------
    $Game::DefaultPlayerClass = "Player";
    $Game::DefaultPlayerDataBlock = "DefaultPlayerData";
-   $Game::DefaultPlayerSpawnGroups = "PlayerSpawnPoints";
+   $Game::DefaultPlayerSpawnGroups = "PlayerDropPoints PlayerSpawnPoints";
 
    //-----------------------------------------------------------------------------
    // What kind of "camera" is spawned is either controlled directly by the
