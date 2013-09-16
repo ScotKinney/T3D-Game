@@ -70,9 +70,12 @@ function initializeWorldEditor()
    // Load Custom Editors
    loadDirectory(expandFilename("./scripts/editors"));
    loadDirectory(expandFilename("./scripts/interfaces"));
-   
+
+   // Load the AI Marker editor
+   exec("tools/worldEditor/gui/AIMarkerEditor.gui");
+   exec("tools/worldEditor/scripts/AIMarkerEditor.cs");
+
    // Create the default editor plugins before calling buildMenus.
-      
    new ScriptObject( WorldEditorPlugin )
    {
       superClass = "EditorPlugin";

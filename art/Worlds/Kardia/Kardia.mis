@@ -109,7 +109,7 @@ new SimGroup(MissionGroup) {
          mieScattering = "0.0045";
    };
    new CloudLayer(clouds1) {
-      texture = "art/skies/clouds/clouds_normal_displacement";
+      texture = "art/Packs/skies/default/clouds/clouds_normal_displacement";
       texScale[0] = "1";
       texScale[1] = "1";
       texScale[2] = "1";

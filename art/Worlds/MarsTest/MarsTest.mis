@@ -60,7 +60,7 @@ new SimGroup(MissionGroup) {
       moonElevation = "30";
       castShadows = "1";
       brightness = "0.9";
-      flareType = "SunFlareExample";
+      flareType = "DefaultSunFlare";
       flareScale = "1.2";
       nightColor = "0.152941 0.164706 0.25098 1";
       nightFogColor = "0.160784 0.207843 0.262745 1";
@@ -89,7 +89,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          mieScattering = "0.0001";
-         moonTexture = "core/art/skies/night/moon_wglow.png";
+         moonTexture = "art/Packs/skies/default/night/moon_wglow.png";
          moonTint = "0.192157 0.192157 0.192157 1";
          viewerHeight = "1.004";
    };
@@ -208,10 +208,32 @@ new SimGroup(MissionGroup) {
       };
    };
    new SkyBox() {
-      Material = "DesertSkyMat";
+      Material = "DefaultSkyMat";
       drawBottom = "1";
       fogBandHeight = "0";
       position = "-108.4 -71.7274 509.816";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new CloudLayer(clouds1) {
+      texture = "art/Packs/skies/default/clouds/clouds_normal_displacement";
+      texScale[0] = "1";
+      texScale[1] = "1";
+      texScale[2] = "1";
+      texDirection[0] = "1 0";
+      texDirection[1] = "0 1";
+      texDirection[2] = "0.5 0";
+      texSpeed[0] = "0.005";
+      texSpeed[1] = "0.005";
+      texSpeed[2] = "0.005";
+      baseColor = "0.9 0.9 0.9 1";
+      exposure = "1";
+      coverage = "0.5";
+      windSpeed = "1";
+      height = "4";
+      position = "-2.92378 5.3239 0.473861";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -241,7 +263,7 @@ new SimGroup(MissionGroup) {
          team = "9";
          Weapon = "HammerWeapon";
    };
-   new StaticShape(LittleHogart) {
+   /*new StaticShape(LittleHogart) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "232 -10 242.607";
@@ -267,7 +289,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "1";
          useCustomAmbientLighting = "0";
-   };
+   };*/
    new Path(Gargoyle1Path) {
       isLooping = "1";
       canSave = "1";
@@ -391,7 +413,7 @@ new SimGroup(MissionGroup) {
             MoveSpeed = ".3";
       };
    };
-   new StaticShape(Gargoyle1Spawn) {
+   /*new StaticShape(Gargoyle1Spawn) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "27.699 -26.2151 243.994";
@@ -411,7 +433,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "3";
          Weapon = "GargoyleFireballWeapon";
-   };
+   };*/
    new Path(Gargoyle2Path) {
       isLooping = "1";
       canSave = "1";
@@ -562,7 +584,7 @@ new SimGroup(MissionGroup) {
             MoveSpeed = ".9";
       };
    };
-   new StaticShape(Gargoyle2Spawn) {
+   /*new StaticShape(Gargoyle2Spawn) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "0 0 300";
@@ -583,20 +605,6 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "9";
          Weapon = "GargoyleFireballWeapon";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "100";
-      isAIControlled = "0";
-      dataBlock = "JavelinWeapon";
-      position = "-103.032 23.0152 246.758";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         iStatic = "1";
-   };
+   };*/
 };
 //--- OBJECT WRITE END ---

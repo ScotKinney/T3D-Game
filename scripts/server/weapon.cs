@@ -1,25 +1,7 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2012 GarageGames, LLC
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
+// Torque Game Engine 
+// Copyright (C) GarageGames.com, Inc.
 //-----------------------------------------------------------------------------
-
 // ----------------------------------------------------------------------------
 // This file contains Weapon and Ammo Class/"namespace" helper methods as well
 // as hooks into the inventory system. These functions are not attached to a
@@ -32,18 +14,43 @@
 // system assumes all primary weapons are mounted into this specified slot:
 $WeaponSlot = 0;
 
+// ----------------------------------------------------------------------------
+// Weapon Order
+// ----------------------------------------------------------------------------
+
+// This is a simple means of handling easy adding & removal of weapons to the
+// cycleWeapon function and still maintain a constant cycle order.
+function WeaponOrder(%weapon, %slot)
+{
+   if ($lastWeaponOrderSlot $= "")
+      $lastWeaponOrderSlot = -1;
+
+   // the order# slot to name index
+   $weaponOrderIndex[%slot] = %weapon;
+
+   // the weaponName to order# slot index
+   $weaponNameIndex[%weapon] = %slot;
+
+   // the last slot in the array
+   $lastWeaponOrderSlot++;
+}
+
+// Now create the Index/array by passing a name and order# for each weapon.
+// NOTE:  the first weapon needs to be 0.
+WeaponOrder(RocketLauncher, 0);
+
 //-----------------------------------------------------------------------------
-// Weapon Class
+// Weapon Class 
 //-----------------------------------------------------------------------------
 
-function Weapon::onUse(%data, %obj)
+function Weapon::onUse(%data,%obj)
 {
-   // Default behavior for all weapons is to mount it into the object's weapon
-   // slot, which is currently assumed to be slot 0
+   // Default behavoir for all weapons is to mount it into the
+   // this object's weapon slot, which is currently assumed
+   // to be slot 0
    if (%obj.getMountedImage($WeaponSlot) != %data.image.getId())
    {
-      serverPlay3D(WeaponUseSound, %obj.getTransform());
-
+      serverPlay3D(WeaponUseSound,%obj.getTransform());
       %obj.mountImage(%data.image, $WeaponSlot);
       if (%obj.client)
       {
@@ -51,35 +58,6 @@ function Weapon::onUse(%data, %obj)
             messageClient(%obj.client, 'MsgWeaponUsed', '\c0%1 selected.', %data.description);
          else
             messageClient(%obj.client, 'MsgWeaponUsed', '\c0Weapon selected');
-      }
-      
-      // If this is a Player class object then allow the weapon to modify allowed poses
-      if (%obj.isInNamespaceHierarchy("Player"))
-      {
-         // Start by allowing everything
-         %obj.allowAllPoses();
-         
-         // Now see what isn't allowed by the weapon
-         
-         %image = %data.image;
-         
-         if (%image.jumpingDisallowed)
-            %obj.allowJumping(false);
-         
-         if (%image.jetJumpingDisallowed)
-            %obj.allowJetJumping(false);
-         
-         if (%image.sprintDisallowed)
-            %obj.allowSprinting(false);
-         
-         if (%image.crouchDisallowed)
-            %obj.allowCrouching(false);
-         
-         if (%image.proneDisallowed)
-            %obj.allowProne(false);
-         
-         if (%image.swimmingDisallowed)
-            %obj.allowSwimming(false);
       }
    }
 }
@@ -92,77 +70,91 @@ function Weapon::onPickup(%this, %obj, %shape, %amount)
    if (Parent::onPickup(%this, %obj, %shape, %amount))
    {
       serverPlay3D(WeaponPickupSound, %shape.getTransform());
-      if (%shape.getClassName() $= "Player" && %shape.getMountedImage($WeaponSlot) == 0)
-         %shape.use(%this);
+      //if (%shape.getClassName() $= "Player" && 
+            //%shape.getMountedImage($WeaponSlot) == 0)  {
+         //%shape.use(%this);
+      //}
+      //UAISK+AFX Interop Changes: Start
+      if ($UAISK_Is_Available && %shape.getClassName() $= "AIPlayer") {
+         %countWeapons = getWordCount(%shape.botWeapon);
+         %shape.botWeapon = setWord(%shape.botWeapon, %countWeapons, %this.getname());
+
+         if (%shape.weaponMode $= "best")
+            sortBestWeapons(%shape);
+      }
+      //UAISK+AFX Interop Changes: End
    }
 }
 
-function Weapon::onInventory(%this, %obj, %amount)
+function Weapon::onInventory(%this,%obj,%amount)
 {
    // Weapon inventory has changed, make sure there are no weapons
    // of this type mounted if there are none left in inventory.
-   if (!%amount && (%slot = %obj.getMountSlot(%this.image)) != -1)
-      %obj.unmountImage(%slot);
-}
+   if ((%slot = %obj.getMountSlot(%this.image)) != -1)
+   {  // The weapon is currently mounted
+      if ( !%amount )
+      {
+         %obj.unmountImage(%slot); // Unmount if it's been dropped
+         %obj.lastWeapon = "";
+      }
+      else if ((%obj.client !$= "") && !%this.usesAmmo)
+      {  // If it's a thrown weapon, we need to decrease the HUD ammo count
+         %currentAmmo = %obj.getInventory(%this);
+         %obj.client.setAmmoAmountHud(%currentAmmo);
+      }
+   }
+}   
+
 
 //-----------------------------------------------------------------------------
 // Weapon Image Class
 //-----------------------------------------------------------------------------
 
-function WeaponImage::onMount(%this, %obj, %slot)
+function WeaponImage::onMount(%this,%obj,%slot)
 {
    // Images assume a false ammo state on load.  We need to
    // set the state according to the current inventory.
-   if(%this.isField("clip"))
+   if ( %this.item.usesAmmo )
+      %ammoType = %this.ammo;
+   else
+      %ammoType = %this.item;
+
+   if(%ammoType !$= "")
    {
-      // Use the clip system for this weapon.  Check if the player already has
-      // some ammo in a clip.
-      if (%obj.getInventory(%this.ammo))
+      if (%obj.getInventory(%ammoType))
       {
          %obj.setImageAmmo(%slot, true);
-         %currentAmmo = %obj.getInventory(%this.ammo);
-      }
-      else if(%obj.getInventory(%this.clip) > 0)
-      {
-         // Fill the weapon up from the first clip
-         %obj.setInventory(%this.ammo, %this.ammo.maxInventory);
-         %obj.setImageAmmo(%slot, true);
-         
-         // Add any spare ammo that may be "in the player's pocket"
-         %currentAmmo = %this.ammo.maxInventory;
-         %amountInClips += %obj.getFieldValue( "remaining" @ %this.ammo.getName());
-      }
-      else
-      {
-         %currentAmmo = 0 + %obj.getFieldValue( "remaining" @ %this.ammo.getName());
-      }
-      
-      %amountInClips = %obj.getInventory(%this.clip);
-      %amountInClips *= %this.ammo.maxInventory;
-      
-      if (%obj.client !$= "" && !%obj.isAiControlled)
-         %obj.client.RefreshWeaponHud(%currentAmmo, %this.item.previewImage, %this.item.reticle, %this.item.zoomReticle, %amountInClips);
-   }
-   else if(%this.ammo !$= "")
-   {
-      // Use the ammo pool system for this weapon
-      if (%obj.getInventory(%this.ammo))
-      {
-         %obj.setImageAmmo(%slot, true);
-         %currentAmmo = %obj.getInventory(%this.ammo);
+         %currentAmmo = %obj.getInventory(%ammoType);
       }
       else
          %currentAmmo = 0;
-
-      if (%obj.client !$= "" && !%obj.isAiControlled)
-         %obj.client.RefreshWeaponHud( 1, %this.item.previewImage, %this.item.reticle, %this.item.zoomReticle, %currentAmmo );
+      //AISK Changes: Start
+      if (%obj.client !$= "")
+         %obj.client.RefreshWeaponHud(%currentAmmo, %this.item.invIcon, %this.item.reticle);
+      //AISK Changes: End
+   }
+   
+   if ( %this.customLookAnim !$= "" )
+   {
+      %obj.setArmThread(%this.customLookAnim);
+      %obj.setSwingingArms(false);
+      %obj.setLookAnimationOverride(false);
    }
 }
 
 function WeaponImage::onUnmount(%this, %obj, %slot)
 {
-   if (%obj.client !$= "" && !%obj.isAiControlled)
+   //AISK Changes: Start
+   if (%obj.client !$= "")
       %obj.client.RefreshWeaponHud(0, "", "");
+   //AISK Changes: End
+
+   if ( %this.customLookAnim !$= "" )
+   {
+      %obj.clearArmThread();
+      %obj.setSwingingArms(true);
+      %obj.setLookAnimationOverride(true);
+   }
 }
 
 // ----------------------------------------------------------------------------
@@ -178,70 +170,105 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
 
 function WeaponImage::onFire(%this, %obj, %slot)
 {
-   //echo("\c4WeaponImage::onFire( "@%this.getName()@", "@%obj.client.nameBase@", "@%slot@" )");
-
-   // Make sure we have valid data
-   if (!isObject(%this.projectile))
+   if ( %obj.inNeutralZone )
    {
-      error("WeaponImage::onFire() - Invalid projectile datablock");
+      sfxPlay(BaseFireEmptySound, %obj.getTransform());
       return;
    }
+   //echo("\c4WeaponImage::onFire( "@%this.getName()@", "@%obj.client.nameBase@", "@%slot@" )");
+
+   if ( (%this.item.effect $= "THROWN") && (%this.throwAnim !$= "") )
+   {  // This is a weapon thrown by a player
+      %obj.firingWeapon = %this;
+      %obj.schedule(1, "setArmThreadPlayOnce",%this.throwAnim);
+      return;
+   }
+
+   if ( (%this.fireAnim !$= "") && %obj.setArmThreadPlayOnce(%this.fireAnim) )
+   {  // This weapon has it's own firing animation
+      %obj.firingWeapon = %this;
+      return;
+   }
+
+   %obj.decInventory(%this.ammo, 1, true);
+   if ( %obj.isBot || %obj.client.isFirstPerson() )
+      %muzzleVector = %obj.getMuzzleVector(%slot);
+   else
+      %muzzleVector = %obj.getEyeVector();
+
+   %mp = %obj.getMuzzlePoint(%slot);
    
-   // Decrement inventory ammo. The image's ammo state is updated
-   // automatically by the ammo inventory hooks.
-   if ( !%this.infiniteAmmo )
-      %obj.decInventory(%this.ammo, 1);
+   if ( %obj.getClassName() $= "AIPlayer" )
+   {
+      %aimLoc = %obj.getAimLocation();
+      if ( isObject(%this.projectile) )
+      {  // Adjust the bots aim to account for gravity and weapon ballistics
+         %gravMod = %this.projectile.gravityMod;
+         if ((%gravMod > 0) && %this.projectile.isBallistic)
+         {
+            %muzzleVector = VectorSub(%aimLoc, %mp);
+            %aimDist = VectorLen(%muzzleVector);
+            //%heightAdjust = (%aimDist / %this.projectile.muzzleVelocity) * (%gravMod * 9.81);
+            // y = 1/2(gtt)
+            %time = %aimDist / %this.projectile.muzzleVelocity;
+            %heightAdjust = %time * %time * (%gravMod * 4.905); // 4.905 = 1/2(9.81)
+            %aimZ = getWord(%aimLoc, 2) + %heightAdjust;
+            %aimLoc = setWord(%aimLoc, 2, %aimZ);
+            %muzzleVector = VectorSub(%aimLoc, %mp);
+         }
+      }
+      %muzzleVector = VectorSub(%aimLoc, %mp);
+      %muzzleVector = VectorNormalize(%muzzleVector);
+   }
+
+   if (%this.projectileSpread)
+   {
+      // We'll need to "skew" this projectile a little bit.  We start by
+      // getting the straight ahead aiming point of the gun
+      %vec = %muzzleVector;
+
+      // Then we'll create a spread matrix by randomly generating x, y, and z
+      // points in a circle
+      for(%i = 0; %i < 3; %i++)
+         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.projectileSpread @ " ";
+      %mat = MatrixCreateFromEuler(%matrix);
+
+      // Which we'll use to alter the projectile's initial vector with
+      %muzzleVector = MatrixMulVector(%mat, %vec);
+   }
 
    // Get the player's velocity, we'll then add it to that of the projectile
    %objectVelocity = %obj.getVelocity();
-   
-   %numProjectiles = %this.projectileNum;
-   if (%numProjectiles == 0)
-      %numProjectiles = 1;
+   %muzzleVelocity = VectorAdd(
+      VectorScale(%muzzleVector, %this.projectile.muzzleVelocity),
+      VectorScale(%objectVelocity, %this.projectile.velInheritFactor));
       
-   for (%i = 0; %i < %numProjectiles; %i++)
+   // Create the projectile object
+   %p = new (%this.projectileType)()
    {
-      if (%this.projectileSpread)
-      {
-         // We'll need to "skew" this projectile a little bit.  We start by
-         // getting the straight ahead aiming point of the gun
-         %vec = %obj.getMuzzleVector(%slot);
+      dataBlock = %this.projectile;
+      initialVelocity = %muzzleVelocity;
+      initialPosition  = %mp;  
 
-         // Then we'll create a spread matrix by randomly generating x, y, and z
-         // points in a circle
-         %matrix = "";
-         for(%j = 0; %j < 3; %j++)
-            %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.projectileSpread @ " ";
-         %mat = MatrixCreateFromEuler(%matrix);
-
-         // Which we'll use to alter the projectile's initial vector with
-         %muzzleVector = MatrixMulVector(%mat, %vec);
-      }
-      else
-      {
-         // Weapon projectile doesn't have a spread factor so we fire it using
-         // the straight ahead aiming point of the gun
-         %muzzleVector = %obj.getMuzzleVector(%slot);
-      }
-
-      // Add player's velocity
-      %muzzleVelocity = VectorAdd(
-         VectorScale(%muzzleVector, %this.projectile.muzzleVelocity),
-         VectorScale(%objectVelocity, %this.projectile.velInheritFactor));
-
-      // Create the projectile object
-      %p = new (%this.projectileType)()
-      {
-         dataBlock = %this.projectile;
-         initialVelocity = %muzzleVelocity;
-         initialPosition = %obj.getMuzzlePoint(%slot);
-         sourceObject = %obj;
-         sourceSlot = %slot;
-         client = %obj.client;
-         sourceClass = %obj.getClassName();
-      };
-      MissionCleanup.add(%p);
+      sourceObject = %obj;
+      sourceSlot = %slot;
+      ignoreSourceTimeout = true;
+      client = %obj.client;
+         ammoID           = %this.ammo.itemID;
+   };
+   MissionCleanup.add(%p);
+   
+   if ( %this.item.usesAmmo && %obj.getInventory(%this.ammo) < 1 )
+   {
+      //%obj.setInventory(%this.item, 0);
+      %obj.unmountImage(%slot);
+      %obj.lastWeapon = "";
+      %this.NoAmmoMessage(%obj);
+      %obj.clearArmThread();
+      %obj.updateInventoryString();
    }
+
+   return %p;
 }
 
 // ----------------------------------------------------------------------------
@@ -252,61 +279,7 @@ function WeaponImage::onFire(%this, %obj, %slot)
 
 function WeaponImage::onAltFire(%this, %obj, %slot)
 {
-   //echo("\c4WeaponImage::onAltFire("@%this.getName()@", "@%obj.client.nameBase@", "@%slot@")");
-
-   // Decrement inventory ammo. The image's ammo state is updated
-   // automatically by the ammo inventory hooks.
-   %obj.decInventory(%this.ammo, 1);
-
-   // Get the player's velocity, we'll then add it to that of the projectile
-   %objectVelocity = %obj.getVelocity();
-   
-   %numProjectiles = %this.altProjectileNum;
-   if (%numProjectiles == 0)
-      %numProjectiles = 1;
-      
-   for (%i = 0; %i < %numProjectiles; %i++)
-   {
-      if (%this.altProjectileSpread)
-      {
-         // We'll need to "skew" this projectile a little bit.  We start by
-         // getting the straight ahead aiming point of the gun
-         %vec = %obj.getMuzzleVector(%slot);
-
-         // Then we'll create a spread matrix by randomly generating x, y, and z
-         // points in a circle
-         %matrix = "";
-         for(%i = 0; %i < 3; %i++)
-            %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.altProjectileSpread @ " ";
-         %mat = MatrixCreateFromEuler(%matrix);
-
-         // Which we'll use to alter the projectile's initial vector with
-         %muzzleVector = MatrixMulVector(%mat, %vec);
-      }
-      else
-      {
-         // Weapon projectile doesn't have a spread factor so we fire it using
-         // the straight ahead aiming point of the gun.
-         %muzzleVector = %obj.getMuzzleVector(%slot);
-      }
-
-      // Add player's velocity
-      %muzzleVelocity = VectorAdd(
-         VectorScale(%muzzleVector, %this.altProjectile.muzzleVelocity),
-         VectorScale(%objectVelocity, %this.altProjectile.velInheritFactor));
-
-      // Create the projectile object
-      %p = new (%this.projectileType)()
-      {
-         dataBlock = %this.altProjectile;
-         initialVelocity = %muzzleVelocity;
-         initialPosition = %obj.getMuzzlePoint(%slot);
-         sourceObject = %obj;
-         sourceSlot = %slot;
-         client = %obj.client;
-      };
-      MissionCleanup.add(%p);
-   }
+   return %this.onFire(%obj, %slot);
 }
 
 // ----------------------------------------------------------------------------
@@ -317,192 +290,7 @@ function WeaponImage::onAltFire(%this, %obj, %slot)
 
 function WeaponImage::onWetFire(%this, %obj, %slot)
 {
-   //echo("\c4WeaponImage::onWetFire("@%this.getName()@", "@%obj.client.nameBase@", "@%slot@")");
-
-   // Decrement inventory ammo. The image's ammo state is updated
-   // automatically by the ammo inventory hooks.
-   %obj.decInventory(%this.ammo, 1);
-
-   // Get the player's velocity, we'll then add it to that of the projectile
-   %objectVelocity = %obj.getVelocity();
-   
-   %numProjectiles = %this.projectileNum;
-   if (%numProjectiles == 0)
-      %numProjectiles = 1;
-      
-   for (%i = 0; %i < %numProjectiles; %i++)
-   {
-      if (%this.wetProjectileSpread)
-      {
-         // We'll need to "skew" this projectile a little bit.  We start by
-         // getting the straight ahead aiming point of the gun
-         %vec = %obj.getMuzzleVector(%slot);
-
-         // Then we'll create a spread matrix by randomly generating x, y, and z
-         // points in a circle
-         %matrix = "";
-         for(%j = 0; %j < 3; %j++)
-         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.wetProjectileSpread @ " ";
-         %mat = MatrixCreateFromEuler(%matrix);
-
-         // Which we'll use to alter the projectile's initial vector with
-         %muzzleVector = MatrixMulVector(%mat, %vec);
-      }
-      else
-      {
-         // Weapon projectile doesn't have a spread factor so we fire it using
-         // the straight ahead aiming point of the gun.
-         %muzzleVector = %obj.getMuzzleVector(%slot);
-      }
-      
-      // Add player's velocity
-      %muzzleVelocity = VectorAdd(
-         VectorScale(%muzzleVector, %this.wetProjectile.muzzleVelocity),
-         VectorScale(%objectVelocity, %this.wetProjectile.velInheritFactor));
-
-      // Create the projectile object
-      %p = new (%this.projectileType)()
-      {
-         dataBlock = %this.wetProjectile;
-         initialVelocity = %muzzleVelocity;
-         initialPosition = %obj.getMuzzlePoint(%slot);
-         sourceObject = %obj;
-         sourceSlot = %slot;
-         client = %obj.client;
-      };
-      MissionCleanup.add(%p);
-   }
-}
-
-//-----------------------------------------------------------------------------
-// Clip Management
-//-----------------------------------------------------------------------------
-
-function WeaponImage::onClipEmpty(%this, %obj, %slot)
-{
-   //echo("WeaponImage::onClipEmpty: " SPC %this SPC %obj SPC %slot);
-
-   // Attempt to automatically reload.  Schedule this so it occurs
-   // outside of the current state that called this method
-   %this.schedule(0, "reloadAmmoClip", %obj, %slot);
-}
-
-function WeaponImage::reloadAmmoClip(%this, %obj, %slot)
-{
-   //echo("WeaponImage::reloadAmmoClip: " SPC %this SPC %obj SPC %slot);
-
-   // Make sure we're indeed the currect image on the given slot
-   if (%this != %obj.getMountedImage(%slot))
-      return;
-
-   if ( %this.isField("clip") )
-   {
-      if (%obj.getInventory(%this.clip) > 0)
-      {
-         %obj.decInventory(%this.clip, 1);
-         %obj.setInventory(%this.ammo, %this.ammo.maxInventory);
-         %obj.setImageAmmo(%slot, true);
-      }
-      else
-      {
-         %amountInPocket = %obj.getFieldValue( "remaining" @ %this.ammo.getName());
-         if ( %amountInPocket )
-         {
-            %obj.setFieldValue( "remaining" @ %this.ammo.getName(), 0);
-            %obj.setInventory( %this.ammo, %amountInPocket );
-            %obj.setImageAmmo( %slot, true );
-         }
-      }
-      
-   }
-}
-
-function WeaponImage::clearAmmoClip( %this, %obj, %slot )
-{
-   //echo("WeaponImage::clearAmmoClip: " SPC %this SPC %obj SPC %slot);
-   
-   // if we're not empty put the remaining bullets from the current clip
-   // in to the player's "pocket".
-
-   if ( %this.isField( "clip" ) )
-   {
-      // Commenting out this line will use a "hard clip" system, where
-      // A player will lose any ammo currently in the gun when reloading.
-      %pocketAmount = %this.stashSpareAmmo( %obj );
-      
-      if ( %obj.getInventory( %this.clip ) > 0 || %pocketAmount != 0 )
-         %obj.setImageAmmo(%slot, false);
-   }
-}
-function WeaponImage::stashSpareAmmo( %this, %player )
-{
-   // If the amount in our pocket plus what we are about to add from the clip
-   // Is over a clip, add a clip to inventory and keep the remainder
-   // on the player
-   if (%player.getInventory( %this.ammo ) < %this.ammo.maxInventory )
-   {
-      %nameOfAmmoField = "remaining" @ %this.ammo.getName();
-      
-      %amountInPocket = %player.getFieldValue( %nameOfAmmoField );
-      
-      %amountInGun = %player.getInventory( %this.ammo );
-      
-      %combinedAmmo = %amountInGun + %amountInPocket;
-      
-      // Give the player another clip if the amount in our pocket + the 
-      // Amount in our gun is over the size of a clip.
-      if ( %combinedAmmo >= %this.ammo.maxInventory )
-      {
-         %player.setFieldValue( %nameOfAmmoField, %combinedAmmo - %this.ammo.maxInventory );
-         %player.incInventory( %this.clip, 1 );
-      }
-      else if ( %player.getInventory(%this.clip) > 0 )// Only put it back in our pocket if we have clips.
-         %player.setFieldValue( %nameOfAmmoField, %combinedAmmo );
-         
-      return %player.getFieldValue( %nameOfAmmoField );
-      
-   }
-   
-   return 0;
-
-}
-
-//-----------------------------------------------------------------------------
-// Clip Class
-//-----------------------------------------------------------------------------
-
-function AmmoClip::onPickup(%this, %obj, %shape, %amount)
-{
-   // The parent Item method performs the actual pickup.
-   if (Parent::onPickup(%this, %obj, %shape, %amount))
-      serverPlay3D(AmmoPickupSound, %shape.getTransform());
-
-   // The clip inventory state has changed, we need to update the
-   // current mounted image using this clip to reflect the new state.
-   if ((%image = %shape.getMountedImage($WeaponSlot)) > 0)
-   {
-      // Check if this weapon uses the clip we just picked up and if
-      // there is no ammo.
-      if (%image.isField("clip") && %image.clip.getId() == %this.getId())
-      {
-         %outOfAmmo = !%shape.getImageAmmo($WeaponSlot);
-         
-         %currentAmmo = %shape.getInventory(%image.ammo);
-
-         if ( isObject( %image.clip ) )
-            %amountInClips = %shape.getInventory(%image.clip);
-            
-         %amountInClips *= %image.ammo.maxInventory;
-         %amountInClips += %obj.getFieldValue( "remaining" @ %this.ammo.getName() );
-         
-         %shape.client.setAmmoAmountHud(%currentAmmo, %amountInClips );
-         
-         if (%outOfAmmo)
-         {
-            %image.onClipEmpty(%shape, $WeaponSlot);
-         }
-      }
-   }
+   return %this.onFire(%obj, %slot);
 }
 
 //-----------------------------------------------------------------------------
@@ -511,12 +299,31 @@ function AmmoClip::onPickup(%this, %obj, %shape, %amount)
 
 function Ammo::onPickup(%this, %obj, %shape, %amount)
 {
+   // Parent::onPickup can delete the object, so save the transform now
+   if ( isObject(%obj) )
+      %transform = %obj.getTransform();
+      
    // The parent Item method performs the actual pickup.
    if (Parent::onPickup(%this, %obj, %shape, %amount))
-      serverPlay3D(AmmoPickupSound, %shape.getTransform());
+   {
+      //serverPlay3D(AmmoPickupSound,%obj.getTransform());
+      serverPlay3D(AmmoPickupSound, %transform);
+      // GUY >> hack
+      // if this is a thrown weapon like a spear, then give the player
+      // the actual weapon if he doesn't already have it
+      //%itemName = $AlterVerse::ItemNames[%this.itemID];
+      //%spos = strstr(%itemName, "Ammo");
+      //if ( %spos > -1 )
+      //{
+         //%weaponName = getSubStr(%itemName, 0, %spos) @ "Weapon";
+         //if(!%shape.hasInventory(%weaponName))
+            //%shape.incInventory(%weaponName, 1);
+      //}
+      // GUY <<
+   }
 }
 
-function Ammo::onInventory(%this, %obj, %amount)
+function Ammo::onInventory(%this,%obj,%amount)
 {
    // The ammo inventory state has changed, we need to update any
    // mounted images using this ammo to reflect the new state.
@@ -527,24 +334,13 @@ function Ammo::onInventory(%this, %obj, %amount)
          {
             %obj.setImageAmmo(%i, %amount != 0);
             %currentAmmo = %obj.getInventory(%this);
-            
-            if (%obj.getClassname() $= "Player")
+            //AISK Changes: Start
+            if (%obj.client !$= "")
             {
-               if ( isObject( %this.clip ) )
-               {
-                  %amountInClips = %obj.getInventory(%this.clip);
-                  %amountInClips *= %this.maxInventory;
-                  %amountInClips += %obj.getFieldValue( "remaining" @ %this.getName() );
-               }
-               else //Is a single fire weapon, like the grenade launcher.
-               {
-                  %amountInClips = %currentAmmo;
-                  %currentAmmo = 1;
-               }
-               
-               if (%obj.client !$= "" && !%obj.isAiControlled)
-                  %obj.client.setAmmoAmountHud(%currentAmmo, %amountInClips);
+               %obj.client.setAmmoAmountHud(%currentAmmo);
             }
+            //AISK Changes: End
+
          }
    }
 }
@@ -553,91 +349,192 @@ function Ammo::onInventory(%this, %obj, %amount)
 // Weapon cycling
 // ----------------------------------------------------------------------------
 
-function ShapeBase::clearWeaponCycle(%this)
-{
-   %this.totalCycledWeapons = 0;
-}
-
-function ShapeBase::addToWeaponCycle(%this, %weapon)
-{
-   %this.cycleWeapon[%this.totalCycledWeapons++ - 1] = %weapon;
-}
+// Could make this player namespace only or even a vehicle namespace method,
+// but for the time being....
 
 function ShapeBase::cycleWeapon(%this, %direction)
 {
-   // Can't cycle what we don't have
-   if (%this.totalCycledWeapons == 0)
-      return;
-      
-   // Find out the index of the current weapon, if any (not all
-   // available weapons may be part of the cycle)
-   %currentIndex = -1;
+   %slot = -1;
    if (%this.getMountedImage($WeaponSlot) != 0)
    {
       %curWeapon = %this.getMountedImage($WeaponSlot).item.getName();
-      for (%i=0; %i<%this.totalCycledWeapons; %i++)
-      {
-         if (%this.cycleWeapon[%i] $= %curWeapon)
-         {
-            %currentIndex = %i;
-            break;
-         }
-      }
+      %slot = $weaponNameIndex[%curWeapon];
    }
 
-   // Get the next weapon index
-   %nextIndex = 0;
-   %dir = 1;
-   if (%currentIndex != -1)
+   if (%direction $= "prev")
    {
+      // Previous weapon...
+      if (%slot == 0 || %slot == -1)
+      {
+         %requestedSlot = $lastWeaponOrderSlot;
+         %slot = 0;
+      }
+      else
+         %requestedSlot = %slot - 1;
+   }
+   else
+   {
+      // Next weapon...
+      if (%slot == $lastWeaponOrderSlot || %slot == -1)
+      {
+         %requestedSlot = 0;
+         %slot = $lastWeaponOrderSlot;
+      }
+      else
+         %requestedSlot = %slot + 1;
+   }
+
+   %newSlot = -1;
+   while (%requestedSlot != %slot)
+   {
+      if ($weaponOrderIndex[%requestedSlot] !$= "" && %this.hasInventory($weaponOrderIndex[%requestedSlot]) && %this.hasAmmo($weaponOrderIndex[%requestedSlot]))
+      {
+         // player has this weapon and it has ammo or doesn't need ammo
+         %newSlot = %requestedSlot;
+         break;
+      }
       if (%direction $= "prev")
       {
-         %dir = -1;
-         %nextIndex = %currentIndex - 1;
-         if (%nextIndex < 0)
-         {
-            // Wrap around to the end
-            %nextIndex = %this.totalCycledWeapons - 1;
-         }
+         if (%requestedSlot == 0)
+            %requestedSlot = $lastWeaponOrderSlot;
+         else
+            %requestedSlot--;
       }
       else
       {
-         %nextIndex = %currentIndex + 1;
-         if (%nextIndex >= %this.totalCycledWeapons)
+         if (%requestedSlot == $lastWeaponOrderSlot)
+            %requestedSlot = 0;
+         else
+            %requestedSlot++;
+      }
+   }
+   if (%newSlot != -1)
+      %this.use($weaponOrderIndex[%newSlot]);
+}
+
+function WeaponImage::delayedFire(%this, %obj, %slot)
+{
+   if ( %this.item.effect $= "THROWN" )
+      %obj.setImageHidden(%slot, true);
+
+   if ( %obj.getMountedImage(%slot) != %this )
+      return; // %obj died, before animation trigger was hit, don't fire
+
+   if (%obj.isMounted())
+      %muzzleVector = %obj.getObjectMount().getEyeVector();
+   else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
+      %muzzleVector = %obj.getMuzzleVector(%slot);
+   else
+      %muzzleVector = %obj.getEyeVector();
+
+   %mp = %obj.getAnimMuzzlePoint(%slot);
+   //echo("MP  = " @ %mp);
+
+   if ((%obj.getClassName() $= "AIPlayer") && !isObject(%obj.driver))
+   {
+      if ( isObject(%obj.getAimObject()) )
+         %aimLoc = %obj.getAimObject().getEyePoint();
+      else
+         %aimLoc = %obj.getAimLocation();
+
+      if ( isObject(%this.projectile) )
+      {  // Adjust the bots aim to account for gravity and weapon ballistics
+         %gravMod = %this.projectile.gravityMod;
+         if ((%gravMod > 0) && %this.projectile.isBallistic)
          {
-            // Wrap back to the beginning
-            %nextIndex = 0;
+            %muzzleVector = VectorSub(%aimLoc, %mp);
+            %aimDist = VectorLen(%muzzleVector);
+            //%heightAdjust = (%aimDist / %this.projectile.muzzleVelocity) * (%gravMod * 9.81);
+            // y = 1/2(gtt)
+            %time = %aimDist / %this.projectile.muzzleVelocity;
+            %heightAdjust = %time * %time * (%gravMod * 4.905); // 4.905 = 1/2(9.81)
+            %aimZ = getWord(%aimLoc, 2) + %heightAdjust;
+            %aimLoc = setWord(%aimLoc, 2, %aimZ);
          }
       }
+      %muzzleVector = VectorSub(%aimLoc, %mp);
+      %muzzleVector = VectorNormalize(%muzzleVector);
    }
    
-   // We now need to check if the next index is a valid weapon.  If not,
-   // then continue to cycle to the next weapon, in the appropriate direction,
-   // until one is found.  If nothing is found, then do nothing.
-   %found = false;
-   for (%i=0; %i<%this.totalCycledWeapons; %i++)
+   if (%this.projectileSpread)
    {
-      %weapon = %this.cycleWeapon[%nextIndex];
-      if (%weapon !$= "" && %this.hasInventory(%weapon) && %this.hasAmmo(%weapon))
-      {
-         // We've found out weapon
-         %found = true;
-         break;
-      }
+      // We'll need to "skew" this projectile a little bit.  We start by
+      // getting the straight ahead aiming point of the gun
+      %vec = %muzzleVector;
+
+      // Then we'll create a spread matrix by randomly generating x, y, and z
+      // points in a circle
+      for(%i = 0; %i < 3; %i++)
+         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.projectileSpread @ " ";
+      %mat = MatrixCreateFromEuler(%matrix);
+
+      // Which we'll use to alter the projectile's initial vector with
+      %muzzleVector = MatrixMulVector(%mat, %vec);
+   }
+
+   // Get the player's velocity, we'll then add it to that of the projectile
+   %objectVelocity = %obj.getVelocity();
+   %baseVelocity = %this.projectile.muzzleVelocity;
+   if ( %obj.isBot && (%this == FlintlockImage.getID()) )
+      %baseVelocity = 300;
+   %muzzleVelocity = VectorAdd(
+      VectorScale(%muzzleVector, %baseVelocity),
+      VectorScale(%objectVelocity, %this.projectile.velInheritFactor));
       
-      %nextIndex = %nextIndex + %dir;
-      if (%nextIndex < 0)
-      {
-         %nextIndex = %this.totalCycledWeapons - 1;
-      }
-      else if (%nextIndex >= %this.totalCycledWeapons)
-      {
-         %nextIndex = 0;
-      }
-   }
-   
-   if (%found)
+   // Create the projectile object
+   %p = new (%this.projectileType)()
    {
-      %this.use(%this.cycleWeapon[%nextIndex]);
+      dataBlock = %this.projectile;
+      initialVelocity = %muzzleVelocity;
+      initialPosition  = %mp;  
+
+      sourceObject = %obj;
+      sourceSlot = %slot;
+      ignoreSourceTimeout = true;
+      client = %obj.client;
+         ammoID           = %this.ammo.itemID;
+   };
+   MissionCleanup.add(%p);
+   
+   if ( %this.fireSound !$= "" )
+      serverPlay3D(%this.fireSound,%obj.getTransform());
+
+   if ( %this.item.usesAmmo )
+      %ammoType = %this.ammo;
+   else
+      %ammoType = %this.item;
+   if ( %this.item.usesAmmo || !%obj.isBot )
+      %obj.decInventory(%ammoType, 1, true);
+   
+   if ( (%obj.getInventory(%ammoType) < 1) && !%obj.isBot )
+   {
+      //%obj.setInventory(%this.item, 0); // Don't remove from inventory when they fire the last shot
+      %obj.unmountImage(%slot);
+      %obj.lastWeapon = "";
+      %obj.updateInventoryString();
+      %this.NoAmmoMessage(%obj);
+   }
+   else if ( %this.item.effect $= "THROWN" )
+      %obj.schedule(%this.rearmDelay, "setImageHidden", %slot, false);
+
+   return %p;
+}
+
+function WeaponImage::NoAmmoMessage(%this, %obj)
+{
+   if ( %obj.client $= "" )
+      return;
+
+   if ( %this.item.usesAmmo )
+   {
+      messageClient(%obj.client, 'MsgItemPickup', '\c0Your %1 is out of ammo.', %this.item.pickupName);
+   }
+   else
+   {
+      if ( %this.item.pluralName !$= "" )
+         %pname = %this.item.pluralName;
+      else
+         %pname = %this.item.pickupName @ "s";
+      messageClient(%obj.client, 'MsgItemPickup', '\c0You have no more %1 to throw.', %pname);
    }
 }

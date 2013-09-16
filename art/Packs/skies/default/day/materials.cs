@@ -20,37 +20,18 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-// Load up all scripts.  This function is called when
-// a server is constructed.
-exec("./camera.cs");
-exec("./triggers.cs");
-exec("./inventory.cs");
-exec("./shapeBase.cs");
-exec("./item.cs");
-exec("./projectile.cs");
-exec("./radiusDamage.cs");
-
-// Load our supporting weapon script, it contains methods used by all weapons.
-exec("./weapon.cs");
-exec("./melee.cs");
-
-// Load our default player script
-exec("./player.cs");
-
-// Load the AI scripts
-exec("./UAISK/aiExecutes.cs");
-
-if ( theLevelInfo.canBringHorses )
-   exec("./horse.cs");
-
-// Load our gametypes
-exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
-
-exec("./AlterVerse/authentication.cs"); // client authentication
-
-// Load all spells in the spells folder.
-// This could optionally be put into a function and called manually.
-for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
+singleton CubemapData( DefaultSkyCubemap )
 {
-   exec(%spellFile);
-}
+   cubeFace[0] = "./skybox_1";
+   cubeFace[1] = "./skybox_2";
+   cubeFace[2] = "./skybox_3";
+   cubeFace[3] = "./skybox_4";
+   cubeFace[4] = "./skybox_5";
+   cubeFace[5] = "./skybox_6";
+};
+
+singleton Material( DefaultSkyMat )
+{
+   cubemap = DefaultSkyCubemap;
+   materialTag0 = "Skies";
+};

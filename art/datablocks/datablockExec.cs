@@ -26,9 +26,6 @@
 // Do the sounds first -- later scripts/datablocks may need them
 exec("./audioProfiles.cs");
 
-// LightFlareData and LightAnimData(s)
-exec("./lights.cs");
-
 // Do the various effects next -- later scripts/datablocks may need them
 exec("./particles.cs");
 exec("./environment.cs");
@@ -40,6 +37,9 @@ exec("./player.cs");
 // Load the player datablocks
 $AlterVerse::AvSet = "Base";  // TODO: This should be set by level config
 exec("art/players/" @ $AlterVerse::AvSet @ "/datablock.cs");
+
+// Any datablocks contained in the loaded art packs
+exec("art/Packs/skies/default/datablock.cs");
 
 // Load our other player datablocks
 //exec("./aiPlayer.cs");

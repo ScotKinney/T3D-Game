@@ -46,6 +46,7 @@ new SimGroup(MissionGroup) {
       nightColor = "0.0196078 0.0117647 0.109804 1";
       nightFogColor = "0.0196078 0.0117647 0.109804 1";
       moonEnabled = "1";
+      moonMat = "Moon_Glow_Mat";
       moonScale = "0.3";
       moonLightColor = "0.192157 0.192157 0.192157 1";
       useNightCubemap = "0";
@@ -68,7 +69,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          mieScattering = "0.0015";
-         moonTexture = "core/art/skies/night/moon_wglow";
+         moonTexture = "art/Packs/skies/default/night/moon_wglow";
          moonTint = "0.192157 0.192157 0.192157 1";
          sunBrightness = "50";
    };

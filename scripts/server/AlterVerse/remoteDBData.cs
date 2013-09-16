@@ -101,10 +101,13 @@ function remoteDBData::saveAuthenticationData( %this )
 
    if ( %client.avOptions $= "" )
    {  // They've never saved an avatar setup, get them the default
-      if ( %client.Gender $= "Male" )
-         %client.avOptions = MalePlayerData.DefaultSetup;
-      else
-         %client.avOptions = FemalePlayerData.DefaultSetup;
+      %client.avOptions = ( %client.Gender $= "Male" ) ?
+         MalePlayerData.DefaultSetup[%client.Homeworld] :
+         FemalePlayerData.DefaultSetup[%client.Homeworld];
+
+      if ( %client.avOptions $= "" )
+         %client.avOptions = (%client.Gender $= "Male") ? 
+            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
    }
    echo( %client.Gender @ " from " @ %client.Homeworld SPC 
       $Server::ClanData.clan[%client.team] @ " Clan");
