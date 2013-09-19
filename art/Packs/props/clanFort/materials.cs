@@ -66,7 +66,6 @@ singleton Material(mat_bridgeRope)
    mapTo = "tex_bridge";
    diffuseMap[0] = "tex_bridge";
    materialTag0 = "fort";
-   customImpactSound = "FootStepWood1Sound";
 };
 
 singleton Material(mat_bridgeFort_Collision)

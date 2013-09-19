@@ -25,7 +25,7 @@ datablock ParticleData(ParticleRockImpactTop)
    times[3] = "0.992157";
 };
 
-datablock ParticleEmitterData(EmitterTopSpray)
+datablock SphereEmitterData(EmitterTopSpray)
 {
    particles = "ParticleRockImpactTop";
    blendStyle = "NORMAL";
@@ -54,7 +54,7 @@ datablock ParticleData(ParticleMainFalls01_Cave)
    lifetimeMS = "2064";
 };
 
-datablock ParticleEmitterData(EmitterMainFalls_Cave)
+datablock SphereEmitterData(EmitterMainFalls_Cave)
 {
    particles = "ParticleMainFalls01_Cave";
    blendStyle = "NORMAL";

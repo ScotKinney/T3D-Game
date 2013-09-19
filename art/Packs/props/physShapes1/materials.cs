@@ -307,3 +307,12 @@ singleton Material(shrine_column_C_bk_ColorEffectR177G148B27_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(target_unbroken_pier_wood)
+{
+   mapTo = "pier_wood";
+   diffuseMap[0] = "pier_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};

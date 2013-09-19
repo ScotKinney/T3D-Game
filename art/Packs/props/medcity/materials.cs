@@ -110,23 +110,12 @@ singleton Material(mat_inn_interior_ceiling)
 {
    mapTo = "inn_interior_ceiling";
    diffuseMap[0] = "inn_interior_ceiling";
-   materialTag0 = "MedCity";
    customFootstepSound = "FootStepWood1Sound";
    useAnisotropic[0] = "1";
    specular[0] = "0.1 0.1 0.1 1";
    specularPower[0] = "32";
-   pixelSpecular[0] = "1";
-};
-
-new Material(mat_inn_interior_ceiling)
-{
-   mapTo = "inn_interior_ceiling";
-   diffuseMap[0] = "inn_interior_ceiling";
    translucent[0] = false;
-   pixelSpecular[0] = true;
-   specular[0] = "0.1 0.1 0.1 1.0";
-   specularPower[0] = 32.0;
-   customFootstepSound = FootStepWood1Sound;
+   pixelSpecular[0] = "1";
    materialTag0 = "MedCity";
 };
 

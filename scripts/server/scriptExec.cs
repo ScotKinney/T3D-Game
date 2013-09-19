@@ -51,6 +51,12 @@ exec("./AlterVerse/authentication.cs"); // client authentication
 // Load all of the inventory item datablocks
 exec("./AlterVerse/worldItems.cs");
 
+//if ( theLevelInfo.hasTreasury )
+//{
+   exec("./alterVerse/clanTreasury.cs");
+   //exec("./alterVerse/raidHours.cs");
+//}
+
 // Load all spells in the spells folder.
 // This could optionally be put into a function and called manually.
 for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
