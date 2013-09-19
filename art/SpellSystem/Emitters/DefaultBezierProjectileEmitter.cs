@@ -1,6 +1,6 @@
 datablock ParticleData(DefaultBezierProjectileParticles)
 {
-   textureName          = "art/particles/spark";
+   textureName          = "core/art/particles/spark";
    dragCoeffiecient     = 0.0;
    gravityCoefficient   = 0.0;
    inheritedVelFactor   = 0.00;

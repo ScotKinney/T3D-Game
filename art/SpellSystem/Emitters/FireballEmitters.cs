@@ -4,7 +4,7 @@
 
 datablock ParticleData(FireballParticles)
 {
-   HighResTexture       = "art/particles/fireball.png";
+   HighResTexture       = "core/art/particles/fireball.png";
    //MidResTexture        = "art/shapes/particles/smokeM";
    //LowResTexture        = "art/shapes/particles/smokeL";
    dragCoeffiecient     = 0;
@@ -56,7 +56,7 @@ datablock SphereEmitterData(FireballEmitter)
 
 datablock ParticleData(FireballBlastParticles)
 {
-   HighResTexture       = "art/particles/fire.png";
+   HighResTexture       = "core/art/particles/fire.png";
    //MidResTexture        = "art/shapes/particles/smokeM";
    //LowResTexture        = "art/shapes/particles/smokeL";
    dragCoeffiecient     = 0;
