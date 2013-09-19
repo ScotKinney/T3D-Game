@@ -112,7 +112,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = $WorldPath @ "sound/FJAmbiance.ogg";
+         fileName = $WorldPath @ "/sound/FJAmbiance.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -4801,7 +4801,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTest001) {
          active = "1";
          emitter = "EmitterRockImpact";
          velocity = "1";
@@ -4812,7 +4812,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTest002) {
          active = "1";
          emitter = "EmitterRockImpact";
          velocity = "1";
@@ -4823,7 +4823,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTest003) {
          active = "1";
          emitter = "EmitterRockImpact";
          velocity = "1";
@@ -11646,7 +11646,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTestA01) {
          active = "1";
          emitter = "EmitterTopSpray";
          velocity = "1";
@@ -11657,7 +11657,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTestA02) {
          active = "1";
          emitter = "EmitterTopSpray";
          velocity = "1";
@@ -11668,7 +11668,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new SphereEmitterNode(EmitterTestA03) {
          active = "1";
          emitter = "EmitterRockImpact_Cave";
          velocity = "1";

@@ -2,7 +2,7 @@
 singleton Material(mat_LongSword)
 {
    mapTo = "LongSword";
-   diffuseMap[0] = "art/shapes/weapons/L_Sword/LongSword.png";
+   diffuseMap[0] = "art/inv/weapons/L_Sword/LongSword.png";
    materialTag0 = "Weapons";
    forestWindEnabled = "1";
    backlight = "1";

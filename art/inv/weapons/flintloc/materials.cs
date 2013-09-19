@@ -25,6 +25,6 @@ singleton Material(shot_PMat_shot)
 singleton Material(mat_Flintlock)
 {
    mapTo = "PIRATE_P";
-   diffuseMap[0] = "art/shapes/weapons/flintloc/PIRATE_P";
+   diffuseMap[0] = "art/inv/weapons/flintloc/PIRATE_P";
    materialTag0 = "Weapons";
 };

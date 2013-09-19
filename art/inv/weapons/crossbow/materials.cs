@@ -1,11 +1,11 @@
 new Material(mat_crossbow)
 {
    mapTo = "crossbow";
-   diffuseMap[0] = "art/shapes/weapons/crossbow/crossbow.jpg";
+   diffuseMap[0] = "art/inv/weapons/crossbow/crossbow.jpg";
    pickUpName = "Crossbow";
    friction = "0.599218";
    elasticity = "0.199413";
-   shapeFile = "art/shapes/weapons/crossbow/weapon.dts";
+   shapeFile = "art/inv/weapons/crossbow/weapon.dts";
    mass = "5";
    cameraMaxDist = "0.69869";
    category = "Weapon";

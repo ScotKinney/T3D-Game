@@ -2,7 +2,7 @@
 singleton Material(mat_large_gold_nugget)
 {
    mapTo = "PMat_large_gold_nugget";
-   diffuseMap[0] = "art/shapes/Gems/goldband";
+   diffuseMap[0] = "art/inv/Gems/goldband";
    emissive[0] = "1";
    materialTag0 = "Gems";
 };
@@ -10,7 +10,7 @@ singleton Material(mat_large_gold_nugget)
 singleton Material(mat_nugget_g_h)
 {
    mapTo = "PMat_nugget_g_h";
-   diffuseMap[0] = "art/shapes/Gems/goldband";
+   diffuseMap[0] = "art/inv/Gems/goldband";
    emissive[0] = "1";
    materialTag0 = "Gems";
 };
@@ -18,7 +18,7 @@ singleton Material(mat_nugget_g_h)
 singleton Material(mat_nugget_gold_s)
 {
    mapTo = "PMat_nugget_gold_s";
-   diffuseMap[0] = "art/shapes/Gems/goldband";
+   diffuseMap[0] = "art/inv/Gems/goldband";
    emissive[0] = "1";
    materialTag0 = "Gems";
 };
@@ -27,7 +27,7 @@ singleton Material(mat_nugget_gold_s)
 singleton Material(mat_sapphire)
 {
    mapTo = "PMat_sapphire";
-   diffuseMap[0] = "art/shapes/Gems/sapphire";
+   diffuseMap[0] = "art/inv/Gems/sapphire";
    emissive[0] = "0";
    glow[0] = "1";
    materialTag0 = "Gems";
@@ -36,7 +36,7 @@ singleton Material(mat_sapphire)
 singleton Material(mat_emerald1)
 {
    mapTo = "PMat_emerald1";
-   diffuseMap[0] = "art/shapes/Gems/emerald";
+   diffuseMap[0] = "art/inv/Gems/emerald";
    glow[0] = "1";
    materialTag0 = "Gems";
 };
@@ -44,7 +44,7 @@ singleton Material(mat_emerald1)
 singleton Material(mat_ruby1)
 {
    mapTo = "PMat_ruby1";
-   diffuseMap[0] = "art/shapes/Gems/ruby";
+   diffuseMap[0] = "art/inv/Gems/ruby";
    glow[0] = "1";
    materialTag0 = "Gems";
 };
@@ -52,7 +52,7 @@ singleton Material(mat_ruby1)
 singleton Material(Mat_silverNugget)
 {
    mapTo = "silverband";
-   diffuseMap[0] = "art/shapes/Gems/SilverNugget4.jpg";
+   diffuseMap[0] = "art/inv/Gems/SilverNugget4.jpg";
    glow[0] = "1";
    materialTag0 = "Gems";
 };
@@ -60,7 +60,7 @@ singleton Material(Mat_silverNugget)
 singleton Material(Mat_SilverNug4)
 {
    mapTo = "SilverNugget4";
-   diffuseMap[0] = "art/shapes/Gems/SilverNugget4";
+   diffuseMap[0] = "art/inv/Gems/SilverNugget4";
    glow[0] = "1";
    materialTag0 = "Gems";
 };

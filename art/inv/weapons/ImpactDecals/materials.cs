@@ -1,8 +1,8 @@
 
 singleton Material(DECAL_scorch)
 {
-   diffuseMap[0] = "art/shapes/weapons/ImpactDecals/scorch_Decal";
-   normalMap[0] = "art/shapes/weapons/ImpactDecals/scorch_decal.png";
+   diffuseMap[0] = "art/inv/weapons/ImpactDecals/scorch_Decal";
+   normalMap[0] = "art/inv/weapons/ImpactDecals/scorch_decal.png";
    translucent = "1";
    alphaTest = "1"; //<-- LINE CHANGED   
    alphaRef = "53";   

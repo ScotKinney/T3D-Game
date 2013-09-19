@@ -2,7 +2,7 @@
 singleton Material(MatMagic_Crystal5)
 {
    mapTo = "crystal8";
-   diffuseMap[0] = "art/shapes/Magic/Crystals/crystal5.jpg";
+   diffuseMap[0] = "art/inv/Magic/Crystals/crystal5.jpg";
    specularPower[0] = "19";
    glow[0] = "1";
    alphaRef = "0";

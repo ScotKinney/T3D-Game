@@ -11,7 +11,7 @@ new Material(w_swarmgun)
 new Material(guide)
 {
    mapTo = "guide";
-   diffuseMap[0] = "art/shapes/weapons/SwarmGun/guide";
+   diffuseMap[0] = "art/inv/weapons/SwarmGun/guide";
    emissive[0] = true;
    glow[0] = true;
 };
@@ -19,7 +19,7 @@ new Material(guide)
 new Material(energy)
 {
    mapTo = "energy";
-   diffuseMap[0] = "art/shapes/weapons/SwarmGun/energy.png";
+   diffuseMap[0] = "art/inv/weapons/SwarmGun/energy.png";
    emissive[0] = true;
    glow[0] = true;
 };

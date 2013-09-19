@@ -61,6 +61,12 @@ function onDataBlockObjectReceived(%index, %total)
 function clientCmdMissionStartPhase2(%seq,%missionName)
 {
    onPhase1Complete();
+
+   // Create client mission cleanup group now because ghosted particle emitters
+   // depend on it.
+   if(!isObject(ClientMissionCleanup))
+      new SimGroup( ClientMissionCleanup );
+
    echo ("*** Phase 2: Download Ghost Objects");
    onMissionDownloadPhase2(%missionName);
    commandToServer('MissionStartPhase2Ack', %seq, $pref::Player:PlayerDB);

@@ -3,7 +3,7 @@ singleton Material(mat_DracoFireBall)
 {
 	mapTo = "PMat_DracoFireBall";
 
-	diffuseMap[0] = "art/shapes/weapons/Drac/transparent.png";
+	diffuseMap[0] = "art/inv/weapons/Drac/transparent.png";
 	normalMap[0] = "";
 	specularMap[0] = "";
 

@@ -474,7 +474,7 @@ singleton Material(matBM_Pants_Myth)
 singleton Material(matBM_LSHolster_Metal)
 {
    mapTo = "LS_Holster_Metal";
-   diffuseMap[0] = "art/shapes/weapons/L_Sword/LS_Holster_Metal.png";
+   diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Metal.png";
    materialTag0 = "Avatar_BM";
    translucent = "0";
 };
@@ -482,7 +482,7 @@ singleton Material(matBM_LSHolster_Metal)
 singleton Material(matBM_LSHolster_Leather)
 {
    mapTo = "LS_Holster_Leather";
-   diffuseMap[0] = "art/shapes/weapons/L_Sword/LS_Holster_Leather.png";
+   diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Leather.png";
    materialTag0 = "Avatar_BM";
 };
 
@@ -576,6 +576,6 @@ singleton Material(matBM_Belt_Tok)
 singleton Material(matBM_Scabbard_Tok)
 {
    mapTo = "Scabbard_Tok";
-   diffuseMap[0] = "art/shapes/weapons/TokSword/Scabbard_Tok";
+   diffuseMap[0] = "art/inv/weapons/TokSword/Scabbard_Tok";
    materialTag0 = "Avatar_BM";
 };

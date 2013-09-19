@@ -51,9 +51,9 @@ function onServerCreated()
 
    // Load up any objects or datablocks saved to the editor managed scripts
    %datablockFiles = new ArrayObject();
-   %datablockFiles.add( $WorldPath @ "particles/managedParticleData.cs" );
-   %datablockFiles.add( $WorldPath @ "particles/managedParticleEmitterData.cs" );
-   %datablockFiles.add($WorldPath @ "decals/managedDecalData.cs" );
+   %datablockFiles.add( $WorldPath @ "/particles/managedParticleData.cs" );
+   %datablockFiles.add( $WorldPath @ "/particles/managedParticleEmitterData.cs" );
+   %datablockFiles.add( $WorldPath @ "/decals/managedDecalData.cs" );
    //%datablockFiles.add( "art/datablocks/managedDatablocks.cs" );
    %datablockFiles.add( $WorldPath @ "/forest/managedItemData.cs" );
    %datablockFiles.add( "art/datablocks/datablockExec.cs" );   

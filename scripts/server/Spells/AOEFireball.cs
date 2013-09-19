@@ -45,7 +45,7 @@ function AoEFireballProjectile::onCollision( %this, %obj, %col,
                                              %fade, %pos, %norm) 
 {    
    %blast = new SphereEmitterNode(){       
-      dataBlock = DefaultNode;       
+      dataBlock = DefaultEmitterNodeData;       
       emitter = FireballBlastEmitter;       
       position = %pos;    
    };    

@@ -2,7 +2,7 @@
 singleton Material(mat_DeerhideEdge)
 {
    mapTo = "black";
-   diffuseMap[0] = "art/shapes/items/DeerHide/transparent.png";
+   diffuseMap[0] = "art/inv/items/DeerHide/transparent.png";
    translucentBlendOp = "LerpAlpha";
    alphaRef = "0";
    castShadows = "0";
@@ -12,7 +12,7 @@ singleton Material(mat_DeerhideEdge)
 singleton Material(mat_Deerhide)
 {
    mapTo = "deerhide";
-   diffuseMap[0] = "art/shapes/items/DeerHide/deerhide.png";
+   diffuseMap[0] = "art/inv/items/DeerHide/deerhide.png";
    castShadows = "0";
    translucent = "1";
    alphaTest = "1";
@@ -22,6 +22,6 @@ singleton Material(mat_Deerhide)
 singleton Material(matDeerHideTrans)
 {
    mapTo = "transparent";
-   diffuseMap[0] = "art/shapes/items/deerhide/transparent";
+   diffuseMap[0] = "art/inv/items/deerhide/transparent";
    translucent = "1";
 };

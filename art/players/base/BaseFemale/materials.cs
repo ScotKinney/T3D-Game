@@ -417,7 +417,7 @@ singleton Material(BF_Horn_Myth)
 singleton Material(mat_Darts)
 {
    mapTo = "Dart";
-   diffuseMap[0] = "art/shapes/weapons/Dart/Dart.png";
+   diffuseMap[0] = "art/inv/weapons/Dart/Dart.png";
    materialTag0 = "Avatar_BF";
    translucent = "0";
    forestWindEnabled = "1";

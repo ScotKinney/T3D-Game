@@ -696,8 +696,8 @@ datablock SphereEmitterData(EmitterWaterDisturbance_Cave)
 
 datablock ParticleData(WaterVortexParticle)
 {
-   textureName = "art/worlds/tortuga/particles/rock impacttopandsidespray.png";
-   animTexName = "art/worlds/tortuga/particles/rock impacttopandsidespray.png";
+   textureName = "art/worlds/tortuga/particles/rock_impacttopandsidespray.png";
+   animTexName = "art/worlds/tortuga/particles/rock_impacttopandsidespray.png";
    lifetimeMS = "8000";
    lifetimeVarianceMS = "4800";
    spinRandomMin = "-100";

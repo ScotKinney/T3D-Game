@@ -2,7 +2,7 @@
 singleton Material(mat_BoglinToes)
 {
    mapTo = "BoglinToes";
-   diffuseMap[0] = "art/shapes/items/bait/BoglinToes";
+   diffuseMap[0] = "art/inv/items/bait/BoglinToes";
    translucent = "0";
    castShadows = "0";
    materialTag0 = "food";
@@ -12,7 +12,7 @@ singleton Material(mat_BoglinToes)
 singleton Material(mat_nightCrawlers)
 {
    mapTo = "NightCrawlers";
-   diffuseMap[0] = "art/shapes/items/bait/NightCrawlers";
+   diffuseMap[0] = "art/inv/items/bait/NightCrawlers";
    translucent = "0";
    castShadows = "0";
    materialTag0 = "food";
@@ -22,7 +22,7 @@ singleton Material(mat_nightCrawlers)
 singleton Material(mat_Minnows)
 {
    mapTo = "Minnows";
-   diffuseMap[0] = "art/shapes/items/bait/Minnows";
+   diffuseMap[0] = "art/inv/items/bait/Minnows";
    translucent = "0";
    castShadows = "0";
    materialTag0 = "food";
@@ -32,7 +32,7 @@ singleton Material(mat_Minnows)
 singleton Material(mat_GHoppers)
 {
    mapTo = "Grasshoppers";
-   diffuseMap[0] = "art/shapes/items/bait/Grasshoppers";
+   diffuseMap[0] = "art/inv/items/bait/Grasshoppers";
    translucent = "0";
    castShadows = "0";
    materialTag0 = "food";
