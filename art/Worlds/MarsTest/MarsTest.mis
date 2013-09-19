@@ -28,7 +28,7 @@ new SimGroup(MissionGroup) {
          hasTreasury = "0";
          levelName = "Mars Test";
    };
-   new TimeOfDay(AureusTime) {
+   new TimeOfDay(AlterVerseTime) {
       axisTilt = "23.44";
       dayLength = "86400";
       startTime = "0.123104";
@@ -157,7 +157,7 @@ new SimGroup(MissionGroup) {
       foamMaxDepth = "5";
       foamAmbientLerp = "1";
       foamRippleInfluence = "0.05";
-      cubemap = "BlankSkyCubemap";
+      cubemap = "DarkSky2Cubemap";
       fullReflect = "1";
       reflectivity = "1";
       reflectPriority = "-1";

@@ -46,3 +46,90 @@ function DefaultTrigger::onTickTrigger(%this,%trigger)
    //    %trigger.getNumObjects();
    //    %trigger.getObject(n);
 }
+
+//Neutral zone
+function NeutralZoneTrigger::onEnterTrigger( %this, %trigger, %obj )
+{
+   if(!isObject(%obj) || !isObject(%obj.client))
+      return;
+
+   if ( %obj.inNeutralZone && (%obj.nzTrigger == %trigger) )
+      return;
+
+   %obj.inNeutralZone = true;
+   %obj.nzTrigger = %trigger;
+
+   // If %obj is a mountable AI, check for riders because we won't get the
+   // onEnterTrigger call for them
+   if ((%obj.getClassName() $= "AIPlayer") && %obj.mountable )
+   {
+      %aiDB = %obj.getDatablock();
+      %rider = %obj.getMountNodeObject(%aiDB.driverNode);
+      if ( isObject(%rider) && isObject(%rider.client) )
+      {
+         %rider.inNeutralZone = true;
+         %rider.nzTrigger = %trigger;
+         %rider.setImageAmmo($WeaponSlot, false);
+         if(%trigger.onEnterMessage !$= "")
+            centerPrint(%rider.client, %trigger.onEnterMessage, 10);
+      }
+      if ( %aiDB.riderNode !$= "" )
+      {
+         %rider = %obj.getMountNodeObject(%aiDB.riderNode);
+         if ( isObject(%rider) && isObject(%rider.client) )
+         {
+            %rider.inNeutralZone = true;
+            %rider.nzTrigger = %trigger;
+            %rider.setImageAmmo($WeaponSlot, false);
+            if(%trigger.onEnterMessage !$= "")
+               centerPrint(%rider.client, %trigger.onEnterMessage, 10);
+         }
+      }
+   }
+   else
+   {
+      %obj.setImageAmmo($WeaponSlot, false);
+      if(%trigger.onEnterMessage !$= "")
+         centerPrint(%obj.client, %trigger.onEnterMessage, 10);
+   }
+}
+
+function NeutralZoneTrigger::onLeaveTrigger( %this, %trigger, %obj )
+{
+   if(!isObject(%obj) || !isObject(%obj.client) || (%obj.nzTrigger != %trigger))
+      return;
+      
+   %obj.inNeutralZone = false;
+
+   // If %obj is a mountable AI, check for riders because we won't get the
+   // onLeaveTrigger call for them
+   if ((%obj.getClassName() $= "AIPlayer") && %obj.mountable )
+   {
+      %aiDB = %obj.getDatablock();
+      %rider = %obj.getMountNodeObject(%aiDB.driverNode);
+      if ( isObject(%rider) && isObject(%rider.client) )
+      {
+         if( %rider.inNeutralZone && (%trigger.onExitMessage !$= "") )
+            centerPrint(%rider.client, %trigger.onExitMessage, 10);
+         %rider.inNeutralZone = false;
+         %rider.setImageAmmo($WeaponSlot, true);
+      }
+      if ( %aiDB.riderNode !$= "" )
+      {
+         %rider = %obj.getMountNodeObject(%aiDB.riderNode);
+         if ( isObject(%rider) && isObject(%rider.client) )
+         {
+            if( %rider.inNeutralZone && (%trigger.onExitMessage !$= "") )
+               centerPrint(%rider.client, %trigger.onExitMessage, 10);
+            %rider.inNeutralZone = false;
+            %rider.setImageAmmo($WeaponSlot, true);
+         }
+      }
+   }
+   else
+   {
+      %obj.setImageAmmo($WeaponSlot, true);
+      if(%trigger.onExitMessage !$= "")
+         centerPrint(%obj.client, %trigger.onExitMessage, 10);
+   }
+}

@@ -1,148 +1,131 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2012 GarageGames, LLC
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
+// Torque 3D
+// Copyright (C) GarageGames.com, Inc.
 //-----------------------------------------------------------------------------
 
-// ----------------------------------------------------------------------------
-// Sample grass
-// ----------------------------------------------------------------------------
 
-singleton Material(TerrainFX_grass1)  
-{  
-   mapTo = "grass1";  
-   footstepSoundId = 0;  
-   terrainMaterials = "1";  
-   ShowDust = "false";  
-   showFootprints = "false"; 
-   materialTag0 = "Terrain"; 
-};  
-
-new TerrainMaterial()
-{
-   internalName = "grass1";
-   diffuseMap = $WorldPath @ "/terrain/grass1";
-   detailMap = $WorldPath @ "/terrain/grass1_d";
-   detailSize = "10";
-   isManaged = "1";
-   detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "200";
+singleton Material(Ter_Grass)   
+{   
+   mapTo = "clearTerrain001";   
+  customFootstepSound = FootStepGrass1Sound;
 };
 
-singleton Material(TerrainFX_grass1dry)  
-{  
-   mapTo = "grass1-dry";  
-   footstepSoundId = 0;  
-   terrainMaterials = "1";  
-   ShowDust = "false";  
-   showFootprints = "false";
-   materialTag0 = "Terrain";  
-};  
-
-new TerrainMaterial()
+singleton Material(Ter_DirtySand)
 {
-   internalName = "grass1-dry";
-   diffuseMap = $WorldPath @ "/terrain/grass1-dry";
-   detailMap = $WorldPath @ "/terrain/grass1-dry_d";
-   detailSize = "10";
-   detailDistance = "100";
-   isManaged = "1";
-   detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "250";
-   detailStrength = "2";
+   mapTo = "dirtysand_base";
+   customFootstepSound = FootStepSand1Sound;
 };
 
-singleton Material(TerrainFX_dirt_grass)  
-{  
-   mapTo = "dirt_grass";  
-   footstepSoundId = 0;  
-   terrainMaterials = "1";  
-   ShowDust = "false";  
-   showFootprints = "false";
-   materialTag0 = "Terrain";  
-};  
-
-new TerrainMaterial()
+singleton Material(Ter_DirtySandmix)
 {
-   internalName = "dirt_grass";
-   diffuseMap = $WorldPath @ "/terrain/dirt_grass";
-   detailMap = $WorldPath @ "/terrain/dirt_grass_d";
-   detailSize = "5";
-   detailDistance = "100";
-   isManaged = "1";
-   detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "200";
+   mapTo = "dirtyandmix_base";
+   customFootstepSound = FootStepSand1Sound;
 };
 
-// ----------------------------------------------------------------------------
-// Sample rock
-// ----------------------------------------------------------------------------
-
-singleton Material(TerrainFX_rocktest)  
-{  
-   mapTo = "rocktest";  
-   footstepSoundId = 0;  
-   terrainMaterials = "1";  
-   ShowDust = "false";  
-   showFootprints = "false"; 
-   materialTag0 = "Terrain"; 
-};  
-
-new TerrainMaterial()
+singleton Material(Ter_Rock)
 {
-   internalName = "rocktest";
-   diffuseMap = $WorldPath @ "/terrain/rocktest";
-   detailMap = $WorldPath @ "/terrain/rocktest_d";
-   detailSize = "10";
-   detailDistance = "100";
-   isManaged = "1";
-   detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "400";
+   mapTo = "cas_cobble2_shadow";
+   customFootstepSound = FootStepRock1Sound;
 };
 
-// ----------------------------------------------------------------------------
-// Sample sand
-// ----------------------------------------------------------------------------
 
-singleton Material(TerrainFX_sand)  
-{  
-   mapTo = "sand";  
-   footstepSoundId = 0;  
-   terrainMaterials = "1";  
-   ShowDust = "false";  
-   showFootprints = "false"; 
-   materialTag0 = "Terrain";  
-};  
+
+//////////////////////////////////////////////////////////
+
 
 new TerrainMaterial()
 {
-   internalName = "sand";
-   diffuseMap = $WorldPath @ "/terrain/sand";
-   detailMap = $WorldPath @ "/terrain/sand_d";
-   detailSize = "10";
-   detailDistance = "100";
+   internalName = "grass";
+   diffuseMap = "art/worlds/tortuga/terrain/clearTerrain001";
+   diffuseSize = "300";
+   normalMap = "art/worlds/tortuga/terrain/gras_01n";
+   detailMap = "art/worlds/tortuga/terrain/gras_01";
+   detailSize = "4";
+   detailStrength = "0.4";
+   detailDistance = "1000";
+   parallaxScale = "0.01";
+   detailScale = "512";
+   useAnisotropic[0] = "1"; 
+   enabled = "1";
    isManaged = "1";
+   useAnisotropic0 = "1";
    detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "200";
+};
+
+
+//DirtySand Terrain
+
+new TerrainMaterial()
+{
+   internalName = "DirtySand";
+   diffuseMap = "art/worlds/tortuga/terrain/dirtysand_base";
+   diffuseSize = "900";
+   normalMap = "art/worlds/tortuga/terrain/dirtysand_2_nrm";
+   detailMap = "art/worlds/tortuga/terrain/dirtysand_detail";
+   detailSize = "4";
+   detailStrength = "0.8";
+   detailDistance = "100";
+   parallaxScale = "0.02";
+   detailScale = "512";
+};
+
+
+//DirtSandMix Terrain
+
+new TerrainMaterial()
+{
+   internalName = "DirtSandMix";
+   diffuseMap = "art/worlds/tortuga/terrain/dirtyandmix_base";
+   diffuseSize = "500";
+   normalMap = "art/worlds/tortuga/terrain/dirtsandmix_nrm";
+   detailMap = "art/worlds/tortuga/terrain/dirtsandmix_detail";
+   detailSize = "3";
+   detailStrength = "0.7";
+   detailDistance = "100";
+   parallaxScale = "0.02";
+   detailScale = "512";
+};
+
+
+// VolcanicCliffRockTop Terrain
+
+new TerrainMaterial()
+{
+   internalName = "VolcanicCliffRockTop";
+   diffuseMap = "art/worlds/tortuga/terrain/cas_cobble2_shadow.dds";
+   diffuseSize = "300";
+   normalMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_dif";
+   detailSize = "10";
+   detailStrength = "0.6";
+   detailDistance = "1000";
+   useAnisotropic[0] = "1"; 
+};
+
+// VolcanicCliffSide Terrain
+
+new TerrainMaterial()
+{
+   internalName = "VolcanicCliffSide";
+   diffuseMap = "art/worlds/tortuga/terrain/cas_cobble2_shadow.dds";
+   normalMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_dif";
+   detailSize = "20";
+   detailDistance = "4000";
+   useSideProjection = "1";
+   diffuseSize = "300";
+   detailStrength = "0.6";
+   useAnisotropic[0] = "1";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/worlds/tortuga/terrain/Seaweed_base";
+   normalMap = "art/worlds/tortuga/terrain/Seaweed_nrm_displacement";
+   detailMap = "art/worlds/tortuga/terrain/Seaweed_detail";
+   detailSize = "5.5";
+   detailStrength = "0.4";
+   detailDistance = "1000";
+   parallaxScale = "0.03";
+   internalName = "SeaweedMain";
 };

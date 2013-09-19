@@ -29,6 +29,7 @@ exec("./audioProfiles.cs");
 // Do the various effects next -- later scripts/datablocks may need them
 exec("./particles.cs");
 exec("./environment.cs");
+exec("./lights.cs");
 exec("./triggers.cs");
 
 exec("./defaultEffects.cs");

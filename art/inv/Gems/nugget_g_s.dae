@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2011-02-09T19:33:55Z</created>
+    <modified>2011-02-09T19:33:55Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image_nugget_gold_s" name="Image_nugget_gold_s" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\goldband.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PMat_nugget_gold_s">
+      <instance_effect url="#Phong_nugget_gold_s"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Phong_nugget_gold_s">
+      <profile_COMMON>
+        <newparam sid="nugget_gold_s-surface">
+          <surface type="2D">
+            <init_from>Image_nugget_gold_s</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="nugget_gold_s-sampler">
+          <sampler2D>
+            <source>nugget_gold_s-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.6 0.6 0.6 1.0</color></ambient>
+            <diffuse><texture texture="nugget_gold_s-sampler" texcoord="nugget_gold_s-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="nugget_gold_s" name="nugget_gold_s">
+      <mesh>
+        <source id="nugget_gold_s-positions">
+          <float_array id="nugget_gold_s-positions-array" count="84">-0.2857 0.364959 -0.0776 -0.2679 0.112359 -0.0387 -0.2301 0.367359 0.1437 -0.2179 0.114459 0.1602 -0.1652 0.549559 -0.0059 -0.142 -0.005541 0.0157 -0.1248 -0.004741 0.0842 -0.1191 0.550659 0.0622 -0.1191 0.520459 -0.1229 -0.1156 0.148259 -0.2352 -0.1146 0.364059 -0.2222 -0.082 -0.011341 -0.1285 -0.0404 0.527859 -0.1396 -0.0357 -0.008541 0.1449 0.0109 -0.009741 -0.1338 0.0183 0.110959 0.3243 0.0288 0.371359 0.3216 0.0452 0.370459 -0.2812 0.0466 0.110159 -0.3243 0.0564 0.019559 0.112 0.0628 0.478459 0.204 0.1275 0.550359 -0.11 0.1347 -0.004641 -0.0689 0.2115 0.452559 0.1429 0.2389 0.378959 -0.1411 0.2492 0.117759 0.152 0.2762 0.117859 -0.1581 0.2857 0.378959 0.1299</float_array>
+          <technique_common>
+            <accessor source="nugget_gold_s-positions-array" count="28" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="nugget_gold_s-uvs">
+          <float_array id="nugget_gold_s-uvs-array" count="78">0.162 1.209 0.371 0.607 0.397 1.606 0.518 2.503 0.608 1.857 0.701 1.018 0.843 1.52 0.915 0.797 0.974 2.122 0.992 1.466 1.051 0.288 1.144 0.927 1.21 2.272 1.225 1.467 1.269 2.576 1.343 0.224 1.353 2.028 1.438 2.059 1.448 0.714 1.526 0.943 1.527 1.144 1.527 2.474 1.578 2.614 1.788 1.346 1.873 1.675 1.882 2.636 1.931 2.458 1.932 1.954 1.95 1.049 1.98 0.887 2.073 1.272 2.105 0.386 2.275 0.882 2.286 1.463 2.33 0.607 2.389 2.094 2.406 1.204 2.588 1.936 2.911 1.232</float_array>
+          <technique_common>
+            <accessor source="nugget_gold_s-uvs-array" count="39" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="nugget_gold_s-vertices">
+          <input semantic="POSITION" source="#nugget_gold_s-positions"/>
+        </vertices>
+        <polylist count="47" material="Mat_nugget_gold_s">
+          <input offset="0" semantic="VERTEX" source="#nugget_gold_s-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#nugget_gold_s-uvs"/>
+          <vcount>3 3 3 3 3 3 4 4 4 4 4 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+          <p>21 19  7 15  23 32  20 12  16 17  23 22  11 14  1 3  9 8  20 31  23 32  7 15  15 24  3 20  13 30  13 30  3 20  6 28  6 28  3 20  1 18  5 29  26 27  18 16  17 13  24 23  15 24  25 35  27 25  16 17  3 20  15 24  16 17  2 9  1 18  3 20  2 9  0 5  1 3  10 6  9 8  1 18  0 5  10 1  26 27  27 36  25 37  24 23  27 36  26 27  9 8  17 13  18 16  9 8  10 6  17 13  10 1  0 5  8 0  8 0  0 5  4 2  4 2  0 5  2 9  4 2  2 9  7 4  7 4  2 9  16 17  16 17  20 12  7 4  23 22  16 17  27 25  24 23  23 32  27 36  21 19  23 32  24 23  17 13  21 19  24 23  12 11  21 19  17 13  17 13  10 6  12 11  12 11  10 6  8 7  12 11  8 7  4 10  4 10  21 19  12 11  7 15  21 19  4 10  5 29  1 18  11 34  25 35  15 24  19 33  19 33  15 24  13 30  26 27  25 37  22 26  22 38  25 35  19 33  18 16  26 27  14 21  14 21  26 27  22 26  11 14  9 8  18 16  11 14  18 16  14 21  6 28  5 29  11 34  13 30  6 28  11 34  13 30  11 34  19 33  11 34  22 38  19 33  14 21  22 26  11 14</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="S_nugget_gold_s">
+        <instance_geometry url="#nugget_gold_s">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_nugget_gold_s" target="#PMat_nugget_gold_s">
+                <bind_vertex_input semantic="nugget_gold_s-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

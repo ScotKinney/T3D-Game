@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2011-07-07T23:56:16Z</created>
+    <modified>2011-07-07T23:56:16Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image_TcaveFromFJ1" name="Image_TcaveFromFJ1" depth="1">
+      <init_from>SmokeScreenTCaves.jpg</init_from>
+    </image>
+    <image id="Image_TcaveFromFJ2" name="Image_TcaveFromFJ2" depth="1">
+      <init_from>black.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PMat_TcaveFromFJ1">
+      <instance_effect url="#Phong_TcaveFromFJ1"/>
+    </material>
+    <material id="PMat_TcaveFromFJ2">
+      <instance_effect url="#Phong_TcaveFromFJ2"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Phong_TcaveFromFJ1">
+      <profile_COMMON>
+        <newparam sid="TcaveFromFJ1-surface">
+          <surface type="2D">
+            <init_from>Image_TcaveFromFJ1</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="TcaveFromFJ1-sampler">
+          <sampler2D>
+            <source>TcaveFromFJ1-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.6588 0.6588 0.6588 1.0</color></ambient>
+            <diffuse><texture texture="TcaveFromFJ1-sampler" texcoord="TcaveFromFJ1-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_TcaveFromFJ2">
+      <profile_COMMON>
+        <newparam sid="TcaveFromFJ2-surface">
+          <surface type="2D">
+            <init_from>Image_TcaveFromFJ2</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="TcaveFromFJ2-sampler">
+          <sampler2D>
+            <source>TcaveFromFJ2-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.6588 0.6588 0.6588 1.0</color></ambient>
+            <diffuse><texture texture="TcaveFromFJ2-sampler" texcoord="TcaveFromFJ2-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="TcaveFromFJ1" name="TcaveFromFJ1">
+      <mesh>
+        <source id="TcaveFromFJ1-positions">
+          <float_array id="TcaveFromFJ1-positions-array" count="24">-0.5 -0.0475 0.5 -0.5 0.0525 0.5 -0.5 -0.0475 -0.5 -0.5 0.0525 -0.5 0.5 -0.0475 0.5 0.5 0.0525 0.5 0.5 -0.0475 -0.5 0.5 0.0525 -0.5</float_array>
+          <technique_common>
+            <accessor source="TcaveFromFJ1-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TcaveFromFJ1-uvs">
+          <float_array id="TcaveFromFJ1-uvs-array" count="8">0 0 0 1.0 1.0 0 1.0 1.0</float_array>
+          <technique_common>
+            <accessor source="TcaveFromFJ1-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="TcaveFromFJ1-vertices">
+          <input semantic="POSITION" source="#TcaveFromFJ1-positions"/>
+        </vertices>
+        <triangles count="8" material="Mat_TcaveFromFJ1">
+          <input offset="0" semantic="VERTEX" source="#TcaveFromFJ1-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#TcaveFromFJ1-uvs"/>
+          <p>1 1  0 0  4 2  5 3  1 1  4 2  4 3  0 1  2 0  6 2  4 3  2 0  1 0  5 2  7 3  3 1  1 0  7 3  7 1  6 0  2 2  3 3  7 1  2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="TcaveFromFJ2" name="TcaveFromFJ2">
+      <mesh>
+        <source id="TcaveFromFJ2-positions">
+          <float_array id="TcaveFromFJ2-positions-array" count="24">-0.5 -0.0475 0.5 -0.5 0.0525 0.5 -0.5 -0.0475 -0.5 -0.5 0.0525 -0.5 0.5 -0.0475 0.5 0.5 0.0525 0.5 0.5 -0.0475 -0.5 0.5 0.0525 -0.5</float_array>
+          <technique_common>
+            <accessor source="TcaveFromFJ2-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="TcaveFromFJ2-uvs">
+          <float_array id="TcaveFromFJ2-uvs-array" count="8">0 0 0 1.0 0.4 0 0.4 1.0</float_array>
+          <technique_common>
+            <accessor source="TcaveFromFJ2-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="TcaveFromFJ2-vertices">
+          <input semantic="POSITION" source="#TcaveFromFJ2-positions"/>
+        </vertices>
+        <triangles count="4" material="Mat_TcaveFromFJ2">
+          <input offset="0" semantic="VERTEX" source="#TcaveFromFJ2-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#TcaveFromFJ2-uvs"/>
+          <p>5 1  4 0  6 2  7 3  5 1  6 2  3 1  2 0  0 2  1 3  3 1  0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="S_TcaveFromFJ1">
+        <instance_geometry url="#TcaveFromFJ1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_TcaveFromFJ1" target="#PMat_TcaveFromFJ1">
+                <bind_vertex_input semantic="TcaveFromFJ1-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_TcaveFromFJ2">
+        <instance_geometry url="#TcaveFromFJ2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_TcaveFromFJ2" target="#PMat_TcaveFromFJ2">
+                <bind_vertex_input semantic="TcaveFromFJ2-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

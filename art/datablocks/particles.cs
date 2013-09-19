@@ -29,7 +29,7 @@ datablock SphereEmitterNodeData(DefaultEmitterNodeData)
 
 datablock ParticleData(Smoke)
 {
-   textureName          = "art/particles/smoke";
+   textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.3;
    gravityCoefficient   = -0.2;   // rises slowly
    inheritedVelFactor   = 0.00;
@@ -71,7 +71,7 @@ datablock SphereEmitterNodeData(SmokeEmitterNode)
 
 datablock ParticleData(EmberParticle)
 {
-   textureName          = "art/particles/ember";
+   textureName          = "core/art/particles/ember";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
    gravityCoefficient   = -0.05;   // rises slowly
@@ -120,7 +120,7 @@ datablock SphereEmitterNodeData(EmberNode)
 
 datablock ParticleData(FireParticle)
 {
-   textureName          = "art/particles/smoke";
+   textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
    gravityCoefficient   = -0.05;   // rises slowly
@@ -173,7 +173,7 @@ datablock SphereEmitterNodeData(FireNode)
 
 datablock ParticleData(TorchFire1)
 {
-   textureName          = "art/particles/smoke";
+   textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
    gravityCoefficient   = -0.3;   // rises slowly
    inheritedVelFactor   = 0.00;
@@ -199,7 +199,7 @@ datablock ParticleData(TorchFire1)
 
 datablock ParticleData(TorchFire2)
 {
-   textureName          = "art/particles/smoke";
+   textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
    gravityCoefficient   = -0.5;   // rises slowly
    inheritedVelFactor   = 0.00;
@@ -241,3 +241,51 @@ datablock SphereEmitterNodeData(TorchFireEmitterNode)
 {
    timeMultiple = 1;
 };
+
+datablock ParticleData(shrinefireparticle)
+{
+   textureName          = "core/art/particles/explosion";
+   dragCoeffiecient     = 0;
+   gravityCoefficient   = -0.5;
+   inheritedVelFactor   = "0.8";
+   constantAcceleration = "-3";
+   lifetimeMS           = "950";
+   lifetimeVarianceMS   = 400;
+   useInvAlpha =  false;
+   spinRandomMin = -280.0;
+   spinRandomMax =  280.0;
+
+   colors[0]     = "0.992126 0.937008 0.566929 0.0944882";
+   colors[1]     = "1 0.496063 0 0.299213";
+   colors[2]     = "0.0944882 0.0944882 0.0944882 0";
+   colors[3]     = "0.992157 0.992157 0.992157 0";
+
+   sizes[0]      = "0.6";
+   sizes[1]      = "1.3";
+   sizes[2]      = 0.4;
+
+   times[0]      = 0.0;
+   times[1]      = "0.33";
+   times[2]      = "1";
+   dragCoefficient = 0.25;
+   spinSpeed = "0.5";
+   animTexName = "core/art/particles/explosion";
+   sizes[3] = "0";
+   times[3] = "1";
+};
+
+datablock SphereEmitterData(shrine_fire_emitter)
+{
+   ejectionPeriodMS = 25;
+   ejectionVelocity = 0.5;
+   velocityVariance = "0";
+   ejectionOffset = 0;
+   thetaMax = "100";
+   particles = "shrinefireparticle";
+   blendStyle = "ADDITIVE";
+   softParticles = "1";
+   softnessDistance = 1;
+   periodVarianceMS = "23";
+   thetaMin = "0";
+};
+

@@ -20,18 +20,13 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
+// TODO: Mars. Remove size from all calls to CenterPrint() and adjust for no sound
 $centerPrintActive = 0;
-$bottomPrintActive = 0;
-
-// Selectable window sizes
-$CenterPrintSizes[1] = 20;
-$CenterPrintSizes[2] = 36;
-$CenterPrintSizes[3] = 56;
 
 // time is specified in seconds
-function clientCmdCenterPrint( %message, %time, %size )
+function clientCmdCenterPrint( %message, %time, %noSound, %arg0, %arg1, %arg2 )
 {
-   // if centerprint already visible, reset text and time.
+   // if centerprint is already visible, reset text and time.
    if ($centerPrintActive) {   
       if (centerPrintDlg.removePrint !$= "")
          cancel(centerPrintDlg.removePrint);
@@ -41,41 +36,35 @@ function clientCmdCenterPrint( %message, %time, %size )
       $centerPrintActive = 1;
    }
 
-   CenterPrintText.setText( "<just:center>" @ %message );
-   CenterPrintDlg.extent = firstWord(CenterPrintDlg.extent) @ " " @ $CenterPrintSizes[%size];
-   
-   if (%time > 0)
-      centerPrintDlg.removePrint = schedule( ( %time * 1000 ), 0, "clientCmdClearCenterPrint" );
-}
+   // Make our localized display message
+   %dispMsg = guiStrings.cpMsg[%message];
+   for (%i = 0; %i < 3; %i++)
+   {
+      if ( %arg[%i] $= "" )
+         break;
+      %dispMsg = strReplace(%dispMsg, "%" @ (%i+1), %arg[%i]);
+   }
 
-// time is specified in seconds
-function clientCmdBottomPrint( %message, %time, %size )
-{
-   // if bottomprint already visible, reset text and time.
-   if ($bottomPrintActive) {   
-      if( bottomPrintDlg.removePrint !$= "")
-         cancel(bottomPrintDlg.removePrint);
-   }
-   else {
-      bottomPrintDlg.setVisible(true);
-      $bottomPrintActive = 1;
-   }
-   
-   bottomPrintText.setText( "<just:center>" @ %message );
-   bottomPrintDlg.extent = firstWord(bottomPrintDlg.extent) @ " " @ $CenterPrintSizes[%size];
+   CenterPrintText.setText( "<just:center>" @ %dispMsg );
+   // Force the textbox to resize itself vertically.
+   CenterPrintText.forceReflow();
+   // Grab the new extent of the text box.
+   %newExtent = CenterPrintText.getExtent();
+   CenterPrintDlg.extent = firstWord(CenterPrintDlg.extent) @ " " @
+         (getWord(%newExtent, 1) + 4);
+
+   // Play the centerprint sound effect
+   if ( !%noSound )
+      sfxPlayOnce(CenterPrintSFX);
 
    if (%time > 0)
-      bottomPrintDlg.removePrint = schedule( ( %time * 1000 ), 0, "clientCmdClearbottomPrint" );
-}
-
-function BottomPrintText::onResize(%this, %width, %height)
-{
-   %this.position = "0 0";
+      centerPrintDlg.removePrint = schedule( ( %time * 1000 ), 0,
+         "clientCmdClearCenterPrint" );
 }
 
 function CenterPrintText::onResize(%this, %width, %height)
 {
-   %this.position = "0 0";
+   %this.position = "2 2";
 }
 
 //-------------------------------------------------------------------------------------------------------
@@ -85,11 +74,4 @@ function clientCmdClearCenterPrint()
    $centerPrintActive = 0;
    CenterPrintDlg.visible = 0;
    CenterPrintDlg.removePrint = "";
-}
-
-function clientCmdClearBottomPrint()
-{
-   $bottomPrintActive = 0;
-   BottomPrintDlg.visible = 0;
-   BottomPrintDlg.removePrint = "";
 }

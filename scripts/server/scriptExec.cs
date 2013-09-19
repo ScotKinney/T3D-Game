@@ -48,6 +48,9 @@ exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
 
 exec("./AlterVerse/authentication.cs"); // client authentication
 
+// Load all of the inventory item datablocks
+exec("./AlterVerse/worldItems.cs");
+
 // Load all spells in the spells folder.
 // This could optionally be put into a function and called manually.
 for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())

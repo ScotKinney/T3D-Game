@@ -36,3 +36,8 @@ datablock TriggerData(ClientTrigger : DefaultTrigger)
 {
    clientSide = true;
 };
+
+datablock TriggerData(NeutralZoneTrigger : DefaultTrigger)
+{
+   tickPeriodMS = 250;  
+};
