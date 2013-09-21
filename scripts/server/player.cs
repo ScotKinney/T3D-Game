@@ -182,7 +182,9 @@ function PLAYERDATA::doDismount(%this, %obj, %forced)
 
 function PLAYERDATA::onCollision(%this, %obj, %col)
 {
-   if (!isObject(%col) || (%obj.getState() $= "Dead"))
+   %hitClass = %col.getClassName();
+   if (!isObject(%col) || (%obj.getState() $= "Dead") ||
+         (%hitClass $= "TerrainBlock"))
       return;
 
    //echo("PlayerVelocity = " @ %obj.getVelocity() @ ", speed = " @ VectorLen(%obj.getVelocity()));
@@ -226,7 +228,6 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
    //AISK Changes: End
    
    // If we ran into a mountable AI, attempt to mount it
-   %hitClass = %col.getClassName();
    if ((%hitClass $= "AIPlayer") && %col.mountable && %obj.mountVehicle && !%obj.isMounted())
    {
       // can't mount a dead AI

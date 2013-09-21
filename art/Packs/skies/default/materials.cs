@@ -9,5 +9,5 @@ singleton Material( Corona_Mat )
    translucent = true;
    mapTo = "corona.png";
    diffuseMap[0] = "./corona.png";
-   materialTag0 = "FX";
+   materialTag0 = "Skies";
 };

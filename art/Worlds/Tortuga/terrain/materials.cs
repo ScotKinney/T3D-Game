@@ -7,32 +7,28 @@
 singleton Material(Ter_Grass)   
 {   
    mapTo = "clearTerrain001";   
-  customFootstepSound = FootStepGrass1Sound;
+   footstepSoundId = 0;
 };
 
 singleton Material(Ter_DirtySand)
 {
    mapTo = "dirtysand_base";
-   customFootstepSound = FootStepSand1Sound;
+   footstepSoundId = 3;
 };
 
 singleton Material(Ter_DirtySandmix)
 {
    mapTo = "dirtyandmix_base";
-   customFootstepSound = FootStepSand1Sound;
+   footstepSoundId = 3;
 };
 
 singleton Material(Ter_Rock)
 {
    mapTo = "cas_cobble2_shadow";
-   customFootstepSound = FootStepRock1Sound;
+   footstepSoundId = 1;
 };
 
-
-
 //////////////////////////////////////////////////////////
-
-
 new TerrainMaterial()
 {
    internalName = "grass";
@@ -128,4 +124,16 @@ new TerrainMaterial()
    detailDistance = "1000";
    parallaxScale = "0.03";
    internalName = "SeaweedMain";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/worlds/tortuga/terrain/Seaweed_base";
+   normalMap = "art/worlds/tortuga/terrain/Seaweed_nrm_displacement";
+   detailMap = "art/worlds/tortuga/terrain/Seaweed_detail";
+   detailSize = "5.5";
+   detailStrength = "0.4";
+   detailDistance = "1000";
+   parallaxScale = "0.03";
+   internalName = "Seaweed_base";
 };

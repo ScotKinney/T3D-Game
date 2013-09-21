@@ -6,6 +6,6 @@ singleton Material(MossyRock02_mat)
    animFlags[0] = "0x00000001";
    scrollDir[0] = "0 -0.14";
    scrollSpeed[0] = "0.588";
-   materialTag0 = "lAVArOCK";
+   materialTag0 = "LavaRock";
    glow[0] = "1";
 };

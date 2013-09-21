@@ -267,7 +267,7 @@ datablock ParticleData(ParticleRockImpactInner01)
    textureName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    animTexName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    gravityCoefficient = "0.541667";
-   inheritedVelFactor = "1.875";
+   inheritedVelFactor = "1";
    spinSpeed = "0.229167";
    spinRandomMin = "-416";
    spinRandomMax = "541.9";
@@ -296,7 +296,7 @@ datablock ParticleData(ParticleRockImpactInner01_Cave)
    textureName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    animTexName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    gravityCoefficient = "0.541667";
-   inheritedVelFactor = "1.875";
+   inheritedVelFactor = "1";
    spinSpeed = "0.229167";
    spinRandomMin = "-416";
    spinRandomMax = "541.9";

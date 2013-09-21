@@ -100,7 +100,7 @@ new Material(mat_inn)
    pixelSpecular[0] = true;
    specular[0] = "0.1 0.1 0.1 1.0";
    specularPower[0] = 32.0;
-   customFootstepSound = FootStepWood1Sound;
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MedCity";
    useAnisotropic[0] = "1";
 };
@@ -128,7 +128,7 @@ new Material(mat_medhouse1)
    pixelSpecular[0] = true;
    specular[0] = "0.1 0.1 0.1 1.0";
    specularPower[0] = 32.0;
-   customFootstepSound = FootStepWood1Sound;
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MedCity";
 };
 
@@ -176,7 +176,7 @@ new Material(mat_inn_wood)
    pixelSpecular[0] = true;
    specular[0] = "0.1 0.1 0.1 1.0";
    specularPower[0] = 32.0;
-   customFootstepSound = FootStepWood1Sound;
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MedCity";
    useAnisotropic[0] = "1";
 };

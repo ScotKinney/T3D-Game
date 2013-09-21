@@ -25,7 +25,7 @@ singleton Material(mat_tcavesPointer)
    mapTo = "TCavesPointer";
    diffuseMap[0] = "TCavesPointer";
    translucent = "0";
-   materialTag0 = "FreeJack";
+   materialTag0 = "signs";
    customFootstepSound = "FootStepWood1Sound";
 };
 

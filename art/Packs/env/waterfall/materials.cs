@@ -29,13 +29,12 @@ singleton Material(waterfall_suds_scrollingwater)
    animFlags[1] = "0x00000001";
    scrollDir[1] = "0 -1";
    scrollSpeed[1] = "0.5";
-   materialTag1 = "Vegetation";
-   materialTag0 = "Vegetation";
    emissive[0] = "0";
    emissive[1] = "0";
    subSurfaceColor[0] = "1 0.2 0.2 1";
    subSurfaceRolloff[0] = "0.2";
    castShadows = "0";
+   materialTag0 = "Waterfall";
 };
 
 //--- waterfall_suds.DAE MATERIALS END ---
@@ -66,12 +65,11 @@ singleton Material(waterfall_suds_scrollingwater_indoors)
    animFlags[1] = "0x00000001";
    scrollDir[1] = "0 -1";
    scrollSpeed[1] = "0.5";
-   materialTag1 = "Vegetation";
-   materialTag0 = "Vegetation";
    emissive[0] = "1";
    emissive[1] = "1";
    subSurfaceColor[0] = "1 0.2 0.2 1";
    subSurfaceRolloff[0] = "0.2";
    castShadows = "0";
+   materialTag0 = "Waterfall";
 };
 

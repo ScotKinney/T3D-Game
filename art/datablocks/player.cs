@@ -87,8 +87,8 @@ datablock PlayerData(DefaultPlayerData)
    minImpactSpeed = 15; //45;  // minimum speed to generate a collision callback
    speedDamageScale = 0.4;
 
-   boundingBox = "0.75 0.75 2.6"; // Torque Physics
-   //boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
+   //boundingBox = "0.75 0.75 2.6"; // Torque Physics
+   boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
    crouchBoundingBox = "1 1 1.25";
    swimBoundingBox = "1 2 2";
    pickupRadius = 10;
@@ -144,6 +144,10 @@ datablock PlayerData(DefaultPlayerData)
    //NOTE:  some sounds commented out until wav's are available
 
    // Footstep Sounds
+   FootSoftSound        = FootStepGrass1Sound;
+   FootHardSound        = FootStepRock1Sound;
+   FootMetalSound       = FootStepMetal1Sound;
+   FootSnowSound        = FootStepSnow1Sound;
 
    FootShallowSound     = FootLightShallowSplashSound;
    FootWadingSound      = FootLightWadingSound;

@@ -42,6 +42,10 @@ exec("art/players/" @ $AlterVerse::AvSet @ "/datablock.cs");
 // Any datablocks contained in the loaded art packs
 exec("art/Packs/skies/default/datablock.cs");
 
+// All needed AI datablocks
+exec("art/Packs/AI/Sharks/datablock.cs");
+exec("art/Packs/AI/Horses/datablock.cs");
+
 // Load our other player datablocks
 //exec("./aiPlayer.cs");
 

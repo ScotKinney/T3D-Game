@@ -33,8 +33,8 @@ singleton Material(volcano_tex_volcano_cave_3)
    detailMap[0] = "rockydirt_detail";
    detailScale[0] = "12 12";
    customFootstepSound = "FootStepSand1Sound";
-   materialTag0 = "Volcano";
    detailNormalMap[0] = "rockydirt_normal";
+   materialTag0 = "Volcano";
 };
 
 //--- volcano.DAE MATERIALS BEGIN ---
@@ -75,7 +75,6 @@ singleton Material(volcano_lavaflow)
    scrollSpeed[0] = "0.01";
    emissive[0] = "0";
    castShadows = "0";
-   materialTag0 = "Volcano";
    parallaxScale[0] = "0.0138889";
    pixelSpecular[0] = "0";
    alphaRef = "80";
@@ -83,6 +82,7 @@ singleton Material(volcano_lavaflow)
    forestWindEnabled = "1";
    backlight = "1";
    backLightFactor = "0.9 1.0 0.2";
+   materialTag0 = "Volcano";
 };
 //--- lavaglow.DAE MATERIALS BEGIN ---
 singleton Material(lavaglow_ColorEffectR6G135B113_material)
@@ -100,6 +100,7 @@ singleton Material(lavaglow_ColorEffectR6G135B113_material)
 	doubleSided = false;
 	translucent = false;
 	translucentBlendOp = "None";
+   materialTag0 = "Volcano";
 };
 
 singleton Material(lavaglow)
@@ -119,11 +120,11 @@ singleton Material(lavaglow)
 	translucentBlendOp = "Add";
    glow[0] = "1";
    backlight = "1";
-   materialTag0 = "Volcano";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    emissive[0] = "1";
    castShadows = "0";
+   materialTag0 = "Volcano";
 };
 
 //--- lavafall.DAE MATERIALS BEGIN ---
@@ -145,10 +146,10 @@ singleton Material(lavafall)
    animFlags[0] = "0x00000001";
    scrollDir[0] = "0 -0.14";
    scrollSpeed[0] = "1.882";
-   materialTag0 = "RoadAndPath";
    emissive[0] = "1";
    glow[0] = "1";
    vertColor[0] = "1";
+   materialTag0 = "Volcano";
 };
 
 //--- lavafall.DAE MATERIALS END ---

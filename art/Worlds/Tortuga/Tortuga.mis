@@ -4235,7 +4235,7 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         tex_volcano_cave_2 = "tex_volcano_cave_2_mat";
+         //tex_volcano_cave_2 = "tex_volcano_cave_2_mat";
    };
    new Zone(ZoneVolcano) {
       useAmbientLightColor = "1";
@@ -11177,7 +11177,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(underwaterCave) {
-         shapeName = $WorldPath @ "/models/underwaterCave/underwater_cave.DAE";
+         shapeName = "art/Packs/env/underwaterCave/underwater_cave.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -12875,6 +12875,7 @@ new SimGroup(MissionGroup) {
          scale = "2 2 2";
          canSave = "1";
          canSaveDynamicFields = "1";
+         skin = "pier=ps1target";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -12915,6 +12916,7 @@ new SimGroup(MissionGroup) {
          scale = "2 2 2";
          canSave = "1";
          canSaveDynamicFields = "1";
+         skin = "pier=ps1target";
       };
       new TSStatic(target1) {
          shapeName = "art/Packs/props/physShapes1/target_unbroken.DAE";
@@ -12935,6 +12937,7 @@ new SimGroup(MissionGroup) {
          scale = "2 2 2";
          canSave = "1";
          canSaveDynamicFields = "1";
+         skin = "pier=ps1target";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -13452,7 +13455,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/default.dts";
+      shapeName = "art/Packs/props/default/plate.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";

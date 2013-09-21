@@ -212,15 +212,15 @@ singleton GuiControlProfile ("CenterPrintProfile")
    fillColor = "128 128 128";
    fontColor = "0 255 0";
    border = true;
-   borderColor = "0 255 0";
+   borderColor = "255 255 255";
 };
 
 singleton GuiControlProfile ("CenterPrintTextProfile")
 {
    opaque = false;
-   fontType = "Arial";
-   fontSize = 12;
-   fontColor = "0 255 0";
+   fontType = "Arial Bold";
+   fontSize = 20;
+   fontColor = "255 255 255";
 };
 
 // -----------------------------------------------------------------------------

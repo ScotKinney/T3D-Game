@@ -3,7 +3,14 @@
 // Copyright GarageGames, LLC 2011
 //-----------------------------------------------------------------------------
 
-new TerrainMaterial()
+singleton Material(Ter_grass1)
+{
+   mapto = "grass1";
+   footstepSoundId = 1;
+   //customFootstepSound = "FootStepWood1Sound";
+};
+
+new TerrainMaterial(grass1)
 {
    internalName = "grass1";
    diffuseMap = $WorldPath @ "/terrain/Example/grass1";
@@ -15,7 +22,14 @@ new TerrainMaterial()
    diffuseSize = "200";
 };
 
-new TerrainMaterial()
+singleton Material(Ter_rocktest)
+{
+   mapto = "rocktest";
+   footstepSoundId = 1;
+   //customFootstepSound = "FootStepWood1Sound";
+};
+
+new TerrainMaterial(rocktest)
 {
    internalName = "rocktest";
    diffuseMap = $WorldPath @ "/terrain/Example/rocktest";
@@ -29,9 +43,16 @@ new TerrainMaterial()
    detailStrength = "1.2";
 };
 
-new TerrainMaterial()
+singleton Material(Ter_grass1_dry)
 {
-   internalName = "grass1-dry";
+   mapto = "grass1_dry";
+   footstepSoundId = 1;
+   //customFootstepSound = "FootStepWood1Sound";
+};
+
+new TerrainMaterial(grass1_dry)
+{
+   internalName = "grass1_dry";
    diffuseMap = $WorldPath @ "/terrain/Example/grass1-dry";
    detailMap = $WorldPath @ "/terrain/Example/grass1-dry_d";
    detailSize = "10";
@@ -41,6 +62,13 @@ new TerrainMaterial()
    Enabled = "1";
    diffuseSize = "250";
    detailStrength = "2";
+};
+
+singleton Material(Ter_dirt_grass)
+{
+   mapto = "dirt_grass";
+   footstepSoundId = 1;
+   //customFootstepSound = "FootStepWood1Sound";
 };
 
 new TerrainMaterial()
@@ -56,7 +84,14 @@ new TerrainMaterial()
    diffuseSize = "200";
 };
 
-new TerrainMaterial()
+singleton Material(Ter_sand)
+{
+   mapto = "sand";
+   footstepSoundId = 1;
+   //customFootstepSound = "FootStepWood1Sound";
+};
+
+new TerrainMaterial(sand)
 {
    internalName = "sand";
    diffuseMap = $WorldPath @ "/terrain/Example/sand";

@@ -45,9 +45,9 @@ function PlayGui::onWake(%this)
    unbindChatCommands();
    moveMap.push();
 
-   // hack city - these controls are floating around and need to be clamped
-   if ( isFunction( "refreshCenterTextCtrl" ) )
-      schedule(0, 0, "refreshCenterTextCtrl");
+   // Resize any dynamic gui elements
+   %screenExtent = Canvas.getExtent();
+   %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
 
    PutTLOnTop();  // Bring the TL gui back onto the canvas
 }
@@ -70,6 +70,21 @@ function PlayGui::clearHud( %this )
 
    while ( %this.getCount() > 0 )
       %this.getObject( 0 ).delete();
+}
+
+function PlayGui::onResize(%this, %newWidth, %newHeight)
+{
+   %this.ResizeCenterPrint(%newWidth);
+}
+
+function PlayGui::ResizeCenterPrint(%this, %newWidth)
+{  // Reposition the center print frame and text to be 10 pixels below the
+   // toolbar and 18 pixels from each side of the screen
+   %ctrlWidth = %newWidth - 36;
+   //%barHeight = getWord(BCToolbar.getExtent(), 1);
+   %barHeight = 30;
+   centerPrintDlg.resize(18, %barHeight + 4, %ctrlWidth, 23);
+   CenterPrintText.resize(2, 2, %ctrlWidth - 4, 19);
 }
 
 //-----------------------------------------------------------------------------

@@ -19,16 +19,14 @@ singleton Material(pallet_wood_material)
    diffuseMap[0] = "crate_diffuse_transparency.dds";
    overlayMap[0] = "crate_diffuse_transparency.dds";
    normalMap[0] = "crate_normal_specular.dds";
-   materialTag0 = "Prop";
    backlight = "1";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    specularMap[0] = "crate_specular.dds";
    customFootstepSound = "FootStepWood1Sound";
 
+   materialTag0 = "PhysShapes1";
 };
-
-
 
 //--- pier_piece_1_posts.DAE MATERIALS BEGIN ---
 singleton Material(pier_piece_1_posts_pier_material)
@@ -48,16 +46,12 @@ singleton Material(pier_piece_1_posts_pier_material)
 	translucentBlendOp = "None";
    alphaTest = "1";
    alphaRef = "61";
-   materialTag0 = "Structure";
    backlight = "1";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "PhysShapes1";
 };
-
-
-
-
 
 //--- fence_post_base.DAE MATERIALS BEGIN ---
 singleton Material(fence_post_base_tex_fence)
@@ -77,10 +71,10 @@ singleton Material(fence_post_base_tex_fence)
 	translucentBlendOp = "None";
    alphaTest = "1";
    alphaRef = "100";
-   materialTag0 = "Structure";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    backlight = "1";
+   materialTag0 = "PhysShapes1";
 };
 
 //--- fence_post_base.DAE MATERIALS END ---
@@ -102,8 +96,8 @@ singleton Material(tex_shrine_material)
 	translucentBlendOp = "None";
    alphaTest = "1";
    alphaRef = "73";
-   materialTag0 = "Structure";
    customFootstepSound = "FootStepRock1Sound";
+   materialTag0 = "PhysShapes1";
 };
 
 
@@ -122,11 +116,10 @@ singleton Material(tex_shrine_detail_material)
 	doubleSided = false;
 	translucent = false;
 	translucentBlendOp = "LerpAlpha";
-   materialTag0 = "Structure";
-   materialTag1 = "Vegetation";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    backlight = "1";
+   materialTag0 = "PhysShapes1";
 };
 
 //--- shrine_bowl_A_unbk.DAE MATERIALS END ---
@@ -148,13 +141,13 @@ singleton Material(bridge_base_phys_tex_bridge)
 	doubleSided = false;
 	translucent = false;
 	translucentBlendOp = "None";
-   materialTag0 = "Structure";
    alphaTest = "1";
    alphaRef = "73";
    backLightFactor = "0.9 1.0 0.2";
    forestWindEnabled = "1";
    backlight = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "PhysShapes1";
 };
 
 //--- bridge_base.DAE MATERIALS END ---
@@ -166,6 +159,7 @@ singleton Material(palletsmall_unbroken_ColorEffectR213G154B229_material)
    diffuseColor[0] = "0.835294 0.603922 0.898039 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(palletsmall_unbroken_pallet_wood_material)
@@ -175,6 +169,7 @@ singleton Material(palletsmall_unbroken_pallet_wood_material)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(palletsmall_broken_ColorEffectR225G88B199_material)
@@ -183,6 +178,7 @@ singleton Material(palletsmall_broken_ColorEffectR225G88B199_material)
    diffuseColor[0] = "0.882353 0.345098 0.780392 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(crate_square_unbroken_ColorEffectR145G28B177_material)
@@ -191,6 +187,7 @@ singleton Material(crate_square_unbroken_ColorEffectR145G28B177_material)
    diffuseColor[0] = "0.568627 0.109804 0.694118 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(pallet_unbroken_ColorEffectR143G225B87_material)
@@ -199,6 +196,7 @@ singleton Material(pallet_unbroken_ColorEffectR143G225B87_material)
    diffuseColor[0] = "0.560784 0.882353 0.341177 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(target_unbroken_ColorEffectR113G134B6_material)
@@ -207,6 +205,7 @@ singleton Material(target_unbroken_ColorEffectR113G134B6_material)
    diffuseColor[0] = "0.443137 0.52549 0.0235294 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 
@@ -216,6 +215,7 @@ singleton Material(pier_piece_t_unbroken_ColorEffectR135G110B8_material)
    diffuseColor[0] = "0.529412 0.431373 0.0313726 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(pier_piece_busted_unbroken_ColorEffectR108G8B136_material)
@@ -224,6 +224,7 @@ singleton Material(pier_piece_busted_unbroken_ColorEffectR108G8B136_material)
    diffuseColor[0] = "0.423529 0.0313726 0.533333 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 
@@ -233,6 +234,7 @@ singleton Material(shrine_column_C_base_ColorEffectR177G88B27_material)
    diffuseColor[0] = "0.694118 0.345098 0.105882 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_D_unbk_ColorEffectR86G86B86_material)
@@ -241,6 +243,7 @@ singleton Material(shrine_column_D_unbk_ColorEffectR86G86B86_material)
    diffuseColor[0] = "0.337255 0.337255 0.337255 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_D_unbk_ColorEffectR224G86B86_material)
@@ -249,6 +252,7 @@ singleton Material(shrine_column_D_unbk_ColorEffectR224G86B86_material)
    diffuseColor[0] = "0.878431 0.337255 0.337255 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_E_unbk_ColorEffectR113G135B6_material)
@@ -257,6 +261,7 @@ singleton Material(shrine_column_E_unbk_ColorEffectR113G135B6_material)
    diffuseColor[0] = "0.443137 0.529412 0.0235294 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_E_unbk_ColorEffectR141G7B58_material)
@@ -265,6 +270,7 @@ singleton Material(shrine_column_E_unbk_ColorEffectR141G7B58_material)
    diffuseColor[0] = "0.552941 0.027451 0.227451 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_C_bk_ColorEffectR28G149B177_material)
@@ -273,6 +279,7 @@ singleton Material(shrine_column_C_bk_ColorEffectR28G149B177_material)
    diffuseColor[0] = "0.109804 0.584314 0.694118 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 
@@ -282,6 +289,7 @@ singleton Material(shrine_column_A_bk_ColorEffectR87G225B87_material)
    diffuseColor[0] = "0.341177 0.882353 0.341177 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_A_bk_ColorEffectR148G177B27_material)
@@ -290,6 +298,7 @@ singleton Material(shrine_column_A_bk_ColorEffectR148G177B27_material)
    diffuseColor[0] = "0.580392 0.694118 0.105882 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_A_bk_ColorEffectR138G8B110_material)
@@ -298,6 +307,7 @@ singleton Material(shrine_column_A_bk_ColorEffectR138G8B110_material)
    diffuseColor[0] = "0.541176 0.0313726 0.431373 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(shrine_column_C_bk_ColorEffectR177G148B27_material)
@@ -306,6 +316,7 @@ singleton Material(shrine_column_C_bk_ColorEffectR177G148B27_material)
    diffuseColor[0] = "0.694118 0.580392 0.105882 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
 };
 
 singleton Material(target_unbroken_pier_wood)
@@ -315,4 +326,27 @@ singleton Material(target_unbroken_pier_wood)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   materialTag0 = "PhysShapes1";
+};
+
+singleton Material(pier_detail_target)
+{
+   mapTo = "ps1target_wood";  
+   baseTex[0] = "";
+   overlayTex[0] = "";
+   bumpTex[0] = "";
+
+   pixelSpecular = "1";
+   specular = "1 1 1 0";
+   specularPower = "49";
+   diffuseMap[0] = "pier_diffuse_transparency.dds";
+   overlayMap[0] = "target_diffuse.png";
+   normalMap[0] = "pier_normal_specular.dds";
+   backLightFactor = "0.9 1.0 0.2";
+   forestWindEnabled = "1";
+   backlight = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
+   useAnisotropic[0] = "1";
+   materialTag0 = "PhysShapes1";
 };
