@@ -162,6 +162,51 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
+   new StaticShape(Guard6_OR) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "10 10 2";
+      rotation = "0 0 1 180";
+      scale = "0.714 0.714 0.714";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         avOptions = "80,179,215,102,137,333,328,324,326,325,361";
+         behavior = "LeashedBehavior";
+         block = "FemalePlayerData";
+         botBelongsToMe = "12448";
+         distDetect = "50";
+         fov = "360";
+         leash = "25";
+         maxRange = "30";
+         paceDist = "10";
+         realName = " ";
+         respawnCount = "0";
+         respawnCounter = "0";
+         team = "9";
+         Weapon = "HammerWeapon";
+   };
+   new StaticShape(KardShark) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "10 20 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         behavior = "LeashedBehavior";
+         block = "Shark";
+         botBelongsToMe = "13523";
+         delayRespawn = "41915";
+         dropcount = "1";
+         DropItem = "Shark_Steak";
+         leash = "50";
+         respawnCount = "0";
+         respawnCounter = "0";
+         spawnGroup = "SharkSpheres";
+         team = "1";
+   };
 };
 //--- OBJECT WRITE END ---
 

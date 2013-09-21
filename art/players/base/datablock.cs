@@ -47,6 +47,7 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
 {
    shapeFile = "art/players/base/basemale/basemale1_4.dts";
    optionPath = "art/players/base";
+   physicsPlayerType = "CapsuleZ";
 
    //Death Cry
    DeathSound = MaleDeathCry;
@@ -64,6 +65,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
 {
    shapeFile = "art/players/base/basefemale/basefemale1_4.dts";
    optionPath = "art/players/base";
+   physicsPlayerType = "CapsuleZ";
 
    //Death Cry
    DeathSound = FemaleDeathCry;

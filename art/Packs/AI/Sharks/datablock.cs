@@ -41,8 +41,9 @@ datablock PlayerData(Shark : DefaultPlayerData)
    maxUnderwaterBackwardSpeed = 4;
    maxUnderwaterSideSpeed = 4;
 
-   boundingBox = "1 1 2";
-   swimBoundingBox = "2 4 4";
+   physicsPlayerType = "CapsuleY";
+   boundingBox = "0.5 2.1 0.5";
+   swimBoundingBox = "0.5 2.1 0.5";
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 30;
@@ -50,6 +51,10 @@ datablock PlayerData(Shark : DefaultPlayerData)
    maxStepHeight = .5;  //two meters
 
    // Footstep Sounds
+   FootSoftSound        = "";
+   FootHardSound        = "";
+   FootMetalSound       = "";
+   FootSnowSound        = "";
    FootShallowSound     = FootLightShallowSplashSound;
    FootWadingSound      = FootLightWadingSound;
    FootUnderwaterSound  = FootLightUnderwaterSound;
