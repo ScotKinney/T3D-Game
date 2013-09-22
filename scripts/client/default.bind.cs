@@ -32,9 +32,9 @@ new ActionMap(moveMap);
 function escapeFromGame()
 {
    if ( $Server::ServerType $= "SinglePlayer" )
-      MessageBoxYesNo( "Exit", "Exit from this Mission?", "disconnect();", "");
+      MessageBoxYesNo( "Exit", "Leave the AlterVerse?", "disconnect();", "");
    else
-      MessageBoxYesNo( "Disconnect", "Disconnect from the server?", "disconnect();", "");
+      MessageBoxYesNo( "Disconnect", "Leave the AlterVerse?", "disconnect();", "");
 }
 
 moveMap.bindCmd(keyboard, "escape", "", "handleEscape();");
@@ -74,6 +74,7 @@ moveMap.bind(keyboard, "alt p", doScreenShotHudless);
 //------------------------------------------------------------------------------
 
 $movementSpeed = 1; // m/s
+$runLocked = false;
 
 function setSpeed(%speed)
 {
@@ -83,38 +84,49 @@ function setSpeed(%speed)
 
 function moveleft(%val)
 {
+   if ( $runLocked )
+      toggleRunLock(1);
    $mvLeftAction = %val * $movementSpeed;
 }
 
 function moveright(%val)
 {
+   if ( $runLocked )
+      toggleRunLock(1);
    $mvRightAction = %val * $movementSpeed;
 }
 
 function moveforward(%val)
 {
+   if ( $runLocked )
+      toggleRunLock(1);
    $mvForwardAction = %val * $movementSpeed;
 }
 
 function movebackward(%val)
 {
+   if ( $runLocked )
+      toggleRunLock(1);
    $mvBackwardAction = %val * $movementSpeed;
 }
 
-function moveup(%val)
+function toggleRunLock(%val)
 {
-   %object = ServerConnection.getControlObject();
-   
-   if(%object.isInNamespaceHierarchy("Camera"))
-      $mvUpAction = %val * $movementSpeed;
-}
-
-function movedown(%val)
-{
-   %object = ServerConnection.getControlObject();
-   
-   if(%object.isInNamespaceHierarchy("Camera"))
-      $mvDownAction = %val * $movementSpeed;
+   if ( %val )
+   {
+      if ( $runLocked )
+      {
+         $mvForwardAction = 0;
+         $runLocked = false;
+         if ( ($mvTriggerCount5 % 2) == 1 )
+            $mvTriggerCount5++;
+      }
+      else
+      {
+         $mvForwardAction = 1;
+         $runLocked = true;
+      }
+   }
 }
 
 function turnLeft( %val )
@@ -146,9 +158,11 @@ function getMouseAdjustAmount(%val)
 function getGamepadAdjustAmount(%val)
 {
    // based on a default camera FOV of 90'
-   return(%val * ($cameraFov / 90) * 0.01) * 10.0;
+   return(%val * ($cameraFov / 90) * 0.01) * 5.0;
 }
 
+$mvYaw = 0;
+$mvPitch = 0;
 function yaw(%val)
 {
    %yawAdj = getMouseAdjustAmount(%val);
@@ -178,6 +192,8 @@ function pitch(%val)
 function jump(%val)
 {
    $mvTriggerCount2++;
+   if (%val && (($mvTriggerCount2 % 2) == 0))
+      $mvTriggerCount2++;
 }
 
 function gamePadMoveX( %val )
@@ -261,9 +277,7 @@ moveMap.bind( keyboard, w, moveforward );
 moveMap.bind( keyboard, s, movebackward );
 moveMap.bind( keyboard, up, moveforward );
 moveMap.bind( keyboard, down, movebackward );
-
-moveMap.bind( keyboard, e, moveup );
-moveMap.bind( keyboard, c, movedown );
+moveMap.bind( keyboard, r, toggleRunLock );
 
 moveMap.bind( keyboard, space, jump );
 moveMap.bind( mouse, xaxis, yaw );
@@ -289,17 +303,12 @@ moveMap.bindCmd(gamepad, dpadr, "toggleLightSpecularViz();", "");
 function doCrouch(%val)
 {
    $mvTriggerCount3++;
+   if (%val && (($mvTriggerCount3 % 2) == 0))
+      $mvTriggerCount3++;
 }
 
-moveMap.bind(keyboard, lcontrol, doCrouch);
+moveMap.bind(keyboard, x, doCrouch);
 moveMap.bind(gamepad, btn_b, doCrouch);
-
-function doSprint(%val)
-{
-   $mvTriggerCount5++;
-}
-
-moveMap.bind(keyboard, lshift, doSprint);
 
 //------------------------------------------------------------------------------
 // Mouse Trigger
@@ -308,15 +317,11 @@ moveMap.bind(keyboard, lshift, doSprint);
 function mouseFire(%val)
 {
    $mvTriggerCount0++;
+   if (%val && (($mvTriggerCount0 % 2) == 0))
+      $mvTriggerCount0++;
 }
 
-//function altTrigger(%val)
-//{
-   //$mvTriggerCount1++;
-//}
-
 moveMap.bind( mouse, button0, mouseFire );
-//moveMap.bind( mouse, button1, altTrigger );
 
 //------------------------------------------------------------------------------
 // Gamepad Trigger
@@ -351,14 +356,13 @@ function gamepadAltTrigger(%val)
 }
 
 moveMap.bind(gamepad, triggerr, gamepadFire);
-moveMap.bind(gamepad, triggerl, gamepadAltTrigger);
 
 //------------------------------------------------------------------------------
 // Zoom and FOV functions
 //------------------------------------------------------------------------------
 
-if($Player::CurrentFOV $= "")
-   $Player::CurrentFOV = $pref::Player::DefaultFOV / 2;
+if($Pref::Player::CurrentFOV $= "")
+   $Pref::Player::CurrentFOV = $pref::Player::DefaultFOV / 2;
 
 // toggleZoomFOV() works by dividing the CurrentFOV by 2.  Each time that this
 // toggle is hit it simply divides the CurrentFOV by 2 once again.  If the
@@ -367,13 +371,13 @@ if($Player::CurrentFOV $= "")
 
 function toggleZoomFOV()
 {
-    $Player::CurrentFOV = $Player::CurrentFOV / 2;
+    $Pref::Player::CurrentFOV = $Pref::Player::CurrentFOV / 2;
 
-    if($Player::CurrentFOV < 5)
+    if($Pref::Player::CurrentFOV < 5)
         resetCurrentFOV();
 
     if(ServerConnection.zoomed)
-      setFOV($Player::CurrentFOV);
+      setFOV($Pref::Player::CurrentFOV);
     else
     {
       setFov(ServerConnection.getControlCameraDefaultFov());
@@ -382,7 +386,7 @@ function toggleZoomFOV()
 
 function resetCurrentFOV()
 {
-   $Player::CurrentFOV = ServerConnection.getControlCameraDefaultFov() / 2;
+   $Pref::Player::CurrentFOV = ServerConnection.getControlCameraDefaultFov() / 2;
 }
 
 function turnOffZoom()
@@ -409,7 +413,7 @@ function toggleZoom(%val)
    if (%val)
    {
       ServerConnection.zoomed = true;
-      setFov($Player::CurrentFOV);
+      setFov($Pref::Player::CurrentFOV);
       Reticle.setVisible(false);
       zoomReticle.setVisible(true);
 
@@ -460,35 +464,30 @@ function toggleCamera(%val)
 
 moveMap.bind( keyboard, v, toggleFreeLook ); // v for vanity
 moveMap.bind(keyboard, tab, toggleFirstPerson );
-moveMap.bind(keyboard, "alt c", toggleCamera);
+//moveMap.bind(keyboard, "alt c", toggleCamera);
 
-moveMap.bind( gamepad, btn_start, toggleCamera );
+//moveMap.bind( gamepad, btn_start, toggleCamera );
 moveMap.bind( gamepad, btn_x, toggleFirstPerson );
 
 // ----------------------------------------------------------------------------
 // Misc. Player stuff
 // ----------------------------------------------------------------------------
 
-// Gideon does not have these animations, so the player does not need access to
-// them.  Commenting instead of removing so as to retain an example for those
-// who will want to use a player model that has these animations and wishes to
-// use them.
-
-//moveMap.bindCmd(keyboard, "ctrl w", "commandToServer('playCel',\"wave\");", "");
-//moveMap.bindCmd(keyboard, "ctrl s", "commandToServer('playCel',\"salute\");", "");
+moveMap.bindCmd(keyboard, "ctrl w", "commandToServer('playCel',\"wave\");", "");
+moveMap.bindCmd(keyboard, "ctrl s", "commandToServer('playCel',\"salute\");", "");
 
 moveMap.bindCmd(keyboard, "ctrl k", "commandToServer('suicide');", "");
+
+function toggleAnimGui(%val)
+{
+   if (%val && isObject(XtraAnimGui))
+      XtraAnimGui.toggleGui();
+}
+moveMap.bind(keyboard, "ctrl a", toggleAnimGui);
 
 //------------------------------------------------------------------------------
 // Item manipulation
 //------------------------------------------------------------------------------
-moveMap.bindCmd(keyboard, "1", "commandToServer('use',\"Ryder\");", "");
-moveMap.bindCmd(keyboard, "2", "commandToServer('use',\"Lurker\");", "");
-moveMap.bindCmd(keyboard, "3", "commandToServer('use',\"LurkerGrenadeLauncher\");", "");
-moveMap.bindCmd(keyboard, "4", "commandToServer('use',\"ProxMine\");", "");
-moveMap.bindCmd(keyboard, "5", "commandToServer('use',\"DeployableTurret\");", "");
-
-moveMap.bindCmd(keyboard, "r", "commandToServer('reloadWeapon');", "");
 
 function unmountWeapon(%val)
 {
@@ -497,44 +496,6 @@ function unmountWeapon(%val)
 }
 
 moveMap.bind(keyboard, 0, unmountWeapon);
-
-function throwWeapon(%val)
-{
-   if (%val)
-      commandToServer('Throw', "Weapon");
-}
-function tossAmmo(%val)
-{
-   if (%val)
-      commandToServer('Throw', "Ammo");
-}
-
-moveMap.bind(keyboard, "alt w", throwWeapon);
-moveMap.bind(keyboard, "alt a", tossAmmo);
-
-function nextWeapon(%val)
-{
-   if (%val)
-      commandToServer('cycleWeapon', "next");
-}
-
-function prevWeapon(%val)
-{
-   if (%val)
-      commandToServer('cycleWeapon', "prev");
-}
-
-function mouseWheelWeaponCycle(%val)
-{
-   if (%val < 0)
-      commandToServer('cycleWeapon', "next");
-   else if (%val > 0)
-      commandToServer('cycleWeapon', "prev");
-}
-
-moveMap.bind(keyboard, q, nextWeapon);
-moveMap.bind(keyboard, "ctrl q", prevWeapon);
-moveMap.bind(mouse, "zaxis", mouseWheelWeaponCycle);
 
 //------------------------------------------------------------------------------
 // Message HUD functions
@@ -564,26 +525,6 @@ moveMap.bind(keyboard, y, teamMessageHud );
 moveMap.bind(keyboard, "pageUp", pageMessageHudUp );
 moveMap.bind(keyboard, "pageDown", pageMessageHudDown );
 moveMap.bind(keyboard, "p", resizeMessageHud );
-
-//------------------------------------------------------------------------------
-// Demo recording functions
-//------------------------------------------------------------------------------
-
-function startRecordingDemo( %val )
-{
-   if ( %val )
-      startDemoRecord();
-}
-
-function stopRecordingDemo( %val )
-{
-   if ( %val )
-      stopDemoRecord();
-}
-
-moveMap.bind( keyboard, F3, startRecordingDemo );
-moveMap.bind( keyboard, F4, stopRecordingDemo );
-
 
 //------------------------------------------------------------------------------
 // Helper Functions
@@ -616,7 +557,16 @@ GlobalActionMap.bind(keyboard, "ctrl o", bringUpOptions);
 //------------------------------------------------------------------------------
 // Debugging Functions
 //------------------------------------------------------------------------------
-
+$DrawColShapes = false;
+function togglePhysicsDraw(%val)
+{
+   if (%val)
+   {
+      $DrawColShapes = !$DrawColShapes;
+      physicsDebugDraw($DrawColShapes);
+   }
+}
+moveMap.bind(keyboard, "F9", togglePhysicsDraw);
 
 //------------------------------------------------------------------------------
 //
@@ -654,94 +604,16 @@ GlobalActionMap.bindCmd(keyboard, "alt enter", "", "Canvas.attemptFullscreenTogg
 GlobalActionMap.bindCmd(keyboard, "F1", "", "contextHelp();");
 moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
 
+
 // ----------------------------------------------------------------------------
-// Useful vehicle stuff
+// IPS Spells
 // ----------------------------------------------------------------------------
-
-// Trace a line along the direction the crosshair is pointing
-// If you find a car with a player in it...eject them
-function carjack()
-{
-   %player = LocalClientConnection.getControlObject();
-
-   if (%player.getClassName() $= "Player")
-   {
-      %eyeVec = %player.getEyeVector();
-
-      %startPos = %player.getEyePoint();
-      %endPos = VectorAdd(%startPos, VectorScale(%eyeVec, 1000));
-
-      %target = ContainerRayCast(%startPos, %endPos, $TypeMasks::VehicleObjectType);
-
-      if (%target)
-      {
-         // See if anyone is mounted in the car's driver seat
-         %mount = %target.getMountNodeObject(0);
-
-         // Can only carjack bots
-         // remove '&& %mount.getClassName() $= "AIPlayer"' to allow you
-         // to carjack anyone/anything
-         if (%mount && %mount.getClassName() $= "AIPlayer")
-         {
-            commandToServer('carUnmountObj', %mount);
-         }
-      }
-   }
-}
-
-// Bind the keys to the carjack command
-moveMap.bindCmd(keyboard, "ctrl z", "carjack();", "");
-
-
-// Starting vehicle action map code
-if ( isObject( vehicleMap ) )
-   vehicleMap.delete();
-new ActionMap(vehicleMap);
-
-// The key command for flipping the car
-vehicleMap.bindCmd(keyboard, "ctrl x", "commandToServer(\'flipCar\');", "");
-
-function getOut()
-{
-   vehicleMap.pop();
-   moveMap.push();
-   commandToServer('dismountVehicle');
-}
-
-function brakeLights()
-{
-   // Turn on/off the Cheetah's head lights.
-   commandToServer('toggleBrakeLights');
-}
-
-function brake(%val)
-{
-   commandToServer('toggleBrakeLights');
-   $mvTriggerCount2++;
-}
-
-vehicleMap.bind( keyboard, w, moveforward );
-vehicleMap.bind( keyboard, s, movebackward );
-vehicleMap.bind( keyboard, up, moveforward );
-vehicleMap.bind( keyboard, down, movebackward );
-vehicleMap.bind( mouse, xaxis, yaw );
-vehicleMap.bind( mouse, yaxis, pitch );
-vehicleMap.bind( mouse, button0, mouseFire );
-//vehicleMap.bind( mouse, button1, altTrigger );
-vehicleMap.bindCmd(keyboard, "ctrl f","getout();","");
-vehicleMap.bind(keyboard, space, brake);
-vehicleMap.bindCmd(keyboard, "l", "brakeLights();", "");
-vehicleMap.bindCmd(keyboard, "escape", "", "handleEscape();");
-vehicleMap.bind( keyboard, v, toggleFreeLook ); // v for vanity
-//vehicleMap.bind(keyboard, tab, toggleFirstPerson );
-vehicleMap.bind(keyboard, "alt c", toggleCamera);
-
-moveMap.bind(keyboard, "x", FireballTest);
 function FireballTest(%val)
 {
    if(%val)
       CastSpellOnServer(ImpactTest);
 }
+moveMap.bind(keyboard, "alt f", FireballTest);
 
 // mouse cursor toggle by right mouse button
 function toggleCursor( %val ) 
@@ -815,3 +687,111 @@ $mvRotIsEuler0 = true;
 $OculusVR::GenerateAngleAxisRotationEvents = false;
 $OculusVR::GenerateEulerRotationEvents = true;
 moveMap.bind( oculusvr, ovr_sensorrotang0, OVRSensorRotEuler );
+
+moveMap.bind(keyboard, "lshift", sprint);
+moveMap.bind(keyboard, "rshift", sprint);
+function sprint(%val)
+{
+   if ( $runLocked )
+      return;
+
+   if ( ($mvTriggerCount5 % 2) != %val )
+      $mvTriggerCount5++;
+}
+
+// --------------------------
+// Mount Controls
+// --------------------------
+moveMap.bind(keyboard, "+", fasterMount);
+moveMap.bind(keyboard, "-", slowerMount);
+function fasterMount(%val)
+{
+   if ( ($mvTriggerCount5 % 2) != %val )
+      $mvTriggerCount5++;
+}
+function slowerMount(%val)
+{
+   if ( ($mvTriggerCount4 % 2) != %val )
+      $mvTriggerCount4++;
+}
+
+// --------------------------
+// Lantern Bind
+// --------------------------
+function toggleFlashlight(%val)  
+{  
+   if (%val)  
+   {  
+      // use the lantern item in inventory. Lantern Item is ID 88
+      commandToServer('UseItem', "88", "1", "5");
+   }  
+}  
+moveMap.bind( keyboard, "l", toggleFlashlight );
+
+moveMap.bindCmd(keyboard, "c", "MainChatHud.toggleChatLog(1);", "");//MAR
+
+// --------------------------
+// 3rd Person Camera Movement
+// --------------------------
+function stepTo(%val)
+{
+   if (%val)
+   {
+      if ( isObject(ServerConnection) &&
+         ServerConnection.getControlObject().isMethod("getAVCamDistance") )
+      {
+         if ( ServerConnection.getControlObject().isMounted() )
+            %camObject = ServerConnection.getControlObject().getControlObject();
+         else
+            %camObject = ServerConnection.getControlObject();
+
+         %distance = %camObject.getAVCamDistance(%distance);
+         %distance -= 0.5;
+         if (%distance <= 0 )
+         {
+            %distance = 0;
+            if ( !ServerConnection.isFirstPerson() )
+               ServerConnection.setFirstPerson(true);
+         }
+         %camObject.setAVCamDistance(%distance);
+      }
+   }
+}
+
+function stepFro(%val)
+{
+   if (%val)
+   {
+      if ( isObject(ServerConnection) &&
+         ServerConnection.getControlObject().isMethod("getAVCamDistance") )
+      {
+         if ( ServerConnection.getControlObject().isMounted() )
+            %camObject = ServerConnection.getControlObject().getControlObject();
+         else
+            %camObject = ServerConnection.getControlObject();
+
+         %distance = %camObject.getAVCamDistance(%distance);
+         if ( %distance >= 15 )
+            return; // Don't zoom out to more than 15 units
+         %distance += 0.5;
+         if ( ServerConnection.isFirstPerson() )
+         {
+            ServerConnection.setFirstPerson(false);
+            %distance = 0.5;
+         }
+         %camObject.setAVCamDistance(%distance);
+      }
+   }
+}
+
+function cameraZoomWheel(%val)
+{
+   if ( %val > 0 )
+      stepTo(true);
+   else if ( %val < 0 )
+      stepFro(true);
+}
+
+moveMap.bind(keyboard,  home,       stepTo );
+moveMap.bind(keyboard,  end,        stepFro );
+moveMap.bind(mouse, "zaxis", cameraZoomWheel);
