@@ -14,14 +14,14 @@
 //MalePlayer
 datablock SFXProfile(MaleDeathCry)   
 {   
-   fileName = "art/sound/PainDeathCries/MaleDeathCry";   
+   fileName = "art/players/base/sound/MaleDeathCry";   
    description = AudioClosest3d;   
    preload = false;   
 }; 
 
 datablock SFXProfile(MalePainCry)
 {
-   fileName = "art/sound/PainDeathCries/MalePainCry";
+   fileName = "art/players/base/sound/MalePainCry";
    description = AudioClosest3d;
    preload = false;
 };
@@ -29,14 +29,14 @@ datablock SFXProfile(MalePainCry)
 //FemalePlayer
 datablock SFXProfile(FemaleDeathCry)
 {
-   fileName = "art/sound/PainDeathCries/FemaleDeathCry";
+   fileName = "art/players/base/sound/FemaleDeathCry";
    description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(FemalePainCry)
 {
-   fileName = "art/sound/PainDeathCries/FemalePainCry";
+   fileName = "art/players/base/sound/FemalePainCry";
    description = AudioClosest3d;
    preload = false;
 };
