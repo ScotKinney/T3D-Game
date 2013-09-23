@@ -87,10 +87,10 @@ datablock PlayerData(DefaultPlayerData)
    minImpactSpeed = 15; //45;  // minimum speed to generate a collision callback
    speedDamageScale = 0.4;
 
-   //boundingBox = "0.75 0.75 2.6"; // Torque Physics
-   boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
-   crouchBoundingBox = "1 1 1.25";
-   swimBoundingBox = "1 2 2";
+   boundingBox = "0.75 0.75 2.6"; // Torque Physics
+   //boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
+   crouchBoundingBox = "1 0.75 1.5";
+   swimBoundingBox = "1 2 0.75";
    pickupRadius = 10;
 
    // Damage location details

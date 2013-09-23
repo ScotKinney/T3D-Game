@@ -229,7 +229,8 @@ function onStart()
    exec("./server/init.cs");
    
    // Init the physics plugin.
-   physicsInit();
+   //physicsInit();  // default is bullet
+   physicsInit("Torque");
       
    // Start up the audio system.
    sfxStartup();

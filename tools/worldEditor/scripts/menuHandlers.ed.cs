@@ -278,7 +278,7 @@ function EditorDoExitMission(%saveFirst)
 
 function EditorSaveMissionMenu()
 {
-   if(!$Pref::disableSaving && !isWebDemo())
+   if( !$Pref::disableSaving )
    {
       if(EditorGui.saveAs)
          EditorSaveMissionAs();

@@ -563,7 +563,8 @@ function togglePhysicsDraw(%val)
    if (%val)
    {
       $DrawColShapes = !$DrawColShapes;
-      physicsDebugDraw($DrawColShapes);
+      $player::renderCollision = $DrawColShapes;
+      //physicsDebugDraw($DrawColShapes);
    }
 }
 moveMap.bind(keyboard, "F9", togglePhysicsDraw);
