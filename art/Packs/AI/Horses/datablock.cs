@@ -2,21 +2,6 @@
 // Horse Audio Profiles
 //----------------------------------------------------------------------------
 
-//----------------------------------------------------------------------------
-datablock SFXProfile(SteedDeathCrySound)
-{
-   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
-   description = AudioClose3d;
-   preload = true;
-};
-
-datablock SFXProfile(SteedPainCrySound)
-{
-   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
-   description = AudioClose3d;
-   preload = true;
-};
-
 datablock SFXProfile(SteedMoveBubblesSound)
 {
    filename    = "art/sound/water_splash.ogg";
@@ -91,6 +76,20 @@ datablock SFXProfile(HoofLightBubblesSound)
 datablock SFXProfile(ExitingWaterLightSound)
 {
    filename    = "art/Packs/AI/Horses/sound/horsestep.wav";
+   description = AudioClose3d;
+   preload = true;
+};
+//----------------------------------------------------------------------------
+datablock SFXProfile(SteedDeathCrySound)
+{
+   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(SteedPainCrySound)
+{
+   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
    description = AudioClose3d;
    preload = true;
 };

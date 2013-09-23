@@ -5,49 +5,49 @@
 //Footstep Sounds
 ////////////////////////////////////////////////////////////////////////
 
-singleton SFXProfile(FootStepMetal1Sound)
+datablock SFXProfile(FootStepMetal1Sound)
 {
    filename    = "art/sound/footsteps/wood_dl4";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepWood1Sound)
+datablock SFXProfile(FootStepWood1Sound)
 {
    filename    = "art/sound/footsteps/wood_dr1";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepRock1Sound)
+datablock SFXProfile(FootStepRock1Sound)
 {
    filename    = "art/sound/footsteps/stone_dl1";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepCaveSound)
+datablock SFXProfile(FootStepCaveSound)
 {
    filename    = "art/sound/footsteps/cavestep";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepGrass1Sound)
+datablock SFXProfile(FootStepGrass1Sound)
 {
    filename    = "art/sound/footsteps/grass_rr1.wav";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepSnow1Sound)
+datablock SFXProfile(FootStepSnow1Sound)
 {
    filename    = "art/sound/footsteps/dirt_wl2.wav";
    description = AudioClosest3d;
    preload = true;
 };
 
-singleton SFXProfile(FootStepSand1Sound)
+datablock SFXProfile(FootStepSand1Sound)
 {
    filename    = "art/sound/footsteps/dirt_wl2.wav";
    description = AudioClosest3d;
@@ -74,7 +74,6 @@ datablock SFXProfile(FootLightUnderwaterSound)
    description = AudioClosest3d;
    preload = false;
 };
-
 //----------------------------------------------------------------------------
 // Splash
 //----------------------------------------------------------------------------

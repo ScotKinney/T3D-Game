@@ -144,14 +144,18 @@ datablock PlayerData(DefaultPlayerData)
    //NOTE:  some sounds commented out until wav's are available
 
    // Footstep Sounds
-   FootSoftSound        = FootStepGrass1Sound;
-   FootHardSound        = FootStepRock1Sound;
-   FootMetalSound       = FootStepMetal1Sound;
-   FootSnowSound        = FootStepSnow1Sound;
+   FootSoftSound        = "FootStepGrass1Sound";
+   FootHardSound        = "FootStepRock1Sound";
+   FootMetalSound       = "FootStepMetal1Sound";
+   FootSnowSound        = "FootStepSnow1Sound";
+   ImpactSoftSound      = "FootStepGrass1Sound";
+   ImpactHardSound      = "FootStepRock1Sound";
+   ImpactMetalSound     = "FootStepMetal1Sound";
+   ImpactSnowSound      = "FootStepSnow1Sound";
 
-   FootShallowSound     = FootLightShallowSplashSound;
-   FootWadingSound      = FootLightWadingSound;
-   FootUnderwaterSound  = FootLightUnderwaterSound;
+   FootShallowSound     = "FootLightShallowSplashSound";
+   FootWadingSound      = "FootLightWadingSound";
+   FootUnderwaterSound  = "FootLightUnderwaterSound";
 
    groundImpactMinSpeed    = 10.0;
    groundImpactShakeFreq   = "4.0 4.0 4.0";

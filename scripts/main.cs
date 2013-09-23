@@ -253,7 +253,7 @@ function onExit()
    // the objects it contains.
    if ($TAP::isDedicated)
       destroyServer();
-   else
+   else if ( isFunction("disconnect") )
    {
       disconnect();
       echo("Exporting client prefs");
@@ -263,7 +263,7 @@ function onExit()
    // Destroy the physics plugin.
    physicsDestroy();
 
-   BanList::Export("./server/banlist.cs");
+   //BanList::Export("./server/banlist.cs");
 
    //Parent::onExit();
 }
