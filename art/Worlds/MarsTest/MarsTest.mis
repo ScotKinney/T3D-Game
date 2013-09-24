@@ -267,7 +267,7 @@ new SimGroup(MissionGroup) {
          team = "9";
          Weapon = "HammerWeapon";
    };
-   /*new StaticShape(LittleHogart) {
+   new StaticShape(LittleHogart) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "232 -10 242.607";
@@ -293,7 +293,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "1";
          useCustomAmbientLighting = "0";
-   };*/
+   };
    new Path(Gargoyle1Path) {
       isLooping = "1";
       canSave = "1";
@@ -417,7 +417,7 @@ new SimGroup(MissionGroup) {
             MoveSpeed = ".3";
       };
    };
-   /*new StaticShape(Gargoyle1Spawn) {
+   new StaticShape(Gargoyle1Spawn) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "27.699 -26.2151 243.994";
@@ -432,12 +432,13 @@ new SimGroup(MissionGroup) {
          distDetect = "50";
          fov = "360";
          maxRange = "30";
+         //pathname = "Gargoyle1Path";
          paceDist = "10";
          respawnCount = "0";
          respawnCounter = "0";
          team = "3";
          Weapon = "GargoyleFireballWeapon";
-   };*/
+   };
    new Path(Gargoyle2Path) {
       isLooping = "1";
       canSave = "1";
@@ -588,7 +589,7 @@ new SimGroup(MissionGroup) {
             MoveSpeed = ".9";
       };
    };
-   /*new StaticShape(Gargoyle2Spawn) {
+   new StaticShape(Gargoyle2Spawn) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
       position = "0 0 300";
@@ -609,6 +610,6 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "9";
          Weapon = "GargoyleFireballWeapon";
-   };*/
+   };
 };
 //--- OBJECT WRITE END ---

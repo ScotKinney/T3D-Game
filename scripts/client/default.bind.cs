@@ -716,6 +716,14 @@ function slowerMount(%val)
       $mvTriggerCount4++;
 }
 
+function dismountRide(%val)
+{
+   $mvTriggerCount1++;
+   if (%val && (($mvTriggerCount1 % 2) == 0))
+      $mvTriggerCount1++;
+}
+moveMap.bind( keyboard, "m", dismountRide );
+
 // --------------------------
 // Lantern Bind
 // --------------------------

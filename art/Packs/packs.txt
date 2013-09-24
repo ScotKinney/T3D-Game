@@ -1,7 +1,9 @@
 // Pack list
 
-// "art/Packs/AI/Sharks"
+// "art/Packs/AI/Gargoyle"
 // "art/Packs/AI/Horses"
+// "art/Packs/AI/Sharks"
+// "art/Packs/AI/Tolgart"
 
 // "art/Packs/env/GroundCover"
 // "art/Packs/env/underwaterCave"
