@@ -36,18 +36,21 @@ exec("./defaultEffects.cs");
 exec("./player.cs");
 
 // Load the player datablocks
-$AlterVerse::AvSet = "Base";  // TODO: This should be set by level config
-exec("art/players/" @ $AlterVerse::AvSet @ "/datablock.cs");
+exec("art/players/" @ $LoadedAvSet @ "/datablock.cs");
 
 // Any datablocks contained in the loaded art packs
-exec("art/Packs/skies/default/datablock.cs");
+%packCount = getFieldCount($LoadedArtPacks);
+for (%i = 0; %i < %packCount; %i++)
+{
+   %dbFile = "art/Packs/" @ getField($LoadedArtPacks, %i) @ "/datablock.cs";
+   if ( isFile(%dbFile) || isFile(%dbFile @ ".dso") )
+      exec(%dbFile);
+}
 
-// All needed AI datablocks
-exec("art/Packs/AI/Sharks/datablock.cs");
-exec("art/Packs/AI/Horses/datablock.cs");
-
-// Load our other player datablocks
-//exec("./aiPlayer.cs");
+// Custom world datablocks?
+%dbFile = $WorldPath @ "/datablock.cs";
+if ( isFile(%dbFile) || isFile(%dbFile @ ".dso") )
+   exec(%dbFile);
 
 // IPS datablocks
 exec("art/ParticleSystem/defaultDatablocks.cs");

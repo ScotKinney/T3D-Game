@@ -137,29 +137,25 @@ function sceneLightingComplete()
 function LoadMissionClientData(%worldName)
 {
 	// Mount and initialize the world files
-	initWorld(%worldName);
-
-   // Create a group for the audio data blocks   
-   %oldGroup = $instantGroup;
-   $instantGroup = 0;
-   if( isObject( ClientMissionSounds ) )
-      ClientMissionSounds.delete();
-   %missionGroup = new SimGroup(ClientMissionSounds);
-   $instantGroup = %missionGroup;
-
-   // Any SFXProfiles that the mission references by name on the server
-   %sfxFile = $WorldPath @ "SFXProfiles.cs";
-   if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
-      exec(%sfxFile);
-
-   // All audio ambiences used in the mission
    if( !$TAP::DesignMode )
-   {  // If this is the server and we're launching the local client (design
-      // mode), the ambience files were loaded by the server before the mission.
-      %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
-      if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
-         exec(%ambienceFile);
+   {  // If this is the server and we're launching the local client(design mode)
+      // this initialization was done by the server before the level loaded.
+      mountWorldPacks(%worldName);
+      loadWorldSFX(true);
+      loadWorldMats(true);
    }
 
-   $instantGroup = %oldGroup;
+   exec("art/players/" @ $LoadedAvSet @ "/clientExec.cs");
+   
+   %packCount = getFieldCount($LoadedArtPacks);
+   for (%i = 0; %i < %packCount; %i++)
+   {
+      %sfxFile = "art/Packs/" @ getField($LoadedArtPacks, %i) @ "/clientExec.cs";
+      if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+         exec(%sfxFile);
+   }
+
+   %sfxFile = $WorldPath @ "/clientExec.cs";
+   if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+      exec(%sfxFile);
 }

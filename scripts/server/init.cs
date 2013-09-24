@@ -116,7 +116,9 @@ function initDedicated()
    {
       //Geev 5/23/2013	
       loadMaterials();
-      loadWorldMaterials();
+      mountWorldPacks($WorldName);
+      loadWorldSFX(false);
+      loadWorldMats(false);
 
       createServer("MultiPlayer", $missionArg);
 

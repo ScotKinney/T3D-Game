@@ -49,16 +49,15 @@ function StartLevel( %mission, %hostingType )
          %serverType = "SinglePlayer";
    }
 
-   // Load mission specific audio
+   // Load mission specific audio and materials
    %missionRoot = FileBase(%mission);
    $WorldPath = "art/worlds/" @ %missionRoot;
    $AlterVerse::serverName = "dev" @ %missionRoot;
-   initWorld(%missionRoot);
-   %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
-   if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
-      exec(%ambienceFile);
+   mountWorldPacks(%missionRoot);
+   loadWorldSFX(true);
+   loadWorldMats(true);
 
-   // Get the prefix for loading art
+   // Get the prefix for loading screen art
    buildLoadInfo(%mission);
    if ( isObject(theLevelInfo) && (theLevelInfo.serverPrefix !$= "") )
       $AlterVerse::serverPrefix = theLevelInfo.serverPrefix;

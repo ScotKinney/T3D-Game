@@ -40,38 +40,17 @@
 //-----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
-// loadMaterials - load all materials.cs files
+// loadMaterials - load all materials.cs files that aren't in 
+// packs, players or worlds...that only leaves art/inv.
 //-----------------------------------------------------------------------------
 function loadMaterials()
 {
-   // Load any materials files for which we only have DSOs.
-   for( %file = findFirstFile( "art/*/materials.cs.dso" );
-        %file !$= "";
-        %file = findNextFile( "art/*/materials.cs.dso" ))
-   {
-      if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
-         continue;
-
-      // Only execute, if we don't have the source file.
-      %csFileName = getSubStr( %file, 0, strlen( %file ) - 4 );
-      if( !isFile( %csFileName ) )
-         exec( %csFileName );
-   }
-
-   // Load all source material files.
-   for( %file = findFirstFile( "art/*/materials.cs" );
-        %file !$= "";
-        %file = findNextFile( "art/*/materials.cs" ))
-   {
-      if ( getSubStr(%file, 0, 11) $= "art/Worlds/" )
-         continue;
-      exec( %file );
-   }
+   %filter = "art/inv/*/materials.cs";
+   loadDirMaterials(%filter);
 }
 
-function loadWorldMaterials()
+function loadDirMaterials(%filter)
 {
-   %filter = $WorldPath @ "/*/materials.cs";
    // Load any materials files for which we only have DSOs.
    for( %file = findFirstFile( %filter @ ".dso" );
         %file !$= "";
@@ -265,18 +244,14 @@ function loadLoadingGui(%displayText)
    Canvas.repaint();
 }
 
-function initWorld(%worldName)
-{  // Mount the world and initialize textures and materials
-   if ( $MountedWorld $= %worldName )
-      return;  // We already have this world mounted and initialized
-
-   %oldGroup = $instantGroup;
-   $instantGroup = 0;
-
+function unmountWorldPacks()
+{
    if ( $MountedWorld !$= "" )
-   {  // Remove the objects from last world
+   {  // Remove any lingering objects from last world
       if( isObject( ClientWorldMaterials ) )
          ClientWorldMaterials.delete();
+      if( isObject( ClientMissionSounds ) )
+         ClientMissionSounds.delete();
 
       // Remove textures from the pool
       cleanupTexturePool();
@@ -286,23 +261,126 @@ function initWorld(%worldName)
       %zipName = strlwr("art/worlds/" @ $MountedWorld @ ".avw");
       if ( isFile(%zipName) )
          unmountWorld(%zipName);
-   }
 
-   // Mount the new world zip
+      // Unmount the avatar pack
+      %zipName = strlwr("art/players/" @ $LoadedAvSet @ ".avp");
+      if ( isFile(%zipName) )
+         unmountArtPack(%zipName);
+
+      // Unmount all art packs
+      %packCount = getFieldCount($LoadedArtPacks);
+      for (%i = 0; %i < %packCount; %i++)
+      {
+         %packName = "art/packs/" @ getField($LoadedArtPacks, %i) @ ".avp";
+         %zipName = strlwr(%packName);
+         if ( isFile(%zipName) )
+            unmountArtPack(%zipName);
+      }
+   }
+}
+
+function mountWorldPacks(%worldName)
+{  // Mount the world and all needed art packs
+   if ( $MountedWorld $= %worldName )
+      return;  // We already have this world mounted and initialized
+
+   if ( $MountedWorld !$= "" )
+      unmountWorldPacks();
+
+   // Mount the world zip
    %zipName = strlwr("art/worlds/" @ %worldName @ ".avw");
    if ( isFile(%zipName) )
       mountWorld(%zipName);
    $MountedWorld = %worldName;
+   
+   // exec the config file to get the new AvSet and pack list
+   // TODO: This is temporary needs read from DB on server and passed to client
+   exec("art/worlds/" @ %worldName @ "/config.cs");
 
-   %matGroup = new SimGroup(ClientWorldMaterials);
-   $instantGroup = %matGroup;
+   // Mount the avatar pack
+   %packName = strlwr("art/players/" @ $AlterVerse::AvSet @ ".avp");
+   if ( isFile(%packName) )
+      mountArtPack(%packName);
+   $LoadedAvSet = $AlterVerse::AvSet;
+
+   // Mount all art packs
+   %packCount = getFieldCount($AlterVerse::ArtPacks);
+   for (%i = 0; %i < %packCount; %i++)
+   {
+      %packName = "art/Packs/" @ getField($AlterVerse::ArtPacks, %i) @ ".avp";
+      %zipName = strlwr(%packName);
+      if ( isFile(%zipName) )
+         mountArtPack(%zipName);
+   }
+   $LoadedArtPacks = $AlterVerse::ArtPacks;
+}
+
+function loadWorldSFX(%makeClientGroup)
+{  // Load all SFXProfiles and Ambiences needed by the world
+   if ( %makeClientGroup )
+   {  // Create a group for the audio data blocks
+      %oldGroup = $instantGroup;
+      $instantGroup = 0;
+      if( isObject( ClientMissionSounds ) )
+         ClientMissionSounds.delete();
+      %newGroup = new SimGroup(ClientMissionSounds);
+      $instantGroup = %newGroup;
+   }
+
+   // Any singleton SFXProfiles that the mission references by name on the server
+   %packCount = getFieldCount($LoadedArtPacks);
+   for (%i = 0; %i < %packCount; %i++)
+   {
+      %sfxFile = "art/Packs/" @ getField($LoadedArtPacks, %i) @ "/audioSFX.cs";
+      if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+         exec(%sfxFile);
+   }
+
+   %sfxFile = "art/players/" @ $LoadedAvSet @ "/audioSFX.cs"; 
+   if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+      exec(%sfxFile);
+
+   %sfxFile = $WorldPath @ "/audioSFX.cs";
+   if ( isFile(%sfxFile) || isFile(%sfxFile @ ".dso") )
+      exec(%sfxFile);
+
+   %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
+   if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
+      exec(%ambienceFile);
+
+   if ( %makeClientGroup )
+      $instantGroup = %oldGroup;
+}
+
+function loadWorldMats(%makeClientGroup)
+{  // Load all materials needed by the world
+   if ( %makeClientGroup )
+   {  // Create a group for the materials
+      if( isObject( ClientWorldMaterials ) )
+         ClientWorldMaterials.delete();
+      %oldGroup = $instantGroup;
+      $instantGroup = 0;
+      %matGroup = new SimGroup(ClientWorldMaterials);
+      $instantGroup = %matGroup;
+   }
 
    reloadTextures();
-   loadWorldMaterials();
+
+   %packCount = getFieldCount($LoadedArtPacks);
+   for (%i = 0; %i < %packCount; %i++)
+   {
+      %filter = "art/Packs/" @ getField($LoadedArtPacks, %i) @ "/*/materials.cs";
+      loadDirMaterials(%filter);
+   }
+
+   %filter = "art/players/" @ $LoadedAvSet @ "/*/materials.cs";
+   loadDirMaterials(%filter);
+
+   %filter = $WorldPath @ "/*/materials.cs";
+   loadDirMaterials(%filter);
+
    reInitMaterials();
 
-   $AlterVerse::AvSet = "Base";  // TODO: This should be sent from the server
-   exec("art/players/" @ $AlterVerse::AvSet @ "/clientExec.cs");
-
-   $instantGroup = %oldGroup;
+   if ( %makeClientGroup )
+      $instantGroup = %oldGroup;
 }

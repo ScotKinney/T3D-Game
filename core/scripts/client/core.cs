@@ -53,6 +53,7 @@ function initializeCore()
    exec( "./audioDescriptions.cs" );
    exec( "./audioStates.cs" );
    exec( "./audioAmbiences.cs" );
+   exec( "./defaultSFX.cs" );
 
    // Input devices
    exec("~/scripts/client/oculusVR.cs");

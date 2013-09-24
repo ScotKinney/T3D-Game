@@ -93,6 +93,7 @@ function onStart()
       exec("./scripts/client/audioDescriptions.cs");
       exec("./scripts/client/audioStates.cs");
       exec("./scripts/client/audioAmbiences.cs");
+      exec("./scripts/client/defaultSFX.cs");
       exec("./scripts/client/helperfuncs.cs");
 
       // Now execute any mission specific audio
@@ -100,9 +101,7 @@ function onStart()
       {
          %missionRoot = FileBase($missionArg);
          $WorldPath = "art/worlds/" @ %missionRoot;
-         %ambienceFile = $WorldPath @ "/audioAmbiences.cs";
-         if ( isFile(%ambienceFile) || isFile(%ambienceFile @ ".dso") )
-            exec(%ambienceFile);
+         $WorldName = %missionRoot;
       }
    }
 
