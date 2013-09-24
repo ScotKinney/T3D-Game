@@ -28,6 +28,12 @@ singleton Material(Ter_Rock)
    footstepSoundId = 1;
 };
 
+singleton Material(Ter_Seaweed)   
+{   
+   mapTo = "Seaweed_base";   
+   footstepSoundId = 0;
+};
+
 //////////////////////////////////////////////////////////
 new TerrainMaterial()
 {
