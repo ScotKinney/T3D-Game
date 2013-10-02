@@ -59,7 +59,7 @@ exec("./AlterVerse/worldItems.cs");
 
 // Load all spells in the spells folder.
 // This could optionally be put into a function and called manually.
-for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
-{
-   exec(%spellFile);
-}
+//for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
+//{
+   //exec(%spellFile);
+//}

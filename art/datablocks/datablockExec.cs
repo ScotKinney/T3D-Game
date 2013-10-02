@@ -53,6 +53,6 @@ if ( isFile(%dbFile) || isFile(%dbFile @ ".dso") )
    exec(%dbFile);
 
 // IPS datablocks
-exec("art/ParticleSystem/defaultDatablocks.cs");
-exec("art/ParticleSystem/graphExamples.cs");
-exec("art/SpellSystem/exec.cs");
+//exec("art/ParticleSystem/defaultDatablocks.cs");
+//exec("art/ParticleSystem/graphExamples.cs");
+//exec("art/SpellSystem/exec.cs");
