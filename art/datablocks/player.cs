@@ -156,14 +156,14 @@ datablock PlayerData(DefaultPlayerData)
    FootShallowSound     = "FootLightShallowSplashSound";
    FootWadingSound      = "FootLightWadingSound";
    FootUnderwaterSound  = "FootLightUnderwaterSound";
+   //exitingWater         = "ExitingWaterHumanSound";
+
 
    groundImpactMinSpeed    = 10.0;
    groundImpactShakeFreq   = "4.0 4.0 4.0";
    groundImpactShakeAmp    = "1.0 1.0 1.0";
    groundImpactShakeDuration = 0.8;
    groundImpactShakeFalloff = 10.0;
-
-   //exitingWater         = ExitingWaterHumanSound;
 
    observeParameters = "0.5 4.5 4.5";
    

@@ -69,7 +69,7 @@ new SimGroup(MissionGroup) {
       moonScale = "0.15";
       moonLightColor = "0.343 0.451 0.588 1";
       useNightCubemap = "1";
-      nightCubemap = "nightCubemap";
+      nightCubemap = "NightCubemap";
       attenuationRatio = "0 1 1";
       shadowType = "PSSM";
       texSize = "512";
