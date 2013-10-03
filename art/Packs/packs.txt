@@ -1,5 +1,6 @@
 // Pack list
 
+// "art/Packs/AI/Dinos"
 // "art/Packs/AI/Gargoyle"
 // "art/Packs/AI/Horses"
 // "art/Packs/AI/Sharks"
@@ -23,9 +24,11 @@
 
 // "art/Packs/trees/banana"
 // "art/Packs/trees/canopy"
+// "art/Packs/trees/cedar"
 // "art/Packs/trees/default"
 // "art/Packs/trees/longLeaf"
 // "art/Packs/trees/palm"
+// "art/Packs/trees/swamptree"
 
 // "art/Packs/veg/bigleaf"
 // "art/Packs/veg/broadleaf"
