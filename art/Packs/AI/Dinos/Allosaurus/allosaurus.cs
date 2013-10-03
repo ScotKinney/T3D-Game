@@ -32,14 +32,19 @@ function AllosaurusDts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death9", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death10", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death11", "0", "20");
+   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_sprint.dsq", "run2", "0", "40");
+   %this.setSequenceCyclic("run2", "1");
    %this.addTrigger("run", "25", "2");
    %this.addTrigger("run", "8", "1");
    %this.addTrigger("sprint", "5", "1");
    %this.addTrigger("sprint", "14", "2");
+   %this.addTrigger("run2", "5", "1");
+   %this.addTrigger("run2", "14", "2");
    %this.addTrigger("back", "0", "1");
    %this.addTrigger("back", "12", "2");
    %this.addTrigger("side", "3", "1");
    %this.addTrigger("side", "13", "2");
    %this.setNodeTransform("mount0", "0.00669013 8.10465 7.48938 0.0888265 -0.960658 0.263146 1.59531", "1");
    %this.setSequenceGroundSpeed("run", "0 8 0");
+   %this.setSequenceGroundSpeed("run2", "0 16 0");
 }
