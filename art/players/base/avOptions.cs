@@ -308,7 +308,7 @@ AvatarOptions.add(373,"373,ForeArm,0,1,WristGrds_Myth_Both,WristGrds_Myth,,0,,,0
 AvatarOptions.add(374,"374,Cape,0,1,Scabbard_Myth,Scabbard_Myth|ScabbardMtls_Myth,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,3");
 AvatarOptions.add(375,"375,Misc,0,0,Horn,Horn_Myth|HornMtls_Myth,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,3");
 AvatarOptions.add(376,"376,Misc,0,0,Sling Dart Quiver,Quiver_Myth|QuiverMtls_Myth|Darts,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,3");
-AvatarOptions.add(377,"377,Cape,0,0,Scabbard_Myth,Scabbard_Myth|ScabbardMtls_Myth,,0,,,0,,,0,,,0,,,0,,,0,,,1,mount3,/weapons/LongSword/LongSword_Mounted.dts,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,3");
+AvatarOptions.add(377,"377,Cape,0,0,Scabbard_Myth,Scabbard_Myth|ScabbardMtls_Myth,,0,,,0,,,0,,,0,,,0,,,0,,,1,holsterNode,/weapons/LongSword/LongSword_Mounted.dts,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,3");
 AvatarOptions.add(378,"378,Cape,0,0,Scabbard_Tok,Scabbard_Tok,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,5");
 AvatarOptions.add(379,"379,Feet,0,1,Boots_FJ,Boots_FJ,B_LFoot|B_LToe|B_RFoot|B_RToe,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,2");
 AvatarOptions.add(380,"380,Misc,0,1,ChestStrap,ChestStrap_FJ,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,0,,,2");

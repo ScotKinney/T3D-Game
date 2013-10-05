@@ -612,8 +612,14 @@ function GameCore::preparePlayer(%game, %client)
 
 function GameCore::loadOut(%game, %player)
 {
-   //echo (%game @"\c4 -> "@ %game.class @" -> GameCore::loadOut");
-
+   %hasinv = false;
+   if ( %lastweapon !$= "" )
+   {
+      %hasinv = %player.hasInventory(%lastweapon);
+      if ( %hasinv )
+         %player.BCMountImage(%lastweapon, $WeaponSlot);
+   }
+   %player.equipBaseWeapons(%hasinv);
 }
 
 // Customized kill message for falling deaths

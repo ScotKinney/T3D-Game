@@ -433,7 +433,7 @@ function mouseButtonZoom(%val)
 }
 
 moveMap.bind(keyboard, f, setZoomFOV); // f for field of view
-moveMap.bind(keyboard, z, toggleZoom); // z for zoom
+moveMap.bind(keyboard, t, toggleZoom);
 //moveMap.bind( mouse, button1, mouseButtonZoom );
 
 //------------------------------------------------------------------------------
@@ -804,3 +804,24 @@ function cameraZoomWheel(%val)
 moveMap.bind(keyboard,  home,       stepTo );
 moveMap.bind(keyboard,  end,        stepFro );
 moveMap.bind(mouse, "zaxis", cameraZoomWheel);
+
+// Attack keys and modifiers
+$ActiveWeaponSlot = 0;
+function activateRHWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 0; }
+function activateLHWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 1; }
+function activateRFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 2; }
+function activateLFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 3; }
+moveMap.bind(keyboard, q, activateLHWeapon);
+moveMap.bind(keyboard, e, activateRHWeapon);
+moveMap.bind(keyboard, z, activateLFWeapon);
+moveMap.bind(keyboard, c, activateRFWeapon);
+
+function doAttack(%attackNum)
+{
+   commandToServer('DoAttack', $ActiveWeaponSlot, %attackNum);
+}
+moveMap.bindCmd(keyboard, "1", "doAttack(0);", "");
+moveMap.bindCmd(keyboard, "2", "doAttack(1);", "");
+moveMap.bindCmd(keyboard, "3", "doAttack(2);", "");
+moveMap.bindCmd(keyboard, "4", "doAttack(3);", "");
+moveMap.bindCmd(keyboard, "5", "doAttack(4);", "");

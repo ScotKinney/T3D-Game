@@ -14,7 +14,7 @@
 $AISK_MARKER_HIDE = true;
 
 //How long the bot waits between firing bursts.
-$AISK_FIRE_DELAY = 10000;
+$AISK_FIRE_DELAY = 500;
 
 //How long the bot holds down the trigger when firing.
 $AISK_TRIGGER_DOWN = 50;

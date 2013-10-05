@@ -87,3 +87,56 @@ datablock PlayerData(Allosaurus : DefaultPlayerData)
    ImpactMetalSound     = "DinoHeavyHardSound";
    ImpactSnowSound      = "DinoHeavySoftSound";
 };
+
+// Weapon and attacks
+singleton GameBaseData(Allo_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = .1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 5;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+};
+
+singleton GameBaseData(Allo_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = .1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 5;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw2Sound;
+};
+
+singleton GameBaseData(Allo_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = .1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 5;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw3Sound;
+};
+
+datablock ShapeBaseImageData(Allo_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/Packs/AI/Dinos/Allosaurus/Allo_Jaw.dts";
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Allo_JawOne;
+   hthAttack[1]                     = Allo_JawTwo;
+   hthAttack[2]                     = Allo_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHit1Sound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHit1Sound";
+};

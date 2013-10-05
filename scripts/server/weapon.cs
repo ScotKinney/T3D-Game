@@ -538,3 +538,20 @@ function WeaponImage::NoAmmoMessage(%this, %obj)
       messageClient(%obj.client, 'MsgItemPickup', '\c0You have no more %1 to throw.', %pname);
    }
 }
+
+function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
+{
+   if (!isObject(%client.player))
+      return;
+
+   %triggerState = (%stopping !$= "") ? false : true;
+   echo("SettingTrigger(" @ %slot@ ", " @ %attackNum @ ", " @ %triggerState @ ")");
+   if ( %attackNum < 4 )
+      %client.player.setImageGenericTrigger(%slot, %attackNum, %triggerState);
+   else
+      %client.player.setImageAltTrigger(%slot, %triggerState);
+
+   // Turn off the attack signal in 100 ms
+   if ( %triggerState )  
+      schedule(100, 0, "serverCmdDoAttack", %client, %slot, %attackNum, "1");
+}

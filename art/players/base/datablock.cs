@@ -93,3 +93,6 @@ datablock SFXProfile(FishCatchSound)
    description = AudioClosest3d;
    preload = false;
 };
+
+// Exec our player specific weapon datablocks
+exec("art/players/base/weapons/weapons.cs");

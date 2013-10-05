@@ -64,7 +64,7 @@ function UserListGui::removeUser(%this, %userName, %dbID)
 {
    UserListGuiList.removeRowById(%dbID);
    %this.numPlayers--;
-   ServerListGui.updateTotal();
+   //ServerListGui.updateTotal();
 }
 
 function UserListGui::sortList(%this)

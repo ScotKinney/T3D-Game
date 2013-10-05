@@ -29,7 +29,7 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
 
    //If the bot or the target is dead or in a neutral zone, don't fire.
    if (%tgt.getstate() $= "Dead" || %obj.getState() $= "Dead" ||
-            %obj.inNeutralZone || %tgt.inNeutralZone)
+         %obj.inNeutralZone || %tgt.inNeutralZone)
    {
       %obj.clearaim();
       %obj.firing = false;
@@ -40,161 +40,97 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
    if (%obj.isConfused > 0)
    {
       if ((%obj.isConfused % 3) != 0)
-         return;
+      return;
    }
 
-    //We've got two live ones. So let's kill something.
-    //The firing variable is set while firing and is cleared at the end of the delay cycle.
-    //This is done to allow the use of a firing delay - and prevent a bot from firing again prematurely.
-    if (!%obj.firing)
-    {
-        //Get the name of the weapon
-        %tempWeapon = getWord(%obj.botWeapon, %obj.currentWeaponIs);
+   //We've got two live ones. So let's kill something.
+   //The firing variable is set while firing and is cleared at the end of the delay cycle.
+   //This is done to allow the use of a firing delay - and prevent a bot from firing again prematurely.
+   if (!%obj.firing)
+   {
+      //Get the name of the weapon
+      %tempWeapon = getWord(%obj.botWeapon, %obj.currentWeaponIs);
 
-        %weapon = %tempWeapon @ "Weapon";
-        %ammo = %tempWeapon @ "Ammo";
-         if ( !isObject(%ammo) )
-            %ammo = %weapon.ammo;
+      %weapon = %tempWeapon @ "Weapon";
+      %ammo = %tempWeapon @ "Ammo";
+      if ( !isObject(%ammo) )
+      %ammo = %weapon.ammo;
 
-        if (%tempWeapon $= "-noweapon")
-        {
-            //Sets the firing variable to true
-            %obj.firing = true;
-            //This sets a delay of $AISK_TRIGGER_DOWN to hold the trigger down for.
-            %this.trigger = %this.schedule($AISK_TRIGGER_DOWN, "ceaseFire", %obj, %tempWeapon);
+      if (%tempWeapon $= "-noweapon")
+      {
+         //Sets the firing variable to true
+         %obj.firing = true;
+         //This sets a delay of $AISK_TRIGGER_DOWN to hold the trigger down for.
+         %this.trigger = %this.schedule($AISK_TRIGGER_DOWN, "ceaseFire", %obj, %tempWeapon);
+         return;
+      }
+
+      if ( !isObject(%weapon) )
+         %weapon = %tempWeapon @ "Image";
+      %namedClass = %weapon.getClassName();
+
+      //If the weapon doesn't have an ignoreDistance set, then use the default
+      if (%weapon.ignoreDistance > 1)
+         %weapMax = %weapon.ignoreDistance;
+      else
+         %weapMax = $AISK_IGNORE_DISTANCE;
+
+      //If the weapon doesn't have an minIgnoreDistance set, then use the default
+      if (%weapon.minIgnoreDistance !$= "")
+         %weapMin = %weapon.minIgnoreDistance;
+      else
+         %weapMin = $AISK_MIN_IGNORE_DISTANCE;
+
+      //If the target is within our weapon's ignore distance then we will attack. Range To Target - rtt
+      if (%rtt < %weapMax && %rtt > %weapMin)
+      {
+         //Make sure the bot doesn't fire prematurely
+         if (%obj.fireLater <= 0 && %obj.getAimLocation() != %tgt.getposition())
+         {
+            %obj.fireLater++;
             return;
-        }
+         }
 
-        %namedClass = %weapon.getClassName();
+         //If the weapon isn't ready to fire, don't try to fire it
+         if (%obj.getImageState(0) !$= "Ready")
+            return;
 
-        if (%namedClass !$= $AISK_AFX_DATA_TYPE)
-        {
-            //If the weapon doesn't have an ignoreDistance set, then use the default
-            if (%weapon.ignoreDistance > 1)
-                %weapMax = %weapon.ignoreDistance;
-            else
-                %weapMax = $AISK_IGNORE_DISTANCE;
+         //Do a line of sight (LoS) test for players
+         %eyeTrans = %obj.getEyeTransform();
+         %eyeEnd = vectorAdd(%tgt.getPosition(), $AISK_CHAR_HEIGHT);
+         %searchResult = containerRayCast(%eyeTrans, %eyeEnd, $TypeMasks::PlayerObjectType, %obj);
+         %foundObject = getword(%searchResult, 0);
 
-            //If the weapon doesn't have an minIgnoreDistance set, then use the default
-            if (%weapon.minIgnoreDistance !$= "")
-                %weapMin = %weapon.minIgnoreDistance;
-            else
-                %weapMin = $AISK_MIN_IGNORE_DISTANCE;
-        }
-        else
-        {
-            //Make sure enemy spells are only used on enemies and friend spells are only used on friendlies
-            if (%obj.team == %tgt.team && %weapon.target $= "enemy")
-                //Get a new enemy target
-                %tgt = %this.GetClosestHumanInSightandRange(%obj);
-            else if (%obj.team != %tgt.team && %weapon.target $= "friend")
-                //Get a new friendly target
-                %tgt = %this.GetClosestFriendInSightandRange(%obj);
+         //Make sure the bot can see its target
+         if (%foundObject != %tgt && %foundObject != 0)
+         {
+            //If it's not the bot's traget, move and don't fire on it
+            %this.sidestep(%obj);
+            return;
+         }
 
-            if (!isObject(%tgt))
-            {
-                %obj.currentCycleCount = 0;
-                return;
-            }
-            else
-                %rtt = vectorDist(%obj.getPosition(), %tgt.getPosition());
+         //Sets the firing variable to true
+         %obj.firing = true;
 
-            //If the weapon doesn't have an ignoreDistance set, then use the default
-            if (%weapon.range > 1)
-                %weapMax = %weapon.range;
-            else
-                %weapMax = $AISK_IGNORE_DISTANCE;
+         //Pull the trigger on the bot gun
+         %obj.setImageTrigger(0, true);
 
-            //If the weapon doesn't have an minIgnoreDistance set, then use the default
-            if (%weapon.areaDamageRadius !$= "" && ($AISK_FRIENDLY_FIRE == true || $AISK_FREE_FOR_ALL == true))
-                %weapMin = %weapon.areaDamageRadius;
-            else
-                %weapMin = $AISK_MIN_IGNORE_DISTANCE;
-        }
+         //If the weapon doesn't have a triggerDown set, then use the default
+         if (%weapon.triggerDown !$= "")
+            %l = %weapon.triggerDown;
+         else
+            %l = $AISK_TRIGGER_DOWN;
 
-        //If the target is within our weapon's ignore distance then we will attack. Range To Target - rtt
-        if (%rtt < %weapMax && %rtt > %weapMin)
-        {
-            //Make sure the bot doesn't fire prematurely
-            if (%obj.fireLater <= 0 && %obj.getAimLocation() != %tgt.getposition())
-            {
-                %obj.fireLater++;
-                return;
-            }
-
-            if (%namedClass !$= $AISK_AFX_DATA_TYPE)
-            {
-                //If the weapon isn't ready to fire, don't try to fire it
-                if (%obj.getImageState(0) !$= "Ready")
-                    return;
-            }
-
-            //Do a line of sight (LoS) test for players
-            %eyeTrans = %obj.getEyeTransform();
-            %eyeEnd = vectorAdd(%tgt.getPosition(), $AISK_CHAR_HEIGHT);
-            %searchResult = containerRayCast(%eyeTrans, %eyeEnd, $TypeMasks::PlayerObjectType, %obj);
-            %foundObject = getword(%searchResult, 0);
-
-            //Make sure the bot can see its target
-            if (%foundObject != %tgt && %foundObject != 0)
-            {
-                //If it's not the bot's traget, move and don't fire on it
-                %this.sidestep(%obj);
-                return;
-            }
-
-            if (%namedClass !$= $AISK_AFX_DATA_TYPE)
-            {
-                //Sets the firing variable to true
-                %obj.firing = true;
-                
-                //Pull the trigger on the bot gun
-                %obj.setImageTrigger(0, true);
-
-                //If the weapon doesn't have a triggerDown set, then use the default
-                if (%weapon.triggerDown !$= "")
-                    %l = %weapon.triggerDown;
-                else
-                    %l = $AISK_TRIGGER_DOWN;
-
-                //This sets a delay of %l length to hold the trigger down for.
-                %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %tempWeapon);
-            }
-            else
-            {
-                if (%weapon.manaCost > %obj.getEnergyLevel())
-                    return;
-
-                //Sets the firing variable to true
-                %obj.firing = true;
-
-                //Don't interrupt the spell by moving
-                if (%weapon.spellFXData.allowMovementInterrupts)
-                {
-                    %obj.isCasting = true;
-                    %obj.stop();
-
-                    //The bot doesn't stop instantly so we wait a split second
-                    %wait = $AISK_AFX_WAIT_TIME;
-
-                    schedule(%wait, %this, "afxPerformSpellCast", %obj, %weapon, %tgt, "", %tgt.getPosition());
-                    %this.trigger = %this.schedule((%weapon.castingDur * 1000) + 1000 + %wait, "ceaseFire", %obj, %weapon);
-                }
-                else
-                {
-                    //Have the bot cast instead of shoot
-                    afxPerformSpellCast(%obj, %weapon, %tgt, "", %tgt.getPosition());
-                    %this.trigger = %this.schedule((%weapon.castingDur * 1000) + 1000, "ceaseFire", %obj, %weapon);
-                }
-            }
-        }
-        else
-        {
-            //This simply clears the bots aim to have it look forward relative to it's movement
-            //since there is now no target in range.
-            %obj.clearaim();
-        }
-    }
+         //This sets a delay of %l length to hold the trigger down for.
+         %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %tempWeapon);
+      }
+      else
+      {
+         //This simply clears the bots aim to have it look forward relative to it's movement
+         //since there is now no target in range.
+         %obj.clearaim();
+      }
+   }
 }
 
 //ceaseFire is called by the openFire function after the set delay to hold the trigger down is met.

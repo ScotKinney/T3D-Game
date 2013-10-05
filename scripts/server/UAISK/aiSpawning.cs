@@ -550,9 +550,10 @@ function AIPlayer::spawn(%obj, %isRespawn)
 
    %weap = getWord(%player.botWeapon, 0);
    %weapData = %weap @ "Weapon";
+   if ( !isObject(%weapData) )
+      %weapData = %weap @ "Image";
 
-   //UAISK+AFX Interop Changes: Start
-   if (isObject(%weapData) && %weapData.getClassName() !$= $AISK_AFX_DATA_TYPE)
+   if ( isObject(%weapData) )
    {
       //Get the weapon ignore distance
       %maxIgn = %weapData.ignoreDistance;
@@ -572,27 +573,6 @@ function AIPlayer::spawn(%obj, %isRespawn)
       if (%ignoreMinimum > %minIgn)
          %ignoreMinimum = %minIgn;
    }
-   else
-   {  // Bot weapon is a magic spell
-      //Get the weapon ignore distance
-      %maxIgn = %weapData.range;
-
-      if (%maxIgn $= "" || %maxIgn <= 1)
-         %maxIgn = $AISK_IGNORE_DISTANCE;
-
-      if (%player.maxIgnore < %maxIgn)
-         %player.maxIgnore = %maxIgn;
-
-      //Get the shortest weapon ignore distance
-      %minIgn = %weapData.areaDamageRadius;
-
-      if (%minIgn $= "" || ($AISK_FRIENDLY_FIRE == false && $AISK_FREE_FOR_ALL == false))
-         %minIgn = $AISK_MIN_IGNORE_DISTANCE;
-
-      if (%ignoreMinimum > %minIgn)
-         %ignoreMinimum = %minIgn;
-   }
-   //UAISK+AFX Interop Changes: End
 
    //Make sure all min and max values are properly set
    safeguardMinMax(%player, %ignoreMinimum);
@@ -616,17 +596,17 @@ function AIPlayer::spawn(%obj, %isRespawn)
    TeamSimSets(%player, %player.team);
 
    // BloodClans Script Modification (MAR) - Stagger think loops >>>
-   if ( $BC_AIDelayOffset $= "" )
-      $BC_AIDelayOffset = 0;
+   if ( $AV_AIDelayOffset $= "" )
+      $AV_AIDelayOffset = 0;
    else
-      $BC_AIDelayOffset = %isRespawn ? 0 : $BC_AIDelayOffset + 10;
+      $AV_AIDelayOffset = %isRespawn ? 0 : $AV_AIDelayOffset + 10;
    // BloodClans Script Modification (MAR) - Stagger think loops <<<
     
    //Sets the bot to begin thinking after waiting the length of $AISK_CREATION_DELAY
    if (%player.behavior.isAggressive)
-      %player.ailoop = %player.schedule($AISK_CREATION_DELAY + $BC_AIDelayOffset, "Think", %player);
+      %player.ailoop = %player.schedule($AISK_CREATION_DELAY + $AV_AIDelayOffset, "Think", %player);
    else
-      %player.ailoop = %player.schedule($AISK_CREATION_DELAY + $BC_AIDelayOffset, "npcThink", %player);
+      %player.ailoop = %player.schedule($AISK_CREATION_DELAY + $AV_AIDelayOffset, "npcThink", %player);
 
    //If the bot is pathed, have it go on its path soon
    if (%player.path !$= "" && %player.behavior.canMove && !%player.behavior.isFollowPlayer)

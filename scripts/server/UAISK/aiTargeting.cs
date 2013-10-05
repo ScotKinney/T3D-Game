@@ -22,7 +22,7 @@ function AIPlayer::GetClosestHumanInSightandRange(%this, %obj)
    %botpos = %this.getposition();
 
    //This for loop cycles through all possible teams
-   for (%j = 2; %j <= $TotalTeams; %j++)
+   for (%j = 0; %j <= $TotalTeams; %j++)
    {
       //If the bot is on this team, don't check it for targets
       if (%obj.team != %j || $AISK_FREE_FOR_ALL == true)

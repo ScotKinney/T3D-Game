@@ -35,6 +35,9 @@ exec("./triggers.cs");
 exec("./defaultEffects.cs");
 exec("./player.cs");
 
+// Our default (base) weapon datablocks
+exec("./baseMelee.cs");
+
 // Load the player datablocks
 exec("art/players/" @ $LoadedAvSet @ "/datablock.cs");
 

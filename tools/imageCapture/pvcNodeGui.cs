@@ -31,6 +31,7 @@ function PVCNodeDlg::updateNodeList(%this)
    }
 
    PVCNodeList.setSelected(%this.nodeSelection);
+   PVCNodeList.sort();
 }
 
 function PVCNodeDlg::ChangeNodeSel(%this)
