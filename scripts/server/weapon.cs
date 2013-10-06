@@ -545,7 +545,8 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
       return;
 
    %triggerState = (%stopping !$= "") ? false : true;
-   echo("SettingTrigger(" @ %slot@ ", " @ %attackNum @ ", " @ %triggerState @ ")");
+   if ( %triggerState && %client.player.inArmThreadPlayOnce() )
+      %client.player.stopPlayOnce();
    if ( %attackNum < 4 )
       %client.player.setImageGenericTrigger(%slot, %attackNum, %triggerState);
    else

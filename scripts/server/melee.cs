@@ -47,8 +47,6 @@ function MeleeImage::onFire(%this, %obj, %slot)
 {
    // Chose an attack randomly
    %index = mFloor(getRandom()*(%this.hthNumAttacks-0.0001));
-   if (%index > (%this.hthNumAttacks-1))
-      %index = (%this.hthNumAttacks-1);
 
    %this.SwingWeapon(%obj, %slot, %index);
 }
@@ -97,26 +95,24 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 
    //if (%obj.getEnergyLevel() <= %this.MinEnergy) return;
 
-   if (%obj.hthDamageSeqPlaying)
-   {
-      %obj.hthDamageSeqPlaying = false;
-      //%obj.setArmThread("look");
-   }
-   
    if(%obj.hthStun) //|| %obj.shielded)
       return;
 
    // setup the "play once look anim"
    %obj.hthDamageAttack = %attack;
-   %obj.hthDamageSeqPlaying = true;
+   %obj.hthDamageSeqPlaying = %this;
    %obj.hthDamageStartMS =  $sim::Time;
    %obj.hthDamageLastId = -1;
 
    %attackSound = %attack.SwingSound;
-   if ( %attack.soundDelay !$= "" )
-      schedule(%attack.soundDelay, 0, "serverPlay3D", %attackSound,%obj.getTransform());
-   else
-      serverPlay3D(%attackSound,%obj.getTransform());
+   if ( %attackSound !$= "" )
+   {  // If we have an attack sound, play at the appopriate time
+      if ( %attack.soundDelay !$= "" )
+         schedule(%attack.soundDelay, 0, "serverPlay3D",
+                  %attackSound,%obj.getTransform());
+      else
+         serverPlay3D(%attackSound,%obj.getTransform());
+   }
 
    %timeScale = %attack.timeScale;
    if ( (%timeScale $= "") || (%timeScale < 0) )
@@ -129,7 +125,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 {
    // if damage sequence is not playing then dont do damage
-   if (!%player.hthDamageSeqPlaying || %player.getState() $= "Dead")
+   if ((%player.hthDamageSeqPlaying != %this) || (%player.getState() $= "Dead"))
       return;
 
    // determine if damage is active or if we can say the seq is done playing
@@ -143,11 +139,11 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 
    // how long until the last damage is done
    // at which point we can say the seq has "Stopped playing"
-   //if (%offset > %endOffset)
-   //{
-      //%player.hthDamageSeqPlaying = false;
-      //return;
-   //}
+   if (%offset > %endOffset)
+   {
+      %player.hthDamageSeqPlaying = 0;
+      return;
+   }
 
    // how long it takes for damage to start...for now we just
    // have one interval and damage is active all during that interval
@@ -189,15 +185,16 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
       //if (%target.team == %player.team)
          //return;
 
-      // store end point from raycast return buffer
-      %pos = getWords(%scanTarg, 1, 3);
-
       // if we have hit this person already...apply no more damage
       if (%target == %player.hthDamageLastId)
          return;
 
       // save who we last damaged
       %player.hthDamageLastId = %target;
+
+      // store end point and normal from raycast return buffer
+      %pos = getWords(%scanTarg, 1, 3);
+      %normal = getWords(%scanTarg, 4, 6);
 
       // shields and weapon rebounding
       if(%target.shielded || %target.hthDamageSeqPlaying)
@@ -256,19 +253,17 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
             %chance = 0;
             %damLoc = "";
          }
-         %damageType = %this.item; // example: Axe / Sword etc
          if(%player.client)
             %target.CurrentEnemy = %player.getShapename();
          
-         if(%this.modifier < 1) %this.modifier = 1;         
-         %obj.damage(%player, %pos, %damage * %this.modifier, "Melee");
+         %obj.damage(%player, %pos, %damage, "Melee");
 
          %client = %target.client;
          %sourceObject = %player;
          %sourceClient = %sourceObject ? %sourceObject.client : 0;
 
-         //if (%target.getState() !$= "Dead")
-            //pushPlayerBack(%obj,%pos,%player,%attack,%attack.impulse);
+         if ( (%target.getState() !$= "Dead") && (%attack.impulse !$= "") )
+            applyImpactImpulse(%obj, %pos, %normal, %player, %attack, %attack.impulse);
       }
    }
    else if(%scanTarg && (%scanTarg.getType() & $TypeMasks::StaticShapeObjectType))
@@ -327,54 +322,23 @@ function resetStun(%obj)
    %obj.hthStun = false;
 }
 
-function pushPlayerBack(%victim, %pos, %attacker, %attack, %impulse)
+function applyImpactImpulse(%victim, %pos, %normal, %attacker, %attack, %impulse)
 {
-    if (%target.dataBlock $= "StaticNPC" || %target.dataBlock $= "StaticNPC" || %target.dataBlock $= "FemaleHumanNPC" || %target.dataBlock $= "OHM1NPC")
-       return;
-    if (%target.isInvincible == true)
+   if (%target.isInvincible == true)
       return;
 
-  
-  // the push back is relative to the attacker
-  // a straight push back would be along the attackers
-  // Y axis....
-
-  // right now we always push the victim at his center
-  // we could explore what happnes if we push at the
-  // point of contact instead (might turn or do something intersting)
-
-  // get the usual direction to push...we could get the Y axis of
-  // the attacker with getTransform() then grabbing the rotation part
-  // and passing that to VectorOrthoBasis() and then using column 1
-  // whichi would be words 3,4,5 (couting from 0)...but that's overkill
-  // for something that can be approximated pretty good by a line drawn
-  // from attacker to victim...so let's use that instead
-  %vpos = %victim.getWorldBoxCenter();
-  %pushDirection = VectorSub(%vpos,%attacker.getWorldBoxCenter());
-  %pushDirection = VectorNormalize(%pushDirection);
+  //%vpos = %victim.getWorldBoxCenter();
+  //%pushDirection = VectorSub(%vpos,%attacker.getWorldBoxCenter());
+  //%pushDirection = VectorNormalize(%pushDirection);
+  %vPos = %pos;
+  %pushDirection = VectorSub("0 0 0", %normal); // reverse normal for push direction
 
   // hardoded impluse
   if(!%impulse)
-  {
      %impulse = 12.0;
-  }
     
-  // ok apply impulse to victim's center
-  %mass = %victim.getDataBlock().mass;
-  %pushVec = VectorScale(%pushDirection,%impulse * %mass);
-
-  //error("Applying, to player " @ %victim @ " of mass " @ %mass @ ", an impulseVec: " @ %pushVec);
-
+  %pushVec = VectorScale(%pushDirection, %impulse);
   %victim.applyImpulse(%vpos, %pushVec);
-  if(%victim.getdatablock().category $= "Mounts")
-     %isAnimal = true;
-  //echo("impulse: "@%impulse);
-  //if(!%isAnimal && %impulse >= 15)
-  if(!%isAnimal && %impulse >= 15)
-  {
-     %victim.setactionthread("death4");
-    //afxPerformSpellCast(%attacker,GreatBallSpell,%victim,%victim.client);     
-  }
 }
 
 function restorePlayerControl(%client, %player)

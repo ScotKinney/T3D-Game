@@ -27,48 +27,52 @@ singleton GameBaseData(RH_PunchCombo)
 {
    seqName = "RH_PunchCombo";
    fullSkelAnim = false;
-   timeScale = .8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 400;
-   swingSound = PunchComboSound;
+   //soundDelay = 400;
+   //swingSound = PunchComboSound;
+   impulse = 500;
 };
 
 singleton GameBaseData(RH_PunchDown)
 {
    seqName = "RH_PunchDown";
    fullSkelAnim = false;
-   timeScale = .8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Punch1Sound;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 700;
 };
 
 singleton GameBaseData(RH_PunchJab)
 {
    seqName = "RH_PunchJab";
    fullSkelAnim = false;
-   timeScale = .8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 600;
-   swingSound = Punch1Sound;
+   //soundDelay = 600;
+   //swingSound = Punch1Sound;
+   impulse = 500;
 };
 
 singleton GameBaseData(RH_PunchRound)
 {
    seqName = "RH_PunchRound";
    fullSkelAnim = false;
-   timeScale = .8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Punch1Sound;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 700;
 };
 
 datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
@@ -86,7 +90,7 @@ datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
    // The sound to play when this weapon hits another player or AI
-   hitLiveSound = "SwordHit1Sound";
+   hitLiveSound = "Punch1Sound";
 };
 
 ////////////////////////////////Left Hand///////////////////////////////////////
@@ -94,48 +98,52 @@ singleton GameBaseData(LH_PunchCombo)
 {
    seqName = "LH_PunchCombo";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 400;
-   swingSound = PunchComboSound;
+   //soundDelay = 400;
+   //swingSound = PunchComboSound;
+   impulse = 500;
 };
 
 singleton GameBaseData(LH_PunchDown)
 {
    seqName = "LH_PunchDown";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Punch1Sound;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 700;
 };
 
 singleton GameBaseData(LH_PunchJab)
 {
    seqName = "LH_PunchJab";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 600;
-   swingSound = Punch1Sound;
+   //soundDelay = 600;
+   //swingSound = Punch1Sound;
+   impulse = 500;
 };
 
 singleton GameBaseData(LH_PunchRound)
 {
    seqName = "LH_PunchRound";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Punch1Sound;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 700;
 };
 
 datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
@@ -153,7 +161,7 @@ datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
    // The sound to play when this weapon hits another player or AI
-   hitLiveSound = "SwordHit1Sound";
+   hitLiveSound = "Punch1Sound";
 };
 
 ////////////////////////////////Right Foot//////////////////////////////////////
@@ -161,36 +169,39 @@ singleton GameBaseData(RF_KickHigh)
 {
    seqName = "RF_KickHigh";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 400;
-   swingSound = Kick1Sound;
+   //soundDelay = 400;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 singleton GameBaseData(RF_KickLow)
 {
    seqName = "RF_KickLow";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Kick1Sound;
+   //soundDelay = 500;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 singleton GameBaseData(RF_SpinKick1)
 {
    seqName = "RF_SpinKick1";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 600;
-   swingSound = Kick1Sound;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
@@ -207,7 +218,7 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
    // The sound to play when this weapon hits another player or AI
-   hitLiveSound = "SwordHit1Sound";
+   hitLiveSound = "Kick1Sound";
 };
 
 ////////////////////////////////Left Foot///////////////////////////////////////
@@ -215,36 +226,39 @@ singleton GameBaseData(LF_KickHigh)
 {
    seqName = "LF_KickHigh";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 400;
-   swingSound = Kick1Sound;
+   //soundDelay = 400;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 singleton GameBaseData(LF_KickLow)
 {
    seqName = "LF_KickLow";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = Kick1Sound;
+   //soundDelay = 500;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 singleton GameBaseData(LF_SpinKick1)
 {
    seqName = "LF_SpinKick1";
    fullSkelAnim = false;
-   timeScale = 0.8;
+   timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
    endDamage = 1.3;
-   soundDelay = 600;
-   swingSound = Kick1Sound;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 1200;
 };
 
 datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
@@ -261,7 +275,7 @@ datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
    // The sound to play when this weapon hits another player or AI
-   hitLiveSound = "SwordHit1Sound";
+   hitLiveSound = "Kick1Sound";
 };
 
 function Player::equipBaseWeapons(%this, %weaponSlotUsed)

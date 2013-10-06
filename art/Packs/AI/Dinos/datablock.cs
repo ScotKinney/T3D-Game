@@ -1,4 +1,4 @@
-// Sound datablocks neede by all dinos
+// Sound datablocks needed by all dinos
 ////////////////////////JAW SFX//////////////////////
 datablock SFXProfile(Jaw1Sound)
 {

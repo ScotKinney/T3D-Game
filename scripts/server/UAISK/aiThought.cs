@@ -127,16 +127,12 @@ function AIPlayer::Think(%this, %obj)
                   %obj.setAimObject(%tgt, %aimOffset);
                }
 
-               //Tells the bot to start shooting the target.
-               //epls bloodclans
                %obj.stop();
-               if ( !%obj.setActionThread("attack") )
+               if ( !%obj.firing )
                {
-                  if ( !%obj.setArmThread("attack") )
-                  {
-                     cancel(%this.firetimer);
-                     %this.firetimer = %this.schedule(1, "openfire", %obj, %tgt, %basedist);
-                  }
+                  cancel(%this.firetimer);
+                  %this.firetimer = %this.schedule(1, "openfire",
+                        %obj, %tgt, %basedist);
                }
             }
 

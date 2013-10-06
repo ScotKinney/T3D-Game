@@ -23,15 +23,11 @@ datablock ShapeBaseImageData(BaseMeleeImage)
    // table in the database.
    // item = ValMaleSwordWeapon;
 
-   // Hit sounds
-   hthHitSound[0] = SwordHit1Sound;   // attack blocked or swing hit a static object
-   hthHitSound[1] = SwordHit1Sound;   // Attack damages player
-
    // Initial start up state
    stateName[0]                     = "Preactivate";
    stateTransitionOnLoaded[0]       = "Activate";
 
-   // Activating the gun.  Called when the weapon is first mounted
+   // Activating the weapon.  Called when the weapon is first mounted
    stateName[1]                     = "Activate";
    stateTransitionOnTimeout[1]      = "Ready";
    stateTimeoutValue[1]             = 0.6;

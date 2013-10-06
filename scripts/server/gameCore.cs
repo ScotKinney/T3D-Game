@@ -661,32 +661,59 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
       %client.camera.setMode("Corpse", %client.player);
       %client.setControlObject(%client.camera);
    }
-   %client.player = 0;
 
    // Display damage appropriate kill message
-   %sendMsgFunction = "sendMsgClientKilled_" @ %damageType;
-   if ( !isFunction( %sendMsgFunction ) )
-      %sendMsgFunction = "sendMsgClientKilled_Default";
-   call( %sendMsgFunction, 'MsgClientKilled', %client, %sourceClient, %damLoc );
-
-   // Dole out points and check for win
-   if (( %damageType $= "Suicide" || %sourceClient == %client ) && isObject(%sourceClient))
+   if (%damageType $= "Hunger")
    {
-      %game.incDeaths( %client, 1, true );
-      %game.incScore( %client, -1, false );
+      messageAll('MsgClientKilled', '%1 died of hunger!', %client.playerName);
+   }
+   else if (%damageType $= "Suicide" || %sourceClient == %client)
+   {
+      game.incScore(%client, -1);
+      game.incDeaths(%client, 1);
+      messageAll('MsgClientKilled', '%1 takes his own life!', %client.playerName);
    }
    else
    {
-      %game.incDeaths( %client, 1, false );
-      %game.incScore( %sourceClient, 1, true );
-      %game.incKills( %sourceClient, 1, false );
+      if (isObject(%sourceClient))
+          messageAll('MsgClientKilled', '%1 is killed by %2!', %client.playerName, %sourceClient.playerName);
+      else
+      {
+         %killerName = stripChars(%sourceObject.getShapeName(), "\cp\co\c0\c1\c2\c3\c4\c5\c6\c7\c8\c9");
+         if ( (%killerName $= "") || (%killerName $= " ") )
+            %killerName = %sourceObject.getDatablock().killerName;
 
-      // If the game may be ended by a client getting a particular score, check that now.
-      if ( $Game::EndGameScore > 0 && %sourceClient.kills >= $Game::EndGameScore )
-         %game.cycleGame();
+         if ( (%killerName $= "") || (%killerName $= " ") )
+            messageAll('MsgClientKilled', '%1 has been killed!', %client.playerName);
+         else
+            messageAll('MsgClientKilled', '%1 is killed by %2!', %client.playerName, %killerName);
+      }
    }
+
+   // Delete any objects that were mounted to the player
+   if( isObject(%client.player.light) )
+      %client.player.light.delete();
+
+   // If the player was fishing disable water clicks on the client
+   if( %client.player.isFishing )
+      commandToClient(%client, 'SendWaterClicks', false);
+
+   //%client.player.inventoryOnDeath();
+   //%client.setPersistantStat("lastWeapon", %client.player.lastWeapon);
+
+   %client.player = 0;
    
-   
+   %game.schedule(5000, "ForceRespawn", %client);
+}
+
+function GameCore::ForceRespawn(%game, %client)
+{  // If the client hasn't already respawned, respawn them now
+   // Make sure they haven't left or respawned on their own
+   if ( isObject(%client) && %client.player == 0 )
+   {
+      %game.preparePlayer(%client);
+      %client.camera.setMode("Observer");
+   }
 }
 
 // ----------------------------------------------------------------------------

@@ -93,36 +93,39 @@ singleton GameBaseData(Allo_JawOne)
 {
    seqName = "attack1";
    fullSkelAnim = true;
-   timeScale = .1;
+   timeScale = 1;
    damageAmount = 300;
    startDamage = 0.2;
    endDamage = 5;
-   soundDelay = 1; // Play sound 0 ms after animation starts
+   soundDelay = 1; // Play sound 1 ms after animation starts
    swingSound = Jaw1Sound;
+   impulse = 4000;
 };
 
 singleton GameBaseData(Allo_JawTwo)
 {
    seqName = "attack2";
    fullSkelAnim = true;
-   timeScale = .1;
+   timeScale = .8;
    damageAmount = 300;
    startDamage = 0.2;
    endDamage = 5;
-   soundDelay = 1; // Play sound 0 ms after animation starts
+   soundDelay = 1; // Play sound 1 ms after animation starts
    swingSound = Jaw2Sound;
+   impulse = 4000;
 };
 
 singleton GameBaseData(Allo_JawThree)
 {
    seqName = "attack3";
    fullSkelAnim = true;
-   timeScale = .1;
+   timeScale = .8;
    damageAmount = 300;
    startDamage = 0.2;
    endDamage = 5;
-   soundDelay = 1; // Play sound 0 ms after animation starts
+   soundDelay = 1; // Play sound 1 ms after animation starts
    swingSound = Jaw3Sound;
+   impulse = 2000;
 };
 
 datablock ShapeBaseImageData(Allo_JawImage : BaseMeleeImage)

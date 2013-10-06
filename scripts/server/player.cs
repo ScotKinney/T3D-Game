@@ -691,7 +691,6 @@ function Player::playXtraAnimation(%this,%anim)
 function Player::playDeathCry( %this )
 {
    %this.playAudio(0, %this.getDataBlock().DeathSound);   
-   //%this.playAudio(0,DeathCrySound);
 }
 
 function Player::playPain( %this )
@@ -704,7 +703,6 @@ function Player::playPain( %this )
       %idx = getRandom(0, (%db.numHitSounds-1));
       %this.playAudio(0, %db.HitSound[%idx]);
    }
-   //%this.playAudio(0,PainCrySound);
 }
 
 // ----------------------------------------------------------------------------
