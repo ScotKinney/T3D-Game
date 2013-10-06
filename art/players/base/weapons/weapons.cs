@@ -196,7 +196,7 @@ singleton GameBaseData(RF_SpinKick1)
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/RFoot.dts";
-   mountPoint = 1;
+   mountPoint = 10;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
@@ -250,7 +250,7 @@ singleton GameBaseData(LF_SpinKick1)
 datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/LFoot.dts";
-   mountPoint = 3;
+   mountPoint = 12;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
@@ -275,9 +275,9 @@ function Player::equipBaseWeapons(%this, %weaponSlotUsed)
    %this.mountImage(LeftHandImage, 1);
    %this.setImageAmmo(1, true);
 
-   //%this.mountImage(RightFootImage, 2);
-   //%this.setImageAmmo(2, true);
+   %this.mountImage(RightFootImage, 2);
+   %this.setImageAmmo(2, true);
 
-   //%this.mountImage(LeftFootImage, 3);
-   //%this.setImageAmmo(3, true);
+   %this.mountImage(LeftFootImage, 3);
+   %this.setImageAmmo(3, true);
 }
