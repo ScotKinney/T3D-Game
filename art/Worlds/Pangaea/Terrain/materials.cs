@@ -27,7 +27,7 @@ singleton Material(Ter_DarkDirt)
 new TerrainMaterial()
 {
    internalName = "RockGroundWithGrass";
-   diffuseMap = "soil_02";
+   diffuseMap = "art/Worlds/Pangaea/Terrain/soil_02";
    normalMap = "art/Worlds/Pangaea/Terrain/rockygroundwithgrass_normal_displacement";
    detailMap = "art/Worlds/Pangaea/Terrain/rockygroundwithgrass_detail";
    detailScale = "256";
