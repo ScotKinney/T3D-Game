@@ -117,6 +117,9 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    %timeScale = %attack.timeScale;
    if ( (%timeScale $= "") || (%timeScale < 0) )
       %timeScale = 1.0;
+   if ( %timeScale < 0.1 )
+      %timeScale = 0.1;
+   %attack.timeScaleInv = 1.0 / %timeScale;
    if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale))
       echo("ERROR in setArmThreadPlayOnce()");
 }
@@ -134,8 +137,8 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 
    // depending on which attack is playing...
    %attack = %player.hthDamageAttack;
-   %startOffset = %attack.startDamage;
-   %endOffset = %attack.endDamage;
+   %startOffset = %attack.startDamage * %attack.timeScaleInv;
+   %endOffset = %attack.endDamage * %attack.timeScaleInv;
 
    // how long until the last damage is done
    // at which point we can say the seq has "Stopped playing"

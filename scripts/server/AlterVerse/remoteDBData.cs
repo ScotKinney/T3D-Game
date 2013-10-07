@@ -110,7 +110,7 @@ function remoteDBData::saveAuthenticationData( %this )
             MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
    }
    echo( %client.Gender @ " from " @ %client.Homeworld SPC 
-      $Server::ClanData.clan[%client.team] @ " Clan");
+      $Server::ClanData.clan[%client.team] @ " Clan, Team=" @ %client.team);
 
    if ( isObject(%client.player) )
       %client.player.setAvOptions(%client.avOptions);
