@@ -94,6 +94,7 @@ function PVCAnimationDlg::InitAnimationButtons(%this)
 
 function PVCAnimationDlg::setupThread(%this, %threadID)
 {
+   NameToID("PauseTimeVal" @ %threadID).SetText("");
    if ( %this.PVCThreadState[%threadID] $= "stop" )
       return; // Don't start the thread
       
@@ -112,7 +113,11 @@ function PVCAnimationDlg::pauseThread(%this, %threadID)
    %curPos = $currentPVC.PauseThread(%threadID);
 
    if ( %curPos > -1 )
+   {
       NameToID("AnimStartVal" @ %threadID).SetText(%curPos);
+      %curTime = $currentPVC.GetThreadTime(%threadID);
+      NameToID("PauseTimeVal" @ %threadID).SetText(%curTime @ " seconds.");
+   }
    else
       %this.setupThread( %threadID );
 }
@@ -140,6 +145,7 @@ function AnimControlDlg::onSleep(%this)
 function AnimControlDlg::onWake(%this)
 {
    %pos = %this.getPosition();
+   %this.position = %this.lastPos;
    //%this.lastPos = %pos;
 }
 

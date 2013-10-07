@@ -53,10 +53,10 @@ singleton GameBaseData(RH_PunchJab)
 {
    seqName = "RH_PunchJab";
    fullSkelAnim = false;
-   timeScale = 1;
+   timeScale = .1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.50;
+   endDamage = 0.87;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;
@@ -124,10 +124,10 @@ singleton GameBaseData(LH_PunchJab)
 {
    seqName = "LH_PunchJab";
    fullSkelAnim = false;
-   timeScale = 1;
+   timeScale = .1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.50;
+   endDamage = 0.87;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;

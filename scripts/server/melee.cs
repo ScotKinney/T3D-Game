@@ -120,7 +120,8 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    if ( %timeScale < 0.1 )
       %timeScale = 0.1;
    %attack.timeScaleInv = 1.0 / %timeScale;
-   if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale))
+   if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale,
+         %attack.startDamage, %attack.endDamage))
       echo("ERROR in setArmThreadPlayOnce()");
 }
 
