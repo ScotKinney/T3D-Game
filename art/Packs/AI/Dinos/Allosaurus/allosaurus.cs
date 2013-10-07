@@ -45,6 +45,6 @@ function AllosaurusDts::onLoad(%this)
    %this.addTrigger("side", "3", "1");
    %this.addTrigger("side", "13", "2");
    %this.setNodeTransform("mount0", "0.00669013 8.10465 7.48938 0.0888265 -0.960658 0.263146 1.59531", "1");
-   %this.setSequenceGroundSpeed("run", "0 8 0");
-   %this.setSequenceGroundSpeed("run2", "0 16 0");
+   %this.setSequenceGroundSpeed("run", "0 8 0"); //try at maximum forward speed to start.
+   %this.setSequenceGroundSpeed("run2", "0 16 0"); //adjust by watching the AI run
 }

@@ -93,24 +93,24 @@ singleton GameBaseData(Allo_JawOne)
 {
    seqName = "attack1";
    fullSkelAnim = true;
-   timeScale = 1;
+   timeScale = 1; //speed the animation plays at
    damageAmount = 300;
-   startDamage = 0.2;
-   endDamage = 5;
-   soundDelay = 1; // Play sound 1 ms after animation starts
+   startDamage = 0.2; //time in seconds during animation before any damage begins
+   endDamage = 5; //point in the animation where damage ends
+   soundDelay = 1; // time in ms before attack sound plays
    swingSound = Jaw1Sound;
-   impulse = 4000;
+   impulse = 4000; 
 };
 
 singleton GameBaseData(Allo_JawTwo)
 {
    seqName = "attack2";
    fullSkelAnim = true;
-   timeScale = .8;
+   timeScale = .8; //speed the animation plays at
    damageAmount = 300;
-   startDamage = 0.2;
+   startDamage = 0.2; //time in seconds during animation before damage is done
    endDamage = 5;
-   soundDelay = 1; // Play sound 1 ms after animation starts
+   soundDelay = 1; // time in ms before attack sound plays
    swingSound = Jaw2Sound;
    impulse = 4000;
 };
@@ -119,11 +119,11 @@ singleton GameBaseData(Allo_JawThree)
 {
    seqName = "attack3";
    fullSkelAnim = true;
-   timeScale = .8;
+   timeScale = .8; //speed the animation plays at
    damageAmount = 300;
-   startDamage = 0.2;
+   startDamage = 0.2; //time in seconds during animation before damage is done
    endDamage = 5;
-   soundDelay = 1; // Play sound 1 ms after animation starts
+   soundDelay = 1; // time in ms before attack sound plays
    swingSound = Jaw3Sound;
    impulse = 2000;
 };
