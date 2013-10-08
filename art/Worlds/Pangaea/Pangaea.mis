@@ -27,7 +27,7 @@ new SimGroup(MissionGroup) {
          displayName = "Pangaea";
          enabled = "1";
          hasTreasury = "0";
-         LevelName = "Pangaea";
+         levelName = "Pangaea";
    };
    new SimGroup(PlayerDropPoints) {
       canSave = "1";
@@ -88,7 +88,7 @@ new SimGroup(MissionGroup) {
          rayleighScattering = "0.00035";
          sunScale = "1 1 1 1";
          ambientScale = "1 1 1 1";
-         fogScale = "0.847059 0.847059 0.847059 1";
+         fogScale = "0.862745 0.862745 0.862745 1";
          exposure = "1";
          zoffset = "0";
          azimuth = "0";
@@ -263,8 +263,8 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "compsognathus";
-         botBelongsToMe = "2427";
-         delayRespawn = "1790";
+         botBelongsToMe = "2602";
+         delayRespawn = "69254";
          maxRange = "2";
          respawnCount = "0";
          respawnCounter = "0";
@@ -279,7 +279,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Velociraptor";
-         botBelongsToMe = "2428";
+         botBelongsToMe = "1697";
          delayRespawn = "6977";
          maxRange = "3";
          minRange = "2.75";
@@ -296,7 +296,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Allosaurus";
-         botBelongsToMe = "2429";
+         botBelongsToMe = "1698";
          delayRespawn = "10577";
          maxRange = "7";
          minRange = "5";
@@ -313,7 +313,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "TRex";
-         botBelongsToMe = "2430";
+         botBelongsToMe = "1699";
          delayRespawn = "12639";
          maxRange = "8";
          minRange = "7";
@@ -330,8 +330,8 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Spino";
-         botBelongsToMe = "2431";
-         delayRespawn = "17454";
+         botBelongsToMe = "2522";
+         delayRespawn = "68075";
          respawnCount = "0";
          respawnCounter = "0";
    };
@@ -345,7 +345,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Stego";
-         botBelongsToMe = "2432";
+         botBelongsToMe = "1701";
          delayRespawn = "13958";
          maxRange = "6.5";
          respawnCount = "0";
@@ -361,7 +361,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Tri";
-         botBelongsToMe = "2433";
+         botBelongsToMe = "1702";
          delayRespawn = "9694";
          maxRange = "6";
          respawnCount = "0";
@@ -377,7 +377,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Para";
-         botBelongsToMe = "2434";
+         botBelongsToMe = "1703";
          delayRespawn = "13596";
          maxRange = "6";
          respawnCount = "0";
@@ -393,7 +393,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Diplo";
-         botBelongsToMe = "2435";
+         botBelongsToMe = "1704";
          maxRange = "17";
          minRange = "16";
          respawnCount = "0";
@@ -409,14 +409,14 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Quetzal";
-         botBelongsToMe = "2436";
+         botBelongsToMe = "1705";
          delayRespawn = "17443";
          maxRange = "10";
          minRange = "9";
          respawnCount = "0";
          respawnCounter = "0";
    };
-   new TSStatic() {
+   new TSStatic(Dino_Egg) {
       shapeName = $WorldPath @ "/Models/DinoEgg/DinoEgg_01.dae";
       playAmbient = "1";
       meshCulling = "0";
@@ -426,7 +426,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-275.581 222.888 86.3299";
+      position = "-440.002 230.488 94.9863";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";

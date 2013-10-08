@@ -96,8 +96,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AlterVerseTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.106364";
-         time = "0.155135";
+         startTime = "0.060185";
+         time = "0.100689";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -110,7 +110,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "1";
+            clockSynchEvent = "190983";
       };
       new SFXEmitter() {
          fileName = $WorldPath @ "/sound/FJAmbiance.ogg";
@@ -1634,7 +1634,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-422.644 644.458 65.3211";
-         rotation = "0.152872 -0.100383 0.983135 74.1617";
+         rotation = "0.152872 -0.100383 0.983135 74.1618";
          scale = "0.358158 0.358158 0.358158";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2581,7 +2581,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-213.894 793.06 88.1228";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5459";
+         rotation = "0.0239963 -0.0210442 0.999491 97.546";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2741,7 +2741,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-214.181 793.06 91.288";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5458";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5459";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -7602,7 +7602,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2758";
+            botBelongsToMe = "2767";
             delayRespawn = "20391";
             distDetect = "50";
             fov = "360";
@@ -7627,7 +7627,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2760";
+            botBelongsToMe = "2769";
             delayRespawn = "153641";
             distDetect = "50";
             fov = "360";
@@ -8162,7 +8162,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2761";
+            botBelongsToMe = "2770";
             delayRespawn = "33278";
             distDetect = "50";
             fov = "360";
@@ -8187,7 +8187,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2763";
+            botBelongsToMe = "2772";
             delayRespawn = "153655";
             distDetect = "50";
             fov = "360";
@@ -8996,7 +8996,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "2764";
+            botBelongsToMe = "2773";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9092,7 +9092,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "2765";
+            botBelongsToMe = "2774";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9188,7 +9188,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "2766";
+            botBelongsToMe = "2775";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9283,7 +9283,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "2767";
+            botBelongsToMe = "2776";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9379,7 +9379,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "2768";
+            botBelongsToMe = "2777";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9474,7 +9474,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "2769";
+            botBelongsToMe = "2778";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9874,7 +9874,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.825 599.985 66.2663";
-         rotation = "0.000993939 -0.00632428 0.999979 83.8146";
+         rotation = "0.000993939 -0.00632428 0.999979 83.8145";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9949,7 +9949,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.807 600.261 64.6027";
-         rotation = "-0.00128242 -0.00115875 -0.999999 88.0945";
+         rotation = "-0.00128242 -0.00115875 -0.999999 88.0946";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -10000,7 +10000,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "NPCVendorBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2770";
+            botBelongsToMe = "2779";
             distDetect = "5";
             npcAction = "7";
             realName = "Uncle Salty";
@@ -11934,7 +11934,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "2756";
+         botBelongsToMe = "2765";
          delayRespawn = "41915";
          dropcount = "1";
          dropitem = "Shark_Steak";
@@ -11955,7 +11955,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "2757";
+         botBelongsToMe = "2766";
          delayRespawn = "41856";
          dropcount = "1";
          dropitem = "Shark_Steak";
