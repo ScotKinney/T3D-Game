@@ -137,7 +137,7 @@ function GameConnection::AuthenticateUser(%client)
 
 function GameConnection::DisconnectUser(%client)
 {
-   echo("Finalizing client database entries for "@%client.pData.dbName@", ID"@%client.pData.dbID);
+   echo("Finalizing client database entries for "@%client.pData.dbName);
    %playTime = ((getSimTime() / 1000) - %client.joinTime) / 60;
    if ( $Server::DB::Remote )
    {
@@ -149,6 +149,13 @@ function GameConnection::DisconnectUser(%client)
    //DB::SprocNoRet("sp_StatsPlayTime", "'" @ %client.pData.dbID @ "','" @ %playTime @ "'");
    //%client.writeAllPersistantStats(); 
    %client.deletePersistantStats();
+
+   // Tell chat server to remove them from the local list
+   %count = ClientGroup.getCount() - 1; // They still show in the group, so subtract 1
+   if ( isObject(serverChat) )
+      serverChat.sendGameCmd("remusr", $AlterVerse::serverId,
+            %client.dbUserID, %count);
+
 }
 
 function GameConnection::GetPlayerSettings(%client)

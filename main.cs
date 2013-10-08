@@ -75,6 +75,7 @@ $TAP::DesignMode = false;
 $TAP::serverID = "";
 $TAP::onServer = false;
 $Server::Loaded = false;
+$AlterVerse::serverId = 0;
 
 $dirCount = 2;
 $userDirs = $defaultGame @ ";art;levels";

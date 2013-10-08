@@ -206,6 +206,13 @@ singleton GuiControlProfile ("ChatHudBorderProfile")
 //-----------------------------------------------------------------------------
 // Center and bottom print
 
+singleton SFXProfile(CenterPrintSFX)   
+{   
+   filename = "art/sound/ui/CPNotice";   
+   description = AudioGui;   
+   preload = true;   
+}; 
+
 singleton GuiControlProfile ("CenterPrintProfile")
 {
    opaque = false;

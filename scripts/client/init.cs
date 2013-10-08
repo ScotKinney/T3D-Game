@@ -184,9 +184,6 @@ function initClient()
    setDefaultFov( $pref::Player::defaultFov );
    setZoomSpeed( $pref::Player::zoomSpeed );
 
-   if( isFile( "./audioData.cs" ) )
-      exec( "./audioData.cs" );
-
    // Show the splash screen.
    Canvas.setCursor("DefaultCursor");
 

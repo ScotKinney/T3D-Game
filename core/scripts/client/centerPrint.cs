@@ -23,13 +23,6 @@
 // TODO: Mars. Remove size from all calls to CenterPrint() and adjust for no sound
 $centerPrintActive = 0;
 
-singleton SFXProfile(CenterPrintSFX)   
-{   
-   filename = "art/sound/ui/CPNotice";   
-   description = AudioGui;   
-   preload = true;   
-}; 
-
 // time is specified in seconds
 function clientCmdCenterPrint( %message, %time, %noSound, %arg0, %arg1, %arg2 )
 {

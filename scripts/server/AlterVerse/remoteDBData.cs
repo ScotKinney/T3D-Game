@@ -174,6 +174,7 @@ function remoteDBData::serverRemoved( %this )
       $TAP::isDedicated = false;
       schedule(1, 0, "quit");
    }
+   $AlterVerse::serverId = 0;
 }
 
 function remoteDBData::updateRights( %this )

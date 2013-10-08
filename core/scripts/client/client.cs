@@ -29,6 +29,7 @@ function initBaseClient()
    exec( "./actionMap.cs" );
    exec( "./renderManager.cs" );
    exec( "./lighting.cs" );
+   exec( "./defaultSFX.cs" );
    
    initRenderManager();
    initLightingSystems();   
@@ -68,13 +69,23 @@ function netSimulateLag( %msDelay, %packetLossPercent )
 //----------------------------------------------------------------------------
 function DoGameLogout()
 {
+   // If we were hosting a level, shut it down
+   disconnect(false, true);
+
    $TAP::isLoggedIn = false;
    if (isObject(clientChat) && clientChat.connected)
    {
       sendChatCommand("bye");
-      schedule(1000, 0, "quit");
+      schedule(1000, 0, "WaitToQuit");
    }
    else
       schedule(1, 0, "quit");
 }
 
+function WaitToQuit()
+{
+   if ( $AlterVerse::serverId > 0 )
+      schedule(250, 0, "WaitToQuit");
+   else
+      quit();
+}

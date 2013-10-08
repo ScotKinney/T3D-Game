@@ -146,12 +146,6 @@ function GameConnection::onDrop(%client, %reason)
    %client.onClientLeaveGame();
    removeFromServerGuidList( %client.guid );
 
-   // Tell chat server to remove them from the local list
-   %count = ClientGroup.getCount() - 1; // They still show in the group, so subtract 1
-   if ( isObject(serverChat) )
-      serverChat.sendGameCmd("remusr", $AlterVerse::serverId,
-            %client.dbUserID, %count);
-
    removeTaggedString(%client.playerName);
    echo("CDROP: " @ %client @ " " @ %client.getAddress());
    $Server::PlayerCount--;

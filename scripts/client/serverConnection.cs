@@ -178,7 +178,7 @@ function GameConnection::onConnectRequestTimedOut(%this)
 // Disconnect
 //-----------------------------------------------------------------------------
 
-function disconnect(%isTransfer)
+function disconnect(%isTransfer, %noMenu)
 {
    %isServerDisconnect = $Client::missionRunning;
 //Geev 5/23/2013	
@@ -203,7 +203,7 @@ function disconnect(%isTransfer)
    if ( $Server::Loaded )
       destroyServer();
 
-   if ( !%isServerDisconnect )
+   if ( !%isServerDisconnect || %noMenu)
       return;  // Called from package onExit(), app is closing.
 
    if ( $TAP::isDev && isObject(ServerSelGui) )

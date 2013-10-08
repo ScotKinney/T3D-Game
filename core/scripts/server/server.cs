@@ -180,11 +180,22 @@ function destroyServer()
       if(isEventPending($heartbeatSchedule))
          cancel($heartbeatSchedule);
 
+      // If there are any users still on the server, let the db know they're off
+      %count = ClientGroup.getCount();
+      for ( %i = 0; %i < %count; %i++ )
+      {
+         %client = ClientGroup.getObject(%i);
+         %client.DisconnectUser();
+      }
+
+      // Remove us from the server list
       if ( $Server::DB::Remote )
          remoteDBCommand("RemoveServer", "sID=" @ $AlterVerse::serverId, 0);
       else
+      {
          DB::Delete("AVServerList", "serverId='"@$AlterVerse::serverId@"'");
-      $AlterVerse::serverId = 0;
+         $AlterVerse::serverId = 0;
+      }
    }
    
    $Server::ServerType = "";
@@ -200,7 +211,7 @@ function destroyServer()
    if (isObject(ServerGroup))
       ServerGroup.delete();
 
-   // Delete all the connections:
+   // Delete all the connections
    while (ClientGroup.getCount())
    {
       %client = ClientGroup.getObject(0);
