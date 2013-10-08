@@ -370,15 +370,15 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
         if (!%obj.behavior.isKillable)
             return;
    }
-   else if ( isObject(%obj.client) )
-   {
-      %playerSL = %obj.client.getPersistantStat("skulls");
-      %sourceClient = %sourceObject ? %sourceObject.client : 0;
-      if ( (%playerSL < 3) && isObject(%sourceClient) )
-         return;  // SL 1&2 do not take pvp damage
-      if ( isObject(%sourceClient) && (%sourceClient.getPersistantStat("skulls") < 3) )
-         return;  // SL 1&2 do not do PvP damage either
-   }
+   //else if ( isObject(%obj.client) )
+   //{
+      //%playerSL = %obj.client.getPersistantStat("skulls");
+      //%sourceClient = %sourceObject ? %sourceObject.client : 0;
+      //if ( (%playerSL < 3) && isObject(%sourceClient) )
+         //return;  // SL 1&2 do not take pvp damage
+      //if ( isObject(%sourceClient) && (%sourceClient.getPersistantStat("skulls") < 3) )
+         //return;  // SL 1&2 do not do PvP damage either
+   //}
 
    %obj.lastDamage = %obj.getDamagePercent();
    %obj.lastDmgType = %damageType;
