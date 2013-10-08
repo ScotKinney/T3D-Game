@@ -29,8 +29,8 @@ singleton GameBaseData(RH_PunchCombo)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2; //point in the animation to start the damage
-   endDamage = 1.3; //point in the animation to end any damage
+   startDamage = 0.2;
+   endDamage = 0.7;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 500;
@@ -42,8 +42,8 @@ singleton GameBaseData(RH_PunchDown)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.36;
+   endDamage = 0.48;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
@@ -53,10 +53,10 @@ singleton GameBaseData(RH_PunchJab)
 {
    seqName = "RH_PunchJab";
    fullSkelAnim = false;
-   timeScale = .1;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.65;
-   endDamage = 0.84;
+   endDamage = 0.75;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;
@@ -101,7 +101,7 @@ singleton GameBaseData(LH_PunchCombo)
    timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
-   endDamage = 1.3;
+   endDamage = 0.7;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 500;
@@ -113,8 +113,8 @@ singleton GameBaseData(LH_PunchDown)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.36;
+   endDamage = 0.48;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
@@ -124,10 +124,10 @@ singleton GameBaseData(LH_PunchJab)
 {
    seqName = "LH_PunchJab";
    fullSkelAnim = false;
-   timeScale = .1;
+   timeScale = 1;
    damageAmount = 20;
    startDamage = 0.65;
-   endDamage = 0.84;
+   endDamage = 0.75;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;
@@ -171,8 +171,8 @@ singleton GameBaseData(RF_KickHigh)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.5;
+   endDamage = 0.6;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
    impulse = 1200;
@@ -184,8 +184,8 @@ singleton GameBaseData(RF_KickLow)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.55;
+   endDamage = .75;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
    impulse = 1200;
@@ -197,8 +197,8 @@ singleton GameBaseData(RF_SpinKick1)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.6;
+   endDamage = .73;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
    impulse = 1200;
@@ -228,8 +228,8 @@ singleton GameBaseData(LF_KickHigh)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.5;
+   endDamage = 0.6;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
    impulse = 1200;
@@ -241,8 +241,8 @@ singleton GameBaseData(LF_KickLow)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.55;
+   endDamage = .75;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
    impulse = 1200;
@@ -254,8 +254,8 @@ singleton GameBaseData(LF_SpinKick1)
    fullSkelAnim = false;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.6;
+   endDamage = .73;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
    impulse = 1200;
