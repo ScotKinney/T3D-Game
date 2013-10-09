@@ -63,7 +63,7 @@ function MakeClanTable()
    $Server::ClanData.nextTeam = 2;
 
    // Clan names are indexed by team #
-   $Server::ClanData.clan[0] = "Renegade"; // Team #0 is for observers not in game
+   $Server::ClanData.clan[0] = "Renegade"; // Team #0 is renegades that are not in a clan
    $Server::ClanData.clan[1] = "Non-Clan AI"; // Team #1 is for AI that attack anything
 }
 

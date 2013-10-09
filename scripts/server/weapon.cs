@@ -10,34 +10,13 @@
 // scope using the  ItemData and ItemImageData "className" variable.
 // ----------------------------------------------------------------------------
 
-// All ShapeBase images are mounted into one of 8 slots on a shape.  This weapon
+// All ShapeBase images are mounted into one of 4 slots on a shape.  This weapon
 // system assumes all primary weapons are mounted into this specified slot:
 $WeaponSlot = 0;
 
 // ----------------------------------------------------------------------------
 // Weapon Order
 // ----------------------------------------------------------------------------
-
-// This is a simple means of handling easy adding & removal of weapons to the
-// cycleWeapon function and still maintain a constant cycle order.
-function WeaponOrder(%weapon, %slot)
-{
-   if ($lastWeaponOrderSlot $= "")
-      $lastWeaponOrderSlot = -1;
-
-   // the order# slot to name index
-   $weaponOrderIndex[%slot] = %weapon;
-
-   // the weaponName to order# slot index
-   $weaponNameIndex[%weapon] = %slot;
-
-   // the last slot in the array
-   $lastWeaponOrderSlot++;
-}
-
-// Now create the Index/array by passing a name and order# for each weapon.
-// NOTE:  the first weapon needs to be 0.
-WeaponOrder(RocketLauncher, 0);
 
 //-----------------------------------------------------------------------------
 // Weapon Class 
@@ -354,62 +333,22 @@ function Ammo::onInventory(%this,%obj,%amount)
 
 function ShapeBase::cycleWeapon(%this, %direction)
 {
-   %slot = -1;
-   if (%this.getMountedImage($WeaponSlot) != 0)
-   {
-      %curWeapon = %this.getMountedImage($WeaponSlot).item.getName();
-      %slot = $weaponNameIndex[%curWeapon];
-   }
+   if ( %this.weaponCyclePos $= "" )
+      %this.weaponCyclePos = 0;
+   
+   %this.weaponCyclePos += %direction;
+   %weaponList = (%this.client.Gender $= "Male") ?
+               $MaleWeaponCycle : $FemaleWeaponCycle;
 
-   if (%direction $= "prev")
-   {
-      // Previous weapon...
-      if (%slot == 0 || %slot == -1)
-      {
-         %requestedSlot = $lastWeaponOrderSlot;
-         %slot = 0;
-      }
-      else
-         %requestedSlot = %slot - 1;
-   }
-   else
-   {
-      // Next weapon...
-      if (%slot == $lastWeaponOrderSlot || %slot == -1)
-      {
-         %requestedSlot = 0;
-         %slot = $lastWeaponOrderSlot;
-      }
-      else
-         %requestedSlot = %slot + 1;
-   }
+   %weaponCount = getFieldCount(%weaponList);
+   if ( %this.weaponCyclePos >= %weaponCount )
+      %this.weaponCyclePos = 0;
+   if ( %this.weaponCyclePos < 0 )
+      %this.weaponCyclePos = %weaponCount - 1;
 
-   %newSlot = -1;
-   while (%requestedSlot != %slot)
-   {
-      if ($weaponOrderIndex[%requestedSlot] !$= "" && %this.hasInventory($weaponOrderIndex[%requestedSlot]) && %this.hasAmmo($weaponOrderIndex[%requestedSlot]))
-      {
-         // player has this weapon and it has ammo or doesn't need ammo
-         %newSlot = %requestedSlot;
-         break;
-      }
-      if (%direction $= "prev")
-      {
-         if (%requestedSlot == 0)
-            %requestedSlot = $lastWeaponOrderSlot;
-         else
-            %requestedSlot--;
-      }
-      else
-      {
-         if (%requestedSlot == $lastWeaponOrderSlot)
-            %requestedSlot = 0;
-         else
-            %requestedSlot++;
-      }
-   }
-   if (%newSlot != -1)
-      %this.use($weaponOrderIndex[%newSlot]);
+   %newWeapon = getField(%weaponList, %this.weaponCyclePos);
+   %this.mountImage(%newWeapon, 0);
+   %this.setImageAmmo(0, true);
 }
 
 function WeaponImage::delayedFire(%this, %obj, %slot)

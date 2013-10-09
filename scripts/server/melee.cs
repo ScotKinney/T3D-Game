@@ -22,11 +22,11 @@ function MeleeImage::onUnmount(%this, %obj, %slot)
    {
       %obj.client.RefreshWeaponHud(0, "", "");
 
-      if ( %obj.client.clanWeapon.image.getID() == %this )
-      {  // This is our clan weapon so holster it
-         %this.holsterWeapon(%obj);
-         return;
-      }
+      //if ( %obj.client.clanWeapon.image.getID() == %this )
+      //{  // This is our clan weapon so holster it
+         //%this.holsterWeapon(%obj);
+         //return;
+      //}
    }
 }
 

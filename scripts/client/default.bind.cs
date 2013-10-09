@@ -486,18 +486,6 @@ function toggleAnimGui(%val)
 moveMap.bind(keyboard, "ctrl a", toggleAnimGui);
 
 //------------------------------------------------------------------------------
-// Item manipulation
-//------------------------------------------------------------------------------
-
-function unmountWeapon(%val)
-{
-   if (%val)
-      commandToServer('unmountWeapon');
-}
-
-moveMap.bind(keyboard, 0, unmountWeapon);
-
-//------------------------------------------------------------------------------
 // Message HUD functions
 //------------------------------------------------------------------------------
 
@@ -825,3 +813,26 @@ moveMap.bindCmd(keyboard, "2", "doAttack(1);", "");
 moveMap.bindCmd(keyboard, "3", "doAttack(2);", "");
 moveMap.bindCmd(keyboard, "4", "doAttack(3);", "");
 moveMap.bindCmd(keyboard, "5", "doAttack(4);", "");
+
+
+function unmountWeapon(%val)
+{
+   if (%val)
+      commandToServer('unmountWeapon');
+}
+
+moveMap.bind(keyboard, u, unmountWeapon);
+
+function nextWeapon(%val)
+{
+   if (%val)
+      commandToServer('cycleWeapon', "1");
+}
+
+function prevWeapon(%val)
+{
+   if (%val)
+      commandToServer('cycleWeapon', "-1");
+}
+moveMap.bind(keyboard, "0", nextWeapon);
+moveMap.bind(keyboard, "ctrl 0", prevWeapon);

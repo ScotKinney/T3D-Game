@@ -41,6 +41,9 @@ exec("./baseMelee.cs");
 // Load the player datablocks
 exec("art/players/" @ $LoadedAvSet @ "/datablock.cs");
 
+// Inventory weapon datablocks
+exec("./meleeWeapons.cs");
+
 // Any datablocks contained in the loaded art packs
 %packCount = getFieldCount($LoadedArtPacks);
 for (%i = 0; %i < %packCount; %i++)

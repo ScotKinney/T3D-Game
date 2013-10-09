@@ -459,7 +459,8 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
 {
    // This method is invoked by the ShapeBase code whenever the
    // object's damage level changes.
-   if (%delta > 0 && %obj.getState() !$= "Dead") {
+   if (%delta > 0 && %obj.getState() !$= "Dead")
+   {
 
       // Increment the flash based on the amount.
       %flash = %obj.getDamageFlash() + ((%delta / %this.maxDamage) * 2);
