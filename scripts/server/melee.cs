@@ -83,10 +83,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
       return;
 
    if ( %obj.inNeutralZone )
-   {
-      sfxPlay(BaseFireEmptySound, %obj.getTransform());
       return;
-   }
 
    // make sure the attack requested is legit
    if ( %attackNum >= %this.hthNumAttacks )
@@ -95,7 +92,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 
    //if (%obj.getEnergyLevel() <= %this.MinEnergy) return;
 
-   if(%obj.hthStun) //|| %obj.shielded)
+   if(%obj.hthStun)
       return;
 
    // setup the "play once look anim"
@@ -120,9 +117,18 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    if ( %timeScale < 0.1 )
       %timeScale = 0.1;
    %attack.timeScaleInv = 1.0 / %timeScale;
-   if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale,
-         %attack.startDamage, %attack.endDamage))
-      echo("ERROR in setArmThreadPlayOnce()");
+   if ( %attack.fullSkelAnim )
+   {
+      if (!%obj.setAttackThread(%attack.seqName, %timeScale,
+            %attack.startDamage, %attack.endDamage))
+         echo("ERROR in setAttackThread()");
+   }
+   else
+   {
+      if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale,
+            %attack.startDamage, %attack.endDamage))
+         echo("ERROR in setArmThreadPlayOnce()");
+   }
 }
 
 // Weapon callback when it hits something
@@ -170,31 +176,28 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
    if(%scanTarg)
    {   // a target in range was found
       %target = firstWord(%scanTarg);
-      //echo("target = " @ %target.getId() @ " and player = " @ %player.getId() @ "\n");
 
       if (%target.getId() $= %player.getId())
          return;
-
-      if ( !isObject(%target.client) && !%target.isBot )
-      {  // Hit something other than a player or AI...Just play sound
-         if (%target != %player.hthDamageLastId)
-         {
-            %player.hthDamageLastId = %target;
-            %hitSound = %this.hitStaticSound;
-            serverPlay3D(%hitSound,%player.getTransform());
-         }
-         return;
-      }
-
-      //if (%target.team == %player.team)
-         //return;
 
       // if we have hit this person already...apply no more damage
       if (%target == %player.hthDamageLastId)
          return;
 
-      // save who we last damaged
+      // save what we last damaged
       %player.hthDamageLastId = %target;
+      //%this.showHitPoints(%startvec, %endvec);
+      //echo("target = " @ %target.getId() @ " and player = " @ %player.getId() @ "\n");
+
+      if ( !isObject(%target.client) && !%target.isBot )
+      {  // Hit something other than a player or AI...Just play sound
+         %hitSound = %this.hitStaticSound;
+         serverPlay3D(%hitSound,%player.getTransform());
+         return;
+      }
+
+      //if (%target.team == %player.team)
+         //return;
 
       // store end point and normal from raycast return buffer
       %pos = getWords(%scanTarg, 1, 3);
@@ -270,12 +273,12 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
             applyImpactImpulse(%obj, %pos, %normal, %player, %attack, %attack.impulse);
       }
    }
-   else if(%scanTarg && (%scanTarg.getType() & $TypeMasks::StaticShapeObjectType))
-   {
-      %damage = %attack.damageAmount;
-      %object = firstWord(%scanTarg);
-      %object.applyDamage(%damage);
-   }
+   //else if(%scanTarg && (%scanTarg.getType() & $TypeMasks::StaticShapeObjectType))
+   //{
+      //%damage = %attack.damageAmount;
+      //%object = firstWord(%scanTarg);
+      //%object.applyDamage(%damage);
+   //}
 }
 
 // phdana stun ->
@@ -351,3 +354,44 @@ function restorePlayerControl(%client, %player)
       %client.setControlObject(%player);
 }
 // <- phdana hth
+
+//function MeleeImage::showHitPoints(%this, %startvec, %endvec)
+//{
+   //%start = new TSStatic() {
+         //shapeName = "art/inv/gems/emerald.dae";
+         //playAmbient = "1";
+         //meshCulling = "0";
+         //originSort = "0";
+         //collisionType = "None";
+         //decalType = "Collision Mesh";
+         //allowPlayerStep = "1";
+         //renderNormals = "0";
+         //forceDetail = "-1";
+         //position = %startvec;
+         //rotation = "-0 0 -1 89.8416";
+         //scale = "0.2 0.2 0.2";
+         //canSave = "1";
+         //canSaveDynamicFields = "1";
+      //};
+//
+   //%end = new TSStatic() {
+         //shapeName = "art/inv/gems/ruby.dae";
+         //playAmbient = "1";
+         //meshCulling = "0";
+         //originSort = "0";
+         //collisionType = "None";
+         //decalType = "Collision Mesh";
+         //allowPlayerStep = "1";
+         //renderNormals = "0";
+         //forceDetail = "-1";
+         //position = %endvec;
+         //rotation = "-0 0 -1 89.8416";
+         //scale = "0.2 0.2 0.2";
+         //canSave = "1";
+         //canSaveDynamicFields = "1";
+      //};
+   //MissionCleanup.add(%start);
+   //MissionCleanup.add(%end);
+//}
+
+
