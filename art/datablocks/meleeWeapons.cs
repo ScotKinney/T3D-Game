@@ -22,15 +22,16 @@ datablock SFXProfile(SwordSwing3Sound)
    preload = true;
 };
 
-// The 5 attacks
+//////////////// The 5 attacks////////////////
+
 singleton GameBaseData(SwordSwingOne)
 {
    seqName = "Sword_Center";
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.2; //time in seconds during animation before damage is done
-   endDamage = 1.3;
+   startDamage = 0.4; //time in seconds during animation before damage is done
+   endDamage = 0.5;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
    impulse = 800;
@@ -42,8 +43,8 @@ singleton GameBaseData(SwordSwingTwo)
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.2; //time in seconds during animation before damage is done
-   endDamage = 1.3;
+   startDamage = 0.35; //time in seconds during animation before damage is done
+   endDamage = 0.6;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 800;
@@ -55,8 +56,8 @@ singleton GameBaseData(SwordSwingThree)
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.2; //time in seconds during animation before damage is done
-   endDamage = 1.3;
+   startDamage = 0.5; //time in seconds during animation before damage is done
+   endDamage = 0.8;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
@@ -68,8 +69,8 @@ singleton GameBaseData(SwordSwingFour)
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.2; //time in seconds during animation before damage is done
-   endDamage = 1.3;
+   startDamage = 0.43; //time in seconds during animation before damage is done
+   endDamage = 0.54;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
@@ -81,8 +82,8 @@ singleton GameBaseData(SwordSwingFive)
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.2; //time in seconds during animation before damage is done
-   endDamage = 1.3;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
