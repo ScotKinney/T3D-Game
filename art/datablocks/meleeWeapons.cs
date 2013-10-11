@@ -31,8 +31,8 @@ singleton GameBaseData(SwordSwingOne)
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.4; //time in seconds during animation before damage is done
-   endDamage = 0.7;
-   soundDelay = 1; // time in ms before attack sound plays
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
    impulse = 800;
 };
@@ -45,7 +45,7 @@ singleton GameBaseData(SwordSwingTwo)
    damageAmount = 50;
    startDamage = 0.35; //time in seconds during animation before damage is done
    endDamage = 0.6;
-   soundDelay = 1; // time in ms before attack sound plays
+   soundDelay = 300; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 800;
 };
@@ -58,7 +58,7 @@ singleton GameBaseData(SwordSwingThree)
    damageAmount = 50;
    startDamage = 0.5; //time in seconds during animation before damage is done
    endDamage = 0.8;
-   soundDelay = 1; // time in ms before attack sound plays
+   soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
 };
@@ -69,9 +69,9 @@ singleton GameBaseData(SwordSwingFour)
    fullSkelAnim = false;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.43; //time in seconds during animation before damage is done
-   endDamage = 0.6;
-   soundDelay = 1; // time in ms before attack sound plays
+   startDamage = 0.52; //time in seconds during animation before damage is done
+   endDamage = 0.84;
+   soundDelay = 520; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
 };
@@ -84,7 +84,7 @@ singleton GameBaseData(SwordSwingFive)
    damageAmount = 50;
    startDamage = 0.3; //time in seconds during animation before damage is done
    endDamage = 0.9;
-   soundDelay = 1; // time in ms before attack sound plays
+   soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
 };

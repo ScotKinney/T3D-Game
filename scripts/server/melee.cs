@@ -196,9 +196,6 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
          return;
       }
 
-      //if (%target.team == %player.team)
-         //return;
-
       // store end point and normal from raycast return buffer
       %pos = getWords(%scanTarg, 1, 3);
       %normal = getWords(%scanTarg, 4, 6);

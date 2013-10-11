@@ -488,8 +488,10 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
       %client.player.stopPlayOnce();
    if ( %attackNum < 4 )
       %client.player.setImageGenericTrigger(%slot, %attackNum, %triggerState);
-   else
+   else if ( %attackNum < 5 )
       %client.player.setImageAltTrigger(%slot, %triggerState);
+   else
+      %client.player.setImageTrigger(%slot, %triggerState);
 
    // Turn off the attack signal in 100 ms
    if ( %triggerState )  

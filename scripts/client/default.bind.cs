@@ -311,19 +311,6 @@ moveMap.bind(keyboard, x, doCrouch);
 moveMap.bind(gamepad, btn_b, doCrouch);
 
 //------------------------------------------------------------------------------
-// Mouse Trigger
-//------------------------------------------------------------------------------
-
-function mouseFire(%val)
-{
-   $mvTriggerCount0++;
-   if (%val && (($mvTriggerCount0 % 2) == 0))
-      $mvTriggerCount0++;
-}
-
-moveMap.bind( mouse, button0, mouseFire );
-
-//------------------------------------------------------------------------------
 // Gamepad Trigger
 //------------------------------------------------------------------------------
 
@@ -793,16 +780,22 @@ moveMap.bind(keyboard,  home,       stepTo );
 moveMap.bind(keyboard,  end,        stepFro );
 moveMap.bind(mouse, "zaxis", cameraZoomWheel);
 
+//------------------------------------------------------------------------------
 // Attack keys and modifiers
+//------------------------------------------------------------------------------
+
 $ActiveWeaponSlot = 0;
+$UsingFeet = false;
 function activateRHWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 0; }
 function activateLHWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 1; }
 function activateRFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 2; }
 function activateLFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 3; }
+function setUsingFeet(%val) { $UsingFeet = %val; }
 moveMap.bind(keyboard, q, activateLHWeapon);
 moveMap.bind(keyboard, e, activateRHWeapon);
 moveMap.bind(keyboard, z, activateLFWeapon);
 moveMap.bind(keyboard, c, activateRFWeapon);
+moveMap.bind(keyboard, f, setUsingFeet);
 
 function doAttack(%attackNum)
 {
@@ -814,6 +807,24 @@ moveMap.bindCmd(keyboard, "3", "doAttack(2);", "");
 moveMap.bindCmd(keyboard, "4", "doAttack(3);", "");
 moveMap.bindCmd(keyboard, "5", "doAttack(4);", "");
 
+function doRandomAttack(%val)
+{
+   if ( %val )
+   {
+      %slot = getRandom(0, 1);
+      if ( $UsingFeet )
+         %slot += 2;
+      commandToServer('DoAttack', %slot, 5);
+   }
+}
+moveMap.bind( mouse, button0, doRandomAttack );
+
+//function mouseFire(%val)
+//{
+   //$mvTriggerCount0++;
+   //if (%val && (($mvTriggerCount0 % 2) == 0))
+      //$mvTriggerCount0++;
+//}
 
 function unmountWeapon(%val)
 {
