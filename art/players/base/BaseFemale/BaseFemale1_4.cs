@@ -32,8 +32,6 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addMesh("WristGrd_FJ_L 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_L 50");
    %this.addSequence("art/players/base/Anims/Root.dsq", "Root", "0", "70", "1", "0");
    %this.addSequence("art/players/base/Anims/Run.dsq", "Run", "0", "70", "1", "0");
-   %this.addTrigger("Run", "7", "1");
-   %this.addTrigger("Run", "20", "2");
    %this.addSequence("art/players/base/Anims/Back.dsq", "Back", "0", "29", "1", "0");
    %this.addTrigger("Back", "3", "1");
    %this.addTrigger("Back", "16", "2");
@@ -291,6 +289,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addNode("mount12", "lToe", "-0.110546 0.0447868 0.0594293 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.110546 0.0517295 0.0650103 1 0 0 0", "1");
+   %this.addTrigger("Run", "5", "2");
+   %this.addTrigger("Run", "18", "1");
 }
 
 $mack = true;
