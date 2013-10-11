@@ -101,7 +101,7 @@ singleton GameBaseData(LH_PunchCombo)
    timeScale = 1;
    damageAmount = 20;
    startDamage = 0.2;
-   endDamage = 1.3
+   endDamage = 1.3;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 500;
