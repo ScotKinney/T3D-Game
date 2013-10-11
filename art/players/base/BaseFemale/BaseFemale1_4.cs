@@ -289,8 +289,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addNode("mount12", "lToe", "-0.110546 0.0447868 0.0594293 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.110546 0.0517295 0.0650103 1 0 0 0", "1");
-   %this.addTrigger("Run", "5", "2");
-   %this.addTrigger("Run", "18", "1");
+   %this.addTrigger("Run", "0", "1");
+   %this.addTrigger("Run", "14", "2");
 }
 
 $mack = true;
