@@ -17,8 +17,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
    %this.addSequence("art/players/base/Anims/Root.dsq", "Root", "0", "70", "1", "0");
    %this.addSequence("art/players/base/Anims/Run.dsq", "Run", "0", "70", "1", "0");
-   %this.addTrigger("Run", "5", "2");
-   %this.addTrigger("Run", "18", "1");
    %this.addSequence("art/players/base/Anims/Back.dsq", "Back", "0", "29", "1", "0");
    %this.addTrigger("Back", "3", "1");
    %this.addTrigger("Back", "16", "2");
@@ -274,6 +272,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/Sit_Ground.dsq", "Sit_Ground", "0", "1", "1", "0");
    %this.setSequencePriority("Sit_Ground", "5");
    %this.setSequenceCyclic("Sit_Ground", "1");
+   %this.addTrigger("Run", "0", "1");
+   %this.addTrigger("Run", "14", "2");
 }
 
 $mack = true;
