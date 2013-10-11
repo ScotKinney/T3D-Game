@@ -31,7 +31,7 @@ singleton GameBaseData(SwordSwingOne)
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.4; //time in seconds during animation before damage is done
-   endDamage = 0.5;
+   endDamage = 0.7;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
    impulse = 800;
@@ -70,7 +70,7 @@ singleton GameBaseData(SwordSwingFour)
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.43; //time in seconds during animation before damage is done
-   endDamage = 0.54;
+   endDamage = 0.6;
    soundDelay = 1; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
    impulse = 800;
