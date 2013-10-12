@@ -739,7 +739,7 @@ function Player::use(%player, %data)
 function Player::onAnimationTrigger(%this, %obj, %slot)
 {
    //we use slot 3 of the addTrigger to key an attack on the animation.
-   if ( (%slot == 3) && (%obj.firingWeapon !$= "") )
+   if ( (%slot == 3) && isObject(%obj.firingWeapon) )
    {
       %obj.firingWeapon.delayedFire(%obj, 0);
       %obj.firingWeapon = "";

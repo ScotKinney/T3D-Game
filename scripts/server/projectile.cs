@@ -28,11 +28,27 @@ function ProjectileData::onCollision(%data, %proj, %col, %fade, %pos, %normal)
 {
    //echo("ProjectileData::onCollision("@%data.getName()@", "@%proj@", "@%col.getClassName()@", "@%fade@", "@%pos@", "@%normal@")");
 
-   // Apply damage to the object all shape base objects
+   // Apply damage to any shape base objects hit
    if (%data.directDamage > 0)
    {
       if (%col.getType() & ($TypeMasks::ShapeBaseObjectType))
-         %col.damage(%proj, %pos, %data.directDamage, %data.damageType);
+         %col.damage(%proj.sourceObject, %proj.getPosition(), %data.directDamage, %data.damageType);
+   }
+
+   if ( (%data.retrievable !$= "") && !%proj.sourceObject.isBot )
+   {
+      if ( isObject(%data.retrievable) )
+         %itemData = %data.retrievable;
+      %obj = new Item()
+      {
+         datablock = %itemData;
+         static = "0";
+         count = 1;
+      };
+      %obj.setTransform( %proj.getTransform() );
+      %obj.scale = %proj.scale;
+      MissionCleanup.add(%obj);
+      %obj.schedulePop();
    }
 }
 

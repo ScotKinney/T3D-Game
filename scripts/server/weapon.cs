@@ -91,27 +91,27 @@ function Weapon::onInventory(%this,%obj,%amount)
 
 function WeaponImage::onMount(%this,%obj,%slot)
 {
-   // Images assume a false ammo state on load.  We need to
-   // set the state according to the current inventory.
-   if ( %this.item.usesAmmo )
-      %ammoType = %this.ammo;
-   else
-      %ammoType = %this.item;
-
-   if(%ammoType !$= "")
+   if ( isObject(%obj.client) && isObject(%this.item) )
    {
-      if (%obj.getInventory(%ammoType))
-      {
-         %obj.setImageAmmo(%slot, true);
-         %currentAmmo = %obj.getInventory(%ammoType);
-      }
+      // Images assume a false ammo state on load.  We need to
+      // set the state according to the current player inventory.
+      if ( %this.usesAmmo )
+         %ammoType = %this.ammo;
       else
-         %currentAmmo = 0;
-      //AISK Changes: Start
-      if (%obj.client !$= "")
+         %ammoType = %this.item;
+
+      if(%ammoType !$= "")
+      {
+         %currentAmmo = %obj.getInventory(%ammoType);
+         if (%currentAmmo > 0)
+            %obj.setImageAmmo(%slot, true);
+         else
+            %currentAmmo = 0;
          %obj.client.RefreshWeaponHud(%currentAmmo, %this.item.invIcon, %this.item.reticle);
-      //AISK Changes: End
+      }
    }
+   else
+      %obj.setImageAmmo(%slot, true);
    
    if ( %this.customLookAnim !$= "" )
    {
@@ -123,10 +123,8 @@ function WeaponImage::onMount(%this,%obj,%slot)
 
 function WeaponImage::onUnmount(%this, %obj, %slot)
 {
-   //AISK Changes: Start
-   if (%obj.client !$= "")
+   if ( isObject(%obj.client) && isObject(%this.item) )
       %obj.client.RefreshWeaponHud(0, "", "");
-   //AISK Changes: End
 
    if ( %this.customLookAnim !$= "" )
    {
@@ -136,70 +134,84 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
    }
 }
 
-// ----------------------------------------------------------------------------
-// A "generic" weaponimage onFire handler for most weapons.  Can be overridden
-// with an appropriate namespace method for any weapon that requires a custom
-// firing solution.
-
-// projectileSpread is a dynamic property declared in the weaponImage datablock
-// for those weapons in which bullet skew is desired.  Must be greater than 0,
-// otherwise the projectile goes straight ahead as normal.  lower values give
-// greater accuracy, higher values increase the spread pattern.
-// ----------------------------------------------------------------------------
-
 function WeaponImage::onFire(%this, %obj, %slot)
 {
-   if ( %obj.inNeutralZone )
-   {
-      sfxPlay(BaseFireEmptySound, %obj.getTransform());
-      return;
-   }
-   //echo("\c4WeaponImage::onFire( "@%this.getName()@", "@%obj.client.nameBase@", "@%slot@" )");
+   %this.startFiring(%obj, %slot, false);
+}
 
-   if ( (%this.item.effect $= "THROWN") && (%this.throwAnim !$= "") )
-   {  // This is a weapon thrown by a player
-      %obj.firingWeapon = %this;
-      %obj.schedule(1, "setArmThreadPlayOnce",%this.throwAnim);
-      return;
-   }
+function WeaponImage::onWetFire(%this, %obj, %slot)
+{
+   %this.startFiring(%obj, %slot, true);
+}
+
+function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
+{
+   if ( %obj.inNeutralZone )
+      return;  // Can't do anything in an NZ
+
+   %obj.firingWet = %isWet;
 
    if ( (%this.fireAnim !$= "") && %obj.setArmThreadPlayOnce(%this.fireAnim) )
-   {  // This weapon has it's own firing animation
+   {  // Just start the animation and record that we're the image firing
       %obj.firingWeapon = %this;
       return;
    }
 
-   %obj.decInventory(%this.ammo, 1, true);
-   if ( %obj.isBot || %obj.client.isFirstPerson() )
+   // No animation playing, so fire now
+   %this.delayedFire(%obj, %slot);
+}
+
+// DelayedFire is called from the players onAnimationTrigger callback when 
+// trigger 3 in an animation hits.
+function WeaponImage::delayedFire(%this, %obj, %slot)
+{
+   // If it's a thrown weapon, hide the one in the hand
+   if ( %this.weaponType $= "Thrown" )
+      %obj.setImageHidden(%slot, true);
+
+   if ( %obj.getMountedImage(%slot) != %this )
+      return; // %obj died, before animation trigger was hit, don't fire
+
+   // Get the aim vector and release point
+   if (%obj.isMounted())
+      %muzzleVector = %obj.getObjectMount().getEyeVector();
+   else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
       %muzzleVector = %obj.getMuzzleVector(%slot);
    else
       %muzzleVector = %obj.getEyeVector();
 
-   %mp = %obj.getMuzzlePoint(%slot);
-   
-   if ( %obj.getClassName() $= "AIPlayer" )
-   {
-      %aimLoc = %obj.getAimLocation();
-      if ( isObject(%this.projectile) )
-      {  // Adjust the bots aim to account for gravity and weapon ballistics
-         %gravMod = %this.projectile.gravityMod;
-         if ((%gravMod > 0) && %this.projectile.isBallistic)
-         {
-            %muzzleVector = VectorSub(%aimLoc, %mp);
-            %aimDist = VectorLen(%muzzleVector);
-            //%heightAdjust = (%aimDist / %this.projectile.muzzleVelocity) * (%gravMod * 9.81);
-            // y = 1/2(gtt)
-            %time = %aimDist / %this.projectile.muzzleVelocity;
-            %heightAdjust = %time * %time * (%gravMod * 4.905); // 4.905 = 1/2(9.81)
-            %aimZ = getWord(%aimLoc, 2) + %heightAdjust;
-            %aimLoc = setWord(%aimLoc, 2, %aimZ);
-            %muzzleVector = VectorSub(%aimLoc, %mp);
-         }
+   %mp = %obj.getAnimMuzzlePoint(%slot);
+
+   // Select the wet or dry projectile. Bail if we don't have one
+   %useProjectile = (%obj.firingWet && isObject(%this.wetProjectile)) ?
+         %this.wetProjectile : %this.projectile;
+   if ( !isObject(%useProjectile) )
+      return;
+
+   if ((%obj.getClassName() $= "AIPlayer") && !isObject(%obj.driver))
+   {  // It's a bot firing on its own
+      if ( isObject(%obj.getAimObject()) )
+         %aimLoc = %obj.getAimObject().getEyePoint();
+      else
+         %aimLoc = %obj.getAimLocation();
+
+      // Adjust the bots aim to account for gravity and weapon ballistics
+      %gravMod = %useProjectile.gravityMod;
+      if ((%gravMod > 0) && %useProjectile.isBallistic)
+      {
+         %muzzleVector = VectorSub(%aimLoc, %mp);
+         %aimDist = VectorLen(%muzzleVector);
+         //%heightAdjust = (%aimDist / %this.projectile.muzzleVelocity) * (%gravMod * 9.81);
+         // y = 1/2(gtt)
+         %time = %aimDist / %this.projectile.muzzleVelocity;
+         %heightAdjust = %time * %time * (%gravMod * 4.905); // 4.905 = 1/2(9.81)
+         %aimZ = getWord(%aimLoc, 2) + %heightAdjust;
+         %aimLoc = setWord(%aimLoc, 2, %aimZ);
       }
       %muzzleVector = VectorSub(%aimLoc, %mp);
       %muzzleVector = VectorNormalize(%muzzleVector);
    }
-
+   
    if (%this.projectileSpread)
    {
       // We'll need to "skew" this projectile a little bit.  We start by
@@ -209,7 +221,7 @@ function WeaponImage::onFire(%this, %obj, %slot)
       // Then we'll create a spread matrix by randomly generating x, y, and z
       // points in a circle
       for(%i = 0; %i < 3; %i++)
-         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.projectileSpread @ " ";
+         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.141593 * %this.projectileSpread @ " ";
       %mat = MatrixCreateFromEuler(%matrix);
 
       // Which we'll use to alter the projectile's initial vector with
@@ -218,14 +230,16 @@ function WeaponImage::onFire(%this, %obj, %slot)
 
    // Get the player's velocity, we'll then add it to that of the projectile
    %objectVelocity = %obj.getVelocity();
-   %muzzleVelocity = VectorAdd(
-      VectorScale(%muzzleVector, %this.projectile.muzzleVelocity),
-      VectorScale(%objectVelocity, %this.projectile.velInheritFactor));
+   %baseVelocity = %useProjectile.muzzleVelocity;
+   if ( %obj.isBot && (%this == FlintlockImage.getID()) )
+      %baseVelocity = 300;
+   %muzzleVelocity = VectorAdd(VectorScale(%muzzleVector, %baseVelocity),
+      VectorScale(%objectVelocity, %useProjectile.velInheritFactor));
       
    // Create the projectile object
    %p = new (%this.projectileType)()
    {
-      dataBlock = %this.projectile;
+      dataBlock = %useProjectile;
       initialVelocity = %muzzleVelocity;
       initialPosition  = %mp;  
 
@@ -233,43 +247,36 @@ function WeaponImage::onFire(%this, %obj, %slot)
       sourceSlot = %slot;
       ignoreSourceTimeout = true;
       client = %obj.client;
-         ammoID           = %this.ammo.itemID;
    };
    MissionCleanup.add(%p);
    
-   if ( %this.item.usesAmmo && %obj.getInventory(%this.ammo) < 1 )
-   {
-      //%obj.setInventory(%this.item, 0);
-      %obj.unmountImage(%slot);
-      %obj.lastWeapon = "";
-      %this.NoAmmoMessage(%obj);
-      %obj.clearArmThread();
-      %obj.updateInventoryString();
+   if ( %this.fireSound !$= "" )
+      serverPlay3D(%this.fireSound,%obj.getTransform());
+
+   %canRearm =true;
+   if ( isObject(%this.item) && !%obj.isBot )
+   {  // This is an inventory item so update counts
+      if ( %this.usesAmmo )
+         %ammoType = %this.ammo;
+      else
+         %ammoType = %this.item;
+      
+      %numLeft = %obj.decInventory(%ammoType, 1, true);
+      
+      if ( %numLeft < 1 )
+      {
+         %obj.setImageHidden(%slot, false);
+         %obj.unmountImage(%slot);
+         %obj.lastWeapon = "";
+         %obj.updateInventoryString();
+         %this.NoAmmoMessage(%obj);
+         %canRearm = false;
+      }
    }
+   if ( (%this.weaponType $= "Thrown") && %canRearm )
+      %obj.schedule(%this.rearmDelay, "setImageHidden", %slot, false);
 
    return %p;
-}
-
-// ----------------------------------------------------------------------------
-// A "generic" weaponimage onAltFire handler for most weapons.  Can be
-// overridden with an appropriate namespace method for any weapon that requires
-// a custom firing solution.
-// ----------------------------------------------------------------------------
-
-function WeaponImage::onAltFire(%this, %obj, %slot)
-{
-   return %this.onFire(%obj, %slot);
-}
-
-// ----------------------------------------------------------------------------
-// A "generic" weaponimage onWetFire handler for most weapons.  Can be
-// overridden with an appropriate namespace method for any weapon that requires
-// a custom firing solution.
-// ----------------------------------------------------------------------------
-
-function WeaponImage::onWetFire(%this, %obj, %slot)
-{
-   return %this.onFire(%obj, %slot);
 }
 
 //-----------------------------------------------------------------------------
@@ -287,18 +294,6 @@ function Ammo::onPickup(%this, %obj, %shape, %amount)
    {
       //serverPlay3D(AmmoPickupSound,%obj.getTransform());
       serverPlay3D(AmmoPickupSound, %transform);
-      // GUY >> hack
-      // if this is a thrown weapon like a spear, then give the player
-      // the actual weapon if he doesn't already have it
-      //%itemName = $AlterVerse::ItemNames[%this.itemID];
-      //%spos = strstr(%itemName, "Ammo");
-      //if ( %spos > -1 )
-      //{
-         //%weaponName = getSubStr(%itemName, 0, %spos) @ "Weapon";
-         //if(!%shape.hasInventory(%weaponName))
-            //%shape.incInventory(%weaponName, 1);
-      //}
-      // GUY <<
    }
 }
 
@@ -306,7 +301,7 @@ function Ammo::onInventory(%this,%obj,%amount)
 {
    // The ammo inventory state has changed, we need to update any
    // mounted images using this ammo to reflect the new state.
-   for (%i = 0; %i < 8; %i++)
+   for (%i = 0; %i < 4; %i++)
    {
       if ((%image = %obj.getMountedImage(%i)) > 0)
          if (isObject(%image.ammo) && %image.ammo.getId() == %this.getId())
@@ -349,114 +344,6 @@ function ShapeBase::cycleWeapon(%this, %direction)
    %newWeapon = getField(%weaponList, %this.weaponCyclePos);
    %this.mountImage(%newWeapon, 0);
    %this.setImageAmmo(0, true);
-}
-
-function WeaponImage::delayedFire(%this, %obj, %slot)
-{
-   if ( %this.item.effect $= "THROWN" )
-      %obj.setImageHidden(%slot, true);
-
-   if ( %obj.getMountedImage(%slot) != %this )
-      return; // %obj died, before animation trigger was hit, don't fire
-
-   if (%obj.isMounted())
-      %muzzleVector = %obj.getObjectMount().getEyeVector();
-   else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
-      %muzzleVector = %obj.getMuzzleVector(%slot);
-   else
-      %muzzleVector = %obj.getEyeVector();
-
-   %mp = %obj.getAnimMuzzlePoint(%slot);
-   //echo("MP  = " @ %mp);
-
-   if ((%obj.getClassName() $= "AIPlayer") && !isObject(%obj.driver))
-   {
-      if ( isObject(%obj.getAimObject()) )
-         %aimLoc = %obj.getAimObject().getEyePoint();
-      else
-         %aimLoc = %obj.getAimLocation();
-
-      if ( isObject(%this.projectile) )
-      {  // Adjust the bots aim to account for gravity and weapon ballistics
-         %gravMod = %this.projectile.gravityMod;
-         if ((%gravMod > 0) && %this.projectile.isBallistic)
-         {
-            %muzzleVector = VectorSub(%aimLoc, %mp);
-            %aimDist = VectorLen(%muzzleVector);
-            //%heightAdjust = (%aimDist / %this.projectile.muzzleVelocity) * (%gravMod * 9.81);
-            // y = 1/2(gtt)
-            %time = %aimDist / %this.projectile.muzzleVelocity;
-            %heightAdjust = %time * %time * (%gravMod * 4.905); // 4.905 = 1/2(9.81)
-            %aimZ = getWord(%aimLoc, 2) + %heightAdjust;
-            %aimLoc = setWord(%aimLoc, 2, %aimZ);
-         }
-      }
-      %muzzleVector = VectorSub(%aimLoc, %mp);
-      %muzzleVector = VectorNormalize(%muzzleVector);
-   }
-   
-   if (%this.projectileSpread)
-   {
-      // We'll need to "skew" this projectile a little bit.  We start by
-      // getting the straight ahead aiming point of the gun
-      %vec = %muzzleVector;
-
-      // Then we'll create a spread matrix by randomly generating x, y, and z
-      // points in a circle
-      for(%i = 0; %i < 3; %i++)
-         %matrix = %matrix @ (getRandom() - 0.5) * 2 * 3.1415926 * %this.projectileSpread @ " ";
-      %mat = MatrixCreateFromEuler(%matrix);
-
-      // Which we'll use to alter the projectile's initial vector with
-      %muzzleVector = MatrixMulVector(%mat, %vec);
-   }
-
-   // Get the player's velocity, we'll then add it to that of the projectile
-   %objectVelocity = %obj.getVelocity();
-   %baseVelocity = %this.projectile.muzzleVelocity;
-   if ( %obj.isBot && (%this == FlintlockImage.getID()) )
-      %baseVelocity = 300;
-   %muzzleVelocity = VectorAdd(
-      VectorScale(%muzzleVector, %baseVelocity),
-      VectorScale(%objectVelocity, %this.projectile.velInheritFactor));
-      
-   // Create the projectile object
-   %p = new (%this.projectileType)()
-   {
-      dataBlock = %this.projectile;
-      initialVelocity = %muzzleVelocity;
-      initialPosition  = %mp;  
-
-      sourceObject = %obj;
-      sourceSlot = %slot;
-      ignoreSourceTimeout = true;
-      client = %obj.client;
-         ammoID           = %this.ammo.itemID;
-   };
-   MissionCleanup.add(%p);
-   
-   if ( %this.fireSound !$= "" )
-      serverPlay3D(%this.fireSound,%obj.getTransform());
-
-   if ( %this.item.usesAmmo )
-      %ammoType = %this.ammo;
-   else
-      %ammoType = %this.item;
-   if ( %this.item.usesAmmo || !%obj.isBot )
-      %obj.decInventory(%ammoType, 1, true);
-   
-   if ( (%obj.getInventory(%ammoType) < 1) && !%obj.isBot )
-   {
-      //%obj.setInventory(%this.item, 0); // Don't remove from inventory when they fire the last shot
-      %obj.unmountImage(%slot);
-      %obj.lastWeapon = "";
-      %obj.updateInventoryString();
-      %this.NoAmmoMessage(%obj);
-   }
-   else if ( %this.item.effect $= "THROWN" )
-      %obj.schedule(%this.rearmDelay, "setImageHidden", %slot, false);
-
-   return %p;
 }
 
 function WeaponImage::NoAmmoMessage(%this, %obj)

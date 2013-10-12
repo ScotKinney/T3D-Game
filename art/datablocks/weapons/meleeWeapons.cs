@@ -172,7 +172,7 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    item = TokFemaleSwordWeapon;
 };
 
-// Cheat to test weapons before we have the full weapons system implemented.
+// Cheat to test weapons before we have the full inventory system implemented.
 $MaleWeaponCycle = "RightHandImage" TAB "ValMaleSwordImage" TAB "MythMaleSwordImage"
    TAB "FJMaleSwordImage" TAB "KardMaleSwordImage" TAB "TokMaleSwordImage";
 $FemaleWeaponCycle = "RightHandImage" TAB "ValFemaleSwordImage" TAB "MythFemaleSwordImage"

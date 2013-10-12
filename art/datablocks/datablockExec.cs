@@ -36,13 +36,16 @@ exec("./defaultEffects.cs");
 exec("./player.cs");
 
 // Our default (base) weapon datablocks
-exec("./baseMelee.cs");
+exec("./weapons/weaponFX.cs");
+exec("./weapons/baseMelee.cs");
+exec("./weapons/baseTriggered.cs");
 
 // Load the player datablocks
 exec("art/players/" @ $LoadedAvSet @ "/datablock.cs");
 
 // Inventory weapon datablocks
-exec("./meleeWeapons.cs");
+exec("./weapons/meleeWeapons.cs");
+exec("./weapons/thrownWeapons.cs");
 
 // Any datablocks contained in the loaded art packs
 %packCount = getFieldCount($LoadedArtPacks);

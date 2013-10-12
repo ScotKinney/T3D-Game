@@ -365,7 +365,7 @@ function AIPlayer::Think(%this, %obj)
 // Detect when a animation trigger has been fired on this player.
 function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
 {
-   if ( (%slot == 3) && (%obj.firingWeapon !$= "") )
+   if ( (%slot == 3) && isObject(%obj.firingWeapon) )
    {
       %obj.firingWeapon.delayedFire(%obj, 0);
       %obj.firingWeapon = "";
@@ -374,13 +374,8 @@ function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
    }
 
    //we use slot 3 of the addTrigger to key an attack on the animation.
-   if ( %slot == 3 )
-   {
-      if ( %this.target !$= "" )
-      {
-         %this.openfire(%obj, %this.target, %this.basedist);
-      }
-   }
+   if ( (%slot == 3) && (%this.target !$= "") )
+      %this.openfire(%obj, %this.target, %this.basedist);
 }
 //epls end
 

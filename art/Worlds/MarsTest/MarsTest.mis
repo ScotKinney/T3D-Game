@@ -265,7 +265,8 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "9";
-         Weapon = "HammerWeapon";
+         //Weapon = "HammerWeapon";
+         Weapon = "-NoWeapon";
    };
    new StaticShape(LittleHogart) {
       isAIControlled = "0";
@@ -293,6 +294,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "1";
          useCustomAmbientLighting = "0";
+         Weapon = "-NoWeapon";
    };
    new Path(Gargoyle1Path) {
       isLooping = "1";
@@ -437,7 +439,8 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "3";
-         Weapon = "GargoyleFireballWeapon";
+         //Weapon = "GargoyleFireballWeapon";
+         Weapon = "-NoWeapon";
    };
    new Path(Gargoyle2Path) {
       isLooping = "1";
@@ -609,7 +612,8 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "9";
-         Weapon = "GargoyleFireballWeapon";
+         //Weapon = "GargoyleFireballWeapon";
+         Weapon = "-NoWeapon";
    };
 };
 //--- OBJECT WRITE END ---
