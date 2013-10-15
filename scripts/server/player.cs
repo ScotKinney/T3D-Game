@@ -222,7 +222,8 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
          if (%obj.getAimObject() <= 0)
          {
             if (!%obj.behavior.isSkittish && !isObject(%obj.path))
-                %obj.setAimObject(%col, $AISK_CHAR_HEIGHT);
+                //%obj.setAimObject(%col, $AISK_CHAR_HEIGHT);
+                %obj.setAimObject(%col, VectorSub(%tgt.getEyePoint(), %tgt.getPosition()));
 
             if (%obj.behavior.isAggressive)
             {

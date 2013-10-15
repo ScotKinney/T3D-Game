@@ -55,6 +55,7 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    cycleCounter = "5";
    weaponMode = "pattern";
    activeDodge = 1;
+   moveTolerance = 5.0;
    team = 1;
    realName = " ";
    killerName = "a Gargoyle";
@@ -94,7 +95,7 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    maxTimeScale = 4;
    minTimeScale = 1;
 
-   boundingBox = "2 2 4";
+   boundingBox = "2 2 2";
    swimBoundingBox = "2 4 4";
 
    // Controls over slope of runnable/jumpable surfaces

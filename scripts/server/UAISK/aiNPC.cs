@@ -17,7 +17,7 @@ function AIPlayer::doingNpcAction(%this, %obj)
    {
       //Set the bot to aim at the target, so it will look at the player.
       if ( !%obj.npcEngaged )
-         %obj.setAimObject(%tgt, $AISK_CHAR_HEIGHT);
+         %obj.setAimObject(%tgt, VectorSub(%tgt.getEyePoint(), %tgt.getPosition()));
 
       //Get a string version of the of this bot's npcDecision variable to set a value to it later.
       %npcString = %obj @ ".npcDecision = ";

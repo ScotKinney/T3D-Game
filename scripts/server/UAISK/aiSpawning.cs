@@ -381,6 +381,14 @@ function AIPlayer::spawn(%obj, %isRespawn)
    else
       %tempMountable = false;
 
+   //Move Tolerance for pathed bots
+   if (%obj.moveTolerance !$= "")
+      %tempTolerance = %obj.moveTolerance;
+   else if (%block.mountable !$= "")
+      %tempTolerance = %block.moveTolerance;
+   else
+      %tempTolerance = 1.0;
+
    //The bot's respawn count is set on to the marker on the original spawn only
    if (!%isRespawn)
    {
@@ -486,6 +494,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
       //epld end
       respawnTime = %tempRespawnTime;
       mountable = %tempMountable;
+      mMoveTolerance = %tempTolerance;
    };
 
    allBotsGroup.add(%player);

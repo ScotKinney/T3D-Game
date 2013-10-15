@@ -88,7 +88,8 @@ function AIPlayer::Think(%this, %obj)
             %this.basedist = %basedist;//epls bloodclans
 
             //Set the bot to aim at the target.
-            %aimOffset = $AISK_CHAR_HEIGHT;
+            //%aimOffset = $AISK_CHAR_HEIGHT;
+            %aimOffset = VectorSub(%tgt.getEyePoint(), %dest);
             %obj.setAimObject(%tgt, %aimOffset);
 
             //Check if the bot is already close enough to the target or needs to be closer

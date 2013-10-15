@@ -264,7 +264,7 @@ new SimGroup(MissionGroup) {
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
-         team = "9";
+         team = "1";
          //Weapon = "HammerWeapon";
          Weapon = "-NoWeapon";
    };
@@ -452,7 +452,7 @@ new SimGroup(MissionGroup) {
          type = "Normal";
          msToNext = "10000";
          smoothingType = "Spline";
-         position = "-102.61 17.7618 246.761";
+         position = "-102.61 17.7618 250";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -465,7 +465,7 @@ new SimGroup(MissionGroup) {
          type = "Normal";
          msToNext = "10000";
          smoothingType = "Spline";
-         position = "-102.116 -30.7924 237.759";
+         position = "-102.116 -30.7924 241";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
