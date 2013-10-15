@@ -1,20 +1,17 @@
-//BloodClans generated ItemData datablocks
-//File: scripts/server/bloodclans/worldItems.cs
+//AlterVerse auto-generated ItemData datablocks
+//File: scripts/server/AlterVerse/worldItems.cs
 
 datablock ItemData(AFK_Rune)
 {
-   pickupName = "AFK Rune";
 
-   ItemID = 68;
+   ItemID = 55;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/Runes/rIVrune.dts";
    invIcon = "art/gui/icons/AFK_Rune.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 999;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -22,25 +19,21 @@ datablock ItemData(AFK_Rune)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 };
-$BloodClans::ItemNames[68] = "AFK_Rune";
+$AlterVerse::ItemNames[55] = "AFK_Rune";
 
 datablock ItemData(Apple)
 {
-   pickupName = "Apple";
 
    ItemID = 1;
    category = "food";
    className = "food";
    shapeFile = "art/inv/food/apple.dts";
    invIcon = "art/gui/icons/apple.jpg";
-   previewImage = "art/gui/icons/food.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -48,30 +41,24 @@ datablock ItemData(Apple)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
-
+   cost = 10;
    table = "Food";
-   SubItemID = 16;
-   nutrition = 10.0;
-   drink = 0;
+   SubItemID = 1;
+   nutrition = 10;
 };
-$BloodClans::ItemNames[1] = "Apple";
+$AlterVerse::ItemNames[1] = "Apple";
 
 datablock ItemData(Arabian_Horse_Item)
 {
-   pickupName = "Chestnut Horse";
 
-   ItemID = 123;
+   ItemID = 105;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -79,25 +66,21 @@ datablock ItemData(Arabian_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[123] = "Arabian_Horse_Item";
+$AlterVerse::ItemNames[105] = "Arabian_Horse_Item";
 
 datablock ItemData(Astral_Passport)
 {
-   pickupName = "Astral Passport";
 
-   ItemID = 83;
+   ItemID = 70;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/items/kit/healthkit.dts";
    invIcon = "art/gui/icons/astral_passport.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
    maxInventory = 999;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -105,101 +88,21 @@ datablock ItemData(Astral_Passport)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 };
-$BloodClans::ItemNames[83] = "Astral_Passport";
-
-datablock ItemData(AxeWeapon)
-{
-   pickupName = "Axe";
-
-   ItemID = 39;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/PAxes/Axe1.dts";
-   invIcon = "art/gui/icons/wpn.jpg";
-   previewImage = "art/gui/icons/axe.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "THROWN";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10.000000;
-
-   table = "Weapons";
-   SubItemID = 150;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
-   image = AxeImage;
-   ammo = AxeAmmo;
-   effectWeap = "[THROWN]";
-   exclusive = " ";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
-};
-$BloodClans::ItemNames[39] = "AxeWeapon";
-
-datablock ItemData(AxeAmmo)
-{
-   pickupName = "Axe";
-
-   ItemID = 40;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/PAxes/Axe1.dts";
-   invIcon = "art/gui/icons/wpn.jpg";
-   previewImage = "art/gui/icons/axe.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 50.000000;
-};
-$BloodClans::ItemNames[40] = "AxeAmmo";
+$AlterVerse::ItemNames[70] = "Astral_Passport";
 
 datablock ItemData(Banana)
 {
-   pickupName = "Banana";
 
-   ItemID = 18;
+   ItemID = 17;
    category = "food";
    className = "food";
    shapeFile = "art/inv/food/banana.dts";
    invIcon = "art/gui/icons/banana.jpg";
-   previewImage = "art/gui/icons/banana.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -207,31 +110,24 @@ datablock ItemData(Banana)
    emap = true;
    sticky = true;
 
-
-   cost = 30.000000;
-
+   cost = 30;
    table = "Food";
-   SubItemID = 183;
-   nutrition = 30.0;
-   drink = 0;
+   SubItemID = 17;
+   nutrition = 30;
 };
-$BloodClans::ItemNames[18] = "Banana";
+$AlterVerse::ItemNames[17] = "Banana";
 
 datablock ItemData(Barracuda)
 {
-   pickupName = "Barracuda";
-   pluralName = "Barracuda";
 
    ItemID = 5;
    category = "fish";
    className = "food";
    shapeFile = "art/inv/food/bluebarracuda.dts";
    invIcon = "art/gui/icons/barracuda.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -239,30 +135,24 @@ datablock ItemData(Barracuda)
    emap = true;
    sticky = true;
 
-
-   cost = 30.000000;
-
+   cost = 30;
    table = "Food";
-   SubItemID = 149;
-   nutrition = 30.0;
-   drink = 0;
+   SubItemID = 5;
+   nutrition = 30;
 };
-$BloodClans::ItemNames[5] = "Barracuda";
+$AlterVerse::ItemNames[5] = "Barracuda";
 
 datablock ItemData(Bay_Horse_Item)
 {
-   pickupName = "Bay Horse";
 
-   ItemID = 122;
+   ItemID = 104;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -270,25 +160,21 @@ datablock ItemData(Bay_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[122] = "Bay_Horse_Item";
+$AlterVerse::ItemNames[104] = "Bay_Horse_Item";
 
 datablock ItemData(BBQ_Ribs_Potion)
 {
-   pickupName = "BBQ Ribs Potion";
 
-   ItemID = 69;
+   ItemID = 56;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle2-3.dts";
    invIcon = "art/gui/icons/BBQ_Ribs_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -296,26 +182,21 @@ datablock ItemData(BBQ_Ribs_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 600.000000;
+   cost = 600;
 };
-$BloodClans::ItemNames[69] = "BBQ_Ribs_Potion";
+$AlterVerse::ItemNames[56] = "BBQ_Ribs_Potion";
 
 datablock ItemData(Blue_Striped_Perch)
 {
-   pickupName = "Blue Striped Perch";
-   pluralName = "Blue Striped Perch";
 
    ItemID = 4;
    category = "fish";
    className = "food";
    shapeFile = "art/inv/food/bluestripedperch.dts";
    invIcon = "art/gui/icons/blue_striped_perch.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -323,31 +204,24 @@ datablock ItemData(Blue_Striped_Perch)
    emap = true;
    sticky = true;
 
-
-   cost = 20.000000;
-
+   cost = 20;
    table = "Food";
-   SubItemID = 152;
-   nutrition = 20.0;
-   drink = 0;
+   SubItemID = 4;
+   nutrition = 20;
 };
-$BloodClans::ItemNames[4] = "Blue_Striped_Perch";
+$AlterVerse::ItemNames[4] = "Blue_Striped_Perch";
 
 datablock ItemData(Boglin_Toes)
 {
-   pickupName = "Boglin Toe";
-   pluralName = "Boglin Toes";
 
-   ItemID = 139;
+   ItemID = 111;
    category = "tackle";
    className = "Bait";
    shapeFile = "art/inv/items/bait/boglintoes.dts";
    invIcon = "art/gui/icons/BoglinToes.jpg";
-   previewImage = "art/gui/icons/BoglinToes.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -355,25 +229,21 @@ datablock ItemData(Boglin_Toes)
    emap = true;
    sticky = true;
 
-
-   cost = 5.000000;
+   cost = 5;
 };
-$BloodClans::ItemNames[139] = "Boglin_Toes";
+$AlterVerse::ItemNames[111] = "Boglin_Toes";
 
 datablock ItemData(BoltAmmo)
 {
-   pickupName = "Crossbow Bolt";
 
    ItemID = 3;
    category = "ammo";
    className = "ammo";
    shapeFile = "art/inv/weapons/projectile.dts";
    invIcon = "art/gui/icons/ammo.jpg";
-   previewImage = "art/gui/icons/ammo.jpg";
    maxInventory = 100;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -381,26 +251,21 @@ datablock ItemData(BoltAmmo)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 };
-$BloodClans::ItemNames[3] = "BoltAmmo";
+$AlterVerse::ItemNames[3] = "BoltAmmo";
 
 datablock ItemData(Brook_Trout)
 {
-   pickupName = "Brook Trout";
-   pluralName = "Brook Trout";
 
-   ItemID = 10;
+   ItemID = 9;
    category = "fish";
    className = "food";
    shapeFile = "art/inv/food/brooktrout.dts";
    invIcon = "art/gui/icons/brook_trout.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -408,30 +273,24 @@ datablock ItemData(Brook_Trout)
    emap = true;
    sticky = true;
 
-
-   cost = 30.000000;
-
+   cost = 30;
    table = "Food";
-   SubItemID = 154;
-   nutrition = 30.0;
-   drink = 0;
+   SubItemID = 9;
+   nutrition = 30;
 };
-$BloodClans::ItemNames[10] = "Brook_Trout";
+$AlterVerse::ItemNames[9] = "Brook_Trout";
 
 datablock ItemData(Buckskin_Horse_Item)
 {
-   pickupName = "Buckskin Horse";
 
-   ItemID = 126;
+   ItemID = 108;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -439,25 +298,21 @@ datablock ItemData(Buckskin_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[126] = "Buckskin_Horse_Item";
+$AlterVerse::ItemNames[108] = "Buckskin_Horse_Item";
 
 datablock ItemData(CrossbowWeapon)
 {
-   pickupName = "Crossbow";
 
    ItemID = 2;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/crossbow/weapon.dts";
    invIcon = "art/gui/icons/crossbow.jpg";
-   previewImage = "art/gui/icons/crossbow.jpg";
    maxInventory = 2;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -465,47 +320,27 @@ datablock ItemData(CrossbowWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 500.000000;
+   cost = 500;
 
    table = "Weapons";
-   SubItemID = 24;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 0;
-   TwoHanded = 1;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 2;
    image = CrossbowImage;
-   ammo = boltAmmo;
-   skill_used = "Archery";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "none";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[2] = "CrossbowWeapon";
+$AlterVerse::ItemNames[2] = "CrossbowWeapon";
 
 datablock ItemData(DaggerWeapon)
 {
-   pickupName = "Dagger";
 
-   ItemID = 97;
+   ItemID = 81;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/dagger.jpg";
-   previewImage = "art/gui/icons/dagger.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "THROWN";
 
    mass = 2;
    friction = 1;
@@ -513,74 +348,27 @@ datablock ItemData(DaggerWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 
    table = "Weapons";
-   SubItemID = 165;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 81;
    image = DaggerImage;
-   ammo = DaggerAmmo;
-   effectWeap = "[THROWN]";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[97] = "DaggerWeapon";
-
-datablock ItemData(DaggerAmmo)
-{
-   pickupName = "Dagger";
-
-   ItemID = 98;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/dagger/dagger.dts";
-   invIcon = "art/gui/icons/dagger.jpg";
-   previewImage = "art/gui/icons/dagger.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10.000000;
-};
-$BloodClans::ItemNames[98] = "DaggerAmmo";
+$AlterVerse::ItemNames[81] = "DaggerWeapon";
 
 datablock ItemData(Deer_Hide)
 {
-   pickupName = "Deer Hide";
 
-   ItemID = 109;
+   ItemID = 92;
    category = "wool";
    className = "inv";
    shapeFile = "art/inv/items/deerhide/deerhide.dts";
    invIcon = "art/gui/icons/deerhide.jpg";
-   previewImage = "art/gui/icons/deerhide.jpg";
    maxInventory = 10;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -588,25 +376,21 @@ datablock ItemData(Deer_Hide)
    emap = true;
    sticky = true;
 
-
-   cost = 5000.000000;
+   cost = 5000;
 };
-$BloodClans::ItemNames[109] = "Deer_Hide";
+$AlterVerse::ItemNames[92] = "Deer_Hide";
 
 datablock ItemData(Emerald)
 {
-   pickupName = "Emerald";
 
-   ItemID = 26;
+   ItemID = 25;
    category = "gems";
    className = "gem";
    shapeFile = "art/inv/gems/emerald.dae";
    invIcon = "art/gui/icons/emerald.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
    maxInventory = 150;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -614,25 +398,21 @@ datablock ItemData(Emerald)
    emap = true;
    sticky = true;
 
-
-   cost = 300.000000;
+   cost = 300;
 };
-$BloodClans::ItemNames[26] = "Emerald";
+$AlterVerse::ItemNames[25] = "Emerald";
 
 datablock ItemData(Evil_Eye_Potion)
 {
-   pickupName = "Evil Eye Potion";
 
-   ItemID = 76;
+   ItemID = 63;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-1.dts";
    invIcon = "art/gui/icons/evil_eye_potion.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
    maxInventory = 10;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -640,25 +420,21 @@ datablock ItemData(Evil_Eye_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 100.000000;
+   cost = 100;
 };
-$BloodClans::ItemNames[76] = "Evil_Eye_Potion";
+$AlterVerse::ItemNames[63] = "Evil_Eye_Potion";
 
 datablock ItemData(Fishing_Pole)
 {
-   pickupName = "Fishing Pole";
 
-   ItemID = 138;
+   ItemID = 110;
    category = "tackle";
    className = "Pole";
    shapeFile = "art/inv/items/FishingPole/fishingpole.dts";
    invIcon = "art/gui/icons/fishingpole.jpg";
-   previewImage = "art/gui/icons/fishingpole.jpg";
    maxInventory = 1;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -666,25 +442,21 @@ datablock ItemData(Fishing_Pole)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 };
-$BloodClans::ItemNames[138] = "Fishing_Pole";
+$AlterVerse::ItemNames[110] = "Fishing_Pole";
 
 datablock ItemData(FJFemaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 99;
+   ItemID = 82;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Scimi/scimitar1_4.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -692,45 +464,27 @@ datablock ItemData(FJFemaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 168;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 82;
    image = FJFemaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[99] = "FJFemaleSwordWeapon";
+$AlterVerse::ItemNames[82] = "FJFemaleSwordWeapon";
 
 datablock ItemData(FJMaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 100;
+   ItemID = 83;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Scimi/scimitar1_4.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -738,179 +492,124 @@ datablock ItemData(FJMaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 167;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 83;
    image = FJMaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[100] = "FJMaleSwordWeapon";
+$AlterVerse::ItemNames[83] = "FJMaleSwordWeapon";
 
 datablock ItemData(FlintlockWeapon)
 {
-   pickupName = "Rusty Flintlock";
-
-   ItemID = 59;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/flintloc/flintlock.dts";
-   invIcon = "art/gui/icons/flintlock.jpg";
-   previewImage = "art/gui/icons/flintlock.jpg";
-   maxInventory = 2;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 600.000000;
-
-   table = "Weapons";
-   SubItemID = 158;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 1;
-   indestructible = 0;
-   ranged = 1;
-   image = FlintlockImage;
-   ammo = ShotAmmo;
-   effectWeap = "[RIFLE]";
-   skill_used = "Firearms";
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
-};
-$BloodClans::ItemNames[59] = "FlintlockWeapon";
-
-datablock ItemData(Gargoyles_Fire_Balls)
-{
-   pickupName = "Gargoyles Fire Balls";
-
-   ItemID = 84;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/garballs/garballs.dts";
-   invIcon = "art/gui/icons/Gargoyles_Fire_Balls.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 6;
-   keepOnDeath = 1;
-   skullLevel = 6;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 6000.000000;
-};
-$BloodClans::ItemNames[84] = "Gargoyles_Fire_Balls";
-
-datablock ItemData(Grasshoppers)
-{
-   pickupName = "Grasshopper";
-   pluralName = "Grasshoppers";
-
-   ItemID = 141;
-   category = "tackle";
-   className = "Bait";
-   shapeFile = "art/inv/items/bait/ghoppers.dts";
-   invIcon = "art/gui/icons/GHoppers.jpg";
-   previewImage = "art/gui/icons/GHoppers.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 2.000000;
-};
-$BloodClans::ItemNames[141] = "Grasshoppers";
-
-datablock ItemData(Green_Gill)
-{
-   pickupName = "Green Gill";
-   pluralName = "Green Gill";
-
-   ItemID = 8;
-   category = "fish";
-   className = "food";
-   shapeFile = "art/inv/food/greengill.dts";
-   invIcon = "art/gui/icons/green_gill.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 25.000000;
-
-   table = "Food";
-   SubItemID = 151;
-   nutrition = 25.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[8] = "Green_Gill";
-
-datablock ItemData(GrenadeWeapon)
-{
-   pickupName = "Grenade";
 
    ItemID = 47;
    category = "weapons";
    className = "wpn";
+   shapeFile = "art/inv/weapons/flintloc/flintlock.dts";
+   invIcon = "art/gui/icons/flintlock.jpg";
+   maxInventory = 2;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 600;
+
+   table = "Weapons";
+   SubItemID = 47;
+   image = FlintlockImage;
+   effectWeap = "none";
+   reticle = "reticle_rocketlauncher";
+};
+$AlterVerse::ItemNames[47] = "FlintlockWeapon";
+
+datablock ItemData(Gargoyles_Fire_Balls)
+{
+
+   ItemID = 71;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/garballs/garballs.dts";
+   invIcon = "art/gui/icons/Gargoyles_Fire_Balls.jpg";
+   maxInventory = 6;
+   keepOnDeath = 1;
+   skullLevel = 6;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 6000;
+};
+$AlterVerse::ItemNames[71] = "Gargoyles_Fire_Balls";
+
+datablock ItemData(Grasshoppers)
+{
+
+   ItemID = 113;
+   category = "tackle";
+   className = "Bait";
+   shapeFile = "art/inv/items/bait/ghoppers.dts";
+   invIcon = "art/gui/icons/GHoppers.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 2;
+};
+$AlterVerse::ItemNames[113] = "Grasshoppers";
+
+datablock ItemData(Green_Gill)
+{
+
+   ItemID = 7;
+   category = "fish";
+   className = "food";
+   shapeFile = "art/inv/food/greengill.dts";
+   invIcon = "art/gui/icons/green_gill.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 25;
+   table = "Food";
+   SubItemID = 7;
+   nutrition = 25;
+};
+$AlterVerse::ItemNames[7] = "Green_Gill";
+
+datablock ItemData(GrenadeWeapon)
+{
+
+   ItemID = 40;
+   category = "weapons";
+   className = "wpn";
    shapeFile = "art/inv/weapons/grenade/grenade.dts";
    invIcon = "art/gui/icons/grenade.jpg";
-   previewImage = "art/gui/icons/grenade.jpg";
    maxInventory = 50;
    keepOnDeath = 0;
    skullLevel = 5;
-   effect = "THROWN";
 
    mass = 2;
    friction = 1;
@@ -918,72 +617,27 @@ datablock ItemData(GrenadeWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 200.000000;
+   cost = 200;
 
    table = "Weapons";
-   SubItemID = 153;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 40;
    image = GrenadeImage;
-   ammo = GrenadeAmmo;
-   delay = 10;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[47] = "GrenadeWeapon";
-
-datablock ItemData(GrenadeAmmo)
-{
-   pickupName = "Grenade";
-
-   ItemID = 48;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/grenade/grenade.dts";
-   invIcon = "art/gui/icons/grenade.jpg";
-   previewImage = "art/gui/icons/grenade.jpg";
-   maxInventory = 5;
-   keepOnDeath = 0;
-   skullLevel = 5;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 0.000000;
-};
-$BloodClans::ItemNames[48] = "GrenadeAmmo";
+$AlterVerse::ItemNames[40] = "GrenadeWeapon";
 
 datablock ItemData(Ham)
 {
-   pickupName = "Ham";
 
-   ItemID = 51;
+   ItemID = 42;
    category = "food";
    className = "food";
    shapeFile = "art/inv/food/Ham.dts";
    invIcon = "art/gui/icons/ham.jpg";
-   previewImage = "art/gui/icons/food.jpg";
    maxInventory = 10;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -991,30 +645,24 @@ datablock ItemData(Ham)
    emap = true;
    sticky = true;
 
-
-   cost = 60.000000;
-
+   cost = 60;
    table = "Food";
-   SubItemID = 217;
-   nutrition = 60.0;
-   drink = 0;
+   SubItemID = 42;
+   nutrition = 60;
 };
-$BloodClans::ItemNames[51] = "Ham";
+$AlterVerse::ItemNames[42] = "Ham";
 
 datablock ItemData(HammerWeapon)
 {
-   pickupName = "Hammer";
 
-   ItemID = 41;
+   ItemID = 36;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Hammer/Hammer.dts";
    invIcon = "art/gui/icons/hammer.jpg";
-   previewImage = "art/gui/icons/hammer.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "THROWN";
 
    mass = 2;
    friction = 1;
@@ -1022,49 +670,27 @@ datablock ItemData(HammerWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 
    table = "Weapons";
-   SubItemID = 151;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 36;
    image = HammerImage;
-   ammo = HammerAmmo;
-   effectWeap = "[THROWN]";
-   exclusive = " ";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/shapes/weapons/crossbow/crossbow.jpg";
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[41] = "HammerWeapon";
+$AlterVerse::ItemNames[36] = "HammerWeapon";
 
 datablock ItemData(Huge_Gold_Nugget)
 {
-   pickupName = "Huge Gold Nugget";
 
-   ItemID = 16;
+   ItemID = 15;
    category = "mineral";
    className = "gem";
    shapeFile = "art/inv/Gems/nugget_g_h.dae";
    invIcon = "art/gui/icons/huge_gold_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
    maxInventory = 2;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1072,25 +698,21 @@ datablock ItemData(Huge_Gold_Nugget)
    emap = true;
    sticky = true;
 
-
-   cost = 1000.000000;
+   cost = 1000;
 };
-$BloodClans::ItemNames[16] = "Huge_Gold_Nugget";
+$AlterVerse::ItemNames[15] = "Huge_Gold_Nugget";
 
 datablock ItemData(Human_Torch_Potion)
 {
-   pickupName = "Human Torch Potion";
 
-   ItemID = 72;
+   ItemID = 59;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-2.dts";
    invIcon = "art/gui/icons/Human_Torch_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1098,25 +720,21 @@ datablock ItemData(Human_Torch_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 2000.000000;
+   cost = 2000;
 };
-$BloodClans::ItemNames[72] = "Human_Torch_Potion";
+$AlterVerse::ItemNames[59] = "Human_Torch_Potion";
 
 datablock ItemData(InsectInside_Potion)
 {
-   pickupName = "InsectInside Potion";
 
-   ItemID = 73;
+   ItemID = 60;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-3.dts";
    invIcon = "art/gui/icons/InsectInside_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1124,25 +742,21 @@ datablock ItemData(InsectInside_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 2000.000000;
+   cost = 2000;
 };
-$BloodClans::ItemNames[73] = "InsectInside_Potion";
+$AlterVerse::ItemNames[60] = "InsectInside_Potion";
 
 datablock ItemData(Invisibility_Rune)
 {
-   pickupName = "Invisibility Rune";
 
-   ItemID = 71;
+   ItemID = 58;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/Runes/rIrune.dts";
    invIcon = "art/gui/icons/Invisibility_Rune.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 10;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1150,25 +764,21 @@ datablock ItemData(Invisibility_Rune)
    emap = true;
    sticky = true;
 
-
-   cost = 500.000000;
+   cost = 500;
 };
-$BloodClans::ItemNames[71] = "Invisibility_Rune";
+$AlterVerse::ItemNames[58] = "Invisibility_Rune";
 
 datablock ItemData(JavelinWeapon)
 {
-   pickupName = "Javelin";
 
-   ItemID = 86;
+   ItemID = 73;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Javelin/Javelin.dts";
    invIcon = "art/gui/icons/Javelin.jpg";
-   previewImage = "art/gui/icons/javelin.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "THROWN";
 
    mass = 2;
    friction = 1;
@@ -1176,74 +786,27 @@ datablock ItemData(JavelinWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 
    table = "Weapons";
-   SubItemID = 160;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 73;
    image = JavelinImage;
-   ammo = JavelinAmmo;
-   effectWeap = "[THROWN]";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[86] = "JavelinWeapon";
-
-datablock ItemData(JavelinAmmo)
-{
-   pickupName = "Javelin";
-
-   ItemID = 87;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/Javelin/Javelin.dts";
-   invIcon = "art/gui/icons/Javelin.jpg";
-   previewImage = "art/gui/icons/javelin.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10.000000;
-};
-$BloodClans::ItemNames[87] = "JavelinAmmo";
+$AlterVerse::ItemNames[73] = "JavelinWeapon";
 
 datablock ItemData(KardFemaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 101;
+   ItemID = 84;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1251,45 +814,27 @@ datablock ItemData(KardFemaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 170;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 84;
    image = KardFemaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[101] = "KardFemaleSwordWeapon";
+$AlterVerse::ItemNames[84] = "KardFemaleSwordWeapon";
 
 datablock ItemData(KardMaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 102;
+   ItemID = 85;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1297,45 +842,27 @@ datablock ItemData(KardMaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 169;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 85;
    image = KardMaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[102] = "KardMaleSwordWeapon";
+$AlterVerse::ItemNames[85] = "KardMaleSwordWeapon";
 
 datablock ItemData(Lamp_Oil)
 {
-   pickupName = "Lamp Oil";
 
-   ItemID = 89;
+   ItemID = 75;
    category = "misc";
    className = "inv";
    shapeFile = "art/inv/magic/potions/pbottle5-2.dts";
    invIcon = "art/gui/icons/Lamp_Oil.jpg";
-   previewImage = "art/gui/icons/Lamp_Oil.jpg";
    maxInventory = 30;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1343,25 +870,21 @@ datablock ItemData(Lamp_Oil)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 };
-$BloodClans::ItemNames[89] = "Lamp_Oil";
+$AlterVerse::ItemNames[75] = "Lamp_Oil";
 
 datablock ItemData(Lantern)
 {
-   pickupName = "Lantern";
 
-   ItemID = 88;
+   ItemID = 74;
    category = "misc";
    className = "inv";
    shapeFile = "art/inv/items/Lantern/Lantern.dts";
    invIcon = "art/gui/icons/Lantern.jpg";
-   previewImage = "art/gui/icons/Lantern.jpg";
    maxInventory = 2;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1369,327 +892,21 @@ datablock ItemData(Lantern)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 };
-$BloodClans::ItemNames[88] = "Lantern";
+$AlterVerse::ItemNames[74] = "Lantern";
 
 datablock ItemData(Large_Diamond)
 {
-   pickupName = "Large Diamond";
-
-   ItemID = 23;
-   category = "gems";
-   className = "gem";
-   shapeFile = "art/inv/gems/diamondLarge.dae";
-   invIcon = "art/gui/icons/large_diamond.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 600.000000;
-};
-$BloodClans::ItemNames[23] = "Large_Diamond";
-
-datablock ItemData(Large_Gold_Nugget)
-{
-   pickupName = "Large Gold Nugget";
-
-   ItemID = 34;
-   category = "mineral";
-   className = "gem";
-   shapeFile = "art/inv/Gems/nugget_g_l.dae";
-   invIcon = "art/gui/icons/large_gold_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 400.000000;
-};
-$BloodClans::ItemNames[34] = "Large_Gold_Nugget";
-
-datablock ItemData(Large_Silver_Nugget)
-{
-   pickupName = "Large Silver Nugget";
-
-   ItemID = 61;
-   category = "mineral";
-   className = "gem";
-   shapeFile = "art/inv/Gems/SilverNuggetLg.dts";
-   invIcon = "art/gui/icons/silver_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 400.000000;
-};
-$BloodClans::ItemNames[61] = "Large_Silver_Nugget";
-
-datablock ItemData(Laser_Drone)
-{
-   pickupName = "Laser Drone";
-
-   ItemID = 85;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/occams/laserDrone.dts";
-   invIcon = "art/gui/icons/Laser_Drone.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 9;
-   keepOnDeath = 1;
-   skullLevel = 9;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 9000.000000;
-};
-$BloodClans::ItemNames[85] = "Laser_Drone";
-
-datablock ItemData(Leaf_Me_Alone_Potion)
-{
-   pickupName = "Leaf Me Alone Potion";
-
-   ItemID = 74;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/potions/pbottle3-4.dts";
-   invIcon = "art/gui/icons/Leaf_Me_Alone_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
-   maxInventory = 3;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 2000.000000;
-};
-$BloodClans::ItemNames[74] = "Leaf_Me_Alone_Potion";
-
-datablock ItemData(Lemon)
-{
-   pickupName = "Lemon";
-
-   ItemID = 19;
-   category = "food";
-   className = "food";
-   shapeFile = "art/inv/food/lemon.dts";
-   invIcon = "art/gui/icons/lemon.jpg";
-   previewImage = "art/gui/icons/food.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 15.000000;
-
-   table = "Food";
-   SubItemID = 184;
-   nutrition = 15.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[19] = "Lemon";
-
-datablock ItemData(Level_3_Badge)
-{
-   pickupName = "Skull Level 3 Badge";
-
-   ItemID = 92;
-   category = "misc";
-   className = "gem";
-   shapeFile = "art/inv/items/levelBadges/lvl3badge.dts";
-   invIcon = "art/gui/icons/coin.jpg";
-   previewImage = "art/gui/icons/coin.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 3;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 0.000000;
-};
-$BloodClans::ItemNames[92] = "Level_3_Badge";
-
-datablock ItemData(Levitation_Rune)
-{
-   pickupName = "Levitation Rune";
-
-   ItemID = 79;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/Runes/rVIIIrune.dts";
-   invIcon = "art/gui/icons/Levitation_Rune.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 10;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 100.000000;
-};
-$BloodClans::ItemNames[79] = "Levitation_Rune";
-
-datablock ItemData(Lime)
-{
-   pickupName = "Lime";
-
-   ItemID = 20;
-   category = "food";
-   className = "food";
-   shapeFile = "art/inv/food/lime.dts";
-   invIcon = "art/gui/icons/lime.jpg";
-   previewImage = "art/gui/icons/food.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 20.000000;
-
-   table = "Food";
-   SubItemID = 194;
-   nutrition = 20.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[20] = "Lime";
-
-datablock ItemData(Loaf_of_Bread)
-{
-   pickupName = "Loaf of Bread";
-   pluralName = "Loaves of Bread";
-
-   ItemID = 17;
-   category = "food";
-   className = "food";
-   shapeFile = "art/inv/food/bread.dae";
-   invIcon = "art/gui/icons/loaf_of_bread.jpg";
-   previewImage = "art/gui/icons/food.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 40.000000;
-
-   table = "Food";
-   SubItemID = 15;
-   nutrition = 40.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[17] = "Loaf_of_Bread";
-
-datablock ItemData(Magical_Key)
-{
-   pickupName = "Magical Key";
-
-   ItemID = 56;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/HODKey/HoDKey.dae";
-   invIcon = "art/gui/icons/key.jpg";
-   previewImage = "art/gui/icons/key.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 4;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 100.000000;
-};
-$BloodClans::ItemNames[56] = "Magical_Key";
-
-datablock ItemData(Medium_Diamond)
-{
-   pickupName = "Medium Diamond";
 
    ItemID = 22;
    category = "gems";
    className = "gem";
-   shapeFile = "art/inv/gems/diamondMed.dae";
-   invIcon = "art/gui/icons/medium_diamond.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 100;
+   shapeFile = "art/inv/gems/diamondLarge.dae";
+   invIcon = "art/gui/icons/large_diamond.jpg";
+   maxInventory = 50;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1697,25 +914,272 @@ datablock ItemData(Medium_Diamond)
    emap = true;
    sticky = true;
 
-
-   cost = 340.000000;
+   cost = 600;
 };
-$BloodClans::ItemNames[22] = "Medium_Diamond";
+$AlterVerse::ItemNames[22] = "Large_Diamond";
+
+datablock ItemData(Large_Gold_Nugget)
+{
+
+   ItemID = 32;
+   category = "mineral";
+   className = "gem";
+   shapeFile = "art/inv/Gems/nugget_g_l.dae";
+   invIcon = "art/gui/icons/large_gold_nugget.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 400;
+};
+$AlterVerse::ItemNames[32] = "Large_Gold_Nugget";
+
+datablock ItemData(Large_Silver_Nugget)
+{
+
+   ItemID = 49;
+   category = "mineral";
+   className = "gem";
+   shapeFile = "art/inv/Gems/SilverNuggetLg.dts";
+   invIcon = "art/gui/icons/silver_nugget.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 400;
+};
+$AlterVerse::ItemNames[49] = "Large_Silver_Nugget";
+
+datablock ItemData(Laser_Drone)
+{
+
+   ItemID = 72;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/occams/laserDrone.dts";
+   invIcon = "art/gui/icons/Laser_Drone.jpg";
+   maxInventory = 9;
+   keepOnDeath = 1;
+   skullLevel = 9;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 9000;
+};
+$AlterVerse::ItemNames[72] = "Laser_Drone";
+
+datablock ItemData(Leaf_Me_Alone_Potion)
+{
+
+   ItemID = 61;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle3-4.dts";
+   invIcon = "art/gui/icons/Leaf_Me_Alone_Potion.jpg";
+   maxInventory = 3;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 2000;
+};
+$AlterVerse::ItemNames[61] = "Leaf_Me_Alone_Potion";
+
+datablock ItemData(Lemon)
+{
+
+   ItemID = 18;
+   category = "food";
+   className = "food";
+   shapeFile = "art/inv/food/lemon.dts";
+   invIcon = "art/gui/icons/lemon.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 15;
+   table = "Food";
+   SubItemID = 18;
+   nutrition = 15;
+};
+$AlterVerse::ItemNames[18] = "Lemon";
+
+datablock ItemData(Level_3_Badge)
+{
+
+   ItemID = 77;
+   category = "misc";
+   className = "gem";
+   shapeFile = "art/inv/items/levelBadges/lvl3badge.dts";
+   invIcon = "art/gui/icons/coin.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 3;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+};
+$AlterVerse::ItemNames[77] = "Level_3_Badge";
+
+datablock ItemData(Levitation_Rune)
+{
+
+   ItemID = 66;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/Runes/rVIIIrune.dts";
+   invIcon = "art/gui/icons/Levitation_Rune.jpg";
+   maxInventory = 10;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+};
+$AlterVerse::ItemNames[66] = "Levitation_Rune";
+
+datablock ItemData(Lime)
+{
+
+   ItemID = 19;
+   category = "food";
+   className = "food";
+   shapeFile = "art/inv/food/lime.dts";
+   invIcon = "art/gui/icons/lime.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 20;
+   table = "Food";
+   SubItemID = 19;
+   nutrition = 20;
+};
+$AlterVerse::ItemNames[19] = "Lime";
+
+datablock ItemData(Loaf_of_Bread)
+{
+
+   ItemID = 16;
+   category = "food";
+   className = "food";
+   shapeFile = "art/inv/food/bread.dae";
+   invIcon = "art/gui/icons/loaf_of_bread.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 40;
+   table = "Food";
+   SubItemID = 16;
+   nutrition = 40;
+};
+$AlterVerse::ItemNames[16] = "Loaf_of_Bread";
+
+datablock ItemData(Magical_Key)
+{
+
+   ItemID = 45;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/HODKey/HoDKey.dae";
+   invIcon = "art/gui/icons/key.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 4;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+};
+$AlterVerse::ItemNames[45] = "Magical_Key";
+
+datablock ItemData(Medium_Diamond)
+{
+
+   ItemID = 21;
+   category = "gems";
+   className = "gem";
+   shapeFile = "art/inv/gems/diamondMed.dae";
+   invIcon = "art/gui/icons/medium_diamond.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 340;
+};
+$AlterVerse::ItemNames[21] = "Medium_Diamond";
 
 datablock ItemData(Medium_Silver_Nugget)
 {
-   pickupName = "Medium Silver Nugget";
 
-   ItemID = 62;
+   ItemID = 50;
    category = "mineral";
    className = "gem";
    shapeFile = "art/inv/Gems/SilverNuggetMed.dts";
    invIcon = "art/gui/icons/silver_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1723,26 +1187,21 @@ datablock ItemData(Medium_Silver_Nugget)
    emap = true;
    sticky = true;
 
-
-   cost = 200.000000;
+   cost = 200;
 };
-$BloodClans::ItemNames[62] = "Medium_Silver_Nugget";
+$AlterVerse::ItemNames[50] = "Medium_Silver_Nugget";
 
 datablock ItemData(Minnows)
 {
-   pickupName = "Minnow";
-   pluralName = "Minnows";
 
-   ItemID = 142;
+   ItemID = 114;
    category = "tackle";
    className = "Bait";
    shapeFile = "art/inv/items/bait/minnows.dts";
    invIcon = "art/gui/icons/Minnows.jpg";
-   previewImage = "art/gui/icons/Minnows.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1750,26 +1209,21 @@ datablock ItemData(Minnows)
    emap = true;
    sticky = true;
 
-
-   cost = 3.000000;
+   cost = 3;
 };
-$BloodClans::ItemNames[142] = "Minnows";
+$AlterVerse::ItemNames[114] = "Minnows";
 
 datablock ItemData(Mudfish)
 {
-   pickupName = "Mudfish";
-   pluralName = "Mudfish";
 
-   ItemID = 15;
+   ItemID = 14;
    category = "fish";
    className = "food";
    shapeFile = "art/inv/food/mudfish.dts";
    invIcon = "art/gui/icons/mudfish.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1777,30 +1231,24 @@ datablock ItemData(Mudfish)
    emap = true;
    sticky = true;
 
-
-   cost = 15.000000;
-
+   cost = 15;
    table = "Food";
-   SubItemID = 157;
-   nutrition = 15.0;
-   drink = 0;
+   SubItemID = 14;
+   nutrition = 15;
 };
-$BloodClans::ItemNames[15] = "Mudfish";
+$AlterVerse::ItemNames[14] = "Mudfish";
 
 datablock ItemData(Multi_Mine_Potion)
 {
-   pickupName = "Multi Mine Potion";
 
-   ItemID = 75;
+   ItemID = 62;
    category = "magic";
-   className = "inv";
+   className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-8.dts";
    invIcon = "art/gui/icons/Multi_Mine_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
    maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1808,25 +1256,21 @@ datablock ItemData(Multi_Mine_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 2000.000000;
+   cost = 2000;
 };
-$BloodClans::ItemNames[75] = "Multi_Mine_Potion";
+$AlterVerse::ItemNames[62] = "Multi_Mine_Potion";
 
 datablock ItemData(Mustang_Horse_Item)
 {
-   pickupName = "Spotted Horse";
 
-   ItemID = 127;
+   ItemID = 109;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1834,25 +1278,21 @@ datablock ItemData(Mustang_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[127] = "Mustang_Horse_Item";
+$AlterVerse::ItemNames[109] = "Mustang_Horse_Item";
 
 datablock ItemData(MythFemaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 106;
+   ItemID = 89;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/l_sword/longsword.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1860,45 +1300,27 @@ datablock ItemData(MythFemaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 173;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 89;
    image = MythFemaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[106] = "MythFemaleSwordWeapon";
+$AlterVerse::ItemNames[89] = "MythFemaleSwordWeapon";
 
 datablock ItemData(MythMaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 103;
+   ItemID = 86;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/l_sword/longsword.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1906,46 +1328,27 @@ datablock ItemData(MythMaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 166;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 86;
    image = MythMaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[103] = "MythMaleSwordWeapon";
+$AlterVerse::ItemNames[86] = "MythMaleSwordWeapon";
 
 datablock ItemData(Nightcrawlers)
 {
-   pickupName = "NightCrawler";
-   pluralName = "Nightcrawlers";
 
-   ItemID = 140;
+   ItemID = 112;
    category = "tackle";
    className = "Bait";
    shapeFile = "art/inv/items/bait/nightcrawlers.dts";
    invIcon = "art/gui/icons/NightCrawlers.jpg";
-   previewImage = "art/gui/icons/NightCrawlers.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1953,26 +1356,21 @@ datablock ItemData(Nightcrawlers)
    emap = true;
    sticky = true;
 
-
-   cost = 2.000000;
+   cost = 2;
 };
-$BloodClans::ItemNames[140] = "Nightcrawlers";
+$AlterVerse::ItemNames[112] = "Nightcrawlers";
 
 datablock ItemData(Orange_Sea_Bass)
 {
-   pickupName = "Bright Orange Sea Bass";
-   pluralName = "Bright Orange Sea Bass";
 
    ItemID = 6;
    category = "fish";
    className = "food";
    shapeFile = "art/inv/food/orangeseabass.dts";
    invIcon = "art/gui/icons/orange_sea_bass.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -1980,30 +1378,24 @@ datablock ItemData(Orange_Sea_Bass)
    emap = true;
    sticky = true;
 
-
-   cost = 40.000000;
-
+   cost = 40;
    table = "Food";
-   SubItemID = 156;
-   nutrition = 40.0;
-   drink = 0;
+   SubItemID = 6;
+   nutrition = 40;
 };
-$BloodClans::ItemNames[6] = "Orange_Sea_Bass";
+$AlterVerse::ItemNames[6] = "Orange_Sea_Bass";
 
 datablock ItemData(Painted_Horse_Item)
 {
-   pickupName = "Painted Horse";
 
-   ItemID = 125;
+   ItemID = 107;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -2011,25 +1403,21 @@ datablock ItemData(Painted_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[125] = "Painted_Horse_Item";
+$AlterVerse::ItemNames[107] = "Painted_Horse_Item";
 
 datablock ItemData(Palimino_Horse_Item)
 {
-   pickupName = "Gray Horse";
 
-   ItemID = 124;
+   ItemID = 106;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/dagger/dagger.dts";
    invIcon = "art/gui/icons/horse.jpg";
-   previewImage = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -2037,837 +1425,661 @@ datablock ItemData(Palimino_Horse_Item)
    emap = true;
    sticky = true;
 
-
-   cost = 3000.000000;
+   cost = 3000;
 };
-$BloodClans::ItemNames[124] = "Palimino_Horse_Item";
+$AlterVerse::ItemNames[106] = "Palimino_Horse_Item";
 
 datablock ItemData(Pike)
 {
-   pickupName = "Pike";
-   pluralName = "Pike";
-
-   ItemID = 12;
-   category = "fish";
-   className = "food";
-   shapeFile = "art/inv/food/pike.dts";
-   invIcon = "art/gui/icons/pike.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 40.000000;
-
-   table = "Food";
-   SubItemID = 155;
-   nutrition = 30.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[12] = "Pike";
-
-datablock ItemData(Rainbow_Trout)
-{
-   pickupName = "Rainbow Trout";
-   pluralName = "Rainbow Trout";
-
-   ItemID = 14;
-   category = "fish";
-   className = "food";
-   shapeFile = "art/inv/food/rainbowtrout.dts";
-   invIcon = "art/gui/icons/rainbow_trout.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 35.000000;
-
-   table = "Food";
-   SubItemID = 166;
-   nutrition = 35.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[14] = "Rainbow_Trout";
-
-datablock ItemData(Red_Devil)
-{
-   pickupName = "Red Devil";
-
-   ItemID = 13;
-   category = "fish";
-   className = "food";
-   shapeFile = "art/inv/food/reddevil.dts";
-   invIcon = "art/gui/icons/red_devil.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 120.000000;
-
-   table = "Food";
-   SubItemID = 162;
-   nutrition = 35.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[13] = "Red_Devil";
-
-datablock ItemData(Red_Head)
-{
-   pickupName = "Red Head";
-   pluralName = "Red Head";
-
-   ItemID = 9;
-   category = "fish";
-   className = "food";
-   shapeFile = "art/inv/food/redhead.dts";
-   invIcon = "art/gui/icons/red_head.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 20.000000;
-
-   table = "Food";
-   SubItemID = 158;
-   nutrition = 20.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[9] = "Red_Head";
-
-datablock ItemData(Ring_of_Fire_Rune)
-{
-   pickupName = "Ring of Fire Rune";
-
-   ItemID = 78;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/Runes/rIXrune.dts";
-   invIcon = "art/gui/icons/Ring_Of_Fire_Rune.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 3;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1500.000000;
-};
-$BloodClans::ItemNames[78] = "Ring_of_Fire_Rune";
-
-datablock ItemData(Roast)
-{
-   pickupName = "Roast";
-
-   ItemID = 32;
-   category = "food";
-   className = "food";
-   shapeFile = "art/inv/food/meat_roll.dts";
-   invIcon = "art/gui/icons/roast.jpg";
-   previewImage = "art/gui/icons/food.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 50.000000;
-
-   table = "Food";
-   SubItemID = 208;
-   nutrition = 50.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[32] = "Roast";
-
-datablock ItemData(Ruby)
-{
-   pickupName = "Ruby";
-
-   ItemID = 24;
-   category = "gems";
-   className = "gem";
-   shapeFile = "art/inv/gems/ruby.dae";
-   invIcon = "art/gui/icons/ruby.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 400.000000;
-};
-$BloodClans::ItemNames[24] = "Ruby";
-
-datablock ItemData(Sapphire)
-{
-   pickupName = "Sapphire";
-
-   ItemID = 25;
-   category = "gems";
-   className = "gem";
-   shapeFile = "art/inv/gems/sapphire.dae";
-   invIcon = "art/gui/icons/sapphire.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 200;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 200.000000;
-};
-$BloodClans::ItemNames[25] = "Sapphire";
-
-datablock ItemData(Sazzons_Scepter)
-{
-   pickupName = "Sazzons Scepter";
-
-   ItemID = 81;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/s_scepter/scepter.dts";
-   invIcon = "art/gui/icons/Sazzons_Scepter.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 7;
-   keepOnDeath = 1;
-   skullLevel = 7;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 7000.000000;
-};
-$BloodClans::ItemNames[81] = "Sazzons_Scepter";
-
-datablock ItemData(Shard_of_Boltarc)
-{
-   pickupName = "Shard of Boltarc";
-   pluralName = "Shards of Boltarc";
-
-   ItemID = 65;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/shard/shardofboltarc.dts";
-   invIcon = "art/gui/icons/Shard_of_Boltarc.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 10;
-   keepOnDeath = 1;
-   skullLevel = 10;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10000.000000;
-};
-$BloodClans::ItemNames[65] = "Shard_of_Boltarc";
-
-datablock ItemData(Shards_of_Ice_Crystal)
-{
-   pickupName = "Shards of Ice Crystal";
-
-   ItemID = 80;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/Crystals/crys5_Small.dts";
-   invIcon = "art/gui/icons/shards_of_ice_crystal.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 5;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 800.000000;
-};
-$BloodClans::ItemNames[80] = "Shards_of_Ice_Crystal";
-
-datablock ItemData(Shark_Steak)
-{
-   pickupName = "Shark Steak";
-
-   ItemID = 27;
-   category = "food";
-   className = "food";
-   shapeFile = "art/inv/food/sharksteak.dts";
-   invIcon = "art/gui/icons/shark_steak.jpg";
-   previewImage = "art/gui/icons/food.jpg";
-   maxInventory = 10;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 80.000000;
-
-   table = "Food";
-   SubItemID = 200;
-   nutrition = 80.0;
-   drink = 0;
-};
-$BloodClans::ItemNames[27] = "Shark_Steak";
-
-datablock ItemData(Shieldof10_1)
-{
-   pickupName = "Shield 1";
-
-   ItemID = 110;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion1.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[110] = "Shieldof10_1";
-
-datablock ItemData(Shieldof10_10)
-{
-   pickupName = "Shield 10";
-
-   ItemID = 119;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion10.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[119] = "Shieldof10_10";
-
-datablock ItemData(Shieldof10_2)
-{
-   pickupName = "Shield 2";
-
-   ItemID = 111;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion2.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[111] = "Shieldof10_2";
-
-datablock ItemData(Shieldof10_3)
-{
-   pickupName = "Shield 3";
-
-   ItemID = 112;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion3.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[112] = "Shieldof10_3";
-
-datablock ItemData(Shieldof10_4)
-{
-   pickupName = "Shield 4";
-
-   ItemID = 113;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion4.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[113] = "Shieldof10_4";
-
-datablock ItemData(Shieldof10_5)
-{
-   pickupName = "Shield 5";
-
-   ItemID = 114;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion5.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[114] = "Shieldof10_5";
-
-datablock ItemData(Shieldof10_6)
-{
-   pickupName = "Shield 6";
-
-   ItemID = 115;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion6.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[115] = "Shieldof10_6";
-
-datablock ItemData(Shieldof10_7)
-{
-   pickupName = "Shield 7";
-
-   ItemID = 116;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion7.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[116] = "Shieldof10_7";
-
-datablock ItemData(Shieldof10_8)
-{
-   pickupName = "Shield 8";
-
-   ItemID = 117;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion8.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[117] = "Shieldof10_8";
-
-datablock ItemData(Shieldof10_9)
-{
-   pickupName = "Shield 9";
-
-   ItemID = 118;
-   category = "misc";
-   className = "inv";
-   shapeFile = "art/inv/items/medallions/medallion9.dts";
-   invIcon = "art/gui/icons/shieldof10.jpg";
-   previewImage = "art/gui/icons/shieldof10.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1000.000000;
-};
-$BloodClans::ItemNames[118] = "Shieldof10_9";
-
-datablock ItemData(ShotAmmo)
-{
-   pickupName = "Flintlock Shot";
-
-   ItemID = 60;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/flintloc/shot.dae";
-   invIcon = "art/gui/icons/wpn.jpg";
-   previewImage = "art/gui/icons/ammo.jpg";
-   maxInventory = 100;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1.000000;
-};
-$BloodClans::ItemNames[60] = "ShotAmmo";
-
-datablock ItemData(SlingDartWeapon)
-{
-   pickupName = "Sling Dart";
-
-   ItemID = 95;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/dart/slingdart.dts";
-   invIcon = "art/gui/icons/slingdart.jpg";
-   previewImage = "art/gui/icons/slingdart.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "THROWN";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10.000000;
-
-   table = "Weapons";
-   SubItemID = 164;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
-   image = SlingDartImage;
-   ammo = SlingDartAmmo;
-   effectWeap = "[THROWN]";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
-};
-$BloodClans::ItemNames[95] = "SlingDartWeapon";
-
-datablock ItemData(SlingDartAmmo)
-{
-   pickupName = "Sling Dart";
-
-   ItemID = 96;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/dart/slingdart.dts";
-   invIcon = "art/gui/icons/slingdart.jpg";
-   previewImage = "art/gui/icons/slingdart.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 10.000000;
-};
-$BloodClans::ItemNames[96] = "SlingDartAmmo";
-
-datablock ItemData(Small_Diamond)
-{
-   pickupName = "Small Diamond";
-
-   ItemID = 21;
-   category = "gems";
-   className = "gem";
-   shapeFile = "art/inv/gems/diamond.dae";
-   invIcon = "art/gui/icons/small_diamond.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 300;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 140.000000;
-};
-$BloodClans::ItemNames[21] = "Small_Diamond";
-
-datablock ItemData(Small_Gold_Nugget)
-{
-   pickupName = "Small Gold Nugget";
-
-   ItemID = 43;
-   category = "mineral";
-   className = "gem";
-   shapeFile = "art/inv/Gems/nugget_g_s.dae";
-   invIcon = "art/gui/icons/small_gold_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 150;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 100.000000;
-};
-$BloodClans::ItemNames[43] = "Small_Gold_Nugget";
-
-datablock ItemData(Small_Silver_Nugget)
-{
-   pickupName = "Small Silver Nugget";
-
-   ItemID = 63;
-   category = "mineral";
-   className = "gem";
-   shapeFile = "art/inv/Gems/SilverNuggetSm.dts";
-   invIcon = "art/gui/icons/silver_nugget.jpg";
-   previewImage = "art/gui/icons/gem.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 60.000000;
-};
-$BloodClans::ItemNames[63] = "Small_Silver_Nugget";
-
-datablock ItemData(Solo_Mine_Potion)
-{
-   pickupName = "Solo Mine Potion";
-
-   ItemID = 70;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/potions/pbottle3-6.dts";
-   invIcon = "art/gui/icons/Solo_Mine_Potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
-   maxInventory = 3;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 1500.000000;
-};
-$BloodClans::ItemNames[70] = "Solo_Mine_Potion";
-
-datablock ItemData(Swordfish)
-{
-   pickupName = "Swordfish";
-   pluralName = "Swordfish";
 
    ItemID = 11;
    category = "fish";
    className = "food";
+   shapeFile = "art/inv/food/pike.dts";
+   invIcon = "art/gui/icons/pike.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 40;
+   table = "Food";
+   SubItemID = 11;
+   nutrition = 30;
+};
+$AlterVerse::ItemNames[11] = "Pike";
+
+datablock ItemData(Rainbow_Trout)
+{
+
+   ItemID = 13;
+   category = "fish";
+   className = "food";
+   shapeFile = "art/inv/food/rainbowtrout.dts";
+   invIcon = "art/gui/icons/rainbow_trout.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 35;
+   table = "Food";
+   SubItemID = 13;
+   nutrition = 35;
+};
+$AlterVerse::ItemNames[13] = "Rainbow_Trout";
+
+datablock ItemData(Red_Devil)
+{
+
+   ItemID = 12;
+   category = "fish";
+   className = "food";
+   shapeFile = "art/inv/food/reddevil.dts";
+   invIcon = "art/gui/icons/red_devil.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 120;
+   table = "Food";
+   SubItemID = 12;
+   nutrition = 35;
+};
+$AlterVerse::ItemNames[12] = "Red_Devil";
+
+datablock ItemData(Red_Head)
+{
+
+   ItemID = 8;
+   category = "fish";
+   className = "food";
+   shapeFile = "art/inv/food/redhead.dts";
+   invIcon = "art/gui/icons/red_head.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 20;
+   table = "Food";
+   SubItemID = 8;
+   nutrition = 20;
+};
+$AlterVerse::ItemNames[8] = "Red_Head";
+
+datablock ItemData(Ring_of_Fire_Rune)
+{
+
+   ItemID = 65;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/Runes/rIXrune.dts";
+   invIcon = "art/gui/icons/Ring_Of_Fire_Rune.jpg";
+   maxInventory = 3;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1500;
+};
+$AlterVerse::ItemNames[65] = "Ring_of_Fire_Rune";
+
+datablock ItemData(Roast)
+{
+
+   ItemID = 30;
+   category = "food";
+   className = "food";
+   shapeFile = "art/inv/food/meat_roll.dts";
+   invIcon = "art/gui/icons/roast.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 50;
+   table = "Food";
+   SubItemID = 30;
+   nutrition = 50;
+};
+$AlterVerse::ItemNames[30] = "Roast";
+
+datablock ItemData(Ruby)
+{
+
+   ItemID = 23;
+   category = "gems";
+   className = "gem";
+   shapeFile = "art/inv/gems/ruby.dae";
+   invIcon = "art/gui/icons/ruby.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 400;
+};
+$AlterVerse::ItemNames[23] = "Ruby";
+
+datablock ItemData(Sapphire)
+{
+
+   ItemID = 24;
+   category = "gems";
+   className = "gem";
+   shapeFile = "art/inv/gems/sapphire.dae";
+   invIcon = "art/gui/icons/sapphire.jpg";
+   maxInventory = 200;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 200;
+};
+$AlterVerse::ItemNames[24] = "Sapphire";
+
+datablock ItemData(Sazzons_Scepter)
+{
+
+   ItemID = 68;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/s_scepter/scepter.dts";
+   invIcon = "art/gui/icons/Sazzons_Scepter.jpg";
+   maxInventory = 7;
+   keepOnDeath = 1;
+   skullLevel = 7;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 7000;
+};
+$AlterVerse::ItemNames[68] = "Sazzons_Scepter";
+
+datablock ItemData(Shard_of_Boltarc)
+{
+
+   ItemID = 53;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/shard/shardofboltarc.dts";
+   invIcon = "art/gui/icons/Shard_of_Boltarc.jpg";
+   maxInventory = 10;
+   keepOnDeath = 1;
+   skullLevel = 10;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[53] = "Shard_of_Boltarc";
+
+datablock ItemData(Shards_of_Ice_Crystal)
+{
+
+   ItemID = 67;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/Crystals/crys5_Small.dts";
+   invIcon = "art/gui/icons/shards_of_ice_crystal.jpg";
+   maxInventory = 5;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 800;
+};
+$AlterVerse::ItemNames[67] = "Shards_of_Ice_Crystal";
+
+datablock ItemData(Shark_Steak)
+{
+
+   ItemID = 26;
+   category = "food";
+   className = "food";
+   shapeFile = "art/inv/food/sharksteak.dts";
+   invIcon = "art/gui/icons/shark_steak.jpg";
+   maxInventory = 10;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 80;
+   table = "Food";
+   SubItemID = 26;
+   nutrition = 80;
+};
+$AlterVerse::ItemNames[26] = "Shark_Steak";
+
+datablock ItemData(Shieldof10_1)
+{
+
+   ItemID = 93;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion1.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[93] = "Shieldof10_1";
+
+datablock ItemData(Shieldof10_10)
+{
+
+   ItemID = 102;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion10.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[102] = "Shieldof10_10";
+
+datablock ItemData(Shieldof10_2)
+{
+
+   ItemID = 94;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion2.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[94] = "Shieldof10_2";
+
+datablock ItemData(Shieldof10_3)
+{
+
+   ItemID = 95;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion3.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[95] = "Shieldof10_3";
+
+datablock ItemData(Shieldof10_4)
+{
+
+   ItemID = 96;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion4.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[96] = "Shieldof10_4";
+
+datablock ItemData(Shieldof10_5)
+{
+
+   ItemID = 97;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion5.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[97] = "Shieldof10_5";
+
+datablock ItemData(Shieldof10_6)
+{
+
+   ItemID = 98;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion6.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[98] = "Shieldof10_6";
+
+datablock ItemData(Shieldof10_7)
+{
+
+   ItemID = 99;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion7.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[99] = "Shieldof10_7";
+
+datablock ItemData(Shieldof10_8)
+{
+
+   ItemID = 100;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion8.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[100] = "Shieldof10_8";
+
+datablock ItemData(Shieldof10_9)
+{
+
+   ItemID = 101;
+   category = "misc";
+   className = "inv";
+   shapeFile = "art/inv/items/medallions/medallion9.dts";
+   invIcon = "art/gui/icons/shieldof10.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+};
+$AlterVerse::ItemNames[101] = "Shieldof10_9";
+
+datablock ItemData(ShotAmmo)
+{
+
+   ItemID = 48;
+   category = "ammo";
+   className = "ammo";
+   shapeFile = "art/inv/weapons/flintloc/shot.dae";
+   invIcon = "art/gui/icons/wpn.jpg";
+   maxInventory = 100;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1;
+};
+$AlterVerse::ItemNames[48] = "ShotAmmo";
+
+datablock ItemData(SlingDartWeapon)
+{
+
+   ItemID = 80;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/dart/slingdart.dts";
+   invIcon = "art/gui/icons/slingdart.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10;
+
+   table = "Weapons";
+   SubItemID = 80;
+   image = SlingDartImage;
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
+};
+$AlterVerse::ItemNames[80] = "SlingDartWeapon";
+
+datablock ItemData(Small_Diamond)
+{
+
+   ItemID = 20;
+   category = "gems";
+   className = "gem";
+   shapeFile = "art/inv/gems/diamond.dae";
+   invIcon = "art/gui/icons/small_diamond.jpg";
+   maxInventory = 300;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 140;
+};
+$AlterVerse::ItemNames[20] = "Small_Diamond";
+
+datablock ItemData(Small_Gold_Nugget)
+{
+
+   ItemID = 37;
+   category = "mineral";
+   className = "gem";
+   shapeFile = "art/inv/Gems/nugget_g_s.dae";
+   invIcon = "art/gui/icons/small_gold_nugget.jpg";
+   maxInventory = 150;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+};
+$AlterVerse::ItemNames[37] = "Small_Gold_Nugget";
+
+datablock ItemData(Small_Silver_Nugget)
+{
+
+   ItemID = 51;
+   category = "mineral";
+   className = "gem";
+   shapeFile = "art/inv/Gems/SilverNuggetSm.dts";
+   invIcon = "art/gui/icons/silver_nugget.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 60;
+};
+$AlterVerse::ItemNames[51] = "Small_Silver_Nugget";
+
+datablock ItemData(Solo_Mine_Potion)
+{
+
+   ItemID = 57;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle3-6.dts";
+   invIcon = "art/gui/icons/Solo_Mine_Potion.jpg";
+   maxInventory = 3;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1500;
+};
+$AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
+
+datablock ItemData(Swordfish)
+{
+
+   ItemID = 10;
+   category = "fish";
+   className = "food";
    shapeFile = "art/inv/food/swordfish.dts";
    invIcon = "art/gui/icons/swordfish.jpg";
-   previewImage = "art/gui/icons/bluegill.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -2875,83 +2087,24 @@ datablock ItemData(Swordfish)
    emap = true;
    sticky = true;
 
-
-   cost = 300.000000;
-
+   cost = 300;
    table = "Food";
-   SubItemID = 174;
-   nutrition = 100.0;
-   drink = 0;
+   SubItemID = 10;
+   nutrition = 100;
 };
-$BloodClans::ItemNames[11] = "Swordfish";
+$AlterVerse::ItemNames[10] = "Swordfish";
 
 datablock ItemData(The_Claw_Potion)
 {
-   pickupName = "Potion for The Claw";
-   pluralName = "Potions for The Claw";
-
-   ItemID = 77;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/potions/pbottle2-1.dts";
-   invIcon = "art/gui/icons/The_Claw_Potion.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 5;
-   keepOnDeath = 1;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 800.000000;
-};
-$BloodClans::ItemNames[77] = "The_Claw_Potion";
-
-datablock ItemData(Thors_Hammer)
-{
-   pickupName = "Thors Hammer";
-
-   ItemID = 82;
-   category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/th_hammer/th_hammer.dts";
-   invIcon = "art/gui/icons/thors_hammer.jpg";
-   previewImage = "art/gui/icons/fits.jpg";
-   maxInventory = 8;
-   keepOnDeath = 1;
-   skullLevel = 8;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 8000.000000;
-};
-$BloodClans::ItemNames[82] = "Thors_Hammer";
-
-datablock ItemData(Thunderbolt_Potion)
-{
-   pickupName = "Thunderbolt Potion";
 
    ItemID = 64;
    category = "magic";
-   className = "inv";
-   shapeFile = "art/inv/magic/potions/pbottle2-2.dts";
-   invIcon = "art/gui/icons/Thunderbolt_potion.jpg";
-   previewImage = "art/gui/icons/bfb.jpg";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle2-1.dts";
+   invIcon = "art/gui/icons/The_Claw_Potion.jpg";
    maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -2959,25 +2112,65 @@ datablock ItemData(Thunderbolt_Potion)
    emap = true;
    sticky = true;
 
-
-   cost = 600.000000;
+   cost = 800;
 };
-$BloodClans::ItemNames[64] = "Thunderbolt_Potion";
+$AlterVerse::ItemNames[64] = "The_Claw_Potion";
+
+datablock ItemData(Thors_Hammer)
+{
+
+   ItemID = 69;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/th_hammer/th_hammer.dts";
+   invIcon = "art/gui/icons/thors_hammer.jpg";
+   maxInventory = 8;
+   keepOnDeath = 1;
+   skullLevel = 8;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 8000;
+};
+$AlterVerse::ItemNames[69] = "Thors_Hammer";
+
+datablock ItemData(Thunderbolt_Potion)
+{
+
+   ItemID = 52;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle2-2.dts";
+   invIcon = "art/gui/icons/Thunderbolt_potion.jpg";
+   maxInventory = 5;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 600;
+};
+$AlterVerse::ItemNames[52] = "Thunderbolt_Potion";
 
 datablock ItemData(TokaraMushroom)
 {
-   pickupName = "TokaraMushroom";
 
-   ItemID = 46;
+   ItemID = 39;
    category = "food";
    className = "food";
    shapeFile = "art/inv/food/fp_mushroomGRN002.dts";
    invIcon = "art/gui/icons/tokaramushroom.jpg";
-   previewImage = "art/gui/icons/mushroom.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -2985,30 +2178,24 @@ datablock ItemData(TokaraMushroom)
    emap = true;
    sticky = true;
 
-
-   cost = 15.000000;
-
+   cost = 15;
    table = "Food";
-   SubItemID = 216;
-   nutrition = 15.0;
-   drink = 0;
+   SubItemID = 39;
+   nutrition = 15;
 };
-$BloodClans::ItemNames[46] = "TokaraMushroom";
+$AlterVerse::ItemNames[39] = "TokaraMushroom";
 
 datablock ItemData(TokFemaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 105;
+   ItemID = 88;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/TokSword/SwordTok.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3016,45 +2203,27 @@ datablock ItemData(TokFemaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 172;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 88;
    image = TokFemaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[105] = "TokFemaleSwordWeapon";
+$AlterVerse::ItemNames[88] = "TokFemaleSwordWeapon";
 
 datablock ItemData(TokMaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 104;
+   ItemID = 87;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/TokSword/SwordTok.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3062,45 +2231,27 @@ datablock ItemData(TokMaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 171;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 87;
    image = TokMaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[104] = "TokMaleSwordWeapon";
+$AlterVerse::ItemNames[87] = "TokMaleSwordWeapon";
 
 datablock ItemData(TomahawkWeapon)
 {
-   pickupName = "TomaHawk";
 
-   ItemID = 90;
+   ItemID = 76;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Tomahawk/thawk.dts";
    invIcon = "art/gui/icons/tomahawk.jpg";
-   previewImage = "art/gui/icons/tomahawk.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "THROWN";
 
    mass = 2;
    friction = 1;
@@ -3108,74 +2259,27 @@ datablock ItemData(TomahawkWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 10.000000;
+   cost = 10;
 
    table = "Weapons";
-   SubItemID = 161;
-   damage = "1#10";
-   range = 4000;
-   pass_armor = 0;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 1;
+   SubItemID = 76;
    image = TomahawkImage;
-   ammo = TomahawkAmmo;
-   effectWeap = "[THROWN]";
-   skill_used = "Throwing";
-   delay = 4;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 0;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "thrown";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[90] = "TomahawkWeapon";
-
-datablock ItemData(TomahawkAmmo)
-{
-   pickupName = "TomaHawk";
-
-   ItemID = 91;
-   category = "ammo";
-   className = "ammo";
-   shapeFile = "art/inv/weapons/Tomahawk/thawk.dts";
-   invIcon = "art/gui/icons/tomahawk.jpg";
-   previewImage = "art/gui/icons/tomahawk.jpg";
-   maxInventory = 50;
-   keepOnDeath = 0;
-   skullLevel = 0;
-   effect = "NONE";
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-
-   cost = 50.000000;
-};
-$BloodClans::ItemNames[91] = "TomahawkAmmo";
+$AlterVerse::ItemNames[76] = "TomahawkWeapon";
 
 datablock ItemData(ValFemaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 94;
+   ItemID = 79;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/valsword/Sword_Val.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3183,45 +2287,27 @@ datablock ItemData(ValFemaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 163;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 79;
    image = ValFemaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[94] = "ValFemaleSwordWeapon";
+$AlterVerse::ItemNames[79] = "ValFemaleSwordWeapon";
 
 datablock ItemData(ValMaleSwordWeapon)
 {
-   pickupName = "Sword";
 
-   ItemID = 93;
+   ItemID = 78;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/valsword/Sword_Val.dts";
    invIcon = "art/gui/icons/Sword.jpg";
-   previewImage = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3229,45 +2315,27 @@ datablock ItemData(ValMaleSwordWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 162;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 78;
    image = ValMaleSwordImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[93] = "ValMaleSwordWeapon";
+$AlterVerse::ItemNames[78] = "ValMaleSwordWeapon";
 
 datablock ItemData(Venison_Chop)
 {
-   pickupName = "Venison Chop";
 
-   ItemID = 33;
+   ItemID = 31;
    category = "food";
    className = "food";
    shapeFile = "art/inv/food/lamb.dts";
    invIcon = "art/gui/icons/leg_of_lamb.jpg";
-   previewImage = "art/gui/icons/food.jpg";
    maxInventory = 10;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3275,30 +2343,24 @@ datablock ItemData(Venison_Chop)
    emap = true;
    sticky = true;
 
-
-   cost = 100.000000;
-
+   cost = 100;
    table = "Food";
-   SubItemID = 45;
-   nutrition = 100.0;
-   drink = 0;
+   SubItemID = 31;
+   nutrition = 100;
 };
-$BloodClans::ItemNames[33] = "Venison_Chop";
+$AlterVerse::ItemNames[31] = "Venison_Chop";
 
 datablock ItemData(WizardsStaffWeapon)
 {
-   pickupName = "Wizards Staff";
 
-   ItemID = 145;
+   ItemID = 117;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/wizardstaff/wizardsstaff.dts";
    invIcon = "art/gui/icons/wizardstaff.jpg";
-   previewImage = "art/gui/icons/wizardstaff.jpg";
    maxInventory = 1;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3306,45 +2368,27 @@ datablock ItemData(WizardsStaffWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 179;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 117;
    image = WizardsStaffImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[145] = "WizardsStaffWeapon";
+$AlterVerse::ItemNames[117] = "WizardsStaffWeapon";
 
 datablock ItemData(WizardStaffWeapon)
 {
-   pickupName = "WizardStaff";
 
-   ItemID = 144;
+   ItemID = 116;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/wizardstaff/wizardstaff.dts";
    invIcon = "art/gui/icons/wizardstaff.jpg";
-   previewImage = "art/gui/icons/wizardstaff.jpg";
    maxInventory = 1;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3352,45 +2396,27 @@ datablock ItemData(WizardStaffWeapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 178;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 116;
    image = WizardStaffImage;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[144] = "WizardStaffWeapon";
+$AlterVerse::ItemNames[116] = "WizardStaffWeapon";
 
 datablock ItemData(WizardStaff2Weapon)
 {
-   pickupName = "WizardStaff";
 
-   ItemID = 146;
+   ItemID = 118;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/wizardstaff2/wizardstaff2.dts";
    invIcon = "art/gui/icons/wizardstaff.jpg";
-   previewImage = "art/gui/icons/wizardstaff.jpg";
    maxInventory = 1;
    keepOnDeath = 0;
    skullLevel = 0;
-   effect = "NONE";
 
    mass = 2;
    friction = 1;
@@ -3398,29 +2424,12 @@ datablock ItemData(WizardStaff2Weapon)
    emap = true;
    sticky = true;
 
-
-   cost = 0.000000;
+   cost = 0;
 
    table = "Weapons";
-   SubItemID = 180;
-   damage = "1#10";
-   range = 100;
-   pass_armor = 1;
-   no_instant_kill = 1;
-   TwoHanded = 0;
-   indestructible = 0;
-   ranged = 0;
+   SubItemID = 118;
    image = WizardStaff2Image;
-   delay = 1;
-   reticle = 'reticle_rocketlauncher';
-   ignoreDistance = 50;
-   usesAmmo = 1;
-   fireDelay = 100;
-   triggerDown = 50;
-   cameraMaxDist = "0.69869";
-   class = "Weapon";
-   diffuseMap0 = "art/inv/weapons/crossbow/crossbow.jpg";
+   effectWeap = "melee";
+   reticle = "reticle_rocketlauncher";
 };
-$BloodClans::ItemNames[146] = "WizardStaff2Weapon";
-
-
+$AlterVerse::ItemNames[118] = "WizardStaff2Weapon";
