@@ -67,7 +67,7 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Fire the weapon. Calls the fire script which does the actual work.
    stateName[3]                     = "Fire";
    stateTransitionOnTimeout[3]      = "Ready";
-   stateTimeoutValue[3]             = 1.0;
+   stateTimeoutValue[3]             = 1.7;
    stateFire[3]                     = true;
    stateAllowImageChange[3]         = false;
    stateScript[3]                   = "onFire";
@@ -75,7 +75,7 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Fire the weapon. Calls the wet fire script which does the actual work.
    stateName[4]                     = "WetFire";
    stateTransitionOnTimeout[4]      = "Ready";
-   stateTimeoutValue[4]             = 1.0;
+   stateTimeoutValue[4]             = 1.7;
    stateFire[4]                     = true;
    stateAllowImageChange[4]         = false;
    stateScript[4]                   = "onWetFire";

@@ -33,6 +33,7 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
    //ammo = ShotAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
    projectile = ShotProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ShotWetProjectile;
+   stateTimeoutValue[3] = 0.9;
    fireAnim = "Fire_Flintlock";
    fireSound = "flintlockFireSound";
    canH2H = true; // Allow H2H combat while this weapon is mounted
