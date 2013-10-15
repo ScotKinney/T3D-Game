@@ -96,6 +96,8 @@ function initDedicated()
    if($generateItemData)
    {
       echo(" --- Generating Item Data ---");
+      exec("./game.cs");
+      exec("./db/init.cs");
       GenerateItemData();
       echo(" --- Exiting after generation ---");
       quit();
