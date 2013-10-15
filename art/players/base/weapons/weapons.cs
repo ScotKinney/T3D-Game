@@ -175,7 +175,7 @@ singleton GameBaseData(RF_KickHigh)
    endDamage = 0.6;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 singleton GameBaseData(RF_KickLow)
@@ -188,7 +188,7 @@ singleton GameBaseData(RF_KickLow)
    endDamage = .75;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 singleton GameBaseData(RF_SpinKick1)
@@ -198,10 +198,10 @@ singleton GameBaseData(RF_SpinKick1)
    timeScale = 1;
    damageAmount = 25;
    startDamage = 0.6;
-   endDamage = .73;
+   endDamage = .9;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
@@ -232,7 +232,7 @@ singleton GameBaseData(LF_KickHigh)
    endDamage = 0.6;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 singleton GameBaseData(LF_KickLow)
@@ -245,7 +245,7 @@ singleton GameBaseData(LF_KickLow)
    endDamage = .75;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 singleton GameBaseData(LF_SpinKick1)
@@ -255,10 +255,10 @@ singleton GameBaseData(LF_SpinKick1)
    timeScale = 1;
    damageAmount = 25;
    startDamage = 0.6;
-   endDamage = .73;
+   endDamage = .9;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
-   impulse = 1200;
+   impulse = 900;
 };
 
 datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
