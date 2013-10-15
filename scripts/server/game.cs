@@ -237,7 +237,7 @@ function GenerateItemData()
             %fo.writeLine("   ItemID = " @ %results.ID @ ";");
             %fo.writeLine("   category = \"" @ %results.category @ "\";");
             %fo.writeLine("   className = \"" @ %results.tag @ "\";");
-            %fo.writeLine("   shapeFile = \"art/shapes/" @ %results.shapefile @ "\";");
+            %fo.writeLine("   shapeFile = \"art/inv/" @ %results.shapefile @ "\";");
             %fo.writeLine("   invIcon = \"art/gui/icons/" @ %results.invIcon @ "\";");
             %fo.writeLine("   maxInventory = " @ %results.maxInventory @ ";");
             %fo.writeLine("   keepOnDeath = " @ %results.keepOnDeath @ ";");
