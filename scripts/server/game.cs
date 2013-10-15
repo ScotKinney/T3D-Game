@@ -186,3 +186,126 @@ function GameConnection::RefreshWeaponHud(%client, %amount, %preview, %ret, %zoo
 {
    commandToClient(%client, 'RefreshWeaponHud', %amount, %preview, %ret, %zoomRet, %amountInClips);
 }
+
+function GenerateItemData()
+{
+   %query = "ID"@
+      ",name"@
+      ",skullLevel"@
+      ",shapefile"@
+      ",cost"@
+      ",maxInventory"@
+      ",category"@
+      ",invIcon"@
+      ",tag"@
+      ",keepOnDeath";
+
+   %results = DB::Select(%query, "AVItems", "name != 'None'","name");
+
+   //No results
+   if ( %results <= 0 )
+   {
+      echo("***No results for table AVItems");
+      %results.delete();  
+      return;
+   }
+	   
+   %rows = %results.getNumRows();
+	if ( %rows > 0 )
+	{
+      %filename = "scripts/server/AlterVerse/worldItems.cs";
+      %fo = new FileObject();
+      
+      if ( %fo.openForWrite( %filename ) )
+      {
+         %fo.writeLine("//AlterVerse auto-generated ItemData datablocks");
+         %fo.writeLine("//File: scripts/server/AlterVerse/worldItems.cs");
+         for (%r = 0; %r < %rows; %r++)
+         {
+            if ( strupr(%results.tag) $= "AMMO" )
+               %newname = %results.name @ "Ammo";
+            else if ( strupr(%results.tag) $= "WPN" )
+               %newname = %results.name @ "Weapon";
+            else
+               %newname = %results.name;
+            %dbname = validateDatablockName(%newname);
+            echo("Adding ItemData" SPC %dbname);
+            %fo.writeLine("");
+            %fo.writeLine("datablock ItemData(" @ %dbname @ ")");
+            %fo.writeLine("{");
+            %fo.writeLine("");
+            %fo.writeLine("   ItemID = " @ %results.ID @ ";");
+            %fo.writeLine("   category = \"" @ %results.category @ "\";");
+            %fo.writeLine("   className = \"" @ %results.tag @ "\";");
+            %fo.writeLine("   shapeFile = \"art/shapes/" @ %results.shapefile @ "\";");
+            %fo.writeLine("   invIcon = \"art/gui/icons/" @ %results.invIcon @ "\";");
+            %fo.writeLine("   maxInventory = " @ %results.maxInventory @ ";");
+            %fo.writeLine("   keepOnDeath = " @ %results.keepOnDeath @ ";");
+            %fo.writeLine("   skullLevel = " @ %results.skulllevel @ ";");
+            
+            %fo.writeLine("");
+            %fo.writeLine("   mass = 2;");
+            %fo.writeLine("   friction = 1;");
+            %fo.writeLine("   elasticity = 0.3;");
+            %fo.writeLine("   emap = true;");
+            %fo.writeLine("   sticky = true;");
+            %fo.writeLine("");
+            
+            %fo.writeLine("   cost = " @ %results.cost @ ";");
+               
+            if ( strupr(%results.tag) $= "FOOD" )// Food item
+            {
+               %results2 = DB::Select("*", "AVFood", "name = '" @ %results.name @ "'");
+               if ( %results2.getNumRows() > 0 )
+               {
+                  %fo.writeLine("   table = \"Food\";");
+                  %fo.writeLine("   SubItemID = " @ %results2.ID @ ";");
+                  %fo.writeLine("   nutrition = " @ %results2.nutrition @ ";");
+               }
+               else
+                  WriteItemError(%results.name, "Food", %fo);
+            }
+            else if ( strupr(%results.tag) $= "WPN" ) // Weapon item
+            {
+               %fo.writeLine("");
+               %results2 = DB::Select("*", "AVWeapons", "name = '" @ %results.name @ "'");
+               if ( %results2.getNumRows() > 0 )
+               {
+                  %fo.writeLine("   table = \"Weapons\";");
+                  %fo.writeLine("   SubItemID = " @ %results2.ID @ ";");
+                  if ( %results2.image !$= "" && strstr(%results2.image, "Í") == -1 )
+                     %fo.writeLine("   image = " @ validateDatablockName(%results2.image) @ ";");
+                  else
+                      %fo.writeLine("   image = BaseImage;");
+                  %fo.writeLine("   effectWeap = \"" @ %results2.effect @ "\";");
+                  %fo.writeLine("   reticle = \"" @ %results2.reticle @ "\";");
+              }
+               else
+                  WriteItemError(%results.name, "Weapons", %fo);
+            }
+            %fo.writeLine("};");
+            %fo.writeLine("$AlterVerse::ItemNames[" @ %results.ID @ "] = \"" @ %dbname @ "\";");
+            %results.nextRow();
+            if ( isObject(%results2) )
+               %results2.delete();
+         }
+         %fo.close();
+      }
+      else
+         error( "Failed to open " @ %filename @ " for writing" );
+
+      %fo.delete();
+ 	}
+ 	else
+	   echo("***No records in table Items");
+
+   %results2.delete();
+   %results.delete();
+}
+ 
+function WriteItemError(%name, %table, %fo)
+{
+   %error = %name SPC "is in the 'Items' table but not in the '" @ %table @ "' table.";
+   error("*** AlterVerse WARNING: Item" SPC %error);
+   %fo.writeLine("   //" @ %error);
+}

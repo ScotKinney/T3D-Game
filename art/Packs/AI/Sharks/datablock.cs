@@ -60,4 +60,11 @@ datablock PlayerData(Shark : DefaultPlayerData)
    FootUnderwaterSound  = FootLightUnderwaterSound;
 };
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+// Weapon datablocks
+datablock SFXProfile(SharkAttackhitSound)
+{
+   filename = "art/Packs/AI/sharks/sound/Sharkattack";
+   description = AudioClose3d;
+   preload = true;
+};

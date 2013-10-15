@@ -155,6 +155,10 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
       return;
    }
 
+   // Save the position so we can calculate impulse direction
+   %player.hthDamageLastPos = %player.hthDamageCurPos;
+   %player.hthDamageCurPos = %endvec;
+
    // how long it takes for damage to start...for now we just
    // have one interval and damage is active all during that interval
    if (%offset < %startOffset)
@@ -198,7 +202,7 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 
       // store end point and normal from raycast return buffer
       %pos = getWords(%scanTarg, 1, 3);
-      %normal = getWords(%scanTarg, 4, 6);
+      //%normal = getWords(%scanTarg, 4, 6);
 
       // shields and weapon rebounding
       if(%target.shielded || %target.hthDamageSeqPlaying)
@@ -267,7 +271,10 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
          %sourceClient = %sourceObject ? %sourceObject.client : 0;
 
          if ( (%target.getState() !$= "Dead") && (%attack.impulse !$= "") )
-            applyImpactImpulse(%obj, %pos, %normal, %player, %attack, %attack.impulse);
+         {
+            %hitDir = VectorSub(%endvec, %player.hthDamageLastPos);
+            applyImpactImpulse(%obj, %pos, %hitDir, %player, %attack, %attack.impulse);
+         }
       }
    }
    //else if(%scanTarg && (%scanTarg.getType() & $TypeMasks::StaticShapeObjectType))
@@ -326,7 +333,7 @@ function resetStun(%obj)
    %obj.hthStun = false;
 }
 
-function applyImpactImpulse(%victim, %pos, %normal, %attacker, %attack, %impulse)
+function applyImpactImpulse(%victim, %pos, %direction, %attacker, %attack, %impulse)
 {
    if (%target.isInvincible == true)
       return;
@@ -334,8 +341,9 @@ function applyImpactImpulse(%victim, %pos, %normal, %attacker, %attack, %impulse
   //%vpos = %victim.getWorldBoxCenter();
   //%pushDirection = VectorSub(%vpos,%attacker.getWorldBoxCenter());
   //%pushDirection = VectorNormalize(%pushDirection);
-  %vPos = %pos;
-  %pushDirection = VectorSub("0 0 0", %normal); // reverse normal for push direction
+  //%vPos = %pos;
+  //%pushDirection = VectorSub("0 0 0", %normal); // reverse normal for push direction
+  %pushDirection = VectorNormalize(%direction);
 
   // hardoded impluse
   if(!%impulse)
