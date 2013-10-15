@@ -151,9 +151,13 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
 
    %obj.firingWet = %isWet;
 
-   if ( (%this.fireAnim !$= "") && %obj.setArmThreadPlayOnce(%this.fireAnim) )
+   if ( %this.fireAnim !$= "" )
    {  // Just start the animation and record that we're the image firing
       %obj.firingWeapon = %this;
+      if ( %this.fullSkelAnim )
+         %obj.setActionThread(%this.fireAnim);
+      else
+         %obj.setArmThreadPlayOnce(%this.fireAnim);
       return;
    }
 
@@ -342,8 +346,54 @@ function ShapeBase::cycleWeapon(%this, %direction)
       %this.weaponCyclePos = %weaponCount - 1;
 
    %newWeapon = getField(%weaponList, %this.weaponCyclePos);
-   %this.mountImage(%newWeapon, 0);
-   %this.setImageAmmo(0, true);
+   //%this.mountImage(%newWeapon, 0);
+   %this.AVMountImage(%newWeapon, 0);
+}
+
+function ShapeBase::AVMountImage(%this, %weapon, %slot)
+{
+   %canH2H = !%this.isMounted();
+   %slotUsed = false;
+   if ( isObject(%weapon) )
+   {
+      if ( !%this.isMounted() || %weapon.canUseMounted )
+      {
+         // If it's an inventory item, make sure we have it
+         if ( isObject(%weapon.item) )
+         {
+            if ( %this.getInventory(%weapon.item) > 0 )
+            {
+               if ( %weapon.item.usesAmmo )
+               {
+                  if ( %this.getInventory(%weapon.ammo) > 0 )
+                     %slotUsed = true;
+                  else
+                     messageClient(%this.client, 'MsgItemPickup', '\c0Your %1 is out of ammo.', %item.pickupName);
+               }
+               else
+                  %slotUsed = true;
+            }
+         }
+         else
+            %slotUsed = true;
+      }
+      
+      if ( %slotUsed )
+      {
+         %this.mountImage(%weapon, 0);
+         %canH2H = (%this.isMounted() ? false : %weapon.canH2H);
+         %this.lastWeapon = %weapon;
+      }
+   }
+
+   %this.canH2H = %canH2H;
+   if ( %canH2H )
+      %this.equipBaseWeapons(%slotUsed);   // Setup H2H weapons
+   else
+   {  // Make sure the H2H weapons are not mounted
+      for ( %i = 1; %i < 4; %i++ )
+         %this.unmountImage(%i);
+   }
 }
 
 function WeaponImage::NoAmmoMessage(%this, %obj)
@@ -373,6 +423,13 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
    %triggerState = (%stopping !$= "") ? false : true;
    if ( %triggerState && %client.player.inArmThreadPlayOnce() )
       %client.player.stopPlayOnce();
+
+   if ( !%client.player.canH2H )
+   {
+      %slot = 0;
+      %attackNum = 0;
+   }
+
    if ( %attackNum < 4 )
       %client.player.setImageGenericTrigger(%slot, %attackNum, %triggerState);
    else if ( %attackNum < 5 )

@@ -55,7 +55,7 @@ datablock PlayerData(Tolgart : DefaultPlayerData)
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;
    jumpSurfaceAngle = 80;
-   maxStepHeight = "1.5";  //two meters
+   maxStepHeight = "1.5";
    
    // Add the shield to the left hand ("Mount1")
    equipmentSlots = 1;
@@ -63,3 +63,5 @@ datablock PlayerData(Tolgart : DefaultPlayerData)
    eqNode[0] = "mount1";
 };
 
+// Load the gart weapon
+exec("./weapon.cs");

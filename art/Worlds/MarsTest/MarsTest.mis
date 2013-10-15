@@ -294,7 +294,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "-NoWeapon";
+         Weapon = "TolgartsAxe";
    };
    new Path(Gargoyle1Path) {
       isLooping = "1";

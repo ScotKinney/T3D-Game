@@ -617,9 +617,9 @@ function GameCore::loadOut(%game, %player)
    {
       %hasinv = %player.hasInventory(%lastweapon);
       if ( %hasinv )
-         %player.BCMountImage(%lastweapon, $WeaponSlot);
+         %player.AVMountImage(%lastweapon, $WeaponSlot);
    }
-   %player.equipBaseWeapons(%hasinv);
+   %player.AVMountImage("", $WeaponSlot);
 }
 
 // Customized kill message for falling deaths

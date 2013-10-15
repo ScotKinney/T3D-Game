@@ -71,13 +71,21 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
    %obj.setActionThread(%vDB.mountPose[%node], true, true);
    %obj.lastWeapon = %obj.getMountedImage($WeaponSlot);
 
+   // Unmount any weapons that can't be used while mounted.
+   for ( %i = 0; %i < 4; %i++ )
+   {
+      %curWeapon = %obj.getMountedImage(%i);
+      if ( isObject(%curWeapon) && !%curWeapon.canUseMounted )
+         %obj.unmountImage(%i);
+   }
+   %this.canH2H = false; // No H2H combat while mounted
+
    // Make sure players scale remains constant 0.714 when mounted
-   //%obj.setscale("1 1 1");
    %scaleZ = getWord(%vehicle.getScale(), 2);
    %newScale = 0.714 / %scaleZ;
    %obj.setscale(%newScale SPC %newScale SPC %newScale);
    %obj.setTransform("0 0 0 0 0 1 0");
-   //%obj.unmountImage($WeaponSlot);
+
    if (%node == %vDB.driverNode)
    {
       if ( isEventPending(%vehicle.FreeSchedule) )
@@ -101,7 +109,7 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
 function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
 {
    if ( %obj.lastWeapon !$= "" )
-      %obj.mountImage(%obj.lastWeapon.image, $WeaponSlot);
+      %obj.AVMountImage(%obj.lastWeapon, $WeaponSlot);
    %obj.setscale(".714 .714 .714"); // Restore the players scale
 
    %vDB = %vehicle.getDatablock();

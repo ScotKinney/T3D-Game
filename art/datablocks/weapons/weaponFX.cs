@@ -47,6 +47,34 @@ datablock SFXProfile(BaseThrowSound)
    preload = true;
 };
 
+datablock SFXProfile(ThrowDartSound)
+{
+   filename = "art/sound/weapons/Throw_SlingDart";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(BaseFireSound)
+{
+   filename = "art/sound/weapons/arrow";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(flintlockFireSound)
+{
+   filename = "art/sound/weapons/flintlockfire";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(BaseReloadSound)
+{
+   filename = "art/sound/weapons/Crossbow_reload";
+   description = AudioClose3d;
+   preload = true;
+};
+
 datablock SFXProfile(ProjectileExplosionSound)
 {
    filename = "art/sound/weapons/Crossbow_explosion";
@@ -58,6 +86,20 @@ datablock SFXProfile(ProjectileHitSound)
 {
    filename = "art/sound/weapons/arrowThud";
    description = AudioDefault3d;
+   preload = true;
+};
+
+datablock SFXProfile(AxeHitSound)
+{
+   filename = "art/sound/weapons/Hit_TomaHawk";
+   description = AudioDefault3d;
+   preload = true;
+};
+
+datablock SFXProfile(flintlockhitSound)
+{
+   filename = "art/sound/weapons/ricochet";
+   description = AudioClose3d;
    preload = true;
 };
 
@@ -473,6 +515,43 @@ datablock SphereEmitterData(DefaultSparksEmitter)
    orientOnVelocity = true;
 };
 
+datablock ParticleData(Basefiring2Particle)
+{
+   textureName = "core/art/particles/impact";
+   dragCoefficient = 5.0;
+   gravityCoefficient = -0.5;//0.0;
+   inheritedVelFactor = 0.25;//1.0;
+   constantAcceleration = 0.1;
+   lifetimeMS = 1600;//400;
+   lifetimeVarianceMS = 400;//100;
+   useInvAlpha = false;
+   spinSpeed = 1;
+   spinRandomMin = -200;
+   spinRandomMax = 200;
+   colors[0] = "0.4 0.4 0.4 0.2";
+   colors[1] = "0.4 0.4 0.4 0.1";
+   colors[2] = "0.0 0.0 0.0 0.0";
+   sizes[0] = 0.2;//1;
+   sizes[1] = 0.15;//0.75;
+   sizes[2] = 0.1;//0.5;
+   times[0] = 0.0;
+   times[1] = 0.5;//0.294118;
+   times[2] = 1.0;
+};
+
+datablock SphereEmitterData(Basefiring2Emitter)
+{
+   ejectionPeriodMS = 15;//75;
+   periodVarianceMS = 5;
+   ejectionVelocity = 1;
+   ejectionOffset = 0.0;
+   velocityVariance = 0;
+   thetaMin = 0.0;
+   thetaMax = 180;//10.0;
+   particles = "Basefiring2Particle";
+   blendStyle = "NORMAL";
+};
+
 // ----------------------------------------------------------------------------
 // Splash effects
 // ----------------------------------------------------------------------------
@@ -689,14 +768,24 @@ datablock ExplosionData(DefaultHitExplosion)
    lightNormalOffset = 3.0;
 };
 
+datablock ExplosionData(AxeHitExplosion : DefaultHitExplosion)
+{
+   soundProfile = AxeHitSound;
+};
+
+datablock ExplosionData(flintlockHitExplosion)
+{
+   soundProfile = flintlockHitSound;
+};
 
 datablock ProjectileData(BaseProjectile)
 {
    projectileShapeName = "core/art/effects/debris_player.dts";
    scale = "1 1 1";
    directDamage = 30;
+   directImplulse = 0;
    radiusDamage = 0;
-   damageRadius = 5;
+   damageRadius = 0;
    areaImpulse = 0;
 
    explosion = ProjectileExplosion;

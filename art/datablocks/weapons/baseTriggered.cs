@@ -12,8 +12,10 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // before the image reactivates
    rearmDelay = 1500;
 
-   // Don't allow use of melee weapons while triggered weapons are mounted
-   canMelee = false;
+   // By default our attack animations are played as blended animations in the
+   // arm thread. Set fullSkelAnim to true to play the animation in the action
+   // thread.
+   fullSkelAnim = false;
 
    // You must provide an item for weapons that can also be carried in
    // inventory. This is the name of the WEAPON that comes from the weapons
@@ -25,6 +27,13 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // If the weapon is an inventory item that uses ammunition (the weapon is
    // not the projectile), there must be an inventory item for the ammo too.
    // ammo = ShotAmmo;
+   
+   // Can H2H weapons be used in the other image slots while this 
+   // weapon is mounted.
+   canH2H = false;
+
+   // Can this weapon be used when mounted to an AI or vehicle
+   canUseMounted = false;
 
    // Basic Item properties
    shapefile = "core/art/effects/debris_player.dts";
@@ -58,7 +67,7 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Fire the weapon. Calls the fire script which does the actual work.
    stateName[3]                     = "Fire";
    stateTransitionOnTimeout[3]      = "Ready";
-   stateTimeoutValue[3]             = 0.2;
+   stateTimeoutValue[3]             = 1.0;
    stateFire[3]                     = true;
    stateAllowImageChange[3]         = false;
    stateScript[3]                   = "onFire";
@@ -66,7 +75,7 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Fire the weapon. Calls the wet fire script which does the actual work.
    stateName[4]                     = "WetFire";
    stateTransitionOnTimeout[4]      = "Ready";
-   stateTimeoutValue[4]             = 0.2;
+   stateTimeoutValue[4]             = 1.0;
    stateFire[4]                     = true;
    stateAllowImageChange[4]         = false;
    stateScript[4]                   = "onWetFire";

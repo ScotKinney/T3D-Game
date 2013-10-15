@@ -1001,6 +1001,56 @@ datablock ItemData(Ham)
 };
 $BloodClans::ItemNames[51] = "Ham";
 
+datablock ItemData(HammerWeapon)
+{
+   pickupName = "Hammer";
+
+   ItemID = 41;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Hammer/Hammer.dts";
+   invIcon = "art/gui/icons/hammer.jpg";
+   previewImage = "art/gui/icons/hammer.jpg";
+   maxInventory = 100;
+   keepOnDeath = 0;
+   skullLevel = 0;
+   effect = "THROWN";
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+
+   cost = 10.000000;
+
+   table = "Weapons";
+   SubItemID = 151;
+   damage = "1#10";
+   range = 4000;
+   pass_armor = 1;
+   no_instant_kill = 1;
+   TwoHanded = 0;
+   indestructible = 0;
+   ranged = 1;
+   image = HammerImage;
+   ammo = HammerAmmo;
+   effectWeap = "[THROWN]";
+   exclusive = " ";
+   skill_used = "Throwing";
+   delay = 4;
+   reticle = 'reticle_rocketlauncher';
+   ignoreDistance = 50;
+   usesAmmo = 0;
+   fireDelay = 100;
+   triggerDown = 50;
+   cameraMaxDist = "0.69869";
+   class = "Weapon";
+   diffuseMap0 = "art/shapes/weapons/crossbow/crossbow.jpg";
+};
+$BloodClans::ItemNames[41] = "HammerWeapon";
+
 datablock ItemData(Huge_Gold_Nugget)
 {
    pickupName = "Huge Gold Nugget";

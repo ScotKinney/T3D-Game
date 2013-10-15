@@ -23,6 +23,13 @@ datablock ShapeBaseImageData(BaseMeleeImage)
    // table in the database.
    // item = ValMaleSwordWeapon;
 
+   // Can H2H weapons be used in the other image slots while this 
+   // weapon is mounted.
+   canH2H = true;
+
+   // Can this weapon be used when mounted to an AI or vehicle
+   canUseMounted = false;
+
    // Initial start up state
    stateName[0]                     = "Preactivate";
    stateTransitionOnLoaded[0]       = "Activate";

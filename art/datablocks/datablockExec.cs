@@ -46,6 +46,7 @@ exec("art/players/" @ $LoadedAvSet @ "/datablock.cs");
 // Inventory weapon datablocks
 exec("./weapons/meleeWeapons.cs");
 exec("./weapons/thrownWeapons.cs");
+exec("./weapons/firedWeapons.cs");
 
 // Any datablocks contained in the loaded art packs
 %packCount = getFieldCount($LoadedArtPacks);

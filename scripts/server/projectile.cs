@@ -57,6 +57,6 @@ function ProjectileData::onExplode(%data, %proj, %position, %mod)
    //echo("ProjectileData::onExplode("@%data.getName()@", "@%proj@", "@%position@", "@%mod@")");
 
    // Damage objects within the projectiles damage radius
-   if (%data.damageRadius > 0)
+   if ((%data.damageRadius > 0) && ((%data.radiusDamage > 0) || (%data.areaImpulse > 0)))
       radiusDamage(%proj, %position, %data.damageRadius, %data.radiusDamage, %data.damageType, %data.areaImpulse);
 }
