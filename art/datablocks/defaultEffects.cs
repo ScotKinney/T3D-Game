@@ -281,6 +281,7 @@ datablock SplashData(DefaultSplash)
 
 datablock ParticleData(LightPuff)
 {
+   textureName = "core/art/effects/dustParticle";
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.01;
    inheritedVelFactor   = 0.6;
