@@ -66,6 +66,9 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    DeathSound = GargoyleDeathCry;
    PainSound = GargoylePainCry;
 
+   numDeathAnims = 3;
+   numDamageAnims = 0;
+
    mass = 0;
    drag = 0;
    maxdrag = 0;
@@ -111,3 +114,5 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    //mountPose[1]	= "scoutroot"; // Driver
 };
 
+// Load the gargoyle weapon script
+exec("./weapon/fireball.cs");

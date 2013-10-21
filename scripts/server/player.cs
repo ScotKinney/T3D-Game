@@ -478,11 +478,21 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
       %obj.setDamageFlash(%flash);
 
       // If the pain is excessive, let's hear about it unless it's first spawn.
-      if ((%delta > 10) && !%obj.newlyAdded && !%isSilent)
+      %painThreshold = (%this.painThreshold $= "") ? 10 : %this.painThreshold;
+      if ((%delta > %painThreshold) && !%obj.newlyAdded && !%isSilent)
       {
          %obj.playPain();
-         if ( %obj.isBot )
-            %obj.setActionThread("damage1", false, false);
+         if ( %obj.isBot && (%this.numDamageAnims > 0))
+         {
+            %painStunTime = (%this.painStunTime $= "") ? 2000 : %this.painStunTime;
+            %oldSpeed = %obj.getMoveSpeed();
+            %obj.setMoveSpeed(0);
+            %anim = 1;
+            if ( %this.numDamageAnims > 1 )
+               %anim = getRandom(1, %this.numDamageAnims);
+            %obj.setActionThread("damage" @ %anim, false, false);
+            %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
+         }
       }
    }
    
@@ -677,7 +687,15 @@ function Player::playDeathAnimation(%this)
    }
    else
    {
-      %rand = getRandom(1, 11);
+      %numDeaths = %this.getDataBlock().numDeathAnims;
+      if ( %numDeaths $= "" )
+         %numDeaths = 11; // If not set, assume 11 death anims
+
+      if ( %numDeaths > 1 )
+         %rand = getRandom(1, %numDeaths);
+      else
+         %rand = 1;
+
       if ( !%this.setActionThread("Death" @ %rand) )
          %this.setActionThread("Death");
    }

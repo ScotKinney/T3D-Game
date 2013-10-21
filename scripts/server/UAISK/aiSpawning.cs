@@ -384,7 +384,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
    //Move Tolerance for pathed bots
    if (%obj.moveTolerance !$= "")
       %tempTolerance = %obj.moveTolerance;
-   else if (%block.mountable !$= "")
+   else if (%block.moveTolerance !$= "")
       %tempTolerance = %block.moveTolerance;
    else
       %tempTolerance = 1.0;

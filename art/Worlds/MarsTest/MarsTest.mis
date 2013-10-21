@@ -428,19 +428,18 @@ new SimGroup(MissionGroup) {
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         behavior = "LeashedBehavior";
+         behavior = "GuardBehavior";
          block = "IlluraGargoyle";
          botBelongsToMe = "12451";
          distDetect = "50";
          fov = "360";
          maxRange = "30";
-         //pathname = "Gargoyle1Path";
+         pathname = "Gargoyle1Path";
          paceDist = "10";
          respawnCount = "0";
          respawnCounter = "0";
-         team = "3";
-         //Weapon = "GargoyleFireballWeapon";
-         Weapon = "-NoWeapon";
+         team = "1";
+         Weapon = "GargoyleFireball";
    };
    new Path(Gargoyle2Path) {
       isLooping = "1";
@@ -601,7 +600,7 @@ new SimGroup(MissionGroup) {
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         behavior = "MountBehavior";
+         behavior = "GuardBehavior";
          block = "IlluraGargoyle";
          botBelongsToMe = "12453";
          distDetect = "50";
@@ -611,9 +610,8 @@ new SimGroup(MissionGroup) {
          pathname = "Gargoyle2Path";
          respawnCount = "0";
          respawnCounter = "0";
-         team = "9";
-         //Weapon = "GargoyleFireballWeapon";
-         Weapon = "-NoWeapon";
+         team = "2";
+         Weapon = "GargoyleFireball";
    };
 };
 //--- OBJECT WRITE END ---

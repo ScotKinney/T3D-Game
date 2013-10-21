@@ -31,7 +31,7 @@ function horseDts::onLoad(%this)
    %this.setSequenceBlend("headside", "1", "root", "0");
    %this.addTrigger("run", "15", "2");
    %this.addTrigger("run", "22", "2");
-   %this.addSequence("./Damage1.dsq", "Damage1", "0", "-1", "1", "0");
+   %this.addSequence("./horse_rearing.dsq", "Damage1", "0", "-1", "1", "0");
    %this.addSequence("./horse_walk.dsq", "runfull_forward", "0", "-1", "1", "0");
    %this.addSequence("./horse_trot.dsq", "run2full", "0", "-1", "1", "0");
    %this.addSequence("./horse_gallop.dsq", "run3full", "0", "-1", "1", "0");

@@ -49,6 +49,9 @@ datablock PlayerData(Tolgart : DefaultPlayerData)
    DeathSound = TolgartDeathCry;
    PainSound = TolgartPainCry;
 
+   numDeathAnims = 2;
+   numDamageAnims = 0;
+
    boundingBox = "1.25 1.25 2.8";
    swimBoundingBox = "1.25 2.8 1.25";
 

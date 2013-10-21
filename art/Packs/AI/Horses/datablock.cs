@@ -294,6 +294,7 @@ datablock SplashData(HorseSplash)
 //----------------------------------------------------------------------------
 datablock ParticleData(HorsePuff)
 {
+   textureName = "core/art/effects/dustParticle";
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.01;
    inheritedVelFactor   = 0.6;
@@ -502,6 +503,8 @@ datablock PlayerData(DefaultHorse)
    
    FootstepSplashHeight = 0.35;
 
+   numDeathAnims = 1;   // Only one death anim for the horse
+   numDamageAnims = 1;  // and one damage anim
    DeathSound = SteedDeathCrySound;
    PainSound = SteedPainCrySound;
 
