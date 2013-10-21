@@ -274,6 +274,9 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addTrigger("Run", "0", "1");
    %this.addTrigger("Run", "14", "2");
+   %this.addNode("mount1", "lHand", "-1.11772 0.192278 2.01267 -0.361203 0.215848 -0.907162 0.253184", "1");
+   %this.addSequence("art/players/base/Anims/TapLink.dsq", "taplink", "0", "0", "1", "0");
+   %this.setSequenceBlend("taplink", "0", "Root", "0");
 }
 
 $mack = true;
