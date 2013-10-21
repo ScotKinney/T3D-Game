@@ -22,16 +22,6 @@ function VelociraptorDts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_damage1.dsq", "damage1", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_damage2.dsq", "damage2", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death1", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death2", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death3", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death4", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death5", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death6", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death7", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death8", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death9", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death10", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death11", "0", "20");
    %this.addTrigger("run", "21", "1");
    %this.addTrigger("run", "39", "2");
    %this.addTrigger("sprint", "11", "1");

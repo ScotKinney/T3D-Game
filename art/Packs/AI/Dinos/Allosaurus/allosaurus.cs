@@ -22,16 +22,6 @@ function AllosaurusDts::onLoad(%this)
    %this.setSequenceCyclic("side", "1");
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_headKick.dsq", "attack3", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death1", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death2", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death3", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death4", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death5", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death6", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death7", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death8", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death9", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death10", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_death.dsq", "death11", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Allosaurus/allosaurus_sprint.dsq", "run2", "0", "40");
    %this.setSequenceCyclic("run2", "1");
    %this.addTrigger("run", "25", "2");

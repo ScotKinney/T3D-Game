@@ -62,6 +62,9 @@ datablock PlayerData(Allosaurus : DefaultPlayerData)
    DeathSound = AllosaurusDeathCry;
    PainSound = AllosaurusPainCry;
 
+   numDeathAnims = 1;   // Death1
+   numDamageAnims = 1;  // Damage1
+
    mass = 300;
    drag = 1.3;
 

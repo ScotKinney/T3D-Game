@@ -20,16 +20,6 @@ function DiplodocusDts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_damage1.dsq", "damage1", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_damage2.dsq", "damage2", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death1", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death2", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death3", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death4", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death5", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death6", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death7", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death8", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death9", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death10", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Diplodocus/diplodocus_death.dsq", "death11", "0", "20");
    %this.addTrigger("run", "13", "1");
    %this.addTrigger("run", "20", "2");
    %this.addTrigger("run", "27", "1");

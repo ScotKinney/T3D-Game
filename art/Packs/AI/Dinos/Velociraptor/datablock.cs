@@ -61,6 +61,9 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    DeathSound = VelociraptorDeathCry;
    PainSound = VelociraptorPainCry;
 
+   numDeathAnims = 1;   // Death1
+   numDamageAnims = 2;  // Damage1 and Damage2
+
    mass = 100;
    drag = 1.3;
 

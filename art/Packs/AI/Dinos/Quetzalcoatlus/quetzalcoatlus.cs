@@ -26,16 +26,6 @@ function QuetzalcoatlusDts::onLoad(%this)
    %this.setSequenceCyclic("fly", "1");
    %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_land.dsq", "land", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death1", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death2", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death3", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death4", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death5", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death6", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death7", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death8", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death9", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death10", "0", "20");
-   %this.addSequence("art/Packs/AI/Dinos/Quetzalcoatlus/quetzalcoatlus_death.dsq", "death11", "0", "20");
    %this.addTrigger("run", "5", "1");
    %this.addTrigger("run", "29", "2");
    %this.addTrigger("sprint", "4", "1");

@@ -22,16 +22,6 @@ function CompsognathusDts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_damage1.dsq", "damage1", "0", "-1");
    %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_damage2.dsq", "damage2", "0", "-1");
    %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death1", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death2", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death3", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death4", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death5", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death6", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death7", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death8", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death9", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death10", "0", "-1");
-   %this.addSequence("art/Packs/AI/Dinos/Compsognathus/compsognathus_death.dsq", "death11", "0", "-1");
    %this.addTrigger("run", "21", "1");
    %this.addTrigger("run", "39", "2");
    %this.addTrigger("sprint", "11", "1");
