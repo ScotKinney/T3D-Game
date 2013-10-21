@@ -12,6 +12,9 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "0.472093 3.16589 2.59716 0.69705 -0.68378 -0.215794 3.07014", "1");
    %this.addNode("mount2", "lHand", "-1.01155 0.175602 2.02436 1 0 0 0", "1");
+   %this.addNode("mount1", "lHand", "-1.11772 0.192278 2.01267 -0.361203 0.215848 -0.907162 0.253184", "1");
+   %this.addSequence("art/players/base/Anims/TapLink.dsq", "taplink", "0", "0", "1", "0");
+   %this.setSequenceBlend("taplink", "0", "Root", "0");
    %this.addMesh("Sash_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Sash_FJ 700");
    %this.addMesh("WristGrd_FJ_R 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_R 700");
    %this.addMesh("ChestStrap_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "ChestStrap_FJ 700");
