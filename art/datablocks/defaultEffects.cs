@@ -359,6 +359,12 @@ datablock DecalData(DefaultFootprint)
    material = "CommonPlayerFootprint";
 };
 
+datablock DecalData(FemaleFootprint)
+{
+   size = 0.4;
+   material = "FemalePlayerFootprint";
+};
+
 datablock DebrisData( DefaultDebris )
 {
    explodeOnMaxBounce = false;
