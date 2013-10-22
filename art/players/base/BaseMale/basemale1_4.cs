@@ -4,7 +4,6 @@ singleton TSShapeConstructor(basemale1_4Dts)
    baseShape = "./BaseMale1_4.dts";
 };
 
-
 function basemale1_4Dts::onLoad(%this)
 {
    %this.renameNode("upperJaw", "Eye");
@@ -16,7 +15,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
    %this.addNode("mount1", "lHand", "-1.11772 0.192278 2.01267 -0.361203 0.215848 -0.907162 0.253184", "1");
-   %this.addSequence("art/players/base/Anims/TapLink.dsq", "taplink", "0", "0", "1", "0");
    %this.addSequence("art/players/base/Anims/Root.dsq", "Root", "0", "479", "1", "0");
    %this.addSequence("art/players/base/Anims/Run.dsq", "Run", "0", "70", "1", "0");
    %this.addTrigger("Run", "21", "1");
@@ -136,7 +134,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/StandJump.dsq", "StandJump", "0", "70", "1", "0");
    %this.addTrigger("StandJump", "40", "1");
    %this.addTrigger("StandJump", "40", "2");
-   %this.addSequence("art/players/base/Anims/Land.dsq", "Land", "0", "16", "1", "0");
+   %this.addSequence("art/players/base/Anims/Land.dsq", "Land", "0", "29", "1", "0");
    %this.addTrigger("Land", "1", "1");
    %this.addTrigger("Land", "1", "2");
    %this.addSequence("art/players/base/Anims/Flip.dsq", "Flip", "0", "15", "1", "0");
@@ -280,8 +278,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/Sit_Ground.dsq", "Sit_Ground", "0", "1", "1", "0");
    %this.setSequencePriority("Sit_Ground", "5");
    %this.setSequenceCyclic("Sit_Ground", "1");
-
-
+   %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "1", "2", "1", "0");
+   %this.setSequenceBlend("Taplink", "1", "Root", "1");
 }
 
 $mack = true;
