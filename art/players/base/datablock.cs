@@ -52,6 +52,9 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    //Death Cry
    DeathSound = MaleDeathCry;
    PainSound = MalePainCry;
+
+  // Foot Print offSet
+   decalOffset = 0.23;
    
    DefaultSetup = "55,59,35,20,65,63,70,77";
    DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
@@ -70,6 +73,10 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    //Death Cry
    DeathSound = FemaleDeathCry;
    PainSound = FemalePainCry;
+
+  // Foot Print - OffSet
+   decalData   = FemaleFootprint;
+   decalOffset = 0.12;
 
    DefaultSetup = "80,99,216,386,393,382,379,380,390,393,390";
    DefaultSetup[Caerule] = "80,99,216,386,393,382,379,380,390,393,390";
