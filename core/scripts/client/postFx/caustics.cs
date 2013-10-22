@@ -20,6 +20,7 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
+
 singleton GFXStateBlockData( PFX_CausticsStateBlock : PFX_DefaultStateBlock )
 {
    blendDefined = true;
