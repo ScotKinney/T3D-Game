@@ -11,6 +11,15 @@ new Material(CommonPlayerFootprint)
    materialTag0 = "decal";
 };
 
+new Material(FemalePlayerFootprint)
+{
+   diffuseMap[0] = "core/art/effects/femalefootprint";
+   normalMap[0] = "core/art/effects/femalefootprint";
+   translucent = true;
+   translucentZWrite = "1";
+   materialTag0 = "decal";
+};
+
 //////////////////////////////////////////////////////////////
 singleton Material(DECAL_defaultblobshadow)
 {
