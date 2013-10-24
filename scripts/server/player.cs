@@ -46,15 +46,16 @@ function PLAYERDATA::onAdd(%this,%obj)
 
 function PLAYERDATA::onRemove(%this, %obj)
 {
-   // GUY >>
    // don't leave inventory array hanging about on the server
    if(isObject(%obj.inv))
       %obj.inv.delete();
-   //%obj.FlashlightDisable();
+
    if(isObject(%obj.light))
       %obj.light.delete();
-   // GUY <<
    
+   if(isObject(%obj.TAPLink))
+      %obj.use3DTL();
+
    if (%obj.client.player == %obj)
       %obj.client.player = 0;
 }

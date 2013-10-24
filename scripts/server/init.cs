@@ -84,6 +84,7 @@ function initServer()
    exec("./AlterVerse/commands.cs");
    exec("./AlterVerse/serverTransfer.cs");
    exec("./AlterVerse/serverTools.cs");
+   exec("./AlterVerse/TL3DShape.cs");
 }
 
 

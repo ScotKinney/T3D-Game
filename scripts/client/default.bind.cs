@@ -622,6 +622,10 @@ function toggleCursor( %val )
 
 globalActionMap.bind( mouse, button1, toggleCursor );
 
+// ----------------------------------------------------------------------------
+// Oculus Rift
+// ----------------------------------------------------------------------------
+
 function toggleRift(%val)
 {
    if (!%val)
@@ -647,10 +651,6 @@ function toggleRift(%val)
 
 moveMap.bind(keyboard, "ctrl r", toggleRift);
 
-// ----------------------------------------------------------------------------
-// Oculus Rift
-// ----------------------------------------------------------------------------
-
 function OVRSensorRotEuler(%pitch, %roll, %yaw)
 {
    //echo("Sensor euler: " @ %pitch SPC %roll SPC %yaw);
@@ -674,6 +674,20 @@ function sprint(%val)
    if ( ($mvTriggerCount5 % 2) != %val )
       $mvTriggerCount5++;
 }
+
+// ----------------------------------------------------------------------------
+// 3D TAP-Link
+// ----------------------------------------------------------------------------
+//function toggle3DTL(%val)  
+//{  
+   //if (%val)  
+   //{  
+      //// use the lantern item in inventory. Lantern Item is ID 88
+      //commandToServer('Use3DTL');
+   //}  
+//}  
+//moveMap.bind( keyboard, "alt t", toggle3DTL );
+moveMap.bindCmd(keyboard, "alt t", "commandToServer('Use3DTL');", "");
 
 // --------------------------
 // Mount Controls
