@@ -14,7 +14,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addNode("mount2", "lHand", "-1.01155 0.175602 2.02436 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
-   %this.addNode("mount1", "lHand", "-1.11772 0.192278 2.01267 -0.361203 0.215848 -0.907162 0.253184", "1");
+   %this.addNode("mount1", "lHand", "-1.0277 0.228715 1.98335 -0.199266 0.524624 -0.827685 0.391181", "1");
    %this.addMesh("Sash_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Sash_FJ 700");
    %this.addMesh("WristGrd_FJ_R 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_R 700");
    %this.addMesh("ChestStrap_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "ChestStrap_FJ 700");
