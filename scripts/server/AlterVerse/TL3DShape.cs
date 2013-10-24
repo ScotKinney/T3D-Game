@@ -42,4 +42,5 @@ function Player::destroyTL(%this)
    %this.destroyThread(0);
    if( isObject(%this.TAPLink) )
       %this.TAPLink.delete();
+   %this.TAPLink = "";
 }

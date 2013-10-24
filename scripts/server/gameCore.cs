@@ -691,6 +691,8 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
    }
 
    // Delete any objects that were mounted to the player
+   if(isObject(%client.player.TAPLink))
+      %client.player.destroyTL();
    if( isObject(%client.player.light) )
       %client.player.light.delete();
 
