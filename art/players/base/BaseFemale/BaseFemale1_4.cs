@@ -296,8 +296,9 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/Sit_Ground.dsq", "Sit_Ground", "0", "1", "1", "0");
    %this.setSequencePriority("Sit_Ground", "5");
    %this.setSequenceCyclic("Sit_Ground", "1");
-   %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "1", "2", "1", "0");
-   %this.setSequenceBlend("Taplink", "1", "Root", "1");
+   %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "0", "3", "1", "0");
+   %this.setSequencePriority("taplink", "10");
+
 }
 
 $mack = true;
