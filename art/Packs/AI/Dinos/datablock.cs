@@ -21,9 +21,16 @@ datablock SFXProfile(Jaw3Sound)
    preload = false;
 };
 
-datablock SFXProfile(JawHit1Sound)
+datablock SFXProfile(JawHitStaticSound)
 {
-   filename = "art/Packs/AI/Dinos/sound/TRexAttackCrunch";
+   filename = "art/Packs/AI/Dinos/sound/DinoHitStatic";
+   description = AudioClose3d;
+   preload = false;
+};
+
+datablock SFXProfile(JawHitLiveSound)
+{
+   filename = "art/Packs/AI/Dinos/sound/DinoHitLive";
    description = AudioClose3d;
    preload = false;
 };

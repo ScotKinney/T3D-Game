@@ -20,6 +20,8 @@ datablock DecalData(ParaFootprints)
    material = "DinoBiPedFootprint";
 };
 
+////////////////////////////////////////////////////////////////////
+
 datablock PlayerData(Para : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -27,8 +29,8 @@ datablock PlayerData(Para : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Parasaurolophus/Parasaurolophus.dts";
 
-   maxDamage = 300;
-   maxForwardSpeed = 8;
+   maxDamage = 1000;
+   maxForwardSpeed = 5;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
 
@@ -67,9 +69,9 @@ datablock PlayerData(Para : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 3;
+   maxUnderwaterSideSpeed = 2;
 
 
    minImpactSpeed = 45;
@@ -95,4 +97,64 @@ datablock PlayerData(Para : DefaultPlayerData)
    ImpactHardSound      = "DinoHeavyHardSound";
    ImpactMetalSound     = "DinoHeavyHardSound";
    ImpactSnowSound      = "DinoHeavySoftSound";
+};
+
+
+////////////////////Dino - Para_Jaw/////////////////
+
+datablock GameBaseData(Para_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw3Sound;
+   impulse = 1000;
+};
+
+datablock GameBaseData(Para_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw3Sound;
+   impulse = 1000;
+};
+
+datablock GameBaseData(Para_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw3Sound;
+   impulse = 1000;
+};
+
+
+datablock ShapeBaseImageData(Para_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Para_Jaw/Para_Jaw.dts";
+   item = Para_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Para_JawOne;
+   hthAttack[1]                     = Para_JawTwo;
+   hthAttack[2]                     = Para_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

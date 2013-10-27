@@ -20,6 +20,15 @@ datablock DecalData(TRexFootprints)
    material = "DinoBiPedFootprint";
 };
 
+datablock SFXProfile(TRexAttack1)
+{
+   filename = "art/Packs/AI/Dinos/sound/TRexAttack1";
+   description = AudioClose3d;
+   preload = false;
+};
+
+////////////////////////////////////////////////////////////////////////
+
 datablock PlayerData(TRex : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -27,8 +36,8 @@ datablock PlayerData(TRex : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/TRex/TRex.dts";
 
-   maxDamage = 400;
-   maxForwardSpeed = 10;
+   maxDamage = 800;
+   maxForwardSpeed = 6;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
 
@@ -67,9 +76,9 @@ datablock PlayerData(TRex : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 5;
+   maxUnderwaterBackwardSpeed = 2;
+   maxUnderwaterSideSpeed = 2;
 
    minImpactSpeed = 45;
 
@@ -94,4 +103,63 @@ datablock PlayerData(TRex : DefaultPlayerData)
    ImpactHardSound      = "DinoHeavyHardSound";
    ImpactMetalSound     = "DinoHeavyHardSound";
    ImpactSnowSound      = "DinoHeavySoftSound";
+};
+
+////////////////////Dino - TRex_Jaw/////////////////
+
+datablock GameBaseData(TRex_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = TRexAttack1;
+   impulse = 900;
+};
+
+datablock GameBaseData(TRex_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = TRexAttack1;
+   impulse = 900;
+};
+
+datablock GameBaseData(TRex_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = TRexAttack1;
+   impulse = 900;
+};
+
+
+datablock ShapeBaseImageData(TRex_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/TRex_Jaw/TRex_Jaw.dts";
+   item = TRex_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = TRex_JawOne;
+   hthAttack[1]                     = TRex_JawTwo;
+   hthAttack[2]                     = TRex_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

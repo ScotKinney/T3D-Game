@@ -27,7 +27,7 @@ datablock PlayerData(Spino : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Spinosaurus/spinosaurus.dts";
    
-   maxDamage = 300;
+   maxDamage = 600;
    maxForwardSpeed = 8;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
@@ -67,9 +67,9 @@ datablock PlayerData(Spino : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 3;
+   maxUnderwaterSideSpeed = 3;
 
    minImpactSpeed = 45;
 
@@ -94,4 +94,63 @@ datablock PlayerData(Spino : DefaultPlayerData)
    ImpactHardSound      = "DinoHeavyHardSound";
    ImpactMetalSound     = "DinoHeavyHardSound";
    ImpactSnowSound      = "DinoHeavySoftSound";
+};
+
+////////////////////Dino - Spino_Jaw/////////////////
+
+datablock GameBaseData(Spino_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 150;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+datablock GameBaseData(Spino_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 150;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+datablock GameBaseData(Spino_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 150;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+
+datablock ShapeBaseImageData(Spino_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Spino_Jaw/Spino_Jaw.dts";
+   item = Spino_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Spino_JawOne;
+   hthAttack[1]                     = Spino_JawTwo;
+   hthAttack[2]                     = Spino_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

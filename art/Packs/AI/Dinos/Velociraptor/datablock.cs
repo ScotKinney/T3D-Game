@@ -20,6 +20,15 @@ datablock DecalData(VelociraptorFootprints)
    material = "DinoBiPedSMFootprint";
 };
 
+datablock SFXProfile(VelociraptorAttack1)
+{
+   filename = "art/Packs/AI/Dinos/sound/VelociraptorAttack1";
+   description = AudioClose3d;
+   preload = false;
+};
+
+//////////////////////////////////////////////////////////
+
 datablock PlayerData(Velociraptor : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -27,7 +36,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Velociraptor/Velociraptor.dts";
 
-   maxDamage = 180;
+   maxDamage = 500;
    maxForwardSpeed = 6;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
@@ -67,9 +76,9 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    mass = 100;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 2;
+   maxUnderwaterSideSpeed = 2;
 
    minImpactSpeed = 45;
 
@@ -94,4 +103,63 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    ImpactHardSound      = "DinoLightHardSound";
    ImpactMetalSound     = "DinoLightHardSound";
    ImpactSnowSound      = "DinoLightSoftSound";
+};
+
+////////////////////Dino - Raptor_Jaw/////////////////
+
+datablock GameBaseData(Raptor_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 50;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = VelociraptorAttack1;
+   impulse = 300; 
+};
+
+datablock GameBaseData(Raptor_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 50;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = VelociraptorAttack1;
+   impulse = 300; 
+};
+
+datablock GameBaseData(Raptor_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 50;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = VelociraptorAttack1;
+   impulse = 300; 
+};
+
+
+datablock ShapeBaseImageData(Raptor_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Raptor_Jaw/Raptor_Jaw.dts";
+   item = Raptor_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Raptor_JawOne;
+   hthAttack[1]                     = Raptor_JawTwo;
+   hthAttack[2]                     = Raptor_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

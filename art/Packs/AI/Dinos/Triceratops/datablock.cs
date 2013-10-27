@@ -27,7 +27,7 @@ datablock PlayerData(Tri : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Triceratops/Triceratops.dts";
 
-   maxDamage = 200;
+   maxDamage = 800;
    maxForwardSpeed = 5;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
@@ -67,9 +67,9 @@ datablock PlayerData(Tri : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 2;
+   maxUnderwaterSideSpeed = 2;
 
    minImpactSpeed = 45;
 
@@ -94,4 +94,63 @@ datablock PlayerData(Tri : DefaultPlayerData)
    ImpactHardSound      = "DinoLightHardSound";
    ImpactMetalSound     = "DinoLightHardSound";
    ImpactSnowSound      = "DinoLightSoftSound";
+};
+
+////////////////////Dino - Tri_Jaw/////////////////
+
+datablock GameBaseData(Tri_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 700;
+};
+
+datablock GameBaseData(Tri_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 700;
+};
+
+datablock GameBaseData(Tri_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 300;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 700;
+};
+
+
+datablock ShapeBaseImageData(Tri_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Tri_Jaw/Tri_Jaw.dts";
+   item = Tri_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Tri_JawOne;
+   hthAttack[1]                     = Tri_JawTwo;
+   hthAttack[2]                     = Tri_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

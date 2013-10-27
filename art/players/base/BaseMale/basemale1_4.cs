@@ -278,6 +278,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "0", "3", "1", "0");
    %this.setSequencePriority("taplink", "10");
+   %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
 }
 
 $mack = true;

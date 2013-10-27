@@ -20,6 +20,15 @@ datablock DecalData(QuetzFootprints)
    material = "DinoBiPedFootprint";
 };
 
+datablock SFXProfile(QuetzalcoatlusAttack1)
+{
+   filename = "art/Packs/AI/Dinos/sound/QuetzalcoatlusAttack1";
+   description = AudioClose3d;
+   preload = false;
+};
+
+///////////////////////////////////////////////////////////
+
 datablock PlayerData(Quetzal : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -27,7 +36,7 @@ datablock PlayerData(Quetzal : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Quetzalcoatlus/Quetzalcoatlus.dts";
    
-   maxDamage = 300;
+   maxDamage = 400;
    maxForwardSpeed = 4;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
@@ -67,9 +76,9 @@ datablock PlayerData(Quetzal : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 2;
+   maxUnderwaterSideSpeed = 2;
 
    minImpactSpeed = 45;
 
@@ -94,4 +103,63 @@ datablock PlayerData(Quetzal : DefaultPlayerData)
    ImpactHardSound      = "DinoMedHardSound";
    ImpactMetalSound     = "DinoMedHardSound";
    ImpactSnowSound      = "DinoMedSoftSound";
+};
+
+////////////////////Dino - Quetz_Jaw/////////////////
+
+datablock GameBaseData(Quetz_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = QuetzalcoatlusAttack1;
+   impulse = 300;
+};
+
+datablock GameBaseData(Quetz_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = QuetzalcoatlusAttack1;
+   impulse = 300;
+};
+
+datablock GameBaseData(Quetz_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = QuetzalcoatlusAttack1;
+   impulse = 300;
+};
+
+
+datablock ShapeBaseImageData(Quetz_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Quetz_Jaw/Quetz_Jaw.dts";
+   item = Quetz_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Quetz_JawOne;
+   hthAttack[1]                     = Quetz_JawTwo;
+   hthAttack[2]                     = Quetz_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

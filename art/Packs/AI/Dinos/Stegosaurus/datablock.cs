@@ -27,7 +27,7 @@ datablock PlayerData(Stego : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Stegosaurus/stegosaurus.dts";
    
-   maxDamage = 200;
+   maxDamage = 600;
    maxForwardSpeed = 6;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
@@ -67,9 +67,9 @@ datablock PlayerData(Stego : DefaultPlayerData)
    mass = 300;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 3;
+   maxUnderwaterSideSpeed = 3;
 
    minImpactSpeed = 45;
 
@@ -94,4 +94,63 @@ datablock PlayerData(Stego : DefaultPlayerData)
    ImpactHardSound      = "DinoMedHardSound";
    ImpactMetalSound     = "DinoMedHardSound";
    ImpactSnowSound      = "DinoMedSoftSound";
+};
+
+////////////////////Dino - Stego_Jaw/////////////////
+
+datablock GameBaseData(Stego_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+datablock GameBaseData(Stego_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+datablock GameBaseData(Stego_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw1Sound;
+   impulse = 800;
+};
+
+
+datablock ShapeBaseImageData(Stego_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Stego_Jaw/Stego_Jaw.dts";
+   item = Stego_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Stego_JawOne;
+   hthAttack[1]                     = Stego_JawTwo;
+   hthAttack[2]                     = Stego_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

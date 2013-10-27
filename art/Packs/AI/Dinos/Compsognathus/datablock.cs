@@ -20,6 +20,13 @@ datablock DecalData(CompsognathusFootprints)
    material = "DinoBiPedSMFootprint";
 };
 
+datablock SFXProfile(CompsognathusAttack1)
+{
+   filename = "art/Packs/AI/Dinos/sound/CompsognathusAttack1";
+   description = AudioClose3d;
+   preload = false;
+};
+
 datablock PlayerData(compsognathus : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -27,10 +34,11 @@ datablock PlayerData(compsognathus : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/Dinos/Compsognathus/Compsognathus.dts";
 
-   maxDamage = 100;
+   maxDamage = 300;
    maxForwardSpeed = 5;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
+   run2speed = 2;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -67,9 +75,9 @@ datablock PlayerData(compsognathus : DefaultPlayerData)
    mass = 100;
    drag = 1.3;
 
-   maxUnderwaterForwardSpeed = 8.4;
-   maxUnderwaterBackwardSpeed = 7.8;
-   maxUnderwaterSideSpeed = 7.8;
+   maxUnderwaterForwardSpeed = 4;
+   maxUnderwaterBackwardSpeed = 2;
+   maxUnderwaterSideSpeed = 2;
 
    minImpactSpeed = 45;
 
@@ -94,4 +102,63 @@ datablock PlayerData(compsognathus : DefaultPlayerData)
    ImpactHardSound      = "DinoLightHardSound";
    ImpactMetalSound     = "DinoLightHardSound";
    ImpactSnowSound      = "DinoLightSoftSound";
+};
+
+////////////////////Dino - Comp_Jaw/////////////////
+
+datablock GameBaseData(Comp_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = CompsognathusAttack1;
+   impulse = 200; 
+};
+
+datablock GameBaseData(Comp_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = CompsognathusAttack1;
+   impulse = 200; 
+};
+
+datablock GameBaseData(Comp_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0.2;
+   endDamage = 2.3;
+   soundDelay = 0; // Play sound 0 ms after animation starts
+   swingSound = CompsognathusAttack1;
+   impulse = 200; 
+};
+
+
+datablock ShapeBaseImageData(Comp_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Comp_Jaw/Comp_Jaw.dts";
+   item = Comp_JawWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Comp_JawOne;
+   hthAttack[1]                     = Comp_JawTwo;
+   hthAttack[2]                     = Comp_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
 };

@@ -95,3 +95,63 @@ datablock PlayerData(Diplo : DefaultPlayerData)
    ImpactMetalSound     = "DinoHeavyHardSound";
    ImpactSnowSound      = "DinoHeavySoftSound";
 };
+
+////////////////////Dino - Diplo_Jaw/////////////////
+
+datablock GameBaseData(Diplo_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw2Sound;
+   impulse = 1200;
+};
+
+datablock GameBaseData(Diplo_JawTwo)
+{
+   seqName = "attack2";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw2Sound;;
+   impulse = 1200;
+};
+
+datablock GameBaseData(Diplo_JawThree)
+{
+   seqName = "attack3";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 100;
+   startDamage = 0.2;
+   endDamage = 10;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = Jaw2Sound;;
+   impulse = 1200;
+};
+
+
+datablock ShapeBaseImageData(Diplo_JawImage : BaseMeleeImage)
+{
+   shapefile = "art/shapes/weapons/Diplo_Jaw/Diplo_Jaw.dts";
+   item = Diplo_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 3;
+   hthAttack[0]                     = Diplo_JawOne;
+   hthAttack[1]                     = Diplo_JawTwo;
+   hthAttack[2]                     = Diplo_JawThree;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "JawHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "JawHitLiveSound";
+
+};
