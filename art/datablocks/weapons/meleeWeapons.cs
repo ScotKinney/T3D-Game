@@ -22,6 +22,21 @@ datablock SFXProfile(SwordSwing3Sound)
    preload = true;
 };
 
+datablock SFXProfile(SwordHitLiveSound)
+{
+   filename = "art/sound/weapons/SwordHitLive";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(SwordHitStaticSound)
+{
+   filename = "art/sound/weapons/SwordHitStatic";
+   description = AudioClose3d;
+   preload = true;
+};
+
+
 //////////////// The 5 attacks////////////////
 
 singleton GameBaseData(SwordSwingOne)
@@ -104,9 +119,9 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
    hthAttack[4]                     = SwordSwingFive;
 
    // The sound to play when this weapon hits a static object
-   hitStaticSound = "SwordHit1Sound";
+   hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
-   hitLiveSound = "SwordHit1Sound";
+   hitLiveSound = "SwordHitLiveSound";
 };
 
 datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)

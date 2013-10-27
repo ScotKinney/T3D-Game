@@ -89,9 +89,16 @@ datablock SFXProfile(ProjectileHitSound)
    preload = true;
 };
 
-datablock SFXProfile(AxeHitSound)
+datablock SFXProfile(AxeHitLiveSound)
 {
-   filename = "art/sound/weapons/Hit_TomaHawk";
+   filename = "art/sound/weapons/AxeHitLive";
+   description = AudioDefault3d;
+   preload = true;
+};
+
+datablock SFXProfile(AxeHitStaticSound)
+{
+   filename = "art/sound/weapons/AxeHitStatic";
    description = AudioDefault3d;
    preload = true;
 };
@@ -770,7 +777,7 @@ datablock ExplosionData(DefaultHitExplosion)
 
 datablock ExplosionData(AxeHitExplosion : DefaultHitExplosion)
 {
-   soundProfile = AxeHitSound;
+   soundProfile = AxeHitLiveSound;
 };
 
 datablock ExplosionData(flintlockHitExplosion)
