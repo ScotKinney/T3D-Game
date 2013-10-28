@@ -122,6 +122,11 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
       if (!%obj.setAttackThread(%attack.seqName, %timeScale,
             %attack.startDamage, %attack.endDamage))
          echo("ERROR in setAttackThread()");
+      else if ( %obj.isBot )
+      {
+         %obj.inAttackThread = true;
+         %obj.setImageTrigger(%slot, false);
+      }
    }
    else
    {

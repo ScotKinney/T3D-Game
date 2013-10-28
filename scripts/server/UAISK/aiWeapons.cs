@@ -137,6 +137,8 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
 function AIPlayer::ceaseFire(%this, %obj, %tempWeapon)
 {
    %weapon = %tempWeapon @ "Weapon";
+   if ( !isObject(%weapon) )
+      %weapon = %tempWeapon @ "Image";
    if (!isObject(%weapon) || %weapon.getClassName() !$= $AISK_AFX_DATA_TYPE)
       //Stop holding the trigger
       %obj.setImageTrigger(0, false);
@@ -149,8 +151,9 @@ function AIPlayer::ceaseFire(%this, %obj, %tempWeapon)
    else
       %k = $AISK_FIRE_DELAY;
 
-   //Set a delay between when the bot let off the trigger and when it can fire again
-   %this.ceasefiretrigger = %this.schedule(%k, "delayFire", %obj);
+   //Set a delay between when the bot lets off the trigger and when it can fire again
+   if ( !%obj.inAttackThread )
+      %this.ceasefiretrigger = %this.schedule(%k, "delayFire", %obj);
 }
 
 //delayFire is called to clear the firing variable. Clearing this allows

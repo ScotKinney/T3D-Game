@@ -40,32 +40,6 @@ new GameTSCtrl(CameraGui) {
             helpTag = "0";
       };
    };
-   new GuiBitmapCtrl(BottomPrintDlg) {
-      profile = "CenterPrintProfile";
-      horizSizing = "center";
-      vertSizing = "top";
-      position = "45 375";
-      extent = "550 20";
-      minExtent = "8 8";
-      visible = "0";
-      bitmap = "./hudfill";
-      wrap = "0";
-         helpTag = "0";
-
-      new GuiMLTextCtrl(BottomPrintText) {
-         profile = "CenterPrintTextProfile";
-         horizSizing = "center";
-         vertSizing = "center";
-         position = "0 0";
-         extent = "546 12";
-         minExtent = "8 8";
-         visible = "1";
-         lineSpacing = "2";
-         allowColorChars = "0";
-         maxChars = "-1";
-            helpTag = "0";
-      };
-   };
    new GuiBitmapCtrl(LagIcon) {
       profile = "GuiDefaultProfile";
       horizSizing = "right";

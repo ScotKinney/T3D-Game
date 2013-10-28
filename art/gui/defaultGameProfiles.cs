@@ -204,7 +204,7 @@ singleton GuiControlProfile ("ChatHudBorderProfile")
 
 
 //-----------------------------------------------------------------------------
-// Center and bottom print
+// Center print
 
 singleton SFXProfile(CenterPrintSFX)   
 {   

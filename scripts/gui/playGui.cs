@@ -88,13 +88,64 @@ function PlayGui::ResizeCenterPrint(%this, %newWidth)
 }
 
 //-----------------------------------------------------------------------------
+// HUD mouse functions
+//-----------------------------------------------------------------------------
 
-function refreshBottomTextCtrl()
+function PlayGui::onMouseOver(%this, %obj)
 {
-   BottomPrintText.position = "0 0";
+   //if ( isEventPending(%this.hoverEvent) )
+   //{
+      //cancel(%this.hoverEvent);
+   //}
+   //%this.hideItemPopup();
+
+   %this.callBack("onMouseOver", %obj);
 }
 
-function refreshCenterTextCtrl()
+function PlayGui::onMouseDown(%this, %obj)
 {
-   CenterPrintText.position = "0 0";
+   //if ( isEventPending(%this.hoverEvent) )
+   //{
+      //cancel(%this.hoverEvent);
+   //}
+   //%this.hideItemPopup();
+   
+   %this.callBack("onMouseDown", %obj);
+}
+
+function PlayGui::onMouseUp(%this, %obj)
+{
+   return;
+}
+
+// GameTSCtrl::callBack re-routes the callback to different functions
+// depending on the object type that we are dealing with
+function PlayGui::callBack(%this, %funcName, %obj)
+{
+   // don't do anything if the object is not valid
+   if(!isObject(%obj))
+      return;
+      
+   // get the class name of the object
+   %objClass = %obj.getClassName();
+
+   // BloodClans Script Modification (MAR) - AFX Spell Casting >>>
+   if ( %objClass $= "AIPlayer" )
+      %objClass = "Player";
+   // BloodClans Script Modification (MAR) - AFX Spell Casting <<<
+      
+   // BloodClans Script Modification (MAR) - Fishing >>>
+   if ( (strstr(%objClass, "Terrain") != -1) || (%objClass $= "TSStatic") )
+      return;
+
+   if ( (%objClass $= "WaterPlane") || (%objClass $= "WaterBlock")  || (%objClass $= "River"))
+      %objClass = "Water";
+   // BloodClans Script Modification (MAR) - Fishing <<<
+
+   // construct the string that will be used for the object specific callback
+   // e.g. %this.onMouseOverItem(%obj);
+   %funcStr = "%this." @ %funcName @ %objClass @ "(" @ %obj @ ");";
+
+   // call the function   
+   //eval(%funcStr);
 }

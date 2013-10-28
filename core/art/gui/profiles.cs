@@ -541,31 +541,6 @@ new GuiControlProfile( ConsoleTextEditProfile : GuiTextEditProfile )
    category = "Core";
 };
 
-//-----------------------------------------------------------------------------
-// Center and bottom print
-//-----------------------------------------------------------------------------
-
-if( !isObject( CenterPrintProfile ) )
-new GuiControlProfile ( CenterPrintProfile )
-{
-   opaque = false;
-   fillColor = "128 128 128";
-   fontColor = "0 255 0";
-   border = true;
-   borderColor = "0 255 0";
-   category = "Core";
-};
-
-if( !isObject( CenterPrintTextProfile ) )
-new GuiControlProfile ( CenterPrintTextProfile )
-{
-   opaque = false;
-   fontType = "Arial";
-   fontSize = 12;
-   fontColor = "0 255 0";
-   category = "Core";
-};
-
 // ----------------------------------------------------------------------------
 // Radio button control
 // ----------------------------------------------------------------------------

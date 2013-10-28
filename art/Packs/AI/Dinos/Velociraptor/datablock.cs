@@ -47,7 +47,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    Weapon = "Raptor_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 1;
+   maxRange = 1.5;
    minRange = 0;
    distDetect = 130;
    sidestepDist = 2;
@@ -59,6 +59,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    cycleCounter = "5";
    weaponMode = "pattern";
    activeDodge = 1;
+   moveTolerance = 0.2;
    team = 1;
    respawnTime = 60000; // 60 * 1000, 60 seconds.
    deathEffectron = "";
@@ -82,8 +83,8 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
 
    minImpactSpeed = 45;
 
-   boundingBox = "1 3 2";
-   swimBoundingBox = "1 3 2";
+   boundingBox = "1 2 2";
+   swimBoundingBox = "1 2 2";
 
    // Foot Prints
    decalData   = VelociraptorFootprints;

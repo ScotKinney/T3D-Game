@@ -20,10 +20,12 @@ function Player::use3DTL(%this)
    }
    else
    {  // Create the shape
-      %tlShape = new TSStatic()
+      %tlShape = new TLShape()
       {
          shapeName = "art/inv/TapLink/TapLink.dts";
+         ScreenMaterialName = "TapLink";
          scale = "1 1 1";
+         collisionType = "Visible Mesh";
          playAmbient = "0";
       };
 

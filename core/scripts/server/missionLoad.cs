@@ -36,12 +36,6 @@ function loadMission( %missionName, %isFirstMission )
    echo("*** LOADING MISSION: " @ %missionName);
    echo("*** Stage 1 load");
 
-   // Reset all of these
-   //if (isFunction("clearCenterPrintAll"))
-      //clearCenterPrintAll();
-   //if (isFunction("clearBottomPrintAll"))
-      //clearBottomPrintAll();
-
    // increment the mission sequence (used for ghost sequencing)
    $missionSequence++;
    $missionRunning = false;

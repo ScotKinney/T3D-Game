@@ -380,6 +380,12 @@ function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
 }
 //epls end
 
+function PlayerData::animationDone(%this, %obj)
+{
+   %obj.firing = false;
+   %obj.inAttackThread = false;
+}
+
 function AIPlayer::attackTransition(%this, %obj)
 {
    //if holding, enhance the bot's FOV

@@ -29,6 +29,10 @@ datablock ShapeBaseImageData(BaseMeleeImage)
 
    // Can this weapon be used when mounted to an AI or vehicle
    canUseMounted = false;
+   
+   // This value only affects AI using this weapon. This will prevent them from
+   // triggering a new attack too early. Time in ms.
+   triggerDown = 1500;
 
    // Initial start up state
    stateName[0]                     = "Preactivate";

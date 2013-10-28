@@ -427,7 +427,7 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
    if ( !%client.player.canH2H )
    {
       %slot = 0;
-      %attackNum = 0;
+      //%attackNum = 0;
    }
 
    if ( %attackNum < 4 )
