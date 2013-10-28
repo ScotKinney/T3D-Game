@@ -113,9 +113,9 @@ datablock GameBaseData(Raptor_JawOne)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 50;
-   startDamage = 0.2;
-   endDamage = 1.8;
-   soundDelay = 0; // Play sound 0 ms after animation starts
+   startDamage = 0.47;
+   endDamage = .8;
+   soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
 };
@@ -126,9 +126,9 @@ datablock GameBaseData(Raptor_JawTwo)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 50;
-   startDamage = 0.1;
-   endDamage = 1.8;
-   soundDelay = 0; // Play sound 0 ms after animation starts
+   startDamage = 0.17;
+   endDamage = 1.7;
+   soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
 };
@@ -139,9 +139,9 @@ datablock GameBaseData(Raptor_JawThree)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 50;
-   startDamage = 0.1;
+   startDamage = 0.3;
    endDamage = 1.8;
-   soundDelay = 0; // Play sound 0 ms after animation starts
+   soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
 };
