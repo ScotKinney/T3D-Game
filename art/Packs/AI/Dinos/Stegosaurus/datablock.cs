@@ -140,7 +140,7 @@ datablock GameBaseData(Stego_JawThree)
 
 datablock ShapeBaseImageData(Stego_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Stego_Jaw/Stego_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Stegosaurus/Stego_Jaw.dts";
    item = Stego_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

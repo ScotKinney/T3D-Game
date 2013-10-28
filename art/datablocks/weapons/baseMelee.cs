@@ -1,7 +1,7 @@
 // Sound effects needed for base and inventory weapons
-datablock SFXProfile(SwordHit1Sound)
+datablock SFXProfile(SwordHitLiveSound)
 {
-   filename = "art/sound/weapons/SwordHit";
+   filename = "art/sound/weapons/SwordHitLive";
    description = AudioClose3d;
    preload = true;
 };

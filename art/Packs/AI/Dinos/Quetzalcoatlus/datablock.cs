@@ -149,7 +149,7 @@ datablock GameBaseData(Quetz_JawThree)
 
 datablock ShapeBaseImageData(Quetz_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Quetz_Jaw/Quetz_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Quetzalcoatlus/Quetz_Jaw.dts";
    item = Quetz_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

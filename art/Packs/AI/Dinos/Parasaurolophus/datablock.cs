@@ -144,7 +144,7 @@ datablock GameBaseData(Para_JawThree)
 
 datablock ShapeBaseImageData(Para_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Para_Jaw/Para_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Parasaurolophus/Para_Jaw.dts";
    item = Para_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

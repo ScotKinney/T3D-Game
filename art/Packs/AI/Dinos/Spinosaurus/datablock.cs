@@ -140,7 +140,7 @@ datablock GameBaseData(Spino_JawThree)
 
 datablock ShapeBaseImageData(Spino_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Spino_Jaw/Spino_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Spinosaurus/Spino_Jaw.dts";
    item = Spino_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

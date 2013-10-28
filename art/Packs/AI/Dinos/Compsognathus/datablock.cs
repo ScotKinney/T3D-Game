@@ -113,7 +113,7 @@ datablock GameBaseData(Comp_JawOne)
    timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
-   endDamage = 2.3;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = CompsognathusAttack1;
    impulse = 200; 
@@ -125,8 +125,8 @@ datablock GameBaseData(Comp_JawTwo)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.2;
-   endDamage = 2.3;
+   startDamage = 0.1;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = CompsognathusAttack1;
    impulse = 200; 
@@ -139,7 +139,7 @@ datablock GameBaseData(Comp_JawThree)
    timeScale = 1;
    damageAmount = 25;
    startDamage = 0.2;
-   endDamage = 2.3;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = CompsognathusAttack1;
    impulse = 200; 
@@ -148,7 +148,7 @@ datablock GameBaseData(Comp_JawThree)
 
 datablock ShapeBaseImageData(Comp_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Comp_Jaw/Comp_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Compsognathus/Comp_Jaw.dts";
    item = Comp_JawWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
    // Here are the Attacks we support

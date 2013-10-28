@@ -140,7 +140,7 @@ datablock GameBaseData(Tri_JawThree)
 
 datablock ShapeBaseImageData(Tri_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Tri_Jaw/Tri_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Triceratops/Tri_Jaw.dts";
    item = Tri_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

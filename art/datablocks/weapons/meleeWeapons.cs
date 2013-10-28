@@ -129,6 +129,7 @@ datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/BF_SwordMtd_Val.dts";
    //item = ValFemaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
@@ -136,6 +137,7 @@ datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/LongSword_Mounted.dts";
    //item = MythMaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
@@ -143,6 +145,7 @@ datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/BF_LSword_Mtd.dts";
    //item = MythFemaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
@@ -150,6 +153,7 @@ datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/scimi/Scimitar_Mounted1_4.dts";
    //item = FJMaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
@@ -157,6 +161,7 @@ datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/Scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/Scimi/Scimitar_BF_Mtd.dts";
    //item = FJFemaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
@@ -164,6 +169,7 @@ datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/SpartanSword_Mounted1_4.dts";
    //item = KardMaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
@@ -171,6 +177,7 @@ datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/BF_Sword_Kard_Mtd.dts";
    //item = KardFemaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
@@ -178,6 +185,7 @@ datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/SwordTok_Mounted.dts";
    //item = TokMaleSwordWeapon;
+   canH2H = false;
 };
 
 datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
@@ -185,6 +193,7 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
    //item = TokFemaleSwordWeapon;
+   canH2H = false;
 };
 
 // Cheat to test weapons before we have the full inventory system implemented.

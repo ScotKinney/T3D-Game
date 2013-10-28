@@ -114,7 +114,7 @@ datablock GameBaseData(Raptor_JawOne)
    timeScale = 1;
    damageAmount = 50;
    startDamage = 0.2;
-   endDamage = 2.3;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
@@ -126,8 +126,8 @@ datablock GameBaseData(Raptor_JawTwo)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 50;
-   startDamage = 0.2;
-   endDamage = 2.3;
+   startDamage = 0.1;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
@@ -139,8 +139,8 @@ datablock GameBaseData(Raptor_JawThree)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 50;
-   startDamage = 0.2;
-   endDamage = 2.3;
+   startDamage = 0.1;
+   endDamage = 1.8;
    soundDelay = 0; // Play sound 0 ms after animation starts
    swingSound = VelociraptorAttack1;
    impulse = 300; 
@@ -149,7 +149,7 @@ datablock GameBaseData(Raptor_JawThree)
 
 datablock ShapeBaseImageData(Raptor_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Raptor_Jaw/Raptor_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Velociraptor/Raptor_Jaw.dts";
    item = Raptor_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

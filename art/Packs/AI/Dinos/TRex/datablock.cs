@@ -149,7 +149,7 @@ datablock GameBaseData(TRex_JawThree)
 
 datablock ShapeBaseImageData(TRex_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/TRex_Jaw/TRex_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/TRex/TRex_Jaw.dts";
    item = TRex_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support

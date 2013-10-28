@@ -120,7 +120,7 @@ datablock GameBaseData(Diplo_JawTwo)
    startDamage = 0.2;
    endDamage = 10;
    soundDelay = 1; // Play sound 0 ms after animation starts
-   swingSound = Jaw2Sound;;
+   swingSound = Jaw2Sound;
    impulse = 1200;
 };
 
@@ -133,14 +133,14 @@ datablock GameBaseData(Diplo_JawThree)
    startDamage = 0.2;
    endDamage = 10;
    soundDelay = 1; // Play sound 0 ms after animation starts
-   swingSound = Jaw2Sound;;
+   swingSound = Jaw2Sound;
    impulse = 1200;
 };
 
 
 datablock ShapeBaseImageData(Diplo_JawImage : BaseMeleeImage)
 {
-   shapefile = "art/shapes/weapons/Diplo_Jaw/Diplo_Jaw.dts";
+   shapefile = "art/Packs/AI/Dinos/Diplodocus/Diplo_Jaw.dts";
    item = Diplo_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support
