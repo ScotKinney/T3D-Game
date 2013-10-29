@@ -15,6 +15,13 @@ datablock SFXProfile(TolgartPainCry)
    preload = false;
 };
 
+datablock SFXProfile(TolgartAttack1)
+{
+   fileName = "art/Packs/AI/Tolgart/sound/TolgartAttack1";
+   description = AudioClosest3d;
+   preload = false;
+};
+
 datablock PlayerData(Tolgart : DefaultPlayerData)
 {
    renderFirstPerson = false;

@@ -35,5 +35,5 @@ datablock ShapeBaseImageData(TolgartsAxeImage : BaseTriggeredImage)
    rearmDelay = 1000;
    fullSkelAnim = true;
    fireAnim = "Attack";
-   fireSound = BaseThrowSound;
+   fireSound = TolgartAttack1;
 };
