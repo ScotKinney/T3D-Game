@@ -7,3 +7,10 @@ singleton Material(mat_velociraptor)
    specularMap[0] = "velociraptors_s";
    useAnisotropic[0] = "1";
 };
+
+singleton Material(matDeerHideTrans)
+{
+   mapTo = "transparent";
+   diffuseMap[0] = "art/inv/items/deerhide/transparent";
+   translucent = "1";
+};
