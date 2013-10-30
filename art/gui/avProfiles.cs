@@ -104,3 +104,9 @@
       justify = "center";
       category = "Tools";
    };
+
+   singleton GuiControlProfile (AVWebResponderProfile)
+   {
+      canKeyFocus = true;
+      category = "Tools";
+   };

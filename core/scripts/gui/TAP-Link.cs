@@ -36,6 +36,34 @@ function ToggleTAPLink(%val)
       TAPLinkHUD.showTL();
 }
 
+function Hide3DTAPLink()
+{
+   commandToServer('Use3DTL');
+   //RestoreGlobalBinds();
+}
+
+function RestoreGlobalBinds()
+{
+   //globalActionMap.bind( mouse, button1, toggleCursor );
+   if ( Canvas.getContent() == PlayGui.getId() )
+      showCursor();
+}
+
+function focusWebShape(%obj, %mouseDown, %rayStart, %rayEnd)
+{
+   // get the class name of the object
+   %objClass = %obj.getClassName();
+   echo("Hit Web Shape: " @ %objClass @ ", Mouse is " @ (%mouseDown?"Down":"Up") @ ", Ray start: " @ %rayStart @ ", Ray end: " @ %rayEnd);
+   %goodShape = $TAP::WebResponder.setInputTarget(%obj, %rayStart, %rayEnd, %mouseDown);
+   if ( %goodShape )
+   {
+      if ( ($mvTriggerCount0 % 2) == 1 )
+         $mvTriggerCount0++;
+      //globalActionMap.unbind( mouse, button1);
+      hideCursor();
+   }
+}
+
 function TAPLinkHUD::onResize(%this, %newWidth, %newHeight)
 {
    %this.checkPositions(%newWidth, %newHeight);

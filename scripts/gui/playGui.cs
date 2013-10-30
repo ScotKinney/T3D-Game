@@ -50,6 +50,7 @@ function PlayGui::onWake(%this)
    %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
 
    PutTLOnTop();  // Bring the TL gui back onto the canvas
+   $TAP::WebResponder = %this-->WebResponder;
 }
 
 function PlayGui::onSleep(%this)

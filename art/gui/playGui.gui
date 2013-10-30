@@ -25,6 +25,19 @@
       helpTag = "0";
       noCursor = "1";
 
+   new GuiWebResponderCtrl() {
+      isContainer = "0";
+      Profile = "AVWebResponderProfile";
+      position = "-2 -2";
+      extent = "2 2";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      canSave = "1";
+      Visible = "1";
+      canSaveDynamicFields = "0";
+      InternalName = "WebResponder";
+   };
    new GuiBitmapCtrl(CenterPrintDlg) {
       bitmap = "art/gui/hudfill.png";
       wrap = "0";

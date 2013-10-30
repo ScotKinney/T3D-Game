@@ -608,6 +608,8 @@ function GameCore::preparePlayer(%game, %client)
 
    //Put the player in a SimSet with its teammates
    TeamSimSets(%client.player, %client.player.team);
+   
+   %client.player.newlyAdded = false;
 }
 
 function GameCore::loadOut(%game, %player)

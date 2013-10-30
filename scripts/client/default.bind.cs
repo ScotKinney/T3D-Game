@@ -831,14 +831,21 @@ function doRandomAttack(%val)
       commandToServer('DoAttack', %slot, 5);
    }
 }
-moveMap.bind( mouse, button0, doRandomAttack );
 
-//function mouseFire(%val)
-//{
-   //$mvTriggerCount0++;
-   //if (%val && (($mvTriggerCount0 % 2) == 0))
-      //$mvTriggerCount0++;
-//}
+function mouseFire(%val)
+{
+   if ( !%val )
+      return;
+
+   if ( isObject(ServerConnection) &&
+      ServerConnection.isFirstPerson() &&
+      ServerConnection.getControlObject().isMethod("testWebShapeHit") &&
+      ServerConnection.getControlObject().testWebShapeHit() )
+      return;
+
+   doRandomAttack(%val);
+}
+moveMap.bind( mouse, button0, mouseFire );
 
 function unmountWeapon(%val)
 {
