@@ -12,7 +12,14 @@ datablock SFXProfile(SteedDeathCrySound)
 
 datablock SFXProfile(SteedPainCrySound)
 {
-   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
+   filename    = "art/Packs/AI/Horses/sound/HorsePainCry.wav";
+   description = AudioClose3d;
+   preload = true;
+};
+
+datablock SFXProfile(SteedRearCrySound)
+{
+   filename    = "art/Packs/AI/Horses/sound/HorseRearCry.wav";
    description = AudioClose3d;
    preload = true;
 };
