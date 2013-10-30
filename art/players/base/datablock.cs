@@ -11,32 +11,218 @@
 //Pain-Death Cries - FootPrints
 //////////////////////////////////////////////////////////////////////////
 
-//MalePlayer
-datablock SFXProfile(MaleDeathCry)   
+//////////////MalePlayer Death Cries
+
+datablock SFXProfile(MaleDeathCry1)   
 {   
-   fileName = "art/players/base/sound/MaleDeathCry";   
+   fileName = "art/players/base/sound/MaleDeathCry1";   
    description = AudioClosest3d;   
    preload = false;   
-}; 
+};
+datablock SFXProfile(MaleDeathCry2)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry2";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
+datablock SFXProfile(MaleDeathCry3)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry3";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
+datablock SFXProfile(MaleDeathCry4)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry4";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
+datablock SFXProfile(MaleDeathCry5)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry5";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
+datablock SFXProfile(MaleDeathCry6)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry6";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
+datablock SFXProfile(MaleDeathCry7)   
+{   
+   fileName = "art/players/base/sound/MaleDeathCry7";   
+   description = AudioClosest3d;   
+   preload = false;   
+};
 
-datablock SFXProfile(MalePainCry)
+////////////////MalePlayer Pain Cries 
+
+datablock SFXProfile(MalePainCry1)
 {
-   fileName = "art/players/base/sound/MalePainCry";
+   fileName = "art/players/base/sound/MalePainCry1";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry2)
+{
+   fileName = "art/players/base/sound/MalePainCry2";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry3)
+{
+   fileName = "art/players/base/sound/MalePainCry3";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry4)
+{
+   fileName = "art/players/base/sound/MalePainCry4";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry5)
+{
+   fileName = "art/players/base/sound/MalePainCry5";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry6)
+{
+   fileName = "art/players/base/sound/MalePainCry6";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry7)
+{
+   fileName = "art/players/base/sound/MalePainCry7";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry8)
+{
+   fileName = "art/players/base/sound/MalePainCry8";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry9)
+{
+   fileName = "art/players/base/sound/MalePainCry9";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(MalePainCry10)
+{
+   fileName = "art/players/base/sound/MalePainCry10";
    description = AudioClosest3d;
    preload = false;
 };
 
-//FemalePlayer
-datablock SFXProfile(FemaleDeathCry)
+////////////////////FemalePlayer Death Cries
+
+datablock SFXProfile(FemaleDeathCry1)
 {
-   fileName = "art/players/base/sound/FemaleDeathCry";
+   fileName = "art/players/base/sound/FemaleDeathCry1";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry2)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry2";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry3)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry3";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry4)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry4";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry5)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry5";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry6)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry6";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemaleDeathCry7)
+{
+   fileName = "art/players/base/sound/FemaleDeathCry7";
    description = AudioClosest3d;
    preload = false;
 };
 
-datablock SFXProfile(FemalePainCry)
+//////////////Female Pain Cries
+
+datablock SFXProfile(FemalePainCry1)
 {
-   fileName = "art/players/base/sound/FemalePainCry";
+   fileName = "art/players/base/sound/FemalePainCry1";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry2)
+{
+   fileName = "art/players/base/sound/FemalePainCry2";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry3)
+{
+   fileName = "art/players/base/sound/FemalePainCry3";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry4)
+{
+   fileName = "art/players/base/sound/FemalePainCry4";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry5)
+{
+   fileName = "art/players/base/sound/FemalePainCry5";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry6)
+{
+   fileName = "art/players/base/sound/FemalePainCry6";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry7)
+{
+   fileName = "art/players/base/sound/FemalePainCry7";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry8)
+{
+   fileName = "art/players/base/sound/FemalePainCry8";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry9)
+{
+   fileName = "art/players/base/sound/FemalePainCry9";
+   description = AudioClosest3d;
+   preload = false;
+};
+datablock SFXProfile(FemalePainCry10)
+{
+   fileName = "art/players/base/sound/FemalePainCry10";
    description = AudioClosest3d;
    preload = false;
 };
@@ -50,8 +236,31 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    physicsPlayerType = "CapsuleZ";
 
    //Death Cry
-   DeathSound = MaleDeathCry;
-   PainSound = MalePainCry;
+   //DeathSound = MaleDeathCry;
+   //PainSound = MalePainCry;
+  
+   numPainSounds = 10;
+   PainSound[0] = MalePainCry1;
+   PainSound[1] = MalePainCry2;
+   PainSound[2] = MalePainCry3;
+   PainSound[3] = MalePainCry4;
+   PainSound[4] = MalePainCry5;
+   PainSound[5] = MalePainCry6;
+   PainSound[6] = MalePainCry7;
+   PainSound[7] = MalePainCry8;
+   PainSound[8] = MalePainCry9;
+   PainSound[9] = MalePainCry10;
+
+   numDeathSounds = 7;
+   DeathSound[0] = MaleDeathCry1;
+   DeathSound[1] = MaleDeathCry2;
+   DeathSound[2] = MaleDeathCry3;
+   DeathSound[3] = MaleDeathCry4;
+   DeathSound[4] = MaleDeathCry5;
+   DeathSound[5] = MaleDeathCry6;
+   DeathSound[6] = MaleDeathCry7;
+
+
 
   // Foot Print offSet
    decalOffset = 0.22;
@@ -71,8 +280,29 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    physicsPlayerType = "CapsuleZ";
 
    //Death Cry
-   DeathSound = FemaleDeathCry;
-   PainSound = FemalePainCry;
+   //DeathSound = FemaleDeathCry;
+   //PainSound = FemalePainCry;
+
+ numPainSounds = 10;
+   PainSound[0] = FemalePainCry1;
+   PainSound[1] = FemalePainCry2;
+   PainSound[2] = FemalePainCry3;
+   PainSound[3] = FemalePainCry4;
+   PainSound[4] = FemalePainCry5;
+   PainSound[5] = FemalePainCry6;
+   PainSound[6] = FemalePainCry7;
+   PainSound[7] = FemalePainCry8;
+   PainSound[8] = FemalePainCry9;
+   PainSound[9] = FemalePainCry10;
+
+   numDeathSounds = 7;
+   DeathSound[0] = FemaleDeathCry1;
+   DeathSound[1] = FemaleDeathCry2;
+   DeathSound[2] = FemaleDeathCry3;
+   DeathSound[3] = FemaleDeathCry4;
+   DeathSound[4] = FemaleDeathCry5;
+   DeathSound[5] = FemaleDeathCry6;
+   DeathSound[6] = FemaleDeathCry7;
 
   // Foot Print - OffSet
    decalData   = FemaleFootprint;
