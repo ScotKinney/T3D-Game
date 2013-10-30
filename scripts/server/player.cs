@@ -719,7 +719,14 @@ function Player::playXtraAnimation(%this,%anim)
 
 function Player::playDeathCry( %this )
 {
-   %this.playAudio(0, %this.getDataBlock().DeathSound);   
+   %db = %this.getDataBlock();
+   if ( %db.DeathSound !$= "" )
+      %this.playAudio(0, %db.DeathSound);   
+   else if ( %db.numDeathCries > 0 )
+   {
+      %idx = getRandom(0, (%db.numDeathCries-1));
+      %this.playAudio(0, %db.DeathCry[%idx]);
+   }
 }
 
 function Player::playPain( %this )
