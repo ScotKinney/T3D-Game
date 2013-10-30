@@ -644,7 +644,7 @@ function toggleRift(%val)
       setAllSensorPredictionTime(0.02);
       enableOculusVRDisplay(ServerConnection, true);
       setStandardOculusVRControlScheme(ServerConnection);
-      Canvas.setContent(HudlessPlayGui);
+      Canvas.setContent(RiftPlayGui);
       $InRiftView = true;
    }
 }

@@ -128,6 +128,7 @@ function initClient()
 
    // Load up the Game GUIs
    exec("art/gui/PlayGui.gui");
+   exec("art/gui/riftPlayGui.gui");
    exec("art/gui/chat/ChatHud.gui");
    exec("./chatHud.cs");
    exec("./chatParties.cs");
@@ -149,6 +150,7 @@ function initClient()
    // Gui scripts
    exec("./messageHud.cs");
    exec("scripts/gui/playGui.cs");
+   exec("scripts/gui/riftPlayGui.cs");
    exec("scripts/gui/loadingGui.cs");
    exec("scripts/gui/optionsDlg.cs");
 
