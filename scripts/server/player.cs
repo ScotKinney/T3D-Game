@@ -722,10 +722,10 @@ function Player::playDeathCry( %this )
    %db = %this.getDataBlock();
    if ( %db.DeathSound !$= "" )
       %this.playAudio(0, %db.DeathSound);   
-   else if ( %db.numDeathCries > 0 )
+   else if ( %db.numDeathSounds > 0 )
    {
-      %idx = getRandom(0, (%db.numDeathCries-1));
-      %this.playAudio(0, %db.DeathCry[%idx]);
+      %idx = getRandom(0, (%db.numDeathSounds-1));
+      %this.playAudio(0, %db.DeathSound[%idx]);
    }
 }
 
@@ -734,10 +734,10 @@ function Player::playPain( %this )
    %db = %this.getDataBlock();
    if ( %db.PainSound !$= "" )
       %this.playAudio(0, %db.PainSound);
-   else if ( %db.numHitSounds > 0 )
+   else if ( %db.numPainSounds > 0 )
    {
-      %idx = getRandom(0, (%db.numHitSounds-1));
-      %this.playAudio(0, %db.HitSound[%idx]);
+      %idx = getRandom(0, (%db.numPainSounds-1));
+      %this.playAudio(0, %db.PainSound[%idx]);
    }
 }
 

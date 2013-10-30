@@ -283,7 +283,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    //DeathSound = FemaleDeathCry;
    //PainSound = FemalePainCry;
 
- numPainSounds = 10;
+   numPainSounds = 10;
    PainSound[0] = FemalePainCry1;
    PainSound[1] = FemalePainCry2;
    PainSound[2] = FemalePainCry3;
