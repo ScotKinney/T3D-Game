@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2011-04-22T18:18:12Z</created>
+    <modified>2011-04-22T18:18:12Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image_KardBoatBottom" name="Image_KardBoatBottom" depth="1">
+      <init_from>shzwood1.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatDeck" name="Image_KardBoatDeck" depth="1">
+      <init_from>shzwood2.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatTopEdge" name="Image_KardBoatTopEdge" depth="1">
+      <init_from>shzwood4.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatRope1" name="Image_KardBoatRope1" depth="1">
+      <init_from>rope1.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatRope2" name="Image_KardBoatRope2" depth="1">
+      <init_from>rope1.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatRope3" name="Image_KardBoatRope3" depth="1">
+      <init_from>rope1.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatSpar" name="Image_KardBoatSpar" depth="1">
+      <init_from>wood1a.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatMast" name="Image_KardBoatMast" depth="1">
+      <init_from>wood1a.jpg</init_from>
+    </image>
+    <image id="Image_KardBoatSail" name="Image_KardBoatSail" depth="1">
+      <init_from>kardshield1.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PMat_KardBoatBottom">
+      <instance_effect url="#Phong_KardBoatBottom"/>
+    </material>
+    <material id="PMat_KardBoatDeck">
+      <instance_effect url="#Phong_KardBoatDeck"/>
+    </material>
+    <material id="PMat_KardBoatTopEdge">
+      <instance_effect url="#Phong_KardBoatTopEdge"/>
+    </material>
+    <material id="PMat_KardBoatRope1">
+      <instance_effect url="#Phong_KardBoatRope1"/>
+    </material>
+    <material id="PMat_KardBoatRope2">
+      <instance_effect url="#Phong_KardBoatRope2"/>
+    </material>
+    <material id="PMat_KardBoatRope3">
+      <instance_effect url="#Phong_KardBoatRope3"/>
+    </material>
+    <material id="PMat_KardBoatSpar">
+      <instance_effect url="#Phong_KardBoatSpar"/>
+    </material>
+    <material id="PMat_KardBoatMast">
+      <instance_effect url="#Phong_KardBoatMast"/>
+    </material>
+    <material id="PMat_KardBoatSail">
+      <instance_effect url="#Phong_KardBoatSail"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Phong_KardBoatBottom">
+      <profile_COMMON>
+        <newparam sid="KardBoatBottom-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatBottom</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatBottom-sampler">
+          <sampler2D>
+            <source>KardBoatBottom-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.1553 0.1596 0.1553 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatBottom-sampler" texcoord="KardBoatBottom-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatDeck">
+      <profile_COMMON>
+        <newparam sid="KardBoatDeck-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatDeck</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatDeck-sampler">
+          <sampler2D>
+            <source>KardBoatDeck-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatDeck-sampler" texcoord="KardBoatDeck-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatTopEdge">
+      <profile_COMMON>
+        <newparam sid="KardBoatTopEdge-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatTopEdge</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatTopEdge-sampler">
+          <sampler2D>
+            <source>KardBoatTopEdge-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2824 0.2902 0.2824 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatTopEdge-sampler" texcoord="KardBoatTopEdge-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatRope1">
+      <profile_COMMON>
+        <newparam sid="KardBoatRope1-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatRope1</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatRope1-sampler">
+          <sampler2D>
+            <source>KardBoatRope1-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatRope1-sampler" texcoord="KardBoatRope1-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatRope2">
+      <profile_COMMON>
+        <newparam sid="KardBoatRope2-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatRope2</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatRope2-sampler">
+          <sampler2D>
+            <source>KardBoatRope2-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatRope2-sampler" texcoord="KardBoatRope2-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatRope3">
+      <profile_COMMON>
+        <newparam sid="KardBoatRope3-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatRope3</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatRope3-sampler">
+          <sampler2D>
+            <source>KardBoatRope3-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatRope3-sampler" texcoord="KardBoatRope3-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatSpar">
+      <profile_COMMON>
+        <newparam sid="KardBoatSpar-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatSpar</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatSpar-sampler">
+          <sampler2D>
+            <source>KardBoatSpar-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatSpar-sampler" texcoord="KardBoatSpar-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatMast">
+      <profile_COMMON>
+        <newparam sid="KardBoatMast-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatMast</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatMast-sampler">
+          <sampler2D>
+            <source>KardBoatMast-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatMast-sampler" texcoord="KardBoatMast-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_KardBoatSail">
+      <profile_COMMON>
+        <newparam sid="KardBoatSail-surface">
+          <surface type="2D">
+            <init_from>Image_KardBoatSail</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="KardBoatSail-sampler">
+          <sampler2D>
+            <source>KardBoatSail-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.2118 0.2176 0.2118 1.0</color></ambient>
+            <diffuse><texture texture="KardBoatSail-sampler" texcoord="KardBoatSail-TEX0"/></diffuse>
+            <specular><color>0.0282 0.029 0.0282 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="KardBoatBottom" name="KardBoatBottom">
+      <mesh>
+        <source id="KardBoatBottom-positions">
+          <float_array id="KardBoatBottom-positions-array" count="474">-0.171629 0.124605 0 -0.165752 0.13137 0.153861 -0.165752 0.13137 -0.153861 -0.155502 0.108409 0 -0.155502 0.124605 0 -0.15024 0.113807 0.143611 -0.15024 0.13096 0.143611 -0.15024 0.113807 -0.143611 -0.15024 0.13096 -0.143611 -0.149078 0.13137 0.153861 -0.149078 0.13137 -0.153861 -0.148634 0.151222 0.297301 -0.148634 0.151222 -0.297301 -0.134659 0.129628 0.277552 -0.134659 0.148489 0.277552 -0.134659 0.129628 -0.277552 -0.134659 0.148489 -0.277552 -0.130422 0.151222 0.297301 -0.130422 0.151222 -0.297301 -0.121333 0.182657 0.420274 -0.121333 0.182657 -0.420274 -0.109989 0.15481 0.392598 -0.109989 0.175516 0.392598 -0.109989 0.15481 -0.392598 -0.109989 0.175516 -0.392598 -0.099738 0.182657 0.420274 -0.099738 0.182657 -0.420274 -0.099055 -0.020475 0 -0.095672 -0.008756 0.153861 -0.095672 -0.008756 -0.153861 -0.089795 -0.00773 0 -0.08672 0.001666 0.143611 -0.08672 0.001666 -0.143611 -0.085797 0.223762 0.514922 -0.085797 0.025516 0.297301 -0.085797 0.025516 -0.297301 -0.085797 0.223762 -0.514922 -0.077734 0.18768 0.480753 -0.077734 0.208899 0.480753 -0.077734 0.029069 0.277552 -0.077734 0.029069 -0.277552 -0.077734 0.18768 -0.480753 -0.077734 0.208899 -0.480753 -0.070012 0.080083 0.420274 -0.070012 0.080083 -0.420274 -0.063485 0.072771 0.392598 -0.063485 0.072771 -0.392598 -0.054567 0.223762 0.514922 -0.054567 0.223762 -0.514922 -0.04951 0.151222 0.514922 -0.04951 0.151222 -0.514922 -0.044898 0.129628 0.480753 -0.044898 0.129628 -0.480753 -0.044385 0.271564 0.574375 -0.044385 0.271564 -0.574375 -0.040217 0.225881 0.536106 -0.040217 0.240812 0.536106 -0.040217 0.225881 -0.536106 -0.040217 0.240812 -0.536106 -0.025626 0.233979 0.574375 -0.025626 0.233979 -0.574375 -0.023235 0.195881 0.536106 -0.023235 0.195881 -0.536106 -0.008576 0.271564 0.574375 -0.008576 0.271564 -0.574375 0 0.322817 0.626311 0 0.266951 0.584626 0 0.281815 0.584626 0 0.220243 0.574375 0 0.184844 0.536106 0 0.124605 0.514922 0 0.108409 0.480753 0 0.042566 0.420274 0 0.042702 0.392598 0 -0.020475 0.297301 0 -0.00773 0.277552 0 -0.060043 0.153861 0 -0.039371 0.143611 0 -0.073539 0 0 -0.050168 0 0 -0.039371 -0.143611 0 -0.060043 -0.153861 0 -0.00773 -0.277552 0 -0.020475 -0.297301 0 0.042702 -0.392598 0 0.042566 -0.420274 0 0.108409 -0.480753 0 0.124605 -0.514922 0 0.184844 -0.536106 0 0.220243 -0.574375 0 0.266951 -0.584626 0 0.281815 -0.584626 0 0.322817 -0.626311 0.008576 0.271564 0.574375 0.008576 0.271564 -0.574375 0.023235 0.195881 0.536106 0.023235 0.195881 -0.536106 0.025626 0.233979 0.574375 0.025626 0.233979 -0.574375 0.040217 0.225881 0.536106 0.040217 0.240812 0.536106 0.040217 0.225881 -0.536106 0.040217 0.240812 -0.536106 0.044385 0.271564 0.574375 0.044385 0.271564 -0.574375 0.044898 0.129628 0.480753 0.044898 0.129628 -0.480753 0.04951 0.151222 0.514922 0.04951 0.151222 -0.514922 0.054567 0.223762 0.514922 0.054567 0.223762 -0.514922 0.063485 0.072771 0.392598 0.063485 0.072771 -0.392598 0.070012 0.080083 0.420274 0.070012 0.080083 -0.420274 0.077734 0.18768 0.480753 0.077734 0.208899 0.480753 0.077734 0.029069 0.277552 0.077734 0.029069 -0.277552 0.077734 0.18768 -0.480753 0.077734 0.208899 -0.480753 0.085797 0.223762 0.514922 0.085797 0.025516 0.297301 0.085797 0.025516 -0.297301 0.085797 0.223762 -0.514922 0.08672 0.001666 0.143611 0.08672 0.001666 -0.143611 0.089795 -0.00773 0 0.095672 -0.008756 0.153861 0.095672 -0.008756 -0.153861 0.099055 -0.020475 0 0.099738 0.182657 0.420274 0.099738 0.182657 -0.420274 0.109989 0.15481 0.392598 0.109989 0.175516 0.392598 0.109989 0.15481 -0.392598 0.109989 0.175516 -0.392598 0.121333 0.182657 0.420274 0.121333 0.182657 -0.420274 0.130422 0.151222 0.297301 0.130422 0.151222 -0.297301 0.134659 0.129628 0.277552 0.134659 0.148489 0.277552 0.134659 0.129628 -0.277552 0.134659 0.148489 -0.277552 0.148634 0.151222 0.297301 0.148634 0.151222 -0.297301 0.149078 0.13137 0.153861 0.149078 0.13137 -0.153861 0.15024 0.113807 0.143611 0.15024 0.13096 0.143611 0.15024 0.113807 -0.143611 0.15024 0.13096 -0.143611 0.155502 0.108409 0 0.155502 0.124605 0 0.165752 0.13137 0.153861 0.165752 0.13137 -0.153861 0.171629 0.124605 0</float_array>
+          <technique_common>
+            <accessor source="KardBoatBottom-positions-array" count="158" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatBottom-uvs">
+          <float_array id="KardBoatBottom-uvs-array" count="354">0 0 0 0.448 0.1544 0.76 0.2594 0 0.2594 0.452 0.4516 0.513 0.5075 0 0.5075 0.642 0.7536 0.346 0.7556 0 0.7556 0.627 1.004 0 1.004 0.57 1.018 0.271 1.252 0 1.252 0.519 1.268 0.293 1.5 0 1.5 0.492 1.732 0.293 1.748 0 1.748 0.519 1.982 0.271 1.996 0 1.996 0.57 2.244 0 2.244 0.627 2.246 0.346 2.492 0 2.492 0.642 2.548 0.513 2.74 0 2.74 0.452 2.845 0.76 3.0 0 3.0 0.448 3.155 0.76 3.26 0 3.26 0.452 3.452 0.513 3.5 0.5 3.5 1.0 3.5 1.5 3.5 2.0 3.5 2.5 3.5 3.0 3.5 3.5 3.5 4.0 3.5 4.5 3.5 5.0 3.5 5.5 3.508 0 3.508 0.642 3.594 3.0 3.601 2.5 3.601 3.5 3.609 2.533 3.609 3.467 3.622 2.0 3.622 4.0 3.643 2.069 3.643 3.931 3.678 1.5 3.678 4.5 3.685 1.614 3.685 4.387 3.749 1.181 3.749 4.819 3.75 0 3.75 6.0 3.754 0.346 3.756 0 3.756 0.627 3.863 1.0 3.863 5.0 3.882 0.821 3.882 5.1789 4.0 0.5 4.0 1.0 4.0 1.5 4.0 2.0 4.0 2.5 4.0 3.0 4.0 3.5 4.0 4.0 4.0 4.5 4.0 5.0 4.0 5.5 4.004 0 4.004 0.57 4.018 0.271 4.125 5.5463 4.25 0 4.25 6.0 4.252 0 4.252 0.519 4.268 0.293 4.307 0.5 4.307 5.5 4.5 0 4.5 0.492 4.5 0.5 4.5 1.0 4.5 1.5 4.5 2.0 4.5 2.5 4.5 3.0 4.5 3.5 4.5 4.0 4.5 4.5 4.5 5.0 4.5 5.5 4.693 0.5 4.693 5.5 4.732 0.293 4.748 0 4.748 0.519 4.75 0 4.75 6.0 4.875 0.454 4.982 0.271 4.996 0 4.996 0.57 5.0 0.5 5.0 1.0 5.0 1.5 5.0 2.0 5.0 2.5 5.0 3.0 5.0 3.5 5.0 4.0 5.0 4.5 5.0 5.0 5.0 5.5 5.118 0.821 5.118 5.1789 5.136 1.0 5.136 5.0 5.244 0 5.244 0.627 5.246 0.346 5.25 0 5.25 6.0 5.251 1.181 5.251 4.819 5.315 1.614 5.315 4.387 5.322 1.5 5.322 4.5 5.357 2.069 5.357 3.931 5.378 2.0 5.378 4.0 5.391 2.533 5.391 3.467 5.399 2.5 5.399 3.5 5.406 3.0 5.492 0 5.492 0.642 5.5 0.5 5.5 1.0 5.5 1.5 5.5 2.0 5.5 2.5 5.5 3.0 5.5 3.5 5.5 4.0 5.5 4.5 5.5 5.0 5.5 5.5 5.548 0.513 5.74 0 5.74 0.452 5.845 0.76 6.0 0 6.0 0.448</float_array>
+          <technique_common>
+            <accessor source="KardBoatBottom-uvs-array" count="177" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatBottom-vertices">
+          <input semantic="POSITION" source="#KardBoatBottom-positions"/>
+        </vertices>
+        <triangles count="312" material="Mat_KardBoatBottom">
+          <input offset="0" semantic="VERTEX" source="#KardBoatBottom-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatBottom-uvs"/>
+          <p>59 87  65 69  53 50  68 111  65 93  59 87  68 111  97 133  65 118  97 133  103 170  65 142  49 86  59 87  33 49  59 87  53 50  33 49  70 110  59 87  49 86  70 110  68 111  59 87  107 132  97 133  70 110  70 110  97 133  68 111  107 132  121 169  103 170  107 132  103 170  97 133  43 85  49 86  19 48  49 86  33 49  19 48  72 109  49 86  43 85  72 109  70 110  49 86  113 131  107 132  72 109  72 109  107 132  70 110  137 168  121 169  113 131  113 131  121 169  107 132  34 84  19 48  11 47  34 84  43 85  19 48  74 108  43 85  34 84  72 109  43 85  74 108  122 130  72 109  74 108  113 131  72 109  122 130  122 130  145 167  113 131  145 167  137 168  113 131  28 83  34 84  1 46  34 84  11 47  1 46  76 107  74 108  28 83  74 108  34 84  28 83  128 129  74 108  76 107  122 130  74 108  128 129  155 166  122 130  128 129  155 166  145 167  122 130  27 82  1 46  0 45  28 83  1 46  27 82  78 106  28 83  27 82  76 107  28 83  78 106  130 128  128 129  78 106  128 129  76 107  78 106  157 165  155 166  130 128  155 166  128 129  130 128  27 82  0 45  29 81  29 81  0 45  2 44  78 106  27 82  81 105  81 105  27 82  29 81  130 128  78 106  81 105  129 127  130 128  81 105  156 164  157 165  130 128  129 127  156 164  130 128  29 81  2 44  12 43  35 80  29 81  12 43  81 105  29 81  83 104  83 104  29 81  35 80  129 127  81 105  123 126  123 126  81 105  83 104  146 163  156 164  129 127  123 126  146 163  129 127  20 42  35 80  12 43  44 79  35 80  20 42  83 104  35 80  44 79  85 103  83 104  44 79  123 126  83 104  85 103  114 125  123 126  85 103  146 163  123 126  114 125  138 162  146 163  114 125  50 78  44 79  20 42  36 41  50 78  20 42  50 78  85 103  44 79  87 102  85 103  50 78  114 125  85 103  87 102  108 124  114 125  87 102  124 161  138 162  114 125  124 161  114 125  108 124  54 40  50 78  36 41  54 40  60 77  50 78  60 77  87 102  50 78  89 101  87 102  60 77  98 123  108 124  87 102  98 123  87 102  89 101  124 161  108 124  98 123  104 160  124 161  98 123  92 68  60 77  54 40  92 92  89 101  60 77  98 123  89 101  92 117  104 160  98 123  92 141  154 157  157 165  156 164  152 153  154 157  156 164  152 153  156 164  148 155  103 170  100 135  93 113  121 169  109 137  103 170  103 170  109 137  100 135  16 60  18 58  12 43  2 44  10 54  12 43  10 54  16 60  12 43  109 137  121 169  116 144  116 144  121 169  131 148  121 169  137 168  131 148  144 149  146 163  140 151  148 155  156 164  146 163  144 149  148 155  146 163  63 98  56 76  53 50  53 50  47 74  33 49  53 50  56 76  47 74  24 64  26 62  20 42  12 43  18 58  20 42  18 58  24 64  20 42  139 152  145 167  142 150  145 167  155 166  147 156  142 150  145 167  147 156  136 145  138 162  132 147  140 151  146 163  138 162  136 145  140 151  138 162  42 66  48 73  36 41  26 62  42 66  36 41  20 42  26 62  36 41  1 46  4 53  0 45  1 46  6 57  4 53  1 46  9 55  6 57  120 143  124 161  110 136  120 143  132 147  124 161  132 147  138 162  124 161  11 47  17 59  14 61  11 47  9 55  1 46  11 47  14 61  9 55  58 75  64 97  54 40  48 73  54 40  36 41  58 75  54 40  48 73  102 134  104 160  94 112  110 136  124 161  104 160  110 136  104 160  102 134  33 49  47 74  38 67  33 49  38 67  25 63  33 49  25 63  19 48  94 112  104 160  92 141  64 97  92 141  54 40  94 112  92 141  91 119  91 119  92 141  64 97  65 69  63 98  53 50  103 170  93 113  65 69  65 69  93 113  67 91  65 69  67 91  63 98  0 45  4 53  2 44  4 53  8 56  2 44  8 56  10 54  2 44  155 166  157 165  154 157  150 154  155 166  154 157  147 156  155 166  150 154  131 148  137 168  134 146  137 168  145 167  139 152  134 146  137 168  139 152  19 48  25 63  22 65  19 48  17 59  11 47  19 48  22 65  17 59  66 93  69 111  61 87  95 133  69 111  66 118  56 173  55 172  47 171  47 171  37 158  38 159  47 171  55 172  37 158  61 87  71 110  51 86  69 111  71 110  61 87  95 133  105 132  71 110  95 133  71 110  69 111  25 140  21 138  22 139  38 159  37 158  25 140  25 140  37 158  21 138  51 86  73 109  45 85  71 110  73 109  51 86  105 132  111 131  73 109  105 132  73 109  71 110  45 85  75 108  39 84  45 85  73 109  75 108  111 131  117 130  75 108  73 109  111 131  75 108  14 122  17 120  13 121  22 139  21 138  17 120  17 120  21 138  13 121  39 84  77 107  31 83  39 84  75 108  77 107  117 130  125 129  77 107  75 108  117 130  77 107  31 83  79 106  30 82  31 83  77 107  79 106  125 129  127 128  79 106  77 107  125 129  79 106  8 95  4 100  7 94  7 94  4 100  3 99  30 82  79 106  32 81  79 106  80 105  32 81  79 106  127 128  126 127  79 106  126 127  80 105  154 18  152 21  151 20  154 18  151 20  153 17  6 116  9 114  5 115  9 114  14 122  13 121  9 114  13 121  5 115  32 81  80 105  40 80  80 105  82 104  40 80  80 105  126 127  118 126  80 105  118 126  82 104  147 16  150 15  149 14  142 12  147 16  141 11  141 11  147 16  149 14  40 80  82 104  46 79  82 104  84 103  46 79  82 104  118 126  112 125  82 104  112 125  84 103  139 13  142 12  141 11  133 9  134 10  139 13  133 9  139 13  141 11  84 103  52 78  46 79  84 103  86 102  52 78  112 125  106 124  84 103  84 103  106 124  86 102  134 10  133 9  131 8  131 8  115 6  116 7  131 8  133 9  115 6  86 102  62 77  52 78  86 102  88 101  62 77  106 124  96 123  86 102  86 102  96 123  88 101  109 5  99 3  100 4  116 7  115 6  109 5  109 5  115 6  99 3  67 176  66 175  63 174  63 174  55 172  56 173  63 174  66 175  55 172  88 101  90 92  62 77  88 101  96 123  90 117  93 2  66 0  67 1  100 4  99 3  93 2  93 2  99 3  66 0  99 170  95 133  66 142  115 169  105 132  99 170  99 170  105 132  95 133  115 169  133 168  111 131  115 169  111 131  105 132  133 168  141 167  117 130  111 131  133 168  117 130  141 167  149 166  125 129  117 130  141 167  125 129  149 166  153 165  127 128  125 129  149 166  127 128  127 128  153 165  151 164  127 128  151 164  126 127  126 127  151 164  143 163  126 127  143 163  118 126  118 126  143 163  135 162  118 126  135 162  112 125  135 162  119 161  112 125  112 125  119 161  106 124  106 124  119 161  101 160  106 124  101 160  96 123  96 123  101 160  90 141  62 77  90 68  57 40  52 78  57 40  41 41  62 77  57 40  52 78  46 79  41 41  23 42  46 79  52 78  41 41  15 43  40 80  23 42  40 80  46 79  23 42  7 44  32 81  15 43  32 81  40 80  15 43  3 45  30 82  7 44  30 82  32 81  7 44  5 46  30 82  3 45  5 46  31 83  30 82  13 47  31 83  5 46  13 47  39 84  31 83  21 48  39 84  13 47  21 48  45 85  39 84  37 49  45 85  21 48  51 86  45 85  37 49  55 50  51 86  37 49  55 50  61 87  51 86  66 69  61 87  55 50  90 34  91 35  64 36  57 37  64 36  58 38  90 34  64 36  57 37  90 34  94 33  91 35  101 31  102 32  94 33  101 31  94 33  90 34  57 37  58 38  48 39  41 51  48 39  42 52  57 37  48 39  41 51  101 31  110 30  102 32  119 28  120 29  110 30  119 28  110 30  101 31  23 71  26 70  24 72  41 51  42 52  26 70  41 51  26 70  23 71  135 25  136 26  132 27  119 28  132 27  120 29  135 25  132 27  119 28  18 90  16 89  15 88  23 71  24 72  18 90  23 71  18 90  15 88  144 24  140 22  143 23  136 26  135 25  140 22  140 22  135 25  143 23  10 96  8 95  7 94  16 89  10 96  15 88  15 88  10 96  7 94  152 21  148 19  151 20  148 19  144 24  143 23  148 19  143 23  151 20  4 100  6 116  5 115  4 100  5 115  3 99  150 15  154 18  149 14  149 14  154 18  153 17</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatDeck" name="KardBoatDeck">
+      <mesh>
+        <source id="KardBoatDeck-positions">
+          <float_array id="KardBoatDeck-positions-array" count="72">-0.155502 0.104582 0 -0.15024 0.109981 0.143611 -0.15024 0.109981 -0.143611 -0.134659 0.125835 0.277552 -0.134659 0.125835 -0.277552 -0.109989 0.151017 0.392598 -0.109989 0.151017 -0.392598 -0.077734 0.183887 0.480753 -0.077734 0.183887 -0.480753 -0.040217 0.222088 0.536106 -0.040217 0.222088 -0.536106 0 0.263159 0.584626 0 0.263159 -0.584626 0.040217 0.222088 0.536106 0.040217 0.222088 -0.536106 0.077734 0.183887 0.480753 0.077734 0.183887 -0.480753 0.109989 0.151017 0.392598 0.109989 0.151017 -0.392598 0.134659 0.125835 0.277552 0.134659 0.125835 -0.277552 0.15024 0.109981 0.143611 0.15024 0.109981 -0.143611 0.155502 0.104582 0</float_array>
+          <technique_common>
+            <accessor source="KardBoatDeck-positions-array" count="24" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatDeck-uvs">
+          <float_array id="KardBoatDeck-uvs-array" count="48">0 1.5 0.1243 1.112 0.1243 1.888 0.2666 0.75 0.2666 2.25 0.4929 0.439 0.4929 2.5608 0.7878 0.201 0.7878 2.7992 1.131 0.051 1.131 2.949 1.5 0 1.5 3.0 1.868 0.051 1.868 2.949 2.212 0.201 2.212 2.7992 2.507 0.439 2.507 2.5608 2.733 0.75 2.733 2.25 2.875 1.112 2.875 1.888 3.0 1.5</float_array>
+          <technique_common>
+            <accessor source="KardBoatDeck-uvs-array" count="24" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatDeck-vertices">
+          <input semantic="POSITION" source="#KardBoatDeck-positions"/>
+        </vertices>
+        <triangles count="22" material="Mat_KardBoatDeck">
+          <input offset="0" semantic="VERTEX" source="#KardBoatDeck-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatDeck-uvs"/>
+          <p>11 23  13 22  9 21  13 22  15 20  9 21  9 21  15 20  7 19  7 19  17 18  5 17  7 19  15 20  17 18  5 17  19 16  3 15  5 17  17 18  19 16  3 15  21 14  1 13  3 15  19 16  21 14  1 13  23 12  0 11  1 13  21 14  23 12  0 11  22 10  2 9  0 11  23 12  22 10  2 9  20 8  4 7  2 9  22 10  20 8  4 7  18 6  6 5  4 7  20 8  18 6  6 5  16 4  8 3  6 5  18 6  16 4  14 2  10 1  8 3  16 4  14 2  8 3  14 2  12 0  10 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatTopEdge" name="KardBoatTopEdge">
+      <mesh>
+        <source id="KardBoatTopEdge-positions">
+          <float_array id="KardBoatTopEdge-positions-array" count="336">-0.17836 0.128534 0 -0.172244 0.1353 0.154852 -0.172244 0.1353 -0.154852 -0.161959 0.096962 0 -0.155877 0.103728 0.154852 -0.155877 0.103728 -0.154852 -0.154477 0.155152 0.299147 -0.154477 0.155152 -0.299147 -0.147369 0.096962 0 -0.147369 0.128534 0 -0.142312 0.103249 0.144533 -0.142312 0.134889 0.144533 -0.142312 0.103249 -0.144533 -0.142312 0.134889 -0.144533 -0.141219 0.103728 0.154852 -0.141219 0.1353 0.154852 -0.141219 0.103728 -0.154852 -0.141219 0.1353 -0.154852 -0.138041 0.123511 0.299147 -0.138041 0.123511 -0.299147 -0.127586 0.120778 0.27926 -0.127586 0.152418 0.27926 -0.127586 0.120778 -0.27926 -0.127586 0.152418 -0.27926 -0.126117 0.186587 0.423008 -0.126117 0.186587 -0.423008 -0.123554 0.123511 0.299147 -0.123554 0.155152 0.299147 -0.123554 0.123511 -0.299147 -0.123554 0.155152 -0.299147 -0.109681 0.155049 0.423008 -0.109681 0.155049 -0.423008 -0.104146 0.147908 0.39499 -0.104146 0.179445 0.39499 -0.104146 0.147908 -0.39499 -0.104146 0.179445 -0.39499 -0.094511 0.155049 0.423008 -0.094511 0.186587 0.423008 -0.094511 0.155049 -0.423008 -0.094511 0.186587 -0.423008 -0.08918 0.227692 0.518339 -0.08918 0.227692 -0.518339 -0.076845 0.196051 0.518339 -0.076845 0.196051 -0.518339 -0.069294 0.212828 0.483828 -0.069294 0.212828 -0.483828 -0.063895 0.181188 0.483828 -0.063895 0.181188 -0.483828 -0.048656 0.275494 0.578134 -0.048656 0.275494 -0.578134 -0.036697 0.247954 0.586676 -0.036697 0.247954 -0.586676 0 0.346564 0.642371 0 0.263569 0.608202 0 0.247578 0.57745 0 0.281644 0.57745 0 0.247578 -0.57745 0 0.281644 -0.57745 0 0.263569 -0.608202 0 0.346564 -0.642371 0.036697 0.247954 0.586676 0.036697 0.247954 -0.586676 0.048656 0.275494 0.578134 0.048656 0.275494 -0.578134 0.063895 0.181188 0.483828 0.063895 0.181188 -0.483828 0.069294 0.212828 0.483828 0.069294 0.212828 -0.483828 0.076845 0.196051 0.518339 0.076845 0.196051 -0.518339 0.08918 0.227692 0.518339 0.08918 0.227692 -0.518339 0.094511 0.155049 0.423008 0.094511 0.186587 0.423008 0.094511 0.155049 -0.423008 0.094511 0.186587 -0.423008 0.104146 0.147908 0.39499 0.104146 0.179445 0.39499 0.104146 0.147908 -0.39499 0.104146 0.179445 -0.39499 0.109681 0.155049 0.423008 0.109681 0.155049 -0.423008 0.123554 0.123511 0.299147 0.123554 0.155152 0.299147 0.123554 0.123511 -0.299147 0.123554 0.155152 -0.299147 0.126117 0.186587 0.423008 0.126117 0.186587 -0.423008 0.127586 0.120778 0.27926 0.127586 0.152418 0.27926 0.127586 0.120778 -0.27926 0.127586 0.152418 -0.27926 0.138041 0.123511 0.299147 0.138041 0.123511 -0.299147 0.141219 0.103728 0.154852 0.141219 0.1353 0.154852 0.141219 0.103728 -0.154852 0.141219 0.1353 -0.154852 0.142312 0.103249 0.144533 0.142312 0.134889 0.144533 0.142312 0.103249 -0.144533 0.142312 0.134889 -0.144533 0.147369 0.096962 0 0.147369 0.128534 0 0.154476 0.155152 0.299147 0.154476 0.155152 -0.299147 0.155877 0.103728 0.154852 0.155877 0.103728 -0.154852 0.161959 0.096962 0 0.172244 0.1353 0.154852 0.172244 0.1353 -0.154852 0.17836 0.128534 0</float_array>
+          <technique_common>
+            <accessor source="KardBoatTopEdge-positions-array" count="112" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatTopEdge-uvs">
+          <float_array id="KardBoatTopEdge-uvs-array" count="124">1.567 0.78 1.571 0.016 1.58 1.392 1.616 1.838 1.675 0.761 1.677 0.745 1.678 0.019 1.678 0.81 1.679 0.019 1.688 2.1662 1.69 1.356 1.698 1.337 1.7 1.433 1.725 0.711 1.727 0.02 1.727 0.757 1.729 1.785 1.742 1.278 1.746 1.775 1.751 1.353 1.758 1.879 1.783 1.698 1.807 2.09 1.811 1.791 1.833 2.4186 1.838 2.0976 1.861 1.992 2.009 2.3415 2.048 2.3774 2.149 2.637 2.191 2.486 2.202 2.43 2.208 2.3933 2.372 2.3857 2.421 2.352 2.576 2.4375 2.626 2.0198 2.638 2.1179 2.669 2.1121 2.696 1.813 2.73 1.722 2.741 1.904 2.763 1.801 2.777 1.812 2.78 1.378 2.781 2.1938 2.793 1.304 2.824 0.782 2.828 0.736 2.828 1.461 2.836 1.365 2.841 1.385 2.842 0.042 2.871 0.838 2.875 0.773 2.875 0.789 2.889 0.044 2.891 0.043 2.891 1.87 2.952 1.426 2.985 0.813 2.998 0.045</float_array>
+          <technique_common>
+            <accessor source="KardBoatTopEdge-uvs-array" count="62" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatTopEdge-vertices">
+          <input semantic="POSITION" source="#KardBoatTopEdge-positions"/>
+        </vertices>
+        <triangles count="226" material="Mat_KardBoatTopEdge">
+          <input offset="0" semantic="VERTEX" source="#KardBoatTopEdge-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatTopEdge-uvs"/>
+          <p>56 32  51 33  58 31  61 28  56 32  58 31  41 45  43 37  31 42  41 45  31 42  25 58  25 58  31 42  19 50  25 58  19 50  7 59  28 44  22 46  19 50  16 47  5 54  19 50  22 46  16 47  19 50  108 6  102 14  100 13  108 6  100 13  107 5  107 5  100 13  96 15  7 59  19 50  5 54  5 54  2 60  7 59  38 39  31 42  47 36  47 36  31 42  43 37  0 61  2 60  3 57  5 54  3 57  2 60  47 36  43 37  51 34  49 35  43 37  41 45  59 29  58 31  51 33  59 29  51 33  49 35  49 35  51 34  43 37  63 24  61 28  59 29  59 29  61 28  58 31  71 9  69 25  63 24  63 24  69 25  61 27  87 3  81 18  71 9  71 9  81 18  69 25  87 3  93 11  81 18  105 2  93 11  87 3  110 0  107 5  105 2  105 2  107 5  93 11  110 0  108 6  107 5  110 0  111 1  108 6  81 18  74 23  65 26  81 18  65 26  69 25  81 18  78 21  74 23  93 11  84 19  78 21  93 11  78 21  81 18  38 39  34 40  31 42  28 44  19 50  34 40  34 40  19 50  31 42  65 26  56 32  61 28  57 30  59 29  49 35  63 24  59 29  57 30  57 30  67 22  63 24  41 45  45 38  49 35  75 20  87 3  71 9  67 22  75 20  71 9  67 22  71 9  63 24  25 58  39 41  41 45  39 41  45 38  41 45  45 38  57 30  49 35  85 12  105 2  87 3  79 16  85 12  87 3  79 16  87 3  75 20  7 59  29 49  25 58  29 49  35 43  25 58  35 43  39 41  25 58  97 7  110 0  105 2  91 10  97 7  105 2  91 10  105 2  85 12  2 60  17 53  7 59  17 53  23 51  7 59  23 51  29 49  7 59  103 8  111 1  110 0  101 4  103 8  110 0  101 4  110 0  97 7  0 61  9 56  2 60  9 56  13 55  2 60  13 55  17 53  2 60  93 11  90 17  84 19  107 5  96 15  93 11  96 15  90 17  93 11  8 52  3 57  12 48  12 48  3 57  5 54  16 47  12 48  5 54  97 7  91 10  90 17  97 7  90 17  96 15  101 4  96 15  100 13  101 4  97 7  96 15  38 39  35 43  34 40  39 41  35 43  38 39  38 39  47 36  39 41  47 36  45 38  39 41  65 26  67 22  56 32  56 32  67 22  57 30  79 16  74 23  78 21  79 16  75 20  74 23  74 23  75 20  65 26  75 20  67 22  65 26  28 44  23 51  22 46  29 49  23 51  28 44  35 43  29 49  34 40  34 40  29 49  28 44  23 51  17 53  22 46  22 46  17 53  16 47  16 47  13 55  12 48  17 53  13 55  16 47  103 8  101 4  100 13  13 55  9 56  12 48  91 10  84 19  90 17  91 10  85 12  84 19  85 12  79 16  78 21  85 12  78 21  84 19  103 8  100 13  102 14  12 48  9 56  8 52  108 6  111 1  103 8  108 6  103 8  102 14  47 36  56 32  45 38  56 32  57 30  45 38  69 25  65 26  61 27  56 32  47 36  51 33  53 31  50 33  54 32  60 28  53 31  54 32  42 37  40 45  30 42  30 42  40 45  24 58  30 42  24 58  18 50  18 50  24 58  6 59  26 44  18 50  20 46  14 47  18 50  4 54  20 46  18 50  14 47  108 6  98 13  102 14  106 5  98 13  108 6  106 5  94 15  98 13  18 50  6 59  4 54  4 54  6 59  1 60  36 39  46 36  30 42  46 36  42 37  30 42  1 60  0 61  3 57  4 54  1 60  3 57  50 34  42 37  46 36  42 37  48 35  40 45  53 31  52 29  50 33  50 33  52 29  48 35  50 34  48 35  42 37  60 28  62 24  52 29  60 28  52 29  53 31  68 25  70 9  62 24  68 25  62 24  60 27  80 18  86 3  70 9  80 18  70 9  68 25  92 11  86 3  80 18  92 11  104 2  86 3  109 0  104 2  106 5  104 2  92 11  106 5  109 0  106 5  108 6  111 1  109 0  108 6  80 18  64 26  72 23  68 25  64 26  80 18  80 18  72 23  76 21  92 11  76 21  82 19  80 18  76 21  92 11  36 39  30 42  32 40  26 44  32 40  18 50  32 40  30 42  18 50  60 28  54 32  64 26  52 29  55 30  48 35  52 29  62 24  55 30  55 30  62 24  66 22  40 45  48 35  44 38  70 9  86 3  73 20  66 22  70 9  73 20  62 24  70 9  66 22  40 45  37 41  24 58  40 45  44 38  37 41  48 35  55 30  44 38  86 3  104 2  83 12  77 16  86 3  83 12  73 20  86 3  77 16  24 58  27 49  6 59  24 58  33 43  27 49  24 58  37 41  33 43  104 2  109 0  95 7  89 10  104 2  95 7  83 12  104 2  89 10  6 59  15 53  1 60  6 59  21 51  15 53  6 59  27 49  21 51  109 0  111 1  103 8  99 4  109 0  103 8  95 7  109 0  99 4  1 60  9 56  0 61  1 60  11 55  9 56  1 60  15 53  11 55  92 11  82 19  88 17  106 5  92 11  94 15  92 11  88 17  94 15  8 52  10 48  3 57  10 48  4 54  3 57  14 47  4 54  10 48  89 10  95 7  88 17  88 17  95 7  94 15  94 15  99 4  98 13  95 7  99 4  94 15  33 43  36 39  32 40  33 43  37 41  36 39  46 36  36 39  37 41  44 38  46 36  37 41  66 22  64 26  54 32  66 22  54 32  55 30  72 23  77 16  76 21  73 20  77 16  72 23  73 20  72 23  64 26  66 22  73 20  64 26  21 51  26 44  20 46  21 51  27 49  26 44  27 49  33 43  32 40  27 49  32 40  26 44  15 53  21 51  20 46  15 53  20 46  14 47  11 55  14 47  10 48  11 55  15 53  14 47  99 4  103 8  98 13  9 56  11 55  10 48  82 19  89 10  88 17  83 12  89 10  82 19  77 16  83 12  76 21  76 21  83 12  82 19  98 13  103 8  102 14  9 56  10 48  8 52  54 32  46 36  44 38  55 30  54 32  44 38  68 25  60 27  64 26  54 32  50 33  46 36</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatRope1" name="KardBoatRope1">
+      <mesh>
+        <source id="KardBoatRope1-positions">
+          <float_array id="KardBoatRope1-positions-array" count="24">-0.001674 0.343221 0.637929 -0.001674 0.341171 0.635537 -0.001674 1.115808 0.001299 -0.001674 1.11369 -0.001298 0.001674 0.343221 0.637929 0.001674 0.341171 0.635537 0.001674 1.115808 0.001299 0.001674 1.11369 -0.001298</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope1-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatRope1-uvs">
+          <float_array id="KardBoatRope1-uvs-array" count="8">0 0 0 8.0 1.0 0 1.0 8.0</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope1-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatRope1-vertices">
+          <input semantic="POSITION" source="#KardBoatRope1-positions"/>
+        </vertices>
+        <triangles count="12" material="Mat_KardBoatRope1">
+          <input offset="0" semantic="VERTEX" source="#KardBoatRope1-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatRope1-uvs"/>
+          <p>6 3  2 1  0 0  4 2  6 3  0 0  5 2  4 3  0 1  1 0  5 2  0 1  7 3  6 1  4 0  5 2  7 3  4 0  7 3  3 1  2 0  6 2  7 3  2 0  7 1  5 0  1 2  3 3  7 1  1 2  3 1  1 0  0 2  2 3  3 1  0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatRope2" name="KardBoatRope2">
+      <mesh>
+        <source id="KardBoatRope2-positions">
+          <float_array id="KardBoatRope2-positions-array" count="24">-0.001674 1.11369 0.001299 -0.001674 1.115808 -0.001298 -0.001674 0.341171 -0.635537 -0.001674 0.343221 -0.637929 0.001674 1.11369 0.001299 0.001674 1.115808 -0.001298 0.001674 0.341171 -0.635537 0.001674 0.343221 -0.637929</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope2-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatRope2-uvs">
+          <float_array id="KardBoatRope2-uvs-array" count="8">0 0 0 8.0 1.0 0 1.0 8.0</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope2-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatRope2-vertices">
+          <input semantic="POSITION" source="#KardBoatRope2-positions"/>
+        </vertices>
+        <triangles count="12" material="Mat_KardBoatRope2">
+          <input offset="0" semantic="VERTEX" source="#KardBoatRope2-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatRope2-uvs"/>
+          <p>4 3  0 1  2 0  6 2  4 3  2 0  7 2  6 3  2 1  3 0  7 2  2 1  5 3  4 1  6 0  7 2  5 3  6 0  5 3  1 1  0 0  4 2  5 3  0 0  5 1  7 0  3 2  1 3  5 1  3 2  1 1  3 0  2 2  0 3  1 1  2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatRope3" name="KardBoatRope3">
+      <mesh>
+        <source id="KardBoatRope3-positions">
+          <float_array id="KardBoatRope3-positions-array" count="24">-0.223056 0.425738 0.528836 -0.221292 0.428027 0.527298 -0.220267 0.424474 0.530082 -0.218503 0.426763 0.528544 -0.166938 0.127719 0.089647 -0.165192 0.130077 0.087868 -0.164104 0.126455 0.090778 -0.162286 0.128813 0.089333</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope3-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatRope3-uvs">
+          <float_array id="KardBoatRope3-uvs-array" count="8">0 0 0 4.0 1.0 0 1.0 4.0</float_array>
+          <technique_common>
+            <accessor source="KardBoatRope3-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatRope3-vertices">
+          <input semantic="POSITION" source="#KardBoatRope3-positions"/>
+        </vertices>
+        <triangles count="12" material="Mat_KardBoatRope3">
+          <input offset="0" semantic="VERTEX" source="#KardBoatRope3-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatRope3-uvs"/>
+          <p>0 3  1 1  5 0  4 2  0 3  5 0  6 2  4 3  5 1  7 0  6 2  5 1  2 3  0 1  4 0  6 2  2 3  4 0  2 3  3 1  1 0  0 2  2 3  1 0  2 1  6 0  7 2  3 3  2 1  7 2  3 1  7 0  5 2  1 3  3 1  5 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatSpar" name="KardBoatSpar">
+      <mesh>
+        <source id="KardBoatSpar-positions">
+          <float_array id="KardBoatSpar-positions-array" count="51">-0.223219 0.423579 0.526746 -0.222656 0.424945 0.52845 -0.221629 0.422554 0.525916 -0.22038 0.425287 0.53011 -0.219609 0.423579 0.52821 -0.218967 0.422212 0.526627 -0.21759 0.424945 0.530504 -0.216563 0.422554 0.527971 -0.216 0.423579 0.529674 -0.017683 1.104218 -0.006023 -0.015712 1.108079 -0.000246 -0.012245 1.100357 -0.008795 -0.007488 1.109685 0.005117 -0.002609 1.098717 -0.006916 0.002147 1.108079 0.006996 0.005614 1.100357 -0.001553 0.007585 1.104218 0.004224</float_array>
+          <technique_common>
+            <accessor source="KardBoatSpar-positions-array" count="17" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatSpar-uvs">
+          <float_array id="KardBoatSpar-uvs-array" count="52">1.75 0 1.75 4.0 1.875 4.0 2.0 0 2.0 4.0 2.125 4.0 2.25 0 2.25 4.0 2.375 4.0 2.5 0 2.5 4.0 2.625 4.0 2.75 0 2.75 4.0 2.875 4.0 3.0 0 3.0 4.0 3.125 4.0 3.25 0 3.25 4.0 3.375 4.0 3.5 0 3.5 4.0 3.625 4.0 3.75 0 3.75 4.0</float_array>
+          <technique_common>
+            <accessor source="KardBoatSpar-uvs-array" count="26" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatSpar-vertices">
+          <input semantic="POSITION" source="#KardBoatSpar-positions"/>
+        </vertices>
+        <triangles count="30" material="Mat_KardBoatSpar">
+          <input offset="0" semantic="VERTEX" source="#KardBoatSpar-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatSpar-uvs"/>
+          <p>14 6  8 4  16 3  14 6  6 7  8 4  12 9  3 10  14 6  3 10  6 7  14 6  10 12  1 13  12 9  1 13  3 10  12 9  0 16  10 12  9 15  1 13  10 12  0 16  0 16  9 15  11 18  2 19  0 16  11 18  2 19  11 18  13 21  5 22  2 19  13 21  5 22  13 21  15 24  7 25  5 22  15 24  16 3  8 4  15 0  8 4  7 1  15 0  7 25  4 23  5 22  7 1  8 4  4 2  8 4  6 7  4 5  4 8  6 7  3 10  4 11  3 10  1 13  4 14  1 13  0 16  2 19  4 17  0 16  5 22  4 20  2 19  11 18  9 15  10 12  13 21  11 18  10 12  13 21  10 12  12 9  13 21  12 9  14 6  15 0  13 21  14 6  16 3  15 0  14 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatMast" name="KardBoatMast">
+      <mesh>
+        <source id="KardBoatMast-positions">
+          <float_array id="KardBoatMast-positions-array" count="54">-0.025432 -0.040432 0.007722 -0.022718 -0.040432 -0.002608 -0.01613 -0.040432 0.012969 -0.010879 1.118569 0.001566 -0.010072 1.118569 -0.001425 -0.009698 -0.040432 -0.011892 -0.00817 1.118569 0.00307 -0.006366 1.118569 -0.004015 -0.005049 -0.040432 -0.0009 -0.005049 1.118569 -0.0009 -0.003731 1.118569 0.002216 -0.001927 1.118569 -0.004869 -0.000399 -0.040432 0.010093 -0.000026 1.118569 -0.000374 0.000781 1.118569 -0.003365 0.006032 -0.040432 -0.014768 0.01262 -0.040432 0.000809 0.015334 -0.040432 -0.009521</float_array>
+          <technique_common>
+            <accessor source="KardBoatMast-positions-array" count="18" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatMast-uvs">
+          <float_array id="KardBoatMast-uvs-array" count="66">1.75 0 1.75 4.0 1.875 0 1.875 4.0 2.0 0 2.0 4.0 2.125 0 2.125 4.0 2.25 0 2.25 4.0 2.375 0 2.375 4.0 2.5 0 2.5 4.0 2.625 0 2.625 4.0 2.75 0 2.75 4.0 2.875 0 2.875 4.0 3.0 0 3.0 4.0 3.125 0 3.125 4.0 3.25 0 3.25 4.0 3.375 0 3.375 4.0 3.5 0 3.5 4.0 3.625 4.0 3.75 0 3.75 4.0</float_array>
+          <technique_common>
+            <accessor source="KardBoatMast-uvs-array" count="33" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatMast-vertices">
+          <input semantic="POSITION" source="#KardBoatMast-positions"/>
+        </vertices>
+        <triangles count="32" material="Mat_KardBoatMast">
+          <input offset="0" semantic="VERTEX" source="#KardBoatMast-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatMast-uvs"/>
+          <p>15 8  14 5  17 4  15 10  11 9  14 5  7 13  15 8  5 12  7 13  11 9  15 10  4 17  5 12  1 16  4 17  7 13  5 14  1 16  0 20  3 21  4 17  1 18  3 21  3 21  0 20  2 24  6 25  3 21  2 26  12 28  6 25  2 24  10 29  6 25  12 14  16 31  10 29  12 28  13 32  10 29  16 31  17 4  14 5  16 0  14 5  13 1  16 2  13 32  9 30  10 29  8 22  2 24  0 20  13 1  14 5  9 3  14 5  11 9  9 7  9 11  11 9  7 13  9 15  7 13  4 17  9 19  4 17  3 21  6 25  9 23  3 21  10 29  9 27  6 25  8 26  12 28  2 24  8 14  16 31  12 28  17 4  16 0  8 2  15 8  17 4  8 6  15 8  8 10  5 12  5 12  8 14  1 16  1 16  8 18  0 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="KardBoatSail" name="KardBoatSail">
+      <mesh>
+        <source id="KardBoatSail-positions">
+          <float_array id="KardBoatSail-positions-array" count="135">-0.298838 0.519012 0.291152 -0.293003 0.616427 0.208567 -0.29124 0.643693 0.305147 -0.290072 0.549285 0.395918 -0.288979 0.506984 0.24047 -0.287716 0.422383 0.415567 -0.286223 0.417736 0.33642 -0.274375 0.406324 0.291744 -0.269764 0.738648 0.226729 -0.26506 0.60416 0.163301 -0.261071 0.494923 0.197107 -0.253808 0.711552 0.137372 -0.248999 0.833978 0.148245 -0.244597 0.392349 0.247407 -0.230772 0.589468 0.1233 -0.228234 0.480811 0.157956 -0.219268 0.696791 0.097657 -0.211207 0.424877 0.523948 -0.207472 0.804115 0.072206 -0.206663 0.375162 0.203869 -0.182471 0.923945 0.093295 -0.163422 0.560083 0.066324 -0.151439 0.666313 0.044046 -0.147994 0.444593 0.085559 -0.141132 0.89391 0.016811 -0.138492 0.772338 0.022122 -0.127073 0.337132 0.120073 -0.116688 1.013808 0.037453 -0.076283 0.741621 0.002735 -0.075103 0.835038 -0.007812 -0.074118 0.963273 -0.005605 -0.069875 0.408305 0.031032 -0.069847 0.513613 0.018507 -0.068254 0.621415 0.010304 -0.054476 0.300572 0.048522 -0.03965 0.700687 -0.003132 -0.037356 0.806199 -0.001243 -0.037324 0.595174 -0.00123 -0.034739 0.911712 0.00085 -0.034669 0.489661 0.000768 -0.027771 1.097726 -0.007422 -0.026467 1.017259 0.005274 -0.026289 0.384114 0.005199 -0.01582 1.123011 0.010661 -0.015522 0.278362 0.010561</float_array>
+          <technique_common>
+            <accessor source="KardBoatSail-positions-array" count="45" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="KardBoatSail-uvs">
+          <float_array id="KardBoatSail-uvs-array" count="50">5.0 0 5.0 0.1668 5.0 0.3335 5.0 0.5 5.0 0.6668 5.25 0 5.25 0.1668 5.25 0.3335 5.25 0.5 5.25 0.6668 5.5 0 5.5 0.1668 5.5 0.3335 5.5 0.5 5.5 0.6668 5.75 0 5.75 0.1668 5.75 0.3335 5.75 0.5 5.75 0.6668 6.0 0 6.0 0.1668 6.0 0.3335 6.0 0.5 6.0 0.6668</float_array>
+          <technique_common>
+            <accessor source="KardBoatSail-uvs-array" count="25" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="KardBoatSail-vertices">
+          <input semantic="POSITION" source="#KardBoatSail-positions"/>
+        </vertices>
+        <triangles count="64" material="Mat_KardBoatSail">
+          <input offset="0" semantic="VERTEX" source="#KardBoatSail-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#KardBoatSail-uvs"/>
+          <p>12 0  8 6  11 5  1 11  9 10  11 5  8 6  2 12  1 11  10 15  9 10  1 11  4 16  10 15  1 11  0 17  4 16  1 11  2 12  3 18  0 17  4 16  7 21  13 20  10 15  4 16  13 20  7 21  4 16  0 17  6 22  7 21  0 17  5 23  6 22  0 17  17 24  5 23  3 18  11 5  16 6  18 1  18 1  16 6  22 7  25 2  18 1  22 7  22 7  33 8  28 3  25 2  22 7  28 3  33 8  37 9  35 4  28 3  33 8  35 4  11 5  9 10  14 11  16 6  11 5  14 11  16 6  14 11  21 12  22 7  16 6  21 12  21 12  32 13  33 8  22 7  21 12  33 8  32 13  39 14  37 9  33 8  32 13  37 9  15 16  14 11  9 10  10 15  15 16  9 10  14 11  15 16  23 17  21 12  14 11  23 17  32 13  21 12  23 17  31 18  32 13  23 17  31 18  42 19  39 14  32 13  31 18  39 14  10 15  13 20  19 21  15 16  10 15  19 21  15 16  19 21  26 22  23 17  15 16  26 22  23 17  26 22  34 23  31 18  23 17  34 23  34 23  44 24  42 19  31 18  34 23  42 19  20 6  12 0  18 1  18 1  25 2  24 7  29 8  24 7  25 2  28 3  29 8  25 2  28 3  35 4  36 9  29 8  28 3  36 9  27 12  20 6  24 7  30 13  24 7  29 8  29 8  36 9  38 14  30 13  29 8  38 14  27 12  30 13  40 18  30 13  38 14  41 19  40 18  30 13  41 19  41 19  43 24  40 18  3 18  5 23  0 17  2 12  0 17  1 11  8 6  1 11  11 5  12 0  11 5  18 1  20 6  18 1  24 7  27 12  24 7  30 13</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="S_KardBoatBottom">
+        <instance_geometry url="#KardBoatBottom">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatBottom" target="#PMat_KardBoatBottom">
+                <bind_vertex_input semantic="KardBoatBottom-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatDeck">
+        <instance_geometry url="#KardBoatDeck">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatDeck" target="#PMat_KardBoatDeck">
+                <bind_vertex_input semantic="KardBoatDeck-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatTopEdge">
+        <instance_geometry url="#KardBoatTopEdge">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatTopEdge" target="#PMat_KardBoatTopEdge">
+                <bind_vertex_input semantic="KardBoatTopEdge-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatRope1">
+        <instance_geometry url="#KardBoatRope1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatRope1" target="#PMat_KardBoatRope1">
+                <bind_vertex_input semantic="KardBoatRope1-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatRope2">
+        <instance_geometry url="#KardBoatRope2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatRope2" target="#PMat_KardBoatRope2">
+                <bind_vertex_input semantic="KardBoatRope2-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatRope3">
+        <instance_geometry url="#KardBoatRope3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatRope3" target="#PMat_KardBoatRope3">
+                <bind_vertex_input semantic="KardBoatRope3-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatSpar">
+        <instance_geometry url="#KardBoatSpar">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatSpar" target="#PMat_KardBoatSpar">
+                <bind_vertex_input semantic="KardBoatSpar-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatMast">
+        <instance_geometry url="#KardBoatMast">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatMast" target="#PMat_KardBoatMast">
+                <bind_vertex_input semantic="KardBoatMast-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_KardBoatSail">
+        <instance_geometry url="#KardBoatSail">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_KardBoatSail" target="#PMat_KardBoatSail">
+                <bind_vertex_input semantic="KardBoatSail-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>
