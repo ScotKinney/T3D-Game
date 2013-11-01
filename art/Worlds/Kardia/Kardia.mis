@@ -130,8 +130,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.217519";
-         time = "0.112864";
+         startTime = "0.207415";
+         time = "0.209649";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -640,7 +640,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10736";
+         botBelongsToMe = "3331";
          delayRespawn = "1176";
          distDetect = "25";
          fov = "360";
@@ -665,7 +665,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "10962";
+         botBelongsToMe = "3333";
          delayRespawn = "1679";
          distDetect = "25";
          fov = "360";
@@ -4883,7 +4883,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3314";
+            botBelongsToMe = "3335";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -4908,7 +4908,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3315";
+            botBelongsToMe = "3336";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5338,7 +5338,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3316";
+            botBelongsToMe = "3337";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5363,7 +5363,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3318";
+            botBelongsToMe = "3338";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -8202,6 +8202,56 @@ new SimGroup(MissionGroup) {
          ignoreZodiacs = "0";
          invertGradientRange = "0";
          useGradientRange = "0";
+   };
+   new StaticShape(Guard14_DD2) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "55.0092 165.025 15.7494";
+      rotation = "0 0 -1 36.0525";
+      scale = "0.714 0.714 0.714";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         avOptions = "6,269,13,362,55,59,242,35";
+         behavior = "LeashedBehavior";
+         block = "MalePlayerData";
+         botBelongsToMe = "3335";
+         delayRespawn = "17533";
+         distDetect = "50";
+         fov = "360";
+         leash = "5";
+         maxRange = "50";
+         paceDist = "5";
+         realName = "SS_Guard";
+         respawnCount = "0";
+         respawnCounter = "0";
+         team = "14";
+         weapon = "JavelinWeapon";
+   };
+   new StaticShape(Guard14_DD21) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "-74.1408 175.14 15.7494";
+      rotation = "0 0 -1 25.037";
+      scale = "0.714 0.714 0.714";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         avOptions = "6,269,13,362,55,59,242,35";
+         behavior = "LeashedBehavior";
+         block = "MalePlayerData";
+         botBelongsToMe = "3335";
+         delayRespawn = "17533";
+         distDetect = "50";
+         fov = "360";
+         leash = "5";
+         maxRange = "50";
+         paceDist = "5";
+         realName = "SS_Guard";
+         respawnCount = "0";
+         respawnCounter = "0";
+         team = "14";
+         weapon = "JavelinWeapon";
    };
 };
 //--- OBJECT WRITE END ---
