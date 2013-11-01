@@ -2,25 +2,22 @@
 new SimGroup(MissionGroup) {
    canSave = "1";
    canSaveDynamicFields = "1";
-      cdTrack = "2";
-      CTF_scoreLimit = "5";
       enabled = "1";
-      musicTrack = "lush";
 
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
       visibleDistance = "900";
       visiblePlayers = "300";
       decalBias = "0.0015";
-      fogColor = "0.501961 0.458824 0.454902 1";
-      fogDensity = "0.001";
-      fogDensityOffset = "50";
-      fogAtmosphereHeight = "300";
+      fogColor = "1 0.0705882 0 1";
+      fogDensity = "0.007";
+      fogDensityOffset = "100";
+      fogAtmosphereHeight = "50";
       canvasClearColor = "167 169 170 255";
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
       advancedLightmapSupport = "0";
-      soundAmbience = "AudioAmbienceDefault";
+      soundAmbience = "AudioAmbienceAureusDayTime";
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -85,7 +82,7 @@ new SimGroup(MissionGroup) {
          foamMaxDepth = "2";
          foamAmbientLerp = "0.5";
          foamRippleInfluence = "0.05";
-         cubemap = "DefaultSkyCubemap";
+         cubemap = "KapSkyDarkClouds";
          fullReflect = "1";
          reflectivity = "0.5";
          reflectPriority = "1";
@@ -118,12 +115,12 @@ new SimGroup(MissionGroup) {
          baseTexSize = "1024";
          lightMapSize = "256";
          screenError = "32";
+         ignoreZodiacs = "0";
          position = "-521.2 -439.242 -33.4086";
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
             enabled = "1";
-            ignoreZodiacs = "0";
             scale = "1 1 1";
             tile = "0";
       };
@@ -163,7 +160,7 @@ new SimGroup(MissionGroup) {
          rayleighScattering = "0.006";
          sunScale = "0.937255 0.992157 0.996078 1";
          ambientScale = "0.466667 0.509804 0.52549 1";
-         fogScale = "0.65098 0.854902 0.976471 1";
+         fogScale = "0.631373 0.647059 0.65098 1";
          exposure = "10";
          zoffset = "0";
          azimuth = "572.958";
@@ -172,6 +169,7 @@ new SimGroup(MissionGroup) {
          moonElevation = "30";
          castShadows = "1";
          brightness = "0.9";
+         flareType = "SunFlareExample";
          flareScale = "1.2";
          nightColor = "0.152941 0.164706 0.25098 1";
          nightFogColor = "0.160784 0.207843 0.262745 1";
@@ -500,30 +498,6 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SFXEmitter(BG_Birds) {
-         fileName = $WorldPath @ "/sound/birdsnewa.ogg";
-         playOnAdd = "1";
-         useTrackDescriptionOnly = "0";
-         isLooping = "1";
-         isStreaming = "0";
-         sourceGroup = "AudioChannelMusic";
-         volume = "1";
-         pitch = "1";
-         fadeInTime = "0";
-         fadeOutTime = "0";
-         is3D = "0";
-         referenceDistance = "1";
-         maxDistance = "100";
-         scatterDistance = "0 0 0";
-         coneInsideAngle = "360";
-         coneOutsideAngle = "360";
-         coneOutsideVolume = "1";
-         position = "21 305 36";
-         rotation = "1 0 0 0";
-         scale = "100 100 100";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
    };
    new Prefab(Arena) {
       fileName = "art/packs/worlds/kardia/prefabs/ArenaPreFab.prefab";
@@ -683,34 +657,23 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new OcclusionVolume() {
-         position = "322.167 232.475 42.9723";
+         position = "164.88 285.745 25.452";
          rotation = "1 0 0 0";
-         scale = "332.902 425.996 287.866";
-         hidden = "1";
+         scale = "1.44112 527.316 77.1595";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new OcclusionVolume() {
-         position = "-22.5947 282.432 43.0883";
+         position = "-200.431 232.475 30.1782";
          rotation = "1 0 0 0";
-         scale = "356.321 526.486 292.424";
-         hidden = "1";
+         scale = "0.975468 425.996 62.8814";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new OcclusionVolume() {
-         position = "-381.809 232.475 42.9723";
+         position = "-8.90004 -19.4408 43.9222";
          rotation = "1 0 0 0";
-         scale = "361.969 425.996 293.008";
-         hidden = "1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new OcclusionVolume() {
-         position = "-8.90004 -207.639 138.081";
-         rotation = "1 0 0 0";
-         scale = "1000 448.827 486.644";
-         hidden = "1";
+         scale = "994.001 0.686482 183.021";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -998,15 +961,70 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
+         ignoreZodiacs = "0";
+         useGradientRange = "0";
+         gradientRange = "0 180";
+         invertGradientRange = "0";
          position = "-21.3584 320.158 12.9409";
          rotation = "1 0 0 0";
          scale = "10 10 10";
          canSave = "1";
          canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
+      };
+      new SphereEmitterNode(DockSplash51) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-17.0589 444.637 6.34251";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash61) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-25.5709 444.776 6.24927";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash611) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-37.2822 436.428 6.88704";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash6111) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-49.3945 436.428 6.88704";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash61111) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "1.0603 448.665 6.06052";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
       };
       new WaterBlock(KardiaPools9) {
          gridElementSize = "5";
@@ -1057,8 +1075,8 @@ new SimGroup(MissionGroup) {
          foamMaxDepth = "10";
          foamAmbientLerp = "1";
          foamRippleInfluence = "15";
-         cubemap = "DefaultSkyCubemap";
-         fullReflect = "0";
+         cubemap = "KapSkyDarkClouds";
+         fullReflect = "1";
          reflectivity = "0.5";
          reflectPriority = "1";
          reflectMaxRateMs = "1";
@@ -2338,7 +2356,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Lime";
-         position = "-44.4664 365.223 15.9174";
+         position = "-44.4664 365.223 15.8839";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3272,15 +3290,48 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
+         ignoreZodiacs = "0";
+         useGradientRange = "0";
+         gradientRange = "0 180";
+         invertGradientRange = "0";
          position = "-21.9289 -375.471 111.827";
          rotation = "0.487336 -0.476148 -0.731975 109.253";
          scale = "5.1429 1.01278 3.13846";
          canSave = "1";
          canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
+      };
+      new SphereEmitterNode(WaterFallTopMain211) {
+         active = "1";
+         emitter = "EmitterMainFalls_Cave";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-24.5254 -391.996 156.293";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(WaterFallTopMain2111) {
+         active = "1";
+         emitter = "EmitterMainFalls_Cave";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-20.4937 -391.996 159.794";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(WaterFallTopMain21111) {
+         active = "1";
+         emitter = "EmitterMainFalls_Cave";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-18.302 -391.996 157.944";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
       };
    };
    new SimGroup(Bog_Portal) {
@@ -3289,6 +3340,7 @@ new SimGroup(MissionGroup) {
 
       new Trigger(KardiaToBog) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         dataBlock = "serverTransferTrigger";
          position = "-457.142 -272.079 18.2425";
          rotation = "0 0 -1 19.8702";
          scale = "1 9.7837 11.9274";
@@ -3647,7 +3699,31 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          enabled = "1";
 
-      new SimGroup(WildHorsePath) {
+      new StaticShape(WildHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "218.149 -246.347 25.8413";
+         rotation = "0 0 1 180";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "WildHorse";
+            botBelongsToMe = "20763";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "WildHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
+      };
+      new Path(WildHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
             enabled = "1";
@@ -3663,7 +3739,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "WildHorse";
                MoveSpeed = "0.1";
          };
          new Marker() {
@@ -3706,7 +3781,31 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new SimGroup(PaliminoPath) {
+      new StaticShape(PaliminoHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "219.46 -157.624 25.8414";
+         rotation = "1 0 0 0";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "PaliminoHorse";
+            botBelongsToMe = "20764";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "PaliminoPath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
+      };
+      new Path(PaliminoPath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -3721,7 +3820,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "PaliminoHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
@@ -3764,7 +3862,31 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new SimGroup(IndianHorsePath) {
+      new StaticShape(IndianHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "219.025 -157.675 25.8414";
+         rotation = "1 0 0 0";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "IndianHorse";
+            botBelongsToMe = "20765";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "IndianHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
+      };
+      new Path(IndianHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -3779,7 +3901,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "IndianHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
@@ -3822,7 +3943,31 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(ArabianHorsePath) {
+      new StaticShape(ArabianHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "221.973 -242.533 25.8414";
+         rotation = "1 0 0 0";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "ArabianHorse";
+            botBelongsToMe = "20766";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "ArabianHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
+      };
+      new Path(ArabianHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -3837,7 +3982,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "ArabianHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
@@ -3880,7 +4024,31 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(LightHorsePath) {
+      new StaticShape(LightHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "302.351 -242.891 25.7476";
+         rotation = "1 0 0 0";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "LightHorse";
+            botBelongsToMe = "20767";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "LightHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
+      };
+      new Path(LightHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -3895,7 +4063,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "LightHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
@@ -3938,69 +4105,67 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(BayHorsePath) {
+      new StaticShape(BayHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "302.351 -242.891 25.7476";
+         rotation = "1 0 0 0";
+         scale = "0.714 0.714 0.714";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
-
-         new Marker() {
-            seqNum = "0";
-            type = "Normal";
-            msToNext = "0";
-            smoothingType = "Spline";
-            position = "302.344 -160.808 25.8414";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-               enabled = "1";
-               Horse = "BayHorse";
-               MoveSpeed = ".1";
-         };
-         new Marker() {
-            seqNum = "1";
-            type = "Normal";
-            msToNext = "0";
-            smoothingType = "Spline";
-            position = "301.691 -243.322 25.7476";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-               enabled = "1";
-               MoveSpeed = ".1";
-         };
-         new Marker() {
-            seqNum = "2";
-            type = "Normal";
-            msToNext = "0";
-            smoothingType = "Spline";
-            position = "222.422 -243.044 25.8414";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-               enabled = "1";
-               MoveSpeed = ".1";
-         };
-         new Marker() {
-            seqNum = "3";
-            type = "Normal";
-            msToNext = "0";
-            smoothingType = "Spline";
-            position = "222.422 -161.284 25.8414";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-               enabled = "1";
-               MoveSpeed = ".5";
-         };
+            behavior = "MountBehavior";
+            block = "BayHorse";
+            botBelongsToMe = "20768";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "BayHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            Weapon = "-NoWeapon";
       };
    };
    new SimGroup(EastDocks) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
+      new SphereEmitterNode(DockSplash4) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-361.596 360.911 6.98004";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash3) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-357.635 360.911 6.98004";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash7) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-354.807 362.248 6.98004";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
       new TSStatic() {
          shapeName = "art/packs/worlds/Kardia/Models/boats/kardboat1.dae";
          playAmbient = "1";
@@ -4406,6 +4571,28 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
+      new SphereEmitterNode(DockSplash5) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "305.293 359.337 7.03049";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new SphereEmitterNode(DockSplash6) {
+         active = "1";
+         emitter = "EmitterTopSpray";
+         velocity = "1";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "301.167 359.815 7.03049";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
       new TSStatic() {
          shapeName = "art/packs/worlds/Kardia/Models/props/CratesSimple0001stain4Animated.dts";
          playAmbient = "1";
