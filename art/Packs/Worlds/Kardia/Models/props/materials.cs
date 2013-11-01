@@ -272,7 +272,10 @@ singleton Material(KardToBogScreen_PMat_KardToBogScreen)
 singleton Material(cave_entrance_PMat_FJCave)
 {
    mapTo = "PMat_FJCave";
-   diffuseMap[0] = "cave1";
+   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/rocks/tex_volcanic_rock_base.dds";
    specular[0] = "0 0 0 1";
    translucentBlendOp = "None";
+   detailMap[0] = "art/Packs/Worlds/Kardia/Models/rocks/tex_volcanic_rock_dif.dds";
+   detailScale[0] = "3 3";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/rocks/tex_volcanic_rock_nrm.dds";
 };
