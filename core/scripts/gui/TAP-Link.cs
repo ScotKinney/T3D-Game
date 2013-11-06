@@ -57,8 +57,6 @@ function focusWebShape(%obj, %mouseDown, %rayStart, %rayEnd)
    %goodShape = $TAP::WebResponder.setInputTarget(%obj, %rayStart, %rayEnd, %mouseDown);
    if ( %goodShape )
    {
-      if ( ($mvTriggerCount0 % 2) == 1 )
-         $mvTriggerCount0++;
       //globalActionMap.unbind( mouse, button1);
       hideCursor();
    }
@@ -120,11 +118,13 @@ function TAPLinkHUD::showTL(%this)
    if ( $pref::TL::isDocked )
    {
       TLFrame.setVisible(false);
+      TAPLink.setVisible(false);
       DockedTL.setVisible(true);
    }
    else
    {
       TLFrame.setVisible(true);
+      TAPLink.setVisible(true);
       DockedTL.setVisible(false);
    }
 
@@ -135,6 +135,7 @@ function TAPLinkHUD::MinimizeTL(%this)
 {  // Minimize the TL to the docked state.
    $pref::TL::isDocked = true;
    TLFrame.setVisible(false);
+   TAPLink.setVisible(false);
    DockedTL.setVisible(true);
 }
 
@@ -142,6 +143,7 @@ function TAPLinkHUD::RestoreTL(%this)
 {  // Restore the Tap link from the docked state.
    $pref::TL::isDocked = false;
    TLFrame.setVisible(true);
+   TAPLink.setVisible(true);
    DockedTL.setVisible(false);
 }
 

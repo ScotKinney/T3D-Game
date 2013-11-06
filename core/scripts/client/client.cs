@@ -36,6 +36,7 @@ function initBaseClient()
 
    exec("core/art/gui/TAP-Link.gui");
    exec("core/scripts/gui/TAP-Link.cs");
+   exec("core/scripts/gui/TLAudio.cs");
 }
 
 /// A helper function which will return the ghosted client object

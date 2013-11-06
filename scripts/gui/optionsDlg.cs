@@ -824,16 +824,16 @@ function OptAudioDeviceList::onSelect( %this, %id, %text )
    // Skip empty selections.
    if ( %text $= "" )
       return;
-      
+
    $pref::SFX::device = %text;
-   
-   if ( !sfxCreateDevice(  $pref::SFX::provider, 
-                           $pref::SFX::device, 
+
+   if ( !sfxCreateDevice(  $pref::SFX::provider,
+                           $pref::SFX::device,
                            $pref::SFX::useHardware,
-                           -1 ) )                              
-      error( "Unable to create SFX device: " @ $pref::SFX::provider 
-                                             SPC $pref::SFX::device 
-                                             SPC $pref::SFX::useHardware );                                             
+                           -1 ) )
+      error( "Unable to create SFX device: " @ $pref::SFX::provider
+                                             SPC $pref::SFX::device
+                                             SPC $pref::SFX::useHardware );
 }
 
 function OptMouseSetSensitivity(%value)  

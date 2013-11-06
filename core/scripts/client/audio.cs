@@ -56,6 +56,11 @@ singleton SFXSource( AudioChannelMusic )
    description = AudioChannel;
 };
 
+singleton SFXSource( AudioChannelTutorial )
+{
+   description = AudioChannel;
+};
+
 // Set default playback states of the channels.
 
 AudioChannelMaster.play();
@@ -64,6 +69,7 @@ AudioChannelDefault.play();
 AudioChannelGui.play();
 AudioChannelMusic.play();
 AudioChannelMessages.play();
+AudioChannelTutorial.play();
 
 // Stop in-game effects channels.
 AudioChannelEffects.stop();
@@ -98,6 +104,13 @@ singleton SFXDescription( AudioMusic )
 {
    volume         = 1.0;
    sourceGroup    = AudioChannelMusic;
+};
+
+// Master description for tutorial messages.
+singleton SFXDescription( AudioTutorial )
+{
+   volume         = 1.0;
+   sourceGroup    = AudioChannelTutorial;
 };
 
 //-----------------------------------------------------------------------------
@@ -334,14 +347,16 @@ function sfxAutodetect()
 
 $GuiAudioType        = 1;  // Interface.
 $SimAudioType        = 2;  // Game.
-$MessageAudioType    = 3;  // Notifications.
-$MusicAudioType      = 4;  // Music.
+$MusicAudioType      = 3;  // Music.
+$MessageAudioType    = 4;  // Notifications.
+$TutorialAudioType   = 5;  // Tutorial messages.
 
 $AudioChannels[ 0 ] = AudioChannelDefault;
 $AudioChannels[ $GuiAudioType ] = AudioChannelGui;
 $AudioChannels[ $SimAudioType ] = AudioChannelEffects;
 $AudioChannels[ $MessageAudioType ] = AudioChannelMessages;
 $AudioChannels[ $MusicAudioType ] = AudioChannelMusic;
+$AudioChannels[ $TutorialAudioType ] = AudioChannelTutorial;
 
 function sfxOldChannelToGroup( %channel )
 {

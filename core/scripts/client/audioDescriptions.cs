@@ -141,3 +141,35 @@ singleton SFXDescription( AudioMusicLoop3D : AudioMusic )
    is3D              = true;
    isLooping         = true;
 };
+
+//-----------------------------------------------------------------------------
+// NPC Voices
+//-----------------------------------------------------------------------------
+
+singleton SFXDescription( NPCVoice3D : AudioMessage )
+{
+   is3D              = true;
+   ReferenceDistance = 5.0;
+   MaxDistance       = 25.0;
+};
+
+//-----------------------------------------------------------------------------
+// Tutorial messages
+//-----------------------------------------------------------------------------
+singleton SFXDescription( Tutorial2D : AudioMusic )
+{
+   isStreaming       = true;
+};
+
+singleton SFXDescription( Tutorial3D : AudioMusic )
+{
+   isStreaming       = true;
+   is3D              = true;
+};
+
+singleton SFXDescription( TutorialClose3D : AudioTutorial )
+{
+   is3D              = true;
+   ReferenceDistance = 5.0;
+   MaxDistance       = 25.0;
+};

@@ -1,3 +1,7 @@
+// ----------------------------------------------------------------------------
+// Play Gui For Rift View
+// ----------------------------------------------------------------------------
+
 function RiftPlayGui::onWake(%this)
 {
    $enableDirectInput = "1";
@@ -7,7 +11,6 @@ function RiftPlayGui::onWake(%this)
    unbindChatCommands();
    moveMap.push();
 
-   //PutTLOnTop();  // Bring the TL gui back onto the canvas
    $TAP::WebResponder = %this-->WebResponder;
 }
 

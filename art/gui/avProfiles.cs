@@ -105,8 +105,24 @@
       category = "Tools";
    };
 
+   singleton SFXProfile(RiftGainFocusSound)
+   {
+      filename    = "art/sound/ui/webshape_gain_focus.ogg";
+      description = AudioGui;
+      preload = false;
+   };
+
+   singleton SFXProfile(RiftLoseFocusSound)
+   {
+      filename    = "art/sound/ui/webshape_lose_focus.ogg";
+      description = AudioGui;
+      preload = false;
+   };
+
    singleton GuiControlProfile (AVWebResponderProfile)
    {
       canKeyFocus = true;
+      soundButtonDown = RiftGainFocusSound;
+      soundButtonOver = RiftLoseFocusSound;
       category = "Tools";
    };
