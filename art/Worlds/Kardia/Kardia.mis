@@ -115,20 +115,20 @@ new SimGroup(MissionGroup) {
          baseTexSize = "1024";
          lightMapSize = "256";
          screenError = "32";
-         ignoreZodiacs = "0";
          position = "-521.2 -439.242 -33.4086";
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
             enabled = "1";
+            ignoreZodiacs = "0";
             scale = "1 1 1";
             tile = "0";
       };
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.207415";
-         time = "0.209649";
+         startTime = "0.0476409";
+         time = "0.0522233";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -614,8 +614,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3331";
-         delayRespawn = "1176";
+         botBelongsToMe = "4250";
+         delayRespawn = "948";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -639,8 +639,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3333";
-         delayRespawn = "1679";
+         botBelongsToMe = "4474";
+         delayRespawn = "1706";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -923,9 +923,9 @@ new SimGroup(MissionGroup) {
       new Trigger(NZKardiaForum) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          dataBlock = "NeutralZoneTrigger";
-         position = "-22.3484 355.365 -7.06107";
+         position = "-21.4319 381.645 -7.06107";
          rotation = "1 0 0 0";
-         scale = "121.747 261.779 73.4512";
+         scale = "80.7764 105.865 73.4512";
          canSave = "1";
          canSaveDynamicFields = "1";
             onEnterMessage = "You have entered the Kardian Neutral Zone, your weapons wont work here!";
@@ -961,20 +961,30 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-21.3584 320.158 12.9409";
          rotation = "1 0 0 0";
          scale = "10 10 10";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SphereEmitterNode(DockSplash51) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-17.0589 444.637 6.34251";
          rotation = "1 0 0 0";
@@ -983,9 +993,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash61) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-25.5709 444.776 6.24927";
          rotation = "1 0 0 0";
@@ -994,9 +1014,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash611) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-37.2822 436.428 6.88704";
          rotation = "1 0 0 0";
@@ -1005,9 +1035,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash6111) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-49.3945 436.428 6.88704";
          rotation = "1 0 0 0";
@@ -1016,9 +1056,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash61111) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "1.0603 448.665 6.06052";
          rotation = "1 0 0 0";
@@ -1374,7 +1424,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1394,7 +1444,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1414,7 +1464,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1434,7 +1484,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1454,7 +1504,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1474,7 +1524,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1494,7 +1544,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1514,7 +1564,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1534,7 +1584,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1554,7 +1604,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1574,7 +1624,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1594,7 +1644,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1614,7 +1664,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1634,7 +1684,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1654,7 +1704,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1674,7 +1724,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Forest/trees/palm/palmtree_tall.dae";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3290,20 +3340,30 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-21.9289 -375.471 111.827";
          rotation = "0.487336 -0.476148 -0.731975 109.253";
          scale = "5.1429 1.01278 3.13846";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SphereEmitterNode(WaterFallTopMain211) {
-         active = "1";
          emitter = "EmitterMainFalls_Cave";
+         sa_thetaMin = "0";
+         sa_thetaMax = "10";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-24.5254 -391.996 156.293";
          rotation = "1 0 0 0";
@@ -3312,9 +3372,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(WaterFallTopMain2111) {
-         active = "1";
          emitter = "EmitterMainFalls_Cave";
+         sa_thetaMin = "0";
+         sa_thetaMax = "10";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-20.4937 -391.996 159.794";
          rotation = "1 0 0 0";
@@ -3323,9 +3393,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(WaterFallTopMain21111) {
-         active = "1";
          emitter = "EmitterMainFalls_Cave";
+         sa_thetaMin = "0";
+         sa_thetaMax = "10";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-18.302 -391.996 157.944";
          rotation = "1 0 0 0";
@@ -3710,7 +3790,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "20763";
+            botBelongsToMe = "3359";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3720,7 +3800,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(WildHorsePath) {
          isLooping = "1";
@@ -3792,7 +3872,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "20764";
+            botBelongsToMe = "3360";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3802,7 +3882,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(PaliminoPath) {
          isLooping = "1";
@@ -3873,7 +3953,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "20765";
+            botBelongsToMe = "3361";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3883,7 +3963,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(IndianHorsePath) {
          isLooping = "1";
@@ -3954,7 +4034,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "20766";
+            botBelongsToMe = "3362";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3964,7 +4044,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(ArabianHorsePath) {
          isLooping = "1";
@@ -4035,7 +4115,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "20767";
+            botBelongsToMe = "3363";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4045,7 +4125,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(LightHorsePath) {
          isLooping = "1";
@@ -4116,7 +4196,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "20768";
+            botBelongsToMe = "3364";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4126,7 +4206,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
    };
    new SimGroup(EastDocks) {
@@ -4134,9 +4214,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(DockSplash4) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-361.596 360.911 6.98004";
          rotation = "1 0 0 0";
@@ -4145,9 +4235,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash3) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-357.635 360.911 6.98004";
          rotation = "1 0 0 0";
@@ -4156,9 +4256,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash7) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-354.807 362.248 6.98004";
          rotation = "1 0 0 0";
@@ -4572,9 +4682,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(DockSplash5) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "305.293 359.337 7.03049";
          rotation = "1 0 0 0";
@@ -4583,9 +4703,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(DockSplash6) {
-         active = "1";
          emitter = "EmitterTopSpray";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "301.167 359.815 7.03049";
          rotation = "1 0 0 0";
@@ -5070,7 +5200,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3335";
+            botBelongsToMe = "3365";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -5095,7 +5225,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3336";
+            botBelongsToMe = "3366";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5525,7 +5655,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3337";
+            botBelongsToMe = "3367";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5550,7 +5680,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3338";
+            botBelongsToMe = "3368";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -8111,7 +8241,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8131,7 +8261,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8151,7 +8281,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8171,7 +8301,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8191,7 +8321,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8211,7 +8341,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8231,7 +8361,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8251,7 +8381,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8271,7 +8401,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8291,7 +8421,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8311,7 +8441,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8331,7 +8461,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8351,7 +8481,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8371,7 +8501,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Worlds/Kardia/Forest/plants/bigleaf/bigleaf.dae";
+      shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -8402,7 +8532,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3335";
+         botBelongsToMe = "3357";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -8427,7 +8557,32 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3335";
+         botBelongsToMe = "3358";
+         delayRespawn = "17533";
+         distDetect = "50";
+         fov = "360";
+         leash = "5";
+         maxRange = "50";
+         paceDist = "5";
+         realName = "SS_Guard";
+         respawnCount = "0";
+         respawnCounter = "0";
+         team = "14";
+         weapon = "JavelinWeapon";
+   };
+   new StaticShape(Guard14_DD22) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "55.0092 319.052 15.7494";
+      rotation = "0 0 -1 36.0525";
+      scale = "0.714 0.714 0.714";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         avOptions = "6,269,13,362,55,59,242,35";
+         behavior = "LeashedBehavior";
+         block = "MalePlayerData";
+         botBelongsToMe = "3357";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";

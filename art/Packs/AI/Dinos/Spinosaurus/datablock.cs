@@ -38,8 +38,8 @@ datablock PlayerData(Spino : DefaultPlayerData)
    Weapon = "Spino_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 7;
-   minRange = 5;
+   maxRange = 20;
+   minRange = 10;
    distDetect = 100;
    sidestepDist = 2;
    paceDist = 20;
@@ -73,8 +73,8 @@ datablock PlayerData(Spino : DefaultPlayerData)
 
    minImpactSpeed = 45;
 
-   boundingBox = "3 7 10";//LR-FB-UpDN
-   swimBoundingBox = "3 7 10";
+   boundingBox = "4 15 14";//LR-FB-UpDN
+   swimBoundingBox = "4 15 14";
 
    // Foot Prints
    decalData   = SpinosaurusFootprints;

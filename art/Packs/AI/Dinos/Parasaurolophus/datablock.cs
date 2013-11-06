@@ -40,8 +40,8 @@ datablock PlayerData(Para : DefaultPlayerData)
    Weapon = "Para_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 7;
-   minRange = 5;
+   maxRange = 4;
+   minRange = 3;
    distDetect = 60;
    sidestepDist = 2;
    paceDist = 20;
@@ -76,8 +76,8 @@ datablock PlayerData(Para : DefaultPlayerData)
 
    minImpactSpeed = 45;
 
-   boundingBox = "3 7 6";//LR-FB-UpDN
-   swimBoundingBox = "3 7 6";
+   boundingBox = "3 8 6";//LR-FB-UpDN
+   swimBoundingBox = "3 8 6";
 
    // Foot Prints
    decalData   = ParaFootprints;
@@ -108,8 +108,8 @@ datablock GameBaseData(Para_JawOne)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 100;
-   startDamage = 0.2;
-   endDamage = 10;
+   startDamage = 0.4;
+   endDamage = 2;
    soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = Jaw3Sound;
    impulse = 1000;
@@ -122,7 +122,7 @@ datablock GameBaseData(Para_JawTwo)
    timeScale = 1;
    damageAmount = 100;
    startDamage = 0.2;
-   endDamage = 10;
+   endDamage = 2;
    soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = Jaw3Sound;
    impulse = 1000;
@@ -134,8 +134,8 @@ datablock GameBaseData(Para_JawThree)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 100;
-   startDamage = 0.2;
-   endDamage = 10;
+   startDamage = 0.3;
+   endDamage = 2;
    soundDelay = 1; // Play sound 0 ms after animation starts
    swingSound = Jaw3Sound;
    impulse = 1000;
