@@ -14,25 +14,25 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addNode("mount2", "lHand", "-1.01155 0.175602 2.02436 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
-   %this.addNode("mount1", "lHand", "-1.0277 0.228715 1.98335 -0.199266 0.524624 -0.827685 0.391181", "1");
-   %this.addMesh("Sash_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Sash_FJ 700");
-   %this.addMesh("WristGrd_FJ_R 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_R 700");
-   %this.addMesh("ChestStrap_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "ChestStrap_FJ 700");
-   %this.addMesh("Pants_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Pants_FJ 700");
-   %this.addMesh("Boots_FJ 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Boots_FJ 700");
-   %this.addMesh("WristGrd_FJ_L 700", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_L 700");
-   %this.addMesh("Sash_FJ 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Sash_FJ 400");
-   %this.addMesh("WristGrd_FJ_R 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_R 400");
-   %this.addMesh("ChestStrap_FJ 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "ChestStrap_FJ 400");
-   %this.addMesh("Pants_FJ 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Pants_FJ 400");
-   %this.addMesh("Boots_FJ 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Boots_FJ 400");
-   %this.addMesh("WristGrd_FJ_L 400", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_L 400");
-   %this.addMesh("Sash_FJ 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Sash_FJ 50");
-   %this.addMesh("WristGrd_FJ_R 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_R 50");
-   %this.addMesh("ChestStrap_FJ 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "ChestStrap_FJ 50");
-   %this.addMesh("Pants_FJ 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Pants_FJ 50");
-   %this.addMesh("Boots_FJ 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "Boots_FJ 50");
-   %this.addMesh("WristGrd_FJ_L 50", "art/players/base/BaseFemale/BaseFemale_FJ.dts", "WristGrd_FJ_L 50");
+   %this.addNode("mount1", "lHand", "-1.04742 0.220753 1.94963 -0.296087 0.913308 -0.279644 0.479743", "1");
+   %this.addMesh("Sash_FJ 700", "./BaseFemale_FJ.dts", "Sash_FJ 700");
+   %this.addMesh("WristGrd_FJ_R 700", "./BaseFemale_FJ.dts", "WristGrd_FJ_R 700");
+   %this.addMesh("ChestStrap_FJ 700", "./BaseFemale_FJ.dts", "ChestStrap_FJ 700");
+   %this.addMesh("Pants_FJ 700", "./BaseFemale_FJ.dts", "Pants_FJ 700");
+   %this.addMesh("Boots_FJ 700", "./BaseFemale_FJ.dts", "Boots_FJ 700");
+   %this.addMesh("WristGrd_FJ_L 700", "./BaseFemale_FJ.dts", "WristGrd_FJ_L 700");
+   %this.addMesh("Sash_FJ 400", "./BaseFemale_FJ.dts", "Sash_FJ 400");
+   %this.addMesh("WristGrd_FJ_R 400", "./BaseFemale_FJ.dts", "WristGrd_FJ_R 400");
+   %this.addMesh("ChestStrap_FJ 400", "./BaseFemale_FJ.dts", "ChestStrap_FJ 400");
+   %this.addMesh("Pants_FJ 400", "./BaseFemale_FJ.dts", "Pants_FJ 400");
+   %this.addMesh("Boots_FJ 400", "./BaseFemale_FJ.dts", "Boots_FJ 400");
+   %this.addMesh("WristGrd_FJ_L 400", "./BaseFemale_FJ.dts", "WristGrd_FJ_L 400");
+   %this.addMesh("Sash_FJ 50", "./BaseFemale_FJ.dts", "Sash_FJ 50");
+   %this.addMesh("WristGrd_FJ_R 50", "./BaseFemale_FJ.dts", "WristGrd_FJ_R 50");
+   %this.addMesh("ChestStrap_FJ 50", "./BaseFemale_FJ.dts", "ChestStrap_FJ 50");
+   %this.addMesh("Pants_FJ 50", "./BaseFemale_FJ.dts", "Pants_FJ 50");
+   %this.addMesh("Boots_FJ 50", "./BaseFemale_FJ.dts", "Boots_FJ 50");
+   %this.addMesh("WristGrd_FJ_L 50", "./BaseFemale_FJ.dts", "WristGrd_FJ_L 50");
    %this.addSequence("art/players/base/Anims/Root.dsq", "Root", "0", "479", "1", "0");
    %this.addSequence("art/players/base/Anims/Run.dsq", "Run", "0", "70", "1", "0");
    %this.addTrigger("Run", "21", "1");
@@ -292,8 +292,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("Sit_Ground", "5");
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "0", "3", "1", "0");
-   %this.setSequencePriority("taplink", "10");
-
+   %this.setSequencePriority("taplink", "5");
 }
 
 $mack = true;

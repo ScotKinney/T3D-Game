@@ -14,7 +14,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
-   %this.addNode("mount1", "lHand", "-1.12182 0.192278 2.01463 -0.296782 0.163836 -0.940786 0.313475", "1");
+   %this.addNode("mount1", "lHand", "-1.15746 0.192278 2.00405 -0.300286 0.910571 -0.284058 0.485323", "1");
    %this.addSequence("art/players/base/Anims/Root.dsq", "Root", "0", "479", "1", "0");
    %this.addSequence("art/players/base/Anims/Run.dsq", "Run", "0", "70", "1", "0");
    %this.addTrigger("Run", "21", "1");
@@ -277,7 +277,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("Sit_Ground", "5");
    %this.setSequenceCyclic("Sit_Ground", "1");
    %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "0", "3", "1", "0");
-   %this.setSequencePriority("taplink", "10");
+   %this.setSequencePriority("taplink", "5");
    %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
 }
 
