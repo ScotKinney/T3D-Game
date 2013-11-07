@@ -16,43 +16,43 @@
 datablock SFXProfile(MaleDeathCry1)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry1";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;  
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry2)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry2";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;  
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry3)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry3";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry4)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry4";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry5)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry5";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry6)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry6";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 datablock SFXProfile(MaleDeathCry7)   
 {   
    fileName = "art/players/base/sound/MaleDeathCry7";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 
@@ -61,61 +61,61 @@ datablock SFXProfile(MaleDeathCry7)
 datablock SFXProfile(MalePainCry1)
 {
    fileName = "art/players/base/sound/MalePainCry1";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry2)
 {
    fileName = "art/players/base/sound/MalePainCry2";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry3)
 {
    fileName = "art/players/base/sound/MalePainCry3";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry4)
 {
    fileName = "art/players/base/sound/MalePainCry4";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry5)
 {
    fileName = "art/players/base/sound/MalePainCry5";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry6)
 {
    fileName = "art/players/base/sound/MalePainCry6";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry7)
 {
    fileName = "art/players/base/sound/MalePainCry7";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry8)
 {
    fileName = "art/players/base/sound/MalePainCry8";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry9)
 {
    fileName = "art/players/base/sound/MalePainCry9";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(MalePainCry10)
 {
    fileName = "art/players/base/sound/MalePainCry10";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
@@ -124,43 +124,43 @@ datablock SFXProfile(MalePainCry10)
 datablock SFXProfile(FemaleDeathCry1)
 {
    fileName = "art/players/base/sound/FemaleDeathCry1";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry2)
 {
    fileName = "art/players/base/sound/FemaleDeathCry2";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry3)
 {
    fileName = "art/players/base/sound/FemaleDeathCry3";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry4)
 {
    fileName = "art/players/base/sound/FemaleDeathCry4";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry5)
 {
    fileName = "art/players/base/sound/FemaleDeathCry5";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry6)
 {
    fileName = "art/players/base/sound/FemaleDeathCry6";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemaleDeathCry7)
 {
    fileName = "art/players/base/sound/FemaleDeathCry7";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
@@ -169,61 +169,61 @@ datablock SFXProfile(FemaleDeathCry7)
 datablock SFXProfile(FemalePainCry1)
 {
    fileName = "art/players/base/sound/FemalePainCry1";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry2)
 {
    fileName = "art/players/base/sound/FemalePainCry2";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry3)
 {
    fileName = "art/players/base/sound/FemalePainCry3";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry4)
 {
    fileName = "art/players/base/sound/FemalePainCry4";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry5)
 {
    fileName = "art/players/base/sound/FemalePainCry5";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry6)
 {
    fileName = "art/players/base/sound/FemalePainCry6";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry7)
 {
    fileName = "art/players/base/sound/FemalePainCry7";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry8)
 {
    fileName = "art/players/base/sound/FemalePainCry8";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry9)
 {
    fileName = "art/players/base/sound/FemalePainCry9";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(FemalePainCry10)
 {
    fileName = "art/players/base/sound/FemalePainCry10";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
@@ -320,14 +320,14 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
 datablock SFXProfile(PoleCastSound)
 {
    fileName = "art/sound/cast";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
 datablock SFXProfile(FishCatchSound)
 {
    fileName = "art/sound/FishCatch";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
