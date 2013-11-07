@@ -53,7 +53,7 @@ datablock PlayerData(DefaultPlayerData)
    runForce = 48 * 90;
    runEnergyDrain = 0;
    minRunEnergy = 0;
-   maxForwardSpeed = 2;//6
+   maxForwardSpeed = 3;//6
    maxBackwardSpeed = 2;//5
    maxSideSpeed = 1;//5
 
