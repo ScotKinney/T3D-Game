@@ -57,6 +57,49 @@ datablock LightFlareData( DefaultSunFlare )
    elementUseLightColor[6] = true;
 };
 
+datablock LightFlareData( ScatterskyFlareExample )
+{      
+   overallScale = 2.0;
+   flareEnabled = true;
+   renderReflectPass = false;
+   flareTexture = "./lensFlareSheet0";  
+   
+   elementRect[0] = "1024 0 128 128";
+   elementDist[0] = 0.5;
+   elementScale[0] = 0.25;   
+   elementTint[0] = "1.0 1.0 1.0";
+   elementRotate[0] = true;
+   elementUseLightColor[0] = true;
+   
+   elementRect[1] = "1024 128 128 128";
+   elementDist[1] = 0.8;
+   elementScale[1] = 0.7;   
+   elementTint[1] = "1.0 1.0 1.0";
+   elementRotate[1] = true;
+   elementUseLightColor[1] = true;
+   
+   elementRect[2] = "1024 0 128 128";
+   elementDist[2] = 1.18;
+   elementScale[2] = 0.5;   
+   elementTint[2] = "1.0 1.0 1.0";
+   elementRotate[2] = true;
+   elementUseLightColor[2] = true;
+   
+   elementRect[3] = "1152 128 128 128";
+   elementDist[3] = 1.25;
+   elementScale[3] = 0.25;   
+   elementTint[3] = "1.0 1.0 1.0";
+   elementRotate[3] = true;
+   elementUseLightColor[3] = true;
+   
+   elementRect[4] = "1024 0 128 128";
+   elementDist[4] = 2.0;
+   elementScale[4] = 0.25;      
+   elementTint[4] = "0.7 0.7 0.7";
+   elementRotate[4] = true;
+   elementUseLightColor[4] = true;
+};
+
 function AlterVerseTime::onAdd(%this)
 {
    %this.clockSynchEvent = %this.schedule((%this.dayLength / 6) * 1000, "AdjustTime");

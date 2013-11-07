@@ -133,13 +133,24 @@ function remoteDBData::moveUserTo( %this )
 
    // Play any teleport effect here.
 
-   schedule(1000, 0, "commandToClient", %client, 
-                   'serverTransfer', 
-                   %this.sAddr, 
-                   %this.spawnPt, 
-                   %this.newHash,
-                   %this.sName,
-                   %this.sPrefix);
+   if ( (%this.sFile !$= "") && (%this.sRoot !$= "") )
+      schedule(1000, 0, "commandToClient", %client,
+                      'serverTransfer',
+                      %this.sFile,
+                      %this.sRoot,
+                      %this.sAddr,
+                      %this.spawnPt,
+                      %this.newHash,
+                      %this.sName,
+                      %this.sPrefix);
+   else
+      schedule(1000, 0, "commandToClient", %client,
+                      'serverTransfer',
+                      %this.sAddr,
+                      %this.spawnPt,
+                      %this.newHash,
+                      %this.sName,
+                      %this.sPrefix);
 }
 
 function remoteDBData::fillClanTable( %this )

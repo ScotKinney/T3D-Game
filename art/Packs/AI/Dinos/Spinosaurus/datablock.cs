@@ -38,8 +38,8 @@ datablock PlayerData(Spino : DefaultPlayerData)
    Weapon = "Spino_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 20;
-   minRange = 10;
+   maxRange = 8;
+   minRange = 5;
    distDetect = 100;
    sidestepDist = 2;
    paceDist = 20;
@@ -50,6 +50,7 @@ datablock PlayerData(Spino : DefaultPlayerData)
    cycleCounter = "5";
    weaponMode = "pattern";
    activeDodge = 1;
+   moveTolerance = 2.0;
    team = 1;
    respawnTime = 60000; // 60 * 1000, 60 seconds.
    deathEffectron = "";

@@ -27,7 +27,6 @@ new SimGroup(MissionGroup) {
          canBringHorses = "1";
          canTeleport = "1";
          desc0 = "Tortuga";
-         TypeS32 DescLines = "Tortuga";
          displayName = "Tortuga";
          enabled = "1";
          hasTreasury = "1";

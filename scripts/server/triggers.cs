@@ -133,3 +133,54 @@ function NeutralZoneTrigger::onLeaveTrigger( %this, %trigger, %obj )
          centerPrint(%obj.client, %trigger.onExitMessage, 10);
    }
 }
+
+// triggers for transferring players between servers.
+// All of these triggers use the same datablock - serverTransferTrigger.
+// The destination server, and the destination spawnpoint are specified
+// on the trigger object in the world editor. This saves us from having to 
+// create different trigger datablocks for different destinations
+// if a manifest file and remote path are specified on the trigger, then the
+// level assets will be streamed to the client before the transfer is performed
+
+function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
+{
+   // the server transfer triggers only function when running in dedicated mode
+   if(!$TAP::isDedicated)
+      return;
+      
+   // check that the object entering the trigger is a player
+   if(!isObject(%obj.client))
+      return;
+
+   // If it's a subscriber only trigger, make sure the user can pass
+   if ( (%trigger.subscriberOnly $= "1") && !%obj.client.subscribe )
+   {
+      messageClient(%obj.client, 'MsgItemPickup', %trigger.migrantMessage);
+      return;
+   }
+
+   // award any skull level increase, and check to
+   // see if the player is allowed to use this trigger
+   if(checkSkullLevel(%trigger,%obj) == false)
+   {
+      messageClient(%obj.client, 'MsgItemPickup', '\c0You must be skull level %1 or greater to use this portal', %trigger.minSkullLevel);
+      return;
+   }
+   
+   // get the destination from the trigger
+   %destination = %trigger.destinationServer;
+   if(%destination $= "")
+   {
+      error("serverTransferTrigger: no destination");
+      return;
+   }
+
+   if ( %this.clearInv $= "1" )
+   {
+      %obj.clearInventory();
+      %obj.updateInventoryString();
+   }
+
+   TransferToServer(%obj.client, 0, %trigger.destinationSpawnSphere, %destination);
+}
+

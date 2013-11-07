@@ -360,6 +360,27 @@ function clientCmdServerTransfer( %address, %spawnSphere, %hash, %serverName, %s
    schedule(100, 0, connectToServer, %address, %spawnSphere, true, false);
 }
 
+// transfer to a different server after the assets for it have been downloaded
+function clientCmdServerTransferStream(%manifestPath, %rootPath, %address, %spawnSphere, %hash, %serverName, %serverPrefix)
+{
+   LagIcon.setVisible(false);
+   $currentPasswordHash = %hash;
+   $ServerName = %serverName;
+   $AlterVerse::serverPrefix = %serverPrefix;
+
+   schedule(0, 0, disconnect);//transferDisconnect);
+   Canvas.schedule(0, setContent, DownloadProgressGui);
+   schedule(100, 0, playIntroMusic, %serverName);
+   StreamManager.streamLevelAssets(%manifestPath, %rootPath, "streamFinished(\"" @ %address @ "\",\"" @ %spawnSphere @ "\");");
+}
+
+function streamFinished( %address, %spawnSphere)
+{
+   schedule(100, 0, loadLoadingGui);
+   schedule(100, 0, connectToServer, %address, %spawnSphere, true, false);
+}
+
+
 function TeleportGui::onWake(%this)
 {
    %screenExtent = Canvas.getExtent();

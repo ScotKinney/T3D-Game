@@ -169,3 +169,27 @@ singleton Material(mat_bench)
    translucent = "0";
    materialTag0 = "DefaultProps";
 };
+
+singleton Material(mat_Ballista)
+{
+   mapTo = "ballista";
+   diffuseMap[0] = "ballista.png";
+	normalMap[0] = "ballista_normals.png";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_Sack01D)
+{
+   mapTo = "Sack01_D";
+   diffuseMap[0] = "Sack01_D.png";
+   translucent = "0";
+};
+
+singleton Material(mat_innwd02)
+{
+   mapTo = "inn_wd02";
+   diffuseMap[0] = "inn_wood.dds";
+   translucent = "0";
+   materialTag0 = "IndoorProps";
+};
+

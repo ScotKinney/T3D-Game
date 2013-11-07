@@ -41,3 +41,8 @@ datablock TriggerData(NeutralZoneTrigger : DefaultTrigger)
 {
    tickPeriodMS = 250;  
 };
+
+datablock TriggerData(serverTransferTrigger : DefaultTrigger)
+{
+   tickPeriodMS = 250;  
+};

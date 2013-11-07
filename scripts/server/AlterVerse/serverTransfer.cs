@@ -8,7 +8,7 @@ function serverCmdTeleportToServer(%client, %serverID)
    if ( %client.teleDest !$= "" )
       return; //They're already teleporting
 
-   TransferToServer(%client, %serverID, "Spawn0");
+   TransferToServer(%client, %serverID, "Spawn0", "");
 }
 
 function TPToTriggerServer(%client, %serverName, %spawnSphere)
@@ -19,10 +19,10 @@ function TPToTriggerServer(%client, %serverName, %spawnSphere)
    // Find the ID of the requested server
    %serverID = getServerIDFromName(%serverName);
 
-   TransferToServer(%client, %serverID, %spawnSphere);
+   TransferToServer(%client, %serverID, %spawnSphere, "");
 }
 
-function TransferToServer(%client, %serverID, %spawnSphere)
+function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
 {
    %client.teleDest = %serverID;
    %timeSec = getTimeSec();   // Used when making new session key
@@ -30,7 +30,10 @@ function TransferToServer(%client, %serverID, %spawnSphere)
    // get the details of the requested server
    if ( $Server::DB::Remote )
    {
-      %args = "tgtID="@%serverID;
+      if ( %serverName $= "" )
+         %args = "tgtID="@%serverID;
+      else
+         %args = "tgtName="@%serverName;
       %args = %args @ "&uName=" @ %client.nameBase;
       %args = %args @ "&uID=" @ %client.pData.dbID;
       %args = %args @ "&tVal=" @ %timeSec;
@@ -39,13 +42,18 @@ function TransferToServer(%client, %serverID, %spawnSphere)
       return;
    }
 
-   %results = DB::Select("serverName,serverAddress,loadPrefix,manifestRoot,manifestFile", 
-   /*FROM*/              "AVServerList", 
-   /*WHERE*/             "serverId='"@%serverID@"'");
+   if ( %serverName $= "" )
+      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,manifestRoot,manifestFile", 
+      /*FROM*/              "AVServerList", 
+      /*WHERE*/             "serverId='"@%serverID@"'");
+   else
+      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,manifestRoot,manifestFile", 
+      /*FROM*/              "AVServerList", 
+      /*WHERE*/             "serverName='"@%serverName@"'");
                          
    if(%results.getNumRows() == 0)
    {
-      error("TransferToServer: cannot find destination server, ID = " @ %serverID);
+      error("TransferToServer: cannot find destination server, ID = " @ %serverID @ ", name = " @ %serverName);
       %results.delete();
       %client.teleDest = "";
       return;
@@ -55,6 +63,8 @@ function TransferToServer(%client, %serverID, %spawnSphere)
    %manifestURL = %results.manifestFile;
    %pathToRoot = %results.manifestRoot;
    %loadPrefix = %results.loadPrefix;
+   %serverID = %results.serverId;
+   
    %results.delete();
 
    // create a new hash key   
@@ -69,11 +79,22 @@ function TransferToServer(%client, %serverID, %spawnSphere)
 
    // Play any teleport effect here.
 
-   schedule(1000, 0, "commandToClient", %client, 
-                   'serverTransfer', 
-                   %destAddress, 
-                   %spawnSphere, 
-                   %hashKey,
-                   %destination,
-                   %loadPrefix);
+   if ( (%manifestURL !$= "") && (%pathToRoot !$= "") )
+      schedule(1000, 0, "commandToClient", %client, 
+                      'serverTransferStream',
+                      %manifestURL,
+                      %pathToRoot,
+                      %destAddress,
+                      %spawnSphere,
+                      %hashKey,
+                      %destination,
+                      %loadPrefix);
+   else
+      schedule(1000, 0, "commandToClient", %client, 
+                      'serverTransfer', 
+                      %destAddress, 
+                      %spawnSphere, 
+                      %hashKey,
+                      %destination,
+                      %loadPrefix);
 }
