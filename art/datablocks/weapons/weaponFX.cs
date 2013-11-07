@@ -43,7 +43,7 @@ datablock LightDescription(ProjectileLightDesc)
 datablock SFXProfile(BaseThrowSound)
 {
    filename = "art/sound/weapons/Throw_Javelin";
-   description = AudioDefault3d;
+   description = AudioClose3d;
    preload = true;
 };
 
@@ -78,28 +78,28 @@ datablock SFXProfile(BaseReloadSound)
 datablock SFXProfile(ProjectileExplosionSound)
 {
    filename = "art/sound/weapons/Crossbow_explosion";
-   description = AudioDefault3d;
+   description = AudioClose3d;
    preload = true;
 };
 
 datablock SFXProfile(ProjectileHitSound)
 {
    filename = "art/sound/weapons/arrowThud";
-   description = AudioDefault3d;
+   description = AudioClose3d;
    preload = true;
 };
 
 datablock SFXProfile(AxeHitLiveSound)
 {
    filename = "art/sound/weapons/AxeHitLive";
-   description = AudioDefault3d;
+   description = AudioClose3d;
    preload = true;
 };
 
 datablock SFXProfile(AxeHitStaticSound)
 {
    filename = "art/sound/weapons/AxeHitStatic";
-   description = AudioDefault3d;
+   description = AudioClose3d;
    preload = true;
 };
 
