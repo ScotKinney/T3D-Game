@@ -4,12 +4,16 @@
 // "art/Packs/AI/Gargoyle"
 // "art/Packs/AI/Horses"
 // "art/Packs/AI/Sharks"
+// "art/Packs/AI/SnowWolf"
 // "art/Packs/AI/Tolgart"
+// "art/Packs/AI/Yeti"
 
 // "art/Packs/env/GroundCover"
 // "art/Packs/env/underwaterCave"
 // "art/Packs/env/volcano"
 // "art/Packs/env/waterfall"
+
+// "art/Packs/groundcover/winter"
 
 // "art/Packs/props/clanFort"
 // "art/Packs/props/default"
@@ -17,12 +21,15 @@
 // "art/Packs/props/medcity"
 // "art/Packs/props/physShapes1"
 // "art/Packs/props/signs"
+// "art/Packs/props/valhalla"
+// "art/Packs/props/VikingCastle"
 // "art/Packs/props/wallTorch"
 
 // "art/Packs/rocks/default"
 // "art/Packs/rocks/T3D"
 
 // "art/Packs/skies/default"
+// "art/Packs/skies/overcast"
 
 // "art/Packs/trees/banana"
 // "art/Packs/trees/canopy"
@@ -30,10 +37,12 @@
 // "art/Packs/trees/default"
 // "art/Packs/trees/longLeaf"
 // "art/Packs/trees/palm"
+// "art/Packs/trees/pines"
 // "art/Packs/trees/swamptree"
 
 // "art/Packs/veg/bigleaf"
 // "art/Packs/veg/broadleaf"
+// "art/Packs/veg/bush01"
 // "art/Packs/veg/deadbush"
 // "art/Packs/veg/fern"
 

@@ -51,3 +51,19 @@ new Material(material_L_Kelp_001)
    alphaRef = 150;   // alpha less than 128 in brightness (255 is max) will not be rendered
    materialTag0 = "GroundCover";
 };
+
+singleton Material(mat_rivergrass)
+{
+   mapTo = "rivergrass";
+   diffuseMap[0] = "rivergrass_diffuse_transparency.dds";
+   translucent = "1";
+   alphaTest = "1"; 
+   translucentZWrite = "0";
+   castShadows = "0";
+   translucentBlendOp = "None";
+   materialTag0 = "trees";
+   useAnisotropic[0] = "1";
+   alphaRef = "40";
+   useAnisotropic[0] = "1";
+   materialTag0 = "GroundCover";
+};

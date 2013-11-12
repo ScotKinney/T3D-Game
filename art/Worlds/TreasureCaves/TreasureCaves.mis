@@ -7633,7 +7633,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SFXEmitter() {
-         fileName = "art/Packs/props/wallTorch/sound/fire1.wav";
+         fileName = "art/sound/environment/fire1.wav";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";

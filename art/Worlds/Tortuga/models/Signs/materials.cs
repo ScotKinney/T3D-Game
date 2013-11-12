@@ -13,13 +13,6 @@ singleton Material(mat_Pub4Sale)
    materialTag0 = "signs";
 };
 
-singleton Material(mat_Horses4Sale)
-{
-   mapTo = "Horses4Sale";
-   diffuseMap[0] = "Horses4Sale.jpg";
-        materialTag0 = "signs";
-};
-
 singleton Material(mat_tcavesPointer)
 {
    mapTo = "TCavesPointer";

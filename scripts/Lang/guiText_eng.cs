@@ -125,7 +125,7 @@ guiStrings.mbRightsErr[1] = "Error assigning build rights.";
 // Center Print Messages -------------------------------------------------------
 // Neutral Zone messages
 // You have entered a Neutral Zone, your weapons wont work here!
-guiStrings.cpMsg[GenNZIn] = "You have entered a Neutral Zone, your weapons wont work here!";
+guiStrings.cpMsg[GenNZIn] = "You have entered a Neutral Zone, your weapons will not work here!";
 // You have left the Neutral Zone, be on guard!
 guiStrings.cpMsg[GenNZOut] = "You have left the Neutral Zone, be on guard!";
 // You have entered the Tortuga NZ Market area, your weapons wont work here!

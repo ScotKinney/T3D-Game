@@ -8233,7 +8233,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clanID = "10508";
+            clanID = "4";
             ClanName = "Rum Runners";
             coins = "476477";
       };

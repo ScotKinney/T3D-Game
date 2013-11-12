@@ -1,0 +1,74 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Yeti
+
+datablock SFXProfile(SnowWolfDeathCry)
+{
+   fileName = "art/Packs/AI/SnowWolf/sound/WildebeestDeathCry";
+   description = AudioClosest3d;
+   preload = false;
+};
+
+datablock SFXProfile(SnowWolfPainCry)
+{
+   fileName = "art/Packs/AI/SnowWolf/sound/WildebeestPainCry";
+   description = AudioClosest3d;
+   preload = false;
+};
+
+datablock DecalData(SnowWolfFootprints)
+{
+   size = 0.2;
+   material = "SnowWolfFootprint";
+};
+
+datablock PlayerData(WolfAI : DefaultPlayerData)
+{
+   renderFirstPerson = false;
+
+   shapeFile = "art/Packs/AI/SnowWolf/SnowWolf.dts";
+
+   maxDamage = 500;
+   maxForwardSpeed = 4;
+
+   //AI specific values that can be set for this datablock
+   //These values can be overridden by the spawn marker,
+   //but these values override the defaults
+   Weapon = "-noweapon";
+   respawn = true;
+   behavior = "PetBehavior";
+   maxRange = 20;
+   minRange = 10;
+   distDetect = 40;
+   sidestepDist = 2;
+   paceDist = 20;
+   npcAction = 0;
+   spawnGroup = 1;
+   fov = 180;
+   leash = 10;
+   cycleCounter = "5";
+   weaponMode = "pattern";
+   activeDodge = 1;
+   team = 1;
+   realName = " ";
+   killerName = "a Wolf Dog";
+   cameraMaxDist = 3;
+   computeCRC = true;
+
+   //Death Cry
+   DeathSound = SnowWolfDeathCry;
+   PainSound = SnowWolfPainCry;
+
+   mass = 50;
+   boundingBox = "2 2 2";
+   swimBoundingBox = "1 1 3";
+
+   // Foot Prints
+   decalData   = SnowWolfFootprints;
+   decalOffset = 0.25;
+
+   // Controls over slope of runnable/jumpable surfaces
+   runSurfaceAngle  = 50;
+   jumpSurfaceAngle = 80;
+   maxStepHeight = 1.5;  //two meters
+};
+

@@ -4,7 +4,7 @@ $ThisPrefab = new SimGroup() {
    canSaveDynamicFields = "1";
 
    new SFXEmitter() {
-      fileName = "art/Packs/props/wallTorch/sound/fire1.wav";
+      fileName = "art/sound/environment/fire1.wav";
       sourceGroup = "AudioChannelEffects";
       playOnAdd = "1";
       useTrackDescriptionOnly = "0";

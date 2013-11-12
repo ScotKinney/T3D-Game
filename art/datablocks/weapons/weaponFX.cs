@@ -730,7 +730,7 @@ datablock ExplosionData(ProjectileExplosion)
    camShakeFreq = "10.0 11.0 9.0";
    camShakeAmp = "15.0 15.0 15.0";
    camShakeDuration = 1.5;
-   camShakeRadius = 20;
+   camShakeRadius = 10;
 
    // Exploding debris
    debris = ProjectileDebris;

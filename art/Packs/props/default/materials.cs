@@ -173,8 +173,8 @@ singleton Material(mat_bench)
 singleton Material(mat_Ballista)
 {
    mapTo = "ballista";
-   diffuseMap[0] = "ballista.png";
-	normalMap[0] = "ballista_normals.png";
+   diffuseMap[0] = "ballista.dds";
+	normalMap[0] = "ballista_normals.dds";
    materialTag0 = "DefaultProps";
 };
 
@@ -183,6 +183,7 @@ singleton Material(mat_Sack01D)
    mapTo = "Sack01_D";
    diffuseMap[0] = "Sack01_D.png";
    translucent = "0";
+   materialTag0 = "DefaultProps";
 };
 
 singleton Material(mat_innwd02)
@@ -190,6 +191,37 @@ singleton Material(mat_innwd02)
    mapTo = "inn_wd02";
    diffuseMap[0] = "inn_wood.dds";
    translucent = "0";
-   materialTag0 = "IndoorProps";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_Target)
+{
+   mapTo = "TargetFace";
+   diffuseMap[0] = "TargetFace";
+   translucent = "0";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_WhiteSquare)
+{
+   mapTo = "WhiteSquare";
+   diffuseMap[0] = "WhiteSquare";
+   translucent = "0";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_Crate01_D)
+{
+   mapTo = "Crate01_D";
+   diffuseMap[0] = "Crate01_D";
+   customFootstepSound = FootStepWood1Sound;
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_FenceSection2)
+{
+   mapTo = "fenceSection2Post2";
+   diffuseMap[0] = "fenceSection2Post2";
+   translucent = "0";
 };
 
