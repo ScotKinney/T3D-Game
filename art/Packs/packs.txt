@@ -17,6 +17,7 @@
 
 // "art/Packs/props/clanFort"
 // "art/Packs/props/default"
+// "art/Packs/props/goldmine"
 // "art/Packs/props/indoor"
 // "art/Packs/props/medcity"
 // "art/Packs/props/physShapes1"
