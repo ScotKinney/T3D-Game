@@ -198,6 +198,7 @@ singleton Material(scrubPine_SoftPine2)
 
 	diffuseMap[0] = "LushPine.dds";
 	normalMap[0] = "LushPine_NRM.dds";
+   //specularMap[0] = "LushPine_SPEC.dds";
 
 	diffuseColor[0] = "0.996078 0.992157 0.992157 1";
 	specular[0] = "0.9 0.9 0.9 1";
@@ -445,6 +446,23 @@ singleton Material(Win_Sequia02_Seq01Branch_Win)
    alphaRef = "120";
 };
 
+singleton Material(Sequia_02_Seq01Branch)
+{
+   mapTo = "Seq01Branch";
+   diffuseMap[0] = "pinetree001.dds";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "0";
+   translucentBlendOp = "None";
+   normalMap[0] = "pinetree001_NRM.dds";
+   useAnisotropic[0] = "1";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.827451 0.878431 0.431373 1";
+   subSurfaceRolloff[0] = "0.8";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "120";
+};
+
 singleton Material(Win_Pine01_ColorEffectR87G224B143_material)
 {
    mapTo = "ColorEffectR87G224B143-material";
@@ -459,4 +477,27 @@ singleton Material(Win_Sequia01_ColorEffectR27G177B88_material)
    diffuseColor[0] = "0.105882 0.694118 0.345098 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+};
+
+singleton Material(TallPine01_TallPineNeed)
+{
+	mapTo = "TallPineNeed";
+
+	diffuseMap[0] = "pinetree001.dds";
+	normalMap[0] = "pinetree001_NRM.dds";
+   specularMap[0] = "DryPine2_SPEC.dds";
+
+	diffuseColor[0] = "1 1 1 1";
+	specular[0] = "0.9 0.9 0.9 1";
+	specularPower[0] = "1";
+
+	doubleSided = 1;
+	translucent = false;
+	translucentBlendOp = "LerpAlpha";
+   useAnisotropic[0] = "1";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.627451 0.768628 0.0117647 1";
+   alphaTest = "1";
+   alphaRef = "140";
+   subSurfaceRolloff[0] = "0.4";
 };

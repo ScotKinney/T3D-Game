@@ -134,3 +134,5 @@ guiStrings.cpMsg[TortNZIn] = "You have entered the Tortuga NZ Market area, your 
 guiStrings.cpMsg[TortNZOut] = "You have left the Tortuga Neutral Zone, arm yourself!";
 // Danger! You have left the Neutral Zone, watch out for the Yeti!
 guiStrings.cpMsg[GMNZOut] = "Danger! You have left the Neutral Zone, watch out for the Yeti!";
+// Danger! You have left the Neutral Zone, beware the Boglins!
+guiStrings.cpMsg[BogNZOut] = "Danger! You have left the Neutral Zone, beware the Boglins!";

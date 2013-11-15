@@ -1,5 +1,6 @@
 // Pack list
 
+// "art/Packs/AI/Boglin"
 // "art/Packs/AI/Dinos"
 // "art/Packs/AI/Gargoyle"
 // "art/Packs/AI/Horses"
@@ -8,13 +9,17 @@
 // "art/Packs/AI/Tolgart"
 // "art/Packs/AI/Yeti"
 
+// "art/Packs/env/fire"
 // "art/Packs/env/GroundCover"
+// "art/Packs/env/rain"
+// "art/Packs/env/snow"
 // "art/Packs/env/underwaterCave"
 // "art/Packs/env/volcano"
 // "art/Packs/env/waterfall"
 
 // "art/Packs/groundcover/winter"
 
+// "art/Packs/props/caveEntrance"
 // "art/Packs/props/clanFort"
 // "art/Packs/props/default"
 // "art/Packs/props/goldmine"
@@ -22,6 +27,8 @@
 // "art/Packs/props/medcity"
 // "art/Packs/props/physShapes1"
 // "art/Packs/props/signs"
+// "art/Packs/props/shuttleCraft"
+// "art/Packs/props/theBog"
 // "art/Packs/props/valhalla"
 // "art/Packs/props/VikingCastle"
 // "art/Packs/props/wallTorch"
@@ -46,5 +53,8 @@
 // "art/Packs/veg/bush01"
 // "art/Packs/veg/deadbush"
 // "art/Packs/veg/fern"
+// "art/Packs/veg/fiddleleaf"
+// "art/Packs/veg/fiscus"
+// "art/Packs/veg/largeleaf"
 
 

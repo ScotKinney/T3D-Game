@@ -20,11 +20,6 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-datablock SphereEmitterNodeData(DefaultID0Data)
-{
-   timeMultiple = 1;
-};
-
 datablock SphereEmitterNodeData(DefaultEmitterNodeData)
 {
    timeMultiple = 1;
