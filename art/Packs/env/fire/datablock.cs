@@ -46,3 +46,7 @@ datablock SphereEmitterData(GenericFireEmitter)
    softParticles = "0";
 };
 
+datablock SphereEmitterNodeData(GenericFireEmitterNode)
+{
+   timeMultiple = 1;
+};
