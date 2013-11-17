@@ -82,7 +82,6 @@ singleton Material(mat_woodLightBRN7001KO)
 {
    mapTo = "woodLightBRN7001KO";
    diffuseMap[0] = "art/Packs/props/goldmine/woodLightBRN7001KO";
-   normalMap[0] = "art/Packs/props/goldmine/woodLightBRN7001KO_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
 };
@@ -100,7 +99,6 @@ singleton Material(mat_woodLightBRN7001KOOS)
 {
    mapTo = "woodLightBRN7001KOOS";
    diffuseMap[0] = "art/Packs/props/goldmine/woodLightBRN7001KOOS";
-   normalMap[0] = "art/Packs/props/goldmine/woodLightBRN7001KOOS_NORM.png";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "GoldMine";
@@ -316,7 +314,6 @@ singleton Material(mat_MetalBare0055_2_LA)
 {
    mapTo = "MetalBare0055_2_LA.jpg";
    diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LA.jpg";
-   normalMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LA_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
 };
@@ -325,7 +322,6 @@ singleton Material(mat_MetalBare0055_2_LArivetAT)
 {
    mapTo = "MetalBare0055_2_LArivetAT.jpg";
    diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LArivetAT.jpg";
-   normalMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LArivetAT_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
 };
@@ -334,7 +330,6 @@ singleton Material(mat_MetalBare0071_1_LArivetT)
 {
    mapTo = "MetalBare0071_1_LArivetT";
    diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0071_1_LArivetT.jpg";
-   normalMap[0] = "art/Packs/props/goldmine/MetalBare0071_1_LArivetT_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
 };
@@ -343,7 +338,6 @@ singleton Material(mat_MetalBare0071_1_LArivetT_jpg)
 {
    mapTo = "MetalBare0071_1_LArivetT.jpg";
    diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0071_1_LArivetT.jpg";
-   normalMap[0] = "art/Packs/props/goldmine/MetalBare0071_1_LArivetT_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
 };
@@ -480,3 +474,39 @@ singleton Material(mat_WalTop1)
    materialTag0 = "GoldMine";
 };
 
+
+singleton Material(DefaultMaterial3)
+{
+   mapTo = "cartSide002A";
+   diffuseMap[0] = "art/Packs/props/goldmine/cartSide002A";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+   customImpactSound = "FootStepRock1Sound";
+};
+
+singleton Material(DefaultMaterial4)
+{
+   mapTo = "cartSide002";
+   diffuseMap[0] = "art/Packs/props/goldmine/cartSide002";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+   customImpactSound = "FootStepRock1Sound";
+};
+
+singleton Material(DefaultMaterial6)
+{
+   mapTo = "MetalBare0055_2_LA";
+   diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LA";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+   customImpactSound = "FootStepMetal1Sound";
+};
+
+singleton Material(DefaultMaterial7)
+{
+   mapTo = "MetalBare0055_2_LArivetAT";
+   diffuseMap[0] = "art/Packs/props/goldmine/MetalBare0055_2_LArivetAT";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+   customImpactSound = "FootStepMetal1Sound";
+};
