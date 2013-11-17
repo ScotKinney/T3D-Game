@@ -164,7 +164,7 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    AttackSound[4] = BoglinAttack5;
 
    numDeathAnims = 2;
-   numDamageAnims = 2;
+   numDamageAnims = 0;
 
    boundingBox = "2 2 3";
    swimBoundingBox = "2 4 4";
