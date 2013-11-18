@@ -6,6 +6,7 @@ new SimGroup(MissionGroup) {
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
       visibleDistance = "900";
+      visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "0.917647 0.886275 0.882353 1";
       fogDensity = "0.001";
@@ -34,6 +35,7 @@ new SimGroup(MissionGroup) {
 
       new SpawnSphere(spawnsphere001) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "1";
          sphereWeight = "1";
          indoorWeight = "100";
@@ -52,17 +54,17 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TerrainBlock(ValTerrain2) {
-         terrainFile = "art/Worlds/Valhalla/terrain/Valhalla.ter";
+         terrainFile = $WorldPath @ "/terrain/Valhalla.ter";
          castShadows = "0";
          squareSize = "2";
          baseTexSize = "1024";
-         //lightMapSize = "256";
+         lightMapSize = "256";
          screenError = "32";
-         ignoreZodiacs = "0";
          position = "-512 -512 0";
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
+            ignoreZodiacs = "0";
             scale = "1 1 1";
       };
       new SkyBox(ValSkyBox) {
@@ -78,8 +80,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(ValhallaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.19224";
-         time = "0.202299";
+         startTime = "0.949478";
+         time = "0.95848";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -99,7 +101,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-         dataFile = "art/worlds/valhalla/forest/Valhalla2.forest";
+         dataFile = $WorldPath @ "/forest/Valhalla2.forest";
          lodReflectScalar = "2";
       };
       new CloudLayer(Clouds2) {
@@ -228,7 +230,7 @@ new SimGroup(MissionGroup) {
          dissolveRadius = "50";
          reflectScale = "0";
          gridSize = "10";
-         zOffset = "0";
+         zoffset = "0";
          seed = "1";
          maxElements = "20000";
          maxBillboardTiltAngle = "90";
@@ -370,7 +372,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter(ValAmbient) {
-         fileName = "art/Worlds/Valhalla/sound/ValhallaWind.ogg";
+         fileName = $WorldPath @ "/sound/ValhallaWind.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -431,11 +433,14 @@ new SimGroup(MissionGroup) {
       new ScatterSky(ValhallaSky) {
          skyBrightness = "10";
          sunSize = "1";
+         colorizeAmount = "0";
+         colorize = "0 0 0 1";
          rayleighScattering = "0.006";
          sunScale = "0.937255 0.992157 0.996078 1";
          ambientScale = "0.466667 0.509804 0.52549 1";
          fogScale = "0.694118 0.768628 0.843137 1";
          exposure = "10";
+         zoffset = "0";
          azimuth = "572.958";
          elevation = "60";
          moonAzimuth = "20";
@@ -487,10 +492,10 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiWhite";
-         realName = "Helga";
-         botBelongsToMe = "13289";
+         botBelongsToMe = "3165";
          dropcount = "3";
-         DropItem = "banana";
+         dropitem = "banana";
+         realName = "Helga";
          respawnCount = "0";
          respawnCounter = "0";
          team = "1";
@@ -507,13 +512,13 @@ new SimGroup(MissionGroup) {
          avOptions = "280,279,283,55,59,50,35";
          behavior = "NPCVendorBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "13291";
+         botBelongsToMe = "3166";
          distDetect = "5";
          npcAction = "7";
          realName = "Lars";
          respawnCount = "0";
          respawnCounter = "0";
-         Weapon = "-NOWEAPON";
+         weapon = "-NOWEAPON";
          willBuy = "mineral wool";
    };
    new StaticShape(Wolfie1) {
@@ -527,10 +532,10 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "WolfAI";
-         botBelongsToMe = "13292";
+         botBelongsToMe = "3167";
          respawnCount = "0";
          respawnCounter = "0";
-         Weapon = "-NOWEAPON";
+         weapon = "-NOWEAPON";
    };
    new Trigger(NZ_ValVillage) {
       polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -557,15 +562,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-270.197 3.30618 69.1408";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Portal() {
          useAmbientLightColor = "0";
@@ -595,19 +600,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-265.627 3.49419 69.2138";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/grainbag1.dts";
@@ -619,19 +624,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-265.547 10.2312 69.2638";
          rotation = "0 0 1 14.8143";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -643,19 +648,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-266.397 2.57318 69.2848";
          rotation = "-0 0 -1 25.0391";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -667,19 +672,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-266.969 2.21519 70.7588";
          rotation = "-0 0 -1 25.0391";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -691,19 +696,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-267.557 2.02919 69.3078";
          rotation = "-0 0 -1 25.0391";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new Item(Roast22) {
          static = "1";
@@ -771,15 +776,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-275.822 8.61819 69.2859";
          rotation = "1 0 0 0";
          scale = "1.5 2.89344 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(FoodTable1) {
          shapeName = "art/Packs/props/default/table2.dts";
@@ -791,15 +796,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-265.792 7.00818 69.3008";
          rotation = "1 0 0 0";
          scale = "1.5 3.47048 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(ValFoodSign) {
          shapeName = "art/Packs/props/signs/FoodShop.dts";
@@ -811,15 +816,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-272.817 11.5952 71.1228";
          rotation = "0 0 1 90";
          scale = "0.1 0.1 0.1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -831,19 +836,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-274.746 4.86719 70.6828";
          rotation = "0 0 1 21.3035";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -855,19 +860,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-273.072 2.22618 70.7588";
          rotation = "0 0 1 15.8037";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -879,19 +884,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-272.404 2.12218 69.2848";
          rotation = "0 0 1 15.8037";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -903,19 +908,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-273.638 2.46918 69.3078";
          rotation = "0 0 1 15.8037";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -927,19 +932,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-274.2 4.53619 69.2488";
          rotation = "0 0 1 21.3035";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/grainbag1.dts";
@@ -951,19 +956,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-266.393 10.4692 69.2138";
          rotation = "0 0 1 130.629";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/barrell.dae";
@@ -975,19 +980,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-275.221 5.33018 69.2488";
          rotation = "0 0 1 21.3035";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new Item(Lime3) {
          static = "1";
@@ -1342,9 +1347,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(BlackSmithFire) {
-         active = "1";
          emitter = "SlowSteamEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "SlowSteamEmitterNode";
          position = "-248.009 36.3063 69.5651";
          rotation = "1 0 0 0";
@@ -1353,9 +1368,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(BlackSmithFire1) {
-         active = "1";
          emitter = "SlowSteamEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "SlowSteamEmitterNode";
          position = "-247.895 38.0261 69.5403";
          rotation = "1 0 0 0";
@@ -1373,19 +1398,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-248.001 37.1705 69.2138";
          rotation = "0 0 -1 90";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/anvil.dae";
@@ -1397,19 +1422,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-250.575 37.2285 68.7691";
          rotation = "0 0 1 178.45";
          scale = "0.04 0.04 0.04";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/hammers.dae";
@@ -1421,19 +1446,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-248.311 35.4915 69.2948";
          rotation = "0.899641 -0.114029 0.421477 33.476";
          scale = "0.035 0.035 0.035";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(SignWeBuyGold) {
          shapeName = "art/Packs/props/valhalla/WeBuyGold.dts";
@@ -1445,15 +1470,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-256.092 35.7725 71.4538";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(ValWeaponsSign) {
          shapeName = "art/Packs/props/signs/WeaponsShop.dts";
@@ -1465,15 +1490,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-263.419 35.6615 71.3148";
          rotation = "0 0 -1 90";
          scale = "0.1 0.1 0.1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Item() {
          static = "1";
@@ -1481,7 +1506,7 @@ new SimGroup(MissionGroup) {
          buyable = "1";
          count = "50";
          isAIControlled = "0";
-         dataBlock = "slingdartWeapon";
+         dataBlock = "SlingDartWeapon";
          position = "-262.636 34.7275 70.0578";
          rotation = "0 0 1 6.67906";
          scale = "1 1 1";
@@ -1507,7 +1532,7 @@ new SimGroup(MissionGroup) {
          buyable = "1";
          count = "50";
          isAIControlled = "0";
-         dataBlock = "slingdartWeapon";
+         dataBlock = "SlingDartWeapon";
          position = "-262.346 34.6935 70.0578";
          rotation = "0 0 1 6.67906";
          scale = "1 1 1";
@@ -1520,7 +1545,7 @@ new SimGroup(MissionGroup) {
          buyable = "1";
          count = "50";
          isAIControlled = "0";
-         dataBlock = "slingdartWeapon";
+         dataBlock = "SlingDartWeapon";
          position = "-262.076 34.6625 70.0578";
          rotation = "0 0 1 6.67906";
          scale = "1 1 1";
@@ -1667,15 +1692,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-265.452 34.7715 69.2138";
          rotation = "0 0 1 90";
          scale = "1 1.5874 1.12408";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(WeaponsTable1) {
          shapeName = "art/Packs/props/default/table2.dts";
@@ -1687,15 +1712,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-262.907 34.7715 69.2138";
          rotation = "0 0 1 90";
          scale = "1 1.5874 1.12408";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(WeaponsTable2) {
          shapeName = "art/Packs/props/default/table2.dts";
@@ -1707,15 +1732,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-258.147 34.8505 69.2138";
          rotation = "0 0 1 90";
          scale = "1 1.5874 1.12408";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(Val_Bldg14LOD) {
          shapeName = "art/Packs/props/valhalla/ValBuilding14LOD.dts";
@@ -1727,15 +1752,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-259.767 38.9515 70.1479";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(BeachHouse1) {
@@ -1743,9 +1768,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(ValFire12) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-345.003 -376.373 55.4145";
          rotation = "1 0 0 0";
@@ -1763,15 +1798,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-345.131 -381.864 54.9275";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SFXEmitter() {
          fileName = "art/sound/environment/fire1.wav";
@@ -1834,20 +1869,30 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-285.617 -381.864 54.9275";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SphereEmitterNode(ValFire1) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-285.489 -376.373 55.4145";
          rotation = "1 0 0 0";
@@ -1884,9 +1929,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ValFire13) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "229.433 -376.373 55.4145";
          rotation = "1 0 0 0";
@@ -1904,15 +1959,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "229.259 -381.864 54.9275";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(BeachHouse4) {
@@ -1952,20 +2007,30 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "283.144 -381.864 54.9275";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SphereEmitterNode(ValFire131) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "283.318 -376.373 55.4145";
          rotation = "1 0 0 0";
@@ -2002,9 +2067,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ValFire11) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-149.697 43.5769 65.9985";
          rotation = "-0 0 -1 63.1094";
@@ -2022,15 +2097,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-149.995 43.7441 70.6535";
          rotation = "0 0 1 116.891";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(VillageLongHouse) {
@@ -2038,9 +2113,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(ValFire) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-233.004 4.47704 69.6808";
          rotation = "1 0 0 0";
@@ -2058,15 +2143,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-233.372 4.50804 69.135";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SFXEmitter() {
          fileName = "art/sound/environment/fire1.wav";
@@ -2106,20 +2191,30 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-191.145 -0.477895 69.1848";
          rotation = "0 0 -1 34.7994";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SphereEmitterNode(ValFire111) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-191.145 0.012459 69.9633";
          rotation = "-0 0 -1 90";
@@ -2165,19 +2260,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-353.606 15.9915 69.2138";
          rotation = "0 0 1 118.704";
          scale = "2 2 2";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(Ballista1) {
          shapeName = "art/Packs/props/default/ballista.dts";
@@ -2189,19 +2284,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-193.677 36.5176 69.3335";
          rotation = "0 0 1 125.467";
          scale = "0.5 0.5 0.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/sack_lod01.dts";
@@ -2213,19 +2308,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-242.153 35.9259 69.2138";
          rotation = "0 0 1 88.175";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/sack_lod01.dts";
@@ -2237,19 +2332,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-218.442 11.327 69.2138";
          rotation = "1 0 0 0";
          scale = "1.4 1.4 1.4";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/sack_lod01.dts";
@@ -2261,19 +2356,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-219.172 11.947 69.2568";
          rotation = "0 0 1 121.358";
          scale = "1.4 1.4 1.4";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -2285,19 +2380,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-227.502 12.157 69.1833";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -2309,19 +2404,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-226.502 12.317 69.195";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/cart1.dae";
@@ -2333,19 +2428,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-241.853 37.1561 69.2138";
          rotation = "0 0 1 217.303";
          scale = "0.03 0.03 0.03";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(Val_Bldgs) {
@@ -2362,15 +2457,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-204.919 49.9541 69.2138";
          rotation = "1 0 0 0";
          scale = "1.4 1.4 1.4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(Val_Bldg12LOD) {
          shapeName = "art/Packs/props/valhalla/ValBuilding12LOD.dts";
@@ -2382,15 +2477,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-280.095 42.4126 69.1938";
          rotation = "0 0 -1 88.5794";
          scale = "0.8 0.8 0.8";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(Val_Bldg7LOD) {
          shapeName = "art/Packs/props/valhalla/ValBuilding7LOD.dts";
@@ -2402,15 +2497,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-230.982 48.3325 69.1288";
          rotation = "0 0 -1 90";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(OdinsRevenge_11003) {
@@ -2429,7 +2524,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "13293";
+            botBelongsToMe = "3168";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -2439,7 +2534,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            Weapon = "HammerWeapon";
+            weapon = "HammerWeapon";
       };
       new StaticShape(Guard6a_OR) {
          isAIControlled = "0";
@@ -2453,7 +2548,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "13296";
+            botBelongsToMe = "3170";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -2463,7 +2558,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            Weapon = "HammerWeapon";
+            weapon = "HammerWeapon";
       };
       new Item(Level3Badge_6) {
          static = "1";
@@ -2500,11 +2595,11 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             clanID = "6";
-            clanName = "Odins Revenge";
+            ClanName = "Odins Revenge";
             coins = "76541";
       };
       new TSStatic(OR_Flag) {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag6_OdinsRevenge.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag6_OdinsRevenge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2513,15 +2608,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-320.378 -333.714 60.7551";
          rotation = "0 0 1 182.177";
          scale = "0.8 0.8 0.8";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Trigger(NZ_OdinsRevenge) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -2536,6 +2631,7 @@ new SimGroup(MissionGroup) {
       };
       new SpawnSphere(SS_OdinsRevenge) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "1";
          sphereWeight = "1";
          indoorWeight = "100";
@@ -2550,7 +2646,7 @@ new SimGroup(MissionGroup) {
             team = "6";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag6_OdinsRevenge.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag6_OdinsRevenge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2559,18 +2655,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-315.887 -311.394 71.0831";
          rotation = "0 0 1 182.177";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag6_OdinsRevenge.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag6_OdinsRevenge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2579,18 +2675,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-315.163 -300.514 71.1431";
          rotation = "0 0 1 2.17681";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag6_OdinsRevenge.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag6_OdinsRevenge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2599,18 +2695,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-321.033 -305.665 70.7881";
          rotation = "-0 0 -1 87.8231";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag6_OdinsRevenge.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag6_OdinsRevenge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2619,15 +2715,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-310.252 -306.375 70.7681";
          rotation = "0 0 1 92.1769";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SimGroup(OdinsRevenge_Contents) {
          canSave = "1";
@@ -2643,15 +2739,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-307.503 -315.136 54.8771";
             rotation = "0 0 1 184.158";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -2663,15 +2759,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-307.572 -301.163 56.2611";
             rotation = "0 0 1 4.54972";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -2683,15 +2779,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-307.131 -299.298 54.9121";
             rotation = "-0 0 -1 26.5701";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -2703,15 +2799,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-307.701 -302.979 54.8961";
             rotation = "-0 0 -1 41.0642";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -2723,15 +2819,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-322.439 -297.365 56.2461";
             rotation = "-0 0 -1 87.063";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -2743,15 +2839,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-322.56 -298.191 54.9081";
             rotation = "0 0 1 231.913";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -2763,15 +2859,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-324.516 -312.788 54.8771";
             rotation = "0 0 1 184.158";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -2783,15 +2879,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-323.429 -314.2 54.8771";
             rotation = "0 0 1 184.158";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
       };
    };
@@ -2809,15 +2905,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-322.254 -243.843 55.0218";
          rotation = "-0.70093 -0.00523415 0.713211 180.005";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -2829,15 +2925,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-301.04 -243.54 55.0218";
          rotation = "-0.69777 -0.0053025 0.716302 179.408";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -2849,15 +2945,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-310.791 -243.78 55.0218";
          rotation = "-0.69922 -0.00529202 0.714887 179.407";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Prefab() {
          fileName = "art/Packs/props/default/Target.prefab";
@@ -2912,9 +3008,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ValFire14) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "-287.078 -143.335 55.4145";
          rotation = "1 0 0 0";
@@ -2932,15 +3038,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-287.027 -145.867 55.2618";
          rotation = "0 0 1 180";
          scale = "0.8 0.8 0.8";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
             vi_building6_dds = "vi_building6_dds_mat";
             vik_int_floor_dds = "vik_int_floor_dds_mat";
       };
@@ -2959,15 +3065,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-347.845 -207.746 54.98";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/crate_lod01.dts";
@@ -2979,19 +3085,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-351.718 -239.73 54.9958";
          rotation = "0 0 1 180.231";
          scale = "1.3 1.3 1.3";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/crate_lod01.dts";
@@ -3003,19 +3109,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-353.078 -239.614 55.0258";
          rotation = "0 0 1 180.231";
          scale = "1.3 1.3 1.3";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new TSStatic(OR_House) {
@@ -3028,15 +3134,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-212.933 -295.336 63.3098";
       rotation = "0 0 1 76.8143";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new SimGroup(ThunderLords_11011) {
       canSave = "1";
@@ -3054,7 +3160,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "13298";
+            botBelongsToMe = "3171";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -3064,7 +3170,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            Weapon = "HammerWeapon";
+            weapon = "HammerWeapon";
       };
       new StaticShape(Guard11a_TL) {
          isAIControlled = "0";
@@ -3078,7 +3184,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "13301";
+            botBelongsToMe = "3173";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -3088,7 +3194,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            Weapon = "HammerWeapon";
+            weapon = "HammerWeapon";
       };
       new Item(Level3Badge_11) {
          static = "1";
@@ -3125,11 +3231,11 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             clanID = "11011";
-            clanName = "Thunder Lords";
+            ClanName = "Thunder Lords";
             coins = "1721552";
       };
       new TSStatic(TL_Flag) {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag11_ThunderLords.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag11_ThunderLords.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3138,15 +3244,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "253.264 -339.008 60.7589";
          rotation = "0 0 1 182.993";
          scale = "0.8 0.8 0.8";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Trigger(NZ_ThunderLords) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -3161,6 +3267,7 @@ new SimGroup(MissionGroup) {
       };
       new SpawnSphere(SS_ThunderLords) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "1";
          sphereWeight = "1";
          indoorWeight = "100";
@@ -3175,7 +3282,7 @@ new SimGroup(MissionGroup) {
             team = "11";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag11_ThunderLords.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag11_ThunderLords.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3184,18 +3291,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "258.345 -316.702 70.8979";
          rotation = "0 0 1 182.993";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag11_ThunderLords.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag11_ThunderLords.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3204,18 +3311,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "258.881 -305.876 70.9609";
          rotation = "0 0 1 2.99317";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag11_ThunderLords.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag11_ThunderLords.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3224,18 +3331,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "253.093 -311.06 70.5419";
          rotation = "-0 0 -1 87.0068";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Valhalla/Models/ClanFlags/Flag11_ThunderLords.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag11_ThunderLords.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3244,15 +3351,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "263.89 -311.595 70.6179";
          rotation = "0 0 1 92.9932";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SimGroup(ThunderLords_Contents) {
          canSave = "1";
@@ -3268,15 +3375,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "266.758 -319.946 54.9627";
             rotation = "0 0 1 182.993";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -3288,15 +3395,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "266.407 -305.969 56.3496";
             rotation = "0 0 1 3.38516";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -3308,15 +3415,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "266.815 -304.107 55.0006";
             rotation = "-0 0 -1 27.7347";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -3328,15 +3435,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "266.311 -307.796 54.9846";
             rotation = "-0 0 -1 42.2288";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -3348,15 +3455,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "251.455 -302.556 56.3298";
             rotation = "-0 0 -1 88.2269";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
@@ -3368,15 +3475,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "251.365 -303.309 54.9918";
             rotation = "0 0 1 230.749";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -3388,15 +3495,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "249.699 -317.942 54.9686";
             rotation = "0 0 1 182.993";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
          new TSStatic() {
             shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -3408,15 +3515,15 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "250.818 -319.333 54.9686";
             rotation = "0 0 1 182.993";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
          };
       };
    };
@@ -3434,15 +3541,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "310.508 -345.55 55.0218";
          rotation = "-0.700341 -0.00523411 0.71379 180.006";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -3454,15 +3561,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "330.945 -345.247 55.0218";
          rotation = "-0.699674 -0.00528873 0.714442 179.406";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
@@ -3474,15 +3581,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "321.042 -345.487 55.0218";
          rotation = "-0.695329 -0.00532005 0.718672 179.41";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new Prefab() {
          fileName = "art/Packs/props/default/Target.prefab";
@@ -3537,9 +3644,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ValFire1311) {
-         active = "1";
          emitter = "TorchFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "45";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "TorchFireEmitterNode";
          position = "326.752 -199.027 55.2278";
          rotation = "1 0 0 0";
@@ -3557,15 +3674,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "326.804 -201.544 55.2618";
          rotation = "0 0 1 180";
          scale = "0.8 0.8 0.8";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
             vi_building6_dds = "vi_building6_dds_mat";
             vik_int_floor_dds = "vik_int_floor_dds_mat";
       };
@@ -3584,15 +3701,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "282.994 -218.108 54.978";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/crate_lod01.dts";
@@ -3604,19 +3721,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "288.214 -249.772 55.0167";
          rotation = "0 0 1 180.231";
          scale = "1.3 1.3 1.3";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/crate_lod01.dts";
@@ -3628,19 +3745,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "279.087 -249.888 54.9876";
          rotation = "0 0 1 180.231";
          scale = "1.3 1.3 1.3";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new TSStatic(TL_House) {
@@ -3653,15 +3770,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "351.394 -221.185 54.9441";
       rotation = "0 0 1 90";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new SimGroup(Valhalla_Stones) {
       canSave = "1";
@@ -3677,19 +3794,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "261.562 -353.979 54.6994";
          rotation = "0 0 1 180";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3701,19 +3818,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "251.611 -354.418 54.9446";
          rotation = "0 0 -1 1.63179";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3725,19 +3842,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "153.872 258.362 84.5513";
          rotation = "0 0 1 209.086";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3749,19 +3866,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "148.601 258.923 84.4643";
          rotation = "-0 0 -1 48.1631";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3773,19 +3890,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "147.332 264.152 84.3693";
          rotation = "0 0 1 28.6823";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3797,19 +3914,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "156.252 263.242 84.5123";
          rotation = "0 0 1 168.292";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3821,19 +3938,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "152.051 266.822 84.5203";
          rotation = "0 0 1 92.3412";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3845,19 +3962,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-310.892 -347.009 54.6269";
          rotation = "0 0 1 180";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/monument_stone_b.dae";
@@ -3869,19 +3986,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-320.843 -347.448 54.8721";
          rotation = "0 0 -1 1.63179";
          scale = "0.05 0.05 0.05";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(GoldMineEntrance) {
@@ -3911,15 +4028,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "381.654 297.171 102.099";
          rotation = "0 0 1 90";
          scale = "1.41736 1 0.930192";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/woodWagon001.dts";
@@ -3931,16 +4048,16 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "373.81 303.821 102.477";
          rotation = "0 0 1 44.2132";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             PlanksOld0184_L_jpg = "PlanksOld0184_L_jpg_mat";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/keepOUTbarricade001.dae";
@@ -3952,15 +4069,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "378.169 302.171 102.793";
          rotation = "0 0 -1 25.1688";
          scale = "0.5 0.37041 0.507613";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -3972,15 +4089,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "377.7 292.149 102.961";
          rotation = "0.524738 -0.685968 -0.504082 113.233";
          scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -3992,15 +4109,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.579 294.301 102.465";
          rotation = "1 0 0 0";
          scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -4012,15 +4129,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.68 299.441 102.479";
          rotation = "1 0 0 0";
          scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(GMEntranceBeams1) {
          shapeName = "art/Packs/props/valhalla/supportARCH001.dae";
@@ -4032,15 +4149,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.169 296.99 102.547";
          rotation = "1 0 0 0";
          scale = "3.37775 0.667438 0.829695";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(GMEntranceBeams2) {
          shapeName = "art/Packs/props/valhalla/supportARCH001.dae";
@@ -4052,15 +4169,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "382.509 297.01 102.547";
          rotation = "1 0 0 0";
          scale = "3.37775 0.667438 0.829695";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/beamBroken002.dae";
@@ -4072,15 +4189,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.129 286.745 95.1225";
          rotation = "1 0 0 3.29208";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/valhalla/beamBroken002.dae";
@@ -4092,15 +4209,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.129 285.196 96.0639";
          rotation = "1 0 0 3.29208";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(GMSign) {
          shapeName = "art/Packs/props/valhalla/SignGoldMineDanger.dts";
@@ -4112,18 +4229,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "379.789 297.102 107.446";
          rotation = "0 0 -1 90";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new SpawnSphere(ValhallaFromGoldMine) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "1";
          sphereWeight = "1";
          indoorWeight = "100";
@@ -4148,7 +4266,7 @@ new SimGroup(MissionGroup) {
             enabled = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4162,7 +4280,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4175,7 +4293,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4188,7 +4306,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4206,7 +4324,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4220,7 +4338,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4233,7 +4351,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4246,7 +4364,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4264,7 +4382,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4278,7 +4396,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4291,7 +4409,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4304,7 +4422,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4322,7 +4440,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4336,7 +4454,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4349,7 +4467,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4362,7 +4480,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4380,7 +4498,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4394,7 +4512,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4407,7 +4525,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4420,7 +4538,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4438,7 +4556,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Marker() {
-            seqNum = "1";
+            seqNum = "0";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4452,7 +4570,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "2";
+            seqNum = "1";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4465,7 +4583,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "3";
+            seqNum = "2";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4478,7 +4596,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".1";
          };
          new Marker() {
-            seqNum = "4";
+            seqNum = "3";
             type = "Normal";
             msToNext = "0";
             smoothingType = "Spline";
@@ -4502,19 +4620,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "227.437 -62.08 67.2327";
       rotation = "0 0 -1 0.56232";
       scale = "1.3 1.3 1.3";
       canSave = "1";
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic(Horse4Sale) {
       shapeName = "art/Packs/props/signs/Horses4Sale.dts";
@@ -4526,15 +4644,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "219.045 -52.1101 68.1032";
       rotation = "1 0 0 0";
       scale = "3 3 3";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new SimGroup(NorthFence) {
       canSave = "1";
@@ -4550,15 +4668,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "224.393 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4570,15 +4688,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "310.949 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4590,15 +4708,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "305.541 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4610,15 +4728,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "300.129 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4630,15 +4748,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "294.721 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4650,15 +4768,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "278.493 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4670,15 +4788,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "273.085 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4690,15 +4808,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "289.313 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4710,15 +4828,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "283.905 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4730,15 +4848,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "246.037 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4750,15 +4868,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "240.629 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4770,15 +4888,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "251.445 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4790,15 +4908,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "256.853 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4810,15 +4928,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "262.265 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4830,15 +4948,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "267.673 -53.8535 67.4525";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(EastFence) {
@@ -4855,15 +4973,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.038 -53.8774 67.4525";
          rotation = "-0 0 -1 90";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4875,15 +4993,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.066 -48.4694 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4895,15 +5013,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.093 -43.0574 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4915,15 +5033,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.12 -37.6494 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4935,15 +5053,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.201 -21.4214 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4955,15 +5073,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.229 -16.0134 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4975,15 +5093,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.147 -32.2414 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -4995,15 +5113,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.174 -26.8334 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5015,15 +5133,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.419 21.8536 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5035,15 +5153,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.446 27.2616 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5055,15 +5173,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.364 11.0336 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5075,15 +5193,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.392 16.4416 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5095,15 +5213,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.337 5.62558 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5115,15 +5233,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.31 0.218597 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5135,15 +5253,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.283 -5.19339 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5155,15 +5273,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.256 -10.6014 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5175,15 +5293,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.473 32.6776 67.4525";
          rotation = "-0 0 -1 89.7122";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(SouthFence) {
@@ -5200,15 +5318,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "306.053 37.1326 67.4525";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5220,15 +5338,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "219.502 37.9966 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5240,15 +5358,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "284.41 37.3486 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5260,15 +5378,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "224.909 37.9426 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5280,15 +5398,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "230.321 37.8896 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5300,15 +5418,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "235.729 37.8346 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5320,15 +5438,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "251.956 37.6726 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5340,15 +5458,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "257.364 37.6186 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5360,15 +5478,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "241.136 37.7806 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5380,15 +5498,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "246.544 37.7266 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5400,15 +5518,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "295.23 37.2406 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5420,15 +5538,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "300.637 37.1866 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5440,15 +5558,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "289.818 37.2946 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5460,15 +5578,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "279.003 37.4026 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5480,15 +5598,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "273.595 37.4576 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5500,15 +5618,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "268.183 37.5106 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5520,15 +5638,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "262.775 37.5646 67.4525";
          rotation = "0 0 1 0.571981";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(WestFence) {
@@ -5545,15 +5663,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.208 37.1386 67.4525";
          rotation = "0 0 1 90";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5565,15 +5683,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.192 31.7296 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5585,15 +5703,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.178 26.3186 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5605,15 +5723,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.163 20.9096 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5625,15 +5743,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.119 4.68161 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5645,15 +5763,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.103 -0.72641 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5665,15 +5783,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.148 15.5016 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5685,15 +5803,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.134 10.0936 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5705,15 +5823,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "310.999 -38.5934 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5725,15 +5843,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "310.985 -44.0014 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5745,15 +5863,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.03 -27.7734 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5765,15 +5883,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.014 -33.1814 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5785,15 +5903,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.044 -22.3654 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5805,15 +5923,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.059 -16.9584 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5825,15 +5943,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.074 -11.5464 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5845,15 +5963,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "311.089 -6.1384 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
@@ -5865,15 +5983,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "310.97 -49.4174 67.4525";
          rotation = "0 0 1 90.1574";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(WaveSounds) {
@@ -5881,7 +5999,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -5905,7 +6023,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -5929,7 +6047,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -5953,7 +6071,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -5977,7 +6095,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -6001,7 +6119,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -6025,7 +6143,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/Worlds/Valhalla/sound/Waves.ogg";
+         fileName = $WorldPath @ "/sound/Waves.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -6063,10 +6181,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "64.1657 -111.213 51.9359";
          rotation = "0 0 -1 109.812";
          scale = "0.03 0.03 0.03";
@@ -6075,9 +6189,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(longboat01) {
          shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6089,10 +6207,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "232.435 -435.703 51.9359";
          rotation = "0 0 -1 43.4374";
          scale = "0.03 0.03 0.03";
@@ -6101,9 +6215,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(longboat011) {
          shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6115,10 +6233,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "266.772 -436.25 51.9359";
          rotation = "0 0 -1 43.4374";
          scale = "0.03 0.03 0.03";
@@ -6127,9 +6241,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(longboat0111) {
          shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6141,10 +6259,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-308.867 -437.925 51.9359";
          rotation = "0 0 -1 43.4374";
          scale = "0.03 0.03 0.03";
@@ -6153,9 +6267,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(longboat012) {
          shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6167,10 +6285,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-336.668 -440.529 51.9359";
          rotation = "0 0 -1 43.4374";
          scale = "0.03 0.03 0.03";
@@ -6179,9 +6293,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(longboat02) {
          shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6193,10 +6311,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "25.4981 -208.019 51.9359";
          rotation = "0 0 -1 39.6233";
          scale = "0.03 0.03 0.03";
@@ -6205,9 +6319,13 @@ new SimGroup(MissionGroup) {
             boat1_A = "boat1_A_mat";
             boat1_b = "boat1_b_mat";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(OCCVolumes) {
@@ -6215,23 +6333,9 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new OcclusionVolume() {
-         position = "-256 -200 170";
+         position = "5.13193 162.404 170";
          rotation = "1 0 0 0";
-         scale = "512 612 300";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new OcclusionVolume() {
-         position = "256 -200 170";
-         rotation = "1 0 0 0";
-         scale = "512 612 300";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new OcclusionVolume() {
-         position = "0 362 170";
-         rotation = "1 0 0 0";
-         scale = "1024 512 300";
+         scale = "1000 2.34326 300";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -6246,19 +6350,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-231.01 -0.749885 69.3279";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -6270,19 +6374,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-229.907 -1.41703 69.3279";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/default/barrel_lod01.dts";
@@ -6294,19 +6398,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-229.418 -0.634797 69.647";
       rotation = "0.142588 0.944877 0.294747 94.9313";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic(longboat0121) {
       shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6318,10 +6422,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "0.272356 -675.986 51.9359";
       rotation = "0 0 -1 99.0055";
       scale = "0.03 0.03 0.03";
@@ -6330,9 +6430,13 @@ new SimGroup(MissionGroup) {
          boat1_A = "boat1_A_mat";
          boat1_b = "boat1_b_mat";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic(longboat0122) {
       shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6344,10 +6448,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-36.2219 -791.539 51.9359";
       rotation = "0 0 -1 61.9912";
       scale = "0.03 0.03 0.03";
@@ -6356,9 +6456,13 @@ new SimGroup(MissionGroup) {
          boat1_A = "boat1_A_mat";
          boat1_b = "boat1_b_mat";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/VikingCastle/Vcastle1.dae";
@@ -6370,15 +6474,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-19.7764 369.07 43.7845";
       rotation = "0 0 1 194.026";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic(longboat03) {
       shapeName = "art/Packs/props/valhalla/longboat.dae";
@@ -6390,10 +6494,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-10.2011 330.767 51.7052";
       rotation = "0 0 1 15.3949";
       scale = "0.03 0.03 0.03";
@@ -6402,9 +6502,13 @@ new SimGroup(MissionGroup) {
          boat1_A = "boat1_A_mat";
          boat1_b = "boat1_b_mat";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
 };
 //--- OBJECT WRITE END ---
