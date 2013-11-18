@@ -340,3 +340,46 @@ singleton Material(GoldMinePic_PMat_Object_000_1)
    specular[0] = "0 0 0 1";
    translucentBlendOp = "None";
 };
+
+singleton Material(svwoodbridge1_rope)
+{
+   mapTo = "rope";
+   diffuseMap[0] = "art/Packs/props/valhalla/sv-wbrope2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/valhalla/sv-wbrope2N.dds";
+};
+
+singleton Material(svwoodbridge1_stone04a)
+{
+   mapTo = "stone04a";
+   diffuseMap[0] = "art/Packs/props/valhalla/sv-stone04b";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/valhalla/sv-stone04N.dds";
+};
+
+singleton Material(svwoodbridge1_wall1b)
+{
+   mapTo = "wall1b";
+   diffuseMap[0] = "sv-cswall01b";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svwoodbridge1_wood)
+{
+   mapTo = "wood";
+   diffuseMap[0] = "art/Packs/props/valhalla/sv-evwood1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/valhalla/sv-evwood1N.dds";
+};
+
+singleton Material(svwoodbridge1_crete2)
+{
+   mapTo = "crete2";
+   diffuseMap[0] = "art/Packs/props/valhalla/sv-crete2.jpg";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
