@@ -81,7 +81,7 @@ new SimGroup(MissionGroup) {
          axisTilt = "23.44";
          dayLength = "86400";
          startTime = "0.918989";
-         time = "0.919858";
+         time = "0.0536022";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -6508,7 +6508,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-1.88546 142.839 69.4638";
+      position = "-1.88546 142.839 68.7213";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
