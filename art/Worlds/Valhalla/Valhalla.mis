@@ -80,8 +80,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(ValhallaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.942335";
-         time = "0.943743";
+         startTime = "0.918989";
+         time = "0.919858";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -492,7 +492,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiWhite";
-         botBelongsToMe = "3168";
+         botBelongsToMe = "3174";
          dropcount = "3";
          dropitem = "banana";
          realName = "Helga";
@@ -512,7 +512,7 @@ new SimGroup(MissionGroup) {
          avOptions = "280,279,283,55,59,50,35";
          behavior = "NPCVendorBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3169";
+         botBelongsToMe = "3175";
          distDetect = "5";
          npcAction = "7";
          realName = "Lars";
@@ -532,13 +532,13 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "WolfAI";
-         botBelongsToMe = "3170";
+         botBelongsToMe = "3176";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
    };
    new Trigger(NZ_ValVillage) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
       dataBlock = "NeutralZoneTrigger";
       position = "-231.578 25.5289 66.3421";
       rotation = "1 0 0 0";
@@ -2524,7 +2524,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3171";
+            botBelongsToMe = "3177";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -2548,7 +2548,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3173";
+            botBelongsToMe = "3179";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -2619,7 +2619,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Trigger(NZ_OdinsRevenge) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          dataBlock = "NeutralZoneTrigger";
          position = "-315.493 -306.035 54.6101";
          rotation = "0 0 1 182.177";
@@ -3160,7 +3160,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3174";
+            botBelongsToMe = "3180";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -3184,7 +3184,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3176";
+            botBelongsToMe = "3182";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -3255,7 +3255,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Trigger(NZ_ThunderLords) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          dataBlock = "NeutralZoneTrigger";
          position = "258.578 -311.297 54.907";
          rotation = "0 0 1 182.993";
@@ -4006,7 +4006,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new Trigger(ValToGoldMineTrig) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
          dataBlock = "serverTransferTrigger";
          position = "379.289 296.851 101.935";
          rotation = "1 0 0 0";
@@ -6328,18 +6328,6 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
    };
-   new SimGroup(OCCVolumes) {
-      canSave = "1";
-      canSaveDynamicFields = "1";
-
-      new OcclusionVolume() {
-         position = "5.13193 162.404 170";
-         rotation = "1 0 0 0";
-         scale = "1000 2.34326 300";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-   };
    new TSStatic() {
       shapeName = "art/Packs/props/default/barrel_lod01.dts";
       playAmbient = "1";
@@ -6515,7 +6503,7 @@ new SimGroup(MissionGroup) {
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
