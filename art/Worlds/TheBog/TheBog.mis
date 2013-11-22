@@ -7,6 +7,7 @@ new SimGroup(MissionGroup) {
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
       visibleDistance = "1000";
+      visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "0.27451 0.27451 0.27451 1";
       fogDensity = "0.0005";
@@ -33,28 +34,31 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TerrainBlock(theTerrain) {
-         terrainFile = "art/Worlds/TheBog/terrain/TheBog2.ter";
+         terrainFile = $WorldPath @ "/terrain/TheBog2.ter";
          castShadows = "0";
          squareSize = "2";
          baseTexSize = "1024";
-         //lightMapSize = "256";
+         lightMapSize = "256";
          screenError = "32";
-         ignoreZodiacs = "0";
          position = "-833.292 -732.032 24.9773";
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
+            ignoreZodiacs = "0";
             scale = "1 1 1";
             tile = "0";
       };
       new ScatterSky(BogSky) {
          skyBrightness = "20";
          sunSize = "10";
+         colorizeAmount = "0";
+         colorize = "0 0 0 1";
          rayleighScattering = "0.0001";
          sunScale = "0.5 0.5 0.5 1";
          ambientScale = "0.8 0.8 0.8 1";
          fogScale = "0.756863 0.756863 0.756863 1";
          exposure = "1";
+         zoffset = "0";
          azimuth = "100";
          elevation = "30";
          moonAzimuth = "260";
@@ -122,7 +126,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-         dataFile = "art/Worlds/TheBog/forest/TheBog2.forest";
+         dataFile = $WorldPath @ "/forest/TheBog2.forest";
          lodReflectScalar = "2";
       };
       new WaterPlane(BogWater) {
@@ -200,7 +204,7 @@ new SimGroup(MissionGroup) {
             whiteCapAmount = "0.1";
       };
       new SFXEmitter(BogMusic) {
-         fileName = "art/Worlds/TheBog/sound/theBogAmb.ogg";
+         fileName = $WorldPath @ "/sound/theBogAmb.ogg";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -265,7 +269,7 @@ new SimGroup(MissionGroup) {
          dissolveRadius = "60";
          reflectScale = "0";
          gridSize = "5";
-         zOffset = "0";
+         zoffset = "0";
          seed = "1";
          maxElements = "50000";
          maxBillboardTiltAngle = "90";
@@ -410,7 +414,7 @@ new SimGroup(MissionGroup) {
          dissolveRadius = "60";
          reflectScale = "0.25";
          gridSize = "7";
-         zOffset = "0";
+         zoffset = "0";
          seed = "7654387";
          maxElements = "100000";
          maxBillboardTiltAngle = "90";
@@ -552,7 +556,7 @@ new SimGroup(MissionGroup) {
          dissolveRadius = "60";
          reflectScale = "0.25";
          gridSize = "7";
-         zOffset = "0";
+         zoffset = "0";
          seed = "876543";
          maxElements = "10000";
          maxBillboardTiltAngle = "90";
@@ -696,7 +700,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
          windEnabled = "1";
          radialEmitter = "0";
-         strength = "3";
+         strength = "0.21";
          radius = "0";
          gustStrength = "0.25";
          gustFrequency = "3";
@@ -715,6 +719,7 @@ new SimGroup(MissionGroup) {
 
       new SpawnSphere(spawnsphere001) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "1";
          sphereWeight = "1";
          indoorWeight = "100";
@@ -730,6 +735,7 @@ new SimGroup(MissionGroup) {
    };
    new SpawnSphere(BogFromKardia) {
       autoSpawn = "0";
+      spawnTransform = "0";
       radius = "1";
       sphereWeight = "1";
       indoorWeight = "100";
@@ -744,6 +750,7 @@ new SimGroup(MissionGroup) {
    };
    new SpawnSphere(BogFromShip) {
       autoSpawn = "0";
+      spawnTransform = "0";
       radius = "1";
       sphereWeight = "1";
       indoorWeight = "100";
@@ -766,16 +773,16 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "107.874 136.819 78.2976";
       rotation = "0 0 -1 92.8438";
       scale = "1.5 1.5 1.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          PMat_FJCave = "PMat_FJCave_mat";
+         useGradientRange = "0";
    };
    new TSStatic(PortalScreen) {
       shapeName = "art/Packs/props/theBog/BogToKardScreen.dae";
@@ -787,18 +794,18 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "106.381 136.88 65.0371";
       rotation = "0 0 -1 95.326";
       scale = "1 1 1.31214";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new Trigger(BogToKardia) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
       dataBlock = "serverTransferTrigger";
       position = "100.757 136.517 65.0371";
       rotation = "0 0 -1 3.2773";
@@ -811,7 +818,7 @@ new SimGroup(MissionGroup) {
          pathToRoot = "http://www.903smile.com/aureus-download/stream/";
    };
    new Trigger(NZBogKardia) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
       dataBlock = "NeutralZoneTrigger";
       position = "94.5401 137.416 60.5695";
       rotation = "1 0 0 0";
@@ -831,10 +838,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "58.9478 114.035 69.131";
       rotation = "0 0 1 35.9982";
       scale = "1 1 1";
@@ -842,9 +845,13 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
          enabled = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new TSStatic(deadTree2) {
       shapeName = "art/Packs/props/theBog/deadtree_strip.dts";
@@ -856,10 +863,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "43.9332 127.173 68.8795";
       rotation = "0 0 -1 95.4541";
       scale = "1 1 1";
@@ -867,9 +870,13 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
          enabled = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new SimGroup(Boglins_Extras) {
       canSave = "1";
@@ -887,12 +894,12 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "12758";
+            botBelongsToMe = "2601";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
             dropcount = "1";
-            DropItem = "mudfish";
+            dropitem = "mudfish";
             enabled = "1";
             fov = "270";
             npcAction = "1";
@@ -915,12 +922,12 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "12760";
+            botBelongsToMe = "9017";
             customAmbientLighting = "0 0 0 1";
-            delayRespawn = "28222";
+            delayRespawn = "4981";
             distDetect = "150";
             dropcount = "1";
-            DropItem = "mudfish";
+            dropitem = "mudfish";
             enabled = "1";
             fov = "270";
             npcAction = "1";
@@ -943,12 +950,12 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "12762";
+            botBelongsToMe = "13327";
             customAmbientLighting = "0 0 0 1";
-            delayRespawn = "27002";
+            delayRespawn = "20414";
             distDetect = "150";
             dropcount = "1";
-            DropItem = "mudfish";
+            dropitem = "mudfish";
             enabled = "1";
             fov = "270";
             npcAction = "1";
@@ -980,12 +987,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12764";
+               botBelongsToMe = "12529";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "540733";
+               delayRespawn = "18872";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                fov = "270";
                receiveLMLighting = "1";
                receiveSunLight = "1";
@@ -1005,10 +1012,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-658.234 -420.431 54.4305";
             rotation = "0 0 1 78.4764";
             scale = "1 1 1";
@@ -1016,9 +1019,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(CampFire_1) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -1030,10 +1037,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-648.052 -413.008 55.3435";
             rotation = "0 0 1 88.7754";
             scale = "0.5 0.5 0.5";
@@ -1041,9 +1044,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new PointLight(CampFireLight_1) {
             radius = "10";
@@ -1076,9 +1083,19 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new SphereEmitterNode(campfireFlame_1) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-648.127 -413.104 55.9943";
             rotation = "0 0 1 88.7754";
@@ -1127,12 +1144,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12766";
+               botBelongsToMe = "14027";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "91171";
+               delayRespawn = "21987";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "360";
                receiveLMLighting = "1";
@@ -1152,10 +1169,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-495.607 -112.908 75.4579";
             rotation = "-0 0 -1 77.9715";
             scale = "0.5 0.5 0.5";
@@ -1163,10 +1176,14 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                ruinswood = "ruinswood_mat";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(CampFire_2) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -1178,10 +1195,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-489.268 -109.447 75.1758";
             rotation = "0 0 1 153.479";
             scale = "0.5 0.5 0.5";
@@ -1189,9 +1202,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new PointLight(CampFireLight_2) {
             radius = "10";
@@ -1224,9 +1241,19 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new SphereEmitterNode(campfireFlame_2) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-489.268 -109.447 75.2985";
             rotation = "0 0 1 96.966";
@@ -1275,12 +1302,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12768";
+               botBelongsToMe = "11798";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "1914";
+               delayRespawn = "17269";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                receiveLMLighting = "1";
@@ -1300,10 +1327,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-75.5917 145.207 69.4383";
             rotation = "0 0 1 126.925";
             scale = "1 1 1";
@@ -1311,9 +1334,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SFXEmitter(CampFireSound_3) {
             fileName = "art/sound/environment/fire1.wav";
@@ -1370,9 +1397,19 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new SphereEmitterNode(campfireFlame_3) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-63.7887 147.258 71.3252";
             rotation = "0.0076214 -0.0356434 0.999336 204.123";
@@ -1391,20 +1428,20 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.8447";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.8446";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
       };
       new SimGroup(BoglinHome4) {
@@ -1422,12 +1459,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12770";
+               botBelongsToMe = "2607";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                receiveLMLighting = "1";
@@ -1447,10 +1484,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-347.356 -78.9618 65.2413";
             rotation = "-0 0 -1 2.52228";
             scale = "0.8 0.8 0.8";
@@ -1458,9 +1491,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(LogStack_4) {
             shapeName = "art/Packs/props/theBog/forestwood.dts";
@@ -1472,10 +1509,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-337.721 -75.9343 66.7208";
             rotation = "0 0 1 173.987";
             scale = "0.8 0.8 0.8";
@@ -1483,10 +1516,14 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                strippedbark = "strippedbark_mat";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(CampFire_4) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -1498,10 +1535,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-351.882 -69.41 65.7531";
             rotation = "0 0 1 32.7116";
             scale = "0.5 0.5 0.5";
@@ -1509,14 +1542,28 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SphereEmitterNode(campfireFlame_4) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-351.764 -69.3378 65.8317";
             rotation = "0 0 -1 109.147";
@@ -1595,12 +1642,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12772";
+               botBelongsToMe = "2608";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                npcAction = "1";
@@ -1622,10 +1669,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-93.631 -358.087 63.8292";
             rotation = "0 0 1 218.508";
             scale = "0.7 0.7 0.7";
@@ -1633,9 +1676,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(Wheel_5) {
             shapeName = "art/Packs/props/default/wheel.dts";
@@ -1647,10 +1694,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-90.1995 -354.484 63.7914";
             rotation = "-0.253509 0.196746 -0.947114 52.1635";
             scale = "0.5 0.5 0.5";
@@ -1658,9 +1701,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                ballista = "ballista_mat";
                customAmbientLighting = "0 0 0 1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(LogStack_5) {
             shapeName = "art/Packs/props/theBog/forestwood.dts";
@@ -1672,10 +1719,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-96.7815 -352.877 64.3681";
             rotation = "0 0 1 31.191";
             scale = "0.35 0.35 0.35";
@@ -1683,9 +1726,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SFXEmitter(CampFireSound_5) {
             fileName = "art/sound/environment/fire1.wav";
@@ -1742,9 +1789,19 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new SphereEmitterNode(campfireFlame_5) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-87.9379 -353.54 64.1787";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
@@ -1763,10 +1820,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-87.8992 -353.612 63.8866";
             rotation = "-0.0146578 0.0845914 -0.996308 45.5816";
             scale = "0.35 0.35 0.35";
@@ -1774,9 +1827,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
       };
       new SimGroup(BoglinHome6) {
@@ -1793,10 +1850,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-226.016 -146.682 57.619";
             rotation = "-0 0 -1 31.1066";
             scale = "0.7 0.7 0.7";
@@ -1804,9 +1857,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(LogStack_6) {
             shapeName = "art/Packs/props/theBog/forestwood.dts";
@@ -1818,10 +1875,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-219.784 -144.035 58.1244";
             rotation = "0 0 1 150.654";
             scale = "0.5 0.5 0.5";
@@ -1829,9 +1882,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new PointLight(CampFireLight_6) {
             radius = "10";
@@ -1873,10 +1930,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-224.686 -153.712 57.4525";
             rotation = "0 0 1 52.9022";
             scale = "0.5 0.5 0.5";
@@ -1884,14 +1937,28 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SphereEmitterNode(CampFireFlame_6) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-224.71 -153.932 57.8237";
             rotation = "0 0 1 52.9022";
@@ -1935,12 +2002,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12774";
+               botBelongsToMe = "8434";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "23742";
+               delayRespawn = "4138";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                npcAction = "1";
@@ -1968,12 +2035,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12776";
+               botBelongsToMe = "2610";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                receiveLMLighting = "1";
@@ -1994,10 +2061,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-514.916 4.74224 61.0732";
             rotation = "0 0 1 218.508";
             scale = "0.7 0.7 0.7";
@@ -2005,9 +2068,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(Wheel_7) {
             shapeName = "art/Packs/props/default/wheel.dts";
@@ -2019,10 +2086,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-510.509 6.98803 60.9707";
             rotation = "-0.253509 0.196746 -0.947114 52.1635";
             scale = "0.5 0.5 0.5";
@@ -2030,9 +2093,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                ballista = "ballista_mat";
                customAmbientLighting = "0 0 0 1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(LogStack_7) {
             shapeName = "art/Packs/props/theBog/forestwood.dts";
@@ -2044,10 +2111,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-508.438 3.18294 61.859";
             rotation = "0 0 1 218.942";
             scale = "0.35 0.35 0.35";
@@ -2055,9 +2118,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SFXEmitter(CampFireSound_7) {
             fileName = "art/sound/environment/fire1.wav";
@@ -2077,7 +2144,7 @@ new SimGroup(MissionGroup) {
             coneOutsideAngle = "360";
             coneOutsideVolume = "0";
             position = "-514.982 12.52 61.7395";
-            rotation = "0.0610922 -0.0159594 -0.998005 63.5637";
+            rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
             scale = "10.01 10.01 10.01";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -2109,17 +2176,27 @@ new SimGroup(MissionGroup) {
             shadowDarkenColor = "0 0 0 -1";
             includeLightmappedGeometryInShadow = "0";
             position = "-514.969 12.5764 61.8806";
-            rotation = "0.0610922 -0.0159594 -0.998005 63.5637";
+            rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
             canSave = "1";
             canSaveDynamicFields = "1";
          };
          new SphereEmitterNode(campfireFlame_7) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-514.866 12.5199 61.0088";
-            rotation = "0.0610922 -0.0159594 -0.998005 63.5637";
+            rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -2135,10 +2212,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-514.947 12.506 60.7707";
             rotation = "0.0451822 0.0486265 0.997795 60.1348";
             scale = "0.35 0.35 0.35";
@@ -2146,9 +2219,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
       };
       new SimGroup(BoglinHome8) {
@@ -2166,12 +2243,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12778";
+               botBelongsToMe = "2611";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                npcAction = "1";
@@ -2193,10 +2270,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-684.011 -188.709 58.1846";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -2204,9 +2277,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new TSStatic(CampFire_8) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -2218,10 +2295,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-687.576 -177.924 58.9444";
             rotation = "0.0234622 0.0156702 0.999602 30.609";
             scale = "0.35 0.35 0.35";
@@ -2229,14 +2302,28 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
          new SphereEmitterNode(campfireFlame_8) {
-            active = "1";
             emitter = "GenericFireEmitter";
+            sa_thetaMin = "1";
+            sa_thetaMax = "52";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            active = "1";
             velocity = "1";
+            standAloneEmitter = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_periodVarianceMS = "0";
+            sa_ejectionVelocity = "2";
+            sa_velocityVariance = "1";
+            sa_ejectionOffset = "0";
             dataBlock = "GenericFireEmitterNode";
             position = "-687.576 -177.924 58.9444";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
@@ -2315,12 +2402,12 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "12780";
+               botBelongsToMe = "13874";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "671024";
+               delayRespawn = "21673";
                distDetect = "150";
                dropcount = "1";
-               DropItem = "mudfish";
+               dropitem = "mudfish";
                enabled = "1";
                fov = "270";
                receiveLMLighting = "1";
@@ -2341,10 +2428,6 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            ignoreZodiacs = "0";
-            useGradientRange = "0";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
             position = "-461.177 -178.525 55.9953";
             rotation = "0 0 -1 74.3167";
             scale = "0.8 0.8 0.8";
@@ -2352,9 +2435,13 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
                enabled = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
                receiveLMLighting = "1";
                receiveSunLight = "1";
                useCustomAmbientLighting = "0";
+               useGradientRange = "0";
          };
       };
       new TSStatic(OrcTower) {
@@ -2367,10 +2454,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-517.217 -494.67 54.3486";
          rotation = "0 0 -1 93.9992";
          scale = "1 1 1";
@@ -2378,9 +2461,13 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
             enabled = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
       new TSStatic(WatchTower) {
          shapeName = "art/Packs/props/theBog/watchtower.dts";
@@ -2392,10 +2479,6 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-481.228 -352.287 78.4554";
          rotation = "0 0 1 111.244";
          scale = "1 1 1";
@@ -2403,9 +2486,13 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
             enabled = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(ShipArea) {
@@ -2413,9 +2500,19 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(ShuttleTP) {
-         active = "1";
          emitter = "PCO_ExplosionSpirals_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "0";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-588.72 -499.464 54.2771";
          rotation = "1 0 0 0";
@@ -2424,7 +2521,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Trigger(ShuttleToMagellan1) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "serverTransferTrigger";
          position = "-588.72 -499.464 54.2771";
          rotation = "0 0 -1 16.3828";
@@ -2439,9 +2536,19 @@ new SimGroup(MissionGroup) {
             subscriberOnly = "1";
       };
       new SphereEmitterNode(ShuttleTP1) {
-         active = "1";
          emitter = "PCO_ExplosionSpirals_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "0";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_ejectionPeriodMS = "100";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "2";
+         sa_velocityVariance = "1";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-592.551 -487.742 54.1369";
          rotation = "1 0 0 0";
@@ -2450,7 +2557,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Trigger(ShuttleToMagellan11) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "serverTransferTrigger";
          position = "-592.551 -487.742 54.1369";
          rotation = "0 0 -1 16.561";
@@ -2475,7 +2582,6 @@ new SimGroup(MissionGroup) {
          animationType = "SubtlePulseLightAnim";
          animationPeriod = "1";
          animationPhase = "1";
-         flareType = "";
          flareScale = "1";
          attenuationRatio = "0 1 1";
          shadowType = "DualParaboloid";
@@ -2505,19 +2611,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-605.2 -497.866 50.1029";
-         rotation = "-0.055203 0.0505935 0.997193 73.5044";
+         rotation = "-0.055203 0.0505935 0.997193 73.5045";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
             customAmbientLighting = "0 0 0 1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             receiveLMLighting = "1";
             receiveSunLight = "1";
             useCustomAmbientLighting = "0";
+            useGradientRange = "0";
       };
    };
    new TSStatic() {
@@ -2530,15 +2636,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "45.1283 120.873 67.657";
       rotation = "0 0 1 161.985";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2550,15 +2656,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "95.4367 139.85 68.1658";
       rotation = "0 0 1 154.187";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2570,15 +2676,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-287.362 -330.549 64.8222";
       rotation = "0 0 1 153.288";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2590,15 +2696,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-549.754 -479.532 54.2557";
       rotation = "0 0 1 162.222";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2610,15 +2716,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-51.3146 -305.609 56.8389";
       rotation = "0 0 1 98.8958";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2630,15 +2736,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-64.7492 -98.6894 55.9139";
       rotation = "0 0 1 105.824";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2650,15 +2756,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "2.89307 103.375 53.5753";
       rotation = "0 0 1 157.032";
       scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
       shapeName = "art/Packs/props/theBog/SignPointerKardia.dts";
@@ -2670,13 +2776,29 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-364.546 69.3148 55.3802";
       rotation = "0 0 1 164.935";
       scale = "0.5 0.5 0.5";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/veg/fiscus/Fiscus01.DAE";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "71.3856 128.789 67.5546";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
