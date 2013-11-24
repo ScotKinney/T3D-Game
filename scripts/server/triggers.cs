@@ -155,15 +155,15 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    // If it's a subscriber only trigger, make sure the user can pass
    if ( (%trigger.subscriberOnly $= "1") && !%obj.client.subscribe )
    {
-      messageClient(%obj.client, 'MsgItemPickup', %trigger.migrantMessage);
+      messageClient(%obj.client, 'LocalizedMsg', %trigger.migrantMessage, "a", true, true, 0);
       return;
    }
 
    // award any skull level increase, and check to
    // see if the player is allowed to use this trigger
-   if(checkSkullLevel(%trigger,%obj) == false)
+   if(%this.checkSkullLevel(%trigger, %obj) == false)
    {
-      messageClient(%obj.client, 'MsgItemPickup', '\c0You must be skull level %1 or greater to use this portal', %trigger.minSkullLevel);
+      messageClient(%obj.client, 'LocalizedMsg', "tgrLvl", "a", true, true, 1, %trigger.minSkullLevel);
       return;
    }
    
@@ -182,5 +182,28 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    }
 
    TransferToServer(%obj.client, 0, %trigger.destinationSpawnSphere, %destination);
+}
+
+function serverTransferTrigger::checkSkullLevel(%this, %trigger, %obj)
+{
+   // give the player a skull level upgrade if appropriate
+   %sl = %obj.client.skullLevel;
+   if ( %trigger.skulllevel == (%sl+1) )
+   {
+      %sl = %trigger.skulllevel;
+      %delayAward = "";
+      if ( %trigger.destinationServer !$= "" )
+         %delayAward = true;
+      %obj.client.awardSkullLevel(%sl, %delayAward);
+   }
+   
+   // prevent players with insufficient skull level from using this trigger
+   if(%trigger.minSkullLevel !$= "")
+   {
+      if(%sl < %trigger.minSkullLevel)
+         return false;
+   }
+   
+   return true;
 }
 
