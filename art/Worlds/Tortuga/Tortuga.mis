@@ -95,8 +95,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AlterVerseTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.060185";
-         time = "0.100689";
+         startTime = "0.097244";
+         time = "0.105182";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -109,7 +109,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "190983";
+            clockSynchEvent = "100034";
       };
       new SFXEmitter() {
          fileName = $WorldPath @ "/sound/FJAmbiance.ogg";
@@ -410,7 +410,7 @@ new SimGroup(MissionGroup) {
          rippleMagnitude[0] = "1";
          rippleMagnitude[1] = "1";
          rippleMagnitude[2] = "0.3";
-         overallRippleMagnitude = "5";
+         overallRippleMagnitude = "2";
          foamTex = "core/art/water/wateredge512.dds";
          foamDir[0] = "1 0";
          foamDir[1] = "0 1";
@@ -424,15 +424,15 @@ new SimGroup(MissionGroup) {
          foamMaxDepth = "5";
          foamAmbientLerp = "1";
          foamRippleInfluence = "0.05";
-         cubemap = "DarkSkyCubemap";
+         cubemap = "DarkSky2Cubemap";
          fullReflect = "1";
          reflectivity = "1";
          reflectPriority = "-1";
          reflectMaxRateMs = "16";
          reflectDetailAdjust = "0.5";
          reflectNormalUp = "1";
-         useOcclusionQuery = "1";
-         reflectTexSize = "512";
+         useOcclusionQuery = "0";
+         reflectTexSize = "1024";
          waterFogDensity = "0.1";
          waterFogDensityOffset = "1";
          wetDepth = "1";
@@ -456,7 +456,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new Trigger(NZFreeJack) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
       dataBlock = "NeutralZoneTrigger";
       position = "-325.11 718.284 31.7213";
       rotation = "-0 0 -1 90";
@@ -1633,7 +1633,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-422.644 644.458 65.3211";
-         rotation = "0.152872 -0.100383 0.983135 74.1618";
+         rotation = "0.152872 -0.100383 0.983135 74.1621";
          scale = "0.358158 0.358158 0.358158";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2580,7 +2580,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-213.894 793.06 88.1228";
-         rotation = "0.0239963 -0.0210442 0.999491 97.546";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5463";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2740,7 +2740,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-214.181 793.06 91.288";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5459";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5462";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6311,7 +6311,7 @@ new SimGroup(MissionGroup) {
          velocityMod = "1";
          gravityMod = "1";
          appliedForce = "0 2 0";
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          position = "-307.501 782.17 75.3435";
          rotation = "0 0 1 180.43";
          scale = "3.93684 6.97887 2.21132";
@@ -6324,7 +6324,7 @@ new SimGroup(MissionGroup) {
          velocityMod = "1";
          gravityMod = "1";
          appliedForce = "-1 1 0";
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          position = "-314.209 796.544 67.0984";
          rotation = "0 0 1 237.079";
          scale = "8.14596 10.8049 2.21132";
@@ -6337,7 +6337,7 @@ new SimGroup(MissionGroup) {
          velocityMod = "1";
          gravityMod = "1";
          appliedForce = "-3 3 0";
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          position = "-307.66 788.574 76.0219";
          rotation = "0 0 1 225.186";
          scale = "8.46892 6.97887 2.21132";
@@ -7601,7 +7601,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2767";
+            botBelongsToMe = "69488";
             delayRespawn = "20391";
             distDetect = "50";
             fov = "360";
@@ -7626,7 +7626,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2769";
+            botBelongsToMe = "69490";
             delayRespawn = "153641";
             distDetect = "50";
             fov = "360";
@@ -7698,7 +7698,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Trigger(NZ_CalicoJacks) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "NeutralZoneTrigger";
          position = "-22.697 742.75 64.8501";
          rotation = "-0 0 -1 89.7388";
@@ -8161,7 +8161,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2770";
+            botBelongsToMe = "69491";
             delayRespawn = "33278";
             distDetect = "50";
             fov = "360";
@@ -8186,7 +8186,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2772";
+            botBelongsToMe = "69493";
             delayRespawn = "153655";
             distDetect = "50";
             fov = "360";
@@ -8258,7 +8258,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Trigger(NZ_RumRunners) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "NeutralZoneTrigger";
          position = "-309.747 1124.24 67.588";
          rotation = "0 0 1 180.348";
@@ -8995,7 +8995,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "2773";
+            botBelongsToMe = "69494";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9091,7 +9091,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "2774";
+            botBelongsToMe = "69495";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9187,7 +9187,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "2775";
+            botBelongsToMe = "69496";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9282,7 +9282,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "2776";
+            botBelongsToMe = "69497";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9378,7 +9378,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "2777";
+            botBelongsToMe = "69498";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9473,7 +9473,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "2778";
+            botBelongsToMe = "69499";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9873,7 +9873,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.825 599.985 66.2663";
-         rotation = "0.000993939 -0.00632428 0.999979 83.8145";
+         rotation = "0.000993941 -0.00632428 0.999979 83.8142";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9948,7 +9948,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.807 600.261 64.6027";
-         rotation = "-0.00128242 -0.00115875 -0.999999 88.0946";
+         rotation = "-0.00128242 -0.00115875 -0.999999 88.0949";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9999,7 +9999,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "NPCVendorBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2779";
+            botBelongsToMe = "69500";
             distDetect = "5";
             npcAction = "7";
             realName = "Uncle Salty";
@@ -11925,7 +11925,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-56.2305 918.727 56.4737";
+      position = "-108.625 835.462 60.9919";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -11933,7 +11933,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "2765";
+         botBelongsToMe = "69486";
          delayRespawn = "41915";
          dropcount = "1";
          dropitem = "Shark_Steak";
@@ -11946,7 +11946,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark2) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-115.889 724.134 77.4366";
+      position = "-56.2305 918.727 56.4737";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -11954,7 +11954,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "2766";
+         botBelongsToMe = "69487";
          delayRespawn = "41856";
          dropcount = "1";
          dropitem = "Shark_Steak";
@@ -13838,7 +13838,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Trigger(FJToTCaveTrig) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          position = "78.1651 1097.76 63.6103";
          rotation = "-0 0 -1 70.8889";
          scale = "6.19894 3.41566 5.51444";
@@ -13848,7 +13848,7 @@ new SimGroup(MissionGroup) {
             destinationSpawnSphere = "TCaveFromFJ";
       };
       new Trigger(NZTCaveEntrance) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "NeutralZoneTrigger";
          position = "89.3666 1094.57 46.1475";
          rotation = "0 0 1 20.0116";
@@ -14574,36 +14574,6 @@ new SimGroup(MissionGroup) {
    new SimGroup(prefab_exploded) {
       canSave = "1";
       canSaveDynamicFields = "1";
-
-      new PointLight() {
-         radius = "5";
-         isEnabled = "1";
-         color = "1 0.556863 0 1";
-         brightness = "1";
-         castShadows = "0";
-         priority = "1";
-         animate = "0";
-         animationPeriod = "1";
-         animationPhase = "1";
-         flareScale = "1";
-         attenuationRatio = "0 1 1";
-         shadowType = "DualParaboloidSinglePass";
-         texSize = "512";
-         overDarkFactor = "2000 1000 500 100";
-         shadowDistance = "400";
-         shadowSoftness = "0.15";
-         numSplits = "1";
-         logWeight = "0.91";
-         fadeStartDistance = "0";
-         lastSplitTerrainOnly = "0";
-         representedInLightmap = "0";
-         shadowDarkenColor = "0 0 0 -1";
-         includeLightmappedGeometryInShadow = "0";
-         position = "-225.354 815.875 75.6257";
-         rotation = "1 0 0 0";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
    };
 };
 //--- OBJECT WRITE END ---

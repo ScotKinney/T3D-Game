@@ -3572,7 +3572,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new Trigger(KardiaToBog) {
-         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
          dataBlock = "serverTransferTrigger";
          position = "-457.142 -272.079 18.2425";
          rotation = "0 0 -1 19.8702";
@@ -3581,8 +3581,8 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             destinationServer = "TheBog";
             destinationSpawnSphere = "BogFromKardia";
-            manifestURL = "http://www.903smile.com/aureus-download/stream/levels/thebogmanifest.txt";
-            pathToRoot = "http://www.903smile.com/aureus-download/stream/";
+            manifestURL = "http://www.bloodclans.com/stream/manifests/theBogmanifest.txt";
+            pathToRoot = "http://www.bloodclans.com/stream/";
       };
       new Trigger(NZKardiaFromBog) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
