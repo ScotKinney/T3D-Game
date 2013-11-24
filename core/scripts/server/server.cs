@@ -380,7 +380,7 @@ function RegisterServer()
    DB::Insert("AVServerList",
       "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverDesi, serverOwner, worldType, worldID, kingdom, manifestRoot, manifestFile",
       "'"@$AlterVerse::serverAddress@":"@$AlterVerse::serverPort@"'," @
-      "'"@$AlterVerse::allowInitialLogin@"'," @
+      "b'"@$AlterVerse::allowInitialLogin@"'," @
       "'"@$AlterVerse::serverName@"'," @
       "'"@$AlterVerse::displayName@"'," @
       "'"@$AlterVerse::serverPrefix@"'," @
