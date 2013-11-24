@@ -1099,7 +1099,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-648.127 -413.104 55.9943";
             rotation = "0 0 1 88.7754";
-            scale = "0.5 0.5 0.5";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -1257,7 +1257,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-489.268 -109.447 75.2985";
             rotation = "0 0 1 96.966";
-            scale = "0.5 0.5 0.5";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -1413,7 +1413,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-63.7887 147.258 71.3252";
             rotation = "0.0076214 -0.0356434 0.999336 204.123";
-            scale = "0.35 0.35 0.35";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -1805,7 +1805,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-87.9379 -353.54 64.1787";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
-            scale = "0.35 0.35 0.35";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -1962,7 +1962,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-224.71 -153.932 57.8237";
             rotation = "0 0 1 52.9022";
-            scale = "0.5 0.5 0.5";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -2197,7 +2197,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-514.866 12.5199 61.0088";
             rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
-            scale = "0.35 0.35 0.35";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
@@ -2327,7 +2327,7 @@ new SimGroup(MissionGroup) {
             dataBlock = "GenericFireEmitterNode";
             position = "-687.576 -177.924 58.9444";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
-            scale = "0.35 0.35 0.35";
+            scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
