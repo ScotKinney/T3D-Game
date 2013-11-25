@@ -24,6 +24,9 @@ singleton Material( Ter_ForestMix_Base )
 {
    mapTo = "ForestMix_Base";
    footstepSoundId = 3;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 ///////////////////////////////////////////////////////
 
