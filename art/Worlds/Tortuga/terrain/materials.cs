@@ -14,12 +14,18 @@ singleton Material(Ter_DirtySand)
 {
    mapTo = "dirtysand_base";
    footstepSoundId = 3;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(Ter_DirtySandmix)
 {
    mapTo = "dirtyandmix_base";
    footstepSoundId = 3;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(Ter_Rock)
