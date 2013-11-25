@@ -14,6 +14,9 @@ singleton Material(Ter_DryGround)
 {   
    mapTo = "dryground_base";   
   customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
    
 };  
 
@@ -28,6 +31,9 @@ singleton Material(Ter_DirtySand)
 {
    mapTo = "dirtysand_base";
    customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 
 };
 
@@ -42,6 +48,9 @@ singleton Material(Ter_DarkDirt)
 {
    mapTo = "forestmix_base";
    customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 
 };
 
@@ -109,9 +118,6 @@ new TerrainMaterial()
    diffuseSize = "400";
    parallaxScale = "0.1";
    detailDistance = "400";
-   showDust = true;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 new TerrainMaterial()
@@ -127,9 +133,6 @@ new TerrainMaterial()
    parallaxScale = "0.02";
    detailScale = "512";
    useAnisotropic0 = "1";
-   showDust = true;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 new TerrainMaterial()
@@ -159,7 +162,4 @@ new TerrainMaterial()
    isManaged = "1";
    detailScale = "512";
    detailBrightness = "1";
-   showDust = true;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
