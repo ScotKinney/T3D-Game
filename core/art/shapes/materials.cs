@@ -88,7 +88,6 @@ singleton Material(noshapetext_lambert1)
 {
    mapTo = "lambert1";
 
-	diffuseMap[0] = "";
 
 	diffuseColor[0] = "0.4 0.4 0.4 1";
 	specular[0] = "1 1 1 1";
@@ -99,6 +98,8 @@ singleton Material(noshapetext_lambert1)
 	doubleSided = false;
 	translucent = false;
 	translucentBlendOp = "None";
+   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
 };
 
 singleton Material(noshapetext_noshape_mat)
