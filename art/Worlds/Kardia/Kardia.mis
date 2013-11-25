@@ -9,10 +9,10 @@ new SimGroup(MissionGroup) {
       visibleDistance = "900";
       visiblePlayers = "300";
       decalBias = "0.0015";
-      fogColor = "1 0.0705882 0 1";
-      fogDensity = "0.007";
+      fogColor = "0.960784 0.901961 0.898039 1";//fogColor = "1 0.0705882 0 1";
+      fogDensity = "0.012";
       fogDensityOffset = "100";
-      fogAtmosphereHeight = "50";
+      fogAtmosphereHeight = "100";
       canvasClearColor = "167 169 170 255";
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
@@ -169,6 +169,7 @@ new SimGroup(MissionGroup) {
          moonElevation = "30";
          castShadows = "1";
          brightness = "0.9";
+         flareType = "DefaultSunFlare";
          flareScale = "1.2";
          nightColor = "0.152941 0.164706 0.25098 1";
          nightFogColor = "0.160784 0.207843 0.262745 1";
@@ -276,7 +277,7 @@ new SimGroup(MissionGroup) {
          waveMagnitude[1] = "0.2";
          waveMagnitude[2] = "0.1";
          overallWaveMagnitude = "1";
-         rippleTex = "core/art/water/noise03.dds";
+         rippleTex = "core/art/water/noise02.dds";
          rippleDir[0] = "0 1";
          rippleDir[1] = "0.707 0.707";
          rippleDir[2] = "0.5 0.86";
@@ -311,7 +312,7 @@ new SimGroup(MissionGroup) {
          reflectDetailAdjust = "0.5";
          reflectNormalUp = "1";
          useOcclusionQuery = "0";
-         reflectTexSize = "512";
+         reflectTexSize = "1024";
          waterFogDensity = "0.1";
          waterFogDensityOffset = "1";
          wetDepth = "1";
