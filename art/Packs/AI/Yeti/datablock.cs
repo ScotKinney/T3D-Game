@@ -87,7 +87,7 @@ datablock PlayerData(YetiBlack : DefaultPlayerData)
    Weapon = "YetiRock";
    respawn = true;
    behavior = "ChaseBehavior";
-   maxRange = 300;
+   maxRange = 50;
    minRange = 0;
    distDetect = 500;
    sidestepDist = 5;
@@ -142,7 +142,7 @@ datablock PlayerData(YetiSmall : DefaultPlayerData)
    Weapon = "YetiRock";
    respawn = true;
    behavior = "ChaseBehavior";
-   maxRange = 300;
+   maxRange = 50;
    minRange = 0;
    distDetect = 300;
    sidestepDist = 5;

@@ -6,6 +6,7 @@ datablock ProjectileData(IceBallProjectile : BaseProjectile)
    directDamage = 30;
    radiusDamage = 10;
    damageRadius = 10;
+   ignoreDistance = 200;
 
    explosion = ProjectileExplosion;
    waterExplosion = 0;
