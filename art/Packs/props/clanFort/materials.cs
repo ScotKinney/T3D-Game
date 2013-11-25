@@ -12,11 +12,12 @@ singleton Material(mat_FortBridge)
 singleton Material(fortLOD_Z__Fort_Wood1501)
 {
    mapTo = "_Fort_Wood1501";
-   diffuseMap[0] = "wood_5.png";
+   diffuseMap[0] = "art/Packs/props/clanFort/wood_5.png";
    translucentBlendOp = "None";
    customFootstepSound = "FootStepWood1Sound";
-   normalMap[0] = "wood_5N.png";
+   normalMap[0] = "art/Packs/props/clanFort/wood_5N.png";
    useAnisotropic[0] = "1";
+   customImpactSound = "FootStepWood1Sound";
 };
 
 singleton Material(fortLOD_Z__Fort_Mud1501)

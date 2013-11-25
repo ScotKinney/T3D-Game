@@ -374,6 +374,9 @@ singleton Material(svwoodbridge1_wood)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/valhalla/sv-evwood1N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
 };
 
 singleton Material(svwoodbridge1_crete2)
