@@ -83,43 +83,7 @@ singleton Material(noshape_NoShape)
 
 //--- noshape.dts MATERIALS END ---
 
-//--- noshapetext.dae MATERIALS BEGIN ---
-singleton Material(noshapetext_lambert1)
-{
-   mapTo = "lambert1";
 
-
-	diffuseColor[0] = "0.4 0.4 0.4 1";
-	specular[0] = "1 1 1 1";
-	specularPower[0] = 8;
-	pixelSpecular[0] = false;
-	emissive[0] = true;
-
-	doubleSided = false;
-	translucent = false;
-	translucentBlendOp = "None";
-   customFootstepSound = "FootStepWood1Sound";
-   customImpactSound = "FootStepWood1Sound";
-};
-
-singleton Material(noshapetext_noshape_mat)
-{
-   mapTo = "noshape_mat";
-
-	diffuseMap[0] = "";
-
-	diffuseColor[0] = "0.4 0.3504 0.363784 0.33058";
-	specular[0] = "1 1 1 1";
-	specularPower[0] = 8;
-	pixelSpecular[0] = false;
-	emissive[0] = true;
-
-	doubleSided = false;
-	translucent = true;
-	translucentBlendOp = "None";
-};
-
-//--- noshapetext.dae MATERIALS END ---
 
 //--- portal MATERIALS BEGIN ---
 
