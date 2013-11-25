@@ -13,6 +13,9 @@ singleton Material(Ter_Path)
 {   
    mapTo = "soil_02";   
    customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 }; 
 
 singleton Material(ter_SwampEdges)   
