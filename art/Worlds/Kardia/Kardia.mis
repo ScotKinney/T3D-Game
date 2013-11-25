@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
       visibleDistance = "900";
       visiblePlayers = "300";
       decalBias = "0.0015";
-      fogColor = "0.960784 0.901961 0.898039 1";//fogColor = "1 0.0705882 0 1";
+      fogColor = "0.960784 0.901961 0.898039 1";
       fogDensity = "0.007";
       fogDensityOffset = "100";
       fogAtmosphereHeight = "30";
@@ -17,7 +17,7 @@ new SimGroup(MissionGroup) {
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
       advancedLightmapSupport = "0";
-      soundAmbience = "AudioAmbienceAureusDayTime";
+      soundAmbience = "AudioAmbienceDefault";
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -27,7 +27,7 @@ new SimGroup(MissionGroup) {
          displayName = "Kardia";
          enabled = "1";
          hasTreasury = "1";
-         levelName = "Kardia";
+         LevelName = "Kardia";
    };
    new SimGroup(environment) {
       canSave = "1";
@@ -127,8 +127,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0567899";
-         time = "0.116009";
+         startTime = "0.0634699";
+         time = "0.0638304";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -625,8 +625,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "12137";
-         delayRespawn = "106446";
+         botBelongsToMe = "7700";
+         delayRespawn = "626";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -637,7 +637,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "13";
-         Weapon = "KardMaleSwordWeapon";
+         weapon = "KardMaleSwordWeapon";
    };
    new StaticShape(FemaleGuard) {
       isAIControlled = "0";
@@ -651,8 +651,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "12106";
-         delayRespawn = "106168";
+         botBelongsToMe = "3382";
+         delayRespawn = "3911";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -663,7 +663,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "TokFemaleSwordWeapon";
+         weapon = "TokFemaleSwordWeapon";
    };
    new StaticShape(Guard14_DD11) {
       isAIControlled = "0";
@@ -677,8 +677,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "12110";
-         delayRespawn = "106257";
+         botBelongsToMe = "3384";
+         delayRespawn = "3621";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -689,7 +689,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "13";
-         Weapon = "KardMaleSwordWeapon";
+         weapon = "KardMaleSwordWeapon";
    };
    new StaticShape(FemaleGuard1) {
       isAIControlled = "0";
@@ -703,8 +703,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "12099";
-         delayRespawn = "106874";
+         botBelongsToMe = "7685";
+         delayRespawn = "593";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -715,7 +715,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "TokFemaleSwordWeapon";
+         weapon = "TokFemaleSwordWeapon";
    };
    new StaticShape(Guard14_DD2) {
       isAIControlled = "0";
@@ -729,7 +729,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2627";
+         botBelongsToMe = "3386";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -740,7 +740,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "JavelinWeapon";
+         weapon = "JavelinWeapon";
    };
    new StaticShape(Guard14_DD21) {
       isAIControlled = "0";
@@ -754,7 +754,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2628";
+         botBelongsToMe = "3387";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -765,7 +765,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "JavelinWeapon";
+         weapon = "JavelinWeapon";
    };
    new StaticShape(Guard14_DD221) {
       isAIControlled = "0";
@@ -779,7 +779,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2629";
+         botBelongsToMe = "3388";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -790,7 +790,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "JavelinWeapon";
+         weapon = "JavelinWeapon";
    };
    new StaticShape(Guard14_DD22) {
       isAIControlled = "0";
@@ -804,7 +804,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2630";
+         botBelongsToMe = "3389";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -815,7 +815,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         Weapon = "JavelinWeapon";
+         weapon = "JavelinWeapon";
    };
    new SimGroup(Occlusions) {
       canSave = "1";
@@ -3944,7 +3944,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "2631";
+            botBelongsToMe = "3390";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3954,7 +3954,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(WildHorsePath) {
          isLooping = "1";
@@ -4026,7 +4026,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "2632";
+            botBelongsToMe = "3391";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4036,7 +4036,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(PaliminoPath) {
          isLooping = "1";
@@ -4107,7 +4107,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "2633";
+            botBelongsToMe = "3392";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4117,7 +4117,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(IndianHorsePath) {
          isLooping = "1";
@@ -4188,7 +4188,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "2634";
+            botBelongsToMe = "3393";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4198,7 +4198,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(ArabianHorsePath) {
          isLooping = "1";
@@ -4269,7 +4269,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "2635";
+            botBelongsToMe = "3394";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4279,7 +4279,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
       new Path(LightHorsePath) {
          isLooping = "1";
@@ -4350,7 +4350,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "2636";
+            botBelongsToMe = "3395";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4360,7 +4360,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            Weapon = "-NoWeapon";
+            weapon = "-NoWeapon";
       };
    };
    new SimGroup(EastDocks) {
@@ -5354,7 +5354,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2637";
+            botBelongsToMe = "3396";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -5365,7 +5365,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "14";
-            Weapon = "JavelinWeapon";
+            weapon = "JavelinWeapon";
       };
       new StaticShape(Guard14a_SS) {
          isAIControlled = "1";
@@ -5379,7 +5379,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2638";
+            botBelongsToMe = "3397";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5390,7 +5390,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "14";
-            Weapon = "JavelinWeapon";
+            weapon = "JavelinWeapon";
       };
       new Item(Level3Badge_14) {
          static = "1";
@@ -5809,7 +5809,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2639";
+            botBelongsToMe = "3398";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5820,7 +5820,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "13";
-            Weapon = "JavelinWeapon";
+            weapon = "JavelinWeapon";
       };
       new StaticShape(Guard13a_RB) {
          isAIControlled = "0";
@@ -5834,7 +5834,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "2640";
+            botBelongsToMe = "3399";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -5845,7 +5845,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "13";
-            Weapon = "JavelinWeapon";
+            weapon = "JavelinWeapon";
       };
       new Item(Level3Badge_13) {
          static = "1";
