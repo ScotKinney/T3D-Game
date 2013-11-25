@@ -251,6 +251,9 @@ singleton Material(mat_BB_0490)
    normalMap[0] = "art/Packs/props/goldmine/BB_0490_NORM.png";
    useAnisotropic[0] = "1";
    materialTag0 = "GoldMine";
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(mat_BB_0490_jpg)
@@ -261,6 +264,9 @@ singleton Material(mat_BB_0490_jpg)
    useAnisotropic[0] = "1";
    footstepSoundId = 1;
    materialTag0 = "GoldMine";
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(mat_cartSide002)
