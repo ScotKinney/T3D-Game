@@ -192,7 +192,7 @@ datablock ProjectileData(GrenadeProjectile : BaseProjectile)
    scale="0.3 0.3 0.3";
    directDamage = 50;
    radiusDamage = 200;
-   damageRadius = 35;
+   damageRadius = 25;
    areaImpulse = 1000;
 
    muzzleVelocity = 25;
