@@ -7,6 +7,7 @@ singleton Material(mat_FortBridge)
    customFootstepSound = "FootStepWood1Sound";
    useAnisotropic[0] = "1";
    normalMap[0] = "bridgeWood_Nrm.png";
+   materialTag0 = "fort";
 };
 
 singleton Material(fortLOD_Z__Fort_Wood1501)
@@ -18,6 +19,7 @@ singleton Material(fortLOD_Z__Fort_Wood1501)
    normalMap[0] = "art/Packs/props/clanFort/wood_5N.png";
    useAnisotropic[0] = "1";
    customImpactSound = "FootStepWood1Sound";
+   materialTag0 = "fort";
 };
 
 singleton Material(fortLOD_Z__Fort_Mud1501)
@@ -26,6 +28,7 @@ singleton Material(fortLOD_Z__Fort_Mud1501)
    diffuseMap[0] = "colmud.jpg";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
+   materialTag0 = "fort";
 };
 
 singleton Material(fortLOD_Z__Fort_Logs1501)
@@ -34,6 +37,7 @@ singleton Material(fortLOD_Z__Fort_Logs1501)
    diffuseMap[0] = "barkfort";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
+   materialTag0 = "fort";
 };
 
 singleton Material(_Fort_Stone1501_mat)
@@ -43,6 +47,7 @@ singleton Material(_Fort_Stone1501_mat)
    translucentBlendOp = "LerpAlpha";
    useAnisotropic[0] = "1";
    normalMap[0] = "stone_4N.png";
+   materialTag0 = "fort";
 };
 
 singleton Material(_Fort_Stone1501_mat)
@@ -51,7 +56,7 @@ singleton Material(_Fort_Stone1501_mat)
    diffuseMap[0] = "stone_4.jpg";
    normalMap[0] = "stone_4N.png";
    useAnisotropic[0] = "1";
-   translucent = "0";
+   materialTag0 = "fort";
 };
 
 singleton Material(mat_PropsA)
@@ -82,6 +87,7 @@ singleton Material(mat_Fort_Tops1501)
 {
    mapTo = "_Fort_Tops1501";
    diffuseMap[0] = "wood1.JPG";
+   materialTag0 = "fort";
 };
 
 
@@ -90,4 +96,14 @@ singleton Material(PMat_RopeCoilObject_mat)
    mapTo = "PMat_RopeCoilObject";
    diffuseMap[0] = "RopeCoil.jpg";
    translucent = "0";
+};
+
+
+singleton Material(lambert1_mat)
+{
+   mapTo = "lambert1";
+   diffuseMap[0] = "lambert1";
+   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
+   materialTag0 = "Fort";
 };
