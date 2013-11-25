@@ -567,7 +567,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          destinationServer = "Valhalla";
          destinationSpawnSphere = "ValhallaFromGoldMine";
-         manifestURL = "http://www.bloodclans.com/stream/manifests/aureusmanifest.txt";
+         manifestURL = "http://www.bloodclans.com/stream/manifests/valhallamanifest.txt";
          pathToRoot = "http://www.bloodclans.com/stream/";
    };
    new Trigger(NZGoldMine) {
