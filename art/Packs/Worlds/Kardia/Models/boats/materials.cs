@@ -73,3 +73,11 @@ singleton Material(PMat_KardBoatMast_mat)
    materialTag0 = "Boats";
 };
 
+
+singleton Material(kardboat1_PMat_KardBoatRope2)
+{
+   mapTo = "PMat_KardBoatRope2";
+   diffuseMap[0] = "rope1";
+   specular[0] = "0.0282 0.029 0.0282 1";
+   translucentBlendOp = "None";
+};

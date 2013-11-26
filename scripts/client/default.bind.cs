@@ -584,12 +584,12 @@ moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
 // ----------------------------------------------------------------------------
 // IPS Spells
 // ----------------------------------------------------------------------------
+moveMap.bind(keyboard, "7", FireballTest);
 function FireballTest(%val)
 {
    if(%val)
-      CastSpellOnServer(ImpactTest);
+      CastSpellOnServer(Fireball1);
 }
-moveMap.bind(keyboard, "alt f", FireballTest);
 
 // mouse cursor toggle by right mouse button
 function toggleCursor( %val ) 

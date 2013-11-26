@@ -59,7 +59,11 @@ exec("./AlterVerse/worldItems.cs");
 
 // Load all spells in the spells folder.
 // This could optionally be put into a function and called manually.
+// NOTE TO EDITOR: I would personally call each spell as it is cast, then unload it when finished. Saves memory. -Abe
 //for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
 //{
-   //exec(%spellFile);
+//   exec(%spellFile);
 //}
+exec("./DefaultBezierProjectile.cs");
+exec("./Fireball.cs");
+exec("./Spells/Fireball.cs");

@@ -44,7 +44,7 @@ datablock PlayerData(DefaultPlayerData)
    maxdrag = 0.4;
    density = 1.1;
    maxDamage = 300;
-   maxEnergy =  60;
+   maxEnergy =  100;
    repairRate = 0.33;
    energyPerDamagePoint = 75.0;
 
