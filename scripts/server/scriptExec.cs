@@ -64,6 +64,7 @@ exec("./AlterVerse/worldItems.cs");
 //{
 //   exec(%spellFile);
 //}
+exec("./SpellTemplates.cs");
 exec("./DefaultBezierProjectile.cs");
 exec("./Fireball.cs");
 exec("./Spells/Fireball.cs");
