@@ -1,8 +1,4 @@
 // Spell specific datablocks ---------------------------------------------------
-datablock SpellData(DefaultTargetSpell)
-{
-	Cost = 10;
-};
 datablock SpellData(Fireball1 : DefaultTargetSpell) 
 { 
 	ChannelTimesMS[1] = 1600; 
