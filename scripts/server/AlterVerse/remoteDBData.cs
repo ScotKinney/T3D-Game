@@ -12,6 +12,7 @@ function remoteDBCommand(%command, %params, %flag)
    if ( %params !$= "" )
       %argStr = %argStr @ "&" @ %params;
    %request.get( $serverPath, "/private_web/" @ "getServerData.php", %argStr );
+   echo("ID: " @ %request @ ", " @ %argStr);
 }
 //www.alterverse.com/private_web/getServerData.php?Cmnd=RegisterServer&SvrName=My Name&DspName=Gold Mine
 
@@ -43,9 +44,14 @@ function remoteDBData::handleDBResult( %this )
          %this.fillClanTable();
       case "AssignRights":
          %this.updateRights();
+      case "TransferArn":
+         %this.arnsTransfered();
 
+      // The following commands need no return processing
       case "DisconnectUser":
       case "ServerPing":
+      case "SetArn":
+      case "SetNetWorth":
 
       default:
          echo("Valid command with no handler??? (" @ %this.command @ ")");
@@ -63,7 +69,7 @@ function remoteDBData::saveRegistrationData( %this )
    if ( isObject(LocalClientConnection) )
    {
       echo("Authenticating local client");
-      LocalClientConnection.AuthenticateUser();
+      LocalClientConnection.schedule(10, "AuthenticateUser");
    }
 
    // we will perform a heartbeat in 90 seconds
@@ -82,13 +88,13 @@ function remoteDBData::saveAuthenticationData( %this )
    }
 
    %client.dbUserID = %this.dbID;
-   %client.createPersistantStats(%this.dbID, %this.dbUserName);
    %client.subscribe = %this.dbSubscribe;
    %client.CMDesi = %this.dbCMDesi;
    %client.health = %this.health;
    %client.skullLevel = %this.skullLevel;
-   %client.wealth = %this.wealth;
-   %client.weapon = %this.weapon;
+   %client.arns = %this.wealth;
+   %client.lastWeapon = %this.weapon;
+   %client.createPersistantStats(%this.dbID, %this.dbUserName, %this.inventory);
    %client.buildRights = %this.rights;
    %client.Homeworld = %this.homeworld;
    %client.Gender = %this.gender;
@@ -135,7 +141,7 @@ function remoteDBData::moveUserTo( %this )
 
    if ( (%this.sFile !$= "") && (%this.sRoot !$= "") )
       schedule(1000, 0, "commandToClient", %client,
-                      'serverTransfer',
+                      'serverTransferStream',
                       %this.sFile,
                       %this.sRoot,
                       %this.sAddr,
@@ -209,4 +215,22 @@ function remoteDBData::updateRights( %this )
    }
 
    schedule( 0, 0, commandToClient, %this.flag, 'RightsAccepted');
+}
+
+function remoteDBData::arnsTransfered( %this )
+{
+   if ( %this.transAmount == 0 )
+   {
+      messageClient(%this.flag, 'LocalizedMsg', "", "minTransfer", "a", true, true, 1, %this.reqAmount);
+      return;
+   }
+
+   %this.flag.schedule(10, "giveArns", %this.transAmount);
+   
+   CommandToClient(%this.flag, 'ReserveUpdate', %this.reserveLeft);
+
+   // update the clients net worth here
+   %this.flag.netWorth = mAddBigNumbers(%this.flag.netWorth, %this.transAmount);
+   %this.flag.schedule(10, "writeNetWorth");
+   commandToClient(%this.flag, 'setNetWorth', %this.flag.netWorth);
 }

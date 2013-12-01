@@ -29,12 +29,12 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/Dagger/Dagger.dts";
    scale = "1 1 1";
-   //item = DaggerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = DaggerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = DaggerProjectile;
    wetProjectile = DaggerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -68,7 +68,7 @@ datablock ShapeBaseImageData(SlingDartImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/dart/slingdart.dts";
    scale = "1 1 1";
-   //item = slingdartWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = slingdartWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = slingdartProjectile;
    wetProjectile = slingdartWetProjectile;
    fireAnim = "Throw_HamAxe";
@@ -105,7 +105,7 @@ datablock ShapeBaseImageData(JavelinImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/Javelin/Javelin.dts";
    scale = "1 1 1";
-   //item = JavelinWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = JavelinWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = JavelinProjectile;
    wetProjectile = JavelinWetProjectile;
    fireAnim = "Throw_Javelin";
@@ -142,7 +142,7 @@ datablock ShapeBaseImageData(HammerImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/Hammer/Hammer.dts";
    scale = "1 1 1";
-   //item = HammerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = HammerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = HammerProjectile;
    wetProjectile = HammerWetProjectile;
    fireAnim = "Throw_HamAxe";
@@ -178,7 +178,7 @@ datablock ShapeBaseImageData(TomahawkImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/tomahawk/thawk.dts";
    scale = "1 1 1";
-   //item = TomahawkWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = TomahawkWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = TomahawkProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = TomahawkWetProjectile;
    fireAnim = "Throw_HamAxe";
@@ -224,16 +224,10 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
 {
    shapefile = "art/inv/weapons/grenade/grenade.dts";
    scale = "1 1 1";
-   //item = grenadeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = grenadeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = GrenadeProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = GrenadeWetProjectile;
    fullSkelAnim = true;    // The grenade throw is not a blended anim
    fireAnim = "Throw_Grenade";
    fireSound = BaseThrowSound;
 };
-
-// Cheat to test weapons before we have the full inventory system implemented.
-$MaleWeaponCycle = $MaleWeaponCycle TAB "DaggerImage" TAB "SlingDartImage"
-      TAB "JavelinImage" TAB "HammerImage" TAB "TomahawkImage" TAB "GrenadeImage";
-$FemaleWeaponCycle = $FemaleWeaponCycle TAB "DaggerImage" TAB "SlingDartImage"
-      TAB "JavelinImage" TAB "HammerImage" TAB "TomahawkImage" TAB "GrenadeImage";

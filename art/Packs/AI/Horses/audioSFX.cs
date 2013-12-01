@@ -1,18 +1,4 @@
 // singleton SFXProfiles that need loaded on the client and server 
-singleton SFXProfile(SteedMoveBubblesSound)
-{
-   filename    = "art/sound/water_splash.ogg";
-   description = "AudioCloseLoop3D";
-   preload = true;
-};
-
-singleton SFXProfile(SteedWaterBreathSound)
-{
-   filename    = "art/sound/footsteps/water_wl1";
-   description = "AudioClose3D";
-   preload = true;
-};
-
 //----------------------------------------------------------------------------
 singleton SFXProfile(HoofLightSoftSound)
 {

@@ -257,8 +257,12 @@ package GameCore
          %client.clanID = "0";
          %client.clanRole = "0";
          %client.team = "0";
+         %client.skullLevel = 10;
          %client.avOptions = ($pref::Player::Gender $= "Male") ? 
             MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
+         if(!isObject(%client.pInv))
+            %client.pInv = new ArrayObject();
+
          return ""; // No authentication done on single player servers
       }
 
@@ -339,6 +343,23 @@ package GameCore
 
    function GameConnection::onClientEnterGame(%this)
    {
+      if ( $Server::ServerType !$= "MultiPlayer" )
+      {
+         // Give a singleplayer inventory
+         %inventory = (($pref::Player::Gender $= "Male") ?
+            ValMaleSwordWeapon.ItemID : ValFemaleSwordWeapon.ItemID) SPC "1";
+         %inventory = %inventory TAB Fishing_Pole.ItemID SPC "1";
+         %inventory = %inventory TAB Boglin_Toes.ItemID SPC "20";
+         %inventory = %inventory TAB Lantern.ItemID SPC "1";
+         %inventory = %inventory TAB Lamp_Oil.ItemID SPC "30";
+         %inventory = %inventory TAB Palimino_Horse_Item.ItemID SPC "1";
+         %inventory = %inventory TAB DaggerWeapon.ItemID SPC "100";
+         %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
+         %inventory = %inventory TAB Thunderbolt_Potion.ItemID SPC "10";
+         %inventory = %inventory TAB TokaraMushroom.ItemID SPC "20";
+         %this.resetInventory(%inventory);
+      }
+
       Game.onClientEnterGame(%this);
    }
 
@@ -615,13 +636,14 @@ function GameCore::preparePlayer(%game, %client)
 function GameCore::loadOut(%game, %player)
 {
    %hasinv = false;
-   if ( %lastweapon !$= "" )
+   %lastweapon = %player.client.lastWeapon;
+   if ( isObject(%lastweapon) && %player.hasInventory(%lastweapon) &&
+         isObject(%lastweapon.image) )
    {
-      %hasinv = %player.hasInventory(%lastweapon);
-      if ( %hasinv )
-         %player.AVMountImage(%lastweapon, $WeaponSlot);
+      %player.AVMountImage(%lastweapon.image, $WeaponSlot);
    }
-   %player.AVMountImage("", $WeaponSlot);
+   else
+      %player.AVMountImage("", $WeaponSlot);
 }
 
 // Customized kill message for falling deaths
@@ -702,7 +724,7 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
    if( %client.player.isFishing )
       commandToClient(%client, 'SendWaterClicks', false);
 
-   //%client.player.inventoryOnDeath();
+   %client.player.inventoryOnDeath();
    //%client.setPersistantStat("lastWeapon", %client.player.lastWeapon);
 
    %client.player = 0;
@@ -836,6 +858,8 @@ function GameCore::spawnPlayer(%game, %client, %spawnPoint, %noControl)
 
       return;
    }
+
+   //AttachSpellManager(%player, %client);
 
    // Customize the avatar
    %player.setAvOptions(%client.avOptions);

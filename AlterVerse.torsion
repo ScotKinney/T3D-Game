@@ -35,7 +35,7 @@
 </Config>
 <Config>
 <Name>Debug</Name>
-<Executable>AlterVerse_DEBUG.exe</Executable>
+<Executable>AlterVerse.exe</Executable>
 <Arguments/>
 <HasExports>true</HasExports>
 <Precompile>true</Precompile>

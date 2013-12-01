@@ -155,7 +155,7 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    // If it's a subscriber only trigger, make sure the user can pass
    if ( (%trigger.subscriberOnly $= "1") && !%obj.client.subscribe )
    {
-      messageClient(%obj.client, 'LocalizedMsg', %trigger.migrantMessage, "a", true, true, 0);
+      messageClient(%obj.client, 'LocalizedMsg', "", %trigger.migrantMessage, "a", true, true, 0);
       return;
    }
 
@@ -163,7 +163,7 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    // see if the player is allowed to use this trigger
    if(%this.checkSkullLevel(%trigger, %obj) == false)
    {
-      messageClient(%obj.client, 'LocalizedMsg', "tgrLvl", "a", true, true, 1, %trigger.minSkullLevel);
+      messageClient(%obj.client, 'LocalizedMsg', "", "tgrLvl", "a", true, true, 1, %trigger.minSkullLevel);
       return;
    }
    
@@ -178,7 +178,7 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    if ( %this.clearInv $= "1" )
    {
       %obj.clearInventory();
-      %obj.updateInventoryString();
+      //%obj.updateInventoryString();
    }
 
    TransferToServer(%obj.client, 0, %trigger.destinationSpawnSphere, %destination);

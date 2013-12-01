@@ -28,15 +28,15 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
    weaponType = "Delayed"; 
    shapefile = "art/inv/weapons/flintloc/flintlock.dts";
    scale = "1 1 1";
-   //item = FlintlockWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = FlintlockWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    usesAmmo = true;
-   //ammo = ShotAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
+   ammo = ShotAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
    projectile = ShotProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ShotWetProjectile;
    stateTimeoutValue[3] = 0.9;
    fireAnim = "Fire_Flintlock";
    fireSound = "flintlockFireSound";
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -70,9 +70,9 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    weaponType = "Delayed"; 
    shapefile = "art/inv/weapons/crossbow/weapon.dts";
    scale = ".5 .5 .5";
-   //item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
+   item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
    usesAmmo = true;
-   //ammo = boltAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
+   ammo = boltAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
    projectile = BoltProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = BoltWetProjectile;
    fireAnim = "Fire_Flintlock";
@@ -107,8 +107,3 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    stateTransitionOnAmmo[8] = "Reload";
    stateSequence[8] = "NoAmmo";
 };
-
-
-// Cheat to test weapons before we have the full inventory system implemented.
-$MaleWeaponCycle = $MaleWeaponCycle TAB "FlintlockImage" TAB "CrossbowImage";
-$FemaleWeaponCycle = $FemaleWeaponCycle TAB "FlintlockImage" TAB "CrossbowImage";

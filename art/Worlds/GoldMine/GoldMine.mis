@@ -527,7 +527,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new Trigger(CartSound1) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
       enterCommand = "sfxPlay(MineShaftCart,%obj.getTransform());";
       dataBlock = "ClientTrigger";
       position = "400.341 -392.613 27.9417";
@@ -558,7 +558,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new Trigger(GoldMineToValTrig) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
       dataBlock = "serverTransferTrigger";
       position = "414.511 -373.382 41.8164";
       rotation = "1 0 0 0";
@@ -571,7 +571,7 @@ new SimGroup(MissionGroup) {
          pathToRoot = "http://www.bloodclans.com/stream/";
    };
    new Trigger(NZGoldMine) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 -1.0000000 0.0000000";
+      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
       dataBlock = "NeutralZoneTrigger";
       position = "443.003 -372.371 -3.36488";
       rotation = "1 0 0 0";

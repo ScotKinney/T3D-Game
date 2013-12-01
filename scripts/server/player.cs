@@ -341,7 +341,6 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
       return;
    }
    
-   //AISK Changes: Start
    //If friendly fire is turned off, and the source and target are on
    //the same team, then return
    if ($AISK_FRIENDLY_FIRE == false && $AISK_FREE_FOR_ALL == false)
@@ -411,10 +410,10 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
          // If this bot was killed by a player, give them the kill stat
          if (isObject(%sourceClient) && isObject(%sourceClient.pData))
          {
-            if ( isObject(Deer) && %obj.getDatablock() == Deer.getID() )
-               DB::SprocNoRet("sp_StatsDeerKill", "'" @ %sourceClient.pData.dbID @ "'");
-            else if ( %obj.behavior.isAggressive || (%obj.action $= "Thief") )
-               DB::SprocNoRet("sp_StatsAIKill", "'" @ %sourceClient.pData.dbID @ "'");
+            //if ( isObject(Deer) && %obj.getDatablock() == Deer.getID() )
+               //DB::SprocNoRet("sp_StatsDeerKill", "'" @ %sourceClient.pData.dbID @ "'");
+            //else if ( %obj.behavior.isAggressive || (%obj.action $= "Thief") )
+               //DB::SprocNoRet("sp_StatsAIKill", "'" @ %sourceClient.pData.dbID @ "'");
 
             // If it was a boglin, give them the toes.
             if ( isObject(Boglin) && ((%obj.getDatablock() == Boglin.getID()) ||
@@ -423,7 +422,7 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
                %amount = %sourceClient.player.incInventory(Boglin_Toes, 10);
                if ( %amount > 0 )
                {
-                  %message = "\c0You killed a Boglin and collect " @ %amount SPC Boglin_Toes.pickupName;
+                  %message = "\c0You killed a Boglin and collect " @ %amount @ " Boglin Toe";
                   if ( %amount > 1 )
                      %message = %message @ "s";
                   messageClient(%sourceClient, 'MsgItemPickup', %message);
@@ -454,15 +453,14 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
       }
 
       // If we have death effects spawn them now.
-      if ( %this.deathEffectron !$= "" )
-      {
-         %eff = startEffectron(%this.deathEffectron, %obj, "impactedObject");
-         if ( %damageType $= "RadiusDamage" )
-            %position = %obj.getPosition();
-         %eff.addConstraint(%position, "impactPoint"); 
-      }
+      //if ( %this.deathEffectron !$= "" )
+      //{
+         //%eff = startEffectron(%this.deathEffectron, %obj, "impactedObject");
+         //if ( %damageType $= "RadiusDamage" )
+            //%position = %obj.getPosition();
+         //%eff.addConstraint(%position, "impactPoint"); 
+      //}
    }
-   //AISK Changes: End
 }
 
 function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
@@ -750,15 +748,12 @@ function Player::updateHealth(%player)
    if ( !isObject(%player.client) )
       return;
       
-   //echo("\c4Player::updateHealth() -> Player Health changed, updating HUD!");
-
    // Calcualte player health
    %maxDamage = %player.getDatablock().maxDamage;
    %damageLevel = %player.getDamageLevel();
    %curHealth = %maxDamage - %damageLevel;
    %curHealth = mceil(%curHealth);
-
-   %player.client.setHealthLevel(%curHealth);
+   %player.client.health = %curHealth;
 }
 
 function Player::use(%player, %data)

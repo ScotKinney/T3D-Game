@@ -4,7 +4,7 @@
 
 function MeleeImage::onMount(%this,%obj,%slot)
 {
-   if (%obj.client !$= "")
+   if ((%obj.client !$= "") && (%slot == 0))
    {
       %obj.client.RefreshWeaponHud(0, %this.item.invIcon, "");
       
@@ -18,7 +18,7 @@ function MeleeImage::onMount(%this,%obj,%slot)
 
 function MeleeImage::onUnmount(%this, %obj, %slot)
 {
-   if (%obj.client !$= "")
+   if ((%obj.client !$= "") && (%slot == 0))
    {
       %obj.client.RefreshWeaponHud(0, "", "");
 

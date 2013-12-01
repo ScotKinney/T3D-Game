@@ -23,21 +23,16 @@
 // First we execute the core default preferences.
 exec( "core/scripts/server/defaults.cs" );
 
+// some general gameplay defaults
+$AlterVerse::PlayerHealthDecreaseTime = 600000; // players health will be automatically decreased per 60000ms (10 minutes)
+$AlterVerse::PlayerHealthDecreaseAmount = 1;  // the players health will decrease by 1 units
+$AlterVerse::LowHealthThreshold = 0.6;        // players health is low at 60% damage
+$AlterVerse::DangerousLowHealthThreshold = 0.8;// players health is considered dangerously low at 80% damage
+$AlterVerse::PickupRadius = 10;  // distance at which player can pickup items
+$AlterVerse::RandomItemLossBias = 0.3; // adjustment for how many items the player loses on death(<1 loses less items, >1 loses more items)
+$AlterVerse::deathArnPercent = 60; // max percentage of arns a player will lose on death
 
 // Now add your own game specific server preferences as
 // well as any overloaded core defaults here.
-
-
-
-
-// Finally load the preferences saved from the last
-// game execution if they exist.
-if ( $platform !$= "xenon" )
-{
-   if ( isFile( "./prefs.cs" ) )
-      exec( "./prefs.cs" );
-}
-else
-{
-   echo( "Not loading server prefs.cs on Xbox360" );
-}
+if ( isFile( "./prefs.cs" ) )
+   exec( "./prefs.cs" );

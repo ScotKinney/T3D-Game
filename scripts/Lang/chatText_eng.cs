@@ -166,6 +166,13 @@ chatStrings.msg[46] = "Telegram sent to %1.";
 // Message 47 - Message displayed when a telegram cannot be read from the database
 chatStrings.msg[47] = "Telegram is not available at this time.";
 
+// Message tgrLvl - Message displayed when a user enters a transfer trigger that
+// requires a higher skull level
+chatStrings.msg[tgrLvl] = "\c0You must be skull level %1 or greater to use this portal.";
+
+// Message sttMag - Message displayed when a migrant tries to use the portal to the magellan
+chatStrings.msg[sttMag] = "\c0You must be a Citizen to enter the Magellan!";
+
 // Chat Log Messages -----------------------------------------------------------
 // chatLogOn - This message is displayed when user activates chat logging.
 chatStrings.chatLogOn = "Chat logging is active. Press 'C' to turn off.";
@@ -187,22 +194,22 @@ chatStrings.msg[fishStart] = "\c0You take out your fishing pole. Click on water 
 chatStrings.msg[fishEnd] = "\c0You put your fishing pole away.";
 // fishCast - Displayed when the line is cast
 chatStrings.msg[fishCast] = "\c0You cast your line and wait...";
-// fishCast - Displayed when a fish is caught, %1 is the type of fish
-chatStrings.msg[fishCaught] = "\c5You caught a %1!!! Bait your hook and cast again to keep fishing!";
 // fishMove - Displayed when a player leaves their fishing spot before catching a fish
 chatStrings.msg[fishMove] = "\c0You leave your fishing spot and reel in your line.";
 // fishingNA - Displayed when a player tries fishing in water where it is not allowed
 chatStrings.msg[fishingNA] = "\c0This water has not been stocked with fish yet. No Fishing Here!";
 // fishPoleFirst - Displayed when a player tries to bait their hook before equipping their pole.
 chatStrings.msg[fishPoleFirst] = "\c0You must equip your fishing pole before you can bait your hook.";
-// fishBaited - Displayed when a player baits their hook, %1 is the type of bait
-chatStrings.msg[fishBaited] = "\c0You put a %1 on your hook.";
-// fishReelBait - Displayed when a player baits their hook if the line is already cast
-chatStrings.msg[fishReelBait] = "\c0You reel in your line and put a %1 on your hook.";
-// fishHasBait - Displayed when trying to bait a hook that already has bait. %1 is the bait already on the hook
-chatStrings.msg[fishHasBait] = "\c0You already have a %1 on your hook.";
 // fishSteal - Displayed when the fish is stolen by an AI. %1 is the type of AI
 chatStrings.msg[fishSteal] = "\c0A %1 stole your fish!";
+// fishCaught - Displayed when a fish is caught, %1 is the type of fish
+chatStrings.inv[fishCaught] = "\c5You caught a %name%!!! Bait your hook and cast again to keep fishing!";
+// fishBaited - Displayed when a player baits their hook, %1 is the type of bait
+chatStrings.inv[fishBaited] = "\c0You put a %name% on your hook.";
+// fishReelBait - Displayed when a player baits their hook if the line is already cast
+chatStrings.inv[fishReelBait] = "\c0You reel in your line and put a %name% on your hook.";
+// fishHasBait - Displayed when trying to bait a hook that already has bait. %1 is the bait already on the hook
+chatStrings.inv[fishHasBait] = "\c0You already have a %name% on your hook.";
 
 // Fishing Junk messages
 // These messages get displayed when "junk" is caught. A message will be
@@ -244,9 +251,61 @@ chatStrings.fishWait[19] = "\c0One more fish and then it's time to go hunting! Y
 chatStrings.NumWaitMsgs = 20;
 
 // Inventory messages ----------------------------------------------------------
-// invTooMany - Displayed when a player tries pickup an item they already have
-// the maximum of. %1 is the item name
-chatStrings.msg[invTooMany] = "\c0You cannot carry another %1.";
+// Substitution codes: do not change the text between the %'s
+// %name% - Item name
+// %pname% - Plural name
+// %desc% - Item description
+//
+// tooMany - Displayed when a player tries to pickup an item they already have
+// the maximum of.
+chatStrings.inv[tooMany] = "\c0You cannot carry another %name%.";
+// noAmmo - Displayed when a player runs out of ammo
+chatStrings.inv[noAmmo] = "\c0Your %name% is out of ammo.";
+// noThrown - Displayed when a player runs out of a throwing weapon
+chatStrings.inv[noThrown] = "\c0You have no more %pname% to throw.";
+// eatFull - Displayed when eating more than needed to restore full health
+chatStrings.inv[eatFull] = "\c0You gorge yourself on %name% then puke on your shoes. %1 point(s) were added to your Health.";
+// eatOK - Displayed when eating to restore health
+chatStrings.inv[eatOK] = "\c0You eat a %name% restoring %1 point(s) to your Health.";
+// sellOne - Displayed when selling an item
+chatStrings.inv[sellOne] = "\c0You sell 1 %name% for %1 arn.";
+// sellMany - Displayed when selling multiples of an item
+chatStrings.inv[sellMany] = "\c0You sell %1 %pname% for %2 arn.";
+// buyOne - Displayed when buying an item
+chatStrings.inv[buyOne] = "\c0You buy 1 %name% for %1 arn.";
+// buyMany - Displayed when buying multiples of an item
+chatStrings.inv[buyMany] = "\c0You buy %1 %pname% for %2 arn.";
+// affordOne - Displayed when trying to buy an item
+chatStrings.inv[affordOne] = "\c0You can\'t afford %1 arn for a %name%.";
+// affordMany - Displayed when trying to buy multiples of an item
+chatStrings.inv[affordMany] = "\c0You can\'t afford %1 arn for %pname%.";
+// pickOne - Displayed when picking up an item
+chatStrings.inv[pickOne] = "\c0You picked up 1 %name%.";
+// pickMany - Displayed when picking up multiples of an item
+chatStrings.inv[pickMany] = "\c0You picked up %1 %pname%.";
+// dropOne - Displayed when dropping an item
+chatStrings.inv[dropOne] = "\c0You drop 1 %name%.";
+// dropMany - Displayed when dropping multiples of an item
+chatStrings.inv[dropMany] = "\c0You drop %1 %pname%.";
+
+// noArmor - You cannot equip armor yet.
+chatStrings.msg[noArmor] = "\c0You cannot equip armor yet.";
+// noMagic - You cannot use magic yet.
+chatStrings.msg[noMagic] = "\c0You cannot use magic yet.";
+// noGems - You cannot use gems yet.
+chatStrings.msg[noGems] = "\c0You cannot use gems yet.";
+// noMisc - You cannot use this yet.
+chatStrings.msg[noMisc] = "\c0You cannot use this yet.";
+// noClan - This item does not belong to your clan.
+chatStrings.msg[noClan] = "\c0This item does not belong to your clan.";
+// lowSkull - You must be skull level %1 to pick up this item.
+chatStrings.msg[lowSkull] = "\c0You must be skull level %1 to pick up this item.";
+// gainArn - You gain $1 arn.
+chatStrings.msg[gainArn] = "\c0You gain %1 arn.";
+// spendArn - You spend $1 arn.
+chatStrings.msg[spendArn] = "\c0You spend %1 arn.";
+// minTransfer - You do not have %1 reserve arns to transfer.
+chatStrings.msg[minTransfer] = "\c0You do not have %1 reserve arns to transfer.";
 
 // Mount/Horse messages --------------------------------------------------------
 // mountMsg - Displayed when a player tries to mount an AI that is driven by
@@ -261,3 +320,13 @@ chatStrings.msg[stowHorse] = "\c0You put your horse back in the stable.";
 chatStrings.msg[horseLeave] = "\c0Your horse has gotten lonely and disowned you. It will accept whoever claims it and puts it back in the stable, as it's new owner.";
 // horseDie - Displayed when an owned horse dies.
 chatStrings.msg[horseDie] = "\c0Your horse has died.";
+// horseNoDrop - Displayed when trying to drop a horse on a no horse level.
+chatStrings.msg[horseNoDrop] = "\c0You can\'t drop a horse here.";
+// noHorse - Displayed when trying to ride a horse on a no horse level.
+chatStrings.msg[noHorse] = "\c0You can\'t bring your horse here.";
+
+// Death messages --------------------------------------------------------------
+// deathLoss - You have died, losing
+chatStrings.msg[deathLoss] = "\c1You have died, losing ";
+// deathNoLoss - You have died.
+chatStrings.msg[deathNoLoss] = "\c1You have died.";

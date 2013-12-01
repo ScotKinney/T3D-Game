@@ -82,14 +82,14 @@ function clientCmdPlayTeleportEffect(%position, %effectDataBlock)
 // ----------------------------------------------------------------------------
 
 // Update the Ammo Counter with current ammo, if not any then hide the counter.
-function clientCmdSetAmmoAmountHud(%amount, %amountInClips)
+function clientCmdSetAmmoAmountHud(%amount)
 {
    if (!%amount)
       AmmoAmount.setVisible(false);
    else
    {
       AmmoAmount.setVisible(true);
-      AmmoAmount.setText("Ammo: " @ %amount @ "/" @ %amountInClips);
+      AmmoAmount.setText(%amount);
    }
 }
 
@@ -97,22 +97,26 @@ function clientCmdSetAmmoAmountHud(%amount, %amountInClips)
 // update the Ammo Counter (just so we don't have to call it separately).
 // Passing an empty parameter ("") hides the HUD component.
 
-function clientCmdRefreshWeaponHUD(%amount, %preview, %ret, %zoomRet, %amountInClips)
+function clientCmdRefreshWeaponHUD(%amount, %preview, %ret, %zoomRet)
 {
    if (!%amount)
       AmmoAmount.setVisible(false);
    else
    {
       AmmoAmount.setVisible(true);
-      AmmoAmount.setText("Ammo: " @ %amount @ "/" @ %amountInClips);
+      AmmoAmount.setText(%amount);
    }
 
    if (%preview $= "")
-      WeaponHUD.setVisible(false);//PreviewImage.setVisible(false);
+   {
+      //WeaponHUD.setVisible(false);
+      PreviewImage.setVisible(false);
+   }
    else
    {
-      WeaponHUD.setVisible(true);//PreviewImage.setVisible(true);
-      PreviewImage.setbitmap("art/gui/weaponHud/"@ detag(%preview));
+      //WeaponHUD.setVisible(true);
+      PreviewImage.setVisible(true);
+      PreviewImage.setbitmap(%preview);
    }
 
    if (%ret $= "")
@@ -127,10 +131,12 @@ function clientCmdRefreshWeaponHUD(%amount, %preview, %ret, %zoomRet, %amountInC
    {
       if (%zoomRet $= "")
       {
+         ZoomReticle.setVisible(false);
          ZoomReticle.setBitmap("");
       }
       else
       {
+         ZoomReticle.setVisible(true);
          ZoomReticle.setBitmap("art/gui/weaponHud/"@ detag(%zoomRet));
       }
    }

@@ -177,9 +177,9 @@ function GameConnection::onDeath(%this, %sourceObject, %sourceClient, %damageTyp
 // ----------------------------------------------------------------------------
 // weapon HUD
 // ----------------------------------------------------------------------------
-function GameConnection::setAmmoAmountHud(%client, %amount, %amountInClips )
+function GameConnection::setAmmoAmountHud(%client, %amount)
 {
-   commandToClient(%client, 'SetAmmoAmountHud', %amount, %amountInClips);
+   commandToClient(%client, 'SetAmmoAmountHud', %amount);
 }
 
 function GameConnection::RefreshWeaponHud(%client, %amount, %preview, %ret, %zoomRet, %amountInClips)

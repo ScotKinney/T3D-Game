@@ -75,6 +75,7 @@ function Weapon::onInventory(%this,%obj,%amount)
       {
          %obj.unmountImage(%slot); // Unmount if it's been dropped
          %obj.lastWeapon = "";
+         %obj.client.lastWeapon = "";
       }
       else if ((%obj.client !$= "") && !%this.usesAmmo)
       {  // If it's a thrown weapon, we need to decrease the HUD ammo count
@@ -257,22 +258,23 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
    if ( %this.fireSound !$= "" )
       serverPlay3D(%this.fireSound,%obj.getTransform());
 
-   %canRearm =true;
+   %canRearm = true;
    if ( isObject(%this.item) && !%obj.isBot )
    {  // This is an inventory item so update counts
       if ( %this.usesAmmo )
          %ammoType = %this.ammo;
       else
          %ammoType = %this.item;
-      
-      %numLeft = %obj.decInventory(%ammoType, 1, true);
+
+      %obj.decInventory(%ammoType, 1, false);
+      %numLeft = %obj.getInventory(%ammoType);
       
       if ( %numLeft < 1 )
       {
          %obj.setImageHidden(%slot, false);
          %obj.unmountImage(%slot);
          %obj.lastWeapon = "";
-         %obj.updateInventoryString();
+         %obj.client.lastWeapon = "";
          %this.NoAmmoMessage(%obj);
          %canRearm = false;
       }
@@ -312,13 +314,31 @@ function Ammo::onInventory(%this,%obj,%amount)
          {
             %obj.setImageAmmo(%i, %amount != 0);
             %currentAmmo = %obj.getInventory(%this);
-            //AISK Changes: Start
             if (%obj.client !$= "")
             {
                %obj.client.setAmmoAmountHud(%currentAmmo);
             }
-            //AISK Changes: End
 
+         }
+   }
+}
+
+function Wpn::onInventory(%this,%obj,%amount)
+{
+   // A weapon has been added to inventory.
+   for (%i = 0; %i < 4; %i++)
+   {
+      if ((%image = %obj.getMountedImage(%i)) > 0)
+         if ( isObject(%image.item) && !isObject(%image.ammo) &&
+               (%image.item.getId() == %this.getId()) )
+         {
+            %obj.setImageAmmo(%i, %amount != 0);
+            %currentAmmo = %obj.getInventory(%this);
+            if (%obj.client !$= "")
+            {
+               %obj.client.setAmmoAmountHud(%currentAmmo);
+            }
+            break;
          }
    }
 }
@@ -368,7 +388,7 @@ function ShapeBase::AVMountImage(%this, %weapon, %slot)
                   if ( %this.getInventory(%weapon.ammo) > 0 )
                      %slotUsed = true;
                   else
-                     messageClient(%this.client, 'MsgItemPickup', '\c0Your %1 is out of ammo.', %item.pickupName);
+                     messageClient(%this.client, 'InventoryMsg',"", "noAmmo", %weapon.item.ItemID, "a", true, true, 0);
                }
                else
                   %slotUsed = true;
@@ -383,6 +403,10 @@ function ShapeBase::AVMountImage(%this, %weapon, %slot)
          %this.mountImage(%weapon, 0);
          %canH2H = (%this.isMounted() ? false : %weapon.canH2H);
          %this.lastWeapon = %weapon;
+         if ( isObject(%weapon.item) )
+            %this.client.lastWeapon = %weapon.item;
+         else
+            %this.client.lastWeapon = "";
       }
    }
 
@@ -403,15 +427,11 @@ function WeaponImage::NoAmmoMessage(%this, %obj)
 
    if ( %this.item.usesAmmo )
    {
-      messageClient(%obj.client, 'MsgItemPickup', '\c0Your %1 is out of ammo.', %this.item.pickupName);
+      messageClient(%obj.client, 'InventoryMsg',"", "noAmmo", %this.item.ItemID, "a", true, true, 0);
    }
    else
    {
-      if ( %this.item.pluralName !$= "" )
-         %pname = %this.item.pluralName;
-      else
-         %pname = %this.item.pickupName @ "s";
-      messageClient(%obj.client, 'MsgItemPickup', '\c0You have no more %1 to throw.', %pname);
+      messageClient(%obj.client, 'InventoryMsg',"", "noThrown", %this.item.ItemID, "a", true, true, 0);
    }
 }
 

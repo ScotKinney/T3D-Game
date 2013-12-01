@@ -109,7 +109,7 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/Sword_Val_Mounted.dts";
-   //item = ValMaleSwordWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = ValMaleSwordWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
    hthNumAttacks = 5;
    hthAttack[0]                     = SwordSwingOne;
@@ -128,7 +128,7 @@ datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/BF_SwordMtd_Val.dts";
-   //item = ValFemaleSwordWeapon;
+   item = ValFemaleSwordWeapon;
    canH2H = false;
 };
 
@@ -136,7 +136,7 @@ datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/LongSword_Mounted.dts";
-   //item = MythMaleSwordWeapon;
+   item = MythMaleSwordWeapon;
    canH2H = false;
 };
 
@@ -144,7 +144,7 @@ datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/BF_LSword_Mtd.dts";
-   //item = MythFemaleSwordWeapon;
+   item = MythFemaleSwordWeapon;
    canH2H = false;
 };
 
@@ -152,7 +152,7 @@ datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/scimi/Scimitar_Mounted1_4.dts";
-   //item = FJMaleSwordWeapon;
+   item = FJMaleSwordWeapon;
    canH2H = false;
 };
 
@@ -160,7 +160,7 @@ datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/Scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/Scimi/Scimitar_BF_Mtd.dts";
-   //item = FJFemaleSwordWeapon;
+   item = FJFemaleSwordWeapon;
    canH2H = false;
 };
 
@@ -168,7 +168,7 @@ datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/SpartanSword_Mounted1_4.dts";
-   //item = KardMaleSwordWeapon;
+   item = KardMaleSwordWeapon;
    canH2H = false;
 };
 
@@ -176,7 +176,7 @@ datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/BF_Sword_Kard_Mtd.dts";
-   //item = KardFemaleSwordWeapon;
+   item = KardFemaleSwordWeapon;
    canH2H = false;
 };
 
@@ -184,7 +184,7 @@ datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/SwordTok_Mounted.dts";
-   //item = TokMaleSwordWeapon;
+   item = TokMaleSwordWeapon;
    canH2H = false;
 };
 
@@ -192,12 +192,6 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
 {
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
-   //item = TokFemaleSwordWeapon;
+   item = TokFemaleSwordWeapon;
    canH2H = false;
 };
-
-// Cheat to test weapons before we have the full inventory system implemented.
-$MaleWeaponCycle = "RightHandImage" TAB "ValMaleSwordImage" TAB "MythMaleSwordImage"
-   TAB "FJMaleSwordImage" TAB "KardMaleSwordImage" TAB "TokMaleSwordImage";
-$FemaleWeaponCycle = "RightHandImage" TAB "ValFemaleSwordImage" TAB "MythFemaleSwordImage"
-   TAB "FJFemaleSwordImage" TAB "KardFemaleSwordImage" TAB "TokFemaleSwordImage";

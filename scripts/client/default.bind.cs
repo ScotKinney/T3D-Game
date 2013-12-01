@@ -578,7 +578,7 @@ GlobalActionMap.bind(keyboard, "tilde", toggleConsole);
 GlobalActionMap.bindCmd(keyboard, "alt k", "cls();","");
 GlobalActionMap.bindCmd(keyboard, "alt enter", "", "Canvas.attemptFullscreenToggle();");
 GlobalActionMap.bindCmd(keyboard, "F1", "", "contextHelp();");
-moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
+//moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
 
 
 // ----------------------------------------------------------------------------
@@ -721,7 +721,7 @@ function toggleFlashlight(%val)
    if (%val)  
    {  
       // use the lantern item in inventory. Lantern Item is ID 88
-      commandToServer('UseItem', "88", "1", "5");
+      commandToServer('UseItem', "74", "1", "5");
    }  
 }  
 moveMap.bind( keyboard, "l", toggleFlashlight );

@@ -66,22 +66,44 @@ function GameConnection::AuthenticateUser(%client)
    // if this is the first time that the client has played, then there will
    // not yet be an entry in the players table for them, so we need to create it
    // otherwise we update it
-   %incVisits = %client.transfering ? "" : ", NumVisits=NumVisits+1";
-   if(!DB::Update("AVPlayers",
-   /*SET*/        "IP='"@NextToken(%client.getAddress(),"",":")@"', "@
-                  "LastSeen=NOW()"@
-                  %incVisits,
-   /*WHERE*/      "ID='"@%dbUserID@"'"))
+   %needsRecord = true;
+   %result = DB::Select("HP_current, skulls, Arns, lastWeapon, Inventory",
+                        "AVPlayers", "ID='"@%dbUserID@"'");
+   if(%result.getNumRows() > 0)
    {
-      // need to create an entry
+      %client.health = %result.HP_current;
+      %client.skullLevel = %result.skulls;
+      %client.arns = %result.Arns;
+      %client.lastWeapon = %result.lastWeapon;
+      %inventory = %result.Inventory;
+      %needsRecord = false;
+   }
+   %result.Delete();
+
+   if ( %needsRecord )
+   {
       if(!DB::Insert("AVPlayers",
-      /*SET*/        "id, IP, NumVisits, LastSeen, Arns, Inventory",
+      /*SET*/        "id, IP, NumVisits, LastSeen, skulls, Arns, lastWeapon, Inventory",
       /*VALUES*/     "'"@%dbUserID@"', "@
                      "'"@NextToken(%client.getAddress(),"",":")@"', "@
-                     "'1', 'NOW()', '3000',''"))
+                     "'1', 'NOW()', '1', '3000','',''"))
       {
          return("oops - could not create player record!");
       }
+      %client.health = 300;
+      %client.skullLevel = 1;
+      %client.arns = 3000;
+      %client.lastWeapon = "";
+      %inventory = "";
+   }
+   else
+   {
+      %incVisits = %client.transfering ? "" : ", NumVisits=NumVisits+1";
+      DB::Update("AVPlayers",
+      /*SET*/        "IP='"@NextToken(%client.getAddress(),"",":")@"', "@
+                     "LastSeen=NOW()"@
+                     %incVisits,
+      /*WHERE*/      "ID='"@%dbUserID@"'");
    }
 
    // now mark the user as logged-in
@@ -91,7 +113,7 @@ function GameConnection::AuthenticateUser(%client)
    /*WHERE*/  "id='"@%dbUserID@"'");
 
    // finally, create the script object that will track the players stats
-   %client.createPersistantStats(%dbUserID, %dbUserName);
+   %client.createPersistantStats(%dbUserID, %dbUserName, %inventory);
    %client.joinTime = getSimTime() / 1000;
 
    // set the players subscription information
@@ -139,15 +161,28 @@ function GameConnection::DisconnectUser(%client)
 {
    echo("Finalizing client database entries for "@%client.pData.dbName);
    %playTime = ((getSimTime() / 1000) - %client.joinTime) / 60;
+   %inventory = %client.getInventoryString();
    if ( $Server::DB::Remote )
    {
+      %inventory = strreplace(%inventory, "\t", "|");
       %args = "uID=" @ %client.pData.dbID;
+      %args = %args @ "&uNW=" @ %client.netWorth;
+      %args = %args @ "&hlth=" @ %client.health;
+      %args = %args @ "&wpn=" @ %client.lastWeapon;
+      %args = %args @ "&ptm=" @ %playTime;
+      %args = %args @ "&inv=" @ %inventory;
       remoteDBCommand("DisconnectUser", %args, %client);
    }
    else
+   {
+      DB::Update("AVPlayers", "HP_current='" @ %client.health @ "', " @
+                              "lastWeapon='" @ %client.lastWeapon @ "', " @
+                              "Inventory='" @ %inventory @ "'", 
+                              "ID='"@%client.pData.dbID@"'");
+      %client.writeNetWorth(true);
       DB::Update("AVUserLogin", "currentServerId=''", "id='"@%client.pData.dbID@"'");
-   //DB::SprocNoRet("sp_StatsPlayTime", "'" @ %client.pData.dbID @ "','" @ %playTime @ "'");
-   //%client.writeAllPersistantStats(); 
+   }
+
    %client.deletePersistantStats();
 
    // Tell chat server to remove them from the local list

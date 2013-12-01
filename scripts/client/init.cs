@@ -131,6 +131,7 @@ function initClient()
    exec("art/gui/riftPlayGui.gui");
    exec("art/gui/chat/ChatHud.gui");
    exec("./chatHud.cs");
+   exec("./alterVerse/chatCommands.cs");
    exec("./chatParties.cs");
    exec("art/gui/chat/chatPopup.gui");
    exec("scripts/gui/chatPopupGui.cs");
@@ -153,6 +154,12 @@ function initClient()
    exec("scripts/gui/riftPlayGui.cs");
    exec("scripts/gui/loadingGui.cs");
    exec("scripts/gui/optionsDlg.cs");
+
+   // temporary toolbar scripts
+   exec("art/gui/InventoryGui.gui");
+   exec("scripts/gui/avToolbar.cs");
+   exec("art/gui/arnTransfer.gui");
+   exec("scripts/gui/arnTransferGui.cs");
 
    // Client scripts
    exec("./client.cs");

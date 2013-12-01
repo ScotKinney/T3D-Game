@@ -35,7 +35,7 @@ singleton GuiControlProfile (QuestMessageTextProfile)
 singleton GuiControlProfile (QuestMessageFrameProfile)
 {
    opaque = false;
-   bitmap = "art/gui/toolbar/AVToolbarBorder.png";
+   bitmap = "core/art/gui/toolbar/AVToolbarBorder.png";
    hasBitmapArray = "1";
    category = "AlterVerse";
 };

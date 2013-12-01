@@ -147,7 +147,7 @@ datablock ItemData(ClanTreasuryItem)
 //
    //// and give half to the attacking player
    //%playerShare = mRound(%amountToTake / 2);
-   //%client.giveCoins("arn", %playerShare);
+   //%client.giveArns(%playerShare);
    //%client.netWorth = mAddBigNumbers(%client.netWorth, %playerShare);
    //%client.writeNetWorth();
       //

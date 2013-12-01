@@ -188,6 +188,14 @@ new GuiControlProfile (GuiTextProfile)
    category = "Core";
 };
 
+if( !isObject( GuiTextBoldProfile ) )
+new GuiControlProfile (GuiTextBoldProfile : GuiTextProfile)
+{
+   fontType = "Arial Bold";
+   fontSize = 16;
+   category = "Core";
+};
+
 if( !isObject( GuiTextRightProfile ) )
 new GuiControlProfile (GuiTextRightProfile : GuiTextProfile)
 {

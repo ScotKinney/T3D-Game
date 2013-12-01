@@ -57,6 +57,13 @@ exec("./AlterVerse/worldItems.cs");
    //exec("./alterVerse/raidHours.cs");
 //}
 
+// Load Lantern
+exec("./alterVerse/Lantern.cs");
+
+// Load Fishing scripts
+exec("./alterVerse/fishBait.cs");
+exec("./alterVerse/fishing.cs");
+
 // Load all spells in the spells folder.
 // This could optionally be put into a function and called manually.
 // NOTE TO EDITOR: I would personally call each spell as it is cast, then unload it when finished. Saves memory. -Abe
@@ -64,7 +71,7 @@ exec("./AlterVerse/worldItems.cs");
 //{
 //   exec(%spellFile);
 //}
-exec("./SpellTemplates.cs");
-exec("./DefaultBezierProjectile.cs");
-exec("./Fireball.cs");
-exec("./Spells/Fireball.cs");
+//exec("./SpellTemplates.cs");
+//exec("./DefaultBezierProjectile.cs");
+//exec("./Fireball.cs");
+//exec("./Spells/Fireball.cs");

@@ -103,16 +103,3 @@ function GameConnection::calcNetWorth(%client)
 
    %client.netWorth = %worth;
 }
-
-// save the clients net worth in the database
-function GameConnection::writeNetWorth(%client)
-{
-   if(!isObject(%client.pData))
-      return;
-      
-   %worth = %client.netWorth;
-   
-   DB::Update("citizen_one",
-   /*set*/    "networth='"@ %worth @ "'",
-   /*where*/  "id='"@ %client.pData.dbID @"'");
-}

@@ -78,6 +78,7 @@ function httpLoginStage2::process(%this)
       $pref::Player::ClanID = %this.clan_id;
       $pref::Player::WorldID = %this.world_id;
       $pref::Player::SkullLevel = %this.skulls;
+      $AlterVerse::PlayerSkullLevel = %this.skulls;
       $pref::Player::Gender = %this.gender;
       %timeLeft = %this.time_left - 3600; // Time zone issue, web reports 1 hour more than the real time
       $AlterVerse::RoundEnd = mFloor(getSimTime() / 1000) + %timeLeft;
@@ -88,6 +89,7 @@ function httpLoginStage2::process(%this)
       $currentUsername = $pref::Player::Name;
 
       // login stage 2 complete
+      InventoryRequest();
       $TAP::isLoggedIn = true;
       if ( !$TAP::isTappedIn )
          startIntroVideo();
@@ -111,10 +113,7 @@ function processLoginFailure( %message )
 function InventoryRequest()
 {
    if( isObject($AlterVerse::invList) )
-   {  // The inventory list has already been loaded, we can skip to ServerRequest
-      ServerRequest();
       return;
-   }
    
    %request = new HTTPObject() {
       class = "getInventoryList";
@@ -131,9 +130,7 @@ function getInventoryList::process( %this )
    {
    case "success":
       if( !isObject($AlterVerse::invList) )
-      {
          $AlterVerse::invList = new ArrayObject();
-      }
       $AlterVerse::invList.empty();
       
       //echo("ITEMS" SPC %this.items);
@@ -148,8 +145,8 @@ function getInventoryList::process( %this )
          $AlterVerse::invList.add(%id, %value);
       }
       DescriptionsRequest();
-      if(BCToolbar.isAwake())
-         BCToolbar.updateIcons();
+      if(AVToolbar.isAwake())
+         AVToolbar.updateIcons();
    default:
       echo(%this.message);
       MessageBoxOK( "Could not get inventory list", 
@@ -192,7 +189,6 @@ function getDescriptionList::process( %this )
          $AlterVerse::invDesc[%id] = %outStr;
       }
 
-      ServerRequest();
    default:
       echo(%this.message);
       MessageBoxOK( "Could not get inventory description list", 

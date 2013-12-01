@@ -24,6 +24,20 @@ datablock SFXProfile(SteedRearCrySound)
    preload = true;
 };
 
+datablock SFXProfile(SteedMoveBubblesSound)
+{
+   filename    = "art/sound/water_splash.ogg";
+   description = "AudioCloseLoop3D";
+   preload = true;
+};
+
+datablock SFXProfile(SteedWaterBreathSound)
+{
+   filename    = "art/sound/footsteps/water_wl1";
+   description = "AudioClose3D";
+   preload = true;
+};
+
 //----------------------------------------------------------------------------
 // Splash
 //----------------------------------------------------------------------------
@@ -579,3 +593,5 @@ datablock PlayerData(WildHorse : DefaultHorse)
 {
    skinName = "mustang";
 };
+
+exec("./horseScript.cs");
