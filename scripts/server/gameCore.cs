@@ -357,9 +357,17 @@ package GameCore
          %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
          %inventory = %inventory TAB Thunderbolt_Potion.ItemID SPC "10";
          %inventory = %inventory TAB TokaraMushroom.ItemID SPC "20";
-         %this.resetInventory(%inventory);
+         %this.startInv = %inventory;
+         //%this.resetInventory(%inventory);
       }
 
+      if (%this.startInv !$= "")
+      {
+         %this.resetInventory(%this.startInv);
+         %this.startInv = "";
+      }
+
+      %this.inGame = true;
       Game.onClientEnterGame(%this);
    }
 

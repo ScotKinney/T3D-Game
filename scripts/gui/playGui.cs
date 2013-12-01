@@ -129,7 +129,7 @@ function PlayGui::ResizeCenterPrint(%this, %newWidth)
    // toolbar and 18 pixels from each side of the screen
    %ctrlWidth = %newWidth - 36;
    %barHeight = getWord(AVToolbar.getExtent(), 1);
-   %barHeight = 30;
+   //%barHeight = 30;
    centerPrintDlg.resize(18, %barHeight + 4, %ctrlWidth, 23);
    CenterPrintText.resize(2, 2, %ctrlWidth - 4, 19);
 }

@@ -20,7 +20,8 @@ function GameConnection::createPersistantStats(%client, %id, %name, %inventory)
    if(!isObject(%client.pInv))
       %client.pInv = new ArrayObject();
 
-   %client.resetInventory(%inventory);
+   if ( %inventory !$= "" )
+      %client.resetInventory(%inventory);
 }
 
 function GameConnection::deletePersistantStats(%client)

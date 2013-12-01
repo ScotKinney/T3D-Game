@@ -113,7 +113,8 @@ function GameConnection::AuthenticateUser(%client)
    /*WHERE*/  "id='"@%dbUserID@"'");
 
    // finally, create the script object that will track the players stats
-   %client.createPersistantStats(%dbUserID, %dbUserName, %inventory);
+   %client.startInv = %inventory;
+   %client.createPersistantStats(%dbUserID, %dbUserName, "");
    %client.joinTime = getSimTime() / 1000;
 
    // set the players subscription information

@@ -94,7 +94,21 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.skullLevel = %this.skullLevel;
    %client.arns = %this.wealth;
    %client.lastWeapon = %this.weapon;
-   %client.createPersistantStats(%this.dbID, %this.dbUserName, %this.inventory);
+   if ( %client.inGame )
+   {
+      %client.createPersistantStats(%this.dbID, %this.dbUserName, %this.inventory);
+      %lastweapon = %client.lastWeapon;
+      if ( isObject(%client.player) && isObject(%lastweapon) &&
+         %client.player.hasInventory(%lastweapon) && isObject(%lastweapon.image) )
+      {
+         %client.player.AVMountImage(%lastweapon.image, $WeaponSlot);
+      }
+   }
+   else
+   {
+      %client.startInv = %this.inventory;
+      %client.createPersistantStats(%this.dbID, %this.dbUserName, "");
+   }
    %client.buildRights = %this.rights;
    %client.Homeworld = %this.homeworld;
    %client.Gender = %this.gender;
