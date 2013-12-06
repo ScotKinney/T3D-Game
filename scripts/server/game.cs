@@ -271,8 +271,8 @@ function GenerateItemData()
                if ( %results2.getNumRows() > 0 )
                {
                   %fo.writeLine("   table = \"Magic\";");
-                  %fo.writeLine("   spellDef = " @ %results2.spell @ ";");
-                  %fo.writeLine("   spellTarget = " @ %results2.target @ ";");
+                  %fo.writeLine("   spellDef = \"" @ strreplace(%results2.spell, " ", "") @ "\";");
+                  %fo.writeLine("   spellTarget = \"" @ %results2.target @ "\";");
                }
                else
                   WriteItemError(%results.name, "Magic", %fo);
