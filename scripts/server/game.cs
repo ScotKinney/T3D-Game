@@ -265,6 +265,18 @@ function GenerateItemData()
                else
                   WriteItemError(%results.name, "Food", %fo);
             }
+            else if ( strupr(%results.tag) $= "MAGIC" )// Magic Spell
+            {
+               %results2 = DB::Select("*", "AVMagic", "name = '" @ %results.name @ "'");
+               if ( %results2.getNumRows() > 0 )
+               {
+                  %fo.writeLine("   table = \"Magic\";");
+                  %fo.writeLine("   spellDef = " @ %results2.spell @ ";");
+                  %fo.writeLine("   spellTarget = " @ %results2.target @ ";");
+               }
+               else
+                  WriteItemError(%results.name, "Magic", %fo);
+            }
             else if ( strupr(%results.tag) $= "WPN" ) // Weapon item
             {
                %fo.writeLine("");
