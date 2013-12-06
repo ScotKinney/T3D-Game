@@ -20,6 +20,9 @@ datablock ItemData(AFK_Rune)
    sticky = true;
 
    cost = 0;
+   table = "Magic";
+   spellDef = AFK Rune;
+   spellTarget = Self;
 };
 $AlterVerse::ItemNames[55] = "AFK_Rune";
 
@@ -89,6 +92,9 @@ datablock ItemData(Astral_Passport)
    sticky = true;
 
    cost = 0;
+   table = "Magic";
+   spellDef = Astral Passport;
+   spellTarget = Self;
 };
 $AlterVerse::ItemNames[70] = "Astral_Passport";
 
@@ -183,6 +189,9 @@ datablock ItemData(BBQ_Ribs_Potion)
    sticky = true;
 
    cost = 600;
+   table = "Magic";
+   spellDef = FireballSpell;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[56] = "BBQ_Ribs_Potion";
 
@@ -421,6 +430,9 @@ datablock ItemData(Evil_Eye_Potion)
    sticky = true;
 
    cost = 100;
+   table = "Magic";
+   spellDef = DazeSpell;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[63] = "Evil_Eye_Potion";
 
@@ -549,6 +561,9 @@ datablock ItemData(Gargoyles_Fire_Balls)
    sticky = true;
 
    cost = 6000;
+   table = "Magic";
+   spellDef = Gargoyles Fire Balls;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[71] = "Gargoyles_Fire_Balls";
 
@@ -721,6 +736,9 @@ datablock ItemData(Human_Torch_Potion)
    sticky = true;
 
    cost = 2000;
+   table = "Magic";
+   spellDef = RainOfFireSpell;
+   spellTarget = Area;
 };
 $AlterVerse::ItemNames[59] = "Human_Torch_Potion";
 
@@ -743,6 +761,9 @@ datablock ItemData(InsectInside_Potion)
    sticky = true;
 
    cost = 2000;
+   table = "Magic";
+   spellDef = ManaInfusionSpell;
+   spellTarget = Friend;
 };
 $AlterVerse::ItemNames[60] = "InsectInside_Potion";
 
@@ -765,6 +786,9 @@ datablock ItemData(Invisibility_Rune)
    sticky = true;
 
    cost = 500;
+   table = "Magic";
+   spellDef = Invisibility Rune;
+   spellTarget = Self;
 };
 $AlterVerse::ItemNames[58] = "Invisibility_Rune";
 
@@ -981,6 +1005,9 @@ datablock ItemData(Laser_Drone)
    sticky = true;
 
    cost = 9000;
+   table = "Magic";
+   spellDef = Laser Drone;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[72] = "Laser_Drone";
 
@@ -1003,6 +1030,9 @@ datablock ItemData(Leaf_Me_Alone_Potion)
    sticky = true;
 
    cost = 2000;
+   table = "Magic";
+   spellDef = FlashHealSpell;
+   spellTarget = Friend;
 };
 $AlterVerse::ItemNames[61] = "Leaf_Me_Alone_Potion";
 
@@ -1072,6 +1102,9 @@ datablock ItemData(Levitation_Rune)
    sticky = true;
 
    cost = 100;
+   table = "Magic";
+   spellDef = Levitation Rune;
+   spellTarget = Self;
 };
 $AlterVerse::ItemNames[66] = "Levitation_Rune";
 
@@ -1257,6 +1290,9 @@ datablock ItemData(Multi_Mine_Potion)
    sticky = true;
 
    cost = 2000;
+   table = "Magic";
+   spellDef = Multi Mine Potion;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[62] = "Multi_Mine_Potion";
 
@@ -1548,6 +1584,9 @@ datablock ItemData(Ring_of_Fire_Rune)
    sticky = true;
 
    cost = 1500;
+   table = "Magic";
+   spellDef = AoEFireballSpell;
+   spellTarget = Area;
 };
 $AlterVerse::ItemNames[65] = "Ring_of_Fire_Rune";
 
@@ -1639,6 +1678,9 @@ datablock ItemData(Sazzons_Scepter)
    sticky = true;
 
    cost = 7000;
+   table = "Magic";
+   spellDef = Sazzons Scepter;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[68] = "Sazzons_Scepter";
 
@@ -1661,6 +1703,9 @@ datablock ItemData(Shard_of_Boltarc)
    sticky = true;
 
    cost = 10000;
+   table = "Magic";
+   spellDef = Shard of Boltarc;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[53] = "Shard_of_Boltarc";
 
@@ -1683,6 +1728,9 @@ datablock ItemData(Shards_of_Ice_Crystal)
    sticky = true;
 
    cost = 800;
+   table = "Magic";
+   spellDef = FrostBarrageSpell;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[67] = "Shards_of_Ice_Crystal";
 
@@ -2066,6 +2114,9 @@ datablock ItemData(Solo_Mine_Potion)
    sticky = true;
 
    cost = 1500;
+   table = "Magic";
+   spellDef = Solo Mine Potion;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
 
@@ -2113,6 +2164,9 @@ datablock ItemData(The_Claw_Potion)
    sticky = true;
 
    cost = 800;
+   table = "Magic";
+   spellDef = BlinkSpell;
+   spellTarget = Self;
 };
 $AlterVerse::ItemNames[64] = "The_Claw_Potion";
 
@@ -2135,6 +2189,9 @@ datablock ItemData(Thors_Hammer)
    sticky = true;
 
    cost = 8000;
+   table = "Magic";
+   spellDef = Thors Hammer;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[69] = "Thors_Hammer";
 
@@ -2157,6 +2214,9 @@ datablock ItemData(Thunderbolt_Potion)
    sticky = true;
 
    cost = 600;
+   table = "Magic";
+   spellDef = Thunderbolt Potion;
+   spellTarget = Enemy;
 };
 $AlterVerse::ItemNames[52] = "Thunderbolt_Potion";
 
