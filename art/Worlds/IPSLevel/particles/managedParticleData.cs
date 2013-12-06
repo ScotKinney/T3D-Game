@@ -8,8 +8,8 @@
 
 datablock ParticleData(ParticleRockImpactInner01)
 {
-   textureName = "art/Worlds/EmptyRoom/particles/rock_impact_1_inner.png";
-   animTexName = "art/Worlds/EmptyRoom/particles/rock_impact_1_inner.png";
+   textureName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
+   animTexName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
    gravityCoefficient = "0.541667";
    inheritedVelFactor = "1.875";
    spinSpeed = "0.229167";
