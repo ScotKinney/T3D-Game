@@ -21,8 +21,8 @@ datablock ItemData(AFK_Rune)
 
    cost = 0;
    table = "Magic";
-   spellDef = AFK Rune;
-   spellTarget = Self;
+   spellDef = "AFKRune";
+   spellTarget = "Self";
 };
 $AlterVerse::ItemNames[55] = "AFK_Rune";
 
@@ -93,8 +93,8 @@ datablock ItemData(Astral_Passport)
 
    cost = 0;
    table = "Magic";
-   spellDef = Astral Passport;
-   spellTarget = Self;
+   spellDef = "AstralPassport";
+   spellTarget = "Self";
 };
 $AlterVerse::ItemNames[70] = "Astral_Passport";
 
@@ -190,8 +190,8 @@ datablock ItemData(BBQ_Ribs_Potion)
 
    cost = 600;
    table = "Magic";
-   spellDef = FireballSpell;
-   spellTarget = Enemy;
+   spellDef = "FireballSpell";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[56] = "BBQ_Ribs_Potion";
 
@@ -431,8 +431,8 @@ datablock ItemData(Evil_Eye_Potion)
 
    cost = 100;
    table = "Magic";
-   spellDef = DazeSpell;
-   spellTarget = Enemy;
+   spellDef = "DazeSpell";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[63] = "Evil_Eye_Potion";
 
@@ -562,8 +562,8 @@ datablock ItemData(Gargoyles_Fire_Balls)
 
    cost = 6000;
    table = "Magic";
-   spellDef = Gargoyles Fire Balls;
-   spellTarget = Enemy;
+   spellDef = "GargoylesFireBalls";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[71] = "Gargoyles_Fire_Balls";
 
@@ -737,8 +737,8 @@ datablock ItemData(Human_Torch_Potion)
 
    cost = 2000;
    table = "Magic";
-   spellDef = RainOfFireSpell;
-   spellTarget = Area;
+   spellDef = "RainOfFireSpell";
+   spellTarget = "Area";
 };
 $AlterVerse::ItemNames[59] = "Human_Torch_Potion";
 
@@ -762,8 +762,8 @@ datablock ItemData(InsectInside_Potion)
 
    cost = 2000;
    table = "Magic";
-   spellDef = ManaInfusionSpell;
-   spellTarget = Friend;
+   spellDef = "ManaInfusionSpell";
+   spellTarget = "Friend";
 };
 $AlterVerse::ItemNames[60] = "InsectInside_Potion";
 
@@ -787,8 +787,8 @@ datablock ItemData(Invisibility_Rune)
 
    cost = 500;
    table = "Magic";
-   spellDef = Invisibility Rune;
-   spellTarget = Self;
+   spellDef = "InvisibilityRune";
+   spellTarget = "Self";
 };
 $AlterVerse::ItemNames[58] = "Invisibility_Rune";
 
@@ -1006,8 +1006,8 @@ datablock ItemData(Laser_Drone)
 
    cost = 9000;
    table = "Magic";
-   spellDef = Laser Drone;
-   spellTarget = Enemy;
+   spellDef = "LaserDrone";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[72] = "Laser_Drone";
 
@@ -1031,8 +1031,8 @@ datablock ItemData(Leaf_Me_Alone_Potion)
 
    cost = 2000;
    table = "Magic";
-   spellDef = FlashHealSpell;
-   spellTarget = Friend;
+   spellDef = "FlashHealSpell";
+   spellTarget = "Friend";
 };
 $AlterVerse::ItemNames[61] = "Leaf_Me_Alone_Potion";
 
@@ -1103,8 +1103,8 @@ datablock ItemData(Levitation_Rune)
 
    cost = 100;
    table = "Magic";
-   spellDef = Levitation Rune;
-   spellTarget = Self;
+   spellDef = "LevitationRune";
+   spellTarget = "Self";
 };
 $AlterVerse::ItemNames[66] = "Levitation_Rune";
 
@@ -1291,8 +1291,8 @@ datablock ItemData(Multi_Mine_Potion)
 
    cost = 2000;
    table = "Magic";
-   spellDef = Multi Mine Potion;
-   spellTarget = Enemy;
+   spellDef = "MultiMinePotion";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[62] = "Multi_Mine_Potion";
 
@@ -1585,8 +1585,8 @@ datablock ItemData(Ring_of_Fire_Rune)
 
    cost = 1500;
    table = "Magic";
-   spellDef = AoEFireballSpell;
-   spellTarget = Area;
+   spellDef = "AoEFireballSpell";
+   spellTarget = "Area";
 };
 $AlterVerse::ItemNames[65] = "Ring_of_Fire_Rune";
 
@@ -1679,8 +1679,8 @@ datablock ItemData(Sazzons_Scepter)
 
    cost = 7000;
    table = "Magic";
-   spellDef = Sazzons Scepter;
-   spellTarget = Enemy;
+   spellDef = "SazzonsScepter";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[68] = "Sazzons_Scepter";
 
@@ -1704,8 +1704,8 @@ datablock ItemData(Shard_of_Boltarc)
 
    cost = 10000;
    table = "Magic";
-   spellDef = Shard of Boltarc;
-   spellTarget = Enemy;
+   spellDef = "ShardofBoltarc";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[53] = "Shard_of_Boltarc";
 
@@ -1729,8 +1729,8 @@ datablock ItemData(Shards_of_Ice_Crystal)
 
    cost = 800;
    table = "Magic";
-   spellDef = FrostBarrageSpell;
-   spellTarget = Enemy;
+   spellDef = "FrostBarrageSpell";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[67] = "Shards_of_Ice_Crystal";
 
@@ -2115,8 +2115,8 @@ datablock ItemData(Solo_Mine_Potion)
 
    cost = 1500;
    table = "Magic";
-   spellDef = Solo Mine Potion;
-   spellTarget = Enemy;
+   spellDef = "SoloMinePotion";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
 
@@ -2165,8 +2165,8 @@ datablock ItemData(The_Claw_Potion)
 
    cost = 800;
    table = "Magic";
-   spellDef = BlinkSpell;
-   spellTarget = Self;
+   spellDef = "BlinkSpell";
+   spellTarget = "Self";
 };
 $AlterVerse::ItemNames[64] = "The_Claw_Potion";
 
@@ -2190,8 +2190,8 @@ datablock ItemData(Thors_Hammer)
 
    cost = 8000;
    table = "Magic";
-   spellDef = Thors Hammer;
-   spellTarget = Enemy;
+   spellDef = "ThorsHammer";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[69] = "Thors_Hammer";
 
@@ -2215,8 +2215,8 @@ datablock ItemData(Thunderbolt_Potion)
 
    cost = 600;
    table = "Magic";
-   spellDef = Thunderbolt Potion;
-   spellTarget = Enemy;
+   spellDef = "ThunderboltPotion";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[52] = "Thunderbolt_Potion";
 
