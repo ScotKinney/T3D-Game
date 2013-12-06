@@ -34,7 +34,7 @@ datablock SpellData(DefaultTargetSpell){
 
 
 datablock SpellData(DefaultSelfSpell){
-   CastType = Self;
+   CastType = "Self";
    TargetType = "Object";
    TypeMask = $TypeMasks::PlayerObjectType;
    SpellDecalManager = DefaultSpellIndicator;

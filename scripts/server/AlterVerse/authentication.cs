@@ -163,6 +163,8 @@ function GameConnection::DisconnectUser(%client)
    echo("Finalizing client database entries for "@%client.pData.dbName);
    %playTime = ((getSimTime() / 1000) - %client.joinTime) / 60;
    %inventory = %client.getInventoryString();
+   if ( %inventory $= "" )
+      %inventory = %client.startInv;
    if ( $Server::DB::Remote )
    {
       %inventory = strreplace(%inventory, "\t", "|");

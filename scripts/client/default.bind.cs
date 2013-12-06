@@ -580,17 +580,6 @@ GlobalActionMap.bindCmd(keyboard, "alt enter", "", "Canvas.attemptFullscreenTogg
 GlobalActionMap.bindCmd(keyboard, "F1", "", "contextHelp();");
 //moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
 
-
-// ----------------------------------------------------------------------------
-// IPS Spells
-// ----------------------------------------------------------------------------
-moveMap.bind(keyboard, "7", FireballTest);
-function FireballTest(%val)
-{
-   if(%val)
-      CastSpellOnServer(Fireball1);
-}
-
 // mouse cursor toggle by right mouse button
 function toggleCursor( %val ) 
 {
@@ -720,7 +709,7 @@ function toggleFlashlight(%val)
 {  
    if (%val)  
    {  
-      // use the lantern item in inventory. Lantern Item is ID 88
+      // use the lantern item in inventory. Lantern Item is ID 74
       commandToServer('UseItem', "74", "1", "5");
    }  
 }  

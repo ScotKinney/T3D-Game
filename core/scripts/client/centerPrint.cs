@@ -38,6 +38,8 @@ function clientCmdCenterPrint( %message, %time, %noSound, %arg0, %arg1, %arg2 )
 
    // Make our localized display message
    %dispMsg = guiStrings.cpMsg[%message];
+   if ( %dispMsg $= "" )
+      %dispMsg = %message;
    for (%i = 0; %i < 3; %i++)
    {
       if ( %arg[%i] $= "" )

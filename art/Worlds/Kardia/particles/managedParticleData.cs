@@ -7,11 +7,6 @@
 // Particle Editor (this script is executed from onServerCreated())
 
 
-datablock SphereEmitterNodeData(DefaultEmitterNodeData)
-{
-   timeMultiple = 1;
-};
-
 datablock SphereEmitterNodeData(FireNode)
 {
    timeMultiple = 1;

@@ -178,7 +178,7 @@ datablock ItemData(BBQ_Ribs_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle2-3.dts";
    invIcon = "art/gui/icons/BBQ_Ribs_Potion.jpg";
-   maxInventory = 5;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -419,7 +419,7 @@ datablock ItemData(Evil_Eye_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-1.dts";
    invIcon = "art/gui/icons/evil_eye_potion.jpg";
-   maxInventory = 10;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -725,7 +725,7 @@ datablock ItemData(Human_Torch_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-2.dts";
    invIcon = "art/gui/icons/Human_Torch_Potion.jpg";
-   maxInventory = 3;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -750,7 +750,7 @@ datablock ItemData(InsectInside_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-3.dts";
    invIcon = "art/gui/icons/InsectInside_Potion.jpg";
-   maxInventory = 3;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1019,7 +1019,7 @@ datablock ItemData(Leaf_Me_Alone_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-4.dts";
    invIcon = "art/gui/icons/Leaf_Me_Alone_Potion.jpg";
-   maxInventory = 3;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1573,7 +1573,7 @@ datablock ItemData(Ring_of_Fire_Rune)
    className = "magic";
    shapeFile = "art/inv/magic/Runes/rIXrune.dts";
    invIcon = "art/gui/icons/Ring_Of_Fire_Rune.jpg";
-   maxInventory = 3;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1717,7 +1717,7 @@ datablock ItemData(Shards_of_Ice_Crystal)
    className = "magic";
    shapeFile = "art/inv/magic/Crystals/crys5_Small.dts";
    invIcon = "art/gui/icons/shards_of_ice_crystal.jpg";
-   maxInventory = 5;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -2153,7 +2153,7 @@ datablock ItemData(The_Claw_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle2-1.dts";
    invIcon = "art/gui/icons/The_Claw_Potion.jpg";
-   maxInventory = 5;
+   maxInventory = 50;
    keepOnDeath = 1;
    skullLevel = 0;
 

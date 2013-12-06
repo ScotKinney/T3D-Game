@@ -343,6 +343,9 @@ package GameCore
 
    function GameConnection::onClientEnterGame(%this)
    {
+      // Create a spell manager for the client
+      %this.ipsSpellManager = new SpellManager();
+
       if ( $Server::ServerType !$= "MultiPlayer" )
       {
          // Give a singleplayer inventory
@@ -355,7 +358,8 @@ package GameCore
          %inventory = %inventory TAB Palimino_Horse_Item.ItemID SPC "1";
          %inventory = %inventory TAB DaggerWeapon.ItemID SPC "100";
          %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
-         %inventory = %inventory TAB Thunderbolt_Potion.ItemID SPC "10";
+         %inventory = %inventory TAB BBQ_Ribs_Potion.ItemID SPC "10";
+         %inventory = %inventory TAB Shards_of_Ice_Crystal.ItemID SPC "10";
          %inventory = %inventory TAB TokaraMushroom.ItemID SPC "20";
          %this.startInv = %inventory;
          //%this.resetInventory(%inventory);
@@ -373,6 +377,9 @@ package GameCore
 
    function GameConnection::onClientLeaveGame(%this)
    {
+      if ( isObject(%this.ipsSpellManager) )
+         %this.ipsSpellManager.delete();
+
       // If this mission has ended before the client has left the game then
       // the Game object will have already been cleaned up.  See endMission()
       // in the GameCore package.
@@ -627,8 +634,23 @@ function GameCore::preparePlayer(%game, %client)
    //%client.spawnPlayer(%playerSpawnPoint);
    %game.spawnPlayer(%client, %playerSpawnPoint);
 
+   // set the players health (remember, 100% damageLevel = 0 health)
+   if(isObject(%client.player))
+   {
+      %maxDamage = %client.player.getDatablock().maxDamage;
+      %health = %client.health;
+      if(%health <= 0)
+         %health = %maxDamage;
+      %damageLevel = %maxDamage - %health;
+      %client.player.setDamageLevel(%damageLevel);
+      %client.player.newlyAdded = false;
+   }
+   
    // Set the players starting equipment/inventory
    %game.loadOut(%client.player);
+
+   // Attach the clients spell manager to the player
+   %client.ipsSpellManager.Attach(%client.player);
 
    //Give the client and player a team
    if (%client.team $= "")
@@ -735,6 +757,7 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
    %client.player.inventoryOnDeath();
    //%client.setPersistantStat("lastWeapon", %client.player.lastWeapon);
 
+   %client.health = %client.player.getDatablock().maxDamage;
    %client.player = 0;
    
    %game.schedule(5000, "ForceRespawn", %client);

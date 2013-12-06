@@ -23,14 +23,16 @@ datablock GraphEmitterData(g_upWavesEmitter : g_DefaultEmitter)
 {
    xFunc = "cos(t)*t*0.02";
    yFunc = "sin(t)*t*0.02";
+   zFunc = "t/200";
    zFunc = "t/20";
 };
 
 datablock GraphEmitterData(g_upSpiralEmitter : g_DefaultEmitter)
 {
-   xFunc = "cos(t/50)*t*0.02";
-   yFunc = "sin(t/50)*t*0.02";
-   zFunc = "t/20";
+   xFunc = "cos(t/50)";
+   yFunc = "sin(t/50)";
+   zFunc = "t/200";
+   funcMax = 500;
 };
 
 datablock GraphEmitterData(g_compSpiralEmitter : g_DefaultEmitter)
@@ -89,3 +91,13 @@ datablock GraphEmitterData(advSp_1 : g_DefaultEmitter)
    Loop = true;
    sa_ejectionOffset = 1;
 };
+
+datablock GraphEmitterData(g_MarsTeleport : g_DefaultEmitter)
+{
+   xFunc = "cos(t/25)*(2000-t)*0.0005";
+   yFunc = "sin(t/25)*(2000-t)*0.0005";
+   zFunc = "t/800";
+   funcMax = 2000;
+   timeScale = 1.25;
+};
+

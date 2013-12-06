@@ -1,8 +1,13 @@
 // Spell specific datablocks ---------------------------------------------------
-datablock SpellData(AoEFireballData : DefaultAOESpell)
+singleton SpellData(AoEFireballSpell : DefaultAOESpell)
 {
    ChannelTimesMS[1] = 1600;
    SpellDecalManager = DefaultSpellIndicator;
+	Cost = 20;
+
+   // Every spell needs a link to it's inventory item.
+   // For now this just links to the item it replaces from the old game.
+   item = "Ring_of_Fire_Rune";
 };
 datablock BezierProjectileData(AoEFireballProjectile : FireballProjectile)
 {
@@ -10,21 +15,28 @@ datablock BezierProjectileData(AoEFireballProjectile : FireballProjectile)
 };
 
 // Spell callbacks ---------------------------------------------------------- 
-function AoEFireballData::onChannelBegin(%this, %spell) 
+function AoEFireballSpell::onChannelBegin(%this, %spell) 
 {    
    // Change ambient out with your own spell animation    
    %spell.getSource().ForceAnimation(1,"ambient"); 
 }  
 
-function AoEFireballData::onChannelEnd(%this, %spell) 
+function AoEFireballSpell::onChannelEnd(%this, %spell) 
 {    
    %spell.getSource().ForceAnimation(0); 
 }  
 
-function AoEFireballData::onCast(%this, %spell) 
+function AoEFireballSpell::onCast(%this, %spell) 
 {    
+	%src = %spell.getSource();
+   if ( !isObject(%src))
+      return;
+
+   // Remove the item from the casters inventory
+   %src.decInventory(%this.item, 1);
+
    %aoe = new AOEImpact(){       
-      SourceObject = %spell.getSource();       
+      SourceObject = %src;       
       Center = %spell.getTargetPosition();       
       Radius = 5;       
       TypeMask =  $TypeMasks::StaticShapeObjectType |                    

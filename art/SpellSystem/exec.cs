@@ -17,6 +17,11 @@ for(%decalFile = findFirstFile("./Decals/*.cs"); %decalFile !$= ""; %decalFile =
    exec(%decalFile);
 }
 
+for(%spellFile = findFirstFile("./Explosions/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
+{
+   exec(%spellFile);
+}
+
 for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
 {
    exec(%spellFile);

@@ -41,11 +41,13 @@
 
 //-----------------------------------------------------------------------------
 // loadMaterials - load all materials.cs files that aren't in 
-// packs, players or worlds...that only leaves art/inv.
+// packs, players or worlds...that only leaves art/inv and art/SpellSystem.
 //-----------------------------------------------------------------------------
 function loadMaterials()
 {
    %filter = "art/inv/*/materials.cs";
+   loadDirMaterials(%filter);
+   %filter = "art/SpellSystem/*/materials.cs";
    loadDirMaterials(%filter);
 }
 

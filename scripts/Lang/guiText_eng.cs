@@ -106,6 +106,8 @@ guiStrings.nutHeader = "Nutrition:";
 guiStrings.tgtHeader = "Target:";   // Target header
 guiStrings.target[Enemy] = "Enemy";
 guiStrings.target[Self] = "Self";
+guiStrings.target[Friend] = "Friend";
+guiStrings.target[Area] = "Area";
 
 // Message box strings ---------------------------------------------------------
 // Send friend request to %1?
@@ -136,3 +138,7 @@ guiStrings.cpMsg[TortNZOut] = "You have left the Tortuga Neutral Zone, arm yours
 guiStrings.cpMsg[GMNZOut] = "Danger! You have left the Neutral Zone, watch out for the Yeti!";
 // Danger! You have left the Neutral Zone, beware the Boglins!
 guiStrings.cpMsg[BogNZOut] = "Danger! You have left the Neutral Zone, beware the Boglins!";
+
+// Magic messages
+// Danger! You have left the Neutral Zone, beware the Boglins!
+guiStrings.cpMsg[NoTgt] = "This spell requires a target!";

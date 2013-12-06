@@ -119,7 +119,7 @@ function ThrowHorse(%user, %horseDB)
       %horse.setEnergyLevel(1);
       %horse.startFade(0, 0, true);      
       %horse.respawn = false;
-      castSpell(AstralPassportReappearSpell, %horse, %horse);
+      //castSpell(AstralPassportReappearSpell, %horse, %horse);
    }
    %horse.setClanName("Drop");
 

@@ -1,3 +1,16 @@
+
+datablock ExplosionData(FireballHitExplosion)
+{
+   lifeTimeMS = "384";
+   
+   particleEmitter = FireballBlastEmitter;
+   particleDensity = "20";
+   particleRadius = "0.2";
+   faceViewer = "1";
+   lightStartBrightness = "0.941176";
+   lightEndBrightness = "0.941176";
+};
+
 datablock BezierProjectileData(FireballProjectile : DefaultBezierProjectile)
 {
    projectileShapeName = "";
@@ -14,17 +27,12 @@ datablock BezierProjectileData(FireballProjectile : DefaultBezierProjectile)
    hasLight = true;
    lightRadius = 3;
    lightColor = "0.8 0.8 1.0";
+   directDamage = 65;
+   explosion = FireballHitExplosion;
 };
 
-datablock ExplosionData(FireballHitExplosion)
+datablock BezierProjectileData(RainOfFireComet : FireballProjectile)
 {
-   lifeTimeMS = "384";
-   
-   particleEmitter = FireballBlastEmitter;
-   particleDensity = "20";
-   particleRadius = "0.2";
-   faceViewer = "1";
-   lightStartBrightness = "0.941176";
-   lightEndBrightness = "0.941176";
-   
+   lifetime = 1000;
+   directDamage = 50;
 };

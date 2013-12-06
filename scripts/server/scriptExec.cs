@@ -64,14 +64,15 @@ exec("./alterVerse/Lantern.cs");
 exec("./alterVerse/fishBait.cs");
 exec("./alterVerse/fishing.cs");
 
+// Load spell manager scripts
+exec("./SpellManager.cs");
+
 // Load all spells in the spells folder.
-// This could optionally be put into a function and called manually.
-// NOTE TO EDITOR: I would personally call each spell as it is cast, then unload it when finished. Saves memory. -Abe
-//for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
-//{
-//   exec(%spellFile);
-//}
-//exec("./SpellTemplates.cs");
-//exec("./DefaultBezierProjectile.cs");
-//exec("./Fireball.cs");
-//exec("./Spells/Fireball.cs");
+exec("./Spells/Fireball.cs");
+exec("./Spells/AOEFireball.cs");
+exec("./Spells/Blink.cs");
+exec("./Spells/Daze.cs");
+exec("./Spells/flashheal.cs");
+exec("./Spells/frostbarrage.cs");
+exec("./Spells/manainfusion.cs");
+exec("./Spells/rainoffire.cs");

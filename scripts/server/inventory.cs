@@ -59,8 +59,10 @@ function ShapeBase::UseItem(%this, %id, %amount, %type)
                %this.schedule(500, AVMountImage, %key.image, $WeaponSlot);
          }
 
-      case 2:
-         messageClient(%this.client, 'LocalizedMsg', "", "noMagic", "a", true, true, 0);
+      case 2:  // Magic
+         //messageClient(%this.client, 'LocalizedMsg', "", "noMagic", "a", true, true, 0);
+         if ( %this.hasInventory(%key) )
+            %this.castSpell(%key);
 
       case 3: //eat something
          if ( %this.decInventory(%key, %amount) )

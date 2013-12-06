@@ -246,8 +246,6 @@ function PlayGui::callBack(%this, %funcName, %obj)
       else
          %objClass = "Player";
    }
-   if ( %objClass $= "Player" )
-      return;
 
    if ( (strstr(%objClass, "Terrain") != -1) || (%objClass $= "TSStatic") )
       return;
@@ -284,6 +282,23 @@ function PlayGui::onMouseDownItem(%this, %item)
    %distSqr = VectorDistSquared(%item.position, %player.position);
    if(%distSqr <= $Alterverse::PickupRadius^2)
       CommandToServer('pickupItem', %item.getGhostID());
+}
+
+function PlayGui::onMouseOverPlayer(%this, %target)
+{
+   return;  
+}
+
+function PlayGui::onMouseDownPlayer(%this, %target)
+{
+   // clicking on this item will pick it up if we are close enough
+   %player = ServerConnection.getControlObject();
+   
+   if(!isObject(%player))
+      return;
+      
+   //ServerConnection.setSelectedObj(%target);
+   CommandToServer('setSpellTarget', %target.getGhostID());
 }
 
 function PlayGui::onMouseDownWater(%this, %item)
