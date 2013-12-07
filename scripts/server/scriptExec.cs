@@ -76,3 +76,4 @@ exec("./Spells/flashheal.cs");
 exec("./Spells/frostbarrage.cs");
 exec("./Spells/manainfusion.cs");
 exec("./Spells/rainoffire.cs");
+exec("./Spells/Invisibility.cs");

@@ -787,7 +787,7 @@ datablock ItemData(Invisibility_Rune)
 
    cost = 500;
    table = "Magic";
-   spellDef = "InvisibilityRune";
+   spellDef = "InvisibilitySpell";
    spellTarget = "Self";
 };
 $AlterVerse::ItemNames[58] = "Invisibility_Rune";
