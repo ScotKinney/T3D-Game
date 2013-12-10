@@ -361,6 +361,8 @@ package GameCore
          %inventory = %inventory TAB BBQ_Ribs_Potion.ItemID SPC "10";
          %inventory = %inventory TAB Shards_of_Ice_Crystal.ItemID SPC "10";
          %inventory = %inventory TAB TokaraMushroom.ItemID SPC "20";
+         %inventory = %inventory TAB FlintlockWeapon.ItemID SPC "1";
+         %inventory = %inventory TAB ShotAmmo.ItemID SPC "50";
          %this.startInv = %inventory;
          //%this.resetInventory(%inventory);
       }

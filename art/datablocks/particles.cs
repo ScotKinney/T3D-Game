@@ -29,19 +29,16 @@ datablock SphereEmitterNodeData(DefaultEmitterNodeData)
 datablock GraphEmitterNodeData(g_DefaultNode)
 {
    timeMultiple = 1;
-   
-   funcMax = 2000;
-   funcMin = 0;
-   timeScale = 1;
-   ProgressMode = 0;
+};
 
-   standAloneEmitter = false;   
-   
-   sa_ejectionPeriodMS = "1";
-   sa_periodVarianceMS = "0";
-   sa_ejectionVelocity = "0";
-   sa_velocityVariance = "0";
-   sa_ejectionOffset = "0.08";
+datablock GroundEmitterNodeData(gr_DefaultNode)
+{
+   timeMultiple = 1;
+};
+
+datablock MaskEmitterNodeData(msk_DefaultNode)
+{
+   timeMultiple = 1;
 };
 
 datablock GraphEmitterData(g_DefaultEmitter)

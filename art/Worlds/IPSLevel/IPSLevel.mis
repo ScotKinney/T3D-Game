@@ -40,7 +40,7 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "0 0 2";
+         position = "15 15 27.5";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -61,6 +61,18 @@ new SimGroup(MissionGroup) {
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";
+   };
+   new TerrainBlock(theTerrain) {
+      terrainFile = "art/Worlds/IPSLevel/terrain/IPSLevel.ter";
+      castShadows = "1";
+      squareSize = "1";
+      baseTexSize = "1024";
+      lightMapSize = "256";
+      screenError = "16";
+      position = "-133.051 -114.413 -490.198";
+      rotation = "1 0 0 0";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
    new ScatterSky(sky1) {
       skyBrightness = "15";
@@ -140,7 +152,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-20 -20 1.9734";
+      position = "-20 -20 23.85";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -156,7 +168,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "0 -20 -2.13997";
+      position = "0 -20 18.95";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -169,7 +181,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "Ring_of_Fire_Rune";
-      position = "-20 1 1";
+      position = "-20 1 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -183,7 +195,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "The_Claw_Potion";
-      position = "-20 2 1";
+      position = "-20 2 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -197,7 +209,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "Evil_Eye_Potion";
-      position = "-20 3 1";
+      position = "-20 3 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -211,7 +223,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "BBQ_Ribs_Potion";
-      position = "-20 4 1";
+      position = "-20 4 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -225,7 +237,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "Leaf_Me_Alone_Potion";
-      position = "-20 5 1";
+      position = "-20 5 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -239,7 +251,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "Shards_of_Ice_Crystal";
-      position = "-20 6 1";
+      position = "-20 6 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -253,7 +265,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "InsectInside_Potion";
-      position = "-20 7 1";
+      position = "-20 7 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -267,7 +279,7 @@ new SimGroup(MissionGroup) {
       count = "50";
       isAIControlled = "0";
       dataBlock = "Human_Torch_Potion";
-      position = "-20 8 1";
+      position = "-20 8 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -281,7 +293,7 @@ new SimGroup(MissionGroup) {
       count = "10";
       isAIControlled = "0";
       dataBlock = "Invisibility_Rune";
-      position = "-20 9 1";
+      position = "-20 9 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -290,20 +302,8 @@ new SimGroup(MissionGroup) {
    };
    new SphereEmitterNode(TestSphereEmitter) {
       emitter = "EmitterRockImpact";
-      sa_thetaMin = "0";
-      sa_thetaMax = "90";
-      sa_phiReferenceVel = "0";
-      sa_phiVariance = "360";
-      active = "1";
-      velocity = "1";
-      standAloneEmitter = "0";
-      sa_ejectionPeriodMS = "100";
-      sa_periodVarianceMS = "0";
-      sa_ejectionVelocity = "2";
-      sa_velocityVariance = "1";
-      sa_ejectionOffset = "0";
       dataBlock = "DefaultEmitterNodeData";
-      position = "-2 -2 0.5";
+      position = "-2 -2 21.76";
       rotation = "0 0 1 0";
       scale = "1 1 1";
       canSave = "1";
@@ -313,7 +313,25 @@ new SimGroup(MissionGroup) {
       //emitter = "g_upSpiralEmitter";
       emitter = "g_MarsTeleport";
       dataBlock = "g_defaultNode";
-      position = "2 -2 0.0";
+      position = "2 -2 21.82";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new GroundEmitterNode(TestGroundEmitter) {
+      emitter = "gr_DefaultEmitter";
+      dataBlock = "gr_defaultNode";
+      position = "-11.5 10 22";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new MaskEmitterNode(TestMaskEmitter) {
+      emitter = "msk_DefaultEmitter";
+      dataBlock = "msk_DefaultNode";
+      position = "5 5 21.85";
       rotation = "0 0 1 0";
       scale = "1 1 1";
       canSave = "1";
@@ -322,7 +340,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(Guard6_OR) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "10 10 2";
+      position = "30 30 26";
       rotation = "0 0 1 180";
       scale = "0.714 0.714 0.714";
       hidden = "1";

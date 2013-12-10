@@ -11,7 +11,7 @@ datablock ParticleData(ParticleRockImpactInner01)
    textureName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
    animTexName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
    gravityCoefficient = "0.541667";
-   inheritedVelFactor = "1.875";
+   inheritedVelFactor = "1";
    spinSpeed = "0.229167";
    spinRandomMin = "-416";
    spinRandomMax = "541.9";
@@ -87,47 +87,6 @@ datablock GraphEmitterData(g_downSpiralEmitter : g_DefaultEmitter)
    Loop = false;
 };
 
-datablock GraphEmitterData(g_backburner : g_DefaultEmitter)
-{
-   xFunc = "cos(t*c)/4";
-   yFunc = "sin(t*c)/4";
-   zFunc = "(1+(t^2/(v<6?0.4:(v/15))))/15000";
-   xVar1c = "1";
-   yVar1c = "1";
-   zVar1v = "0";
-   funcMax = 100;
-   timeScale = 8;
-   sa_ejectionOffset = 10;
-};
-
-datablock GraphEmitterData(advSp_1 : g_DefaultEmitter)
-{
-   xFunc = "t<1 ? cos(o*1*2*_pi/5)*r : "@
-            "t<2 ? cos(o*2*2*_pi/5)*r : "@
-            "t<3 ? cos(o*3*2*_pi/5)*r : "@
-            "t<4 ? cos(o*4*2*_pi/5)*r : "@
-            "cos(o*5*2*_pi/5)*r";
-   yFunc = "t<1 ? sin(o*1*2*_pi/5)*r : "@
-            "t<2 ? sin(o*2*2*_pi/5)*r : "@
-            "t<3 ? sin(o*3*2*_pi/5)*r : "@
-            "t<4 ? sin(o*4*2*_pi/5)*r : "@
-            "sin(o*5*2*_pi/5)*r";
-   zFunc = "h+0.1"; // Offset it just a bit over the ground so it is not partially hidden
-   Reverse = true;
-   Loop = false;
-   xVar1r = 2;
-   yVar1r = 2;
-   xVar2o = 1;
-   yVar2o = 1;
-   zVar1h = 0;
-   funcMax = 4;
-   funcMin = 0;
-   timeScale = 1;
-   active = true;
-   Loop = true;
-   sa_ejectionOffset = 1;
-};
-
 datablock GraphEmitterData(g_MarsTeleport : g_DefaultEmitter)
 {
    xFunc = "cos(t/25)*(2000-t)*0.0005";
@@ -135,7 +94,85 @@ datablock GraphEmitterData(g_MarsTeleport : g_DefaultEmitter)
    zFunc = "t/400";
    funcMax = 2000;
    timeScale = 1.25;
-   //ProgressMode = "ByTime";
+   ProgressMode = "ByTime";
    Reverse = true;
+   Loop = true;
+};
+
+datablock GroundEmitterData(gr_DefaultEmitter)
+{
+   ejectionPeriodMS = "1";
+   periodVarianceMS = "0";
+   ejectionVelocity = "0";
+   velocityVariance = "0";
+   ejectionOffset = "0";
+   particles = "DefaultParticle";
+   blendStyle = "ADDITIVE";
+   softParticles = "0";
+   softnessDistance = "0.1";
+   radius = "1";
+};
+
+datablock ParticleData(StarMaskParticle : DefaultParticle)
+{
+   textureName = "core/art/particles/flare.png";
+   animTexName = "core/art/particles/flare.png";
+   colors[0] = "0.678431 0.686275 0.913726 0.207";
+   colors[1] = "0 0.543307 1 0.759";
+   colors[2] = "0.0472441 0.181102 0.92126 0.838";
+   colors[3] = "0.141732 0.0393701 0.944882 1";
+   sizes[0] = "0";
+   sizes[1] = "0.1";
+   sizes[2] = "0.1";
+   sizes[3] = "0.1";
+   times[0] = 0.0;
+   times[1] = 0.247059;
+   times[2] = 0.494118;
+   times[3] = 1;
+};
+
+datablock PixelMask(ipsMask1)
+{
+	MaskPath = "./IPS.png";
+};
+
+datablock PixelMask(starMask1)
+{
+	MaskPath = "core/art/defaultParticle.png";
+};
+
+datablock MaskEmitterData(msk_DefaultEmitter)
+{
+   ejectionPeriodMS = "1";
+   periodVarianceMS = "0";
+   ejectionVelocity = "0";
+   velocityVariance = "0";
+   ejectionOffset = "1";
+   particles = "StarMaskParticle";
+   blendStyle = "ADDITIVE";
+   softParticles = "0";
+   softnessDistance = "0.1";
+   PixelMask = "ipsMask1";
+   Alpha_min = 125;
+   Alpha_max = 255;
+   Grounded = false;
+};
+
+datablock MaskEmitterData(StarMaskEmitter)
+{
+   ejectionPeriodMS = "1";
+   periodVarianceMS = "0";
+   ejectionVelocity = "0";
+   velocityVariance = "0";
+   ejectionOffset = "1";
+   particles = "StarMaskParticle";
+   blendStyle = "ADDITIVE";
+   softParticles = "0";
+   softnessDistance = "0.1";
+   PixelMask = "starMask1";
+   Alpha_min = 125;
+   Alpha_max = 225;
+   Grounded = false;
+   //lifetimeMS = "1000";
 };
 

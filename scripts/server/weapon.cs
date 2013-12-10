@@ -107,7 +107,11 @@ function WeaponImage::onMount(%this,%obj,%slot)
          if (%currentAmmo > 0)
             %obj.setImageAmmo(%slot, true);
          else
+         {
             %currentAmmo = 0;
+            %obj.setImageAmmo(%slot, false);
+            %this.NoAmmoMessage(%obj);
+         }
          %obj.client.RefreshWeaponHud(%currentAmmo, %this.item.invIcon, %this.item.reticle);
       }
    }
@@ -379,11 +383,11 @@ function ShapeBase::AVMountImage(%this, %weapon, %slot)
       if ( !%this.isMounted() || %weapon.canUseMounted )
       {
          // If it's an inventory item, make sure we have it
-         if ( isObject(%weapon.item) )
+         if ( isObject(%weapon.item) && isObject(%this.client) )
          {
             if ( %this.getInventory(%weapon.item) > 0 )
             {
-               if ( %weapon.item.usesAmmo )
+               if ( %weapon.usesAmmo )
                {
                   if ( %this.getInventory(%weapon.ammo) > 0 )
                      %slotUsed = true;
@@ -425,7 +429,7 @@ function WeaponImage::NoAmmoMessage(%this, %obj)
    if ( %obj.client $= "" )
       return;
 
-   if ( %this.item.usesAmmo )
+   if ( %this.usesAmmo )
    {
       messageClient(%obj.client, 'InventoryMsg',"", "noAmmo", %this.item.ItemID, "a", true, true, 0);
    }
