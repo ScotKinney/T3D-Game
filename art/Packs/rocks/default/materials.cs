@@ -161,6 +161,7 @@ singleton Material(Terrain_SFX_CliffRockTop_Mat)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Rocks";
+   customImpactSound = "FootStepRock1Sound";
 };
 
 singleton Material(_06_towerone_ColorEffectR148G177B26_material)
