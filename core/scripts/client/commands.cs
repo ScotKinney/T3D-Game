@@ -112,6 +112,9 @@ function clientCmdSetInventory(%str1, %str2, %str3, %str4)
 
 function clientCmdUpdateInventory(%itemID, %itemCount, %newNW)
 {
+   if ( !isObject($AlterVerse::PlayerInventory) )
+      $AlterVerse::PlayerInventory = new ArrayObject();
+
    %index = $AlterVerse::PlayerInventory.getIndexFromKey(%itemID);
    if ( %index == -1 )
    {
