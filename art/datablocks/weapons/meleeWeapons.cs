@@ -37,7 +37,7 @@ datablock SFXProfile(SwordHitStaticSound)
 };
 
 
-//////////////// The 5 attacks////////////////
+//////////////// Sword attacks////////////////
 
 singleton GameBaseData(SwordSwingOne)
 {
@@ -106,7 +106,7 @@ singleton GameBaseData(SwordSwingFive)
 
 ////////////Swords
 
-// All swords and axes use the same 5 attacks and sounds. Defined once and inherited.
+// All swords use the same 5 attacks and sounds. Defined once and inherited.
 datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
@@ -125,6 +125,8 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
    // The sound to play when this weapon hits another player or AI
    hitLiveSound = "SwordHitLiveSound";
 };
+
+/////////The Swords
 
 datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
 {
@@ -198,25 +200,145 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    canH2H = false;
 };
 
-///////////////////Axes////////////////////////
+///////////////////War Axes////////////////////////
 
-datablock ShapeBaseImageData(SteelWarAxeImage : ValMaleSwordImage)
+/////////////Steel War Axe/////////////////
+
+/////////////Steel War Axe Attacks and Damage////////////////
+
+singleton GameBaseData(SteelWarAxeSwingOne : SwordSwingOne)
 {
-   shapefile = "art/inv/weapons/Axes/Axe_A.dts";
-   item = SteelWarAxeWeapon;
-   canH2H = false;
+   damageAmount = 70;
+};
+singleton GameBaseData(SteelWarAxeSwingTwo : SwordSwingTwo)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(SteelWarAxeSwingThree : SwordSwingThree)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(SteelWarAxeSwingFour : SwordSwingFour)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(SteelWarAxeSwingFive : SwordSwingFive)
+{
+   damageAmount = 70;
 };
 
-datablock ShapeBaseImageData(DoubleWarAxeImage : ValMaleSwordImage)
+
+datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/axes/Axe_A.dts";
+   item = SteelWarAxeWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = false;
+
+   hthNumAttacks = 5;
+   hthAttack[0]                     = SteelWarAxeSwingOne;
+   hthAttack[1]                     = SteelWarAxeSwingTwo;
+   hthAttack[2]                     = SteelWarAxeSwingThree;
+   hthAttack[3]                     = SteelWarAxeSwingFour;
+   hthAttack[4]                     = SteelWarAxeSwingFive;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+///////////////END Steel War Axe
+
+
+
+///////////////////////////Double War Axe ///////////////
+
+/////////////Double War Axe Attacks and Damage////////////////
+
+singleton GameBaseData(DoubleWarAxeSwingOne : SwordSwingOne)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(DoubleWarAxeSwingTwo : SwordSwingTwo)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(DoubleWarAxeSwingThree : SwordSwingThree)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(DoubleWarAxeSwingFour : SwordSwingFour)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(DoubleWarAxeSwingFive : SwordSwingFive)
+{
+   damageAmount = 80;
+};
+
+
+datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_B.dts";
    item = DoubleWarAxeWeapon;
    canH2H = false;
+
+   hthNumAttacks = 5;
+   hthAttack[0]                     = DoubleWarAxeSwingOne;
+   hthAttack[1]                     = DoubleWarAxeSwingTwo;
+   hthAttack[2]                     = DoubleWarAxeSwingThree;
+   hthAttack[3]                     = DoubleWarAxeSwingFour;
+   hthAttack[4]                     = DoubleWarAxeSwingFive;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
 };
 
-datablock ShapeBaseImageData(IronWarAxeImage : ValMaleSwordImage)
+/////////////END Double War Axe//////////////////
+
+
+///////////Iron War Axe////////////////////
+
+///////////Iron War Axe Attacks////////////////
+
+singleton GameBaseData(IronWarAxeSwingOne : SwordSwingOne)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(IronWarAxeSwingTwo : SwordSwingTwo)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(IronWarAxeSwingThree : SwordSwingThree)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(IronWarAxeSwingFour : SwordSwingFour)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(IronWarAxeSwingFive : SwordSwingFive)
+{
+   damageAmount = 60;
+};
+
+datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_C.dts";
    item = IronWarAxeWeapon;
    canH2H = false;
+
+   hthNumAttacks = 5;
+   hthAttack[0]                     = IronWarAxeSwingOne;
+   hthAttack[1]                     = IronWarAxeSwingTwo;
+   hthAttack[2]                     = IronWarAxeSwingThree;
+   hthAttack[3]                     = IronWarAxeSwingFour;
+   hthAttack[4]                     = IronWarAxeSwingFive;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
 };
