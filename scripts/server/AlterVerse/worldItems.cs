@@ -396,7 +396,7 @@ datablock ItemData(Double_War_AxeWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/axes/Axe_B.dts";
-   invIcon = "art/gui/icons/axe.jpg";
+   invIcon = "art/gui/icons/doublewaraxe.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -849,7 +849,7 @@ datablock ItemData(Iron_War_AxeWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/axes/Axe_C.dts";
-   invIcon = "art/gui/icons/axe.jpg";
+   invIcon = "art/gui/icons/ironwaraxe.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -2205,7 +2205,7 @@ datablock ItemData(Steel_War_AxeWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/axes/Axe_A.dts";
-   invIcon = "art/gui/icons/axe.jpg";
+   invIcon = "art/gui/icons/steelwaraxe.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
