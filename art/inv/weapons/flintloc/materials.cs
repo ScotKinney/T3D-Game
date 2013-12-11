@@ -22,9 +22,13 @@ singleton Material(shot_PMat_shot)
 
 
 
+
 singleton Material(mat_Flintlock)
 {
-   mapTo = "PIRATE_P";
-   diffuseMap[0] = "art/inv/weapons/flintloc/PIRATE_P";
-   materialTag0 = "Weapons";
+   mapTo = "Pistol_color";
+   diffuseMap[0] = "art/inv/weapons/flintloc/Pistol_color";
+   normalMap[0] = "art/inv/weapons/flintloc/Pistol_normals.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/inv/weapons/flintloc/Pistol_specular.dds";
+   useAnisotropic[0] = "1";
 };
