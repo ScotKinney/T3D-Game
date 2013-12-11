@@ -389,6 +389,34 @@ datablock ItemData(Deer_Hide)
 };
 $AlterVerse::ItemNames[92] = "Deer_Hide";
 
+datablock ItemData(Double_War_AxeWeapon)
+{
+
+   ItemID = 125;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/Axe_B.dts";
+   invIcon = "art/gui/icons/axe.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 150;
+
+   table = "Weapons";
+   SubItemID = 126;
+   image = DoubleWarAxeImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[125] = "Double_War_AxeWeapon";
+
 datablock ItemData(Emerald)
 {
 
@@ -813,6 +841,34 @@ datablock ItemData(Invisibility_Rune)
    spellTarget = "Self";
 };
 $AlterVerse::ItemNames[58] = "Invisibility_Rune";
+
+datablock ItemData(Iron_War_AxeWeapon)
+{
+
+   ItemID = 126;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/Axe_C.dts";
+   invIcon = "art/gui/icons/axe.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 70;
+
+   table = "Weapons";
+   SubItemID = 127;
+   image = IronWarAxeImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[126] = "Iron_War_AxeWeapon";
 
 datablock ItemData(JavelinWeapon)
 {
@@ -2141,6 +2197,34 @@ datablock ItemData(Solo_Mine_Potion)
    spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
+
+datablock ItemData(Steel_War_AxeWeapon)
+{
+
+   ItemID = 124;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/Axe_A.dts";
+   invIcon = "art/gui/icons/axe.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+
+   table = "Weapons";
+   SubItemID = 125;
+   image = SteelWarAxeImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[124] = "Steel_War_AxeWeapon";
 
 datablock ItemData(Swordfish)
 {
