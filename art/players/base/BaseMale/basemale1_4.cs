@@ -206,8 +206,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/ck.dsq", "ck", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Anims/fst.dsq", "fst", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Anims/th.dsq", "th", "0", "-1", "1", "0");
-   %this.addSequence("art/players/base/Anims/Fire_Flintlock.dsq", "Fire_Flintlock", "0", "-1", "1", "0");
-   %this.addTrigger("Fire_FlintLock", "7", "3");
    %this.addSequence("art/players/base/Anims/Look_XR75.dsq", "Look_XR75", "2", "28", "1", "0");
    %this.addSequence("art/players/base/Anims/Extra/EdGrimly.dsq", "EdGrimly", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Anims/Extra/BreakDance.dsq", "BreakDance", "0", "19", "1", "0");
@@ -279,6 +277,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/TapLink.dsq", "Taplink", "0", "3", "1", "0");
    %this.setSequencePriority("taplink", "5");
    %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/Fire_Flintlock_Full.dsq", "Fire_Flintlock", "0", "23", "1", "0");
+   %this.addTrigger("Fire_Flintlock", "11", "3");
 }
 
 $mack = true;
