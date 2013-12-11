@@ -104,7 +104,9 @@ singleton GameBaseData(SwordSwingFive)
    impulse = 800;
 };
 
-// All swords use the same 5 attacks and sounds. Defined once and inherited.
+////////////Swords
+
+// All swords and axes use the same 5 attacks and sounds. Defined once and inherited.
 datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
@@ -193,5 +195,28 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
    item = TokFemaleSwordWeapon;
+   canH2H = false;
+};
+
+///////////////////Axes////////////////////////
+
+datablock ShapeBaseImageData(SteelWarAxeImage : ValMaleSwordImage)
+{
+   shapefile = "art/inv/weapons/Axes/Axe_A.dts";
+   item = SteelWarAxeWeapon;
+   canH2H = false;
+};
+
+datablock ShapeBaseImageData(DoubleWarAxeImage : ValMaleSwordImage)
+{
+   shapefile = "art/inv/weapons/Axes/Axe_B.dts";
+   item = DoubleWarAxeWeapon;
+   canH2H = false;
+};
+
+datablock ShapeBaseImageData(IronWarAxeImage : ValMaleSwordImage)
+{
+   shapefile = "art/inv/weapons/Axes/Axe_C.dts";
+   item = IronWarAxeWeapon;
    canH2H = false;
 };
