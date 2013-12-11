@@ -127,8 +127,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.190285";
-         time = "0.193025";
+         startTime = "0.240844";
+         time = "0.242557";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -625,8 +625,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "17709";
-         delayRespawn = "6070";
+         botBelongsToMe = "15174";
+         delayRespawn = "3070";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -651,8 +651,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "16891";
-         delayRespawn = "5298";
+         botBelongsToMe = "14326";
+         delayRespawn = "2812";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -677,8 +677,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "17832";
-         delayRespawn = "5682";
+         botBelongsToMe = "14181";
+         delayRespawn = "3180";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -703,8 +703,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "16401";
-         delayRespawn = "6145";
+         botBelongsToMe = "13284";
+         delayRespawn = "2434";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -8686,6 +8686,20 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "1";
+      isAIControlled = "0";
+      dataBlock = "FlintlockWeapon";
+      position = "-4.04718 382.176 15.2204";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "200";
    };
 };
 //--- OBJECT WRITE END ---
