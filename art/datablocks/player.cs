@@ -127,7 +127,7 @@ datablock PlayerData(DefaultPlayerData)
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 50;
    jumpSurfaceAngle = 60;
-   maxStepHeight = 0.75;
+   maxStepHeight = 1.5;
    minJumpSpeed = 20;
    maxJumpSpeed = 30;
 
