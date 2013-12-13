@@ -1,83 +1,42 @@
 
-
-singleton Material(mat_KardBoatSpar)
+singleton Material(mat_Boat_Color)
 {
-   mapTo = "PMat_KardBoatSpar";
-   diffuseMap[0] = "wood1a";
-   materialTag0 = "Boats";
-};
-
-singleton Material(mat_KardBoatSail)
-{
-   mapTo = "PMat_KardBoatSail";
-   diffuseMap[0] = "shzboatsail1.jpg";
-   materialTag0 = "Boats";
+   mapTo = "boat_color";
+   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/boats/boat_color";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/boats/boat_normals.dds";
+   specularMap[0] = "art/Packs/Worlds/Kardia/Models/boats/boat_specular.dds";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
-   showFootprints = "0";
-};
-
-singleton Material(mat_KardBoatRope3)
-{
-   mapTo = "PMat_KardBoatRope3";
-   diffuseMap[0] = "rope1";
-   materialTag0 = "Boats";
-   useAnisotropic[0] = "0";
-   castShadows = "0";
-};
-
-singleton Material(mat_KardBoatRope1)
-{
-   mapTo = "PMat_KardBoatRope1";
-   diffuseMap[0] = "rope1";
-   materialTag0 = "Boats";
-   useAnisotropic[0] = "0";
-   castShadows = "0";
-};
-
-singleton Material(mat_KardBoatDeck)
-{
-   mapTo = "PMat_KardBoatDeck";
-   diffuseMap[0] = "shzwood2";
-   materialTag0 = "Boats";
-   useAnisotropic[0] = "0";
-   castShadows = "0";
    customFootstepSound = "FootStepWood1Sound";
-};
-
-singleton Material(mat_KardBoatBottom)
-{
-   mapTo = "PMat_KardBoatBottom";
-   diffuseMap[0] = "shzwood1";
-   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
+   specularPower[0] = "34";
+   specularStrength[0] = "2.35294";
+   pixelSpecular[0] = "1";
+   backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Boats";
-   useAnisotropic[0] = "0";
-   castShadows = "0";
+
 };
 
-singleton Material(mat_KardBoatTopEdge_mat)
+singleton Material(mat_Rope_Color)
 {
-   mapTo = "PMat_KardBoatTopEdge";
-   diffuseMap[0] = "shzwood4.jpg";
-   translucent = "0";
-   useAnisotropic[0] = "0";
-   castShadows = "0";
+   mapTo = "rope_color";
+   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/boats/rope_color";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/boats/rope_normals.dds";
+   specularMap[0] = "art/Packs/Worlds/Kardia/Models/boats/rope_specular.dds";
+   useAnisotropic[0] = "1";
+   specularPower[0] = "1";
+   specularStrength[0] = "0";
    materialTag0 = "Boats";
+
 };
 
-singleton Material(PMat_KardBoatMast_mat)
+singleton Material(mat_Sail_Color)
 {
-   mapTo = "PMat_KardBoatMast";
-   diffuseMap[0] = "shzwood4.jpg";
-   translucent = "0";
+   mapTo = "sail_color";
+   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/boats/sail_color";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/boats/sail_normals.dds";
+   specularMap[0] = "art/Packs/Worlds/Kardia/Models/boats/sail_specular.dds";
+   useAnisotropic[0] = "1";
+   translucent = "1";
+   backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Boats";
-};
-
-
-singleton Material(kardboat1_PMat_KardBoatRope2)
-{
-   mapTo = "PMat_KardBoatRope2";
-   diffuseMap[0] = "rope1";
-   specular[0] = "0.0282 0.029 0.0282 1";
-   translucentBlendOp = "None";
 };
