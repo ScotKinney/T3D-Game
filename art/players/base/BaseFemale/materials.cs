@@ -65,12 +65,15 @@ singleton Material(matBF_HairA)
    diffuseMap[0] = "art/players/base/BaseFemale/Hair/HairA/BF_HairA_Blk";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 50; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
    doubleSided = "1";
+   specularPower[0] = "128";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairB)
@@ -79,12 +82,14 @@ singleton Material(matBF_HairB)
    diffuseMap[0] = "art/players/base/BaseFemale/Hair/HairB/BF_HairB_Blk";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 150; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
    doubleSided = "1";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairC)
@@ -94,11 +99,14 @@ singleton Material(matBF_HairC)
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 150; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   specularPower[0] = "128";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairD)
@@ -108,11 +116,13 @@ singleton Material(matBF_HairD)
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 150; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairD_Scalp)
@@ -121,11 +131,13 @@ singleton Material(matBF_HairD_Scalp)
    diffuseMap[0] = "art/players/base/BaseFemale/Hair/HairD/BF_HairD_Scalp_Black";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 50; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairD_Sticks)
@@ -142,11 +154,13 @@ singleton Material(matBF_HairE)
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 180; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairF)
@@ -156,11 +170,13 @@ singleton Material(matBF_HairF)
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 50; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBF_HairG)
@@ -170,11 +186,13 @@ singleton Material(matBF_HairG)
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 50; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 
