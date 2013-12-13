@@ -14,10 +14,15 @@ singleton Material(basket)
 singleton Material(amphora3)
 {
    mapTo = "amphora3";
-   diffuseMap[0] = "amphora3";
-   specular[0] = "0.15 0.15 0.15 1";
-   specularPower[0] = "100";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/props/amphora3";
+   specular[0] = "0.992157 0.992157 0.992157 1";
+   specularPower[0] = "104";
    translucent = "0";
+   specularStrength[0] = "5";
+   pixelSpecular[0] = "1";
+   materialTag0 = "Kardia";
+   forestWindEnabled = "1";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_CounterTop)
@@ -37,10 +42,16 @@ singleton Material(mat_CounterFront)
 singleton Material(ladder)
 {
    mapTo = "ladder";
-   diffuseMap[0] = "vi_int_flooor";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/props/vi_int_flooor";
    specular[0] = "0.992157 0.992157 0.992157 1";
-   specularPower[0] = "100";
+   specularPower[0] = "128";
    translucent = "1";
+   specularStrength[0] = "0";
+   pixelSpecular[0] = "0";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Kardia";
+   forestWindEnabled = "1";
 };
 
 singleton Material(mat_RopeCoil)
@@ -154,15 +165,27 @@ singleton Material(mat_docks)
 singleton Material(mat_crateSimple001Fragile2Stain)
 {
    mapTo = "CratesSimple0001Fragile2Stain";
-   diffuseMap[0] = "CratesSimple0001Fragile2Stain";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/props/CratesSimple0001Fragile2Stain";
    customFootstepSound = "FootStepWood1Sound";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/props/CratesSimple0001stain4_NORM.png";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Kardia";
+   forestWindEnabled = "1";
 };
 
 singleton Material(mat_cratesSimple001stain4)
 {
    mapTo = "CratesSimple0001stain4";
-   diffuseMap[0] = "CratesSimple0001stain4";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/props/CratesSimple0001stain4";
    translucent = "0";
+   specularPower[0] = "1";
+   specularStrength[0] = "0";
+   materialTag0 = "Kardia";
+   forestWindEnabled = "1";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/props/CratesSimple0001stain4_NORM.png";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   customImpactSound = "FootStepWood1Sound";
 };
 
 singleton Material(mat_barrell1)
