@@ -59,31 +59,39 @@ singleton Material(matBM_Limbs)
 /////////////////////////////HAIR///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-singleton Material(matBM_HairA)
-{
-   mapTo = "BM_HairA";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairA/HairA_Black";
-   doubleSided = "1";
-   translucent = "1";
-   alphaTest = "1";
-   alphaRef = 50; 
-   translucentZWrite = "0";
-   castShadows = "0";
-   translucentBlendOp = "None";
-   materialTag0 = "Avatar_BM";
-};
-
 singleton Material(matBM_HairB_Scalp)
 {
    mapTo = "BM_HairB_Scalp";
    diffuseMap[0] = "art/players/base/BaseMale/Hair/HairB/HairB_Scalp_Black";
+   doubleSided = "0";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 100; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "0";
+   showFootprints = "0";
+};
+
+singleton Material(matBM_HairB_Strands)
+{
+   mapTo = "BM_HairB_Strands";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairB/HairB_Strands_Black";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "0"; 
+   translucentZWrite = "0";
+   castShadows = "1";
+   translucentBlendOp = "LerpAlpha";
+   materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   showFootprints = "0";
+   specularPower[0] = "128";
+   specularStrength[0] = "1";
+   pixelSpecular[0] = "1";
 };
 
 singleton Material(matBM_HairB_Strands)
@@ -102,58 +110,71 @@ singleton Material(matBM_HairB_Strands)
 
 ////HairC
 
-singleton Material(matBM_HairC_Scalp)
-{
-   mapTo = "BM_HairC_Scalp";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairC/HairC_Scalp_Black";
-   translucent = "1";
-   alphaTest = "1";
-   alphaRef = 50; 
-   translucentZWrite = "0";
-   castShadows = "0";
-   translucentBlendOp = "None";
-   materialTag0 = "Avatar_BM";
-};
-
 singleton Material(matBM_HairC_Strands)
 {
    mapTo = "BM_HairC_Strands";
    diffuseMap[0] = "art/players/base/BaseMale/Hair/HairC/HairC_Strands_Black";
-   doubleSided = "0";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 255; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBM_HairD_Scalp)
 {
    mapTo = "BM_HairD_Scalp";
    diffuseMap[0] = "art/players/base/BaseMale/Hair/HairD/HairD_Scalp_Black";
+   doubleSided = "0";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 50; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBM_HairD_Strands)
 {
    mapTo = "BM_HairD_Strands";
    diffuseMap[0] = "art/players/base/BaseMale/Hair/HairD/HairD_Strands_Black";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "0"; 
+   translucentZWrite = "0";
+   castShadows = "0";
+   translucentBlendOp = "LerpAlpha";
+   materialTag0 = "Avatar_BM";
+   doubleSided = "1";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+};
+
+singleton Material(matBM_HairE)
+{
+   mapTo = "BM_HairE";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairE/BM_HairE_Black";
    doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
-   alphaRef = 100; 
+   alphaRef = "0"; 
    translucentZWrite = "0";
    castShadows = "0";
-   translucentBlendOp = "None";
+   translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
+   specularPower[0] = "128";
+   specularStrength[0] = "0";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
 };
 
 singleton Material(matBM_HairE)
@@ -577,5 +598,19 @@ singleton Material(matBM_Scabbard_Tok)
 {
    mapTo = "Scabbard_Tok";
    diffuseMap[0] = "art/inv/weapons/TokSword/Scabbard_Tok";
+   materialTag0 = "Avatar_BM";
+};
+
+singleton Material(matBM_HairC_Scalp)
+{
+   mapTo = "BM_HairC_Scalp";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairC/HairC_Scalp_Black";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   castShadows = "0";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "0";
+   showFootprints = "0";
    materialTag0 = "Avatar_BM";
 };
