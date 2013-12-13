@@ -5,13 +5,11 @@
 
 singleton Material(bigleaf_material)
 {
-   baseTex[0] = "";
-   bumpTex[0] = "";
    mapTo = "bigleaf";
 
-   pixelSpecular = 0;
+   pixelSpecular = "1";
    specular = "1 1 0.75 0.25";
-   specularPower = 10;
+   specularPower = "11";
       
    translucent = true;
    translucentBlendOp = None;
@@ -24,11 +22,13 @@ singleton Material(bigleaf_material)
    backLightFactor = "0.9 1.0 0.2";
 
    forestWindEnabled = 1;   
-   diffuseMap[0] = "bigleaf_diffuse_transparency.dds";
-   normalMap[0] = "bigleaf_normals_specular.dds";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_diffuse_transparency.dds";
+   normalMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_normals_specular.dds";
    materialTag0 = "Vegetation";
-   specularMap[0] = "bigleaf_specular.dds";
+   specularMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_specular.dds";
    materialTag1 = "Vegetation";
+   specularStrength[0] = "2.84314";
+   useAnisotropic[0] = "1";
 };
 
 
