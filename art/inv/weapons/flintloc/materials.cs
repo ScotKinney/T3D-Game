@@ -27,8 +27,10 @@ singleton Material(mat_Flintlock)
 {
    mapTo = "Pistol_color";
    diffuseMap[0] = "art/inv/weapons/flintloc/Pistol_color";
-   normalMap[0] = "art/inv/weapons/flintloc/Pistol_normals.dds";
+   normalMap[0] = "art/inv/weapons/flintloc/Pistol_normals512.dds";
    pixelSpecular[0] = "1";
    specularMap[0] = "art/inv/weapons/flintloc/Pistol_specular.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Kardia";
+   forestWindEnabled = "1";
 };
