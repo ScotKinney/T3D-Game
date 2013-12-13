@@ -142,7 +142,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new TSStatic() {
+   new TSStatic(RoundBoulder) {
       shapeName = "art/Packs/rocks/T3D/boulder.dts";
       playAmbient = "1";
       meshCulling = "0";
@@ -294,6 +294,20 @@ new SimGroup(MissionGroup) {
       isAIControlled = "0";
       dataBlock = "Invisibility_Rune";
       position = "-20 9 23";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item(PassportSpell) {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "Astral_Passport";
+      position = "-20 10 23";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";

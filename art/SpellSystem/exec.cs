@@ -22,6 +22,11 @@ for(%spellFile = findFirstFile("./Explosions/*.cs"); %spellFile !$= ""; %spellFi
    exec(%spellFile);
 }
 
+for(%spellFile = findFirstFile("./Effects/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
+{
+   exec(%spellFile);
+}
+
 for(%spellFile = findFirstFile("./Spells/*.cs"); %spellFile !$= ""; %spellFile = findNextFile())
 {
    exec(%spellFile);

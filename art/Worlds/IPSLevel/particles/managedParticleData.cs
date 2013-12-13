@@ -175,4 +175,3 @@ datablock MaskEmitterData(StarMaskEmitter)
    Grounded = false;
    //lifetimeMS = "1000";
 };
-
