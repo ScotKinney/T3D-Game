@@ -54,7 +54,7 @@ function PLAYERDATA::onRemove(%this, %obj)
       %obj.light.delete();
    
    if(isObject(%obj.TAPLink))
-      %obj.use3DTL();
+      %obj.TAPLink.delete();
 
    if (%obj.client.player == %obj)
       %obj.client.player = 0;
