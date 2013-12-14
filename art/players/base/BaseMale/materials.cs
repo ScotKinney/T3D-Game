@@ -59,6 +59,24 @@ singleton Material(matBM_Limbs)
 /////////////////////////////HAIR///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+singleton Material(matBM_HairA)
+{
+   mapTo = "BM_HairA";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairA/HairA_Black";
+   doubleSided = "1";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = 100; 
+   translucentZWrite = "0";
+   castShadows = "0";
+   translucentBlendOp = "LerpAlpha";
+   useAnisotropic[0] = "0";
+   materialTag0 = "Avatar_BM";
+};
+
+
+////HairB
+
 singleton Material(matBM_HairB_Scalp)
 {
    mapTo = "BM_HairB_Scalp";
@@ -94,19 +112,6 @@ singleton Material(matBM_HairB_Strands)
    pixelSpecular[0] = "1";
 };
 
-singleton Material(matBM_HairB_Strands)
-{
-   mapTo = "BM_HairB_Strands";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairB/HairB_Strands_Black";
-   doubleSided = "1";
-   translucent = "1";
-   alphaTest = "1";
-   alphaRef = 50; 
-   translucentZWrite = "0";
-   castShadows = "0";
-   translucentBlendOp = "None";
-   materialTag0 = "Avatar_BM";
-};
 
 ////HairC
 
@@ -125,6 +130,23 @@ singleton Material(matBM_HairC_Strands)
    doubleSided = "1";
    showFootprints = "0";
 };
+
+singleton Material(matBM_HairC_Scalp)
+{
+   mapTo = "BM_HairC_Scalp";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairC/HairC_Scalp_Black";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   castShadows = "0";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "0";
+   showFootprints = "0";
+   materialTag0 = "Avatar_BM";
+};
+
+
+////HairD
 
 singleton Material(matBM_HairD_Scalp)
 {
@@ -157,6 +179,9 @@ singleton Material(matBM_HairD_Strands)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
 };
+
+
+////HairE
 
 singleton Material(matBM_HairE)
 {
@@ -601,16 +626,4 @@ singleton Material(matBM_Scabbard_Tok)
    materialTag0 = "Avatar_BM";
 };
 
-singleton Material(matBM_HairC_Scalp)
-{
-   mapTo = "BM_HairC_Scalp";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairC/HairC_Scalp_Black";
-   useAnisotropic[0] = "1";
-   doubleSided = "1";
-   castShadows = "0";
-   translucent = "1";
-   alphaTest = "1";
-   alphaRef = "0";
-   showFootprints = "0";
-   materialTag0 = "Avatar_BM";
-};
+
