@@ -379,7 +379,10 @@ function AIPlayer::adjustAttentionLevel(%this, %obj, %index2, %botpos)
 //Get the player's position a short time after sight is lost
 function AIPlayer::GetNewGuardPosition(%this, %obj)
 {
-   %obj.returningPos = %obj.oldTarget.getposition();
+   if ( isObject(%obj.oldTarget) )
+      %obj.returningPos = %obj.oldTarget.getposition();
+   else if ( isObject(%obj.marker) )
+      %obj.returningPos = %obj.marker.getposition();
 }
 
 

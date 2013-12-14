@@ -270,6 +270,9 @@ package GameCore
       %client.conHash = %passwordHash;
       %client.authenticated = false;
 
+      // set the desired spawnpoint for the player if sent
+      %client.spawnPoint = %spawnPoint;
+
       // We can't authenticate a local client until after the server has
       // been registered
       if ( %client.getAddress() $= "local" )
