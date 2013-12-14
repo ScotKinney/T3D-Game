@@ -174,8 +174,8 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    decalOffset = 0.25;
 
    // Controls over slope of runnable/jumpable surfaces
-   runSurfaceAngle  = 70;
-   jumpSurfaceAngle = 80;
+   runSurfaceAngle  = 60;
+   jumpSurfaceAngle = 60;
    maxStepHeight = 2;  //This get's multiplied by scale and boglins are 1 scale
 };
 
