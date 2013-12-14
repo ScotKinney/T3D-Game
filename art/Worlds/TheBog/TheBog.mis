@@ -949,7 +949,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             activeDodge = "1";
-            block = "BoglinBig";
+            block = "Boglin";
             botBelongsToMe = "0";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
