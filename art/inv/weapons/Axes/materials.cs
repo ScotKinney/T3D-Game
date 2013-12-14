@@ -3,7 +3,7 @@ singleton Material(mat_Axe_A)
 {
    mapTo = "Axe_A_color";
    diffuseMap[0] = "art/inv/weapons/Axes/Axe_A_color";
-   normalMap[0] = "art/inv/weapons/Axes/Axe_A_normals.jpg";
+   normalMap[0] = "art/inv/weapons/Axes/Axe_A_normals512.dds";
    specularPower[0] = "111";
    pixelSpecular[0] = "1";
    specularMap[0] = "art/inv/weapons/Axes/Axe_A_specular.dds";
