@@ -22,7 +22,7 @@ datablock SFXProfile(BoglinHit1)
 datablock SFXProfile(BoglinHit2)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit2";
-   description = AudioClose3d;;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(BoglinHit3)
