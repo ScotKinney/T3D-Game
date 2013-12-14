@@ -2,45 +2,45 @@
 datablock SFXProfile(BoglinDeathCry)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinDeathCry";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
 datablock SFXProfile(BoglinPainCry)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinPainCry";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
 datablock SFXProfile(BoglinHit1)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit1";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(BoglinHit2)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit2";
-   description = AudioClosest3d;
+   description = AudioClose3d;;
    preload = false;
 };
 datablock SFXProfile(BoglinHit3)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit3";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(BoglinHit4)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit4";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 datablock SFXProfile(BoglinHit5)
 {
    fileName = "art/Packs/AI/Boglin/sound/BoglinHit5";
-   description = AudioClosest3d;
+   description = AudioClose3d;
    preload = false;
 };
 
@@ -181,7 +181,7 @@ datablock PlayerData(Boglin : DefaultPlayerData)
 
 datablock PlayerData(BoglinBig : Boglin)
 {
-   maxDamage = 100;
+   maxDamage = 300;
 };
 
 // Load the Boglin weapon
