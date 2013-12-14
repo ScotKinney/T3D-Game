@@ -14,10 +14,12 @@ function BoglinDts::onLoad(%this)
    %this.setSequenceCyclic("Combat_Root", "1");
    %this.addSequence("./Boglin_Run.dsq", "Run", "0", "50", "1", "0");
    %this.setSequenceCyclic("Run", "1");
+   %this.addTrigger("Run", "25", "1");
+   %this.addTrigger("Run", "10", "2");
    %this.addSequence("./Boglin_Sprint.dsq", "Sprint", "0", "35", "1", "0");
    %this.setSequenceCyclic("Sprint", "1");
-   %this.addSequence("./Boglin_StrafeRight.dsq", "Strafe_Right", "0", "22", "1", "0");
-   %this.setSequenceCyclic("Strafe_Right", "1");
+   %this.addTrigger("Sprint", "0", "1");
+   %this.addTrigger("Sprint", "12", "2");
    %this.addSequence("./Boglin_Jump.dsq", "Jump_Stand", "0", "22", "1", "0");
    %this.addSequence("./Boglin_RunJump.dsq", "Jump_Run", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Anger.dsq", "Anger", "0", "22", "1", "0");
@@ -39,13 +41,10 @@ function BoglinDts::onLoad(%this)
    %this.addSequence("./Boglin_Talking.dsq", "Talking", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Tracking.dsq", "Tracking", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Death.dsq", "Death", "0", "22", "1", "0");
-   %this.addTrigger("Run", "25", "1");
-   %this.addTrigger("Run", "10", "2");
-   %this.addTrigger("Sprint", "0", "1");
-   %this.addTrigger("Sprint", "12", "2");
-   %this.addTrigger("Strafe_Left", "13", "1");
    %this.addSequence("./Boglin_StrafeLeft.dsq", "Strafe_Left", "0", "35", "1", "0");
    %this.setSequenceCyclic("Strafe_Left", "1");
+   %this.addTrigger("Strafe_Left", "13", "1");
+   %this.addTrigger("Strafe_Left", "18", "2");
    %this.addSequence("./Boglin_StepLeft.dsq", "Side_Left", "0", "35", "1", "0");
    %this.setSequenceCyclic("Side_Left", "1");
    %this.addTrigger("Side_Left", "10", "1");
@@ -54,4 +53,8 @@ function BoglinDts::onLoad(%this)
    %this.setSequenceCyclic("Side_Right", "1");
    %this.addTrigger("Side_Right", "12", "2");
    %this.addTrigger("Side_Right", "20", "1");
+   %this.addSequence("./Boglin_StrafeRight.dsq", "Strafe_Right", "0", "35", "1", "0");
+   %this.setSequenceCyclic("Strafe_Right", "1");
+   %this.addTrigger("Strafe_Right", "11", "1");
+   %this.addTrigger("Strafe_Right", "17", "2");
 }
