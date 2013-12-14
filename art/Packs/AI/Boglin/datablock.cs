@@ -110,9 +110,9 @@ datablock PlayerData(Boglin : DefaultPlayerData)
 {
    renderFirstPerson = false;
 
-   shapeFile = "art/Packs/AI/Boglin/goblin1.dae";
+   shapeFile = "art/Packs/AI/Boglin/boglin.dts";
    
-   maxDamage = 30;
+   maxDamage = 200;
    maxForwardSpeed = 2;
    maxBackwardSpeed = 2;
    maxSideSpeed = 1;
@@ -124,10 +124,10 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    Weapon = "club";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 2.5;
+   maxRange = 2.0;
    minRange = 0;
    distDetect = 55;
-   sidestepDist = 10;
+   sidestepDist = 2;
    paceDist = 6;
    npcAction = 0;
    spawnGroup = 1;
@@ -163,8 +163,8 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    AttackSound[3] = BoglinAttack4;
    AttackSound[4] = BoglinAttack5;
 
-   numDeathAnims = 2;
-   numDamageAnims = 0;
+   numDeathAnims = 1;
+   numDamageAnims = 2;
 
    boundingBox = "2 2 3";
    swimBoundingBox = "2 4 4";
@@ -176,7 +176,7 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;
    jumpSurfaceAngle = 80;
-   maxStepHeight = 8;  //This get's multiplied by scale and boglins are 0.4 scale
+   maxStepHeight = 2;  //This get's multiplied by scale and boglins are 1 scale
 };
 
 datablock PlayerData(BoglinBig : Boglin)
@@ -184,5 +184,5 @@ datablock PlayerData(BoglinBig : Boglin)
    maxDamage = 100;
 };
 
-// Load the gart weapon
+// Load the Boglin weapon
 exec("./weapon.cs");
