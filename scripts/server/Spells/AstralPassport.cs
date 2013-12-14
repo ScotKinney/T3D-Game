@@ -17,7 +17,7 @@ function AstralPassport::onCast(%this, %spell)
    // Remove the item from the casters inventory
    //%src.decInventory(%this.item, 1);
 
-   %src.ForceAnimation(true, "ap", true);
+   %src.ForceAnimation(true, "tp", true);
 
    %start = %src.position;
    %effectObj = new ParticleEffect(){

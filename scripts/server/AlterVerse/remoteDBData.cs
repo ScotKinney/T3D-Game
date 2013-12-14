@@ -152,9 +152,15 @@ function remoteDBData::moveUserTo( %this )
    }
 
    // Play any teleport effect here.
+   %transferDelay = 50;
+   if ( !%client.triggeredMove )
+   {
+      %client.player.playLeaveEffect();
+      %transferDelay = 2000;
+   }
 
    if ( (%this.sFile !$= "") && (%this.sRoot !$= "") )
-      schedule(1000, 0, "commandToClient", %client,
+      schedule(%transferDelay, 0, "commandToClient", %client,
                       'serverTransferStream',
                       %this.sFile,
                       %this.sRoot,
@@ -164,7 +170,7 @@ function remoteDBData::moveUserTo( %this )
                       %this.sName,
                       %this.sPrefix);
    else
-      schedule(1000, 0, "commandToClient", %client,
+      schedule(%transferDelay, 0, "commandToClient", %client,
                       'serverTransfer',
                       %this.sAddr,
                       %this.spawnPt,

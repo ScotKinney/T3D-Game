@@ -161,6 +161,17 @@ function GameConnection::AuthenticateUser(%client)
 function GameConnection::DisconnectUser(%client)
 {
    echo("Finalizing client database entries for "@%client.pData.dbName);
+
+   // If the client had their horse out, get it off the server or it will
+   // become a drop item
+   if ( isObject(%client.horse) )
+   {
+      %client.horse.playLeaveEffect();
+      %client.horse.schedule(2000, "delete");
+      %client.horse.client = "";
+      %client.horse = "";
+   }
+
    %playTime = ((getSimTime() / 1000) - %client.joinTime) / 60;
    %inventory = %client.getInventoryString();
    if ( %inventory $= "" )

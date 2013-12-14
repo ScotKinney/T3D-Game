@@ -213,7 +213,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/ssj_lock.dsq", "ssj_lock", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/ssj_grab.dsq", "ssj_grab", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/mok.dsq", "mok", "0", "-1", "1", "0");
-   %this.addSequence("art/players/base/Anims/ap.dsq", "ap", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/ap.dsq", "tp", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/mlf.dsq", "mlf", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/aitm.dsq", "aitm", "0", "119", "1", "0");
    %this.addSequence("art/players/base/Anims/uif_hit.dsq", "uif_hit", "0", "-1", "1", "0");

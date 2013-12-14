@@ -16,4 +16,10 @@
     <Emitter Type="MaskEmitter" x="0" y="0" z="0" datablock="msk_DefaultNode" emitter="APMaskEmitter" Start="0" End="0.3">
     </Emitter>
   </Emitters>
+  <Sounds>
+    <Sound x="0" y="0" z="0" datablock="AP_LeaveSpinUpSFX" Start="0" End="1">
+    </Sound>
+    <Sound x="0" y="0" z="0" datablock="AP_LeaveSpinDownSFX" Start="0.7" End="1.5">
+    </Sound>
+  </Sounds>
 </ParticleEffect>

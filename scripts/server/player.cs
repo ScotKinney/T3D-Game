@@ -714,6 +714,45 @@ function Player::playXtraAnimation(%this,%anim)
 }
 
 //----------------------------------------------------------------------------
+function Player::playLeaveEffect( %this )
+{
+   %this.ForceAnimation(true, "tp", true);
+
+   %start = %this.position;
+   %effectObj = new ParticleEffect(){
+      dataBlock = APLeaveEffect;
+      position = %start;
+   };
+   %effectObj.schedule(3000, delete);
+
+   %this.startFade(1000, 250, true);
+}
+
+function Player::playArriveEffect( %this )
+{
+   %effectPos = %this.position;
+   %above = VectorAdd(%effectPos, "0 0 50");
+   %below = VectorSub(%effectPos, "0 0 20");
+
+   %result = containerRayCast(%above, %below, $TypeMasks::ShapeBaseObjectType |
+                                             $TypeMasks::StaticShapeObjectType |
+                                             $TypeMasks::TerrainObjectType, %this);
+
+   if ( isObject(getWord(%result, 0)) )
+      %effectPos = getWord(%result, 1) SPC getWord(%result, 2) SPC getWord(%result, 3);
+
+   %effectObj = new ParticleEffect(){
+      dataBlock = APArriveEffect;
+      position = %effectPos;
+   };
+   %effectObj.schedule(3000, delete);
+
+   %this.ForceAnimation(true, "tp", true);
+   %this.startFade(1000, 1000, false);
+	%this.schedule(2000, "ForceAnimation", false, "root");
+}
+
+//----------------------------------------------------------------------------
 
 function Player::playDeathCry( %this )
 {

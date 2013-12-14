@@ -31,9 +31,15 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
    if ( $Server::DB::Remote )
    {
       if ( %serverName $= "" )
+      {
+         %client.triggeredMove = false;
          %args = "tgtID="@%serverID;
+      }
       else
+      {
+         %client.triggeredMove = true;
          %args = "tgtName="@%serverName;
+      }
       %args = %args @ "&uName=" @ %client.nameBase;
       %args = %args @ "&uID=" @ %client.pData.dbID;
       %args = %args @ "&tVal=" @ %timeSec;
@@ -78,9 +84,15 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
    /*WHERE*/   "id='"@%client.pData.dbID@"'");
 
    // Play any teleport effect here.
+   %transferDelay = 50;
+   if ( %serverName $= "" )
+   {
+      %client.player.playLeaveEffect();
+      %transferDelay = 2000;
+   }
 
    if ( (%manifestURL !$= "") && (%pathToRoot !$= "") )
-      schedule(1000, 0, "commandToClient", %client, 
+      schedule(%transferDelay, 0, "commandToClient", %client, 
                       'serverTransferStream',
                       %manifestURL,
                       %pathToRoot,
@@ -90,7 +102,7 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
                       %destination,
                       %loadPrefix);
    else
-      schedule(1000, 0, "commandToClient", %client, 
+      schedule(%transferDelay, 0, "commandToClient", %client, 
                       'serverTransfer', 
                       %destAddress, 
                       %spawnSphere, 

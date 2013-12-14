@@ -43,4 +43,5 @@ function horseDts::onLoad(%this)
    %this.addNode("eye", "Horse_SpineC", "-0.00407214 0.30305 3.36044 0.503078 0.690165 -0.520178 1.96443", "1");
    %this.addSequence("./swimfull_root.dsq", "swim_root", "0", "19", "1", "0");
    %this.addSequence("./swimfull_root.dsq", "SwimFull_Root", "0", "19", "1", "0");
+   %this.addSequence("./horse_root.dsq", "tp", "0", "-1", "1", "0");
 }

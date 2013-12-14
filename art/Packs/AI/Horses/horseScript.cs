@@ -52,8 +52,8 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
          %rider.getDataBlock().doDismount(%rider, true);
 
       messageClient(%client, 'LocalizedMsg', "", "stowHorse", "a", true, true, 0);
-      //castSpell(AstralPassportSpell, %client.horse, %client.horse);
-      %client.horse.schedule(3500, "delete");
+      %client.horse.playLeaveEffect();
+      %client.horse.schedule(2000, "delete");
       %client.horse.client = "";
       %client.horse = "";
    }
@@ -80,8 +80,7 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       // Set a timer to free the horse if it is unattended too long
       %horse.FreeSchedule = %horse.schedule($Horse::StableDelay, "SetHorseFree");
 
-      
-      //castSpell(AstralPassportReappearSpell, %horse, %horse);
+      %client.horse.playArriveEffect();
    }
 
    return true;
@@ -119,7 +118,7 @@ function ThrowHorse(%user, %horseDB)
       %horse.setEnergyLevel(1);
       %horse.startFade(0, 0, true);      
       %horse.respawn = false;
-      //castSpell(AstralPassportReappearSpell, %horse, %horse);
+      %client.horse.playArriveEffect();
    }
    %horse.setClanName("Drop");
 
@@ -145,22 +144,6 @@ function FindHorseSpawn(%user, %horse)
    for (%i = 0; %i < %numAttempts; %i++)
    {
       %useTrans = %trans;
-      //if ( %i == 0 )
-      //{
-         //%zVal = getWord(%trans, 2);
-         //%rotVal = getWord(%trans, 3);
-         //if ( %zVal > 0 )
-         //{
-            //%rotVal -= 1.57;
-            //%zVal = 1;
-         //}
-         //else
-         //{
-            //%rotVal += 1.57;
-            //%zVal = -1;
-         //}
-         //%useTrans = "0 0" SPC %zVal SPC %rotVal;
-      //}
       %vec[%i] = MatrixMulVector( %user.getTransform(), %vec[%i]);
       %pos = VectorAdd(%oldPos, VectorScale(%vec[%i], 3));
       if (%horse.checkSpawnTrans(%pos SPC %useTrans))
