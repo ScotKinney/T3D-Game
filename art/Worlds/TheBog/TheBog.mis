@@ -886,7 +886,7 @@ new SimGroup(MissionGroup) {
       new StaticShape(BoglinTamaracks) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
-         position = "-156.698 -230.69 61.9374";
+         position = "-156.698 -230.69 57.1167";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          hidden = "1";
@@ -894,7 +894,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "2881";
+            botBelongsToMe = "0";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
@@ -914,7 +914,7 @@ new SimGroup(MissionGroup) {
       new StaticShape(BoglinNWCorner) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
-         position = "-68.1556 -535.628 66.639";
+         position = "-68.1556 -535.628 58.3847";
          rotation = "0 0 -1 20.3961";
          scale = "1 1 1";
          hidden = "1";
@@ -922,7 +922,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "2882";
+            botBelongsToMe = "0";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "4981";
             distDetect = "150";
@@ -942,15 +942,15 @@ new SimGroup(MissionGroup) {
       new StaticShape(BoglinShuttle) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
-         position = "-586.272 -492.163 55.5371";
+         position = "-586.272 -492.163 56.4267";
          rotation = "0 0 1 73.199";
          scale = "1 1 1";
          hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
             activeDodge = "1";
-            block = "Boglin";
-            botBelongsToMe = "2883";
+            block = "BoglinBig";
+            botBelongsToMe = "0";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
             distDetect = "150";
@@ -1115,7 +1115,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlexDecapitator";
-      position = "-461.177 -178.525 56.4017";
+      position = "-684.011 -188.709 59.6545";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1133,15 +1133,15 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_1) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-654.826 -419.815 56.2154";
-            rotation = "0 0 1 79.7475";
+            position = "-647.023 -417.937 56.7456";
+            rotation = "0 0 1 172.71";
             scale = "1 1 1";
             hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2884";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "18872";
                distDetect = "150";
@@ -1191,9 +1191,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-648.052 -413.008 55.3435";
+            position = "-648.052 -413.008 55.3798";
             rotation = "0 0 1 88.7754";
-            scale = "1 1 1";
+            scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -1291,7 +1291,7 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_2) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-490.215 -112.914 76.1436";
+            position = "-490.215 -112.276 76.1436";
             rotation = "0 0 1 100.256";
             scale = "1 1 1";
             hidden = "1";
@@ -1299,7 +1299,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2885";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1681";
                distDetect = "150";
@@ -1324,9 +1324,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-495.607 -112.908 75.4579";
+            position = "-495.607 -110.606 75.422";
             rotation = "-0 0 -1 77.9715";
-            scale = "1 1 1";
+            scale = "0.7 0.7 0.7";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -1350,9 +1350,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-489.268 -109.447 75.1758";
+            position = "-488.798 -109.447 75.1758";
             rotation = "0 0 1 153.479";
-            scale = "1 1 1";
+            scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -1458,7 +1458,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2886";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "6538";
                distDetect = "150";
@@ -1586,7 +1586,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.8438";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.8437";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1608,7 +1608,7 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_4) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-347.356 -69.6641 66.7366";
+            position = "-347.356 -69.6641 67.0357";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             hidden = "1";
@@ -1616,7 +1616,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2887";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
@@ -1692,9 +1692,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-351.882 -69.41 65.7531";
+            position = "-351.882 -69.41 65.6833";
             rotation = "0 0 1 32.7116";
-            scale = "1 1 1";
+            scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -1792,7 +1792,7 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_5) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-93.198 -355.445 65.0486";
+            position = "-91.9827 -353.016 65.0486";
             rotation = "0 0 1 26.5763";
             scale = "1 1 1";
             hidden = "1";
@@ -1800,7 +1800,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2888";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
@@ -1852,9 +1852,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-90.1995 -354.484 63.7914";
+            position = "-89.7128 -354.883 63.7101";
             rotation = "-0.253509 0.196746 -0.947114 52.1635";
-            scale = "1 1 1";
+            scale = "0.5 0.5 0.5";
             canSave = "1";
             canSaveDynamicFields = "1";
                ballista = "ballista_mat";
@@ -1999,6 +1999,34 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
 
+         new StaticShape(Boglin_6) {
+            isAIControlled = "0";
+            dataBlock = "AIPlayerMarker";
+            position = "-221.535 -150.168 59.4153";
+            rotation = "0 0 1 127.882";
+            scale = "1 1 1";
+            hidden = "1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               activeDodge = "0";
+               block = "Boglin";
+               botBelongsToMe = "0";
+               customAmbientLighting = "0 0 0 1";
+               delayRespawn = "4138";
+               distDetect = "150";
+               dropcount = "1";
+               DropItem = "mudfish";
+               enabled = "1";
+               fov = "270";
+               npcAction = "1";
+               receiveLMLighting = "1";
+               receiveSunLight = "1";
+               respawnCount = "0";
+               respawnCounter = "0";
+               sidestepDist = "5";
+               spawnGroup = "2";
+               useCustomAmbientLighting = "0";
+         };
          new TSStatic(Cottage_6) {
             shapeName = "art/Packs/props/theBog/cottage.dts";
             playAmbient = "1";
@@ -2034,9 +2062,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-219.784 -144.035 58.1244";
+            position = "-220.213 -144.276 58.1244";
             rotation = "0 0 1 150.654";
-            scale = "1 1 1";
+            scale = "0.5 0.5 0.5";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -2089,9 +2117,9 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-224.686 -153.712 57.4525";
+            position = "-224.686 -153.712 57.4922";
             rotation = "0 0 1 52.9022";
-            scale = "1 1 1";
+            scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
                customAmbientLighting = "0 0 0 1";
@@ -2151,34 +2179,6 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                enabled = "1";
          };
-         new StaticShape(Boglin_6) {
-            isAIControlled = "0";
-            dataBlock = "AIPlayerMarker";
-            position = "-224.978 -147.49 58.5803";
-            rotation = "0 0 1 127.882";
-            scale = "1 1 1";
-            hidden = "1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-               activeDodge = "0";
-               block = "Boglin";
-               botBelongsToMe = "2889";
-               customAmbientLighting = "0 0 0 1";
-               delayRespawn = "4138";
-               distDetect = "150";
-               dropcount = "1";
-               DropItem = "mudfish";
-               enabled = "1";
-               fov = "270";
-               npcAction = "1";
-               receiveLMLighting = "1";
-               receiveSunLight = "1";
-               respawnCount = "0";
-               respawnCounter = "0";
-               sidestepDist = "5";
-               spawnGroup = "2";
-               useCustomAmbientLighting = "0";
-         };
       };
       new SimGroup(BoglinHome7) {
          canSave = "1";
@@ -2187,15 +2187,15 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_7) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-514.916 4.74224 62.4121";
-            rotation = "0 0 -1 0.842089";
+            position = "-513.102 10.4391 62.4121";
+            rotation = "0 0 1 46.4174";
             scale = "1 1 1";
             hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2890";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
@@ -2248,7 +2248,7 @@ new SimGroup(MissionGroup) {
             forceDetail = "-1";
             position = "-510.509 6.98803 60.9707";
             rotation = "-0.253509 0.196746 -0.947114 52.1635";
-            scale = "1 1 1";
+            scale = "0.5 0.5 0.5";
             canSave = "1";
             canSaveDynamicFields = "1";
                ballista = "ballista_mat";
@@ -2271,7 +2271,7 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-508.438 3.18294 61.859";
+            position = "-508.713 3.40549 61.859";
             rotation = "0 0 1 218.942";
             scale = "0.35 0.35 0.35";
             canSave = "1";
@@ -2396,7 +2396,7 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_8) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-683.661 -179.148 59.9379";
+            position = "-683.649 -178.644 59.9379";
             rotation = "0 0 1 1.41552";
             scale = "1 1 1";
             hidden = "1";
@@ -2404,7 +2404,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2891";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
@@ -2556,7 +2556,7 @@ new SimGroup(MissionGroup) {
          new StaticShape(Boglin_9) {
             isAIControlled = "0";
             dataBlock = "AIPlayerMarker";
-            position = "-461.177 -176.966 57.2219";
+            position = "-455.331 -177.96 57.2219";
             rotation = "0 0 1 106.462";
             scale = "1 1 1";
             hidden = "1";
@@ -2564,7 +2564,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "2892";
+               botBelongsToMe = "0";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "21673";
                distDetect = "150";
@@ -2800,9 +2800,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "45.1283 120.873 67.657";
+      position = "45.1283 120.873 68.056";
       rotation = "0 0 1 161.985";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2820,9 +2820,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "95.4367 139.85 68.1658";
-      rotation = "0 0 1 154.187";
-      scale = "1 1 1";
+      position = "91.5579 139.219 68.0185";
+      rotation = "0 0 1 163.014";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2840,9 +2840,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-287.362 -330.549 64.8222";
+      position = "-287.362 -330.549 64.9465";
       rotation = "0 0 1 153.288";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2862,7 +2862,7 @@ new SimGroup(MissionGroup) {
       forceDetail = "-1";
       position = "-549.754 -479.532 54.2557";
       rotation = "0 0 1 162.222";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2882,7 +2882,7 @@ new SimGroup(MissionGroup) {
       forceDetail = "-1";
       position = "-51.3146 -305.609 56.8389";
       rotation = "0 0 1 98.8958";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2900,9 +2900,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-64.7492 -98.6894 55.9139";
+      position = "-64.7492 -98.6894 56.2518";
       rotation = "0 0 1 105.824";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2920,9 +2920,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "2.89307 103.375 53.5753";
+      position = "2.89307 103.375 53.8075";
       rotation = "0 0 1 157.032";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -2940,9 +2940,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-364.546 69.3148 55.3802";
+      position = "-364.546 69.3148 55.6157";
       rotation = "0 0 1 164.935";
-      scale = "1 1 1";
+      scale = "0.5 0.5 0.5";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
