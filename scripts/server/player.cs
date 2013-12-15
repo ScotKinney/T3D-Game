@@ -481,7 +481,8 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
       if ((%delta > %painThreshold) && !%obj.newlyAdded && !%isSilent)
       {
          %obj.playPain();
-         if ( %obj.isBot && (%this.numDamageAnims > 0))
+         //if ( %obj.isBot && (%this.numDamageAnims > 0))
+         if ( %this.numDamageAnims > 0 )
          {
             %painStunTime = (%this.painStunTime $= "") ? 2000 : %this.painStunTime;
             %oldSpeed = %obj.getMoveSpeed();
