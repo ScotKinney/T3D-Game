@@ -37,7 +37,7 @@ function clientCmdSetSkullLevel(%value, %upgrade, %wait)
    // skull upgrade message
    if(%upgrade !$= "")
    {
-      if(Canvas.getContent() == PlayGui.getId() && %wait $= "")
+      if(Canvas.getContent() == PlayGui.getId() && !%wait)
       {
          AVToolbar.getPlayerRank(true);
          if ( %value < 4 )
