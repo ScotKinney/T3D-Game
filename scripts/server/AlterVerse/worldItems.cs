@@ -178,7 +178,7 @@ datablock ItemData(BBQ_Ribs_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle2-3.dts";
    invIcon = "art/gui/icons/BBQ_Ribs_Potion.jpg";
-   maxInventory = 100;
+   maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -447,7 +447,7 @@ datablock ItemData(Evil_Eye_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-1.dts";
    invIcon = "art/gui/icons/evil_eye_potion.jpg";
-   maxInventory = 100;
+   maxInventory = 10;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -775,7 +775,7 @@ datablock ItemData(Human_Torch_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-2.dts";
    invIcon = "art/gui/icons/Human_Torch_Potion.jpg";
-   maxInventory = 100;
+   maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -800,7 +800,7 @@ datablock ItemData(InsectInside_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-3.dts";
    invIcon = "art/gui/icons/InsectInside_Potion.jpg";
-   maxInventory = 100;
+   maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -825,7 +825,7 @@ datablock ItemData(Invisibility_Rune)
    className = "magic";
    shapeFile = "art/inv/magic/Runes/rIrune.dts";
    invIcon = "art/gui/icons/Invisibility_Rune.jpg";
-   maxInventory = 100;
+   maxInventory = 10;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1097,7 +1097,7 @@ datablock ItemData(Leaf_Me_Alone_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-4.dts";
    invIcon = "art/gui/icons/Leaf_Me_Alone_Potion.jpg";
-   maxInventory = 100;
+   maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1651,7 +1651,7 @@ datablock ItemData(Ring_of_Fire_Rune)
    className = "magic";
    shapeFile = "art/inv/magic/Runes/rIXrune.dts";
    invIcon = "art/gui/icons/Ring_Of_Fire_Rune.jpg";
-   maxInventory = 100;
+   maxInventory = 3;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -1762,6 +1762,31 @@ datablock ItemData(Sazzons_Scepter)
 };
 $AlterVerse::ItemNames[68] = "Sazzons_Scepter";
 
+datablock ItemData(Self_Immolation_Kit)
+{
+
+   ItemID = 127;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle5-2.dts";
+   invIcon = "art/gui/icons/Lamp_Oil.jpg";
+   maxInventory = 5;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10;
+   table = "Magic";
+   spellDef = "SelfImmolation";
+   spellTarget = "Self";
+};
+$AlterVerse::ItemNames[127] = "Self_Immolation_Kit";
+
 datablock ItemData(Shard_of_Boltarc)
 {
 
@@ -1795,7 +1820,7 @@ datablock ItemData(Shards_of_Ice_Crystal)
    className = "magic";
    shapeFile = "art/inv/magic/Crystals/crys5_Small.dts";
    invIcon = "art/gui/icons/shards_of_ice_crystal.jpg";
-   maxInventory = 100;
+   maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -2259,7 +2284,7 @@ datablock ItemData(The_Claw_Potion)
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle2-1.dts";
    invIcon = "art/gui/icons/The_Claw_Potion.jpg";
-   maxInventory = 100;
+   maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
 
