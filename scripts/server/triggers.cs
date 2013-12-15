@@ -159,6 +159,13 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
       return;
    }
 
+   // Make sure the player has all required inventory to use the trigger
+   if ( (%trigger.invRequirement !$= "") && !%this.checkInvRequirement(%trigger, %obj) )
+   {
+      messageClient(%obj.client, 'LocalizedMsg', "", %trigger.noInvMsg, "a", true, true, 0);
+      return;
+   }
+
    // award any skull level increase, and check to
    // see if the player is allowed to use this trigger
    if(%this.checkSkullLevel(%trigger, %obj) == false)
@@ -169,9 +176,9 @@ function serverTransferTrigger::onEnterTrigger(%this, %trigger, %obj)
    
    // get the destination from the trigger
    %destination = %trigger.destinationServer;
-   if(%destination $= "")
+   if( %destination $= "" )
    {
-      error("serverTransferTrigger: no destination");
+      //error("serverTransferTrigger: no destination");
       return;
    }
 
@@ -191,19 +198,28 @@ function serverTransferTrigger::checkSkullLevel(%this, %trigger, %obj)
    if ( %trigger.skulllevel == (%sl+1) )
    {
       %sl = %trigger.skulllevel;
-      %delayAward = "";
+      %delayAward = false;
       if ( %trigger.destinationServer !$= "" )
          %delayAward = true;
-      %obj.client.awardSkullLevel(%sl, %delayAward);
+      %obj.client.awardLockLevel(%sl, %delayAward);
    }
-   
+
    // prevent players with insufficient skull level from using this trigger
    if(%trigger.minSkullLevel !$= "")
    {
       if(%sl < %trigger.minSkullLevel)
          return false;
    }
-   
+
    return true;
 }
 
+function TriggerData::checkInvRequirement(%this, %trigger, %obj)
+{
+   %count = getWordCount(%trigger.invRequirement);
+   for (%i = 0; %i < %count; %i++)
+      if ( !%obj.hasInventory(getWord(%trigger.invRequirement, %i)) )
+         return false;
+
+   return true;
+}

@@ -166,12 +166,19 @@ chatStrings.msg[46] = "Telegram sent to %1.";
 // Message 47 - Message displayed when a telegram cannot be read from the database
 chatStrings.msg[47] = "Telegram is not available at this time.";
 
+// Transfer Trigger Messages ---------------------------------------------------
 // Message tgrLvl - Message displayed when a user enters a transfer trigger that
 // requires a higher skull level
 chatStrings.msg[tgrLvl] = "\c0You must be skull level %1 or greater to use this portal.";
-
 // Message sttMag - Message displayed when a migrant tries to use the portal to the magellan
 chatStrings.msg[sttMag] = "\c0You must be a Citizen to enter the Magellan!";
+// Message noFDMag - Message displayed when a migrant tries to use the portal to
+// the magellan without having the flex decapitator.
+chatStrings.msg[noFDMag] = "\c1A Boglin has stolen the Flex Decapitator! You need to find it to operate the Teleporter.";
+// Message lvlUp - Message displayed when a player receives a new lock level
+chatStrings.msg[lvlUp] = "\c0%1 has reached Lock Level %2!";
+// Message selfLvl - Message displayed to the player that gets a new Lock Level
+chatStrings.msg[selfLvl] = "\c0Congratulations! You've reached Lock Level %1!";
 
 // Chat Log Messages -----------------------------------------------------------
 // chatLogOn - This message is displayed when user activates chat logging.

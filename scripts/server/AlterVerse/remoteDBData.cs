@@ -52,6 +52,7 @@ function remoteDBData::handleDBResult( %this )
       case "ServerPing":
       case "SetArn":
       case "SetNetWorth":
+      case "SetLockLevel":
 
       default:
          echo("Valid command with no handler??? (" @ %this.command @ ")");

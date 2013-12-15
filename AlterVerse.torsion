@@ -27,16 +27,7 @@
 <Config>
 <Name>Dedicated</Name>
 <Executable>AlterVerse.exe</Executable>
-<Arguments>-dedicated -name Mars1 -initialLogin -mission levels\Empty_Terrain.mis -worldID 2 -worldType 1 -kingdom 1 -desi NZ</Arguments>
-<HasExports>true</HasExports>
-<Precompile>true</Precompile>
-<InjectDebugger>true</InjectDebugger>
-<UseSetModPaths>false</UseSetModPaths>
-</Config>
-<Config>
-<Name>Debug</Name>
-<Executable>AlterVerse.exe</Executable>
-<Arguments/>
+<Arguments>-dedicated -name Mars3 -initialLogin -mission art\Worlds\IPSLevel\IPSLevel.mis -worldID 3 -worldType 3 -kingdom 0</Arguments>
 <HasExports>true</HasExports>
 <Precompile>true</Precompile>
 <InjectDebugger>true</InjectDebugger>

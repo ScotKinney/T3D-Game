@@ -490,7 +490,7 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
             %anim = 1;
             if ( %this.numDamageAnims > 1 )
                %anim = getRandom(1, %this.numDamageAnims);
-            %obj.setActionThread("damage" @ %anim, false, false);
+            %obj.setActionThread("damage" @ %anim, false, true);
             %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
          }
       }

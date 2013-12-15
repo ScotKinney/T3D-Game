@@ -45,12 +45,12 @@ function clientCmdSetSkullLevel(%value, %upgrade, %wait)
             //ShowTutorial(%value + 1);
             schedule(5000, 0, "ShowTutorial", %value + 1);
          }
-         if(isObject(SkullLevelUpGui))      
-         {
-            %message = strReplace(guiStrings.lvlUpLine2, "%1", %value);
-            SkullLevelUpGui-->SkullLevelUpText.text = %message;
-            Canvas.pushDialog(SkullLevelUpGui);
-         }
+         if(!isObject(SkullLevelUpGui))      
+            exec("art/gui/SkullLevelUpGui.gui");
+
+         %message = strReplace(guiStrings.lvlUpLine2, "%1", %value);
+         SkullLevelUpGui-->SkullLevelUpText.text = %message;
+         Canvas.pushDialog(SkullLevelUpGui);
       }
       else // store the level up value for when the playgui becomes active
          $AlterVerse::PendingSkullUpgrade = %value;

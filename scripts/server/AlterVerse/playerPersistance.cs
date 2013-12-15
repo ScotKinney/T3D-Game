@@ -3,6 +3,7 @@
    Framework for managing persistant data for connected clients
    
    Guy Allard 2010
+   MAR 2013
 */
 
 function GameConnection::createPersistantStats(%client, %id, %name, %inventory)
@@ -141,4 +142,26 @@ function GameConnection::writeNetWorth(%client, %forceWrite)
       /*where*/  "user_id='"@ %client.pData.dbID @"'");
    }
    %client.lastNWWrite = %client.netWorth;
+}
+
+// Client has been awarded a new lock level.
+function GameConnection::awardLockLevel(%client, %skullLevel, %delayForTransfer)
+{  // Update the DB field
+   if ( $Server::DB::Remote )
+   {
+      %args = "uID="@ %client.pData.dbID;
+      %args = %args @ "&level=" @ %skullLevel;
+      remoteDBCommand("SetLockLevel", %args, %client);
+   }
+   else
+   {
+      DB::Update("AVPlayers","skulls='" @ %skullLevel @ "'",
+                  "ID='"@ %client.pData.dbID @ "'");
+   }
+
+   // Tell the user so they can celebrate
+   commandToClient(%client, 'setSkullLevel', %skullLevel, true, %delayForTransfer);
+
+   // Tell everyone else
+   serverChat.sendGameMsg("ae", %client.dbUserID, "lvlUp", "g", true, %client.nameBase);
 }

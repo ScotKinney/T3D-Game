@@ -338,7 +338,7 @@ function ItemData::checkSkullLevel(%this, %item, %user)
    // level increase
    if(%playerSL == %minSL)
    {
-      %user.client.awardSkullLevel(%itemSL);
+      %user.client.awardLockLevel(%itemSL);
       return true;  
    }
    

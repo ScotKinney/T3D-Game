@@ -87,7 +87,7 @@ guiStrings.replyPrefix = "Re: ";  // "Re: "
 // Skull level dialog (SkullLevelUpGui) ----------------------------------------
 guiStrings.lvlUpTitle = "!!Congratulations!!";  // !!Congratulations!!
 guiStrings.lvlUpLine1 = "You Have Reached";     // You Have Reached
-guiStrings.lvlUpLine2 = "Skull Level %1";       // Skull Level %1
+guiStrings.lvlUpLine2 = "Lock Level %1";       // Skull Level %1
 
 // Banking strings (BankingGui) ------------------------------------------------
 guiStrings.bankCaption = "Banking with %1"; // Banking with %1

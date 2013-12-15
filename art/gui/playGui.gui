@@ -1864,7 +1864,7 @@
                      canSaveDynamicFields = "0";
 
                      new GuiTextCtrl() {
-                        text = "Skull Level";
+                        text = "Lock Level";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";

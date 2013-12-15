@@ -58,6 +58,23 @@ function PlayGui::onWake(%this)
 
    PutTLOnTop();  // Bring the TL gui back onto the canvas
    $TAP::WebResponder = %this-->WebResponder;
+
+   // If there's a Lock level upgrade waiting, activate the message
+   if($AlterVerse::PendingSkullUpgrade !$= "")
+   {
+      if ( $AlterVerse::PendingSkullUpgrade < 4 )
+      {
+         //ShowTutorial($AlterVerse::PendingSkullUpgrade + 1);
+         schedule(5000, 0, "ShowTutorial", $AlterVerse::PendingSkullUpgrade + 1);
+      }
+      if(!isObject(SkullLevelUpGui))      
+         exec("art/gui/SkullLevelUpGui.gui");
+
+      %message = strReplace(guiStrings.lvlUpLine2, "%1", %value);
+      SkullLevelUpGui-->SkullLevelUpText.text = %message;
+      Canvas.pushDialog(SkullLevelUpGui);
+      $AlterVerse::PendingSkullUpgrade = "";
+   }
 }
 
 function PlayGui::onSleep(%this)
