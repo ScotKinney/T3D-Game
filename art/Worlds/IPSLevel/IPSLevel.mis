@@ -314,6 +314,20 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          respawnTime = "30";
    };
+   new Item(ImmolationSpell) {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "Self_Immolation_Kit";
+      position = "-20 11 23";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
    new SphereEmitterNode(TestSphereEmitter) {
       emitter = "EmitterRockImpact";
       dataBlock = "DefaultEmitterNodeData";

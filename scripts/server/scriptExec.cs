@@ -40,8 +40,8 @@ exec("./player.cs");
 // Load the AI scripts
 exec("./UAISK/aiExecutes.cs");
 
-if ( theLevelInfo.canBringHorses )
-   exec("./horse.cs");
+//if ( theLevelInfo.canBringHorses )
+   //exec("./horse.cs");
 
 // Load our gametypes
 exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
@@ -78,3 +78,4 @@ exec("./Spells/manainfusion.cs");
 exec("./Spells/rainoffire.cs");
 exec("./Spells/Invisibility.cs");
 exec("./Spells/AstralPassport.cs");
+exec("./Spells/Immolation.cs");

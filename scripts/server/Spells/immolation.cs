@@ -1,8 +1,8 @@
 // Spell specific datablocks ---------------------------------------------------
-singleton SpellData(SelfImmolation : DefaultAOESpell)
+singleton SpellData(SelfImmolation : DefaultSelfSpell)
 {
    ChannelTimesMS[1] = 1600;
-   SpellDecalManager = DefaultSpellIndicator;
+   //SpellDecalManager = DefaultSpellIndicator;
    CastType = "Self";
    TargetType = "Object";
 	Cost = 20;
@@ -13,7 +13,7 @@ singleton SpellData(SelfImmolation : DefaultAOESpell)
 };
 
 // Spell callbacks ---------------------------------------------------------- 
-function SelfImmolationSpell::onChannelBegin(%this, %spell)
+function SelfImmolation::onChannelBegin(%this, %spell)
 {
    // Optional: This line forces the player into an animation and 
    // roots it.
@@ -30,18 +30,19 @@ function SelfImmolationSpell::onChannelBegin(%this, %spell)
    %spell.baseEmitter.setBehaviorObject(0, %spell.getSource());
 }
 
-function SelfImmolationSpell::onChannelEnd(%this, %spell)
+function SelfImmolation::onChannelEnd(%this, %spell)
 {
 	// Optional: This line releases the player from any forced animation
 	%spell.getSource().ForceAnimation(false, "root");
 	%spell.baseEmitter.delete();
 }
 
-function SelfImmolationSpell::onCast(%this, %spell) 
+function SelfImmolation::onCast(%this, %spell) 
 {    
 	%src = %spell.getSource();
-	%target = %spell.getTarget();
-   if (!isObject(%src) || !isObject(%target) || (%target.getState() $= "Dead"))
+	//%target = %spell.getTarget(); // Self targetting spell...
+   //if (!isObject(%src) || !isObject(%target) || (%target.getState() $= "Dead"))
+   if ( !isObject(%src))
       return;
 
    // Remove the item from the casters inventory
@@ -49,7 +50,7 @@ function SelfImmolationSpell::onCast(%this, %spell)
 
    %aoe = new AOEImpact(){       
       SourceObject = %src;       
-      Center = %spell.getTargetPosition();       
+      Center = %src.getPosition();       
       Radius = 5;       
       TypeMask =  $TypeMasks::StaticShapeObjectType |                    
                   $TypeMasks::StaticTSObjectType;       
@@ -66,8 +67,9 @@ function AoEFireballProjectile::onCollision(%this, %obj, %col, %fade, %pos, %nor
       emitter = FireballChannelEmitterBASE;
       ParticleBehaviour[0] = ChannelAttraction;
       standAloneEmitter = true;
-      position = %spell.getSource().position;
+      position = %pos;
       Grounded = true;
    }; 
+   %blast.setBehaviorObject(0, %col);
    %blast.schedule(1500, "delete"); 
 } 
