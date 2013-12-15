@@ -159,6 +159,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addTrigger("Land", "1", "1");
    %this.addTrigger("Land", "1", "2");
    %this.addSequence("art/players/base/Anims/Flip.dsq", "Flip", "0", "15", "1", "0");
+   %this.addSequence("art/players/base/Anims/Jet.dsq", "Jet", "0", "15", "1", "0");
    %this.addSequence("art/players/base/Anims/FallFull.dsq", "FallFull", "0", "15", "1", "0");
    %this.addSequence("art/players/base/Anims/JumpFull.dsq", "JumpFull", "0", "60", "1", "0");
    %this.addTrigger("jumpfull", "40", "1");
@@ -168,6 +169,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addTrigger("StandJumpFull", "40", "2");
    %this.addSequence("art/players/base/Anims/LandFull.dsq", "LandFull", "0", "15", "1", "0");
    %this.addSequence("art/players/base/Anims/FlipFull.dsq", "FlipFull", "0", "15", "1", "0");
+   %this.addSequence("art/players/base/Anims/JetFull.dsq", "JetFull", "0", "15", "1", "0");
+   %this.addSequence("art/players/base/Anims/Mantle.dsq", "Mantle", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/ScoutRoot.dsq", "ScoutRoot", "0", "-1", "1", "0");
    %this.setSequenceCyclic("ScoutRoot", "1");
    %this.addSequence("art/players/base/Anims/shrug.dsq", "celsalute", "0", "20", "1", "0");
@@ -191,16 +194,15 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/CastSpell1.dsq", "CastSpell1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/CastSpell2.dsq", "CastSpell2", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Throw_HamAxe.dsq", "Throw_HamAxe", "0", "29", "1", "0");
-   %this.addTrigger("Throw_HamAxe", "10", "3");
    %this.setSequenceBlend("Throw_HamAxe", "1", "Root", "0");
+   %this.addTrigger("Throw_HamAxe", "10", "3");
    %this.addSequence("art/players/base/Anims/Throw_Grenade.dsq", "Throw_Grenade", "0", "225", "1", "0");
    %this.addTrigger("Throw_Grenade", "170", "3");
    %this.addSequence("art/players/base/Anims/Throw_Javelin.dsq", "Throw_Javelin", "1", "29", "1", "0");
-   %this.addTrigger("Throw_Javelin", "9", "3");
    %this.setSequenceBlend("Throw_Javelin", "1", "Root", "0");
+   %this.addTrigger("Throw_Javelin", "9", "3");
    %this.addSequence("art/players/base/Anims/damageBody1.dsq", "damagebody1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/damageHead1.dsq", "damagehead1", "0", "13", "1", "0");
-   %this.addSequence("art/players/base/Anims/damageLegs1.dsq", "damageLegs1", "0", "13", "1", "0");
    %this.addSequence("art/players/base/Anims/bfb_hit.dsq", "bfb_hit", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/bfb_hit2.dsq", "bfb_hit2", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Anims/Summon.dsq", "summon", "0", "29", "1", "0");
@@ -221,6 +223,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/ck.dsq", "ck", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Anims/fst.dsq", "fst", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Anims/th.dsq", "th", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/Look_XR75.dsq", "Look_XR75", "2", "28", "1", "0");
    %this.addSequence("art/players/base/Anims/Extra/EdGrimly.dsq", "EdGrimly", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Anims/Extra/BreakDance.dsq", "BreakDance", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Anims/Extra/FolkDance.dsq", "FolkDance", "0", "19", "1", "0");
@@ -293,6 +296,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Fire_Flintlock_Full.dsq", "Fire_Flintlock", "0", "23", "1", "0");
    %this.addTrigger("Fire_Flintlock", "11", "3");
+   %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R", "0", "16", "1", "0");
 }
 
 $mack = true;

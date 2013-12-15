@@ -185,7 +185,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_Javelin", "9", "3");
    %this.addSequence("art/players/base/Anims/damageBody1.dsq", "damagebody1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/damageHead1.dsq", "damagehead1", "0", "13", "1", "0");
-   %this.addSequence("art/players/base/Anims/damageLegs1.dsq", "damageLegs1", "0", "13", "1", "0");
    %this.addSequence("art/players/base/Anims/bfb_hit.dsq", "bfb_hit", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/bfb_hit2.dsq", "bfb_hit2", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Anims/Summon.dsq", "summon", "0", "29", "1", "0");
@@ -279,6 +278,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Fire_Flintlock_Full.dsq", "Fire_Flintlock", "0", "23", "1", "0");
    %this.addTrigger("Fire_Flintlock", "11", "3");
+   %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R", "0", "16", "1", "0");
 }
 
 $mack = true;
