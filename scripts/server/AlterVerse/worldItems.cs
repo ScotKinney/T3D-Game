@@ -2645,7 +2645,11 @@ datablock ItemData(XR75Weapon)
 
    cost = 0;
 
-   //XR75 is in the 'Items' table but not in the 'Weapons' table.
+   table = "Weapons";
+   SubItemID = 128;
+   image = XR75Image;
+   effectWeap = "None";
+   reticle = "reticle_rocketlauncher";
 };
 $AlterVerse::ItemNames[128] = "XR75Weapon";
 
