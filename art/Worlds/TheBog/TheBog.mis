@@ -2694,9 +2694,11 @@ new SimGroup(MissionGroup) {
             destinationServer = "Magellan";
             destinationSpawnSphere = "MagellanSphere";
             manifestURL = "http://www.bloodclans.com/stream/manifests/magellanmanifest.txt";
-            migrantMessage = "You must be a Citizen to enter the Magellan!";
             pathToRoot = "http://www.bloodclans.com/stream/";
             subscriberOnly = "1";
+            migrantMessage = "sttMag";
+            invRequirement = "FlexDecapitator";
+            noInvMsg = "noFDMag";
       };
       new SphereEmitterNode(ShuttleTP1) {
          emitter = "PCO_ExplosionSpirals_E";
@@ -2731,9 +2733,11 @@ new SimGroup(MissionGroup) {
             destinationServer = "Magellan";
             destinationSpawnSphere = "MagellanSphere";
             manifestURL = "http://www.bloodclans.com/stream/manifests/magellanmanifest.txt";
-            migrantMessage = "You must be a Citizen to enter the Magellan!";
             pathToRoot = "http://www.bloodclans.com/stream/";
             subscriberOnly = "1";
+            migrantMessage = "sttMag";
+            invRequirement = "FlexDecapitator";
+            noInvMsg = "noFDMag";
       };
       new PointLight(ShipLight) {
          radius = "30";

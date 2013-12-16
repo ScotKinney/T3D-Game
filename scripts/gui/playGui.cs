@@ -70,7 +70,7 @@ function PlayGui::onWake(%this)
       if(!isObject(SkullLevelUpGui))      
          exec("art/gui/SkullLevelUpGui.gui");
 
-      %message = strReplace(guiStrings.lvlUpLine2, "%1", %value);
+      %message = strReplace(guiStrings.lvlUpLine2, "%1", $AlterVerse::PendingSkullUpgrade);
       SkullLevelUpGui-->SkullLevelUpText.text = %message;
       Canvas.pushDialog(SkullLevelUpGui);
       $AlterVerse::PendingSkullUpgrade = "";
