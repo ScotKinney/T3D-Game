@@ -21,14 +21,10 @@ function SelfImmolation::onChannelBegin(%this, %spell)
    // Optional: This line forces the player into an animation and 
    // roots it.
    %spell.getSource().ForceAnimation(true, "CastSpell1");
-   %spell.baseEmitter = new GraphEmitterNode()
-   {
-      dataBlock = g_defaultNode;
-      emitter = FireballChannelEmitterBASE;
-      ParticleBehaviour[0] = ChannelAttraction;
-      standAloneEmitter = true;
-      position = %spell.getSource().position;
-      Grounded = true;
+   %spell.baseEmitter = new SphereEmitterNode(){       
+      dataBlock = DefaultEmitterNodeData;       
+      emitter = Immolation;       
+      position = %pos;    
    };
    %spell.baseEmitter.setBehaviorObject(0, %spell.getSource()); 
 }
@@ -72,7 +68,7 @@ function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %
 {    
    %blast = new SphereEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
-      emitter = FireballBlastEmitter;       
+      emitter = Immolation;       
       position = %pos;    
    };
    %blast.setBehaviorObject(0, %col);
@@ -90,5 +86,3 @@ function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %
    %col.schedule(2500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
    %col.schedule(3000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
 } 
-
-
