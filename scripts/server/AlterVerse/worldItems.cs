@@ -2624,3 +2624,49 @@ datablock ItemData(WizardStaff2Weapon)
    reticle = "reticle_rocketlauncher";
 };
 $AlterVerse::ItemNames[118] = "WizardStaff2Weapon";
+
+datablock ItemData(XR75Weapon)
+{
+
+   ItemID = 128;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/XR75/XR75.dts";
+   invIcon = "art/gui/icons/xr75.jpg";
+   maxInventory = 1;
+   keepOnDeath = 0;
+   skullLevel = 6;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+
+   //XR75 is in the 'Items' table but not in the 'Weapons' table.
+};
+$AlterVerse::ItemNames[128] = "XR75Weapon";
+
+datablock ItemData(XRBoltsAmmo)
+{
+
+   ItemID = 129;
+   category = "ammo";
+   className = "ammo";
+   shapeFile = "art/inv/weapons/XR75/5_56.dts";
+   invIcon = "art/gui/icons/ammo.jpg";
+   maxInventory = 500;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+};
+$AlterVerse::ItemNames[129] = "XRBoltsAmmo";
