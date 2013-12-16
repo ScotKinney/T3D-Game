@@ -75,6 +75,13 @@ datablock SFXProfile(BaseReloadSound)
    preload = true;
 };
 
+datablock SFXProfile(XR75FireSound)
+{
+   filename = "art/sound/weapons/droidGun5";
+   description = AudioClose3d;
+   preload = true;
+};
+
 datablock SFXProfile(ProjectileExplosionSound)
 {
    filename = "art/sound/weapons/Crossbow_explosion";
@@ -818,5 +825,85 @@ datablock ProjectileData(BaseProjectile)
 
    lightDesc = ProjectileLightDesc;
    damageType = "ProjectileDamage";
+   retrievable = "";
+};
+
+//-------------------
+// XR75 Laser Gun
+datablock ParticleData(XRBoltsSparks)
+{
+   textureName = "core/art/particles/droplet.png";
+   lifetimeMS = "50";
+   lifetimeVarianceMS = "10";
+   inheritedVelFactor = "0.1";
+   sizes[0] = "0.25";
+   sizes[1] = "0.5";
+   sizes[2] = "0.125";
+   colors[0] = "1.0 0.9 0.8 0.2";
+   colors[1] = "1.0 0.9 0.8 0.8";
+   colors[2] = "0.8 0.4 0.0 0.0";
+   times[0] = "0";
+   times[1] = "0.34902";
+   times[2] = "1";
+   times[3] = "1";
+};
+
+datablock SphereEmitterData(XRBoltsSparksEmitter)
+{
+   particles = "XRBoltsSparks";
+   blendStyle = "NORMAL";
+   ejectionPeriodMS = "5";
+   periodVarianceMS = "1";
+   ejectionVelocity = "10";
+   velocityVariance = "1";
+   thetaMax = "120";
+   phiReferenceVel = 0;
+   phiVariance = "360";
+   ejectionOffset = "0";
+   orientParticles = true;
+   orientOnVelocity = true;
+};
+
+datablock ExplosionData(XRBoltsHitExplosion)
+{
+   soundProfile = ProjectileHitSound;
+   lifeTimeMS = 200; // I want a quick bang and dissipation, not a slow burn-out
+
+   // Volume particles
+   particleEmitter = XRBoltsSparksEmitter;
+   particleDensity = 10;//20;
+   particleRadius = 1;//2;
+
+   // Point emission
+   emitter[0] = XRBoltsSparksEmitter;
+
+   // Camera Shaking
+   shakeCamera = false;
+
+   lightStartRadius = 6.0;
+   lightEndRadius = 0.0;
+   lightStartColor = "1.0 0.7 0.2";
+   lightEndColor = "0.9 0.7 0.0";
+   lightStartBrightness = 2.5;
+   lightEndBrightness = 0.0;
+   lightNormalOffset = 3.0;
+};
+
+datablock ProjectileData(XRBoltsProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/XR75/5_56.dts";
+   scale="0.5 0.5 0.5";
+   muzzleVelocity = 50;
+   directDamage = 100;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   radiusDamage = 0;
+   damageRadius = 0;
+   explosion = XRBoltsHitExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.0;
+   decal = ScorchRXDecalSmall;
+
    retrievable = "";
 };

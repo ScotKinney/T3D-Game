@@ -173,6 +173,8 @@ function GameConnection::DisconnectUser(%client)
    }
 
    %playTime = ((getSimTime() / 1000) - %client.joinTime) / 60;
+   
+   %client.CleanInventory();
    %inventory = %client.getInventoryString();
    if ( %inventory $= "" )
       %inventory = %client.startInv;

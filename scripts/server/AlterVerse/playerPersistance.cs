@@ -116,6 +116,22 @@ function GameConnection::getInventoryString(%client)
    return %newInv;
 }
 
+// Remove any private server items
+function GameConnection::CleanInventory(%client)
+{
+   if ( !isObject(%client.pInv) || ($Server::PrivateInventory $= "") )
+      return;
+
+   %count = getWordCount($Server::PrivateInventory);
+   for (%i = 0; %i < %count; %i++)
+   {
+      %itemName = getWord($Server::PrivateInventory, %i);
+      %index = %client.pInv.getIndexFromKey(%itemName.ItemID);
+      if ( (%index > -1) && (%itemName.cost == 0) )
+         %client.pInv.erase(%index);
+   }
+}
+
 // save the clients net worth in the database
 function GameConnection::writeNetWorth(%client, %forceWrite)
 {

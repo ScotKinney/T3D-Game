@@ -122,7 +122,7 @@ function WeaponImage::onMount(%this,%obj,%slot)
    {
       %obj.setArmThread(%this.customLookAnim);
       %obj.setSwingingArms(false);
-      %obj.setLookAnimationOverride(false);
+      //%obj.setLookAnimationOverride(false);
    }
 }
 
@@ -135,7 +135,7 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
    {
       %obj.clearArmThread();
       %obj.setSwingingArms(true);
-      %obj.setLookAnimationOverride(true);
+      //%obj.setLookAnimationOverride(true);
    }
 }
 

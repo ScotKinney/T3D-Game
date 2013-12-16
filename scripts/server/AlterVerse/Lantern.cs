@@ -39,8 +39,6 @@ function Lantern::Toggle(%this, %user)
    }
    else
       %this.FlashlightEnable(%user);
-      
-   %this.deathLoop(%user);
 }
 
 function Lantern::onThrow(%this, %user, %amount)
@@ -118,7 +116,7 @@ function Lantern::UseOil(%this, %player)
    //Warn the Client that their oil is getting low. 
    if ( %lampOil == 5 )
    {
-   messageClient(%player.client, 'MsgItemPickup', "\c0You have" SPC %lampOil SPC "bottles of Lamp Oil left.");
+      messageClient(%player.client, 'MsgItemPickup', "\c0You have" SPC %lampOil SPC "bottles of Lamp Oil left.");
    }
    if ( %lampOil == 1 )
    {

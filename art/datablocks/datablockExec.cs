@@ -36,6 +36,7 @@ exec("./player.cs");
 
 // Our default (base) weapon datablocks
 exec("./weapons/weaponFX.cs");
+exec("./weapons/baseAuto.cs");
 exec("./weapons/baseMelee.cs");
 exec("./weapons/baseTriggered.cs");
 

@@ -485,13 +485,17 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
          if ( %this.numDamageAnims > 0 )
          {
             %painStunTime = (%this.painStunTime $= "") ? 2000 : %this.painStunTime;
-            %oldSpeed = %obj.getMoveSpeed();
-            %obj.setMoveSpeed(0);
+            if ( %obj.isBot )
+            {
+               %oldSpeed = %obj.getMoveSpeed();
+               %obj.setMoveSpeed(0);
+            }
             %anim = 1;
             if ( %this.numDamageAnims > 1 )
                %anim = getRandom(1, %this.numDamageAnims);
             %obj.setActionThread("damage" @ %anim, false, true);
-            %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
+            if ( %obj.isBot )
+               %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
          }
       }
    }

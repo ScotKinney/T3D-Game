@@ -138,6 +138,10 @@ guiStrings.cpMsg[TortNZOut] = "You have left the Tortuga Neutral Zone, arm yours
 guiStrings.cpMsg[GMNZOut] = "Danger! You have left the Neutral Zone, watch out for the Yeti!";
 // Danger! You have left the Neutral Zone, beware the Boglins!
 guiStrings.cpMsg[BogNZOut] = "Danger! You have left the Neutral Zone, beware the Boglins!";
+// Welcome to the Magellan! Find the XR75 laser gun to battle the Droids, they have gone mad!
+guiStrings.cpMsg[MagNZIn] = "Welcome to the Magellan! Find the XR75 laser gun to battle the Droids, they have gone mad!";
+// Danger! You have left the Neutral Zone! Watch out for the Droids!
+guiStrings.cpMsg[MagNZOut] = "Danger! You have left the Neutral Zone! Watch out for the Droids!";
 
 // Magic messages
 // Danger! You have left the Neutral Zone, beware the Boglins!
