@@ -271,7 +271,7 @@ package GameCore
       %client.authenticated = false;
 
       // set the desired spawnpoint for the player if sent
-      %client.spawnPoint = %spawnPoint;
+      %client.spawnPoint = %spawnSphere;
 
       // We can't authenticate a local client until after the server has
       // been registered

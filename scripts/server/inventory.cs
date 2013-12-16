@@ -81,7 +81,7 @@ function ShapeBase::UseItem(%this, %id, %amount, %type)
                messageClient(%this.client, 'InventoryMsg',"", "eatFull", %key.ItemID, "a", false, true, 1, %nutrition);
             }
             else
-               messageClient(%this.client, 'InventoryMsg',"", "eatFull", %key.ItemID, "a", false, true, 1, %nutrition);
+               messageClient(%this.client, 'InventoryMsg',"", "eatOK", %key.ItemID, "a", false, true, 1, %nutrition);
 
             %nutritionAdjusted = (%nutrition / 100) * %maxDamage;
             %this.applyRepair(%nutritionAdjusted);

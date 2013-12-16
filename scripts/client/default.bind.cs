@@ -166,7 +166,8 @@ $mvPitch = 0;
 function yaw(%val)
 {
    %yawAdj = getMouseAdjustAmount(%val);
-   if(ServerConnection.isControlObjectRotDampedCamera())
+   if( isObject(ServerConnection) &&
+      ServerConnection.isControlObjectRotDampedCamera() )
    {
       // Clamp and scale
       %yawAdj = mClamp(%yawAdj, -m2Pi()+0.01, m2Pi()-0.01);
@@ -179,7 +180,8 @@ function yaw(%val)
 function pitch(%val)
 {
    %pitchAdj = getMouseAdjustAmount(%val);
-   if(ServerConnection.isControlObjectRotDampedCamera())
+   if( isObject(ServerConnection) &&
+      ServerConnection.isControlObjectRotDampedCamera() )
    {
       // Clamp and scale
       %pitchAdj = mClamp(%pitchAdj, -m2Pi()+0.01, m2Pi()-0.01);

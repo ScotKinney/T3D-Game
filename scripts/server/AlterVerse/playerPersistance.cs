@@ -175,9 +175,11 @@ function GameConnection::awardLockLevel(%client, %skullLevel, %delayForTransfer)
                   "ID='"@ %client.pData.dbID @ "'");
    }
 
+   %client.skullLevel = %skullLevel;
+
    // Tell the user so they can celebrate
    commandToClient(%client, 'setSkullLevel', %skullLevel, true, %delayForTransfer);
 
    // Tell everyone else
-   serverChat.sendGameMsg("ae", %client.dbUserID, "lvlUp", "g", true, %client.nameBase);
+   serverChat.sendGameMsg("ae", %client.dbUserID, "lvlUp", "g", true, %client.nameBase, %skullLevel);
 }
