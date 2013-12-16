@@ -155,17 +155,3 @@ function Lamp_Oil::onUse(%this, %user)
    }
    return true;   // This preventd the "You cannot use..." message
 }
-
-function Lantern::deathLoop(%this, %user)
-{
-   %dead = false;
-   do 
-   {
-      if (!isObject(%user))
-      {
-         %this.Toggle(%user);
-      }
-   }
-   while (%dead = false);
-}
-

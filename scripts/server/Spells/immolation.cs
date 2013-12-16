@@ -11,7 +11,10 @@ singleton SpellData(SelfImmolation : DefaultSelfSpell)
    // For now this just links to the item it replaces from the old game.
    item = "Self_Immolation_Kit";
 };
-
+datablock BezierProjectileData(SelfImmolationProjectile : FireballProjectile)
+{
+   lifetime = 1500;
+};
 // Spell callbacks ---------------------------------------------------------- 
 function SelfImmolation::onChannelBegin(%this, %spell)
 {
@@ -27,14 +30,14 @@ function SelfImmolation::onChannelBegin(%this, %spell)
       position = %spell.getSource().position;
       Grounded = true;
    };
-   %spell.baseEmitter.setBehaviorObject(0, %spell.getSource());
+   %spell.baseEmitter.setBehaviorObject(0, %spell.getSource()); 
 }
 
 function SelfImmolation::onChannelEnd(%this, %spell)
 {
 	// Optional: This line releases the player from any forced animation
 	%spell.getSource().ForceAnimation(false, "root");
-	%spell.baseEmitter.delete();
+	%spell.baseEmitter.schedule(3200, "delete");
 }
 
 function SelfImmolation::onCast(%this, %spell) 
@@ -48,28 +51,44 @@ function SelfImmolation::onCast(%this, %spell)
    // Remove the item from the casters inventory
    %src.decInventory(%this.item, 1);
 
-   %aoe = new AOEImpact(){       
+   %aoe = new AOEImpact()
+   {       
       SourceObject = %src;       
       Center = %src.getPosition();       
       Radius = 5;       
-      TypeMask =  $TypeMasks::StaticShapeObjectType |                    
-                  $TypeMasks::StaticTSObjectType;       
-      CallBack = "AOEFireballCallback";    
-   }; 
+      TypeMask =  $TypeMasks::PlayerObjectType;       
+      CallBack = "SelfImmolationCallback";    
+   };  
+} 
+// Impact callbacks---------------------------------------------------------- 
+function AOEImpact::SelfImmolationCallback(%this, %src, %tgt) 
+{    
+   %projectile = SelfImmolationProjectile;    
+   ThrowHomingBezierProjectile(%src,%tgt,%projectile,true,"0 0 12"); 
 } 
 
 // Projectile callbacks------------------------------------------------------ 
-function AoEFireballProjectile::onCollision(%this, %obj, %col, %fade, %pos, %norm) 
+function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %norm) 
 {    
-   %blast = new GraphEmitterNode()
-   {
-      dataBlock = g_defaultNode;
-      emitter = FireballChannelEmitterBASE;
-      ParticleBehaviour[0] = ChannelAttraction;
-      standAloneEmitter = true;
-      position = %pos;
-      Grounded = true;
-   }; 
+   %blast = new SphereEmitterNode(){       
+      dataBlock = DefaultEmitterNodeData;       
+      emitter = FireballBlastEmitter;       
+      position = %pos;    
+   };
    %blast.setBehaviorObject(0, %col);
-   %blast.schedule(1500, "delete"); 
+   %blast.schedule(3100, "delete"); 
+   %col.mountobject(%blast, 1, "0.0 0.0 0.0"); 
+   
+   %damage = 300 / 6;
+   if (%obj.sourceObject == %col)
+      %damage = 100 / 6;
+   
+   %col.schedule(500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(1000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(1500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(2000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(2500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(3000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
 } 
+
+
