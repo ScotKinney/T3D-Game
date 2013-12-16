@@ -8,6 +8,7 @@ function Lantern::onUse(%this, %user)
    }
 
    // Toggle the lantern state.
+   /*
    if( isObject(%user.light) )
    {  // It's already on, so turn it off
       messageClient(%user.client, 'MsgItemPickup', '\c0You turned off the Lantern.' );
@@ -19,8 +20,27 @@ function Lantern::onUse(%this, %user)
    }
    else
       %this.FlashlightEnable(%user);
-
+   */
+   %this.Toggle(%user);
    return true;   // This preventd the "You cannot use..." message
+}
+
+function Lantern::Toggle(%this, %user)
+{
+   // Toggle the lantern state.
+   if( isObject(%user.light) )
+   {  // It's already on, so turn it off
+      messageClient(%user.client, 'MsgItemPickup', '\c0You turned off the Lantern.' );
+      %user.light.delete();
+      %user.unmountEquipment("mount2");
+      %user.updateMountedEquipment();
+      if ( isEventPending(%user.burnSchedule) )
+         cancel(%user.burnSchedule);
+   }
+   else
+      %this.FlashlightEnable(%user);
+      
+   %this.deathLoop(%user);
 }
 
 function Lantern::onThrow(%this, %user, %amount)
@@ -134,5 +154,18 @@ function Lamp_Oil::onUse(%this, %user)
       messageClient(%user.client, 'MsgItemPickup', '\c0You need a Lantern to burn the oil in.');
    }
    return true;   // This preventd the "You cannot use..." message
+}
+
+function Lantern::deathLoop(%this, %user)
+{
+   %dead = false;
+   do 
+   {
+      if (!isObject(%user))
+      {
+         %this.Toggle(%user);
+      }
+   }
+   while (%dead = false);
 }
 
