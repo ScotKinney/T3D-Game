@@ -349,6 +349,8 @@ chatStrings.msg[oilOut] = "\c0You ran out of Lamp Oil. Better get some more!";
 chatStrings.msg[oneOil] = "\c0You have 1 bottle of Lamp Oil left.";
 // numOil - You have %1 bottles of Lamp Oil left.
 chatStrings.msg[numOil] = "\c0You have %1 bottles of Lamp Oil left.";
+// noOilImm - You don't have enough Lamp Oil to perform Self Immolation.
+chatStrings.msg[noOilImm] = "\c0You don't have enough Lamp Oil to perform Self Immolation.";
 
 // Death messages --------------------------------------------------------------
 // deathLoss - You have died, losing

@@ -13,7 +13,7 @@ singleton SpellData(SelfImmolation : DefaultSelfSpell)
 };
 datablock BezierProjectileData(SelfImmolationProjectile : ImmolationProjectile)
 {
-   lifetime = 1500;
+   lifetime = 5000;
 };
 // Spell callbacks ---------------------------------------------------------- 
 function SelfImmolation::onChannelBegin(%this, %spell)
@@ -21,9 +21,18 @@ function SelfImmolation::onChannelBegin(%this, %spell)
    // Optional: This line forces the player into an animation and 
    // roots it.
    %spell.getSource().ForceAnimation(true, "CastSpell1");
+   %crush = new SphereEmitterNode(){       
+      dataBlock = DefaultEmitterNodeData;       
+      emitter = CrushEmitter;       
+      position = %pos;    
+   };
+   %crush.setBehaviorObject(0, %spell.getSource());
+   %src = %spell.getSource();
+   %src.mountobject(%crush, 2, "0.0 0.0 0.0");
+   %crush.schedule(750, "delete");
    %spell.baseEmitter = new SphereEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
-      emitter = Immolation;       
+      emitter = EmberEmitter;       
       position = %pos;    
    };
    %spell.baseEmitter.setBehaviorObject(0, %spell.getSource()); 
@@ -33,7 +42,7 @@ function SelfImmolation::onChannelEnd(%this, %spell)
 {
 	// Optional: This line releases the player from any forced animation
 	%spell.getSource().ForceAnimation(false, "root");
-	%spell.baseEmitter.schedule(3200, "delete");
+	%spell.baseEmitter.schedule(5200, "delete");
 }
 
 function SelfImmolation::onCast(%this, %spell) 
@@ -46,6 +55,14 @@ function SelfImmolation::onCast(%this, %spell)
 
    // Remove the item from the casters inventory
    %src.decInventory(%this.item, 1);
+   %lampOil = %player.getInventory(Lamp_Oil);
+   if ( %lampOil < 1 )
+   {  // Not enough oil to burn again, so turn off the light and don't reschedule
+      messageClient(%player.client, 'LocalizedMsg', "", "oilOutImm", "a", false, true, 0);
+      return;
+   }
+   %src.decInventory(%this.item, 1);
+   %src.decInventory(Lamp_Oil, 1);
 
    %aoe = new AOEImpact()
    {       
@@ -68,21 +85,21 @@ function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %
 {    
    %blast = new SphereEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
-      emitter = Immolation;       
+      emitter = ImmolationEmitter;       
       position = %pos;    
    };
    %blast.setBehaviorObject(0, %col);
-   %blast.schedule(3100, "delete"); 
+   %blast.schedule(5100, "delete"); 
    %col.mountobject(%blast, 31, "0.0 0.0 1.0"); 
    
-   %damage = 300 / 6;
+   %damage = 200 / 5;
    if (%obj.sourceObject == %col)
-      %damage = 100 / 6;
+      %damage = 150 / 5;
    
-   %col.schedule(500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(100, "damage", %obj.sourceObject, %pos, 50, "Immoliation");
    %col.schedule(1000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
-   %col.schedule(1500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
    %col.schedule(2000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
-   %col.schedule(2500, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
    %col.schedule(3000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(4000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
+   %col.schedule(5000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
 } 
