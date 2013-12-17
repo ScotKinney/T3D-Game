@@ -81,7 +81,7 @@ function Lantern::FlashlightEnable(%this, %player)
             // to be modified for your specific application.  
             // flareType = "LightFlareExample1";   
          };  
-         %player.mountobject(%light, 2, "0.0 0.1 -0.1"); // mountobject(%obj, mountNode, mountOffset)  
+         %player.mountobject(%light, 2, "-0.2 0 0"); // mountobject(%obj, mountNode, mountOffset)  
          %player.light = %light;  
          %player.mountEquipment(%this.shapeFile, "mount2");
          %player.updateMountedEquipment();
@@ -107,7 +107,7 @@ function Lantern::UseOil(%this, %player)
    // See how much oil is left
    %lampOil = %player.getInventory(Lamp_Oil);
    //Warn the Client that their oil is getting low. 
-   if ( %lampOil == 5 )
+   if ( (%lampOil % 5) == 0 )
    {
       // You have %1 bottles of Lamp Oil left.
       messageClient(%player.client, 'LocalizedMsg', "", "numOil", "a", false, true, 1, %lampOil);
