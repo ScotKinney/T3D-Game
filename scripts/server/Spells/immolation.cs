@@ -11,7 +11,7 @@ singleton SpellData(SelfImmolation : DefaultSelfSpell)
    // For now this just links to the item it replaces from the old game.
    item = "Self_Immolation_Kit";
 };
-datablock BezierProjectileData(SelfImmolationProjectile : FireballProjectile)
+datablock BezierProjectileData(SelfImmolationProjectile : ImmolationProjectile)
 {
    lifetime = 1500;
 };
@@ -51,7 +51,7 @@ function SelfImmolation::onCast(%this, %spell)
    {       
       SourceObject = %src;       
       Center = %src.getPosition();       
-      Radius = 5;       
+      Radius = 15;       
       TypeMask =  $TypeMasks::PlayerObjectType;       
       CallBack = "SelfImmolationCallback";    
    };  
@@ -73,7 +73,7 @@ function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %
    };
    %blast.setBehaviorObject(0, %col);
    %blast.schedule(3100, "delete"); 
-   %col.mountobject(%blast, 1, "0.0 0.0 0.0"); 
+   %col.mountobject(%blast, 31, "0.0 0.0 1.0"); 
    
    %damage = 300 / 6;
    if (%obj.sourceObject == %col)

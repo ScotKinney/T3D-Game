@@ -1,4 +1,4 @@
-datablock ParticleData(flames : DefaultParticle)
+datablock ParticleData(Flames : DefaultParticle)
 {
    sizes[0] = "1";
    sizes[1] = "2.08143";
@@ -11,7 +11,7 @@ datablock ParticleData(flames : DefaultParticle)
    textureName = "core/art/particles/fire.png";
    animTexName = "core/art/particles/fire.png";
    times[0] = "0";
-   originalName = "flames";
+   originalName = "Flames";
    spinRandomMax = "99";
    colors[0] = "0 0.669291 1 1";
    colors[1] = "0.992126 0.944882 0 0.629921";
@@ -27,7 +27,7 @@ datablock ParticleData(flames : DefaultParticle)
 
 datablock SphereEmitterData(Immolation : DefaultEmitter)
 {
-   particles = "flames";
+   particles = "Flames";
    thetaMin = "0";
    thetaMax = "0";
    ejectionPeriodMS = "55";
@@ -36,7 +36,7 @@ datablock SphereEmitterData(Immolation : DefaultEmitter)
    ejectionOffset = "0";
    orientParticles = "0";
    phiVariance = "360";
-   softnessDistance = "166.667";
+   softnessDistance = "1";
    ambientFactor = "0";
    alignDirection = "0 1 0";
 };

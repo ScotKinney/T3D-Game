@@ -28,26 +28,28 @@ datablock ParticleData(FireballParticles)
    spinRandomMin = -30.0;
    spinRandomMax = 30.0;
 
-   colors[0]     = "1 0.254902 0 1";
-   colors[1]     = "1 0.603922 0 0.755906";
-   colors[2]     = "0.666667 0.666667 0.666667 0.207";
-   colors[3]     = "0.396078 0.396078 0.396078 0";
+   colors[0]     = "0.996078 0.992157 0.992157 1";
+   colors[1]     = "1 0.65098 0 0.755906";
+   colors[2]     = "1 0 0.0235294 0.204724";
+   colors[3]     = "0.393701 0.393701 0.393701 0";
 
-   sizes[0]      = "1.49545";
-   sizes[1]      = "1.49545";
-   sizes[2]      = "1.49545";
-   sizes[3]      = "1.49545";
+   sizes[0]      = "1.4924";
+   sizes[1]      = "1.4924";
+   sizes[2]      = "1.4924";
+   sizes[3]      = "1.4924";
 
    times[0]      = 0.0;
-   times[1]      = "0.291667";
-   times[2]      = "0.520833";
+   times[1]      = "0.270833";
+   times[2]      = "0.666667";
    spinSpeed     = "2";
+   textureName = "core/art/particles/fireball.png";
+   animTexName = "core/art/particles/fireball.png";
 };
 
 datablock SphereEmitterData(FireballEmitter)
 {
-   ejectionVelocity = 0.25;
-   velocityVariance = 0.10;
+   ejectionVelocity = "0.5";
+   velocityVariance = "0";
    thetaMin = 0.0;
    thetaMax = 180;
    particles = FireballParticles;
@@ -56,10 +58,11 @@ datablock SphereEmitterData(FireballEmitter)
    phiVariance      = 360;
    overrideAdvances = 0;
    orientParticles  = true;
-   ejectionPeriodMS = 20;
-   blendStyle = "Normal";
+   ejectionPeriodMS = "25";
+   blendStyle = "ADDITIVE";
    softParticles = "1";
-   softnessDistance = "1";
+   softnessDistance = "10";
+   periodVarianceMS = "0";
 };
 
 //------------------------------------------------------------------------------
