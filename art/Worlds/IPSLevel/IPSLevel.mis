@@ -436,13 +436,16 @@ new SimGroup(MissionGroup) {
          distDetect = "50";
          fov = "360";
          leash = "25";
-         maxRange = "30";
+         moveTolerance = "0.5";
+         maxRange = "1.2";
+         minRange = "0";
          paceDist = "10";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
          team = "1";
-         weapon = "-NoWeapon";
+         //weapon = "-NoWeapon";
+         weapon = "RightHand LeftHand RightFoot LeftFoot";
    };
    new Item(DemoSpell21) {
       static = "1";

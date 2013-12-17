@@ -11,8 +11,20 @@
 // Mount the bots weapon image
 function equipBotWeapon(%obj)
 {
-   %obj.mountImage(getWord(%obj.botWeapon, 0) @ "Image", 0);
-   %obj.setImageAmmo(0, true);
+   %count = getWordCount(%obj.botWeapon);
+   if ( (%count > 0) && (%count < 5) )
+   {
+      for ( %i = 0; %i < %count; %i++ )
+      {
+         %obj.mountImage(getWord(%obj.botWeapon, %i) @ "Image", %i);
+         %obj.setImageAmmo(%i, true);
+      }
+   }
+   else
+   {
+      %obj.mountImage(getWord(%obj.botWeapon, 0) @ "Image", 0);
+      %obj.setImageAmmo(0, true);
+   }
 }
 
 
@@ -49,7 +61,13 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
    if (!%obj.firing)
    {
       //Get the name of the weapon
-      %tempWeapon = getWord(%obj.botWeapon, %obj.currentWeaponIs);
+      %count = getWordCount(%obj.botWeapon);
+      if ( %count > 4 )
+         %count = 1;
+      %slot = 0;
+      if ( %count > 1 )
+         %slot = getRandom(1, %count) - 1;
+      %tempWeapon = getWord(%obj.botWeapon, %slot);
 
       %weapon = %tempWeapon @ "Weapon";
       %ammo = %tempWeapon @ "Ammo";
@@ -92,7 +110,7 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
          }
 
          //If the weapon isn't ready to fire, don't try to fire it
-         if (%obj.getImageState(0) !$= "Ready")
+         if (%obj.getImageState(%slot) !$= "Ready")
             return;
 
          //Do a line of sight (LoS) test for players
@@ -113,7 +131,7 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
          %obj.firing = true;
 
          //Pull the trigger on the bot gun
-         %obj.setImageTrigger(0, true);
+         %obj.setImageTrigger(%slot, true);
 
          //If the weapon doesn't have a triggerDown set, then use the default
          if (%weapon.triggerDown !$= "")
@@ -122,7 +140,7 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
             %l = $AISK_TRIGGER_DOWN;
 
          //This sets a delay of %l length to hold the trigger down for.
-         %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %tempWeapon);
+         %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %tempWeapon, %slot);
       }
       else
       {
@@ -134,14 +152,14 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
 }
 
 //ceaseFire is called by the openFire function after the set delay to hold the trigger down is met.
-function AIPlayer::ceaseFire(%this, %obj, %tempWeapon)
+function AIPlayer::ceaseFire(%this, %obj, %tempWeapon, %slot)
 {
    %weapon = %tempWeapon @ "Weapon";
    if ( !isObject(%weapon) )
       %weapon = %tempWeapon @ "Image";
    if (!isObject(%weapon) || %weapon.getClassName() !$= $AISK_AFX_DATA_TYPE)
       //Stop holding the trigger
-      %obj.setImageTrigger(0, false);
+      %obj.setImageTrigger(%slot, false);
    else
       %obj.isCasting = false;
 

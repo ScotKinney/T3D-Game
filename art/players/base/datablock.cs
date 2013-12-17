@@ -327,7 +327,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    numHeadDmgAnims = 1;
    numBodyDmgAnims = 1;
    numLegDmgAnims = 1;
-   painStunTime = 0.75;
+   painStunTime = 5;
 };
 
 // Player fishing sounds
