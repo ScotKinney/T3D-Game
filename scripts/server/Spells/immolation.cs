@@ -20,7 +20,7 @@ function SelfImmolation::onChannelBegin(%this, %spell)
 {
    // Optional: This line forces the player into an animation and 
    // roots it.
-   %spell.getSource().ForceAnimation(true, "CastSpell1");
+   %spell.getSource().ForceAnimation(true, "Kneel_R");
    %crush = new SphereEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = CrushEmitter;       
