@@ -52,10 +52,9 @@ function SelfImmolation::onCast(%this, %spell)
    //if (!isObject(%src) || !isObject(%target) || (%target.getState() $= "Dead"))
    if ( !isObject(%src))
       return;
-
+   
    // Remove the item from the casters inventory
-   %src.decInventory(%this.item, 1);
-   %lampOil = %player.getInventory(Lamp_Oil);
+   %lampOil = %src.getInventory(Lamp_Oil);
    if ( %lampOil < 1 )
    {  // Not enough oil to burn again, so turn off the light and don't reschedule
       messageClient(%player.client, 'LocalizedMsg', "", "oilOutImm", "a", false, true, 0);
