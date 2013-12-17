@@ -57,7 +57,7 @@ function SelfImmolation::onCast(%this, %spell)
    %lampOil = %src.getInventory(Lamp_Oil);
    if ( %lampOil < 1 )
    {  // Not enough oil to burn again, so turn off the light and don't reschedule
-      messageClient(%src.client, 'LocalizedMsg', "", "oilOutImm", "a", false, true, 0);
+      messageClient(%src.client, 'LocalizedMsg', "", "noOilImm", "a", false, true, 0);
       return;
    }
    %src.decInventory(Lamp_Oil, 1);
