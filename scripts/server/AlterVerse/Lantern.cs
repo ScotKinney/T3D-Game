@@ -7,20 +7,6 @@ function Lantern::onUse(%this, %user)
       return false;
    }
 
-   // Toggle the lantern state.
-   /*
-   if( isObject(%user.light) )
-   {  // It's already on, so turn it off
-      messageClient(%user.client, 'MsgItemPickup', '\c0You turned off the Lantern.' );
-      %user.light.delete();
-      %user.unmountEquipment("mount2");
-      %user.updateMountedEquipment();
-      if ( isEventPending(%user.burnSchedule) )
-         cancel(%user.burnSchedule);
-   }
-   else
-      %this.FlashlightEnable(%user);
-   */
    %this.Toggle(%user);
    return true;   // This preventd the "You cannot use..." message
 }
@@ -30,7 +16,8 @@ function Lantern::Toggle(%this, %user)
    // Toggle the lantern state.
    if( isObject(%user.light) )
    {  // It's already on, so turn it off
-      messageClient(%user.client, 'MsgItemPickup', '\c0You turned off the Lantern.' );
+      // You turned off the Lantern.
+      messageClient(%user.client, 'LocalizedMsg', "", "lntnOff", "a", false, true, 0);
       %user.light.delete();
       %user.unmountEquipment("mount2");
       %user.updateMountedEquipment();
@@ -63,7 +50,8 @@ function Lantern::FlashlightEnable(%this, %player)
    %lamp = %player.getInventory(Lantern);
    if ( %lamp == 0 )
    { 
-      messageClient(%player.client, 'MsgItemPickup', '\c0You don\'t have a Lantern.' );
+      // You don't have a Lantern.
+      messageClient(%player.client, 'LocalizedMsg', "", "noLntn", "a", false, true, 0);
       return true;
    }
    else
@@ -72,7 +60,8 @@ function Lantern::FlashlightEnable(%this, %player)
       
       if ( %lampOil == 0 )
       {
-         messageClient(%player.client, 'MsgItemPickup', '\c0You need oil to burn in the Lantern.');
+         // You need oil to burn in the Lantern.
+         messageClient(%player.client, 'LocalizedMsg', "", "noOil", "a", false, true, 0);
          return true;
       }
       else
@@ -97,8 +86,12 @@ function Lantern::FlashlightEnable(%this, %player)
          %player.mountEquipment(%this.shapeFile, "mount2");
          %player.updateMountedEquipment();
    
-         messageClient(%player.client, 'MsgItemPickup', '\c0You turned on the Lantern.' );
-         messageClient(%player.client, 'MsgItemPickup', "\c0You have" SPC %lampOil SPC "bottles of Lamp Oil left.");
+         messageClient(%player.client, 'LocalizedMsg', "", "lntnOn", "a", false, true, 0);
+         if ( %lampOil > 1 )
+            messageClient(%player.client, 'LocalizedMsg', "", "numOil", "a", false, true, 1, %lampOil);
+         else
+            messageClient(%player.client, 'LocalizedMsg', "", "oneOil", "a", false, true, 0);
+         
          %player.burnSchedule = %this.schedule( 50000, "UseOil", %player );
       }
    }
@@ -116,18 +109,21 @@ function Lantern::UseOil(%this, %player)
    //Warn the Client that their oil is getting low. 
    if ( %lampOil == 5 )
    {
-      messageClient(%player.client, 'MsgItemPickup', "\c0You have" SPC %lampOil SPC "bottles of Lamp Oil left.");
+      // You have %1 bottles of Lamp Oil left.
+      messageClient(%player.client, 'LocalizedMsg', "", "numOil", "a", false, true, 1, %lampOil);
    }
    if ( %lampOil == 1 )
    {
-       messageClient(%player.client, 'MsgItemPickup', '\c0You have 1 bottle of Lamp Oil left.');
+      // You have 1 bottle of Lamp Oil left.
+      messageClient(%player.client, 'LocalizedMsg', "", "oneOil", "a", false, true, 0);
    }
    if ( %lampOil < 1 )
    {  // Not enough oil to burn again, so turn off the light and don't reschedule
       %player.light.delete();
       %player.unmountEquipment("mount2");
       %player.updateMountedEquipment();
-      messageClient(%player.client, 'MsgItemPickup', '\c0You ran out of Lamp Oil. Better get some more!');
+      // You ran out of Lamp Oil. Better get some more!
+      messageClient(%player.client, 'LocalizedMsg', "", "oilOut", "a", false, true, 0);
       return;
    }
    
@@ -149,7 +145,8 @@ function Lamp_Oil::onUse(%this, %user)
    }
    else
    {  // They have no lantern to burn the oil in.
-      messageClient(%user.client, 'MsgItemPickup', '\c0You need a Lantern to burn the oil in.');
+      // You need a Lantern to burn the oil in.
+      messageClient(%player.client, 'LocalizedMsg', "", "needLntn", "a", false, true, 0);
    }
    return true;   // This preventd the "You cannot use..." message
 }

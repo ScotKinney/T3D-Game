@@ -332,6 +332,24 @@ chatStrings.msg[horseNoDrop] = "\c0You can\'t drop a horse here.";
 // noHorse - Displayed when trying to ride a horse on a no horse level.
 chatStrings.msg[noHorse] = "\c0You can\'t bring your horse here.";
 
+// Lantern/Lamp Oil messages ---------------------------------------------------
+// lntnOn - You turned on the Lantern.
+chatStrings.msg[lntnOn] = "\c0You turned on the Lantern.";
+// lntnOff - You turned off the Lantern.
+chatStrings.msg[lntnOff] = "\c0You turned off the Lantern.";
+// noLntn - You don't have a Lantern.
+chatStrings.msg[noLntn] = "\c0You don\'t have a Lantern.";
+// needLntn - You need a Lantern to burn the oil in.
+chatStrings.msg[needLntn] = "\c0You need a Lantern to burn the oil in.";
+// noOil - You need oil to burn in the Lantern.
+chatStrings.msg[noOil] = "\c0You need oil to burn in the Lantern.";
+// oilOut - You ran out of Lamp Oil. Better get some more!
+chatStrings.msg[oilOut] = "\c0You ran out of Lamp Oil. Better get some more!";
+// oneOil - You have 1 bottle of Lamp Oil left.
+chatStrings.msg[oneOil] = "\c0You have 1 bottle of Lamp Oil left.";
+// numOil - You have %1 bottles of Lamp Oil left.
+chatStrings.msg[numOil] = "\c0You have %1 bottles of Lamp Oil left.";
+
 // Death messages --------------------------------------------------------------
 // deathLoss - You have died, losing
 chatStrings.msg[deathLoss] = "\c1You have died, losing ";

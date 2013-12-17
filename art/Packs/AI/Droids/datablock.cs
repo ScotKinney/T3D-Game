@@ -51,7 +51,7 @@ datablock PlayerData(Droid1 : DefaultPlayerData)
    DeathSound = DeathCryDroid1;
    PainSound = PainCryDroid1;
 
-   numDeathAnims = 2;
+   numDeathAnims = 3;
    numDamageAnims = 0;   
 
    minImpactSpeed = 45;
