@@ -29,7 +29,7 @@ function SelfImmolation::onChannelBegin(%this, %spell)
    %crush.setBehaviorObject(0, %spell.getSource());
    %src = %spell.getSource();
    %src.mountobject(%crush, 2, "0.0 0.0 0.0");
-   %crush.schedule(750, "delete");
+   %crush.schedule(1500, "delete");
    %spell.baseEmitter = new SphereEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = EmberEmitter;       
@@ -60,9 +60,9 @@ function SelfImmolation::onCast(%this, %spell)
       messageClient(%src.client, 'LocalizedMsg', "", "oilOutImm", "a", false, true, 0);
       return;
    }
-   %src.decInventory(%this.item, 1);
    %src.decInventory(Lamp_Oil, 1);
-
+   %src.decInventory(%this.item, 1);
+   
    %aoe = new AOEImpact()
    {       
       SourceObject = %src;       
