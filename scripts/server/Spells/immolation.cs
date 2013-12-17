@@ -13,7 +13,7 @@ singleton SpellData(SelfImmolation : DefaultSelfSpell)
 };
 datablock BezierProjectileData(SelfImmolationProjectile : ImmolationProjectile)
 {
-   lifetime = 5000;
+   lifetime = 2000;
 };
 // Spell callbacks ---------------------------------------------------------- 
 function SelfImmolation::onChannelBegin(%this, %spell)
