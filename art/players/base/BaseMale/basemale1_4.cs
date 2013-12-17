@@ -278,8 +278,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/xr75.dsq", "xr75", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Fire_Flintlock_Full.dsq", "Fire_Flintlock", "0", "23", "1", "0");
    %this.addTrigger("Fire_Flintlock", "11", "3");
-   %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L", "0", "-1", "1", "0");
-   %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R", "0", "16", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L1", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R1", "0", "16", "1", "0");
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
 }
 

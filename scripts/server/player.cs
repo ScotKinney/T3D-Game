@@ -7,25 +7,12 @@
 $CorpseTimeoutValue = 7 * 1000;
 
 // // Damage Rate for entering Liquid
- $DamageWater = 1;
- $DamageBogWater = 2;
- //$DamageLava = 0.5;
- $DamageLava = 2;
- $DamageHotLava = 10;
- $DamageCrustyLava = 0.4;
-
-// Death Animations
-$PlayerDeathAnim::TorsoFrontFallForward = 1;
-$PlayerDeathAnim::TorsoFrontFallBack = 2;
-$PlayerDeathAnim::TorsoBackFallForward = 3;
-$PlayerDeathAnim::TorsoLeftSpinDeath = 4;
-$PlayerDeathAnim::TorsoRightSpinDeath = 5;
-$PlayerDeathAnim::LegsLeftGimp = 6;
-$PlayerDeathAnim::LegsRightGimp = 7;
-$PlayerDeathAnim::TorsoBackFallForward = 8;
-$PlayerDeathAnim::HeadFrontDirect = 9;
-$PlayerDeathAnim::HeadBackFallForward = 10;
-$PlayerDeathAnim::ExplosionBlowBack = 11;
+$DamageWater = 1;
+$DamageBogWater = 2;
+//$DamageLava = 0.5;
+$DamageLava = 2;
+$DamageHotLava = 10;
+$DamageCrustyLava = 0.4;
 
 $PlayerImpulseScale = 0.3;
 
@@ -402,7 +389,17 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
    %client = %obj.client;
    %sourceClient = %sourceObject ? %sourceObject.client : 0;
 
-   if (%obj.getState() $= "Dead")
+   if (%obj.getState() !$= "Dead")
+   {
+      // If the pain is excessive, let's hear about it unless it's first spawn.
+      %painThreshold = (%this.painThreshold $= "") ? 10 : %this.painThreshold;
+      if ((%damage > %painThreshold) && !%obj.newlyAdded)
+      {
+         %obj.playPain();
+         %this.playDamage(%obj, %position);
+      }
+   }
+   else
    {
       //Respawn the bot if needed
       if (%obj.isbot == true)
@@ -477,27 +474,12 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
       %obj.setDamageFlash(%flash);
 
       // If the pain is excessive, let's hear about it unless it's first spawn.
-      %painThreshold = (%this.painThreshold $= "") ? 10 : %this.painThreshold;
-      if ((%delta > %painThreshold) && !%obj.newlyAdded && !%isSilent)
-      {
-         %obj.playPain();
-         //if ( %obj.isBot && (%this.numDamageAnims > 0))
-         if ( %this.numDamageAnims > 0 )
-         {
-            %painStunTime = (%this.painStunTime $= "") ? 2000 : %this.painStunTime;
-            if ( %obj.isBot )
-            {
-               %oldSpeed = %obj.getMoveSpeed();
-               %obj.setMoveSpeed(0);
-            }
-            %anim = 1;
-            if ( %this.numDamageAnims > 1 )
-               %anim = getRandom(1, %this.numDamageAnims);
-            %obj.setActionThread("damage" @ %anim, false, true);
-            if ( %obj.isBot )
-               %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
-         }
-      }
+      //%painThreshold = (%this.painThreshold $= "") ? 10 : %this.painThreshold;
+      //if ((%delta > %painThreshold) && !%obj.newlyAdded && !%isSilent)
+      //{
+         //%obj.playPain();
+         //%this.playDamage(%obj);
+      //}
    }
    
    // BloodClans >>
@@ -591,6 +573,65 @@ function PLAYERDATA::onDisabled(%this,%obj,%state)
    %obj.schedule($CorpseTimeoutValue, "delete");
 }
 
+function PLAYERDATA::playDamage(%this, %obj, %pos)
+{
+   %animNum = 1;
+   %animName = "";
+   if ( %this.hasLocationalAnims )
+   {
+      %result = %obj.getDamageLocation(%pos);
+      %area = getWord(%result, 0);
+      %side = getWord(%result, 1);
+      
+      if ( %area $= "head" )
+      {
+         if ( %this.numHeadDmgAnims > 1 )
+            %animNum = getRandom(1, %this.numDamageAnims);
+         %animName = "damageHead";
+      }
+      else if ( %area $= "torso" )
+      {
+         if ( %this.numBodyDmgAnims > 1 )
+            %animNum = getRandom(1, %this.numDamageAnims);
+         %animName = "damageBody";
+      }
+      else
+      {
+         if ( %this.numLegDmgAnims > 1 )
+            %animNum = getRandom(1, %this.numDamageAnims);
+         %animName = "DamageLegs_";
+         if ( strstr(%side, "left") > -1 )
+            %animName = %animName @ "L";
+         else
+            %animName = %animName @ "R";
+      }
+   }
+   else if ( %this.numDamageAnims > 0 )
+   {
+      if ( %this.numDamageAnims > 1 )
+         %animNum = getRandom(1, %this.numDamageAnims);
+      %animName = "damage";
+   }
+
+   if ( %animName !$= "" )
+   {
+      %painStunTime = (%this.painStunTime $= "") ? 1.0 : %this.painStunTime;
+      %painStunTime *= 1000; // Convert to MS
+      if ( %obj.isBot )
+      {
+         %oldSpeed = %obj.getMoveSpeed();
+         %obj.setMoveSpeed(0);
+         if ( %obj.isBot )
+            %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
+         %obj.setActionThread(%animName @ %animNum, false, true);
+      }
+      else
+      {
+         %obj.ForceAnimation(true, %animName @ %animNum, true);
+         %obj.schedule(%painStunTime, "ForceAnimation", false, "root");
+      }
+   }
+}
 
 //-----------------------------------------------------------------------------
 

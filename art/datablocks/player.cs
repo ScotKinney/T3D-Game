@@ -95,7 +95,7 @@ datablock PlayerData(DefaultPlayerData)
 
    // Damage location details
    boxNormalHeadPercentage       = 0.83;
-   boxNormalTorsoPercentage      = 0.49;
+   boxNormalTorsoPercentage      = 0.47;
    boxHeadLeftPercentage         = 0;
    boxHeadRightPercentage        = 1;
    boxHeadBackPercentage         = 0;

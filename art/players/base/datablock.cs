@@ -272,7 +272,12 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    DefaultSetup[Viken] = "55,59,50,35,279,282,285";
    DefaultSetup[Maya] = "55,59,237,35,313,320,378,306,309";
 
-   numDamageAnims = 3;
+   numDamageAnims = 0;
+   hasLocationalAnims = true;
+   numHeadDmgAnims = 1;
+   numBodyDmgAnims = 1;
+   numLegDmgAnims = 1;
+   painStunTime = 0.75;
 };
 
 datablock PlayerData(FemalePlayerData : DefaultPlayerData)
@@ -316,7 +321,13 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    DefaultSetup[Mythriel] = "80,99,366,216,368,364,363,374,365,369";
    DefaultSetup[Viken] = "80,99,397,216,396,406,400,403";
    DefaultSetup[Maya] = "80,99,216,330,326,325,361,328,324";
-   numDamageAnims = 3;
+
+   numDamageAnims = 0;
+   hasLocationalAnims = true;
+   numHeadDmgAnims = 1;
+   numBodyDmgAnims = 1;
+   numLegDmgAnims = 1;
+   painStunTime = 0.75;
 };
 
 // Player fishing sounds
