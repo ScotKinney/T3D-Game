@@ -209,7 +209,7 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
 
          if (%obj.getAimObject() <= 0)
          {
-            if (!%obj.behavior.isSkittish && !isObject(%obj.path))
+            if (!%obj.behavior.isSkittish && !isObject(%obj.path) && isObject(%tgt))
                 //%obj.setAimObject(%col, $AISK_CHAR_HEIGHT);
                 %obj.setAimObject(%col, VectorSub(%tgt.getEyePoint(), %tgt.getPosition()));
 
@@ -339,6 +339,9 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
    //If this is a bot, set its attention level
    if ((%obj.isbot == true) && (%obj.action !$= "Thief"))
    {
+      if ( %obj.team != %sourceObject.team )
+         %obj.target = %sourceObject;  // Remember who hit us last
+
         //Move a little when hit, aggressive bots move in the "Defending" state
         if (!%obj.behavior.isAggressive)
             %obj.sidestep(%obj);

@@ -1,10 +1,48 @@
 function remoteDBCommand(%command, %params, %flag)
 {
+   if ( !isObject($AlterVerse::DBComm) )
+      makeDBComm();
+
+   %queueStr = %flag @ "|" @ %command @ "|" @ %params;
+   DBComm.commandID += 1;
+   DBComm.push_back(DBComm.commandID, %queueStr);
+
+   if ( $pref::MarsMachine )
+      echo("!!!Queueing Command #" @ DBComm.commandID @ ", Flag: " @ %flag @ ", " @ %command @ "&" @ %params);
+
+   if ( !DBComm.commandPending )
+      DBComm.sendNext();
+}
+
+function makeDBComm()
+{
+   $AlterVerse::DBComm = new ArrayObject(DBComm)
+   {
+      commandID = 0;
+      commandPending = false;
+   };
+}
+
+function DBComm::sendNext(%this)
+{
+   if ( %this.count() <= 0 )
+      return;
+
+   %commID = %this.getKey(0);
+   %queueStr = %this.getValue(0);
+   %this.pop_front();
+   %this.commandPending = true;
+
+   %flag = getBarWord(%queueStr, 0);
+   %command = getBarWord(%queueStr, 1);
+   %params = getSubStr(%queueStr, (strlen(%flag) + strlen(%command) + 2), -1);
+
    %request = new HTTPObject() {
       class = "remoteDBData";
       status = "failure";
       message = "";
       command = %command;
+      commID = %commID;
       flag = %flag;  // Any generic flag data needed by the response processor
    };
 
@@ -12,9 +50,19 @@ function remoteDBCommand(%command, %params, %flag)
    if ( %params !$= "" )
       %argStr = %argStr @ "&" @ %params;
    %request.get( $serverPath, "/private_web/" @ "getServerData.php", %argStr );
-   echo("ID: " @ %request @ ", " @ %argStr);
+   if ( $pref::MarsMachine )
+      echo("!!!Sending Command #" @ %commID @ ", ID: " @ %request @ ", " @ %argStr);
 }
-//www.alterverse.com/private_web/getServerData.php?Cmnd=RegisterServer&SvrName=My Name&DspName=Gold Mine
+
+function DBComm::cleanUpObj(%this, %lastObj)
+{
+   if ( $pref::MarsMachine )
+      echo("!!!Cleaning Up Command #" @ %lastObj.commID @ ", ID: " @ %lastObj @ ", " @ %lastObj.status);
+
+   %lastObj.delete();
+   %this.commandPending = false;
+   %this.sendNext();
+}
 
 function remoteDBData::process( %this )
 {
@@ -25,7 +73,8 @@ function remoteDBData::process( %this )
       default:
          echo(%this.message);
    }
-   %this.schedule(0, delete);
+   if ( isObject(DBComm) )
+      DBComm.schedule(0, cleanUpObj, %this);
 }
 
 function remoteDBData::handleDBResult( %this )

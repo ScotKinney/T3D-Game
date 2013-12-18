@@ -21,6 +21,17 @@ function AIPlayer::GetClosestHumanInSightandRange(%this, %obj)
    //The bots current position
    %botpos = %this.getposition();
 
+   // If we're currently engaged with a target, keep fighting them
+   if ( isObject(%obj.target) && (%obj.target.getstate() !$= "Dead") )
+   {
+      %tgt = %obj.target;
+      //Determine the distance from the bot to the target
+      %tempdist = VectorDistSquared(%tgt.getposition(), %botpos);
+      if ( (%tempdist <= %obj.detDisSqr) &&
+         %this.IsTargetInView(%obj, %tgt, %obj.fov) && %this.CheckLOS(%obj, %tgt))
+         return %tgt;
+   }
+
    //This for loop cycles through all possible teams
    for (%j = 0; %j <= $TotalTeams; %j++)
    {
@@ -73,7 +84,8 @@ function AIPlayer::GetClosestHumanInSightandRange(%this, %obj)
                            %obj.returningPos = %tgt.getposition();
                         }
                         //Check this target has less health left than the last target did
-                        else if (%tempHealth + $AISK_HEALTH_IGNORE < %health)
+                        //else if (%tempHealth + $AISK_HEALTH_IGNORE < %health)
+                        else if (%tempHealth > %health)
                         {
                            %health = %tempHealth;
                            %index = %tgt;
