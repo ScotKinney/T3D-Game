@@ -255,11 +255,36 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SimGroup(LittleHogartSpheres) {
+   new StaticShape(GnomeArcher1) {
+      isAIControlled = "0";
+      dataBlock = "AIPlayerMarker";
+      position = "0.131242 33.4618 18.7402";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         activeDodge = "1";
+         block = "GnomeArcher";
+         botBelongsToMe = "3124";
+         customAmbientLighting = "0 0 0 1";
+         delayRespawn = "23309";
+         distDetect = "150";
+         enabled = "1";
+         fov = "360";
+         npcAction = "1";
+         receiveLMLighting = "1";
+         receiveSunLight = "1";
+         respawnCount = "0";
+         respawnCounter = "0";
+         sidestepDist = "5";
+         useCustomAmbientLighting = "0";
+   };
+   new SimGroup(WarriorSpheres) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SpawnSphere(LittleHogartSphere11111) {
+      new SpawnSphere(WarriorSphere11111) {
          autoSpawn = "0";
          spawnTransform = "0";
          radius = "1";
@@ -274,7 +299,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SpawnSphere(LittleHogartSphere1) {
+      new SpawnSphere(WarriorSphere1) {
          autoSpawn = "0";
          spawnTransform = "0";
          radius = "1";
@@ -289,7 +314,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SpawnSphere(LittleHogartSphere11) {
+      new SpawnSphere(WarriorSphere11) {
          autoSpawn = "0";
          spawnTransform = "0";
          radius = "1";
@@ -304,7 +329,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SpawnSphere(LittleHogartSphere111) {
+      new SpawnSphere(WarriorSphere111) {
          autoSpawn = "0";
          spawnTransform = "0";
          radius = "1";
@@ -319,7 +344,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SpawnSphere(LittleHogartSphere1111) {
+      new SpawnSphere(WarriorSphere1111) {
          autoSpawn = "0";
          spawnTransform = "0";
          radius = "1";
@@ -335,82 +360,34 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
-   new StaticShape(TolgartOgre) {
+
+   new StaticShape(GnomeWarrior1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "39.3922 108.336 17.9701";
-      rotation = "-0.00084775 0.0052147 0.999986 187.116";
-      scale = "0.8 0.8 0.8";
+      position = "-24.143 33.0633 19.0575";
+      rotation = "0 0 1 90.0002";
+      scale = "1 1 1";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         block = "tolgart";
-         botBelongsToMe = "3112";
-         customAmbientLighting = "0 0 0 1";
-         distDetect = "50";
-         dropcount = "1";
-         DropItem = "ruby";
-         maxRange = "30";
-         realName = "Tolgart";
-         receiveLMLighting = "1";
-         receiveSunLight = "1";
-         respawnCount = "0";
-         respawnCounter = "0";
-         team = "1";
-         useCustomAmbientLighting = "0";
-   };
-   new StaticShape(LittleHogart) {
-      isAIControlled = "0";
-      dataBlock = "AIPlayerMarker";
-      position = "-21.9402 89.0807 18.3379";
-      rotation = "0 0 1 180";
-      scale = "0.5 0.5 0.5";
-      hidden = "1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         block = "Tolgart";
-         botBelongsToMe = "3113";
+         block = "GnomeWarrior";
+         botBelongsToMe = "0";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "3992";
          distDetect = "50";
          dropcount = "1";
          DropItem = "ruby";
-         maxRange = "30";
-         realName = "Hogart";
+         maxRange = "1";
+         realName = " ";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          respawnCount = "0";
          respawnCounter = "0";
-         spawnGroup = "LittleHogartSpheres";
+         spawnGroup = "WarriorSpheres";
          team = "1";
          useCustomAmbientLighting = "0";
    };
-   new StaticShape(BogartOgre) {
-      isAIControlled = "0";
-      dataBlock = "AIPlayerMarker";
-      position = "-48.3695 36.3968 18.6178";
-      rotation = "1 0 0 0";
-      scale = "0.6 0.6 0.6";
-      hidden = "1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         block = "tolgart";
-         botBelongsToMe = "3114";
-         customAmbientLighting = "0 0 0 1";
-         delayRespawn = "6058";
-         distDetect = "50";
-         dropcount = "1";
-         DropItem = "ruby";
-         maxRange = "20";
-         pathname = "Path1";
-         realName = "Bogart";
-         receiveLMLighting = "1";
-         receiveSunLight = "1";
-         respawnCount = "0";
-         respawnCounter = "0";
-         team = "1";
-         useCustomAmbientLighting = "0";
-   };
+
    new SimGroup(CavePieces) {
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1266,7 +1243,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-43.0433 97.4884 18.7891";
-         rotation = "0.00614837 -0.00643124 0.99996 87.9295";
+         rotation = "0.00614837 -0.00643124 0.99996 87.9293";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2591,7 +2568,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-16.0544 63.1744 18.9228";
-         rotation = "-0.453154 -0.428849 0.781498 99.8232";
+         rotation = "-0.453154 -0.428849 0.781498 99.823";
          scale = "3 3 3";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2731,7 +2708,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-22.432 36.6422 18.7404";
-         rotation = "-0.453154 -0.428849 0.781498 99.8232";
+         rotation = "-0.453154 -0.428849 0.781498 99.823";
          scale = "3 3 3";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2811,7 +2788,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-24.1809 62.813 18.8342";
-         rotation = "-0.453154 -0.428849 0.781498 99.8233";
+         rotation = "-0.453154 -0.428849 0.781498 99.8231";
          scale = "3 3 3";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -4211,7 +4188,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-41.771 35.9089 18.8445";
-         rotation = "-0.453154 -0.428849 0.781498 99.8232";
+         rotation = "-0.453154 -0.428849 0.781498 99.823";
          scale = "3 3 3";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -7483,105 +7460,6 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/Archer/Gnome_Archer.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-16.1108 -26.2654 23.7623";
-      rotation = "0 0 1 122.153";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         GA_Crossbow_dif = "GA_Crossbow_dif_mat";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/Townie/GT.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-15.2454 -24.2125 23.1466";
-      rotation = "0 0 1 180.881";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/Warrior/GnomeWarrior.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-14.4947 -23.9463 23.1273";
-      rotation = "0 0 1 180";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         Gnome_Warrior_body_dif = "Gnome_Warrior_body_dif_mat";
-         GW_armor_color_C = "GW_armor_color_C_mat";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/King/GnomeKing.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-16.8892 -24.0288 23.2134";
-      rotation = "0 0 1 180";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/King/GK_Staff.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-15.8542 -26.8828 24.196";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/AI/Gnomes/Archer/GA_Crossbow.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-15.3308 -27.1594 24.1669";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---
