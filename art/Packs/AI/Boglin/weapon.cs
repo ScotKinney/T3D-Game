@@ -35,7 +35,7 @@ singleton GameBaseData(ClubSwingThree)
    startDamage = 0.2;
    endDamage = 1.3;
    soundDelay = 0;
-   swingSound = "";
+   swingSound = "SwordSwing2Sound";
    impulse = 400;
 };
 
