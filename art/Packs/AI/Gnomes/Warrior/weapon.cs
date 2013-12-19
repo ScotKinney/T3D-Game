@@ -3,12 +3,12 @@ singleton GameBaseData(GW_AxeSwingOne)
    seqName = "Attack1";
    fullSkelAnim = true;
    timeScale = 1;
-   damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   damageAmount = 10;
+   startDamage = 0.4;
+   endDamage = 0.5;
    soundDelay = 0;
    swingSound = "SwordSwing1Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingTwo)
@@ -17,11 +17,11 @@ singleton GameBaseData(GW_AxeSwingTwo)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.5;
+   endDamage = 0.6;
    soundDelay = 0;
    swingSound = "SwordSwing2Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingThree)
@@ -29,12 +29,12 @@ singleton GameBaseData(GW_AxeSwingThree)
    seqName = "Attack3";
    fullSkelAnim = true;
    timeScale = 1;
-   damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   damageAmount = 25;
+   startDamage = 0.5;
+   endDamage = 0.54;
    soundDelay = 0;
    swingSound = "SwordSwing3Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingFour)
@@ -43,11 +43,11 @@ singleton GameBaseData(GW_AxeSwingFour)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.15;
+   endDamage = 0.6;
    soundDelay = 0;
    swingSound = "SwordSwing1Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingFive)
@@ -56,11 +56,11 @@ singleton GameBaseData(GW_AxeSwingFive)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.49;
+   endDamage = 0.68;
    soundDelay = 0;
    swingSound = "SwordSwing2Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingSix)
@@ -69,11 +69,11 @@ singleton GameBaseData(GW_AxeSwingSix)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.78;
+   endDamage = 0.83;
    soundDelay = 0;
    swingSound = "SwordSwing3Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingSeven)
@@ -82,11 +82,11 @@ singleton GameBaseData(GW_AxeSwingSeven)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   startDamage = 0.74;
+   endDamage = 0.87;
    soundDelay = 0;
    swingSound = "SwordSwing1Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingEight)
@@ -95,11 +95,11 @@ singleton GameBaseData(GW_AxeSwingEight)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
-   soundDelay = 0;
+   startDamage = 1.8;
+   endDamage = 1.9;
+   soundDelay = 1000;
    swingSound = "SwordSwing2Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingNine)
@@ -107,12 +107,12 @@ singleton GameBaseData(GW_AxeSwingNine)
    seqName = "Attack9";
    fullSkelAnim = true;
    timeScale = 1;
-   damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   damageAmount = 30;
+   startDamage = 0.53;
+   endDamage = 2.5;
    soundDelay = 0;
    swingSound = "SwordSwing3Sound";
-   impulse = 400;
+   impulse = 200;
 };
 
 singleton GameBaseData(GW_AxeSwingTen)
@@ -120,12 +120,12 @@ singleton GameBaseData(GW_AxeSwingTen)
    seqName = "Attack10";
    fullSkelAnim = true;
    timeScale = 1;
-   damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   damageAmount = 30;
+   startDamage = 0.53;
+   endDamage = 3.0;
    soundDelay = 0;
    swingSound = "SwordSwing1Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingEleven)
@@ -133,12 +133,12 @@ singleton GameBaseData(GW_AxeSwingEleven)
    seqName = "Attack11";
    fullSkelAnim = true;
    timeScale = 1;
-   damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.3;
+   damageAmount = 30;
+   startDamage = 0.83;
+   endDamage = 1.0;
    soundDelay = 0;
    swingSound = "SwordSwing2Sound";
-   impulse = 400;
+   impulse = 100;
 };
 
 singleton GameBaseData(GW_AxeSwingTwelve)
@@ -147,11 +147,11 @@ singleton GameBaseData(GW_AxeSwingTwelve)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
+   startDamage = 0.68;
    endDamage = 1.3;
    soundDelay = 0;
    swingSound = "SwordSwing3Sound";
-   impulse = 400;
+   impulse = 300;
 };
 
 datablock ShapeBaseImageData(GW_AxeImage : BaseMeleeImage)

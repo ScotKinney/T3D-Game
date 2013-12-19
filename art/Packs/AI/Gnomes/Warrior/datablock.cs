@@ -3,7 +3,7 @@ datablock PlayerData(GnomeWarrior : DefaultPlayerData)
 {
    renderFirstPerson = false;
 
-   shapeFile = "art/Packs/AI/Gnomes/GnomeWarrior.dts";
+   shapeFile = "art/Packs/AI/Gnomes/Warrior/GnomeWarrior.dts";
    
    maxDamage = 200;
    maxForwardSpeed = 2;
