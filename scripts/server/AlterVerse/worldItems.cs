@@ -1768,8 +1768,8 @@ datablock ItemData(Self_Immolation_Kit)
    ItemID = 127;
    category = "magic";
    className = "magic";
-   shapeFile = "art/inv/magic/potions/pbottle5-2.dts";
-   invIcon = "art/gui/icons/Lamp_Oil.jpg";
+   shapeFile = "art/inv/magic/Miscellaneous/SelfImmKit.dae";
+   invIcon = "art/gui/icons/SelfImmKit.jpg";
    maxInventory = 5;
    keepOnDeath = 1;
    skullLevel = 0;
