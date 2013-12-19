@@ -7,7 +7,7 @@ singleton TSShapeConstructor(Gnome_ArcherDts)
 function Gnome_ArcherDts::onLoad(%this)
 {
    %this.setNodeTransform("GA_sword01", "0.264061 -0.019973 0.566995 0.719155 -0.666956 -0.194897 2.62997", "1");
-   %this.renameNode("Bip01_Rhand_Weapon", "mount0");
+   %this.renameNode("GA_Sword01", "mount0");
    %this.addSequence("./CrossbowRoot.dsq", "Root", "0", "49", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("./CrossbowRun.dsq", "Run", "0", "25", "1", "0");
@@ -40,5 +40,6 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.addSequence("./CrossbowDeath2.dsq", "Death2", "0", "17", "1", "0");
    %this.addSequence("./CrossbowDeath3.dsq", "Death3", "0", "17", "1", "0");
    %this.addSequence("./CrossbowDeath4.dsq", "Death4", "0", "17", "1", "0");
-
+   %this.addTrigger("Attack1", "19", "3");
+   %this.addTrigger("Attack2", "11", "3");
 }

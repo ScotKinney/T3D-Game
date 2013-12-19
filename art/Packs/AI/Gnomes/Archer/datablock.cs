@@ -26,7 +26,7 @@ datablock PlayerData(GnomeArcher : DefaultPlayerData)
 {
    renderFirstPerson = false;
 
-   shapeFile = "art/Packs/AI/Gnomes/Gnome_Archer.dts";
+   shapeFile = "art/Packs/AI/Gnomes/Archer/Gnome_Archer.dts";
    
    maxDamage = 200;
    maxForwardSpeed = 2;
@@ -80,8 +80,8 @@ datablock PlayerData(GnomeArcher : DefaultPlayerData)
    numDeathAnims = 4;
    numDamageAnims = 3;
 
-   boundingBox = "2 2 3";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "1 1 2";
+   swimBoundingBox = "1 1 2";
 
    // Foot Prints
    decalData   = PlayerFootprint;

@@ -18,7 +18,7 @@ datablock SFXProfile(GA_CrossbowHit)
    preload = false;
 };
 
-datablock ProjectileData(GA_BoltProjectile : BaseProjectile)
+datablock ProjectileData(GA_BoltProjectile : BoltProjectile)
 {
    projectileShapeName = "art/Packs/AI/Gnomes/Archer/GA_Bolt.dts";
    scale = "1 1 1";
@@ -38,14 +38,14 @@ datablock ProjectileData(GA_BoltProjectile : BaseProjectile)
    retrievable = "";
 };
 
-datablock ProjectileData(GA_BoltWetProjectile : GA_BoltProjectile)
+datablock ProjectileData(GA_BoltWetProjectile : BoltWetProjectile)
 {
    muzzleVelocity = 10;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(GA_CrossbowImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(GA_CrossbowImage : CrossbowImage)
 {
    shapefile = "art/Packs/AI/Gnomes/Archer/GA_Crossbow.dts";
    scale = "1 1 1";
@@ -54,6 +54,5 @@ datablock ShapeBaseImageData(GA_CrossbowImage : BaseTriggeredImage)
    rearmDelay = 4000;
    fullSkelAnim = true;
    fireAnim = "Attack1";
-   //fireanim2 = Attack2";
    fireSound = GA_CrossbowFire;
 };
