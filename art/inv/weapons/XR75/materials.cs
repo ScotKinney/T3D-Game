@@ -3,7 +3,7 @@
 new Material(mat_5_56_ammo)
 {
    mapTo = "tracer";
-   diffuseMap[0] = "art/inv/weapons/XR75/tracer";
+   diffuseMap[0] = "tracer";
    emissive = true;
    Glow[0] = true;
    castShadows = "0";
@@ -16,6 +16,6 @@ new Material(mat_5_56_ammo)
 singleton Material(XR75_mech_01_5)
 {
    mapTo = "mech-01-5";
-   diffuseMap[0] = "art/inv/weapons/XR75/ma5.body";
+   diffuseMap[0] = "ma5body.jpg";
    materialTag0 = "Weapons";
 };
