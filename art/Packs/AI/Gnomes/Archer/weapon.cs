@@ -4,7 +4,7 @@
 
 datablock SFXProfile(GA_CrossbowFire)
 {
-   fileName = "art/Packs/AI/Tolgart/sound/GA_CrossbowFire";
+   fileName = "art/Packs/AI/Gnomes/sound/GA_CrossbowFire";
    description = AudioClose3d;
    preload = false;
 };
@@ -13,7 +13,7 @@ datablock SFXProfile(GA_CrossbowFire)
 
 datablock SFXProfile(GA_CrossbowHit)
 {
-   fileName = "art/Packs/AI/Tolgart/sound/GA_CrossbowHit";
+   fileName = "art/Packs/AI/Gnomes/sound/GA_CrossbowHit";
    description = AudioClose3d;
    preload = false;
 };

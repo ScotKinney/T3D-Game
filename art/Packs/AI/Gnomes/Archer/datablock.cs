@@ -3,7 +3,7 @@
 ///Death Cries
 datablock SFXProfile(GnomeDeathCry1)
 {
-   fileName = "art/Packs/AI/Boglin/sound/GnomeDeathCry1";
+   fileName = "art/Packs/AI/Gnomes/sound/GnomeDeathCry1";
    description = AudioClose3d;
    preload = false;
 };
@@ -13,10 +13,11 @@ datablock SFXProfile(GnomeDeathCry1)
 
 datablock SFXProfile(GnomePain1)
 {
-   fileName = "art/Packs/AI/Boglin/sound/GnomePain1";
+   fileName = "art/Packs/AI/Gnomes/sound/GnomePain1";
    description = AudioClose3d;
    preload = false;
 };
+
 
 ///The Archer
 
