@@ -167,15 +167,19 @@ singleton Material(mat_CaveRamp3Curved)
 singleton Material(mat_CaveRampRoom)
 {
    mapTo = "PMat_CaveRampRoom";
-   diffuseMap[0] = "CaveEntrance.dds";
+   diffuseMap[0] = "art/worlds/TreasureCaves/models/CaveEntrance.dds";
    materialTag0 = "TCaves";
-   detailMap[0] = "volcano_cave_wall_tileable.dds";
+   detailMap[0] = "art/worlds/TreasureCaves/models/volcano_cave_wall_tileable.dds";
    detailScale[0] = "0.2 0.2";
-   normalMap[0] = "CaveEntrance_NRM.dds";
-   detailNormalMap[0] = "tex_tileable_noise_nrm.dds";
+   normalMap[0] = "art/worlds/TreasureCaves/models/CaveEntrance_NRM.dds";
+   detailNormalMap[0] = "art/worlds/TreasureCaves/models/tex_tileable_noise_nrm.dds";
    detailNormalMapStrength[0] = "1";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepCaveSound";
+   specularPower[0] = "51";
+   specularStrength[0] = "3";
+   pixelSpecular[0] = "0";
+   customImpactSound = "FootStepCaveSound";
 };
 
 singleton Material(mat_CaveRampUp)
