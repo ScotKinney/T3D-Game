@@ -281,6 +281,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R1", "0", "16", "1", "0");
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
+   %this.addSequence("art/players/base/Anims/Block1_LH_Block1_LH.dsq", "Block1_LH", "0", "-1", "1", "0");
 }
 
 $mack = true;
