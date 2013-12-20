@@ -27,8 +27,8 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.setSequenceCyclic("StrafeLeft", "1");
    %this.addSequence("./CrossbowStrafeRight.dsq", "StrafeRight", "0", "22", "1", "0");
    %this.setSequenceCyclic("StrafeRight", "1");
-   %this.addSequence("./CrossbowReloadFire.dsq", "Attack1", "0", "22", "1", "0");
-   %this.addSequence("./CrossbowFire.dsq", "Attack2", "0", "22", "1", "0");
+   %this.addSequence("./CrossbowReloadFire.dsq", "Attack1", "0", "-1", "1", "0");
+   %this.addSequence("./CrossbowFire.dsq", "Attack2", "0", "-1", "1", "0");
    %this.addSequence("./CrossbowRunningJump.dsq", "RunningJump", "0", "22", "1", "0");
    %this.addSequence("./Falling.dsq", "Fall", "0", "25", "1", "0");
    %this.addSequence("./CrossbowTracking.dsq", "Tracking", "0", "17", "1", "0");
@@ -40,6 +40,6 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.addSequence("./CrossbowDeath2.dsq", "Death2", "0", "17", "1", "0");
    %this.addSequence("./CrossbowDeath3.dsq", "Death3", "0", "17", "1", "0");
    %this.addSequence("./CrossbowDeath4.dsq", "Death4", "0", "17", "1", "0");
-   %this.addTrigger("Attack1", "19", "3");
-   %this.addTrigger("Attack2", "11", "3");
+   %this.addTrigger("Attack1", "110", "3");
+   %this.addTrigger("Attack2", "18", "3");
 }

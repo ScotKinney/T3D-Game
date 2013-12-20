@@ -18,6 +18,12 @@ datablock SFXProfile(GA_CrossbowHit)
    preload = false;
 };
 
+datablock ExplosionData(GA_BoltExplosion)
+{
+   soundProfile = GA_CrossbowHit;
+   lifeTimeMS = 200; // I want a quick bang and dissipation, not a slow burn-out
+};
+
 datablock ProjectileData(GA_BoltProjectile : BoltProjectile)
 {
    projectileShapeName = "art/Packs/AI/Gnomes/Archer/GA_Bolt.dts";
@@ -27,8 +33,8 @@ datablock ProjectileData(GA_BoltProjectile : BoltProjectile)
    particleEmitter = 0;
    particleWaterEmitter = 0;
    radiusDamage = 0;
-   damageRadius = 5;
-   explosion = GA_CrossbowHit;
+   damageRadius = 0;
+   explosion = GA_BoltExplosion;
    waterExplosion = 0;
    lightDesc = 0;
    gravityMod = 0.3;
@@ -38,21 +44,23 @@ datablock ProjectileData(GA_BoltProjectile : BoltProjectile)
    retrievable = "";
 };
 
-datablock ProjectileData(GA_BoltWetProjectile : BoltWetProjectile)
+datablock ProjectileData(GA_BoltWetProjectile : GA_BoltProjectile)
 {
    muzzleVelocity = 10;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(GA_CrossbowImage : CrossbowImage)
+datablock ShapeBaseImageData(GA_CrossbowImage : BaseTriggeredImage)
 {
+   weaponType = "Delayed"; 
    shapefile = "art/Packs/AI/Gnomes/Archer/GA_Crossbow.dts";
    scale = "1 1 1";
    projectile = GA_BoltProjectile; 
    wetProjectile = GA_BoltWetProjectile;
-   rearmDelay = 4000;
+   fireDelay = 5000;
    fullSkelAnim = true;
    fireAnim = "Attack1";
+   usesAmmo = true;
    fireSound = GA_CrossbowFire;
 };

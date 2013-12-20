@@ -369,8 +369,9 @@ function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
    if ( (%slot == 3) && isObject(%obj.firingWeapon) )
    {
       %obj.firingWeapon.delayedFire(%obj, 0);
+      if ( %obj.firingWeapon.weaponType !$= "Delayed" )
+         %obj.firing = false;
       %obj.firingWeapon = "";
-      %obj.firing = false;
       return;
    }
 
@@ -382,7 +383,8 @@ function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
 
 function PlayerData::animationDone(%this, %obj)
 {
-   %obj.firing = false;
+   if ( %obj.getMountedImage(0).weaponType !$= "Delayed" )
+      %obj.firing = false;
    %obj.inAttackThread = false;
 }
 
