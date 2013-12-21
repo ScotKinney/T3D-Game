@@ -431,7 +431,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "2675";
+         botBelongsToMe = "2676";
          delayRespawn = "310";
          distDetect = "50";
          fov = "360";
@@ -488,6 +488,35 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "20";
+      isAIControlled = "0";
+      dataBlock = "Book_of_Blinding";
+      position = "-15.3119 9.13154 23.1919";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "2";
+      isAIControlled = "0";
+      dataBlock = "Self_Immolation_Kit";
+      position = "-16.358 10.427 22.1668";
+      rotation = "0 0 1 217.473";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
    };
 };
 //--- OBJECT WRITE END ---
