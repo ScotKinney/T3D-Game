@@ -264,6 +264,31 @@ datablock ItemData(BoltAmmo)
 };
 $AlterVerse::ItemNames[3] = "BoltAmmo";
 
+datablock ItemData(Book_of_Blinding)
+{
+
+   ItemID = 130;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/Runes/rIXrune.dts";
+   invIcon = "art/gui/icons/key.jpg";
+   maxInventory = 20;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+   table = "Magic";
+   spellDef = "Blinding";
+   spellTarget = "Enemy";
+};
+$AlterVerse::ItemNames[130] = "Book_of_Blinding";
+
 datablock ItemData(Brook_Trout)
 {
 
