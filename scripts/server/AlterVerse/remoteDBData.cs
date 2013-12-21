@@ -16,11 +16,18 @@ function remoteDBCommand(%command, %params, %flag)
 
 function makeDBComm()
 {
+   // Don't let this go into the server group or it will get deleted before 
+   // the command to unregister the server has processed
+   %oldGroup = $instantGroup;
+   $instantGroup = 0;
+
    $AlterVerse::DBComm = new ArrayObject(DBComm)
    {
       commandID = 0;
       commandPending = false;
    };
+
+   $instantGroup = %oldGroup;
 }
 
 function DBComm::sendNext(%this)
@@ -37,6 +44,10 @@ function DBComm::sendNext(%this)
    %command = getBarWord(%queueStr, 1);
    %params = getSubStr(%queueStr, (strlen(%flag) + strlen(%command) + 2), -1);
 
+   // The HTTP object will delete itself when the command is processed or the
+   // connection is closed.
+   %oldGroup = $instantGroup;
+   $instantGroup = 0;
    %request = new HTTPObject() {
       class = "remoteDBData";
       status = "failure";
@@ -45,6 +56,7 @@ function DBComm::sendNext(%this)
       commID = %commID;
       flag = %flag;  // Any generic flag data needed by the response processor
    };
+   $instantGroup = %oldGroup;
 
    %argStr = "Cmnd=" @ %command;
    if ( %params !$= "" )
