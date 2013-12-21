@@ -26,7 +26,8 @@ function Blinding::onChannelEnd(%this, %spell)
 function Blinding::onCast(%this, %spell) 
 {
 	%src = %spell.getSource();
-   %obj = %src.camera; //%spell.getTarget();
+	%target = %spell.getTarget();
+   %obj = %target.camera(); //%spell.getTarget();
    /*
    if (!isObject(%src) || !isObject(%obj) || %obj.getState() $= "Dead")
    {

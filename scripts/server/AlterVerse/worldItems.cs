@@ -285,7 +285,7 @@ datablock ItemData(Book_of_Blinding)
    cost = 1000;
    table = "Magic";
    spellDef = "Blinding";
-   spellTarget = "Enemy";
+   spellTarget = "Target";
 };
 $AlterVerse::ItemNames[130] = "Book_of_Blinding";
 
