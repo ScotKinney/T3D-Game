@@ -21,10 +21,14 @@ singleton Material(mat_GA_Armor)
    useAnisotropic[0] = "1";
 };
 
-singleton Material(mat_GA_Crossbow)
+
+singleton Material(GA_Crossbow_dif_mat)
 {
    mapTo = "GA_Crossbow_dif";
    diffuseMap[0] = "art/Packs/AI/Gnomes/Archer/GA_Crossbow_color_B.dds";
+   normalMap[0] = "art/Packs/AI/Gnomes/Archer/GA_Crossbow_nm.dds";
+   specularPower[0] = "2";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/AI/Gnomes/Archer/GA_Crossbow_spec.dds";
+   useAnisotropic[0] = "1";
 };
-
-
