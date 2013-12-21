@@ -79,3 +79,4 @@ exec("./Spells/rainoffire.cs");
 exec("./Spells/Invisibility.cs");
 exec("./Spells/AstralPassport.cs");
 exec("./Spells/Immolation.cs");
+exec("./Spells/Blinding.cs");
