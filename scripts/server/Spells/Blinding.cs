@@ -44,8 +44,7 @@ function Blinding::Reappear(%this, %obj, %newPos)
 function Blinding::onCast(%this, %spell) 
 {
 	%src = %spell.getSource();
-	%obj = %src;// %spell.getTarget();
-   //%obj = %target; // .camera();
+	%obj = %spell.getTarget();
    if (!isObject(%src) || !isObject(%obj) || %obj.getState() $= "Dead")
    {
       return;
