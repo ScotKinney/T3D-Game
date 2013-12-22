@@ -34,7 +34,7 @@ function Blinding::Reappear(%this, %obj, %newPos)
    };
    %effectObj.schedule(3000, delete);
 
-   %spawnPos = VectorAdd(%newPos, "0 0 300");
+   %spawnPos = VectorAdd(%newPos, "0 0 50");
    %obj.position = %spawnPos;
 
    %obj.startFade(1000, 1000, false);
@@ -45,6 +45,8 @@ function Blinding::onCast(%this, %spell)
 {
 	%src = %spell.getSource();
 	%obj = %spell.getTarget();
+	//for testing alone:
+	//%obj = %src;
    if (!isObject(%src) || !isObject(%obj) || %obj.getState() $= "Dead")
    {
       return;
@@ -56,9 +58,8 @@ function Blinding::onCast(%this, %spell)
    };
    %effectObj.schedule(3000, delete);
 
-   %obj.startFade(1000, 250, true);
+   
    %newPos = %this.findAppearPos(%obj, %start);
-   %this.schedule(3500, "Reappear", %obj, %newPos);
    // Remove the item from the casters inventory
    %src.decInventory(%this.item, 1);
    $SB::WODec = 0.0;
@@ -72,6 +73,8 @@ function Blinding::onCast(%this, %spell)
    %obj.schedule(800, "setWhiteOut", 0.8);
    %obj.schedule(900, "setWhiteOut", 0.9);
    %obj.schedule(1000, "setWhiteOut", 1);
+   %obj.startFade(1000, 250, true);
+   %this.schedule(3900, "Reappear", %obj, %newPos);
    %obj.schedule(4000, "setWhiteOut", 0.9);
    %obj.schedule(4100, "setWhiteOut", 0.8);
    %obj.schedule(4200, "setWhiteOut", 0.7);
@@ -88,8 +91,8 @@ function Blinding::findAppearPos(%this, %obj, %start)
 {
    %rotation = %obj.getForwardVector();
    %targetLoc = VectorAdd(%start, VectorScale(%rotation, 90));
-   %above = VectorAdd(%targetLoc, "0 0 50");
-   %below = VectorSub(%targetLoc, "0 0 20");
+   %above = VectorAdd(%targetLoc, "0 0 0");
+   %below = VectorSub(%targetLoc, "0 0 0");
 
    %result = containerRayCast(%above, %below, $TypeMasks::ShapeBaseObjectType |
                                              $TypeMasks::StaticShapeObjectType |
