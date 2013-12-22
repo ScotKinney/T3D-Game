@@ -26,17 +26,12 @@ function Blinding::onChannelEnd(%this, %spell)
 function Blinding::onCast(%this, %spell) 
 {
 	%src = %spell.getSource();
-	%target = %spell.getTarget();
-   %obj = %target.camera(); //%spell.getTarget();
-   /*
+	%obj = %spell.getTarget();
+   //%obj = %target; // .camera();
    if (!isObject(%src) || !isObject(%obj) || %obj.getState() $= "Dead")
    {
       return;
    }
-   */
-   if ( !isObject(%src))
-      return;
-   //
    // Remove the item from the casters inventory
    %src.decInventory(%this.item, 1);
 	%obj.schedule(100, "setWhiteOut", 0.1);
