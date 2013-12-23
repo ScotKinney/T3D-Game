@@ -51,6 +51,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/Right.dsq", "Right", "0", "29", "1", "0");
    %this.addTrigger("right", "2", "2");
    %this.addTrigger("right", "17", "1");
+   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "RunFull_Root", "0", "383", "1", "0");
+   %this.setSequencePriority("RunFull_Root", "0");
    %this.addSequence("art/players/base/Anims/RunFull_Left.dsq", "RunFull_Left", "0", "29", "1", "0");
    %this.addTrigger("RunFull_Left", "3", "1");
    %this.addTrigger("RunFull_Left", "19", "2");
@@ -66,6 +68,8 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addTrigger("Sprint_Forward", "22", "2");
    %this.addTrigger("Sprint_Forward", "42", "1");
    %this.addTrigger("Sprint_Forward", "62", "2");
+   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "Sprint_Root", "0", "383", "1", "0");
+   %this.setSequencePriority("Sprint_Root", "0");
    %this.addSequence("art/players/base/Anims/Sprint_Back.dsq", "Sprint_Back", "0", "29", "1", "0");
    %this.addTrigger("Sprint_Back", "4", "1");
    %this.addTrigger("Sprint_Back", "11", "2");
@@ -75,6 +79,9 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/Sprint_Right.dsq", "Sprint_Right", "0", "29", "1", "0");
    %this.addTrigger("Sprint_Right", "1", "1");
    %this.addTrigger("Sprint_Right", "8", "2");
+   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "SprintFull_Root", "0", "29", "1", "0");
+   %this.setSequencePriority("SprintFull_Root", "0");
+   %this.setSequenceCyclic("SprintFull_Root", "1");
    %this.addSequence("art/players/base/Anims/CombatSprint.dsq", "SprintFull_Forward", "0", "118", "1", "0");
    %this.setSequenceCyclic("SprintFull_Forward", "1");
    %this.addSequence("art/players/base/Anims/SprintFull_Back.dsq", "SprintFull_Back", "0", "29", "1", "0");
@@ -176,9 +183,9 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/GA_DamageHeadRight.dsq", "DamageBody_R1", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Anims/DamageLegs_L.dsq", "DamageLegs_L1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/DamageLegs_R.dsq", "DamageLegs_R1", "0", "16", "1", "0");
-   %this.addSequence("art/players/base/Anims/GA_DamageFromBack.dsq", "DamageBody_B1", "0", "39", "1", "0");
-   %this.addSequence("art/players/base/Anims/DamageKnockedBackward.dsq", "DamageKnockedBack", "0", "24", "1", "0");
-   %this.addSequence("art/players/base/Anims/DamageKnockedForward.dsq", "DamageKnockedFore", "0", "24", "1", "0");
+   %this.addSequence("art/players/base/Anims/GA_DamageFromBack.dsq", "DamageBody2", "0", "39", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageKnockedBackward.dsq", "DamageBody3", "0", "120", "1", "0");
+   %this.addSequence("art/players/base/Anims/DamageKnockedForward.dsq", "DamageBody4", "0", "99", "1", "0");
    %this.addSequence("art/players/base/Anims/Death1.dsq", "Death1", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Death2.dsq", "Death2", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Anims/Death3.dsq", "Death3", "0", "-1", "1", "0");
@@ -326,13 +333,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/GA_Sitting.dsq", "Sitting", "0", "49", "1", "0");
    %this.setSequenceCyclic("Sitting", "1");
    %this.addSequence("art/players/base/Anims/GA_StandingUp.dsq", "StandingUp", "0", "49", "1", "0");
-   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "RunFull_Root", "0", "383", "1", "0");
-   %this.setSequencePriority("RunFull_Root", "0");
-   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "Sprint_Root", "0", "383", "1", "0");
-   %this.setSequencePriority("Sprint_Root", "0");
-   %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "SprintFull_Root", "0", "29", "1", "0");
-   %this.setSequencePriority("SprintFull_Root", "0");
-   %this.setSequenceCyclic("SprintFull_Root", "1");
+
 }
 
 $mack = true;
