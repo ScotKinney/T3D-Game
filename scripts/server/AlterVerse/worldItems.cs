@@ -2248,6 +2248,29 @@ datablock ItemData(Solo_Mine_Potion)
 };
 $AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
 
+datablock ItemData(Split_Personality_Potion)
+{
+
+   ItemID = 131;
+   category = "magic";
+   className = "magic";
+   shapeFile = "art/inv/magic/potions/pbottle3-2.dts";
+   invIcon = "art/gui/icons/key.jpg";
+   maxInventory = 20;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+   //Split Personality Potion is in the 'Items' table but not in the 'Magic' table.
+};
+$AlterVerse::ItemNames[131] = "Split_Personality_Potion";
+
 datablock ItemData(Steel_War_AxeWeapon)
 {
 
@@ -2593,62 +2616,6 @@ datablock ItemData(WizardsStaffWeapon)
    reticle = "reticle_rocketlauncher";
 };
 $AlterVerse::ItemNames[117] = "WizardsStaffWeapon";
-
-datablock ItemData(WizardStaffWeapon)
-{
-
-   ItemID = 116;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/wizardstaff/wizardstaff.dts";
-   invIcon = "art/gui/icons/wizardstaff.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 116;
-   image = WizardStaffImage;
-   effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
-};
-$AlterVerse::ItemNames[116] = "WizardStaffWeapon";
-
-datablock ItemData(WizardStaff2Weapon)
-{
-
-   ItemID = 118;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/wizardstaff2/wizardstaff2.dts";
-   invIcon = "art/gui/icons/wizardstaff.jpg";
-   maxInventory = 1;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 118;
-   image = WizardStaff2Image;
-   effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
-};
-$AlterVerse::ItemNames[118] = "WizardStaff2Weapon";
 
 datablock ItemData(XR75Weapon)
 {
