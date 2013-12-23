@@ -22,15 +22,16 @@ function AIPlayer::GetClosestHumanInSightandRange(%this, %obj)
    %botpos = %this.getposition();
 
    // If we're currently engaged with a target, keep fighting them
-   if ( isObject(%obj.target) && (%obj.target.getstate() !$= "Dead") )
+   if ( isObject(%obj.targetEngaged) && (%obj.targetEngaged.getstate() !$= "Dead") )
    {
-      %tgt = %obj.target;
+      %tgt = %obj.targetEngaged;
       //Determine the distance from the bot to the target
       %tempdist = VectorDistSquared(%tgt.getposition(), %botpos);
       if ( (%tempdist <= %obj.detDisSqr) &&
          %this.IsTargetInView(%obj, %tgt, %obj.fov) && %this.CheckLOS(%obj, %tgt))
          return %tgt;
    }
+   %obj.targetEngaged = "";
 
    //This for loop cycles through all possible teams
    for (%j = 0; %j <= $TotalTeams; %j++)

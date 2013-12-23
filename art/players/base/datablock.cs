@@ -260,8 +260,6 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    DeathSound[5] = MaleDeathCry6;
    DeathSound[6] = MaleDeathCry7;
 
-
-
   // Foot Print offSet
    decalOffset = 0.22;
    

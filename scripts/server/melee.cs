@@ -100,6 +100,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    %obj.hthDamageSeqPlaying = %this;
    %obj.hthDamageStartMS =  $sim::Time;
    %obj.hthDamageLastId = -1;
+   %obj.firingWeapon = %this;
 
    %attackSound = %attack.SwingSound;
    if ( %attackSound !$= "" )

@@ -19,4 +19,5 @@ singleton Material(mat_Orange_pot)
    mapTo = "orange_pot";
    diffuseMap[0] = "orange_pot.dds";
    translucent = "0";
+   materialTag0 = "IndoorProps";
 };

@@ -223,5 +223,61 @@ singleton Material(mat_FenceSection2)
    mapTo = "fenceSection2Post2";
    diffuseMap[0] = "fenceSection2Post2";
    translucent = "0";
+   materialTag0 = "DefaultProps";
 };
 
+singleton Material(mat_candleStick)
+{
+   mapTo = "candleStick";
+   diffuseMap[0] = "candlestick.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_herb_pot)
+{
+   mapTo = "herb_pot";
+   diffuseMap[0] = "herb_pot.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_furniture1)
+{
+   mapTo = "furniture1";
+   diffuseMap[0] = "furniture1.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_picture)
+{
+   mapTo = "picture";
+   diffuseMap[0] = "picture.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_plate_with_bread)
+{
+   mapTo = "plate_with_bread";
+   diffuseMap[0] = "plate_with_bread.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_dinner_chair)
+{
+   mapTo = "dinner_chair";
+   diffuseMap[0] = "dinner_chair.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_pan)
+{
+   mapTo = "pan";
+   diffuseMap[0] = "pan.dds";
+   materialTag0 = "DefaultProps";
+};
+
+singleton Material(mat_chopping_board)
+{
+   mapTo = "chopping_board";
+   diffuseMap[0] = "chopping_board.dds";
+   materialTag0 = "DefaultProps";
+};

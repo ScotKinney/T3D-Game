@@ -342,3 +342,114 @@ datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
    // The sound to play when this weapon hits another player or AI
    hitLiveSound = "SwordHitLiveSound";
 };
+///////////END Iron War Axe////////////////////
+
+///////////Wizards Staff for Players///////////////////////
+///////////WizardsStaff Attacks////////////////
+singleton GameBaseData(Staff_Center)
+{
+   seqName = "Staff_Center";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+singleton GameBaseData(Staff_LHHigh)
+{
+   seqName = "Staff_LHHigh";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+singleton GameBaseData(Staff_LHLow)
+{
+   seqName = "Staff_LHLow";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+singleton GameBaseData(Staff_Lunge)
+{
+   seqName = "Staff_Lunge";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+singleton GameBaseData(Staff_RHHigh)
+{
+   seqName = "Staff_RHHigh";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+singleton GameBaseData(Staff_RHLow)
+{
+   seqName = "Staff_RHLow";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+datablock GameBaseData(Staff_Spin)
+{
+   seqName = "Staff_Spin";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 40;
+   startDamage = 0.2;
+   endDamage = 1.3;
+   soundDelay = 500;
+   swingSound = SwordSwing1Sound;
+   impulse = 200;
+};
+
+datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/WizardStaff/WizardsStaff.dts";
+   item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 7;
+   hthAttack[0]                     = Staff_Center;
+   hthAttack[1]                     = Staff_LHHigh;
+   hthAttack[2]                     = Staff_LHLow;
+   hthAttack[3]                     = Staff_Lunge;
+   hthAttack[4]                     = Staff_RHHigh;
+   hthAttack[5]                     = Staff_RHLow;
+   hthAttack[6]                     = Staff_Spin;
+};
+///////////END WizardsStaff////////////////////

@@ -180,4 +180,5 @@ function AIPlayer::delayFire(%this, %obj)
 {
    //this is the end of the firing cycle
    %obj.firing = false;
+   %obj.firingWeapon = "";
 }

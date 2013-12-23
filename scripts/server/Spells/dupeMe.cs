@@ -4,6 +4,13 @@ singleton SpellData(Duplication : DefaultTargetSpell)
 	ChannelTimesMS[1] = 500;
 	Cost = 60;
    range = 50;
+   
+   // Length of time the clone will stay around, if not killed, in MS.
+   cloneLifetimeMS = 120000;
+
+   // The weapon(s) to equip the clone with
+   cloneWeapon = "RightHand LeftHand RightFoot LeftFoot";
+
    // Every spell needs a link to it's inventory item.
    // For now this just links to the item it replaces from the old game.
    item = "Split_Personality_Potion";
@@ -46,22 +53,31 @@ function Duplication::Reappear(%this, %obj, %posTgt, %newPos)
 function Duplication::onCast(%this, %spell) 
 {
 	%src = %spell.getSource();
-	//Declare what the AI is here
-	
-	//---------------------------
 	%obj = %spell.getTarget();
    if (!isObject(%src) || !isObject(%obj) || %obj.getState() $= "Dead")
    {
       return;
    }
+
+	//Declare what the AI is here
+	%copy = %this.spawnClone(%src);
+	
+	// Make sure it attacks the right target
+	%copy.targetEngaged = %obj;
+	//---------------------------
+
    %start = %src.position;
    %effectObj = new ParticleEffect(){
       dataBlock = APLeaveEffect;
       position = %start;
    };
    %effectObj.schedule(3000, delete);
+   %src.startFade(1000, 250, true);
+   %src.ForceAnimation(true, "tp", true);
    // Remove the item from the casters inventory
-   // %src.decInventory(%this.item, 1);	
+   // %src.decInventory(%this.item, 1);
+   %posPlayer = %start;
+   %posAI = %start;
    %this.schedule(3200, "Reappear", %obj, %src, %posPlayer);
    %this.schedule(3250, "Reappear", %obj, %copy, %posAI);
 }
@@ -81,4 +97,63 @@ function Duplication::findAppearPos(%this, %target, %vector, %rndRot, %start)
       %targetLoc = getWord(%result, 1) SPC getWord(%result, 2) SPC getWord(%result, 3);
 
    return %targetLoc;
+}
+
+function Duplication::spawnClone(%this, %spellSource)
+{  // Create a marker for the clone so the AI scripts can process it
+   %botMarker = new StaticShape() {
+      dataBlock = "AIPlayerMarker";
+      position = "0 0 0";
+      rotation = "0 0 1 0";
+      scale = %spellSource.getScale();
+      hidden = "1";
+      canSave = "0";
+      canSaveDynamicFields = "0";
+         block = %spellSource.getDatablock();
+         distDetect = "200";
+         behavior = "TeammateBehavior";
+         fov = "270";
+         maxRange = "1.2";
+         minRange = "0";
+         moveTolerance = "0.5";
+         respawn = "0";
+         respawnCount = "0";
+         respawnCounter = "0";
+         Weapon = %this.cloneWeapon;
+         avOptions = %spellSource.client.avOptions;
+         team = %spellSource.team;
+   };
+   MissionCleanup.add(%botMarker);
+   %botMarker.sethidden(0);
+   %botMarker.sethidden(1);
+
+   // Create the clone and hide it
+   %clone = AIPlayer::spawn(%botMarker);
+   %clone.startFade(0, 0, true);
+   %clone.ForceAnimation(true, "tp", true);
+   
+   // Set name and clan to match the casters
+   %clone.setshapename(%spellSource.getShapeName());
+   %clone.setClanName(%spellSource.getClanName());
+
+   // Schedule an event to kill the clone and cleanup
+   %this.schedule(%this.cloneLifetimeMS, "killClone", %spellSource, %botMarker, %clone);
+
+   return %clone;
+}
+
+function Duplication::killClone(%this, %caster, %botMarker, %clone)
+{  // Remove the clone and its marker
+   if ( isObject(%clone) )
+   {  // It's still alive
+      if ( isEventPending(%clone.ailoop) )
+         cancel(%clone.ailoop);
+
+      %clone.isInvincible = true;  // don't take damage during fade
+      %clone.behavior.isKillable = false;
+      %clone.startFade(1000, 0, true);
+      %clone.schedule(1000, "delete");
+   }
+
+   %botMarker.schedule(1000, "delete");
 }

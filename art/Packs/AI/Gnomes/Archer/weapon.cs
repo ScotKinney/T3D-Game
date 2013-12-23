@@ -53,7 +53,7 @@ datablock ProjectileData(GA_BoltWetProjectile : GA_BoltProjectile)
 
 datablock ShapeBaseImageData(GA_CrossbowImage : BaseTriggeredImage)
 {
-   weaponType = "Delayed"; 
+   weaponType = "Delayed";
    shapefile = "art/Packs/AI/Gnomes/Archer/GA_Crossbow.dts";
    scale = "1 1 1";
    projectile = GA_BoltProjectile; 

@@ -384,7 +384,19 @@ function AIPlayer::onAnimationTrigger(%this, %obj, %slot)
 function PlayerData::animationDone(%this, %obj)
 {
    if ( %obj.getMountedImage(0).weaponType !$= "Delayed" )
-      %obj.firing = false;
+   {
+      if ( %obj.isBot && %obj.firing )
+      {
+         //If the weapon doesn't have a fireDelay set, then use the default
+         if (isObject(%obj.firingWeapon) && %obj.firingWeapon.fireDelay !$= "")
+            %k = %obj.firingWeapon.fireDelay;
+         else
+            %k = $AISK_FIRE_DELAY;
+         %obj.ceasefiretrigger = %obj.schedule(%k, "delayFire", %obj);
+      }
+      else
+         %obj.firing = false;
+   }
    %obj.inAttackThread = false;
 }
 

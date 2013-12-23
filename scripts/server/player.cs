@@ -340,7 +340,7 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
    if ((%obj.isbot == true) && (%obj.action !$= "Thief"))
    {
       if ( %obj.team != %sourceObject.team )
-         %obj.target = %sourceObject;  // Remember who hit us last
+         %obj.targetEngaged = %sourceObject;  // Remember who hit us last
 
         //Move a little when hit, aggressive bots move in the "Defending" state
         if (!%obj.behavior.isAggressive)
