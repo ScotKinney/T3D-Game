@@ -80,3 +80,4 @@ exec("./Spells/Invisibility.cs");
 exec("./Spells/AstralPassport.cs");
 exec("./Spells/Immolation.cs");
 exec("./Spells/Blinding.cs");
+exec("./Spells/dupeMe.cs");
