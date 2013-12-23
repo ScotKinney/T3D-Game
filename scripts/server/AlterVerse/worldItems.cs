@@ -2267,7 +2267,9 @@ datablock ItemData(Split_Personality_Potion)
    sticky = true;
 
    cost = 500;
-   //Split Personality Potion is in the 'Items' table but not in the 'Magic' table.
+   table = "Magic";
+   spellDef = "Duplication";
+   spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[131] = "Split_Personality_Potion";
 
