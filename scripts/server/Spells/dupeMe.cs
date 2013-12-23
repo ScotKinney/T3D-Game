@@ -25,8 +25,8 @@ function Duplication::onChannelEnd(%this, %spell)
 
 function Duplication::Reappear(%this, %obj, %posTgt, %newPos)
 {
-   //if (!isObject(%posTgt))
-   //   return;
+   if (!isObject(%posTgt))
+      return;
    %rndX = getRandom(-30, 30);
    %rndY = getRandom(-30, 30);
    %vector = %rndX SPC %rndY SPC "0";
@@ -38,10 +38,9 @@ function Duplication::Reappear(%this, %obj, %posTgt, %newPos)
       position = %newPos;
    };
    %effectObj.schedule(3000, delete);
-   
-   //%posTgt.position = %newPos;
-   //%posTgt.startFade(1000, 1000, false);
-	//%posTgt.schedule(2000, "ForceAnimation", false, "root");
+   %posTgt.position = %newPos;
+   %posTgt.startFade(1000, 1000, false);
+	%posTgt.schedule(2000, "ForceAnimation", false, "root");
 }
 
 function Duplication::onCast(%this, %spell) 
