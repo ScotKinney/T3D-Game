@@ -391,7 +391,7 @@ new SimGroup(MissionGroup) {
       sa_velocityVariance = "0";
       sa_ejectionOffset = "0";
       dataBlock = "gr_DefaultNode";
-      position = "-11.5 10 22";
+      position = "-11.5 10 22.5953";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -431,8 +431,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "2703";
-         delayRespawn = "18950";
+         botBelongsToMe = "5659";
+         delayRespawn = "43203";
          distDetect = "50";
          fov = "360";
          leash = "25";
@@ -841,7 +841,7 @@ new SimGroup(MissionGroup) {
       count = "10";
       isAIControlled = "0";
       dataBlock = "Invisibility_Rune";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.8613";
       rotation = "0 0 1 159.415";
       scale = "1 1 1";
       canSave = "1";
@@ -855,7 +855,7 @@ new SimGroup(MissionGroup) {
       count = "40";
       isAIControlled = "0";
       dataBlock = "Astral_Passport";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.9208";
       rotation = "0 0 1 236.722";
       scale = "1 1 1";
       canSave = "1";
@@ -869,7 +869,7 @@ new SimGroup(MissionGroup) {
       count = "5";
       isAIControlled = "0";
       dataBlock = "Shards_of_Ice_Crystal";
-      position = "10.4103 8.10202 22.1418";
+      position = "10.4103 8.10202 22.0817";
       rotation = "0 0 -1 18.528";
       scale = "1 1 1";
       canSave = "1";
@@ -883,7 +883,7 @@ new SimGroup(MissionGroup) {
       count = "20";
       isAIControlled = "0";
       dataBlock = "Book_of_Blinding";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.8613";
       rotation = "0 0 1 52.7959";
       scale = "1 1 1";
       canSave = "1";
@@ -911,7 +911,7 @@ new SimGroup(MissionGroup) {
       count = "5";
       isAIControlled = "0";
       dataBlock = "Shards_of_Ice_Crystal";
-      position = "10.4103 8.10202 22.1418";
+      position = "10.4103 8.10202 22.0817";
       rotation = "0 0 1 230.238";
       scale = "1 1 1";
       canSave = "1";
@@ -925,7 +925,7 @@ new SimGroup(MissionGroup) {
       count = "3";
       isAIControlled = "0";
       dataBlock = "Ring_of_Fire_Rune";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.8613";
       rotation = "0 0 -1 48.284";
       scale = "1 1 1";
       canSave = "1";
@@ -939,7 +939,7 @@ new SimGroup(MissionGroup) {
       count = "3";
       isAIControlled = "0";
       dataBlock = "Ring_of_Fire_Rune";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.8613";
       rotation = "0 0 1 166.528";
       scale = "1 1 1";
       canSave = "1";
@@ -953,7 +953,7 @@ new SimGroup(MissionGroup) {
       count = "10";
       isAIControlled = "0";
       dataBlock = "Invisibility_Rune";
-      position = "10.4533 8.15453 21.9809";
+      position = "10.4533 8.15453 21.8613";
       rotation = "0 0 1 228.24";
       scale = "1 1 1";
       canSave = "1";
@@ -1126,6 +1126,7 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         respawnTime = "30";
    };
 };
 //--- OBJECT WRITE END ---
