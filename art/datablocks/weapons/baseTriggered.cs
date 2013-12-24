@@ -35,6 +35,12 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Can this weapon be used when mounted to an AI or vehicle
    canUseMounted = false;
 
+   // AI settings
+   maxRange = "40";
+   minRange = "15";
+   moveTolerance = "1.0";
+   ignoreDistance = 100;
+
    // Basic Item properties
    shapefile = "core/art/effects/debris_player.dts";
    scale = "1 1 1";

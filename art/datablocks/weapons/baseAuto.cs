@@ -15,6 +15,12 @@ datablock ShapeBaseImageData(BaseAutoImage)
 
    projectileType = Projectile;
 
+   // AI settings
+   maxRange = "40";
+   minRange = "15";
+   moveTolerance = "1.0";
+   ignoreDistance = 100;
+
    // Images have a state system which controls how the animations
    // are run, which sounds are played, script callbacks, etc. This
    // state system is downloaded to the client so that clients can

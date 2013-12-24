@@ -409,7 +409,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
       %tempdropitem2 = %obj.dropitem2;
    if ( %obj.dropcount !$= "" )
       %tempdropcount = %obj.dropcount;
-   
+
    if ( %obj.willBuy !$= "" )
       %tempwillbuy = %obj.willbuy;
    //epls end

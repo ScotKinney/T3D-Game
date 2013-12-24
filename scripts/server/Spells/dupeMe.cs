@@ -8,8 +8,8 @@ singleton SpellData(Duplication : DefaultTargetSpell)
    // Length of time the clone will stay around, if not killed, in MS.
    cloneLifetimeMS = 120000;
 
-   // The weapon(s) to equip the clone with
-   cloneWeapon = "RightHand LeftHand RightFoot LeftFoot";
+   // The weapon(s) to equip the clone with if the caster has no weapons equiped
+   cloneDefaultWeapon = "RightHand LeftHand RightFoot LeftFoot";
 
    // Every spell needs a link to it's inventory item.
    // For now this just links to the item it replaces from the old game.
@@ -101,6 +101,36 @@ function Duplication::findAppearPos(%this, %target, %vector, %rndRot, %start)
 
 function Duplication::spawnClone(%this, %spellSource)
 {  // Create a marker for the clone so the AI scripts can process it
+
+   // Create the weapon string we'll use to equip the bot
+   %weaponStr = "";
+   %primaryWeapon = "";
+   for ( %i = 0; %i < 4; %i++ )
+   {
+      %curWeapon = %spellSource.getMountedImage(%i);
+      if ( isObject(%curWeapon) )
+      {
+         %weaponName = %curWeapon.getName();
+         %cleanName = getSubStr(%weaponName, 0, strstr(%weaponName, "Image"));
+         %weaponStr = %weaponStr @ ((%i > 0) ? (" " @ %cleanName) : %cleanName);
+         if ( %i == 0 )
+            %primaryWeapon = %curWeapon;
+      }
+      else
+         break;
+   }
+
+   // If the caster has no weapon equiped, give the clone the default weapon
+   if ( %weaponStr $= "" )
+      %weaponStr = %this.cloneDefaultWeapon;
+
+   if ( !isObject(%primaryWeapon) )
+      %primaryWeapon = getWord(%weaponStr, 0) @ "Image";
+
+   %weapMax = %primaryWeapon.maxRange;
+   %weapMin = %primaryWeapon.minRange;
+   %weapMove = %primaryWeapon.moveTolerance;
+
    %botMarker = new StaticShape() {
       dataBlock = "AIPlayerMarker";
       position = "0 0 0";
@@ -113,13 +143,13 @@ function Duplication::spawnClone(%this, %spellSource)
          distDetect = "200";
          behavior = "TeammateBehavior";
          fov = "270";
-         maxRange = "1.2";
-         minRange = "0";
-         moveTolerance = "0.5";
+         maxRange = %weapMax;
+         minRange = %weapMin;
+         moveTolerance = %weapMove;
          respawn = "0";
          respawnCount = "0";
          respawnCounter = "0";
-         Weapon = %this.cloneWeapon;
+         Weapon = %weaponStr;
          avOptions = %spellSource.client.avOptions;
          team = %spellSource.team;
    };

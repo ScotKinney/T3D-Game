@@ -29,7 +29,13 @@ datablock ShapeBaseImageData(BaseMeleeImage)
 
    // Can this weapon be used when mounted to an AI or vehicle
    canUseMounted = false;
-   
+
+   // AI settings
+   maxRange = "1.2";
+   minRange = "0.5";
+   moveTolerance = "0.5";
+   ignoreDistance = 50;
+
    // Initial start up state
    stateName[0]                     = "Preactivate";
    stateTransitionOnLoaded[0]       = "Activate";
