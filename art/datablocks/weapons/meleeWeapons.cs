@@ -39,86 +39,213 @@ datablock SFXProfile(SwordHitStaticSound)
 
 //////////////// Sword attacks////////////////
 
-singleton GameBaseData(SwordSwingOne)
+singleton GameBaseData(SwordSwing1)
 {
-   seqName = "Sword_Center";
-   fullSkelAnim = false;
+   seqName = "SwordSwing1";
+   fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.4; //time in seconds during animation before damage is done
    endDamage = 0.8;
    soundDelay = 400; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 800;
+   impulse = 400;
 };
 
-singleton GameBaseData(SwordSwingTwo)
+singleton GameBaseData(SwordSwing2)
 {
-   seqName = "Sword_Lunge";
-   fullSkelAnim = false;
+   seqName = "SwordSwing2";
+   fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.35; //time in seconds during animation before damage is done
    endDamage = 0.6;
    soundDelay = 300; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 800;
+   impulse = 400;
 };
 
-singleton GameBaseData(SwordSwingThree)
+singleton GameBaseData(SwordSwing3)
 {
-   seqName = "Sword_Spin";
-   fullSkelAnim = false;
+   seqName = "SwordSwing3";
+   fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.5; //time in seconds during animation before damage is done
    endDamage = 0.8;
    soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 800;
+   impulse = 400;
 };
 
-singleton GameBaseData(SwordSwingFour)
+singleton GameBaseData(SwordSwing4)
 {
-   seqName = "Sword_RHChop";
-   fullSkelAnim = false;
+   seqName = "SwordSwing4";
+   fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.52; //time in seconds during animation before damage is done
    endDamage = 0.84;
    soundDelay = 520; // time in ms before attack sound plays
-   swingSound = SwordSwing3Sound;
-   impulse = 800;
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
 };
 
-singleton GameBaseData(SwordSwingFive)
+singleton GameBaseData(SwordSwing5)
 {
-   seqName = "Sword_DubSwing";
-   fullSkelAnim = false;
+   seqName = "SwordSwing5";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing6)
+{
+   seqName = "SwordSwing6";
+   fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
    startDamage = 0.3; //time in seconds during animation before damage is done
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 800;
+   impulse = 400;
 };
+
+singleton GameBaseData(SwordSwing7)
+{
+   seqName = "SwordSwing7";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing8)
+{
+   seqName = "SwordSwing8";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing9)
+{
+   seqName = "SwordSwing9";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing3Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing10)
+{
+   seqName = "SwordSwing10";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing11)
+{
+   seqName = "SwordSwing11";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing12)
+{
+   seqName = "SwordSwing12";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing3Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing13)
+{
+   seqName = "SwordSwing13";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(SwordSwing14)
+{
+   seqName = "SwordSwing14";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 400;
+};
+
 
 ////////////Swords
 
-// All swords use the same 5 attacks and sounds. Defined once and inherited.
+// All swords use the same attacks and sounds. Defined once and inherited.
 datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/Sword_Val_Mounted.dts";
    item = ValMaleSwordWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
-   hthNumAttacks = 5;
-   hthAttack[0]                     = SwordSwingOne;
-   hthAttack[1]                     = SwordSwingTwo;
-   hthAttack[2]                     = SwordSwingThree;
-   hthAttack[3]                     = SwordSwingFour;
-   hthAttack[4]                     = SwordSwingFive;
+   hthNumAttacks = 14;
+   hthAttack[0]                     = SwordSwing1;
+   hthAttack[1]                     = SwordSwing2;
+   hthAttack[2]                     = SwordSwing3;
+   hthAttack[3]                     = SwordSwing4;
+   hthAttack[4]                     = SwordSwing5;
+   hthAttack[5]                     = SwordSwing6;
+   hthAttack[6]                     = SwordSwing7;
+   hthAttack[7]                     = SwordSwing8;
+   hthAttack[8]                     = SwordSwing9;
+   hthAttack[9]                     = SwordSwing10;
+   hthAttack[10]                     = SwordSwing11;
+   hthAttack[11]                     = SwordSwing12;
+   hthAttack[12]                     = SwordSwing13;
+   hthAttack[13]                     = SwordSwing14;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -206,23 +333,23 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
 
 /////////////Steel War Axe Attacks and Damage////////////////
 
-singleton GameBaseData(SteelWarAxeSwingOne : SwordSwingOne)
+singleton GameBaseData(SteelWarAxeSwingOne : SwordSwing1)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwingTwo : SwordSwingTwo)
+singleton GameBaseData(SteelWarAxeSwingTwo : SwordSwing2)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwingThree : SwordSwingThree)
+singleton GameBaseData(SteelWarAxeSwingThree : SwordSwing3)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwingFour : SwordSwingFour)
+singleton GameBaseData(SteelWarAxeSwingFour : SwordSwing4)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwingFive : SwordSwingFive)
+singleton GameBaseData(SteelWarAxeSwingFive : SwordSwing5)
 {
    damageAmount = 70;
 };
