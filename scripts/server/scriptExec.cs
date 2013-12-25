@@ -43,6 +43,10 @@ exec("./UAISK/aiExecutes.cs");
 //if ( theLevelInfo.canBringHorses )
    //exec("./horse.cs");
 
+// Load the vehicle scripts
+exec("./vehicle.cs");
+exec("./vehicleWheeled.cs");
+
 // Load our gametypes
 exec("./gameCore.cs"); // This is the 'core' of the gametype functionality.
 

@@ -30,7 +30,7 @@ new SimGroup(MissionGroup) {
    };
    new TimeOfDay(AlterVerseTime) {
       axisTilt = "23.44";
-      dayLength = "900";
+      dayLength = "86400";
       startTime = "0.250749";
       time = "0.275419";
       play = "1";
@@ -38,8 +38,8 @@ new SimGroup(MissionGroup) {
       dayScale = "0.694444";
       nightScale = "2.22222";
       UseServerTime = "1";
-      SunriseTime = "90";
-      SunsetTime = "810";
+      SunriseTime = "7200";
+      SunsetTime = "82800";
       position = "136.655 813.577 -189.233";
       rotation = "1 0 0 0";
       scale = "1 1 1";
