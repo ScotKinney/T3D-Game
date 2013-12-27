@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>RonMain</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 673;  Platform: Win32;  Configuration: Release Max9</authoring_tool>
+      <source_data>file:///E:/3TDS%20Torque%20Model%20Library/Grass_Brushes/BaseWeed_01/BaseWeed_01_final.max</source_data>
+    </contributor>
+    <created>2013-10-23T15:25:16</created>
+    <modified>2013-10-23T15:25:16</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Weeds_02">
+      <profile_COMMON>
+        <newparam sid="_TD_Weeds_002_png-surface">
+          <surface type="2D">
+            <init_from>_TD_Weeds_002_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="_TD_Weeds_002_png-sampler">
+          <sampler2D>
+            <source>_TD_Weeds_002_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="_TD_Weeds_002_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="_TD_Weeds_002_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Weeds_02-material" name="Weeds_02">
+      <instance_effect url="#Weeds_02"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-BaseWeed300" name="BaseWeed300">
+      <mesh>
+        <source id="geom-BaseWeed300-positions">
+          <float_array id="geom-BaseWeed300-positions-array" count="108">-21.30177 -25 -11.14813 2.32795e-9 -25 0 21.30177 -25 -11.14813 -21.30177 0 -11.14813 2.32795e-9 0 0 21.30177 0 -11.14813 -18.21625 25 -20.77051 3.085514 25 -9.622379 24.38728 25 -20.77051 17.06351 -24.99386 22.61149 -2.103326 -24.99386 3.172445 -29.00039 -24.99386 7.840626 17.06351 3.392391 22.61149 -2.103327 3.392393 3.17245 -29.00039 3.392392 7.84063 17.06351 31.77864 22.61149 -2.103328 31.77864 3.172454 -29.00039 31.77864 7.840634 -14.96772 -25.01601 15.21615 -8.136886 -25.016 1.237723 -15.72867 -25.016 -12.34247 -14.96772 -8.83828 15.21615 -8.136887 -8.838278 1.237724 -15.72867 -8.838277 -12.34247 -14.96772 7.339447 15.21616 -8.136888 7.339449 1.237725 -15.72867 7.339451 -12.34247 17.43808 -25.00603 -14.65306 3.99984 -25.00603 1.282589 9.433568 -25.00603 21.40735 17.43808 -3.33052 -14.65306 3.999841 -3.330521 1.282591 9.43357 -3.330523 21.40735 17.43808 18.34499 -14.65306 3.999843 18.34499 1.282593 9.433572 18.34499 21.40735</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-positions-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-BaseWeed300-normals">
+          <float_array id="geom-BaseWeed300-normals-array" count="108">-0.07699288 0.9956241 0.0529593 -0.09189635 0.9936249 0.06530439 3.73833e-9 0.9936249 0.1127369 -0.002775994 0.9959418 0.08995738 0.09189635 0.9936249 0.0653044 0.08049855 0.9951737 0.05611827 -0.06233755 0.997309 0.03858441 0.006364449 0.997919 0.0641647 0.07035686 0.9964299 0.04666337 0.05551396 0.9936249 -0.09812137 0.05551396 0.9936249 -0.09812136 0.0223629 0.9936249 -0.1104966 0.0223629 0.9936249 -0.1104966 -0.01242771 0.9936249 -0.1120498 -0.01242771 0.9936249 -0.1120498 0.05551396 0.9936249 -0.09812137 0.0223629 0.9936249 -0.1104966 -0.01242771 0.9936249 -0.1120498 0.1117859 0.9936249 -0.01461215 0.1117859 0.9936249 -0.01461216 0.09733799 0.9936249 -0.05687634 0.09733799 0.9936249 -0.05687635 0.07229386 0.9936249 -0.0865055 0.07229386 0.9936249 -0.0865055 0.1117859 0.9936249 -0.01461215 0.09733799 0.9936249 -0.05687635 0.07229386 0.9936249 -0.0865055 -0.06053109 0.9936249 -0.09510832 -0.06053109 0.9936249 -0.09510832 -0.08837592 0.9936249 -0.069995 -0.08837592 0.9936249 -0.069995 -0.10779 0.9936249 -0.03302899 -0.10779 0.9936249 -0.03302899 -0.06053109 0.9936249 -0.09510832 -0.08837592 0.9936249 -0.069995 -0.10779 0.9936249 -0.03302899</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-BaseWeed300-map0">
+          <float_array id="geom-BaseWeed300-map0-array" count="192">0 0 1 0.181216 0.2067972 0.9744189 0 1 0 0 0.4742071 0.5257929 0 0.4742071 0.5257929 0 1 0 0.9944731 1 0.9944731 0.008186996 0.050775 0.957412 1 1 1 0 0 1 0 0.4742071 0.5257929 0 1 0 0 1 0 0 0.4742071 0.5257929 0.008186996 0.050775 0.957412 0.6630455 0.7296756 0.93337 0 0 1 0.181216 0.2067972 0.9744189 0 1 0 0 0.4742071 0.5257929 0 0.4742071 0.5257929 0 1 0 0.9944731 1 0.9944731 0.008186996 0.050775 0.957412 1 1 1 0 0 1 0 0.4742071 0.5257929 0 1 0 0 1 0 0 0.4742071 0.5257929 0.008186996 0.050775 0.957412 0.6630455 0.7296756 0.93337 0 0 1 0.181216 0.2067972 0.9744189 0 1 0 0 0.4742071 0.5257929 0 0.4742071 0.5257929 0 1 0 0.9944731 1 0.9944731 0.008186996 0.050775 0.957412 1 1 1 0 0 1 0 0.4742071 0.5257929 0 1 0 0 1 0 0 0.4742071 0.5257929 0.008186996 0.050775 0.957412 0.6630455 0.7296756 0.93337 0 0 1 0.181216 0.2067972 0.9744189 0 1 0 0 0.4742071 0.5257929 0 0.4742071 0.5257929 0 1 0 0.9944731 1 0.9944731 0.008186996 0.050775 0.957412 1 1 1 0 0 1 0 0.4742071 0.5257929 0 1 0 0 1 0 0 0.4742071 0.5257929 0.008186996 0.050775 0.957412 0.6630455 0.7296756 0.93337</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-map0-array" count="64" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-BaseWeed300-map1">
+          <float_array id="geom-BaseWeed300-map1-array" count="108">0 0 0 0.5 0 0 1 0 0 0 0.5 0 0.5 0.5 0 1 0.5 0 0 1 0 0.5 1 0 1 1 0 0 0 0 0.5 0 0 1 0 0 0 0.5 0 0.5 0.5 0 1 0.5 0 0 1 0 0.5 1 0 1 1 0 0 0 0 0.5 0 0 1 0 0 0 0.5 0 0.5 0.5 0 1 0.5 0 0 1 0 0.5 1 0 1 1 0 0 0 0 0.5 0 0 1 0 0 0 0.5 0 0.5 0.5 0 1 0.5 0 0 1 0 0.5 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-map1-array" count="36" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-BaseWeed300-map1-textangents">
+          <float_array id="geom-BaseWeed300-map1-textangents-array" count="108">0.8813018 0.05081375 0.4670223 0.8860014 0.01731362 -0.1525965 0.8859945 0.002449551 2.21278e-4 0.8826399 0.04346844 0.4659948 0.8813018 -0.05081375 -0.4670223 0.8823547 -0.04508212 -0.4662248 0.8859024 -0.01552389 0.1535627 0.8836737 0.03723975 0.4651233 0.8831379 -0.04055398 -0.4655818 -0.7038186 -0.03069625 -0.7090435 -0.8907411 0.00625198 -0.1240529 -0.8439338 -0.01095583 -0.2693186 -0.7038186 -0.03069626 -0.7090435 -0.9853568 0.00687186 0.170226 -0.9853568 0.006871862 0.170226 -0.7971265 -0.02816365 -0.4145843 -0.7038186 -0.03069626 -0.7090435 -0.9853568 0.006871862 0.170226 0.4320972 -0.06181161 -0.8975531 -0.1821409 -0.03250284 -0.8795372 -0.02912634 -0.04768698 -0.8829341 0.4320972 -0.06181161 -0.897553 -0.4908692 -0.03997462 -0.8693853 -0.4908692 -0.03997463 -0.8693854 0.1238882 -0.06287111 -0.886331 0.4320972 -0.06181161 -0.897553 -0.4908692 -0.03997462 -0.8693853 -0.6467006 0.03347045 0.7612643 -0.04634526 0.05887566 0.8942943 -0.1958478 0.04329636 0.8618983 -0.6467006 0.03347045 0.7612643 0.254202 0.0596021 0.9634473 0.254202 0.0596021 0.9634473 -0.3453504 0.02771706 0.8295024 -0.6467006 0.03347045 0.7612643 0.254202 0.0596021 0.9634473</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-map1-textangents-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-BaseWeed300-map1-texbinormals">
+          <float_array id="geom-BaseWeed300-map1-texbinormals-array" count="108">-0.4613303 -0.1006022 0.8815064 0.1707888 -0.1110805 0.9790262 -2.8333e-8 -0.08995772 0.9959456 -0.4620942 -0.08270113 0.8829663 0.4613302 -0.1006022 0.8815064 0.461919 -0.0871361 0.8826314 -0.1715204 -0.06212565 0.9832198 -0.4627575 -0.06313471 0.8842338 0.4624103 -0.0740284 0.8835703 0.7078731 -0.1084732 -0.6979607 0.1362872 -0.1125223 -0.9842584 0.3034229 -0.1120566 -0.9462441 0.7078731 -0.1084732 -0.6979607 -0.1699148 -0.1125272 -0.9790131 -0.1699148 -0.1125272 -0.9790131 0.4617167 -0.108296 -0.8803918 0.7078731 -0.1084732 -0.6979608 -0.1699148 -0.1125272 -0.9790131 0.8944667 -0.09420236 0.4370987 0.9744011 -0.1067794 -0.19784 0.9947067 -0.09901614 -0.02746567 0.8944667 -0.09420236 0.4370988 0.8680037 -0.1053994 -0.4852428 0.8680037 -0.1053994 -0.4852428 0.9856249 -0.08830976 0.1440313 0.8944666 -0.09420236 0.4370988 0.8680037 -0.1053994 -0.4852428 -0.7600258 -0.1076479 -0.6409155 -0.9947476 -0.09168205 -0.04551522 -0.9711897 -0.1015668 -0.2155799 -0.7600258 -0.1076479 -0.6409155 -0.9610043 -0.09562616 0.2594732 -0.9610043 -0.09562616 0.2594732 -0.9190224 -0.1084387 -0.3789973 -0.7600258 -0.1076479 -0.6409155 -0.9610043 -0.09562616 0.2594732</float_array>
+          <technique_common>
+            <accessor source="#geom-BaseWeed300-map1-texbinormals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-BaseWeed300-vertices">
+          <input semantic="POSITION" source="#geom-BaseWeed300-positions"/>
+        </vertices>
+        <triangles material="Weeds_02_1" count="32">
+          <input semantic="VERTEX" source="#geom-BaseWeed300-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-BaseWeed300-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-BaseWeed300-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-BaseWeed300-map1" offset="3" set="1"/>
+          <input semantic="TEXTANGENT" source="#geom-BaseWeed300-map1-textangents" offset="4" set="1"/>
+          <input semantic="TEXBINORMAL" source="#geom-BaseWeed300-map1-texbinormals" offset="4" set="1"/>
+          <p>0 1 1 0 0 1 2 2 1 1 4 3 3 4 2 4 3 3 4 2 3 0 0 3 3 0 1 1 0 0 1 2 5 1 1 2 4 6 2 4 5 5 7 5 5 5 5 7 5 5 4 3 4 4 2 1 2 5 1 1 3 0 9 3 3 4 3 10 4 2 7 7 11 7 6 7 7 11 7 6 6 6 8 6 7 3 0 9 3 3 4 3 13 4 2 5 5 14 5 5 8 8 15 8 8 8 8 15 8 8 7 7 12 7 6 4 3 13 4 2 9 10 17 9 9 10 11 18 10 10 13 12 19 13 11 13 12 19 13 11 12 9 16 12 12 9 10 17 9 9 10 11 21 10 10 11 13 22 11 13 14 14 23 14 14 14 14 23 14 14 13 12 20 13 11 10 11 21 10 10 12 9 25 12 12 13 12 26 13 11 16 16 27 16 15 16 16 27 16 15 15 15 24 15 16 12 9 25 12 12 13 12 29 13 11 14 14 30 14 14 17 17 31 17 17 17 17 31 17 17 16 16 28 16 15 13 12 29 13 11 18 19 33 18 18 19 20 34 19 19 22 21 35 22 20 22 21 35 22 20 21 18 32 21 21 18 19 33 18 18 19 20 37 19 19 20 22 38 20 22 23 23 39 23 23 23 23 39 23 23 22 21 36 22 20 19 20 37 19 19 21 18 41 21 21 22 21 42 22 20 25 25 43 25 24 25 25 43 25 24 24 24 40 24 25 21 18 41 21 21 22 21 45 22 20 23 23 46 23 23 26 26 47 26 26 26 26 47 26 26 25 25 44 25 24 22 21 45 22 20 27 28 49 27 27 28 29 50 28 28 31 30 51 31 29 31 30 51 31 29 30 27 48 30 30 27 28 49 27 27 28 29 53 28 28 29 31 54 29 31 32 32 55 32 32 32 32 55 32 32 31 30 52 31 29 28 29 53 28 28 30 27 57 30 30 31 30 58 31 29 34 34 59 34 33 34 34 59 34 33 33 33 56 33 34 30 27 57 30 30 31 30 61 31 29 32 32 62 32 32 35 35 63 35 35 35 35 63 35 35 34 34 60 34 33 31 30 61 31 29</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="_TD_Weeds_002_png">
+      <init_from>file:///C:/Users/RonMain/Documents/3dsmax/sceneassets/Scot_Plant_Texture/3TD_Weeds_002.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Base01" name="Base01">
+        <translate>-0.6960557 -0.6960557 0</translate>
+        <node id="node-Start01" name="Start01">
+          <node id="node-BaseWeed300" name="BaseWeed300">
+            <translate>-0.4467747 0.7171562 0</translate>
+            <rotate>-0.1099268 0.7028215 0.7028215 -167.4537</rotate>
+            <scale>2.67241 2.67241 2.67241</scale>
+            <node>
+              <matrix>1 0 0 0 0 1 0 25.04536 0 0 1 0 0 0 0 1</matrix>
+              <instance_geometry url="#geom-BaseWeed300">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="Weeds_02_1" target="#Weeds_02-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+        </node>
+        <node id="node-detail300" name="detail300"/>
+        <node id="node-BB__detail150" name="BB__detail150"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
