@@ -70,6 +70,6 @@ singleton Material(DownPine002_downpinemat)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
-   normalMap[0] = "aDeadTree_tile_NRM.png";
+   normalMap[0] = "DeadTree_tile_NRM.png";
    useAnisotropic[0] = "1";
 };
