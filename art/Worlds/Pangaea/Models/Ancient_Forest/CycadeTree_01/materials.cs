@@ -18,7 +18,7 @@ singleton Material(CycadeTree_01_TropicFanLite)
 singleton Material(CycadeTree_01_TropicFan01)
 {
    mapTo = "TropicFan01";
-   diffuseMap[0] = "art/shapes/Ancient_Forest/CycadeTree_01/3td_tropicsfan_01";
+   diffuseMap[0] = "3td_tropicsfan_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
@@ -33,7 +33,7 @@ singleton Material(CycadeTree_01_TropicFan01)
 singleton Material(CycadeTree_01_AncientBark)
 {
    mapTo = "AncientBark";
-   diffuseMap[0] = "art/shapes/Ancient_Forest/CycadeTree_01/3TD_AncientBark_01";
+   diffuseMap[0] = "3TD_AncientBark_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
@@ -51,7 +51,7 @@ singleton Material(CycadeTree_01_ColorEffectR143G225B87_material)
 singleton Material(CycadeTree_01_TropicFanBurn)
 {
    mapTo = "TropicFanBurn";
-   diffuseMap[0] = "art/shapes/Ancient_Forest/CycadeTree_01/3TD_TropicsFan_01_Lite.png";
+   diffuseMap[0] = "3TD_TropicsFan_01_Lite.png";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
