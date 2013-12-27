@@ -95,7 +95,7 @@ new TerrainMaterial()
    parallaxScale = "0.02";
    internalName = "SeaweedMain";
    diffuseSize = "100";
-   macroMap = "art/terrains/Terra_048A";
+   macroMap = "art/Worlds/Pangaea/Terrain/Terra_048A";
    macroSize = "50";
 };
 
