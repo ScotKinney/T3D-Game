@@ -382,23 +382,23 @@ datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
 
 /////////////Double War Axe Attacks and Damage////////////////
 
-singleton GameBaseData(DoubleWarAxeSwingOne : SwordSwingOne)
+singleton GameBaseData(DoubleWarAxeSwingOne : SwordSwing1)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(DoubleWarAxeSwingTwo : SwordSwingTwo)
+singleton GameBaseData(DoubleWarAxeSwingTwo : SwordSwing2)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(DoubleWarAxeSwingThree : SwordSwingThree)
+singleton GameBaseData(DoubleWarAxeSwingThree : SwordSwing3)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(DoubleWarAxeSwingFour : SwordSwingFour)
+singleton GameBaseData(DoubleWarAxeSwingFour : SwordSwing4)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(DoubleWarAxeSwingFive : SwordSwingFive)
+singleton GameBaseData(DoubleWarAxeSwingFive : SwordSwing5)
 {
    damageAmount = 80;
 };
@@ -430,23 +430,23 @@ datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
 
 ///////////Iron War Axe Attacks////////////////
 
-singleton GameBaseData(IronWarAxeSwingOne : SwordSwingOne)
+singleton GameBaseData(IronWarAxeSwingOne : SwordSwing1)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(IronWarAxeSwingTwo : SwordSwingTwo)
+singleton GameBaseData(IronWarAxeSwingTwo : SwordSwing2)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(IronWarAxeSwingThree : SwordSwingThree)
+singleton GameBaseData(IronWarAxeSwingThree : SwordSwing3)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(IronWarAxeSwingFour : SwordSwingFour)
+singleton GameBaseData(IronWarAxeSwingFour : SwordSwing4)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(IronWarAxeSwingFive : SwordSwingFive)
+singleton GameBaseData(IronWarAxeSwingFive : SwordSwing5)
 {
    damageAmount = 60;
 };
