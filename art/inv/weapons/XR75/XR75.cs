@@ -11,5 +11,5 @@ function XR75Dae::onLoad(%this)
    %this.removeDetailLevel("-1");
    %this.removeNode("Col-1");
    %this.addNode("Col-1", "", "0 0 0 0 0 1 0", "0");
-   %this.addCollisionDetail("-1", "18-DOP", "gun", "4", "30", "30", "32", "30", "30", "30");
+   %this.addCollisionDetail("-1", "26-DOP", "gun", "4", "30", "30", "32", "30", "30", "30");
 }

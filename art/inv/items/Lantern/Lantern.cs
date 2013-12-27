@@ -6,7 +6,12 @@ singleton TSShapeConstructor(LanternDts)
 
 function LanternDts::onLoad(%this)
 {
+   %this.addCollisionDetail("-1", "26-DOP", "Lantern", "4", "30", "30", "32", "30", "30", "30");
+   %this.setNodeTransform("Root", "0 0 0.25311 0 1 0 1.56723", "1");
+   %this.removeNode("Col0");
+   %this.removeMesh("Col 0");
+   %this.removeMesh("ColConvex -1");
+   %this.setNodeTransform("Lantern0", "1.81099e-008 0 0.279908 0 1 0 1.56717", "1");
    %this.addNode("Col-1", "", "0 0 0 0 0 1 0", "0");
-   %this.addNode("ColBox-1", "Col-1", "-0.205172 -3.79552e-008 -0.00922357 0.58764 0.547963 0.595328 4.14415", "0");
-   %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
+   %this.addCollisionDetail("-1", "26-DOP", "Lantern", "4", "30", "30", "32", "30", "30", "30");
 }

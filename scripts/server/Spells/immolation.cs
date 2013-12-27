@@ -91,13 +91,16 @@ function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %
    %blast.schedule(5100, "delete"); 
    %col.mountobject(%blast, 31, "0.0 0.0 1.0"); 
    %count = 0;
-   %col.schedule(100, "damage", %obj.sourceObject, %pos, getRandom(30, 50), "Immoliation");
+   %damage = getRandom(30, 50);
+   %col.schedule(100, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
    while(%count <= 5)
    {
-      %damage = getRandom(150, 250) / 5;
+      %damage = getRandom(150, 250);
+      %damage = %damage / 5;
       if (%obj.sourceObject == %col)
-         %damage = (%damage * 0.75) / 5
-         
+      {
+         %damage = (%damage * 0.75) / 5;
+      }
       %col.schedule(%count * 1000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
       %count++;
    }

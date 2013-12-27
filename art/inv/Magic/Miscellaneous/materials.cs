@@ -1,7 +1,7 @@
 
 singleton Material(SelfImmKit)
 {
-   mapTo = "material1";
+   mapTo = "unmapped_mat";
    diffuseColor[0] = "0.8 0.8 0.8 1";
    specular[0] = "0.996078 0.996078 0.996078 1";
    specularPower[0] = "128";
@@ -11,4 +11,7 @@ singleton Material(SelfImmKit)
    subSurface[0] = "1";
    subSurfaceColor[0] = "0.00392157 0.00392157 0.00392157 1";
    pixelSpecular[0] = "0";
+   vertColor[0] = "1";
+   glow[0] = "0";
+   emissive[0] = "0";
 };
