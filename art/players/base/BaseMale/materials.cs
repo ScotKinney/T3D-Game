@@ -148,11 +148,11 @@ singleton Material(matBM_HairC_Scalp)
 
 ////HairD
 
-singleton Material(matBM_HairD_Scalp)
+singleton Material(matBM_HairD_Strands)
 {
-   mapTo = "BM_HairD_Scalp";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairD/HairD_Scalp_Black";
-   doubleSided = "0";
+   mapTo = "BM_HairD_Strands";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairD/HairD_Strands_Black";
+   doubleSided = "1";
    translucent = "1";
    alphaTest = "1";
    alphaRef = "0"; 
@@ -161,7 +161,9 @@ singleton Material(matBM_HairD_Scalp)
    translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   showFootprints = "0";
+   showFootprints = "1";
+   specularPower[0] = "1";
+   specularStrength[0] = "1";
 };
 
 singleton Material(matBM_HairD_Strands)
@@ -195,9 +197,9 @@ singleton Material(matBM_HairE)
    castShadows = "0";
    translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
-   specularPower[0] = "128";
+   specularPower[0] = "1";
    specularStrength[0] = "0";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    showFootprints = "0";
 };

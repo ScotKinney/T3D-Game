@@ -346,6 +346,39 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/GA_Sitting.dsq", "Sitting", "0", "49", "1", "0");
    %this.setSequenceCyclic("Sitting", "1");
    %this.addSequence("art/players/base/Anims/GA_StandingUp.dsq", "StandingUp", "0", "49", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_CombatRoot.dsq", "2HS_CombatRoot", "0", "-1", "1", "0");
+   %this.setSequenceCyclic("2HS_CombatRoot", "1");
+   %this.addSequence("art/players/base/Anims/2HS_Walk.dsq", "2HS_Walk", "0", "39", "1", "0");
+   %this.setSequenceCyclic("2HS_Walk", "1");
+   %this.addSequence("art/players/base/Anims/2HS_CombatWalk.dsq", "2HS_CombatWalk", "0", "39", "1", "0");
+   %this.setSequenceCyclic("2HS_CombatWalk", "1");
+   %this.addSequence("art/players/base/Anims/2HS_Sprint.dsq", "2HS_Sprint", "0", "34", "1", "0");
+   %this.setSequenceCyclic("2HS_Sprint", "1");
+   %this.addSequence("art/players/base/Anims/2HS_CombatSprint.dsq", "2HS_CombatSprint", "0", "49", "1", "0");
+   %this.setSequenceCyclic("2HS_CombatSprint", "1");
+   %this.addSequence("art/players/base/Anims/2HS_StrafeLeft.dsq", "2HS_StrafeLeft", "0", "35", "1", "0");
+   %this.setSequenceCyclic("2HS_StrafeLeft", "1");
+   %this.addSequence("art/players/base/Anims/2HS_StrafeRight.dsq", "2HS_StrafeRight", "0", "34", "1", "0");
+   %this.setSequenceCyclic("2HS_StrafeRight", "1");
+   %this.addSequence("art/players/base/Anims/2HS_DamageKnockedBack.dsq", "2HS_DamageKnockedBack", "0", "129", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_DamageKnockedFore.dsq", "2HS_DamageKnockedFore", "0", "99", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Damage_Head1.dsq", "2HS_Damage_Head1", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_DuckHighSwing.dsq", "2HS_Duck", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing1.dsq", "2HS_Swing1", "0", "40", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing2.dsq", "2HS_Swing2", "0", "40", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing3.dsq", "2HS_Swing3", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing4.dsq", "2HS_Swing4", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing5.dsq", "2HS_Swing5", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing6.dsq", "2HS_Swing6", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing7.dsq", "2HS_Swing7", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing8.dsq", "2HS_Swing8", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing9.dsq", "2HS_Swing9", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing10.dsq", "2HS_Swing10", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Swing11.dsq", "2HS_Swing11", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Death1.dsq", "2HS_Death1", "0", "132", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Death2.dsq", "2HS_Death2", "0", "139", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Death3.dsq", "2HS_Death3", "0", "139", "1", "0");
+   %this.addSequence("art/players/base/Anims/2HS_Death4.dsq", "2HS_Death4", "0", "16", "1", "0");
 
 }
 
