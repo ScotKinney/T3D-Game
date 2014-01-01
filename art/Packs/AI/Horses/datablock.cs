@@ -554,8 +554,8 @@ datablock PlayerData(DefaultHorse)
    mountable = true; // Players can mount this AI
    driverNode = 0;
    riderNode = 5;
-   mountPose[0]	= scoutroot; // Driver
-   mountPose[5]	= scoutroot; // Passenger
+   mountPose[0]	= H_Root; // Driver
+   mountPose[5]	= H_Root; // Passenger
 };
 
 datablock PlayerData(BayHorse : DefaultHorse)
