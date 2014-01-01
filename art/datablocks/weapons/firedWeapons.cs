@@ -36,7 +36,7 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
    stateTimeoutValue[3] = 0.9;
    fireAnim = "Fire_Flintlock";
    fireSound = "flintlockFireSound";
-   canH2H = false; // Allow H2H combat while this weapon is mounted
+   canH2H = true; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -106,4 +106,6 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    stateName[8] = "NoAmmo";
    stateTransitionOnAmmo[8] = "Reload";
    stateSequence[8] = "NoAmmo";
+   canH2H = false; // Allow H2H combat while this weapon is mounted
+   canUseMounted = true;
 };

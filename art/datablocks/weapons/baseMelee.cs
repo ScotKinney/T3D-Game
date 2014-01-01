@@ -28,7 +28,7 @@ datablock ShapeBaseImageData(BaseMeleeImage)
    canH2H = false;
 
    // Can this weapon be used when mounted to an AI or vehicle
-   canUseMounted = false;
+   canUseMounted = true;
 
    // AI settings
    maxRange = "1.2";
