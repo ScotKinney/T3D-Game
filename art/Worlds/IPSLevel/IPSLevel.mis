@@ -430,34 +430,6 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new GraphEmitterNode(LightnBolt) {
-            emitter = "LightningFlashData";
-            Grounded = "0";
-            xFunc = "cos(t/25)*(2000-t)*0.0005";
-            yFunc = "sin(t/25)*(2000-t)*0.0005";
-            zFunc = "t/400";
-            funcMax = "2000";
-            funcMin = "0";
-            timeScale = "1";
-            ProgressMode = "ByTime";
-            Reverse = "1";
-            Loop = "1";
-            active = "1";
-            velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
-            dataBlock = "g_nodeLightning";
-            position = "-43.4783 -5.16259 8.46396";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-         };
          new MaskEmitterNode(TestMaskEmitter) {
             emitter = "msk_DefaultEmitter";
             sa_radius = "1";
@@ -585,7 +557,7 @@ new SimGroup(MissionGroup) {
       count = "7";
       isAIControlled = "0";
       dataBlock = "Boglin_Toes";
-      position = "-41.2927 -14.5593 -13.942";
+      position = "-41.2927 -14.5593 -14.5717";
       rotation = "0 0 1 45.8209";
       scale = "1 1 1";
       canSave = "1";
@@ -599,7 +571,7 @@ new SimGroup(MissionGroup) {
       count = "9";
       isAIControlled = "0";
       dataBlock = "Lamp_Oil";
-      position = "-42.9171 -9.32855 -14.5977";
+      position = "-42.9171 -9.32855 -15.2274";
       rotation = "0 0 1 49.696";
       scale = "1 1 1";
       canSave = "1";
@@ -613,7 +585,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "grenadeWeapon";
-      position = "-31.1968 -15.4033 -11.7141";
+      position = "-31.1968 -15.4033 -12.3438";
       rotation = "0 0 1 32.2554";
       scale = "1 1 1";
       canSave = "1";
@@ -627,7 +599,7 @@ new SimGroup(MissionGroup) {
       count = "3";
       isAIControlled = "0";
       dataBlock = "TokaraMushroom";
-      position = "-41.7618 -19.5749 -9.66515";
+      position = "-41.7618 -19.5749 -10.2949";
       rotation = "0 0 1 102.586";
       scale = "1 1 1";
       canSave = "1";
