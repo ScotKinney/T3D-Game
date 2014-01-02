@@ -9,13 +9,13 @@ function basemale1_4Dts::onLoad(%this)
    %this.renameNode("upperJaw", "Eye");
    %this.setNodeTransform("eye", "0.000158001 0.126053 2.43575 1 0 0 0", "1");
    %this.setNodeTransform("mount3", "-0.214266 0.17907 1.61817 1 0 0 0", "1");
-   %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
-   %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
-   %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
+   %this.addNode("cam", "root", "0 -0.54884 2.24219 1 0 0 0", "1");
+   %this.addNode("mount7", "mount0", "1.15735 0.129206 2.07096 0.705299 -0.682394 -0.192072 3.04478", "1");
+   %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04113 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
    %this.addNode("mount1", "lHand", "-1.15746 0.192278 2.00405 -0.300286 0.910571 -0.284058 0.485323", "1");
-   %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
+   %this.addNode("mount31", "root", "0 0 0.00427338 1 0 0 0", "1");
    %this.addSequence("art/players/base/Anims/Root_Sword.dsq", "Root", "0", "383", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("art/players/base/Anims/Head.dsq", "Head", "0", "2", "1", "0");
@@ -441,6 +441,10 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/2W_Swing7.dsq", "2W_Swing7", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Anims/2W_DamageKnockedFore.dsq", "2W_DamageKnockedFore", "0", "109", "1", "0");
    %this.addSequence("art/players/base/Anims/2W_Death3.dsq", "2W_Death3", "0", "16", "1", "0");
+   %this.setNodeTransform("Root", "0 0 -0.0989928 1 0 0 0", "1");
+   %this.setNodeTransform("Left_Cloak", "-0.341676 -0.244328 1.83965 1 0 0 0", "1");
+   %this.addNode("mount30", "mount2", "0 0 0 0 0 1 0", "0");
+   %this.addNode("mount29", "mount0", "0 0 0 0 0 1 0", "0");
 }
 
 $mack = true;

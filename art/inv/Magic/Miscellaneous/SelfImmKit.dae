@@ -12,7 +12,7 @@
   </asset>
   <library_images/>
   <library_effects>
-    <effect id="material1-effect">
+    <effect id="ImmoBoxMat-effect">
       <profile_COMMON>
         <technique sid="common">
           <phong>
@@ -49,8 +49,8 @@
     </effect>
   </library_effects>
   <library_materials>
-    <material id="material1-material" name="material1">
-      <instance_effect url="#material1-effect"/>
+    <material id="ImmoBoxMat-material" name="ImmoBoxMat">
+      <instance_effect url="#ImmoBoxMat-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -88,7 +88,7 @@
         <vertices id="kitBody-mesh-vertices">
           <input semantic="POSITION" source="#kitBody-mesh-positions"/>
         </vertices>
-        <polylist material="material1-material" count="156">
+        <polylist material="ImmoBoxMat-material" count="156">
           <input semantic="VERTEX" source="#kitBody-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#kitBody-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#kitBody-mesh-map-0" offset="2" set="0"/>
@@ -107,7 +107,7 @@
         <instance_geometry url="#kitBody-mesh">
           <bind_material>
             <technique_common>
-              <instance_material symbol="material1-material" target="#material1-material"/>
+              <instance_material symbol="ImmoBoxMat-material" target="#ImmoBoxMat-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
