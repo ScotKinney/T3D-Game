@@ -42,4 +42,5 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.addSequence("./CrossbowDeath4.dsq", "Death4", "0", "17", "1", "0");
    %this.addTrigger("Attack1", "110", "3");
    %this.addTrigger("Attack2", "18", "3");
+   %this.addImposter("0", "64", "0", "0", "256", "0", "0");
 }

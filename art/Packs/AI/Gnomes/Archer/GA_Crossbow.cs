@@ -6,5 +6,6 @@ singleton TSShapeConstructor(GA_CrossbowDts)
 
 function GA_CrossbowDts::onLoad(%this)
 {
-   %this.setNodeTransform("mountPoint", "-0.00571447 0.00877002 -0.0431157 -0.560465 0.569192 0.601581 2.17287", "1");
+   %this.setNodeTransform("mountPoint", "-0.00571447 0.00877002 -0.0431157 -0.616179 0.528077 0.584344 2.05684", "1");
+   %this.addImposter("0", "64", "0", "0", "1024", "0", "0");
 }
