@@ -39,7 +39,7 @@ function WheeledVehicleData::onAdd(%this, %obj)
    {
       %obj.setWheelTire(%i, DefaultCarTire);
       %obj.setWheelSpring(%i, DefaultCarSpring);
-      %obj.setWheelPowered(%i, false);
+      %obj.setWheelPowered(%i, true);
    }
 
    // Steer with the front tires
@@ -47,8 +47,8 @@ function WheeledVehicleData::onAdd(%this, %obj)
    %obj.setWheelSteering(1, 1);
 
    // Only power the two rear wheels... assuming there are only 4 wheels.
-   %obj.setWheelPowered(2, true);
-   %obj.setWheelPowered(3, true);
+   //%obj.setWheelPowered(2, true);
+   //%obj.setWheelPowered(3, true);
 }
 
 function WheeledVehicleData::onCollision(%this, %obj, %col, %vec, %speed)
