@@ -1,3 +1,4 @@
+/*
 datablock ParticleData(LightningRod : DefaultParticle)
 {
    sizes[0] = "1.2";
@@ -87,3 +88,4 @@ datablock SphereEmitterData(LightningBolt : DefaultEmitter)
    softnessDistance = "20";
    softParticles = "1";
 };
+*/

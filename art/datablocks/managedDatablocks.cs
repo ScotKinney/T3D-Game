@@ -22,3 +22,14 @@
 
 // This is the default save location for any Datablocks created in the
 // Datablock Editor (this script is executed from onServerCreated())
+
+
+datablock GraphEmitterNodeData(g_nodeLightning : g_DefaultNode)
+{
+};
+
+
+datablock GraphEmitterData(LightningFlashData : g_MarsTeleport)
+{
+   particles = "LightningRod";
+};
