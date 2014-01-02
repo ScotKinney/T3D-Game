@@ -34,6 +34,9 @@ exec("./triggers.cs");
 exec("./defaultEffects.cs");
 exec("./player.cs");
 
+// Load the editor saved datablocks
+exec("./managedDatablocks.cs");
+
 // Our default (base) weapon datablocks
 exec("./weapons/weaponFX.cs");
 exec("./weapons/baseAuto.cs");

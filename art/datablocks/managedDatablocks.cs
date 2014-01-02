@@ -29,7 +29,15 @@ datablock GraphEmitterNodeData(g_nodeLightning : g_DefaultNode)
 };
 
 
-datablock GraphEmitterData(LightningFlashData : g_MarsTeleport)
+datablock GraphEmitterData(LightningFlashData)
 {
+   xFunc = "cos(t/25)*(2000-t)*0.0005";
+   yFunc = "sin(t/25)*(2000-t)*0.0005";
+   zFunc = "t/400";
+   funcMax = 2000;
+   timeScale = 1.25;
+   ProgressMode = "ByTime";
+   Reverse = true;
+   Loop = true;
    particles = "LightningRod";
 };
