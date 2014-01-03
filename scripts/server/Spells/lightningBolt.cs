@@ -69,7 +69,7 @@ function LightningProjectile::onCollision(%this, %obj, %col)
    {
       %damage = getRandom(30, 100) / 3;
       if (%obj.sourceObject == %col)
-         %damage = (%damage * 0.75) / 3
+         %damage = (%damage * 0.75) / 3;
          
       %col.schedule(%count * 1000, "damage", %obj.sourceObject, %pos, %damage, "Immoliation");
       %count++;
