@@ -113,6 +113,18 @@ datablock ParticleData(LightningRod0)
    constantAcceleration = "-10";
 };
 
+datablock GraphEmitterData(LightningFlashData)
+{
+   xFunc = "cos(t/25)*(2000-t)*0.0005";
+   yFunc = "sin(t/25)*(2000-t)*0.0005";
+   zFunc = "t/400";
+   funcMax = 2000;
+   timeScale = 1.25;
+   ProgressMode = "ByTime";
+   Reverse = true;
+   Loop = true;
+   particles = "LightningRod";
+};
 
 // Smoke
 

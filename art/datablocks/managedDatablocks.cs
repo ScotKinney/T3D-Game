@@ -22,22 +22,3 @@
 
 // This is the default save location for any Datablocks created in the
 // Datablock Editor (this script is executed from onServerCreated())
-
-
-datablock GraphEmitterNodeData(g_nodeLightning : g_DefaultNode)
-{
-};
-
-
-datablock GraphEmitterData(LightningFlashData)
-{
-   xFunc = "cos(t/25)*(2000-t)*0.0005";
-   yFunc = "sin(t/25)*(2000-t)*0.0005";
-   zFunc = "t/400";
-   funcMax = 2000;
-   timeScale = 1.25;
-   ProgressMode = "ByTime";
-   Reverse = true;
-   Loop = true;
-   particles = "LightningRod";
-};
