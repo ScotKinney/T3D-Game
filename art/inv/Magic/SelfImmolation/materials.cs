@@ -2,7 +2,7 @@ singleton Material(SelfImmKit)
 {
    mapTo = "ImmoBoxMat";
    diffuseColor[0] = "0.8 0.8 0.8 1";
-   diffuseMap[0] = "art/inv/Magic/Miscellaneous/SelfImmKit.png";
+   diffuseMap[0] = "art/inv/Magic/SelfImmolation/SelfImmKit.png";
    specular[0] = "0.996078 0.996078 0.996078 1";
    specularPower[0] = "128";
    useAnisotropic[0] = "1";

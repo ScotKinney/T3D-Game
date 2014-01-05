@@ -30,3 +30,21 @@ singleton Material(TropicFern01_FernSprout01)
    alphaRef = "60";
    diffuseColor[0] = "1 0.882353 0 1";
 };
+
+singleton Material(TropicFern01_FernSprout01)
+{
+   mapTo = "FernSprout01";
+   diffuseMap[0] = "ferntop";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(TropicFern01)
+{
+   mapTo = "TropicFern01";
+   diffuseMap[0] = "fern_image2";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};

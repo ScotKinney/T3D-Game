@@ -478,8 +478,8 @@ new SimGroup(MissionGroup) {
                      avOptions = "80,179,215,102,137,333,328,324,326,325,361";
                      behavior = "LeashedBehavior";
                      block = "FemalePlayerData";
-                     botBelongsToMe = "2720";
-                     delayRespawn = "1192";
+                     botBelongsToMe = "7111";
+                     delayRespawn = "658";
                      distDetect = "1";
                      fov = "150";
                      leash = "25";
@@ -525,7 +525,7 @@ new SimGroup(MissionGroup) {
       count = "7";
       isAIControlled = "0";
       dataBlock = "Boglin_Toes";
-      position = "-41.2927 -14.5593 -15.2014";
+      position = "-41.2927 -14.5593 -15.8311";
       rotation = "0 0 1 45.8209";
       scale = "1 1 1";
       canSave = "1";
@@ -539,7 +539,7 @@ new SimGroup(MissionGroup) {
       count = "9";
       isAIControlled = "0";
       dataBlock = "Lamp_Oil";
-      position = "-42.9171 -9.32855 -15.8571";
+      position = "-42.9171 -9.32855 -16.4868";
       rotation = "0 0 1 49.696";
       scale = "1 1 1";
       canSave = "1";
@@ -553,7 +553,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "grenadeWeapon";
-      position = "-31.1968 -15.4033 -12.9735";
+      position = "-31.1968 -15.4033 -13.6032";
       rotation = "0 0 1 32.2554";
       scale = "1 1 1";
       canSave = "1";
@@ -567,40 +567,21 @@ new SimGroup(MissionGroup) {
       count = "3";
       isAIControlled = "0";
       dataBlock = "TokaraMushroom";
-      position = "-41.7618 -19.5749 -10.9246";
+      position = "-41.7618 -19.5749 -11.5543";
       rotation = "0 0 1 102.586";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          ammo = "0";
    };
-   new GraphEmitterNode(LightningFlashEmitter) {
-      emitter = "Lightning_Flash_Emitter";
-      Grounded = "0";
-      xFunc = "cos(t/50)*t*0.02";
-      yFunc = "sin(t)*t*0.02";
-      zFunc = "0";
-      funcMax = "2000";
-      funcMin = "0";
-      timeScale = "1";
-      ProgressMode = "ParticleCount";
-      Reverse = "0";
-      Loop = "1";
-      active = "1";
-      velocity = "1";
-      standAloneEmitter = "0";
-      sa_emitterLifetimeMS = "0";
-      sa_ejectionPeriodMS = "500";
-      sa_periodVarianceMS = "200";
-      sa_ejectionVelocity = "2";
-      sa_velocityVariance = "0";
-      sa_ejectionOffset = "0";
-      dataBlock = "g_nodeLightning";
-      position = "-41.5822 -7.23149 6.21484";
+   new Forest(theForest) {
+      position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+      dataFile = $WorldPath @ "/IPSLevel.forest";
+      lodReflectScalar = "2";
    };
 };
 //--- OBJECT WRITE END ---

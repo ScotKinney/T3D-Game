@@ -41,3 +41,28 @@ singleton Material(bananatree_mature_ColorEffectR153G228B153_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(bananatree_mature_bananatree)
+{
+   mapTo = "bananatree";
+   diffuseMap[0] = "bananatree_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(bananatree_mature_ColorEffectR87G225B198_material)
+{
+   mapTo = "ColorEffectR87G225B198-material";
+   diffuseColor[0] = "0.341177 0.882353 0.776471 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(bananatree_mature_ColorEffectR153G228B153_material)
+{
+   mapTo = "ColorEffectR153G228B153-material";
+   diffuseColor[0] = "0.6 0.894118 0.6 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};

@@ -297,3 +297,96 @@ singleton Material(canopytree_two_ColorEffectR225G88B199_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(shrub_one_canopytree_extras_lodhi)
+{
+   mapTo = "canopytree_extras_lodhi";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Trees/Canopy/canopytree_extras_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "87";
+};
+
+singleton Material(shrub_one_canopytree_bark_lodhi)
+{
+   mapTo = "canopytree_bark_lodhi";
+   diffuseMap[0] = "canopytree_bark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(shrub_one_canopytree_fronds_lodhi)
+{
+   mapTo = "canopytree_fronds_lodhi";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Trees/Canopy/canopytree_fronds_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "120";
+};
+
+singleton Material(canopytree_two_canopytree_dark_fronds_lodhi)
+{
+   mapTo = "canopytree_dark_fronds_lodhi";
+   diffuseMap[0] = "canopytree_fronds_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucent = "1";
+};
+
+singleton Material(canopytree_two_canopytree_dark_lodlo)
+{
+   mapTo = "canopytree_dark_lodlo";
+   diffuseMap[0] = "canopytree_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucent = "1";
+};
+
+singleton Material(canopytree_two_ColorEffectR225G88B199_material)
+{
+   mapTo = "ColorEffectR225G88B199-material";
+   diffuseColor[0] = "0.882353 0.345098 0.780392 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(canopytree_two_canopytree_barkflat_lodhi)
+{
+   mapTo = "canopytree_barkflat_lodhi";
+   diffuseMap[0] = "canopytree_bark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(canopytree_three_canopytree_lodlo)
+{
+   mapTo = "canopytree_lodlo";
+   diffuseMap[0] = "canopytree_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(canopytree_three_ColorEffectR166G229B229_material)
+{
+   mapTo = "ColorEffectR166G229B229-material";
+   diffuseColor[0] = "0.65098 0.898039 0.898039 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(canopytree_three_ColorEffectR135G6B6_material)
+{
+   mapTo = "ColorEffectR135G6B6-material";
+   diffuseColor[0] = "0.529412 0.0235294 0.0235294 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};

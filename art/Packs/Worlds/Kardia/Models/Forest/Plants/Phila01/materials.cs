@@ -16,3 +16,15 @@ singleton Material(Phila01__1___Default)
    alphaRef = "60";
    forestWindEnabled = 1;
 };
+
+singleton Material(Phila01__1___Default)
+{
+   mapTo = "_1_-_Default";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/Phila01/PhilLeaf01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "120";
+};

@@ -30,3 +30,15 @@ singleton Material(rivergrass_material)
 
 
 
+
+singleton Material(rivergrass)
+{
+   mapTo = "rivergrass";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/rivergrass/rivergrass_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "127";
+};

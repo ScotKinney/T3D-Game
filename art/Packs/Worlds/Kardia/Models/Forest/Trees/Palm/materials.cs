@@ -83,3 +83,32 @@ singleton Material(palm_bark_material)
 };
 
 
+
+singleton Material(palmtree_tall_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = "120";
+};
