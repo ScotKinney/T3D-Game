@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Fern_Vert_01DAE)
 
 function Fern_Vert_01DAE::onLoad(%this)
 {
-   %this.addImposter("0", "6", "0", "0", "512", "1", "0");
+   %this.addImposter("0", "24", "0", "0", "256", "0", "0");
 }

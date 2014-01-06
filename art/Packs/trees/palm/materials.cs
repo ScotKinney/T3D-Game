@@ -97,3 +97,145 @@ singleton Material(palm_bush_ColorEffectR153G228B153_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(palmtree_tall_leaning_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_leaning_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_leaning_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_bark)
+{
+   mapTo = "palm_bark";
+   diffuseMap[0] = "art/packs/trees/palm/palmbark_diffuse";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/trees/palm/palmbark_normal.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/palm/palmbark_normal_specular.dds";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
+};
+
+singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(palmtree_tall_palm_fronds)
+{
+   mapTo = "palm_fronds";
+   diffuseMap[0] = "art/packs/trees/palm/palmfrond_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/trees/palm/palmfrond_normal_specular.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/palm/palmfrond_specular.dds";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "127";
+   showFootprints = "0";
+};

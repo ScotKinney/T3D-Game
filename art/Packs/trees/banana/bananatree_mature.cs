@@ -6,5 +6,5 @@ singleton TSShapeConstructor(Bananatree_matureDAE)
 
 function Bananatree_matureDAE::onLoad(%this)
 {
-   %this.addImposter("10", "4", "0", "0", "256", "0", "0");
+   %this.addImposter("0", "24", "0", "0", "256", "0", "0");
 }

@@ -32,3 +32,27 @@ singleton Material(broadleaf_plant)
    backlight = "1";
    materialTag0 = "Veg_BroadLeaf";
 };
+
+singleton Material(broadleaf_wskirt_broadleaf)
+{
+   mapTo = "broadleaf";
+   diffuseMap[0] = "broadleaf_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(broadleaf_wskirt_broadleaf)
+{
+   mapTo = "broadleaf";
+   diffuseMap[0] = "art/Packs/veg/broadleaf/broadleaf_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/veg/broadleaf/broadleaf_normal_specular.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/veg/broadleaf/broadleaf_specular.dds";
+   alphaTest = "1";
+   alphaRef = "46";
+   showFootprints = "0";
+};

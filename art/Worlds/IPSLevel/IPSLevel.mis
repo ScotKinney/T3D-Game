@@ -75,6 +75,15 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
+      new Forest(theForest) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+         dataFile = $WorldPath @ "/IPSLevel.forest";
+         lodReflectScalar = "2";
+      };
       new ScatterSky(sky1) {
          skyBrightness = "50";
          sunSize = "7";
@@ -87,12 +96,11 @@ new SimGroup(MissionGroup) {
          exposure = "3";
          zoffset = "0";
          azimuth = "9";
-         elevation = "35";
+         elevation = "120";
          moonAzimuth = "340";
-         moonElevation = "-35";
+         moonElevation = "-120";
          castShadows = "1";
          brightness = "1";
-         flareType = "DefaultSunFlare";
          flareScale = "10";
          nightColor = "0.0980392 0.0980392 0.0980392 1";
          nightFogColor = "0.470588 0.470588 0.470588 1";
@@ -224,7 +232,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "Ring_of_Fire_Rune";
-            position = "-48.4461 -14.4303 3.18377";
+            position = "-43.5902 -8.75232 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -238,7 +246,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "The_Claw_Potion";
-            position = "-48.4461 -13.4303 3.18377";
+            position = "-43.5902 -7.75231 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -252,7 +260,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "Evil_Eye_Potion";
-            position = "-48.4461 -12.4303 3.18377";
+            position = "-43.5902 -6.75232 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -266,7 +274,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "BBQ_Ribs_Potion";
-            position = "-48.4461 -11.4303 3.18377";
+            position = "-43.5902 -5.75231 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -280,7 +288,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "Leaf_Me_Alone_Potion";
-            position = "-48.4461 -10.4303 3.18377";
+            position = "-43.5902 -4.75231 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -294,7 +302,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "InsectInside_Potion";
-            position = "-48.4461 -8.43031 3.18377";
+            position = "-43.5902 -2.75232 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -308,7 +316,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "Human_Torch_Potion";
-            position = "-48.4461 -7.43031 3.18377";
+            position = "-43.5902 -1.75232 3.56329";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -322,7 +330,7 @@ new SimGroup(MissionGroup) {
             count = "0";
             isAIControlled = "0";
             dataBlock = "Shards_of_Ice_Crystal";
-            position = "-48.2538 -9.20328 3.57872";
+            position = "-43.3979 -3.52529 3.95824";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -335,7 +343,7 @@ new SimGroup(MissionGroup) {
             count = "50";
             isAIControlled = "0";
             dataBlock = "Lamp_Oil";
-            position = "-48.3667 -15.634 3.19777";
+            position = "-43.5108 -9.95602 3.57729";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -349,7 +357,7 @@ new SimGroup(MissionGroup) {
             count = "10";
             isAIControlled = "0";
             dataBlock = "Invisibility_Rune";
-            position = "-48.4461 -6.58919 3.18377";
+            position = "-43.5902 -0.911203 3.56329";
             rotation = "0 0 1 89.8436";
             scale = "1 1 1";
             canSave = "1";
@@ -478,7 +486,7 @@ new SimGroup(MissionGroup) {
                      avOptions = "80,179,215,102,137,333,328,324,326,325,361";
                      behavior = "LeashedBehavior";
                      block = "FemalePlayerData";
-                     botBelongsToMe = "7111";
+                     botBelongsToMe = "2699";
                      delayRespawn = "658";
                      distDetect = "1";
                      fov = "150";
@@ -518,70 +526,21 @@ new SimGroup(MissionGroup) {
          };
       };
    };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "7";
-      isAIControlled = "0";
-      dataBlock = "Boglin_Toes";
-      position = "-41.2927 -14.5593 -15.8311";
-      rotation = "0 0 1 45.8209";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "9";
-      isAIControlled = "0";
-      dataBlock = "Lamp_Oil";
-      position = "-42.9171 -9.32855 -16.4868";
-      rotation = "0 0 1 49.696";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "1";
-      isAIControlled = "0";
-      dataBlock = "grenadeWeapon";
-      position = "-31.1968 -15.4033 -13.6032";
-      rotation = "0 0 1 32.2554";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "3";
-      isAIControlled = "0";
-      dataBlock = "TokaraMushroom";
-      position = "-41.7618 -19.5749 -11.5543";
-      rotation = "0 0 1 102.586";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Forest(theForest) {
-      position = "0 0 0";
+   new TSStatic() {
+      shapeName = "art/Packs/trees/palm/palmtree_tall.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-14.3567 -15.3136 0.664962";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-      dataFile = $WorldPath @ "/IPSLevel.forest";
-      lodReflectScalar = "2";
    };
 };
 //--- OBJECT WRITE END ---

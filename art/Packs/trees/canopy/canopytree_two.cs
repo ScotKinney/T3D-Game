@@ -10,3 +10,13 @@ function Canopytree_twoDAE::onLoad(%this)
    %this.setDetailLevelSize("175", "600");
    %this.addImposter("1", "4", "0", "0", "512", "0", "0");
 }
+
+singleton TSShapeConstructor(Canopytree_twoDts)
+{
+   baseShape = "./canopytree_two.dts";
+};
+
+function Canopytree_twoDts::onLoad(%this)
+{
+   %this.removeNode("EnvironmentAmbientLight");
+}

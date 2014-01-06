@@ -1,8 +1,10 @@
 // IPSLevel level config
 $AlterVerse::AvSet = "Base";
-$AlterVerse::ArtPacks = "trees/default" TAB
+$AlterVerse::ArtPacks = "trees" TAB
+   "plants" TAB
+   "veg" TAB
    "skies/default" TAB
-   "rocks/T3D" TAB
-   "AI/Horses"; TAB
+   "rocks" TAB
+   "AI/Horses" TAB
    "AI/Gnomes";
    

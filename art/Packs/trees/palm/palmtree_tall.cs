@@ -69,3 +69,13 @@ function Palmtree_tallDAE::onLoad(%this)
    %this.removeMesh("ColCapsuleJ -1");
    %this.renameObject("ColCapsuleH", "ColCapsule");
 }
+
+singleton TSShapeConstructor(Palmtree_tallDts)
+{
+   baseShape = "./palmtree_tall.dts";
+};
+
+function Palmtree_tallDts::onLoad(%this)
+{
+   %this.addImposter("1", "24", "0", "0", "256", "0", "60");
+}

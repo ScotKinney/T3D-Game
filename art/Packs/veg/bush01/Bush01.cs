@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Bush01DAE)
 
 function Bush01DAE::onLoad(%this)
 {
-   %this.addImposter("0", "6", "0", "0", "128", "1", "0");
+   %this.addImposter("0", "24", "0", "0", "256", "0", "0");
 }

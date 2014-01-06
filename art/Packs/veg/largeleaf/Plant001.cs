@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Plant001DAE)
 
 function Plant001DAE::onLoad(%this)
 {
-   %this.addImposter("0", "6", "0", "0", "256", "1", "0");
+   %this.addImposter("0", "24", "0", "0", "256", "1", "0");
 }

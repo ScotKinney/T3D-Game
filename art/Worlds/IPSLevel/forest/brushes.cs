@@ -22,7 +22,7 @@ new SimGroup(ForestBrushGroup) {
       elevationMax = "10000";
    };
    new ForestBrush() {
-      internalName = "Kardia";
+      internalName = "IPSLevel";
       canSave = "1";
       canSaveDynamicFields = "1";
 
@@ -243,11 +243,11 @@ new SimGroup(ForestBrushGroup) {
          ForestItemData = "BananaMature";
          probability = "1";
          rotationRange = "360";
-         scaleMin = "0.8";
-         scaleMax = "1.1";
+         scaleMin = "2";
+         scaleMax = "8";
          scaleExponent = "1";
-         sinkMin = "-2.6";
-         sinkMax = "-2.6";
+         sinkMin = "0";
+         sinkMax = "0";
          sinkRadius = "1";
          slopeMin = "0";
          slopeMax = "90";

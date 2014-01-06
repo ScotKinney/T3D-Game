@@ -45,10 +45,12 @@ singleton Material(bigleaf_ColorEffectR227G153B153_material)
 singleton Material(bigleaf)
 {
    mapTo = "bigleaf";
-   diffuseMap[0] = "bigleaf_diffuse_transparency";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   alphaTest = "1";
+   alphaRef = "114";
 };
 
 singleton Material(bigleaf_ColorEffectR227G153B153_material)
