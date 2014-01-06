@@ -38,7 +38,7 @@ singleton Material(rivergrass)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "Sub";
-   translucent = "1";
+   translucent = "0";
    alphaTest = "1";
    alphaRef = "127";
 };

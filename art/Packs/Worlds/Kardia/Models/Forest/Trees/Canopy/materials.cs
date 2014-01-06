@@ -305,9 +305,9 @@ singleton Material(shrub_one_canopytree_extras_lodhi)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "Sub";
-   translucent = "1";
+   translucent = "0";
    alphaTest = "1";
-   alphaRef = "87";
+   alphaRef = "60";
 };
 
 singleton Material(shrub_one_canopytree_bark_lodhi)
@@ -322,13 +322,17 @@ singleton Material(shrub_one_canopytree_bark_lodhi)
 singleton Material(shrub_one_canopytree_fronds_lodhi)
 {
    mapTo = "canopytree_fronds_lodhi";
-   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Trees/Canopy/canopytree_fronds_diffuse_transparency";
+   diffuseMap[0] = "art/Packs/trees/default/defaulttree_frond_diffuse_transparency.dds";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "Sub";
-   translucent = "1";
+   specularPower[0] = "89";
+   translucentBlendOp = "LerpAlpha";
+   translucent = "0";
    alphaTest = "1";
-   alphaRef = "120";
+   alphaRef = "13";
+   glow[0] = "0";
+   normalMap[0] = "art/Packs/trees/default/defaulttree_frond_normal_specular.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/default/defaulttree_normal_specular.dds";
 };
 
 singleton Material(canopytree_two_canopytree_dark_fronds_lodhi)
@@ -343,10 +347,16 @@ singleton Material(canopytree_two_canopytree_dark_fronds_lodhi)
 singleton Material(canopytree_two_canopytree_dark_lodlo)
 {
    mapTo = "canopytree_dark_lodlo";
-   diffuseMap[0] = "canopytree_diffuse_transparency";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Trees/Canopy/canopytree_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucent = "1";
+   specularPower[0] = "61";
+   translucent = "0";
+   alphaTest = "1";
+   alphaRef = "40";
+   materialTag0 = "Tree_Default";
+   normalMap[0] = "art/Packs/trees/canopy/canopytree_normal.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/canopy/canopytree_specular.dds";
 };
 
 singleton Material(canopytree_two_ColorEffectR225G88B199_material)

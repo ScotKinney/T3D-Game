@@ -34,17 +34,23 @@ singleton Material(TropicFern01_FernSprout01)
 singleton Material(TropicFern01_FernSprout01)
 {
    mapTo = "FernSprout01";
-   diffuseMap[0] = "ferntop";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/TropicFern/ferntop";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
-   translucentBlendOp = "None";
+   translucentBlendOp = "Sub";
+   translucent = "0";
+   alphaTest = "1";
+   alphaRef = "20";
 };
 
 singleton Material(TropicFern01)
 {
    mapTo = "TropicFern01";
-   diffuseMap[0] = "fern_image2";
+   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/TropicFern/fern_image2";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
-   translucentBlendOp = "None";
+   translucentBlendOp = "Sub";
+   translucent = "0";
+   alphaTest = "1";
+   alphaRef = "140";
 };

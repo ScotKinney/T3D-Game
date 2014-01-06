@@ -108,7 +108,7 @@ singleton Material(palmtree_tall_palm_fronds)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "Sub";
-   translucent = "1";
+   translucent = "0";
    alphaTest = "1";
-   alphaRef = "120";
+   alphaRef = "100";
 };
