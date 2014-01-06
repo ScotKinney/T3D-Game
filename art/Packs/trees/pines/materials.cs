@@ -51,31 +51,35 @@ singleton Material(DriPine01_DarkPineBark)
 singleton Material(DriPine01_DriPine)
 {
    mapTo = "DriPine";
-   diffuseMap[0] = "DryPine2.dds";
+   diffuseMap[0] = "art/Packs/trees/pines/DryPine2.dds";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "0";
+   specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   subSurface[0] = "1";
+   subSurface[0] = "0";
    subSurfaceColor[0] = "0.596078 0.552941 0.282353 1";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "180";
-   normalMap[0] = "DryPine2_NRM.dds";
+   alphaRef = "82";
+   normalMap[0] = "art/Packs/trees/pines/DryPine2_NRM.dds";
    subSurfaceRolloff[0] = "1";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/pines/DryPine2_SPEC.dds";
+   showFootprints = "0";
 };
 
 singleton Material(DriPine01_DarkDriBare)
 {
    mapTo = "DarkDriBare";
-   diffuseMap[0] = "Pinebarebranch01.dds";
+   diffuseMap[0] = "art/Packs/trees/pines/Pinebarebranch01.dds";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "0";
+   specularPower[0] = "51";
    translucentBlendOp = "None";
-   normalMap[0] = "Pinebarebranch01_NRM.dds";
+   normalMap[0] = "art/Packs/trees/pines/Pinebarebranch01_NRM.dds";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "100";
+   alphaRef = "76";
+   showFootprints = "0";
 };
 
 singleton Material(DriPine01_ColorEffectR6G135B6_material)
@@ -146,25 +150,29 @@ singleton Material(Pine001_DeadPineNeedles)
 singleton Material(SoftPine2_Winter_mat)
 {
    mapTo = "SoftPine2_Winter";
-   diffuseMap[0] = "LushPine_Snow.dds";
+   diffuseMap[0] = "art/Packs/trees/pines/LushPine_Snow.dds";
    useAnisotropic[0] = "1";
    subSurface[0] = "0";
    subSurfaceColor[0] = "0.996078 0.992157 0.992157 1";
    subSurfaceRolloff[0] = "0.5";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "50";
-   normalMap[0] = "LushPine_Snow_NRM.dds";
+   alphaRef = "102";
+   normalMap[0] = "art/Packs/trees/pines/LushPine_Snow_NRM.dds";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/pines/LushPine_Snow.dds";
+   showFootprints = "0";
 };
 
 singleton Material(scrubPine_SoftPineBark)
 {
    mapTo = "SoftPineBark";
-   diffuseMap[0] = "Piney.dds";
+   diffuseMap[0] = "art/Packs/trees/pines/Piney.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "0";
    translucentBlendOp = "None";
-   normalMap[0] = "Piney_NRM.dds";
+   normalMap[0] = "art/Packs/trees/pines/Piney_NRM.dds";
    doubleSided = "1";
 };
 
@@ -261,11 +269,11 @@ singleton Material(ShortPine001_BarePine)
 singleton Material(Win_DryPine01_DriPine_Win)
 {
    mapTo = "DriPine-Win";
-   diffuseMap[0] = "DryPine2_Snow.dds";
+   diffuseMap[0] = "art/Packs/trees/pines/DryPine2_Snow.dds";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "0";
+   specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "DryPine2_Snow_NRM.dds";
+   normalMap[0] = "art/Packs/trees/pines/DryPine2_Snow_NRM.dds";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    alphaTest = "1";

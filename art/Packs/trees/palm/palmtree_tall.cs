@@ -7,12 +7,12 @@ singleton TSShapeConstructor(Palmtree_tallDAE)
 
 function Palmtree_tallDAE::onLoad(%this)
 {
-   %this.addImposter("1", "4", "0", "0", "512", "0", "0");
+   %this.addImposter("1", "24", "0", "0", "512", "0", "0");
    %this.setDetailLevelSize("100", "200");
    %this.removeDetailLevel("-1");
    %this.removeNode("Col-1");
-   %this.addCollisionDetail("-1", "Convex Hulls", "palmtree", "0", "60", "30", "32", "0", "0", "100");
    %this.addNode("Col-1", "", "0 0 0 0 0 1 0", "0");
+   %this.addCollisionDetail("-1", "Convex Hulls", "palmtree", "0", "60", "30", "32", "0", "0", "100");
    %this.addNode("ColCapsule-1", "Col-1", "0.0268454 -0.0920396 11.5179 -0.933988 0.213706 0.286349 1.43602", "0");
    %this.addNode("ColCapsuleB-1", "Col-1", "0.0533395 1.66278 11.9009 -0.683262 0.0209661 0.729872 3.09032", "0");
    %this.addNode("ColCapsuleC-1", "Col-1", "-1.76973 -0.337491 11.6434 -0.617486 -0.563587 0.548708 1.90932", "0");

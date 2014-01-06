@@ -329,10 +329,17 @@ singleton Material(shrub_one_canopytree_bark_lodhi)
 singleton Material(shrub_one_canopytree_fronds_lodhi)
 {
    mapTo = "canopytree_fronds_lodhi";
-   diffuseMap[0] = "canopytree_fronds_diffuse_transparency";
+   diffuseMap[0] = "art/Packs/trees/canopy/canopytree_fronds_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
+   specularPower[0] = "128";
    translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/trees/canopy/canopytree_fronds_normal_specular.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/trees/canopy/canopytree_fronds_specular.dds";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "73";
+   showFootprints = "0";
 };
 
 singleton Material(shrub_one_canopytree_extras_lodhi)

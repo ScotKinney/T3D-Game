@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Win_Sequia01DAE)
 
 function Win_Sequia01DAE::onLoad(%this)
 {
-   %this.addImposter("128", "4", "0", "0", "256", "1", "0");
+   %this.addImposter("128", "12", "0", "0", "512", "1", "0");
 }

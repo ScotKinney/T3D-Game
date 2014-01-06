@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Win_DryPine01DAE)
 
 function Win_DryPine01DAE::onLoad(%this)
 {
-   %this.addImposter("1", "4", "0", "0", "256", "1", "0");
+   %this.addImposter("1", "12", "0", "0", "512", "1", "0");
 }

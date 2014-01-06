@@ -2,6 +2,7 @@
 singleton TSShapeConstructor(Canopytree_one_novinesDAE)
 {
    baseShape = "./canopytree_one_novines.DAE";
+   loadLights = "0";
 };
 
 function Canopytree_one_novinesDAE::onLoad(%this)

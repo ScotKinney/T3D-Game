@@ -7,5 +7,5 @@ singleton TSShapeConstructor(Palmtree_tall_leaningDAE)
 function Palmtree_tall_leaningDAE::onLoad(%this)
 {
    %this.setDetailLevelSize("75", "200");
-   %this.addImposter("1", "4", "0", "0", "512", "0", "0");
+   %this.addImposter("1", "24", "0", "0", "512", "0", "0");
 }

@@ -2,6 +2,7 @@
 singleton TSShapeConstructor(Phila01DAE)
 {
    baseShape = "./Phila01.DAE";
+   loadLights = "0";
 };
 
 function Phila01DAE::onLoad(%this)
