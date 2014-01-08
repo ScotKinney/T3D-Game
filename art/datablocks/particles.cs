@@ -115,15 +115,96 @@ datablock ParticleData(LightningRod0)
 
 datablock GraphEmitterData(LightningFlashData)
 {
-   xFunc = "cos(t/25)*(2000-t)*0.0005";
-   yFunc = "sin(t/25)*(2000-t)*0.0005";
-   zFunc = "t/400";
-   funcMax = 2000;
+   xFunc = "cos(t/50)*t*0.0012";
+   yFunc = "sin(t/50)*t*0.0012";
+   zFunc = "t/800";
+   funcMax = 3000;
    timeScale = 1.25;
    ProgressMode = "ByTime";
-   Reverse = true;
+   Reverse = false;
    Loop = true;
-   particles = "LightningRod";
+   particles = "LightningRod0";
+};
+
+datablock ParticleData(AxelTestParticle01)
+{
+   textureName          = "core/art/particles/ember";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = -0.05;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 3000;
+   lifetimeVarianceMS   = 0;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 0;
+
+   colors[0]     = "1.000000 0.800000 0.000000 0.800000";
+   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
+   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+
+   sizes[0]      = 0.05;
+   sizes[1]      = 0.1;
+   sizes[2]      = 0.05;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock ParticleData(AxelTestParticle02)
+{
+   textureName          = "core/art/particles/waterDrip";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = -0.05;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 3000;
+   lifetimeVarianceMS   = 0;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 0;
+
+   colors[0]     = "1.000000 0.800000 0.000000 0.800000";
+   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
+   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+
+   sizes[0]      = 0.05;
+   sizes[1]      = 0.1;
+   sizes[2]      = 0.05;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock ParticleData(AxelTestParticle03)
+{
+   textureName          = "core/art/particles/sparkle";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = -0.05;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 3000;
+   lifetimeVarianceMS   = 0;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 0;
+
+   colors[0]     = "1.000000 0.800000 0.000000 0.800000";
+   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
+   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+
+   sizes[0]      = 0.05;
+   sizes[1]      = 0.1;
+   sizes[2]      = 0.05;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
 };
 
 // Smoke

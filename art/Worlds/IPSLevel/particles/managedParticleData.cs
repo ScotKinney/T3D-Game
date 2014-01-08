@@ -175,3 +175,17 @@ datablock MaskEmitterData(StarMaskEmitter)
    Grounded = false;
    //lifetimeMS = "1000";
 };
+
+
+datablock GraphEmitterData(AxelTestEmitter01Data)
+{
+   xFunc = "cos(t/50)*t*0.0012";
+   yFunc = "sin(t/50)*t*0.0012";
+   zFunc = "t/800";
+   funcMax = 3000;
+   timeScale = 1.25;
+   ProgressMode = "ByTime";
+   Reverse = false;
+   Loop = true;
+   particles = "AxelTestParticle01" TAB "AxelTestParticle02" TAB "AxelTestParticle03";
+};
