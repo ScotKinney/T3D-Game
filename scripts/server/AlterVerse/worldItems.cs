@@ -270,7 +270,7 @@ datablock ItemData(Book_of_Blinding)
    ItemID = 130;
    category = "magic";
    className = "magic";
-   shapeFile = "art/inv/Magic/Miscellaneous/BookofBlinding.dae";
+   shapeFile = "art/inv/Magic/SelfImmolation/SelfImmKit.dae";
    invIcon = "art/gui/icons/bookoblind.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
@@ -1793,7 +1793,7 @@ datablock ItemData(Self_Immolation_Kit)
    ItemID = 127;
    category = "magic";
    className = "magic";
-   shapeFile = "art/inv/magic/Miscellaneous/SelfImmKit.dae";
+   shapeFile = "art/inv/magic/SelfImmolation/SelfImmKit.dae";
    invIcon = "art/gui/icons/SelfImmKit.jpg";
    maxInventory = 5;
    keepOnDeath = 1;
