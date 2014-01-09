@@ -264,6 +264,11 @@ new SimGroup(MissionGroup) {
          position = "0 0 1.74941";
          canSave = "1";
          canSaveDynamicFields = "1";
+            fishLuck = "1";
+            fishStock = "Barracuda 30|Green_Gill 30|Orange_Sea_Bass 15|Red_Head 30|Swordfish 2|Junk 5";
+            foamColorModulate = "0 0 0";
+            foamScale = "0.2";
+            whiteCapAmount = "0";
       };
       new TerrainBlock(theTerrain) {
          terrainFile = $WorldPath @ "/terrain/IPSLevel.ter";
@@ -547,7 +552,7 @@ new SimGroup(MissionGroup) {
                      avOptions = "80,179,215,102,137,333,328,324,326,325,361";
                      behavior = "LeashedBehavior";
                      block = "FemalePlayerData";
-                     botBelongsToMe = "2868";
+                     botBelongsToMe = "2865";
                      delayRespawn = "658";
                      distDetect = "1";
                      fov = "150";
@@ -598,34 +603,6 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-14.3567 -15.3136 0.664962";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new GraphEmitterNode(adata) {
-      emitter = "AxelTestEmitter01Data";
-      Grounded = "0";
-      xFunc = "cos(t/50)*t*0.0015";
-      yFunc = "sin(t/50)*t*0.0015";
-      zFunc = "t/700";
-      funcMax = "3000";
-      funcMin = "0";
-      timeScale = "1";
-      ProgressMode = "ByTime";
-      Reverse = "0";
-      Loop = "1";
-      active = "1";
-      velocity = "1";
-      standAloneEmitter = "0";
-      sa_emitterLifetimeMS = "0";
-      sa_ejectionPeriodMS = "100";
-      sa_periodVarianceMS = "0";
-      sa_ejectionVelocity = "2";
-      sa_velocityVariance = "1";
-      sa_ejectionOffset = "0";
-      dataBlock = "g_DefaultNode";
-      position = "-27.1142 -11.6431 2.53891";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
