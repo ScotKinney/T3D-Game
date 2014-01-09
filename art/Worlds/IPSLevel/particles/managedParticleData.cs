@@ -187,5 +187,15 @@ datablock GraphEmitterData(AxelTestEmitter01Data)
    ProgressMode = "ByTime";
    Reverse = false;
    Loop = true;
-   particles = "AxelTestParticle01" TAB "AxelTestParticle02" TAB "AxelTestParticle03";
+   particles = "AxelTestParticle01";// TAB "AxelTestParticle02" TAB "AxelTestParticle03";
+};
+
+datablock SphereEmitterData(AxelSTestEmitter01Data)
+{
+   particles = "AxelTestParticle01";// TAB "AxelTestParticle02" TAB "AxelTestParticle03";
+   blendStyle = "NORMAL";
+   ejectionPeriodMS = "10";
+   velocityVariance = "0";
+   softParticles = "1";
+   softnessDistance = "1";
 };
