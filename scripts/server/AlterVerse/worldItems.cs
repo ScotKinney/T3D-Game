@@ -270,8 +270,8 @@ datablock ItemData(Book_of_Blinding)
    ItemID = 130;
    category = "magic";
    className = "magic";
-   shapeFile = "art/inv/magic/Runes/rIXrune.dts";
-   invIcon = "art/gui/icons/key.jpg";
+   shapeFile = "art/inv/Magic/Miscellaneous/BookofBlinding.dae";
+   invIcon = "art/gui/icons/bookoblind.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
