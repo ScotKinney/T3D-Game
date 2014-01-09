@@ -379,10 +379,13 @@ singleton Material(canopytree_two_canopytree_barkflat_lodhi)
 singleton Material(canopytree_three_canopytree_lodlo)
 {
    mapTo = "canopytree_lodlo";
-   diffuseMap[0] = "canopytree_diffuse_transparency";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/Forest/Trees/Canopy/canopytree_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "93";
 };
 
 singleton Material(canopytree_three_ColorEffectR166G229B229_material)
