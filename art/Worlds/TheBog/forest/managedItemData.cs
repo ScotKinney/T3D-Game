@@ -11,7 +11,7 @@
 datablock TSForestItemData(DTSSequia)
 {
    internalName = "DTSSequia";
-   shapeFile = "art/Packs/trees/pines/DTSSequia.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/DTSSequia.DAE";
    collidable = "1";
    radius = "0.5";
 };
@@ -19,7 +19,7 @@ datablock TSForestItemData(DTSSequia)
 datablock TSForestItemData(Fern_Vert_01)
 {
    internalName = "Fern_Vert_01";
-   shapeFile = "art/Packs/veg/fern/Fern_Vert_01.DAE";
+   shapeFile = "art/packs/Forests/veg/fern/Fern_Vert_01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";
@@ -30,7 +30,7 @@ datablock TSForestItemData(Fern_Vert_01)
 datablock TSForestItemData(Plant001)
 {
    internalName = "Plant001";
-   shapeFile = "art/Packs/veg/largeleaf/Plant001.DAE";
+   shapeFile = "art/packs/Forests/veg/largeleaf/Plant001.DAE";
    radius = "0.5";
    windScale = "1";
    trunkBendScale = "0.01";
@@ -42,7 +42,7 @@ datablock TSForestItemData(Plant001)
 datablock TSForestItemData(Bush2)
 {
    internalName = "Bush2";
-   shapeFile = "art/Packs/veg/bush01/Bush01.DAE";
+   shapeFile = "art/packs/Forests/veg/bush01/Bush01.DAE";
    radius = "0.7";
    windScale = "10";
    branchAmp = "0.03";
@@ -54,7 +54,7 @@ datablock TSForestItemData(Bush2)
 datablock TSForestItemData(DriPine01)
 {
    internalName = "DriPine01";
-   shapeFile = "art/Packs/trees/pines/DriPine01.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/DriPine01.DAE";
    windScale = "1";
    trunkBendScale = "0";
    branchAmp = "0.04";
@@ -65,7 +65,7 @@ datablock TSForestItemData(DriPine01)
 datablock TSForestItemData(Sequia_02)
 {
    internalName = "Sequia_02";
-   shapeFile = "art/Packs/trees/pines/Sequia_02.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/Sequia_02.DAE";
    tightnessCoefficient = "0.04";
    windScale = "2";
    branchAmp = "0.05";
@@ -76,7 +76,7 @@ datablock TSForestItemData(Sequia_02)
 datablock TSForestItemData(FiddleLeaf2)
 {
    internalName = "FiddleLeaf2";
-   shapeFile = "art/Packs/veg/fiddleleaf/FiddleLeaf.DAE";
+   shapeFile = "art/packs/Forests/veg/fiddleleaf/FiddleLeaf.DAE";
    radius = "0.25";
    windScale = "1";
    branchAmp = "0.04";
@@ -87,7 +87,7 @@ datablock TSForestItemData(FiddleLeaf2)
 datablock TSForestItemData(Fern_Vert_02)
 {
    internalName = "Fern_Vert_02";
-   shapeFile = "art/Packs/veg/fern/Fern_Vert_02.DAE";
+   shapeFile = "art/packs/Forests/veg/fern/Fern_Vert_02.DAE";
    radius = "0.25";
    windScale = "1";
    branchAmp = "0.02";
@@ -98,7 +98,7 @@ datablock TSForestItemData(Fern_Vert_02)
 datablock TSForestItemData(scrubPine)
 {
    internalName = "scrubPine";
-   shapeFile = "art/Packs/trees/pines/scrubPine.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/scrubPine.DAE";
    windScale = "1";
    branchAmp = "0.02";
    detailAmp = "0.02";
@@ -108,13 +108,13 @@ datablock TSForestItemData(scrubPine)
 datablock TSForestItemData(DeadStandingPine02)
 {
    internalName = "DeadStandingPine02";
-   shapeFile = "art/Packs/trees/pines/DeadStandingPine02.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/DeadStandingPine02.DAE";
 };
 
 datablock TSForestItemData(Fiscus2)
 {
    internalName = "Fiscus2";
-   shapeFile = "art/Packs/veg/fiscus/Fiscus01.DAE";
+   shapeFile = "art/packs/Forests/veg/fiscus/Fiscus01.DAE";
    windScale = "8";
    trunkBendScale = "0.001";
    branchAmp = "0.03";
@@ -125,7 +125,7 @@ datablock TSForestItemData(Fiscus2)
 datablock TSForestItemData(DeadStandingPine01)
 {
    internalName = "DeadStandingPine01";
-   shapeFile = "art/Packs/trees/pines/DeadStandingPine01.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/DeadStandingPine01.DAE";
 };
 
 //datablock TSForestItemData(ReedMod01)
@@ -150,7 +150,7 @@ datablock TSForestItemData(DeadStandingPine01)
 datablock TSForestItemData(SprucePine2)
 {
    internalName = "SprucePine2";
-   shapeFile = "art/Packs/trees/pines/SprucePine001.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/SprucePine001.DAE";
    radius = "0.75";
    windScale = "1";
    branchAmp = "0.04";
@@ -161,5 +161,5 @@ datablock TSForestItemData(SprucePine2)
 datablock TSForestItemData(PinTree002)
 {
    internalName = "PinTree002";
-   shapeFile = "art/Packs/trees/pines/PinTree002.DAE";
+   shapeFile = "art/packs/Forests/trees/pines/PinTree002.DAE";
 };
