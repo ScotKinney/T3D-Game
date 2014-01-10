@@ -37,6 +37,20 @@ datablock GraphEmitterNodeData(g_nodeLightning)
    timeMultiple = 20;
 };
 
+datablock GraphEmitterNodeData(g_nodeAxelTest01)
+{
+   timeMultiple = 20;
+};
+
+datablock GraphEmitterNodeData(g_nodeAxelTest02)
+{
+   timeMultiple = 20;
+};
+datablock GraphEmitterNodeData(g_nodeAxelTest03)
+{
+   timeMultiple = 20;
+};
+
 datablock GroundEmitterNodeData(gr_DefaultNode)
 {
    timeMultiple = 1;
