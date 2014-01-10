@@ -3,8 +3,8 @@ $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "skies/default" TAB
    "skies/overcast" TAB
    "groundcover/winter" TAB
-   "forests/veg/bush01" TAB
-   "forests/trees/pines" TAB
+   "veg/bush01" TAB
+   "trees/pines" TAB
    "props/clanFort" TAB
    "props/default" TAB
    "props/signs" TAB
