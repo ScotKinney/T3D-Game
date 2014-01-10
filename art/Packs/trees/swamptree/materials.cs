@@ -7,8 +7,8 @@ singleton Material(massive_swamptree_01_a_massive_swamptree_01_branch)
    specularPower[0] = "128";
    doubleSided = "1";
    translucent = "0";
-   diffuseMap[0] = "art/Packs/trees/swamptree/massive_swamptree_01_branch_diffuse.dds";
-   normalMap[0] = "art/Packs/trees/swamptree/massive_swamptree_01_branch_normal.dds";
+   diffuseMap[0] = "massive_swamptree_01_branch_diffuse.dds";
+   normalMap[0] = "massive_swamptree_01_branch_normal.dds";
    alphaTest = "1";
     alphaRef = "102";
    materialTag0 = "Branch";
@@ -24,8 +24,8 @@ singleton Material(massive_swamptree_01_a_massive_swamptree_01_bark)
    specularPower[0] = "128";
    doubleSided = "0";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/Packs/trees/swamptree/massive_swamptree_01_bark_diffuse.dds";
-   normalMap[0] = "art/Packs/trees/swamptree/massive_swamptree_01_bark_normal.dds";
+   diffuseMap[0] = "massive_swamptree_01_bark_diffuse.dds";
+   normalMap[0] = "massive_swamptree_01_bark_normal.dds";
    materialTag0 = "Bark";
    useAnisotropic[0] = "1";
    alphaRef = "0";

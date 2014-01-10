@@ -1,15 +1,15 @@
 singleton Material(Terrain_SFX_CliffRockTop_Mat)
 {
    mapTo = "greyrock";
-   diffuseMap[0] = "art/Packs/rocks/tex_volcanic_rock_base.dds";
-   detailMap[0] = "art/Packs/rocks/tex_volcanic_rock_dif.dds";
+   diffuseMap[0] = "tex_volcanic_rock_base.dds";
+   detailMap[0] = "tex_volcanic_rock_dif.dds";
    detailScale[0] = "7 7";
-   normalMap[0] = "art/Packs/rocks/tex_volcanic_rock_nrm.dds";
+   normalMap[0] = "tex_volcanic_rock_nrm.dds";
    customFootstepSound = "FootStepRock1Sound";
    useAnisotropic[0] = "1";
    materialTag0 = "Rocks";
    specularPower[0] = "128";
-   specularMap[0] = "art/Packs/rocks/tex_volcanic_rock_dif.dds";
+   specularMap[0] = "tex_volcanic_rock_dif.dds";
    customImpactSound = "FootStepRock1Sound";
 };
 

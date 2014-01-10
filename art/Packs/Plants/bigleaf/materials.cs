@@ -22,10 +22,10 @@ singleton Material(bigleaf_material)
    backLightFactor = "0.9 1.0 0.2";
 
    forestWindEnabled = 1;   
-   diffuseMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_diffuse_transparency.dds";
-   normalMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_normals_specular.dds";
+   diffuseMap[0] = "bigleaf_diffuse_transparency.dds";
+   normalMap[0] = "bigleaf_normals_specular.dds";
    materialTag0 = "Vegetation";
-   specularMap[0] = "art/Packs/worlds/kardia/Models/Forest/Plants/bigleaf/bigleaf_specular.dds";
+   specularMap[0] = "bigleaf_specular.dds";
    materialTag1 = "Vegetation";
    specularStrength[0] = "2.84314";
    useAnisotropic[0] = "1";
@@ -45,13 +45,13 @@ singleton Material(bigleaf_ColorEffectR227G153B153_material)
 singleton Material(bigleaf)
 {
    mapTo = "bigleaf";
-   diffuseMap[0] = "art/Packs/plants/bigleaf/bigleaf_diffuse_transparency";
+   diffuseMap[0] = "bigleaf_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Plants/bigleaf/bigleaf_normals.dds";
+   normalMap[0] = "bigleaf_normals.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Plants/bigleaf/bigleaf_specular.dds";
+   specularMap[0] = "bigleaf_specular.dds";
    alphaTest = "1";
    alphaRef = "134";
    showFootprints = "0";

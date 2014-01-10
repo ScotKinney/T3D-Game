@@ -71,15 +71,15 @@ singleton Material(Fern_Vert_02_TextureFern02)
 singleton Material(fern)
 {
    mapTo = "fern";
-   diffuseMap[0] = "art/Packs/veg/fern/fern_diffuse_transparency";
+   diffuseMap[0] = "fern_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "81";
    translucentBlendOp = "LerpAlpha";
    translucent = "0";
    showFootprints = "0";
-   normalMap[0] = "art/Packs/veg/fern/fern_normal.dds";
+   normalMap[0] = "fern_normal.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fern/fern_specular.dds";
+   specularMap[0] = "fern_specular.dds";
    alphaTest = "1";
    alphaRef = "73";
 };
@@ -96,13 +96,13 @@ singleton Material(Fern_Vert_01_Fern01)
 singleton Material(Fern_Vert_02_TextureFern02)
 {
    mapTo = "TextureFern02";
-   diffuseMap[0] = "art/Packs/veg/fern/fern_image3";
+   diffuseMap[0] = "fern_image3";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "74";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/fern/fern_image3_NRM.dds";
+   normalMap[0] = "fern_image3_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fern/fern_image3_SPEC.dds";
+   specularMap[0] = "fern_image3_SPEC.dds";
    alphaTest = "1";
    alphaRef = "67";
    showFootprints = "0";
@@ -111,13 +111,13 @@ singleton Material(Fern_Vert_02_TextureFern02)
 singleton Material(fern)
 {
    mapTo = "fern";
-   diffuseMap[0] = "art/Packs/veg/fern/fern_diffuse_transparency";
+   diffuseMap[0] = "fern_diffuse_transparency";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/fern/fern_normal.dds";
+   normalMap[0] = "fern_normal.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fern/fern_specular.dds";
+   specularMap[0] = "fern_specular.dds";
    alphaTest = "1";
    alphaRef = "107";
    showFootprints = "0";
@@ -126,13 +126,13 @@ singleton Material(fern)
 singleton Material(Fern_Vert_01_Fern01)
 {
    mapTo = "Fern01";
-   diffuseMap[0] = "art/Packs/veg/fern/fern_image2";
+   diffuseMap[0] = "fern_image2";
    specular[0] = "0.996078 0.996078 0.996078 1";
    specularPower[0] = "128";
    translucent = "0";
-   normalMap[0] = "art/Packs/veg/fern/fern_image3_NRM.dds";
+   normalMap[0] = "fern_image3_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fern/fern_image3_SPEC.dds";
+   specularMap[0] = "fern_image3_SPEC.dds";
    useAnisotropic[0] = "1";
    alphaTest = "1";
    alphaRef = "147";
@@ -143,13 +143,13 @@ singleton Material(Fern_Vert_01_Fern01)
 singleton Material(Fern_Vert_02_TextureFern02)
 {
    mapTo = "TextureFern02";
-   diffuseMap[0] = "art/Packs/veg/fern/fern_image3";
+   diffuseMap[0] = "fern_image3";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/fern/fern_image3_NRM.dds";
+   normalMap[0] = "fern_image3_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fern/fern_image3_SPEC.dds";
+   specularMap[0] = "fern_image3_SPEC.dds";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    alphaTest = "1";

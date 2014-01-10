@@ -25,8 +25,8 @@ singleton Material(defaultTree_bark_material)
 {
 	mapTo = "defaulttree_bark-material";
 
-	diffuseMap[0] = "art/Packs/trees/default/defaulttree_bark_diffuse.dds";
-	normalMap[0] = "art/Packs/trees/default/defaulttree_bark_normal_specular.dds";
+	diffuseMap[0] = "defaulttree_bark_diffuse.dds";
+	normalMap[0] = "defaulttree_bark_normal_specular.dds";
 
 	diffuseColor[0] = "1 1 1 1";
 	specular[0] = "0.9 0.9 0.9 1";
@@ -45,8 +45,8 @@ singleton Material(defaulttree_material)
 {
 	mapTo = "defaulttree-material";
 
-	diffuseMap[0] = "art/Packs/trees/default/defaulttree_diffuse_transparency.dds";
-	normalMap[0] = "art/Packs/trees/default/defaulttree_normal_specular.dds";
+	diffuseMap[0] = "defaulttree_diffuse_transparency.dds";
+	normalMap[0] = "defaulttree_normal_specular.dds";
 	specularMap[0] = "";
 
 	diffuseColor[0] = "1 1 1 1";
@@ -65,8 +65,8 @@ singleton Material(defaulttree_material)
 singleton Material(defaultTree_fronds_material)
 {
    mapTo = "defaulttree_fronds-material";
-   diffuseMap[0] = "art/Packs/trees/default/defaulttree_frond_diffuse_transparency.dds";
-   normalMap[0] = "art/Packs/trees/default/defaulttree_frond_normal_specular.dds";
+   diffuseMap[0] = "defaulttree_frond_diffuse_transparency.dds";
+   normalMap[0] = "defaulttree_frond_normal_specular.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
@@ -75,7 +75,7 @@ singleton Material(defaultTree_fronds_material)
    alphaRef = "127";
    translucent = "1";
    materialTag0 = "Tree_Default";
-   specularMap[0] = "art/Packs/trees/default/defaulttree_normal_specular.dds";
+   specularMap[0] = "defaulttree_normal_specular.dds";
    useAnisotropic[0] = "1";
    showFootprints = "0";
 };

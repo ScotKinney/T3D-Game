@@ -80,13 +80,13 @@ singleton Material(bananatree_mature_ColorEffectR153G228B153_material)
 singleton Material(bananatree_mature_bananatree)
 {
    mapTo = "bananatree";
-   diffuseMap[0] = "art/packs/trees/banana/bananatree_diffuse";
+   diffuseMap[0] = "bananatree_diffuse";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/trees/banana/bananatree_normal.dds";
+   normalMap[0] = "bananatree_normal.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/trees/banana/bananatree_specular.dds";
+   specularMap[0] = "bananatree_specular.dds";
    useAnisotropic[0] = "1";
    alphaTest = "1";
    alphaRef = "40";

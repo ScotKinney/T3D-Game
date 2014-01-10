@@ -20,13 +20,13 @@ singleton Material(Plant001_LargeLeaf01)
 singleton Material(Plant001_LargeLeaf01)
 {
    mapTo = "LargeLeaf01";
-   diffuseMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_DIF.dds";
+   diffuseMap[0] = "LargeLeaf_DIF.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_NRM.dds";
+   normalMap[0] = "LargeLeaf_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_SPC.dds";
+   specularMap[0] = "LargeLeaf_SPC.dds";
    alphaTest = "1";
    alphaRef = "181";
    showFootprints = "0";
@@ -35,13 +35,13 @@ singleton Material(Plant001_LargeLeaf01)
 singleton Material(Plant001_LargeLeaf01)
 {
    mapTo = "LargeLeaf01";
-   diffuseMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_DIF.dds";
+   diffuseMap[0] = "LargeLeaf_DIF.dds";
    specular[0] = "0.439216 0.439216 0.439216 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_NRM.dds";
+   normalMap[0] = "LargeLeaf_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/largeleaf/LargeLeaf_SPC.dds";
+   specularMap[0] = "LargeLeaf_SPC.dds";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    alphaTest = "1";

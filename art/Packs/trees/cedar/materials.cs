@@ -7,8 +7,8 @@ singleton Material(cedar_01_a_cedar_01_branch)
    specularPower[0] = "128";
    doubleSided = "1";
    translucent = "0";
-   diffuseMap[0] = "art/Packs/trees/cedar/cedar_01_branch_diffuse.dds";
-   normalMap[0] = "art/Packs/trees/cedar/cedar_01_branch_normal.dds";
+   diffuseMap[0] = "cedar_01_branch_diffuse.dds";
+   normalMap[0] = "cedar_01_branch_normal.dds";
    alphaTest = "1";
     alphaRef = "60";
    materialTag0 = "Branch";
@@ -22,6 +22,6 @@ singleton Material(cedar_01_a_cedar_01_bark)
    specularPower[0] = "128";
    doubleSided = "0";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/Packs/trees/cedar/cedar_01_bark_diffuse.dds";
+   diffuseMap[0] = "cedar_01_bark_diffuse.dds";
    materialTag0 = "Bark";
 };

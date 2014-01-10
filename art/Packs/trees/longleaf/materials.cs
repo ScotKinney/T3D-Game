@@ -24,9 +24,9 @@ singleton Material(longleaf_fronds)
    alphaRef = "114";
 
    forestWindEnabled = 1;   
-   diffuseMap[0] = "art/Packs/trees/longleaf/longleafleaves_diffuse_transparency.dds";
-   normalMap[0] = "art/Packs/trees/longleaf/longleafleaves_normal_specular.dds";
-   specularMap[0] = "art/Packs/trees/longleaf/longleafleaves_normal.dds";
+   diffuseMap[0] = "longleafleaves_diffuse_transparency.dds";
+   normalMap[0] = "longleafleaves_normal_specular.dds";
+   specularMap[0] = "longleafleaves_normal.dds";
    materialTag1 = "Vegetation";
    backLightFactor = "0.9 1.0 0.2";
    backlight = "1";

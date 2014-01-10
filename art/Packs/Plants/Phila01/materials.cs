@@ -2,7 +2,7 @@
 singleton Material(Phila01__1___Default)
 {
    mapTo = "_1_-_Default";
-   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/Phila01/PhilLeaf01";
+   diffuseMap[0] = "PhilLeaf01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "Sub";
@@ -22,7 +22,7 @@ singleton Material(Phila01__1___Default)
 singleton Material(Phila01__1___Default)
 {
    mapTo = "_1_-_Default";
-   diffuseMap[0] = "art/packs/worlds/Kardia/Models/Forest/Plants/Phila01/PhilLeaf01";
+   diffuseMap[0] = "Phila01/PhilLeaf01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "Sub";

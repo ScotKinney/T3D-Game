@@ -22,13 +22,13 @@ singleton Material(FiddleLeaf)
 singleton Material(fiddleleaf)
 {
    mapTo = "FiddleLeaf";
-   diffuseMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2.dds";
+   diffuseMap[0] = "FiddleLeaf2.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "71";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2_NRM.dds";
+   normalMap[0] = "FiddleLeaf2_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2_SPEC.dds";
+   specularMap[0] = "FiddleLeaf2_SPEC.dds";
    alphaTest = "1";
    alphaRef = "167";
    showFootprints = "0";
@@ -37,13 +37,13 @@ singleton Material(fiddleleaf)
 singleton Material(fiddleleaf)
 {
    mapTo = "FiddleLeaf";
-   diffuseMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2.dds";
+   diffuseMap[0] = "FiddleLeaf2.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2_NRM.dds";
+   normalMap[0] = "FiddleLeaf2_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/veg/fiddleleaf/FiddleLeaf2_SPEC.dds";
+   specularMap[0] = "FiddleLeaf2_SPEC.dds";
    doubleSided = "1";
    alphaTest = "1";
    alphaRef = "221";

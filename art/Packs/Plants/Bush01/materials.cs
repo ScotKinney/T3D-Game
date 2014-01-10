@@ -14,13 +14,13 @@ singleton Material(Bush01_mat)
 singleton Material(Bush01)
 {
    mapTo = "Bush01";
-   diffuseMap[0] = "art/Packs/Plants/Bush01/largeFiscus2.dds";
+   diffuseMap[0] = "largeFiscus2.dds";
    specular[0] = "0.968628 0.996078 0.901961 0.726";
    specularPower[0] = "128";
    translucentBlendOp = "LerpAlpha";
-   normalMap[0] = "art/Packs/Plants/Bush01/largeFiscus2_NRM.dds";
+   normalMap[0] = "largeFiscus2_NRM.dds";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Plants/Bush01/largeFiscus2_SPEC.dds";
+   specularMap[0] = "largeFiscus2_SPEC.dds";
    alphaTest = "1";
    alphaRef = "174";
    showFootprints = "0";

@@ -11,3 +11,12 @@ singleton Material(SelfImmKit)
    subSurfaceColor[0] = "0.00392157 0.00392157 0.00392157 1";
    translucentBlendOp = "None";
 };
+
+singleton Material(SelfImmKit_ImmoBoxMat)
+{
+   mapTo = "ImmoBoxMat";
+   diffuseColor[0] = "0.8 0.8 0.8 1";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
