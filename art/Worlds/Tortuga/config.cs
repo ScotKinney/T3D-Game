@@ -1,19 +1,19 @@
 // Tortuga level config
 $AlterVerse::AvSet = "Base";
-$AlterVerse::ArtPacks = "trees/banana" TAB
-   "trees/canopy" TAB
-   "trees/longleaf" TAB
-   "trees/palm" TAB
-   "veg/bigleaf" TAB
-   "veg/broadleaf" TAB
-   "veg/deadbush" TAB
-   "veg/fern" TAB
+$AlterVerse::ArtPacks = "forests/trees/banana" TAB
+   "forests/trees/canopy" TAB
+   "forests/trees/longleaf" TAB
+   "forests/trees/palm" TAB
+   "forests/veg/bigleaf" TAB
+   "forests/veg/broadleaf" TAB
+   "forests/veg/deadbush" TAB
+   "forests/veg/fern" TAB
    "env/GroundCover" TAB
    "env/underwaterCave" TAB
    "env/volcano" TAB
    "env/waterfall" TAB
    "skies/default" TAB
-   "rocks/default" TAB
+   "forests/rocks/default" TAB
    "props/clanFort" TAB
    "props/default" TAB
    "props/medcity" TAB
