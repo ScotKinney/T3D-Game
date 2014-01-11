@@ -68,6 +68,9 @@ exec("./alterVerse/Lantern.cs");
 exec("./alterVerse/fishBait.cs");
 exec("./alterVerse/fishing.cs");
 
+// Load crafting scripts
+exec("./alterVerse/crafting.cs");
+
 // Load spell manager scripts
 exec("./SpellManager.cs");
 

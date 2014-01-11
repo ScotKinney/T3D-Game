@@ -199,16 +199,19 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
       //%this.showHitPoints(%startvec, %endvec);
       //echo("target = " @ %target.getId() @ " and player = " @ %player.getId() @ "\n");
 
+      // store end point and normal from raycast return buffer
+      %pos = getWords(%scanTarg, 1, 3);
+      //%normal = getWords(%scanTarg, 4, 6);
+
       if ( !isObject(%target.client) && !%target.isBot )
       {  // Hit something other than a player or AI...Just play sound
          %hitSound = %this.hitStaticSound;
          serverPlay3D(%hitSound,%player.getTransform());
+         
+         // Give crafting scripts a chance to process the hit
+         onStaticMeleeHit(%target, %player, %this, %pos);
          return;
       }
-
-      // store end point and normal from raycast return buffer
-      %pos = getWords(%scanTarg, 1, 3);
-      //%normal = getWords(%scanTarg, 4, 6);
 
       // shields and weapon rebounding
       if(%target.shielded || %target.hthDamageSeqPlaying)
