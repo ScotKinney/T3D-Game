@@ -145,7 +145,7 @@ datablock ParticleData(AxelTestParticle01)
    textureName          = "core/art/particles/ember";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
-   gravityCoefficient   = -0.05;   // rises slowly
+   gravityCoefficient   = "-0.051282";   // rises slowly
    inheritedVelFactor   = 0.00;
    lifetimeMS           = 3000;
    lifetimeVarianceMS   = 0;
@@ -154,17 +154,19 @@ datablock ParticleData(AxelTestParticle01)
    spinRandomMax        = 90.0;
    spinSpeed            = 0;
 
-   colors[0]     = "1.000000 0.800000 0.000000 0.800000";
-   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
-   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+   colors[0]     = "1 0.795276 0 0.795276";
+   colors[1]     = "1 0.692913 0 0.795276";
+   colors[2]     = "1 0 0 0.5";
 
-   sizes[0]      = 0.05;
-   sizes[1]      = 0.1;
-   sizes[2]      = 0.05;
+   sizes[0]      = "0.0488311";
+   sizes[1]      = "0.0976622";
+   sizes[2]      = "0.0488311";
 
    times[0]      = 0.0;
-   times[1]      = 0.5;
+   times[1]      = "0.498039";
    times[2]      = 1.0;
+   HighResTexture = "core/art/particles/ember";
+   animTexName = "core/art/particles/ember";
 };
 
 datablock ParticleData(AxelTestParticle02)
