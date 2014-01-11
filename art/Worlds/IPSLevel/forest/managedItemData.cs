@@ -93,7 +93,7 @@ datablock TSForestItemData(Palm_Bush)
 datablock TSForestItemData(rivergrass0)
 {
    internalName = "rivergrass0";
-   shapeFile = "art/packs/plants/rivergrass/rivergrass.DAE";
+   shapeFile = "art/packs/veg/rivergrass/rivergrass.DAE";
    collidable = "0";
    rigidity = "1";
    windScale = "0.1";
@@ -160,7 +160,7 @@ datablock TSForestItemData(Shrub_Large)
 datablock TSForestItemData(BigLeaf_Plant)
 {
    internalName = "BigLeaf_Plant";
-   shapeFile = "art/packs/plants/bigleaf/bigleaf.dae";
+   shapeFile = "art/packs/veg/bigleaf/bigleaf.dae";
    trunkBendScale = "0.003";
    branchAmp = "10";
    detailAmp = "30";
@@ -175,26 +175,26 @@ datablock TSForestItemData(BigLeaf_Plant)
 
 datablock TSForestItemData(bigrock02)
 {
-   internalName = "art/packs/rocks/bigrock02";
+   internalName = "art/packs/rocks/default/bigrock02";
    shapeFile = "bigrock02.dts";
 };
 
 datablock TSForestItemData(bigrock03)
 {
-   internalName = "art/packs/rocks/bigrock03";
+   internalName = "art/packs/rocks/default/bigrock03";
    shapeFile = "bigrock03.dts";
 };
 
 datablock TSForestItemData(bigrock01)
 {
-   internalName = "art/packs/rocks/bigrock01";
+   internalName = "art/packs/rocks/default/bigrock01";
    shapeFile = "bigrock01.dts";
 };
 
 datablock TSForestItemData(Bush2)
 {
    internalName = "Bush2";
-   shapeFile = "art/packs/plants/Bush01/Bush01.DAE";
+   shapeFile = "art/packs/veg/Bush01/Bush01.DAE";
    windScale = "1";
    branchAmp = "0.02";
    detailAmp = "2";
@@ -204,7 +204,7 @@ datablock TSForestItemData(Bush2)
 datablock TSForestItemData(Phila2)
 {
    internalName = "Phila2";
-   shapeFile = "art/packs/plants/Phila01/Phila01.DAE";
+   shapeFile = "art/packs/veg/Phila01/Phila01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";
@@ -215,7 +215,7 @@ datablock TSForestItemData(Phila2)
 datablock TSForestItemData(TropicFern2)
 {
    internalName = "TropicFern2";
-   shapeFile = "art/packs/plants/TropicFern/TropicFern01.DAE";
+   shapeFile = "art/packs/veg/TropicFern/TropicFern01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";

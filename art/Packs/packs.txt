@@ -33,12 +33,6 @@
 // "art/Packs/props/VikingCastle"
 // "art/Packs/props/wallTorch"
 
-// "art/Packs/Plants/bigleaf"
-// "art/Packs/Plants/Bush01"
-// "art/Packs/Plants/Phila01"
-// "art/Packs/Plants/rivergrass"
-// "art/Packs/Plants/TropicFern"
-
 // "art/Packs/rocks/default"
 // "art/Packs/rocks/T3D"
 
