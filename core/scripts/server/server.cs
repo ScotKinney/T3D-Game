@@ -357,6 +357,9 @@ function RegisterServer()
             $heartbeatSchedule = schedule(90000, 0, alterVerseServerHeartbeat);
             echo("Server registered with database.");
             ConnectToChat();
+            $AlterVerse::serverOwner = 10;
+            $AlterVerse::ownerName = "Jalen Blade";
+            echo("Owner Name = " @ $AlterVerse::ownerName);
             return;
          }
          else
