@@ -181,3 +181,20 @@ singleton Material(_10_outcroppingone_ColorEffectR28G89B177_material)
    translucentBlendOp = "None";
    materialTag0 = "Rocks";
 };
+
+singleton Material(BigRocks123_Mat)
+{
+   mapTo = "tex_volcanic_rock_base";
+   diffuseColor[0] = "1 1 1 1";
+   specularPower[0] = "8";
+   translucentBlendOp = "LerpAlpha";
+   diffuseMap[0] = "tex_volcanic_rock_base.dds";
+   //detailMap[0] = "tex_volcanic_rock_dif.dds";
+   //detailScale[0] = "7 7";
+   normalMap[0] = "tex_volcanic_rock_nrm.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Rocks";
+   customFootstepSound = "FootStepRock1Sound";
+   customImpactSound = "FootStepRock1Sound";
+};
+
