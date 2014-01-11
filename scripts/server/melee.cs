@@ -209,7 +209,7 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
          serverPlay3D(%hitSound,%player.getTransform());
          
          // Give crafting scripts a chance to process the hit
-         onStaticMeleeHit(%target, %player, %this, %pos);
+         onStaticMeleeHit(%target, %player, %this, %pos, %attack);
          return;
       }
 
