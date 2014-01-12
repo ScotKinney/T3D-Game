@@ -93,7 +93,7 @@ datablock TSForestItemData(Palm_Bush)
 datablock TSForestItemData(rivergrass0)
 {
    internalName = "rivergrass0";
-   shapeFile = "art/packs/env/groundcover/rivergrass.DAE";
+   shapeFile = "art/packs/envrivergrass/rivergrass.DAE";
    collidable = "0";
    rigidity = "1";
    windScale = "0.1";
@@ -175,20 +175,20 @@ datablock TSForestItemData(BigLeaf_Plant)
 
 datablock TSForestItemData(bigrock02)
 {
-   internalName = "art/packs/rocks/default";
-   shapeFile = "bigrock02.dts";
+   internalName = "bigrock02";
+   shapeFile = "art/packs/rocks/default/bigrock02.dts";
 };
 
 datablock TSForestItemData(bigrock03)
 {
-   internalName = "art/packs/rocks/default";
-   shapeFile = "bigrock03.dts";
+   internalName = "bigrock03";
+   shapeFile = "art/packs/rocks/default/bigrock03.dts";
 };
 
 datablock TSForestItemData(bigrock01)
 {
-   internalName = "art/packs/rocks/default";
-   shapeFile = "bigrock01.dts";
+   internalName = "bigrock01";
+   shapeFile = "art/packs/rocks/default/bigrock01.dts";
 };
 
 datablock TSForestItemData(Bush2)

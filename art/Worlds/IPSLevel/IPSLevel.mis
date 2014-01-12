@@ -11,13 +11,13 @@ new SimGroup(MissionGroup) {
       new SpawnSphere(Main_A_PlayerSpawn01) {
          autoSpawn = "0";
          spawnTransform = "0";
-         radius = "5";
+         radius = "1";
          sphereWeight = "1";
          indoorWeight = "1";
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "-31.2433 -14.2696 10.2945";
+         position = "-31.2433 -14.2696 9.43483";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -435,28 +435,6 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
 
-         new SphereEmitterNode(TestSphereEmitter) {
-            emitter = "EmitterRockImpact";
-            sa_thetaMin = "0";
-            sa_thetaMax = "90";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
-            active = "1";
-            velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "1000";
-            sa_periodVarianceMS = "500";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "0";
-            sa_ejectionOffset = "0";
-            dataBlock = "DefaultEmitterNodeData";
-            position = "-31.1334 -15.147 1.40532";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-         };
          new GraphEmitterNode(TestGraphEmitter) {
             emitter = "g_MarsTeleport";
             Grounded = "0";
@@ -479,7 +457,7 @@ new SimGroup(MissionGroup) {
             sa_velocityVariance = "0";
             sa_ejectionOffset = "1";
             dataBlock = "g_DefaultNode";
-            position = "-31.3038 -14.2281 0.231402";
+            position = "-31.3038 -14.2281 5.56461";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -552,7 +530,7 @@ new SimGroup(MissionGroup) {
                      avOptions = "80,179,215,102,137,333,328,324,326,325,361";
                      behavior = "LeashedBehavior";
                      block = "FemalePlayerData";
-                     botBelongsToMe = "2865";
+                     botBelongsToMe = "2864";
                      delayRespawn = "658";
                      distDetect = "1";
                      fov = "150";
@@ -573,23 +551,6 @@ new SimGroup(MissionGroup) {
       new SimGroup(Main_Meshes) {
          canSave = "1";
          canSaveDynamicFields = "1";
-
-         new TSStatic(BigRock) {
-            shapeName = "art/Packs/rocks/T3D/rock1.dts";
-            playAmbient = "1";
-            meshCulling = "0";
-            originSort = "0";
-            collisionType = "Collision Mesh";
-            decalType = "Collision Mesh";
-            allowPlayerStep = "1";
-            renderNormals = "0";
-            forceDetail = "-1";
-            position = "-29.9143 -19.4496 -1.51025";
-            rotation = "1 0 0 0";
-            scale = "1 1 1";
-            canSave = "1";
-            canSaveDynamicFields = "1";
-         };
       };
    };
    new TSStatic() {
@@ -602,11 +563,13 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-14.3567 -15.3136 0.664962";
+      position = "-19.1047 -15.3136 1.49496";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         craftingMaterial = "true";
+         craftType = "wood";
    };
 };
 //--- OBJECT WRITE END ---

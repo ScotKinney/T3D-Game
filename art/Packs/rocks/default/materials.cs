@@ -13,46 +13,8 @@ singleton Material(_04_peakone_ColorEffectR229G166B215_material)
 
 
 
-singleton Material(_20_smallrocksix_tex_underwater_rock)
-{
-	mapTo = "tex_underwater_rock";
-
-	diffuseMap[0] = "tex_rock_underwater_dif.dds";
-	normalMap[0] = "tex_rock_underwater_nrm.dds";
-	specularMap[0] = "";
-
-	diffuseColor[0] = "1 1 1 1";
-	specular[0] = "0.9 0.9 0.9 1";
-	specularPower[0] = 10;
-
-	doubleSided = false;
-	translucent = false;
-	translucentBlendOp = "None";
-   backLightFactor = "0.9 1.0 0.2";
-   forestWindEnabled = "1";
-   backlight = "1";
-   materialTag0 = "Rocks";
-};
 
 // VOLCANO ROCKS -----------------------------------------------------------------
-singleton Material(_23_volcanicrockone_tex_volcano_rocks)
-{
-	mapTo = "tex_volcano_rocks";
-
-	diffuseMap[0] = "cas_cobble2_shadow.dds";
-	normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
-	specularMap[0] = "";
-
-	diffuseColor[0] = "1 1 1 1";
-	specular[0] = "0.9 0.9 0.9 1";
-	specularPower[0] = 10;
-
-	doubleSided = false;
-	translucent = false;
-	translucentBlendOp = "None";
-   detailMap[0] = "tex_volcanic_rock_dif.dds";
-   materialTag0 = "Rocks";
-};
 
 
 singleton Material(_11_groupone_ColorEffectR88G199B225_material)
