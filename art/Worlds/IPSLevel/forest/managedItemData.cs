@@ -93,7 +93,7 @@ datablock TSForestItemData(Palm_Bush)
 datablock TSForestItemData(rivergrass0)
 {
    internalName = "rivergrass0";
-   shapeFile = "art/packs/envrivergrass/rivergrass.DAE";
+   shapeFile = "art/packs/env/groundcover/rivergrass.DAE";
    collidable = "0";
    rigidity = "1";
    windScale = "0.1";
