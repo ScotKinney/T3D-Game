@@ -34,19 +34,14 @@ function onStaticMeleeHit(%obj, %player, %weaponImg, %pos, %attack)
       {
          case 1:
          messageClient(%player.client, "", "That's a nice wood you got there...");
-         break;
          case 2:
          messageClient(%player.client, "", "You like that tree don't you?");
-         break;
          case 3:
          messageClient(%player.client, "", "Oh my.... Does that happen often?");
-         break;
          case 4:
          messageClient(%player.client, "", "Is that what happens when you hit things!?");
-         break;
          default:
          messageClient(%player.client, "", "THWOK! Oh gross.. Is that... NAH!");
-         break;
       }
    }
 }
