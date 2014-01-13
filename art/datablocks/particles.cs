@@ -487,3 +487,53 @@ datablock SphereEmitterData(shrine_fire_emitter)
    thetaMin = "0";
 };
 
+datablock ParticleData(damageAmountParticle)
+{
+   textureName          = "core/art/particles/SpriteNumbers01";
+   dragCoeffiecient     = 0;
+   gravityCoefficient   = -0.1;
+   inheritedVelFactor   = "0.8";
+   constantAcceleration = "0";
+   lifetimeMS           = "3000";
+   lifetimeVarianceMS   = "500";
+   useInvAlpha =  false;
+   spinRandomMin = -5;
+   spinRandomMax = 5;
+
+   colors[0]     = "0.5 0.2 0.2 0.8";
+   colors[1]     = "0.9 0.4 0.4 1.0";
+   colors[2]     = "0.75 0.1 0.1 0.9";
+   colors[3]     = ".5 0 0 0";
+
+   sizes[0]      = 0.1;
+   sizes[1]      = 0.4;
+   sizes[2]      = 0.3;
+   sizes[3]      = 0;
+
+   times[0]      = 0.0;
+   times[1]      = 0.35;
+   times[2]      = 0.8;
+   times[3]      = 1;
+   
+   dragCoefficient = 0.25;
+   spinSpeed = "1.0";
+   animTexName = "core/art/particles/SpriteNumbers01";
+   textureCoords[0]     = "0.375 0.166667";
+   textureCoords[1]     = "0.375 0.2474";
+   textureCoords[2]     = "0.4974 0.2474";
+   textureCoords[3]     = "0.4974 0.166667";
+};
+
+datablock SphereEmitterData(NumberTestEmitter)
+{
+   particles = "damageAmountParticle";
+   blendStyle = "NORMAL";
+   ejectionPeriodMS = "2000";
+   ejectionVelocity = "0.5";
+   velocityVariance = "0.1";
+   softParticles = "0";
+   softnessDistance = "1";
+   thetaMin = "15";
+   thetaMax = "30";
+   phiVariance = "360";
+};
