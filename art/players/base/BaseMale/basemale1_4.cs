@@ -10,6 +10,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setNodeTransform("eye", "0.000158001 0.126053 2.43575 1 0 0 0", "1");
    %this.setNodeTransform("mount3", "-0.214266 0.17907 1.61817 1 0 0 0", "1");
    %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
+   %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
    %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
@@ -539,7 +540,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/A_sStrafeRight.dsq", "A_sStrafeRight", "0", "34", "1", "0");
    %this.setSequenceCyclic("A_sStrafeRight", "1");
    %this.addSequence("art/players/base/Anims/A_sDeath1.dsq", "A_sDeath1", "0", "34", "1", "0");
-
+   
+   
 }
 
 $mack = true;
