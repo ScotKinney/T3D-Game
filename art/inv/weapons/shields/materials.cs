@@ -1,3 +1,39 @@
+singleton Material(bucklerShieldA)
+{
+   mapTo = "Buckler_A_color";
+   diffuseMap[0] = "Buckler_A_color.dds";
+   normalMap[0] = "Buckler_A_normals.dds";
+   specularPower[0] = "99";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Buckler_A_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(bucklerShieldB)
+{
+   mapTo = "Buckler_B_color";
+   diffuseMap[0] = "Buckler_B_color.dds";
+   normalMap[0] = "Buckler_B_normals.dds";
+   specularPower[0] = "116";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Buckler_B_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(bucklerShieldC)
+{
+   mapTo = "Buckler_C_color";
+   diffuseMap[0] = "Buckler_C_color.dds";
+   normalMap[0] = "Buckler_C_normals.dds";
+   specularPower[0] = "101";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Buckler_C_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
 singleton Material(roundShieldWoodA)
 {
    mapTo = "unmapped_mat";
@@ -75,9 +111,10 @@ singleton Material(roundShieldWoodG)
    materialTag0 = "Miscellaneous";
 };
 
+
 singleton Material(roundShieldWoodH)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "ShieldRoundNub_dif";
    diffuseMap[0] = "round_wood_H_dif.dds";
    normalMap[0] = "round_wood_H_normal.dds";
    specularPower[0] = "128";
@@ -99,7 +136,7 @@ singleton Material(roundShieldWoodI)
 
 singleton Material(squareShieldA)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "sguare_A_color";
    diffuseMap[0] = "square_A_dif.dds";
    normalMap[0] = "square_A_normal.dds";
    specularPower[0] = "128";
