@@ -491,7 +491,7 @@ datablock ParticleData(damageAmountParticle)
 {
    textureName          = "core/art/particles/SpriteNumbers01";
    dragCoeffiecient     = 0;
-   gravityCoefficient   = -0.1;
+   gravityCoefficient   = -0.03;
    inheritedVelFactor   = "0.8";
    constantAcceleration = "0";
    lifetimeMS           = "3000";
@@ -500,8 +500,8 @@ datablock ParticleData(damageAmountParticle)
    spinRandomMin = -5;
    spinRandomMax = 5;
 
-   colors[0]     = "0.5 0.2 0.2 0.8";
-   colors[1]     = "0.9 0.4 0.4 1.0";
+   colors[0]     = "0.5 0.1 0.1 0.8";
+   colors[1]     = "0.9 0.25 0.25 1.0";
    colors[2]     = "0.75 0.1 0.1 0.9";
    colors[3]     = ".5 0 0 0";
 
