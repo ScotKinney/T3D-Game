@@ -34,6 +34,42 @@ singleton Material(bucklerShieldC)
    useAnisotropic[0] = "1";
 };
 
+singleton Material(heaterShieldA)
+{
+   mapTo = "heater_A_dif";
+   diffuseMap[0] = "heater_A_dif.dds";
+   normalMap[0] = "heater_A_normals.dds";
+   specularPower[0] = "88";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "heater_A_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(heaterShieldB)
+{
+   mapTo = "heater_B_dif";
+   diffuseMap[0] = "heater_B_dif.dds";
+   normalMap[0] = "heater_B_normals.dds";
+   specularPower[0] = "88";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "heater_B_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(heaterShieldC)
+{
+   mapTo = "heater_C_dif";
+   diffuseMap[0] = "heater_C_dif.dds";
+   normalMap[0] = "heater_C_normals.dds";
+   specularPower[0] = "88";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "heater_C_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
 singleton Material(roundShieldWoodA)
 {
    mapTo = "unmapped_mat";
@@ -42,7 +78,8 @@ singleton Material(roundShieldWoodA)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_A_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodB)
@@ -53,7 +90,8 @@ singleton Material(roundShieldWoodB)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_B_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodC)
@@ -64,7 +102,8 @@ singleton Material(roundShieldWoodC)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_C_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodD)
@@ -75,7 +114,8 @@ singleton Material(roundShieldWoodD)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_D_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodE)
@@ -86,7 +126,8 @@ singleton Material(roundShieldWoodE)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_E_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodF)
@@ -97,7 +138,8 @@ singleton Material(roundShieldWoodF)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_F_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodG)
@@ -108,7 +150,8 @@ singleton Material(roundShieldWoodG)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_G_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 
@@ -120,7 +163,8 @@ singleton Material(roundShieldWoodH)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_H_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(roundShieldWoodI)
@@ -131,18 +175,20 @@ singleton Material(roundShieldWoodI)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "round_wood_I_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldA)
 {
-   mapTo = "sguare_A_color";
+   mapTo = "square_A_dif";
    diffuseMap[0] = "square_A_dif.dds";
    normalMap[0] = "square_A_normal.dds";
-   specularPower[0] = "128";
+   specularPower[0] = "86";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_A_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldB)
@@ -153,7 +199,8 @@ singleton Material(squareShieldB)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_B_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldC)
@@ -164,7 +211,8 @@ singleton Material(squareShieldC)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_C_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldD)
@@ -175,7 +223,8 @@ singleton Material(squareShieldD)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_D_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldE)
@@ -186,7 +235,8 @@ singleton Material(squareShieldE)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_E_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldF)
@@ -197,7 +247,8 @@ singleton Material(squareShieldF)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_F_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldG)
@@ -208,7 +259,8 @@ singleton Material(squareShieldG)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_G_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldH)
@@ -219,7 +271,8 @@ singleton Material(squareShieldH)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_H_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(squareShieldI)
@@ -230,5 +283,6 @@ singleton Material(squareShieldI)
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    specularMap[0] = "square_I_specular.dds";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
 };
