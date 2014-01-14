@@ -1,7 +1,7 @@
 singleton Material(bucklerShieldA)
 {
    mapTo = "Buckler_A_color";
-   diffuseMap[0] = "Buckler_A_color.dds";
+   diffuseMap[0] = "Buckler_A_dif.dds";
    normalMap[0] = "Buckler_A_normals.dds";
    specularPower[0] = "99";
    pixelSpecular[0] = "1";
@@ -13,7 +13,7 @@ singleton Material(bucklerShieldA)
 singleton Material(bucklerShieldB)
 {
    mapTo = "Buckler_B_color";
-   diffuseMap[0] = "Buckler_B_color.dds";
+   diffuseMap[0] = "Buckler_B_dif.dds";
    normalMap[0] = "Buckler_B_normals.dds";
    specularPower[0] = "116";
    pixelSpecular[0] = "1";
@@ -25,7 +25,7 @@ singleton Material(bucklerShieldB)
 singleton Material(bucklerShieldC)
 {
    mapTo = "Buckler_C_color";
-   diffuseMap[0] = "Buckler_C_color.dds";
+   diffuseMap[0] = "Buckler_C_dif.dds";
    normalMap[0] = "Buckler_C_normals.dds";
    specularPower[0] = "101";
    pixelSpecular[0] = "1";
