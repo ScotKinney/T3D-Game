@@ -286,3 +286,39 @@ singleton Material(squareShieldI)
    materialTag0 = "Weapons";
    useAnisotropic[0] = "1";
 };
+
+singleton Material(Targe_ShieldA)
+{
+   mapTo = "Targe_A_dif";
+   diffuseMap[0] = "Targe_A_dif.dds";
+   normalMap[0] = "Targe_A_normals.dds";
+   specularPower[0] = "99";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Targe_A_specular.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Weapons";
+};
+
+singleton Material(Targe_ShieldB)
+{
+   mapTo = "Targe_B_dif";
+   diffuseMap[0] = "Targe_B_dif.dds";
+   normalMap[0] = "Targe_B_normals.dds";
+   specularPower[0] = "116";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Targe_B_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Targe_ShieldC)
+{
+   mapTo = "Targe_C_dif";
+   diffuseMap[0] = "Targe_C_dif.dds";
+   normalMap[0] = "Targe_C_normals.dds";
+   specularPower[0] = "101";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "Targe_C_specular.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Weapons";
+};
