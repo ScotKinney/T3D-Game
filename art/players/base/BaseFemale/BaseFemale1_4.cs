@@ -557,7 +557,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Anims/A_sStrafeRight.dsq", "A_sStrafeRight", "0", "34", "1", "0");
    %this.setSequenceCyclic("A_sStrafeRight", "1");
    %this.addSequence("art/players/base/Anims/A_sDeath1.dsq", "A_sDeath1", "0", "34", "1", "0");
-
+   %this.addNode("mount4", "lForeArm", "-1.01155 0.175602 2.00712 0.0145075 -0.163052 0.986511 0.193837", "1");
 }
 
 $mack = true;
