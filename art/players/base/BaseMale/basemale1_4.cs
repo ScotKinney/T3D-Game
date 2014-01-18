@@ -25,8 +25,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("Head", "1");
    %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "RunFull_Forward", "0", "35", "1", "0");
    %this.setSequenceCyclic("RunFull_Forward", "1");
-   %this.addTrigger("RunFull_Forward", "14", "1");
-   %this.addTrigger("RunFull_Forward", "32", "2");
+   %this.addTrigger("RunFull_Forward", "32", "1");
+   %this.addTrigger("RunFull_Forward", "16", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Back", "0", "34", "1", "0");
    %this.setSequenceCyclic("Back", "1");
    %this.addTrigger("Back", "8", "1");
@@ -44,6 +44,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("JumpFull", "23", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Falling.dsq", "FallFull", "0", "39", "1", "0");
    %this.setSequenceCyclic("FallFull", "1");
+   %this.addSequence("art/players/base/Seqs/Basic/LandFull.dsq", "Land", "0", "30", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/LandFull.dsq", "LandFull", "0", "30", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Sprint.dsq", "SprintFull_Forward", "0", "23", "1", "0");
    %this.setSequenceCyclic("SprintFull_Forward", "1");
@@ -275,7 +276,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("E_Wave", "0");
    %this.setSequencePriority("CrouchFull_Root", "1");
    %this.setSequencePriority("SprintFull_Back", "1");
-   %this.setSequencePriority("CastLine", "1");
    %this.setSequencePriority("SwimFull_ForwardUnder", "1");
    %this.setSequencePriority("Damage_Body_R1", "1");
    %this.setSequencePriority("Damage_Body_L1", "1");
@@ -288,7 +288,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Cast.dsq", "CastLine", "0", "34", "1", "0");
    %this.addTrigger("CastLine", "19", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Blend.dsq", "Castline_Blend", "0", "34", "1", "0");
-   %this.addTrigger("Cast_Blend", "19", "3");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunFull.dsq", "Fire_Flintlock", "0", "19", "1", "0");
    %this.addTrigger("Fire_Flintlock", "9", "3");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunBlend.dsq", "Fire_FlintLockBlend", "0", "24", "1", "0");
