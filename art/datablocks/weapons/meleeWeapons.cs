@@ -775,5 +775,11 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
    hthAttack[7]                     = Staff_Swing8;
    hthAttack[8]                     = Staff_Swing9;
    hthAttack[9]                     = Staff_Swing10;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
 };
+
 ///////////END WizardsStaff////////////////////
