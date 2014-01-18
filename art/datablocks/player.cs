@@ -53,9 +53,9 @@ datablock PlayerData(DefaultPlayerData)
    runForce = 48 * 90;
    runEnergyDrain = 0;
    minRunEnergy = 0;
-   maxForwardSpeed = 3;//6
+   maxForwardSpeed = 2.5;//6
    maxBackwardSpeed = 2;//5
-   maxSideSpeed = 1;//5
+   maxSideSpeed = 2;//5
 
    sprintEnergyDrain = 0; //how much energy to drain while printing until player cannot sprint anymore
    minSprintEnergy = 0; //the minimum amount of energy to drain
