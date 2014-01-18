@@ -15,7 +15,7 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // By default our attack animations are played as blended animations in the
    // arm thread. Set fullSkelAnim to true to play the animation in the action
    // thread.
-   fullSkelAnim = false;
+   fullSkelAnim = true;
 
    // You must provide an item for weapons that can also be carried in
    // inventory. This is the name of the WEAPON that comes from the weapons

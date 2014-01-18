@@ -34,7 +34,7 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
    wetProjectile = DaggerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -73,7 +73,7 @@ datablock ShapeBaseImageData(SlingDartImage : BaseTriggeredImage)
    wetProjectile = slingdartWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = ThrowDartSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -112,7 +112,7 @@ datablock ShapeBaseImageData(JavelinImage : BaseTriggeredImage)
    wetProjectile = JavelinWetProjectile;
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -151,7 +151,7 @@ datablock ShapeBaseImageData(HammerImage : BaseTriggeredImage)
    wetProjectile = HammerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -189,7 +189,7 @@ datablock ShapeBaseImageData(TomahawkImage : BaseTriggeredImage)
    wetProjectile = TomahawkWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -238,6 +238,6 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
    fullSkelAnim = true;    // The grenade throw is not a blended anim
    fireAnim = "Throw_Grenade";
    fireSound = BaseThrowSound;
-   canH2H = true; // Allow H2H combat while this weapon is mounted
+   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
