@@ -23,53 +23,53 @@ datablock SFXProfile(Kick1Sound)
 };
 
 ////////////////////////////////Right Hand//////////////////////////////////////
-singleton GameBaseData(RH_PunchCombo)
+singleton GameBaseData(Punch1_RH)
 {
-   seqName = "RH_PunchCombo";
-   fullSkelAnim = false;
+   seqName = "Punch1_RH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.8;
+   startDamage = 0;
+   endDamage = .5;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 500;
 };
 
-singleton GameBaseData(RH_PunchDown)
+singleton GameBaseData(Punch2_RH)
 {
-   seqName = "RH_PunchDown";
-   fullSkelAnim = false;
+   seqName = "Punch2_RH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.3;
-   endDamage = 0.6;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
 };
 
-singleton GameBaseData(RH_PunchJab)
+singleton GameBaseData(Punch3_RH)
 {
-   seqName = "RH_PunchJab";
-   fullSkelAnim = false;
+   seqName = "Punch3_RH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.65;
-   endDamage = 0.85;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;
 };
 
-singleton GameBaseData(RH_PunchRound)
+singleton GameBaseData(Punch4_RH)
 {
-   seqName = "RH_PunchRound";
-   fullSkelAnim = false;
+   seqName = "Punch4_RH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.40;
-   endDamage = 0.8;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
@@ -82,10 +82,10 @@ datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
 
    // Here are the Attacks we support
    hthNumAttacks = 4;
-   hthAttack[0]                     = RH_PunchCombo;
-   hthAttack[1]                     = RH_PunchDown;
-   hthAttack[2]                     = RH_PunchJab;
-   hthAttack[3]                     = RH_PunchRound;
+   hthAttack[0]                     = Punch1_RH;
+   hthAttack[1]                     = Punch2_RH;
+   hthAttack[2]                     = Punch3_RH;
+   hthAttack[3]                     = Punch4_RH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -94,53 +94,53 @@ datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
 };
 
 ////////////////////////////////Left Hand///////////////////////////////////////
-singleton GameBaseData(LH_PunchCombo)
+singleton GameBaseData(Punch1_LH)
 {
-   seqName = "LH_PunchCombo";
-   fullSkelAnim = false;
+   seqName = "Punch1_LH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.2;
-   endDamage = 1.8;
+   startDamage = 0;
+   endDamage = 5;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 500;
 };
 
-singleton GameBaseData(LH_PunchDown)
+singleton GameBaseData(Punch2_LH)
 {
-   seqName = "LH_PunchDown";
-   fullSkelAnim = false;
+   seqName = "Punch2_LH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.3;
-   endDamage = 0.6;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
 };
 
-singleton GameBaseData(LH_PunchJab)
+singleton GameBaseData(Punch3_LH)
 {
-   seqName = "LH_PunchJab";
-   fullSkelAnim = false;
+   seqName = "Punch3_LH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.65;
-   endDamage = 0.85;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 600;
    //swingSound = Punch1Sound;
    impulse = 500;
 };
 
-singleton GameBaseData(LH_PunchRound)
+singleton GameBaseData(Punch4_LH)
 {
-   seqName = "LH_PunchRound";
-   fullSkelAnim = false;
+   seqName = "Punch4_LH";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0.40;
-   endDamage = 0.8;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 500;
    //swingSound = Punch1Sound;
    impulse = 700;
@@ -153,10 +153,10 @@ datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
 
    // Here are the Attacks we support
    hthNumAttacks = 4;
-   hthAttack[0]                     = LH_PunchCombo;
-   hthAttack[1]                     = LH_PunchDown;
-   hthAttack[2]                     = LH_PunchJab;
-   hthAttack[3]                     = LH_PunchRound;
+   hthAttack[0]                     = Punch1_LH;
+   hthAttack[1]                     = Punch2_LH;
+   hthAttack[2]                     = Punch3_LH;
+   hthAttack[3]                     = Punch4_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -165,40 +165,40 @@ datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
 };
 
 ////////////////////////////////Right Foot//////////////////////////////////////
-singleton GameBaseData(RF_KickHigh)
+singleton GameBaseData(Kick1_RF)
 {
-   seqName = "RF_KickHigh";
-   fullSkelAnim = false;
+   seqName = "Kick1_RF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.3;
-   endDamage = 0.4;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
    impulse = 900;
 };
 
-singleton GameBaseData(RF_KickLow)
+singleton GameBaseData(Kick2_RF)
 {
-   seqName = "RF_KickLow";
-   fullSkelAnim = false;
+   seqName = "Kick2_RF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.3;
+   startDamage = 0;
    endDamage = .5;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
    impulse = 900;
 };
 
-singleton GameBaseData(RF_SpinKick1)
+singleton GameBaseData(Kick3_RF)
 {
-   seqName = "RF_SpinKick1";
-   fullSkelAnim = false;
+   seqName = "Kick3_RF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.6;
-   endDamage = .9;
+   startDamage = 0;
+   endDamage = .5;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
    impulse = 900;
@@ -211,9 +211,9 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
-   hthAttack[0]                     = RF_KickHigh;
-   hthAttack[1]                     = RF_KickLow;
-   hthAttack[2]                     = RF_SpinKick1;
+   hthAttack[0]                     = Kick1_RF;
+   hthAttack[1]                     = Kick2_RF;
+   hthAttack[2]                     = Kick3_RF;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -222,40 +222,40 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 };
 
 ////////////////////////////////Left Foot///////////////////////////////////////
-singleton GameBaseData(LF_KickHigh)
+singleton GameBaseData(Kick1_LF)
 {
-   seqName = "LF_KickHigh";
-   fullSkelAnim = false;
+   seqName = "Kick1_LF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.3;
-   endDamage = 0.4;
+   startDamage = 0;
+   endDamage = 0.5;
    //soundDelay = 400;
    //swingSound = Kick1Sound;
    impulse = 900;
 };
 
-singleton GameBaseData(LF_KickLow)
+singleton GameBaseData(Kick2_LF)
 {
-   seqName = "LF_KickLow";
-   fullSkelAnim = false;
+   seqName = "Kick2_LF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.3;
+   startDamage = 0;
    endDamage = .5;
    //soundDelay = 500;
    //swingSound = Kick1Sound;
    impulse = 900;
 };
 
-singleton GameBaseData(LF_SpinKick1)
+singleton GameBaseData(Kick3_LF)
 {
-   seqName = "LF_SpinKick1";
-   fullSkelAnim = false;
+   seqName = "Kick3_LF";
+   fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0.6;
-   endDamage = .9;
+   startDamage = 0;
+   endDamage = .5;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
    impulse = 900;
@@ -268,9 +268,9 @@ datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
-   hthAttack[0]                     = LF_KickHigh;
-   hthAttack[1]                     = LF_KickLow;
-   hthAttack[2]                     = LF_SpinKick1;
+   hthAttack[0]                     = Kick1_LF;
+   hthAttack[1]                     = Kick2_LF;
+   hthAttack[2]                     = Kick3_LF;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
