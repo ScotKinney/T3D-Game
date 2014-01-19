@@ -290,10 +290,9 @@ singleton GameBaseData(SwordSwing12_RH)
 };
 
 
+////////////Base Home World Swords
 
-////////////Swords
-
-// All swords use the same attacks and sounds. Defined once and inherited.
+// All Home World swords use the same attacks and sounds. Defined once and inherited.
 datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
@@ -320,8 +319,8 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
    hthAttack[7]                     = SwordSwing8_RH;
    hthAttack[8]                     = SwordSwing9_RH;
    hthAttack[9]                     = SwordSwing10_RH;
-   hthAttack[10]                     = SwordSwing11_RH;
-   hthAttack[11]                     = SwordSwing12_RH;
+   hthAttack[10]                    = SwordSwing11_RH;
+   hthAttack[11]                    = SwordSwing12_RH;
 
 
    // The sound to play when this weapon hits a static object
@@ -402,6 +401,194 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
    item = TokFemaleSwordWeapon;
    canH2H = true;
+};
+
+//////////////// 2H Sword Attacks////////////////
+
+singleton GameBaseData(2HS_Swing1)
+{
+   seqName = "2HS_Swing1";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing2)
+{
+   seqName = "2HS_Swing2";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing3)
+{
+   seqName = "2HS_Swing3";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing4)
+{
+   seqName = "2HS_Swing4";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing5)
+{
+   seqName = "2HS_Swing5";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing6)
+{
+   seqName = "2HS_Swing6";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing7)
+{
+   seqName = "2HS_Swing7";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing8)
+{
+   seqName = "2HS_Swing8";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing9)
+{
+   seqName = "2HS_Swing9";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing10)
+{
+   seqName = "2HS_Swing10";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+singleton GameBaseData(2HS_Swing11)
+{
+   seqName = "2HS_Swing11";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+
+//////////////2 Handed Swords
+
+datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/2H_Swords/2H_SwordA.dts";
+   item = ExcaliburSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = false;
+
+   hthNumAttacks = 11;
+
+   hthAttack[0]                     = 2HS_Swing1;
+   hthAttack[1]                     = 2HS_Swing2;
+   hthAttack[2]                     = 2HS_Swing3;
+   hthAttack[3]                     = 2HS_Swing4;
+   hthAttack[4]                     = 2HS_Swing5;
+   hthAttack[5]                     = 2HS_Swing6;
+   hthAttack[6]                     = 2HS_Swing7;
+   hthAttack[7]                     = 2HS_Swing8;
+   hthAttack[8]                     = 2HS_Swing9;
+   hthAttack[9]                     = 2HS_Swing10;
+   hthAttack[10]                    = 2HS_Swing11;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+datablock ShapeBaseImageData(DecimatorSwordImage : ExcaliburSwordImage)
+{
+   shapefile = "art/inv/weapons/2H_Swords/2H_SwordB.dts";
+   item = DecimatorSwordWeapon;
+};
+
+datablock ShapeBaseImageData(BoneCrusherSwordImage : ExcaliburSwordImage)
+{
+   shapefile = "art/inv/weapons/2H_Swords/2H_SwordC.dts";
+   item = BoneCrusherSwordWeapon;
 };
 
 ///////////////////War Axes////////////////////////

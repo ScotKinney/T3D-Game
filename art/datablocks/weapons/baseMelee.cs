@@ -1,10 +1,3 @@
-// Sound effects needed for base and inventory weapons
-datablock SFXProfile(SwordHitLiveSound)
-{
-   filename = "art/sound/weapons/SwordHitLive";
-   description = AudioClose3d;
-   preload = true;
-};
 
 // Base definition for all melee weapons
 datablock ShapeBaseImageData(BaseMeleeImage)
