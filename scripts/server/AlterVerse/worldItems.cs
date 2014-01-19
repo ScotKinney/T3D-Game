@@ -264,6 +264,34 @@ datablock ItemData(BoltAmmo)
 };
 $AlterVerse::ItemNames[3] = "BoltAmmo";
 
+datablock ItemData(BoneCrusherSwordWeapon)
+{
+
+   ItemID = 134;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordC.dts";
+   invIcon = "art/gui/icons/bonecrushersword.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 134;
+   image = BoneCrusherSwordImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[134] = "BoneCrusherSwordWeapon";
+
 datablock ItemData(Book_of_Blinding)
 {
 
@@ -392,6 +420,34 @@ datablock ItemData(DaggerWeapon)
 };
 $AlterVerse::ItemNames[81] = "DaggerWeapon";
 
+datablock ItemData(DecimatorSwordWeapon)
+{
+
+   ItemID = 133;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordB.dts";
+   invIcon = "art/gui/icons/decimatorsword.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 133;
+   image = DecimatorSwordImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[133] = "DecimatorSwordWeapon";
+
 datablock ItemData(Deer_Hide)
 {
 
@@ -488,6 +544,34 @@ datablock ItemData(Evil_Eye_Potion)
    spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[63] = "Evil_Eye_Potion";
+
+datablock ItemData(ExcaliburSwordWeapon)
+{
+
+   ItemID = 132;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordA.dts";
+   invIcon = "art/gui/icons/excalibursword.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 132;
+   image = ExcaliburSwordImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[132] = "ExcaliburSwordWeapon";
 
 datablock ItemData(Fishing_Pole)
 {
