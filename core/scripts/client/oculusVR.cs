@@ -58,8 +58,13 @@ function pointCanvasToOculusVRDisplay()
 // then a pseudo stereo rendering is done with only a single render per frame.
 function enableOculusVRDisplay(%gameConnection, %trueStereoRendering)
 {
+   setAllSensorPredictionTime(0.02);
+   if ( !isObject(%gameConnection) )
+      %gameConnection = "";
    setOVRHMDAsGameConnectionDisplayDevice(%gameConnection);
-   RiftPlayGui.renderStyle = "stereo side by side";
+
+   %curGui = Canvas.getContent();
+   %curGui.renderStyle = "stereo side by side";
    
    if(%trueStereoRendering)
    {
@@ -85,8 +90,13 @@ function enableOculusVRDisplay(%gameConnection, %trueStereoRendering)
 // and barrel distortion for the Rift.
 function disableOculusVRDisplay(%gameConnection)
 {
-   %gameConnection.clearDisplayDevice();
-   RiftPlayGui.renderStyle = "standard";
+   if ( isObject(%gameConnection) )
+      %gameConnection.clearDisplayDevice();
+
+   %curGui = Canvas.getContent();
+   %curGui.renderStyle = "standard";
+   clearCurtainHMDDisplay();
+
    OVRBarrelDistortionPostFX.isEnabled = false;
    OVRBarrelDistortionChromaPostFX.isEnabled = false;
    OVRBarrelDistortionMonoPostFX.isEnabled = false;
@@ -97,6 +107,9 @@ function disableOculusVRDisplay(%gameConnection)
 // you call enableOculusVRDisplay().
 function setStandardOculusVRControlScheme(%gameConnection)
 {
+   if ( !isObject(%gameConnection) )
+      return;
+
    if(isOVRHMDSimulated(0))
    {
       // We are simulating a HMD so allow the mouse and gamepad to control
@@ -131,3 +144,52 @@ function resetOculusVRSensors()
 {
    ovrResetAllSensors();
 }
+
+function toggleRift(%val)
+{
+   if (!%val)
+      return;
+
+   if ( $InRiftView $= "" )
+      $InRiftView = false;
+   if ( $InRiftView )
+   {  // Show the regular HUDs
+      if ( isObject(ServerConnection) )
+         ServerConnection.setControlSchemeParameters(false, false, false);
+      disableOculusVRDisplay(ServerConnection);
+      $InRiftView = false;
+      Canvas.checkCursor();
+      $CurtainManager::renderGui = false;
+      PG_ShapeNames.visible = true;
+      Reticle.visible = true;
+   }
+   else
+   {  // Switch to a hudless split Rift view
+      setAllSensorPredictionTime(0.02);
+      enableOculusVRDisplay(ServerConnection, true);
+      setStandardOculusVRControlScheme(ServerConnection);
+      $InRiftView = true;
+      hideCursor();
+      Canvas.checkCursor();
+      $CurtainManager::renderGui = true;
+      PG_ShapeNames.visible = false;
+      Reticle.visible = false;
+   }
+}
+
+GlobalActionMap.bind(keyboard, "ctrl r", toggleRift);
+GlobalActionMap.bind(keyboard, "alt c", resetOculusVRSensors);
+//vehicleMap.bind(keyboard, "ctrl r", toggleRift);
+
+function OVRSensorRotEuler(%pitch, %roll, %yaw)
+{
+   //echo("Sensor euler: " @ %pitch SPC %roll SPC %yaw);
+   $mvRotZ0 = %yaw;
+   $mvRotX0 = %pitch;
+   $mvRotY0 = %roll;
+}
+
+$mvRotIsEuler0 = true;
+$OculusVR::GenerateAngleAxisRotationEvents = false;
+$OculusVR::GenerateEulerRotationEvents = true;
+GlobalActionMap.bind( oculusvr, ovr_sensorrotang0, OVRSensorRotEuler );

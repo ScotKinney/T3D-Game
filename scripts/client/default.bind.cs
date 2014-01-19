@@ -582,7 +582,23 @@ GlobalActionMap.bindCmd(keyboard, "alt enter", "", "Canvas.attemptFullscreenTogg
 GlobalActionMap.bindCmd(keyboard, "F1", "", "contextHelp();");
 //moveMap.bindCmd(keyboard, "n", "toggleNetGraph();", "");
 
+function toggleHudCurtain(%val)
+{
+   if ( $CurtainManager::renderGui )
+   {
+      $CurtainManager::renderGui = false;
+      $CurtainManager::renderHUD = true;
+   }
+   else
+   {
+      $CurtainManager::renderHUD = false;
+      $CurtainManager::renderGui = true;
+   }
+}
+moveMap.bindCmd(keyboard, "h", "toggleHudCurtain();", "");
+
 // mouse cursor toggle by right mouse button
+globalActionMap.bind( mouse, button1, toggleCursor );
 function toggleCursor( %val ) 
 {
    // Key bind is removed in the editor so isEditing check is no longer needed 
@@ -610,50 +626,6 @@ function toggleCursor( %val )
          showCursor();
    }
 } 
-
-globalActionMap.bind( mouse, button1, toggleCursor );
-
-// ----------------------------------------------------------------------------
-// Oculus Rift
-// ----------------------------------------------------------------------------
-
-function toggleRift(%val)
-{
-   if (!%val)
-      return;
-
-   if ( $InRiftView $= "" )
-      $InRiftView = false;
-   if ( $InRiftView )
-   {  // Show the regular HUDs
-      disableOculusVRDisplay(ServerConnection);
-      Canvas.setContent(PlayGui);
-      $InRiftView = false;
-   }
-   else
-   {  // Switch to a hudless split Rift view
-      setAllSensorPredictionTime(0.02);
-      enableOculusVRDisplay(ServerConnection, true);
-      setStandardOculusVRControlScheme(ServerConnection);
-      Canvas.setContent(RiftPlayGui);
-      $InRiftView = true;
-   }
-}
-
-moveMap.bind(keyboard, "ctrl r", toggleRift);
-
-function OVRSensorRotEuler(%pitch, %roll, %yaw)
-{
-   //echo("Sensor euler: " @ %pitch SPC %roll SPC %yaw);
-   $mvRotZ0 = %yaw;
-   $mvRotX0 = %pitch;
-   $mvRotY0 = %roll;
-}
-
-$mvRotIsEuler0 = true;
-$OculusVR::GenerateAngleAxisRotationEvents = false;
-$OculusVR::GenerateEulerRotationEvents = true;
-moveMap.bind( oculusvr, ovr_sensorrotang0, OVRSensorRotEuler );
 
 moveMap.bind(keyboard, "lshift", sprint);
 moveMap.bind(keyboard, "rshift", sprint);

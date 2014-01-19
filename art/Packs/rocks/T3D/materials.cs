@@ -35,7 +35,7 @@ singleton Material(Rock2_mat)
 {
    mapTo = "tex_volcanic_rock_base";
    diffuseMap[0] = "Rock2.jpg";
-   normalMap[0] = "tex_volcanic_rock_nrm.dds";
+   //normalMap[0] = "tex_volcanic_rock_nrm.dds";
    detailNormalMapStrength[0] = "0";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";

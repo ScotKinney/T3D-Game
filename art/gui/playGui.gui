@@ -89,7 +89,7 @@
       hovertime = "1000";
       canSaveDynamicFields = "0";
    };
-   new GuiShapeNameHud() {
+   new GuiShapeNameHud(PG_ShapeNames) {
       fillColor = "0 0 0 0.25";
       frameColor = "0 1 0 1";
       textColor = "0 1 0 1";

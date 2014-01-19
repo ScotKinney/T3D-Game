@@ -1,0 +1,75 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(GameHud) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "1024 768";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+
+   new GuiHealthBarHud() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "8 270";
+      extent = "21 217";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      showFill = "1";
+      displayEnergy = "1";
+      showFrame = "1";
+      fillColor = "0.000000 0.000000 0.000000 0.500000";
+      frameColor = "0.000000 1.000000 0.000000 0.000000";
+      damageFillColor = "0.000000 0.000000 0.800000 1.000000";
+      pulseRate = "1000";
+      pulseThreshold = "0.25";
+         value = "1";
+   };
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "2 248";
+      extent = "32 272";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./healthBar";
+      wrap = "0";
+   };
+   new GuiHealthBarHud() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "996 270";
+      extent = "21 217";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      showFill = "1";
+      displayEnergy = "0";
+      showFrame = "0";
+      fillColor = "0.000000 0.000000 0.000000 0.500000";
+      frameColor = "0.000000 0.000000 0.000000 0.000000";
+      damageFillColor = "0.800000 0.000000 0.000000 1.000000";
+      pulseRate = "1000";
+      pulseThreshold = "0.2";
+         value = "1";
+   };
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "990 248";
+      extent = "32 272";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./healthBar";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---

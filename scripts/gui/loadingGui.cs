@@ -22,7 +22,7 @@ function LoadingGui::onWake(%this)
    %backgroundFile = "art/gui/backgrounds/" @ $AlterVerse::serverPrefix @ "Background";
    if ( !isFile(%backgroundFile @ ".png") && !isFile(%backgroundFile @ ".jpg"))
       %backgroundFile = "art/gui/backgrounds/CavesOfWisdomBackGround";
-   LoadingGui.setBitmap(%backgroundFile);
+   LoadingGui-->BackgroundBmp.setBitmap(%backgroundFile);
 
    %screenExtent = Canvas.getExtent();
    %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));

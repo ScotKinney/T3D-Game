@@ -201,9 +201,6 @@ function Canvas::onResize(%this, %newWidth, %newHeight, %forcesize)
       %newHeight = getWord(%vidMode, 1);
    }
 
-   if ( isObject( LoadingGui ) && LoadingGui.isAwake() )
-      LoadingGui.onResize(%newWidth, %newHeight);
-
    if ( isObject( ServerSelGui ) && ServerSelGui.isAwake() )
       ServerSelGui.onResize(%newWidth, %newHeight);
 

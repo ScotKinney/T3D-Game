@@ -1,9 +1,18 @@
 //--- OBJECT WRITE BEGIN ---
-%guiContent = new GuiFadeinBitmapCtrl(StartupGui) {
-   canSaveDynamicFields = "0";
-   Enabled = "1";
+%guiContent = new GameTSCtrl(StartupGui) {
+   cameraZRot = "0";
+   forceFOV = "0";
+   reflectPriority = "1";
+   Margin = "0 0 0 0";
+   Padding = "0 0 0 0";
+   AnchorTop = "1";
+   AnchorBottom = "0";
+   AnchorLeft = "1";
+   AnchorRight = "0";
    isContainer = "1";
-   Profile = "GuiInputCtrlProfile";
+   Profile = "GuiContentProfile";
+   //HorizSizing = "right";
+   //VertSizing = "bottom";
    horizSizing = "width";
    vertSizing = "height";
    position = "0 0";
@@ -13,67 +22,87 @@
    Visible = "1";
    tooltipprofile = "GuiToolTipProfile";
    hovertime = "1000";
-   bitmap = "";
-   wrap = "0";
-   fadeinTime = "1000";
-   waitTime = "4000";
-   fadeoutTime = "1000";
-   done = "1";
+   canSaveDynamicFields = "1";
+      Enabled = "1";
+      helpTag = "0";
+      //noCursor = "1";
 
-   new GuiBitmapBackgroundCtrl() {
-      neverCrop = "1";
-      horizBias = "center";
-      vertBias = "center";
-      canSaveDynamicFields = "1";
-      internalName = "StartupLogo";
+   new GuiFadeinBitmapCtrl(StartupFadeGui) {
+      canSaveDynamicFields = "0";
       Enabled = "1";
-      isContainer = "0";
-      Profile = "GuiDefaultProfile";
+      isContainer = "1";
+      Profile = "GuiInputCtrlProfile";
       horizSizing = "width";
       vertSizing = "height";
       position = "0 0";
       Extent = "1024 768";
-      MinExtent = "8 2";
+      MinExtent = "8 8";
       canSave = "1";
       Visible = "1";
       tooltipprofile = "GuiToolTipProfile";
       hovertime = "1000";
       bitmap = "";
       wrap = "0";
-      command = "StartupGui.click();";
-   };
-   new GuiBitmapButtonCtrl() {
-      canSaveDynamicFields = "1";
-      internalName = "StartupLogoSecondary";
-      Enabled = "1";
-      isContainer = "0";
-      Profile = "GuiDefaultProfile";
-      HorizSizing = "left";
-      VertSizing = "top";
-      position = "275 440";
-      Extent = "530 171";
-      MinExtent = "8 2";
-      canSave = "1";
-      Visible = "1";
-      tooltipprofile = "GuiToolTipProfile";
-      hovertime = "1000";
-      bitmap = "";
-      wrap = "0";
-      command = "StartupGui.click();";
-   };
-   new GuiButtonCtrl() {
-      position = "0 0";
-      Extent = "1024 768";
-      minExtent = "8 8";
-      horizSizing = "width";
-      vertSizing = "height";
-      profile = "TransparentButtonProfile";
-      visible = "1";
-      active = "1";
-      text = "";
-      buttonType = "PushButton";
-      useMouseEvents = "0";
-      command = "StartupGui.click();";
+      fadeinTime = "1000";
+      waitTime = "4000";
+      fadeoutTime = "1000";
+      done = "1";
+
+      new GuiBitmapBackgroundCtrl() {
+         neverCrop = "1";
+         horizBias = "center";
+         vertBias = "center";
+         canSaveDynamicFields = "1";
+         internalName = "StartupLogo";
+         Enabled = "1";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         horizSizing = "width";
+         vertSizing = "height";
+         position = "0 0";
+         Extent = "1024 768";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "GuiToolTipProfile";
+         hovertime = "1000";
+         bitmap = "";
+         wrap = "0";
+         command = "StartupGui.click();";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "1";
+         internalName = "StartupLogoSecondary";
+         Enabled = "1";
+         isContainer = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "275 440";
+         Extent = "530 171";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "GuiToolTipProfile";
+         hovertime = "1000";
+         bitmap = "";
+         wrap = "0";
+         command = "StartupGui.click();";
+      };
+      new GuiButtonCtrl() {
+         position = "0 0";
+         Extent = "1024 768";
+         minExtent = "8 8";
+         horizSizing = "width";
+         vertSizing = "height";
+         profile = "TransparentButtonProfile";
+         visible = "1";
+         active = "1";
+         text = "";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         command = "StartupGui.click();";
+      };
    };
 };
 //--- OBJECT WRITE END ---
@@ -95,22 +124,51 @@ new GuiFadeinBitmapCtrl(BlankGui) {
 };
 //--- OBJECT WRITE END ---
 //--- OBJECT WRITE BEGIN ---
-new GuiBitmapBackgroundCtrl(BlackGui) {
-   bitmap = "art/gui/common/av_bg.jpg";
-   horizBias = "center";
-   vertBias = "center";
-   position = "0 0";
-   extent = "1024 768";
-   minExtent = "8 8";
+%guiContent = new GameTSCtrl(BlackGui) {
+   cameraZRot = "0";
+   forceFOV = "0";
+   reflectPriority = "1";
+   Margin = "0 0 0 0";
+   Padding = "0 0 0 0";
+   AnchorTop = "1";
+   AnchorBottom = "0";
+   AnchorLeft = "1";
+   AnchorRight = "0";
+   isContainer = "1";
+   Profile = "GuiContentProfile";
+   //HorizSizing = "right";
+   //VertSizing = "bottom";
    horizSizing = "width";
    vertSizing = "height";
-   profile = "GuiDefaultProfile";
-   visible = "1";
-   active = "1";
-   tooltipProfile = "GuiToolTipProfile";
-   hovertime = "1000";
-   isContainer = "1";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
    canSave = "1";
+   Visible = "1";
+   tooltipprofile = "GuiToolTipProfile";
+   hovertime = "1000";
    canSaveDynamicFields = "1";
+      Enabled = "1";
+      helpTag = "0";
+      //noCursor = "1";
+
+   new GuiBitmapBackgroundCtrl() {
+      bitmap = "art/gui/common/av_bg.jpg";
+      horizBias = "center";
+      vertBias = "center";
+      position = "0 0";
+      extent = "1024 768";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
 };
 //--- OBJECT WRITE END ---

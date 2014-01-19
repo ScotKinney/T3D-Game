@@ -45,6 +45,8 @@ function PlayGui::onWake(%this)
    unbindChatCommands();
    moveMap.push();
 
+   setHUDCurtainControl(GameHud);
+   
    if(isObject(numericalHealthHUD))
       numericalHealthHUD.start();
 
@@ -79,6 +81,13 @@ function PlayGui::onWake(%this)
 
 function PlayGui::onSleep(%this)
 {
+   if ( $CurtainManager::renderHUD )
+   {
+      $CurtainManager::renderHUD = false;
+      $CurtainManager::renderGui = true;
+   }
+   clearHUDCurtainControl();
+
    if ( isObject( MainChatHud ) )
       Canvas.popDialog( MainChatHud );
    

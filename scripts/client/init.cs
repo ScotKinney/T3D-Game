@@ -78,6 +78,7 @@ function reloadMaterials()
    reloadTextures();
    loadMaterials();
    reInitMaterials();
+   reloadCurtainMaterials();
 }
 
 function loadLocalizationFiles()
@@ -130,6 +131,7 @@ function initClient()
 
    // Load up the Game GUIs
    exec("art/gui/PlayGui.gui");
+   exec("art/gui/gameHUD.gui");
    exec("art/gui/riftPlayGui.gui");
    exec("art/gui/chat/ChatHud.gui");
    exec("./chatHud.cs");
@@ -195,9 +197,24 @@ function initClient()
    setDefaultFov( $pref::Player::defaultFov );
    setZoomSpeed( $pref::Player::zoomSpeed );
 
-   // Show the splash screen.
+   // Load a cursor
    Canvas.setCursor("DefaultCursor");
 
+   // Initialize the curtain manager
+   exec( "./curtainManager.cs" );
+   setGuiCurtainMat("GuiCurtain_Mat");
+   $CurtainManager::guiDistance = 5.0;
+   setHUDCurtainMat("HUDCurtain_Mat");
+   $CurtainManager::hudDistance = 5.2;
+   $InRiftView = false;
+   
+   // Cheesy way to determine if the rift is connected and turned on
+   // TODO: Replace with true detection of OVR display on.
+   %curRot = getOVRSensorEulerRotation(0);
+   if ( VectorLen(%curRot) > 0 )
+      toggleRift(1);
+
+   // Show the splash screen.
    if ( $TAP::isTappedIn )
       loadMainMenu();
    else
@@ -391,4 +408,6 @@ function loadWorldMats(%makeClientGroup)
 
    if ( %makeClientGroup )
       $instantGroup = %oldGroup;
+
+   reloadCurtainMaterials();
 }

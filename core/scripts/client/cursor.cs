@@ -26,7 +26,8 @@
 $cursorControlled = true;
 function showCursor()
 {
-   if ($cursorControlled)
+   //if ($cursorControlled)
+   if ($cursorControlled && !$InRiftView)
       lockMouse(false);
    Canvas.cursorOn();
 }
@@ -75,6 +76,11 @@ function GuiCanvas::checkCursor(%this)
 //---------------------------------------------------------------------------------------------
 function GuiCanvas::setContent(%this, %ctrl)
 {
+   if ( $InRiftView )
+      %ctrl.renderStyle = "stereo side by side";
+   else
+      %ctrl.renderStyle = "standard";
+
    Parent::setContent(%this, %ctrl);
    %this.checkCursor();
 }

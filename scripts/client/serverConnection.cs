@@ -49,6 +49,16 @@ function GameConnection::initialControlSet(%this)
 
    // The first control object has been set by the server
    // and we are now ready to go.
+   if ( $InRiftView )
+   {
+      enableOculusVRDisplay(%this, true);
+      setStandardOculusVRControlScheme(%this);
+   }
+   else
+   {
+      ServerConnection.setControlSchemeParameters(false, false, false);
+      disableOculusVRDisplay(%this);
+   }
    
    // first check if the editor is active
    //if (!isToolBuild() || !Editor::checkActiveLoadDone())

@@ -51,8 +51,8 @@ function loadStartup()
 
 function StartupGui::click(%this)
 {
-   %this.done = true;
-   %this.onDone();
+   StartupFadeGui.done = true;
+   StartupFadeGui.onDone();
 }
 
 function StartupGui::next(%this)
@@ -61,55 +61,55 @@ function StartupGui::next(%this)
    Canvas.setContent(BlankGui);
 
    // Set our bitmap and reset the done variable
-   %this.setBitmap(getVariable(%this @ ".bitmap" @ $StartupIdx));
-   %this.done = false;
+   StartupFadeGui.setBitmap(getVariable(%this @ ".bitmap" @ $StartupIdx));
+   StartupFadeGui.done = false;
 
    // If we have a logo then set it
-   if (isObject(%this->StartupLogo))
+   if (isObject(%this-->StartupLogo))
    {
       if (getVariable(%this @ ".logo" @ $StartupIdx) !$= "")
       {
-         %this->StartupLogo.setBitmap(getVariable(%this @ ".logo" @ $StartupIdx));
+         %this-->StartupLogo.setBitmap(getVariable(%this @ ".logo" @ $StartupIdx));
 
          if (getVariable(%this @ ".logoPos" @ $StartupIdx) !$= "")
          {
             %logoPosX = getWord(getVariable(%this @ ".logoPos" @ $StartupIdx), 0);
             %logoPosY = getWord(getVariable(%this @ ".logoPos" @ $StartupIdx), 1);
 
-            %this->StartupLogo.setPosition(%logoPosX, %logoPosY);
+            %this-->StartupLogo.setPosition(%logoPosX, %logoPosY);
          }
 
          if (getVariable(%this @ ".logoExtent" @ $StartupIdx) !$= "")
-            %this->StartupLogo.setExtent(getVariable(%this @ ".logoExtent" @ $StartupIdx));
+            %this-->StartupLogo.setExtent(getVariable(%this @ ".logoExtent" @ $StartupIdx));
 
-         %this->StartupLogo.setVisible(true);
+         %this-->StartupLogo.setVisible(true);
       }
       else
-         %this->StartupLogo.setVisible(false);
+         %this-->StartupLogo.setVisible(false);
    }
 
    // If we have a secondary logo then set it
-   if (isObject(%this->StartupLogoSecondary))
+   if (isObject(%this-->StartupLogoSecondary))
    {
       if (getVariable(%this @ ".seclogo" @ $StartupIdx) !$= "")
       {
-         %this->StartupLogoSecondary.setBitmap(getVariable(%this @ ".seclogo" @ $StartupIdx));
+         %this-->StartupLogoSecondary.setBitmap(getVariable(%this @ ".seclogo" @ $StartupIdx));
 
          if (getVariable(%this @ ".seclogoPos" @ $StartupIdx) !$= "")
          {
             %logoPosX = getWord(getVariable(%this @ ".seclogoPos" @ $StartupIdx), 0);
             %logoPosY = getWord(getVariable(%this @ ".seclogoPos" @ $StartupIdx), 1);
 
-            %this->StartupLogoSecondary.setPosition(%logoPosX, %logoPosY);
+            %this-->StartupLogoSecondary.setPosition(%logoPosX, %logoPosY);
          }
 
          if (getVariable(%this @ ".seclogoExtent" @ $StartupIdx) !$= "")
-            %this->StartupLogoSecondary.setExtent(getVariable(%this @ ".seclogoExtent" @ $StartupIdx));
+            %this-->StartupLogoSecondary.setExtent(getVariable(%this @ ".seclogoExtent" @ $StartupIdx));
 
-         %this->StartupLogoSecondary.setVisible(true);
+         %this-->StartupLogoSecondary.setVisible(true);
       }
       else
-         %this->StartupLogoSecondary.setVisible(false);
+         %this-->StartupLogoSecondary.setVisible(false);
    }
 
    // Increment our screen index for the next screen
@@ -119,14 +119,14 @@ function StartupGui::next(%this)
    Canvas.setContent(%this);
 }
 
-function StartupGui::onDone(%this)
+function StartupFadeGui::onDone(%this)
 {
    // If we have been tagged as done decide if we need
    // to end or cycle to the next one
    if (%this.done)
    {
       // See if we have a valid bitmap for the next screen
-      if (getVariable(%this @ ".bitmap" @ $StartupIdx) $= "")
+      if (getVariable("StartupGui.bitmap" @ $StartupIdx) $= "")
       {
          // Clear our data and load the main menu
          %this.done = true;
@@ -147,7 +147,7 @@ function StartupGui::onDone(%this)
       else
       {
          // We do have a bitmap so cycle to it
-         %this.next();
+         StartupGui.next();
       }
    }
 }
