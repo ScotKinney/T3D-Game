@@ -85,4 +85,12 @@ function LoadingGui::onResize(%this, %newWidth, %newHeight)
    %yPos = mRound(716 * %useScale) - %cropY;
    %this-->ProgressFrame.resize(%xPos, %yPos, %xExtent, %yExtent);
    LoadingProgress.resize(0, 0, %xExtent, %yExtent);
+
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = (%newWidth/%newHeight) * 0.7;
+   %guiScale = %xScale @ " 0.7 0.7";
+   setGuiCurtainScale(%guiScale);
+   // No rotation on the loading screen, it would lag bad...
+   %maxRot = "0 0 0";
+   setGuiCurtainMaxRot(%maxRot);
 }

@@ -29,6 +29,9 @@ function loadStartup()
    // The index of the current splash screen
    $StartupIdx = 0;
 
+   %screenExtent = Canvas.getExtent();
+   StartupGui.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+
    // A list of the splash screens and logos
    // to cycle through. Note that they have to
    // be in consecutive numerical order
@@ -47,6 +50,17 @@ function loadStartup()
 
    // Play our startup sound
    //SFXPlayOnce(AudioGui, "art/sound/gui/startup");//SFXPlay(startsnd);
+}
+
+function StartupGui::onResize(%this, %newWidth, %newHeight)
+{
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = (%newWidth/%newHeight) * 0.7;
+   %guiScale = %xScale @ " 0.7 0.7";
+   setGuiCurtainScale(%guiScale);
+   // No rotation on the loading screen, it would lag bad...
+   %maxRot = "0 0 0";
+   setGuiCurtainMaxRot(%maxRot);
 }
 
 function StartupGui::click(%this)

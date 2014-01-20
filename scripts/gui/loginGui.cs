@@ -175,6 +175,14 @@ function LoginGui::onResize(%this, %newWidth, %newHeight)
    %xPos = mRound(1174 * %useScale) - %cropX;
    %this-->ExitText.resize(%xPos, %textYPos, %xExtent, %textYExtent);
    %this-->ExitBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
+
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = %newWidth/%newHeight;
+   %guiScale = %xScale @ " 1 1";
+   setGuiCurtainScale(%guiScale);
+   // give a 15 degree rotation amount
+   %maxRot = mDegToRad(20) SPC "0" SPC mDegToRad(20 * %xScale);
+   setGuiCurtainMaxRot(%maxRot);
 }
 
 function LoginGui::resizeFonts(%this, %scaleFactor)

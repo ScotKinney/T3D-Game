@@ -57,6 +57,14 @@ function ServerSelGui::onResize(%this, %newWidth, %newHeight)
    %xPos = %newWidth - (%xExtent + 12);
    %this->ExitText.resize(%xPos - 12, %textYPos, %xExtent + 24, %textYExtent);
    %this->ExitBtn.resize(%xPos, %yPos, %xExtent, %yExtent);
+
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = %newWidth/%newHeight;
+   %guiScale = %xScale @ " 1 1";
+   setGuiCurtainScale(%guiScale);
+   // give a 15 degree vertical 20 degree horizontal rotation
+   %maxRot = mDegToRad(30) SPC "0" SPC mDegToRad(35 * %xScale);
+   setGuiCurtainMaxRot(%maxRot);
 }
 
 function ServerSelGui::resizeFonts(%this, %scaleFactor)

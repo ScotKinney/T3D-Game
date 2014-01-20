@@ -422,4 +422,12 @@ function TeleportGui::onResize(%this, %newWidth, %newHeight)
 
    VideoFrame.resize(%vidX, %portY, %vidWidth, %portSize);
    VideoMask.resize(%frameX, %frameY, %frameWidth, %frameHeight);
+
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = %newWidth/%newHeight;
+   %guiScale = %xScale @ " 1 1";
+   setGuiCurtainScale(%guiScale);
+   // give a 15 degree rotation amount
+   %maxRot = mDegToRad(15) SPC "0" SPC mDegToRad(15 * %xScale);
+   setGuiCurtainMaxRot(%maxRot);
 }

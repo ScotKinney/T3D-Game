@@ -148,6 +148,16 @@ function PlayGui::onResize(%this, %newWidth, %newHeight)
       messageHud_Frame.resize(%mhX, %mhY, getWord(messageHud_Frame.extent, 0),
                               getWord(messageHud_Frame.extent, 1));
    }
+
+   // Set the curtain scale and rotation for stereo view mode.
+   %xScale = %newWidth/%newHeight;
+   %guiScale = %xScale @ " 1 1";
+   setGuiCurtainScale(%guiScale);
+   setHUDCurtainScale(%guiScale);
+   // give a 20 degree vertical 30 degree horizontal rotation
+   %maxRot = mDegToRad(30) SPC "0" SPC mDegToRad(35 * %xScale);
+   setGuiCurtainMaxRot(%maxRot);
+   setHUDCurtainMaxRot(%maxRot);
 }
 
 function PlayGui::ResizeCenterPrint(%this, %newWidth)
