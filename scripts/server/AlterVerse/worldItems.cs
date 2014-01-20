@@ -270,7 +270,7 @@ datablock ItemData(BoneCrusherSwordWeapon)
    ItemID = 134;
    category = "weapons";
    className = "wpn";
-   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordC.dts";
+   shapeFile = "art/inv/weapons/Th_Swords/TH_SwordC.dts";
    invIcon = "art/gui/icons/bonecrushersword.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
@@ -426,7 +426,7 @@ datablock ItemData(DecimatorSwordWeapon)
    ItemID = 133;
    category = "weapons";
    className = "wpn";
-   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordB.dts";
+   shapeFile = "art/inv/weapons/Th_Swords/TH_SwordB.dts";
    invIcon = "art/gui/icons/decimatorsword.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
@@ -551,7 +551,7 @@ datablock ItemData(ExcaliburSwordWeapon)
    ItemID = 132;
    category = "weapons";
    className = "wpn";
-   shapeFile = "art/inv/weapons/2h_Swords/2H_SwordA.dts";
+   shapeFile = "art/inv/weapons/Th_Swords/TH_SwordA.dts";
    invIcon = "art/gui/icons/excalibursword.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
