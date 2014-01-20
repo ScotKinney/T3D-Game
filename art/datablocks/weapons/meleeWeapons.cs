@@ -405,7 +405,7 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
 
 //////////////// 2H Sword Attacks////////////////
 
-singleton GameBaseData(2HS_Swing1)
+singleton GameBaseData(THS_Swing1)
 {
    seqName = "2HS_Swing1";
    fullSkelAnim = true;
@@ -418,7 +418,7 @@ singleton GameBaseData(2HS_Swing1)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing2)
+singleton GameBaseData(THS_Swing2)
 {
    seqName = "2HS_Swing2";
    fullSkelAnim = true;
@@ -431,7 +431,7 @@ singleton GameBaseData(2HS_Swing2)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing3)
+singleton GameBaseData(THS_Swing3)
 {
    seqName = "2HS_Swing3";
    fullSkelAnim = true;
@@ -444,7 +444,7 @@ singleton GameBaseData(2HS_Swing3)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing4)
+singleton GameBaseData(THS_Swing4)
 {
    seqName = "2HS_Swing4";
    fullSkelAnim = true;
@@ -457,7 +457,7 @@ singleton GameBaseData(2HS_Swing4)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing5)
+singleton GameBaseData(THS_Swing5)
 {
    seqName = "2HS_Swing5";
    fullSkelAnim = true;
@@ -470,7 +470,7 @@ singleton GameBaseData(2HS_Swing5)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing6)
+singleton GameBaseData(THS_Swing6)
 {
    seqName = "2HS_Swing6";
    fullSkelAnim = true;
@@ -483,7 +483,7 @@ singleton GameBaseData(2HS_Swing6)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing7)
+singleton GameBaseData(THS_Swing7)
 {
    seqName = "2HS_Swing7";
    fullSkelAnim = true;
@@ -496,7 +496,7 @@ singleton GameBaseData(2HS_Swing7)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing8)
+singleton GameBaseData(THS_Swing8)
 {
    seqName = "2HS_Swing8";
    fullSkelAnim = true;
@@ -509,7 +509,7 @@ singleton GameBaseData(2HS_Swing8)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing9)
+singleton GameBaseData(THS_Swing9)
 {
    seqName = "2HS_Swing9";
    fullSkelAnim = true;
@@ -522,7 +522,7 @@ singleton GameBaseData(2HS_Swing9)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing10)
+singleton GameBaseData(THS_Swing10)
 {
    seqName = "2HS_Swing10";
    fullSkelAnim = true;
@@ -535,7 +535,7 @@ singleton GameBaseData(2HS_Swing10)
    impulse = 800;
 };
 
-singleton GameBaseData(2HS_Swing11)
+singleton GameBaseData(THS_Swing11)
 {
    seqName = "2HS_Swing11";
    fullSkelAnim = true;
@@ -553,24 +553,24 @@ singleton GameBaseData(2HS_Swing11)
 
 datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/2H_Swords/2H_SwordA.dts";
+   shapefile = "art/inv/weapons/TH_Swords/TH_SwordA.dts";
    item = ExcaliburSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
    canH2H = true;
    canUseMounted = false;
 
    hthNumAttacks = 11;
 
-   hthAttack[0]                     = 2HS_Swing1;
-   hthAttack[1]                     = 2HS_Swing2;
-   hthAttack[2]                     = 2HS_Swing3;
-   hthAttack[3]                     = 2HS_Swing4;
-   hthAttack[4]                     = 2HS_Swing5;
-   hthAttack[5]                     = 2HS_Swing6;
-   hthAttack[6]                     = 2HS_Swing7;
-   hthAttack[7]                     = 2HS_Swing8;
-   hthAttack[8]                     = 2HS_Swing9;
-   hthAttack[9]                     = 2HS_Swing10;
-   hthAttack[10]                    = 2HS_Swing11;
+   hthAttack[0]                     = THS_Swing1;
+   hthAttack[1]                     = THS_Swing2;
+   hthAttack[2]                     = THS_Swing3;
+   hthAttack[3]                     = THS_Swing4;
+   hthAttack[4]                     = THS_Swing5;
+   hthAttack[5]                     = THS_Swing6;
+   hthAttack[6]                     = THS_Swing7;
+   hthAttack[7]                     = THS_Swing8;
+   hthAttack[8]                     = THS_Swing9;
+   hthAttack[9]                     = THS_Swing10;
+   hthAttack[10]                    = THS_Swing11;
 
 
    // The sound to play when this weapon hits a static object
@@ -581,13 +581,13 @@ datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
 
 datablock ShapeBaseImageData(DecimatorSwordImage : ExcaliburSwordImage)
 {
-   shapefile = "art/inv/weapons/2H_Swords/2H_SwordB.dts";
+   shapefile = "art/inv/weapons/TH_Swords/TH_SwordB.dts";
    item = DecimatorSwordWeapon;
 };
 
 datablock ShapeBaseImageData(BoneCrusherSwordImage : ExcaliburSwordImage)
 {
-   shapefile = "art/inv/weapons/2H_Swords/2H_SwordC.dts";
+   shapefile = "art/inv/weapons/TH_Swords/TH_SwordC.dts";
    item = BoneCrusherSwordWeapon;
 };
 
