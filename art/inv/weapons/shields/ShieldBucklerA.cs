@@ -11,7 +11,5 @@ function ShieldBucklerADts::onLoad(%this)
    %this.addNode("ColBox-1", "Col-1", "0.000196075 -0.00120696 0.0779114 -0.833431 -0.388513 -0.393002 1.75231", "0");
    %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
    %this.renameObject("ColBox", "Col");
-   %this.addNode("damageStart", "", "0.262083 0 0.0165776 0 0 1 3.14", "1");
-   %this.addNode("damageEnd", "damageStart", "-0.260136 3.25963e-009 0.0165776 1 0 0 0", "1");
-   %this.addNode("mountPoint", "", "0 0 0.00889583 0.0389911 -0.747189 -0.663467 0.538718", "1");
+   %this.setNodeTransform("mountPoint", "-6.49147e-005 -0.0107149 0.00936969 -0.328294 -0.258767 0.90844 1.4234", "1");
 }

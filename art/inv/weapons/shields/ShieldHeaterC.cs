@@ -1,3 +1,5 @@
+
+
 singleton TSShapeConstructor(ShieldHeaterCDts)
 {
    baseShape = "./ShieldHeaterC.dts";
@@ -10,7 +12,5 @@ function ShieldHeaterCDts::onLoad(%this)
    %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
    %this.setBounds("-0.31213 -0.486346 -0.0108481 0.310971 0.372202 0.128681");
    %this.renameObject("ColBox", "Col");
-   %this.addNode("mountPoint", "", "-0.121237 0.111123 -0.061401 0.77498 -0.591927 0.221423 0.664342", "1");
-   %this.addNode("damageStart", "", "0.334257 -0.245655 0 1 0 0 0", "1");
-   %this.addNode("damageEnd", "damageStart", "-0.350902 0.35582 0 1 0 0 0", "1");
+   %this.setNodeTransform("mountPoint", "-0.0956667 0.149333 -0.0433803 0.0950411 -0.764614 0.637443 0.399828", "1");
 }

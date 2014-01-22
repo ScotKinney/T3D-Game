@@ -154,7 +154,6 @@ singleton Material(roundShieldWoodG)
    useAnisotropic[0] = "1";
 };
 
-
 singleton Material(roundShieldWoodH)
 {
    mapTo = "ShieldRoundNub_dif";
@@ -321,4 +320,13 @@ singleton Material(Targe_ShieldC)
    specularMap[0] = "Targe_C_specular.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Weapons";
+};
+
+singleton Material(GoldenShield)
+{
+   mapTo = "ShieldGold_dif";
+   diffuseMap[0] = "ShieldGold_dif";
+   normalMap[0] = "ShieldGold_nm.dds";
+   specularMap[0] = "ShieldGold_spec.dds";
+   useAnisotropic[0] = "1";
 };

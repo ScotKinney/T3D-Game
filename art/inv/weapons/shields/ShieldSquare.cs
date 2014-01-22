@@ -6,11 +6,9 @@ singleton TSShapeConstructor(ShieldSquareDts)
 
 function ShieldSquareDts::onLoad(%this)
 {
-   %this.addNode("mountPoint", "", "-0.180213 0.0325593 -0.0540067 0.826513 -0.395439 -0.400629 0.535643", "1");
-   %this.addNode("damageStart", "", "0.439116 0.0175998 0.0242336 1 0 0 0", "1");
-   %this.addNode("damageEnd", "damageStart", "-0.429461 0 -0.0322862 1 0 0 0", "1");
    %this.addNode("Col-1", "", "0 0 0 0 0 1 0", "0");
    %this.addNode("ColBox-1", "Col-1", "0.00359878 0.0288784 -0.0123998 0.999995 0 -0.00307412 1.56706", "0");
    %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
    %this.renameObject("ColBox", "Col");
+   %this.setNodeTransform("mountPoint", "-0.18232 -0.0145774 -0.028 0.212733 -0.560887 -0.800094 0.474315", "1");
 }
