@@ -37,6 +37,8 @@ function createCanvas(%windowTitle)
       return true;
    }
 
+   pointCanvasToOculusVRDisplay();
+
    // Create the Canvas
    %foo = new GuiCanvas(Canvas);
    

@@ -52,6 +52,11 @@ function configureCanvas()
       %bpp = %deskResBPP;
       
    // Make sure we are running at a valid resolution
+   if ( %fs )
+   {
+      if ((%resX != %deskResX) || (%resY != %deskResY))
+         %fs = false;
+   }
    if (%fs $= "0" || %fs $= "false")
    {
       // Windowed mode has to use the same bit depth as the desktop
@@ -113,6 +118,7 @@ function configureCanvas()
    //   GraphicsQualityAutodetect();
 }
 
+//$pref::Video::mode = "1280 800 true 32 4 0";
 function initializeCanvas()
 {
    // Don't duplicate the canvas.
@@ -120,6 +126,26 @@ function initializeCanvas()
    {
       error("Cannot instantiate more than one canvas!");
       return;
+   }
+
+   // We need to check the saved video mode, If it's larger than our screen,
+   // it'll cause a directX error in init.
+   if ( $pref::Video::mode !$= "" )
+   {
+      %pResX = getWord($pref::Video::mode, $WORD::RES_X);
+      %pResY = getWord($pref::Video::mode, $WORD::RES_Y);
+      %fs = getWord($pref::Video::mode,   $WORD::FULLSCREEN);
+      %bpp = getWord($pref::Video::mode,  $WORD::BITDEPTH);
+
+      %deskRes    = getDesktopResolution();      
+      %deskResX   = getWord(%deskRes, $WORD::RES_X);
+      %deskResY   = getWord(%deskRes, $WORD::RES_Y);
+      %deskResBPP = getWord(%deskRes, 2);
+      
+      if ( (%pResX > %deskResX) || (%pResY > %deskResY) || (%bpp > %deskResBPP) )
+      {
+         $pref::Video::mode = %deskResX SPC %deskResY SPC "false" SPC %deskResBPP SPC "60 0";
+      }
    }
 
    if (!createCanvas())
@@ -169,7 +195,10 @@ function GuiCanvas::attemptFullscreenToggle(%this)
       return;
    }
 
-   %this.toggleFullscreen();
+   if ( $RiftOnMain )
+      %this.toggleFullscreen();
+   else
+      toggleRift(1);
 }
 
 //---------------------------------------------------------------------------------------------

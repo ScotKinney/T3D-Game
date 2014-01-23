@@ -41,7 +41,11 @@ function oculusSensorMetricsCallback()
 // will happen.
 function pointCanvasToOculusVRDisplay()
 {
+   $pref::Video::displayOutputDevice = "";
+   %screenIndex = GFXInit::getDefaultAdapterIndex();
    $pref::Video::displayOutputDevice = getOVRHMDDisplayDeviceName(0);
+   %riftIndex = GFXInit::getDefaultAdapterIndex();
+   $RiftOnMain = (%screenIndex == %riftIndex);
 }
 
 //-----------------------------------------------------------------------------
@@ -132,8 +136,11 @@ function setStandardOculusVRControlScheme(%gameConnection)
 // the full screen display will appear on the Rift.
 function setVideoModeForOculusVRDisplay(%fullscreen)
 {
-   %res = getOVRHMDResolution(0);
-   Canvas.setVideoMode(%res.x, %res.y, %fullscreen, 32, 4);
+   if ( !$RiftOnMain )
+   {
+      %res = getOVRHMDResolution(0);
+      Canvas.setVideoMode(%res.x, %res.y, %fullscreen, 32, 60);
+   }
 }
 
 //-----------------------------------------------------------------------------
@@ -158,6 +165,9 @@ function toggleRift(%val)
          ServerConnection.setControlSchemeParameters(false, false, false);
       disableOculusVRDisplay(ServerConnection);
       $InRiftView = false;
+      %vs = $NRVideoMode;
+      if ( !$RiftOnMain )
+         Canvas.setVideoMode(getWord(%vs,0), getWord(%vs,1), false, getWord(%vs,3), getWord(%vs,4));
       Canvas.checkCursor();
       $CurtainManager::renderGui = false;
       PG_ShapeNames.visible = true;
@@ -168,6 +178,9 @@ function toggleRift(%val)
       setAllSensorPredictionTime(0.02);
       enableOculusVRDisplay(ServerConnection, true);
       setStandardOculusVRControlScheme(ServerConnection);
+      $NRVideoMode = Canvas.getVideoMode();
+      setVideoModeForOculusVRDisplay(true);
+      reloadCurtainMaterials();
       $InRiftView = true;
       hideCursor();
       Canvas.checkCursor();

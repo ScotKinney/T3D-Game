@@ -48,6 +48,8 @@ function loadStartup()
    if ( $TAP::isTappedIn )
       TapInStage1();
 
+   reInitMaterials();
+   reloadCurtainMaterials();
    // Play our startup sound
    //SFXPlayOnce(AudioGui, "art/sound/gui/startup");//SFXPlay(startsnd);
 }
