@@ -1500,97 +1500,7 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-262.636 34.7275 70.0578";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "JavelinWeapon";
-         position = "-265.582 34.9445 69.9808";
-         rotation = "0 0 1 90";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-262.346 34.6935 70.0578";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-262.076 34.6625 70.0578";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-259.21 34.4905 69.9768";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-258.79 34.4715 69.9768";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-258.365 34.5305 69.9949";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+
       new Item() {
          static = "1";
          rotate = "0";
@@ -1630,19 +1540,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "JavelinWeapon";
-         position = "-265.552 34.5605 69.9808";
-         rotation = "0 0 1 90";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+
       new Item() {
          static = "1";
          rotate = "0";
@@ -2560,20 +2458,7 @@ new SimGroup(MissionGroup) {
             team = "6";
             weapon = "HammerWeapon";
       };
-      new Item(Level3Badge_6) {
-         static = "1";
-         rotate = "0";
-         buyable = "0";
-         count = "0";
-         isAIControlled = "0";
-         dataBlock = "Level_3_Badge";
-         position = "-315.856 -315.588 58.9021";
-         rotation = "0 0 1 2.17681";
-         scale = "10 10 10";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            team = "6";
-      };
+
       new Prefab(Fort_OdinsRevenge) {
          fileName = "art/Packs/props/clanFort/fort.prefab";
          position = "-315.692 -309.971 59.7651";
@@ -3196,20 +3081,7 @@ new SimGroup(MissionGroup) {
             team = "11";
             weapon = "HammerWeapon";
       };
-      new Item(Level3Badge_11) {
-         static = "1";
-         rotate = "0";
-         buyable = "0";
-         count = "0";
-         isAIControlled = "0";
-         dataBlock = "Level_3_Badge";
-         position = "258.144 -320.931 58.1699";
-         rotation = "0 0 1 2.99317";
-         scale = "10 10 10";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            team = "11";
-      };
+
       new Prefab(Fort_ThunderLords) {
          fileName = "art/Packs/props/clanFort/fort.prefab";
          position = "258.406 -315.343 59.6349";
