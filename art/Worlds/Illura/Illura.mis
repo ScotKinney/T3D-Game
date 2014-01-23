@@ -1878,19 +1878,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "5";
-         isAIControlled = "0";
-         dataBlock = "The_Claw_Potion";
-         position = "-253.776 183.254 152.427";
-         rotation = "0 0 -1 87.3107";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+    
       new Item() {
          static = "1";
          rotate = "0";
@@ -1923,32 +1911,6 @@ new SimGroup(MissionGroup) {
          buyable = "1";
          count = "3";
          isAIControlled = "0";
-         dataBlock = "Leaf_Me_Alone_Potion";
-         position = "-251.85 182.91 153.937";
-         rotation = "0 0 -1 86.8367";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "3";
-         isAIControlled = "0";
-         dataBlock = "InsectInside_Potion";
-         position = "-252.473 183.002 153.937";
-         rotation = "0 0 -1 86.8367";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "3";
-         isAIControlled = "0";
          dataBlock = "Human_Torch_Potion";
          position = "-253.47 183.244 153.937";
          rotation = "0 0 -1 86.8367";
@@ -1956,19 +1918,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "10";
-         isAIControlled = "0";
-         dataBlock = "Evil_Eye_Potion";
-         position = "-254.122 183.272 153.947";
-         rotation = "0 0 -1 87.3107";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+
       new Item() {
          static = "1";
          rotate = "0";

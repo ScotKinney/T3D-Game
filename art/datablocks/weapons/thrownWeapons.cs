@@ -38,46 +38,8 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
    canUseMounted = true;
 };
 
-// Slingdart
-datablock ProjectileData(slingdartProjectile : BaseProjectile)
-{
-   projectileShapeName = "art/inv/weapons/dart/slingdart.dts";
-   scale = "1 1 1";
-   muzzleVelocity = 25;
-   directDamage = 65;
-   particleEmitter = 0;
-   particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
-   waterExplosion = 0;
-   lightDesc = 0;
-   gravityMod = 0.3;
-   lifetime = 30000;
-   decal = ScorchRXDecalSmall;
-   velInheritFactor = 1.0;
-   retrievable = "slingdartWeapon";
-};
 
-datablock ProjectileData(slingdartWetProjectile : slingdartProjectile)
-{
-   muzzleVelocity = 10;
-   gravityMod = 0.6;
-   particleWaterEmitter = ProjectileTrailWaterEmitter;
-};
-
-datablock ShapeBaseImageData(SlingDartImage : BaseTriggeredImage)
-{
-   shapefile = "art/inv/weapons/dart/slingdart.dts";
-   scale = "1 1 1";
-   item = slingdartWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-   projectile = slingdartProjectile;
-   wetProjectile = slingdartWetProjectile;
-   fireAnim = "Throw_HamAxe";
-   fireSound = ThrowDartSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
-   canUseMounted = true;
-};
-
-// Javelin
+// SpearThrown
 datablock ProjectileData(JavelinProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/Javelin/Javelin.dts";
@@ -155,7 +117,7 @@ datablock ShapeBaseImageData(HammerImage : BaseTriggeredImage)
    canUseMounted = true;
 };
 
-// Tomahawk
+// AxeThrown
 datablock ProjectileData(TomahawkProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/Tomahawk/thawk.dts";

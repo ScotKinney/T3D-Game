@@ -47,9 +47,9 @@ singleton GameBaseData(SwordSwing1_LH)
    damageAmount = 50;
    startDamage = 0.4; //time in seconds during animation before damage is done
    endDamage = 0.8;
-   soundDelay = 400; // time in ms before attack sound plays
+   soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing1_RH)
@@ -60,9 +60,9 @@ singleton GameBaseData(SwordSwing1_RH)
    damageAmount = 50;
    startDamage = 0.4; //time in seconds during animation before damage is done
    endDamage = 0.8;
-   soundDelay = 400; // time in ms before attack sound plays
+   soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing2_LH)
@@ -75,7 +75,7 @@ singleton GameBaseData(SwordSwing2_LH)
    endDamage = 0.6;
    soundDelay = 300; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 
@@ -89,7 +89,7 @@ singleton GameBaseData(SwordSwing2_RH)
    endDamage = 0.6;
    soundDelay = 300; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing3_LH)
@@ -102,7 +102,7 @@ singleton GameBaseData(SwordSwing3_LH)
    endDamage = 0.8;
    soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing3_RH)
@@ -115,7 +115,7 @@ singleton GameBaseData(SwordSwing3_RH)
    endDamage = 0.8;
    soundDelay = 500; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing4_LH)
@@ -128,7 +128,7 @@ singleton GameBaseData(SwordSwing4_LH)
    endDamage = 0.84;
    soundDelay = 520; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 
@@ -142,7 +142,7 @@ singleton GameBaseData(SwordSwing4_RH)
    endDamage = 0.84;
    soundDelay = 520; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing5_LH)
@@ -155,7 +155,7 @@ singleton GameBaseData(SwordSwing5_LH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing5_RH)
@@ -168,7 +168,7 @@ singleton GameBaseData(SwordSwing5_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing6_LH)
@@ -181,7 +181,7 @@ singleton GameBaseData(SwordSwing6_LH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing6_RH)
@@ -194,7 +194,7 @@ singleton GameBaseData(SwordSwing6_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing7_LH)
@@ -207,7 +207,7 @@ singleton GameBaseData(SwordSwing7_LH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing7_RH)
@@ -220,7 +220,7 @@ singleton GameBaseData(SwordSwing7_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing8_RH)
@@ -233,7 +233,7 @@ singleton GameBaseData(SwordSwing8_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 
@@ -247,7 +247,7 @@ singleton GameBaseData(SwordSwing9_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing10_RH)
@@ -260,7 +260,7 @@ singleton GameBaseData(SwordSwing10_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing11_RH)
@@ -273,7 +273,7 @@ singleton GameBaseData(SwordSwing11_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing2Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 singleton GameBaseData(SwordSwing12_RH)
@@ -286,7 +286,7 @@ singleton GameBaseData(SwordSwing12_RH)
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing3Sound;
-   impulse = 400;
+   impulse = 500;
 };
 
 
@@ -329,7 +329,7 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
    hitLiveSound = "SwordHitLiveSound";
 };
 
-/////////The Swords
+/////////The rest of them based off the one above
 
 datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
 {
@@ -554,7 +554,7 @@ singleton GameBaseData(THS_Swing11)
 datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/TH_Swords/TH_SwordA.dts";
-   item = ExcaliburSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   item = Excalibur_SwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
    canH2H = true;
    canUseMounted = false;
 
@@ -582,13 +582,523 @@ datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
 datablock ShapeBaseImageData(DecimatorSwordImage : ExcaliburSwordImage)
 {
    shapefile = "art/inv/weapons/TH_Swords/TH_SwordB.dts";
-   item = DecimatorSwordWeapon;
+   item = Decimator_SwordWeapon;
 };
 
 datablock ShapeBaseImageData(BoneCrusherSwordImage : ExcaliburSwordImage)
 {
    shapefile = "art/inv/weapons/TH_Swords/TH_SwordC.dts";
-   item = BoneCrusherSwordWeapon;
+   item = Bone_Crusher_SwordWeapon;
+};
+
+
+////////////////////////SHIELDS///////////////////////////////
+
+/////////////////Buckler Shield Attacks//////////////
+
+singleton GameBaseData(BShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(BShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(BShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(BShield3)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
+/////////////////Targe Shield Attacks/////////////
+
+singleton GameBaseData(TShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(TShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(TShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(TShield4)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+
+//////////////// Wood Round Shield Attacks////////////////
+
+singleton GameBaseData(WRShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(WRShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(WRShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+singleton GameBaseData(WRShield4)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+//////////////// Wood Square Shield Attacks////////////////
+
+singleton GameBaseData(WSShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(WSShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(WSShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(WSShield4)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+//////////////// Heater Shield Attacks////////////////
+
+singleton GameBaseData(HShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+singleton GameBaseData(HShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+singleton GameBaseData(HShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+singleton GameBaseData(HShield4)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+//////////////// Golden Shield Attacks////////////////
+
+singleton GameBaseData(GShield1)
+{
+   seqName = "Shield1_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
+singleton GameBaseData(GShield2)
+{
+   seqName = "Shield2_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
+singleton GameBaseData(GShield3)
+{
+   seqName = "Shield3_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
+singleton GameBaseData(GShield4)
+{
+   seqName = "Shield4_LH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
+///////Buckler Shield Images
+
+datablock ShapeBaseImageData(ShieldBucklerAImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldBucklerA.dts";
+   item = Buckler_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = BShield1;
+   hthAttack[1]                     = BShield2;
+   hthAttack[2]                     = BShield3;
+   hthAttack[3]                     = BShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+datablock ShapeBaseImageData(ShieldBucklerBImage : ShieldBucklerAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldBucklerB.dts";
+   item = Buckler_Shield_IIWeapon;
+};
+
+datablock ShapeBaseImageData(ShieldBucklerCImage : ShieldBucklerAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldBucklerC.dts";
+   item = Buckler_Shield_IIIWeapon;
+};
+
+///////Targe Shield Images
+
+datablock ShapeBaseImageData(ShieldTargeAImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldTargeA.dts";
+   item = Targe_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = TShield1;
+   hthAttack[1]                     = TShield2;
+   hthAttack[2]                     = TShield3;
+   hthAttack[3]                     = TShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+datablock ShapeBaseImageData(ShieldTargeBImage : ShieldBucklerAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldTargeB.dts";
+   item = Targe_Shield_IIWeapon;
+};
+
+datablock ShapeBaseImageData(ShieldTargeCImage : ShieldBucklerAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldTargeC.dts";
+   item = Targe_Shield_IIIWeapon;
+};
+
+
+///////Wooden Round Shield Images
+
+datablock ShapeBaseImageData(RoundShieldImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldRoundNub.dts";
+   item = Round_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = WRShield1;
+   hthAttack[1]                     = WRShield2;
+   hthAttack[2]                     = WRShield3;
+   hthAttack[3]                     = WRShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+///////Wooden Square Shield Images
+
+datablock ShapeBaseImageData(SquareShieldImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldSquare.dts";
+   item = Square_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = WSShield1;
+   hthAttack[1]                     = WSShield2;
+   hthAttack[2]                     = WSShield3;
+   hthAttack[3]                     = WSShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+///////Heater Shield Images
+
+datablock ShapeBaseImageData(ShieldHeaterAImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldHeaterA.dts";
+   item = Heater_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = HShield1;
+   hthAttack[1]                     = HShield2;
+   hthAttack[2]                     = HShield3;
+   hthAttack[3]                     = HShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+datablock ShapeBaseImageData(ShieldHeaterBImage : ShieldHeaterAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldHeaterB.dts";
+   item = Heater_Shield_IIWeapon;
+};
+
+datablock ShapeBaseImageData(ShieldHeaterCImage : ShieldHeaterAImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldHeaterC.dts";
+   item = Heater_Shield_IIIWeapon;
+};
+
+
+//////////////////Golden Shield
+
+datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Shields/ShieldGold.dts";
+   item = Golden_ShieldWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canH2H = true;
+   canUseMounted = true;
+   mountPoint = 4;
+
+   hthNumAttacks = 4;
+
+   hthAttack[0]                     = GShield1;
+   hthAttack[1]                     = GShield2;
+   hthAttack[2]                     = GShield3;
+   hthAttack[3]                     = GShield4;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
 };
 
 ///////////////////War Axes////////////////////////
@@ -643,7 +1153,7 @@ singleton GameBaseData(SteelWarAxeSwing10 : SwordSwing10_RH)
 datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/axes/Axe_A.dts";
-   item = SteelWarAxeWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   item = Steel_War_AxeWeapon; //This is the name of the WEAPON that comes from the weapons table.
    canH2H = true;
 
    hthNumAttacks = 10;
@@ -718,7 +1228,7 @@ singleton GameBaseData(DoubleWarAxeSwing10 : SwordSwing10_RH)
 datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_B.dts";
-   item = DoubleWarAxeWeapon;
+   item = Double_War_AxeWeapon;
    canH2H = true;
 
    hthNumAttacks = 10;
@@ -791,7 +1301,7 @@ singleton GameBaseData(IronWarAxeSwing10 : SwordSwing10_RH)
 datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_C.dts";
-   item = IronWarAxeWeapon;
+   item = Iron_War_AxeWeapon;
    canH2H = true;
 
    hthNumAttacks = 10;
@@ -948,7 +1458,7 @@ datablock GameBaseData(Staff_Swing10)
 datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/WizardStaff/WizardsStaff.dts";
-   item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = Wizards_StaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
    // Here are the Attacks we support
    hthNumAttacks = 10;
