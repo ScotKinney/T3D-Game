@@ -7639,20 +7639,7 @@ new SimGroup(MissionGroup) {
             team = "8";
             Weapon = "DaggerWeapon";
       };
-      new Item(Level3Badge_8) {
-         static = "1";
-         rotate = "0";
-         buyable = "0";
-         count = "0";
-         isAIControlled = "0";
-         dataBlock = "Level_3_Badge";
-         position = "-32.317 742.804 69.1795";
-         rotation = "0 0 1 90.2612";
-         scale = "10 10 10";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            team = "8";
-      };
+
       new Prefab(Fort_CalicoJacks) {
          fileName = "art/Packs/props/clanFort/fort.prefab";
          position = "-26.6874 742.679 69.6135";
@@ -8199,20 +8186,7 @@ new SimGroup(MissionGroup) {
             team = "4";
             Weapon = "DaggerWeapon";
       };
-      new Item(Level3Badge_4) {
-         static = "1";
-         rotate = "0";
-         buyable = "0";
-         count = "0";
-         isAIControlled = "0";
-         dataBlock = "Level_3_Badge";
-         position = "-309.696 1114.6 71.8444";
-         rotation = "0 0 1 0.347179";
-         scale = "10 10 10";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            team = "4";
-      };
+
       new Prefab(Fort_RumRunners) {
          fileName = "art/Packs/props/clanFort/fort.prefab";
          position = "-309.712 1120.18 72.205";
@@ -10669,84 +10643,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-326.555 733.26 69.8105";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-326.512 733.625 69.8105";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "TomahawkWeapon";
-         position = "-326.461 734.046 69.8105";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-326.197 735.069 69.7584";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-326.165 735.34 69.7584";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "SlingDartWeapon";
-         position = "-326.13 735.633 69.7584";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+
       new Item() {
          static = "1";
          rotate = "0";
@@ -10786,19 +10683,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "JavelinWeapon";
-         position = "-325.986 737.367 69.7599";
-         rotation = "0 0 1 90";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
+
       new TSStatic() {
          shapeName = "art/Packs/props/default/barrel_lod01.dts";
          playAmbient = "1";
