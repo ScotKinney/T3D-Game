@@ -73,31 +73,6 @@ datablock ItemData(Arabian_Horse_Item)
 };
 $AlterVerse::ItemNames[105] = "Arabian_Horse_Item";
 
-datablock ItemData(Astral_Passport)
-{
-
-   ItemID = 70;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/items/kit/healthkit.dts";
-   invIcon = "art/gui/icons/astral_passport.jpg";
-   maxInventory = 999;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-   table = "Magic";
-   spellDef = "AstralPassport";
-   spellTarget = "Self";
-};
-$AlterVerse::ItemNames[70] = "Astral_Passport";
-
 datablock ItemData(Banana)
 {
 
@@ -264,14 +239,14 @@ datablock ItemData(BoltAmmo)
 };
 $AlterVerse::ItemNames[3] = "BoltAmmo";
 
-datablock ItemData(BoneCrusherSwordWeapon)
+datablock ItemData(Bone_Crusher_SwordWeapon)
 {
 
    ItemID = 134;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Th_Swords/TH_SwordC.dts";
-   invIcon = "art/gui/icons/bonecrushersword.jpg";
+   invIcon = "art/gui/icons/swordbonecrusher.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -290,7 +265,7 @@ datablock ItemData(BoneCrusherSwordWeapon)
    effectWeap = "melee";
    reticle = "";
 };
-$AlterVerse::ItemNames[134] = "BoneCrusherSwordWeapon";
+$AlterVerse::ItemNames[134] = "Bone_Crusher_SwordWeapon";
 
 datablock ItemData(Book_of_Blinding)
 {
@@ -341,6 +316,90 @@ datablock ItemData(Brook_Trout)
    nutrition = 30;
 };
 $AlterVerse::ItemNames[9] = "Brook_Trout";
+
+datablock ItemData(Buckler_Shield_IWeapon)
+{
+
+   ItemID = 135;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldBucklerA.dts";
+   invIcon = "art/gui/icons/ShieldBuckler.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+
+   table = "Weapons";
+   SubItemID = 135;
+   image = ShieldBucklerAImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[135] = "Buckler_Shield_IWeapon";
+
+datablock ItemData(Buckler_Shield_IIWeapon)
+{
+
+   ItemID = 136;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldBucklerB.dts";
+   invIcon = "art/gui/icons/ShieldBuckler.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+
+   table = "Weapons";
+   SubItemID = 136;
+   image = ShieldBucklerBImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[136] = "Buckler_Shield_IIWeapon";
+
+datablock ItemData(Buckler_Shield_IIIWeapon)
+{
+
+   ItemID = 137;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldBucklerC.dts";
+   invIcon = "art/gui/icons/ShieldBuckler.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 100;
+
+   table = "Weapons";
+   SubItemID = 137;
+   image = ShieldBucklerCImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[137] = "Buckler_Shield_IIIWeapon";
 
 datablock ItemData(Buckskin_Horse_Item)
 {
@@ -416,18 +475,18 @@ datablock ItemData(DaggerWeapon)
    SubItemID = 81;
    image = DaggerImage;
    effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[81] = "DaggerWeapon";
 
-datablock ItemData(DecimatorSwordWeapon)
+datablock ItemData(Decimator_SwordWeapon)
 {
 
    ItemID = 133;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Th_Swords/TH_SwordB.dts";
-   invIcon = "art/gui/icons/decimatorsword.jpg";
+   invIcon = "art/gui/icons/sworddecimator.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -446,7 +505,7 @@ datablock ItemData(DecimatorSwordWeapon)
    effectWeap = "melee";
    reticle = "";
 };
-$AlterVerse::ItemNames[133] = "DecimatorSwordWeapon";
+$AlterVerse::ItemNames[133] = "Decimator_SwordWeapon";
 
 datablock ItemData(Deer_Hide)
 {
@@ -520,39 +579,14 @@ datablock ItemData(Emerald)
 };
 $AlterVerse::ItemNames[25] = "Emerald";
 
-datablock ItemData(Evil_Eye_Potion)
-{
-
-   ItemID = 63;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/magic/potions/pbottle3-1.dts";
-   invIcon = "art/gui/icons/evil_eye_potion.jpg";
-   maxInventory = 10;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 100;
-   table = "Magic";
-   spellDef = "DazeSpell";
-   spellTarget = "Enemy";
-};
-$AlterVerse::ItemNames[63] = "Evil_Eye_Potion";
-
-datablock ItemData(ExcaliburSwordWeapon)
+datablock ItemData(Excalibur_SwordWeapon)
 {
 
    ItemID = 132;
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/Th_Swords/TH_SwordA.dts";
-   invIcon = "art/gui/icons/excalibursword.jpg";
+   invIcon = "art/gui/icons/swordexcalibur.jpg";
    maxInventory = 999;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -571,7 +605,7 @@ datablock ItemData(ExcaliburSwordWeapon)
    effectWeap = "melee";
    reticle = "";
 };
-$AlterVerse::ItemNames[132] = "ExcaliburSwordWeapon";
+$AlterVerse::ItemNames[132] = "Excalibur_SwordWeapon";
 
 datablock ItemData(Fishing_Pole)
 {
@@ -619,7 +653,7 @@ datablock ItemData(FJFemaleSwordWeapon)
    SubItemID = 82;
    image = FJFemaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[82] = "FJFemaleSwordWeapon";
 
@@ -647,11 +681,11 @@ datablock ItemData(FJMaleSwordWeapon)
    SubItemID = 83;
    image = FJMaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[83] = "FJMaleSwordWeapon";
 
-datablock ItemData(FlexDecapitator)
+datablock ItemData(Flex_Decapitator)
 {
 
    ItemID = 123;
@@ -671,7 +705,7 @@ datablock ItemData(FlexDecapitator)
 
    cost = 300;
 };
-$AlterVerse::ItemNames[123] = "FlexDecapitator";
+$AlterVerse::ItemNames[123] = "Flex_Decapitator";
 
 datablock ItemData(FlintlockWeapon)
 {
@@ -725,6 +759,34 @@ datablock ItemData(Gargoyles_Fire_Balls)
    spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[71] = "Gargoyles_Fire_Balls";
+
+datablock ItemData(Golden_ShieldWeapon)
+{
+
+   ItemID = 144;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldGold.dts";
+   invIcon = "art/gui/icons/ShieldGold.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 2500;
+
+   table = "Weapons";
+   SubItemID = 144;
+   image = ShieldGoldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[144] = "Golden_ShieldWeapon";
 
 datablock ItemData(Grasshoppers)
 {
@@ -797,7 +859,7 @@ datablock ItemData(GrenadeWeapon)
    SubItemID = 40;
    image = GrenadeImage;
    effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[40] = "GrenadeWeapon";
 
@@ -850,9 +912,93 @@ datablock ItemData(HammerWeapon)
    SubItemID = 36;
    image = HammerImage;
    effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[36] = "HammerWeapon";
+
+datablock ItemData(Heater_Shield_IWeapon)
+{
+
+   ItemID = 141;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldHeaterA.dts";
+   invIcon = "art/gui/icons/ShieldHeater.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 141;
+   image = ShieldHeaterAImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[141] = "Heater_Shield_IWeapon";
+
+datablock ItemData(Heater_Shield_IIWeapon)
+{
+
+   ItemID = 142;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldHeaterB.dts";
+   invIcon = "art/gui/icons/ShieldHeater.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 142;
+   image = ShieldHeaterBImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[142] = "Heater_Shield_IIWeapon";
+
+datablock ItemData(Heater_Shield_IIIWeapon)
+{
+
+   ItemID = 143;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldHeaterC.dts";
+   invIcon = "art/gui/icons/ShieldHeater.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 143;
+   image = ShieldHeaterCImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[143] = "Heater_Shield_IIIWeapon";
 
 datablock ItemData(Huge_Gold_Nugget)
 {
@@ -861,7 +1007,7 @@ datablock ItemData(Huge_Gold_Nugget)
    category = "mineral";
    className = "gem";
    shapeFile = "art/inv/Gems/nugget_g_h.dae";
-   invIcon = "art/gui/icons/huge_gold_nugget.jpg";
+   invIcon = "art/gui/icons/gold_nugget.jpg";
    maxInventory = 2;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -900,31 +1046,6 @@ datablock ItemData(Human_Torch_Potion)
    spellTarget = "Area";
 };
 $AlterVerse::ItemNames[59] = "Human_Torch_Potion";
-
-datablock ItemData(InsectInside_Potion)
-{
-
-   ItemID = 60;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/magic/potions/pbottle3-3.dts";
-   invIcon = "art/gui/icons/InsectInside_Potion.jpg";
-   maxInventory = 3;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 2000;
-   table = "Magic";
-   spellDef = "ManaInfusionSpell";
-   spellTarget = "Friend";
-};
-$AlterVerse::ItemNames[60] = "InsectInside_Potion";
 
 datablock ItemData(Invisibility_Rune)
 {
@@ -979,34 +1100,6 @@ datablock ItemData(Iron_War_AxeWeapon)
 };
 $AlterVerse::ItemNames[126] = "Iron_War_AxeWeapon";
 
-datablock ItemData(JavelinWeapon)
-{
-
-   ItemID = 73;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/Javelin/Javelin.dts";
-   invIcon = "art/gui/icons/Javelin.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10;
-
-   table = "Weapons";
-   SubItemID = 73;
-   image = JavelinImage;
-   effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
-};
-$AlterVerse::ItemNames[73] = "JavelinWeapon";
-
 datablock ItemData(KardFemaleSwordWeapon)
 {
 
@@ -1031,7 +1124,7 @@ datablock ItemData(KardFemaleSwordWeapon)
    SubItemID = 84;
    image = KardFemaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[84] = "KardFemaleSwordWeapon";
 
@@ -1059,7 +1152,7 @@ datablock ItemData(KardMaleSwordWeapon)
    SubItemID = 85;
    image = KardMaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[85] = "KardMaleSwordWeapon";
 
@@ -1114,7 +1207,7 @@ datablock ItemData(Large_Diamond)
    category = "gems";
    className = "gem";
    shapeFile = "art/inv/gems/diamondLarge.dae";
-   invIcon = "art/gui/icons/large_diamond.jpg";
+   invIcon = "art/gui/icons/diamond.jpg";
    maxInventory = 50;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -1136,7 +1229,7 @@ datablock ItemData(Large_Gold_Nugget)
    category = "mineral";
    className = "gem";
    shapeFile = "art/inv/Gems/nugget_g_l.dae";
-   invIcon = "art/gui/icons/large_gold_nugget.jpg";
+   invIcon = "art/gui/icons/gold_nugget.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -1173,56 +1266,6 @@ datablock ItemData(Large_Silver_Nugget)
 };
 $AlterVerse::ItemNames[49] = "Large_Silver_Nugget";
 
-datablock ItemData(Laser_Drone)
-{
-
-   ItemID = 72;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/magic/occams/laserDrone.dts";
-   invIcon = "art/gui/icons/Laser_Drone.jpg";
-   maxInventory = 9;
-   keepOnDeath = 1;
-   skullLevel = 9;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 9000;
-   table = "Magic";
-   spellDef = "LaserDrone";
-   spellTarget = "Enemy";
-};
-$AlterVerse::ItemNames[72] = "Laser_Drone";
-
-datablock ItemData(Leaf_Me_Alone_Potion)
-{
-
-   ItemID = 61;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/magic/potions/pbottle3-4.dts";
-   invIcon = "art/gui/icons/Leaf_Me_Alone_Potion.jpg";
-   maxInventory = 3;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 2000;
-   table = "Magic";
-   spellDef = "FlashHealSpell";
-   spellTarget = "Friend";
-};
-$AlterVerse::ItemNames[61] = "Leaf_Me_Alone_Potion";
-
 datablock ItemData(Lemon)
 {
 
@@ -1247,28 +1290,6 @@ datablock ItemData(Lemon)
    nutrition = 15;
 };
 $AlterVerse::ItemNames[18] = "Lemon";
-
-datablock ItemData(Level_3_Badge)
-{
-
-   ItemID = 77;
-   category = "misc";
-   className = "gem";
-   shapeFile = "art/inv/items/levelBadges/lvl3badge.dts";
-   invIcon = "art/gui/icons/coin.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 3;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-};
-$AlterVerse::ItemNames[77] = "Level_3_Badge";
 
 datablock ItemData(Levitation_Rune)
 {
@@ -1374,7 +1395,7 @@ datablock ItemData(Medium_Diamond)
    category = "gems";
    className = "gem";
    shapeFile = "art/inv/gems/diamondMed.dae";
-   invIcon = "art/gui/icons/medium_diamond.jpg";
+   invIcon = "art/gui/icons/diamond.jpg";
    maxInventory = 100;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -1529,7 +1550,7 @@ datablock ItemData(MythFemaleSwordWeapon)
    SubItemID = 89;
    image = MythFemaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[89] = "MythFemaleSwordWeapon";
 
@@ -1557,7 +1578,7 @@ datablock ItemData(MythMaleSwordWeapon)
    SubItemID = 86;
    image = MythMaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[86] = "MythMaleSwordWeapon";
 
@@ -1801,6 +1822,258 @@ datablock ItemData(Roast)
    nutrition = 50;
 };
 $AlterVerse::ItemNames[30] = "Roast";
+
+datablock ItemData(Round_Shield_IWeapon)
+{
+
+   ItemID = 145;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 145;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[145] = "Round_Shield_IWeapon";
+
+datablock ItemData(Round_Shield_IIWeapon)
+{
+
+   ItemID = 146;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 146;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[146] = "Round_Shield_IIWeapon";
+
+datablock ItemData(Round_Shield_IIIWeapon)
+{
+
+   ItemID = 147;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 147;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[147] = "Round_Shield_IIIWeapon";
+
+datablock ItemData(Round_Shield_IVWeapon)
+{
+
+   ItemID = 148;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 148;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[148] = "Round_Shield_IVWeapon";
+
+datablock ItemData(Round_Shield_IXWeapon)
+{
+
+   ItemID = 153;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 153;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[153] = "Round_Shield_IXWeapon";
+
+datablock ItemData(Round_Shield_VWeapon)
+{
+
+   ItemID = 149;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 149;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[149] = "Round_Shield_VWeapon";
+
+datablock ItemData(Round_Shield_VIWeapon)
+{
+
+   ItemID = 150;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 150;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[150] = "Round_Shield_VIWeapon";
+
+datablock ItemData(Round_Shield_VIIWeapon)
+{
+
+   ItemID = 151;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 151;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[151] = "Round_Shield_VIIWeapon";
+
+datablock ItemData(Round_Shield_VIIIWeapon)
+{
+
+   ItemID = 152;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 152;
+   image = RoundShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[152] = "Round_Shield_VIIIWeapon";
 
 datablock ItemData(Ruby)
 {
@@ -2213,34 +2486,6 @@ datablock ItemData(ShotAmmo)
 };
 $AlterVerse::ItemNames[48] = "ShotAmmo";
 
-datablock ItemData(SlingDartWeapon)
-{
-
-   ItemID = 80;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/dart/slingdart.dts";
-   invIcon = "art/gui/icons/slingdart.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10;
-
-   table = "Weapons";
-   SubItemID = 80;
-   image = SlingDartImage;
-   effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
-};
-$AlterVerse::ItemNames[80] = "SlingDartWeapon";
-
 datablock ItemData(Small_Diamond)
 {
 
@@ -2248,7 +2493,7 @@ datablock ItemData(Small_Diamond)
    category = "gems";
    className = "gem";
    shapeFile = "art/inv/gems/diamond.dae";
-   invIcon = "art/gui/icons/small_diamond.jpg";
+   invIcon = "art/gui/icons/diamond.jpg";
    maxInventory = 300;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -2270,7 +2515,7 @@ datablock ItemData(Small_Gold_Nugget)
    category = "mineral";
    className = "gem";
    shapeFile = "art/inv/Gems/nugget_g_s.dae";
-   invIcon = "art/gui/icons/small_gold_nugget.jpg";
+   invIcon = "art/gui/icons/gold_nugget.jpg";
    maxInventory = 150;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -2357,6 +2602,258 @@ datablock ItemData(Split_Personality_Potion)
 };
 $AlterVerse::ItemNames[131] = "Split_Personality_Potion";
 
+datablock ItemData(Square_Shield_IWeapon)
+{
+
+   ItemID = 154;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 154;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[154] = "Square_Shield_IWeapon";
+
+datablock ItemData(Square_Shield_IIWeapon)
+{
+
+   ItemID = 155;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 155;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[155] = "Square_Shield_IIWeapon";
+
+datablock ItemData(Square_Shield_IIIWeapon)
+{
+
+   ItemID = 156;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 156;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[156] = "Square_Shield_IIIWeapon";
+
+datablock ItemData(Square_Shield_IVWeapon)
+{
+
+   ItemID = 157;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 157;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[157] = "Square_Shield_IVWeapon";
+
+datablock ItemData(Square_Shield_IXWeapon)
+{
+
+   ItemID = 162;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 162;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[162] = "Square_Shield_IXWeapon";
+
+datablock ItemData(Square_Shield_VWeapon)
+{
+
+   ItemID = 158;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 158;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[158] = "Square_Shield_VWeapon";
+
+datablock ItemData(Square_Shield_VIWeapon)
+{
+
+   ItemID = 159;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 159;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[159] = "Square_Shield_VIWeapon";
+
+datablock ItemData(Square_Shield_VIIWeapon)
+{
+
+   ItemID = 160;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 160;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[160] = "Square_Shield_VIIWeapon";
+
+datablock ItemData(Square_Shield_VIIIWeapon)
+{
+
+   ItemID = 161;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
+   invIcon = "art/gui/icons/ShieldWood.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 161;
+   image = SquareShieldImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[161] = "Square_Shield_VIIIWeapon";
+
 datablock ItemData(Steel_War_AxeWeapon)
 {
 
@@ -2410,16 +2907,16 @@ datablock ItemData(Swordfish)
 };
 $AlterVerse::ItemNames[10] = "Swordfish";
 
-datablock ItemData(The_Claw_Potion)
+datablock ItemData(Targe_Shield_IWeapon)
 {
 
-   ItemID = 64;
-   category = "magic";
-   className = "magic";
-   shapeFile = "art/inv/magic/potions/pbottle2-1.dts";
-   invIcon = "art/gui/icons/The_Claw_Potion.jpg";
-   maxInventory = 5;
-   keepOnDeath = 1;
+   ItemID = 138;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldTargeA.dts";
+   invIcon = "art/gui/icons/ShieldTarge.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
    skullLevel = 0;
 
    mass = 2;
@@ -2428,12 +2925,71 @@ datablock ItemData(The_Claw_Potion)
    emap = true;
    sticky = true;
 
-   cost = 800;
-   table = "Magic";
-   spellDef = "BlinkSpell";
-   spellTarget = "Self";
+   cost = 200;
+
+   table = "Weapons";
+   SubItemID = 138;
+   image = ShieldTargeAImage;
+   effectWeap = "melee";
+   reticle = "";
 };
-$AlterVerse::ItemNames[64] = "The_Claw_Potion";
+$AlterVerse::ItemNames[138] = "Targe_Shield_IWeapon";
+
+datablock ItemData(Targe_Shield_IIWeapon)
+{
+
+   ItemID = 139;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldTargeB.dts";
+   invIcon = "art/gui/icons/ShieldTarge.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 200;
+
+   table = "Weapons";
+   SubItemID = 139;
+   image = ShieldTargeBImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[139] = "Targe_Shield_IIWeapon";
+
+datablock ItemData(Targe_Shield_IIIWeapon)
+{
+
+   ItemID = 140;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/shields/ShieldTargeC.dts";
+   invIcon = "art/gui/icons/ShieldTarge.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 200;
+
+   table = "Weapons";
+   SubItemID = 140;
+   image = ShieldTargeCImage;
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[140] = "Targe_Shield_IIIWeapon";
 
 datablock ItemData(Thors_Hammer)
 {
@@ -2485,7 +3041,7 @@ datablock ItemData(Thunderbolt_Potion)
 };
 $AlterVerse::ItemNames[52] = "Thunderbolt_Potion";
 
-datablock ItemData(TokaraMushroom)
+datablock ItemData(Tokara_Mushroom)
 {
 
    ItemID = 39;
@@ -2508,7 +3064,7 @@ datablock ItemData(TokaraMushroom)
    SubItemID = 39;
    nutrition = 15;
 };
-$AlterVerse::ItemNames[39] = "TokaraMushroom";
+$AlterVerse::ItemNames[39] = "Tokara_Mushroom";
 
 datablock ItemData(TokFemaleSwordWeapon)
 {
@@ -2534,7 +3090,7 @@ datablock ItemData(TokFemaleSwordWeapon)
    SubItemID = 88;
    image = TokFemaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[88] = "TokFemaleSwordWeapon";
 
@@ -2562,37 +3118,9 @@ datablock ItemData(TokMaleSwordWeapon)
    SubItemID = 87;
    image = TokMaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[87] = "TokMaleSwordWeapon";
-
-datablock ItemData(TomahawkWeapon)
-{
-
-   ItemID = 76;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/Tomahawk/thawk.dts";
-   invIcon = "art/gui/icons/tomahawk.jpg";
-   maxInventory = 100;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10;
-
-   table = "Weapons";
-   SubItemID = 76;
-   image = TomahawkImage;
-   effectWeap = "thrown";
-   reticle = "reticle_rocketlauncher";
-};
-$AlterVerse::ItemNames[76] = "TomahawkWeapon";
 
 datablock ItemData(ValFemaleSwordWeapon)
 {
@@ -2618,7 +3146,7 @@ datablock ItemData(ValFemaleSwordWeapon)
    SubItemID = 79;
    image = ValFemaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[79] = "ValFemaleSwordWeapon";
 
@@ -2646,7 +3174,7 @@ datablock ItemData(ValMaleSwordWeapon)
    SubItemID = 78;
    image = ValMaleSwordImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[78] = "ValMaleSwordWeapon";
 
@@ -2675,7 +3203,7 @@ datablock ItemData(Venison_Chop)
 };
 $AlterVerse::ItemNames[31] = "Venison_Chop";
 
-datablock ItemData(WizardsStaffWeapon)
+datablock ItemData(Wizards_StaffWeapon)
 {
 
    ItemID = 117;
@@ -2699,9 +3227,9 @@ datablock ItemData(WizardsStaffWeapon)
    SubItemID = 117;
    image = WizardsStaffImage;
    effectWeap = "melee";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
-$AlterVerse::ItemNames[117] = "WizardsStaffWeapon";
+$AlterVerse::ItemNames[117] = "Wizards_StaffWeapon";
 
 datablock ItemData(XR75Weapon)
 {
