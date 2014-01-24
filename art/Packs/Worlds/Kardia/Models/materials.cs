@@ -133,10 +133,10 @@ singleton Material(mat_GrdRopes)
 singleton Material(mat_wood_5)
 {
    mapTo = "wood_5";
-   diffuseMap[0] = "art/packs/props/clanfort/wood_5";
+   diffuseMap[0] = "wood_5";
    translucent = "0";
    materialTag0 = "Kardia";
-   normalMap[0] = "art/packs/props/clanfort/wood_5N";
+   normalMap[0] = "wood_5N";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
