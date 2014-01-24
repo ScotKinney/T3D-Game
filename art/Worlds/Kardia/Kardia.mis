@@ -129,7 +129,7 @@ new SimGroup(MissionGroup) {
          axisTilt = "23.44";
          dayLength = "86400";
          startTime = "0.0147264";
-         time = "0.0312385";
+         time = "0.0589827";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -927,7 +927,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(guardTower) {
-         shapeName = "art/Packs/Worlds/Kardia/Models/guardstowerJosh.dts";
+         shapeName = "art/Packs/Worlds/Kardia/Models/guardstower.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2894,26 +2894,6 @@ new SimGroup(MissionGroup) {
          position = "-46.9284 365.599 14.6562";
          rotation = "0 0 1 221.792";
          scale = "1.2 1.2 1.2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/worlds/Kardia/Models/props/barrell1.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.7304 374.742 14.6436";
-         rotation = "1 0 0 0";
-         scale = "1.28624 1.39595 1.56411";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -8882,7 +8862,7 @@ new SimGroup(MissionGroup) {
       count = "0";
       isAIControlled = "0";
       dataBlock = "Round_Shield_IWeapon";
-      position = "5.93896 382.547 14.9733";
+      position = "5.95981 382.522 14.9741";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
