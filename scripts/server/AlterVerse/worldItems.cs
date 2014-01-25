@@ -514,7 +514,7 @@ datablock ItemData(Deer_Hide)
    category = "wool";
    className = "inv";
    shapeFile = "art/inv/items/deerhide/deerhide.dts";
-   invIcon = "art/gui/icons/deerhide.jpg";
+   invIcon = "art/gui/icons/hide.jpg";
    maxInventory = 10;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -1099,6 +1099,62 @@ datablock ItemData(Iron_War_AxeWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[126] = "Iron_War_AxeWeapon";
+
+datablock ItemData(IronPikeWeapon)
+{
+
+   ItemID = 164;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/spears/SpearIron_melee.dts";
+   invIcon = "art/gui/icons/IronPike.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 700;
+
+   table = "Weapons";
+   SubItemID = 164;
+   image = IronPikeImage;
+   effectWeap = "Spear";
+   reticle = "";
+};
+$AlterVerse::ItemNames[164] = "IronPikeWeapon";
+
+datablock ItemData(IronSpearWeapon)
+{
+
+   ItemID = 166;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/spears/SpearIron_thrown.dts";
+   invIcon = "art/gui/icons/IronSpear.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 166;
+   image = IronSpearImage;
+   effectWeap = "Spear";
+   reticle = "";
+};
+$AlterVerse::ItemNames[166] = "IronSpearWeapon";
 
 datablock ItemData(KardFemaleSwordWeapon)
 {
@@ -1830,7 +1886,7 @@ datablock ItemData(Round_Shield_IWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1858,7 +1914,7 @@ datablock ItemData(Round_Shield_IIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1886,7 +1942,7 @@ datablock ItemData(Round_Shield_IIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1914,7 +1970,7 @@ datablock ItemData(Round_Shield_IVWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1942,7 +1998,7 @@ datablock ItemData(Round_Shield_IXWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1970,7 +2026,7 @@ datablock ItemData(Round_Shield_VWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1998,7 +2054,7 @@ datablock ItemData(Round_Shield_VIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2026,7 +2082,7 @@ datablock ItemData(Round_Shield_VIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2054,7 +2110,7 @@ datablock ItemData(Round_Shield_VIIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldRoundNub.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldRound.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2471,7 +2527,7 @@ datablock ItemData(ShotAmmo)
    category = "ammo";
    className = "ammo";
    shapeFile = "art/inv/weapons/flintloc/shot.dae";
-   invIcon = "art/gui/icons/wpn.jpg";
+   invIcon = "art/gui/icons/ammo.jpg";
    maxInventory = 100;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2584,7 +2640,7 @@ datablock ItemData(Split_Personality_Potion)
    category = "magic";
    className = "magic";
    shapeFile = "art/inv/magic/potions/pbottle3-2.dts";
-   invIcon = "art/gui/icons/key.jpg";
+   invIcon = "art/gui/icons/splitpotion.jpg";
    maxInventory = 20;
    keepOnDeath = 0;
    skullLevel = 0;
@@ -2609,7 +2665,7 @@ datablock ItemData(Square_Shield_IWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2637,7 +2693,7 @@ datablock ItemData(Square_Shield_IIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2665,7 +2721,7 @@ datablock ItemData(Square_Shield_IIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2693,7 +2749,7 @@ datablock ItemData(Square_Shield_IVWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2721,7 +2777,7 @@ datablock ItemData(Square_Shield_IXWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2749,7 +2805,7 @@ datablock ItemData(Square_Shield_VWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2777,7 +2833,7 @@ datablock ItemData(Square_Shield_VIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2805,7 +2861,7 @@ datablock ItemData(Square_Shield_VIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2833,7 +2889,7 @@ datablock ItemData(Square_Shield_VIIIWeapon)
    category = "weapons";
    className = "wpn";
    shapeFile = "art/inv/weapons/shields/ShieldSquare.dts";
-   invIcon = "art/gui/icons/ShieldWood.jpg";
+   invIcon = "art/gui/icons/ShieldSquare.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -2881,6 +2937,90 @@ datablock ItemData(Steel_War_AxeWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[124] = "Steel_War_AxeWeapon";
+
+datablock ItemData(SteelSpearWeapon)
+{
+
+   ItemID = 167;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/spears/SpearSP_thrown.dts";
+   invIcon = "art/gui/icons/SteelSpear.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1500;
+
+   table = "Weapons";
+   SubItemID = 167;
+   image = SteelSpearImage;
+   effectWeap = "Spear";
+   reticle = "";
+};
+$AlterVerse::ItemNames[167] = "SteelSpearWeapon";
+
+datablock ItemData(StonePikeWeapon)
+{
+
+   ItemID = 163;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/spears/SpearStone_melee.dts";
+   invIcon = "art/gui/icons/StonePike.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 163;
+   image = StonePikeImage;
+   effectWeap = "Spear";
+   reticle = "";
+};
+$AlterVerse::ItemNames[163] = "StonePikeWeapon";
+
+datablock ItemData(StoneSpearWeapon)
+{
+
+   ItemID = 165;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/spears/SpearStone_thrown.dts";
+   invIcon = "art/gui/icons/StoneSpear.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 900;
+
+   table = "Weapons";
+   SubItemID = 165;
+   image = StoneSpearImage;
+   effectWeap = "Spear";
+   reticle = "";
+};
+$AlterVerse::ItemNames[165] = "StoneSpearWeapon";
 
 datablock ItemData(Swordfish)
 {
