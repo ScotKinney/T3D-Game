@@ -311,19 +311,17 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunBlend.dsq", "Fire_FlintLockBlend", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintLockBlend", "13", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeFull.dsq", "Throw_HamAxe", "0", "34", "1", "0");
-   %this.addTrigger("Throw_HamAxe", "16", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeBlend.dsq", "Throw_HamAxeBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_HamAxeBlend", "16", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearFull.dsq", "Throw_Javelin", "0", "34", "1", "0");
-   %this.addTrigger("Throw_Javelin", "16", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearBlend.dsq", "Throw_JavelinBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_JavelinBlend", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_GrenadeFull.dsq", "Throw_Grenade", "0", "-1", "1", "0");
    %this.addTrigger("Throw_Grenade", "23", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_GrenadeBlend.dsq", "Throw_GrenadeBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_GrenadeBlend", "15", "3");
-
-
+   %this.addTrigger("Throw_Javelin", "15", "3");
+   %this.addTrigger("Throw_HamAxe", "14", "3");
 }
 
 $mack = true;
