@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0147264";
-         time = "0.0589827";
+         startTime = "0.182907";
+         time = "0.154957";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "8478";
-         delayRespawn = "2082";
+         botBelongsToMe = "12115";
+         delayRespawn = "11890";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -639,7 +639,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "13";
-         weapon = "KardMaleSwordWeapon";
+         weapon = "SteelWarAxeWeapon";
    };
    new StaticShape(FemaleGuard) {
       isAIControlled = "0";
@@ -653,8 +653,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "8552";
-         delayRespawn = "2558";
+         botBelongsToMe = "12206";
+         delayRespawn = "11278";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -665,7 +665,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         weapon = "TokFemaleSwordWeapon";
+         weapon = "BoneCrusherSwordWeapon";
    };
    new StaticShape(Guard14_DD11) {
       isAIControlled = "0";
@@ -679,8 +679,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "8234";
-         delayRespawn = "754";
+         botBelongsToMe = "3827";
+         delayRespawn = "8253";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -705,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "8415";
-         delayRespawn = "1513";
+         botBelongsToMe = "3828";
+         delayRespawn = "9019";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -731,7 +731,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3826";
+         botBelongsToMe = "3829";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -756,7 +756,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3827";
+         botBelongsToMe = "3830";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -781,7 +781,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3828";
+         botBelongsToMe = "3831";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -806,7 +806,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3829";
+         botBelongsToMe = "3832";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -4127,7 +4127,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "3830";
+            botBelongsToMe = "3833";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4209,7 +4209,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "3831";
+            botBelongsToMe = "3834";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4290,7 +4290,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "3832";
+            botBelongsToMe = "3835";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4371,7 +4371,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "3833";
+            botBelongsToMe = "3836";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4452,7 +4452,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "3834";
+            botBelongsToMe = "3837";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4533,7 +4533,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3835";
+            botBelongsToMe = "3838";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5322,7 +5322,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3836";
+            botBelongsToMe = "3839";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -5347,7 +5347,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3837";
+            botBelongsToMe = "3840";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5764,7 +5764,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3838";
+            botBelongsToMe = "3841";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5789,7 +5789,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3839";
+            botBelongsToMe = "3842";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -8519,7 +8519,7 @@ new SimGroup(MissionGroup) {
       count = "100";
       isAIControlled = "0";
       dataBlock = "grenadeWeapon";
-      position = "-1.61517 382.995 14.6647";
+      position = "-3.17935 382.995 14.6647";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8533,7 +8533,7 @@ new SimGroup(MissionGroup) {
       count = "100";
       isAIControlled = "0";
       dataBlock = "HammerWeapon";
-      position = "-2.07483 382.032 14.7002";
+      position = "-3.5791 382.032 14.7002";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8616,86 +8616,6 @@ new SimGroup(MissionGroup) {
       isAIControlled = "0";
       dataBlock = "Bone_Crusher_SwordWeapon";
       position = "-8.36056 382.905 14.8516";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/inv/weapons/Spears/SpearIron_melee.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-21.8906 391.006 15.0857";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/inv/weapons/Spears/SpearIron_thrown.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-21.4102 391.224 15.0891";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/inv/weapons/Spears/SpearStone_melee.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-20.9395 390.895 15.1124";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/inv/weapons/Spears/SpearStone_thrown.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-20.3738 391.127 15.098";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/inv/weapons/Spears/SpearSP_thrown.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-19.6719 390.732 15.1165";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8828,20 +8748,6 @@ new SimGroup(MissionGroup) {
          respawnTime = "30";
    };
    new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "27";
-      isAIControlled = "0";
-      dataBlock = "DaggerWeapon";
-      position = "32.4004 394.315 13.3687";
-      rotation = "0 0 1 13.7061";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
       static = "1";
       rotate = "0";
       buyable = "0";
@@ -8882,6 +8788,146 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "IronPikeWeapon";
+      position = "0.411026 382.355 15.1288";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "IronSpearWeapon";
+      position = "-0.188114 382.772 15.1188";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "StonePikeWeapon";
+      position = "-0.589129 383.233 15.1082";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "StoneSpearWeapon";
+      position = "-1.11748 382.642 15.1085";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "SteelSpearWeapon";
+      position = "-1.78554 382.828 15.1242";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "22";
+      isAIControlled = "0";
+      dataBlock = "DaggerWeapon";
+      position = "21.4705 386.537 13.7483";
+      rotation = "0 0 -1 95.424";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "1";
+      isAIControlled = "0";
+      dataBlock = "Boglin_Toes";
+      position = "26.3185 391.974 13.6061";
+      rotation = "0 0 1 151.809";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "4";
+      isAIControlled = "0";
+      dataBlock = "Lamp_Oil";
+      position = "27.1728 392.996 13.6929";
+      rotation = "0 0 -1 111.048";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "13";
+      isAIControlled = "0";
+      dataBlock = "DaggerWeapon";
+      position = "24.2665 397.697 13.5637";
+      rotation = "0 0 1 59.5739";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "2";
+      isAIControlled = "0";
+      dataBlock = "grenadeWeapon";
+      position = "26.7836 394.481 13.6406";
+      rotation = "0 0 -1 75.537";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
    };
 };
 //--- OBJECT WRITE END ---
