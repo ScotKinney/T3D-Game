@@ -262,6 +262,7 @@ datablock ItemData(Bone_Crusher_SwordWeapon)
    table = "Weapons";
    SubItemID = 134;
    image = BoneCrusherSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -340,6 +341,7 @@ datablock ItemData(Buckler_Shield_IWeapon)
    table = "Weapons";
    SubItemID = 135;
    image = ShieldBucklerAImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -368,6 +370,7 @@ datablock ItemData(Buckler_Shield_IIWeapon)
    table = "Weapons";
    SubItemID = 136;
    image = ShieldBucklerBImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -396,6 +399,7 @@ datablock ItemData(Buckler_Shield_IIIWeapon)
    table = "Weapons";
    SubItemID = 137;
    image = ShieldBucklerCImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -446,6 +450,7 @@ datablock ItemData(CrossbowWeapon)
    table = "Weapons";
    SubItemID = 2;
    image = CrossbowImage;
+   skinMat = "";
    effectWeap = "none";
    reticle = "reticle_rocketlauncher";
 };
@@ -474,6 +479,7 @@ datablock ItemData(DaggerWeapon)
    table = "Weapons";
    SubItemID = 81;
    image = DaggerImage;
+   skinMat = "";
    effectWeap = "thrown";
    reticle = "";
 };
@@ -502,6 +508,7 @@ datablock ItemData(Decimator_SwordWeapon)
    table = "Weapons";
    SubItemID = 133;
    image = DecimatorSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -552,6 +559,7 @@ datablock ItemData(Double_War_AxeWeapon)
    table = "Weapons";
    SubItemID = 126;
    image = DoubleWarAxeImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -602,6 +610,7 @@ datablock ItemData(Excalibur_SwordWeapon)
    table = "Weapons";
    SubItemID = 132;
    image = ExcaliburSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -652,6 +661,7 @@ datablock ItemData(FJFemaleSwordWeapon)
    table = "Weapons";
    SubItemID = 82;
    image = FJFemaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -680,6 +690,7 @@ datablock ItemData(FJMaleSwordWeapon)
    table = "Weapons";
    SubItemID = 83;
    image = FJMaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -730,6 +741,7 @@ datablock ItemData(FlintlockWeapon)
    table = "Weapons";
    SubItemID = 47;
    image = FlintlockImage;
+   skinMat = "";
    effectWeap = "none";
    reticle = "reticle_rocketlauncher";
 };
@@ -783,6 +795,7 @@ datablock ItemData(Golden_ShieldWeapon)
    table = "Weapons";
    SubItemID = 144;
    image = ShieldGoldImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -858,6 +871,7 @@ datablock ItemData(GrenadeWeapon)
    table = "Weapons";
    SubItemID = 40;
    image = GrenadeImage;
+   skinMat = "";
    effectWeap = "thrown";
    reticle = "";
 };
@@ -911,6 +925,7 @@ datablock ItemData(HammerWeapon)
    table = "Weapons";
    SubItemID = 36;
    image = HammerImage;
+   skinMat = "";
    effectWeap = "thrown";
    reticle = "";
 };
@@ -939,6 +954,7 @@ datablock ItemData(Heater_Shield_IWeapon)
    table = "Weapons";
    SubItemID = 141;
    image = ShieldHeaterAImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -967,6 +983,7 @@ datablock ItemData(Heater_Shield_IIWeapon)
    table = "Weapons";
    SubItemID = 142;
    image = ShieldHeaterBImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -995,6 +1012,7 @@ datablock ItemData(Heater_Shield_IIIWeapon)
    table = "Weapons";
    SubItemID = 143;
    image = ShieldHeaterCImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1095,6 +1113,7 @@ datablock ItemData(Iron_War_AxeWeapon)
    table = "Weapons";
    SubItemID = 127;
    image = IronWarAxeImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1123,6 +1142,7 @@ datablock ItemData(IronPikeWeapon)
    table = "Weapons";
    SubItemID = 164;
    image = IronPikeImage;
+   skinMat = "";
    effectWeap = "Spear";
    reticle = "";
 };
@@ -1151,6 +1171,7 @@ datablock ItemData(IronSpearWeapon)
    table = "Weapons";
    SubItemID = 166;
    image = IronSpearImage;
+   skinMat = "";
    effectWeap = "Spear";
    reticle = "";
 };
@@ -1179,6 +1200,7 @@ datablock ItemData(KardFemaleSwordWeapon)
    table = "Weapons";
    SubItemID = 84;
    image = KardFemaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1207,6 +1229,7 @@ datablock ItemData(KardMaleSwordWeapon)
    table = "Weapons";
    SubItemID = 85;
    image = KardMaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1605,6 +1628,7 @@ datablock ItemData(MythFemaleSwordWeapon)
    table = "Weapons";
    SubItemID = 89;
    image = MythFemaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1633,6 +1657,7 @@ datablock ItemData(MythMaleSwordWeapon)
    table = "Weapons";
    SubItemID = 86;
    image = MythMaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1902,6 +1927,7 @@ datablock ItemData(Round_Shield_IWeapon)
    table = "Weapons";
    SubItemID = 145;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodA";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1930,6 +1956,7 @@ datablock ItemData(Round_Shield_IIWeapon)
    table = "Weapons";
    SubItemID = 146;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodB";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1958,6 +1985,7 @@ datablock ItemData(Round_Shield_IIIWeapon)
    table = "Weapons";
    SubItemID = 147;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodC";
    effectWeap = "melee";
    reticle = "";
 };
@@ -1986,6 +2014,7 @@ datablock ItemData(Round_Shield_IVWeapon)
    table = "Weapons";
    SubItemID = 148;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodD";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2014,6 +2043,7 @@ datablock ItemData(Round_Shield_IXWeapon)
    table = "Weapons";
    SubItemID = 153;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodI";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2042,6 +2072,7 @@ datablock ItemData(Round_Shield_VWeapon)
    table = "Weapons";
    SubItemID = 149;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodE";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2070,6 +2101,7 @@ datablock ItemData(Round_Shield_VIWeapon)
    table = "Weapons";
    SubItemID = 150;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodF";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2098,6 +2130,7 @@ datablock ItemData(Round_Shield_VIIWeapon)
    table = "Weapons";
    SubItemID = 151;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodG";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2126,6 +2159,7 @@ datablock ItemData(Round_Shield_VIIIWeapon)
    table = "Weapons";
    SubItemID = 152;
    image = RoundShieldImage;
+   skinMat = "roundShieldWoodH";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2681,6 +2715,7 @@ datablock ItemData(Square_Shield_IWeapon)
    table = "Weapons";
    SubItemID = 154;
    image = SquareShieldImage;
+   skinMat = "squareShieldA";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2709,6 +2744,7 @@ datablock ItemData(Square_Shield_IIWeapon)
    table = "Weapons";
    SubItemID = 155;
    image = SquareShieldImage;
+   skinMat = "squareShieldB";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2737,6 +2773,7 @@ datablock ItemData(Square_Shield_IIIWeapon)
    table = "Weapons";
    SubItemID = 156;
    image = SquareShieldImage;
+   skinMat = "squareShieldC";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2765,6 +2802,7 @@ datablock ItemData(Square_Shield_IVWeapon)
    table = "Weapons";
    SubItemID = 157;
    image = SquareShieldImage;
+   skinMat = "squareShieldD";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2793,6 +2831,7 @@ datablock ItemData(Square_Shield_IXWeapon)
    table = "Weapons";
    SubItemID = 162;
    image = SquareShieldImage;
+   skinMat = "squareShieldI";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2821,6 +2860,7 @@ datablock ItemData(Square_Shield_VWeapon)
    table = "Weapons";
    SubItemID = 158;
    image = SquareShieldImage;
+   skinMat = "squareShieldE";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2849,6 +2889,7 @@ datablock ItemData(Square_Shield_VIWeapon)
    table = "Weapons";
    SubItemID = 159;
    image = SquareShieldImage;
+   skinMat = "squareShieldF";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2877,6 +2918,7 @@ datablock ItemData(Square_Shield_VIIWeapon)
    table = "Weapons";
    SubItemID = 160;
    image = SquareShieldImage;
+   skinMat = "squareShieldG";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2905,6 +2947,7 @@ datablock ItemData(Square_Shield_VIIIWeapon)
    table = "Weapons";
    SubItemID = 161;
    image = SquareShieldImage;
+   skinMat = "squareShieldH";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2933,6 +2976,7 @@ datablock ItemData(Steel_War_AxeWeapon)
    table = "Weapons";
    SubItemID = 125;
    image = SteelWarAxeImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -2961,6 +3005,7 @@ datablock ItemData(SteelSpearWeapon)
    table = "Weapons";
    SubItemID = 167;
    image = SteelSpearImage;
+   skinMat = "";
    effectWeap = "Spear";
    reticle = "";
 };
@@ -2989,6 +3034,7 @@ datablock ItemData(StonePikeWeapon)
    table = "Weapons";
    SubItemID = 163;
    image = StonePikeImage;
+   skinMat = "";
    effectWeap = "Spear";
    reticle = "";
 };
@@ -3017,6 +3063,7 @@ datablock ItemData(StoneSpearWeapon)
    table = "Weapons";
    SubItemID = 165;
    image = StoneSpearImage;
+   skinMat = "";
    effectWeap = "Spear";
    reticle = "";
 };
@@ -3070,6 +3117,7 @@ datablock ItemData(Targe_Shield_IWeapon)
    table = "Weapons";
    SubItemID = 138;
    image = ShieldTargeAImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3098,6 +3146,7 @@ datablock ItemData(Targe_Shield_IIWeapon)
    table = "Weapons";
    SubItemID = 139;
    image = ShieldTargeBImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3126,6 +3175,7 @@ datablock ItemData(Targe_Shield_IIIWeapon)
    table = "Weapons";
    SubItemID = 140;
    image = ShieldTargeCImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3229,6 +3279,7 @@ datablock ItemData(TokFemaleSwordWeapon)
    table = "Weapons";
    SubItemID = 88;
    image = TokFemaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3257,6 +3308,7 @@ datablock ItemData(TokMaleSwordWeapon)
    table = "Weapons";
    SubItemID = 87;
    image = TokMaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3285,6 +3337,7 @@ datablock ItemData(ValFemaleSwordWeapon)
    table = "Weapons";
    SubItemID = 79;
    image = ValFemaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3313,6 +3366,7 @@ datablock ItemData(ValMaleSwordWeapon)
    table = "Weapons";
    SubItemID = 78;
    image = ValMaleSwordImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3366,6 +3420,7 @@ datablock ItemData(Wizards_StaffWeapon)
    table = "Weapons";
    SubItemID = 117;
    image = WizardsStaffImage;
+   skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
@@ -3394,6 +3449,7 @@ datablock ItemData(XR75Weapon)
    table = "Weapons";
    SubItemID = 128;
    image = XR75Image;
+   skinMat = "";
    effectWeap = "None";
    reticle = "reticle_rocketlauncher";
 };
