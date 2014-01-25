@@ -289,6 +289,7 @@ function GenerateItemData()
                      %fo.writeLine("   image = " @ validateDatablockName(%results2.image) @ ";");
                   else
                       %fo.writeLine("   image = BaseImage;");
+                  %fo.writeLine("   skinMat = \"" @ %results2.MatName @ "\";");
                   %fo.writeLine("   effectWeap = \"" @ %results2.effect @ "\";");
                   %fo.writeLine("   reticle = \"" @ %results2.reticle @ "\";");
               }
