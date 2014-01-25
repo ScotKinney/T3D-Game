@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.182907";
-         time = "0.154957";
+         startTime = "0.968658";
+         time = "0.971945";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "12115";
-         delayRespawn = "11890";
+         botBelongsToMe = "9042";
+         delayRespawn = "6570";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,8 +653,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "12206";
-         delayRespawn = "11278";
+         botBelongsToMe = "5303";
+         delayRespawn = "6871";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -679,7 +679,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3827";
+         botBelongsToMe = "3831";
          delayRespawn = "8253";
          distDetect = "25";
          fov = "360";
@@ -705,7 +705,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3828";
+         botBelongsToMe = "3832";
          delayRespawn = "9019";
          distDetect = "25";
          fov = "360";
@@ -731,7 +731,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3829";
+         botBelongsToMe = "3833";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -756,7 +756,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3830";
+         botBelongsToMe = "3834";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -781,7 +781,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3831";
+         botBelongsToMe = "3835";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -806,7 +806,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3832";
+         botBelongsToMe = "3836";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -4127,7 +4127,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "3833";
+            botBelongsToMe = "3837";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4209,7 +4209,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "3834";
+            botBelongsToMe = "3838";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4290,7 +4290,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "3835";
+            botBelongsToMe = "3839";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4371,7 +4371,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "3836";
+            botBelongsToMe = "3840";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4452,7 +4452,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "3837";
+            botBelongsToMe = "3841";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4533,7 +4533,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3838";
+            botBelongsToMe = "3842";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5322,7 +5322,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3839";
+            botBelongsToMe = "3843";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -5347,7 +5347,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3840";
+            botBelongsToMe = "3844";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5764,7 +5764,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3841";
+            botBelongsToMe = "3845";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5789,7 +5789,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3842";
+            botBelongsToMe = "3846";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -8807,7 +8807,7 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "0";
       buyable = "0";
-      count = "0";
+      count = "100";
       isAIControlled = "0";
       dataBlock = "IronSpearWeapon";
       position = "-0.188114 382.772 15.1188";
@@ -8835,7 +8835,7 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "0";
       buyable = "0";
-      count = "0";
+      count = "100";
       isAIControlled = "0";
       dataBlock = "StoneSpearWeapon";
       position = "-1.11748 382.642 15.1085";
@@ -8849,10 +8849,10 @@ new SimGroup(MissionGroup) {
       static = "1";
       rotate = "0";
       buyable = "0";
-      count = "0";
+      count = "100";
       isAIControlled = "0";
       dataBlock = "SteelSpearWeapon";
-      position = "-1.78554 382.828 15.1242";
+      position = "-1.86093 382.828 15.1242";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8866,7 +8866,7 @@ new SimGroup(MissionGroup) {
       count = "22";
       isAIControlled = "0";
       dataBlock = "DaggerWeapon";
-      position = "21.4705 386.537 13.7483";
+      position = "21.4705 386.537 13.6882";
       rotation = "0 0 -1 95.424";
       scale = "1 1 1";
       canSave = "1";
@@ -8880,7 +8880,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "Boglin_Toes";
-      position = "26.3185 391.974 13.6061";
+      position = "26.3185 391.974 13.546";
       rotation = "0 0 1 151.809";
       scale = "1 1 1";
       canSave = "1";
@@ -8894,7 +8894,7 @@ new SimGroup(MissionGroup) {
       count = "4";
       isAIControlled = "0";
       dataBlock = "Lamp_Oil";
-      position = "27.1728 392.996 13.6929";
+      position = "27.1728 392.996 13.5733";
       rotation = "0 0 -1 111.048";
       scale = "1 1 1";
       canSave = "1";
@@ -8922,7 +8922,7 @@ new SimGroup(MissionGroup) {
       count = "2";
       isAIControlled = "0";
       dataBlock = "grenadeWeapon";
-      position = "26.7836 394.481 13.6406";
+      position = "26.7836 394.481 13.6204";
       rotation = "0 0 -1 75.537";
       scale = "1 1 1";
       canSave = "1";
