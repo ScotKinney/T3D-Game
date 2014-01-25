@@ -39,13 +39,52 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
 };
 
 
-// SpearThrown
-datablock ProjectileData(JavelinProjectile : BaseProjectile)
+// Stone Spear
+datablock ProjectileData(StoneSpearProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/Javelin/Javelin.dts";
+   projectileShapeName = "art/inv/weapons/spears/spearstone_thrown.dts";
+   scale = "1 1 1";
+   muzzleVelocity = 20;
+   directDamage = 40;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   explosion = DefaultHitExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.5;
+   lifetime = 30000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
+   retrievable = "StoneSpearWeapon";
+};
+
+datablock ProjectileData(StoneSpearWetProjectile : StoneSpearProjectile)
+{
+   muzzleVelocity = 8;
+   gravityMod = 0.8;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(StoneSpearImage : BaseTriggeredImage)
+{
+   shapefile = "art/inv/weapons/spears/spearstone_thrown.dts";
+   scale = "1 1 1";
+   item = StoneSpearWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = StoneSpearProjectile;
+   wetProjectile = StoneSpearWetProjectile;
+   fireAnim = "Throw_Javelin";
+   fireSound = BaseThrowSound;
+   canH2H = false; // Allow H2H combat while this weapon is mounted
+   canUseMounted = true;
+};
+
+// Iron Spear
+datablock ProjectileData(IronSpearProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/spears/spearIron_thrown.dts";
    scale = "1 1 1";
    muzzleVelocity = 25;
-   directDamage = 65;
+   directDamage = 60;
    particleEmitter = 0;
    particleWaterEmitter = 0;
    explosion = DefaultHitExplosion;
@@ -55,23 +94,62 @@ datablock ProjectileData(JavelinProjectile : BaseProjectile)
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
-   retrievable = "JavelinWeapon";
+   retrievable = "IronSpearWeapon";
 };
 
-datablock ProjectileData(JavelinWetProjectile : JavelinProjectile)
+datablock ProjectileData(IronSpearWetProjectile : IronSpearProjectile)
 {
-   muzzleVelocity = 10;
+   muzzleVelocity = 8;
+   gravityMod = 0.8;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(IronSpearImage : BaseTriggeredImage)
+{
+   shapefile = "art/inv/weapons/spears/spearIron_thrown.dts";
+   scale = "1 1 1";
+   item = IronSpearWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = IronSpearProjectile;
+   wetProjectile = IronSpearWetProjectile;
+   fireAnim = "Throw_Javelin";
+   fireSound = BaseThrowSound;
+   canH2H = false; // Allow H2H combat while this weapon is mounted
+   canUseMounted = true;
+};
+
+// Steel Spear
+datablock ProjectileData(SteelSpearProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/spears/spearSP_thrown.dts";
+   scale = "1 1 1";
+   muzzleVelocity = 30;
+   directDamage = 100;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   explosion = DefaultHitExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.3;
+   lifetime = 30000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
+   retrievable = "SteelSpearWeapon";
+};
+
+datablock ProjectileData(SteelSpearWetProjectile : SteelSpearProjectile)
+{
+   muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(JavelinImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(SteelSpearImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/Javelin/Javelin.dts";
+   shapefile = "art/inv/weapons/spears/spearSP_thrown.dts";
    scale = "1 1 1";
-   item = JavelinWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-   projectile = JavelinProjectile;
-   wetProjectile = JavelinWetProjectile;
+   item = SteelSpearWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = SteelSpearProjectile;
+   wetProjectile = SteelSpearWetProjectile;
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canH2H = false; // Allow H2H combat while this weapon is mounted

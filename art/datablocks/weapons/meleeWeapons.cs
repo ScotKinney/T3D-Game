@@ -1324,7 +1324,9 @@ datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
 ///////////END Iron War Axe////////////////////
 
 ///////////Wizards Staff for Players///////////////////////
+
 ///////////WizardsStaff Attacks////////////////
+
 singleton GameBaseData(Staff_Swing1)
 {
    seqName = "Staff_Swing1";
@@ -1479,4 +1481,92 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
    hitLiveSound = "SwordHitLiveSound";
 };
 
-///////////END WizardsStaff////////////////////
+//////////////// Stone Pike Attacks ////////////////
+
+singleton GameBaseData(SPikeThrust1)
+{
+   seqName = "Spear_Thrust1_RH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.5;
+   soundDelay = 500; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(SPikeThrust2)
+{
+   seqName = "Spear_Thrust2_RH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.5;
+   soundDelay = 500; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+datablock ShapeBaseImageData(StonePikeImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/spears/SpearStone_melee.dts";
+   item = StonePikeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 2;
+   hthAttack[0]                     = SPikeThrust1;
+   hthAttack[1]                     = SPikeThrust2;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+//////////////// Iron Pike Attacks ////////////////
+
+singleton GameBaseData(IPikeThrust1)
+{
+   seqName = "Spear_Thrust1_RH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.5;
+   soundDelay = 500; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(IPikeThrust2)
+{
+   seqName = "Spear_Thrust2_RH";
+   fullSkelAnim = true;
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0; //time in seconds during animation before damage is done
+   endDamage = 0.5;
+   soundDelay = 500; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+datablock ShapeBaseImageData(IronPikeImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/spears/SpearIron_melee.dts";
+   item = IronPikeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+
+   // Here are the Attacks we support
+   hthNumAttacks = 2;
+   hthAttack[0]                     = IPikeThrust1;
+   hthAttack[1]                     = IPikeThrust2;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
