@@ -164,8 +164,9 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/Shield2_LH.dsq", "Shield2_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Shield3_LH.dsq", "Shield3_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Shield4_LH.dsq", "Shield4_LH", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust1_RH.dsq", "Spear_Thrust1_RH", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust2_RH.dsq", "Spear_Thrust2_RH", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust1_RH.dsq", "Spear_Thrust1_RH", "0", "24", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust2_RH.dsq", "Spear_Thrust2_RH", "0", "24", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust3_RH.dsq", "Spear_Thrust3_RH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing1.dsq", "Staff_Swing1", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing2.dsq", "Staff_Swing2", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing3.dsq", "Staff_Swing3", "0", "109", "1", "0");
