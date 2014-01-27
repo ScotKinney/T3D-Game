@@ -265,10 +265,10 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    
    DefaultSetup = "55,59,35,20,65,63,70,77";
    DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
-   DefaultSetup[Sparta] = "55,59,35,242,6,269,362,13";
-   DefaultSetup[Mythriel] = "55,59,298,35,294,295,377,291";
+   DefaultSetup[Sparta] = "55,59,35,242,6,269,13";
+   DefaultSetup[Mythriel] = "55,59,298,35,294,295,291";
    DefaultSetup[Viken] = "55,59,50,35,279,282,285";
-   DefaultSetup[Maya] = "55,59,237,35,313,320,378,306,309";
+   DefaultSetup[Maya] = "55,59,237,35,313,320,306,309";
 
    numDamageAnims = 0;
    hasLocationalAnims = true;
@@ -314,11 +314,11 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    decalOffset = 0.11;
 
    DefaultSetup = "80,99,216,386,393,382,379,380,390,393,390";
-   DefaultSetup[Caerule] = "80,99,216,386,393,382,379,380,390,393,390";
-   DefaultSetup[Sparta] = "80,99,216,356,350,348,347,360,351";
-   DefaultSetup[Mythriel] = "80,99,366,216,368,364,363,374,365,369";
+   DefaultSetup[Caerule] = "80,99,216,386,393,382,379,380,390,393";
+   DefaultSetup[Sparta] = "80,99,216,356,350,348,347,351";
+   DefaultSetup[Mythriel] = "80,99,366,216,368,364,363,369";
    DefaultSetup[Viken] = "80,99,397,216,396,406,400,403";
-   DefaultSetup[Maya] = "80,99,216,330,326,325,361,328,324";
+   DefaultSetup[Maya] = "80,99,216,330,326,325,328,324";
 
    numDamageAnims = 0;
    hasLocationalAnims = true;
