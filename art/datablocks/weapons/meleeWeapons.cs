@@ -54,7 +54,7 @@ singleton GameBaseData(SwordSwing1_LH)
 
 singleton GameBaseData(SwordSwing1_RH)
 {
-   seqName = "SwordSwing1_LH";
+   seqName = "SwordSwing1_RH";
    fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
