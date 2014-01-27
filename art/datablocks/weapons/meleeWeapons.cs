@@ -293,11 +293,10 @@ singleton GameBaseData(SwordSwing12_RH)
 ////////////Base Home World Swords
 
 // All Home World swords use the same attacks and sounds. Defined once and inherited.
-datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
+datablock ShapeBaseImageData(VikingSwordImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
-   holsterShape = "art/inv/weapons/valsword/Sword_Val_Mounted.dts";
-   item = ValMaleSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   shapefile = "art/inv/weapons/Swords/VikingSword.dts";
+   item = VikingSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    hthNumAttacks = 12;
 /* hthAttack[0]                     = SwordSwing1_LH;
@@ -330,68 +329,31 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
 
 /////////The rest of them based off the one above
 
-datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
+
+datablock ShapeBaseImageData(MythSwordImage : VikingSwordImage)
 {
-   shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
-   holsterShape = "art/inv/weapons/valsword/BF_SwordMtd_Val.dts";
-   item = ValFemaleSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/MythSword.dts";
+   item = MythSwordWeapon;
 };
 
-datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
+datablock ShapeBaseImageData(PirateSwordImage : VikingSwordImage)
 {
-   shapefile = "art/inv/weapons/L_sword/longsword.dts";
-   holsterShape = "art/inv/weapons/L_sword/LongSword_Mounted.dts";
-   item = MythMaleSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/PirateSword.dts";
+   item = PirateSwordWeapon;
 };
 
-datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
+datablock ShapeBaseImageData(SpartanSwordImage : VikingSwordImage)
 {
-   shapefile = "art/inv/weapons/L_sword/longsword.dts";
-   holsterShape = "art/inv/weapons/L_sword/BF_LSword_Mtd.dts";
-   item = MythFemaleSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/SpartanSword.dts";
+   item = SpartanSwordWeapon;
 };
 
-datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
+datablock ShapeBaseImageData(MayanSwordImage : VikingSwordImage)
 {
-   shapefile = "art/inv/weapons/scimi/scimitar1_4.dts";
-   holsterShape = "art/inv/weapons/scimi/Scimitar_Mounted1_4.dts";
-   item = FJMaleSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/MayanSword.dts";
+   item = MayanSwordWeapon;
 };
 
-datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
-{
-   shapefile = "art/inv/weapons/Scimi/scimitar1_4.dts";
-   holsterShape = "art/inv/weapons/Scimi/Scimitar_BF_Mtd.dts";
-   item = FJFemaleSwordWeapon;
-};
-
-datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
-{
-   shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
-   holsterShape = "art/inv/weapons/KarSword/SpartanSword_Mounted1_4.dts";
-   item = KardMaleSwordWeapon;
-};
-
-datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
-{
-   shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
-   holsterShape = "art/inv/weapons/KarSword/BF_Sword_Kard_Mtd.dts";
-   item = KardFemaleSwordWeapon;
-};
-
-datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
-{
-   shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
-   holsterShape = "art/inv/weapons/TokSword/SwordTok_Mounted.dts";
-   item = TokMaleSwordWeapon;
-};
-
-datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
-{
-   shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
-   holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
-   item = TokFemaleSwordWeapon;
-};
 
 //////////////// 2H Sword Attacks////////////////
 
