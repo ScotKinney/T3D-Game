@@ -74,9 +74,10 @@ function GameConnection::AuthenticateUser(%client)
       %client.health = %result.HP_current;
       %client.skullLevel = %result.skulls;
       %client.arns = %result.Arns;
-      %client.lastWeapon = %result.lastWeapon;
       %inventory = %result.Inventory;
       %needsRecord = false;
+      %client.lastWeapon[0] = $AlterVerse::ItemNames[getWord(%result.lastWeapon, 0)];
+      %client.lastWeapon[1] = $AlterVerse::ItemNames[getWord(%result.lastWeapon, 1)];
    }
    %result.Delete();
 
@@ -86,14 +87,15 @@ function GameConnection::AuthenticateUser(%client)
       /*SET*/        "id, IP, NumVisits, LastSeen, skulls, Arns, lastWeapon, Inventory",
       /*VALUES*/     "'"@%dbUserID@"', "@
                      "'"@NextToken(%client.getAddress(),"",":")@"', "@
-                     "'1', 'NOW()', '1', '3000','',''"))
+                     "'1', 'NOW()', '1', '3000','0 0',''"))
       {
          return("oops - could not create player record!");
       }
       %client.health = 300;
       %client.skullLevel = 1;
       %client.arns = 3000;
-      %client.lastWeapon = "";
+      %client.lastWeapon[0] = 0;
+      %client.lastWeapon[1] = 0;
       %inventory = "";
    }
    else
@@ -178,13 +180,17 @@ function GameConnection::DisconnectUser(%client)
    %inventory = %client.getInventoryString();
    if ( %inventory $= "" )
       %inventory = %client.startInv;
+   %weaponStr = "0 0";
+   for (%i = 0; %i < 2; %i++ )
+      if ( isObject(%client.lastWeapon[%i]) )
+         %weaponStr = setWord(%weaponStr, %i, %client.lastWeapon[%i].ItemID);
    if ( $Server::DB::Remote )
    {
       %inventory = strreplace(%inventory, "\t", "|");
       %args = "uID=" @ %client.pData.dbID;
       %args = %args @ "&uNW=" @ %client.netWorth;
       %args = %args @ "&hlth=" @ %client.health;
-      %args = %args @ "&wpn=" @ %client.lastWeapon;
+      %args = %args @ "&wpn=" @ %weaponStr;
       %args = %args @ "&ptm=" @ %playTime;
       %args = %args @ "&inv=" @ %inventory;
       remoteDBCommand("DisconnectUser", %args, %client);
@@ -192,7 +198,7 @@ function GameConnection::DisconnectUser(%client)
    else
    {
       DB::Update("AVPlayers", "HP_current='" @ %client.health @ "', " @
-                              "lastWeapon='" @ %client.lastWeapon @ "', " @
+                              "lastWeapon='" @ %weaponStr @ "', " @
                               "Inventory='" @ %inventory @ "'", 
                               "ID='"@%client.pData.dbID@"'");
       %client.writeNetWorth(true);

@@ -79,6 +79,7 @@ datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/RHand.dts";
    mountPoint = 0;
+   weaponSlot = 0;
 
    // Here are the Attacks we support
    hthNumAttacks = 4;
@@ -150,6 +151,7 @@ datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/LHand.dts";
    mountPoint = 2;
+   weaponSlot = 1;
 
    // Here are the Attacks we support
    hthNumAttacks = 4;
@@ -208,6 +210,7 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/RFoot.dts";
    mountPoint = 10;
+   weaponSlot = 2;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
@@ -265,6 +268,7 @@ datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/LFoot.dts";
    mountPoint = 12;
+   weaponSlot = 3;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;

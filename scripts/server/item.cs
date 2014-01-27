@@ -131,6 +131,12 @@ function ItemData::onAdd(%this, %obj)
       %newTransform = %spawnSphere.getTransform();
       %obj.setTransform(%newTransform);
    }
+
+   // Apply the skin if specified
+   if ( %this.skinMat !$= "" )
+   {
+      %obj.setSkinName(%this.skinMat);
+   }
 }
 
 //-----------------------------------------------------------------------------

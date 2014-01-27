@@ -298,7 +298,6 @@ datablock ShapeBaseImageData(ValMaleSwordImage : BaseMeleeImage)
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/Sword_Val_Mounted.dts";
    item = ValMaleSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
 
    hthNumAttacks = 12;
 /* hthAttack[0]                     = SwordSwing1_LH;
@@ -336,7 +335,6 @@ datablock ShapeBaseImageData(ValFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/valsword/Sword_Val.dts";
    holsterShape = "art/inv/weapons/valsword/BF_SwordMtd_Val.dts";
    item = ValFemaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
@@ -344,7 +342,6 @@ datablock ShapeBaseImageData(MythMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/LongSword_Mounted.dts";
    item = MythMaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
@@ -352,7 +349,6 @@ datablock ShapeBaseImageData(MythFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/L_sword/longsword.dts";
    holsterShape = "art/inv/weapons/L_sword/BF_LSword_Mtd.dts";
    item = MythFemaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
@@ -360,7 +356,6 @@ datablock ShapeBaseImageData(FJMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/scimi/Scimitar_Mounted1_4.dts";
    item = FJMaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
@@ -368,7 +363,6 @@ datablock ShapeBaseImageData(FJFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/Scimi/scimitar1_4.dts";
    holsterShape = "art/inv/weapons/Scimi/Scimitar_BF_Mtd.dts";
    item = FJFemaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
@@ -376,7 +370,6 @@ datablock ShapeBaseImageData(KardMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/SpartanSword_Mounted1_4.dts";
    item = KardMaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
@@ -384,7 +377,6 @@ datablock ShapeBaseImageData(KardFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
    holsterShape = "art/inv/weapons/KarSword/BF_Sword_Kard_Mtd.dts";
    item = KardFemaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
@@ -392,7 +384,6 @@ datablock ShapeBaseImageData(TokMaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/SwordTok_Mounted.dts";
    item = TokMaleSwordWeapon;
-   canH2H = true;
 };
 
 datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
@@ -400,7 +391,6 @@ datablock ShapeBaseImageData(TokFemaleSwordImage : ValMaleSwordImage)
    shapefile = "art/inv/weapons/TokSword/SwordTok.dts";
    holsterShape = "art/inv/weapons/TokSword/BF_Sword_Tok_Mtd.dts";
    item = TokFemaleSwordWeapon;
-   canH2H = true;
 };
 
 //////////////// 2H Sword Attacks////////////////
@@ -555,8 +545,7 @@ datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/TH_Swords/TH_SwordA.dts";
    item = Excalibur_SwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
-   canUseMounted = false;
+   usesBothHands = true;
 
    hthNumAttacks = 11;
 
@@ -925,12 +914,11 @@ datablock ShapeBaseImageData(ShieldBucklerAImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldBucklerA.dts";
    item = Buckler_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
    canUseMounted = true;
    mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 
    hthNumAttacks = 4;
-
    hthAttack[0]                     = BShield1;
    hthAttack[1]                     = BShield2;
    hthAttack[2]                     = BShield3;
@@ -961,7 +949,7 @@ datablock ShapeBaseImageData(ShieldTargeAImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldTargeA.dts";
    item = Targe_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    canUseMounted = true;
    mountPoint = 4;
 
@@ -998,12 +986,11 @@ datablock ShapeBaseImageData(RoundShieldImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldRoundNub.dts";
    item = Round_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    canUseMounted = true;
    mountPoint = 4;
 
    hthNumAttacks = 4;
-
    hthAttack[0]                     = WRShield1;
    hthAttack[1]                     = WRShield2;
    hthAttack[2]                     = WRShield3;
@@ -1022,12 +1009,11 @@ datablock ShapeBaseImageData(SquareShieldImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldSquare.dts";
    item = Square_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    canUseMounted = true;
    mountPoint = 4;
 
    hthNumAttacks = 4;
-
    hthAttack[0]                     = WSShield1;
    hthAttack[1]                     = WSShield2;
    hthAttack[2]                     = WSShield3;
@@ -1046,12 +1032,11 @@ datablock ShapeBaseImageData(ShieldHeaterAImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldHeaterA.dts";
    item = Heater_Shield_IWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    canUseMounted = true;
    mountPoint = 4;
 
    hthNumAttacks = 4;
-
    hthAttack[0]                     = HShield1;
    hthAttack[1]                     = HShield2;
    hthAttack[2]                     = HShield3;
@@ -1083,12 +1068,11 @@ datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Shields/ShieldGold.dts";
    item = Golden_ShieldWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    canUseMounted = true;
    mountPoint = 4;
 
    hthNumAttacks = 4;
-
    hthAttack[0]                     = GShield1;
    hthAttack[1]                     = GShield2;
    hthAttack[2]                     = GShield3;
@@ -1154,7 +1138,6 @@ datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/axes/Axe_A.dts";
    item = Steel_War_AxeWeapon; //This is the name of the WEAPON that comes from the weapons table.
-   canH2H = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = SteelWarAxeSwing1;
@@ -1229,7 +1212,6 @@ datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_B.dts";
    item = Double_War_AxeWeapon;
-   canH2H = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = DoubleWarAxeSwing1;
@@ -1302,7 +1284,6 @@ datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Axe_C.dts";
    item = Iron_War_AxeWeapon;
-   canH2H = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = IronWarAxeSwing1;

@@ -262,6 +262,7 @@ chatStrings.NumWaitMsgs = 20;
 // %name% - Item name
 // %pname% - Plural name
 // %desc% - Item description
+// %name2% - Second Item name for dual inv messages
 //
 // tooMany - Displayed when a player tries to pickup an item they already have
 // the maximum of.
@@ -294,6 +295,9 @@ chatStrings.inv[pickMany] = "\c0You picked up %1 %pname%.";
 chatStrings.inv[dropOne] = "\c0You drop 1 %name%.";
 // dropMany - Displayed when dropping multiples of an item
 chatStrings.inv[dropMany] = "\c0You drop %1 %pname%.";
+// noDual - Displayed when trying to quip an off-hand weapon when the primary
+// weapon requires both hands
+chatStrings.inv[noDual] = "\c0You can't equip a %name% when using a %name2%.";
 
 // noArmor - You cannot equip armor yet.
 chatStrings.msg[noArmor] = "\c0You cannot equip armor yet.";

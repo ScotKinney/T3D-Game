@@ -15,6 +15,21 @@ datablock ShapeBaseImageData(BaseAutoImage)
 
    projectileType = Projectile;
 
+   // If usesBothHands is true, no weapon will be allowed to mount in the
+   // off-hand when this weapon is mounted. Set true for two-handed weapons.
+   usesBothHands = false;
+
+   // Can the feet be used for kicking when this weapon is mounted
+   allowKicks = true;
+
+   // Can this weapon be used when mounted to an AI or vehicle
+   canUseMounted = false;
+
+   // The image slot to mount into by default. 0 is the primary weapon slot.
+   // Images mounted in slot 0 will take precedence over all other weapons.
+   // Weapon slots: 0 = Right Hand, 1 = Left Hand, 2 = Right Foot, 3 = Left Foot
+   weaponSlot = 0;
+
    // AI settings
    maxRange = "40";
    minRange = "15";
@@ -144,6 +159,7 @@ datablock ShapeBaseImageData(XR75Image : BaseAutoImage)
    projectile = XRBoltsProjectile;
    wetProjectile = XRBoltsProjectile;
    usesAmmo = true;
+   usesBothHands = true;
    stateSound[3] = XR75FireSound;
    //stateSequence[3] = "Sequence_Fire";
    stateTimeoutValue[3] = 0.2;

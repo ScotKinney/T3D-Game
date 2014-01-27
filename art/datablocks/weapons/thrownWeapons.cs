@@ -34,7 +34,6 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
    wetProjectile = DaggerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -74,7 +73,6 @@ datablock ShapeBaseImageData(StoneSpearImage : BaseTriggeredImage)
    wetProjectile = StoneSpearWetProjectile;
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -113,7 +111,6 @@ datablock ShapeBaseImageData(IronSpearImage : BaseTriggeredImage)
    wetProjectile = IronSpearWetProjectile;
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -152,7 +149,6 @@ datablock ShapeBaseImageData(SteelSpearImage : BaseTriggeredImage)
    wetProjectile = SteelSpearWetProjectile;
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -191,7 +187,6 @@ datablock ShapeBaseImageData(HammerImage : BaseTriggeredImage)
    wetProjectile = HammerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -229,7 +224,6 @@ datablock ShapeBaseImageData(TomahawkImage : BaseTriggeredImage)
    wetProjectile = TomahawkWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };
 
@@ -278,6 +272,5 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
    fullSkelAnim = true;    // The grenade throw is not a blended anim
    fireAnim = "Throw_Grenade";
    fireSound = BaseThrowSound;
-   canH2H = false; // Allow H2H combat while this weapon is mounted
    canUseMounted = true;
 };

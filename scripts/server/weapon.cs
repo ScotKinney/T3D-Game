@@ -74,8 +74,7 @@ function Weapon::onInventory(%this,%obj,%amount)
       if ( !%amount )
       {
          %obj.unmountImage(%slot); // Unmount if it's been dropped
-         %obj.lastWeapon = "";
-         %obj.client.lastWeapon = "";
+         %obj.client.lastWeapon[%slot] = 0;
       }
       else if ((%obj.client !$= "") && !%this.usesAmmo)
       {  // If it's a thrown weapon, we need to decrease the HUD ammo count
@@ -277,8 +276,7 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
       {
          %obj.setImageHidden(%slot, false);
          %obj.unmountImage(%slot);
-         %obj.lastWeapon = "";
-         %obj.client.lastWeapon = "";
+         %obj.client.lastWeapon[%slot] = 0;
          %this.NoAmmoMessage(%obj);
          %canRearm = false;
       }
@@ -348,51 +346,48 @@ function Wpn::onInventory(%this,%obj,%amount)
 }
 
 // ----------------------------------------------------------------------------
-// Weapon cycling
+// Weapon mounting
 // ----------------------------------------------------------------------------
-
-// Could make this player namespace only or even a vehicle namespace method,
-// but for the time being....
-
-function ShapeBase::cycleWeapon(%this, %direction)
+// usesBothHands weaponSlot allowKicks canUseMounted
+// Weapon slots - 0=RH, 1=LH, 2=RF, 3=LF
+function ShapeBase::AVMountImage(%this, %wpnKey, %slot)
 {
-   if ( %this.weaponCyclePos $= "" )
-      %this.weaponCyclePos = 0;
-   
-   %this.weaponCyclePos += %direction;
-   %weaponList = (%this.client.Gender $= "Male") ?
-               $MaleWeaponCycle : $FemaleWeaponCycle;
-
-   %weaponCount = getFieldCount(%weaponList);
-   if ( %this.weaponCyclePos >= %weaponCount )
-      %this.weaponCyclePos = 0;
-   if ( %this.weaponCyclePos < 0 )
-      %this.weaponCyclePos = %weaponCount - 1;
-
-   %newWeapon = getField(%weaponList, %this.weaponCyclePos);
-   //%this.mountImage(%newWeapon, 0);
-   %this.AVMountImage(%newWeapon, 0);
-}
-
-function ShapeBase::AVMountImage(%this, %weapon, %slot)
-{
-   %canH2H = !%this.isMounted();
    %slotUsed = false;
-   if ( isObject(%weapon) )
+   if ( isObject(%wpnKey) && isObject(%wpnKey.image) )
    {
+      %weapon = %wpnKey.image;
+      %slot = %weapon.weaponSlot;
       if ( !%this.isMounted() || %weapon.canUseMounted )
       {
-         // If it's an inventory item, make sure we have it
-         if ( isObject(%weapon.item) && isObject(%this.client) )
+         // Weapon slot 0 takes precedence over all others. If the image there
+         // disallows us, we don't mount
+         if ( %slot > 0 )
          {
-            if ( %this.getInventory(%weapon.item) > 0 )
+            %mainWeapon = %this.getMountedImage(0);
+            if ( isObject(%mainWeapon) )
+            {
+               if ( (%slot > 1) && !%mainWeapon.allowKicks )
+                  return;  // Can't mount weapons to the feet.
+               if ( (%slot == 1) && %mainWeapon.usesBothHands )
+               {  // The primary weapon needs the left hand free
+                  messageClient(%this.client, 'DualInvMsg',"", "noDual",
+                     %wpnKey.ItemID, %mainWeapon.item.ItemID, "a", true, true, 0);
+                  return;
+               }
+            }
+         }
+
+         // If it's an inventory item, make sure we have it
+         if ( isObject(%this.client) )
+         {
+            if ( %this.getInventory(%wpnKey) > 0 )
             {
                if ( %weapon.usesAmmo )
                {
                   if ( %this.getInventory(%weapon.ammo) > 0 )
                      %slotUsed = true;
                   else
-                     messageClient(%this.client, 'InventoryMsg',"", "noAmmo", %weapon.item.ItemID, "a", true, true, 0);
+                     messageClient(%this.client, 'InventoryMsg',"", "noAmmo", %wpnKey.ItemID, "a", true, true, 0);
                }
                else
                   %slotUsed = true;
@@ -401,26 +396,82 @@ function ShapeBase::AVMountImage(%this, %weapon, %slot)
          else
             %slotUsed = true;
       }
-      
-      if ( %slotUsed )
-      {
-         %this.mountImage(%weapon, 0);
-         %canH2H = (%this.isMounted() ? false : %weapon.canH2H);
-         %this.lastWeapon = %weapon;
-         if ( isObject(%weapon.item) )
-            %this.client.lastWeapon = %weapon.item;
-         else
-            %this.client.lastWeapon = "";
-      }
    }
 
-   %this.canH2H = %canH2H;
-   if ( %canH2H )
-      %this.equipBaseWeapons(%slotUsed);   // Setup H2H weapons
+   if ( %slotUsed )
+   {
+      // mountImage( image, slot, loaded, skinTag )
+      %this.mountImage(%weapon, %weapon.weaponSlot, true, addTaggedString(%wpnKey.skinMat));
+      %this.client.lastWeapon[%slot] = %wpnKey;
+   }
    else
-   {  // Make sure the H2H weapons are not mounted
-      for ( %i = 1; %i < 4; %i++ )
-         %this.unmountImage(%i);
+   {
+      if ( (%slot != 0) && (%slot != 1) )
+         %slot = 0;
+      %this.client.lastWeapon[%slot] = 0;
+      %this.unmountImage(%slot);
+   }
+}
+
+function ShapeBase::AVResetWpnState(%this)
+{  // Restores the clients last weapon state. This is usually called after
+   // unmounting from an AI/Vehicle or when spawning a new character.
+   for ( %i = 0; %i < 2; %i++ )
+   {
+      %wpnKey = %this.client.lastWeapon[%i];
+      %this.AVMountImage(%wpnKey, %i);
+   }
+   %this.AVCheckWeapons();
+}
+
+function ShapeBase::AVCheckWeapons(%this)
+{  // Check all mounted weapons and add H2H to empty slots if allowed.
+   %isMounted = %this.isMounted();
+   %feetAllowed = !%this.isMounted();
+   %lhAllowed = true;
+   %primaryWeapon = %this.getMountedImage(0);
+   if ( isObject(%primaryWeapon) )
+   {
+      if ( %isMounted && !%primaryWeapon.canUseMounted )
+         %this.unmountImage(0);
+      else
+      {
+         if ( %primaryWeapon.usesBothHands )
+            %lhAllowed = false;
+         if ( !%primaryWeapon.allowKicks )
+            %feetAllowed = false;
+      }
+   }
+   else if ( !%isMounted )
+      %this.mountImage(RightHandImage, 0, true);
+
+   %lhWeapon = %this.getMountedImage(1);
+   if ( isObject(%lhWeapon) )
+   {
+      if ( (%isMounted && !%lhWeapon.canUseMounted) || !%lhAllowed)
+      {
+         %this.unmountImage(1);
+         if ( !%lhAllowed )
+            %this.client.lastWeapon[1] = 0;
+      }
+      else
+      {
+         if ( !%lhWeapon.allowKicks )
+            %feetAllowed = false;
+      }
+   }
+   else if ( %lhAllowed && !%isMounted )
+      %this.mountImage(LeftHandImage, 1, true);
+      
+   if ( %feetAllowed )
+   {
+      %this.mountImage(RightFootImage, 2, true);
+      %this.mountImage(LeftFootImage, 3, true);
+   }
+   else
+   {
+      %this.unmountImage(2);
+      %this.unmountImage(3);
    }
 }
 
@@ -448,10 +499,16 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
    if ( %triggerState && %client.player.inArmThreadPlayOnce() )
       %client.player.stopPlayOnce();
 
-   if ( !%client.player.canH2H )
+   if ( !isObject(%client.player.getMountedImage(%slot)) )
    {
-      %slot = 0;
-      //%attackNum = 0;
+      if ( %slot > 1 )
+      {
+         %slot -= 2;
+         if ( !isObject(%client.player.getMountedImage(%slot)) )
+            %slot = 0;
+      }
+      else
+         %slot = 0;
    }
 
    if ( %attackNum < 4 )

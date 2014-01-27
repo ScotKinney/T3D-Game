@@ -68,12 +68,12 @@ function Pole::onUse(%this, %user)
       %user.BreakTeather();
       commandToClient(%user.client, 'SendWaterClicks', false);
       messageClient(%user.client, 'LocalizedMsg', "", "fishEnd", "a", false, true, 0);
-      %user.AVMountImage("", $WeaponSlot);
+      %user.AVResetWpnState();
    }
    else
    {  // Equip the fishing pole
-      %user.unmountImage(0); // remove any mounted weapon
-      %user.lastWeapon = "";
+      for ( %i = 0; %i < 4; %i++ )
+         %user.unmountImage(%i); // remove any mounted weapons
 
       // Attach the pole to mount0
       %user.mountEquipment(%this.shapeFile, "mount0");

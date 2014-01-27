@@ -62,9 +62,21 @@ singleton Material(heaterShieldC)
    useAnisotropic[0] = "1";
 };
 
+singleton Material(roundShieldWood_base)
+{
+   mapTo = "ShieldRoundNub_dif";
+   diffuseMap[0] = "round_wood_A_dif.dds";
+   normalMap[0] = "round_wood_A_normal.dds";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "round_wood_A_specular.dds";
+   materialTag0 = "Weapons";
+   useAnisotropic[0] = "1";
+};
+
 singleton Material(roundShieldWoodA)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "dif_ShieldRoundNub";
    diffuseMap[0] = "round_wood_A_dif.dds";
    normalMap[0] = "round_wood_A_normal.dds";
    specularPower[0] = "128";
@@ -76,7 +88,7 @@ singleton Material(roundShieldWoodA)
 
 singleton Material(roundShieldWoodB)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "B_ShieldRoundNub";
    diffuseMap[0] = "round_wood_B_dif.dds";
    normalMap[0] = "round_wood_B_normal.dds";
    specularPower[0] = "128";
@@ -88,7 +100,7 @@ singleton Material(roundShieldWoodB)
 
 singleton Material(roundShieldWoodC)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "C_ShieldRoundNub";
    diffuseMap[0] = "round_wood_C_dif.dds";
    normalMap[0] = "round_wood_C_normal.dds";
    specularPower[0] = "128";
@@ -100,7 +112,7 @@ singleton Material(roundShieldWoodC)
 
 singleton Material(roundShieldWoodD)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "D_ShieldRoundNub";
    diffuseMap[0] = "round_wood_D_dif.dds";
    normalMap[0] = "round_wood_D_normal.dds";
    specularPower[0] = "128";
@@ -112,7 +124,7 @@ singleton Material(roundShieldWoodD)
 
 singleton Material(roundShieldWoodE)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "E_ShieldRoundNub";
    diffuseMap[0] = "round_wood_E_dif.dds";
    normalMap[0] = "round_wood_E_normal.dds";
    specularPower[0] = "128";
@@ -124,7 +136,7 @@ singleton Material(roundShieldWoodE)
 
 singleton Material(roundShieldWoodF)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "F_ShieldRoundNub";
    diffuseMap[0] = "round_wood_F_dif.dds";
    normalMap[0] = "round_wood_F_normal.dds";
    specularPower[0] = "128";
@@ -136,7 +148,7 @@ singleton Material(roundShieldWoodF)
 
 singleton Material(roundShieldWoodG)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "G_ShieldRoundNub";
    diffuseMap[0] = "round_wood_G_dif.dds";
    normalMap[0] = "round_wood_G_normal.dds";
    specularPower[0] = "128";
@@ -148,7 +160,7 @@ singleton Material(roundShieldWoodG)
 
 singleton Material(roundShieldWoodH)
 {
-   mapTo = "ShieldRoundNub_dif";
+   mapTo = "H_ShieldRoundNub";
    diffuseMap[0] = "round_wood_H_dif.dds";
    normalMap[0] = "round_wood_H_normal.dds";
    specularPower[0] = "128";
@@ -160,7 +172,7 @@ singleton Material(roundShieldWoodH)
 
 singleton Material(roundShieldWoodI)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "I_ShieldRoundNub";
    diffuseMap[0] = "round_wood_I_dif.dds";
    normalMap[0] = "round_wood_I_normal.dds";
    specularPower[0] = "128";
@@ -172,7 +184,7 @@ singleton Material(roundShieldWoodI)
 
 singleton Material(squareShieldA)
 {
-   mapTo = "square_A_dif";
+   mapTo = "dif_squareSH";
    diffuseMap[0] = "square_A_dif.dds";
    normalMap[0] = "square_A_normal.dds";
    specularPower[0] = "86";
@@ -184,7 +196,7 @@ singleton Material(squareShieldA)
 
 singleton Material(squareShieldB)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "B_squareSH";
    diffuseMap[0] = "square_B_dif.dds";
    normalMap[0] = "square_B_normal.dds";
    specularPower[0] = "128";
@@ -196,7 +208,7 @@ singleton Material(squareShieldB)
 
 singleton Material(squareShieldC)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "C_squareSH";
    diffuseMap[0] = "square_C_dif.dds";
    normalMap[0] = "square_C_normal.dds";
    specularPower[0] = "128";
@@ -208,7 +220,7 @@ singleton Material(squareShieldC)
 
 singleton Material(squareShieldD)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "D_squareSH";
    diffuseMap[0] = "square_D_dif.dds";
    normalMap[0] = "square_D_normal.dds";
    specularPower[0] = "128";
@@ -220,7 +232,7 @@ singleton Material(squareShieldD)
 
 singleton Material(squareShieldE)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "E_squareSH";
    diffuseMap[0] = "square_E_dif.dds";
    normalMap[0] = "square_E_normal.dds";
    specularPower[0] = "128";
@@ -232,7 +244,7 @@ singleton Material(squareShieldE)
 
 singleton Material(squareShieldF)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "F_squareSH";
    diffuseMap[0] = "square_F_dif.dds";
    normalMap[0] = "square_F_normal.dds";
    specularPower[0] = "128";
@@ -244,7 +256,7 @@ singleton Material(squareShieldF)
 
 singleton Material(squareShieldG)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "G_squareSH";
    diffuseMap[0] = "square_G_dif.dds";
    normalMap[0] = "square_G_normal.dds";
    specularPower[0] = "128";
@@ -256,7 +268,7 @@ singleton Material(squareShieldG)
 
 singleton Material(squareShieldH)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "H_squareSH";
    diffuseMap[0] = "square_H_dif.dds";
    normalMap[0] = "square_H_normal.dds";
    specularPower[0] = "128";
@@ -268,7 +280,7 @@ singleton Material(squareShieldH)
 
 singleton Material(squareShieldI)
 {
-   mapTo = "unmapped_mat";
+   mapTo = "I_squareSH";
    diffuseMap[0] = "square_I_dif.dds";
    normalMap[0] = "square_I_normal.dds";
    specularPower[0] = "128";

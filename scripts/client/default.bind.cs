@@ -817,17 +817,3 @@ function unmountWeapon(%val)
 }
 
 moveMap.bind(keyboard, u, unmountWeapon);
-
-function nextWeapon(%val)
-{
-   if (%val)
-      commandToServer('cycleWeapon', "1");
-}
-
-function prevWeapon(%val)
-{
-   if (%val)
-      commandToServer('cycleWeapon', "-1");
-}
-moveMap.bind(keyboard, "0", nextWeapon);
-moveMap.bind(keyboard, "ctrl 0", prevWeapon);

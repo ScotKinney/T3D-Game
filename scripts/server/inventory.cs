@@ -43,20 +43,16 @@ function ShapeBase::UseItem(%this, %id, %amount, %type)
          %spos = strstr(%key, "Ammo");
          if ( %spos > -1 ) // If using ammo, use the weapon instead
             %key = getSubStr(%key, 0, %spos) @ "Weapon";
-         if ( %key.image !$= "" )
+         if ( isObject(%key.image) )
          {
             if ( %this.isFishing )
                Fishing_Pole.onUse(%this); // Put away the pole
-            %curWeapon = %this.getMountedImage($WeaponSlot);
-            %this.unmountImage($WeaponSlot);
-            if ( %key.image.getID() == %curWeapon )
-            {
-               %this.lastWeapon = "";
-               %this.client.lastWeapon = "";
-               %this.schedule(500, AVMountImage, "", $WeaponSlot);
-            }
-            else
-               %this.schedule(500, AVMountImage, %key.image, $WeaponSlot);
+            %slot = %key.image.weaponSlot;
+            if ( %key $= %this.client.lastWeapon[%slot] )
+               %key = "";
+            %this.unmountImage(%slot);
+            %this.schedule(500, "AVMountImage", %key, %slot);
+            %this.schedule(532, "AVCheckWeapons");
          }
 
       case 2:  // Magic

@@ -155,16 +155,13 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.health = %this.health;
    %client.skullLevel = %this.skullLevel;
    %client.arns = %this.wealth;
-   %client.lastWeapon = %this.weapon;
+   %client.lastWeapon[0] = $AlterVerse::ItemNames[getWord(%this.weapon, 0)];
+   %client.lastWeapon[1] = $AlterVerse::ItemNames[getWord(%this.weapon, 1)];
    if ( %client.inGame )
    {
       %client.createPersistantStats(%this.dbID, %this.dbUserName, %this.inventory);
-      %lastweapon = %client.lastWeapon;
-      if ( isObject(%client.player) && isObject(%lastweapon) &&
-         %client.player.hasInventory(%lastweapon) && isObject(%lastweapon.image) )
-      {
-         %client.player.AVMountImage(%lastweapon.image, $WeaponSlot);
-      }
+      if ( isObject(%client.player) )
+         %client.player.AVResetWpnState();
    }
    else
    {

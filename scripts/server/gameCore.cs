@@ -670,15 +670,7 @@ function GameCore::preparePlayer(%game, %client)
 
 function GameCore::loadOut(%game, %player)
 {
-   %hasinv = false;
-   %lastweapon = %player.client.lastWeapon;
-   if ( isObject(%lastweapon) && %player.hasInventory(%lastweapon) &&
-         isObject(%lastweapon.image) )
-   {
-      %player.AVMountImage(%lastweapon.image, $WeaponSlot);
-   }
-   else
-      %player.AVMountImage("", $WeaponSlot);
+   %player.AVResetWpnState();
 }
 
 // Customized kill message for falling deaths
@@ -760,7 +752,6 @@ function GameCore::onDeath(%game, %client, %sourceObject, %sourceClient, %damage
       commandToClient(%client, 'SendWaterClicks', false);
 
    %client.player.inventoryOnDeath();
-   //%client.setPersistantStat("lastWeapon", %client.player.lastWeapon);
 
    %client.health = %client.player.getDatablock().maxDamage;
    %client.player = 0;
