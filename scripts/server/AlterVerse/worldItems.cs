@@ -638,64 +638,6 @@ datablock ItemData(Fishing_Pole)
 };
 $AlterVerse::ItemNames[110] = "Fishing_Pole";
 
-datablock ItemData(FJFemaleSwordWeapon)
-{
-
-   ItemID = 82;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/Scimi/scimitar1_4.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 82;
-   image = FJFemaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[82] = "FJFemaleSwordWeapon";
-
-datablock ItemData(FJMaleSwordWeapon)
-{
-
-   ItemID = 83;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/Scimi/scimitar1_4.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 83;
-   image = FJMaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[83] = "FJMaleSwordWeapon";
-
 datablock ItemData(Flex_Decapitator)
 {
 
@@ -1177,64 +1119,6 @@ datablock ItemData(IronSpearWeapon)
 };
 $AlterVerse::ItemNames[166] = "IronSpearWeapon";
 
-datablock ItemData(KardFemaleSwordWeapon)
-{
-
-   ItemID = 84;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 84;
-   image = KardFemaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[84] = "KardFemaleSwordWeapon";
-
-datablock ItemData(KardMaleSwordWeapon)
-{
-
-   ItemID = 85;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/KarSword/SpartanSword1_4.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 85;
-   image = KardMaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[85] = "KardMaleSwordWeapon";
-
 datablock ItemData(Lamp_Oil)
 {
 
@@ -1467,6 +1351,35 @@ datablock ItemData(Magical_Key)
 };
 $AlterVerse::ItemNames[45] = "Magical_Key";
 
+datablock ItemData(MayanSwordWeapon)
+{
+
+   ItemID = 87;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/MayanSword.dts";
+   invIcon = "art/gui/icons/Sword.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+
+   table = "Weapons";
+   SubItemID = 87;
+   image = MayanSwordImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[87] = "MayanSwordWeapon";
+
 datablock ItemData(Medium_Diamond)
 {
 
@@ -1605,42 +1518,13 @@ datablock ItemData(Mustang_Horse_Item)
 };
 $AlterVerse::ItemNames[109] = "Mustang_Horse_Item";
 
-datablock ItemData(MythFemaleSwordWeapon)
-{
-
-   ItemID = 89;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/l_sword/longsword.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 89;
-   image = MythFemaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[89] = "MythFemaleSwordWeapon";
-
-datablock ItemData(MythMaleSwordWeapon)
+datablock ItemData(MythSwordWeapon)
 {
 
    ItemID = 86;
    category = "weapons";
    className = "wpn";
-   shapeFile = "art/inv/weapons/l_sword/longsword.dts";
+   shapeFile = "art/inv/weapons/Swords/MythSword.dts";
    invIcon = "art/gui/icons/Sword.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -1656,12 +1540,12 @@ datablock ItemData(MythMaleSwordWeapon)
 
    table = "Weapons";
    SubItemID = 86;
-   image = MythMaleSwordImage;
+   image = MythSwordImage;
    skinMat = "";
    effectWeap = "melee";
    reticle = "";
 };
-$AlterVerse::ItemNames[86] = "MythMaleSwordWeapon";
+$AlterVerse::ItemNames[86] = "MythSwordWeapon";
 
 datablock ItemData(Nightcrawlers)
 {
@@ -1778,6 +1662,35 @@ datablock ItemData(Pike)
    nutrition = 30;
 };
 $AlterVerse::ItemNames[11] = "Pike";
+
+datablock ItemData(PirateSwordWeapon)
+{
+
+   ItemID = 83;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/PirateSword.dts";
+   invIcon = "art/gui/icons/Sword.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+
+   table = "Weapons";
+   SubItemID = 83;
+   image = PirateSwordImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[83] = "PirateSwordWeapon";
 
 datablock ItemData(Rainbow_Trout)
 {
@@ -2667,6 +2580,35 @@ datablock ItemData(Solo_Mine_Potion)
 };
 $AlterVerse::ItemNames[57] = "Solo_Mine_Potion";
 
+datablock ItemData(SpartanSwordWeapon)
+{
+
+   ItemID = 85;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/SpartanSword.dts";
+   invIcon = "art/gui/icons/Sword.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+
+   table = "Weapons";
+   SubItemID = 85;
+   image = SpartanSwordImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[85] = "SpartanSwordWeapon";
+
 datablock ItemData(Split_Personality_Potion)
 {
 
@@ -3256,122 +3198,6 @@ datablock ItemData(Tokara_Mushroom)
 };
 $AlterVerse::ItemNames[39] = "Tokara_Mushroom";
 
-datablock ItemData(TokFemaleSwordWeapon)
-{
-
-   ItemID = 88;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/TokSword/SwordTok.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 88;
-   image = TokFemaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[88] = "TokFemaleSwordWeapon";
-
-datablock ItemData(TokMaleSwordWeapon)
-{
-
-   ItemID = 87;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/TokSword/SwordTok.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 87;
-   image = TokMaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[87] = "TokMaleSwordWeapon";
-
-datablock ItemData(ValFemaleSwordWeapon)
-{
-
-   ItemID = 79;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/valsword/Sword_Val.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 79;
-   image = ValFemaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[79] = "ValFemaleSwordWeapon";
-
-datablock ItemData(ValMaleSwordWeapon)
-{
-
-   ItemID = 78;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/valsword/Sword_Val.dts";
-   invIcon = "art/gui/icons/Sword.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 0;
-
-   table = "Weapons";
-   SubItemID = 78;
-   image = ValMaleSwordImage;
-   skinMat = "";
-   effectWeap = "melee";
-   reticle = "";
-};
-$AlterVerse::ItemNames[78] = "ValMaleSwordWeapon";
-
 datablock ItemData(Venison_Chop)
 {
 
@@ -3396,6 +3222,35 @@ datablock ItemData(Venison_Chop)
    nutrition = 100;
 };
 $AlterVerse::ItemNames[31] = "Venison_Chop";
+
+datablock ItemData(VikingSwordWeapon)
+{
+
+   ItemID = 78;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/swords/VikingSword.dts";
+   invIcon = "art/gui/icons/Sword.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 0;
+
+   table = "Weapons";
+   SubItemID = 78;
+   image = VikingSwordImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[78] = "VikingSwordWeapon";
 
 datablock ItemData(Wizards_StaffWeapon)
 {
