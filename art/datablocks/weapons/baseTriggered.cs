@@ -72,11 +72,6 @@ datablock ShapeBaseImageData(BaseTriggeredImage)
    // Ready to fire, just waiting for the trigger
    stateName[2]                     = "Ready";
    stateTransitionOnTriggerDown[2]  = "CheckWet";
-   stateTransitionGeneric0In[2]     = "CheckWet";
-   stateTransitionGeneric1In[2]     = "CheckWet";
-   stateTransitionGeneric2In[2]     = "CheckWet";
-   stateTransitionGeneric3In[2]     = "CheckWet";
-   stateTransitionOnAltTriggerDown[2]  = "CheckWet";
 
    // Fire the weapon. Calls the fire script which does the actual work.
    stateName[3]                     = "Fire";

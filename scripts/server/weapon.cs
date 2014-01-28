@@ -274,8 +274,11 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
       
       if ( %numLeft < 1 )
       {
+         %obj.setImageTrigger(%slot, false);
          %obj.setImageHidden(%slot, false);
-         %obj.unmountImage(%slot);
+         %obj.setImageAmmo(%slot, false);
+         //%obj.unmountImage(%slot);
+         %obj.schedule(0, "unmountImage", %slot);
          %obj.client.lastWeapon[%slot] = 0;
          %this.NoAmmoMessage(%obj);
          %canRearm = false;
@@ -490,13 +493,12 @@ function WeaponImage::NoAmmoMessage(%this, %obj)
    }
 }
 
-function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
+function serverCmdDoAttack(%client, %slot, %attackNum, %make)
 {
    if (!isObject(%client.player))
       return;
 
-   %triggerState = (%stopping !$= "") ? false : true;
-   if ( %triggerState && %client.player.inArmThreadPlayOnce() )
+   if ( %make && %client.player.inArmThreadPlayOnce() )
       %client.player.stopPlayOnce();
 
    if ( !isObject(%client.player.getMountedImage(%slot)) )
@@ -510,15 +512,9 @@ function serverCmdDoAttack(%client, %slot, %attackNum, %stopping)
       else
          %slot = 0;
    }
+   
+   if ( %make )
+      %client.player.curAttack = %attackNum;
 
-   if ( %attackNum < 4 )
-      %client.player.setImageGenericTrigger(%slot, %attackNum, %triggerState);
-   else if ( %attackNum < 5 )
-      %client.player.setImageAltTrigger(%slot, %triggerState);
-   else
-      %client.player.setImageTrigger(%slot, %triggerState);
-
-   // Turn off the attack signal in 100 ms
-   if ( %triggerState )  
-      schedule(100, 0, "serverCmdDoAttack", %client, %slot, %attackNum, "1");
+   %client.player.setImageTrigger(%slot, %make);
 }

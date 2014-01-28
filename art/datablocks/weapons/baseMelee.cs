@@ -50,11 +50,6 @@ datablock ShapeBaseImageData(BaseMeleeImage)
    // Ready to fire, just waiting for a trigger
    stateName[2]                     = "Ready";
    stateTransitionOnTriggerDown[2]  = "Fire";
-   stateTransitionGeneric0In[2]     = "Attack0";
-   stateTransitionGeneric1In[2]     = "Attack1";
-   stateTransitionGeneric2In[2]     = "Attack2";
-   stateTransitionGeneric3In[2]     = "Attack3";
-   stateTransitionOnAltTriggerDown[2]  = "Attack4";
 
    // Fire the weapon. Calls the fire script which does the actual work.
    stateName[3]                     = "Fire";
@@ -64,50 +59,10 @@ datablock ShapeBaseImageData(BaseMeleeImage)
    stateAllowImageChange[3]         = false;
    stateScript[3]                   = "onFire";
 
-   // Play the relead animation, and transition into
+   // Play the reload animation, and transition into
    stateName[4]                     = "Reload";
    stateTransitionOnTimeout[4]      = "Ready";
    stateTimeoutValue[4]             = 0.1;
    stateAllowImageChange[4]         = false;
    stateEjectShell[4]               = false;
-
-   // Fire the weapon. Calls the fire script which does the actual work.
-   stateName[5]                     = "Attack0";
-   stateTransitionOnTimeout[5]      = "Reload";
-   stateTimeoutValue[5]             = 0.2;
-   stateFire[5]                     = true;
-   stateAllowImageChange[5]         = false;
-   stateScript[5]                   = "onAttack0";
-
-   // Fire the weapon. Calls the fire script which does the actual work.
-   stateName[6]                     = "Attack1";
-   stateTransitionOnTimeout[6]      = "Reload";
-   stateTimeoutValue[6]             = 0.2;
-   stateFire[6]                     = true;
-   stateAllowImageChange[6]         = false;
-   stateScript[6]                   = "onAttack1";
-
-   // Fire the weapon. Calls the fire script which does the actual work.
-   stateName[7]                     = "Attack2";
-   stateTransitionOnTimeout[7]      = "Reload";
-   stateTimeoutValue[7]             = 0.2;
-   stateFire[7]                     = true;
-   stateAllowImageChange[7]         = false;
-   stateScript[7]                   = "onAttack2";
-
-   // Fire the weapon. Calls the fire script which does the actual work.
-   stateName[8]                     = "Attack3";
-   stateTransitionOnTimeout[8]      = "Reload";
-   stateTimeoutValue[8]             = 0.2;
-   stateFire[8]                     = true;
-   stateAllowImageChange[8]         = false;
-   stateScript[8]                   = "onAttack3";
-
-   // Fire the weapon. Calls the fire script which does the actual work.
-   stateName[9]                     = "Attack4";
-   stateTransitionOnTimeout[9]      = "Reload";
-   stateTimeoutValue[9]             = 0.2;
-   stateFire[9]                     = true;
-   stateAllowImageChange[9]         = false;
-   stateScript[9]                   = "onAttack4";
 };

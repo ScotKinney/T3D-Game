@@ -352,9 +352,10 @@ package GameCore
       if ( $Server::ServerType !$= "MultiPlayer" )
       {
          // Give a singleplayer inventory
-         %inventory = (($pref::Player::Gender $= "Male") ?
-            ValMaleSwordWeapon.ItemID : ValFemaleSwordWeapon.ItemID) SPC "1";
+         %inventory = VikingSwordWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Fishing_Pole.ItemID SPC "1";
+         %inventory = %inventory TAB Excalibur_SwordWeapon.ItemID SPC "1";
+         %inventory = %inventory TAB Round_Shield_IIIWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Boglin_Toes.ItemID SPC "20";
          %inventory = %inventory TAB Lantern.ItemID SPC "1";
          %inventory = %inventory TAB Lamp_Oil.ItemID SPC "30";
@@ -363,7 +364,7 @@ package GameCore
          %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
          %inventory = %inventory TAB BBQ_Ribs_Potion.ItemID SPC "10";
          %inventory = %inventory TAB Shards_of_Ice_Crystal.ItemID SPC "10";
-         %inventory = %inventory TAB TokaraMushroom.ItemID SPC "20";
+         %inventory = %inventory TAB Tokara_Mushroom.ItemID SPC "20";
          %inventory = %inventory TAB FlintlockWeapon.ItemID SPC "1";
          %inventory = %inventory TAB ShotAmmo.ItemID SPC "50";
          %this.startInv = %inventory;

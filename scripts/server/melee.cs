@@ -46,35 +46,14 @@ function MeleeImage::holsterWeapon(%this, %obj)
 function MeleeImage::onFire(%this, %obj, %slot)
 {
    // Chose an attack randomly
-   %index = mFloor(getRandom()*(%this.hthNumAttacks-0.0001));
+   %index = %obj.curAttack;
+   if ( %index < 0 )
+      %index = mFloor(getRandom()*(%this.hthNumAttacks-0.0001));
 
    %this.SwingWeapon(%obj, %slot, %index);
+   %obj.curAttack = -1;
 }
 
-function MeleeImage::onAttack0(%this, %obj, %slot)
-{
-   %this.SwingWeapon(%obj, %slot, 0);
-}
-
-function MeleeImage::onAttack1(%this, %obj, %slot)
-{
-   %this.SwingWeapon(%obj, %slot, 1);
-}
-
-function MeleeImage::onAttack2(%this, %obj, %slot)
-{
-   %this.SwingWeapon(%obj, %slot, 2);
-}
-
-function MeleeImage::onAttack3(%this, %obj, %slot)
-{
-   %this.SwingWeapon(%obj, %slot, 3);
-}
-
-function MeleeImage::onAttack4(%this, %obj, %slot)
-{
-   %this.SwingWeapon(%obj, %slot, 4);
-}
 // ----------------------------------------------------------------------------
 function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 {

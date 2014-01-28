@@ -421,7 +421,7 @@ function mouseButtonZoom(%val)
    toggleZoom(%val);
 }
 
-moveMap.bind(keyboard, f, setZoomFOV); // f for field of view
+//moveMap.bind(keyboard, f, setZoomFOV); // f for field of view
 moveMap.bind(keyboard, t, toggleZoom);
 //moveMap.bind( mouse, button1, mouseButtonZoom );
 
@@ -776,14 +776,24 @@ moveMap.bind(keyboard, f, setUsingFeet);
 
 function doAttack(%attackNum)
 {
-   commandToServer('DoAttack', $ActiveWeaponSlot, %attackNum);
+   commandToServer('DoAttack', $ActiveWeaponSlot, %attackNum, "1");
 }
-moveMap.bindCmd(keyboard, "1", "doAttack(0);", "");
-moveMap.bindCmd(keyboard, "2", "doAttack(1);", "");
-moveMap.bindCmd(keyboard, "3", "doAttack(2);", "");
-moveMap.bindCmd(keyboard, "4", "doAttack(3);", "");
-moveMap.bindCmd(keyboard, "5", "doAttack(4);", "");
+function ceaseAttack()
+{
+   commandToServer('DoAttack', $ActiveWeaponSlot, "0", "0");
+}
+moveMap.bindCmd(keyboard, "1", "doAttack(0);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "2", "doAttack(1);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "3", "doAttack(2);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "4", "doAttack(3);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "5", "doAttack(4);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "6", "doAttack(5);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "7", "doAttack(6);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "8", "doAttack(7);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "9", "doAttack(8);", "ceaseAttack();");
+moveMap.bindCmd(keyboard, "0", "doAttack(9);", "ceaseAttack();");
 
+$LastAttackSlot = 0;
 function doRandomAttack(%val)
 {
    if ( %val )
@@ -791,16 +801,14 @@ function doRandomAttack(%val)
       %slot = getRandom(0, 1);
       if ( $UsingFeet )
          %slot += 2;
-      commandToServer('DoAttack', %slot, 5);
+      $LastAttackSlot = %slot;
    }
+   commandToServer('DoAttack', $LastAttackSlot, -1, %val);
 }
 
 function mouseFire(%val)
 {
-   if ( !%val )
-      return;
-
-   if ( isObject(ServerConnection) &&
+   if ( %val && isObject(ServerConnection) &&
       ServerConnection.isFirstPerson() &&
       ServerConnection.getControlObject().isMethod("testWebShapeHit") &&
       ServerConnection.getControlObject().testWebShapeHit() )
