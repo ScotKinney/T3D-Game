@@ -182,6 +182,18 @@ singleton Material(matBM_HairD_Strands)
    pixelSpecular[0] = "1";
 };
 
+singleton Material(matBM_HairD_Scalp)
+{
+   mapTo = "BM_HairD_Scalp";
+   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairD/HairD_Scalp_Black";
+   translucent = "1";
+   alphaTest = "1";
+   alphaRef = 50; 
+   translucentZWrite = "0";
+   castShadows = "0";
+   translucentBlendOp = "None";
+   materialTag0 = "Avatar_BM";
+};
 
 ////HairE
 

@@ -189,6 +189,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing6_RH.dsq", "SwordSwing6_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing7_RH.dsq", "SwordSwing7_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing8_RH.dsq", "SwordSwing8_RH", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing9_RH.dsq", "SwordSwing9_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing10_RH.dsq", "SwordSwing10_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing11_RH.dsq", "SwordSwing11_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing12_RH.dsq", "SwordSwing12_RH", "0", "34", "1", "0");

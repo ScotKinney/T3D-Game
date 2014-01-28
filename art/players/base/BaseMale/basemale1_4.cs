@@ -8,7 +8,6 @@ function basemale1_4Dts::onLoad(%this)
 {
    %this.renameNode("upperJaw", "Eye");
    %this.setNodeTransform("eye", "0.000158001 0.126053 2.43575 1 0 0 0", "1");
-   %this.setNodeTransform("mount3", "-0.214266 0.17907 1.61817 1 0 0 0", "1");
    %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
    %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
@@ -174,6 +173,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing6_RH.dsq", "SwordSwing6_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing7_RH.dsq", "SwordSwing7_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing8_RH.dsq", "SwordSwing8_RH", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing9_RH.dsq", "SwordSwing9_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing10_RH.dsq", "SwordSwing10_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing11_RH.dsq", "SwordSwing11_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing12_RH.dsq", "SwordSwing12_RH", "0", "34", "1", "0");

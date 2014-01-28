@@ -263,7 +263,7 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
   // Foot Print offSet
    decalOffset = 0.22;
    
-   DefaultSetup = "55,59,35,20,65,63,70,77";
+   DefaultSetup = "55,59,237,35,313,320,378,306,309";//"55,59,35,20,65,63,70,77";
    DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
    DefaultSetup[Sparta] = "55,59,35,242,6,269,13";
    DefaultSetup[Mythriel] = "55,59,298,35,294,295,291";
@@ -313,7 +313,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    decalData   = FemaleFootprint;
    decalOffset = 0.11;
 
-   DefaultSetup = "80,99,216,386,393,382,379,380,390,393,390";
+   DefaultSetup = "80,99,216,330,326,325,328,324";//"80,99,216,386,393,382,379,380,390,390,393";
    DefaultSetup[Caerule] = "80,99,216,386,393,382,379,380,390,393";
    DefaultSetup[Sparta] = "80,99,216,356,350,348,347,351";
    DefaultSetup[Mythriel] = "80,99,366,216,368,364,363,369";
