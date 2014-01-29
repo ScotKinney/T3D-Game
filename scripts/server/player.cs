@@ -577,28 +577,41 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
       %result = %obj.getDamageLocation(%pos);
       %area = getWord(%result, 0);
       %side = getWord(%result, 1);
+      %left = strstr(%side, "left");
+      %right = strstr(%side, "right");
+      %front = strstr(%side, "front");
+      %back = strstr(%side, "back");
       
       if ( %area $= "head" )
       {
-         if ( %this.numHeadDmgAnims > 1 )
-            %animNum = getRandom(1, %this.numDamageAnims);
-         %animName = "damageHead";
+         if ( %front == 0 )
+         {
+            %animNum = getRandom(1, 2);
+            %animName = "Damage_Head_F";
+         }
+         else if ( %left == 0 )
+            %animName = "Damage_Head_L";
+         else if ( %right == 0 )
+            %animName = "Damage_Head_L";
+         else if ( %back == 0 )
+            %animName = "Damage_Body_B";
       }
       else if ( %area $= "torso" )
       {
-         if ( %this.numBodyDmgAnims > 1 )
-            %animNum = getRandom(1, %this.numDamageAnims);
-         %animName = "damageBody";
+         if ( %front >= 0 )
+         {
+            %animNum = getRandom(1, 3);
+            %animName = "Damage_Body_F";
+         }
+         else
+            %animName = "Damage_Body_B";
       }
       else
       {
-         if ( %this.numLegDmgAnims > 1 )
-            %animNum = getRandom(1, %this.numDamageAnims);
-         %animName = "DamageLegs_";
-         if ( strstr(%side, "left") > -1 )
-            %animName = %animName @ "L";
+         if ( %right >= 0 )
+            %animName = "Damage_Body_R";
          else
-            %animName = %animName @ "R";
+            %animName = "Damage_Body_L";
       }
    }
    else if ( %this.numDamageAnims > 0 )
@@ -610,20 +623,24 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
 
    if ( %animName !$= "" )
    {
-      %painStunTime = (%this.painStunTime $= "") ? 1.0 : %this.painStunTime;
+      %painStunTime = %this.getSequenceDuration(%animName @ %animNum);
       %painStunTime *= 1000; // Convert to MS
       if ( %obj.isBot )
       {
-         %oldSpeed = %obj.getMoveSpeed();
+         if ( isEventPending(%obj.clearDamage) )
+            cancel(%obj.clearDamage);
+         else
+            %obj.preDamageSpeed = %obj.getMoveSpeed();
          %obj.setMoveSpeed(0);
-         if ( %obj.isBot )
-            %obj.schedule(%painStunTime, "setMoveSpeed", %oldSpeed);
+         %obj.clearDamage = %obj.schedule(%painStunTime, "setMoveSpeed", %obj.preDamageSpeed);
          %obj.setActionThread(%animName @ %animNum, false, true);
       }
       else
       {
+         if ( isEventPending(%obj.clearDamage) )
+            cancel(%obj.clearDamage);
          %obj.ForceAnimation(true, %animName @ %animNum, true);
-         %obj.schedule(%painStunTime, "ForceAnimation", false, "root");
+         %obj.clearDamage = %obj.schedule(%painStunTime, "ForceAnimation", false, "root");
       }
    }
 }
@@ -740,6 +757,43 @@ function Player::playDeathAnimation(%this)
          %this.setActionThread("Death");
    }
    //AISK Changes: End
+}
+
+function Player::playImpulseAnim(%this, %pos, %impulse)
+{
+   %pd_db = %this.getDataBlock();
+   if ( %pd_db.hasLocationalAnims && (%impulse > %pd_db.minAnimImpulse) 
+      && (%this.getState() !$= "Dead"))
+   {
+      %animNum = 1;
+      %animName = "Damage_WBody_";
+      %result = %this.getDamageLocation(%pos);
+      %side = getWord(%result, 1);
+      if ( strstr(%side, "front") > -1 )
+         %animName = %animName @ "F";
+      else
+         %animName = %animName @ "B";
+      
+      %painStunTime = %pd_db.getSequenceDuration(%animName @ %animNum);
+      %painStunTime *= 1000; // Convert to MS
+      if ( %this.isBot )
+      {
+         if ( isEventPending(%this.clearDamage) )
+            cancel(%this.clearDamage);
+         else
+            %this.preDamageSpeed = %this.getMoveSpeed();
+         %this.setMoveSpeed(0);
+         %this.clearDamage = %this.schedule(%painStunTime, "setMoveSpeed", %this.preDamageSpeed);
+         %this.setActionThread(%animName @ %animNum, false, true);
+      }
+      else
+      {
+         if ( isEventPending(%this.clearDamage) )
+            cancel(%this.clearDamage);
+         %this.ForceAnimation(true, %animName @ %animNum, true);
+         %this.clearDamage = %this.schedule(%painStunTime, "ForceAnimation", false, "root");
+      }
+   }
 }
 
 function Player::playCelAnimation(%this,%anim)

@@ -432,17 +432,17 @@ singleton Material(BF_Horn_Myth)
    materialTag0 = "Avatar_BM";
 };
 
-singleton Material(mat_Darts)
-{
-   mapTo = "Dart";
-   diffuseMap[0] = "art/inv/weapons/Dart/Dart.png";
-   materialTag0 = "Avatar_BF";
-   translucent = "0";
-   forestWindEnabled = "1";
-   backlight = "1";
-   materialTag1 = "Vegetation";
-   backLightFactor = "0.9 1.0 0.2";
-};
+//singleton Material(mat_Darts)
+//{
+   //mapTo = "Dart";
+   //diffuseMap[0] = "art/inv/weapons/Dart/Dart.png";
+   //materialTag0 = "Avatar_BF";
+   //translucent = "0";
+   //forestWindEnabled = "1";
+   //backlight = "1";
+   //materialTag1 = "Vegetation";
+   //backLightFactor = "0.9 1.0 0.2";
+//};
 
 ////////////////////////////////////////////VALHALLA STUFF///////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////

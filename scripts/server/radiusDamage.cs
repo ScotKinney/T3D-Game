@@ -67,6 +67,8 @@ function radiusDamage(%sourceObject, %position, %radius, %damage, %damageType, %
          %impulseVec = VectorNormalize(%impulseVec);
          %impulseVec = VectorScale(%impulseVec, %impulse * %distScale);
          %targetObject.applyImpulse(%position, %impulseVec);
+         if ( %targetObject.isMethod("playImpulseAnim") )
+            %targetObject.playImpulseAnim(%position, %impulse * %distScale);
       }
    }
 }

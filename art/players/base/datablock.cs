@@ -272,10 +272,9 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
 
    numDamageAnims = 0;
    hasLocationalAnims = true;
-   numHeadDmgAnims = 1;
-   numBodyDmgAnims = 1;
-   numLegDmgAnims = 1;
-   painStunTime = 0.75;
+
+   // An impulse less than this value will not knock the player down
+   minAnimImpulse = 750;
 };
 
 datablock PlayerData(FemalePlayerData : DefaultPlayerData)
@@ -322,10 +321,9 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
 
    numDamageAnims = 0;
    hasLocationalAnims = true;
-   numHeadDmgAnims = 1;
-   numBodyDmgAnims = 1;
-   numLegDmgAnims = 1;
-   painStunTime = 5;
+
+   // An impulse less than this value will not knock the player down
+   minAnimImpulse = 750;
 };
 
 // Player fishing sounds

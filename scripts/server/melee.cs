@@ -326,19 +326,20 @@ function applyImpactImpulse(%victim, %pos, %direction, %attacker, %attack, %impu
    if (%target.isInvincible == true)
       return;
 
-  //%vpos = %victim.getWorldBoxCenter();
-  //%pushDirection = VectorSub(%vpos,%attacker.getWorldBoxCenter());
-  //%pushDirection = VectorNormalize(%pushDirection);
-  //%vPos = %pos;
-  //%pushDirection = VectorSub("0 0 0", %normal); // reverse normal for push direction
-  %pushDirection = VectorNormalize(%direction);
+   //%vpos = %victim.getWorldBoxCenter();
+   //%pushDirection = VectorSub(%vpos,%attacker.getWorldBoxCenter());
+   //%pushDirection = VectorNormalize(%pushDirection);
+   //%vPos = %pos;
+   //%pushDirection = VectorSub("0 0 0", %normal); // reverse normal for push direction
+   %pushDirection = VectorNormalize(%direction);
 
-  // hardoded impluse
-  if(!%impulse)
-     %impulse = 12.0;
-    
-  %pushVec = VectorScale(%pushDirection, %impulse);
-  %victim.applyImpulse(%vpos, %pushVec);
+   // hardoded impluse
+   if(!%impulse)
+      %impulse = 12.0;
+
+   %pushVec = VectorScale(%pushDirection, %impulse);
+   %victim.applyImpulse(%pos, %pushVec);
+   %victim.playImpulseAnim(%pos, %impulse);
 }
 
 function restorePlayerControl(%client, %player)
