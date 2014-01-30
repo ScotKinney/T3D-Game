@@ -55,6 +55,35 @@ datablock ItemData(AnnihilatorWeapon)
 };
 $AlterVerse::ItemNames[78] = "AnnihilatorWeapon";
 
+datablock ItemData(AnnihilatorLHWeapon)
+{
+
+   ItemID = 173;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/swords/AnnihilatorLH.dts";
+   invIcon = "art/gui/icons/annihilatorLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 173;
+   image = AnnihilatorLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[173] = "AnnihilatorLHWeapon";
+
 datablock ItemData(Apple)
 {
 
@@ -130,6 +159,35 @@ datablock ItemData(AvengerWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[86] = "AvengerWeapon";
+
+datablock ItemData(AvengerLHWeapon)
+{
+
+   ItemID = 176;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/AvengerLH.dts";
+   invIcon = "art/gui/icons/AvengerLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 176;
+   image = AvengerLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[176] = "AvengerLHWeapon";
 
 datablock ItemData(Banana)
 {
@@ -572,6 +630,35 @@ datablock ItemData(DeathDealerWeapon)
 };
 $AlterVerse::ItemNames[85] = "DeathDealerWeapon";
 
+datablock ItemData(DeathDealerLHWeapon)
+{
+
+   ItemID = 177;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/DeathDealerLH.dts";
+   invIcon = "art/gui/icons/DeathDealerLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 177;
+   image = DeathDealerLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[177] = "DeathDealerLHWeapon";
+
 datablock ItemData(DecimatorWeapon)
 {
 
@@ -623,6 +710,35 @@ datablock ItemData(Deer_Hide)
 };
 $AlterVerse::ItemNames[92] = "Deer_Hide";
 
+datablock ItemData(DoomWeapon)
+{
+
+   ItemID = 178;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/staffs/doom.dts";
+   invIcon = "art/gui/icons/doom.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 178;
+   image = DoomImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[178] = "DoomWeapon";
+
 datablock ItemData(Emerald)
 {
 
@@ -673,6 +789,35 @@ datablock ItemData(EqualizerWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[125] = "EqualizerWeapon";
+
+datablock ItemData(EqualizerLHWeapon)
+{
+
+   ItemID = 170;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/EqualizerLH.dts";
+   invIcon = "art/gui/icons/EqualizerLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1500;
+
+   table = "Weapons";
+   SubItemID = 170;
+   image = EqualizerLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[170] = "EqualizerLHWeapon";
 
 datablock ItemData(Fishing_Pole)
 {
@@ -746,6 +891,35 @@ datablock ItemData(FlintlockWeapon)
    reticle = "reticle_rocketlauncher";
 };
 $AlterVerse::ItemNames[47] = "FlintlockWeapon";
+
+datablock ItemData(FuryWeapon)
+{
+
+   ItemID = 179;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/staffs/Fury.dts";
+   invIcon = "art/gui/icons/fury.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 179;
+   image = FuryImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[179] = "FuryWeapon";
 
 datablock ItemData(Gargoyles_Fire_Balls)
 {
@@ -901,6 +1075,35 @@ datablock ItemData(Ham)
    nutrition = 60;
 };
 $AlterVerse::ItemNames[42] = "Ham";
+
+datablock ItemData(HavokWeapon)
+{
+
+   ItemID = 180;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/staffs/Havok.dts";
+   invIcon = "art/gui/icons/havok.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 500;
+
+   table = "Weapons";
+   SubItemID = 180;
+   image = HavokImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[180] = "HavokWeapon";
 
 datablock ItemData(Heater_Shield_IWeapon)
 {
@@ -1337,6 +1540,35 @@ datablock ItemData(LiberatorWeapon)
 };
 $AlterVerse::ItemNames[126] = "LiberatorWeapon";
 
+datablock ItemData(LiberatorLHWeapon)
+{
+
+   ItemID = 172;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/liberatorLH.dts";
+   invIcon = "art/gui/icons/liberatorLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1300;
+
+   table = "Weapons";
+   SubItemID = 172;
+   image = LiberatorLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[172] = "LiberatorLHWeapon";
+
 datablock ItemData(Lime)
 {
 
@@ -1667,6 +1899,35 @@ datablock ItemData(ParalyzerWeapon)
 };
 $AlterVerse::ItemNames[124] = "ParalyzerWeapon";
 
+datablock ItemData(ParalyzerLHWeapon)
+{
+
+   ItemID = 171;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/paralyzerLH.dts";
+   invIcon = "art/gui/icons/paralyzerLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1400;
+
+   table = "Weapons";
+   SubItemID = 171;
+   image = ParalyzerLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[171] = "ParalyzerLHWeapon";
+
 datablock ItemData(Pike)
 {
 
@@ -1716,6 +1977,35 @@ datablock ItemData(Rainbow_Trout)
    nutrition = 35;
 };
 $AlterVerse::ItemNames[13] = "Rainbow_Trout";
+
+datablock ItemData(ReaverWeapon)
+{
+
+   ItemID = 182;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/axes/reaver.dts";
+   invIcon = "art/gui/icons/reaver.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1100;
+
+   table = "Weapons";
+   SubItemID = 182;
+   image = ReaverImage;
+   skinMat = "";
+   effectWeap = "thrown";
+   reticle = "";
+};
+$AlterVerse::ItemNames[182] = "ReaverWeapon";
 
 datablock ItemData(Red_Devil)
 {
@@ -2638,6 +2928,35 @@ datablock ItemData(SoulReaverWeapon)
 };
 $AlterVerse::ItemNames[87] = "SoulReaverWeapon";
 
+datablock ItemData(SoulReaverLHWeapon)
+{
+
+   ItemID = 175;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/SoulReaverLH.dts";
+   invIcon = "art/gui/icons/SoulReaverLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 175;
+   image = SoulReaverLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[175] = "SoulReaverLHWeapon";
+
 datablock ItemData(Split_Personality_Potion)
 {
 
@@ -3148,6 +3467,35 @@ datablock ItemData(Thors_Hammer)
 };
 $AlterVerse::ItemNames[69] = "Thors_Hammer";
 
+datablock ItemData(ThumperWeapon)
+{
+
+   ItemID = 181;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/maces/thumper.dts";
+   invIcon = "art/gui/icons/thumper.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 800;
+
+   table = "Weapons";
+   SubItemID = 181;
+   image = ThumperImage;
+   skinMat = "";
+   effectWeap = "thrown";
+   reticle = "";
+};
+$AlterVerse::ItemNames[181] = "ThumperWeapon";
+
 datablock ItemData(Thunderbolt_Potion)
 {
 
@@ -3252,6 +3600,35 @@ datablock ItemData(WidowMakerWeapon)
 };
 $AlterVerse::ItemNames[83] = "WidowMakerWeapon";
 
+datablock ItemData(WidowMakerLHWeapon)
+{
+
+   ItemID = 174;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/Swords/WidowMakerLH.dts";
+   invIcon = "art/gui/icons/WidowMakerLH.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1000;
+
+   table = "Weapons";
+   SubItemID = 174;
+   image = WidowMakerLHImage;
+   skinMat = "";
+   effectWeap = "melee";
+   reticle = "";
+};
+$AlterVerse::ItemNames[174] = "WidowMakerLHWeapon";
+
 datablock ItemData(Wizards_StaffWeapon)
 {
 
@@ -3260,7 +3637,7 @@ datablock ItemData(Wizards_StaffWeapon)
    className = "wpn";
    shapeFile = "art/inv/weapons/staffs/wizardsstaff.dts";
    invIcon = "art/gui/icons/wizardstaff.jpg";
-   maxInventory = 1;
+   maxInventory = 5;
    keepOnDeath = 0;
    skullLevel = 0;
 
