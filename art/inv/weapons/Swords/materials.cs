@@ -1,53 +1,83 @@
 
-singleton Material(mat_DW_Sword1)
+singleton Material(mat_DeathDealer)
 {
-   mapTo = "DW_Sword1_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/DW_Sword1_dif";
-   normalMap[0] = "art/inv/weapons/Swords/DW_Sword1_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/DW_Sword1_spec.dds";
+   mapTo = "DeathDealer_dif";
+   diffuseMap[0] = "DeathDealer_dif";
+   normalMap[0] = "DeathDealer_nm.dds";
+   specularMap[0] = "DeathDealer_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };
 
-singleton Material(mat_SpartanSword)
+singleton Material(mat_WidowMaker)
 {
-   mapTo = "SpartanSword_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/SpartanSword_dif";
-   normalMap[0] = "art/inv/weapons/Swords/SpartanSword_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/SpartanSword_spec.dds";
+   mapTo = "WidowMaker_dif";
+   diffuseMap[0] = "WidowMaker_dif";
+   normalMap[0] = "WidowMaker_nm.dds";
+   specularMap[0] = "WidowMaker_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };
 
-singleton Material(mat_PirateSword)
+singleton Material(mat_Avenger)
 {
-   mapTo = "PirateSword_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/PirateSword_dif";
-   normalMap[0] = "art/inv/weapons/Swords/PirateSword_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/PirateSword_spec.dds";
+   mapTo = "Avenger_dif";
+   diffuseMap[0] = "Avenger_dif";
+   normalMap[0] = "Avenger_nm.dds";
+   specularMap[0] = "Avenger_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };
 
-singleton Material(mat_MythSword)
+singleton Material(mat_Annihalator)
 {
-   mapTo = "MythSword_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/MythSword_dif";
-   normalMap[0] = "art/inv/weapons/Swords/MythSword_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/MythSword_spec.dds";
+   mapTo = "Annihalator_dif";
+   diffuseMap[0] = "Annihalator_dif";
+   normalMap[0] = "Annihalator_nm.dds";
+   specularMap[0] = "Annihalator_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };
 
-singleton Material(mat_VikingSword)
+singleton Material(mat_SoulReaver)
 {
-   mapTo = "VikingSword_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/VikingSword_dif";
-   normalMap[0] = "art/inv/weapons/Swords/VikingSword_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/VikingSword_spec.dds";
+   mapTo = "SoulReaver_dif";
+   diffuseMap[0] = "SoulReaver_dif";
+   normalMap[0] = "SoulReaver_nm.dds";
+   specularMap[0] = "SoulReaver_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };
 
-singleton Material(mat_MayanSword)
+//////////2 Handed Swords
+
+
+singleton Material(mat_SkullSplitter)
 {
-   mapTo = "MayanSword_dif";
-   diffuseMap[0] = "art/inv/weapons/Swords/MayanSword_dif";
-   normalMap[0] = "art/inv/weapons/Swords/MayanSword_nm.dds";
-   specularMap[0] = "art/inv/weapons/Swords/MayanSword_spec.dds";
+   mapTo = "SkullSplitter_dif";
+   diffuseMap[0] = "SkullSplitter_dif";
+   normalMap[0] = "SkullSplitter_nm.dds";
+   specularMap[0] = "SkullSplitter_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
+};
+
+singleton Material(mat_Decimator)
+{
+   mapTo = "Decimator_dif";
+   diffuseMap[0] = "Decimator_dif";
+   normalMap[0] = "Decimator_nm.dds";
+   specularMap[0] = "Decimator_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
+};
+
+singleton Material(mat_BoneCrusher)
+{
+   mapTo = "BoneCrusher_dif";
+   diffuseMap[0] = "BoneCrusher_dif";
+   normalMap[0] = "BoneCrusher_nm.dds";
+   specularMap[0] = "BoneCrusher_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Swords";
 };

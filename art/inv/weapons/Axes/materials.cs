@@ -1,42 +1,39 @@
 
-singleton Material(mat_Axe_A)
+singleton Material(mat_Paralyzer)
 {
-   mapTo = "Axe_A_color";
-   diffuseMap[0] = "art/inv/weapons/Axes/Axe_A_color";
-   normalMap[0] = "art/inv/weapons/Axes/Axe_A_normals512.dds";
-   specularPower[0] = "111";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "art/inv/weapons/Axes/Axe_A_specular.dds";
+   mapTo = "Paralyzer_dif";
+   diffuseMap[0] = "Paralyzer_dif";
+   normalMap[0] = "Paralyzer_nm.dds";
+   specularMap[0] = "Paralyzer_spec.dds";
    useAnisotropic[0] = "1";
-   specularStrength[0] = "0";
-   materialTag0 = "Kardia";
-   forestWindEnabled = "1";
+   materialTag0 = "Axes";
 };
 
-singleton Material(mat_Axe_B)
+singleton Material(mat_Liberator)
 {
-   mapTo = "Axe_B_color";
-   diffuseMap[0] = "art/inv/weapons/Axes/Axe_B_color";
-   normalMap[0] = "art/inv/weapons/Axes/Axe_B_normals512.dds";
-   specularPower[0] = "128";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "art/inv/weapons/Axes/Axe_B_specular.dds";
+   mapTo = "Liberator_dif";
+   diffuseMap[0] = "Liberator_dif";
+   normalMap[0] = "Liberator_nm.dds";
+   specularMap[0] = "Liberator_spec.dds";
    useAnisotropic[0] = "1";
-   specularStrength[0] = "1.76471";
-   materialTag0 = "Kardia";
-   forestWindEnabled = "1";
+   materialTag0 = "Axes";
 };
 
-singleton Material(mat_Axe_C)
+singleton Material(mat_Equalizer)
 {
-   mapTo = "Axe_C_color";
-   diffuseMap[0] = "art/inv/weapons/Axes/Axe_C_color";
-   normalMap[0] = "art/inv/weapons/Axes/Axe_C_normals512.dds";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "art/inv/weapons/Axes/Axe_C_specular.dds";
+   mapTo = "Equalizer_dif";
+   diffuseMap[0] = "Equalizer_dif";
+   normalMap[0] = "Equalizer_nm.dds";
+   specularMap[0] = "Equalizer_spec.dds";
    useAnisotropic[0] = "1";
-   specularPower[0] = "128";
-   materialTag0 = "Kardia";
-   forestWindEnabled = "1";
-   specularStrength[0] = "1.76471";
+   materialTag0 = "Axes";
+};
+
+singleton Material(DefaultMaterial2)
+{
+   mapTo = "Reaver_dif";
+   diffuseMap[0] = "art/inv/weapons/Axes/Reaver_dif";
+   normalMap[0] = "art/inv/weapons/Axes/Reaver_nm.dds";
+   specularMap[0] = "art/inv/weapons/Axes/Reaver_spec.dds";
+   useAnisotropic[0] = "1";
 };
