@@ -558,7 +558,7 @@ singleton GameBaseData(THS_Swing11)
 
 //////////////2 Handed Swords
 
-datablock ShapeBaseImageData(SkullSplitterSwordImage : BaseMeleeImage)
+datablock ShapeBaseImageData(SkullSplitterImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Swords/SkullSplitter.dts";
    item = SkullSplitterWeapon; //This is the name of the WEAPON that comes from the weapons table.
@@ -1104,14 +1104,6 @@ datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
 
 ///////////////////War Axes////////////////////////
 
-   hthNumAttacks = 7;
-   hthAttack[0]                     = SwordSwing1_LH;
-   hthAttack[1]                     = SwordSwing2_LH;
-   hthAttack[2]                     = SwordSwing3_LH;
-   hthAttack[3]                     = SwordSwing4_LH;
-   hthAttack[4]                     = SwordSwing5_LH;
-   hthAttack[5]                     = SwordSwing6_LH;
-   hthAttack[6]                     = SwordSwing7_LH;
 
 /////////////Paralyzer War Axe/////////////////
 
@@ -1635,7 +1627,7 @@ datablock GameBaseData(Staff_Swing10)
 
 datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/WizardStaff/WizardsStaff.dts";
+   shapefile = "art/inv/weapons/Staffs/WizardsStaff.dts";
    item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
    // Here are the Attacks we support
