@@ -30,7 +30,7 @@ $Fishing::WaitTime = 30;   // Display a wait message about every 30 seconds.
 
 datablock ProjectileData(BobberProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/flintloc/shot.dae";
+   projectileShapeName = "art/inv/weapons/Guns/shot.dae";
    scale="1 1 1";
    muzzleVelocity = 80;
    directDamage = 1;
