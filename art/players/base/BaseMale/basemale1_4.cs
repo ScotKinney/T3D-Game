@@ -304,7 +304,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_GrenadeBlend.dsq", "Throw_GrenadeBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_GrenadeBlend", "15", "3");
    %this.addTrigger("Throw_Javelin", "15", "3");
-   %this.addTrigger("Throw_HamAxe", "14", "3");
+   %this.addTrigger("Throw_HamAxe", "15", "3");
 }
 
 $mack = true;
