@@ -1639,6 +1639,7 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Staffs/WizardsStaff.dts";
    item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   usesBothHands = true;
 
    // Here are the Attacks we support
    hthNumAttacks = 10;
