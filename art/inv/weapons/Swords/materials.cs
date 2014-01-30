@@ -29,12 +29,12 @@ singleton Material(mat_Avenger)
    materialTag0 = "Swords";
 };
 
-singleton Material(mat_Annihalator)
+singleton Material(mat_Annihilator)
 {
-   mapTo = "Annihalator_dif";
-   diffuseMap[0] = "Annihalator_dif";
-   normalMap[0] = "Annihalator_nm.dds";
-   specularMap[0] = "Annihalator_spec.dds";
+   mapTo = "Annihilator_dif";
+   diffuseMap[0] = "Annihilator_dif";
+   normalMap[0] = "Annihilator_nm.dds";
+   specularMap[0] = "Annihilator_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Swords";
 };
