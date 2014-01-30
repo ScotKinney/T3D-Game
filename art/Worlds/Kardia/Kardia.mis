@@ -639,7 +639,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "13";
-         weapon = "SteelWarAxeWeapon";
+         weapon = "ParalyzerWeapon";
    };
    new StaticShape(FemaleGuard) {
       isAIControlled = "0";
@@ -665,7 +665,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         weapon = "BoneCrusherSwordWeapon";
+         weapon = "BoneCrusherWeapon";
    };
    new StaticShape(Guard14_DD11) {
       isAIControlled = "0";
@@ -691,7 +691,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "13";
-         weapon = "SpartanSwordWeapon";
+         weapon = "DeathDealerWeapon";
    };
    new StaticShape(FemaleGuard1) {
       isAIControlled = "0";
@@ -717,7 +717,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "14";
-         weapon = "MayanSwordWeapon";
+         weapon = "SoulReaverWeapon";
    };
    new StaticShape(Guard14_DD2) {
       isAIControlled = "0";
