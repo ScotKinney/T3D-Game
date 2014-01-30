@@ -290,13 +290,15 @@ singleton GameBaseData(SwordSwing12_RH)
 };
 
 
-////////////Base Home World Swords
+////////////Base Swords
+
+////RightHand
 
 // All Home World swords use the same attacks and sounds. Defined once and inherited.
-datablock ShapeBaseImageData(VikingSwordImage : BaseMeleeImage)
+datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/Swords/VikingSword.dts";
-   item = VikingSwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   shapefile = "art/inv/weapons/Swords/Annihilator.dts";
+   item = AnnihilatorWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    hthNumAttacks = 12;
 /* hthAttack[0]                     = SwordSwing1_LH;
@@ -330,28 +332,81 @@ datablock ShapeBaseImageData(VikingSwordImage : BaseMeleeImage)
 /////////The rest of them based off the one above
 
 
-datablock ShapeBaseImageData(MythSwordImage : VikingSwordImage)
+datablock ShapeBaseImageData(AvengerImage : AnnihilatorImage)
 {
-   shapefile = "art/inv/weapons/Swords/MythSword.dts";
-   item = MythSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/Avenger.dts";
+   item = AvengerWeapon;
 };
 
-datablock ShapeBaseImageData(PirateSwordImage : VikingSwordImage)
+datablock ShapeBaseImageData(WidowMakerImage : AnnihilatorImage)
 {
-   shapefile = "art/inv/weapons/Swords/PirateSword.dts";
-   item = PirateSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/WidowMaker.dts";
+   item = WidowMakerWeapon;
 };
 
-datablock ShapeBaseImageData(SpartanSwordImage : VikingSwordImage)
+datablock ShapeBaseImageData(DeathDealerImage : AnnihilatorImage)
 {
-   shapefile = "art/inv/weapons/Swords/SpartanSword.dts";
-   item = SpartanSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/DeathDealer.dts";
+   item = DeathDealerWeapon;
 };
 
-datablock ShapeBaseImageData(MayanSwordImage : VikingSwordImage)
+datablock ShapeBaseImageData(SoulReaverImage : AnnihilatorImage)
 {
-   shapefile = "art/inv/weapons/Swords/MayanSword.dts";
-   item = MayanSwordWeapon;
+   shapefile = "art/inv/weapons/Swords/SoulReaver.dts";
+   item = SoulReaverWeapon;
+};
+
+
+////LeftHand
+
+// All Home World swords use the same attacks and sounds. Defined once and inherited.
+datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Swords/AnnihilatorLH.dts";
+   item = AnnihilatorLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+
+   hthNumAttacks = 7;
+   hthAttack[0]                     = SwordSwing1_LH;
+   hthAttack[1]                     = SwordSwing2_LH;
+   hthAttack[2]                     = SwordSwing3_LH;
+   hthAttack[3]                     = SwordSwing4_LH;
+   hthAttack[4]                     = SwordSwing5_LH;
+   hthAttack[5]                     = SwordSwing6_LH;
+   hthAttack[6]                     = SwordSwing7_LH;
+
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+/////////The rest of them based off the one above
+
+
+datablock ShapeBaseImageData(AvengerLHImage : AnnihilatorLHImage)
+{
+   shapefile = "art/inv/weapons/Swords/AvengerLH.dts";
+   item = AvengerLHWeapon;
+};
+
+datablock ShapeBaseImageData(WidowMakerLHImage : AnnihilatorLHImage)
+{
+   shapefile = "art/inv/weapons/Swords/WidowMakerLH.dts";
+   item = WidowMakerLHWeapon;
+};
+
+datablock ShapeBaseImageData(DeathDealerLHImage : AnnihilatorLHImage)
+{
+   shapefile = "art/inv/weapons/Swords/DeathDealerLH.dts";
+   item = DeathDealerLHWeapon;
+};
+
+datablock ShapeBaseImageData(SoulReaverLHImage : AnnihilatorLHImage)
+{
+   shapefile = "art/inv/weapons/Swords/SoulReaverLH.dts";
+   item = SoulReaverLHWeapon;
 };
 
 
@@ -503,10 +558,10 @@ singleton GameBaseData(THS_Swing11)
 
 //////////////2 Handed Swords
 
-datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
+datablock ShapeBaseImageData(SkullSplitterSwordImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/TH_Swords/TH_SwordA.dts";
-   item = Excalibur_SwordWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   shapefile = "art/inv/weapons/Swords/SkullSplitter.dts";
+   item = SkullSplitterWeapon; //This is the name of the WEAPON that comes from the weapons table.
    usesBothHands = true;
 
    hthNumAttacks = 11;
@@ -530,16 +585,16 @@ datablock ShapeBaseImageData(ExcaliburSwordImage : BaseMeleeImage)
    hitLiveSound = "SwordHitLiveSound";
 };
 
-datablock ShapeBaseImageData(DecimatorSwordImage : ExcaliburSwordImage)
+datablock ShapeBaseImageData(DecimatorImage : SkullSplitterImage)
 {
-   shapefile = "art/inv/weapons/TH_Swords/TH_SwordB.dts";
-   item = Decimator_SwordWeapon;
+   shapefile = "art/inv/weapons/Swords/Decimator.dts";
+   item = DecimatorWeapon;
 };
 
-datablock ShapeBaseImageData(BoneCrusherSwordImage : ExcaliburSwordImage)
+datablock ShapeBaseImageData(BoneCrusherImage : SkullSplitterImage)
 {
-   shapefile = "art/inv/weapons/TH_Swords/TH_SwordC.dts";
-   item = Bone_Crusher_SwordWeapon;
+   shapefile = "art/inv/weapons/Swords/BoneCrusher.dts";
+   item = BoneCrusherWeapon;
 };
 
 
@@ -1049,69 +1104,108 @@ datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
 
 ///////////////////War Axes////////////////////////
 
-/////////////Steel War Axe/////////////////
+   hthNumAttacks = 7;
+   hthAttack[0]                     = SwordSwing1_LH;
+   hthAttack[1]                     = SwordSwing2_LH;
+   hthAttack[2]                     = SwordSwing3_LH;
+   hthAttack[3]                     = SwordSwing4_LH;
+   hthAttack[4]                     = SwordSwing5_LH;
+   hthAttack[5]                     = SwordSwing6_LH;
+   hthAttack[6]                     = SwordSwing7_LH;
 
-/////////////Steel War Axe Attacks and Damage////////////////
+/////////////Paralyzer War Axe/////////////////
 
-singleton GameBaseData(SteelWarAxeSwing1 : SwordSwing1_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(SteelWarAxeSwing2 : SwordSwing2_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(SteelWarAxeSwing3 : SwordSwing3_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(SteelWarAxeSwing4 : SwordSwing4_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(SteelWarAxeSwing5 : SwordSwing5_RH)
-{
-   damageAmount = 70;
-};
+/////////////Paralyzer War Axe Attacks and Damage////////////////
 
-singleton GameBaseData(SteelWarAxeSwing6 : SwordSwing6_RH)
+singleton GameBaseData(ParalyzerSwing1 : SwordSwing1_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwing7 : SwordSwing7_RH)
+singleton GameBaseData(ParalyzerSwing2 : SwordSwing2_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwing8 : SwordSwing8_RH)
+singleton GameBaseData(ParalyzerSwing3 : SwordSwing3_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwing9 : SwordSwing9_RH)
+singleton GameBaseData(ParalyzerSwing4 : SwordSwing4_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(SteelWarAxeSwing10 : SwordSwing10_RH)
+singleton GameBaseData(ParalyzerSwing5 : SwordSwing5_RH)
 {
    damageAmount = 70;
 };
 
-
-datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
+singleton GameBaseData(ParalyzerSwing6 : SwordSwing6_RH)
 {
-   shapefile = "art/inv/weapons/axes/Axe_A.dts";
-   item = Steel_War_AxeWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerSwing7 : SwordSwing7_RH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerSwing8 : SwordSwing8_RH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerSwing9 : SwordSwing9_RH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerSwing10 : SwordSwing10_RH)
+{
+   damageAmount = 70;
+};
+
+///////////////Paralyzer LH Swings
+
+singleton GameBaseData(ParalyzerLHSwing1 : SwordSwing1_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing2 : SwordSwing2_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing3 : SwordSwing3_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing4 : SwordSwing4_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing5 : SwordSwing5_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing6 : SwordSwing6_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerLHSwing7 : SwordSwing7_LH)
+{
+   damageAmount = 70;
+};
+
+datablock ShapeBaseImageData(ParalyzerImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/axes/Paralyzer.dts";
+   item = ParalyzerWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    hthNumAttacks = 10;
-   hthAttack[0]                     = SteelWarAxeSwing1;
-   hthAttack[1]                     = SteelWarAxeSwing2;
-   hthAttack[2]                     = SteelWarAxeSwing3;
-   hthAttack[3]                     = SteelWarAxeSwing4;
-   hthAttack[4]                     = SteelWarAxeSwing5;
-   hthAttack[5]                     = SteelWarAxeSwing6;
-   hthAttack[6]                     = SteelWarAxeSwing7;
-   hthAttack[7]                     = SteelWarAxeSwing8;
-   hthAttack[8]                     = SteelWarAxeSwing9;
-   hthAttack[9]                     = SteelWarAxeSwing10;
+   hthAttack[0]                     = ParalyzerSwing1;
+   hthAttack[1]                     = ParalyzerSwing2;
+   hthAttack[2]                     = ParalyzerSwing3;
+   hthAttack[3]                     = ParalyzerSwing4;
+   hthAttack[4]                     = ParalyzerSwing5;
+   hthAttack[5]                     = ParalyzerSwing6;
+   hthAttack[6]                     = ParalyzerSwing7;
+   hthAttack[7]                     = ParalyzerSwing8;
+   hthAttack[8]                     = ParalyzerSwing9;
+   hthAttack[9]                     = ParalyzerSwing10;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1119,73 +1213,25 @@ datablock ShapeBaseImageData(SteelWarAxeImage : BaseMeleeImage)
    hitLiveSound = "SwordHitLiveSound";
 };
 
-///////////////END Steel War Axe
+///LH Paralyzer
 
+datablock ShapeBaseImageData(ParalyzerLHImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/axes/ParalyzerLH.dts";
+   item = ParalyzerLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
+   canUseMounted = false;
+   mountPoint = 4;
 
+   hthNumAttacks = 7;
+   hthAttack[0]                     = ParalyzerLHSwing1;
+   hthAttack[1]                     = ParalyzerLHSwing2;
+   hthAttack[2]                     = ParalyzerLHSwing3;
+   hthAttack[3]                     = ParalyzerLHSwing4;
+   hthAttack[4]                     = ParalyzerLHSwing5;
+   hthAttack[5]                     = ParalyzerLHSwing6;
+   hthAttack[6]                     = ParalyzerLHSwing7;
 
-///////////////////////////Double War Axe ///////////////
-
-/////////////Double War Axe Attacks and Damage////////////////
-
-singleton GameBaseData(DoubleWarAxeSwing1 : SwordSwing1_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing2 : SwordSwing2_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing3 : SwordSwing3_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing4 : SwordSwing4_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing5 : SwordSwing5_RH)
-{
-   damageAmount = 80;
-};
-
-singleton GameBaseData(DoubleWarAxeSwing6 : SwordSwing6_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing7 : SwordSwing7_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing8 : SwordSwing8_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing9 : SwordSwing9_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(DoubleWarAxeSwing10 : SwordSwing10_RH)
-{
-   damageAmount = 80;
-};
-
-
-datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
-{
-   shapefile = "art/inv/weapons/Axes/Axe_B.dts";
-   item = Double_War_AxeWeapon;
-
-   hthNumAttacks = 10;
-   hthAttack[0]                     = DoubleWarAxeSwing1;
-   hthAttack[1]                     = DoubleWarAxeSwing2;
-   hthAttack[2]                     = DoubleWarAxeSwing3;
-   hthAttack[3]                     = DoubleWarAxeSwing4;
-   hthAttack[4]                     = DoubleWarAxeSwing5;
-   hthAttack[5]                     = DoubleWarAxeSwing6;
-   hthAttack[6]                     = DoubleWarAxeSwing7;
-   hthAttack[7]                     = DoubleWarAxeSwing8;
-   hthAttack[8]                     = DoubleWarAxeSwing9;
-   hthAttack[9]                     = DoubleWarAxeSwing10;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1193,82 +1239,269 @@ datablock ShapeBaseImageData(DoubleWarAxeImage : BaseMeleeImage)
    hitLiveSound = "SwordHitLiveSound";
 };
 
-/////////////END Double War Axe//////////////////
+///////////////END Paralyzer War Axe
 
 
-///////////Iron War Axe////////////////////
 
-///////////Iron War Axe Attacks////////////////
+///////////////////////////Equalizer War Axe ///////////////
 
-singleton GameBaseData(IronWarAxeSwing1 : SwordSwing1_RH)
+/////////////Equalizer War Axe Attacks and Damage////////////////
+
+singleton GameBaseData(EqualizerSwing1 : SwordSwing1_RH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing2 : SwordSwing2_RH)
+singleton GameBaseData(EqualizerSwing2 : SwordSwing2_RH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing3 : SwordSwing3_RH)
+singleton GameBaseData(EqualizerSwing3 : SwordSwing3_RH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing4 : SwordSwing4_RH)
+singleton GameBaseData(EqualizerSwing4 : SwordSwing4_RH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing5 : SwordSwing5_RH)
+singleton GameBaseData(EqualizerSwing5 : SwordSwing5_RH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerSwing6 : SwordSwing6_RH)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerSwing7 : SwordSwing7_RH)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerSwing8 : SwordSwing8_RH)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerSwing9 : SwordSwing9_RH)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerSwing10 : SwordSwing10_RH)
+{
+   damageAmount = 80;
 };
 
-singleton GameBaseData(IronWarAxeSwing6 : SwordSwing6_RH)
+///////////////Equalizer LH Swings
+
+singleton GameBaseData(EqualizerLHSwing1 : SwordSwing1_LH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing7 : SwordSwing7_RH)
+singleton GameBaseData(EqualizerLHSwing2 : SwordSwing2_LH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing8 : SwordSwing8_RH)
+singleton GameBaseData(EqualizerLHSwing3 : SwordSwing3_LH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing9 : SwordSwing9_RH)
+singleton GameBaseData(EqualizerLHSwing4 : SwordSwing4_LH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
 };
-singleton GameBaseData(IronWarAxeSwing10 : SwordSwing10_RH)
+singleton GameBaseData(EqualizerLHSwing5 : SwordSwing5_LH)
 {
-   damageAmount = 60;
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerLHSwing6 : SwordSwing6_LH)
+{
+   damageAmount = 80;
+};
+singleton GameBaseData(EqualizerLHSwing7 : SwordSwing7_LH)
+{
+   damageAmount = 80;
 };
 
-datablock ShapeBaseImageData(IronWarAxeImage : BaseMeleeImage)
+
+datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
 {
-   shapefile = "art/inv/weapons/Axes/Axe_C.dts";
-   item = Iron_War_AxeWeapon;
+   shapefile = "art/inv/weapons/Axes/Equalizer.dts";
+   item = EqualizerWeapon;
 
    hthNumAttacks = 10;
-   hthAttack[0]                     = IronWarAxeSwing1;
-   hthAttack[1]                     = IronWarAxeSwing2;
-   hthAttack[2]                     = IronWarAxeSwing3;
-   hthAttack[3]                     = IronWarAxeSwing4;
-   hthAttack[4]                     = IronWarAxeSwing5;
-   hthAttack[5]                     = IronWarAxeSwing6;
-   hthAttack[6]                     = IronWarAxeSwing7;
-   hthAttack[7]                     = IronWarAxeSwing8;
-   hthAttack[8]                     = IronWarAxeSwing9;
-   hthAttack[9]                     = IronWarAxeSwing10;
+   hthAttack[0]                     = EqualizerSwing1;
+   hthAttack[1]                     = EqualizerSwing2;
+   hthAttack[2]                     = EqualizerSwing3;
+   hthAttack[3]                     = EqualizerSwing4;
+   hthAttack[4]                     = EqualizerSwing5;
+   hthAttack[5]                     = EqualizerSwing6;
+   hthAttack[6]                     = EqualizerSwing7;
+   hthAttack[7]                     = EqualizerSwing8;
+   hthAttack[8]                     = EqualizerSwing9;
+   hthAttack[9]                     = EqualizerSwing10;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
    hitLiveSound = "SwordHitLiveSound";
 };
-///////////END Iron War Axe////////////////////
 
-///////////Wizards Staff for Players///////////////////////
+///LH Equalizer
 
-///////////WizardsStaff Attacks////////////////
+datablock ShapeBaseImageData(EqualizerLHImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/axes/EqualizerLH.dts";
+   item = EqualizerLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
+   canUseMounted = false;
+   mountPoint = 4;
+
+   hthNumAttacks = 7;
+   hthAttack[0]                     = EqualizerLHSwing1;
+   hthAttack[1]                     = EqualizerLHSwing2;
+   hthAttack[2]                     = EqualizerLHSwing3;
+   hthAttack[3]                     = EqualizerLHSwing4;
+   hthAttack[4]                     = EqualizerLHSwing5;
+   hthAttack[5]                     = EqualizerLHSwing6;
+   hthAttack[6]                     = EqualizerLHSwing7;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+/////////////END Equalizer War Axe//////////////////
+
+
+///////////Liberator War Axe////////////////////
+
+///////////Liberator War Axe Attacks////////////////
+
+singleton GameBaseData(LiberatorSwing1 : SwordSwing1_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing2 : SwordSwing2_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing3 : SwordSwing3_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing4 : SwordSwing4_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing5 : SwordSwing5_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing6 : SwordSwing6_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing7 : SwordSwing7_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing8 : SwordSwing8_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing9 : SwordSwing9_RH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorSwing10 : SwordSwing10_RH)
+{
+   damageAmount = 60;
+};
+
+///////////////Liberator LH Swings
+
+singleton GameBaseData(LiberatorLHSwing1 : SwordSwing1_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing2 : SwordSwing2_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing3 : SwordSwing3_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing4 : SwordSwing4_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing5 : SwordSwing5_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing6 : SwordSwing6_LH)
+{
+   damageAmount = 60;
+};
+singleton GameBaseData(LiberatorLHSwing7 : SwordSwing7_LH)
+{
+   damageAmount = 60;
+};
+
+
+datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/Axes/Liberator.dts";
+   item = LiberatorWeapon;
+
+   hthNumAttacks = 10;
+   hthAttack[0]                     = LiberatorSwing1;
+   hthAttack[1]                     = LiberatorSwing2;
+   hthAttack[2]                     = LiberatorSwing3;
+   hthAttack[3]                     = LiberatorSwing4;
+   hthAttack[4]                     = LiberatorSwing5;
+   hthAttack[5]                     = LiberatorSwing6;
+   hthAttack[6]                     = LiberatorSwing7;
+   hthAttack[7]                     = LiberatorSwing8;
+   hthAttack[8]                     = LiberatorSwing9;
+   hthAttack[9]                     = LiberatorSwing10;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+
+///LH Liberator
+
+datablock ShapeBaseImageData(LiberatorLHImage : BaseMeleeImage)
+{
+   shapefile = "art/inv/weapons/axes/LiberatorLH.dts";
+   item = LiberatorLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
+   canUseMounted = false;
+   mountPoint = 4;
+
+   hthNumAttacks = 7;
+   hthAttack[0]                     = LiberatorLHSwing1;
+   hthAttack[1]                     = LiberatorLHSwing2;
+   hthAttack[2]                     = LiberatorLHSwing3;
+   hthAttack[3]                     = LiberatorLHSwing4;
+   hthAttack[4]                     = LiberatorLHSwing5;
+   hthAttack[5]                     = LiberatorLHSwing6;
+   hthAttack[6]                     = LiberatorLHSwing7;
+
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "SwordHitStaticSound";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "SwordHitLiveSound";
+};
+///////////END Liberator War Axe////////////////////
+
+///////////Staffs///////////////////////
+
+///////////Staff Attacks////////////////
 
 singleton GameBaseData(Staff_Swing1)
 {
@@ -1403,7 +1636,7 @@ datablock GameBaseData(Staff_Swing10)
 datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/WizardStaff/WizardsStaff.dts";
-   item = Wizards_StaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
 
    // Here are the Attacks we support
    hthNumAttacks = 10;
@@ -1422,6 +1655,24 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
    hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
    hitLiveSound = "SwordHitLiveSound";
+};
+
+datablock ShapeBaseImageData(DoomImage : WizardsStaffImage)
+{
+   shapefile = "art/inv/weapons/Staffs/Doom.dts";
+   item = DoomWeapon;
+};
+
+datablock ShapeBaseImageData(FuryImage : WizardsStaffImage)
+{
+   shapefile = "art/inv/weapons/Staffs/Fury.dts";
+   item = FuryWeapon;
+};
+
+datablock ShapeBaseImageData(HavokImage : WizardsStaffImage)
+{
+   shapefile = "art/inv/weapons/Staffs/Havok.dts";
+   item = HavokWeapon;
 };
 
 //////////////// Stone Pike Attacks ////////////////

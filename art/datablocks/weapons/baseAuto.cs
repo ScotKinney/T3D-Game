@@ -150,7 +150,7 @@ datablock ShapeBaseImageData(BaseAutoImage)
 
 datablock ShapeBaseImageData(XR75Image : BaseAutoImage)
 {
-   shapefile = "art/inv/weapons/XR75/XR75.dts";//
+   shapefile = "art/inv/weapons/Guns/XR75.dts";//
    scale = "1 1 1";
    //eyeOffset = "0.2 0.5 -0.4";// right/left - forward/back -0.6=up/down
    correctMuzzleVector = true;

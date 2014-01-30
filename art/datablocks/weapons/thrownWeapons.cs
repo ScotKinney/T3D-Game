@@ -2,7 +2,7 @@
 
 datablock ProjectileData(daggerProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/dagger/dagger.dts";
+   projectileShapeName = "art/inv/weapons/knives/dagger.dts";
    scale = "1 1 1";
    muzzleVelocity = 25;
    directDamage = 65;
@@ -27,7 +27,7 @@ datablock ProjectileData(daggerWetProjectile : daggerProjectile)
 
 datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/Dagger/Dagger.dts";
+   shapefile = "art/inv/weapons/knives/Dagger.dts";
    scale = "1 1 1";
    item = DaggerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = DaggerProjectile;
@@ -152,13 +152,13 @@ datablock ShapeBaseImageData(SteelSpearImage : BaseTriggeredImage)
    canUseMounted = true;
 };
 
-// Hammer
-datablock ProjectileData(HammerProjectile : BaseProjectile)
+// Jack Hammer
+datablock ProjectileData(JackHammerProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/Hammer/Hammer.dts";
+   projectileShapeName = "art/inv/weapons/Hammers/JackHammer.dts";
    scale = "1 1 1";
    muzzleVelocity = 25;
-   directDamage = 65;
+   directDamage = 40;
    particleEmitter = 0;
    particleWaterEmitter = 0;
    explosion = DefaultHitExplosion;
@@ -168,32 +168,32 @@ datablock ProjectileData(HammerProjectile : BaseProjectile)
    lifetime = 30000;
    velInheritFactor = 1.0;
    decal = ScorchRXDecalSmall;
-   retrievable = "HammerWeapon";
+   retrievable = "JackHammerWeapon";
 };
 
-datablock ProjectileData(HammerWetProjectile : HammerProjectile)
+datablock ProjectileData(JackHammerWetProjectile : JackHammerProjectile)
 {
    muzzleVelocity = 10;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(HammerImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(JackHammerImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/Hammer/Hammer.dts";
+   shapefile = "art/inv/weapons/Hammers/JackHammer.dts";
    scale = "1 1 1";
-   item = HammerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-   projectile = HammerProjectile;
-   wetProjectile = HammerWetProjectile;
+   item = JackHammerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = JackHammerProjectile;
+   wetProjectile = JackHammerWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
 };
 
-// AxeThrown
-datablock ProjectileData(TomahawkProjectile : BaseProjectile)
+// Reaver Axe Thrown
+datablock ProjectileData(ReaverProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/Tomahawk/thawk.dts";
+   projectileShapeName = "art/inv/weapons/Axes/Reaver.dts";
    muzzleVelocity = 25;
    directDamage = 65;
    particleEmitter = 0;
@@ -205,23 +205,23 @@ datablock ProjectileData(TomahawkProjectile : BaseProjectile)
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
-   retrievable = "TomahawkWeapon";
+   retrievable = "ReaverWeapon";
 };
 
-datablock ProjectileData(TomahawkWetProjectile : TomahawkProjectile)
+datablock ProjectileData(ReaverWetProjectile : ReaverProjectile)
 {
    muzzleVelocity = 10;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(TomahawkImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(ReaverImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/tomahawk/thawk.dts";
+   shapefile = "art/inv/weapons/axes/Reaver.dts";
    scale = "1 1 1";
-   item = TomahawkWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-   projectile = TomahawkProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
-   wetProjectile = TomahawkWetProjectile;
+   item = ReaverWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = ReaverProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
+   wetProjectile = ReaverWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
@@ -230,7 +230,7 @@ datablock ShapeBaseImageData(TomahawkImage : BaseTriggeredImage)
 // Grenade
 datablock ProjectileData(GrenadeProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/grenade/grenade.dts";
+   projectileShapeName = "art/inv/weapons/grenades/grenade.dts";
    scale="0.3 0.3 0.3";
    directDamage = 50;
    radiusDamage = 200;
@@ -264,7 +264,7 @@ datablock ProjectileData(GrenadeWetProjectile : GrenadeProjectile)
 };
 datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/grenade/grenade.dts";
+   shapefile = "art/inv/weapons/grenades/grenade.dts";
    scale = "1 1 1";
    item = grenadeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    projectile = GrenadeProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
@@ -274,3 +274,42 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
    fireSound = BaseThrowSound;
    canUseMounted = true;
 };
+
+// Thumper
+datablock ProjectileData(ThumperProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/maces/thumper.dts";
+   muzzleVelocity = 25;
+   directDamage = 55;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   explosion = AxeHitExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.3;
+   lifetime = 30000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
+   retrievable = "ThumperWeapon";
+};
+
+datablock ProjectileData(ThumperWetProjectile : ThumperProjectile)
+{
+   muzzleVelocity = 10;
+   gravityMod = 0.6;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(ThumperImage : BaseTriggeredImage)
+{
+   shapefile = "art/inv/weapons/maces/Thumper.dts";
+   scale = "1 1 1";
+   item = ThumperWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = ThumperProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
+   wetProjectile = ThumperWetProjectile;
+   fireAnim = "Throw_HamAxe";
+   fireSound = BaseThrowSound;
+   canUseMounted = true;
+};
+
+

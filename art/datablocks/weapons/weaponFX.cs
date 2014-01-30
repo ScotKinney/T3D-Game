@@ -891,7 +891,7 @@ datablock ExplosionData(XRBoltsHitExplosion)
 
 datablock ProjectileData(XRBoltsProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/XR75/5_56.dts";
+   projectileShapeName = "art/inv/weapons/Guns/5_56.dts";
    scale="0.5 0.5 0.5";
    muzzleVelocity = 50;
    directDamage = 100;

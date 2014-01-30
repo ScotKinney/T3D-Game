@@ -1,7 +1,7 @@
 // Flintlock
 datablock ProjectileData(ShotProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/flintloc/shot.dae";
+   projectileShapeName = "art/inv/weapons/Guns/shot.dae";
    scale="1 1 1";
    muzzleVelocity = 40;
    directDamage = 80;
@@ -26,7 +26,7 @@ datablock ProjectileData(ShotWetProjectile : ShotProjectile)
 datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
 {
    weaponType = "Delayed"; 
-   shapefile = "art/inv/weapons/flintloc/flintlock.dts";
+   shapefile = "art/inv/weapons/Guns/flintlock.dts";
    scale = "1 1 1";
    item = FlintlockWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    usesAmmo = true;
@@ -42,7 +42,7 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
 // Crossbow
 datablock ProjectileData(BoltProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/projectile.dts";
+   projectileShapeName = "art/inv/weapons/Crossbows/projectile.dts";
    scale = "0.75 0.75 0.75";
    muzzleVelocity = 40;
    directDamage = 80;
@@ -67,7 +67,7 @@ datablock ProjectileData(BoltWetProjectile : BoltProjectile)
 datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
 {
    weaponType = "Delayed"; 
-   shapefile = "art/inv/weapons/crossbow/weapon.dts";
+   shapefile = "art/inv/weapons/crossbows/weapon.dts";
    scale = ".5 .5 .5";
    item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
    usesAmmo = true;
