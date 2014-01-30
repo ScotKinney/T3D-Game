@@ -364,6 +364,8 @@ datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Swords/AnnihilatorLH.dts";
    item = AnnihilatorLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 
    hthNumAttacks = 7;
    hthAttack[0]                     = SwordSwing1_LH;
@@ -389,24 +391,32 @@ datablock ShapeBaseImageData(AvengerLHImage : AnnihilatorLHImage)
 {
    shapefile = "art/inv/weapons/Swords/AvengerLH.dts";
    item = AvengerLHWeapon;
+   mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 };
 
 datablock ShapeBaseImageData(WidowMakerLHImage : AnnihilatorLHImage)
 {
    shapefile = "art/inv/weapons/Swords/WidowMakerLH.dts";
    item = WidowMakerLHWeapon;
+   mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 };
 
 datablock ShapeBaseImageData(DeathDealerLHImage : AnnihilatorLHImage)
 {
    shapefile = "art/inv/weapons/Swords/DeathDealerLH.dts";
    item = DeathDealerLHWeapon;
+   mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 };
 
 datablock ShapeBaseImageData(SoulReaverLHImage : AnnihilatorLHImage)
 {
    shapefile = "art/inv/weapons/Swords/SoulReaverLH.dts";
    item = SoulReaverLHWeapon;
+   mountPoint = 4;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 };
 
 
