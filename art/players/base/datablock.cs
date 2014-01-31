@@ -270,6 +270,7 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    DefaultSetup[Viken] = "55,59,50,35,279,282,285";
    DefaultSetup[Maya] = "55,59,237,35,313,320,306,309";
 
+   numDeathAnims = 17;
    numDamageAnims = 0;
    hasLocationalAnims = true;
 
@@ -319,6 +320,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    DefaultSetup[Viken] = "80,99,397,216,396,406,400,403";
    DefaultSetup[Maya] = "80,99,216,330,326,325,328,324";
 
+   numDeathAnims = 17;   
    numDamageAnims = 0;
    hasLocationalAnims = true;
 
