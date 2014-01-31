@@ -217,6 +217,8 @@ function AIPlayer::SideStep(%this, %obj, %isDodge)
     // Set min >= 1 because the think loop will think we're stuck if we move < 1
     if ( %min < 1 )
       %min = 1;
+    if ( %max < (%min+1) )
+       %max = %min + 4;
     %foundObject = 1;
 
     for (%i = 0; (%i < $AISK_LOOP_COUNTER && %foundObject > 0); %i++)

@@ -62,6 +62,8 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       %horse = new AIPlayer() {
         dataBlock = %horseDB;
         aiPlayer = true;
+        isBot = true;
+        behavior = MountBehavior;
       };
       MissionCleanup.add(%horse);
       %horse.setScale("0.714 0.714 0.714");

@@ -158,10 +158,20 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
    if ( %this.fireAnim !$= "" )
    {  // Just start the animation and record that we're the image firing
       %obj.firingWeapon = %this;
-      if ( %this.fullSkelAnim )
-         %obj.setActionThread(%this.fireAnim);
+      if ( %obj.isBot )
+      {
+         if ( %this.fullSkelAnim )
+            %obj.setActionThread(%this.fireAnim);
+         else
+            %obj.setArmThreadPlayOnce(%this.fireAnim);
+      }
       else
-         %obj.setArmThreadPlayOnce(%this.fireAnim);
+      {
+         if ( %obj.isMounted() )
+            %obj.setArmThreadPlayOnce(%this.fireAnim @ "Blend");
+         else
+            %obj.setActionThread(%this.fireAnim);
+      }
       return;
    }
 

@@ -352,9 +352,10 @@ package GameCore
       if ( $Server::ServerType !$= "MultiPlayer" )
       {
          // Give a singleplayer inventory
-         %inventory = VikingSwordWeapon.ItemID SPC "1";
+         %inventory = AnnihilatorWeapon.ItemID SPC "1";
+         %inventory = %inventory TAB WidowMakerLHWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Fishing_Pole.ItemID SPC "1";
-         %inventory = %inventory TAB Excalibur_SwordWeapon.ItemID SPC "1";
+         %inventory = %inventory TAB SkullSplitterWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Round_Shield_IIIWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Boglin_Toes.ItemID SPC "20";
          %inventory = %inventory TAB Lantern.ItemID SPC "1";

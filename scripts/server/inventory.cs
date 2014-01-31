@@ -619,6 +619,8 @@ function ShapeBase::inventoryOnDeath(%this)
    {
       %itemID = %this.client.pInv.getKey(%i);
       %key = $AlterVerse::ItemNames[%itemID];
+      if ( !isObject(%key) )
+         continue;
 
       %amount = %this.client.pInv.getValue(%i);
 

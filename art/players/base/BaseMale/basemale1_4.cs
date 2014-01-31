@@ -305,6 +305,11 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_GrenadeBlend", "15", "3");
    %this.addTrigger("Throw_Javelin", "15", "3");
    %this.addTrigger("Throw_HamAxe", "15", "3");
+   %this.setSequenceBlend("Throw_HamAxeBlend", "1", "Root", "0");
+   %this.setSequenceBlend("Throw_JavelinBlend", "1", "Root", "0");
+   %this.setSequenceBlend("Throw_GrenadeBlend", "1", "Root", "0");
+   %this.setSequenceBlend("Fire_FlintLockBlend", "1", "Root", "0");
+   %this.setSequenceBlend("Castline_Blend", "1", "Root", "0");
 }
 
 $mack = true;

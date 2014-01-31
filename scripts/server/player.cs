@@ -329,7 +329,7 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
    }
 
    //If this is a bot, set its attention level
-   if ((%obj.isbot == true) && (%obj.action !$= "Thief"))
+   if ((%obj.isbot == true) && !isObject(%obj.owner) && (%obj.action !$= "Thief"))
    {
       if ( %obj.team != %sourceObject.team )
          %obj.targetEngaged = %sourceObject;  // Remember who hit us last
@@ -370,6 +370,8 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
       //if ( isObject(%sourceClient) && (%sourceClient.getPersistantStat("skulls") < 3) )
          //return;  // SL 1&2 do not do PvP damage either
    //}
+   if ( isObject(%obj.owner) )
+      return;
 
    %obj.lastDamage = %obj.getDamagePercent();
    %obj.lastDmgType = %damageType;
@@ -478,7 +480,7 @@ function PLAYERDATA::onDamage(%this, %obj, %delta, %isSilent)
    }
    
    // BloodClans >>
-   if ( !isObject(%obj.client) )
+   if ( !isObject(%obj.client)  || (%obj != %obj.client.player) )
       return;
       
    // Update the health stats
@@ -572,7 +574,14 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
 {
    %animNum = 1;
    %animName = "";
-   if ( %this.hasLocationalAnims )
+   %rootAnim = "root";
+
+   if ( %obj.isMounted() )
+   {
+      %animName = "H_Damage";
+      %rootAnim = "H_Root";
+   }
+   else if ( %this.hasLocationalAnims )
    {
       %result = %obj.getDamageLocation(%pos);
       %area = getWord(%result, 0);
@@ -640,7 +649,7 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
          if ( isEventPending(%obj.clearDamage) )
             cancel(%obj.clearDamage);
          %obj.ForceAnimation(true, %animName @ %animNum, true);
-         %obj.clearDamage = %obj.schedule(%painStunTime, "ForceAnimation", false, "root");
+         %obj.clearDamage = %obj.schedule(%painStunTime, "ForceAnimation", false, %rootAnim);
       }
    }
 }
@@ -734,29 +743,20 @@ function Player::isPilot(%this)
 
 function Player::playDeathAnimation(%this)
 {
-   //AISK Changes: Start
-   if (isObject(%this.client))
-   {
-      if (%this.client.deathIdx++ > 11)
-         %this.client.deathIdx = 1;
+   if ( %this.isMounted() && %this.setActionThread("H_Death1") )
+      return;
 
-      %this.setActionThread("Death" @ %this.client.deathIdx);
-   }
+   %numDeaths = %this.getDataBlock().numDeathAnims;
+   if ( %numDeaths $= "" )
+      %numDeaths = 11; // If not set, assume 11 death anims
+
+   if ( %numDeaths > 1 )
+      %rand = getRandom(1, %numDeaths);
    else
-   {
-      %numDeaths = %this.getDataBlock().numDeathAnims;
-      if ( %numDeaths $= "" )
-         %numDeaths = 11; // If not set, assume 11 death anims
+      %rand = 1;
 
-      if ( %numDeaths > 1 )
-         %rand = getRandom(1, %numDeaths);
-      else
-         %rand = 1;
-
-      if ( !%this.setActionThread("Death" @ %rand) )
-         %this.setActionThread("Death");
-   }
-   //AISK Changes: End
+   if ( !%this.setActionThread("Death" @ %rand) )
+      %this.setActionThread("Death");
 }
 
 function Player::playImpulseAnim(%this, %pos, %impulse)
@@ -765,6 +765,9 @@ function Player::playImpulseAnim(%this, %pos, %impulse)
    if ( %pd_db.hasLocationalAnims && (%impulse > %pd_db.minAnimImpulse) 
       && (%this.getState() !$= "Dead"))
    {
+      if ( %this.isMounted() )
+         %pd_db.doDismount(%this, true);
+
       %animNum = 1;
       %animName = "Damage_WBody_";
       %result = %this.getDamageLocation(%pos);
@@ -879,7 +882,7 @@ function Player::playPain( %this )
 
 function Player::updateHealth(%player)
 {
-   if ( !isObject(%player.client) )
+   if ( !isObject(%player.client) || (%player.client.player != %player) )
       return;
       
    // Calcualte player health
