@@ -4,11 +4,11 @@ datablock ProjectileData(daggerProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/knives/dagger.dts";
    scale = "1 1 1";
-   muzzleVelocity = 25;
+   muzzleVelocity = 15;
    directDamage = 65;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = AxeHitStaticExplosion;
    waterExplosion = 0;
    lightDesc = 0;
    gravityMod = 0.3;
@@ -20,7 +20,7 @@ datablock ProjectileData(daggerProjectile : BaseProjectile)
 
 datablock ProjectileData(daggerWetProjectile : daggerProjectile)
 {
-   muzzleVelocity = 10;
+   muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
@@ -35,6 +35,7 @@ datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 
@@ -43,14 +44,14 @@ datablock ProjectileData(StoneSpearProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/spears/spearstone_thrown.dts";
    scale = "1 1 1";
-   muzzleVelocity = 20;
+   muzzleVelocity = 10;
+   gravityMod = 0.3;
    directDamage = 40;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = ProjectileHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.5;
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
@@ -74,6 +75,7 @@ datablock ShapeBaseImageData(StoneSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Iron Spear
@@ -81,14 +83,14 @@ datablock ProjectileData(IronSpearProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/spears/spearIron_thrown.dts";
    scale = "1 1 1";
-   muzzleVelocity = 25;
+   muzzleVelocity = 12;
+   gravityMod = 0.3;
    directDamage = 60;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = JavelinHitStaticExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.3;
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
@@ -112,6 +114,7 @@ datablock ShapeBaseImageData(IronSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Steel Spear
@@ -119,14 +122,14 @@ datablock ProjectileData(SteelSpearProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/spears/spearSP_thrown.dts";
    scale = "1 1 1";
-   muzzleVelocity = 30;
+   muzzleVelocity = 15;
+   gravityMod = 0.3;
    directDamage = 100;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = JavelinHitStaticExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.3;
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
@@ -150,6 +153,7 @@ datablock ShapeBaseImageData(SteelSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Jack Hammer
@@ -157,14 +161,14 @@ datablock ProjectileData(JackHammerProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/Hammers/JackHammer.dts";
    scale = "1 1 1";
-   muzzleVelocity = 25;
+   muzzleVelocity = 10;
+   gravityMod = 0.3;
    directDamage = 40;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = ProjectileHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.3;
    lifetime = 30000;
    velInheritFactor = 1.0;
    decal = ScorchRXDecalSmall;
@@ -173,7 +177,7 @@ datablock ProjectileData(JackHammerProjectile : BaseProjectile)
 
 datablock ProjectileData(JackHammerWetProjectile : JackHammerProjectile)
 {
-   muzzleVelocity = 10;
+   muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
@@ -188,20 +192,22 @@ datablock ShapeBaseImageData(JackHammerImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Reaver Axe Thrown
 datablock ProjectileData(ReaverProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/Axes/Reaver.dts";
-   muzzleVelocity = 25;
+   muzzleVelocity = 10;
+   gravityMod = 0.3;
    directDamage = 65;
+   directImpulse = 1000;
+   explosion = AxeHitLiveExplosion;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = AxeHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.3;
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
@@ -210,7 +216,7 @@ datablock ProjectileData(ReaverProjectile : BaseProjectile)
 
 datablock ProjectileData(ReaverWetProjectile : ReaverProjectile)
 {
-   muzzleVelocity = 10;
+   muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
@@ -225,6 +231,7 @@ datablock ShapeBaseImageData(ReaverImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Grenade
@@ -237,7 +244,8 @@ datablock ProjectileData(GrenadeProjectile : BaseProjectile)
    damageRadius = 25;
    areaImpulse = 1000;
 
-   muzzleVelocity = 25;
+   muzzleVelocity = 12;
+   gravityMod = 0.3;
    velInheritFactor = 1.0;
 
    explosion = ProjectileExplosion;
@@ -251,15 +259,14 @@ datablock ProjectileData(GrenadeProjectile : BaseProjectile)
    bounceElasticity = 0.4;
    bounceFriction = 0.01;
    isBallistic = true;
-   gravityMod = 0.5;
 
    retrievable = "";
 };
 
 datablock ProjectileData(GrenadeWetProjectile : GrenadeProjectile)
 {
-   muzzleVelocity = 10;
-   gravityMod = 0.1;
+   muzzleVelocity = 8;
+   gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
@@ -273,20 +280,21 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
    fireAnim = "Throw_Grenade";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
 
 // Thumper
 datablock ProjectileData(ThumperProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/maces/thumper.dts";
-   muzzleVelocity = 25;
+   muzzleVelocity = 10;
+   gravityMod = 0.3;
    directDamage = 55;
    particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = AxeHitExplosion;
+   explosion = ProjectileHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.3;
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
@@ -295,7 +303,7 @@ datablock ProjectileData(ThumperProjectile : BaseProjectile)
 
 datablock ProjectileData(ThumperWetProjectile : ThumperProjectile)
 {
-   muzzleVelocity = 10;
+   muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
@@ -310,6 +318,5 @@ datablock ShapeBaseImageData(ThumperImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
+   usesBothHands = true;
 };
-
-

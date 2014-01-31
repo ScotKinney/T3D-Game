@@ -3,14 +3,14 @@ datablock ProjectileData(ShotProjectile : BaseProjectile)
 {
    projectileShapeName = "art/inv/weapons/Guns/shot.dae";
    scale="1 1 1";
-   muzzleVelocity = 40;
+   muzzleVelocity = 50;
+   gravityMod = 0.0;
    directDamage = 80;
    particleEmitter = 0;
    particleWaterEmitter = 0;
    explosion = flintlockHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.0;
    decal = ScorchRXDecalSmall;
 
    retrievable = "";
@@ -45,13 +45,13 @@ datablock ProjectileData(BoltProjectile : BaseProjectile)
    projectileShapeName = "art/inv/weapons/Crossbows/projectile.dts";
    scale = "0.75 0.75 0.75";
    muzzleVelocity = 40;
+   gravityMod = 0.3;
    directDamage = 80;
    
    particleWaterEmitter = 0;
    explosion = DefaultHitExplosion;
    waterExplosion = 0;
    lightDesc = 0;
-   gravityMod = 0.1;
    lifetime = 5000;
    decal = ScorchRXDecalSmall;
    retrievable = "BoltAmmo";

@@ -89,6 +89,13 @@ datablock SFXProfile(ProjectileExplosionSound)
    preload = true;
 };
 
+datablock SFXProfile(flintlockhitSound)
+{
+   filename = "art/sound/weapons/ricochet";
+   description = AudioClose3d;
+   preload = true;
+};
+
 datablock SFXProfile(ProjectileHitSound)
 {
    filename = "art/sound/weapons/arrowThud";
@@ -110,12 +117,15 @@ datablock SFXProfile(AxeHitStaticSound)
    preload = true;
 };
 
-datablock SFXProfile(flintlockhitSound)
+datablock SFXProfile(JavelinHitStaticSound)
 {
-   filename = "art/sound/weapons/ricochet";
+   filename = "art/sound/weapons/Hit_Javelin";
    description = AudioClose3d;
    preload = true;
 };
+
+
+
 
 //----------------------------------------------------------------------------
 // Debris
@@ -787,9 +797,29 @@ datablock ExplosionData(AxeHitExplosion : DefaultHitExplosion)
    soundProfile = AxeHitLiveSound;
 };
 
-datablock ExplosionData(flintlockHitExplosion)
+datablock ExplosionData(AxeHitLiveExplosion)
+{
+   soundProfile = AxeHitLiveSound;
+};
+
+datablock ExplosionData(AxeHitStaticExplosion)
+{
+   soundProfile = AxeHitStaticSound;
+};
+
+datablock ExplosionData(JavelinHitStaticExplosion)
+{
+   soundProfile = JavelinHitStaticSound;
+};
+
+datablock ExplosionData(FlintlockHitExplosion)
 {
    soundProfile = flintlockHitSound;
+};
+
+datablock ExplosionData(ProjectileHitExplosion)
+{
+   soundProfile = ProjectileHitSound;
 };
 
 datablock ProjectileData(BaseProjectile)
@@ -797,7 +827,7 @@ datablock ProjectileData(BaseProjectile)
    projectileShapeName = "core/art/effects/debris_player.dts";
    scale = "1 1 1";
    directDamage = 30;
-   directImplulse = 0;
+   directImpulse = 0;
    radiusDamage = 0;
    damageRadius = 0;
    areaImpulse = 0;
