@@ -451,10 +451,6 @@ datablock PlayerData(DefaultHorse)
    maxBackwardSpeed = 10; 
    maxSideSpeed = 4; // RFB -> horses don't normally strafe
 
-   // Switch forward animations above these speeds
-   run2Speed = 8.5;
-   run3Speed = 16;
-
    maxUnderwaterForwardSpeed = 8.4;
    maxUnderwaterBackwardSpeed = 5.0; 
    maxUnderwaterSideSpeed = 0; // RFB -> horses don't normally strafe
@@ -551,11 +547,21 @@ datablock PlayerData(DefaultHorse)
    
    observeParameters = "0.5 4.5 4.5";
 
+   // Switch forward animations above these speeds
+   run2Speed = 8.5;  // Above this switch to medium speed animation (trot)
+   run3Speed = 16;   // Above this switch to fast speed animation (gallop)
+
    mountable = true; // Players can mount this AI
-   driverNode = 0;
-   riderNode = 5;
-   mountPose[0]	= H_Root; // Driver
-   mountPose[5]	= H_Root; // Passenger
+   driverNode = 0;   // The driver mounts to "Mount0"
+   riderNode = 5;    // The passenger mounts to "Mount5"
+
+   mountPose[0]	      = "H_Root"; // Driver pose Standing still or slow
+   mountPoseMedium[0]	= "H_WalkTrot"; // Driver pose Medium
+   mountPoseFast[0]	   = "H_Gallop"; // Driver pose Fast
+
+   mountPose[5]	      = "H_Root"; // Passenger Standing still or slow
+   mountPoseMedium[5]	= "H_WalkTrot"; // Passenger Medium
+   mountPoseFast[5]	   = "H_Gallop"; // Passenger Fast
 };
 
 datablock PlayerData(BayHorse : DefaultHorse)

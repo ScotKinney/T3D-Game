@@ -177,7 +177,7 @@ datablock WheeledVehicleData(CheetahCar)
    shapeFile = "art/Packs/vehicle/cheetah/Cheetah_Body.DAE";
    emap = 1;
 
-   mountPose[0] = sitting;
+   mountPose[0] = "gargsitfull";
    numMountPoints = 6;
 
    useEyePoint = true;  // Use the vehicle's camera node rather than the player's
@@ -228,7 +228,6 @@ datablock WheeledVehicleData(CheetahCar)
    nameTag = "";
    maxDismountSpeed = 10;
    maxMountSpeed = 5;
-   mountPose0 = "sitting";
    tireEmitter = "CheetahTireEmitter";
    dustEmitter = "CheetahTireEmitter";
    dustHeight = "1";

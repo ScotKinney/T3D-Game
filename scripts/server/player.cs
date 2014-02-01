@@ -738,6 +738,37 @@ function Player::isPilot(%this)
    return false;
 }
 
+function Player::onRunPoseChange(%this, %newRunMode)
+{
+   %mountDB = %this.getDataBlock();
+   if ( !%mountDB.mountable )
+      return;
+
+   %driver = %this.getMountNodeObject(%mountDB.driverNode);
+   if ( isObject(%driver) )
+   {
+      if ( %newRunMode == 2 )
+         %driver.setActionThread(%mountDB.mountPoseFast[%mountDB.driverNode], true, true);
+      else if ( %newRunMode == 1 )
+         %driver.setActionThread(%mountDB.mountPoseMedium[%mountDB.driverNode], true, true);
+      else
+         %driver.setActionThread(%mountDB.mountPose[%mountDB.driverNode], true, true);
+   }
+
+   if ( %mountDB.riderNode !$= "" )
+   {
+      %rider = %this.getMountNodeObject(%mountDB.riderNode);
+      if ( isObject(%rider) )
+      {
+         if ( %newRunMode == 2 )
+            %rider.setActionThread(%mountDB.mountPoseFast[%mountDB.riderNode], true, true);
+         else if ( %newRunMode == 1 )
+            %rider.setActionThread(%mountDB.mountPoseMedium[%mountDB.riderNode], true, true);
+         else
+            %rider.setActionThread(%mountDB.mountPose[%mountDB.riderNode], true, true);
+      }
+   }
+}
 
 //----------------------------------------------------------------------------
 

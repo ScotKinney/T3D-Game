@@ -137,7 +137,7 @@ datablock WheeledVehicleData(DefaultCar)
    shapeFile = "art/Packs/vehicle/buggy/buggy.dts";
    emap = true;
 
-   mountPose[0] = sitting;
+   mountPose[0] = "gargsitfull";
    numMountPoints = 1;
 
    maxSteeringAngle = 0.385;  // Maximum steering angle, should match animation

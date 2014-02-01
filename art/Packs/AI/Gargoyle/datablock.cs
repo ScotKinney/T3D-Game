@@ -105,13 +105,13 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    runSurfaceAngle  = 70;
    jumpSurfaceAngle = 80;
 
-   // Switch "run2" anim above this speed
+   // Switch to "run2" anim above this speed
    run2Speed = 7;
 
    mountable = true; // Players can mount this AI
    driverNode = 1;
-   mountPose[1]	= "gargsitfull"; // Driver
-   //mountPose[1]	= "scoutroot"; // Driver
+   mountPose[1]	      = "gargsitfull"; // Driver
+   mountPoseMedium[1]	= "gargsitfull"; // Driver pose Medium speed
 };
 
 // Load the gargoyle weapon script
