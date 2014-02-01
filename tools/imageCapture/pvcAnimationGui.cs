@@ -21,9 +21,11 @@ function PVCAnimationDlg::initThreadLists(%this)
    PVCBlendList.add( "<None Selected>", -1 );
    
    %numThreads = $currentPVC.GetNumSequences();
+   echo("\n\n" @ %numThreads @ " Animation sequences found");
    for ( %i = 0; %i < %numThreads; %i++ )
    {  // Loop through all names and put in the correct list box
       %curName = $currentPVC.GetSequenceName( %i );
+      echo(%curName);
       
       if ( (strpos(strlwr(%curName), "look") != -1) || (strpos(strlwr(%curName), "pistol", 1) != -1) )
          PVCLookList.add( %curName, %i );

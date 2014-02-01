@@ -308,6 +308,9 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_GrenadeBlend", "15", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_Fire.dsq", "B_Fire", "0", "99", "1", "0");
    %this.addTrigger("B_Fire", "34", "1");
+   %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "2", "28");
+   %this.setSequencePriority("Look_XR75", "1");
+   %this.setSequenceBlend("Look_XR75", "1", "Root", "0");
 }
 
 $mack = true;
