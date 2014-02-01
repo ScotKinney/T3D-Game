@@ -298,6 +298,8 @@ chatStrings.inv[dropMany] = "\c0You drop %1 %pname%.";
 // noDual - Displayed when trying to quip an off-hand weapon when the primary
 // weapon requires both hands
 chatStrings.inv[noDual] = "\c0You can't equip a %name% when using a %name2%.";
+// petDie - Displayed when an owned pet dies
+chatStrings.inv[petDie] = "\c0Your %name% has died.";
 
 // noArmor - You cannot equip armor yet.
 chatStrings.msg[noArmor] = "\c0You cannot equip armor yet.";
@@ -329,8 +331,6 @@ chatStrings.msg[mountRequest] = "Can %1 ride with you?";
 chatStrings.msg[stowHorse] = "\c0You put your horse back in the stable.";
 // horseLeave - Displayed when a horse is abandoned.
 chatStrings.msg[horseLeave] = "\c0Your horse has gotten lonely and disowned you. It will accept whoever claims it and puts it back in the stable, as it's new owner.";
-// horseDie - Displayed when an owned horse dies.
-chatStrings.msg[horseDie] = "\c0Your horse has died.";
 // horseNoDrop - Displayed when trying to drop a horse on a no horse level.
 chatStrings.msg[horseNoDrop] = "\c0You can\'t drop a horse here.";
 // noHorse - Displayed when trying to ride a horse on a no horse level.

@@ -159,6 +159,31 @@ function FindHorseSpawn(%user, %horse)
 
    return %pos SPC %useTrans;
 }
+
+//----------------------------------------------------------------------------
+function Steed::handleBotDeath(%this, %obj)
+{
+   // Remove any players mounted
+   %driver = %obj.getMountNodeObject(%this.driverNode);
+   if ( isObject(%driver) )
+      %driver.getDataBlock().doDismount(%driver, true);
+
+   %rider = %obj.getMountNodeObject(%this.riderNode);
+   if ( isObject(%rider) )
+      %rider.getDataBlock().doDismount(%rider, true);
+
+   // If this was an owned horse, notify the owner and remove from inventory
+   if ( isObject(%obj.owner) )
+   {
+      messageClient(%obj.owner, 'InventoryMsg', "", "petDie", %obj.itemDB.ItemID, "a", true, true, 0);      if ( %obj.owner.horse == %obj )
+         %obj.owner.horse = "";
+      if ( isObject(%obj.owner.player) )
+         %obj.owner.player.decInventory(%obj.itemDB,1);
+      %obj.owner = "";
+   }
+
+}
+
 //----------------------------------------------------------------------------
 function Arabian_Horse_Item::onUse(%this, %user)
 {

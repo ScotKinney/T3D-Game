@@ -370,8 +370,6 @@ function PLAYERDATA::damage(%this, %obj, %sourceObject, %position, %damage, %dam
       //if ( isObject(%sourceClient) && (%sourceClient.getPersistantStat("skulls") < 3) )
          //return;  // SL 1&2 do not do PvP damage either
    //}
-   if ( isObject(%obj.owner) )
-      return;
 
    %obj.lastDamage = %obj.getDamagePercent();
    %obj.lastDmgType = %damageType;
@@ -497,12 +495,12 @@ function PLAYERDATA::onDisabled(%this,%obj,%state)
    %obj.setImageTrigger(0, false);
 
    // If it's a custom bot, let it process the death
-    if ( (%obj.getClassName() $= "AIPlayer") && 
-         %obj.getDatablock().isMethod("handleBotDeath") )
-    {
-        %obj.getDatablock().handleBotDeath(%obj);
-        //return;
-    }
+   if ( (%obj.getClassName() $= "AIPlayer") && 
+      %obj.getDatablock().isMethod("handleBotDeath") )
+   {
+      %obj.getDatablock().handleBotDeath(%obj);
+      //return;
+   }
 
    // The player object sets the "disabled" state when damage exceeds
    // it's maxDamage value.  This is method is invoked by ShapeBase
