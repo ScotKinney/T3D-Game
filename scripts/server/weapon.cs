@@ -167,7 +167,7 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
       }
       else
       {
-         if ( %obj.isMounted() )
+         if ( %obj.isMounted() || %obj.isMoving() )
             %obj.setArmThreadPlayOnce(%this.fireAnim @ "Blend");
          else
             %obj.setActionThread(%this.fireAnim);
