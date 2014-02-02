@@ -54,14 +54,14 @@ function VehicleData::onRemove(%this, %obj)
    //echo("\c4VehicleData::onRemove("@ %this.getName() @", "@ %obj.getClassName() @")");
 
    // if there are passengers/driver, kick them out
-   for(%i = 0; %i < %obj.getDatablock().numMountPoints; %i++)
-   {
-      if (%obj.getMountNodeObject(%i))
-      {
-         %passenger = %obj.getMountNodeObject(%i);
-         %passenger.getDataBlock().doDismount(%passenger, true);
-      }
-   }
+   //for(%i = 0; %i < %obj.getDatablock().numMountPoints; %i++)
+   //{
+      //if (%obj.getMountNodeObject(%i))
+      //{
+         //%passenger = %obj.getMountNodeObject(%i);
+         //%passenger.getDataBlock().doDismount(%passenger, true);
+      //}
+   //}
 }
 
 // ----------------------------------------------------------------------------

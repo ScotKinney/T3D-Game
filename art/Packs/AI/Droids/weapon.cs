@@ -1,7 +1,7 @@
 
 datablock ProjectileData(DroidGun5Projectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/XR75/5_56.dts";
+   projectileShapeName = "art/inv/weapons/Guns/5_56.dts";
    scale="1 1 1";
    muzzleVelocity = 50;
    directDamage = 50;

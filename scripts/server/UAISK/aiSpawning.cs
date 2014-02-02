@@ -527,7 +527,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
    //Sets the bot's scale
    %player.setScale(%obj.getScale());
    %player.mountVehicle = false;
-   if (($ServerName $= "MarsTest") && (%block $= "FemalePlayerData"))
+   if (($ServerName $= "MyTest") && ((%block $= "FemalePlayerData") || (%block $= "MalePlayerData")))
       %player.mountVehicle = true;
 
    %player.setshapename("\c3" @ %tempRealName);

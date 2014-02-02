@@ -83,10 +83,19 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
          %client.setControlObject(%client.camera);
       }
    }
+
+   if ( %obj.isBot && isEventPending(%obj.aiLoop) )
+   {
+      cancel(%obj.aiLoop);
+      %obj.clearAim();
+   }
 }
 
 function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
 {
+   if ( !isObject(%vehicle) )
+      return;
+
    %obj.setscale(".714 .714 .714"); // Restore the players scale
 
    %vDB = %vehicle.getDatablock();
@@ -230,10 +239,10 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       {
          if ((%col.getMountedObjectCount() < 2) && (%vDB.riderNode !$= ""))
          {  // If there's room, ask the driver if we can ride along
-            if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "MarsTest")) )
+            if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "MyTest")) )
                return;
             %obj.sentRequest = %col;
-            if (%obj.isBot && $ServerName $= "MarsTest")
+            if (%obj.isBot && $ServerName $= "MyTest")
                forceAcceptMountRequest(%col, %obj);
             else
                commandToClient(%player.client, 'ShowMountRequest', %obj.getShapeName(), %obj.client);
@@ -282,21 +291,48 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       return;
    }
 
-   if (%obj.isbot == true)
-   {
-      if ($ServerName !$= "MarsTest")
-         return;  // Don't let bots mount vehicles
-   }
+   //if (%obj.isbot == true)
+   //{
+      //if ($ServerName !$= "MarsTest")
+         //return;  // Don't let bots mount vehicles
+   //}
 
    // Mount vehicles
    if (%col.getType() & $TypeMasks::GameBaseObjectType)
    {
-      %db = %col.getDataBlock();
-      if ((%db.getClassName() $= "WheeledVehicleData") && %obj.mountVehicle && %obj.getState() $= "Move" && %col.mountable)
+      %vDB = %col.getDataBlock();
+      if ((%vDB.getClassName() $= "WheeledVehicleData") && %obj.mountVehicle &&
+            %obj.getState() $= "Move" && %col.mountable && !%obj.isMounted())
       {
          // Only mount drivers for now.
-         %node = 0;
-         %col.mountObject(%obj, %node);
+         //%node = 0;
+         //%col.mountObject(%obj, %node);
+         %driver = %col.getMountNodeObject(%vDB.driverNode);
+         if ( isObject(%driver) )
+         {
+            if ((%col.getMountedObjectCount() < %vDB.numMountPoints) && (%vDB.riderNode !$= ""))
+            {  // If there's room, ask the driver if we can ride along
+               if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "MyTest")) )
+                  return;
+               %obj.sentRequest = %col;
+               if (%obj.isBot && $ServerName $= "MyTest")
+                  forceAcceptMountRequest(%col, %obj);
+               else
+                  commandToClient(%driver.client, 'ShowMountRequest', %obj.getShapeName(), %obj.client);
+               messageClient(%obj.client, 'LocalizedMsg', "", "mountMsg", "a", true, true, 1, %driver.getShapeName());
+            }
+            return;
+         }
+
+         %node = %vDB.driverNode;
+
+         %obj.aiMount = %col;
+         %col.driver = %obj;
+
+         %client = %obj.client;
+         %client.aiMount = %col;
+         //%col.client = %client;
+         %col.mountObject(%obj,%node,"0 0 0");//0 .35 -.1
       }
    }
 }

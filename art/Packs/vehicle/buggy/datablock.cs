@@ -137,8 +137,11 @@ datablock WheeledVehicleData(DefaultCar)
    shapeFile = "art/Packs/vehicle/buggy/buggy.dts";
    emap = true;
 
+   driverNode = 0;   // The driver mounts to "Mount0"
+   riderNode = 1;    // The passenger mounts to "Mount1"
    mountPose[0] = "gargsitfull";
-   numMountPoints = 1;
+   mountPose[1] = "H_Root";
+   numMountPoints = 2;
 
    maxSteeringAngle = 0.385;  // Maximum steering angle, should match animation
    tireEmitter = TireEmitter; // All the tires use the same dust emitter
