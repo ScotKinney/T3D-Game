@@ -295,7 +295,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_HamAxe", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeBlend.dsq", "Throw_HamAxeBlend", "0", "29", "0", "0");
    %this.addTrigger("Throw_HamAxeBlend", "16", "3");
-   %this.setSequenceBlend("Throw_HamAxeBlend", "1", "Root", "0");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearFull.dsq", "Throw_Javelin", "0", "34", "1", "0");
    %this.addTrigger("Throw_Javelin", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearBlend.dsq", "Throw_JavelinBlend", "0", "29", "1", "0");
