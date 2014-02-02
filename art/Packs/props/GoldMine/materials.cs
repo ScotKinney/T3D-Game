@@ -472,13 +472,6 @@ singleton Material(mat_Object_000_1)
    materialTag0 = "GoldMine";
 };
 
-singleton Material(mat_WalTop1)
-{
-   mapTo = "PMat_WalTop1";
-   diffuseMap[0] = "art/Packs/props/goldmine/ValhallaFromGoldmine";
-   emissive[0] = "1";
-   materialTag0 = "GoldMine";
-};
 
 
 singleton Material(DefaultMaterial3)
@@ -515,4 +508,141 @@ singleton Material(DefaultMaterial7)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepMetal1Sound";
    customImpactSound = "FootStepMetal1Sound";
+};
+
+singleton Material(svgoldmine01_track)
+{
+   mapTo = "track";
+   translucentBlendOp = "None";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svtracks1.dds";
+   normalMap[0] = "art/Packs/props/GoldMine/svtracks1N.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine01_sv_wood1)
+{
+   mapTo = "sv-wood1";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svminewood1.dds";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/sv-minewood1N.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine01_cave01)
+{
+   mapTo = "cave01";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave01.dds";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave01_n.dds";
+   useAnisotropic[0] = "1";
+   showDust = "1";
+   customFootstepSound = "FootStepCaveSound";
+};
+
+singleton Material(svgoldmine01_cave04)
+{
+   mapTo = "cave04";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave04.dds";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave04_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine01_cave05)
+{
+   mapTo = "cave05";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave05.dds";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine01_cave07)
+{
+   mapTo = "cave07";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave07";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   normalMap[0] = "art/Packs/props/GoldMine/cave07_n.dds";
+};
+
+singleton Material(svgoldmine01_grey)
+{
+   mapTo = "grey";
+   diffuseColor[0] = "0.45388 0.45388 0.45388 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine02_cave07a)
+{
+   mapTo = "cave07a";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave07a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave07_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine02_cave02)
+{
+   mapTo = "cave02";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave02";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave02_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine03_cave05a)
+{
+   mapTo = "cave05a";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave05a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine03_cave06)
+{
+   mapTo = "cave06";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave06";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine03_tank)
+{
+   mapTo = "tank";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svijmetal1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/svijmetal1N.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine03_woodbeam)
+{
+   mapTo = "woodbeam";
+   diffuseMap[0] = "art/Packs/props/GoldMine/woodBeam001.jpg";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine03_sv_wood2)
+{
+   mapTo = "sv-wood2";
+   diffuseMap[0] = "art/Packs/props/GoldMine/sv-minewood2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/sv-minewood2N.dds";
+   useAnisotropic[0] = "1";
 };
