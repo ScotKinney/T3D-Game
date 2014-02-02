@@ -124,7 +124,7 @@ datablock ProjectileData(ElvenArrowProjectile : BaseProjectile)
    lightDesc = 0;
    lifetime = 5000;
    decal = ScorchRXDecalSmall;
-   retrievable = "BoltAmmo";
+   retrievable = "ElvenArrowAmmo";
 };
 
 datablock ProjectileData(ElvenArrowWetProjectile : ElvenArrowProjectile)
@@ -148,7 +148,7 @@ datablock ShapeBaseImageData(ElvenBowImage : BaseTriggeredImage)
    mountPoint = 2;
    weaponSlot = 1;   // Secondary weapon slot (Left Hand)
    usesBothHands = true;
-   fireAnim = "FireBow";
+   fireAnim = "B_Fire";
    fireSound = "BaseFireSound";
    stateSequence[3] = "FireBow";
 
