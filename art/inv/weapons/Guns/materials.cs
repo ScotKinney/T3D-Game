@@ -50,6 +50,9 @@ new Material(mat_5_56_ammo)
 singleton Material(XR75_mech_01_5)
 {
    mapTo = "mech-01-5";
-   diffuseMap[0] = "ma5body";
-   materialTag0 = "Guns";
+   diffuseMap[0] = "art/Packs/AI/Droids/weapon/ma5.body.jpg";
+   materialTag0 = "Weapons";
+   normalMap[0] = "art/Packs/AI/Droids/manormal.dds";
+   specularMap[0] = "art/Packs/AI/Droids/maspec.dds";
+   useAnisotropic[0] = "1";
 };
