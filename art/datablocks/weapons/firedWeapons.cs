@@ -146,7 +146,7 @@ datablock ShapeBaseImageData(ElvenBowImage : BaseTriggeredImage)
    wetProjectile = ElvenArrowWetProjectile;
    canUseMounted = true;
    mountPoint = 2;
-   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
+   weaponSlot = 0;   // Secondary weapon slot (Left Hand)
    usesBothHands = true;
    fireAnim = "B_Fire";
    fireSound = "BaseFireSound";
