@@ -1,8 +1,10 @@
-// Thrown weapons that the player can carry in inventory
+// Throwing knives
 
-datablock ProjectileData(daggerProjectile : BaseProjectile)
+//ChaosBlade
+
+datablock ProjectileData(ChaosBladeProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/knives/dagger.dts";
+   projectileShapeName = "art/inv/weapons/knives/ChaosBlade.dts";
    scale = "1 1 1";
    muzzleVelocity = 15;
    directDamage = 65;
@@ -15,29 +17,108 @@ datablock ProjectileData(daggerProjectile : BaseProjectile)
    lifetime = 30000;
    decal = ScorchRXDecalSmall;
    velInheritFactor = 1.0;
-   retrievable = "daggerWeapon";
+   retrievable = "ChaosBladeWeapon";
 };
 
-datablock ProjectileData(daggerWetProjectile : daggerProjectile)
+datablock ProjectileData(ChaosBladeWetProjectile : ChaosBladeProjectile)
 {
    muzzleVelocity = 8;
    gravityMod = 0.6;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(DaggerImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(ChaosBladeImage : BaseTriggeredImage)
 {
-   shapefile = "art/inv/weapons/knives/Dagger.dts";
+   shapefile = "art/inv/weapons/knives/ChaosBlade.dts";
    scale = "1 1 1";
-   item = DaggerWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-   projectile = DaggerProjectile;
-   wetProjectile = DaggerWetProjectile;
+   item = ChaosBladeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = ChaosBladeProjectile;
+   wetProjectile = ChaosBladeWetProjectile;
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
    usesBothHands = true;
 };
 
+//HeatNail
+
+datablock ProjectileData(HeatNailProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/knives/HeatNail.dts";
+   scale = "1 1 1";
+   muzzleVelocity = 15;
+   directDamage = 65;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   explosion = AxeHitStaticExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.3;
+   lifetime = 30000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
+   retrievable = "HeatNailWeapon";
+};
+
+datablock ProjectileData(HeatNailWetProjectile : HeatNailProjectile)
+{
+   muzzleVelocity = 8;
+   gravityMod = 0.6;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(HeatNailImage : BaseTriggeredImage)
+{
+   shapefile = "art/inv/weapons/knives/HeatNail.dts";
+   scale = "1 1 1";
+   item = HeatNailWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = HeatNailProjectile;
+   wetProjectile = HeatNailWetProjectile;
+   fireAnim = "Throw_HamAxe";
+   fireSound = BaseThrowSound;
+   canUseMounted = true;
+   usesBothHands = true;
+};
+
+//QuikSilver
+
+datablock ProjectileData(QuikSilverProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/knives/QuikSilver.dts";
+   scale = "1 1 1";
+   muzzleVelocity = 15;
+   directDamage = 65;
+   particleEmitter = 0;
+   particleWaterEmitter = 0;
+   explosion = AxeHitStaticExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   gravityMod = 0.3;
+   lifetime = 30000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
+   retrievable = "QuikSilverWeapon";
+};
+
+datablock ProjectileData(QuikSilverWetProjectile : QuikSilverProjectile)
+{
+   muzzleVelocity = 8;
+   gravityMod = 0.6;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(QuikSilverImage : BaseTriggeredImage)
+{
+   shapefile = "art/inv/weapons/knives/QuikSilver.dts";
+   scale = "1 1 1";
+   item = QuikSilverWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   projectile = QuikSilverProjectile;
+   wetProjectile = QuikSilverWetProjectile;
+   fireAnim = "Throw_HamAxe";
+   fireSound = BaseThrowSound;
+   canUseMounted = true;
+   usesBothHands = true;
+};
 
 // Stone Spear
 datablock ProjectileData(StoneSpearProjectile : BaseProjectile)

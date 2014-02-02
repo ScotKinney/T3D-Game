@@ -107,3 +107,45 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    stateSequence[8] = "NoAmmo";
    canUseMounted = true;
 };
+
+
+// ElvenBow
+datablock ProjectileData(ElvenArrowProjectile : BaseProjectile)
+{
+   projectileShapeName = "art/inv/weapons/bows/ElvenArrow.dts";
+   scale = "1 1 1";
+   muzzleVelocity = 40;
+   gravityMod = 0.3;
+   directDamage = 80;
+   
+   particleWaterEmitter = 0;
+   explosion = DefaultHitExplosion;
+   waterExplosion = 0;
+   lightDesc = 0;
+   lifetime = 5000;
+   decal = ScorchRXDecalSmall;
+   retrievable = "BoltAmmo";
+};
+
+datablock ProjectileData(ElvenArrowWetProjectile : ElvenArrowProjectile)
+{
+   muzzleVelocity = 20;
+   gravityMod = 0.4;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(ElvenBowImage : BaseTriggeredImage)
+{
+   weaponType = "Delayed"; 
+   shapefile = "art/inv/weapons/bows/ElvenBow.dts";
+   scale = "1 1 1";
+   item = ElvenBowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
+   usesAmmo = true;
+   ammo = ElvenArrowAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
+   projectile = ElvenArrowProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
+   wetProjectile = ElvenArrowWetProjectile;
+   fireAnim = "B_Fire";
+   fireSound = "BaseFireSound";
+   stateSequence[4] = "B_Fire";
+   canUseMounted = true;
+};
