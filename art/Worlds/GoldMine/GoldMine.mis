@@ -50,38 +50,62 @@ new SimGroup(MissionGroup) {
             lockCount = "0";
       };
    };
-   new Sun(AmbientLight) {
-      azimuth = "0";
-      elevation = "35";
-      color = "0.996078 0.996078 0.992157 1";
-      ambient = "0.0392157 0.0392157 0.0392157 1";
-      brightness = "2";
-      castShadows = "0";
-      coronaEnabled = "1";
-      coronaMaterial = "Corona_Mat";
-      coronaScale = "0.5";
-      coronaTint = "1 1 1 1";
-      coronaUseLightColor = "1";
-      flareScale = "1";
-      attenuationRatio = "0 1 1";
-      shadowType = "PSSM";
-      texSize = "512";
-      overDarkFactor = "2000 1000 500 100";
-      shadowDistance = "400";
-      shadowSoftness = "0.15";
-      numSplits = "2";
-      logWeight = "0.91";
-      fadeStartDistance = "0";
-      lastSplitTerrainOnly = "0";
-      representedInLightmap = "0";
-      shadowDarkenColor = "0 0 0 -1";
-      includeLightmappedGeometryInShadow = "0";
-      position = "733.228 -1000.89 99.2127";
+   new SkyBox(GMSkyBox) {
+      Material = "PangaeaSky01";
+      drawBottom = "0";
+      fogBandHeight = "5";
+      position = "0 0 0 50";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         Direction = "1 1 -1";
+   };
+   new ScatterSky(GMSun) {
+      skyBrightness = "25";
+      sunSize = "1";
+      colorizeAmount = "0";
+      colorize = "0 0 0 1";
+      rayleighScattering = "0.006";
+      sunScale = "1 1 1 1";
+      ambientScale = "0.858824 0.85098 0.839216 1";
+      fogScale = "0.631373 0.647059 0.65098 1";
+      exposure = "10";
+      zoffset = "0";
+      azimuth = "572";
+      elevation = "60";
+      moonAzimuth = "-212";
+      moonElevation = "-60";
+      castShadows = "1";
+      brightness = "1";
+      flareType = "ScatterskyFlareExample";
+      flareScale = "0.9";
+      nightColor = "0.0196078 0.0117647 0.109804 1";
+      nightFogColor = "0.0196078 0.0117647 0.109804 1";
+      moonEnabled = "1";
+      moonMat = "Moon_Glow_Mat";
+      moonScale = "0.2";
+      moonLightColor = "0.192157 0.192157 0.192157 1";
+      useNightCubemap = "1";
+      nightCubemap = "NightCubemap";
+      attenuationRatio = "0 1 1";
+      shadowType = "PSSM";
+      texSize = "512";
+      overDarkFactor = "4000 1000 300 200";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      numSplits = "4";
+      logWeight = "0.91";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "1";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      position = "525.493 -535.236 23.0511";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         mieScattering = "0.0001";
    };
    new TSStatic(Cart) {
       shapeName = "art/Packs/props/GoldMine/Cart.dts";
@@ -351,7 +375,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(CaveYeti1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "403.89 -958.835 11.7195";
+      position = "656.286 -958.835 83.896";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -359,7 +383,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "11878";
+         botBelongsToMe = "3345";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          pathname = "GoldMineCavern1Path";
@@ -372,7 +396,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(ThorYeti) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "535.965 220.453 -0.228271";
+      position = "788.361 220.453 71.9483";
       rotation = "0 0 1 180";
       scale = "3 3 3";
       hidden = "1";
@@ -380,7 +404,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "11879";
+         botBelongsToMe = "3346";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "8";
@@ -397,14 +421,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(CaveYeti3) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "543.974 46.5509 0.993731";
+      position = "796.37 46.5509 73.1703";
       rotation = "0 0 1 180";
       scale = "1 1 1";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "11880";
+         botBelongsToMe = "3347";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "1";
@@ -418,14 +442,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "400.042 -423.284 30.9206";
+      position = "652.438 -423.284 103.097";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11881";
+         botBelongsToMe = "3348";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "13690";
          fov = "360";
@@ -438,14 +462,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti2) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "397.911 -417.309 16.3201";
+      position = "650.307 -417.309 88.4966";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11882";
+         botBelongsToMe = "3349";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          leash = "20";
@@ -459,14 +483,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti3) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "397.439 -789.697 13.6973";
+      position = "649.835 -789.697 85.8738";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11883";
+         botBelongsToMe = "3350";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -478,14 +502,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti4) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "395.281 -704.918 14.9624";
+      position = "647.677 -704.918 87.1389";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11884";
+         botBelongsToMe = "3351";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9542";
          fov = "360";
@@ -498,14 +522,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti5) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "399.483 -308.481 15.9154";
+      position = "651.879 -308.481 88.0919";
       rotation = "0 0 1 180.017";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11885";
+         botBelongsToMe = "3352";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -517,14 +541,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti6) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "400.69 -288.13 2.69334";
+      position = "653.086 -288.13 74.8699";
       rotation = "0 0 1 179.639";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11886";
+         botBelongsToMe = "3353";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -536,14 +560,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti7) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "354.609 -508.427 2.25562";
+      position = "607.005 -508.427 74.4322";
       rotation = "0 0 1 99.7025";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "11887";
+         botBelongsToMe = "3354";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -555,14 +579,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti8) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "542.583 -715.181 2.21985";
+      position = "794.979 -715.181 74.3964";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "14319";
+         botBelongsToMe = "3355";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "41468";
          fov = "360";
@@ -575,14 +599,14 @@ new SimGroup(MissionGroup) {
    new StaticShape(SmallYeti9) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "535.815 -177.341 2.03257";
+      position = "788.211 -177.341 74.2091";
       rotation = "0 0 1 152.742";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "11889";
+         botBelongsToMe = "3356";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          fov = "360";
@@ -595,7 +619,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti14) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "453.399 -238.591 3.61666";
+      position = "705.795 -238.591 75.7932";
       rotation = "0 0 1 92.3066";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -603,7 +627,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "11890";
+         botBelongsToMe = "3357";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -615,7 +639,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti13) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "539.549 -422.743 3.68081";
+      position = "791.945 -422.743 75.8573";
       rotation = "0 0 1 180.4";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -623,7 +647,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "11891";
+         botBelongsToMe = "3358";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "30614";
          fov = "360";
@@ -636,7 +660,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti12) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "447.903 -508.802 2.61172";
+      position = "700.299 -508.802 74.7883";
       rotation = "0 0 -1 86.3966";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -644,7 +668,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "11892";
+         botBelongsToMe = "3359";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -656,7 +680,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti11) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "400.144 -412.819 3.08501";
+      position = "652.54 -412.819 75.2615";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -664,7 +688,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "11893";
+         botBelongsToMe = "3360";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -676,7 +700,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(smallYeti10) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "415.749 -507.833 16.0337";
+      position = "668.145 -507.833 88.2102";
       rotation = "0 0 -1 88.0353";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -684,7 +708,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "11894";
+         botBelongsToMe = "3361";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "5345";
          receiveLMLighting = "1";
@@ -2034,7 +2058,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/GoldMine/electricalLamp002LOD.dts";
+         shapeName = "art/Packs/props/goldmine/electricalLamp002LOD.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4527,7 +4551,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "770.586 -410 13.3351";
+      position = "770.983 -409.766 0.385012";
       rotation = "0 0 1 90";
       scale = "1 1 1";
       canSave = "1";
@@ -4543,7 +4567,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "770.584 -530.637 13.3471";
+      position = "770.584 -530.035 0.706374";
       rotation = "0 0 1 90";
       scale = "1 1 1";
       canSave = "1";
@@ -4559,7 +4583,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "770.598 -470 13.3498";
+      position = "770.598 -470 0.709074";
       rotation = "0 0 -1 90";
       scale = "1 1 1";
       canSave = "1";
@@ -4575,7 +4599,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "815.515 -452.705 13.3393";
+      position = "815.515 -452.705 0.836309";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4607,7 +4631,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "770.612 -445.935 15.2192";
+      position = "770.612 -445.935 2.54124";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4623,7 +4647,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "819.861 -391.607 11.123";
+      position = "819.861 -302.002 11.123";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4634,13 +4658,13 @@ new SimGroup(MissionGroup) {
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "819.973 -408.993 9.53253";
-      rotation = "1 0 0 0";
+      position = "770.585 -590.078 0.636175";
+      rotation = "0 0 1 90";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -4655,7 +4679,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "845.326 -364.215 14.9614";
+      position = "845.326 -239.209 14.9614";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4671,21 +4695,81 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "771.908 -395.054 49.9929";
+      position = "780.104 -370.923 7.58783";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SkyBox() {
-      Material = "PangaeaSky01";
-      drawBottom = "1";
-      fogBandHeight = "0";
-      position = "242.553 -83.4271 47.5991";
-      rotation = "1 0 0 0";
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "2";
+      isAIControlled = "0";
+      dataBlock = "Boglin_Toes";
+      position = "1024.06 -498.929 0.179763";
+      rotation = "0 0 1 18.8236";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "6";
+      isAIControlled = "0";
+      dataBlock = "Lamp_Oil";
+      position = "1024.06 -493.798 0.0961237";
+      rotation = "0 0 1 78.8198";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "21";
+      isAIControlled = "0";
+      dataBlock = "ChaosBladeWeapon";
+      position = "1019.18 -496.966 0.096132";
+      rotation = "0 0 -1 61.126";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "1";
+      isAIControlled = "0";
+      dataBlock = "grenadeWeapon";
+      position = "1019.57 -500.013 0.152304";
+      rotation = "0 0 1 115.504";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "4";
+      isAIControlled = "0";
+      dataBlock = "Tokara_Mushroom";
+      position = "1019.07 -501.086 0.0867221";
+      rotation = "0 0 -1 103.236";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
    };
 };
 //--- OBJECT WRITE END ---
