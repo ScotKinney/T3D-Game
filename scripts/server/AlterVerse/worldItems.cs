@@ -1934,7 +1934,7 @@ datablock ItemData(Palimino_Horse_Item)
    ItemID = 106;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -1946,7 +1946,7 @@ datablock ItemData(Palimino_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[106] = "Palimino_Horse_Item";
 
