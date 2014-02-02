@@ -341,7 +341,7 @@ datablock ItemData(BoltAmmo)
    className = "ammo";
    shapeFile = "art/inv/weapons/crossbows/projectile.dts";
    invIcon = "art/gui/icons/ammo.jpg";
-   maxInventory = 100;
+   maxInventory = 999;
    keepOnDeath = 1;
    skullLevel = 0;
 
@@ -543,6 +543,35 @@ datablock ItemData(Buckskin_Horse_Item)
 };
 $AlterVerse::ItemNames[108] = "Buckskin_Horse_Item";
 
+datablock ItemData(ChaosBladeWeapon)
+{
+
+   ItemID = 183;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/chaosblade.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1100;
+
+   table = "Weapons";
+   SubItemID = 183;
+   image = ChaosBladeImage;
+   skinMat = "";
+   effectWeap = "thrown";
+   reticle = "";
+};
+$AlterVerse::ItemNames[183] = "ChaosBladeWeapon";
+
 datablock ItemData(CrossbowWeapon)
 {
 
@@ -561,7 +590,7 @@ datablock ItemData(CrossbowWeapon)
    emap = true;
    sticky = true;
 
-   cost = 500;
+   cost = 1500;
 
    table = "Weapons";
    SubItemID = 2;
@@ -571,35 +600,6 @@ datablock ItemData(CrossbowWeapon)
    reticle = "reticle_rocketlauncher";
 };
 $AlterVerse::ItemNames[2] = "CrossbowWeapon";
-
-datablock ItemData(DaggerWeapon)
-{
-
-   ItemID = 81;
-   category = "weapons";
-   className = "wpn";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
-   invIcon = "art/gui/icons/dagger.jpg";
-   maxInventory = 999;
-   keepOnDeath = 0;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 1100;
-
-   table = "Weapons";
-   SubItemID = 81;
-   image = DaggerImage;
-   skinMat = "";
-   effectWeap = "thrown";
-   reticle = "";
-};
-$AlterVerse::ItemNames[81] = "DaggerWeapon";
 
 datablock ItemData(DeathDealerWeapon)
 {
@@ -738,6 +738,57 @@ datablock ItemData(DoomWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[178] = "DoomWeapon";
+
+datablock ItemData(ElvenArrowAmmo)
+{
+
+   ItemID = 187;
+   category = "ammo";
+   className = "ammo";
+   shapeFile = "art/inv/weapons/bows/elvenarrow.dts";
+   invIcon = "art/gui/icons/ammo.jpg";
+   maxInventory = 999;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10;
+};
+$AlterVerse::ItemNames[187] = "ElvenArrowAmmo";
+
+datablock ItemData(ElvenBowWeapon)
+{
+
+   ItemID = 186;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/bows/elvenbow.dts";
+   invIcon = "art/gui/icons/ElvenBow.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1500;
+
+   table = "Weapons";
+   SubItemID = 186;
+   image = ElvenBowImage;
+   skinMat = "";
+   effectWeap = "none";
+   reticle = "reticle_rocketlauncher";
+};
+$AlterVerse::ItemNames[186] = "ElvenBowWeapon";
 
 datablock ItemData(Emerald)
 {
@@ -1191,6 +1242,35 @@ datablock ItemData(Heater_Shield_IIIWeapon)
    reticle = "";
 };
 $AlterVerse::ItemNames[143] = "Heater_Shield_IIIWeapon";
+
+datablock ItemData(HeatNailWeapon)
+{
+
+   ItemID = 184;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/knives/HeatNail.dts";
+   invIcon = "art/gui/icons/HeatNail.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1100;
+
+   table = "Weapons";
+   SubItemID = 184;
+   image = HeatNailImage;
+   skinMat = "";
+   effectWeap = "thrown";
+   reticle = "";
+};
+$AlterVerse::ItemNames[184] = "HeatNailWeapon";
 
 datablock ItemData(Huge_Gold_Nugget)
 {
@@ -1952,6 +2032,35 @@ datablock ItemData(Pike)
    nutrition = 30;
 };
 $AlterVerse::ItemNames[11] = "Pike";
+
+datablock ItemData(QuikSilverWeapon)
+{
+
+   ItemID = 185;
+   category = "weapons";
+   className = "wpn";
+   shapeFile = "art/inv/weapons/knives/QuikSilver.dts";
+   invIcon = "art/gui/icons/QuikSilver.jpg";
+   maxInventory = 999;
+   keepOnDeath = 0;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 1100;
+
+   table = "Weapons";
+   SubItemID = 185;
+   image = QuikSilverImage;
+   skinMat = "";
+   effectWeap = "thrown";
+   reticle = "";
+};
+$AlterVerse::ItemNames[185] = "QuikSilverWeapon";
 
 datablock ItemData(Rainbow_Trout)
 {
