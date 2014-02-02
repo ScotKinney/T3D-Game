@@ -559,6 +559,7 @@ singleton Material(svgoldmine01_cave05)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepCaveSound";
 };
 
 singleton Material(svgoldmine01_cave07)
@@ -587,6 +588,7 @@ singleton Material(svgoldmine02_cave07a)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/cave07_n.dds";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 singleton Material(svgoldmine02_cave02)
@@ -599,16 +601,6 @@ singleton Material(svgoldmine02_cave02)
    useAnisotropic[0] = "1";
 };
 
-singleton Material(svgoldmine03_cave05a)
-{
-   mapTo = "cave05a";
-   diffuseMap[0] = "art/Packs/props/GoldMine/cave05a";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
-   useAnisotropic[0] = "1";
-};
-
 singleton Material(svgoldmine03_cave06)
 {
    mapTo = "cave06";
@@ -617,6 +609,7 @@ singleton Material(svgoldmine03_cave06)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepCaveSound";
 };
 
 singleton Material(svgoldmine03_tank)
@@ -627,6 +620,7 @@ singleton Material(svgoldmine03_tank)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/svijmetal1N.dds";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
 };
 
 singleton Material(svgoldmine03_woodbeam)
@@ -635,6 +629,19 @@ singleton Material(svgoldmine03_woodbeam)
    diffuseMap[0] = "art/Packs/props/GoldMine/woodBeam001.jpg";
    specularPower[0] = "128";
    translucentBlendOp = "None";
+   useAnisotropic[0] = "0";
+   customFootstepSound = "FootStepWood1Sound";
+};
+
+singleton Material(svgoldmine03_sv_wood2)
+{
+   mapTo = "sv-wood2";
+   diffuseMap[0] = "art/Packs/props/GoldMine/sv-minewood2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/sv-minewood2N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 singleton Material(svgoldmine03_sv_wood2)
