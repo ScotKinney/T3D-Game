@@ -144,8 +144,12 @@ datablock ShapeBaseImageData(ElvenBowImage : BaseTriggeredImage)
    ammo = ElvenArrowAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
    projectile = ElvenArrowProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ElvenArrowWetProjectile;
-   fireAnim = "B_Fire";
-   fireSound = "BaseFireSound";
-   stateSequence[4] = "B_Fire";
    canUseMounted = true;
+   mountPoint = 2;
+   weaponSlot = 1;   // Secondary weapon slot (Left Hand)
+   usesBothHands = true;
+   fireAnim = "FireBow";
+   fireSound = "BaseFireSound";
+   stateSequence[3] = "FireBow";
+
 };
