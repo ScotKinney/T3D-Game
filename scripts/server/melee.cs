@@ -47,7 +47,7 @@ function MeleeImage::onFire(%this, %obj, %slot)
 {
    // Chose an attack randomly
    %index = %obj.curAttack;
-   if ( %index < 0 )
+   if ( (%index $= "") || (%index < 0) )
       %index = mFloor(getRandom()*(%this.hthNumAttacks-0.0001));
 
    %this.SwingWeapon(%obj, %slot, %index);

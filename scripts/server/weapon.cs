@@ -196,7 +196,11 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
    else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
       %muzzleVector = %obj.getMuzzleVector(%slot);
    else
-      %muzzleVector = %obj.getEyeVector();
+   {
+      %eyeVec = %obj.getEyeVector();
+      %muzzleVector = %obj.getForwardVector();
+      %muzzleVector = setWord(%muzzleVector, 2, getWord(%eyeVec,2));
+   }
 
    %mp = %obj.getAnimMuzzlePoint(%slot);
 

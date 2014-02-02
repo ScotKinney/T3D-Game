@@ -531,20 +531,20 @@ singleton Material(matBM_Pants_Myth)
 //////////////LongSword Holster
 
 
-singleton Material(matBM_LSHolster_Metal)
-{
-   mapTo = "LS_Holster_Metal";
-   diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Metal.png";
-   materialTag0 = "Avatar_BM";
-   translucent = "0";
-};
-
-singleton Material(matBM_LSHolster_Leather)
-{
-   mapTo = "LS_Holster_Leather";
-   diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Leather.png";
-   materialTag0 = "Avatar_BM";
-};
+//singleton Material(matBM_LSHolster_Metal)
+//{
+   //mapTo = "LS_Holster_Metal";
+   //diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Metal.png";
+   //materialTag0 = "Avatar_BM";
+   //translucent = "0";
+//};
+//
+//singleton Material(matBM_LSHolster_Leather)
+//{
+   //mapTo = "LS_Holster_Leather";
+   //diffuseMap[0] = "art/inv/weapons/L_Sword/LS_Holster_Leather.png";
+   //materialTag0 = "Avatar_BM";
+//};
 
 //////////////////////////////////////TOKARA STUFF/////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
