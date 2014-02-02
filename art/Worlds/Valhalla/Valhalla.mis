@@ -1501,85 +1501,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
 
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-258.016 34.6875 69.9538";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-257.656 34.6355 69.9148";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-257.246 34.6365 69.9148";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
 
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-263.402 34.4435 69.9838";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-263.612 34.6855 69.9838";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-263.802 34.5295 69.9838";
-         rotation = "0 0 1 6.67906";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new TSStatic(WeaponsTable12) {
          shapeName = "art/Packs/props/default/table2.dts";
          playAmbient = "1";
@@ -2426,13 +2348,13 @@ new SimGroup(MissionGroup) {
             distDetect = "50";
             fov = "360";
             leash = "5";
-            maxRange = "50";
+            maxRange = "5";
             paceDist = "5";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            weapon = "HammerWeapon";
+            weapon = "SoulReaverWeapon";
       };
       new StaticShape(Guard6a_OR) {
          isAIControlled = "0";
@@ -2450,13 +2372,13 @@ new SimGroup(MissionGroup) {
             distDetect = "50";
             fov = "360";
             leash = "15";
-            maxRange = "50";
+            maxRange = "5";
             paceDist = "15";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            weapon = "HammerWeapon";
+            weapon = "SoulReaverWeapon";
       };
 
       new Prefab(Fort_OdinsRevenge) {
@@ -3049,13 +2971,13 @@ new SimGroup(MissionGroup) {
             distDetect = "50";
             fov = "360";
             leash = "5";
-            maxRange = "50";
+            maxRange = "5";
             paceDist = "5";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            weapon = "HammerWeapon";
+            weapon = "SoulReaverWeapon";
       };
       new StaticShape(Guard11a_TL) {
          isAIControlled = "0";
@@ -3073,13 +2995,13 @@ new SimGroup(MissionGroup) {
             distDetect = "50";
             fov = "360";
             leash = "15";
-            maxRange = "50";
+            maxRange = "5";
             paceDist = "15";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            weapon = "HammerWeapon";
+            weapon = "SoulReaverWeapon";
       };
 
       new Prefab(Fort_ThunderLords) {
