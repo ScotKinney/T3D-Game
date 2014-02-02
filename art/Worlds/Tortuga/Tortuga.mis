@@ -7612,7 +7612,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "8";
-            Weapon = "DaggerWeapon";
+            Weapon = "WidowMakerWeapon";
       };
       new StaticShape(Guard8a_CJ) {
          isAIControlled = "0";
@@ -7637,7 +7637,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "8";
-            Weapon = "DaggerWeapon";
+            Weapon = "WidowMakerWeapon";
       };
 
       new Prefab(Fort_CalicoJacks) {
@@ -8159,7 +8159,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "4";
-            Weapon = "DaggerWeapon";
+            Weapon = "WidowMakerWeapon";
       };
       new StaticShape(Guard4a_RR) {
          isAIControlled = "0";
@@ -8184,7 +8184,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "4";
-            Weapon = "DaggerWeapon";
+            Weapon = "WidowMakerWeapon";
       };
 
       new Prefab(Fort_RumRunners) {
@@ -10603,85 +10603,6 @@ new SimGroup(MissionGroup) {
             ignoreZodiacs = "0";
             invertGradientRange = "0";
             useGradientRange = "0";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-326.574 732.101 69.7125";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-326.567 732.519 69.7125";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "HammerWeapon";
-         position = "-326.514 732.876 69.7125";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-326.303 736.104 69.7401";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-326.061 736.309 69.7401";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "50";
-         isAIControlled = "0";
-         dataBlock = "DaggerWeapon";
-         position = "-326.216 736.5 69.7401";
-         rotation = "0 0 1 96.8853";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
       };
 
       new TSStatic() {
