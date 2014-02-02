@@ -115,7 +115,7 @@ datablock ItemData(Arabian_Horse_Item)
    ItemID = 105;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -127,7 +127,7 @@ datablock ItemData(Arabian_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[105] = "Arabian_Horse_Item";
 
@@ -245,7 +245,7 @@ datablock ItemData(Bay_Horse_Item)
    ItemID = 104;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -257,7 +257,7 @@ datablock ItemData(Bay_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[104] = "Bay_Horse_Item";
 
@@ -527,7 +527,7 @@ datablock ItemData(Buckskin_Horse_Item)
    ItemID = 108;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -539,7 +539,7 @@ datablock ItemData(Buckskin_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[108] = "Buckskin_Horse_Item";
 
@@ -1843,7 +1843,7 @@ datablock ItemData(Mustang_Horse_Item)
    ItemID = 109;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -1855,7 +1855,7 @@ datablock ItemData(Mustang_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[109] = "Mustang_Horse_Item";
 
@@ -1912,7 +1912,7 @@ datablock ItemData(Painted_Horse_Item)
    ItemID = 107;
    category = "horses";
    className = "inv";
-   shapeFile = "art/inv/weapons/knives/dagger.dts";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
    invIcon = "art/gui/icons/horse.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
@@ -1924,7 +1924,7 @@ datablock ItemData(Painted_Horse_Item)
    emap = true;
    sticky = true;
 
-   cost = 3000;
+   cost = 10000;
 };
 $AlterVerse::ItemNames[107] = "Painted_Horse_Item";
 
