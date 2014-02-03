@@ -71,6 +71,7 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    scale = ".5 .5 .5";
    item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
    usesAmmo = true;
+   usesBothHands = true;
    ammo = boltAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
    projectile = BoltProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = BoltWetProjectile;
