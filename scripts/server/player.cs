@@ -978,6 +978,12 @@ function Player::onAnimationTrigger(%this, %obj, %slot)
    }
 }
 
+function PlayerData::onEndSequence(%this, %obj, %slot)
+{
+   //%obj.stopThread(%slot);
+   %obj.destroyThread(%slot);
+}
+
 function serverCmdAcceptMountRequest(%client, %requestor)
 {
    %vehicle = %client.aiMount;

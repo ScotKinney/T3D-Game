@@ -168,7 +168,8 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
       else
       {
          if ( %obj.isMounted() || %obj.isMoving() )
-            %obj.setArmThreadPlayOnce(%this.fireAnim @ "Blend");
+            //%obj.setArmThreadPlayOnce(%this.fireAnim @ "Blend");
+            %obj.playThread(1, %this.fireAnim @ "Blend");
          else
             %obj.setActionThread(%this.fireAnim);
       }
@@ -179,6 +180,8 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
    %this.delayedFire(%obj, %slot);
 }
 
+//2898.playThread(0, "Throw_HamAxeBlend");
+//2898.setArmThreadPlayOnce("Throw_HamAxeBlend");
 // DelayedFire is called from the players onAnimationTrigger callback when 
 // trigger 3 in an animation hits.
 function WeaponImage::delayedFire(%this, %obj, %slot)
