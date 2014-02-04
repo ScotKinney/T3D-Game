@@ -297,7 +297,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("taplink", "5");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunBlend.dsq", "Fire_FlintLockBlend", "0", "29", "1", "0");
    %this.addTrigger("Fire_FlintLockBlend", "9", "3");
-   %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeBlend.dsq", "Throw_HamAxeBlend", "0", "29", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeMove.dsq", "Throw_HamAxeBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_HamAxeBlend", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearBlend.dsq", "Throw_JavelinBlend", "0", "29", "1", "0");
    %this.addTrigger("Throw_JavelinBlend", "15", "3");
