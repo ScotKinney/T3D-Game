@@ -40,7 +40,7 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "768.656 -202.111 4.99604";
+         position = "768.656 -230 4.99604";
          rotation = "0 0 1 183.194";
          scale = "1 1 1";
          canSave = "1";
@@ -383,7 +383,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "3345";
+         botBelongsToMe = "4129";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          pathname = "GoldMineCavern1Path";
@@ -404,7 +404,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "3346";
+         botBelongsToMe = "4130";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "8";
@@ -428,7 +428,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "3347";
+         botBelongsToMe = "4131";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "1";
@@ -449,7 +449,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3348";
+         botBelongsToMe = "4132";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "13690";
          fov = "360";
@@ -469,7 +469,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3349";
+         botBelongsToMe = "4133";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          leash = "20";
@@ -490,7 +490,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3350";
+         botBelongsToMe = "4134";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -509,7 +509,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3351";
+         botBelongsToMe = "4135";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9542";
          fov = "360";
@@ -529,7 +529,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3352";
+         botBelongsToMe = "4136";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -548,7 +548,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3353";
+         botBelongsToMe = "4137";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -567,7 +567,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3354";
+         botBelongsToMe = "4138";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -586,7 +586,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "3355";
+         botBelongsToMe = "4139";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "41468";
          fov = "360";
@@ -606,7 +606,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "3356";
+         botBelongsToMe = "4140";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          fov = "360";
@@ -627,7 +627,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "3357";
+         botBelongsToMe = "4141";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -647,7 +647,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "3358";
+         botBelongsToMe = "4142";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "30614";
          fov = "360";
@@ -668,7 +668,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "3359";
+         botBelongsToMe = "4143";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -688,7 +688,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "3360";
+         botBelongsToMe = "4144";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -708,7 +708,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "3361";
+         botBelongsToMe = "4145";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "5345";
          receiveLMLighting = "1";
@@ -4557,38 +4557,6 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new TSStatic(tunnel1b) {
-      shapeName = "art/Packs/props/GoldMine/svgoldmine01.dae";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "770.584 -530.035 0.706374";
-      rotation = "0 0 1 90";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic(tunnel1a) {
-      shapeName = "art/Packs/props/GoldMine/svgoldmine02.dae";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "770.598 -470 0.709074";
-      rotation = "0 0 -1 90";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
    new TSStatic(tunnel11a) {
       shapeName = "art/Packs/props/GoldMine/svgoldmine01-1.dae";
       playAmbient = "1";
@@ -4599,7 +4567,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "815.515 -452.705 0.836309";
+      position = "816 -452.31 0.195905";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4622,22 +4590,6 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/GoldMine/Cart.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "770.612 -445.935 2.54124";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
       shapeName = "art/Packs/props/GoldMine/svgoldmine04.dae";
       playAmbient = "1";
       meshCulling = "0";
@@ -4647,7 +4599,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "819.861 -302.002 11.123";
+      position = "822.027 -340.424 1.04167";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4663,7 +4615,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "770.585 -590.078 0.636175";
+      position = "771.059 -530.134 0.380693";
       rotation = "0 0 1 90";
       scale = "1 1 1";
       canSave = "1";
@@ -4695,8 +4647,8 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "780.104 -370.923 7.58783";
-      rotation = "1 0 0 0";
+      position = "883.426 -282.299 15.8092";
+      rotation = "0 0 1 180";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -4708,7 +4660,7 @@ new SimGroup(MissionGroup) {
       count = "2";
       isAIControlled = "0";
       dataBlock = "Boglin_Toes";
-      position = "1024.06 -498.929 0.179763";
+      position = "1024.06 -498.929 -8.3074e-007";
       rotation = "0 0 1 18.8236";
       scale = "1 1 1";
       canSave = "1";
@@ -4722,7 +4674,7 @@ new SimGroup(MissionGroup) {
       count = "6";
       isAIControlled = "0";
       dataBlock = "Lamp_Oil";
-      position = "1024.06 -493.798 0.0961237";
+      position = "1024.06 -493.798 0.0158369";
       rotation = "0 0 1 78.8198";
       scale = "1 1 1";
       canSave = "1";
@@ -4736,7 +4688,7 @@ new SimGroup(MissionGroup) {
       count = "21";
       isAIControlled = "0";
       dataBlock = "ChaosBladeWeapon";
-      position = "1019.18 -496.966 0.096132";
+      position = "1019.18 -496.966 0.0359975";
       rotation = "0 0 -1 61.126";
       scale = "1 1 1";
       canSave = "1";
@@ -4750,7 +4702,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "grenadeWeapon";
-      position = "1019.57 -500.013 0.152304";
+      position = "1019.57 -500.013 0.0720172";
       rotation = "0 0 1 115.504";
       scale = "1 1 1";
       canSave = "1";
@@ -4764,12 +4716,124 @@ new SimGroup(MissionGroup) {
       count = "4";
       isAIControlled = "0";
       dataBlock = "Tokara_Mushroom";
-      position = "1019.07 -501.086 0.0867221";
+      position = "1019.07 -501.086 0.00643528";
       rotation = "0 0 -1 103.236";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          ammo = "0";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine01-2.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "770.992 -197.014 0.391109";
+      rotation = "0 0 -1 90";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine08.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "1002.02 -340.79 37.0195";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine05.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "882.003 -340.483 13.1265";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic(tunnel1a) {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine02.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "771.008 -470 0.371127";
+      rotation = "0 0 -1 90";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine01-2.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "753.024 -488.249 0.34091";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine04.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "813.426 -381.093 36.8232";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine05.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "821.51 -404.982 35.0879";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---
