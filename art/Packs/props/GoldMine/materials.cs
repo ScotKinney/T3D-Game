@@ -510,13 +510,16 @@ singleton Material(DefaultMaterial7)
    customImpactSound = "FootStepMetal1Sound";
 };
 
-singleton Material(svgoldmine01_track)
+singleton Material(svgoldmine01_sv_wood1)
 {
-   mapTo = "track";
+   mapTo = "sv-wood1";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/Packs/props/GoldMine/svtracks1.dds";
-   normalMap[0] = "art/Packs/props/GoldMine/svtracks1N.dds";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svminewood1.dds";
+   normalMap[0] = "art/Packs/props/GoldMine/sv-minewood1N.dds";
    useAnisotropic[0] = "1";
+   showFootprints = "0";
+   materialTag0 = "Miscellaneous";
+   specularPower[0] = "128";
 };
 
 singleton Material(svgoldmine01_sv_wood1)
@@ -578,6 +581,8 @@ singleton Material(svgoldmine01_grey)
    diffuseColor[0] = "0.45388 0.45388 0.45388 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
+   showFootprints = "0";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(svgoldmine02_cave07a)
@@ -601,26 +606,20 @@ singleton Material(svgoldmine02_cave02)
    useAnisotropic[0] = "1";
 };
 
-singleton Material(svgoldmine03_cave06)
-{
-   mapTo = "cave06";
-   diffuseMap[0] = "art/Packs/props/GoldMine/cave06";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/props/GoldMine/cave05_n.dds";
-   useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepCaveSound";
-};
-
 singleton Material(svgoldmine03_tank)
 {
    mapTo = "tank";
    diffuseMap[0] = "art/Packs/props/GoldMine/svijmetal1";
-   specularPower[0] = "128";
+   specularPower[0] = "51";
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/svijmetal1N.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepMetal1Sound";
+   showFootprints = "0";
+   materialTag0 = "Miscellaneous";
+   pixelSpecular[0] = "1";
+   subSurface[0] = "0";
+   subSurfaceRolloff[0] = "0.5";
 };
 
 singleton Material(svgoldmine03_woodbeam)
@@ -629,8 +628,21 @@ singleton Material(svgoldmine03_woodbeam)
    diffuseMap[0] = "art/Packs/props/GoldMine/woodBeam001.jpg";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   useAnisotropic[0] = "0";
+   useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   showFootprints = "0";
+   materialTag0 = "Miscellaneous";
+};
+
+singleton Material(svgoldmine03_woodbeam)
+{
+   mapTo = "woodbeam";
+   diffuseMap[0] = "art/Packs/props/GoldMine/woodBeam001.jpg";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(svgoldmine03_sv_wood2)
@@ -642,6 +654,8 @@ singleton Material(svgoldmine03_sv_wood2)
    normalMap[0] = "art/Packs/props/GoldMine/sv-minewood2N.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   showFootprints = "0";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(svgoldmine03_sv_wood2)
@@ -652,4 +666,132 @@ singleton Material(svgoldmine03_sv_wood2)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/sv-minewood2N.dds";
    useAnisotropic[0] = "1";
+};
+
+singleton Material(svgoldmine01_2_plank2)
+{
+   mapTo = "plank2";
+   diffuseMap[0] = "woodLightBRN7001";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine01_2_plank1)
+{
+   mapTo = "plank1";
+   diffuseMap[0] = "woodLightBRN7001KO";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine08_default2)
+{
+   mapTo = "default2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine08_cartWheel001)
+{
+   mapTo = "cartWheel001";
+   diffuseMap[0] = "cartWheel001";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(DefaultMaterial8)
+{
+   mapTo = "cave05a";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave05a";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   normalMap[0] = "art/Packs/props/GoldMine/cave07_n.dds";
+};
+
+singleton Material(svgoldmine08_svwood2)
+{
+   mapTo = "svwood2";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svminewood2";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   normalMap[0] = "art/Packs/props/GoldMine/svminewood2N.dds";
+};
+
+singleton Material(svgoldmine08_svwood1)
+{
+   mapTo = "svwood1";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svminewood1";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   normalMap[0] = "art/Packs/props/GoldMine/svminewood1N.dds";
+};
+
+singleton Material(svgoldmine08_svwood1)
+{
+   mapTo = "svwood1";
+   diffuseMap[0] = "svminewood1";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine01_track)
+{
+   mapTo = "track";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svtracks1";
+   specularPower[0] = "76";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/svtracks1N.dds";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   specularStrength[0] = "2.15686";
+   pixelSpecular[0] = "1";
+};
+
+singleton Material(svgoldmine03_cave06)
+{
+   mapTo = "cave06";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave06";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   normalMap[0] = "art/Packs/props/GoldMine/cave07_n.dds";
+};
+
+singleton Material(svgoldmine03_cave06)
+{
+   mapTo = "cave06";
+   diffuseMap[0] = "cave06";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svgoldmine03_woodbeam1)
+{
+   mapTo = "woodbeam1";
+   diffuseMap[0] = "art/Packs/props/GoldMine/svwoodbeam1.jpg";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+};
+
+singleton Material(svgoldmine08_MetalBare0055_2)
+{
+   mapTo = "MetalBare0055_2";
+   diffuseMap[0] = "MetalBare0055_2_LArivetAT";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
 };
