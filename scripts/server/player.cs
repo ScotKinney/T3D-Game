@@ -980,7 +980,8 @@ function Player::onAnimationTrigger(%this, %obj, %slot)
 
 function PlayerData::onEndSequence(%this, %obj, %slot)
 {
-   //%obj.stopThread(%slot);
+   if ( %slot == 0 )
+      return;  // Slot 0 is the TapLink animation, don't kill it
    %obj.destroyThread(%slot);
 }
 
