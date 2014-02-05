@@ -23,10 +23,10 @@ singleton Material(mat_SPSpear)
    useAnisotropic[0] = "1";
 };
 
-singleton Material(mat_SpearFeathers)
+singleton Material(mat_StoneSpear_trans)
 {
-   mapTo = "feather and decor trans_dif";
-   diffuseMap[0] = "art/inv/weapons/Spears/feather and decor trans_dif";
+   mapTo = "stonespear_trans";
+   diffuseMap[0] = "art/inv/weapons/spears/stonespear_trans";
    useAnisotropic[0] = "1";
-   translucent = "1";
+   alphaTest = "1";
 };
