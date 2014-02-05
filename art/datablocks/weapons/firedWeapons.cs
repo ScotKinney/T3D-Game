@@ -30,6 +30,7 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
    scale = "1 1 1";
    item = FlintlockWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    usesAmmo = true;
+   usesBothHands = true;
    ammo = ShotAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
    projectile = ShotProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ShotWetProjectile;
