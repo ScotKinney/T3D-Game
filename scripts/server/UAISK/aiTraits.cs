@@ -108,7 +108,14 @@ function AIPlayer::getCloserToTarget(%this, %obj, %leashPos)
 {
    //Get some numbers to work with
    %aimPos = %obj.getAimLocation();
-   %k = %obj.leash / vectorDist(%leashPos, %aimPos);
+   %baseDist = vectorDist(%leashPos, %aimPos);
+   if ( %baseDist < 0.1 )
+   {
+      %obj.moveDestinationA = %aimPos;
+      return;
+   }
+
+   %k = %obj.leash / %baseDist;
 
    //Do some math
    %x1 = getWord(%aimPos, 0);
