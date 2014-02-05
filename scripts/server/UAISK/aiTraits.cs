@@ -107,7 +107,11 @@ function AIPlayer::testLeashed(%this, %obj, %newLoc)
 function AIPlayer::getCloserToTarget(%this, %obj, %leashPos)
 {
    //Get some numbers to work with
-   %aimPos = %obj.getAimLocation();
+   %tgt = %obj.getAimObject();
+   if ( isObject(%tgt) )
+      %aimPos = %tgt.getPosition();
+   else
+      %aimPos = %obj.getAimLocation();
    %baseDist = vectorDist(%leashPos, %aimPos);
    if ( %baseDist < 0.1 )
    {

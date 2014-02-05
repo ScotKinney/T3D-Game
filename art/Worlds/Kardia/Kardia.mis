@@ -618,7 +618,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(Guard14_DD1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "27.7185 387.88 17.4898";
+      position = "27.7185 387.88 15";
       rotation = "1 0 0 0";
       scale = "0.714 0.714 0.714";
       hidden = "1";
@@ -644,7 +644,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(FemaleGuard) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "27.7185 391.168 17.4898";
+      position = "27.7185 391.168 15";
       rotation = "1 0 0 0";
       scale = "0.714 0.714 0.714";
       hidden = "1";
@@ -670,7 +670,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(Guard14_DD11) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-70.3945 387.334 17.4898";
+      position = "-70.3945 387.334 15";
       rotation = "0 0 1 120.991";
       scale = "0.714 0.714 0.714";
       hidden = "1";
@@ -696,7 +696,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(FemaleGuard1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-70.488 391.168 17.4898";
+      position = "-70.488 391.168 15";
       rotation = "1 0 0 0";
       scale = "0.714 0.714 0.714";
       hidden = "1";
