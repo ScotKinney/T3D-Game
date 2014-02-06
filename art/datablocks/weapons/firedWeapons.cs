@@ -73,8 +73,9 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
    usesAmmo = true;
    usesBothHands = true;
+   canUseMounted = true;
    ammo = boltAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
-   projectile = BoltProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
+   projectile = BoltProjectile; 
    wetProjectile = BoltWetProjectile;
    fireAnim = "Fire_Flintlock";
    fireSound = "BaseFireSound";
@@ -107,7 +108,6 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    stateName[8] = "NoAmmo";
    stateTransitionOnAmmo[8] = "Reload";
    stateSequence[8] = "NoAmmo";
-   canUseMounted = true;
 };
 
 
@@ -119,9 +119,9 @@ datablock ProjectileData(ElvenArrowProjectile : BaseProjectile)
    muzzleVelocity = 40;
    gravityMod = 0.3;
    directDamage = 80;
-   
+   particleEmitter = 0;
    particleWaterEmitter = 0;
-   explosion = DefaultHitExplosion;
+   explosion = ArrowHitStaticExplosion;
    waterExplosion = 0;
    lightDesc = 0;
    lifetime = 5000;
@@ -143,15 +143,15 @@ datablock ShapeBaseImageData(ElvenBowImage : BaseTriggeredImage)
    scale = "1 1 1";
    item = ElvenBowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
    usesAmmo = true;
+   canUseMounted = true;
+   usesBothHands = true;
    ammo = ElvenArrowAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
    projectile = ElvenArrowProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ElvenArrowWetProjectile;
-   canUseMounted = true;
    mountPoint = 2;
    weaponSlot = 0;   // Secondary weapon slot (Left Hand)
-   usesBothHands = true;
    fireAnim = "B_Fire";
-   fireSound = "BaseFireSound";
+   //fireSound = "BowFireSound";
+   stateSound[3] = "BowFireSound";
    stateSequence[3] = "FireBow";
-
 };
