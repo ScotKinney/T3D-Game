@@ -597,7 +597,7 @@ datablock ItemData(CrossbowWeapon)
    image = CrossbowImage;
    skinMat = "";
    effectWeap = "none";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[2] = "CrossbowWeapon";
 
@@ -786,7 +786,7 @@ datablock ItemData(ElvenBowWeapon)
    image = ElvenBowImage;
    skinMat = "";
    effectWeap = "none";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[186] = "ElvenBowWeapon";
 
@@ -939,7 +939,7 @@ datablock ItemData(FlintlockWeapon)
    image = FlintlockImage;
    skinMat = "";
    effectWeap = "none";
-   reticle = "reticle_rocketlauncher";
+   reticle = "";
 };
 $AlterVerse::ItemNames[47] = "FlintlockWeapon";
 
