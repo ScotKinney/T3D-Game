@@ -383,7 +383,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "4129";
+         botBelongsToMe = "3357";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          pathname = "GoldMineCavern1Path";
@@ -404,7 +404,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiBlack";
-         botBelongsToMe = "4130";
+         botBelongsToMe = "3358";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "8";
@@ -428,7 +428,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "4131";
+         botBelongsToMe = "3359";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          dropcount = "1";
@@ -449,7 +449,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4132";
+         botBelongsToMe = "3360";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "13690";
          fov = "360";
@@ -469,7 +469,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4133";
+         botBelongsToMe = "3361";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          leash = "20";
@@ -490,7 +490,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4134";
+         botBelongsToMe = "3362";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -509,7 +509,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4135";
+         botBelongsToMe = "3363";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9542";
          fov = "360";
@@ -529,7 +529,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4136";
+         botBelongsToMe = "3364";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -548,7 +548,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4137";
+         botBelongsToMe = "3365";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -567,7 +567,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4138";
+         botBelongsToMe = "3366";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -586,7 +586,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiSmall";
-         botBelongsToMe = "4139";
+         botBelongsToMe = "3367";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "41468";
          fov = "360";
@@ -606,7 +606,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "YetiBlack";
-         botBelongsToMe = "4140";
+         botBelongsToMe = "3368";
          customAmbientLighting = "0 0 0 1";
          distDetect = "300";
          fov = "360";
@@ -627,7 +627,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "4141";
+         botBelongsToMe = "3369";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -647,7 +647,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "4142";
+         botBelongsToMe = "3370";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "30614";
          fov = "360";
@@ -668,7 +668,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "4143";
+         botBelongsToMe = "3371";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -688,7 +688,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "4144";
+         botBelongsToMe = "3372";
          customAmbientLighting = "0 0 0 1";
          fov = "360";
          receiveLMLighting = "1";
@@ -708,7 +708,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiSmall";
-         botBelongsToMe = "4145";
+         botBelongsToMe = "3373";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "5345";
          receiveLMLighting = "1";
@@ -4567,7 +4567,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "816 -452.31 0.195905";
+      position = "816 -451.742 0.374671";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4599,7 +4599,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "822.027 -340.424 1.04167";
+      position = "822.39 -340.847 1.04167";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4765,7 +4765,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "882.003 -340.483 13.1265";
+      position = "882.112 -340.804 13.0167";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -4830,6 +4830,38 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "821.51 -404.982 35.0879";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldcave1.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "669.045 -317.907 54.7019";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GoldMine/svgoldmine01-1.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "815.861 -318.006 54.707";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
