@@ -552,6 +552,8 @@ singleton Material(svgoldmine01_cave04)
    translucentBlendOp = "None";
    normalMap[0] = "art/Packs/props/GoldMine/cave04_n.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   detailScale[0] = "1 1";
 };
 
 singleton Material(svgoldmine01_cave05)
@@ -794,4 +796,27 @@ singleton Material(svgoldmine08_MetalBare0055_2)
    specular[0] = "0.5 0.5 0.5 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
+};
+
+singleton Material(svgoldcave1_cave12)
+{
+   mapTo = "cave12";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave12";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave12_n.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   detailScale[0] = "0.5 0.5";
+};
+
+singleton Material(svgoldcave1_cave09)
+{
+   mapTo = "cave09";
+   diffuseMap[0] = "art/Packs/props/GoldMine/cave09";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/props/GoldMine/cave09N.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
