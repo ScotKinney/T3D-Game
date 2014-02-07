@@ -34,8 +34,8 @@ datablock PlayerData(DefaultPlayerData)
    //DeathSound = DeathCrySound;
    //PainSound = PainCrySound;
 
-   minLookAngle = -1;
-   maxLookAngle = 1;
+   minLookAngle = -.5;
+   maxLookAngle = .5;
    maxFreelookAngle = 3.0;
 
    mass = 100;
