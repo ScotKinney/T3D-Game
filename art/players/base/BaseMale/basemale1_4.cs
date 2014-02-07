@@ -7,27 +7,24 @@ singleton TSShapeConstructor(basemale1_4Dts)
 function basemale1_4Dts::onLoad(%this)
 {
    %this.renameNode("upperJaw", "Eye");
-   %this.setNodeTransform("eye", "0.000158001 0.126053 2.43575 1 0 0 0", "1");
+   %this.setNodeTransform("Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
    %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
    %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
    %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
-   %this.addNode("mount1", "lHand", "-1.15746 0.192278 2.00405 -0.300286 0.910571 -0.284058 0.485323", "1");
+   %this.addNode("mount1", "lHand", "-1.18136 0.227866 2.02225 -0.405678 0.619363 -0.672171 0.477243", "1");
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
-   %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "Head", "0", "-1", "1", "0");
-   %this.setSequencePriority("Head", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "RunFull_Forward", "0", "35", "1", "0");
    %this.setSequenceCyclic("RunFull_Forward", "1");
    %this.addTrigger("RunFull_Forward", "32", "1");
    %this.addTrigger("RunFull_Forward", "16", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Back", "0", "34", "1", "0");
-   %this.setSequenceCyclic("Back", "1");
    %this.addTrigger("Back", "8", "1");
    %this.addTrigger("Back", "25", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Left.dsq", "RunFull_Left", "0", "19", "1", "0");
@@ -293,8 +290,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_Grenade", "23", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_Fire.dsq", "B_Fire", "0", "-1", "1", "0");
    %this.addTrigger("B_Fire", "36", "3");
-   %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TAPLink", "0", "8", "1", "0");
-   %this.setSequencePriority("taplink", "5");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunMove.dsq", "Fire_FlintLockBlend", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintLockBlend", "9", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeMove.dsq", "Throw_HamAxeBlend", "0", "24", "1", "0");
@@ -308,6 +303,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("B_FireBlend", "36", "3");
    %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
    %this.setSequencePriority("xr75", "5");
+   %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
 }
 
 $mack = true;
