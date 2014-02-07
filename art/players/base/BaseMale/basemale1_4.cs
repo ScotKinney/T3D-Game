@@ -19,9 +19,9 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
-   %this.setSequencePriority("HeadSide", "1");
+   %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "Head", "0", "-1", "1", "0");
-   %this.setSequencePriority("Head", "1");
+   %this.setSequencePriority("Head", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "RunFull_Forward", "0", "35", "1", "0");
    %this.setSequenceCyclic("RunFull_Forward", "1");
    %this.addTrigger("RunFull_Forward", "32", "1");
@@ -306,7 +306,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_GrenadeBlend", "13", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_FireMove.dsq", "B_FireBlend", "0", "49", "1", "0");
    %this.addTrigger("B_FireBlend", "36", "3");
-   %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
+   %this.setSequencePriority("xr75", "5");
 }
 
 $mack = true;
