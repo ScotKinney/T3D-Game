@@ -70,7 +70,7 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    weaponType = "Delayed"; 
    shapefile = "art/inv/weapons/crossbows/weapon.dts";
    scale = ".5 .5 .5";
-   item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus plus "Weapon".
+   item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in av plus "Weapon".
    usesAmmo = true;
    usesBothHands = true;
    canUseMounted = true;
