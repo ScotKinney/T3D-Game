@@ -196,14 +196,11 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
    // Get the aim vector and release point
    if (%obj.isMounted())
       %muzzleVector = %obj.getObjectMount().getEyeVector();
-   else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
+   //else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
+   else if ( %obj.isBot && !isObject(%obj.driver) )
       %muzzleVector = %obj.getMuzzleVector(%slot);
    else
-   {
-      %eyeVec = %obj.getEyeVector();
-      %muzzleVector = %obj.getForwardVector();
-      %muzzleVector = setWord(%muzzleVector, 2, getWord(%eyeVec,2));
-   }
+      %muzzleVector = %obj.getEyeVector();
 
    %mp = %obj.getAnimMuzzlePoint(%slot);
 

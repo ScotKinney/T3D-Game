@@ -235,6 +235,9 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    optionPath = "art/players/base";
    physicsPlayerType = "CapsuleZ";
 
+   // The amount of LR head/body rotation to allow before the legs start turning
+   maxHeadYawAngle = 1.5;
+
    //Death Cry
    //DeathSound = MaleDeathCry;
    //PainSound = MalePainCry;
@@ -283,6 +286,9 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    shapeFile = "art/players/base/basefemale/basefemale1_4.dts";
    optionPath = "art/players/base";
    physicsPlayerType = "CapsuleZ";
+
+   // The amount of LR head/body rotation to allow before the legs start turning
+   maxHeadYawAngle = 1.5;
 
    //Death Cry
    //DeathSound = FemaleDeathCry;

@@ -431,6 +431,7 @@ datablock PlayerData(DefaultHorse)
    //maxLookAngle = 1.4;
    minLookAngle = -1;
    maxLookAngle = 1;
+   maxHeadYawAngle = 0;
    maxFreelookAngle = 3.0;
 
    mass = 150;

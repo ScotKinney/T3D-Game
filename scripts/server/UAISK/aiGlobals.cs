@@ -145,7 +145,7 @@ $AISK_SHOW_NAME = "Show";  // << BloodClans Script Modification
 $AISK_OBSTACLE = "0 0 1";
 
 //About half the height of an average character in your game, given as a vector.
-$AISK_CHAR_HEIGHT = "0 0 1.3";
+$AISK_CHAR_HEIGHT = "0 0 1.7";
 //$AISK_CHAR_HEIGHT = "0 0 2";   // << BloodClans Script Modification
 
 //The default name for all bots.
