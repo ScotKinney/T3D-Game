@@ -51,6 +51,12 @@ function ShapeBase::UseItem(%this, %id, %amount, %type)
             if ( %key $= %this.client.lastWeapon[%slot] )
                %key = "";
             %this.unmountImage(%slot);
+
+            // If it's a left or 2 handed weapon, get rid of any mounted non-weapons
+            if ( (%slot == 1) || ((%slot == 0) && %key.image.usesBothHands) )
+               %this.FreeLHForWeapon();
+
+            // Now mount the selected weapon
             %this.schedule(500, "AVMountImage", %key, %slot);
             %this.schedule(532, "AVCheckWeapons");
          }

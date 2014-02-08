@@ -23,6 +23,9 @@ function Lantern::Toggle(%this, %user)
       %user.updateMountedEquipment();
       if ( isEventPending(%user.burnSchedule) )
          cancel(%user.burnSchedule);
+
+      // Give them back their left fist weapon
+      %user.mountImage(LeftHandImage, 1, true);
    }
    else
       %this.FlashlightEnable(%user);
@@ -66,6 +69,10 @@ function Lantern::FlashlightEnable(%this, %player)
       }
       else
       {         
+         // Make sure the left hand is free
+         %player.FreeLHForWeapon();
+         %player.FreeLHForNonWeapon();
+
          // lamp light  
          %light = new PointLight() // In here you can add the example datablock values for more control  
          {     

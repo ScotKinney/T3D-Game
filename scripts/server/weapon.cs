@@ -495,6 +495,38 @@ function ShapeBase::AVCheckWeapons(%this)
    }
 }
 
+function ShapeBase::FreeLHForWeapon(%this)
+{  // Called when a left or two handed weapon is being mounted. Make sure there
+   // are no non-weapons mounted to the left hand.
+   if( isObject(%this.TAPLink) )
+      %this.use3DTL();
+
+   if( isObject(%this.light) )
+      Lantern.Toggle(%this);
+}
+
+function ShapeBase::FreeLHForNonWeapon(%this)
+{  // Called when a non-weapon (TapLink, Lantern, etc.) is being mounted to the
+   // left hand. Left hand weapon is slot 1.
+   %this.client.lastWeapon[1] = 0;
+   %this.unmountImage(1);
+
+   // If there's a two handed weapon in the primary weapon slot, we need to
+   // unmount that too, but replace with right hand weapon, if they're not mounted.
+   %primaryWeapon = %this.getMountedImage(0);
+   if ( isObject(%primaryWeapon) )
+   {
+      if ( %primaryWeapon.usesBothHands )
+      {
+         %this.client.lastWeapon[0] = 0;
+         if ( %this.isMounted() )
+            %this.unmountImage(0);
+         else
+            %this.mountImage(RightHandImage, 0, true);
+      }
+   }
+}
+
 function WeaponImage::NoAmmoMessage(%this, %obj)
 {
    if ( %obj.client $= "" )

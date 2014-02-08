@@ -309,7 +309,7 @@ function doCrouch(%val)
       $mvTriggerCount3++;
 }
 
-moveMap.bind(keyboard, x, doCrouch);
+//moveMap.bind(keyboard, x, doCrouch);
 moveMap.bind(gamepad, btn_b, doCrouch);
 
 //------------------------------------------------------------------------------
@@ -768,11 +768,13 @@ function activateLHWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 1; }
 function activateRFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 2; }
 function activateLFWeapon(%val) { if ( %val > 0 ) $ActiveWeaponSlot = 3; }
 function setUsingFeet(%val) { $UsingFeet = %val; }
+function setUsingLeftHand(%val) { $UsingLeftHand = %val; }
 moveMap.bind(keyboard, q, activateLHWeapon);
 moveMap.bind(keyboard, e, activateRHWeapon);
 moveMap.bind(keyboard, z, activateLFWeapon);
 moveMap.bind(keyboard, c, activateRFWeapon);
 moveMap.bind(keyboard, f, setUsingFeet);
+moveMap.bind(keyboard, x, setUsingLeftHand);
 
 function doAttack(%attackNum)
 {
@@ -798,9 +800,11 @@ function doRandomAttack(%val)
 {
    if ( %val )
    {
-      %slot = getRandom(0, 1);
-      if ( $UsingFeet )
-         %slot += 2;
+      %slot = 0;
+      if ( $UsingLeftHand )
+         %slot = 1;
+      else if ( $UsingFeet )
+         %slot = getRandom(2, 3);
       $LastAttackSlot = %slot;
    }
    commandToServer('DoAttack', $LastAttackSlot, -1, %val);

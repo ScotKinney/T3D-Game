@@ -17,9 +17,17 @@ function Player::use3DTL(%this)
       %this.playThread(0, "");
       %this.setThreadPosition(0, 1.0);
       %this.schedule(300, "destroyTL");
+
+      // Give them back their left fist weapon
+      %this.mountImage(LeftHandImage, 1, true);
    }
    else
-   {  // Create the shape
+   {
+      // Make sure the left hand is free
+      %this.FreeLHForWeapon();
+      %this.FreeLHForNonWeapon();
+
+      // Create the shape
       %tlShape = new TLShape()
       {
          shapeName = "art/inv/TapLink/TapLink.dts";
