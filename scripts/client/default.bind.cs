@@ -778,6 +778,8 @@ moveMap.bind(keyboard, x, setUsingLeftHand);
 
 function doAttack(%attackNum)
 {
+   if ( $mvFreeLook )
+      return;
    commandToServer('DoAttack', $ActiveWeaponSlot, %attackNum, "1");
 }
 function ceaseAttack()
@@ -798,6 +800,9 @@ moveMap.bindCmd(keyboard, "0", "doAttack(9);", "ceaseAttack();");
 $LastAttackSlot = 0;
 function doRandomAttack(%val)
 {
+   if ( $mvFreeLook )
+      return;
+
    if ( %val )
    {
       %slot = 0;

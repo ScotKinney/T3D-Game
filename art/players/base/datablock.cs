@@ -236,7 +236,7 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    physicsPlayerType = "CapsuleZ";
 
    // The amount of LR head/body rotation to allow before the legs start turning
-   maxHeadYawAngle = 1.5;
+   maxHeadYawAngle = .5;
 
    //Death Cry
    //DeathSound = MaleDeathCry;
@@ -288,7 +288,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    physicsPlayerType = "CapsuleZ";
 
    // The amount of LR head/body rotation to allow before the legs start turning
-   maxHeadYawAngle = 1.5;
+   maxHeadYawAngle = .5;
 
    //Death Cry
    //DeathSound = FemaleDeathCry;

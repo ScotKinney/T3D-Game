@@ -36,7 +36,7 @@ datablock PlayerData(DefaultPlayerData)
 
    minLookAngle = -.5;
    maxLookAngle = .5;
-   maxHeadYawAngle = .1;
+   maxHeadYawAngle = 0;
    maxFreelookAngle = 3.0;
 
    mass = 100;
