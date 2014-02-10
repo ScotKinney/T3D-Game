@@ -458,6 +458,14 @@ moveMap.bind(keyboard, tab, toggleFirstPerson );
 //moveMap.bind( gamepad, btn_start, toggleCamera );
 moveMap.bind( gamepad, btn_x, toggleFirstPerson );
 
+function toggleFreeAim(%val)
+{
+   $mvTriggerCount0++;
+   if (%val && (($mvTriggerCount0 % 2) == 0))
+      $mvTriggerCount0++;
+}
+moveMap.bind( keyboard, "lcontrol", toggleFreeAim );
+
 // ----------------------------------------------------------------------------
 // Misc. Player stuff
 // ----------------------------------------------------------------------------
@@ -800,7 +808,7 @@ moveMap.bindCmd(keyboard, "0", "doAttack(9);", "ceaseAttack();");
 $LastAttackSlot = 0;
 function doRandomAttack(%val)
 {
-   if ( $mvFreeLook )
+   if ( $mvFreeLook && !$Tap::isDev )
       return;
 
    if ( %val )
