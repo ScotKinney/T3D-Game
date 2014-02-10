@@ -11,5 +11,5 @@ function ShieldRoundNubDts::onLoad(%this)
    %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
    %this.setBounds("-0.517436 -0.517709 -0.117766 0.516141 0.515867 0.179429");
    %this.setNodeTransform("damageStart", "0.476 0.00322226 0.0467677 0 0 -1 1.56096", "1");
-   %this.setNodeTransform("mountPoint", "-0.235343 0.00279304 -0.0287958 0.318469 -0.398308 -0.860191 0.46307", "1");
+   %this.setNodeTransform("mountPoint", "-0.224719 0.0299428 -0.0833703 0.670906 -0.269804 -0.690717 0.243244", "1");
 }

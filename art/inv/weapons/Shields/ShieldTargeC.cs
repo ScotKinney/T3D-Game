@@ -11,5 +11,5 @@ function ShieldTargeCDts::onLoad(%this)
    %this.addCollisionDetail("-1", "Box", "Bounds", "4", "30", "30", "32", "30", "30", "30");
    %this.setBounds("-0.451553 -0.4515 -0.0717407 0.451553 0.4515 0.118407");
    %this.renameObject("ColBox", "Col");
-   %this.setNodeTransform("mountPoint", "-0.158 0.0339915 -0.0806917 0.0606789 -0.583336 -0.809961 0.45144", "1");
+   %this.setNodeTransform("mountPoint", "-0.149287 0.0417681 -0.125868 0.0468516 -0.653876 -0.755149 0.299449", "1");
 }
