@@ -37,7 +37,6 @@ datablock ShapeBaseImageData(ChaosBladeImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 //HeatNail
@@ -77,7 +76,7 @@ datablock ShapeBaseImageData(HeatNailImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
+
 };
 
 //QuikSilver
@@ -117,7 +116,6 @@ datablock ShapeBaseImageData(QuikSilverImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Stone Spear
@@ -156,7 +154,6 @@ datablock ShapeBaseImageData(StoneSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Iron Spear
@@ -195,7 +192,6 @@ datablock ShapeBaseImageData(IronSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Steel Spear
@@ -234,7 +230,6 @@ datablock ShapeBaseImageData(SteelSpearImage : BaseTriggeredImage)
    fireAnim = "Throw_Javelin";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Jack Hammer
@@ -273,7 +268,6 @@ datablock ShapeBaseImageData(JackHammerImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Reaver Axe Thrown
@@ -312,7 +306,6 @@ datablock ShapeBaseImageData(ReaverImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Grenade
@@ -361,7 +354,6 @@ datablock ShapeBaseImageData(GrenadeImage : BaseTriggeredImage)
    fireAnim = "Throw_Grenade";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };
 
 // Thumper
@@ -399,5 +391,4 @@ datablock ShapeBaseImageData(ThumperImage : BaseTriggeredImage)
    fireAnim = "Throw_HamAxe";
    fireSound = BaseThrowSound;
    canUseMounted = true;
-   usesBothHands = true;
 };

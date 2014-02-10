@@ -30,7 +30,6 @@ datablock ShapeBaseImageData(FlintlockImage : BaseTriggeredImage)
    scale = "1 1 1";
    item = FlintlockWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    usesAmmo = true;
-   usesBothHands = true;
    ammo = ShotAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
    projectile = ShotProjectile; //The name of a projectile in the BCWeapons/projectiles.cs file.
    wetProjectile = ShotWetProjectile;
@@ -72,7 +71,6 @@ datablock ShapeBaseImageData(CrossbowImage : BaseTriggeredImage)
    scale = ".5 .5 .5";
    item = crossbowWeapon; //This is the name of the WEAPON that comes from the weapons table in av plus "Weapon".
    usesAmmo = true;
-   usesBothHands = true;
    canUseMounted = true;
    ammo = boltAmmo; //This is the name of the AMMO that comes from the weapons table in aureus plus "Ammo".
    projectile = BoltProjectile; 
