@@ -1,7 +1,7 @@
 
 datablock ProjectileData(DroidGun5Projectile : BaseProjectile)
 {
-   projectileShapeName = "art/inv/weapons/Guns/5_56.dts";
+   projectileShapeName = "art/Packs/AI/Droids/weapon/5_56.dts";
    scale="1 1 1";
    muzzleVelocity = 50;
    directDamage = 50;
@@ -20,7 +20,8 @@ datablock ProjectileData(DroidGun5Projectile : BaseProjectile)
 
 datablock ShapeBaseImageData(DroidGun5Image : BaseAutoImage)
 {
-   shapefile = "art/Packs/AI/Droids/gun05.dts";
+   shapefile = "art/Packs/AI/Droids/weapon/gun05.dts";
+   scale = "1 1 1";
    projectile = DroidGun5Projectile;
    wetProjectile = DroidGun5Projectile;
    stateSound[3] = XR75FireSound;
