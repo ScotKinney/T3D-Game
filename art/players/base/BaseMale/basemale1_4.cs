@@ -8,7 +8,6 @@ function basemale1_4Dts::onLoad(%this)
 {
    %this.renameNode("upperJaw", "Eye");
    %this.setNodeTransform("Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
-   //%this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
    %this.addNode("cam", "Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
    %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
@@ -21,6 +20,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
+   %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "RunFull_Forward", "0", "35", "1", "0");
    %this.setSequenceCyclic("RunFull_Forward", "1");
    %this.addTrigger("RunFull_Forward", "32", "1");
@@ -293,19 +293,17 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("B_Fire", "36", "3");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunMove.dsq", "Fire_FlintLockBlend", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintLockBlend", "9", "3");
-   %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeMove.dsq", "Throw_HamAxeBlend", "0", "24", "1", "0");
-   %this.addTrigger("Throw_HamAxeBlend", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearMove.dsq", "Throw_JavelinBlend", "0", "24", "1", "0");
-   %this.addTrigger("Throw_JavelinBlend", "15", "3");
+   %this.addTrigger("Throw_JavelinBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_GrenadeMove.dsq", "Throw_GrenadeBlend", "0", "24", "1", "0");
-   %this.addTrigger("B_Fire", "36", "3");
-   %this.addTrigger("Throw_GrenadeBlend", "13", "3");
+   %this.addTrigger("Throw_GrenadeBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_FireMove.dsq", "B_FireBlend", "0", "49", "1", "0");
    %this.addTrigger("B_FireBlend", "36", "3");
    %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
    %this.setSequencePriority("xr75", "5");
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeMove.dsq", "Throw_HamAxeBlend", "0", "24", "1", "0");
+   %this.addTrigger("Throw_HamAxeBlend", "11", "3");
 }
 
 $mack = true;
