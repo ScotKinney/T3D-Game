@@ -304,6 +304,34 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeMove.dsq", "Throw_HamAxeBlend", "0", "24", "1", "0");
    %this.addTrigger("Throw_HamAxeBlend", "11", "3");
+   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_RHMove.dsq", "SwordSwing5_RHBlend", "0", "19", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_B2.dsq", "Damage_Body_B2", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_B3.dsq", "Damage_Body_B3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_B4.dsq", "Damage_Body_B4", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_F4.dsq", "Damage_Body_F4", "0", "15", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_F5.dsq", "Damage_Body_F5", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_F6.dsq", "Damage_Body_F6", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_R2.dsq", "Damage_Body_R2", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_L3.dsq", "Damage_Body_L3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_L2.dsq", "Damage_Body_L2", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Body_R3.dsq", "Damage_Body_R3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_B1.dsq", "Damage_Head_B1", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_B2.dsq", "Damage_Head_B2", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_B3.dsq", "Damage_Head_B3", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_B4.dsq", "Damage_Head_B4", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_F3.dsq", "Damage_Head_F3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_F4.dsq", "Damage_Head_F4", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_F5.dsq", "Damage_Head_F5", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_F6.dsq", "Damage_Head_F6", "0", "14", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_L2.dsq", "Damage_Head_L2", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_L3.dsq", "Damage_Head_L3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_R2.dsq", "Damage_Head_R2", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Head_R3.dsq", "Damage_Head_R3", "0", "9", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Legs_B1.dsq", "Damage_Legs_B1", "0", "11", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Legs_B2.dsq", "Damage_Legs_B2", "0", "11", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Legs_F1.dsq", "Damage_Legs_F1", "0", "11", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Legs_L1.dsq", "Damage_Legs_L1", "0", "11", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Damage/Damage_Legs_R1.dsq", "Damage_Legs_R1", "0", "11", "1", "0");
 }
 
 $mack = true;
