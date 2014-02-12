@@ -28,7 +28,6 @@ function horseDts::onLoad(%this)
    %this.addSequence("./death1.dsq", "Death1", "0", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
    %this.addSequence("./horse_headside.dsq", "headside", "1", "24", "1", "0");
-   //%this.setSequenceBlend("headside", "1", "root", "0");
    %this.setSequencePriority("headside", "5");
    %this.addTrigger("run", "15", "2");
    %this.addTrigger("run", "22", "2");
@@ -41,7 +40,7 @@ function horseDts::onLoad(%this)
    %this.addSequence("./horse_trot.dsq", "swim_forward", "0", "-1", "1", "0");
    %this.addSequence("./horse_trot.dsq", "swim_backward", "0", "-1", "1", "0");
    %this.setNodeTransform("Cam", "-3.98133e-005 -0.70775 3.67172 -0.577339 0.577339 0.577374 2.09465", "1");
-   %this.addNode("eye", "Horse_SpineC", "-0.00407214 0.30305 3.36044 0.503078 0.690165 -0.520178 1.96443", "1");
+   %this.addNode("eye", "Horse_SpineC", "-0.00407214 0.30305 3.84586 0.504545 0.68947 -0.519678 1.96183", "1");
    %this.addSequence("./swimfull_root.dsq", "swim_root", "0", "19", "1", "0");
    %this.addSequence("./swimfull_root.dsq", "SwimFull_Root", "0", "19", "1", "0");
    %this.addSequence("./horse_root.dsq", "tp", "0", "-1", "1", "0");
