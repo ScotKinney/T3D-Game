@@ -412,26 +412,15 @@ datablock PlayerData(DefaultHorse)
    headEffectsCamera = false; // Rotation of head effects camera
    minRotationTime = 12.0;     // seconds to make a full rotation
 
-   // RFB -> conform to ground
-   conformToGround = 0; // or 0 by default
-   // RFB -> smoothCamera effects conform to ground. Lower values conform to terrain more
-   smoothCamera = 0.8; // or 0 by default -- 0 is no smoothing, 1 is so smooth the camera won´t rotate... 
-   // <- RFB
-  
    cameraDefaultFov = 45.0;
    cameraMinFov = 5.0;
    cameraMaxFov = 120.0;
    
    aiAvoidThis = true;
 
-   // RFB ->
-   autoInputDamping = 0.1; // Dampen control input for slower turning
-   // <- RFB
-   //minLookAngle = -1.4;
-   //maxLookAngle = 1.4;
    minLookAngle = -1;
    maxLookAngle = 1;
-   maxHeadYawAngle = 0;
+   maxHeadYawAngle = .5;
    maxFreelookAngle = 3.0;
 
    mass = 150;

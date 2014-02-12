@@ -303,8 +303,8 @@ function AVToolbar::getPlayerRank(%this, %force)
    if ( $currentPlayerID $= "" )
       return;
 
-   if ( !%force && ($AlterVerse::PlayerNetWorth < (%this.lastRankNW + 1000)) &&
-      ($AlterVerse::PlayerNetWorth > (%this.lastRankNW - 1000)) )
+   if ( !%force && ($AlterVerse::PlayerNetWorth < (%this.lastRankNW + 1500)) &&
+      ($AlterVerse::PlayerNetWorth > (%this.lastRankNW - 1500)) )
       return;
 
    %this.lastRankNW = $AlterVerse::PlayerNetWorth;

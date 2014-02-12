@@ -27,8 +27,9 @@ function horseDts::onLoad(%this)
    %this.addSequence("./horse_head.dsq", "head", "1", "-1", "1", "0");
    %this.addSequence("./death1.dsq", "Death1", "0", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
-   %this.addSequence("./horse_headside.dsq", "headside", "1", "-1", "1", "0");
-   %this.setSequenceBlend("headside", "1", "root", "0");
+   %this.addSequence("./horse_headside.dsq", "headside", "1", "24", "1", "0");
+   //%this.setSequenceBlend("headside", "1", "root", "0");
+   %this.setSequencePriority("headside", "5");
    %this.addTrigger("run", "15", "2");
    %this.addTrigger("run", "22", "2");
    %this.addSequence("./horse_rearing.dsq", "Damage1", "0", "-1", "1", "0");
