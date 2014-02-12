@@ -65,9 +65,18 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
       return;
 
    // make sure the attack requested is legit
-   if ( %attackNum >= %this.hthNumAttacks )
-      %attackNum = %attackNum % %this.hthNumAttacks;
-   %attack = %this.hthAttack[%attackNum];
+   if ( (%this.numMovingAttacks > 0) && (%obj.isMounted() || %obj.isMoving()) )
+   {
+      if ( %attackNum >= %this.numMovingAttacks )
+         %attackNum = %attackNum % %this.numMovingAttacks;
+      %attack = %this.movingAttack[%attackNum];
+   }
+   else
+   {
+      if ( %attackNum >= %this.hthNumAttacks )
+         %attackNum = %attackNum % %this.hthNumAttacks;
+      %attack = %this.hthAttack[%attackNum];
+   }
 
    //if (%obj.getEnergyLevel() <= %this.MinEnergy) return;
 
@@ -110,9 +119,9 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    }
    else
    {
-      if (!%obj.setArmThreadPlayOnce(%attack.seqName, %timeScale,
+      if (!%obj.setAttackBlend(2, %attack.seqName, %timeScale,
             %attack.startDamage, %attack.endDamage))
-         echo("ERROR in setArmThreadPlayOnce()");
+         echo("ERROR in setAttackBlend()");
    }
 }
 

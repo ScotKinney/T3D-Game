@@ -289,6 +289,18 @@ singleton GameBaseData(SwordSwing12_RH)
    impulse = 500;
 };
 
+singleton GameBaseData(SwordSwing5_RHMove)
+{
+   seqName = "SwordSwing5_RHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 500;
+};
+
 
 ////////////Base Swords
 
@@ -322,6 +334,8 @@ datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
    hthAttack[10]                    = SwordSwing11_RH;
    hthAttack[11]                    = SwordSwing12_RH;
 
+   numMovingAttacks = 1;
+   movingAttack[0] = SwordSwing5_RHMove;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1161,6 +1175,11 @@ singleton GameBaseData(ParalyzerSwing10 : SwordSwing10_RH)
    damageAmount = 70;
 };
 
+singleton GameBaseData(ParalyzerSwing5Move : SwordSwing5_RHMove)
+{
+   damageAmount = 70;
+};
+
 ///////////////Paralyzer LH Swings
 
 singleton GameBaseData(ParalyzerLHSwing1 : SwordSwing1_LH)
@@ -1208,6 +1227,9 @@ datablock ShapeBaseImageData(ParalyzerImage : BaseMeleeImage)
    hthAttack[7]                     = ParalyzerSwing8;
    hthAttack[8]                     = ParalyzerSwing9;
    hthAttack[9]                     = ParalyzerSwing10;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = ParalyzerSwing5Move;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1290,6 +1312,11 @@ singleton GameBaseData(EqualizerSwing10 : SwordSwing10_RH)
    damageAmount = 80;
 };
 
+singleton GameBaseData(EqualizerSwing5Move : SwordSwing5_RHMove)
+{
+   damageAmount = 80;
+};
+
 ///////////////Equalizer LH Swings
 
 singleton GameBaseData(EqualizerLHSwing1 : SwordSwing1_LH)
@@ -1338,6 +1365,9 @@ datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
    hthAttack[7]                     = EqualizerSwing8;
    hthAttack[8]                     = EqualizerSwing9;
    hthAttack[9]                     = EqualizerSwing10;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = EqualizerSwing5Move;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1419,6 +1449,11 @@ singleton GameBaseData(LiberatorSwing10 : SwordSwing10_RH)
    damageAmount = 60;
 };
 
+singleton GameBaseData(LiberatorSwing5Move : SwordSwing5_RHMove)
+{
+   damageAmount = 60;
+};
+
 ///////////////Liberator LH Swings
 
 singleton GameBaseData(LiberatorLHSwing1 : SwordSwing1_LH)
@@ -1467,6 +1502,9 @@ datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
    hthAttack[7]                     = LiberatorSwing8;
    hthAttack[8]                     = LiberatorSwing9;
    hthAttack[9]                     = LiberatorSwing10;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = LiberatorSwing5Move;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";

@@ -353,6 +353,7 @@ package GameCore
       {
          // Give a singleplayer inventory
          %inventory = AnnihilatorWeapon.ItemID SPC "1";
+         %inventory = %inventory TAB ParalyzerWeapon.ItemID SPC "1";
          %inventory = %inventory TAB WidowMakerLHWeapon.ItemID SPC "1";
          %inventory = %inventory TAB Fishing_Pole.ItemID SPC "1";
          %inventory = %inventory TAB SkullSplitterWeapon.ItemID SPC "1";
