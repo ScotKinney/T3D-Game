@@ -372,6 +372,8 @@ package GameCore
          %inventory = %inventory TAB ElvenArrowAmmo.ItemID SPC "50";
          %inventory = %inventory TAB crossbowWeapon.ItemID SPC "1";
          %inventory = %inventory TAB boltAmmo.ItemID SPC "50";
+         %inventory = %inventory TAB XR75Weapon.ItemID SPC "1";
+         %inventory = %inventory TAB XRBoltsAmmo.ItemID SPC "500";
          %this.startInv = %inventory;
          //%this.resetInventory(%inventory);
       }

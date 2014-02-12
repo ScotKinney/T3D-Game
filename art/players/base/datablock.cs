@@ -277,6 +277,10 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    numDamageAnims = 0;
    hasLocationalAnims = true;
 
+   // Damage location details
+   boxHeadPercentage       = 0.85;
+   boxTorsoPercentage      = 0.361;
+
    // An impulse less than this value will not knock the player down
    minAnimImpulse = 750;
 };
@@ -329,6 +333,10 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    numDeathAnims = 17;   
    numDamageAnims = 0;
    hasLocationalAnims = true;
+
+   // Damage location details
+   boxHeadPercentage       = 0.85;
+   boxTorsoPercentage      = 0.361;
 
    // An impulse less than this value will not knock the player down
    minAnimImpulse = 750;

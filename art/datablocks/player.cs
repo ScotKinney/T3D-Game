@@ -95,12 +95,8 @@ datablock PlayerData(DefaultPlayerData)
    pickupRadius = 10;
 
    // Damage location details
-   boxNormalHeadPercentage       = 0.83;
-   boxNormalTorsoPercentage      = 0.47;
-   boxHeadLeftPercentage         = 0;
-   boxHeadRightPercentage        = 1;
-   boxHeadBackPercentage         = 0;
-   boxHeadFrontPercentage        = 1;
+   boxHeadPercentage       = 0.83;
+   boxTorsoPercentage      = 0.47;
 
    // Foot Prints
    decalData   = DefaultFootprint;

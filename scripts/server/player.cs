@@ -629,33 +629,63 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
       {
          if ( %front == 0 )
          {
-            %animNum = getRandom(1, 2);
+            %animNum = getRandom(1, 6);
             %animName = "Damage_Head_F";
          }
          else if ( %left == 0 )
+         {
+            %animNum = getRandom(1, 3);
             %animName = "Damage_Head_L";
+         }
          else if ( %right == 0 )
-            %animName = "Damage_Head_L";
+         {
+            %animNum = getRandom(1, 3);
+            %animName = "Damage_Head_R";
+         }
          else if ( %back == 0 )
-            %animName = "Damage_Body_B";
+         {
+            %animNum = getRandom(1, 4);
+            %animName = "Damage_Head_B";
+         }
       }
       else if ( %area $= "torso" )
       {
-         if ( %front >= 0 )
+         if ( %front == 0 )
          {
-            %animNum = getRandom(1, 3);
+            %animNum = getRandom(1, 6);
             %animName = "Damage_Body_F";
          }
-         else
+         else if ( %left == 0 )
+         {
+            %animNum = getRandom(1, 3);
+            %animName = "Damage_Body_L";
+         }
+         else if ( %right == 0 )
+         {
+            %animNum = getRandom(1, 3);
+            %animName = "Damage_Body_R";
+         }
+         else if ( %back == 0 )
+         {
+            %animNum = getRandom(1, 4);
             %animName = "Damage_Body_B";
+         }
       }
       else
       {
-         if ( %right >= 0 )
-            %animName = "Damage_Body_R";
-         else
-            %animName = "Damage_Body_L";
+         if ( %front == 0 )
+            %animName = "Damage_Legs_F";
+         else if ( %left == 0 )
+            %animName = "Damage_Legs_L";
+         else if ( %right == 0 )
+            %animName = "Damage_Legs_R";
+         else if ( %back == 0 )
+         {
+            %animNum = getRandom(1, 2);
+            %animName = "Damage_Legs_B";
+         }
       }
+      //echo("getDamageLocation() returned: " @ %result @ ", Playing animation: " @ %animName @ %animNum);
    }
    else if ( %this.numDamageAnims > 0 )
    {

@@ -204,6 +204,7 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
       %muzzleVector = %obj.getAimVector();
 
    %mp = %obj.getAnimMuzzlePoint(%slot);
+   //if ( %this == XR75Image.getId() ) %mp = %obj.getEyePoint(); // Use this for perfect aim with an XR75
 
    // Select the wet or dry projectile. Bail if we don't have one
    %useProjectile = (%obj.firingWet && isObject(%this.wetProjectile)) ?

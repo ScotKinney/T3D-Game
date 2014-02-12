@@ -236,19 +236,6 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 
          %damage = %attack.damageAmount;
 
-         %damLoc = firstWord(%target.getDamageLocation(%pos));
-         // you can use this to add limited loacational damage, but the head is whats hit the most - TF
-         if ( %target.isBot )
-         {
-            %chance = getRandom(100);
-            %chance += %player.knockdown;
-            %chance += %weaponslot.knockdown;
-         }
-         else
-         {   // Don't knock down or change animation on live players
-            %chance = 0;
-            %damLoc = "";
-         }
          if(%player.client)
             %target.CurrentEnemy = %player.getShapename();
          
