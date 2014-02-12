@@ -75,6 +75,19 @@ singleton GameBaseData(Punch4_RH)
    impulse = 200;
 };
 
+singleton GameBaseData(Punch5_RH)
+{
+   seqName = "Punch5_RH";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 20;
+   startDamage = 0;
+   endDamage = 0.5;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 200;
+};
+
 datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/RHand.dts";
@@ -82,11 +95,12 @@ datablock ShapeBaseImageData(RightHandImage : BaseMeleeImage)
    weaponSlot = 0;
 
    // Here are the Attacks we support
-   hthNumAttacks = 4;
+   hthNumAttacks = 5;
    hthAttack[0]                     = Punch1_RH;
    hthAttack[1]                     = Punch2_RH;
    hthAttack[2]                     = Punch3_RH;
    hthAttack[3]                     = Punch4_RH;
+   hthAttack[4]                     = Punch5_RH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -147,6 +161,19 @@ singleton GameBaseData(Punch4_LH)
    impulse = 200;
 };
 
+singleton GameBaseData(Punch5_LH)
+{
+   seqName = "Punch5_LH";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 20;
+   startDamage = 0;
+   endDamage = 0.5;
+   //soundDelay = 500;
+   //swingSound = Punch1Sound;
+   impulse = 200;
+};
+
 datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/LHand.dts";
@@ -154,11 +181,12 @@ datablock ShapeBaseImageData(LeftHandImage : BaseMeleeImage)
    weaponSlot = 1;
 
    // Here are the Attacks we support
-   hthNumAttacks = 4;
+   hthNumAttacks = 5;
    hthAttack[0]                     = Punch1_LH;
    hthAttack[1]                     = Punch2_LH;
    hthAttack[2]                     = Punch3_LH;
    hthAttack[3]                     = Punch4_LH;
+   hthAttack[4]                     = Punch5_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -206,6 +234,45 @@ singleton GameBaseData(Kick3_RF)
    impulse = 250;
 };
 
+singleton GameBaseData(Kick4_RF)
+{
+   seqName = "Kick4_RF";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0;
+   endDamage = .5;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(Kick5_RF)
+{
+   seqName = "Kick5_RF";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0;
+   endDamage = .5;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(Kick1_BF)
+{
+   seqName = "Kick1_BF";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0;
+   endDamage = .5;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 250;
+};
+
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/RFoot.dts";
@@ -213,10 +280,13 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
    weaponSlot = 2;
 
    // Here are the Attacks we support
-   hthNumAttacks = 3;
+   hthNumAttacks = 6;
    hthAttack[0]                     = Kick1_RF;
    hthAttack[1]                     = Kick2_RF;
    hthAttack[2]                     = Kick3_RF;
+   hthAttack[3]                     = Kick4_RF;
+   hthAttack[4]                     = Kick5_RF;
+   hthAttack[5]                     = Kick1_BF;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
@@ -264,6 +334,32 @@ singleton GameBaseData(Kick3_LF)
    impulse = 250;
 };
 
+singleton GameBaseData(Kick4_LF)
+{
+   seqName = "Kick4_LF";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0;
+   endDamage = .5;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 250;
+};
+
+singleton GameBaseData(Kick5_LF)
+{
+   seqName = "Kick5_LF";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 25;
+   startDamage = 0;
+   endDamage = .5;
+   //soundDelay = 600;
+   //swingSound = Kick1Sound;
+   impulse = 250;
+};
+
 datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
 {
    shapefile = "art/players/base/weapons/LFoot.dts";
@@ -271,10 +367,12 @@ datablock ShapeBaseImageData(LeftFootImage : BaseMeleeImage)
    weaponSlot = 3;
 
    // Here are the Attacks we support
-   hthNumAttacks = 3;
+   hthNumAttacks = 5;
    hthAttack[0]                     = Kick1_LF;
    hthAttack[1]                     = Kick2_LF;
    hthAttack[2]                     = Kick3_LF;
+   hthAttack[3]                     = Kick4_LF;
+   hthAttack[4]                     = Kick5_LF;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
