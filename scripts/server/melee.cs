@@ -110,7 +110,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    {
       if (!%obj.setAttackThread(%attack.seqName, %timeScale,
             %attack.startDamage, %attack.endDamage))
-         echo("ERROR in setAttackThread()");
+         echo("ERROR in setAttackThread() sequence = " @ %attack.seqName);
       else if ( %obj.isBot )
       {
          %obj.inAttackThread = true;
@@ -121,7 +121,7 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    {
       if (!%obj.setAttackBlend(2, %attack.seqName, %timeScale,
             %attack.startDamage, %attack.endDamage))
-         echo("ERROR in setAttackBlend()");
+         echo("ERROR in setAttackBlend() sequence = " @ %attack.seqName);
    }
 }
 
