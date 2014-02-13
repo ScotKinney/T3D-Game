@@ -3805,7 +3805,7 @@ datablock ItemData(XRBoltsAmmo)
    shapeFile = "art/inv/weapons/Guns/5_56.dts";
    invIcon = "art/gui/icons/ammo.jpg";
    maxInventory = 500;
-   keepOnDeath = 0;
+   keepOnDeath = 1;
    skullLevel = 0;
 
    mass = 2;
