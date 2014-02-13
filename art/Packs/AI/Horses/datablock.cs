@@ -5,37 +5,37 @@
 //----------------------------------------------------------------------------
 datablock SFXProfile(SteedDeathCrySound)
 {
-   filename    = "art/Packs/AI/Horses/sound/Horse_pain.wav";
+   filename    = "art/Packs/AI/Horses/sound/Horse_pain.ogg";
    description = AudioClose3d;
-   preload = true;
+   preload = false;
 };
 
 datablock SFXProfile(SteedPainCrySound)
 {
-   filename    = "art/Packs/AI/Horses/sound/HorsePainCry.wav";
+   filename    = "art/Packs/AI/Horses/sound/HorsePainCry.ogg";
    description = AudioClose3d;
-   preload = true;
+   preload = false;
 };
 
 datablock SFXProfile(SteedRearCrySound)
 {
-   filename    = "art/Packs/AI/Horses/sound/HorseRearCry.wav";
+   filename    = "art/Packs/AI/Horses/sound/HorseRearCry.ogg";
    description = AudioClose3d;
-   preload = true;
+   preload = false;
 };
 
 datablock SFXProfile(SteedMoveBubblesSound)
 {
    filename    = "art/sound/water_splash.ogg";
    description = "AudioCloseLoop3D";
-   preload = true;
+   preload = false;
 };
 
 datablock SFXProfile(SteedWaterBreathSound)
 {
    filename    = "art/sound/footsteps/water_wl1";
    description = "AudioClose3D";
-   preload = true;
+   preload = false;
 };
 
 //----------------------------------------------------------------------------
