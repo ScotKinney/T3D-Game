@@ -339,6 +339,12 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("B_FireBlend", "36", "3");
    %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
    %this.setSequencePriority("xr75", "5");
+   %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Guns/Look2_XR75.dsq", "Look2_XR75", "0", "-1", "1", "0");
+   %this.setSequenceBlend("Look_XR75", 1, "Root", 1);
+   %this.setSequenceBlend("Look2_XR75", 1, "Root", 1);
+   %this.setSequencePriority("Look_XR75", "5");
+   %this.setSequencePriority("Look2_XR75", "5");
 }
 
 $mack = true;

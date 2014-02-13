@@ -119,8 +119,9 @@ function WeaponImage::onMount(%this,%obj,%slot)
    
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.setArmThread(%this.customLookAnim);
-      %obj.setSwingingArms(false);
+      %obj.setHeadVThread(%this.customLookAnim);
+      //%obj.setArmThread(%this.customLookAnim);
+      //%obj.setSwingingArms(false);
       //%obj.setLookAnimationOverride(false);
    }
 }
@@ -132,8 +133,9 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
 
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.clearArmThread();
-      %obj.setSwingingArms(true);
+      %obj.setHeadVThread("head");
+      //%obj.clearArmThread();
+      //%obj.setSwingingArms(true);
       //%obj.setLookAnimationOverride(true);
    }
 }
@@ -167,7 +169,7 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
       }
       else
       {
-         if ( %obj.isMounted() || %obj.isMoving() )
+         if ( %obj.isMounted() || %obj.isMoving() || %obj.isSwimming() )
             //%obj.setArmThreadPlayOnce(%this.fireAnim @ "Blend");
             %obj.playThread(1, %this.fireAnim @ "Blend");
          else
@@ -194,17 +196,23 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
       return; // %obj died, before animation trigger was hit, don't fire
 
    // Get the aim vector and release point
-   if (%obj.isMounted())
+   //if (%obj.isMounted())
       //%muzzleVector = %obj.getObjectMount().getEyeVector();
-      %muzzleVector = %obj.getAimVector();
+      //%muzzleVector = %obj.getAimVector();
    //else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
-   else if ( %obj.isBot && !isObject(%obj.driver) )
+   if ( %obj.isBot && !isObject(%obj.driver) )
       %muzzleVector = %obj.getMuzzleVector(%slot);
    else
       %muzzleVector = %obj.getAimVector();
 
    %mp = %obj.getAnimMuzzlePoint(%slot);
    //if ( %this == XR75Image.getId() ) %mp = %obj.getEyePoint(); // Use this for perfect aim with an XR75
+
+   if ( %this.customLookAnim !$= "" )
+   {
+      %muzzleVector = %obj.getMuzzleVector(%slot);
+      %mp = %obj.getMuzzlePoint(%slot);
+   }
 
    // Select the wet or dry projectile. Bail if we don't have one
    %useProjectile = (%obj.firingWet && isObject(%this.wetProjectile)) ?

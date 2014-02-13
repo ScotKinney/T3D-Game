@@ -857,7 +857,7 @@ function Player::playDeathAnimation(%this)
 function Player::playImpulseAnim(%this, %pos, %impulse)
 {
    %pd_db = %this.getDataBlock();
-   if ( %pd_db.hasLocationalAnims && (%impulse > %pd_db.minAnimImpulse) 
+   if ( %pd_db.hasKnockDownAnims && (%impulse > %pd_db.minAnimImpulse) 
       && (%this.getState() !$= "Dead"))
    {
       if ( %this.isMounted() )

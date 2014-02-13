@@ -57,11 +57,11 @@ function MeleeImage::onFire(%this, %obj, %slot)
 // ----------------------------------------------------------------------------
 function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 {
-   // If we're already in an attack, we can't start this one
-   if ( %obj.inArmThreadPlayOnce() )
+   // If we're already in an attack or in a neutral zone, we can't start this one
+   if ( %obj.inArmThreadPlayOnce() || %obj.inNeutralZone )
       return;
 
-   if ( %obj.inNeutralZone )
+   if ( %obj.isSwimming() && (%this.numMovingAttacks < 1) )
       return;
 
    // make sure the attack requested is legit

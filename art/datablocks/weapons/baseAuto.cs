@@ -153,7 +153,8 @@ datablock ShapeBaseImageData(XR75Image : BaseAutoImage)
    shapefile = "art/inv/weapons/Guns/XR75.dts";//
    scale = "1 1 1";
    //eyeOffset = "0.2 0.5 -0.4";// right/left - forward/back -0.6=up/down
-   correctMuzzleVector = true;
+   correctMuzzleVector = false;
+   correctMuzzleVectorTP = false;
    item = XR75Weapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    ammo = XRBoltsAmmo; //This is the name of the AMMO that comes from the weapons table in aureus.
    projectile = XRBoltsProjectile;
@@ -166,3 +167,6 @@ datablock ShapeBaseImageData(XR75Image : BaseAutoImage)
    stateTimeoutValue[5] = 0.2;
    customLookAnim = "Look_XR75";
 };
+
+//2913.playThread(3, "Look2_XR75");2913.pauseThread(3);
+//2913.setThreadPosition(3, 0.5);//2913.destroyThread(3);

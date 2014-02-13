@@ -266,6 +266,7 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
   // Foot Print offSet
    decalOffset = 0.22;
    
+   //DefaultSetup = "55,59,237,35,313,320,378,306,309"; //"55,59,50,35,279,282,285"; //"55,59,35,20,65,63,70,77";
    DefaultSetup = "55,59,50,35,279,282,285";//"55,59,35,20,65,63,70,77";
    DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
    DefaultSetup[Sparta] = "55,59,35,242,6,269,13";
@@ -281,8 +282,15 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    boxHeadPercentage       = 0.85;
    boxTorsoPercentage      = 0.361;
 
+   // Player bounding boxes
+   boundingBox = ".75 1.25 2.6"; // //LR-FB-UpDN - Torque Physics
+   //boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
+   crouchBoundingBox = "1 0.75 1.5";
+   swimBoundingBox = "1 2 1.5";
+
    // An impulse less than this value will not knock the player down
    minAnimImpulse = 750;
+   hasKnockDownAnims = true;
 };
 
 datablock PlayerData(FemalePlayerData : DefaultPlayerData)
@@ -338,8 +346,15 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    boxHeadPercentage       = 0.85;
    boxTorsoPercentage      = 0.361;
 
+   // Player bounding boxes
+   boundingBox = ".75 1.25 2.6"; // //LR-FB-UpDN - Torque Physics
+   //boundingBox = "0.75 0.75 2";  // Bullet Physics Box Collision
+   crouchBoundingBox = "1 0.75 1.5";
+   swimBoundingBox = "1 2 1.5";
+
    // An impulse less than this value will not knock the player down
    minAnimImpulse = 750;
+   hasKnockDownAnims = true;
 };
 
 // Player fishing sounds
