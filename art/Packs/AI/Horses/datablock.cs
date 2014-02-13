@@ -5,7 +5,7 @@
 //----------------------------------------------------------------------------
 datablock SFXProfile(SteedDeathCrySound)
 {
-   filename    = "art/Packs/AI/Horses/sound/Horse_pain.ogg";
+   filename    = "art/Packs/AI/Horses/sound/HorseDeathCry.ogg";
    description = AudioClose3d;
    preload = false;
 };
