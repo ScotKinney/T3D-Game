@@ -29,8 +29,8 @@ singleton GameBaseData(Punch1_RH)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0;
-   endDamage = .5;
+   startDamage = 0.35;
+   endDamage = 0.65;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 200;
@@ -115,8 +115,8 @@ singleton GameBaseData(Punch1_LH)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 20;
-   startDamage = 0;
-   endDamage = 5;
+   startDamage = 0.35;
+   endDamage = 0.65;
    //soundDelay = 400;
    //swingSound = PunchComboSound;
    impulse = 200;
@@ -266,11 +266,12 @@ singleton GameBaseData(Kick1_BF)
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 25;
-   startDamage = 0;
-   endDamage = .5;
+   startDamage = 0.5;
+   endDamage = 0.85;
    //soundDelay = 600;
    //swingSound = Kick1Sound;
    impulse = 250;
+   dualAttack = "LeftFootImage";
 };
 
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)

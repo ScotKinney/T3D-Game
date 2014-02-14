@@ -83,7 +83,6 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
    if(%obj.hthStun)
       return;
 
-   // setup the "play once look anim"
    %obj.hthDamageAttack = %attack;
    %obj.hthDamageSeqPlaying = %this;
    %obj.hthDamageStartMS =  $sim::Time;
@@ -129,7 +128,10 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
 function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
 {
    // if damage sequence is not playing then dont do damage
-   if ((%player.hthDamageSeqPlaying != %this) || (%player.getState() $= "Dead"))
+   if ( isObject(%player.hthDamageAttack.dualAttack) )
+      %secondImage = %player.hthDamageAttack.dualAttack.getID();
+   if ( ((%player.hthDamageSeqPlaying != %this) && (%secondImage != %this))
+       || (%player.getState() $= "Dead"))
       return;
 
    // determine if damage is active or if we can say the seq is done playing
