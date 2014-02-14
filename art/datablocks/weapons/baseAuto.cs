@@ -165,7 +165,7 @@ datablock ShapeBaseImageData(XR75Image : BaseAutoImage)
    //stateSequence[3] = "Sequence_Fire";
    stateTimeoutValue[3] = 0.2;
    stateTimeoutValue[5] = 0.2;
-   customLookAnim = "Look_XR75";
+   customLookAnim = "XR75";
 };
 
 //2913.playThread(3, "Look2_XR75");2913.pauseThread(3);

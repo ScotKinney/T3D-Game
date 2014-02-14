@@ -1010,8 +1010,8 @@ function Player::onAnimationTrigger(%this, %obj, %slot)
 
 function PlayerData::onEndSequence(%this, %obj, %slot)
 {
-   if ( %slot == 0 )
-      return;  // Slot 0 is the TapLink animation, don't kill it
+   if ( (%slot == 0) || (%slot == 3) )
+      return;  // Slot 0 is the TapLink animation, 3 is a look anim
    if ( %slot == 2 )
       %obj.setAttackBlend(2, ""); // Slot 2 is for attack blends
    %obj.destroyThread(%slot);

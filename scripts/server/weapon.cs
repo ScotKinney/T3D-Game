@@ -119,10 +119,8 @@ function WeaponImage::onMount(%this,%obj,%slot)
    
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.setHeadVThread(%this.customLookAnim);
-      //%obj.setArmThread(%this.customLookAnim);
-      //%obj.setSwingingArms(false);
-      //%obj.setLookAnimationOverride(false);
+      %obj.playThread(3, %this.customLookAnim);
+      %obj.setThreadTimeScale(3, 0.5);
    }
 }
 
@@ -133,10 +131,7 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
 
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.setHeadVThread("head");
-      //%obj.clearArmThread();
-      //%obj.setSwingingArms(true);
-      //%obj.setLookAnimationOverride(true);
+      %obj.destroyThread(3);
    }
 }
 
@@ -182,8 +177,6 @@ function WeaponImage::startFiring(%this, %obj, %slot, %isWet)
    %this.delayedFire(%obj, %slot);
 }
 
-//2898.playThread(0, "Throw_HamAxeBlend");
-//2898.setArmThreadPlayOnce("Throw_HamAxeBlend");
 // DelayedFire is called from the players onAnimationTrigger callback when 
 // trigger 3 in an animation hits.
 function WeaponImage::delayedFire(%this, %obj, %slot)
@@ -196,14 +189,7 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
       return; // %obj died, before animation trigger was hit, don't fire
 
    // Get the aim vector and release point
-   //if (%obj.isMounted())
-      //%muzzleVector = %obj.getObjectMount().getEyeVector();
-      //%muzzleVector = %obj.getAimVector();
-   //else if ( (%obj.isBot || %obj.client.isFirstPerson()) && !isObject(%obj.driver) )
-   if ( %obj.isBot && !isObject(%obj.driver) )
-      %muzzleVector = %obj.getMuzzleVector(%slot);
-   else
-      %muzzleVector = %obj.getAimVector();
+   %muzzleVector = %obj.getAimVector();
 
    %mp = %obj.getAnimMuzzlePoint(%slot);
    //if ( %this == XR75Image.getId() ) %mp = %obj.getEyePoint(); // Use this for perfect aim with an XR75
