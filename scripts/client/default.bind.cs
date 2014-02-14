@@ -709,9 +709,9 @@ function stepTo(%val)
       if ( isObject(ServerConnection) &&
          ServerConnection.getControlObject().isMethod("getAVCamDistance") )
       {
-         if ( ServerConnection.getControlObject().isMounted() )
-            %camObject = ServerConnection.getControlObject().getControlObject();
-         else
+         //if ( ServerConnection.getControlObject().isMounted() )
+            //%camObject = ServerConnection.getControlObject().getControlObject();
+         //else
             %camObject = ServerConnection.getControlObject();
 
          %distance = %camObject.getAVCamDistance(%distance);
@@ -734,9 +734,9 @@ function stepFro(%val)
       if ( isObject(ServerConnection) &&
          ServerConnection.getControlObject().isMethod("getAVCamDistance") )
       {
-         if ( ServerConnection.getControlObject().isMounted() )
-            %camObject = ServerConnection.getControlObject().getControlObject();
-         else
+         //if ( ServerConnection.getControlObject().isMounted() )
+            //%camObject = ServerConnection.getControlObject().getControlObject();
+         //else
             %camObject = ServerConnection.getControlObject();
 
          %distance = %camObject.getAVCamDistance(%distance);
