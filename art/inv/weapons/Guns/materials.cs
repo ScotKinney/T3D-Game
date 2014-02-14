@@ -47,12 +47,14 @@ new Material(mat_5_56_ammo)
    materialTag0 = "Guns";
 };
 
-singleton Material(XR75_mech_01_5)
+
+
+singleton Material(mat_XR75)
 {
-   mapTo = "mech-01-5";
-   diffuseMap[0] = "art/inv/weapons/Guns/ma5body.dds";
-   materialTag0 = "Weapons";
-   normalMap[0] = "art/inv/weapons/Guns/manormal.dds";
-   specularMap[0] = "art/inv/weapons/Guns/maspec.dds";
+   mapTo = "XR75";
+   diffuseMap[0] = "XR75";
+   normalMap[0] = "XR75_nm.dds";
+   specularMap[0] = "XR75_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Guns";
 };
