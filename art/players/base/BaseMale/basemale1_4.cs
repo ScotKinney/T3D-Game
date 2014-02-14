@@ -242,24 +242,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Magic/M_Staff_Fire.dsq", "M_Staff_Fire", "0", "29", "1", "0");
    %this.addSequence("art/players/base/Seqs/Magic/M_Staff_MagicHelix.dsq", "M_Staff_MagicHelix", "0", "69", "1", "0");
    %this.addSequence("art/players/base/Seqs/Magic/M_Staff_MagicLight.dsq", "M_Staff_MagicLight", "0", "49", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Root.dsq", "H_Root", "0", "102", "1", "0");
-   %this.setSequenceCyclic("H_Root", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "44", "1", "0");
-   %this.setSequenceCyclic("H_WalkTrot", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "33", "1", "0");
-   %this.setSequenceCyclic("H_Gallop", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Damage1.dsq", "H_Damage1", "0", "44", "1", "0");
-   %this.setSequencePriority("H_Damage1", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Death1.dsq", "H_Death1", "0", "44", "1", "0");
-   %this.setSequencePriority("H_Death1", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Melee1.dsq", "H_Melee1", "0", "44", "1", "0");
-   %this.setSequencePriority("H_Melee1", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Melee2.dsq", "H_Melee2", "0", "21", "1", "0");
-   %this.setSequencePriority("H_Melee2", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Thrown1.dsq", "H_Thrown1", "0", "54", "1", "0");
-   %this.setSequencePriority("H_Thrown1", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_WarCry.dsq", "H_WarCry", "0", "49", "1", "0");
-   %this.setSequencePriority("H_WarCry", "1");
    %this.addSequence("art/players/base/Seqs/Mounted/GargSitFull.dsq", "GargSitFull", "0", "597", "1", "0");
    %this.setSequenceCyclic("GargSitFull", "1");
    %this.addSequence("art/players/base/Seqs/Emotes/E_Angry.dsq", "E_Angry", "0", "49", "1", "0");
@@ -341,10 +323,18 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("xr75", "5");
    %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Seqs/Guns/Look2_XR75.dsq", "Look2_XR75", "0", "-1", "1", "0");
-   %this.setSequenceBlend("Look_XR75", 1, "Root", 1);
-   %this.setSequenceBlend("Look2_XR75", 1, "Root", 1);
+   %this.setSequenceBlend("Look_XR75", "1", "Root", "1");
+   %this.setSequenceBlend("Look2_XR75", "1", "Root", "1");
    %this.setSequencePriority("Look_XR75", "5");
    %this.setSequencePriority("Look2_XR75", "5");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "33", "1", "0");
+   %this.setSequenceCyclic("H_Gallop", "1");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Damage1.dsq", "H_Damage1", "0", "33", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Death1.dsq", "H_Death1", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Root.dsq", "H_Root", "0", "102", "1", "0");
+   %this.setSequenceCyclic("H_Root", "1");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "44", "1", "0");
+   %this.setSequenceCyclic("H_WalkTrot", "1");
 }
 
 $mack = true;
