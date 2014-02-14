@@ -119,8 +119,9 @@ function WeaponImage::onMount(%this,%obj,%slot)
    
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.playThread(3, %this.customLookAnim);
-      %obj.setThreadTimeScale(3, 0.5);
+      //%obj.playThread(3, %this.customLookAnim);
+      //%obj.setThreadTimeScale(3, 0.5);
+      %obj.setHeadVThread(%this.customLookAnim);
    }
 }
 
@@ -131,7 +132,8 @@ function WeaponImage::onUnmount(%this, %obj, %slot)
 
    if ( %this.customLookAnim !$= "" )
    {
-      %obj.destroyThread(3);
+      %obj.setHeadVThread("head");
+      //%obj.destroyThread(3);
    }
 }
 
