@@ -295,6 +295,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Emotes/E_Wave.dsq", "E_Wave", "0", "26", "1", "0");
    %this.setSequenceCyclic("E_Wave", "0");
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Cast.dsq", "CastLine", "0", "34", "1", "0");
    %this.addTrigger("CastLine", "19", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Move.dsq", "Castline_Blend", "0", "24", "1", "0");
@@ -319,8 +320,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_HamAxeBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_FireMove.dsq", "B_FireBlend", "0", "49", "1", "0");
    %this.addTrigger("B_FireBlend", "36", "3");
-   %this.addSequence("art/players/base/Seqs/Guns/XR75.dsq", "XR75", "0", "8", "1", "0");
-   %this.setSequencePriority("xr75", "5");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "33", "1", "0");
    %this.setSequenceCyclic("H_Gallop", "1");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Damage1.dsq", "H_Damage1", "0", "33", "1", "0");
