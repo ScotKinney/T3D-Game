@@ -10,14 +10,11 @@ singleton TSShapeConstructor(horseDts)
 
 function horseDts::onLoad(%this)
 {
-   %this.addSequence("./horse_head.dsq", "head", "1", "-1", "1", "0");
+   %this.addSequence("./Anims/h_head.dsq", "head", "1", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
-   %this.addSequence("./horse_headside.dsq", "headside", "1", "24", "1", "0");
+   %this.addSequence("./Anims/h_headside.dsq", "headside", "1", "24", "1", "0");
    %this.setSequencePriority("headside", "5");
-   %this.setNodeTransform("mount0", "1.60779e-005 -0.0816334 1.93761 0.420394 -0.70303 -0.5736 0.0842344", "1");
-   %this.addTrigger("run", "11", "1");
-   %this.addTrigger("run", "21", "2");
-   %this.addTrigger("run2", "1", "1");
+   %this.setNodeTransform("mount0", "1.60779e-005 0.018023 1.90206 0.420608 -0.702901 -0.573602 0.0841749", "1");
    %this.addSequence("./Anims/h_Walk.dsq", "run", "0", "34", "1", "0");
    %this.setSequencePriority("run", "0");
    %this.setSequenceCyclic("run", "1");
@@ -48,12 +45,18 @@ function horseDts::onLoad(%this)
    %this.addSequence("./Anims/h_Walk.dsq", "RunFull_Forward", "0", "34", "1", "0");
    %this.setSequencePriority("RunFull_Forward", "0");
    %this.setSequenceCyclic("RunFull_Forward", "1");
+   %this.addTrigger("RunFull_Forward", "1", "1");
+   %this.addTrigger("RunFull_Forward", "17", "2");
    %this.addSequence("./Anims/h_Trot.dsq", "run2full", "0", "24", "1", "0");
    %this.setSequencePriority("run2full", "0");
    %this.setSequenceCyclic("run2full", "1");
+   %this.addTrigger("Run2Full", "1", "1");
+   %this.addTrigger("Run2Full", "12", "2");
    %this.addSequence("./Anims/h_Gallop.dsq", "run3full", "0", "15", "1", "0");
    %this.setSequencePriority("run3full", "0");
    %this.setSequenceCyclic("run3full", "1");
+   %this.addTrigger("Run3Full", "1", "1");
+   %this.addTrigger("Run3Full", "7", "2");
    %this.addSequence("./Anims/h_Trot.dsq", "swim_forward", "0", "24", "1", "0");
    %this.setSequencePriority("swim_forward", "0");
    %this.setSequenceCyclic("swim_forward", "1");
@@ -69,4 +72,8 @@ function horseDts::onLoad(%this)
    %this.addSequence("./Anims/h_Idle.dsq", "tp", "0", "559", "1", "0");
    %this.setSequencePriority("tp", "0");
    %this.setSequenceCyclic("tp", "1");
+   %this.addTrigger("rearing", "74", "1");
+   %this.addTrigger("standjump", "74", "1");
+   %this.addTrigger("rejectmount", "74", "1");
+   %this.addTrigger("Damage1", "74", "1");
 }
