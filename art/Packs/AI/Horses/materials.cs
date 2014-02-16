@@ -49,3 +49,26 @@ new Material(HorseFootprintMaterial)
    translucentZWrite = "1";
 };
 
+
+singleton Material(mat_horseBrown)
+{
+   mapTo = "Horse_brown_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Horse_brown_dif";
+   normalMap[0] = "art/Packs/AI/Horses/Horse_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Horse_spec.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(mat_HorseMane)
+{
+   mapTo = "mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/mane_dif.png";
+   specularMap[0] = "art/Packs/AI/Horses/mane_opacity.png";
+   useAnisotropic[0] = "1";
+   doubleSided = "0";
+   alphaTest = "1";
+   alphaRef = "127";
+   translucentBlendOp = "Sub";
+   translucent = "1";
+   translucentZWrite = "1";
+};

@@ -66,7 +66,7 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
         behavior = MountBehavior;
       };
       MissionCleanup.add(%horse);
-      %horse.setScale("0.714 0.714 0.714");
+      %horse.setScale("1 1 1");
       %client.horse = %horse;
       %horse.owner = %client;
       %horse.itemDB = %itemDB;
@@ -113,7 +113,7 @@ function ThrowHorse(%user, %horseDB)
         aiPlayer = true;
       };
       MissionCleanup.add(%horse);
-      %horse.setScale("0.714 0.714 0.714");
+      %horse.setScale("1 1 1");
       %horse.setSkinName(%horseDB.skinName);
       %transform = FindHorseSpawn(%user, %horse);
       %horse.setTransform(%transform);

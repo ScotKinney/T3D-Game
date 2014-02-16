@@ -437,7 +437,7 @@ datablock PlayerData(DefaultHorse)
    runForce = 48 * 90;
    runEnergyDrain = 0.0; // RFB -> setting this higher than 0.0 causes AIHorses to skate slowly forward
    minRunEnergy = 0.1;
-   maxForwardSpeed = 25; //20 - Scot
+   maxForwardSpeed = 20; //20 - Scot
    maxBackwardSpeed = 10; 
    maxSideSpeed = 4; // RFB -> horses don't normally strafe
 
@@ -445,7 +445,7 @@ datablock PlayerData(DefaultHorse)
    maxUnderwaterBackwardSpeed = 5.0; 
    maxUnderwaterSideSpeed = 0; // RFB -> horses don't normally strafe
 
-   jumpForce = 20 * 90; //15 - Scot
+   jumpForce = 15 * 90; //15 - Scot
    standJumpForce = 0;
    jumpEnergyDrain = 5.0;
    minJumpEnergy = 2.5;
