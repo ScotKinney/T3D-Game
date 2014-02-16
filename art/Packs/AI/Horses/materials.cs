@@ -53,22 +53,27 @@ new Material(HorseFootprintMaterial)
 singleton Material(mat_horseBrown)
 {
    mapTo = "Horse_brown_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/Horse_brown_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Horse_brown_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Horse_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Horse_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(mat_HorseMane)
 {
    mapTo = "mane_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/mane_dif.png";
-   specularMap[0] = "art/Packs/AI/Horses/mane_opacity.png";
+   diffuseMap[0] = "art/Packs/AI/Horses/mane_black_dif.png";
+   specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
    doubleSided = "0";
-   alphaTest = "1";
+   alphaTest = "0";
    alphaRef = "127";
-   translucentBlendOp = "Sub";
+   translucentBlendOp = "LerpAlpha";
    translucent = "1";
-   translucentZWrite = "1";
+   translucentZWrite = "0";
+   specularPower[0] = "1";
+   specularStrength[0] = "0";
+   pixelSpecular[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
