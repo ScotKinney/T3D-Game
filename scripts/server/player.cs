@@ -63,7 +63,7 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
    %scaleZ = getWord(%vehicle.getScale(), 2);
    %newScale = 0.714 / %scaleZ;
    %obj.setscale(%newScale SPC %newScale SPC %newScale);
-   %obj.setTransform("0 0 0 0 0 1 0");
+   %obj.setTransform("0 0 0 0 0 0 0");//0 0 0 0 0 1 0
 
    if (%node == %vDB.driverNode)
    {
