@@ -538,8 +538,8 @@ datablock PlayerData(DefaultHorse)
    observeParameters = "0.5 4.5 4.5";
 
    // Switch forward animations above these speeds
-   run2Speed = 8.5;  // Above this switch to medium speed animation (trot)
-   run3Speed = 16;   // Above this switch to fast speed animation (gallop)
+   run2Speed = 7;  // Above this switch to medium speed animation (trot)
+   run3Speed = 15;   // Above this switch to fast speed animation (gallop)
 
    mountable = true; // Players can mount this AI
    driverNode = 0;   // The driver mounts to "Mount0"

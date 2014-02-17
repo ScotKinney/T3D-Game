@@ -14,7 +14,7 @@ $DamageLava = 2;
 $DamageHotLava = 10;
 $DamageCrustyLava = 0.4;
 
-$PlayerImpulseScale = 0.3;
+$PlayerImpulseScale = 1;
 
 function PLAYERDATA::onAdd(%this,%obj)
 {
@@ -63,7 +63,7 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
    %scaleZ = getWord(%vehicle.getScale(), 2);
    %newScale = 0.714 / %scaleZ;
    %obj.setscale(%newScale SPC %newScale SPC %newScale);
-   %obj.setTransform("0 0 0 0 0 0 0");//0 0 0 0 0 1 0
+   %obj.setTransform("0 0 0 0 0 1 0");//0 0 0 0 0 1 0
 
    if (%node == %vDB.driverNode)
    {
@@ -283,11 +283,13 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       //%playerVelocity = setWord(%obj.getVelocity(), 2, "0"); // Get x and y component of velocity
       %playerVelocity = %obj.getVelocity();
       %playerVelocity = VectorScale(%playerVelocity, %this.mass * $PlayerImpulseScale); // Scale up for impulse
-      %playerPosition = %obj.getPosition();
+      %playerPosition = %col.getWorldBoxCenter();
       // Player position is at feet so move up to hands
-      %zPos = getWord(%playerPosition, 2) + 1.5;
-      %playerPosition = setWord(%playerPosition, 2, %zPos);
+      //%zPos = getWord(%playerPosition, 2) + 1.5;
+      //%playerPosition = setWord(%playerPosition, 2, %zPos);
       %col.applyImpulse(%playerPosition, %playerVelocity);
+      if ( %obj.isBot )
+         %obj.sideStep(%obj);
       return;
    }
 
@@ -335,6 +337,8 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
          %col.mountObject(%obj,%node,"0 0 0");//0 .35 -.1
       }
    }
+   else if ( %obj.isBot )
+      %obj.sideStep(%obj);
 }
 
 function PLAYERDATA::onImpact(%this, %obj, %collidedObject, %vec, %vecLen)
@@ -691,6 +695,8 @@ function PLAYERDATA::playDamage(%this, %obj, %pos)
    {
       if ( %this.numDamageAnims > 1 )
          %animNum = getRandom(1, %this.numDamageAnims);
+      else
+         %animNum = 1;
       %animName = "damage";
    }
 

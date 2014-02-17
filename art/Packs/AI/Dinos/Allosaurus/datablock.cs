@@ -39,10 +39,11 @@ datablock PlayerData(Allosaurus : DefaultPlayerData)
    Weapon = "Allo_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 7;
-   minRange = 5;
+   maxRange = 6;
+   minRange = 3;
    distDetect = 100;
-   sidestepDist = 2;
+   sidestepDist = 10;
+   moveTolerance = 2;
    paceDist = 20;
    npcAction = 0;
    spawnGroup = 1;
@@ -50,7 +51,7 @@ datablock PlayerData(Allosaurus : DefaultPlayerData)
    leash = 35;
    cycleCounter = "5";
    weaponMode = "pattern";
-   activeDodge = 1;
+   activeDodge = 0;
    team = 1;
    respawnTime = 60000; // 60 * 1000, 60 seconds.
    deathEffectron = "";

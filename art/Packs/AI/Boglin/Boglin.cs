@@ -8,20 +8,20 @@ function BoglinDts::onLoad(%this)
 {
    %this.renameNode("Bip01_Rhand_Weapon", "mount0");
    %this.renameNode("Bip01_shield_mount", "mount2");
-   %this.addSequence("./Boglin_root.dsq", "Root", "0", "-1", "1", "0");
+   %this.addSequence("./Boglin_root.dsq", "Plain_Root", "0", "-1", "1", "0");
+   %this.addSequence("./Boglin_RootCombat.dsq", "Root", "0", "58", "1", "0");
    %this.setSequenceCyclic("Root", "1");
-   %this.addSequence("./Boglin_RootCombat.dsq", "Combat_Root", "0", "58", "1", "0");
-   %this.setSequenceCyclic("Combat_Root", "1");
-   %this.addSequence("./Boglin_Run.dsq", "Run", "0", "50", "1", "0");
-   %this.setSequenceCyclic("Run", "1");
-   %this.addTrigger("Run", "25", "1");
-   %this.addTrigger("Run", "10", "2");
-   %this.addSequence("./Boglin_Sprint.dsq", "Sprint", "0", "35", "1", "0");
-   %this.setSequenceCyclic("Sprint", "1");
-   %this.addTrigger("Sprint", "0", "1");
-   %this.addTrigger("Sprint", "12", "2");
-   %this.addSequence("./Boglin_Jump.dsq", "Jump_Stand", "0", "22", "1", "0");
-   %this.addSequence("./Boglin_RunJump.dsq", "Jump_Run", "0", "22", "1", "0");
+   %this.setSequenceCyclic("Plain_Root", "1");
+   %this.addSequence("./Boglin_Run.dsq", "Walk", "0", "50", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addTrigger("Walk", "25", "1");
+   %this.addTrigger("Walk", "10", "2");
+   %this.addSequence("./Boglin_Sprint.dsq", "Run2", "0", "35", "1", "0");
+   %this.setSequenceCyclic("Run2", "1");
+   %this.addTrigger("Run2", "0", "1");
+   %this.addTrigger("Run2", "12", "2");
+   %this.addSequence("./Boglin_Jump.dsq", "Stand_Jump", "0", "22", "1", "0");
+   %this.addSequence("./Boglin_RunJump.dsq", "Move_Jump", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Anger.dsq", "Anger", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Block1.dsq", "Shield_Block1", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Block2.dsq", "Shield_Block2", "0", "22", "1", "0");
@@ -40,7 +40,7 @@ function BoglinDts::onLoad(%this)
    %this.addSequence("./Boglin_Stretching.dsq", "Stretching", "0", "50", "1", "0");
    %this.addSequence("./Boglin_Talking.dsq", "Talking", "0", "22", "1", "0");
    %this.addSequence("./Boglin_Tracking.dsq", "Tracking", "0", "22", "1", "0");
-   %this.addSequence("./Boglin_Death.dsq", "Death", "0", "22", "1", "0");
+   %this.addSequence("./Boglin_Death.dsq", "Death1", "0", "22", "1", "0");
    %this.addSequence("./Boglin_StrafeLeft.dsq", "Strafe_Left", "0", "35", "1", "0");
    %this.setSequenceCyclic("Strafe_Left", "1");
    %this.addTrigger("Strafe_Left", "13", "1");
@@ -57,4 +57,6 @@ function BoglinDts::onLoad(%this)
    %this.setSequenceCyclic("Strafe_Right", "1");
    %this.addTrigger("Strafe_Right", "11", "1");
    %this.addTrigger("Strafe_Right", "17", "2");
+   %this.setSequenceGroundSpeed("Walk", "0 1 0"); //try at maximum forward speed to start.
+   %this.setSequenceGroundSpeed("run2", "0 2 0"); //adjust by watching the AI run
 }

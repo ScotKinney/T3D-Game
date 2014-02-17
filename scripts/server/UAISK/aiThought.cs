@@ -247,10 +247,10 @@ function AIPlayer::Think(%this, %obj)
          else
          {
             %this.moveDestinationA = %obj.returningPos;
-            %basedist = VectorDistSquared(%obj.getposition(), %this.moveDestinationA);
+            %basedist = VectorXYDistSquared(%obj.getEyePoint(), %this.moveDestinationA);
 
             //Check if the bot is already close enough to its return position
-            if (%basedist > 1.0)
+            if (%basedist > (%this.mMoveTolerance * %this.mMoveTolerance))
                %this.movementPositionFilter(%obj);
 
             %this.ailoop = %this.schedule($AISK_SCAN_TIME * %obj.attentionlevel, "Think", %obj);
@@ -278,9 +278,9 @@ function AIPlayer::Think(%this, %obj)
          //This gets a value depicting the distance from the bots last known move point
          %movedist = VectorDistSquared(%obj.getposition(), %obj.oldpos);
 
-         //If the bot hasn't moved more than 1 unit we're probably stuck.
+         //If the bot hasn't moved more than 1/4 unit we're probably stuck.
          //Remember - this is only checked for while returning - not guarding
-         if (%movedist < 1.0 && !%obj.nextNode)
+         if (%movedist < 0.25 && !%obj.nextNode)
          {
             //Set our holdcnt to 1 less than the maximum so we only hold for 1 cycle
             %obj.holdcnt = $AISK_HOLDCNT_MAX;

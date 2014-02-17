@@ -308,9 +308,16 @@ function doCrouch(%val)
    if (%val && (($mvTriggerCount3 % 2) == 0))
       $mvTriggerCount3++;
 }
-
-//moveMap.bind(keyboard, x, doCrouch);
+moveMap.bind(keyboard, g, doCrouch);
 moveMap.bind(gamepad, btn_b, doCrouch);
+
+function doProne(%val)
+{
+   $mvTriggerCount4++;
+   if (%val && (($mvTriggerCount4 % 2) == 0))
+      $mvTriggerCount4++;
+}
+moveMap.bind(keyboard, h, doProne);
 
 //------------------------------------------------------------------------------
 // Gamepad Trigger
@@ -603,7 +610,7 @@ function toggleHudCurtain(%val)
       $CurtainManager::renderGui = true;
    }
 }
-moveMap.bindCmd(keyboard, "h", "toggleHudCurtain();", "");
+moveMap.bindCmd(keyboard, "ctrl h", "toggleHudCurtain();", "");
 
 // mouse cursor toggle by right mouse button
 globalActionMap.bind( mouse, button1, toggleCursor );

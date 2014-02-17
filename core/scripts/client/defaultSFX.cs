@@ -72,3 +72,10 @@ singleton SFXProfile(FootLightUnderwaterSound)
    description = AudioClosest3d;
    preload = false;
 };
+
+singleton SFXProfile(ExitingWaterSound)
+{
+   filename    = "art/sound/waterout";
+   description = AudioClosest3d;
+   preload = false;
+};

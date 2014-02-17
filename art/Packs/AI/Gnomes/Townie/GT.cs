@@ -8,18 +8,18 @@ function GTDts::onLoad(%this)
 {
    %this.addSequence("./GT_CombatRoot.dsq", "Root", "0", "50", "1", "0");
    %this.setSequenceCyclic("Root", "1");   
-   %this.addSequence("./GT_Run.dsq", "run", "0", "22", "1", "0");
-   %this.setSequenceCyclic("run", "1");
-   %this.addSequence("./GT_Back.dsq", "back", "0", "22", "1", "0");
-   %this.setSequenceCyclic("back", "1");
-   %this.addSequence("./GT_CombatSprint.dsq", "Sprint", "0", "19", "1", "0");
-   %this.setSequenceCyclic("Sprint", "1");
+   %this.addSequence("./GT_Run.dsq", "Walk", "0", "22", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addSequence("./GT_Back.dsq", "Walk_Back", "0", "22", "1", "0");
+   %this.setSequenceCyclic("Walk_Back", "1");
+   %this.addSequence("./GT_CombatSprint.dsq", "Run2", "0", "19", "1", "0");
+   %this.setSequenceCyclic("Run2", "1");
    %this.addSequence("./GT_StrafeLeft.dsq", "StrafeLeft", "0", "19", "1", "0");
    %this.setSequenceCyclic("StrafeLeft", "1");
    %this.addSequence("./GT_StrafeRight.dsq", "StrafeRight", "0", "19", "1", "0");
    %this.setSequenceCyclic("StrafeRight", "1");
-   %this.addSequence("./GT_JumpStanding.dsq", "JumpStanding", "0", "19", "1", "0");
-   %this.addSequence("./GT_JumpRunning.dsq", "JumpRunning", "0", "19", "1", "0");
+   %this.addSequence("./GT_JumpStanding.dsq", "Stand_Jump", "0", "19", "1", "0");
+   %this.addSequence("./GT_JumpRunning.dsq", "Move_Jump", "0", "19", "1", "0");
    %this.addSequence("./GT_Swim.dsq", "Swim", "0", "19", "1", "0");
    %this.setSequenceCyclic("Swim", "1");
    %this.addSequence("./GT_Fall.dsq", "Fall", "0", "19", "1", "0");
@@ -44,10 +44,10 @@ function GTDts::onLoad(%this)
    %this.addSequence("./GT_Death2.dsq", "Death2", "0", "19", "1", "0");
    %this.addSequence("./GT_Death3.dsq", "Death3", "0", "19", "1", "0");
    %this.addSequence("./GT_Death4.dsq", "Death4", "0", "17", "1", "0");
-   %this.addTrigger("Run", "39", "1");
-   %this.addTrigger("Run", "20", "2");
-   %this.addTrigger("Sprint", "17", "1");
-   %this.addTrigger("Sprint", "7", "2");
-   %this.addTrigger("Back", "7", "1");
-   %this.addTrigger("Back", "18", "2");
+   %this.addTrigger("Walk", "39", "1");
+   %this.addTrigger("Walk", "20", "2");
+   %this.addTrigger("Run2", "17", "1");
+   %this.addTrigger("Run2", "7", "2");
+   %this.addTrigger("Walk_Back", "7", "1");
+   %this.addTrigger("Walk_Back", "18", "2");
 }

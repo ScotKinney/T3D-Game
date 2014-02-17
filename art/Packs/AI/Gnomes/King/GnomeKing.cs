@@ -8,12 +8,12 @@ function GnomeKingDts::onLoad(%this)
 {
    %this.addSequence("./GK_Root.dsq", "Root", "0", "39", "1", "0");
    %this.setSequenceCyclic("Root", "1");
-   %this.addSequence("./GK_CombatRun.dsq", "Run", "0", "74", "1", "0");
-   %this.setSequenceCyclic("Run", "1");
-   %this.addSequence("./GK_CombatSprint.dsq", "Sprint", "0", "39", "1", "0");
-   %this.setSequenceCyclic("Sprint", "1");
-   %this.addSequence("./GK_Back.dsq", "Back", "0", "21", "1", "0");
-   %this.setSequenceCyclic("Back", "1");
+   %this.addSequence("./GK_CombatRun.dsq", "Walk", "0", "74", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addSequence("./GK_CombatSprint.dsq", "Run2", "0", "39", "1", "0");
+   %this.setSequenceCyclic("Run2", "1");
+   %this.addSequence("./GK_Back.dsq", "Walk_Back", "0", "21", "1", "0");
+   %this.setSequenceCyclic("Walk_Back", "1");
    %this.addSequence("./GK_WalkLeft.dsq", "StrafeLeft", "0", "21", "1", "0");
    %this.setSequenceCyclic("StrafeLeft", "1");
    %this.addTrigger("StrafeLeft", "4", "1");
@@ -22,8 +22,8 @@ function GnomeKingDts::onLoad(%this)
    %this.setSequenceCyclic("StrafeRight", "1");
    %this.addTrigger("StrafeRight", "13", "1");
    %this.addTrigger("StrafeRight", "7", "2");
-   %this.addSequence("./GK_JumpStanding.dsq", "JumpStanding", "0", "21", "1", "0");
-   %this.addSequence("./GK_JumpRunning.dsq", "JumpRunning", "0", "21", "1", "0");
+   %this.addSequence("./GK_JumpStanding.dsq", "Stand_Jump", "0", "21", "1", "0");
+   %this.addSequence("./GK_JumpRunning.dsq", "Move_Jump", "0", "21", "1", "0");
    %this.addSequence("./GK_Swimming.dsq", "Swim", "0", "21", "1", "0");
    %this.setSequenceCyclic("Swim", "1");
    %this.addSequence("./GK_Damage1.dsq", "Damage1", "0", "21", "1", "0");
@@ -54,12 +54,12 @@ function GnomeKingDts::onLoad(%this)
    %this.addSequence("./GK_Death2.dsq", "Death2", "0", "17", "1", "0");
    %this.addSequence("./GK_Death3.dsq", "Death3", "0", "17", "1", "0");
    %this.addSequence("./GK_Death4.dsq", "Death4", "0", "17", "1", "0");
-   %this.addTrigger("Run", "39", "1");
-   %this.addTrigger("Run", "20", "2");
-   %this.addTrigger("Sprint", "17", "1");
-   %this.addTrigger("Sprint", "7", "2");
-   %this.addTrigger("Back", "7", "1");
-   %this.addTrigger("Back", "18", "2");
+   %this.addTrigger("Walk", "39", "1");
+   %this.addTrigger("Walk", "20", "2");
+   %this.addTrigger("Run2", "17", "1");
+   %this.addTrigger("Run2", "7", "2");
+   %this.addTrigger("Walk_Back", "7", "1");
+   %this.addTrigger("Walk_Back", "18", "2");
    %this.renameNode("GP_staff", "mount0");
    %this.addSequence("./GK_CombatmodeB.dsq", "CombatRoot", "0", "74", "1", "0");
    %this.setSequenceCyclic("CombatRoot", "1");

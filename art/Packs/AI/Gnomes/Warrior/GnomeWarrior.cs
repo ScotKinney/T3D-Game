@@ -8,21 +8,21 @@ function GnomeWarriorDts::onLoad(%this)
 {
    %this.addSequence("./W_CombatRoot.dsq", "Root", "0", "35", "1", "0");
    %this.setSequenceCyclic("Root", "1");
-   %this.addSequence("./W_CombatSprint.dsq", "Sprint", "0", "35", "1", "0");
-   %this.setSequenceCyclic("Sprint", "1");
-   %this.addSequence("./GW_Back.dsq", "Back", "0", "26", "1", "0");
-   %this.setSequenceCyclic("Back", "1");
+   %this.addSequence("./W_CombatSprint.dsq", "Run2", "0", "35", "1", "0");
+   %this.setSequenceCyclic("Run2", "1");
+   %this.addSequence("./GW_Back.dsq", "Walk_Back", "0", "26", "1", "0");
+   %this.setSequenceCyclic("Walk_Back", "1");
    %this.addSequence("./W_StrafeLeft.dsq", "StrafeLeft", "0", "26", "1", "0");
    %this.setSequenceCyclic("StrafeLeft", "1");
    %this.addSequence("./W_StrafeRight.dsq", "StrafeRight", "0", "26", "1", "0");
    %this.setSequenceCyclic("StrafeRight", "1");
-   %this.addSequence("./W_JumpStanding.dsq", "JumpStanding", "0", "26", "1", "0");
-   %this.addSequence("./W_JumpRunning.dsq", "JumpRunning", "0", "26", "1", "0");
+   %this.addSequence("./W_JumpStanding.dsq", "Stand_Jump", "0", "26", "1", "0");
+   %this.addSequence("./W_JumpRunning.dsq", "Move_Jump", "0", "26", "1", "0");
    %this.addSequence("./GW_Falling.dsq", "Fall", "0", "26", "1", "0");
    %this.setSequenceCyclic("Fall", "1");
-   %this.addSequence("./W_CombatWalk.dsq", "Run", "0", "26", "1", "0");
-   %this.setSequencePriority("Run", "1");
-   %this.setSequenceCyclic("Run", "1");
+   %this.addSequence("./W_CombatWalk.dsq", "Walk", "0", "26", "1", "0");
+   %this.setSequencePriority("Walk", "1");
+   %this.setSequenceCyclic("Walk", "1");
    %this.addSequence("./GW_Swimming.dsq", "Swim", "0", "26", "1", "0");
    %this.setSequenceCyclic("Swim", "1");
    %this.addSequence("./W_BangingShield.dsq", "BangingShield", "0", "26", "1", "0");
@@ -53,8 +53,8 @@ function GnomeWarriorDts::onLoad(%this)
    %this.addSequence("./W_Death2.dsq", "Death2", "0", "19", "1", "0");
    %this.addSequence("./W_Death3.dsq", "Death3", "0", "19", "1", "0");
    %this.addSequence("./W_Death4.dsq", "Death4", "0", "17", "1", "0");
-   %this.addTrigger("Back", "7", "1");
-   %this.addTrigger("Back", "18", "2");
+   %this.addTrigger("Walk_Back", "7", "1");
+   %this.addTrigger("Walk_Back", "18", "2");
    %this.renameNode("GW_axe", "mount0");
    %this.renameNode("GW_shield", "mount2");
 }

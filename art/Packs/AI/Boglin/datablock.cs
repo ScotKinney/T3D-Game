@@ -116,6 +116,7 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    maxForwardSpeed = 2;
    maxBackwardSpeed = 2;
    maxSideSpeed = 1;
+   run2Speed = 1;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -145,8 +146,6 @@ datablock PlayerData(Boglin : DefaultPlayerData)
 
    //Death Cry
    DeathSound = BoglinDeathCry;
-   //PainSound = BoglinPainCry;
-   PainSound = "";
    
    numPainSounds = 6;
    PainSound[0] = BoglinHit1;
@@ -166,8 +165,8 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    numDeathAnims = 1;
    numDamageAnims = 2;
 
-   boundingBox = "2 2 3";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "0.8 0.8 1.5";
+   swimBoundingBox = "0.8 0.8 1.5";
 
    // Foot Prints
    decalData   = PlayerFootprint;
@@ -177,6 +176,11 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    runSurfaceAngle  = 60;
    jumpSurfaceAngle = 60;
    maxStepHeight = 2;  //This get's multiplied by scale and boglins are 1 scale
+
+   // Add the shield to the left hand ("Mount1")
+   equipmentSlots = 1;
+   eqShape[0] = "art/Packs/AI/Boglin/BoglinShield.dts";
+   eqNode[0] = "mount2";
 };
 
 datablock PlayerData(BoglinBig : Boglin)
