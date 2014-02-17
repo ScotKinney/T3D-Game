@@ -107,6 +107,7 @@ function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
       if ( (%vehicle.owner == %obj.client) && (%vehicle.owner !$= "") )
       {  // Set a timer to free the mount if it is unattended too long
          %vehicle.FreeSchedule = %vehicle.schedule($Horse::StableDelay, "SetHorseFree");
+         %vehicle.stop();
       }
       else if ( %vehicle.behavior.isAggressive )
          %vehicle.ailoop = %vehicle.schedule($AISK_QUICK_THINK, "Think", %vehicle);
