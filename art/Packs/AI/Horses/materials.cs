@@ -50,30 +50,33 @@ new Material(HorseFootprintMaterial)
 };
 
 
-singleton Material(mat_horseBrown)
+
+
+singleton Material(Bay_Horse)
 {
-   mapTo = "Horse_brown_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/Horse_brown_dif.dds";
-   normalMap[0] = "art/Packs/AI/Horses/Horse_nm.dds";
-   specularMap[0] = "art/Packs/AI/Horses/Horse_spec.dds";
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Bay_Body_dif";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Miscellaneous";
 };
 
-singleton Material(mat_HorseMane)
+singleton Material(Black_Mane)
 {
-   mapTo = "mane_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/mane_black_dif.png";
+   mapTo = "Black_Mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Black_Mane_dif";
    specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
-   doubleSided = "0";
-   alphaTest = "0";
-   alphaRef = "127";
-   translucentBlendOp = "LerpAlpha";
    translucent = "1";
-   translucentZWrite = "0";
-   specularPower[0] = "1";
-   specularStrength[0] = "0";
-   pixelSpecular[0] = "1";
-   materialTag0 = "Miscellaneous";
+   translucentZWrite = "1";
+   alphaRef = "20";
+};
+
+singleton Material(Armor_Horse)
+{
+   mapTo = "Horse_armor_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Horse_armor_dif";
+   normalMap[0] = "art/Packs/AI/Horses/Horse_armor_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Horse_armor_spec.dds";
+   useAnisotropic[0] = "1";
 };
