@@ -24,6 +24,9 @@ function horseDts::onLoad(%this)
    %this.addSequence("./Anims/h_Rear.dsq", "rejectmount", "0", "85", "1", "0");
    %this.setSequencePriority("rejectmount", "0");
    %this.addTrigger("rejectmount", "74", "1");
+   %this.addSequence("./Anims/h_Rear.dsq", "rearing", "0", "85", "1", "0");
+   %this.setSequencePriority("rejectmount", "0");
+   %this.addTrigger("rejectmount", "74", "1");
    %this.addSequence("./Anims/h_Death.dsq", "Death1", "0", "26", "1", "0");
    %this.addSequence("./Anims/h_Rear.dsq", "Damage1", "0", "85", "1", "0");
    %this.setSequencePriority("Damage1", "0");
