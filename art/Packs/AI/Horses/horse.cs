@@ -10,11 +10,12 @@ singleton TSShapeConstructor(horseDts)
 
 function horseDts::onLoad(%this)
 {
+   %this.setNodeTransform("mount0", "1.60779e-005 -0.0134457 1.66559 0.420608 -0.702901 -0.573602 0.0841749", "1");
+   %this.setNodeTransform("mount5", "1.8219e-005 -0.398725 1.72344 0.155075 0.0423482 0.986995 0.0214289", "1");
    %this.addSequence("./Anims/h_head.dsq", "head", "1", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
    %this.addSequence("./Anims/h_headside.dsq", "headside", "1", "24", "1", "0");
    %this.setSequencePriority("headside", "5");
-   %this.setNodeTransform("mount0", "1.60779e-005 0.018023 1.90206 0.420608 -0.702901 -0.573602 0.0841749", "1");
    %this.addSequence("./Anims/h_Walk.dsq", "run", "0", "34", "1", "0");
    %this.setSequencePriority("run", "0");
    %this.setSequenceCyclic("run", "1");
