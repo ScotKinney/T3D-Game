@@ -267,11 +267,11 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
    decalOffset = 0.22;
    
    //DefaultSetup = "55,59,237,35,313,320,378,306,309"; //"55,59,50,35,279,282,285"; //"55,59,35,20,65,63,70,77";
-   DefaultSetup = "55,59,50,35,279,282,285";//"55,59,35,20,65,63,70,77";
+   DefaultSetup = "55,59,50,35,279,282";//"55,59,35,20,65,63,70,77";
    DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
-   DefaultSetup[Sparta] = "55,59,35,242,6,269,13";
+   DefaultSetup[Sparta] = "55,59,35,242,6,269";
    DefaultSetup[Mythriel] = "55,59,298,35,294,295,291";
-   DefaultSetup[Viken] = "55,59,50,35,279,282,285";
+   DefaultSetup[Viken] = "55,59,50,35,279,282";
    DefaultSetup[Maya] = "55,59,237,35,313,320,306,309";
 
    numDeathAnims = 17;
