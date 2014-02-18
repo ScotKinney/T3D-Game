@@ -148,7 +148,7 @@ function FindHorseSpawn(%user, %horse)
    {
       %useTrans = %trans;
       %vec[%i] = MatrixMulVector( %user.getTransform(), %vec[%i]);
-      %pos = VectorAdd(%oldPos, VectorScale(%vec[%i], 4));
+      %pos = VectorAdd(%oldPos, VectorScale(%vec[%i], 3));
       if (%horse.checkSpawnTrans(%pos SPC %useTrans))
       {
          %success = true;
@@ -178,11 +178,17 @@ function Steed::handleBotDeath(%this, %obj)
    {
       messageClient(%obj.owner, 'InventoryMsg', "", "petDie", %obj.itemDB.ItemID, "a", true, true, 0);      if ( %obj.owner.horse == %obj )
          %obj.owner.horse = "";
-      if ( isObject(%obj.owner.player) )
-         %obj.owner.player.decInventory(%obj.itemDB,1);
+      %obj.owner.getControlObject().decInventory(%obj.itemDB,1);
       %obj.owner = "";
    }
 
+}
+
+//----------------------------------------------------------------------------
+function Steed::onPlayerJump(%this, %obj, %isStandJump)
+{
+   if ( %isStandJump )
+      %obj.playAudio(0, SteedRearCrySound);   
 }
 
 //----------------------------------------------------------------------------

@@ -540,6 +540,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
       %player.setshapename("");
       %player.setClanName("Buy");
       %player.buyable = true;
+      %player.showBaseNMeshes(); // Take off the saddle, armor and reigns
    }
    //echo("Player = " @ %player @ ", clan = " @ %player.getClanName());
 

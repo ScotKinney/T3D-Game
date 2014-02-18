@@ -457,8 +457,8 @@ datablock PlayerData(DefaultHorse)
    minImpactSpeed = 15;
    speedDamageScale = 0.9;
 
-   boundingBox = "2.0 3.25 3.5";
-   swimBoundingBox = "2.0 3.25 3.5";
+   boundingBox = "0.8 2.4 2.1";
+   swimBoundingBox = "0.8 2.4 2.1";
    pickupRadius = 0.75;
    
    // Damage location details

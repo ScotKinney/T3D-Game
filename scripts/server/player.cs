@@ -599,6 +599,8 @@ function PLAYERDATA::onDisabled(%this,%obj,%state)
          echo("Failed to create new Item...");
    }
    //epls end
+   if ( %obj.isMounted() )
+      %obj.getDatablock().doDismount(%obj, true);
    %obj.playDeathCry();
    %obj.playDeathAnimation();
    //%obj.setDamageFlash(0.75);
