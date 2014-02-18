@@ -93,7 +93,7 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
 
 function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
 {
-   if ( !isObject(%vehicle) )
+   if ( !isObject(%vehicle) || !$missionRunning )
       return;
 
    %obj.setscale(".714 .714 .714"); // Restore the players scale
@@ -107,7 +107,6 @@ function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
       if ( (%vehicle.owner == %obj.client) && (%vehicle.owner !$= "") )
       {  // Set a timer to free the mount if it is unattended too long
          %vehicle.FreeSchedule = %vehicle.schedule($Horse::StableDelay, "SetHorseFree");
-         %vehicle.stop();
       }
       else if ( %vehicle.behavior.isAggressive )
          %vehicle.ailoop = %vehicle.schedule($AISK_QUICK_THINK, "Think", %vehicle);
@@ -289,7 +288,7 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       //%zPos = getWord(%playerPosition, 2) + 1.5;
       //%playerPosition = setWord(%playerPosition, 2, %zPos);
       %col.applyImpulse(%playerPosition, %playerVelocity);
-      if ( %obj.isBot )
+      if ( %obj.isBot && !isObject(%obj.owner) )
          %obj.sideStep(%obj);
       return;
    }
@@ -338,7 +337,7 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
          %col.mountObject(%obj,%node,"0 0 0");//0 .35 -.1
       }
    }
-   else if ( %obj.isBot )
+   else if ( %obj.isBot && !isObject(%obj.owner) )
       %obj.sideStep(%obj);
 }
 

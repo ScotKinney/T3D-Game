@@ -79,6 +79,7 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       //%horse.startFade(0, 0, true);
       %horse.respawn = false;
       %horse.mountable = true;
+      %horse.newlyAdded = false;
       // Set a timer to free the horse if it is unattended too long
       %horse.FreeSchedule = %horse.schedule($Horse::StableDelay, "SetHorseFree");
 
@@ -133,9 +134,9 @@ function FindHorseSpawn(%user, %horse)
    %pos = getWords(%user.getTransform(), 0, 2);
    %trans = getWords(%user.getTransform(), 3, 6);
    %oldPos = %pos;
-   %vec[0] = " .5 .5 1";
-   %vec[1] = " -1 .5 1";
-   %vec[2] = " 0 1 1";
+   %vec[0] = " .5 .5 .25";
+   %vec[1] = " -1 .5 .25";
+   %vec[2] = " 0 1 .5";
    %vec[3] = " .75 0 0";
    %vec[4] = "-.75 0 0";
 
@@ -147,7 +148,7 @@ function FindHorseSpawn(%user, %horse)
    {
       %useTrans = %trans;
       %vec[%i] = MatrixMulVector( %user.getTransform(), %vec[%i]);
-      %pos = VectorAdd(%oldPos, VectorScale(%vec[%i], 3));
+      %pos = VectorAdd(%oldPos, VectorScale(%vec[%i], 4));
       if (%horse.checkSpawnTrans(%pos SPC %useTrans))
       {
          %success = true;

@@ -657,7 +657,6 @@ function GameCore::preparePlayer(%game, %client)
          %health = %maxDamage;
       %damageLevel = %maxDamage - %health;
       %client.player.setDamageLevel(%damageLevel);
-      %client.player.newlyAdded = false;
    }
    
    // Set the players starting equipment/inventory
