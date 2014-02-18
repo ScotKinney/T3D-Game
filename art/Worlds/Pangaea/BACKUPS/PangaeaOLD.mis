@@ -24,10 +24,10 @@ new SimGroup(MissionGroup) {
          canBringHorses = "1";
          canTeleport = "1";
          desc0 = " ";
-         displayName = "Pangaea";
+         displayName = "Pangaea OLD";
          enabled = "1";
          hasTreasury = "0";
-         levelName = "Pangaea";
+         levelName = "Pangaea OLD";
    };
    new SimGroup(PlayerDropPoints) {
       canSave = "1";

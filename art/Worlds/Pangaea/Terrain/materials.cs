@@ -1,26 +1,35 @@
 
 //////////Footstep Sounds/////////////////////////////
 
-singleton Material(Ter_Grass)   
+singleton Material(Ter_SeaweedMain)   
 {   
-   mapTo = "groundCoverDetail3";   
+   mapTo = "Terra_048A";   
   customFootstepSound = FootStepGrass1Sound;
   
 };
  
-singleton Material(Ter_RockTop)
+singleton Material(Ter_GrayRockFar)
 {
-   mapTo = "rockfromabovebrown";
+   mapTo = "rock01a";
    customFootstepSound = FootStepSand1Sound;
 
 };
 
-singleton Material(Ter_DarkDirt)
+singleton Material(Ter_soil_02)
 {
    mapTo = "soil_02";
    customFootstepSound = FootStepSand1Sound;
 
 };
+
+singleton Material(Ter_CliffColor2)
+{
+   mapTo = "3TD_Crevice_01";
+   customFootstepSound = FootStepRock1Sound;
+
+};
+
+
 
 //////////////////Textures////////////////////
 
@@ -38,40 +47,14 @@ new TerrainMaterial()
    diffuseSize = "100";
 };
 
-// GrayRockNear Terrain
-
 
 new TerrainMaterial()
 {
-   internalName = "GrayRockNear";
-   diffuseMap = "art/Worlds/Pangaea/Terrain/rock01a";
-   detailMap = "art/Worlds/Pangaea/Terrain/rock01";   
-   detailSize = "25";
-   isManaged = "1";
-   detailBrightness = "1";
-   Enabled = "1";
-   diffuseSize = "512";
-   normalMap = "art/Worlds/Pangaea/Terrain/rock01_NRM2a";
-   detailDistance = "400";
-   parallaxScale = "0.05";
-   useSideProjection = "0";
-   detailStrength = "1";
-   macroMap = "art/Worlds/Pangaea/Terrain/rock01";
-   macroSize = "256";
-   macroDistance = "800";
-};
-
-
-//Grayrockfar Terrain
-
-
-new TerrainMaterial()
-{
+   internalName = "SeaweedMain";
    diffuseSize = "256";
    detailSize = "12";
    detailDistance = "400";
    useSideProjection = "0";
-   internalName = "SeaweedMain";
    detailStrength = "0.5";
    parallaxScale = "0.02";
    macroSize = "50";
@@ -82,28 +65,9 @@ new TerrainMaterial()
    normalMap = "art/Worlds/Pangaea/Terrain/Terra_048A_NRM";
 };
 
-//SeaweedMain Terrain
-
 new TerrainMaterial()
 {
-   diffuseMap = "art/Worlds/Pangaea/Terrain/Terra_048A";
-   normalMap = "art/Worlds/Pangaea/Terrain/Terra_048A_NRM";
-   detailMap = "art/Worlds/Pangaea/Terrain/Terra_048A";
-   detailSize = "8";
-   detailStrength = "1";
-   detailDistance = "400";
-   parallaxScale = "0.02";
-   internalName = "SeaweedMain";
-   diffuseSize = "100";
-   macroMap = "art/Worlds/Pangaea/Terrain/Terra_048A";
-   macroSize = "50";
-};
-
-
-
-
-new TerrainMaterial()
-{
+   internalName = "GrayRockFar";   
    diffuseMap = "art/Worlds/Pangaea/Terrain/rock01a";
    diffuseSize = "150";
    normalMap = "art/Worlds/Pangaea/Terrain/rock01_NRM2a";
@@ -116,11 +80,11 @@ new TerrainMaterial()
    macroStrength = "0.8";
    macroDistance = "4000";
    parallaxScale = "0.5";
-   internalName = "GrayRockFar";
 };
 
 new TerrainMaterial()
 {
+   internalName = "SlopeTalus";
    diffuseMap = "art/Worlds/Pangaea/Terrain/soil_02";
    diffuseSize = "256";
    normalMap = "art/Worlds/Pangaea/Terrain/3TD_Talus_01_NRM";
@@ -128,18 +92,17 @@ new TerrainMaterial()
    detailSize = "8";
    detailDistance = "400";
    parallaxScale = "0.05";
-   internalName = "SlopeTalus";
    detailStrength = "0.5";
    useSideProjection = "0";
 };
 
 new TerrainMaterial()
 {
+   internalName = "CliffColor2";
    diffuseMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01";
    normalMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01_NRM";
    detailMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01_DET";
    parallaxScale = "0.05";
-   internalName = "CliffColor2";
    diffuseSize = "500";
    detailSize = "25";
    detailStrength = "0.7";
@@ -149,9 +112,9 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
+   internalName = "TrailMat";
    diffuseMap = "art/Worlds/Pangaea/Terrain/3TD_Gravel_005";
    normalMap = "art/Worlds/Pangaea/Terrain/3TD_Talus_01_NRM";
    detailMap = "art/Worlds/Pangaea/Terrain/3TD_Gravel_005";
    parallaxScale = "0.02";
-   internalName = "TrailMat";
 };
