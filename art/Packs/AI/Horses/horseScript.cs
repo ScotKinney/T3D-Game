@@ -74,7 +74,7 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       %transform = FindHorseSpawn(%user, %horse);
       %horse.setTransform(%transform);
       %horse.setEnergyLevel(1);
-      %horse.setMoveSpeed(0.1);
+      %horse.setMountBaseSpeed(0.2);
       %horse.setClanName(%client.nameBase);
       //%horse.startFade(0, 0, true);
       %horse.respawn = false;
