@@ -437,9 +437,9 @@ datablock PlayerData(DefaultHorse)
    runForce = 48 * 90;
    runEnergyDrain = 0.0; // RFB -> setting this higher than 0.0 causes AIHorses to skate slowly forward
    minRunEnergy = 0.1;
-   maxForwardSpeed = 18; //20 - Scot
+   maxForwardSpeed = 15; //20 - Scot
    maxBackwardSpeed = 8; 
-   maxSideSpeed = 4; // RFB -> horses don't normally strafe
+   maxSideSpeed = 6; // RFB -> horses don't normally strafe
 
    maxUnderwaterForwardSpeed = 8.4;
    maxUnderwaterBackwardSpeed = 5.0; 
@@ -538,8 +538,8 @@ datablock PlayerData(DefaultHorse)
    observeParameters = "0.5 4.5 4.5";
 
    // Switch forward animations above these speeds
-   run2Speed = 7;  // Above this switch to medium speed animation (trot)
-   run3Speed = 15;   // Above this switch to fast speed animation (gallop)
+   run2Speed = 5;  // Above this switch to medium speed animation (trot)
+   run3Speed = 10;   // Above this switch to fast speed animation (gallop)
 
    mountable = true; // Players can mount this AI
    driverNode = 0;   // The driver mounts to "Mount0"
