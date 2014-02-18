@@ -1,44 +1,5 @@
-singleton Material(base)
-{
-   mapTo = "base.horse";
-   diffuseMap[0] = "base.horse";
-};
 
-singleton Material(arabian)
-{
-   mapTo = "arabian.horse";
-   diffuseMap[0] = "arabian.horse";
-};
-
-singleton Material(bay)
-{
-   mapTo = "bay.horse";
-   diffuseMap[0] = "bay.horse";
-};
-
-singleton Material(indian)
-{
-   mapTo = "indian.horse";
-   diffuseMap[0] = "indian.horse";
-};
-
-singleton Material(light)
-{
-   mapTo = "light.horse";
-   diffuseMap[0] = "light.horse";
-};
-
-singleton Material(mustang)
-{
-   mapTo = "mustang.horse";
-   diffuseMap[0] = "mustang.horse";
-};
-
-singleton Material(palimino)
-{
-   mapTo = "palimino.horse";
-   diffuseMap[0] = "palimino.horse";
-};
+////Hoof Print
 
 new Material(HorseFootprintMaterial)
 {
@@ -49,28 +10,153 @@ new Material(HorseFootprintMaterial)
    translucentZWrite = "1";
 };
 
-
+//////////Body Colors
 
 
 singleton Material(Bay_Horse)
 {
    mapTo = "Bay_Body_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Bay_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
 };
+
+
+singleton Material(Black_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Black_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(Gray_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Gray_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(Palomino_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Palomino_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(Pinto_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Pinto_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(PintoTan_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/PintoTan_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(Roan_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Roan_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+singleton Material(White_Horse)
+{
+   mapTo = "Bay_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/White_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
+///Mane Colors
 
 singleton Material(Black_Mane)
 {
    mapTo = "Black_Mane_dif";
-   diffuseMap[0] = "art/Packs/AI/Horses/Black_Mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Black_Mane_dif.png";
    specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
    translucent = "1";
-   translucentZWrite = "1";
-   alphaRef = "20";
+   translucentZWrite = "0";
+   alphaRef = "127";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   materialTag0 = "Miscellaneous";
+   doubleSided = "1";
 };
+
+singleton Material(White_Mane)
+{
+   mapTo = "Black_Mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/White_Mane_dif.png";
+   specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
+   useAnisotropic[0] = "1";
+   translucent = "1";
+   translucentZWrite = "0";
+   alphaRef = "127";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   materialTag0 = "Miscellaneous";
+   doubleSided = "1";
+};
+
+singleton Material(Tan_Mane)
+{
+   mapTo = "Black_Mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Tan_Mane_dif.png";
+   specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
+   useAnisotropic[0] = "1";
+   translucent = "1";
+   translucentZWrite = "0";
+   alphaRef = "127";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   materialTag0 = "Miscellaneous";
+   doubleSided = "1";
+};
+
+singleton Material(Gray_Mane)
+{
+   mapTo = "Black_Mane_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Gray_Mane_dif.png";
+   specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
+   useAnisotropic[0] = "1";
+   translucent = "1";
+   translucentZWrite = "0";
+   alphaRef = "127";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   materialTag0 = "Miscellaneous";
+   doubleSided = "1";
+};
+
+/////////Armor Saddle and Reins
 
 singleton Material(Armor_Horse)
 {
