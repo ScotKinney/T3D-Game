@@ -328,6 +328,20 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_Head.dsq", "HM_Head", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_HeadSide.dsq", "HM_HeadSide", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Melee1_RH_Mount.dsq", "Melee1_RH_Mount", "0", "39", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Melee2_RH_Mount.dsq", "Melee2_RH_Mount", "0", "29", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Melee1_LH_Mount.dsq", "Melee1_LH_Mount", "0", "39", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Melee2_LH_Mount.dsq", "Melee2_LH_Mount", "0", "29", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Throw_AxeMount.dsq", "Throw_AxeMount", "0", "24", "1", "0");
+   %this.addTrigger("Throw_AxeMount", "11", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/Throw_GrenadeMount.dsq", "Throw_GrenadeMount", "0", "24", "1", "0");
+   %this.addTrigger("Throw_GrenadeMount", "9", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/Throw_SpearMount.dsq", "Throw_SpearMount", "0", "24", "1", "0");
+   %this.addTrigger("Throw_SpearMount", "18", "3");
+   %this.addTrigger("Fire_GunMount", "13", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/B_FireMount.dsq", "B_FireMount", "0", "49", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_GunMount", "0", "24", "1", "0");
+   %this.addTrigger("B_FireMount", "34", "3");
 }
 
 $mack = true;

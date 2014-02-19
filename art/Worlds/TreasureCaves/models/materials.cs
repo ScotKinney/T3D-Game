@@ -113,9 +113,13 @@ singleton Material(mat_CaveLarge3)
    diffuseMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2.jpg";
    materialTag0 = "TCaves";
    detailMap[0] = "art/worlds/TreasureCaves/models/volcano_cave_wall_tileable.dds";
-   normalMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2_NRM.png";
    detailNormalMap[0] = "art/worlds/TreasureCaves/models/tex_tileable_noise_nrm.dds";
    detailNormalMapStrength[0] = "0.5";
+   useAnisotropic[0] = "1";
+   normalMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2_NRM.png";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   customFootstepSound = "FootStepCaveSound";
 };
 
 singleton Material(mat_CaveLeftCurve)
@@ -154,13 +158,14 @@ singleton Material(mat_CaveRamp3Curved)
    diffuseMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2.jpg";
    materialTag0 = "TCaves";
    detailMap[0] = "art/worlds/TreasureCaves/models/volcano_cave_wall_tileable.dds";
-   normalMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2_NRM.png";
    detailNormalMap[0] = "art/worlds/TreasureCaves/models/tex_tileable_noise_nrm.dds";
    detailNormalMapStrength[0] = "0.5";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepCaveSound";
+   normalMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2_NRM.png";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
+   customFootstepSound = "FootStepCaveSound";
+   customImpactSound = "FootStepCaveSound";
 };
 
 singleton Material(mat_CaveRampRoom)
@@ -176,7 +181,7 @@ singleton Material(mat_CaveRampRoom)
    detailNormalMapStrength[0] = "1";
    useAnisotropic[0] = "1";
    specularPower[0] = "128";
-   specularStrength[0] = "3";
+   specularStrength[0] = "1";
    pixelSpecular[0] = "1";
    customImpactSound = "FootStepCaveSound";
 };
@@ -185,15 +190,18 @@ singleton Material(mat_CaveRightCurve)
 {
    mapTo = "PMat_CaveRightCurve";
    diffuseMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2.jpg";
+   customFootstepSound = "FootStepCaveSound";
    materialTag0 = "TCaves";
    detailMap[0] = "art/worlds/TreasureCaves/models/volcano_cave_wall_tileable.dds";
    normalMap[0] = "art/Worlds/TreasureCaves/models/caves/3td_cliff_pale2_NRM.png";
    detailNormalMap[0] = "art/worlds/TreasureCaves/models/tex_tileable_noise_nrm.dds";
-   detailNormalMapStrength[0] = "0.5";
+   detailScale[0] = "0.2 0.2";
+   detailNormalMapStrength[0] = "1";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepCaveSound";
    specularPower[0] = "128";
+   specularStrength[0] = "3";
    pixelSpecular[0] = "1";
+   customImpactSound = "FootStepCaveSound";
 };
 
 singleton Material(mat_CaveCrossRoads)
@@ -220,7 +228,7 @@ singleton Material(PMat_CaveRamp3_mat)
    detailNormalMap[0] = "art/worlds/TreasureCaves/models/tex_tileable_noise_nrm.dds";
    detailNormalMapStrength[0] = "1";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepRock1Sound";
+   customFootstepSound = "FootStepCaveSound";
    materialTag0 = "TCaves";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";

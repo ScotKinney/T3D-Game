@@ -418,7 +418,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "120.384 -58.9881 5.80848";
-         rotation = "0.11108 0.0394435 0.993028 173.752";
+         rotation = "0.11108 0.0394435 0.993029 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -434,7 +434,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-415.01 177.112 39.5431";
-         rotation = "0.11108 0.0394435 0.993028 173.752";
+         rotation = "0.11108 0.0394435 0.993029 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -514,7 +514,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-296.839 229.425 17.1102";
-         rotation = "0.0225772 0.146806 -0.988908 97.9095";
+         rotation = "0.0225772 0.146806 -0.988908 97.91";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -530,7 +530,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-288.698 212.722 16.0901";
-         rotation = "0.0225772 0.146806 -0.988908 97.9095";
+         rotation = "0.0225772 0.146806 -0.988908 97.91";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -594,7 +594,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-386.818 213.721 49.2351";
-         rotation = "0.30268 -0.320415 0.897619 97.1396";
+         rotation = "0.30268 -0.320415 0.897619 97.1401";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -610,7 +610,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-367.826 213.506 34.0808";
-         rotation = "0.30268 -0.320415 0.897619 97.1397";
+         rotation = "0.30268 -0.320415 0.897619 97.1402";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -818,7 +818,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-450.013 43.4298 34.9823";
-         rotation = "0.234989 0.230044 0.944383 94.4922";
+         rotation = "0.234989 0.230044 0.944383 94.4921";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -1726,6 +1726,47 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "200";
+      isAIControlled = "0";
+      dataBlock = "IronSpearWeapon";
+      position = "-449.997 212.969 96.2388";
+      rotation = "0 0 1 98.0241";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "200";
+      isAIControlled = "0";
+      dataBlock = "JackHammerWeapon";
+      position = "-449.394 212.658 95.798";
+      rotation = "0 0 -1 88.0223";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "200";
+      isAIControlled = "0";
+      dataBlock = "JackHammerWeapon";
+      position = "127.166 397.387 30.0422";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---

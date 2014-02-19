@@ -4,6 +4,7 @@ datablock ProjectileData(ShotProjectile : BaseProjectile)
    projectileShapeName = "art/inv/weapons/Guns/shot.dae";
    scale="1 1 1";
    muzzleVelocity = 50;
+   velInheritFactor = 1.0;
    gravityMod = 0.0;
    directDamage = 80;
    particleEmitter = 0;
@@ -47,7 +48,7 @@ datablock ProjectileData(BoltProjectile : BaseProjectile)
    muzzleVelocity = 40;
    gravityMod = 0.3;
    directDamage = 80;
-   
+   velInheritFactor = 1.0;
    particleWaterEmitter = 0;
    explosion = DefaultHitExplosion;
    waterExplosion = 0;
@@ -124,6 +125,7 @@ datablock ProjectileData(ElvenArrowProjectile : BaseProjectile)
    lightDesc = 0;
    lifetime = 5000;
    decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
    retrievable = "ElvenArrowAmmo";
 };
 

@@ -7,6 +7,7 @@ new SimGroup(MissionGroup) {
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
       visibleDistance = "500";
+      visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "0.156863 0.156863 0.172549 1";
       fogDensity = "0.04";
@@ -28,7 +29,7 @@ new SimGroup(MissionGroup) {
          LevelName = "Magellan";
    };
    new TSStatic(SpaceStation) {
-      shapeName = "art/worlds/Magellan/Models/science-labs-DAE.DAE";
+      shapeName = $WorldPath @ "/Models/science-labs-DAE.DAE";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -37,19 +38,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-14.5301 -59.0926 30.4122";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
          customAmbientLighting = "0 0 0 1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
          receiveLMLighting = "1";
          receiveSunLight = "1";
          useCustomAmbientLighting = "0";
+         useGradientRange = "0";
    };
    new Sun(theSun) {
       azimuth = "0";
@@ -59,7 +60,6 @@ new SimGroup(MissionGroup) {
       brightness = "0.5";
       castShadows = "1";
       coronaEnabled = "0";
-      coronaMaterial = "";
       coronaScale = "1";
       coronaTint = "1 1 1 1";
       coronaUseLightColor = "1";
@@ -114,6 +114,7 @@ new SimGroup(MissionGroup) {
 
       new SpawnSphere(MagellanSphere) {
          autoSpawn = "0";
+         spawnTransform = "0";
          radius = "5";
          sphereWeight = "1";
          indoorWeight = "1";
@@ -138,7 +139,7 @@ new SimGroup(MissionGroup) {
       scale = "5 5 5";
       canSave = "1";
       canSaveDynamicFields = "1";
-         skullLevel = "6";
+         skulllevel = "6";
    };
    new Trigger(TheBogTPTrigger) {
       polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -274,7 +275,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(TP1) {
-      shapeName = "art/worlds/Magellan/Models/column02.dts";
+      shapeName = $WorldPath @ "/Models/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -283,19 +284,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "41.897 -103.708 9.87686";
       rotation = "0 0 1 181.058";
       scale = "3.64935 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
          column2_d = "column2_d_mat";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic(TP2) {
-      shapeName = "art/worlds/Magellan/Models/column02.dts";
+      shapeName = $WorldPath @ "/Models/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -304,19 +305,19 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "41.897 -105.989 9.87686";
       rotation = "0 0 1 181.058";
       scale = "3.64935 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
          column2_d = "column2_d_mat";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic(TP3) {
-      shapeName = "art/worlds/Magellan/Models/column02.dts";
+      shapeName = $WorldPath @ "/Models/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -325,16 +326,16 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "41.897 -101.38 9.87686";
       rotation = "0 0 1 181.058";
       scale = "3.64935 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
          column2_d = "column2_d_mat";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new PointLight(TPLight2) {
       radius = "3";
@@ -388,7 +389,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new SFXEmitter(BGEffects) {
-      fileName = "art/Worlds/Magellan/sound/ShipBgEffects3.ogg";
+      fileName = $WorldPath @ "/sound/ShipBgEffects3.ogg";
       playOnAdd = "1";
       useTrackDescriptionOnly = "0";
       isLooping = "1";
@@ -483,7 +484,7 @@ new SimGroup(MissionGroup) {
          onExitMessage = "MagNZOut";
    };
    new TSStatic(GlassWall1) {
-      shapeName = "art/Worlds/Magellan/Models/smallpath.dts";
+      shapeName = $WorldPath @ "/Models/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -492,18 +493,18 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "0";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-87.8525 -33.1814 38.9072";
       rotation = "0 1 0 90";
       scale = "3.86431 3.49781 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Worlds/Magellan/Models/smallpath.dts";
+      shapeName = $WorldPath @ "/Models/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -512,18 +513,18 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "-12.9774 -33.8548 25.962";
       rotation = "0 1 0 91.1366";
       scale = "2.44066 2.19225 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Worlds/Magellan/Models/smallpath.dts";
+      shapeName = $WorldPath @ "/Models/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -532,15 +533,15 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      ignoreZodiacs = "0";
-      useGradientRange = "0";
-      gradientRange = "0 180";
-      invertGradientRange = "0";
       position = "1.91401 -79.8708 21.5668";
       rotation = "0 1 0 88.2208";
       scale = "2.45896 2.43952 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
    };
    new SpotLight() {
       range = "9.61921";
@@ -637,9 +638,20 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new SphereEmitterNode(TPSmoke1) {
-      active = "1";
       emitter = "SmokeEmitter";
+      sa_thetaMin = "0";
+      sa_thetaMax = "90";
+      sa_phiReferenceVel = "0";
+      sa_phiVariance = "360";
+      active = "1";
       velocity = "1";
+      standAloneEmitter = "0";
+      sa_emitterLifetimeMS = "0";
+      sa_ejectionPeriodMS = "400";
+      sa_periodVarianceMS = "5";
+      sa_ejectionVelocity = "0";
+      sa_velocityVariance = "0";
+      sa_ejectionOffset = "0";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -106.123 9.98604";
       rotation = "1 0 0 0";
@@ -648,9 +660,20 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new SphereEmitterNode(TPSmoke2) {
-      active = "1";
       emitter = "SmokeEmitter";
+      sa_thetaMin = "0";
+      sa_thetaMax = "90";
+      sa_phiReferenceVel = "0";
+      sa_phiVariance = "360";
+      active = "1";
       velocity = "1";
+      standAloneEmitter = "0";
+      sa_emitterLifetimeMS = "0";
+      sa_ejectionPeriodMS = "400";
+      sa_periodVarianceMS = "5";
+      sa_ejectionVelocity = "0";
+      sa_velocityVariance = "0";
+      sa_ejectionOffset = "0";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -103.69 10.3495";
       rotation = "1 0 0 0";
@@ -659,9 +682,20 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new SphereEmitterNode(TPSmoke3) {
-      active = "1";
       emitter = "SmokeEmitter";
+      sa_thetaMin = "0";
+      sa_thetaMax = "90";
+      sa_phiReferenceVel = "0";
+      sa_phiVariance = "360";
+      active = "1";
       velocity = "1";
+      standAloneEmitter = "0";
+      sa_emitterLifetimeMS = "0";
+      sa_ejectionPeriodMS = "400";
+      sa_periodVarianceMS = "5";
+      sa_ejectionVelocity = "0";
+      sa_velocityVariance = "0";
+      sa_ejectionOffset = "0";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -100.894 9.80425";
       rotation = "1 0 0 0";
@@ -674,7 +708,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSign.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -683,18 +717,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-17.2988 -43.0354 27.009";
          rotation = "-0.558763 -0.57632 0.596355 117.711";
          scale = "0.14959 0.429225 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(TPSign2) {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignLeft.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -703,22 +737,22 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-83.5247 17.7488 40.4067";
          rotation = "0.57903 -0.572058 0.580926 238.986";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             PMat_tpSignLeft1 = "PMat_tpSignLeft1_mat";
             PMat_tpSignLeft2 = "PMat_tpSignLeft2_mat";
             PMat_tpSignLeft3 = "PMat_tpSignLeft3_mat";
             PMat_tpSignLeft4 = "PMat_tpSignLeft4_mat";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSign.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -727,18 +761,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "43.3613 -99.7439 14.271";
          rotation = "-0.687018 -0.00321217 0.726634 180.348";
          scale = "0.281559 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic(TPSignDown) {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignRight.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignRight.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -747,22 +781,22 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-127.17 -60.2359 50.7064";
          rotation = "0.573118 -0.579336 0.579574 239.655";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             PMat_srf1 = "PMat_srf1_mat";
             PMat_srf2 = "PMat_srf2_mat";
             PMat_srf3 = "PMat_srf3_mat";
             PMat_srf4 = "PMat_srf4_mat";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignLeft.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -771,18 +805,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-113.589 -47.4371 37.4929";
          rotation = "0.579665 0.577444 0.574932 120.398";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignLeft.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -791,18 +825,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-102.377 -66.0012 37.4929";
          rotation = "0.579665 0.577444 0.574932 120.398";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignLeft.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -811,18 +845,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-104.085 5.36277 33.942";
          rotation = "0.708478 -0.00247219 0.705728 179.692";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSign.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -831,19 +865,19 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-55.3219 -36.8191 26.172";
          rotation = "1 0 0 0";
          scale = "0.0644134 0.735458 2.18519";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
             PMat_TeleporterSign1 = "PMat_TeleporterSign1_mat";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSign.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -852,18 +886,18 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "-29.1756 -36.8191 26.172";
          rotation = "1 0 0 0";
          scale = "0.0644134 0.735458 2.18519";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Worlds/Magellan/Models/TeleportsSignRight.dae";
+         shapeName = $WorldPath @ "/Models/TeleportsSignRight.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -872,15 +906,15 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         ignoreZodiacs = "0";
-         useGradientRange = "0";
-         gradientRange = "0 180";
-         invertGradientRange = "0";
          position = "17.3682 -41.6969 15.7166";
          rotation = "-0.572782 0.581216 0.578022 239.305";
          scale = "1 1 0.610235";
          canSave = "1";
          canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
       };
    };
    new SimGroup(ShipFires) {
@@ -888,9 +922,20 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SphereEmitterNode(ShipFire1) {
-         active = "1";
          emitter = "MagellanFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "120";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "10";
+         sa_periodVarianceMS = "5";
+         sa_ejectionVelocity = "4";
+         sa_velocityVariance = "2";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-89.3203 -26.4452 36.7264";
          rotation = "1 0 0 0";
@@ -923,9 +968,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke1) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-89.3203 -26.7348 37.3973";
          rotation = "1 0 0 0";
@@ -934,9 +990,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipFire2) {
-         active = "1";
          emitter = "MagellanFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "120";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "10";
+         sa_periodVarianceMS = "5";
+         sa_ejectionVelocity = "4";
+         sa_velocityVariance = "2";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-110.25 -48.0259 47.1411";
          rotation = "1 0 0 0";
@@ -969,9 +1036,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke2) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-110.694 -48.0259 48.364";
          rotation = "1 0 0 0";
@@ -980,9 +1058,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipFire3) {
-         active = "1";
          emitter = "MagellanFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "120";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "10";
+         sa_periodVarianceMS = "5";
+         sa_ejectionVelocity = "4";
+         sa_velocityVariance = "2";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-70.6397 -5.43187 39.2098";
          rotation = "1 0 0 0";
@@ -1015,9 +1104,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke3) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "-71.0837 -5.43187 40.4327";
          rotation = "1 0 0 0";
@@ -1026,9 +1126,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipFire4) {
-         active = "1";
          emitter = "MagellanFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "120";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "10";
+         sa_periodVarianceMS = "5";
+         sa_ejectionVelocity = "4";
+         sa_velocityVariance = "2";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "1.18829 -80.8118 18.8659";
          rotation = "1 0 0 0";
@@ -1061,9 +1172,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke4) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "0.744287 -80.8118 20.0888";
          rotation = "1 0 0 0";
@@ -1072,9 +1194,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipFire5) {
-         active = "1";
          emitter = "MagellanFireEmitter";
+         sa_thetaMin = "0";
+         sa_thetaMax = "120";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "10";
+         sa_periodVarianceMS = "5";
+         sa_ejectionVelocity = "4";
+         sa_velocityVariance = "2";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "85.8517 -131.282 9.69115";
          rotation = "1 0 0 0";
@@ -1107,9 +1240,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke5) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "85.4077 -131.282 10.914";
          rotation = "1 0 0 0";
@@ -1118,9 +1262,20 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SphereEmitterNode(ShipSmoke6) {
-         active = "1";
          emitter = "SP2_TendrilSmokeA_E";
+         sa_thetaMin = "0";
+         sa_thetaMax = "90";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         active = "1";
          velocity = "1";
+         standAloneEmitter = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_ejectionPeriodMS = "20";
+         sa_periodVarianceMS = "0";
+         sa_ejectionVelocity = "1";
+         sa_velocityVariance = "0";
+         sa_ejectionOffset = "0";
          dataBlock = "DefaultEmitterNodeData";
          position = "43.041 -111.27 6.16014";
          rotation = "1 0 0 0";
@@ -1140,7 +1295,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12555";
+         botBelongsToMe = "2911";
          delayRespawn = "4108";
          leash = "5";
          paceDist = "0";
@@ -1148,7 +1303,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          sidestepDist = "2";
          team = "1";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(DroidTopLevel2) {
       isAIControlled = "0";
@@ -1161,7 +1316,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12557";
+         botBelongsToMe = "2912";
          delayRespawn = "11839";
          leash = "5";
          paceDist = "0";
@@ -1169,7 +1324,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          sidestepDist = "2";
          team = "1";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1) {
       isAIControlled = "0";
@@ -1182,7 +1337,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12559";
+         botBelongsToMe = "2913";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1194,7 +1349,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1a) {
       isAIControlled = "0";
@@ -1207,7 +1362,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12561";
+         botBelongsToMe = "2914";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1219,7 +1374,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint2) {
       isAIControlled = "0";
@@ -1232,7 +1387,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12563";
+         botBelongsToMe = "2915";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "6208";
          leash = "5";
@@ -1244,7 +1399,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint3) {
       isAIControlled = "0";
@@ -1257,7 +1412,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12565";
+         botBelongsToMe = "2916";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "4331";
          leash = "5";
@@ -1269,7 +1424,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint4) {
       isAIControlled = "0";
@@ -1282,7 +1437,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12567";
+         botBelongsToMe = "2917";
          customAmbientLighting = "0 0 0 1";
          leash = "5";
          paceDist = "0";
@@ -1293,7 +1448,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint5) {
       isAIControlled = "0";
@@ -1306,14 +1461,14 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12569";
+         botBelongsToMe = "2918";
          leash = "5";
          paceDist = "0";
          respawnCount = "0";
          respawnCounter = "0";
          sidestepDist = "2";
          team = "1";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(DroidSpawnPoint6) {
       isAIControlled = "0";
@@ -1326,7 +1481,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12571";
+         botBelongsToMe = "2919";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
@@ -1334,20 +1489,7 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          sidestepDist = "2";
          team = "1";
-         Weapon = "DroidGun5Weapon";
-   };
-   new Item(LaserDrone) {
-      static = "1";
-      rotate = "1";
-      buyable = "0";
-      count = "9";
-      isAIControlled = "0";
-      dataBlock = "Laser_Drone";
-      position = "-86.1079 -114.277 5.9421";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
+         weapon = "DroidGun5Weapon";
    };
    new Item(XR75) {
       static = "1";
@@ -1376,7 +1518,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12573";
+         botBelongsToMe = "2920";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1388,7 +1530,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1a11) {
       isAIControlled = "0";
@@ -1401,7 +1543,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12575";
+         botBelongsToMe = "2921";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1413,7 +1555,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1a111) {
       isAIControlled = "0";
@@ -1426,7 +1568,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12577";
+         botBelongsToMe = "2922";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1438,7 +1580,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1a1111) {
       isAIControlled = "0";
@@ -1451,7 +1593,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12579";
+         botBelongsToMe = "2923";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1463,7 +1605,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(Droid1SpawnPoint1a11111) {
       isAIControlled = "0";
@@ -1476,7 +1618,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12581";
+         botBelongsToMe = "2924";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1488,7 +1630,7 @@ new SimGroup(MissionGroup) {
          sidestepDist = "2";
          team = "1";
          useCustomAmbientLighting = "0";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
    };
    new StaticShape(DroidSpawnPoint61) {
       isAIControlled = "0";
@@ -1501,7 +1643,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "12583";
+         botBelongsToMe = "2925";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
@@ -1509,7 +1651,22 @@ new SimGroup(MissionGroup) {
          respawnCounter = "0";
          sidestepDist = "2";
          team = "1";
-         Weapon = "DroidGun5Weapon";
+         weapon = "DroidGun5Weapon";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "XR75Weapon";
+      position = "-96.8688 -54.2262 48.4526";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "999";
+         respawnTime = "30";
    };
 };
 //--- OBJECT WRITE END ---

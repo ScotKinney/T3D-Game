@@ -894,7 +894,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "0";
+            botBelongsToMe = "3084";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
@@ -922,7 +922,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "0";
+            botBelongsToMe = "3085";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "4981";
             distDetect = "150";
@@ -950,7 +950,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "BoglinBig";
-            botBelongsToMe = "0";
+            botBelongsToMe = "3086";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
             distDetect = "150";
@@ -1108,20 +1108,6 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
-   new Item(FlexUnit) {
-      static = "1";
-      rotate = "1";
-      buyable = "0";
-      count = "1";
-      isAIControlled = "0";
-      dataBlock = "FlexDecapitator";
-      position = "-684.011 -188.709 59.6545";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         spawnGroup = "flexdecapSpheres";
-   };
    new SimGroup(BogLinHomes) {
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1141,7 +1127,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3087";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "18872";
                distDetect = "150";
@@ -1299,7 +1285,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3088";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1681";
                distDetect = "150";
@@ -1458,9 +1444,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "7351";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "6538";
+               delayRespawn = "1675";
                distDetect = "150";
                dropcount = "1";
                DropItem = "mudfish";
@@ -1586,7 +1572,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.8437";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.8432";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1616,7 +1602,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3090";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
@@ -1800,7 +1786,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3091";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
@@ -2010,7 +1996,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3092";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "4138";
                distDetect = "150";
@@ -2195,7 +2181,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3093";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
@@ -2404,7 +2390,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3094";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
@@ -2564,7 +2550,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "0";
+               botBelongsToMe = "3095";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "21673";
                distDetect = "150";
@@ -2693,12 +2679,12 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             destinationServer = "Magellan";
             destinationSpawnSphere = "MagellanSphere";
+            invRequirement = "FlexDecapitator";
             manifestURL = "http://www.bloodclans.com/stream/manifests/magellanmanifest.txt";
+            migrantMessage = "sttMag";
+            noInvMsg = "noFDMag";
             pathToRoot = "http://www.bloodclans.com/stream/";
             subscriberOnly = "1";
-            migrantMessage = "sttMag";
-            invRequirement = "FlexDecapitator";
-            noInvMsg = "noFDMag";
       };
       new SphereEmitterNode(ShuttleTP1) {
          emitter = "PCO_ExplosionSpirals_E";
@@ -2732,12 +2718,12 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             destinationServer = "Magellan";
             destinationSpawnSphere = "MagellanSphere";
+            invRequirement = "FlexDecapitator";
             manifestURL = "http://www.bloodclans.com/stream/manifests/magellanmanifest.txt";
+            migrantMessage = "sttMag";
+            noInvMsg = "noFDMag";
             pathToRoot = "http://www.bloodclans.com/stream/";
             subscriberOnly = "1";
-            migrantMessage = "sttMag";
-            invRequirement = "FlexDecapitator";
-            noInvMsg = "noFDMag";
       };
       new PointLight(ShipLight) {
          radius = "30";
@@ -2969,6 +2955,157 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "100";
+      isAIControlled = "0";
+      dataBlock = "IronSpearWeapon";
+      position = "92.3566 139.933 69.3406";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "100";
+      isAIControlled = "0";
+      dataBlock = "JackHammerWeapon";
+      position = "93.3484 139.362 69.8831";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "IronPikeWeapon";
+      position = "93.0632 139.394 69.4005";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "SteelSpearWeapon";
+      position = "93.6719 139.462 69.427";
+      rotation = "0 -1 0 90";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "StonePikeWeapon";
+      position = "94.5785 139.072 69.507";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "StoneSpearWeapon";
+      position = "94.1306 139.669 69.4551";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "15";
+      isAIControlled = "0";
+      dataBlock = "Lamp_Oil";
+      position = "12.9671 7.24623 70.2007";
+      rotation = "0 0 1 99.1558";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "20";
+      isAIControlled = "0";
+      dataBlock = "ChaosBladeWeapon";
+      position = "16.0471 0.219628 73.432";
+      rotation = "0 0 -1 71.261";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "0";
+      rotate = "0";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "Tokara_Mushroom";
+      position = "22.1843 -0.80892 75.2174";
+      rotation = "0 0 -1 9.38295";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "0";
+   };
+   new Item() {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "XR75Weapon";
+      position = "91.8068 134.591 69.5755";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "200";
+         respawnTime = "30";
+   };
+   new Item() {
+      static = "1";
+      rotate = "1";
+      buyable = "0";
+      count = "0";
+      isAIControlled = "0";
+      dataBlock = "FlintlockWeapon";
+      position = "94.1835 136.074 69.822";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         ammo = "200";
    };
 };
 //--- OBJECT WRITE END ---
