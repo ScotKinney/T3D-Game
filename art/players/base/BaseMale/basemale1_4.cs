@@ -10,7 +10,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.setNodeTransform("Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
    %this.addNode("cam", "Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
    %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
-   %this.addNode("mount7", "mount0", "0.598042 3.08894 2.63324 0.704737 -0.682837 -0.192561 3.02562", "1");
+   %this.addNode("mount7", "mount0", "1.87095 2.74099 2.94576 -0.515918 0.838865 0.173593 3.33519", "1");
    %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
@@ -320,14 +320,11 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_HamAxeBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_FireMove.dsq", "B_FireBlend", "0", "49", "1", "0");
    %this.addTrigger("B_FireBlend", "36", "3");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "33", "1", "0");
-   %this.setSequenceCyclic("H_Gallop", "1");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Damage1.dsq", "H_Damage1", "0", "33", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Death1.dsq", "H_Death1", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Root.dsq", "H_Root", "0", "102", "1", "0");
-   %this.setSequenceCyclic("H_Root", "1");
-   %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "44", "1", "0");
-   %this.setSequenceCyclic("H_WalkTrot", "1");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Root.dsq", "H_Root", "0", "99", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_Head.dsq", "HM_Head", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_HeadSide.dsq", "HM_HeadSide", "0", "-1", "1", "0");
