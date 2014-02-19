@@ -418,7 +418,6 @@ datablock PlayerData(DefaultHorse)
    
    aiAvoidThis = true;
 
-   minLookAngle = -1;
    maxLookAngle = 1;
    maxHeadYawAngle = .5;
    maxFreelookAngle = 3.0;
@@ -545,16 +544,20 @@ datablock PlayerData(DefaultHorse)
    driverNode = 0;   // The driver mounts to "Mount0"
    riderNode = 5;    // The passenger mounts to "Mount5"
 
-   mountPose[0]	      = "H_Root"; // Driver pose Standing still or slow
+   mountPose[0]	      = "H_Root";     // Driver pose Standing still
+   mountPoseSlow[0]	   = "H_WalkTrot"; // Driver pose Slow
    mountPoseMedium[0]	= "H_WalkTrot"; // Driver pose Medium
-   mountPoseFast[0]	   = "H_Gallop"; // Driver pose Fast
+   mountPoseFast[0]	   = "H_Gallop";   // Driver pose Fast
 
-   mountPose[5]	      = "H_Root"; // Passenger Standing still or slow
+   mountPose[5]	      = "H_Root";     // Passenger Standing still
+   mountPoseSlow[5]	   = "H_WalkTrot"; // Passenger Slow
    mountPoseMedium[5]	= "H_WalkTrot"; // Passenger Medium
-   mountPoseFast[5]	   = "H_Gallop"; // Passenger Fast
+   mountPoseFast[5]	   = "H_Gallop";   // Passenger Fast
    
-   mountHeadHThread = "HM_HeadSide";
    mountHeadVThread = "HM_Head";
+   maxMountPitchAngle = 1;
+   mountHeadHThread = "HM_HeadSide";
+   maxMountYawAngle = .5;
 };
 
 datablock PlayerData(BayHorse : DefaultHorse)

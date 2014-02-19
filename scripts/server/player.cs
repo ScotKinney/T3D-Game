@@ -74,9 +74,9 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
 
       %obj.setControlObject(%vehicle);
       if ( %vDB.mountHeadHThread !$= "" )
-         %obj.setHeadHThread(%vDB.mountHeadHThread);
+         %obj.setHeadHThread(%vDB.mountHeadHThread, %vDB.maxMountYawAngle);
       if ( %vDB.mountHeadVThread !$= "" )
-         %obj.setHeadVThread(%vDB.mountHeadVThread);
+         %obj.setHeadVThread(%vDB.mountHeadVThread, %vDB.maxMountPitchAngle);
    }
    else if ( %node == %vDB.riderNode )
    {
@@ -103,6 +103,7 @@ function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
    %obj.setscale(".714 .714 .714"); // Restore the players scale
 
    %vDB = %vehicle.getDatablock();
+   %objDB = %obj.getDatablock();
    if (%node == %vDB.driverNode)
    {      
       %obj.setControlObject("");
@@ -118,9 +119,9 @@ function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
          %vehicle.moveToNode(%vehicle.currentNode);
 
       if ( %vDB.mountHeadHThread !$= "" )
-         %obj.setHeadHThread("headside");
+         %obj.setHeadHThread("headside", %objDB.maxHeadYawAngle);
       if ( %vDB.mountHeadVThread !$= "" )
-         %obj.setHeadVThread("head");
+         %obj.setHeadVThread("head", %objDB.maxLookAngle);
    }
    else
    {
@@ -828,12 +829,17 @@ function Player::onRunPoseChange(%this, %newRunMode)
    %driver = %this.getMountNodeObject(%mountDB.driverNode);
    if ( isObject(%driver) )
    {
-      if ( %newRunMode == 2 )
-         %driver.setActionThread(%mountDB.mountPoseFast[%mountDB.driverNode], true, true);
-      else if ( %newRunMode == 1 )
-         %driver.setActionThread(%mountDB.mountPoseMedium[%mountDB.driverNode], true, true);
-      else
-         %driver.setActionThread(%mountDB.mountPose[%mountDB.driverNode], true, true);
+      switch( %newRunMode )
+      {
+         case 3:
+            %driver.setActionThread(%mountDB.mountPoseFast[%mountDB.driverNode], true, true);
+         case 2:
+            %driver.setActionThread(%mountDB.mountPoseMedium[%mountDB.driverNode], true, true);
+         case 1:
+            %driver.setActionThread(%mountDB.mountPoseSlow[%mountDB.driverNode], true, true);
+         default:
+            %driver.setActionThread(%mountDB.mountPose[%mountDB.driverNode], true, true);
+      }
    }
 
    if ( %mountDB.riderNode !$= "" )
@@ -841,12 +847,17 @@ function Player::onRunPoseChange(%this, %newRunMode)
       %rider = %this.getMountNodeObject(%mountDB.riderNode);
       if ( isObject(%rider) )
       {
-         if ( %newRunMode == 2 )
-            %rider.setActionThread(%mountDB.mountPoseFast[%mountDB.riderNode], true, true);
-         else if ( %newRunMode == 1 )
-            %rider.setActionThread(%mountDB.mountPoseMedium[%mountDB.riderNode], true, true);
-         else
-            %rider.setActionThread(%mountDB.mountPose[%mountDB.riderNode], true, true);
+         switch( %newRunMode )
+         {
+            case 3:
+               %rider.setActionThread(%mountDB.mountPoseFast[%mountDB.riderNode], true, true);
+            case 2:
+               %rider.setActionThread(%mountDB.mountPoseMedium[%mountDB.riderNode], true, true);
+            case 1:
+               %rider.setActionThread(%mountDB.mountPoseSlow[%mountDB.riderNode], true, true);
+            default:
+               %rider.setActionThread(%mountDB.mountPose[%mountDB.riderNode], true, true);
+         }
       }
    }
 }
