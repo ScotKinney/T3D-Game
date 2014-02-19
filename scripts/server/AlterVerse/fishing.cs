@@ -164,7 +164,8 @@ function ServerCmdWaterClick(%client, %objID, %clickPos)
    // Play the casting sound effect, animation and schedule the bobber splash
    %client.player.playAudio(0, PoleCastSound);
    if ( %client.player.isMounted() )
-      %client.player.setArmThreadPlayOnce("CastLine");
+      %client.player.playThread(1, "CastLine_Blend");
+      //%client.player.setArmThreadPlayOnce("CastLine");
    else
       %client.player.setactionthread("CastLine");
    //schedule(1664, 0, "ShowBobberSplash", %client, %clickPos);
