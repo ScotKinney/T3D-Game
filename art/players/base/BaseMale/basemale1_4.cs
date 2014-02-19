@@ -329,6 +329,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "44", "1", "0");
    %this.setSequenceCyclic("H_WalkTrot", "1");
    %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/HM_Head.dsq", "HM_Head", "0", "-1", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/HM_HeadSide.dsq", "HM_HeadSide", "0", "-1", "1", "0");
 }
 
 $mack = true;

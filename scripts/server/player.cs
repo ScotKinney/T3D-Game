@@ -73,6 +73,10 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
          cancel(%vehicle.aiLoop);
 
       %obj.setControlObject(%vehicle);
+      if ( %vDB.mountHeadHThread !$= "" )
+         %obj.setHeadHThread(%vDB.mountHeadHThread);
+      if ( %vDB.mountHeadVThread !$= "" )
+         %obj.setHeadVThread(%vDB.mountHeadVThread);
    }
    else if ( %node == %vDB.riderNode )
    {
@@ -112,6 +116,11 @@ function PLAYERDATA::onUnmount(%this, %obj, %vehicle, %node)
          %vehicle.ailoop = %vehicle.schedule($AISK_QUICK_THINK, "Think", %vehicle);
       else if ( isObject(%vehicle.path) )
          %vehicle.moveToNode(%vehicle.currentNode);
+
+      if ( %vDB.mountHeadHThread !$= "" )
+         %obj.setHeadHThread("headside");
+      if ( %vDB.mountHeadVThread !$= "" )
+         %obj.setHeadVThread("head");
    }
    else
    {

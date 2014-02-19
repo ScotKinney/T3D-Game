@@ -552,6 +552,9 @@ datablock PlayerData(DefaultHorse)
    mountPose[5]	      = "H_Root"; // Passenger Standing still or slow
    mountPoseMedium[5]	= "H_WalkTrot"; // Passenger Medium
    mountPoseFast[5]	   = "H_Gallop"; // Passenger Fast
+   
+   mountHeadHThread = "HM_HeadSide";
+   mountHeadVThread = "HM_Head";
 };
 
 datablock PlayerData(BayHorse : DefaultHorse)
