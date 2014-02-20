@@ -301,6 +301,55 @@ singleton GameBaseData(SwordSwing5_RHMove)
    impulse = 500;
 };
 
+////RightHand - Mounted attacks
+singleton GameBaseData(MountedSwing1_RH)
+{
+   seqName = "Melee1_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.85;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(MountedSwing2_RH)
+{
+   seqName = "Melee2_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.15; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 500;
+};
+
+////LeftHand - Mounted attacks
+singleton GameBaseData(MountedSwing1_LH)
+{
+   seqName = "Melee1_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.85;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(MountedSwing2_LH)
+{
+   seqName = "Melee2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.15; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing2Sound;
+   impulse = 500;
+};
 
 ////////////Base Swords
 
@@ -311,6 +360,7 @@ datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Swords/Annihilator.dts";
    item = AnnihilatorWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canUseMounted = true;
 
    hthNumAttacks = 12;
 /* hthAttack[0]                     = SwordSwing1_LH;
@@ -336,6 +386,10 @@ datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
 
    numMovingAttacks = 1;
    movingAttack[0] = SwordSwing5_RHMove;
+
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_RH;
+   mountedAttack[1] = MountedSwing2_RH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -378,6 +432,7 @@ datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Swords/AnnihilatorLH.dts";
    item = AnnihilatorLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canUseMounted = true;
    mountPoint = 2;
    weaponSlot = 1;   // Secondary weapon slot (Left Hand)
 
@@ -390,7 +445,9 @@ datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
    hthAttack[5]                     = SwordSwing6_LH;
    hthAttack[6]                     = SwordSwing7_LH;
 
-
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_LH;
+   mountedAttack[1] = MountedSwing2_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1215,6 +1272,7 @@ datablock ShapeBaseImageData(ParalyzerImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/axes/Paralyzer.dts";
    item = ParalyzerWeapon; //This is the name of the WEAPON that comes from the weapons table.
+   canUseMounted = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = ParalyzerSwing1;
@@ -1231,6 +1289,10 @@ datablock ShapeBaseImageData(ParalyzerImage : BaseMeleeImage)
    numMovingAttacks = 1;
    movingAttack[0] = ParalyzerSwing5Move;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_RH;
+   mountedAttack[1] = MountedSwing2_RH;
+
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
@@ -1244,7 +1306,7 @@ datablock ShapeBaseImageData(ParalyzerLHImage : BaseMeleeImage)
    shapefile = "art/inv/weapons/axes/ParalyzerLH.dts";
    item = ParalyzerLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
    weaponSlot = 1;   // Secondary weapon slot (Left Hand)
-   canUseMounted = false;
+   canUseMounted = true;
    mountPoint = 2;
 
    hthNumAttacks = 7;
@@ -1256,6 +1318,9 @@ datablock ShapeBaseImageData(ParalyzerLHImage : BaseMeleeImage)
    hthAttack[5]                     = ParalyzerLHSwing6;
    hthAttack[6]                     = ParalyzerLHSwing7;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_LH;
+   mountedAttack[1] = MountedSwing2_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1353,6 +1418,7 @@ datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Equalizer.dts";
    item = EqualizerWeapon;
+   canUseMounted = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = EqualizerSwing1;
@@ -1369,6 +1435,10 @@ datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
    numMovingAttacks = 1;
    movingAttack[0] = EqualizerSwing5Move;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_RH;
+   mountedAttack[1] = MountedSwing2_RH;
+
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
@@ -1382,7 +1452,7 @@ datablock ShapeBaseImageData(EqualizerLHImage : BaseMeleeImage)
    shapefile = "art/inv/weapons/axes/EqualizerLH.dts";
    item = EqualizerLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
    weaponSlot = 1;   // Secondary weapon slot (Left Hand)
-   canUseMounted = false;
+   canUseMounted = true;
    mountPoint = 2;
 
    hthNumAttacks = 7;
@@ -1394,6 +1464,9 @@ datablock ShapeBaseImageData(EqualizerLHImage : BaseMeleeImage)
    hthAttack[5]                     = EqualizerLHSwing6;
    hthAttack[6]                     = EqualizerLHSwing7;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_LH;
+   mountedAttack[1] = MountedSwing2_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1490,6 +1563,7 @@ datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Axes/Liberator.dts";
    item = LiberatorWeapon;
+   canUseMounted = true;
 
    hthNumAttacks = 10;
    hthAttack[0]                     = LiberatorSwing1;
@@ -1506,6 +1580,10 @@ datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
    numMovingAttacks = 1;
    movingAttack[0] = LiberatorSwing5Move;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_RH;
+   mountedAttack[1] = MountedSwing2_RH;
+
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
    // The sound to play when this weapon hits another player or AI
@@ -1519,7 +1597,7 @@ datablock ShapeBaseImageData(LiberatorLHImage : BaseMeleeImage)
    shapefile = "art/inv/weapons/axes/LiberatorLH.dts";
    item = LiberatorLHWeapon; //This is the name of the WEAPON that comes from the weapons table.
    weaponSlot = 1;   // Secondary weapon slot (Left Hand)
-   canUseMounted = false;
+   canUseMounted = true;
    mountPoint = 2;
 
    hthNumAttacks = 7;
@@ -1531,6 +1609,9 @@ datablock ShapeBaseImageData(LiberatorLHImage : BaseMeleeImage)
    hthAttack[5]                     = LiberatorLHSwing6;
    hthAttack[6]                     = LiberatorLHSwing7;
 
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_LH;
+   mountedAttack[1] = MountedSwing2_LH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";

@@ -65,11 +65,17 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
       return;
 
    // make sure the attack requested is legit
-   if ( (%this.numMovingAttacks > 0) && (%obj.isMounted() || %obj.isMoving()) )
+   if ( %obj.isMoving() && (%this.numMovingAttacks > 0) )
    {
       if ( %attackNum >= %this.numMovingAttacks )
          %attackNum = %attackNum % %this.numMovingAttacks;
       %attack = %this.movingAttack[%attackNum];
+   }
+   else if ( %obj.isMounted() && (%this.numMountedAttacks > 0) )
+   {
+      if ( %attackNum >= %this.numMountedAttacks )
+         %attackNum = %attackNum % %this.numMountedAttacks;
+      %attack = %this.mountedAttack[%attackNum];
    }
    else
    {
