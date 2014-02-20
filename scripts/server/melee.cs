@@ -65,17 +65,17 @@ function MeleeImage::SwingWeapon(%this, %obj, %slot, %attackNum)
       return;
 
    // make sure the attack requested is legit
-   if ( %obj.isMoving() && (%this.numMovingAttacks > 0) )
-   {
-      if ( %attackNum >= %this.numMovingAttacks )
-         %attackNum = %attackNum % %this.numMovingAttacks;
-      %attack = %this.movingAttack[%attackNum];
-   }
-   else if ( %obj.isMounted() && (%this.numMountedAttacks > 0) )
+   if ( %obj.isMounted() && (%this.numMountedAttacks > 0) )
    {
       if ( %attackNum >= %this.numMountedAttacks )
          %attackNum = %attackNum % %this.numMountedAttacks;
       %attack = %this.mountedAttack[%attackNum];
+   }
+   else if ( %obj.isMoving() && (%this.numMovingAttacks > 0) )
+   {
+      if ( %attackNum >= %this.numMovingAttacks )
+         %attackNum = %attackNum % %this.numMovingAttacks;
+      %attack = %this.movingAttack[%attackNum];
    }
    else
    {
@@ -187,7 +187,8 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
          return;
 
       // if we have hit this person already...apply no more damage
-      if (%target == %player.hthDamageLastId)
+      if ( (%target == %player.hthDamageLastId) ||
+         (%player.isMounted() && (%player.getObjectMount() == %target)) )
          return;
 
       // save what we last damaged
