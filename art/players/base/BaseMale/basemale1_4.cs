@@ -172,6 +172,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/Shield2_LH.dsq", "Shield2_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Shield3_LH.dsq", "Shield3_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Shield4_LH.dsq", "Shield4_LH", "0", "34", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_LHMove.dsq", "Shield2_LHBlend", "0", "29", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Mounted/Shield2_LH_Mount.dsq", "Shield2_LH_Mount", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust1_RH.dsq", "Spear_Thrust1_RH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust2_RH.dsq", "Spear_Thrust2_RH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust3_RH.dsq", "Spear_Thrust3_RH", "0", "24", "1", "0");
@@ -205,6 +207,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing11_RH.dsq", "SwordSwing11_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing12_RH.dsq", "SwordSwing12_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_RHMove.dsq", "SwordSwing5_RHBlend", "0", "19", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_LHMove.dsq", "SwordSwing5_LHBlend", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Kick1_LF.dsq", "Kick1_LF", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Kick1_RF.dsq", "Kick1_RF", "0", "19", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Kick2_LF.dsq", "Kick2_LF", "0", "24", "1", "0");
@@ -301,7 +304,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Move.dsq", "Castline_Blend", "0", "24", "1", "0");
    %this.addTrigger("Castline_Blend", "19", "3");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunFull.dsq", "Fire_Flintlock", "0", "19", "1", "0");
-   %this.addTrigger("Fire_Flintlock", "9", "3");
+   %this.addTrigger("Fire_Flintlock", "10", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_AxeFull.dsq", "Throw_HamAxe", "0", "34", "1", "0");
    %this.addTrigger("Throw_HamAxe", "15", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearFull.dsq", "Throw_Javelin", "0", "34", "1", "0");
@@ -311,7 +314,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Bow/B_Fire.dsq", "B_Fire", "0", "-1", "1", "0");
    %this.addTrigger("B_Fire", "36", "3");
    %this.addSequence("art/players/base/Seqs/Guns/Fire_GunMove.dsq", "Fire_FlintLockBlend", "0", "24", "1", "0");
-   %this.addTrigger("Fire_FlintLockBlend", "9", "3");
+   %this.addTrigger("Fire_FlintLockBlend", "13", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_SpearMove.dsq", "Throw_JavelinBlend", "0", "24", "1", "0");
    %this.addTrigger("Throw_JavelinBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Thrown/Throw_GrenadeMove.dsq", "Throw_GrenadeBlend", "0", "24", "1", "0");
@@ -320,28 +323,29 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Throw_HamAxeBlend", "11", "3");
    %this.addSequence("art/players/base/Seqs/Bow/B_FireMove.dsq", "B_FireBlend", "0", "49", "1", "0");
    %this.addTrigger("B_FireBlend", "36", "3");
+   %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Gallop.dsq", "H_Gallop", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Damage1.dsq", "H_Damage1", "0", "33", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Death1.dsq", "H_Death1", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Root.dsq", "H_Root", "0", "99", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/H_Walk.dsq", "H_WalkTrot", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Guns/Look_XR75.dsq", "Look_XR75", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_Head.dsq", "HM_Head", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/HM_HeadSide.dsq", "HM_HeadSide", "0", "-1", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/Melee1_RH_Mount.dsq", "Melee1_RH_Mount", "0", "39", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/Melee2_RH_Mount.dsq", "Melee2_RH_Mount", "0", "29", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/Melee1_LH_Mount.dsq", "Melee1_LH_Mount", "0", "39", "1", "0");
    %this.addSequence("art/players/base/Seqs/Mounted/Melee2_LH_Mount.dsq", "Melee2_LH_Mount", "0", "29", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Mounted/Throw_AxeMount.dsq", "Throw_AxeMount", "0", "24", "1", "0");
-   %this.addTrigger("Throw_AxeMount", "11", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/Throw_HamAxeMount.dsq", "Throw_HamAxeMount", "0", "24", "1", "0");
+   %this.addTrigger("Throw_HamAxeMount", "11", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/Throw_GrenadeMount.dsq", "Throw_GrenadeMount", "0", "24", "1", "0");
    %this.addTrigger("Throw_GrenadeMount", "9", "3");
-   %this.addSequence("art/players/base/Seqs/Mounted/Throw_SpearMount.dsq", "Throw_SpearMount", "0", "24", "1", "0");
-   %this.addTrigger("Throw_SpearMount", "18", "3");
-   %this.addTrigger("Fire_GunMount", "13", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/Throw_JavelinMount.dsq", "Throw_JavelinMount", "0", "24", "1", "0");
+   %this.addTrigger("Throw_JavelinMount", "11", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/B_FireMount.dsq", "B_FireMount", "0", "49", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_GunMount", "0", "24", "1", "0");
    %this.addTrigger("B_FireMount", "34", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
+   %this.addTrigger("Fire_FlintlockMount", "13", "3");
+   %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
 }
 
 $mack = true;
