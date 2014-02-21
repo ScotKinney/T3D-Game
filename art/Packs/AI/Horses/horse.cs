@@ -45,6 +45,13 @@ function horseDts::onLoad(%this)
    %this.addTrigger("Run2", "11", "2");
    %this.addTrigger("Run2", "20", "1");
    %this.addTrigger("Run2", "21", "2");
+   %this.addSequence("./Anims/h_Trot.dsq", "Strafe_Left", "0", "24", "1", "0");
+   %this.setSequencePriority("Strafe_Left", "0");
+   %this.setSequenceCyclic("Strafe_Left", "1");
+   %this.addTrigger("Run2", "10", "1");
+   %this.addTrigger("Run2", "11", "2");
+   %this.addTrigger("Run2", "20", "1");
+   %this.addTrigger("Run2", "21", "2");
    %this.addSequence("./Anims/h_Gallop.dsq", "Run3", "0", "15", "1", "0");
    %this.setSequencePriority("Run3", "0");
    %this.setSequenceCyclic("Run3", "1");
