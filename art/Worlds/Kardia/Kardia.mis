@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.00690746";
-         time = "0.00784826";
+         startTime = "0.162154";
+         time = "0.166121";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -142,7 +142,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "6602";
+            clockSynchEvent = "114738";
       };
       new SkyBox() {
          Material = "KapSkysDarkCloud";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "15998";
-         delayRespawn = "9582";
+         botBelongsToMe = "76398";
+         delayRespawn = "126467";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,8 +653,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "15514";
-         delayRespawn = "10030";
+         botBelongsToMe = "76692";
+         delayRespawn = "125900";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -679,8 +679,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "15537";
-         delayRespawn = "8426";
+         botBelongsToMe = "76494";
+         delayRespawn = "124987";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -705,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "15866";
-         delayRespawn = "9117";
+         botBelongsToMe = "76656";
+         delayRespawn = "125741";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -731,8 +731,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "15791";
-         delayRespawn = "8806";
+         botBelongsToMe = "76926";
+         delayRespawn = "126311";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -757,8 +757,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "15549";
-         delayRespawn = "9752";
+         botBelongsToMe = "76667";
+         delayRespawn = "125770";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -783,8 +783,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "15958";
-         delayRespawn = "9466";
+         botBelongsToMe = "76902";
+         delayRespawn = "126235";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -809,8 +809,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "15391";
-         delayRespawn = "9909";
+         botBelongsToMe = "76574";
+         delayRespawn = "125287";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -835,7 +835,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "14091";
+         botBelongsToMe = "71806";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -860,7 +860,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "14092";
+         botBelongsToMe = "71807";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -1602,7 +1602,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1622,7 +1622,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1642,7 +1642,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1662,7 +1662,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1682,7 +1682,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1702,7 +1702,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1722,7 +1722,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1742,7 +1742,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1908,7 +1908,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1928,7 +1928,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1948,7 +1948,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1968,7 +1968,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1988,7 +1988,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2008,7 +2008,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2028,7 +2028,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2048,7 +2048,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2068,7 +2068,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2088,7 +2088,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2108,7 +2108,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2128,7 +2128,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2148,7 +2148,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2168,7 +2168,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2188,7 +2188,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2208,7 +2208,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Trees/Palm/palmtree_tall.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/trees/palm/palmtree_tall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3956,7 +3956,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/Worlds/Kardia/Models/props/target.dts";
+            shapeName = "art/packs/Worlds/kardia/Models/Props/target.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -4142,7 +4142,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WildHorse";
-            botBelongsToMe = "14093";
+            botBelongsToMe = "71808";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4224,7 +4224,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PaliminoHorse";
-            botBelongsToMe = "14094";
+            botBelongsToMe = "71809";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4305,7 +4305,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "IndianHorse";
-            botBelongsToMe = "14095";
+            botBelongsToMe = "71810";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4386,7 +4386,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "ArabianHorse";
-            botBelongsToMe = "14096";
+            botBelongsToMe = "71811";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4467,7 +4467,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "LightHorse";
-            botBelongsToMe = "14097";
+            botBelongsToMe = "71812";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4548,7 +4548,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "14098";
+            botBelongsToMe = "71813";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5337,7 +5337,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "14099";
+            botBelongsToMe = "71814";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -5362,7 +5362,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "14100";
+            botBelongsToMe = "71815";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -5779,7 +5779,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "14101";
+            botBelongsToMe = "71816";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -5804,7 +5804,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "14102";
+            botBelongsToMe = "71817";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -8091,7 +8091,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8111,7 +8111,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8131,7 +8131,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8151,7 +8151,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8171,7 +8171,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8191,7 +8191,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Worlds/Kardia/Models/Forest/Plants/bigleaf/bigleaf.DAE";
+         shapeName = "art/packs/worlds/Kardia/Models/Forest/plants/bigleaf/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8650,7 +8650,7 @@ new SimGroup(MissionGroup) {
       isAIControlled = "0";
       dataBlock = "IronSpearWeapon";
       position = "-0.188069 383.118 15.2041";
-      rotation = "-0.998498 -0.0387474 -0.0387474 90.0846";
+      rotation = "-0.998497 -0.0387474 -0.0387474 90.0848";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -8692,7 +8692,7 @@ new SimGroup(MissionGroup) {
       isAIControlled = "0";
       dataBlock = "SteelSpearWeapon";
       position = "-1.86093 383.105 15.1421";
-      rotation = "-0.999346 0.0255798 0.0255799 90.039";
+      rotation = "-0.999346 0.0255798 0.0255799 90.0392";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -8959,6 +8959,7 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         respawnTime = "30";
    };
    new Item() {
       static = "1";
@@ -9343,19 +9344,6 @@ new SimGroup(MissionGroup) {
       forceDetail = "-1";
       position = "-24.3042 383.258 13.9721";
       rotation = "0 0 1 61.4826";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "Fishing_Pole";
-      position = "-19.3895 389.303 15.615";
-      rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
