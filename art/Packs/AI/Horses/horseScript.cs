@@ -80,6 +80,11 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       %horse.respawn = false;
       %horse.mountable = true;
       %horse.newlyAdded = false;
+
+      // Hide the horses armor
+      %horse.setMeshHidden("Armor_Head", true);
+      %horse.setMeshHidden("Armor_Body", true);
+
       // Set a timer to free the horse if it is unattended too long
       %horse.FreeSchedule = %horse.schedule($Horse::StableDelay, "SetHorseFree");
 
