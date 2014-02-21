@@ -346,6 +346,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
+   %this.setSequenceGroundSpeed("Walk", "0 2.5 0", "0 0 0");
 }
 
 $mack = true;

@@ -107,99 +107,101 @@ function AIPlayer::onReachDestination(%this, %obj) //UAISK+AFX Interop Change
 //Causes AIPlayer to slowly pace around their current location
 function AIPlayer::Pacing(%this, %obj)
 {
-    //Don't pace if the bot is pathed
-    if ( %obj.path !$= "" )
-        return;
+   //Don't pace if the bot is pathed
+   if ( %obj.path !$= "" )
+      return;
 
-    %obj.pace--;
+   %obj.pace--;
 
-    //Check if the bot has paced recently and if it should be pacing at all.
-    if (%obj.pace <= 0 && (%obj.maxPace > 0 && $AISK_PACE_TIME > 0 && $AISK_PACE_SPEED > 0))
-    {
-        //If the bot needs to pace, get a random time (which is an amount of think cycles)
-        //that the bot has before it paces again
-        %obj.pace = getRandom(1, $AISK_PACE_TIME);
+   //Check if the bot has paced recently and if it should be pacing at all.
+   if (%obj.pace <= 0 && (%obj.maxPace > 0 && $AISK_PACE_TIME > 0 && $AISK_PACE_SPEED > 0))
+   {
+      //If the bot needs to pace, get a random time (which is an amount of think cycles)
+      //that the bot has before it paces again
+      %obj.pace = getRandom(1, $AISK_PACE_TIME);
 
-        //Multiple the random pace time by the bot's attention level.
-        //This is so the bot always paces at the same rate no matter what its attention is.
-        //The if/else and the line after can be commented out if you wish.
-        if (%obj.attentionlevel != $AISK_MAX_ATTENTION)
-            %tempAttention = $AISK_MAX_ATTENTION - %obj.attentionlevel;
-        else
-            %tempAttention = 1;
+      //Multiple the random pace time by the bot's attention level.
+      //This is so the bot always paces at the same rate no matter what its attention is.
+      //The if/else and the line after can be commented out if you wish.
+      if (%obj.attentionlevel != $AISK_MAX_ATTENTION)
+         %tempAttention = $AISK_MAX_ATTENTION - %obj.attentionlevel;
+      else
+         %tempAttention = 1;
 
-        %obj.pace = %obj.pace * %tempAttention;
-    }
-    else
-        return;
+      %obj.pace = %obj.pace * %tempAttention;
+   }
+   else
+      return;
 
-    //Set the bots returning position to its marker if it's guarding
-    if (%obj.behavior.returnToMarker && %obj.behavior.isAggressive)
-    {
-        if (%obj.oldPath $= "")
-            %obj.returningPos = %obj.marker.getposition();
-        else
-            %obj.returningPos = %obj.oldPath;
-    }
+   //Set the bots returning position to its marker if it's guarding
+   if (%obj.behavior.returnToMarker && %obj.behavior.isAggressive)
+   {
+      if (%obj.oldPath $= "")
+         %obj.returningPos = %obj.marker.getposition();
+      else
+         %obj.returningPos = %obj.oldPath;
+   }
 
-    //Skittish bots don't return back to their markers
-    if (%obj.behavior.isSkittish && !%obj.behavior.returnToMarker)
-        %basedist = 0;
-    else
-        %basedist = VectorDistSquared(%obj.getposition(), %obj.returningPos);
+   //Skittish bots don't return back to their markers
+   if (%obj.behavior.isSkittish && !%obj.behavior.returnToMarker)
+      %basedist = 0;
+   else
+      %basedist = VectorDistSquared(%obj.getposition(), %obj.returningPos);
 
-    //If the bot is away from its returning position, go back to it so it doesn't wander too far away
-    if (%basedist > $AISK_MIN_PACE_SQR)
-        %newLoc = %obj.returningPos;
-    else
-    {
-        //Get max and min pace distances
-        %max = %obj.maxPace;
-        %min = $AISK_MIN_PACE;
-        %foundObject = 1;
+   //If the bot is away from its returning position, go back to it so it doesn't wander too far away
+   if (%basedist > $AISK_MIN_PACE_SQR)
+      %newLoc = %obj.returningPos;
+   else
+   {
+      //Get max and min pace distances
+      %max = %obj.maxPace;
+      %min = $AISK_MIN_PACE;
+      %foundObject = 1;
 
-        for (%i = 0; (%i < $AISK_LOOP_COUNTER && %foundObject > 0); %i++)
-        {
-            //Get proper random numbers
-            %xrand = %this.constrainedRandom(%obj, %max, %min);
-            %yrand = %this.constrainedRandom(%obj, %max, %min);
-            //%zrand = %this.constrainedRandom(%obj, %max, %min);
-            //Change them into a vector
-            %randVector = %xrand SPC %yrand SPC 0;
+      for (%i = 0; (%i < $AISK_LOOP_COUNTER && %foundObject > 0); %i++)
+      {
+         //Get proper random numbers
+         %xrand = %this.constrainedRandom(%obj, %max, %min);
+         %yrand = %this.constrainedRandom(%obj, %max, %min);
+         //%zrand = %this.constrainedRandom(%obj, %max, %min);
+         //Change them into a vector
+         %randVector = %xrand SPC %yrand SPC 0;
 
-            //Add or subtract the numbers from the bot's current position. Subtraction
-            //is done by adding a negative. Adding versus subtracting is the difference
-            //between left vs right, or forward vs backward
-            %newLoc =  vectorAdd(%obj.getposition(), %randVector);
+         //Add or subtract the numbers from the bot's current position. Subtraction
+         //is done by adding a negative. Adding versus subtracting is the difference
+         //between left vs right, or forward vs backward
+         %newLoc =  vectorAdd(%obj.getposition(), %randVector);
 
-            //Test LOS of the new position
-            %foundObject = %this.positionLosCheck(%obj, %newLoc);
+         //Test LOS of the new position
+         %foundObject = %this.positionLosCheck(%obj, %newLoc);
 
-            //If the bot is leashed, make sure it stays in the proper range
-            if (%obj.behavior.isLeashed)
-            {
-               if (!%this.testLeashed(%obj, %newLoc))
-                   %foundObject = 1;
-            }
-        }
-    }
+         //If the bot is leashed, make sure it stays in the proper range
+         if (%obj.behavior.isLeashed)
+         {
+            if (!%this.testLeashed(%obj, %newLoc))
+               %foundObject = 1;
+         }
+      }
+      if ( %foundObject < 1 )
+         %newLoc = vectorAdd(%newloc, $AISK_CHAR_HEIGHT);
+   }
 
-    if (%foundObject > 0)
-    {
-        if ($AISK_SHOW_NAME $= "Debug")
-            warn("Bot ID " @ %obj @ " could not find a valid PACE location.");
+   if (%foundObject > 0)
+   {
+      //if ($AISK_SHOW_NAME $= "Debug")
+         warn("Bot ID " @ %obj @ " could not find a valid PACE location.");
 
-        return;
-    }
+      return;
+   }
 
-    //Set the bot to move at a different speed than normal while pacing
-    %obj.setMoveSpeed($AISK_PACE_SPEED);
-    //Set the bot to look in the direction that it is moving.
-    //%obj.setaimlocation(vectorAdd(%newloc, $AISK_CHAR_HEIGHT));
-    %obj.setaimlocation(%newloc);
-    //Set the bot to move towards the new position.
-    if (%obj.behavior.canMove && !%obj.isCasting)
-        %obj.setMoveDestination(%newLoc, true);
+   //Set the bot to move at a different speed than normal while pacing
+   %obj.setMoveSpeed($AISK_PACE_SPEED);
+   //Set the bot to look in the direction that it is moving.
+   //%obj.setaimlocation(vectorAdd(%newloc, $AISK_CHAR_HEIGHT));
+   %obj.setaimlocation(%newloc);
+   //Set the bot to move towards the new position.
+   if (%obj.behavior.canMove && !%obj.isCasting)
+      %obj.setMoveDestination(%newLoc, true);
 }
 
 //Sidestep is used to find a random spot near the bot and attempt to have them move towards it.
