@@ -297,7 +297,19 @@ singleton GameBaseData(SwordSwing5_RHMove)
    startDamage = 0.3; //time in seconds during animation before damage is done
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(SwordSwing5_LHMove)
+{
+   seqName = "SwordSwing5_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
    impulse = 500;
 };
 
@@ -310,7 +322,7 @@ singleton GameBaseData(MountedSwing1_RH)
    startDamage = 0.3; //time in seconds during animation before damage is done
    endDamage = 0.85;
    soundDelay = 316; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
+   swingSound = SwordSwing1Sound;
    impulse = 500;
 };
 
@@ -322,7 +334,7 @@ singleton GameBaseData(MountedSwing2_RH)
    startDamage = 0.15; //time in seconds during animation before damage is done
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
+   swingSound = SwordSwing1Sound;
    impulse = 500;
 };
 
@@ -335,7 +347,7 @@ singleton GameBaseData(MountedSwing1_LH)
    startDamage = 0.3; //time in seconds during animation before damage is done
    endDamage = 0.85;
    soundDelay = 316; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
+   swingSound = SwordSwing1Sound;
    impulse = 500;
 };
 
@@ -347,7 +359,7 @@ singleton GameBaseData(MountedSwing2_LH)
    startDamage = 0.15; //time in seconds during animation before damage is done
    endDamage = 0.9;
    soundDelay = 316; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
+   swingSound = SwordSwing1Sound;
    impulse = 500;
 };
 
@@ -444,6 +456,9 @@ datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
    hthAttack[4]                     = SwordSwing5_LH;
    hthAttack[5]                     = SwordSwing6_LH;
    hthAttack[6]                     = SwordSwing7_LH;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = SwordSwing5_LHMove;
 
    numMountedAttacks = 2;
    mountedAttack[0] = MountedSwing1_LH;
@@ -637,6 +652,19 @@ singleton GameBaseData(THS_Swing11)
 };
 
 
+singleton GameBaseData(THS_Swing_Move)
+{
+   seqName = "SwordSwing5_RHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 80;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 800;
+};
+
+
 //////////////2 Handed Swords
 
 datablock ShapeBaseImageData(SkullSplitterImage : BaseMeleeImage)
@@ -658,6 +686,9 @@ datablock ShapeBaseImageData(SkullSplitterImage : BaseMeleeImage)
    hthAttack[8]                     = THS_Swing9;
    hthAttack[9]                     = THS_Swing10;
    hthAttack[10]                    = THS_Swing11;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = THS_Swing_Move;
 
 
    // The sound to play when this weapon hits a static object
@@ -722,7 +753,7 @@ singleton GameBaseData(BShield3)
    impulse = 250;
 };
 
-singleton GameBaseData(BShield3)
+singleton GameBaseData(BShield4)
 {
    seqName = "Shield4_LH";
    fullSkelAnim = true;
@@ -734,6 +765,33 @@ singleton GameBaseData(BShield3)
    swingSound = SwordSwing1Sound;
    impulse = 250;
 };
+
+////Mounted Buckler Shield
+singleton GameBaseData(BShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
+////Move Buckler Shield
+singleton GameBaseData(BShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
 
 /////////////////Targe Shield Attacks/////////////
 
@@ -789,6 +847,31 @@ singleton GameBaseData(TShield4)
    impulse = 300;
 };
 
+////Mounted Targe Shield
+singleton GameBaseData(TShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+////Move Targe Shield
+singleton GameBaseData(TShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
 
 //////////////// Wood Round Shield Attacks////////////////
 
@@ -839,6 +922,32 @@ singleton GameBaseData(WRShield4)
    damageAmount = 40;
    startDamage = 0; //time in seconds during animation before damage is done
    endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+////Mounted Wood Round Shield
+singleton GameBaseData(WRShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 400;
+};
+
+////Move Wood Round Shield
+singleton GameBaseData(WRShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 40;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
    soundDelay = 400; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 400;
@@ -898,6 +1007,32 @@ singleton GameBaseData(WSShield4)
    impulse = 500;
 };
 
+////Mounted Wood Square Shield
+singleton GameBaseData(WSShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+////Move Wood Square Shield
+singleton GameBaseData(WSShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 25;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 250;
+};
+
 //////////////// Heater Shield Attacks////////////////
 
 singleton GameBaseData(HShield1)
@@ -947,6 +1082,32 @@ singleton GameBaseData(HShield4)
    damageAmount = 70;
    startDamage = 0; //time in seconds during animation before damage is done
    endDamage = 0.8;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+////Mounted Heater Shield
+singleton GameBaseData(HShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 700;
+};
+
+////Move Heater Shield
+singleton GameBaseData(HShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 70;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
    soundDelay = 400; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 700;
@@ -1006,6 +1167,32 @@ singleton GameBaseData(GShield4)
    impulse = 1000;
 };
 
+////Mounted Golden Shield
+singleton GameBaseData(GShield_Mount)
+{
+   seqName = "Shield2_LH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
+////Move Golden Shield
+singleton GameBaseData(GShield_Blend)
+{
+   seqName = "Shield2_LHBlend";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 100;
+   startDamage = 0.0; //time in seconds during animation before damage is done
+   endDamage = 0.25;
+   soundDelay = 400; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 1000;
+};
+
 ///////Buckler Shield Images
 
 datablock ShapeBaseImageData(ShieldBucklerAImage : BaseMeleeImage)
@@ -1021,6 +1208,12 @@ datablock ShapeBaseImageData(ShieldBucklerAImage : BaseMeleeImage)
    hthAttack[1]                     = BShield2;
    hthAttack[2]                     = BShield3;
    hthAttack[3]                     = BShield4;
+
+   numMountedAttacks = 1;
+   mountedAttack[0] = BShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = BShield_Blend;
 
 
    // The sound to play when this weapon hits a static object
@@ -1058,6 +1251,12 @@ datablock ShapeBaseImageData(ShieldTargeAImage : BaseMeleeImage)
    hthAttack[2]                     = TShield3;
    hthAttack[3]                     = TShield4;
 
+   numMountedAttacks = 1;
+   mountedAttack[0] = TShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = TShield_Blend;
+
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1094,6 +1293,12 @@ datablock ShapeBaseImageData(RoundShieldImage : BaseMeleeImage)
    hthAttack[2]                     = WRShield3;
    hthAttack[3]                     = WRShield4;
 
+   numMountedAttacks = 1;
+   mountedAttack[0] = WRShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = WRShield_Blend;
+
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1117,6 +1322,12 @@ datablock ShapeBaseImageData(SquareShieldImage : BaseMeleeImage)
    hthAttack[2]                     = WSShield3;
    hthAttack[3]                     = WSShield4;
 
+   numMountedAttacks = 1;
+   mountedAttack[0] = WSShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = WSShield_Blend;
+
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1139,6 +1350,12 @@ datablock ShapeBaseImageData(ShieldHeaterAImage : BaseMeleeImage)
    hthAttack[1]                     = HShield2;
    hthAttack[2]                     = HShield3;
    hthAttack[3]                     = HShield4;
+
+   numMountedAttacks = 1;
+   mountedAttack[0] = HShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = HShield_Blend;
 
 
    // The sound to play when this weapon hits a static object
@@ -1175,6 +1392,12 @@ datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
    hthAttack[1]                     = GShield2;
    hthAttack[2]                     = GShield3;
    hthAttack[3]                     = GShield4;
+
+   numMountedAttacks = 1;
+   mountedAttack[0] = GShield_Mount;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = GShield_Blend;
 
 
    // The sound to play when this weapon hits a static object
@@ -1237,6 +1460,7 @@ singleton GameBaseData(ParalyzerSwing5Move : SwordSwing5_RHMove)
    damageAmount = 70;
 };
 
+
 ///////////////Paralyzer LH Swings
 
 singleton GameBaseData(ParalyzerLHSwing1 : SwordSwing1_LH)
@@ -1264,6 +1488,10 @@ singleton GameBaseData(ParalyzerLHSwing6 : SwordSwing6_LH)
    damageAmount = 70;
 };
 singleton GameBaseData(ParalyzerLHSwing7 : SwordSwing7_LH)
+{
+   damageAmount = 70;
+};
+singleton GameBaseData(ParalyzerSwing5LHMove : SwordSwing5_LHMove)
 {
    damageAmount = 70;
 };
@@ -1317,6 +1545,9 @@ datablock ShapeBaseImageData(ParalyzerLHImage : BaseMeleeImage)
    hthAttack[4]                     = ParalyzerLHSwing5;
    hthAttack[5]                     = ParalyzerLHSwing6;
    hthAttack[6]                     = ParalyzerLHSwing7;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = ParalyzerSwing5LHMove;
 
    numMountedAttacks = 2;
    mountedAttack[0] = MountedSwing1_LH;
@@ -1412,6 +1643,10 @@ singleton GameBaseData(EqualizerLHSwing7 : SwordSwing7_LH)
 {
    damageAmount = 80;
 };
+singleton GameBaseData(EqualizerSwing5LHMove : SwordSwing5_LHMove)
+{
+   damageAmount = 80;
+};
 
 
 datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
@@ -1463,6 +1698,9 @@ datablock ShapeBaseImageData(EqualizerLHImage : BaseMeleeImage)
    hthAttack[4]                     = EqualizerLHSwing5;
    hthAttack[5]                     = EqualizerLHSwing6;
    hthAttack[6]                     = EqualizerLHSwing7;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = EqualizerSwing5LHMove;
 
    numMountedAttacks = 2;
    mountedAttack[0] = MountedSwing1_LH;
@@ -1557,7 +1795,10 @@ singleton GameBaseData(LiberatorLHSwing7 : SwordSwing7_LH)
 {
    damageAmount = 60;
 };
-
+singleton GameBaseData(LiberatorSwing5LHMove : SwordSwing5_LHMove)
+{
+   damageAmount = 60;
+};
 
 datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
 {
@@ -1608,6 +1849,9 @@ datablock ShapeBaseImageData(LiberatorLHImage : BaseMeleeImage)
    hthAttack[4]                     = LiberatorLHSwing5;
    hthAttack[5]                     = LiberatorLHSwing6;
    hthAttack[6]                     = LiberatorLHSwing7;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = LiberatorSwing5LHMove;
 
    numMountedAttacks = 2;
    mountedAttack[0] = MountedSwing1_LH;
@@ -1754,11 +1998,17 @@ datablock GameBaseData(Staff_Swing10)
    impulse = 200;
 };
 
+singleton GameBaseData(Staff_Swing1Move : SwordSwing5_RHMove)
+{
+   damageAmount = 60;
+};
+
 datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Staffs/WizardsStaff.dts";
    item = WizardsStaffWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
    usesBothHands = true;
+   canUseMounted = true;
 
    // Here are the Attacks we support
    hthNumAttacks = 10;
@@ -1772,6 +2022,13 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
    hthAttack[7]                     = Staff_Swing8;
    hthAttack[8]                     = Staff_Swing9;
    hthAttack[9]                     = Staff_Swing10;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = Staff_Swing1Move;
+
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSwing1_RH;
+   mountedAttack[1] = MountedSwing2_RH;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHitStaticSound";
@@ -1838,16 +2095,54 @@ singleton GameBaseData(SPikeThrust3)
    impulse = 300;
 };
 
+////RightHand - Mounted attacks
+singleton GameBaseData(MountedSPikeSwing1_RH)
+{
+   seqName = "Melee1_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.85;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(MountedSPikeSwing2_RH)
+{
+   seqName = "Melee2_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 30;
+   startDamage = 0.15; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 300;
+};
+
+singleton GameBaseData(SPike_Swing1Move : SwordSwing5_RHMove)
+{
+   damageAmount = 30;
+};
+
 datablock ShapeBaseImageData(StonePikeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/spears/SpearStone_melee.dts";
-   item = StonePikeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = StonePikeWeapon; //This is the name of the WEAPON that comes from the weapons table
+   canUseMounted = true;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
    hthAttack[0]                     = SPikeThrust1;
    hthAttack[1]                     = SPikeThrust2;
    hthAttack[2]                     = SPikeThrust3;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = SPike_Swing1Move;
+
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedSPikeSwing1_RH;
+   mountedAttack[1] = MountedSPikeSwing2_RH;
 
 
    // The sound to play when this weapon hits a static object
@@ -1876,7 +2171,7 @@ singleton GameBaseData(IPikeThrust2)
    seqName = "Spear_Thrust2_RH";
    fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
-   damageAmount = 30;
+   damageAmount = 50;
    startDamage = 0; //time in seconds during animation before damage is done
    endDamage = 0.5;
    soundDelay = 500; // time in ms before attack sound plays
@@ -1889,7 +2184,7 @@ singleton GameBaseData(IPikeThrust3)
    seqName = "Spear_Thrust3_RH";
    fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
-   damageAmount = 30;
+   damageAmount = 50;
    startDamage = 0; //time in seconds during animation before damage is done
    endDamage = 0.5;
    soundDelay = 500; // time in ms before attack sound plays
@@ -1897,16 +2192,55 @@ singleton GameBaseData(IPikeThrust3)
    impulse = 500;
 };
 
+////RightHand - Mounted attacks
+singleton GameBaseData(MountedIPikeSwing1_RH)
+{
+   seqName = "Melee1_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.3; //time in seconds during animation before damage is done
+   endDamage = 0.85;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(MountedIPikeSwing2_RH)
+{
+   seqName = "Melee2_RH_Mount";
+   timeScale = 1; //speed the animation plays at
+   damageAmount = 50;
+   startDamage = 0.15; //time in seconds during animation before damage is done
+   endDamage = 0.9;
+   soundDelay = 316; // time in ms before attack sound plays
+   swingSound = SwordSwing1Sound;
+   impulse = 500;
+};
+
+singleton GameBaseData(IPike_Swing1Move : SwordSwing5_RHMove)
+{
+   damageAmount = 50;
+};
+
 datablock ShapeBaseImageData(IronPikeImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/spears/SpearIron_melee.dts";
-   item = IronPikeWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+   item = IronPikeWeapon; //This is the name of the WEAPON that comes from the weapons table
+   canUseMounted = true;
 
    // Here are the Attacks we support
    hthNumAttacks = 3;
    hthAttack[0]                     = IPikeThrust1;
    hthAttack[1]                     = IPikeThrust2;
    hthAttack[2]                     = IPikeThrust3;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = IPike_Swing1Move;
+
+   numMountedAttacks = 2;
+   mountedAttack[0] = MountedIPikeSwing1_RH;
+   mountedAttack[1] = MountedIPikeSwing2_RH;
+
 
 
    // The sound to play when this weapon hits a static object
