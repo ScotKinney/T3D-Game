@@ -12,8 +12,6 @@ function horseDts::onLoad(%this)
 {
    %this.addSequence("./Anims/h_head.dsq", "head", "1", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
-   %this.addSequence("./Anims/h_headside.dsq", "headside", "2", "24", "1", "0");
-   %this.setSequencePriority("headside", "5");
    %this.addSequence("./Anims/h_Idle.dsq", "Root", "0", "559", "1", "0");
    %this.setSequencePriority("Root", "0");
    %this.setSequenceCyclic("Root", "1");
@@ -25,7 +23,6 @@ function horseDts::onLoad(%this)
    %this.setSequencePriority("rejectmount", "0");
    %this.addTrigger("rejectmount", "74", "1");
    %this.addSequence("./Anims/h_Rear.dsq", "rearing", "0", "85", "1", "0");
-   %this.setSequencePriority("rejectmount", "0");
    %this.addTrigger("rejectmount", "74", "1");
    %this.addSequence("./Anims/h_Death.dsq", "Death1", "0", "26", "1", "0");
    %this.addSequence("./Anims/h_Rear.dsq", "Damage1", "0", "85", "1", "0");
@@ -72,4 +69,6 @@ function horseDts::onLoad(%this)
    %this.setSequenceGroundSpeed("run2", "0 5 0", "0 0 0");
    %this.setSequenceGroundSpeed("run3", "0 10 0", "0 0 0");
    %this.addNode("mount0", "horse_Spine1", "-1.79152e-007 -0.0739806 1.70716 0.385066 -0.184227 -0.904315 0.00910878", "1");
+   %this.addSequence("./Anims/h_headside.dsq", "headside", "2", "8", "1", "0");
+   %this.setSequencePriority("headside", "5");
 }
