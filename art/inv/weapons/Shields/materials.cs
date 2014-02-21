@@ -2,27 +2,27 @@
 singleton Material(bucklerShieldC)
 {
    mapTo = "Buckler_C_dif";
-   diffuseMap[0] = "art/inv/weapons/Shields/Buckler_C_dif";
-   normalMap[0] = "art/inv/weapons/shields/Buckler_C_normals.dds";
-   specularMap[0] = "art/inv/weapons/shields/Buckler_C_specular.dds";
+   diffuseMap[0] = "Buckler_C_dif";
+   normalMap[0] = "Buckler_C_normals.dds";
+   specularMap[0] = "Buckler_C_specular.dds";
    useAnisotropic[0] = "1";
 };
 
 singleton Material(bucklerShieldB)
 {
    mapTo = "Buckler_B_dif";
-   diffuseMap[0] = "art/inv/weapons/Shields/Buckler_B_dif";
-   normalMap[0] = "art/inv/weapons/shields/Buckler_B_normals.dds";
-   specularMap[0] = "art/inv/weapons/shields/Buckler_B_specular.dds";
+   diffuseMap[0] = "Buckler_B_dif";
+   normalMap[0] = "Buckler_B_normals.dds";
+   specularMap[0] = "Buckler_B_specular.dds";
    useAnisotropic[0] = "1";
 };
 
 singleton Material(bucklerShieldA)
 {
    mapTo = "Buckler_A_dif";
-   diffuseMap[0] = "art/inv/weapons/Shields/Buckler_A_dif";
-   normalMap[0] = "art/inv/weapons/shields/Buckler_A_normals.dds";
-   specularMap[0] = "art/inv/weapons/shields/Buckler_A_specular.dds";
+   diffuseMap[0] = "Buckler_A_dif";
+   normalMap[0] = "Buckler_A_normals.dds";
+   specularMap[0] = "Buckler_A_specular.dds";
    useAnisotropic[0] = "1";
 };
 
@@ -329,9 +329,9 @@ singleton Material(Targe_ShieldC)
 singleton Material(GoldenShield)
 {
    mapTo = "ShieldGold_dif";
-   diffuseMap[0] = "art/inv/weapons/shields/ShieldGold_dif";
-   normalMap[0] = "art/inv/weapons/shields/ShieldGold_nm.dds";
-   specularMap[0] = "art/inv/weapons/shields/ShieldGold_spec.dds";
+   diffuseMap[0] = "ShieldGold_dif";
+   normalMap[0] = "ShieldGold_nm.dds";
+   specularMap[0] = "ShieldGold_spec.dds";
    useAnisotropic[0] = "1";
    specularPower[0] = "1";
 };
