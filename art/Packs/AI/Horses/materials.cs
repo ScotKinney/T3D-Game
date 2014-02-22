@@ -150,10 +150,10 @@ singleton Material(Gray_Mane)
    translucent = "1";
    translucentZWrite = "0";
    alphaRef = "127";
-   translucentBlendOp = "None";
-   alphaTest = "1";
+   translucentBlendOp = "Sub";
+   alphaTest = "0";
    materialTag0 = "Miscellaneous";
-   doubleSided = "1";
+   doubleSided = "0";
 };
 
 /////////Armor Saddle and Reins

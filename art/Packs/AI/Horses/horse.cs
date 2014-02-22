@@ -12,6 +12,8 @@ function horseDts::onLoad(%this)
 {
    %this.addSequence("./Anims/h_head.dsq", "head", "1", "-1", "1", "0");
    %this.setSequenceBlend("head", "1", "root", "0");
+   %this.addSequence("./Anims/h_headside.dsq", "headside", "2", "8", "1", "0");
+   %this.setSequencePriority("headside", "5");
    %this.addSequence("./Anims/h_Idle.dsq", "Root", "0", "559", "1", "0");
    %this.setSequencePriority("Root", "0");
    %this.setSequenceCyclic("Root", "1");
@@ -45,10 +47,10 @@ function horseDts::onLoad(%this)
    %this.addSequence("./Anims/h_Trot.dsq", "Strafe_Left", "0", "24", "1", "0");
    %this.setSequencePriority("Strafe_Left", "0");
    %this.setSequenceCyclic("Strafe_Left", "1");
-   %this.addTrigger("Run2", "10", "1");
-   %this.addTrigger("Run2", "11", "2");
-   %this.addTrigger("Run2", "20", "1");
-   %this.addTrigger("Run2", "21", "2");
+   %this.addTrigger("Strafe_Left", "10", "1");
+   %this.addTrigger("Strafe_Left", "11", "2");
+   %this.addTrigger("Strafe_Left", "20", "1");
+   %this.addTrigger("Strafe_Left", "21", "2");
    %this.addSequence("./Anims/h_Gallop.dsq", "Run3", "0", "15", "1", "0");
    %this.setSequencePriority("Run3", "0");
    %this.setSequenceCyclic("Run3", "1");
@@ -68,7 +70,6 @@ function horseDts::onLoad(%this)
    %this.setSequenceGroundSpeed("Walk", "0 4 0", "0 0 0");
    %this.setSequenceGroundSpeed("run2", "0 5 0", "0 0 0");
    %this.setSequenceGroundSpeed("run3", "0 10 0", "0 0 0");
-   %this.addNode("mount0", "horse_Spine1", "-1.79152e-007 -0.0739806 1.70716 0.385066 -0.184227 -0.904315 0.00910878", "1");
-   %this.addSequence("./Anims/h_headside.dsq", "headside", "2", "8", "1", "0");
-   %this.setSequencePriority("headside", "5");
+   %this.addNode("mount0", "horse_Spine1", "-1.50943e-007 -0.0675488 1.71957 -0.102023 0.0489181 -0.993579 0.0795337", "1");
+   %this.addNode("mount5", "horse_Spine1", "-1.52965e-007 -0.467319 1.67255 0.682802 -0.0308669 -0.729951 0.0821387", "1");
 }
