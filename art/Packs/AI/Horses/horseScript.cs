@@ -21,6 +21,7 @@ function AIPlayer::SetHorseFree(%this)
          %this.owner.player.decInventory(%this.itemDB,1);
       %this.owner = "";
    }
+   %this.showBaseNMeshes(); // Take off the saddle, armor and reigns
    %this.setClanName("Drop");
 }
 
@@ -126,7 +127,9 @@ function ThrowHorse(%user, %horseDB)
       %horse.setEnergyLevel(1);
       %horse.startFade(0, 0, true);      
       %horse.respawn = false;
-      %client.horse.playArriveEffect();
+      %horse.newlyAdded = false;
+      %horse.showBaseNMeshes(); // Take off the saddle, armor and reigns
+      %horse.playArriveEffect();
    }
    %horse.setClanName("Drop");
 

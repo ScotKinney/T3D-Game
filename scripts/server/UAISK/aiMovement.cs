@@ -195,7 +195,8 @@ function AIPlayer::Pacing(%this, %obj)
    }
 
    //Set the bot to move at a different speed than normal while pacing
-   %obj.setMoveSpeed($AISK_PACE_SPEED);
+   %newSpeed = 0.3 + (getRandom() * 0.3);
+   %obj.setMoveSpeed(%newSpeed);
    //Set the bot to look in the direction that it is moving.
    //%obj.setaimlocation(vectorAdd(%newloc, $AISK_CHAR_HEIGHT));
    %obj.setaimlocation(%newloc);

@@ -56,8 +56,8 @@ datablock PlayerData(Droid1 : DefaultPlayerData)
 
    minImpactSpeed = 45;
 
-   boundingBox = "4 4 10";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "5 4 9";
+   swimBoundingBox = "5 4 9";
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;

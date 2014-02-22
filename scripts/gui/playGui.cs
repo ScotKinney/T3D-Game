@@ -484,6 +484,7 @@ function PlayGui::showHorsePopup(%this, %item, %skinName)
       if ( strstr(%puName, %skinName) != -1 )
       {
          %itemID = %i;
+         break;
       }
    }
 
