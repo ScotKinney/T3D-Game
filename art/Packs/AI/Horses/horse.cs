@@ -71,5 +71,5 @@ function horseDts::onLoad(%this)
    %this.setSequenceGroundSpeed("run2", "0 5 0", "0 0 0");
    %this.setSequenceGroundSpeed("run3", "0 10 0", "0 0 0");
    %this.addNode("mount0", "horse_Spine1", "-1.50943e-007 -0.0675488 1.71957 -0.102023 0.0489181 -0.993579 0.0795337", "1");
-   %this.addNode("mount5", "horse_Spine1", "-1.52965e-007 -0.467319 1.67255 0.682802 -0.0308669 -0.729951 0.0821387", "1");
+   %this.addNode("mount5", "horse_Spine1", "-1.52965e-007 -0.467319 1.73 0.682802 -0.0308669 -0.729951 0.0821387", "1");
 }

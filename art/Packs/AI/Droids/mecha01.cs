@@ -14,8 +14,8 @@ function Mecha01Dts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Droids/straferight.dsq", "Strafe_Left", "0", "29");
    %this.addSequence("art/Packs/AI/Droids/shoot01.dsq", "attack", "0", "-1");
    //%this.setSequenceCyclic("attack", "0");
-   %this.addTrigger("Walk", "15", "1");
-   %this.addTrigger("Walk", "29", "2");
+   %this.addTrigger("Walk", "21", "1");
+   %this.addTrigger("Walk", "6", "2");
    %this.addTrigger("Strafe_Left", "24", "1");
    %this.addTrigger("Strafe_Left", "10", "2");
    %this.addTrigger("attack", "1", "3");
