@@ -19,7 +19,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
-   %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "Walk", "0", "35", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
