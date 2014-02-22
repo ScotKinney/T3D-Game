@@ -52,7 +52,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Run_Back", "23", "2");
    %this.addTrigger("Run_Back", "38", "3");
    %this.addTrigger("Run_Back", "52", "4");
-   %this.addSequence("art/players/base/Seqs/Basic/Jump_Sprint.dsq", "Move_Jump", "0", "39", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Basic/Jump_Sprint.dsq", "Move_Jump", "0", "29", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Sitting_M.dsq", "Sitting_M", "0", "49", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Crawling.dsq", "Prone_Root", "0", "29", "1", "0");
    %this.setSequenceCyclic("Prone_Root", "1");
