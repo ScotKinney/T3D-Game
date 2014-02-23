@@ -2,7 +2,7 @@
 singleton Material(mat_med1)
 {
    mapTo = "med1";
-   diffuseMap[0] = "med1.jpg";
+   diffuseMap[0] = "med1";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
 };
@@ -10,7 +10,7 @@ singleton Material(mat_med1)
 singleton Material(mat_walltiledA)
 {
    mapTo = "WallTiledA";
-   diffuseMap[0] = "WallTiledA.jpg";
+   diffuseMap[0] = "WallTiledA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -19,7 +19,7 @@ singleton Material(mat_walltiledA)
 singleton Material(mat_floorb)
 {
    mapTo = "FloorB";
-   diffuseMap[0] = "FloorB.jpg";
+   diffuseMap[0] = "FloorTileA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -28,15 +28,16 @@ singleton Material(mat_floorb)
 singleton Material(mat_med1Alt)
 {
    mapTo = "med1Alternative";
-   diffuseMap[0] = "med1ALTERNATIVE.jpg";
+   diffuseMap[0] = "med1Alternative.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_mednewAP1)
 {
    mapTo = "mednewAP1";
-   diffuseMap[0] = "mednewAP1.jpg";
+   diffuseMap[0] = "mednewAP1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -45,7 +46,7 @@ singleton Material(mat_mednewAP1)
 singleton Material(mat_stoneworkNew)
 {
    mapTo = "stonework_new";
-   diffuseMap[0] = "stonework_new";
+   diffuseMap[0] = "stonework_new.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -54,7 +55,7 @@ singleton Material(mat_stoneworkNew)
 singleton Material(mat_ceilingB)
 {
    mapTo = "CeilingB";
-   diffuseMap[0] = "CeilingB";
+   diffuseMap[0] = "FloorTileB.dds";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
 };
@@ -62,7 +63,7 @@ singleton Material(mat_ceilingB)
 singleton Material(mat_CeilingA)
 {
    mapTo = "CeilingA";
-   diffuseMap[0] = "PlainBricksSmall90.jpg";
+   diffuseMap[0] = "WallTiledA.dds";
    translucent = "0";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -72,16 +73,17 @@ singleton Material(mat_CeilingA)
 singleton Material(mat_WallTiledB)
 {
    mapTo = "WallTiledB";
-   diffuseMap[0] = "WallTiledB.jpg";
+   diffuseMap[0] = "WallTiledB";
    materialTag0 = "Kardia";
 };
 
 singleton Material(mat_floorTileC)
 {
    mapTo = "FloorTileC";
-   diffuseMap[0] = "FloorTileC";
+   diffuseMap[0] = "FloorTileA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
+   useAnisotropic[0] = "1";
 };
 
 ////////////////////////////////////
@@ -91,7 +93,7 @@ singleton Material(mat_floorTileC)
 singleton Material(mat_aureusPost1)
 {
    mapTo = "aureuspost1";
-   diffuseMap[0] = "aurstone2.jpg";
+   diffuseMap[0] = "aurstone2";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
 };
@@ -99,7 +101,7 @@ singleton Material(mat_aureusPost1)
 singleton Material(mat_ropehemp2)
 {
    mapTo = "ropehemp2";
-   diffuseMap[0] = "grdropes.jpg";
+   diffuseMap[0] = "grdropes";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
 };
@@ -107,7 +109,7 @@ singleton Material(mat_ropehemp2)
 singleton Material(mat_GrdWalls)
 {
    mapTo = "grdwalls";
-   diffuseMap[0] = "grdwalls.jpg";
+   diffuseMap[0] = "walltileA";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
@@ -125,7 +127,7 @@ singleton Material(mat_GrdRoofs)
 singleton Material(mat_GrdRopes)
 {
    mapTo = "grdropes";
-   diffuseMap[0] = "grdropes.jpg";
+   diffuseMap[0] = "grdropes";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "0";
 };

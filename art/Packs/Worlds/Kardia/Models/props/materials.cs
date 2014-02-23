@@ -148,10 +148,13 @@ singleton Material(mat_choppingBoard)
 singleton Material(mat_BanquetChair)
 {
    mapTo = "ornate_banquet_chair";
-   diffuseMap[0] = "ornate_banquet_chair";
-   castShadows = "0";
+   diffuseMap[0] = "art/Packs/worlds/kardia/Models/props/ornate_banquet_chair";
+   castShadows = "1";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "46";
 };
 
 singleton Material(mat_docks)
