@@ -14,9 +14,7 @@ function horseDts::onLoad(%this)
    %this.setSequenceBlend("head", "1", "root", "0");
    %this.addSequence("./Anims/h_headside.dsq", "headside", "2", "8", "1", "0");
    %this.setSequencePriority("headside", "5");
-   %this.addSequence("./Anims/h_Idle.dsq", "Root", "0", "559", "1", "0");
-   %this.setSequencePriority("Root", "0");
-   %this.setSequenceCyclic("Root", "1");
+   %this.addSequence("./Anims/h_Idle.dsq", "Root", "0", "324", "1", "0");
    %this.addSequence("./Anims/h_Rear.dsq", "Stand_Jump", "0", "85", "1", "0");
    %this.setSequencePriority("Stand_Jump", "0");
    %this.addSequence("./Anims/h_Jump.dsq", "Move_Jump", "0", "35", "1", "0");
