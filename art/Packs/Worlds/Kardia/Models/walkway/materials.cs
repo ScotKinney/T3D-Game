@@ -2,14 +2,14 @@
 singleton Material(mat_granite01)
 {
    mapTo = "stone_14";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/granite_01_dif.dds";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/granite_01_nm_inv.png";
+   diffuseMap[0] = "granite_01_dif.dds";
+   normalMap[0] = "granite_01_nm_inv";
    translucent = "0";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/granite_01_spec.dds";
+   specularMap[0] = "granite_01_spec.dds";
    customImpactSound = "FootStepRock1Sound";
    specularPower[0] = "51";
    specularStrength[0] = "3";
@@ -19,7 +19,7 @@ singleton Material(mat_granite01)
 singleton Material(mat_poolwalls)
 {
    mapTo = "Pool_walls";
-   diffuseMap[0] = "art/Packs/worlds/kardia/Models/walkway/Pool_walls";
+   diffuseMap[0] = "Pool_walls";
    useAnisotropic[0] = "1";
    materialTag0 = "Kardia";
    customFootstepSound = "FootStepRock1Sound";
@@ -51,13 +51,13 @@ singleton Material(mat_bruttexcol3_049)
 singleton Material(mat_stones04)
 {
    mapTo = "bruttexcol290";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_dif.dds";
+   diffuseMap[0] = "stones_04_dif.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    castShadows = "0";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_nm_inv.png";
+   normalMap[0] = "stones_04_nm_inv";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_spec.dds";
+   specularMap[0] = "stones_04_spec.dds";
    useAnisotropic[0] = "1";
    customImpactSound = "FootStepRock1Sound";
    specularPower[0] = "51";
@@ -68,9 +68,9 @@ singleton Material(mat_stones04)
 singleton Material(mat_stones04)
 {
    mapTo = "bruttexcol290";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_dif.dds";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_nm_inv.png";
-   specularMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/stones_04_spec.dds";
+   diffuseMap[0] = "stones_04_dif.dds";
+   normalMap[0] = "stones_04_nm_inv";
+   specularMap[0] = "stones_04_spec.dds";
    useAnisotropic[0] = "1";
    castShadows = "0";
    customFootstepSound = "FootStepRock1Sound";
@@ -82,8 +82,8 @@ singleton Material(mat_stones04)
 singleton Material(mat_castlefloorA)
 {
    mapTo = "brut_texcol2_058";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/CastleFloorA.dds";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/CastleFloorA_NRM.png";
+   diffuseMap[0] = "CastleFloorA.dds";
+   normalMap[0] = "CastleFloorA_NRM";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    customImpactSound = "FootStepRock1Sound";
@@ -95,8 +95,8 @@ singleton Material(mat_castlefloorA)
 singleton Material(mat_treeSoil)
 {
    mapTo = "TreeSoil";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/brut_texcol2_058.jpg";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/walkway/brut_texcol2_058_NORM.png";
+   diffuseMap[0] = "brut_texcol2_058.jpg";
+   normalMap[0] = "brut_texcol2_058_NORM";
    specularPower[0] = "11";
    specularStrength[0] = "0";
    pixelSpecular[0] = "0";
