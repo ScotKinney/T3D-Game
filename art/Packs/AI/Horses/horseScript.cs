@@ -200,50 +200,61 @@ function Steed::onPlayerJump(%this, %obj, %isStandJump)
 }
 
 //----------------------------------------------------------------------------
-function Arabian_Horse_Item::onUse(%this, %user)
-{
-   %horseDB = ArabianHorse;
-   return HorseItemOnUse(%user, %horseDB, %this);
-}
-
 function Bay_Horse_Item::onUse(%this, %user)
 {
    %horseDB = BayHorse;
    return HorseItemOnUse(%user, %horseDB, %this);
 }
 
+function Black_Horse_Item::onUse(%this, %user)
+{
+   %horseDB = BlackHorse;
+   return HorseItemOnUse(%user, %horseDB, %this);
+}
+
 function Buckskin_Horse_Item::onUse(%this, %user)
 {
-   %horseDB = LightHorse;
+   %horseDB = BuckskinHorse;
    return HorseItemOnUse(%user, %horseDB, %this);
 }
 
-function Mustang_Horse_Item::onUse(%this, %user)
+function Gray_Horse_Item::onUse(%this, %user)
 {
-   %horseDB = MustangHorse;
+   %horseDB = GrayHorse;
    return HorseItemOnUse(%user, %horseDB, %this);
 }
 
-function Painted_Horse_Item::onUse(%this, %user)
+function Palomino_Horse_Item::onUse(%this, %user)
 {
-   %horseDB = IndianHorse;
+   %horseDB = PalominoHorse;
    return HorseItemOnUse(%user, %horseDB, %this);
 }
 
-function Palimino_Horse_Item::onUse(%this, %user)
+function Pinto_Horse_Item::onUse(%this, %user)
 {
-   %horseDB = PaliminoHorse;
+   %horseDB = PintoHorse;
+   return HorseItemOnUse(%user, %horseDB, %this);
+}
+
+function Pinto_Tan_Horse_Item::onUse(%this, %user)
+{
+   %horseDB = PintoTanHorse;
+   return HorseItemOnUse(%user, %horseDB, %this);
+}
+
+function Roan_Horse_Item::onUse(%this, %user)
+{
+   %horseDB = RoanHorse;
+   return HorseItemOnUse(%user, %horseDB, %this);
+}
+
+function White_Horse_Item::onUse(%this, %user)
+{
+   %horseDB = WhiteHorse;
    return HorseItemOnUse(%user, %horseDB, %this);
 }
 
 //----------------------------------------------------------------------------
-function Arabian_Horse_Item::onThrow(%this, %user, %amount)
-{
-   %horseDB = ArabianHorse;
-   %user.decInventory(%this,%amount);
-   return ThrowHorse(%user, %horseDB);
-}
-
 function Bay_Horse_Item::onThrow(%this, %user, %amount)
 {
    %horseDB = BayHorse;
@@ -251,30 +262,58 @@ function Bay_Horse_Item::onThrow(%this, %user, %amount)
    return ThrowHorse(%user, %horseDB);
 }
 
+function Black_Horse_Item::onThrow(%this, %user, %amount)
+{
+   %horseDB = BlackHorse;
+   %user.decInventory(%this,%amount);
+   return ThrowHorse(%user, %horseDB);
+}
+
 function Buckskin_Horse_Item::onThrow(%this, %user, %amount)
 {
-   %horseDB = LightHorse;
+   %horseDB = BuckskinHorse;
    %user.decInventory(%this,%amount);
    return ThrowHorse(%user, %horseDB);
 }
 
-function Mustang_Horse_Item::onThrow(%this, %user, %amount)
+function Gray_Horse_Item::onThrow(%this, %user, %amount)
 {
-   %horseDB = MustangHorse;
+   %horseDB = GrayHorse;
    %user.decInventory(%this,%amount);
    return ThrowHorse(%user, %horseDB);
 }
 
-function Painted_Horse_Item::onThrow(%this, %user, %amount)
+function Palomino_Horse_Item::onThrow(%this, %user, %amount)
 {
-   %horseDB = IndianHorse;
+   %horseDB = PalominoHorse;
    %user.decInventory(%this,%amount);
    return ThrowHorse(%user, %horseDB);
 }
 
-function Palimino_Horse_Item::onThrow(%this, %user, %amount)
+function Pinto_Horse_Item::onThrow(%this, %user, %amount)
 {
-   %horseDB = PaliminoHorse;
+   %horseDB = PintoHorse;
+   %user.decInventory(%this,%amount);
+   return ThrowHorse(%user, %horseDB);
+}
+
+function Pinto_Tan_Horse_Item::onThrow(%this, %user, %amount)
+{
+   %horseDB = PintoTanHorse;
+   %user.decInventory(%this,%amount);
+   return ThrowHorse(%user, %horseDB);
+}
+
+function Roan_Horse_Item::onThrow(%this, %user, %amount)
+{
+   %horseDB = RoanHorse;
+   %user.decInventory(%this,%amount);
+   return ThrowHorse(%user, %horseDB);
+}
+
+function White_Horse_Item::onThrow(%this, %user, %amount)
+{
+   %horseDB = WhiteHorse;
    %user.decInventory(%this,%amount);
    return ThrowHorse(%user, %horseDB);
 }

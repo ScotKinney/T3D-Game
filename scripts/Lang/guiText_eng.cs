@@ -101,6 +101,7 @@ guiStrings.questMsgBody[0] = "";
 
 // Item Popup strings ----------------------------------------------------------
 guiStrings.horsePopup = "This horse belongs to %1. You can buy your own at the stables.";
+guiStrings.horseBuy = "Would you like to buy this %1 for %2 arns?";
 guiStrings.qtyHeader = "Quantity:";
 guiStrings.nutHeader = "Nutrition:";
 guiStrings.tgtHeader = "Target:";   // Target header

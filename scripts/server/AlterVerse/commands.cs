@@ -52,16 +52,13 @@ function ServerCmdPickupItem(%client, %objID)
 }
 
 // client is requesting to pickup a horse
-function ServerCmdPickupHorse(%client, %objID, %skinName)
+function ServerCmdPickupHorse(%client, %objID, %itemID)
 {
    // prevent bogging down the server with multiple rapid clicks
    if(%client.canClick())
       %client.clickLock();
    else
       return;
-
-   %itemName = %skinName @ "_Horse_Item";
-   %itemID = %itemName.ItemID;
 
    // the client sends us their ghostID for the object, so we need to convert
    // this to the server-side index for that object

@@ -570,6 +570,16 @@ datablock PlayerData(BlackHorse : DefaultHorse)
    skinName = "Bay_Body=Black_Body";
 };
 
+datablock PlayerData(BuckskinHorse : DefaultHorse)
+{
+   skinName = "Bay_Body=Buckskin_Body";
+};
+
+datablock PlayerData(GrayHorse : DefaultHorse)
+{
+   skinName = "Bay_Body=Gray_Body;Black_Mane=Gray_Mane";
+};
+
 datablock PlayerData(PalominoHorse : DefaultHorse)
 {
    skinName = "Bay_Body=Palomino_Body;Black_Mane=Tan_Mane";
@@ -580,19 +590,9 @@ datablock PlayerData(PintoHorse : DefaultHorse)
    skinName = "Bay_Body=Pinto_Body;Black_Mane=Gray_Mane";
 };
 
-datablock PlayerData(WhiteHorse : DefaultHorse)
+datablock PlayerData(PintoTanHorse : DefaultHorse)
 {
-   skinName = "Bay_Body=White_Body;Black_Mane=Gray_Mane";
-};
-
-datablock PlayerData(GrayHorse : DefaultHorse)
-{
-   skinName = "Bay_Body=Gray_Body;Black_Mane=Gray_Mane";
-};
-
-datablock PlayerData(BuckskinHorse : DefaultHorse)
-{
-   skinName = "Bay_Body=Buckskin_Body";
+   skinName = "Bay_Body=PintoTan_Body;Black_Mane=Tan_Mane";
 };
 
 datablock PlayerData(RoanHorse : DefaultHorse)
@@ -600,9 +600,9 @@ datablock PlayerData(RoanHorse : DefaultHorse)
    skinName = "Bay_Body=Roan_Body";
 };
 
-datablock PlayerData(PintoTanHorse : DefaultHorse)
+datablock PlayerData(WhiteHorse : DefaultHorse)
 {
-   skinName = "Bay_Body=PintoTan_Body;Black_Mane=Tan_Mane";
+   skinName = "Bay_Body=White_Body;Black_Mane=Gray_Mane";
 };
 
 exec("./horseScript.cs");

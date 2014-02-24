@@ -363,11 +363,6 @@ function PlayGui::onMouseOverAIHorse(%this, %item)
 {
    // We can determine the Item ID by the skin on the horse
    %skinName = %item.getSkinName();
-   if ( %skinName $= "light" )
-      %skinName = "Buckskin";
-   else if ( %skinName $= "indian" )
-      %skinName = "Painted";
-   
    %this.hoverEvent = %this.schedule(%this.hovertime, "showHorsePopup", %item, %skinName);
    %this.setNeedsMoveEvent(true); // Make sure the event is canceled if the mouse moves
    return;  
@@ -407,52 +402,65 @@ function PlayGui::onMouseDownAIHorse(%this, %item)
    {
       // We can determine the Item ID by the skin on the horse
       %skinName = %item.getSkinName();
-      %horseName = %skinName;
-      if ( %skinName $= "arabian" )
-         %horseName = "Chestnut";
-      else if ( %skinName $= "light" )
-      {
-         %skinName = "Buckskin";
-         %horseName = "Buckskin";
-      }
-      else if ( %skinName $= "mustang" )
-         %horseName = "Spotted";
-      else if ( %skinName $= "indian" )
-      {
-         %skinName = "Painted";
-         %horseName = "Painted";
-      }
-      else if ( %skinName $= "palimino" )
-         %horseName = "Gray";
+      %horseID = %this.HorseIDFromSkin(%skinName);
  
       if ( %owner $= "Buy" )
       {  // Ask for confirmation before buying a horse
-         // Find the itemID for this horse
-         %horseName = strlwr(%horseName);
-         for (%i = 104; %i <= 109; %i++)
-         {
-            %invItemString = $AlterVerse::invList.getValue($AlterVerse::invList.getIndexFromKey(%i));
-            %cost = getWord(%invItemString, 0);
-            %puName = getBarWord($AlterVerse::invDesc[%i], 1);
-            %testName = strlwr(%puName);
-            if ( strstr(%testName, %horseName) != -1 )
-            {
-               if ( $AlterVerse::ArnsInPocket >= %cost )
-                  return %this.ConfirmHorseBuy(%item.getGhostID(), %skinName, %puName, %cost);
-               break;
-            }
-         }
+         %invItemString = $AlterVerse::invList.getValue($AlterVerse::invList.getIndexFromKey(%horseID));
+         %cost = getWord(%invItemString, 0);
+         %puName = getBarWord($AlterVerse::invDesc[%horseID], 1);
+         if ( $AlterVerse::ArnsInPocket >= %cost )
+            return %this.ConfirmHorseBuy(%item.getGhostID(), %horseID, %puName, %cost);
       }
 
-      CommandToServer('pickupHorse', %item.getGhostID(), %skinName);
+      CommandToServer('pickupHorse', %item.getGhostID(), %horseID);
    }
 }
 
-function PlayGui::ConfirmHorseBuy(%this, %ghostID, %skinName, %horseName, %cost)
+function PlayGui::ConfirmHorseBuy(%this, %ghostID, %horseID, %horseName, %cost)
 {
-   %message = "Would you like to buy this " @ %horseName @ " for " @ %cost @ " arns?";
-   %callback = "CommandToServer(\'pickupHorse\', " @ %ghostID @ ", \"" @ %skinName @ "\");";
-   ShowQuestMessageBox("", %message, 0, "Yes", %callback, "No");
+   %message = guiStrings.horseBuy;
+   %message = strReplace(%message, "%1", %horseName);
+   %message = strReplace(%message, "%2", %cost);
+   //%message = "Would you like to buy this " @ %horseName @ " for " @ %cost @ " arns?";
+   %callback = "CommandToServer(\'pickupHorse\', " @ %ghostID @ ", \"" @ %horseID @ "\");";
+   ShowQuestMessageBox("", %message, 0, guiStrings.btnYes, %callback, guiStrings.btnNo);
+}
+
+function PlayGui::HorseIDFromSkin(%this, %skin)
+{
+   // Convert the skin text to the horse name
+   %horseName = "Bay";  // Default horse
+   %skinPos = strstr(%skin, "=");
+   if ( %skinPos > -1 )
+   {
+      %skin = getSubStr(%skin, %skinPos + 1, -1);
+      %skinEnd = strstr(%skin, ";");
+      if ( %skinEnd > -1 )
+         %skin = getSubStr(%skin, 0, %skinEnd);
+      %skinEnd = strlen(%skin);
+      %horseName = getSubStr(%skin, 0, %skinEnd - 5); // Take off "_Body"
+   }
+
+   if ( %horseName $= "PintoTan" )
+      %horseName = "Tan Pinto";
+
+   // Now lookup the ID Horse IDs are 104-109, 188-190
+   %horseID = 104;   // Default horse
+   %horseName = %horseName @ " Horse";
+   while ( %horseID <= 190 )
+   {
+      %puName = getBarWord($AlterVerse::invDesc[%horseID], 1);
+      if ( %horseName $= %puName )
+         return %horseID;
+
+      if ( %horseID == 109 )
+         %horseID = 188;
+      else
+         %horseID++;
+   }
+
+   return 104;
 }
 
 //~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
@@ -476,17 +484,7 @@ function PlayGui::showHorsePopup(%this, %item, %skinName)
       return;
    
    // Find the itemID for this horse
-   %itemID = 0;
-   %skinName = strlwr(%skinName);
-   for (%i = 104; %i < 109; %i++)
-   {
-      %puName = strlwr(getBarWord($AlterVerse::invDesc[%i], 1));
-      if ( strstr(%puName, %skinName) != -1 )
-      {
-         %itemID = %i;
-         break;
-      }
-   }
+   %itemID = %this.HorseIDFromSkin(%skinName);
 
    if ( (%itemID > 0) && ($AlterVerse::invDesc[%itemID] !$= "") )
    {
@@ -535,7 +533,7 @@ function InfoBox::setPopupText(%this, %item, %invDescStr)
          guiStrings.tgtHeader SPC guiStrings.target[%extra];
 
    // Description fills the body of text
-   if (%item.isHorse && (%item.owner !$= "buy") && (%item.owner !$= "drop"))
+   if ( %item.isHorse && (%item.owner !$= "buy") && (%item.owner !$= "drop") )
    {
       //%desc = "This horse belongs to " @ %item.owner @ ". You can buy your own at the Tokara Stables.";
       %desc = strreplace(guiStrings.horsePopup, "%1", %item.owner);
