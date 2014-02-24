@@ -57,9 +57,11 @@ singleton Material(ladder)
 singleton Material(mat_RopeCoil)
 {
    mapTo = "PMat_RopeCoilObject";
-   diffuseMap[0] = "RopeCoil";
+   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/RopeCoil.jpg";
    materialTag0 = "Props";
    useAnisotropic[0] = "1";
+   normalMap[0] = "art/Packs/Worlds/Kardia/Models/rope_nm.dds";
+   specularMap[0] = "art/Packs/Worlds/Kardia/Models/rope_spec.dds";
 };
 
 //--- WaterFallWall.dae MATERIALS BEGIN ---
