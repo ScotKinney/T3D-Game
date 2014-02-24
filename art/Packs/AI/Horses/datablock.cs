@@ -562,28 +562,28 @@ datablock PlayerData(DefaultHorse)
 
 datablock PlayerData(BayHorse : DefaultHorse)
 {
-   skinName = "bay";
+   skinName = "";
 };
 
 datablock PlayerData(ArabianHorse : DefaultHorse)
 {
-   skinName = "arabian";
+   skinName = "Bay_Body=Black_Body";
 };
 
 datablock PlayerData(PaliminoHorse : DefaultHorse)
 {
-   skinName = "palimino";
+   skinName = "Bay_Body=Palomino_Body;Black_Mane=Tan_Mane";
 };
 
 datablock PlayerData(IndianHorse : DefaultHorse)
 {
-   skinName = "indian";
+   skinName = "Bay_Body=Pinto_Body;Black_Mane=Gray_Mane";
 };
 
 
 datablock PlayerData(LightHorse : DefaultHorse)
 {
-   skinName = "light";
+   skinName = "Bay_Body=White_Body;Black_Mane=White_Mane";
 };
 
 datablock PlayerData(MustangHorse : DefaultHorse)

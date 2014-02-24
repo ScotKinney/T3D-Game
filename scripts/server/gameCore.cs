@@ -362,6 +362,9 @@ package GameCore
          %inventory = %inventory TAB Lantern.ItemID SPC "1";
          %inventory = %inventory TAB Lamp_Oil.ItemID SPC "30";
          %inventory = %inventory TAB Palimino_Horse_Item.ItemID SPC "1";
+         %inventory = %inventory TAB Painted_Horse_Item.ItemID SPC "1";
+         %inventory = %inventory TAB Buckskin_Horse_Item.ItemID SPC "1";
+         %inventory = %inventory TAB Arabian_Horse_Item.ItemID SPC "1";
          %inventory = %inventory TAB ChaosBladeWeapon.ItemID SPC "100";
          %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
          %inventory = %inventory TAB BBQ_Ribs_Potion.ItemID SPC "10";

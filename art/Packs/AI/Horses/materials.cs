@@ -26,7 +26,7 @@ singleton Material(Bay_Horse)
 
 singleton Material(Black_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "Black_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Black_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -36,7 +36,7 @@ singleton Material(Black_Horse)
 
 singleton Material(Gray_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "Gray_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Gray_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -46,7 +46,7 @@ singleton Material(Gray_Horse)
 
 singleton Material(Palomino_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "Palomino_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Palomino_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -56,7 +56,7 @@ singleton Material(Palomino_Horse)
 
 singleton Material(Pinto_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "Pinto_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Pinto_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -66,7 +66,7 @@ singleton Material(Pinto_Horse)
 
 singleton Material(PintoTan_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "PintoTan_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/PintoTan_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -76,7 +76,7 @@ singleton Material(PintoTan_Horse)
 
 singleton Material(Roan_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "Roan_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Roan_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -86,7 +86,7 @@ singleton Material(Roan_Horse)
 
 singleton Material(White_Horse)
 {
-   mapTo = "Bay_Body_dif";
+   mapTo = "White_Body_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/White_Body_dif.dds";
    normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
@@ -113,7 +113,7 @@ singleton Material(Black_Mane)
 
 singleton Material(White_Mane)
 {
-   mapTo = "Black_Mane_dif";
+   mapTo = "White_Mane_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/White_Mane_dif.png";
    specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
@@ -128,7 +128,7 @@ singleton Material(White_Mane)
 
 singleton Material(Tan_Mane)
 {
-   mapTo = "Black_Mane_dif";
+   mapTo = "Tan_Mane_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Tan_Mane_dif.png";
    specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
@@ -143,7 +143,7 @@ singleton Material(Tan_Mane)
 
 singleton Material(Gray_Mane)
 {
-   mapTo = "Black_Mane_dif";
+   mapTo = "Gray_Mane_dif";
    diffuseMap[0] = "art/Packs/AI/Horses/Gray_Mane_dif.png";
    specularMap[0] = "art/Packs/AI/Horses/mane_spec.dds";
    useAnisotropic[0] = "1";
