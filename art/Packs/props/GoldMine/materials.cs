@@ -820,3 +820,11 @@ singleton Material(svgoldcave1_cave09)
    useAnisotropic[0] = "1";
    materialTag0 = "Miscellaneous";
 };
+
+singleton Material(svgoldmine01_2_cave07b)
+{
+   mapTo = "cave07b";
+   diffuseMap[0] = "cave07b";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
