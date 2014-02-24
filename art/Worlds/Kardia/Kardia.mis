@@ -4819,7 +4819,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/CratesSimple0001Fragile2StainAnimated.dts";;
+         shapeName = "art/Packs/props/kardia/CratesSimple0001Fragile2StainAnimated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
