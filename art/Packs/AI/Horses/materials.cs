@@ -94,6 +94,16 @@ singleton Material(White_Horse)
    materialTag0 = "Horses";
 };
 
+singleton Material(Buckskin_Horse)
+{
+   mapTo = "Buckskin_Body_dif";
+   diffuseMap[0] = "art/Packs/AI/Horses/Buckskin_Body_dif.dds";
+   normalMap[0] = "art/Packs/AI/Horses/Body_nm.dds";
+   specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
+};
+
 ///Mane Colors
 
 singleton Material(Black_Mane)
