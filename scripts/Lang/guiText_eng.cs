@@ -145,6 +145,8 @@ guiStrings.cpMsg[MagNZIn] = "Welcome to the Magellan! Find the XR75 laser gun to
 guiStrings.cpMsg[MagNZOut] = "Danger! You have left the Neutral Zone! Watch out for the Droids!";
 // You have entered the Illura Neutral Zone, your weapons wont work here!
 guiStrings.cpMsg[IllNZIn] = "You have entered the Illura Neutral Zone, your weapons wont work here!";
+// You have entered the Kardian Neutral Zone, your weapons wont work here!
+guiStrings.cpMsg[KarNZIn] = "You have entered a Kardian Neutral Zone, your weapons wont work here!";
 
 // Magic messages
 // Danger! You have left the Neutral Zone, beware the Boglins!
