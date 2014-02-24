@@ -75,7 +75,7 @@ new SimGroup(MissionGroup) {
          overDarkFactor = "2000 1000 500 100";
          shadowDistance = "400";
          shadowSoftness = "0.15";
-         numSplits = "4";
+         numSplits = "2";
          logWeight = "0.87";
          fadeStartDistance = "0";
          lastSplitTerrainOnly = "0";

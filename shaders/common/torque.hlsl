@@ -258,8 +258,12 @@ void fizzle(float2 vpos, float visibility)
    // I'm sure there are many more patterns here to 
    // discover for different effects.
    
-   float2x2 m = { vpos.x, 0.916, vpos.y, 0.350 };
-   clip( visibility - frac( determinant( m ) ) );
+   //float2x2 m = { vpos.x, 0.916, vpos.y, 0.350 };
+   //clip( visibility - frac( determinant( m ) ) );
+   float2x2 m = { vpos.x, 0.916, vpos.y, 0.350 };  
+   float2x2 n = { vpos.x, 0.350, vpos.y, 0.916 };  
+   clip( visibility - frac( determinant( m ) ) );  
+   clip( visibility - frac( determinant( n ) ) );
 }
 
 
