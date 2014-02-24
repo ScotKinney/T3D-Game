@@ -98,12 +98,12 @@ singleton Material(PMat_RopeCoilObject_mat)
    translucent = "0";
 };
 
-
-singleton Material(lambert1_mat)
-{
-   mapTo = "lambert1";
-   diffuseMap[0] = "lambert1";
-   customFootstepSound = "FootStepWood1Sound";
-   customImpactSound = "FootStepWood1Sound";
-   materialTag0 = "Fort";
-};
+// Could not find this texture anywhere
+//singleton Material(lambert1_mat)
+//{
+   //mapTo = "lambert1";
+   //diffuseMap[0] = "lambert1";
+   //customFootstepSound = "FootStepWood1Sound";
+   //customImpactSound = "FootStepWood1Sound";
+   //materialTag0 = "Fort";
+//};

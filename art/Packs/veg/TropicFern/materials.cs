@@ -38,17 +38,17 @@ singleton Material(TropicFern01_FernSprout01)
    showFootprints = "0";
 };
 
-singleton Material(TropicFern01_FernSprout01)
-{
-   mapTo = "FernSprout01";
-   diffuseMap[0] = "TropicFern/ferntop";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "Sub";
-   translucent = "0";
-   alphaTest = "1";
-   alphaRef = "20";
-};
+//singleton Material(TropicFern01_FernSprout01)
+//{
+   //mapTo = "FernSprout01";
+   //diffuseMap[0] = "ferntop";
+   //specular[0] = "0.9 0.9 0.9 1";
+   //specularPower[0] = "10";
+   //translucentBlendOp = "Sub";
+   //translucent = "0";
+   //alphaTest = "1";
+   //alphaRef = "20";
+//};
 
 singleton Material(TropicFern01)
 {

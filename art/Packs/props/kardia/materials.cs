@@ -279,3 +279,17 @@ singleton Material(mat_KardToBogScreen)
    emissive[0] = "1";
 };
 
+singleton Material(mat_Wood_5)
+{
+	mapTo = "wood_5";
+
+	diffuseMap[0] = "wood_5.png";
+	normalMap[0] = "wood_5N.png";
+};
+
+singleton Material(mat_Aurstone2)
+{
+	mapTo = "aurstone2";
+
+	diffuseMap[0] = "aurstone2.jpg";
+};

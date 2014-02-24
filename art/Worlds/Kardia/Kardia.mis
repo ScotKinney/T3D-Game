@@ -583,7 +583,7 @@ new SimGroup(MissionGroup) {
       forceDetail = "-1";
       position = "200.973 -253.234 25.6042";
       rotation = "1 0 0 0";
-      scale = "2 2 2";
+      scale = "0.012 0.012 0.012";
       canSave = "1";
       canSaveDynamicFields = "1";
          gradientRange = "0 180";
@@ -4479,8 +4479,8 @@ new SimGroup(MissionGroup) {
             distDetect = "50";
             fov = "360";
             maxRange = "30";
-            paceDist = "10";
-            pathname = "BayHorsePath";
+            paceDist = "30";
+            //pathname = "BayHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";

@@ -34,13 +34,13 @@ singleton Material(mat_poolwalls)
 singleton Material(mat_bruttexcol3_049)
 {
    mapTo = "bruttexcol3_049";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/CastleTunnels/sto4_D.dds";
+   diffuseMap[0] = "art/Packs/props/kardia/CastleTunnels/sto4_D.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    castShadows = "0";
    useAnisotropic[0] = "1";
    forestWindEnabled = "1";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/CastleTunnels/sto4_N.dds";
+   normalMap[0] = "art/Packs/props/kardia/CastleTunnels/sto4_N.dds";
    customImpactSound = "FootStepRock1Sound";
    specularPower[0] = "51";
    specularStrength[0] = "1.17647";
@@ -109,8 +109,8 @@ singleton Material(mat_treeSoil)
 singleton Material(mat_Sto4)
 {
    mapTo = "stone_kar1";
-   diffuseMap[0] = "art/Packs/Worlds/Kardia/Models/CastleTunnels/sto4_D.dds";
-   normalMap[0] = "art/Packs/Worlds/Kardia/Models/CastleTunnels/sto4_N.dds";
+   diffuseMap[0] = "art/Packs/props/kardia/CastleTunnels/sto4_D.dds";
+   normalMap[0] = "art/Packs/props/kardia/CastleTunnels/sto4_N.dds";
    specularPower[0] = "51";
    specularStrength[0] = "1.1";
    pixelSpecular[0] = "1";
