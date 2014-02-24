@@ -109,28 +109,6 @@ datablock ItemData(Apple)
 };
 $AlterVerse::ItemNames[1] = "Apple";
 
-datablock ItemData(Arabian_Horse_Item)
-{
-
-   ItemID = 105;
-   category = "horses";
-   className = "inv";
-   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10000;
-};
-$AlterVerse::ItemNames[105] = "Arabian_Horse_Item";
-
 datablock ItemData(AvengerWeapon)
 {
 
@@ -246,7 +224,7 @@ datablock ItemData(Bay_Horse_Item)
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
+   invIcon = "art/gui/icons/horseBay.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -285,6 +263,28 @@ datablock ItemData(BBQ_Ribs_Potion)
    spellTarget = "Enemy";
 };
 $AlterVerse::ItemNames[56] = "BBQ_Ribs_Potion";
+
+datablock ItemData(Black_Horse_Item)
+{
+
+   ItemID = 108;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horseBlack.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[108] = "Black_Horse_Item";
 
 datablock ItemData(Blue_Striped_Perch)
 {
@@ -524,11 +524,11 @@ $AlterVerse::ItemNames[137] = "Buckler_Shield_IIIWeapon";
 datablock ItemData(Buckskin_Horse_Item)
 {
 
-   ItemID = 108;
+   ItemID = 105;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
+   invIcon = "art/gui/icons/horseBuckskin.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -541,7 +541,7 @@ datablock ItemData(Buckskin_Horse_Item)
 
    cost = 10000;
 };
-$AlterVerse::ItemNames[108] = "Buckskin_Horse_Item";
+$AlterVerse::ItemNames[105] = "Buckskin_Horse_Item";
 
 datablock ItemData(ChaosBladeWeapon)
 {
@@ -1047,6 +1047,28 @@ datablock ItemData(Grasshoppers)
    cost = 2;
 };
 $AlterVerse::ItemNames[113] = "Grasshoppers";
+
+datablock ItemData(Gray_Horse_Item)
+{
+
+   ItemID = 188;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horseGray.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[188] = "Gray_Horse_Item";
 
 datablock ItemData(Green_Gill)
 {
@@ -1837,28 +1859,6 @@ datablock ItemData(Multi_Mine_Potion)
 };
 $AlterVerse::ItemNames[62] = "Multi_Mine_Potion";
 
-datablock ItemData(Mustang_Horse_Item)
-{
-
-   ItemID = 109;
-   category = "horses";
-   className = "inv";
-   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10000;
-};
-$AlterVerse::ItemNames[109] = "Mustang_Horse_Item";
-
 datablock ItemData(Nightcrawlers)
 {
 
@@ -1906,36 +1906,14 @@ datablock ItemData(Orange_Sea_Bass)
 };
 $AlterVerse::ItemNames[6] = "Orange_Sea_Bass";
 
-datablock ItemData(Painted_Horse_Item)
-{
-
-   ItemID = 107;
-   category = "horses";
-   className = "inv";
-   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
-   maxInventory = 1;
-   keepOnDeath = 1;
-   skullLevel = 0;
-
-   mass = 2;
-   friction = 1;
-   elasticity = 0.3;
-   emap = true;
-   sticky = true;
-
-   cost = 10000;
-};
-$AlterVerse::ItemNames[107] = "Painted_Horse_Item";
-
-datablock ItemData(Palimino_Horse_Item)
+datablock ItemData(Palomino_Horse_Item)
 {
 
    ItemID = 106;
    category = "horses";
    className = "inv";
    shapeFile = "art/inv/weapons/knives/chaosblade.dts";
-   invIcon = "art/gui/icons/horse.jpg";
+   invIcon = "art/gui/icons/horsePalomino.jpg";
    maxInventory = 1;
    keepOnDeath = 1;
    skullLevel = 0;
@@ -1948,7 +1926,7 @@ datablock ItemData(Palimino_Horse_Item)
 
    cost = 10000;
 };
-$AlterVerse::ItemNames[106] = "Palimino_Horse_Item";
+$AlterVerse::ItemNames[106] = "Palomino_Horse_Item";
 
 datablock ItemData(ParalyzerWeapon)
 {
@@ -2032,6 +2010,50 @@ datablock ItemData(Pike)
    nutrition = 30;
 };
 $AlterVerse::ItemNames[11] = "Pike";
+
+datablock ItemData(Pinto_Horse_Item)
+{
+
+   ItemID = 107;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horsePinto.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[107] = "Pinto_Horse_Item";
+
+datablock ItemData(Pinto_Tan_Horse_Item)
+{
+
+   ItemID = 190;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horsePintoTan.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[190] = "Pinto_Tan_Horse_Item";
 
 datablock ItemData(QuikSilverWeapon)
 {
@@ -2190,6 +2212,28 @@ datablock ItemData(Ring_of_Fire_Rune)
    spellTarget = "Area";
 };
 $AlterVerse::ItemNames[65] = "Ring_of_Fire_Rune";
+
+datablock ItemData(Roan_Horse_Item)
+{
+
+   ItemID = 189;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horseRoan.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[189] = "Roan_Horse_Item";
 
 datablock ItemData(Roast)
 {
@@ -3679,6 +3723,28 @@ datablock ItemData(Venison_Chop)
    nutrition = 100;
 };
 $AlterVerse::ItemNames[31] = "Venison_Chop";
+
+datablock ItemData(White_Horse_Item)
+{
+
+   ItemID = 109;
+   category = "horses";
+   className = "inv";
+   shapeFile = "art/inv/weapons/knives/chaosblade.dts";
+   invIcon = "art/gui/icons/horseWhite.jpg";
+   maxInventory = 1;
+   keepOnDeath = 1;
+   skullLevel = 0;
+
+   mass = 2;
+   friction = 1;
+   elasticity = 0.3;
+   emap = true;
+   sticky = true;
+
+   cost = 10000;
+};
+$AlterVerse::ItemNames[109] = "White_Horse_Item";
 
 datablock ItemData(WidowMakerWeapon)
 {
