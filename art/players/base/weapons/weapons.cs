@@ -4,21 +4,21 @@
 datablock SFXProfile(Punch1Sound)
 {
    filename = "art/players/base/sound/Punch1";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(PunchComboSound)
 {
    filename = "art/players/base/sound/PunchCombo";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(Kick1Sound)
 {
    filename = "art/players/base/sound/Kick1";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
