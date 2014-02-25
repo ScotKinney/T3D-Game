@@ -298,6 +298,7 @@ singleton Material(mat_KardRoof)
    diffuseMap[0] = "art/Packs/props/kardia/KardRoof";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepSand1Sound";
+   normalMap[0] = "art/Packs/props/kardia/Castle/svtqroof1N.dds";
 };
 
 singleton Material(mat_KardWallA)
