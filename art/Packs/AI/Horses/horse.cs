@@ -17,7 +17,7 @@ function horseDts::onLoad(%this)
    %this.addSequence("./Anims/h_Idle.dsq", "Root", "0", "324", "1", "0");
    %this.addSequence("./Anims/h_Rear.dsq", "Stand_Jump", "0", "85", "1", "0");
    %this.setSequencePriority("Stand_Jump", "0");
-   %this.addSequence("./Anims/h_Jump.dsq", "Move_Jump", "0", "35", "1", "0");
+   %this.addSequence("./Anims/h_Jump.dsq", "Move_Jump", "0", "34", "1", "0");
    %this.setSequencePriority("Move_Jump", "0");
    %this.addSequence("./Anims/h_Rear.dsq", "rejectmount", "0", "85", "1", "0");
    %this.setSequencePriority("rejectmount", "0");
