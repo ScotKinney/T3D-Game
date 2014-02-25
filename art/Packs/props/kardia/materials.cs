@@ -2,7 +2,7 @@
 singleton Material(mat_med1)
 {
    mapTo = "med1";
-   diffuseMap[0] = "art/Packs/props/kardia/med1.dds";
+   diffuseMap[0] = "med1.dds";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
 };
@@ -28,7 +28,7 @@ singleton Material(mat_floorb)
 singleton Material(mat_med1Alt)
 {
    mapTo = "med1Alternative";
-   diffuseMap[0] = "art/Packs/props/kardia/Med1A.dds";
+   diffuseMap[0] = "Med1A.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -47,7 +47,7 @@ singleton Material(mat_mednewAP1)
 singleton Material(mat_stoneworkNew)
 {
    mapTo = "stonework_new";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA.dds";
+   diffuseMap[0] = "KardWallA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -101,11 +101,11 @@ singleton Material(mat_ropehemp2)
 singleton Material(mat_GrdWalls)
 {
    mapTo = "grdwalls";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA.dds";
+   diffuseMap[0] = "KardWallA.dds";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/Packs/props/kardia/KardWallAN.dds";
+   normalMap[0] = "KardWallAN.dds";
 };
 
 singleton Material(mat_GrdRoofs)
@@ -130,7 +130,7 @@ singleton Material(mat_GrdRopes)
 singleton Material(mat_med2)
 {
    mapTo = "med2";
-   diffuseMap[0] = "art/Packs/props/kardia/KardRoof.dds";
+   diffuseMap[0] = "KardRoof.dds";
    translucent = "0";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
@@ -281,10 +281,10 @@ singleton Material(mat_Aurstone2)
 singleton Material(mat_KardFloorTile)
 {
    mapTo = "KardFloorTile";
-   diffuseMap[0] = "art/Packs/props/kardia/KardFloorTile";
+   diffuseMap[0] = "KardFloorTile";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/Packs/props/kardia/KardFloorTileN.dds";
+   normalMap[0] = "KardFloorTileN.dds";
 };
 
 singleton Material(mat_KardCeilings)
@@ -297,7 +297,7 @@ singleton Material(mat_KardCeilings)
 singleton Material(mat_KardRoof)
 {
    mapTo = "KardRoof";
-   diffuseMap[0] = "art/Packs/props/kardia/KardRoof";
+   diffuseMap[0] = "KardRoof";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepSand1Sound";
    normalMap[0] = "art/Packs/props/kardia/Castle/svtqroof1N.dds";
@@ -306,17 +306,17 @@ singleton Material(mat_KardRoof)
 singleton Material(mat_KardWallA)
 {
    mapTo = "KardWallA";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA";
+   diffuseMap[0] = "KardWallA";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/Packs/props/kardia/KardWallAN.dds";
+   normalMap[0] = "KardWallAN.dds";
 };
 
 singleton Material(mat_Med1A)
 {
    mapTo = "Med1A";
-   diffuseMap[0] = "art/Packs/props/kardia/Med1A";
+   diffuseMap[0] = "Med1A";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/Packs/props/kardia/Med1AN.dds";
+   normalMap[0] = "Med1AN.dds";
 };
