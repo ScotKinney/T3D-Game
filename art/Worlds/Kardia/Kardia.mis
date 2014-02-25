@@ -129,7 +129,7 @@ new SimGroup(MissionGroup) {
          axisTilt = "23.44";
          dayLength = "86400";
          startTime = "0.120635";
-         time = "0.184041";
+         time = "0.186651";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "243851";
-         delayRespawn = "501044";
+         botBelongsToMe = "249397";
+         delayRespawn = "508102";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,8 +653,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "243259";
-         delayRespawn = "500317";
+         botBelongsToMe = "250648";
+         delayRespawn = "509982";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -679,8 +679,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "242854";
-         delayRespawn = "499864";
+         botBelongsToMe = "251431";
+         delayRespawn = "509426";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -705,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "243802";
-         delayRespawn = "500923";
+         botBelongsToMe = "249336";
+         delayRespawn = "510149";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -731,8 +731,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "244108";
-         delayRespawn = "501224";
+         botBelongsToMe = "251512";
+         delayRespawn = "509512";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -757,8 +757,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "243316";
-         delayRespawn = "500419";
+         botBelongsToMe = "249439";
+         delayRespawn = "510145";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -783,8 +783,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "243868";
-         delayRespawn = "501067";
+         botBelongsToMe = "250568";
+         delayRespawn = "508529";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -809,8 +809,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "242886";
-         delayRespawn = "501528";
+         botBelongsToMe = "251354";
+         delayRespawn = "509283";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -2260,7 +2260,7 @@ new SimGroup(MissionGroup) {
       };
       new Zone(KardiaWeaponsZone) {
          useAmbientLightColor = "1";
-         ambientLightColor = "0.435294 0.435294 0.435294 1";
+         ambientLightColor = "0.372549 0.372549 0.372549 1";
          position = "1.18665 368.281 16.9685";
          rotation = "1 0 0 0";
          scale = "8.04766 16.831 5.08739";
@@ -2319,64 +2319,6 @@ new SimGroup(MissionGroup) {
          position = "1.26489 362.165 14.6641";
          rotation = "1 0 0 0";
          scale = "1.5 1.5 1.78134";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/furniture2.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-6.79151 352.042 14.6724";
-         rotation = "1 0 0 0";
-         scale = "1.5 1.5 1.06368";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/openbook.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "None";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-7.2415 352.008 15.8528";
-         rotation = "0 0 -1 18.8374";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/wallpicture3.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-6.78725 352.553 16.3119";
-         rotation = "0 0 1 180.646";
-         scale = "2 2 2";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -8799,14 +8741,6 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
-         position = "-39.4877 -172.894 51.78";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
    };
    new TSStatic() {
       shapeName = "art/Packs/props/kardia/boats/Medieval_boat_Sail.dts";
@@ -9605,7 +9539,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-1.7616 369.813 14.6731";
+      position = "-1.88865 370.056 14.6731";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -9621,7 +9555,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-1.84983 376.243 14.6731";
+      position = "-1.7616 376.243 14.6731";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
