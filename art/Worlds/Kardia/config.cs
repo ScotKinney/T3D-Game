@@ -19,6 +19,9 @@ $AlterVerse::ArtPacks =
    "veg/Phila01" TAB
    "veg/TropicFern" TAB
    "props/clanFort" TAB
+   "props/Containers" TAB
+   "props/FireBowl" TAB
+   "props/BlackSmith" TAB
    "AI/horses" TAB
    "props/kardia";
    
