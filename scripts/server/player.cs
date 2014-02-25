@@ -72,7 +72,7 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
       if ( isEventPending(%vehicle.aiLoop) )
          cancel(%vehicle.aiLoop);
 
-      %obj.setControlObject(%vehicle);
+      //%obj.setControlObject(%vehicle);
       if ( %vDB.mountHeadHThread !$= "" )
          %obj.setHeadHThread(%vDB.mountHeadHThread, %vDB.maxMountYawAngle);
       if ( %vDB.mountHeadVThread !$= "" )
@@ -249,10 +249,10 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       {
          if ((%col.getMountedObjectCount() < 2) && (%vDB.riderNode !$= ""))
          {  // If there's room, ask the driver if we can ride along
-            if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "MyTest")) )
+            if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "EmptyRoom")) )
                return;
             %obj.sentRequest = %col;
-            if (%obj.isBot && $ServerName $= "MyTest")
+            if (%obj.isBot && $ServerName $= "EmptyRoom")
                forceAcceptMountRequest(%col, %obj);
             else
                commandToClient(%player.client, 'ShowMountRequest', %obj.getShapeName(), %obj.client);
@@ -282,6 +282,7 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
       %client = %obj.client;
       %client.aiMount = %col;
       %col.client = %client;
+      %obj.setControlObject(%col);
       //BloodClans - adjust the 0 0 0 below for xyz positioning////////////////////////////////////////////
       %col.mountObject(%obj,%node,"0 0 0");//0 .35 -.1
       return;
@@ -324,10 +325,10 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
          {
             if ((%col.getMountedObjectCount() < %vDB.numMountPoints) && (%vDB.riderNode !$= ""))
             {  // If there's room, ask the driver if we can ride along
-               if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "MyTest")) )
+               if ( (%obj.sentRequest $= %col) || ((VectorLen(%obj.getVelocity()) < 0.5) && ($ServerName !$= "EmptyRoom")) )
                   return;
                %obj.sentRequest = %col;
-               if (%obj.isBot && $ServerName $= "MyTest")
+               if (%obj.isBot && $ServerName $= "EmptyRoom")
                   forceAcceptMountRequest(%col, %obj);
                else
                   commandToClient(%driver.client, 'ShowMountRequest', %obj.getShapeName(), %obj.client);
