@@ -152,6 +152,9 @@ singleton Material(mat_BanquetChair)
    castShadows = "0";
    forestWindEnabled = "1";
    materialTag0 = "DefaultProps";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "13";
 };
 
 singleton Material(mat_plate)
