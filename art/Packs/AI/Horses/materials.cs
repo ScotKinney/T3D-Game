@@ -8,6 +8,7 @@ new Material(HorseFootprintMaterial)
    translucent = true;
    castShadows = "0";
    translucentZWrite = "1";
+   materialTag0 = "Horses";
 };
 
 //////////Body Colors
@@ -22,7 +23,6 @@ singleton Material(Bay_Horse)
    useAnisotropic[0] = "1";
    materialTag0 = "Horses";
 };
-
 
 singleton Material(Black_Horse)
 {
@@ -115,9 +115,9 @@ singleton Material(Black_Mane)
    translucent = "1";
    translucentZWrite = "0";
    alphaRef = "127";
-   translucentBlendOp = "None";
+   translucentBlendOp = "Sub";
    alphaTest = "1";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Horses";
    doubleSided = "1";
 };
 
@@ -130,9 +130,9 @@ singleton Material(White_Mane)
    translucent = "1";
    translucentZWrite = "0";
    alphaRef = "127";
-   translucentBlendOp = "None";
+    translucentBlendOp = "Sub";
    alphaTest = "1";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Horses";
    doubleSided = "1";
 };
 
@@ -145,9 +145,9 @@ singleton Material(Tan_Mane)
    translucent = "1";
    translucentZWrite = "0";
    alphaRef = "127";
-   translucentBlendOp = "None";
+   translucentBlendOp = "Sub";
    alphaTest = "1";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "Horses";
    doubleSided = "1";
 };
 
@@ -162,8 +162,8 @@ singleton Material(Gray_Mane)
    alphaRef = "127";
    translucentBlendOp = "Sub";
    alphaTest = "0";
-   materialTag0 = "Miscellaneous";
-   doubleSided = "0";
+   materialTag0 = "Horses";
+   doubleSided = "1";
 };
 
 /////////Armor Saddle and Reins
@@ -175,4 +175,5 @@ singleton Material(Armor_Horse)
    normalMap[0] = "art/Packs/AI/Horses/Horse_armor_nm.dds";
    specularMap[0] = "art/Packs/AI/Horses/Horse_armor_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Horses";
 };
