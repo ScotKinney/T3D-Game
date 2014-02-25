@@ -27,3 +27,21 @@ singleton Material(mat_MrNBarrels)
    normalMap[0] = "Barrels_nm.dds";
    specularMap[0] = "Barrels_spec.dds";
 };
+
+singleton Material(DefaultMaterial3)
+{
+   mapTo = "Old_sacks_dif";
+   diffuseMap[0] = "Old_sacks_dif";
+   normalMap[0] = "Old_sacks_nm.dds";
+   specularMap[0] = "Old_sacks_spec.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(mat_MrN_Rope)
+{
+   mapTo = "rope_dif";
+   diffuseMap[0] = "rope_dif";
+   normalMap[0] = "rope_nm.dds";
+   specularMap[0] = "rope_spec.dds";
+   useAnisotropic[0] = "1";
+};
