@@ -26,3 +26,13 @@ singleton Material(mat_BSVice)
    specularMap[0] = "BS_Vise_spec.dds";
    useAnisotropic[0] = "1";
 };
+
+singleton Material(mat_BSStool)
+{
+   mapTo = "BS_Stool_dif";
+   diffuseMap[0] = "BS_Stool_dif";
+   normalMap[0] = "BS_Stool_nm.dds";
+   specularMap[0] = "BS_Stool_spec.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+};
