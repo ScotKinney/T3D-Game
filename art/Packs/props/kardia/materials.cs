@@ -2,40 +2,29 @@
 singleton Material(mat_med1)
 {
    mapTo = "med1";
-   diffuseMap[0] = "art/Packs/props/kardia/med1.dds";
+   diffuseMap[0] = "med1.dds";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
-   normalMap[0] = "art/Packs/props/kardia/med1N.dds";
+   normalMap[0] = "med1N.dds";
 };
 
 singleton Material(mat_walltiledA)
 {
    mapTo = "WallTiledA";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA.dds";
+   diffuseMap[0] = "KardWallA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
-   normalMap[0] = "art/Packs/props/kardia/KardWallAN.dds";
-   forestWindEnabled = "1";
 };
 
 singleton Material(mat_floorb)
 {
    mapTo = "FloorB";
-<<<<<<< .mine
-   diffuseMap[0] = "art/Packs/props/kardia/KardFloorTile";
-=======
    diffuseMap[0] = "KardFloorTile.dds";
->>>>>>> .r10239
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
-<<<<<<< .mine
-   normalMap[0] = "art/Packs/props/kardia/KardFloorTileN.dds";
-   forestWindEnabled = "1";
-=======
    normalMap[0] = "KardFloorTileN.dds";
->>>>>>> .r10239
 };
 
 singleton Material(mat_med1Alt)
@@ -51,34 +40,31 @@ singleton Material(mat_med1Alt)
 singleton Material(mat_mednewAP1)
 {
    mapTo = "mednewAP1";
-   diffuseMap[0] = "art/Packs/props/kardia/mednewAP1";
+   diffuseMap[0] = "mednewAP1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
-   normalMap[0] = "art/Packs/props/kardia/mednewAP1N.dds";
-   forestWindEnabled = "1";
+   normalMap[0] = "mednewAP1N.dds";
 };
 
 singleton Material(mat_stoneworkNew)
 {
    mapTo = "stonework_new";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA.dds";
+   diffuseMap[0] = "KardWallA.dds";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
-   normalMap[0] = "art/Packs/props/kardia/KardWallAN.dds";
-   forestWindEnabled = "1";
+   normalMap[0] = "KardWallAN.dds";
 };
 
 singleton Material(mat_CeilingA)
 {
    mapTo = "CeilingA";
-   diffuseMap[0] = "art/Packs/props/kardia/KardWallA.dds";
+   diffuseMap[0] = "KardWallA.dds";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/Packs/props/kardia/KardWallAN.dds";
-   forestWindEnabled = "1";
+   normalMap[0] = "KardWallAN.dds";
 };
 
 singleton Material(CeilingB_mat)
@@ -92,10 +78,9 @@ singleton Material(CeilingB_mat)
 singleton Material(mat_WallTiledB)
 {
    mapTo = "WallTiledB";
-   diffuseMap[0] = "art/Packs/props/kardia/Wall2Windows";
+   diffuseMap[0] = "Wall2Windows";
    materialTag0 = "Kardia";
-   normalMap[0] = "art/Packs/props/kardia/Wall2WindowsN.dds";
-   forestWindEnabled = "1";
+   normalMap[0] = "Wall2WindowsN.dds";
 };
 
 singleton Material(mat_floorTileC)
@@ -350,23 +335,3 @@ singleton Material(mat_Aurstone2)
 };
 
 
-
-
-
-singleton Material(DefaultMaterial12)
-{
-   mapTo = "mednewAP1";
-   diffuseMap[0] = "art/Packs/props/kardia/mednewAP1";
-   normalMap[0] = "art/Packs/props/kardia/mednewAP1N.dds";
-   materialTag0 = "Kardia";
-   forestWindEnabled = "1";
-};
-
-singleton Material(DefaultMaterial12)
-{
-   mapTo = "mednewAP1";
-   diffuseMap[0] = "art/Packs/props/kardia/mednewAP1";
-   normalMap[0] = "art/Packs/props/kardia/mednewAP1N.dds";
-   forestWindEnabled = "1";
-   materialTag0 = "Kardia";
-};
