@@ -15,6 +15,7 @@ singleton Material(mat_walltiledA)
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
+   normalMap[0] = "KardWallAN.dds";
 };
 
 singleton Material(mat_floorb)
@@ -35,6 +36,7 @@ singleton Material(mat_med1Alt)
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    forestWindEnabled = "1";
+   normalMap[0] = "Med1AN.dds";
 };
 
 singleton Material(mat_mednewAP1)
