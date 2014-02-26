@@ -170,7 +170,7 @@ function MeleeImage::onImageIntersect(%this,%player,%slot,%startvec,%endvec)
    %searchMasks = $TypeMasks::PlayerObjectType |
       $TypeMasks::StaticShapeObjectType | $TypeMasks::ShapeBaseObjectType;
    // search for objects within the damage rays that fit the masks above
-   %scanTarg = ContainerRayCast(%startvec, %endvec, %searchMasks, %player);
+   %scanTarg = MeleeRayCast(%startvec, %endvec, %searchMasks, %player);
    //%reverseTarg = ContainerRayCast(%endvec, %startvec, %searchMasks, %player);
    //if (firstWord(%scanTarg) !$= firstWord(%reverseTarg))
    //{

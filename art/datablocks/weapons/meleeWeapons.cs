@@ -319,8 +319,8 @@ singleton GameBaseData(MountedSwing1_RH)
    seqName = "Melee1_RH_Mount";
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.3; //time in seconds during animation before damage is done
-   endDamage = 0.85;
+   startDamage = 0.45; //time in seconds during animation before damage is done
+   endDamage = 0.95;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 500;
@@ -344,8 +344,8 @@ singleton GameBaseData(MountedSwing1_LH)
    seqName = "Melee1_LH_Mount";
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.3; //time in seconds during animation before damage is done
-   endDamage = 0.85;
+   startDamage = 0.45; //time in seconds during animation before damage is done
+   endDamage = 0.95;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 500;
@@ -2101,8 +2101,8 @@ singleton GameBaseData(MountedSPikeSwing1_RH)
    seqName = "Melee1_RH_Mount";
    timeScale = 1; //speed the animation plays at
    damageAmount = 30;
-   startDamage = 0.3; //time in seconds during animation before damage is done
-   endDamage = 0.85;
+   startDamage = 0.45; //time in seconds during animation before damage is done
+   endDamage = 0.95;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 300;
@@ -2198,8 +2198,8 @@ singleton GameBaseData(MountedIPikeSwing1_RH)
    seqName = "Melee1_RH_Mount";
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
-   startDamage = 0.3; //time in seconds during animation before damage is done
-   endDamage = 0.85;
+   startDamage = 0.45; //time in seconds during animation before damage is done
+   endDamage = 0.95;
    soundDelay = 316; // time in ms before attack sound plays
    swingSound = SwordSwing1Sound;
    impulse = 500;

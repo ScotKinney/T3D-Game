@@ -346,6 +346,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
    %this.setSequenceGroundSpeed("Walk", "0 2.5 0", "0 0 0");
+   %this.setSequencePriority("HeadSide", 4);
+   %this.setSequencePriority("head", 5);
 }
 
 $mack = true;
