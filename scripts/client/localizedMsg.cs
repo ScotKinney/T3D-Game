@@ -83,3 +83,10 @@ function handleFishingMsg(%msgType, %str, %msgCode, %channel, %notify, %skipLog)
 
    MainChatHud.addLine(%message, %channel, %notify, %skipLog);
 }
+
+function clientCmdShowMountRequest(%riderName, %riderClient)
+{
+   %message = strReplace(chatStrings.msg[mountRequest], "%1", %riderName);
+   %callback = "CommandToServer(\'AcceptMountRequest\', " @ %riderClient @ ");";
+   ShowQuestMessageBox("", %message, 0, guiStrings.btnYes, %callback, guiStrings.btnNo);
+}
