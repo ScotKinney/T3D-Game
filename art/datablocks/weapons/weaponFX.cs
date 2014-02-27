@@ -43,97 +43,97 @@ datablock LightDescription(ProjectileLightDesc)
 datablock SFXProfile(BaseThrowSound)
 {
    filename = "art/sound/weapons/Throw_Javelin";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(ThrowDartSound)
 {
    filename = "art/sound/weapons/Throw_SlingDart";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(BaseFireSound)
 {
    filename = "art/sound/weapons/arrow";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(flintlockFireSound)
 {
    filename = "art/sound/weapons/flintlockfire";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(BaseReloadSound)
 {
    filename = "art/sound/weapons/Crossbow_reload";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(XR75FireSound)
 {
    filename = "art/sound/weapons/droidGun5";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(ProjectileExplosionSound)
 {
    filename = "art/sound/weapons/Crossbow_explosion";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(flintlockhitSound)
 {
    filename = "art/sound/weapons/ricochet";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(ProjectileHitSound)
 {
    filename = "art/sound/weapons/arrowThud";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(AxeHitLiveSound)
 {
    filename = "art/sound/weapons/AxeHitLive";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(AxeHitStaticSound)
 {
    filename = "art/sound/weapons/AxeHitStatic";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(JavelinHitStaticSound)
 {
    filename = "art/sound/weapons/Hit_Javelin";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 datablock SFXProfile(BowFireSound)
 {
    filename = "art/sound/weapons/Fire_Bow";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 
 datablock SFXProfile(ArrowHitStaticSound)
 {
    filename = "art/sound/weapons/Hit_ArrowStatic";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = false;
 };
 

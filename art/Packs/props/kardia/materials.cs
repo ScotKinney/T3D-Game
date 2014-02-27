@@ -170,10 +170,11 @@ singleton Material(mat_GrdWalls)
 singleton Material(mat_GrdRoofs)
 {
    mapTo = "Med2512";
-   diffuseMap[0] = "KardRoof";
+   diffuseMap[0] = "art/Packs/props/kardia/KardRoof";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    doubleSided = "1";
+   normalMap[0] = "art/Packs/props/kardia/Castle/svtqroof1N.dds";
 };
 
 singleton Material(mat_GrdRopes)
@@ -325,8 +326,11 @@ singleton Material(mat_Wood_5)
 {
 	mapTo = "wood_5";
 
-	diffuseMap[0] = "wood_5.png";
-	normalMap[0] = "wood_5N.png";
+	diffuseMap[0] = "art/Packs/props/kardia/wood_5.png";
+	normalMap[0] = "art/Packs/props/kardia/wood_5N.png";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Kardia";
 };
 
 singleton Material(mat_Aurstone2)

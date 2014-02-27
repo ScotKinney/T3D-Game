@@ -4,35 +4,35 @@
 datablock SFXProfile(SwordSwing1Sound)
 {
    filename = "art/sound/weapons/SwordSwing1";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(SwordSwing2Sound)
 {
    filename = "art/sound/weapons/SwordSwing2";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(SwordSwing3Sound)
 {
    filename = "art/sound/weapons/SwordSwing3";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(SwordHitLiveSound)
 {
    filename = "art/sound/weapons/SwordHitLive";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
 datablock SFXProfile(SwordHitStaticSound)
 {
    filename = "art/sound/weapons/SwordHitStatic";
-   description = AudioClose3d;
+   description = AudioClosest3d;
    preload = true;
 };
 
