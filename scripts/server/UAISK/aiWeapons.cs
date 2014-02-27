@@ -16,8 +16,19 @@ function equipBotWeapon(%obj)
    {
       for ( %i = 0; %i < %count; %i++ )
       {
-         %obj.mountImage(getWord(%obj.botWeapon, %i) @ "Image", %i);
-         %obj.setImageAmmo(%i, true);
+         %weapRoot = getWord(%obj.botWeapon, %i);
+         %weapItem = %weapRoot @ "Weapon";
+         %weapSkin = "";
+         if ( isObject(%weapItem) )
+         {
+            %weapImage = %weapItem.image;
+            %weapSkin = %weapItem.skinMat;
+         }
+         else
+            %weapImage = %weapRoot @ "Image";
+
+         // mountImage( image, slot, loaded, skinTag )
+         %obj.mountImage(%weapImage, %i, true, addTaggedString(%weapSkin));
       }
    }
    else
@@ -69,33 +80,30 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
          %slot = getRandom(1, %count) - 1;
       %tempWeapon = getWord(%obj.botWeapon, %slot);
 
-      %weapon = %tempWeapon @ "Weapon";
-      %ammo = %tempWeapon @ "Ammo";
-      if ( !isObject(%ammo) )
-      %ammo = %weapon.ammo;
-
       if (%tempWeapon $= "-noweapon")
       {
          //Sets the firing variable to true
          %obj.firing = true;
          //This sets a delay of $AISK_TRIGGER_DOWN to hold the trigger down for.
-         %this.trigger = %this.schedule($AISK_TRIGGER_DOWN, "ceaseFire", %obj, %tempWeapon);
+         %this.trigger = %this.schedule($AISK_TRIGGER_DOWN, "ceaseFire", %obj, 0);
          return;
       }
 
-      if ( !isObject(%weapon) )
-         %weapon = %tempWeapon @ "Image";
-      %namedClass = %weapon.getClassName();
+      %weapItem = %tempWeapon @ "Weapon";
+      if ( isObject(%weapItem) )
+         %weapImage = %weapItem.image;
+      else
+         %weapImage = %tempWeapon @ "Image";
 
       //If the weapon doesn't have an ignoreDistance set, then use the default
-      if (%weapon.ignoreDistance > 1)
-         %weapMax = %weapon.ignoreDistance;
+      if (%weapImage.ignoreDistance > 1)
+         %weapMax = %weapImage.ignoreDistance;
       else
          %weapMax = $AISK_IGNORE_DISTANCE;
 
       //If the weapon doesn't have an minIgnoreDistance set, then use the default
-      if (%weapon.minIgnoreDistance !$= "")
-         %weapMin = %weapon.minIgnoreDistance;
+      if (%weapImage.minIgnoreDistance !$= "")
+         %weapMin = %weapImage.minIgnoreDistance;
       else
          %weapMin = $AISK_MIN_IGNORE_DISTANCE;
 
@@ -134,13 +142,13 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
          %obj.setImageTrigger(%slot, true);
 
          //If the weapon doesn't have a triggerDown set, then use the default
-         if (%weapon.triggerDown !$= "")
-            %l = %weapon.triggerDown;
+         if (%weapImage.triggerDown !$= "")
+            %l = %weapImage.triggerDown;
          else
             %l = $AISK_TRIGGER_DOWN;
 
          //This sets a delay of %l length to hold the trigger down for.
-         %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %tempWeapon, %slot);
+         %this.trigger = %this.schedule(%l, "ceaseFire", %obj, %weapImage, %slot);
       }
       else
       {
@@ -152,20 +160,17 @@ function AIPlayer::openFire(%this, %obj, %tgt, %rtt)
 }
 
 //ceaseFire is called by the openFire function after the set delay to hold the trigger down is met.
-function AIPlayer::ceaseFire(%this, %obj, %tempWeapon, %slot)
+function AIPlayer::ceaseFire(%this, %obj, %weapImage, %slot)
 {
-   %weapon = %tempWeapon @ "Weapon";
-   if ( !isObject(%weapon) )
-      %weapon = %tempWeapon @ "Image";
-   if (!isObject(%weapon) || %weapon.getClassName() !$= $AISK_AFX_DATA_TYPE)
+   if (!isObject(%weapImage) || %weapImage.getClassName() !$= $AISK_AFX_DATA_TYPE)
       //Stop holding the trigger
       %obj.setImageTrigger(%slot, false);
    else
       %obj.isCasting = false;
 
    //If the weapon doesn't have a fireDelay set, then use the default
-   if (%weapon.fireDelay !$= "")
-      %k = %weapon.fireDelay;
+   if (%weapImage.fireDelay !$= "")
+      %k = %weapImage.fireDelay;
    else
       %k = $AISK_FIRE_DELAY;
 

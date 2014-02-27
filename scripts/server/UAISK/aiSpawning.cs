@@ -559,8 +559,10 @@ function AIPlayer::spawn(%obj, %isRespawn)
    %ignoreMinimum = 10000;
 
    %weap = getWord(%player.botWeapon, 0);
-   %weapData = %weap @ "Weapon";
-   if ( !isObject(%weapData) )
+   %weapItem = %weap @ "Weapon";
+   if ( isObject(%weapItem) )
+      %weapData = %weapItem.image;
+   else
       %weapData = %weap @ "Image";
 
    if ( isObject(%weapData) )
