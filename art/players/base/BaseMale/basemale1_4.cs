@@ -18,6 +18,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
+   %this.setSequencePriority("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", 5);
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
@@ -301,6 +302,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Emotes/E_Wave.dsq", "E_Wave", "0", "26", "1", "0");
    %this.setSequenceCyclic("E_Wave", "0");
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
+   %this.setSequencePriority("TapLink", 3);
    %this.addSequence("art/players/base/Seqs/Basic/Cast.dsq", "CastLine", "0", "34", "1", "0");
    %this.addTrigger("CastLine", "19", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Move.dsq", "Castline_Blend", "0", "24", "1", "0");

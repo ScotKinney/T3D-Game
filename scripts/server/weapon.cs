@@ -193,7 +193,6 @@ function WeaponImage::delayedFire(%this, %obj, %slot)
 
    // Get the aim vector and release point
    %muzzleVector = %obj.getAimVector();
-
    %mp = %obj.getAnimMuzzlePoint(%slot);
    //if ( %this == XR75Image.getId() ) %mp = %obj.getEyePoint(); // Use this for perfect aim with an XR75
 

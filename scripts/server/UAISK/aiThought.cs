@@ -27,7 +27,7 @@ function AIPlayer::Think(%this, %obj)
    cancel(%this.ailoop);
 
    //If the bot is dead, then there's no need to think or do anything. So let's bail out.
-   if (%obj.getstate() $= "Dead" || !isObject(%obj))
+   if (%obj.getstate() $= "Dead" || !isObject(%obj) || isObject(%obj.driver))
       return;
 
    //The bot is doing something special right now, so don't interrupt it

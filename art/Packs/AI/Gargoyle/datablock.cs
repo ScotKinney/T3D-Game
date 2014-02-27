@@ -98,8 +98,8 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    maxTimeScale = 4;
    minTimeScale = 1;
 
-   boundingBox = "2 2 2";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "1.5 1.5 1.5";
+   swimBoundingBox = "1.5 1.5 1.5";
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;
@@ -108,10 +108,21 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    // Switch to "run2" anim above this speed
    run2Speed = 7;
 
+   maxLookAngle = 1;
+   maxHeadYawAngle = .5;
+
    mountable = true; // Players can mount this AI
+   mountBaseSpeed = 0.4;
    driverNode = 1;
-   mountPose[1]	      = "gargsitfull"; // Driver
-   mountPoseMedium[1]	= "gargsitfull"; // Driver pose Medium speed
+   mountPose[1]	      = "gargsitfull";   // Driver pose Standing still
+   mountPoseSlow[1]	   = "gargsitfull";   // Driver pose Slow
+   mountPoseMedium[1]	= "gargsitfull";   // Driver pose Medium
+   mountPoseFast[1]	   = "gargsitfull";   // Driver pose Fast
+
+   mountHeadVThread = "HM_Head";
+   maxMountPitchAngle = 1;
+   mountHeadHThread = "HM_HeadSide";
+   maxMountYawAngle = .5;
 };
 
 // Load the gargoyle weapon script

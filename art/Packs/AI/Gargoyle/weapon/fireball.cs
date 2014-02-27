@@ -82,6 +82,7 @@ datablock ShapeBaseImageData(GargoyleFireballImage : BaseTriggeredImage)
    wetProjectile = GargoyleFireballWetProjectile;
    fireSound = GargFireballSound;
    fireAnim = "spit_fire";
+   fullSkelAnim = false;
 };
 
 

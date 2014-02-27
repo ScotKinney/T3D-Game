@@ -72,7 +72,9 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
       if ( isEventPending(%vehicle.aiLoop) )
          cancel(%vehicle.aiLoop);
 
+      %vehicle.setMountBaseSpeed(%vDB.mountBaseSpeed);
       //%obj.setControlObject(%vehicle);
+      %obj.setMountHeadAngles();
       if ( %vDB.mountHeadHThread !$= "" )
          %obj.setHeadHThread(%vDB.mountHeadHThread, %vDB.maxMountYawAngle);
       if ( %vDB.mountHeadVThread !$= "" )
@@ -867,6 +869,8 @@ function Player::onRunPoseChange(%this, %newRunMode)
 
 function Player::playDeathAnimation(%this)
 {
+   //%this.setHeadHThread("");
+   //%this.setHeadVThread("");
    if ( %this.isMounted() && %this.setActionThread("H_Death1") )
       return;
 
@@ -879,8 +883,9 @@ function Player::playDeathAnimation(%this)
    else
       %rand = 1;
 
-   if ( !%this.setActionThread("Death" @ %rand) )
-      %this.setActionThread("Death");
+   //if ( !%this.setActionThread("Death" @ %rand, true) )
+      //%this.setActionThread("Death");
+   %this.ForceAnimation(true, "Death" @ %rand, true);
 }
 
 function Player::playImpulseAnim(%this, %pos, %impulse)

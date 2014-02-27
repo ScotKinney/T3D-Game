@@ -30,4 +30,6 @@ function GargoyleDts::onLoad(%this)
    %this.addTrigger("Swim_Root", "18", "1");
    %this.addTrigger("Swim_Forward", "18", "1");
    %this.setSequenceGroundSpeed("Swim_Forward", "0 7 0");
+   %this.setSequenceGroundSpeed("Walk", "0 10 0");
+   %this.setSequenceGroundSpeed("run2", "0 14 0");
 }

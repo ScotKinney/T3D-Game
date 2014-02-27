@@ -540,6 +540,7 @@ datablock PlayerData(DefaultHorse)
    run3Speed = 10;   // Above this switch to fast speed animation (gallop)
 
    mountable = true; // Players can mount this AI
+   mountBaseSpeed = 0.2;
    driverNode = 0;   // The driver mounts to "Mount0"
    riderNode = 5;    // The passenger mounts to "Mount5"
 
