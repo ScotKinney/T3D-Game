@@ -99,7 +99,7 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    minTimeScale = 1;
 
    boundingBox = "1.5 1.5 1.5";
-   swimBoundingBox = "1.5 1.5 1.5";
+   swimBoundingBox = "1.5 1.5 0.75";
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;

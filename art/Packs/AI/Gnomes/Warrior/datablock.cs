@@ -6,10 +6,17 @@ datablock PlayerData(GnomeWarrior : DefaultPlayerData)
    shapeFile = "art/Packs/AI/Gnomes/Warrior/GnomeWarrior.dts";
    
    maxDamage = 200;
-   maxForwardSpeed = 2;
-   maxBackwardSpeed = 2;
+   maxForwardSpeed = 2.5;
+   maxBackwardSpeed = 1;
    maxSideSpeed = 1;
+   run2Speed = 1.5;
    
+   isAmphibious = true;
+   maxUnderwaterForwardSpeed = 2;
+   maxUnderwaterBackwardSpeed = 1.5;
+   maxUnderwaterSideSpeed = 1;
+   exitSplashSoundVelocity = 1.5;
+
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
    //but these values override the defaults
@@ -36,8 +43,8 @@ datablock PlayerData(GnomeWarrior : DefaultPlayerData)
    computeCRC = true;
 
    //Death Cry
-   DeathSound = GnomeDeathCry;
-   PainSound = "";
+   DeathSound = GnomeDeathCry1;
+   PainSound = GnomePain1;
    
    numPainSounds = 5;
    PainSound[0] = GnomePain1;
@@ -55,14 +62,14 @@ datablock PlayerData(GnomeWarrior : DefaultPlayerData)
 */
 
    numDeathAnims = 4;
-   numDamageAnims = 3;
+   numDamageAnims = 4;
 
-   boundingBox = "2 2 3";
-   swimBoundingBox = "2 4 4";
+   boundingBox = ".7 .7 1.5";
+   swimBoundingBox = ".7 1.5 .7";
 
    // Foot Prints
-   decalData   = PlayerFootprint;
-   decalOffset = 0.25;
+   decalData   = DefaultFootprint;
+   decalOffset = 0.2;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 60;

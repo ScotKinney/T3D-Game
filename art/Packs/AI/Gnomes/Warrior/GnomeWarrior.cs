@@ -23,8 +23,6 @@ function GnomeWarriorDts::onLoad(%this)
    %this.addSequence("./W_CombatWalk.dsq", "Walk", "0", "26", "1", "0");
    %this.setSequencePriority("Walk", "1");
    %this.setSequenceCyclic("Walk", "1");
-   %this.addSequence("./GW_Swimming.dsq", "Swim", "0", "26", "1", "0");
-   %this.setSequenceCyclic("Swim", "1");
    %this.addSequence("./W_BangingShield.dsq", "BangingShield", "0", "26", "1", "0");
    %this.setSequenceCyclic("BangingShield", "1");
    %this.addSequence("./W_Block1LH.dsq", "Block_LH1", "0", "19", "1", "0");
@@ -57,4 +55,18 @@ function GnomeWarriorDts::onLoad(%this)
    %this.addTrigger("Walk_Back", "18", "2");
    %this.renameNode("GW_axe", "mount0");
    %this.renameNode("GW_shield", "mount2");
+   %this.setSequenceGroundSpeed("Walk", "0 1.25 0");
+   %this.setSequenceGroundSpeed("run2", "0 2.5 0");
+   %this.addSequence("./GW_Swimming.dsq", "Swim_Root", "0", "-1", "1", "0");
+   %this.addSequence("./GW_Swimming.dsq", "Swim_Forward", "0", "-1", "1", "0");
+   %this.addSequence("./GW_Swimming.dsq", "Swim_Left", "0", "-1", "1", "0");
+   %this.addSequence("./GW_Swimming.dsq", "Swim_Surface", "0", "-1", "1", "0");
+   %this.setSequenceCyclic("Swim_Root", "1");
+   %this.setSequenceCyclic("Swim_Forward", "1");
+   %this.setSequenceCyclic("Swim_Left", "1");
+   %this.setSequenceCyclic("Swim_Surface", "1");
+   %this.addTrigger("Walk", "6", "1");
+   %this.addTrigger("Walk", "25", "2");
+   %this.addTrigger("Run2", "18", "1");
+   %this.addTrigger("Run2", "8", "2");
 }

@@ -594,11 +594,16 @@ function AIPlayer::spawn(%obj, %isRespawn)
       equipBotWeapon(%player);
 
    // Mount any additional equipment
-   if ( %block.equipmentSlots !$= "" )
+   %useEqpSlots = %obj.equipmentSlots;
+   if ( %useEqpSlots $= "" )
+      %useEqpSlots = %obj.equipmentSlots;
+   if ( (%useEqpSlots !$= "") && (%useEqpSlots > 0) )
    {
-      for ( %i = 0; %i < %block.equipmentSlots; %i++ )
+      for ( %i = 0; %i < %useEqpSlots; %i++ )
       {
-         if ((%block.eqShape[%i] !$= "") && (%block.eqNode[%i] !$= ""))
+         if ((%obj.eqShape[%i] !$= "") && (%obj.eqNode[%i] !$= ""))
+            %player.mountEquipment(%obj.eqShape[%i], %obj.eqNode[%i]);
+         else if ((%block.eqShape[%i] !$= "") && (%block.eqNode[%i] !$= ""))
             %player.mountEquipment(%block.eqShape[%i], %block.eqNode[%i]);
       }
       %player.updateMountedEquipment();

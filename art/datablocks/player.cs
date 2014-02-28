@@ -73,6 +73,7 @@ datablock PlayerData(DefaultPlayerData)
    maxUnderwaterForwardSpeed = 3.4;//8.4
    maxUnderwaterBackwardSpeed = 2.8;//7.8
    maxUnderwaterSideSpeed = 2.8;//7.8
+   exitSplashSoundVelocity = 1.5;
 
    jumpForce = 8.3 * 90;
    standJumpForce = 8.3 * 90;
@@ -118,7 +119,6 @@ datablock PlayerData(DefaultPlayerData)
    splashEmitter[2] = DefaultBubbleEmitter;
    mediumSplashSoundVelocity = 10.0;
    hardSplashSoundVelocity = 20.0;
-   exitSplashSoundVelocity = 5.0;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 50;

@@ -488,7 +488,7 @@ datablock PlayerData(DefaultHorse)
    splashEmitter[2] = HorseBubbleEmitter;
    mediumSplashSoundVelocity = 10.0;   
    hardSplashSoundVelocity = 20.0;   
-   exitSplashSoundVelocity = 5.0;
+   exitSplashSoundVelocity = 3.0;
    surfaceSwim = true;
 
    // Controls over slope of runnable/jumpable surfaces
