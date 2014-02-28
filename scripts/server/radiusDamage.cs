@@ -59,6 +59,8 @@ function radiusDamage(%sourceObject, %position, %radius, %damage, %damageType, %
 
       // Apply the damage
       %targetObject.damage(%sourceObject, %position, %damage * %coverage * %distScale, %damageType);
+      if ( %targetObject.isMethod("getState") && (%targetObject.getState() $= "Dead") )
+         continue;   //Don't apply impulse to dead players
 
       // Apply the impulse
       if (%impulse)

@@ -12,12 +12,8 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("./CrossbowRun.dsq", "Walk", "0", "-1", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
-   %this.addTrigger("Walk", "8", "1");
-   %this.addTrigger("Walk", "27", "2");
    %this.addSequence("./CrossbowSprint.dsq", "Run2", "0", "25", "1", "0");
    %this.setSequenceCyclic("Run2", "1");
-   %this.addTrigger("Run2", "19", "1");
-   %this.addTrigger("Run2", "9", "2");
    %this.addSequence("./CrossbowBack.dsq", "Walk_Back", "0", "22", "1", "0");
    %this.setSequenceCyclic("Walk_Back", "1");
    %this.addTrigger("Walk_Back", "7", "1");
@@ -53,4 +49,8 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.setSequenceCyclic("Swim_Forward", "1");
    %this.setSequenceCyclic("Swim_Left", "1");
    %this.setSequenceCyclic("Swim_Surface", "1");
+   %this.addTrigger("Walk", "6", "1");
+   %this.addTrigger("Walk", "25", "2");
+   %this.addTrigger("Run2", "18", "1");
+   %this.addTrigger("Run2", "8", "2");
 }
