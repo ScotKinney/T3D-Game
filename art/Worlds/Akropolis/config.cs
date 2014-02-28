@@ -23,4 +23,5 @@ $AlterVerse::ArtPacks = "trees/default" TAB
    "props/FireBowl" TAB
    "props/BlackSmith" TAB
    "AI/horses" TAB
+   "Cities/Akropolis" TAB
    "props/kardia";
