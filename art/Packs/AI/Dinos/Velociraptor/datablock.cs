@@ -47,7 +47,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    Weapon = "Raptor_Jaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 1.5;
+   maxRange = 1.75;
    minRange = 0;
    distDetect = 130;
    sidestepDist = 2;
@@ -59,7 +59,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    cycleCounter = "5";
    weaponMode = "pattern";
    activeDodge = 1;
-   moveTolerance = 0.2;
+   moveTolerance = 0.4;
    team = 1;
    respawnTime = 60000; // 60 * 1000, 60 seconds.
    deathEffectron = "";
@@ -83,8 +83,8 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
 
    minImpactSpeed = 45;
 
-   boundingBox = "1 2 2";
-   swimBoundingBox = "1 2 2";
+   boundingBox = "0.75 2.2 1.85";
+   swimBoundingBox = "0.75 2.2 1.85";
 
    // Foot Prints
    decalData   = VelociraptorFootprints;
@@ -151,7 +151,6 @@ datablock GameBaseData(Raptor_JawThree)
 datablock ShapeBaseImageData(Raptor_JawImage : BaseMeleeImage)
 {
    shapefile = "art/Packs/AI/Dinos/Velociraptor/Raptor_Jaw.dts";
-   item = Raptor_JawWeapon; //This is the name of the WEAPON that comes from the weapons table.
 
    // Here are the Attacks we support
    hthNumAttacks = 3;

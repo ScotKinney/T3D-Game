@@ -293,8 +293,8 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
    // If we ran into a rigid shape apply an impulse
    if ((%hitClass $= "RigidShape") || (%hitClass $= "Player") || (%hitClass $= "AIPlayer"))
    {
-      //%playerVelocity = setWord(%obj.getVelocity(), 2, "0"); // Get x and y component of velocity
-      %playerVelocity = %obj.getVelocity();
+      //%playerVelocity = %obj.getVelocity();
+      %playerVelocity = setWord(%obj.getVelocity(), 2, "0"); // Get x and y component of velocity
       %playerVelocity = VectorScale(%playerVelocity, %this.mass * $PlayerImpulseScale); // Scale up for impulse
       %playerPosition = %col.getWorldBoxCenter();
       // Player position is at feet so move up to hands

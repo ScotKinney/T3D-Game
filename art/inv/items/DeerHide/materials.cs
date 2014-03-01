@@ -1,14 +1,4 @@
 
-//singleton Material(mat_DeerhideEdge)
-//{
-   //mapTo = "black";
-   //diffuseMap[0] = "art/inv/items/DeerHide/transparent";
-   //translucentBlendOp = "LerpAlpha";
-   //alphaRef = "0";
-   //castShadows = "0";
-   //translucent = "1";
-//};
-
 singleton Material(mat_Deerhide)
 {
    mapTo = "deerhide";

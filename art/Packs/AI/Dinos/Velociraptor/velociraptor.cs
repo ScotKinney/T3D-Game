@@ -10,7 +10,7 @@ function VelociraptorDts::onLoad(%this)
    %this.setSequenceCyclic("root", "1");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_run.dsq", "Walk", "0", "880");
    %this.setSequenceCyclic("Walk", "1");
-   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_sprint.dsq", "Run2", "0", "40");
+   %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_sprint.dsq", "Run2", "0", "-1");
    %this.setSequenceCyclic("Run2", "1");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_back.dsq", "Walk_Back", "0", "20");
    %this.setSequenceCyclic("Walk_Back", "1");

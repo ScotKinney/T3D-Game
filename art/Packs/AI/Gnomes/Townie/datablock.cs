@@ -35,24 +35,32 @@ datablock PlayerData(GnomeArcher : DefaultPlayerData)
    cameraMaxDist = 3;
    computeCRC = true;
 
-   //Death Cry
-   DeathSound = GnomeDeathCry;
-   PainSound = "";
-   
-   numPainSounds = 5;
+   numDeathSounds = 6;
+   DeathSound[0] = GnomeDeathCry1;
+   DeathSound[1] = GnomeDeathCry2;
+   DeathSound[2] = GnomeDeathCry3;
+   DeathSound[3] = GnomeDeathCry4;
+   DeathSound[4] = GnomeDeathCry5;
+   DeathSound[5] = GnomeDeathCry6;
+
+   numPainSounds = 9;
    PainSound[0] = GnomePain1;
    PainSound[1] = GnomePain2;
    PainSound[2] = GnomePain3;
    PainSound[3] = GnomePain4;
    PainSound[4] = GnomePain5;
+   PainSound[5] = GnomePain6;
+   PainSound[6] = GnomePain7;
+   PainSound[7] = GnomePain8;
+   PainSound[8] = GnomePain9;
 
-/* numAttackSounds = 5; No Attack Sound for Gnomes!
-   AttackSound[0] = BoglinAttack1;
-   AttackSound[1] = BoglinAttack2;
-   AttackSound[2] = BoglinAttack3;
-   AttackSound[3] = BoglinAttack4;
-   AttackSound[4] = BoglinAttack5;
-*/
+   numAttackSounds = 6;
+   AttackSound[0] = GnomeTaunt1;
+   AttackSound[1] = GnomeTaunt2;
+   AttackSound[2] = GnomeTaunt3;
+   AttackSound[3] = GnomeTaunt4;
+   AttackSound[4] = GnomeTaunt5;
+   AttackSound[5] = GnomeTaunt6;
 
    numDeathAnims = 4;
    numDamageAnims = 3;

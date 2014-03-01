@@ -6,21 +6,22 @@ datablock PlayerData(Shark : DefaultPlayerData)
    shapeFile = "art/Packs/AI/sharks/TigerShark.dts";
    
    maxDamage = 300;
-   maxForwardSpeed = 20;
-   maxBackwardSpeed = 2;
-   maxSideSpeed = 3;
+   maxForwardSpeed = 6;
+   maxBackwardSpeed = 3;
+   maxSideSpeed = 2;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
    //but these values override the defaults
-   Weapon = "sharktooth";
+   Weapon = "SharkJaw";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 100;
+   maxRange = 2.5;
    minRange = 0;
    distDetect = 100;
    sidestepDist = 5;
    paceDist = 15;
+   moveTolerance = 0.5;
    npcAction = 0;
    spawnGroup = 1;
    fov = 360;
@@ -37,9 +38,9 @@ datablock PlayerData(Shark : DefaultPlayerData)
    DeathSound = 0;
    PainSound = 0;
 
-   maxUnderwaterForwardSpeed = 7;
-   maxUnderwaterBackwardSpeed = 4;
-   maxUnderwaterSideSpeed = 4;
+   maxUnderwaterForwardSpeed = 6;
+   maxUnderwaterBackwardSpeed = 3;
+   maxUnderwaterSideSpeed = 2;
 
    physicsPlayerType = "CapsuleY";
    boundingBox = "0.5 2.1 0.5";
@@ -48,7 +49,7 @@ datablock PlayerData(Shark : DefaultPlayerData)
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 30;
    jumpSurfaceAngle = 30;
-   maxStepHeight = .5;  //two meters
+   maxStepHeight = .5;
 
    // Footstep Sounds
    FootSoftSound        = "";
@@ -64,7 +65,38 @@ datablock PlayerData(Shark : DefaultPlayerData)
 // Weapon datablocks
 datablock SFXProfile(SharkAttackhitSound)
 {
-   filename = "art/Packs/AI/sharks/sound/Sharkattack";
+   filename = "art/Packs/AI/sharks/sound/sharkattack";
    description = AudioClose3d;
    preload = true;
+};
+
+datablock GameBaseData(Shark_JawOne)
+{
+   seqName = "attack1";
+   fullSkelAnim = true;
+   timeScale = 1;
+   damageAmount = 50;
+   startDamage = 0;
+   endDamage = .5;
+   soundDelay = 1; // Play sound 0 ms after animation starts
+   swingSound = SharkAttackhitSound;
+   impulse = 300; 
+};
+
+datablock ShapeBaseImageData(SharkJawImage : BaseMeleeImage)
+{
+   // Replace this when we have a weapon for the shark
+   shapefile = "art/inv/weapons/Swords/SoulReaver.dts";
+   mountPoint = 1;   // Connects to "Mount1" not "Mount0"
+
+   hthNumAttacks = 1;
+   hthAttack[0] = Shark_JawOne;
+
+   numMovingAttacks = 1;
+   movingAttack[0] = Shark_JawOne;
+
+   // The sound to play when this weapon hits a static object
+   hitStaticSound = "";
+   // The sound to play when this weapon hits another player or AI
+   hitLiveSound = "";
 };

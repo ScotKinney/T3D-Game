@@ -426,10 +426,11 @@ function AIPlayer::attackTransition(%this, %obj)
 
       // If the bot has an attack sound, play it here
       %db = %obj.getDataBlock();
-      if ( %db.numAttackSounds > 0 )
+      if ( (%db.numAttackSounds > 0) && (%obj.lastTarget != %tgt) )
       {
          %idx = getRandom(0, (%db.numAttackSounds-1));
          %obj.playAudio(0, %db.AttackSound[%idx]);
+         %obj.lastTarget = %tgt;
       }
 
       //The bots thinking is sped up to enable the bot to react more quickly as seems appropriate.
@@ -439,7 +440,10 @@ function AIPlayer::attackTransition(%this, %obj)
    }
    //If there was no target, stay in the same state
    else
+   {
+      %obj.lastTarget = -1;
       return false;
+   }
 }
 
 //This is the thinking cycle for non aggressive bots.

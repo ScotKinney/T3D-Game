@@ -596,7 +596,7 @@ function AIPlayer::spawn(%obj, %isRespawn)
    // Mount any additional equipment
    %useEqpSlots = %obj.equipmentSlots;
    if ( %useEqpSlots $= "" )
-      %useEqpSlots = %obj.equipmentSlots;
+      %useEqpSlots = %block.equipmentSlots;
    if ( (%useEqpSlots !$= "") && (%useEqpSlots > 0) )
    {
       for ( %i = 0; %i < %useEqpSlots; %i++ )
