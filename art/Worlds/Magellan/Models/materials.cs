@@ -126,7 +126,7 @@ singleton Material(Mat_tpSignLeft1)
 singleton Material(mat_pathway_b)
 {
    mapTo = "pathway_b";
-   diffuseMap[0] = "art/Worlds/Magellan/Models/transparent.png";
+   diffuseMap[0] = "core/art/transparent.png";
    translucent = "1";
    materialTag0 = "Magellan";
 };
@@ -134,7 +134,7 @@ singleton Material(mat_pathway_b)
 singleton Material(mat_pathway_a)
 {
    mapTo = "pathway_a";
-   diffuseMap[0] = "art/Worlds/Magellan/Models/transparent.png";
+   diffuseMap[0] = "core/art/transparent.png";
    translucent = "1";
    specularPower[0] = "1";
    castShadows = "0";

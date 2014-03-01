@@ -27,6 +27,13 @@ singleton Material( BlankWhite )
    materialTag0 = "Miscellaneous";
 };
 
+singleton Material(mat_FullTrans)
+{
+   mapTo = "transparent";
+   diffuseMap[0] = "core/art/transparent";
+   translucent = "1";
+};
+
 singleton Material( Empty )
 {
 };

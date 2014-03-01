@@ -271,7 +271,7 @@ singleton Material(mat_WaterFall2)
 {
 	mapTo = "PMat_WaterFall2";
 
-	diffuseMap[0] = "transparent.png";
+	diffuseMap[0] = "core/art/transparent.png";
 	normalMap[0] = "";
 	specularMap[0] = "";
 
