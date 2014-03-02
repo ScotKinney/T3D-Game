@@ -1,12 +1,17 @@
 // Kardia level config
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = 
-   "env/groundcover" TAB
-   "props/arena" TAB
-   "props/caveEntrance" TAB
-   "props/clanFort" TAB
-   "props/default" TAB
-   "props/medcity" TAB
+   "AI/horses" TAB
+   "Buildings/Spartan_Arena" TAB
+   "Props/Boats_Spartan" TAB
+   "Tunnels/Spartan" TAB
+   "Buildings/Fort_Wood" TAB
+   "Buildings/Stable_Medieval" TAB
+   "Buildings/Spartan_Walkway" TAB
+   "Buildings/Spartan_GuardTowers" TAB
+   "Props/Containers" TAB
+   "Props/FireBowl" TAB
+   "Props/BlackSmith" TAB
    "props/signs" TAB
    "rocks/default" TAB
    "skies/default" TAB
@@ -18,10 +23,8 @@ $AlterVerse::ArtPacks =
    "veg/Bush01" TAB
    "veg/Phila01" TAB
    "veg/TropicFern" TAB
-   "props/clanFort" TAB
-   "props/Containers" TAB
-   "props/FireBowl" TAB
-   "props/BlackSmith" TAB
-   "AI/horses" TAB
+   "props/default" TAB
+   "env/groundcover" TAB
+   "props/caveEntrance" TAB
    "props/kardia";
    

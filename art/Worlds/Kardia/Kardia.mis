@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0877056";
-         time = "0.0899076";
+         startTime = "0.173567";
+         time = "0.210659";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -502,7 +502,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new Prefab(Arena) {
-      fileName = "art/packs/props/arena/ArenaPreFab.prefab";
+      fileName = "art/packs/buildings/Spartan_arena/ArenaPreFab.prefab";
       position = "-274.351 -190.069 41.9309";
       rotation = "0 0 1 54.9293";
       scale = "1 1 1";
@@ -521,7 +521,7 @@ new SimGroup(MissionGroup) {
          onExitMessage = "GenNZOut";
    };
    new TSStatic(tunnel) {
-      shapeName = "art/Packs/props/kardia/CastleTunnels/tunnelmod.dae";
+      shapeName = "art/Packs/Tunnels/Spartan/tunnelmod.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -550,7 +550,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(Castle) {
-      shapeName = "art/Packs/props/kardia/castle/castle1.dae";
+      shapeName = "art/Packs/Buildings/Spartan_Castle/castle1.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -569,26 +569,6 @@ new SimGroup(MissionGroup) {
          ignoreZodiacs = "0";
          invertGradientRange = "0";
          svfloor1b = "svfloor1b_mat";
-         useGradientRange = "0";
-   };
-   new TSStatic(StableBldg) {
-      shapeName = "art/Packs/props/medcity/main_stable.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Bounds";
-      decalType = "Bounds";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "200.973 -253.234 25.6042";
-      rotation = "1 0 0 0";
-      scale = "0.012 0.012 0.012";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         gradientRange = "0 180";
-         ignoreZodiacs = "0";
-         invertGradientRange = "0";
          useGradientRange = "0";
    };
    new SimGroup(PlayerDropPoints) {
@@ -627,8 +607,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9694";
-         delayRespawn = "6378";
+         botBelongsToMe = "126025";
+         delayRespawn = "99354";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,8 +633,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9301";
-         delayRespawn = "6814";
+         botBelongsToMe = "123083";
+         delayRespawn = "97772";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -679,7 +659,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4071";
+         botBelongsToMe = "4014";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -705,7 +685,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4072";
+         botBelongsToMe = "4015";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -731,8 +711,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9603";
-         delayRespawn = "6300";
+         botBelongsToMe = "125956";
+         delayRespawn = "99302";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -757,8 +737,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "9346";
-         delayRespawn = "6785";
+         botBelongsToMe = "122755";
+         delayRespawn = "99739";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -783,8 +763,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9719";
-         delayRespawn = "6518";
+         botBelongsToMe = "123779";
+         delayRespawn = "98099";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -809,8 +789,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "9484";
-         delayRespawn = "5899";
+         botBelongsToMe = "126327";
+         delayRespawn = "99512";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -835,7 +815,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4077";
+         botBelongsToMe = "4020";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -860,7 +840,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4078";
+         botBelongsToMe = "4021";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -1005,7 +985,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(guardTower) {
-         shapeName = "art/Packs/props/Kardia/guardstower.dts";
+         shapeName = "art/Packs/Buildings/Spartan_GuardTowers/guardstower.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1021,7 +1001,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(KarWalk2c) {
-         shapeName = "art/Packs/props/kardia/walkway/walkway2C.dts";
+         shapeName = "art/Packs/Buildings/Spartan_walkway/walkway2C.dts";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -1226,339 +1206,13 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new TSStatic(Medit6a1) {
-         shapeName = "art/Packs/props/kardia/medit6.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-45.9684 299.647 14.3552";
-         rotation = "0 0 1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic(medit8a2) {
-         shapeName = "art/Packs/props/kardia/medit8.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "0.891567 271.657 14.4122";
-         rotation = "0 0 -1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic(Medit6a) {
-         shapeName = "art/Packs/props/kardia/medit6.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "3.09155 340.458 14.3552";
-         rotation = "0 0 -1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            CeilingB = "CeilingB_mat";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic(Medit7a) {
-         shapeName = "art/Packs/props/kardia/medit7.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.3884 344.528 14.3452";
-         rotation = "0 0 1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic(medit8a1) {
-         shapeName = "art/Packs/props/kardia/medit8.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-44.469 271.657 14.4122";
-         rotation = "0 0 1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic(Medit7b) {
-         shapeName = "art/Packs/props/kardia/medit7.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "3.76156 295.687 14.3652";
-         rotation = "0 0 -1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-   };
-   new SimGroup(Medit7A_IntProps) {
-      canSave = "1";
-      canSaveDynamicFields = "1";
-
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/furniture2.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.8575 333.863 14.6322";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/dinner_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.7476 346.892 14.6051";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-47.1859 336.357 14.6284";
-         rotation = "0 0 1 192.468";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.6608 337.103 14.6446";
-         rotation = "1 0 0 0";
-         scale = "1.3 1.3 1.3";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/wallpicture3.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.7441 333.497 15.8933";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.0935 336.359 14.6189";
-         rotation = "0 0 1 163.482";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-45.9863 337.921 14.6284";
-         rotation = "0 0 1 33.3689";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-47.1531 337.827 14.6284";
-         rotation = "0 0 1 2.41835";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/dinner_chair.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-48.0333 346.958 14.5971";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/plate.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.5553 337.094 15.4705";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
    };
    new SimGroup(Boats_MainDocks) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1574,7 +1228,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1590,7 +1244,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1606,7 +1260,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1622,7 +1276,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat_Sail.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1638,7 +1292,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat_Sail.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1654,7 +1308,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat_damaged.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_damaged.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1670,7 +1324,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat_Oar.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1686,7 +1340,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/boats/Medieval_boat_Oar.dts";
+         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2008,351 +1662,10 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
    };
-   new SimGroup(KardiaPalms) {
-      canSave = "1";
-      canSaveDynamicFields = "1";
-
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 379.256 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 379.256 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 360.875 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 361.019 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 349.217 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 349.073 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 330.941 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 330.797 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 309.224 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 309.08 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 291.069 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 290.925 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 279.242 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 279.098 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7762 260.972 10.4057";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/packs/trees/palm/palmtree_tall.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-17.2804 260.828 10.4057";
-         rotation = "0 0 -1 54.8019";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-   };
    new SimGroup(KardiaWeaponsStore) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new TSStatic(WeaponsBldg) {
-         shapeName = "art/Packs/props/kardia/medit9New.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "4.52157 368.418 14.4022";
-         rotation = "0 0 -1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new Portal(KardiaWeaponsPortal) {
          useAmbientLightColor = "0";
          ambientLightColor = "0.1 0.1 0.1 1";
@@ -2367,7 +1680,7 @@ new SimGroup(MissionGroup) {
          ambientLightColor = "0.435294 0.423529 0.392157 1";
          position = "1.18665 368.281 16.9685";
          rotation = "1 0 0 0";
-         scale = "8.04766 16.831 5.08739";
+         scale = "8.25462 17.2955 5.08739";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -3641,19 +2954,6 @@ new SimGroup(MissionGroup) {
          buyable = "1";
          count = "1";
          isAIControlled = "0";
-         dataBlock = "DoomWeapon";
-         position = "-2.00362 365.483 16.0224";
-         rotation = "-0.562779 -0.544518 -0.621916 115.843";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "1";
-         isAIControlled = "0";
          dataBlock = "IronPikeWeapon";
          position = "-2.27352 371.966 16.2261";
          rotation = "-0.57735 0.57735 0.57735 119.789";
@@ -3750,22 +3050,6 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new TSStatic(MercantileBldg) {
-         shapeName = "art/Packs/props/kardia/medit9New.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Visible Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-47.1694 368.668 14.4072";
-         rotation = "0 0 1 90";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new Zone(KardiaFoodZone) {
          useAmbientLightColor = "1";
          ambientLightColor = "0.435294 0.423529 0.392157 1";
@@ -5167,7 +4451,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5187,7 +4471,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5267,7 +4551,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5287,7 +4571,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5427,46 +4711,6 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/ladder.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-45.2094 383.568 13.9512";
-         rotation = "-0.364801 0.364801 -0.856645 98.8301";
-         scale = "0.03 0.03 0.0414935";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/kardia/ladder.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "2.00155 383.568 13.9512";
-         rotation = "-0.364801 0.364801 -0.856645 98.8301";
-         scale = "0.03 0.03 0.0414935";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
          shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
@@ -5567,7 +4811,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5587,7 +4831,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5607,7 +4851,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5627,7 +4871,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5647,7 +4891,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6146,7 +5390,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          enabled = "1";
 
-      new StaticShape(WildHorseSpawn) {
+      new StaticShape(WhiteHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "218.149 -246.347 25.8413";
@@ -6157,19 +5401,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4079";
+            botBelongsToMe = "4022";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
             paceDist = "10";
-            pathname = "WildHorsePath";
+            pathname = "WhiteHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
             weapon = "-NoWeapon";
       };
-      new Path(WildHorsePath) {
+      new Path(WhiteHorsePath) {
          isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6228,7 +5472,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new StaticShape(PaliminoHorseSpawn) {
+      new StaticShape(BlackHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "219.46 -157.624 25.8414";
@@ -6239,19 +5483,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4080";
+            botBelongsToMe = "4023";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
             paceDist = "10";
-            pathname = "PaliminoPath";
+            pathname = "BlackHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
             weapon = "-NoWeapon";
       };
-      new Path(PaliminoPath) {
+      new Path(BlackHorsePath) {
          isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6309,7 +5553,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new StaticShape(IndianHorseSpawn) {
+      new StaticShape(GrayHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "219.025 -157.675 25.8414";
@@ -6320,19 +5564,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4081";
+            botBelongsToMe = "4024";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
             paceDist = "10";
-            pathname = "IndianHorsePath";
+            pathname = "GrayHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
             weapon = "-NoWeapon";
       };
-      new Path(IndianHorsePath) {
+      new Path(GrayHorsePath) {
          isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6390,7 +5634,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new StaticShape(ArabianHorseSpawn) {
+      new StaticShape(PintoHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "221.973 -242.533 25.8414";
@@ -6401,19 +5645,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4082";
+            botBelongsToMe = "4025";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
             paceDist = "10";
-            pathname = "ArabianHorsePath";
+            pathname = "PintoHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
             weapon = "-NoWeapon";
       };
-      new Path(ArabianHorsePath) {
+      new Path(PintoHorsePath) {
          isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6471,7 +5715,7 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new StaticShape(LightHorseSpawn) {
+      new StaticShape(BuckskinHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "302.351 -242.891 25.7476";
@@ -6482,19 +5726,19 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4083";
+            botBelongsToMe = "4026";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
             paceDist = "10";
-            pathname = "LightHorsePath";
+            pathname = "BuckskinHorsePath";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
             weapon = "-NoWeapon";
       };
-      new Path(LightHorsePath) {
+      new Path(BuckskinHorsePath) {
          isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -6563,7 +5807,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4084";
+            botBelongsToMe = "4027";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7351,7 +6595,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4085";
+            botBelongsToMe = "4028";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -7376,7 +6620,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4086";
+            botBelongsToMe = "4029";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -7387,7 +6631,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "14";
-            weapon = "JavelinWeapon";
+            weapon = "IronSpearWeapon";
       };
       new Item(Treasury_SavageSpartans) {
          static = "1";
@@ -7410,7 +6654,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-376.382 264.303 24.5303";
             rotation = "0 0 -1 0.442347";
             scale = "1 1 1";
@@ -7418,7 +6662,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-341.666 264.568 24.5328";
             rotation = "0 0 -1 0.442347";
             scale = "1 1 1";
@@ -7426,7 +6670,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-359.068 247.159 24.5328";
             rotation = "0 0 -1 90.4425";
             scale = "1 1 1";
@@ -7434,7 +6678,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-359.334 281.86 24.53";
             rotation = "0 0 -1 90.4425";
             scale = "1 1 1";
@@ -7442,7 +6686,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/fortLOD_Z.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/fortLOD_Z.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7464,7 +6708,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7484,7 +6728,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7504,7 +6748,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7524,7 +6768,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7793,7 +7037,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4087";
+            botBelongsToMe = "4030";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7818,7 +7062,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4088";
+            botBelongsToMe = "4031";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -7856,7 +7100,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7876,7 +7120,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7896,7 +7140,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7916,7 +7160,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7936,7 +7180,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7956,7 +7200,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7976,7 +7220,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -7996,7 +7240,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8016,7 +7260,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8036,7 +7280,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8056,7 +7300,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8076,7 +7320,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8096,7 +7340,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8116,7 +7360,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8136,7 +7380,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8156,7 +7400,7 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -8177,7 +7421,7 @@ new SimGroup(MissionGroup) {
             };
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "320.293 264.126 24.5701";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -8185,7 +7429,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "302.765 246.845 24.5701";
             rotation = "0 0 -1 90.0254";
             scale = "1 1 1";
@@ -8193,7 +7437,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/packs/props/clanfort/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "302.751 281.546 24.5673";
             rotation = "0 0 -1 90.0254";
             scale = "1 1 1";
@@ -8201,7 +7445,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/fortLOD_Z.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/fortLOD_Z.dae";
             playAmbient = "1";
             meshCulling = "1";
             originSort = "0";
@@ -8222,7 +7466,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -8242,7 +7486,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -8262,7 +7506,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -8282,7 +7526,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";

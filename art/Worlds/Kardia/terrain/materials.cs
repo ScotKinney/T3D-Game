@@ -55,10 +55,10 @@ singleton Material(Ter_DarkDirt)
 new TerrainMaterial()
 {
    internalName = "VolcanicCliffRockTop";
-   diffuseMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_base";
+   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
    diffuseSize = "300";
-   normalMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_dif";
+   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
    detailSize = "20";
    detailStrength = "0.6";
    detailDistance = "4000";
@@ -70,9 +70,9 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "VolcanicCliffSide";
-   diffuseMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_base";
-   normalMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/Worlds/Kardia/Terrain/tex_volcanic_cliffrock_dif";
+   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
+   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
    detailSize = "80";
    detailDistance = "4000";
    useSideProjection = "1";
@@ -85,10 +85,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "grass";
-   diffuseMap = "art/Worlds/Kardia/Terrain/clearTerrain001";
+   diffuseMap = "art/packs/terrains/SP_Sparta/clearTerrain001";
    diffuseSize = "300";
-   normalMap = "art/Worlds/Kardia/Terrain/gras_01n";
-   detailMap = "art/Worlds/Kardia/Terrain/gras_01";
+   normalMap = "art/packs/terrains/SP_Sparta/gras_01n";
+   detailMap = "art/packs/terrains/SP_Sparta/gras_01";
    detailSize = "4";
    detailStrength = "0.4";
    detailDistance = "1000";
@@ -104,9 +104,9 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "DryGround";
-   diffuseMap = "art/Worlds/Kardia/Terrain/dryground_base";
-   normalMap = "art/Worlds/Kardia/Terrain/dryground_normal";
-   detailMap = "art/Worlds/Kardia/Terrain/dryground_detail";
+   diffuseMap = "art/packs/terrains/SP_Sparta/dryground_base";
+   normalMap = "art/packs/terrains/SP_Sparta/dryground_normal";
+   detailMap = "art/packs/terrains/SP_Sparta/dryground_detail";
    detailSize = "3";
    detailStrength = "0.5";
    diffuseSize = "400";
@@ -117,10 +117,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "DirtySand";
-   diffuseMap = "art/Worlds/Kardia/Terrain/dirtysand_base";
+   diffuseMap = "art/packs/terrains/SP_Sparta/dirtysand_base";
    diffuseSize = "900";
-   normalMap = "art/Worlds/Kardia/Terrain/dirtysand_nrm";
-   detailMap = "art/Worlds/Kardia/Terrain/dirtysand_detail";
+   normalMap = "art/packs/terrains/SP_Sparta/dirtysand_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/dirtysand_detail";
    detailSize = "4";
    detailStrength = "0.8";
    detailDistance = "100";
@@ -132,9 +132,9 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "ValSnow";
-   diffuseMap = "art/Worlds/Kardia/Terrain/snow_detail";
+   diffuseMap = "art/packs/terrains/SP_Sparta/snow_detail";
    diffuseSize = "200";
-   detailMap = "art/Worlds/Kardia/Terrain/grass2_d";
+   detailMap = "art/packs/terrains/SP_Sparta/grass2_d";
    detailDistance = "1500";
    detailSize = "20";
    useAnisotropic[0] = "1"; 
@@ -143,10 +143,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "darkDirt";
-   diffuseMap = "art/Worlds/Kardia/Terrain/forestmix_base";
+   diffuseMap = "art/packs/terrains/SP_Sparta/forestmix_base";
    diffuseSize = "500";
-   normalMap = "art/Worlds/Kardia/Terrain/soil_02n";
-   detailMap = "art/Worlds/Kardia/Terrain/soil_02";
+   normalMap = "art/packs/terrains/SP_Sparta/soil_02n";
+   detailMap = "art/packs/terrains/SP_Sparta/soil_02";
    detailSize = "6";
    detailStrength = "0.3";
    detailDistance = "400";
