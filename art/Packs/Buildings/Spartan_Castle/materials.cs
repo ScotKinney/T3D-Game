@@ -439,3 +439,306 @@ singleton Material(castle1_svwall5a)
 };
 
 
+
+singleton Material(castle1_default2)
+{
+   mapTo = "default2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_door2)
+{
+   mapTo = "door2";
+   diffuseMap[0] = "door1_D";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svarch1)
+{
+   mapTo = "svarch1";
+   diffuseMap[0] = "svtarch1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svarch1a)
+{
+   mapTo = "svarch1a";
+   diffuseMap[0] = "svtarch1a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svarch2)
+{
+   mapTo = "svarch2";
+   diffuseMap[0] = "svtarch2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svarch3)
+{
+   mapTo = "svarch3";
+   diffuseMap[0] = "svtarch3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svarch4)
+{
+   mapTo = "svarch4";
+   diffuseMap[0] = "svtarch4";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svdoor1)
+{
+   mapTo = "svdoor1";
+   diffuseMap[0] = "svtqdoor1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svfloor1)
+{
+   mapTo = "svfloor1";
+   diffuseMap[0] = "svtqwall1a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svfloor1b)
+{
+   mapTo = "svfloor1b";
+   diffuseMap[0] = "svtqwall1b";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svfloor2)
+{
+   mapTo = "svfloor2";
+   diffuseMap[0] = "svtqwall3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svfloor3)
+{
+   mapTo = "svfloor3";
+   diffuseMap[0] = "svtqwall3a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svpillar1)
+{
+   mapTo = "svpillar1";
+   diffuseMap[0] = "svtqpillar1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svpillar2)
+{
+   mapTo = "svpillar2";
+   diffuseMap[0] = "svtqpillar2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svpillar3)
+{
+   mapTo = "svpillar3";
+   diffuseMap[0] = "svtqpillar3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svrailing1)
+{
+   mapTo = "svrailing1";
+   diffuseMap[0] = "svtqwall3b";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svrailing2)
+{
+   mapTo = "svrailing2";
+   diffuseMap[0] = "svtqwood3a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svrelief1)
+{
+   mapTo = "svrelief1";
+   diffuseMap[0] = "svtqtrelief1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svrelief2)
+{
+   mapTo = "svrelief2";
+   diffuseMap[0] = "svtqtrelief2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svroof1)
+{
+   mapTo = "svroof1";
+   diffuseMap[0] = "svtqroof1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svsteps)
+{
+   mapTo = "svsteps";
+   diffuseMap[0] = "svtqwall1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svtile1)
+{
+   mapTo = "svtile1";
+   diffuseMap[0] = "svtqtile1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svtrim1)
+{
+   mapTo = "svtrim1";
+   diffuseMap[0] = "svstone3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svtrim2)
+{
+   mapTo = "svtrim2";
+   diffuseMap[0] = "svstone4";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svtrim3)
+{
+   mapTo = "svtrim3";
+   diffuseMap[0] = "svstone2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall2)
+{
+   mapTo = "svwall2";
+   diffuseMap[0] = "svtqwall2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall5)
+{
+   mapTo = "svwall5";
+   diffuseMap[0] = "svtqwall5";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall5a)
+{
+   mapTo = "svwall5a";
+   diffuseMap[0] = "svtqwall5a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall6)
+{
+   mapTo = "svwall6";
+   diffuseMap[0] = "svtqwall6";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall7)
+{
+   mapTo = "svwall7";
+   diffuseMap[0] = "svtqwall7";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall8)
+{
+   mapTo = "svwall8";
+   diffuseMap[0] = "svtqwall8";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall8a)
+{
+   mapTo = "svwall8a";
+   diffuseMap[0] = "svtqwall8a";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwall9)
+{
+   mapTo = "svwall9";
+   diffuseMap[0] = "svtqwall9";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwater1)
+{
+   mapTo = "svwater1";
+   diffuseMap[0] = "sv-water09";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwindow1)
+{
+   mapTo = "svwindow1";
+   diffuseMap[0] = "svtqwindow1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwood1)
+{
+   mapTo = "svwood1";
+   diffuseMap[0] = "svtqwood1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwood2)
+{
+   mapTo = "svwood2";
+   diffuseMap[0] = "svtqwood2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(castle1_svwood3)
+{
+   mapTo = "svwood3";
+   diffuseMap[0] = "svtqwood3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
