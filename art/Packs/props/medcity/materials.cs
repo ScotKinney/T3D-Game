@@ -105,7 +105,6 @@ new Material(mat_inn)
    useAnisotropic[0] = "1";
 };
 
-
 singleton Material(mat_inn_interior_ceiling)
 {
    mapTo = "inn_interior_ceiling";
@@ -148,23 +147,6 @@ singleton Material(mat_StoneFloor)
    useAnisotropic[0] = "1";
    translucent = "0";
    customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "MedCity";
-};
-
-singleton Material(mat_StableFloor)
-{
-   mapTo = "StableFLoor";
-   diffuseMap[0] = "StableFLoor";
-   translucent = "0";
-   materialTag0 = "MedCity";
-   castShadows = "0";
-};
-
-singleton Material(mat_Hey)
-{
-   mapTo = "hey";
-   diffuseMap[0] = "hey";
-   translucent = "0";
    materialTag0 = "MedCity";
 };
 
