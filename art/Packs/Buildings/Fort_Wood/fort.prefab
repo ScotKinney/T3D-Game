@@ -4,7 +4,7 @@ $ThisPrefab = new SimGroup() {
    canSaveDynamicFields = "1";
 
    new Prefab() {
-      fileName = "art/Packs/props/clanFort/ropeBridge.prefab";
+      fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
       position = "-3.84751 17.3348 5.74736";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -12,7 +12,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new Prefab() {
-      fileName = "art/Packs/props/clanFort/ropeBridge.prefab";
+      fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
       position = "-3.85021 -17.3822 5.74986";
       rotation = "0 0 1 90";
       scale = "1 1 1";
@@ -20,7 +20,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new Prefab() {
-      fileName = "art/Packs/props/clanFort/ropeBridge.prefab";
+      fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
       position = "-21.1244 0.153839 5.74986";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -28,7 +28,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new Prefab() {
-      fileName = "art/Packs/props/clanFort/ropeBridge.prefab";
+      fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
       position = "13.5773 0.151825 5.74706";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -36,7 +36,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fortLOD_Z.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fortLOD_Z.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -57,7 +57,7 @@ $ThisPrefab = new SimGroup() {
          mudpack = "mudpack_mat";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -77,7 +77,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -97,7 +97,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -117,7 +117,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/bridgeFort.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";

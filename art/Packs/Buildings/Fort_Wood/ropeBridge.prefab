@@ -4,7 +4,7 @@ $ThisPrefab = new SimGroup() {
    canSaveDynamicFields = "1";
 
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -24,7 +24,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -44,7 +44,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -64,7 +64,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -84,7 +84,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -104,7 +104,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -124,7 +124,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -144,7 +144,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -164,7 +164,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -184,7 +184,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -204,7 +204,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -224,7 +224,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -244,7 +244,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_seg_1b.DAE";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -264,7 +264,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -284,7 +284,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/rope_coil_02dk.dae";
+      shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -304,7 +304,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/clanFort/fencePostBasic00A.dts";
+      shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
