@@ -33,7 +33,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/packs/props/kardia/CastleTunnels/Bowl.dae";
+      shapeName = "art/packs/Tunnels/Spartan/Bowl.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
