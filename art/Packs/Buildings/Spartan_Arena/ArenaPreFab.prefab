@@ -4,7 +4,7 @@ $ThisPrefab = new SimGroup() {
    canSaveDynamicFields = "1";
 
    new TSStatic() {
-      shapeName = "art/packs/props/arena/ArenaSect2a.dae";
+      shapeName = "art/packs/Buildings/Spartan_Arena/ArenaSect2a.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -24,7 +24,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/packs/props/arena/ArenaSect1a.dae";
+      shapeName = "art/packs/Buildings/Spartan_Arena/ArenaSect1a.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -44,7 +44,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/packs/props/arena/ArenaSect2a.dae";
+      shapeName = "art/packs/Buildings/Spartan_Arena/ArenaSect2a.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -64,7 +64,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/packs/props/arena/ArenaSect1a.dae";
+      shapeName = "art/packs/Buildings/Spartan_Arena/ArenaSect1a.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
