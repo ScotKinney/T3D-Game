@@ -107,3 +107,10 @@ singleton Material(PMat_RopeCoilObject_mat)
    //customImpactSound = "FootStepWood1Sound";
    //materialTag0 = "Fort";
 //};
+
+singleton Material(fortLOD_Z_lambert1)
+{
+   mapTo = "lambert1";
+   diffuseColor[0] = "0.4 0.4 0.4 1";
+   translucentBlendOp = "None";
+};
