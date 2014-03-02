@@ -366,7 +366,7 @@ function AIPlayer::movementPositionFilter(%this, %obj)
     //Do a simple test to see if the bot can go directly to its target destination,
     //or if it needs to do something fancy to go around an obstacle
     if (%this.checkMovementLos(%obj, %eyeTrans, %this.moveDestinationB) == 0)
-        %obj.setmovedestination(%this.moveDestinationB, true);
+        %obj.setmovedestination(%this.moveDestinationB, (%obj.action !$= "Attacking"));
     else
     {
         //The "45" below is the angle
@@ -385,19 +385,19 @@ function AIPlayer::movementPositionFilter(%this, %obj)
                 %foundObject = %this.checkMovementLos(%obj, %start, %this.moveDestinationA);
 
                 if (%foundObject == 0)
-                    %obj.setmovedestination(%thirdPointA, true);
+                    %obj.setmovedestination(%thirdPointA, (%obj.action !$= "Attacking"));
                 else
-                    %obj.setmovedestination(%thirdPointB, true);
+                    %obj.setmovedestination(%thirdPointB, (%obj.action !$= "Attacking"));
             }
             else
-                %obj.setmovedestination(%thirdPointA, true);
+                %obj.setmovedestination(%thirdPointA, (%obj.action !$= "Attacking"));
         }
         else
         {
             %this.moveDestinationB = %this.triangleBasedAviodance(%obj, -45, %this.moveDestinationA);
 
             if (%this.checkMovementLos(%obj, %eyeTrans, %this.moveDestinationB) == 0)
-                %obj.setmovedestination(%this.moveDestinationB, true);
+                %obj.setmovedestination(%this.moveDestinationB, (%obj.action !$= "Attacking"));
             //Nothing is unblocked, move in a random direction
             else
                 %this.sidestep(%obj);
