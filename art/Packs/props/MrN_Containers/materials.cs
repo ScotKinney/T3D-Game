@@ -7,6 +7,7 @@ singleton Material(mat_MrNBoxes)
    specularMap[0] = "Boxes_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_MrNCeramicPots)
@@ -16,6 +17,7 @@ singleton Material(mat_MrNCeramicPots)
    normalMap[0] = "Ceramics_nm.dds";
    specularMap[0] = "Ceramics_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_MrNBarrels)
@@ -26,15 +28,17 @@ singleton Material(mat_MrNBarrels)
    useAnisotropic[0] = "1";
    normalMap[0] = "Barrels_nm.dds";
    specularMap[0] = "Barrels_spec.dds";
+   materialTag0 = "Props_MrN";
 };
 
-singleton Material(DefaultMaterial3)
+singleton Material(mat_MrN_OldSacks)
 {
    mapTo = "Old_sacks_dif";
    diffuseMap[0] = "Old_sacks_dif";
    normalMap[0] = "Old_sacks_nm.dds";
    specularMap[0] = "Old_sacks_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_MrN_Rope)
@@ -44,4 +48,5 @@ singleton Material(mat_MrN_Rope)
    normalMap[0] = "rope_nm.dds";
    specularMap[0] = "rope_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Props_MrN";
 };
