@@ -8,22 +8,6 @@ new Material(mat_Barrel01_D)
    materialTag0 = "DefaultProps";
 };
 
-singleton Material(mat_woodbarrel01C)
-{
-   mapTo = "woodBarrel01C";
-   diffuseMap[0] = "woodBarrel01C.jpg";
-   materialTag0 = "DefaultProps";
-};
-
-singleton Material(mat_cratesSimple001stain4)
-{
-   mapTo = "CratesSimple0001stain4";
-   diffuseMap[0] = "CratesSimple0001stain4";
-   normalMap[0] = "CratesSimple0001stain4_NORM";
-   translucent = "0";
-   materialTag0 = "DefaultProps";
-};
-
 singleton Material(interior_props_1_mat)
 {
    mapTo = "interior_props_1";
