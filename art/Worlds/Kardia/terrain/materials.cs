@@ -18,7 +18,7 @@ singleton Material(Ter_DryGround)
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };  
 
-singleton Material(Ter_ValSnow)   
+singleton Material(Ter_Snow)   
 {   
    mapTo = "snow_detail";   
    customFootstepSound = FootStepSnow1Sound;
@@ -84,7 +84,7 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   internalName = "grass";
+   internalName = "Grass";
    diffuseMap = "art/packs/terrains/SP_Sparta/clearTerrain001";
    diffuseSize = "300";
    normalMap = "art/packs/terrains/SP_Sparta/gras_01n";
@@ -131,7 +131,7 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   internalName = "ValSnow";
+   internalName = "Snow";
    diffuseMap = "art/packs/terrains/SP_Sparta/snow_detail";
    diffuseSize = "200";
    detailMap = "art/packs/terrains/SP_Sparta/grass2_d";
@@ -142,7 +142,7 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   internalName = "darkDirt";
+   internalName = "DarkDirt";
    diffuseMap = "art/packs/terrains/SP_Sparta/forestmix_base";
    diffuseSize = "500";
    normalMap = "art/packs/terrains/SP_Sparta/soil_02n";
@@ -157,3 +157,5 @@ new TerrainMaterial()
    detailScale = "512";
    detailBrightness = "1";
 };
+
+
