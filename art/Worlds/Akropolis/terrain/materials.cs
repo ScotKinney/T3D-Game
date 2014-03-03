@@ -1,52 +1,94 @@
-//-----------------------------------------------------------------------------
-// Torque 3D
-// Copyright (C) GarageGames.com, Inc.
-//-----------------------------------------------------------------------------
+
+////////////////Spartan Terrain//////////////////
+//////////////////////////////////////////////////////
 
 
 singleton Material(Ter_Grass)   
 {   
    mapTo = "clearTerrain001";   
-   footstepSoundId = 0;
+   customFootstepSound = FootStepGrass1Sound;
+};
+
+singleton Material(Ter_DryGround)   
+{   
+   mapTo = "dryground_base";   
+   customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
+};  
+
+singleton Material(Ter_Snow)   
+{   
+   mapTo = "snow_detail";   
+   customFootstepSound = FootStepSnow1Sound;
 };
 
 singleton Material(Ter_DirtySand)
 {
    mapTo = "dirtysand_base";
-   footstepSoundId = 3;
+   customFootstepSound = FootStepSand1Sound;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
-
 };
 
-singleton Material(Ter_DirtySandmix)
+singleton Material(Ter_RockTop)
 {
-   mapTo = "dirtyandmix_base";
-   footstepSoundId = 3;
-   //showDust = true;
+   mapTo = "tex_volcanic_cliffrock_base";
+   customFootstepSound = FootStepSand1Sound;
 };
 
-singleton Material(Ter_Rock)
+singleton Material(Ter_DarkDirt)
 {
-   mapTo = "cas_cobble2_shadow";
-   footstepSoundId = 1;
+   mapTo = "forestmix_base";
+   customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
-singleton Material(Ter_Seaweed)
-{
-   mapTo = "Seaweed_base";
-   footstepSoundId = 2;
-};
 
-//////////////////////////////////////////////////////////
+
+// VolcanicCliffRockTop Terrain
+
 new TerrainMaterial()
 {
-   internalName = "grass";
-   diffuseMap = "art/Worlds/Akropolis/terrain/clearTerrain001";
+   internalName = "VolcanicCliffRockTop";
+   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
    diffuseSize = "300";
-   normalMap = "art/Worlds/Akropolis/terrain/gras_01n";
-   detailMap = "art/Worlds/Akropolis/terrain/gras_01";
+   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
+   detailSize = "20";
+   detailStrength = "0.6";
+   detailDistance = "4000";
+   useAnisotropic[0] = "1"; 
+};
+
+// VolcanicCliffSide Terrain
+
+new TerrainMaterial()
+{
+   internalName = "VolcanicCliffSide";
+   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
+   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
+   detailSize = "80";
+   detailDistance = "4000";
+   useSideProjection = "1";
+   diffuseSize = "300";
+   detailStrength = "0.6";
+   useAnisotropic[0] = "1"; 
+};
+
+
+new TerrainMaterial()
+{
+   internalName = "Grass";
+   diffuseMap = "art/packs/terrains/SP_Sparta/clearTerrain001";
+   diffuseSize = "300";
+   normalMap = "art/packs/terrains/SP_Sparta/gras_01n";
+   detailMap = "art/packs/terrains/SP_Sparta/gras_01";
    detailSize = "4";
    detailStrength = "0.4";
    detailDistance = "1000";
@@ -59,95 +101,61 @@ new TerrainMaterial()
    detailBrightness = "1";
 };
 
-
-//DirtySand Terrain
+new TerrainMaterial()
+{
+   internalName = "DryGround";
+   diffuseMap = "art/packs/terrains/SP_Sparta/dryground_base";
+   normalMap = "art/packs/terrains/SP_Sparta/dryground_normal";
+   detailMap = "art/packs/terrains/SP_Sparta/dryground_detail";
+   detailSize = "3";
+   detailStrength = "0.5";
+   diffuseSize = "400";
+   parallaxScale = "0.1";
+   detailDistance = "400";
+};
 
 new TerrainMaterial()
 {
    internalName = "DirtySand";
-   diffuseMap = "art/Worlds/Akropolis/terrain/dirtysand_base";
+   diffuseMap = "art/packs/terrains/SP_Sparta/dirtysand_base";
    diffuseSize = "900";
-   normalMap = "art/Worlds/Akropolis/terrain/dirtysand_2_nrm";
-   detailMap = "art/Worlds/Akropolis/terrain/dirtysand_detail";
+   normalMap = "art/packs/terrains/SP_Sparta/dirtysand_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/dirtysand_detail";
    detailSize = "4";
    detailStrength = "0.8";
    detailDistance = "100";
    parallaxScale = "0.02";
    detailScale = "512";
+   useAnisotropic0 = "1";
 };
-
-
-//DirtSandMix Terrain
 
 new TerrainMaterial()
 {
-   internalName = "DirtSandMix";
-   diffuseMap = "art/Worlds/Akropolis/terrain/dirtyandmix_base";
-   diffuseSize = "500";
-   normalMap = "art/Worlds/Akropolis/terrain/dirtsandmix_nrm";
-   detailMap = "art/Worlds/Akropolis/terrain/dirtsandmix_detail";
-   detailSize = "3";
-   detailStrength = "0.7";
-   detailDistance = "100";
-   parallaxScale = "0.02";
-   detailScale = "512";
-};
-
-
-// VolcanicCliffRockTop Terrain
-
-new TerrainMaterial()
-{
-   internalName = "VolcanicCliffRockTop";
-   diffuseMap = "art/Worlds/Akropolis/terrain/cas_cobble2_shadow";
-   diffuseSize = "300";
-   normalMap = "art/Worlds/Akropolis/terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/Worlds/Akropolis/terrain/tex_volcanic_cliffrock_dif";
-   detailSize = "10";
-   detailStrength = "0.6";
-   detailDistance = "1000";
+   internalName = "Snow";
+   diffuseMap = "art/packs/terrains/SP_Sparta/snow_detail";
+   diffuseSize = "200";
+   detailMap = "art/packs/terrains/SP_Sparta/grass2_d";
+   detailDistance = "1500";
+   detailSize = "20";
    useAnisotropic[0] = "1"; 
-   useAnisotropic0 = "1";
 };
-
-// VolcanicCliffSide Terrain
 
 new TerrainMaterial()
 {
-   internalName = "SeaweedMain";
-   diffuseMap = "art/Worlds/Akropolis/terrain/Seaweed_base";
-   normalMap = "art/Worlds/Akropolis/terrain/Seaweed_nrm_displacement";
-   detailMap = "art/Worlds/Akropolis/terrain/Seaweed_detail";
-   detailSize = "5.5";
-   detailDistance = "1000";
-   useSideProjection = "0";
+   internalName = "DarkDirt";
+   diffuseMap = "art/packs/terrains/SP_Sparta/forestmix_base";
    diffuseSize = "500";
-   detailStrength = "0.4";
-   useAnisotropic[0] = "1";
+   normalMap = "art/packs/terrains/SP_Sparta/soil_02n";
+   detailMap = "art/packs/terrains/SP_Sparta/soil_02";
+   detailSize = "6";
+   detailStrength = "0.3";
+   detailDistance = "400";
+   parallaxScale = "0.01";
+   enabled = "1";
    useAnisotropic0 = "1";
-   parallaxScale = "0.03";
+   isManaged = "1";
+   detailScale = "512";
+   detailBrightness = "1";
 };
 
-new TerrainMaterial()
-{
-   diffuseMap = "art/Worlds/Akropolis/terrain/Seaweed_base";
-   normalMap = "art/Worlds/Akropolis/terrain/Seaweed_nrm_displacement";
-   detailMap = "art/Worlds/Akropolis/terrain/Seaweed_detail";
-   detailSize = "5.5";
-   detailStrength = "0.4";
-   detailDistance = "1000";
-   parallaxScale = "0.03";
-   internalName = "Seaweed_base";
-};
 
-new TerrainMaterial()
-{
-   diffuseMap = "Seaweed_base";
-   normalMap = "Seaweed_nrm_displacement";
-   detailMap = "Seaweed_detail";
-   detailSize = "5.5";
-   detailStrength = "0.4";
-   detailDistance = "1000";
-   parallaxScale = "0.03";
-   internalName = "Seaweed_base";
-};

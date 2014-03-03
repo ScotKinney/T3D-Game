@@ -132,7 +132,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TerrainBlock(theTerrain) {
-      terrainFile = $WorldPath @ "/Akropolis.ter";
+      terrainFile = "art/terrains/terrain2.ter";
       castShadows = "1";
       squareSize = "1";
       baseTexSize = "1024";
@@ -196,7 +196,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "62.3158 -68.7736 21.6";
+      position = "62.3158 -67.4646 21.6";
       rotation = "1 0 0 0";
       scale = "0.75 0.75 0.75";
       canSave = "1";
@@ -239,7 +239,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "2758";
+         botBelongsToMe = "3043";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -264,7 +264,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2759";
+         botBelongsToMe = "3044";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -288,7 +288,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "MountBehavior";
          block = "WildHorse";
-         botBelongsToMe = "2760";
+         botBelongsToMe = "0";
          delayRespawn = "3126";
          distDetect = "50";
          fov = "360";
