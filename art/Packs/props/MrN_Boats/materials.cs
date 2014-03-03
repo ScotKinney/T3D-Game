@@ -1,10 +1,10 @@
 
-singleton Material(mat_Boat_Color)
+singleton Material(mat_MrN_Boat)
 {
-   mapTo = "boat_color";
-   diffuseMap[0] = "boat_color";
-   normalMap[0] = "boat_normals.dds";
-   specularMap[0] = "boat_specular.dds";
+   mapTo = "MrN_boat_dif";
+   diffuseMap[0] = "MrN_boat_dif";
+   normalMap[0] = "MrN_boat_nm.dds";
+   specularMap[0] = "MrN_boat_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    customImpactSound = "FootStepWood1Sound";
@@ -12,31 +12,31 @@ singleton Material(mat_Boat_Color)
    specularStrength[0] = "2.35294";
    pixelSpecular[0] = "1";
    backLightFactor = "0.9 1.0 0.2";
-   materialTag0 = "Boats";
+   materialTag0 = "Props_MrN";
 
 };
 
-singleton Material(mat_Rope_Color)
+singleton Material(mat_MrN_Rope)
 {
-   mapTo = "rope_color";
-   diffuseMap[0] = "rope_color";
-   normalMap[0] = "rope_normals.dds";
-   specularMap[0] = "rope_specular.dds";
+   mapTo = "MrN_rope_dif";
+   diffuseMap[0] = "MrN_rope_dif";
+   normalMap[0] = "MrN_rope_nm";
+   specularMap[0] = "MrN_rope_spec";
    useAnisotropic[0] = "1";
    specularPower[0] = "1";
    specularStrength[0] = "0";
-   materialTag0 = "Boats";
+   materialTag0 = "Props_MrN";
 
 };
 
-singleton Material(mat_Sail_Color)
+singleton Material(mat_MrN_Sail)
 {
-   mapTo = "sail_color";
-   diffuseMap[0] = "sail_color";
-   normalMap[0] = "sail_normals.dds";
-   specularMap[0] = "sail_specular.dds";
+   mapTo = "MrN_sail_dif";
+   diffuseMap[0] = "MrN_sail_dif";
+   normalMap[0] = "MrN_sail_nm";
+   specularMap[0] = "MrN_sail_spec";
    useAnisotropic[0] = "1";
    translucent = "1";
    backLightFactor = "0.9 1.0 0.2";
-   materialTag0 = "Boats";
+   materialTag0 = "Props_MrN";
 };
