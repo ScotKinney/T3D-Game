@@ -8,10 +8,15 @@ $AlterVerse::ArtPacks =
    "Buildings/Fort_Wood" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
+   "Buildings/Spartan_Castle" TAB
    "Buildings/Spartan_GuardTowers" TAB
    "Props/Containers" TAB
+   "Props/RRGTS_Crates" TAB
+   "Props/RRGTS_Barrels" TAB
+   "Props/RRGTS_Docks" TAB
    "Props/FireBowl" TAB
    "Props/BlackSmith" TAB
+   "Props/WaterFallWall" TAB
    "props/signs" TAB
    "rocks/default" TAB
    "skies/default" TAB

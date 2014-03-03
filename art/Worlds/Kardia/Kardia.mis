@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.173567";
-         time = "0.210659";
+         startTime = "0.919128";
+         time = "0.922816";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -520,6 +520,22 @@ new SimGroup(MissionGroup) {
          onEnterMessage = "KarNZIn";
          onExitMessage = "GenNZOut";
    };
+   new TSStatic(Castle) {
+      shapeName = "art/Packs/Buildings/Spartan_Castle/castle1.dae";
+      playAmbient = "1";
+      meshCulling = "1";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-43.6233 -226.433 51.991";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
    new TSStatic(tunnel) {
       shapeName = "art/Packs/Tunnels/Spartan/tunnelmod.dae";
       playAmbient = "1";
@@ -548,28 +564,6 @@ new SimGroup(MissionGroup) {
       scale = "143.395 163.411 50.4606";
       canSave = "1";
       canSaveDynamicFields = "1";
-   };
-   new TSStatic(Castle) {
-      shapeName = "art/Packs/Buildings/Spartan_Castle/castle1.dae";
-      playAmbient = "1";
-      meshCulling = "1";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Visible Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-43.6233 -226.433 51.991";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         default2 = "default2_mat";
-         gradientRange = "0 180";
-         ignoreZodiacs = "0";
-         invertGradientRange = "0";
-         svfloor1b = "svfloor1b_mat";
-         useGradientRange = "0";
    };
    new SimGroup(PlayerDropPoints) {
       canSave = "1";
@@ -607,8 +601,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "126025";
-         delayRespawn = "99354";
+         botBelongsToMe = "10268";
+         delayRespawn = "10823";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -633,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "123083";
-         delayRespawn = "97772";
+         botBelongsToMe = "10002";
+         delayRespawn = "10289";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -659,7 +653,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4014";
+         botBelongsToMe = "3999";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -685,7 +679,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4015";
+         botBelongsToMe = "4000";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -711,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "125956";
-         delayRespawn = "99302";
+         botBelongsToMe = "10054";
+         delayRespawn = "11201";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -737,8 +731,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "122755";
-         delayRespawn = "99739";
+         botBelongsToMe = "10291";
+         delayRespawn = "10898";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -763,8 +757,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "123779";
-         delayRespawn = "98099";
+         botBelongsToMe = "10017";
+         delayRespawn = "10354";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -789,8 +783,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "126327";
-         delayRespawn = "99512";
+         botBelongsToMe = "10262";
+         delayRespawn = "10758";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -815,7 +809,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4020";
+         botBelongsToMe = "4005";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -840,7 +834,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4021";
+         botBelongsToMe = "4006";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -872,9 +866,16 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new OcclusionVolume() {
-         position = "-8.90004 -19.4408 43.9222";
+         position = "315.854 -19.4408 43.9222";
          rotation = "1 0 0 0";
-         scale = "994.001 0.686482 183.021";
+         scale = "695.459 0.686482 183.021";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new OcclusionVolume() {
+         position = "-393.328 -19.4408 43.9222";
+         rotation = "1 0 0 0";
+         scale = "695.459 0.686482 183.021";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -1666,15 +1667,6 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new Portal(KardiaWeaponsPortal) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "-2.86325 368.221 16.6995";
-         rotation = "0 0 1 91.6758";
-         scale = "2.14522 0.487989 4.07542";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new Zone(KardiaWeaponsZone) {
          useAmbientLightColor = "1";
          ambientLightColor = "0.435294 0.423529 0.392157 1";
@@ -2214,7 +2206,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "5.12052 364.304 17.1429";
-         rotation = "0.580302 -0.571401 -0.580302 240";
+         rotation = "-0.580302 0.571401 0.580302 120";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3059,15 +3051,6 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Portal(KardiaFoodPortal) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "-39.8402 368.838 16.7002";
-         rotation = "0 0 1 91.6758";
-         scale = "2.14522 0.487989 4.07542";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new TSStatic(MercantileSign1) {
          shapeName = "art/Packs/props/signs/FoodShop.dts";
          playAmbient = "1";
@@ -3236,7 +3219,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-42.3216 375.992 15.6485";
-         rotation = "-0.994698 -0.0694808 0.075825 95.3035";
+         rotation = "-0.994697 -0.0694808 0.075825 95.3036";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3728,19 +3711,6 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-41.8488 375.992 15.6485";
-         rotation = "-0.994697 -0.0694808 0.075825 95.3036";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "1";
-         isAIControlled = "0";
-         dataBlock = "Fishing_Pole";
-         position = "-41.3838 375.992 15.6485";
          rotation = "-0.994698 -0.0694808 0.075825 95.3035";
          scale = "1 1 1";
          canSave = "1";
@@ -3753,8 +3723,21 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
-         position = "-40.8798 375.992 15.6485";
+         position = "-41.3838 375.992 15.6485";
          rotation = "-0.994697 -0.0694808 0.075825 95.3036";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "1";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Fishing_Pole";
+         position = "-40.8798 375.992 15.6485";
+         rotation = "-0.994698 -0.0694808 0.075825 95.3035";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -4371,7 +4354,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4391,7 +4374,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4411,7 +4394,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4431,7 +4414,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4491,7 +4474,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4511,7 +4494,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4531,7 +4514,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4591,7 +4574,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4611,7 +4594,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4631,7 +4614,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4651,7 +4634,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4671,7 +4654,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4711,7 +4694,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4731,7 +4714,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4751,7 +4734,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4771,7 +4754,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4791,7 +4774,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/CratesSimple0001Fragile2StainAnimated.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001Fragile2StainAnimated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4939,7 +4922,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls) {
-         shapeName = "art/Packs/props/kardia/WaterFallWall.dae";
+         shapeName = "art/Packs/props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5069,7 +5052,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(KardToBogScreen) {
-         shapeName = "art/Packs/props/kardia/KardToBogScreen.dae";
+         shapeName = "art/Packs/Buildings/Spartan_Arena/KardToBogScreen.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5401,7 +5384,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4022";
+            botBelongsToMe = "4007";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5483,7 +5466,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4023";
+            botBelongsToMe = "4008";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5564,7 +5547,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4024";
+            botBelongsToMe = "4009";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5645,7 +5628,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4025";
+            botBelongsToMe = "4010";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5726,7 +5709,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4026";
+            botBelongsToMe = "4011";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5807,7 +5790,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4027";
+            botBelongsToMe = "4012";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5890,7 +5873,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5910,7 +5893,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5930,7 +5913,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5950,7 +5933,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5970,7 +5953,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5990,7 +5973,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6010,7 +5993,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6030,7 +6013,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6050,7 +6033,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6070,7 +6053,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6090,7 +6073,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6110,7 +6093,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6130,7 +6113,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6150,7 +6133,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/CratesSimple0001Fragile2StainAnimated.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001Fragile2StainAnimated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6219,7 +6202,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/CratesSimple0001stain4Animated.dts";
+         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4Animated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6239,7 +6222,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/woodBarrel01Canimated.dts";
+         shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01Canimated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6259,7 +6242,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/woodBarrel01C_LOD.dts";
+         shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01C_LOD.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6279,7 +6262,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/woodBarrel01Canimated.dts";
+         shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01Canimated.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6299,7 +6282,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/woodBarrel01C_LOD.dts";
+         shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01C_LOD.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6319,7 +6302,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6339,7 +6322,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6359,7 +6342,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6379,7 +6362,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6399,7 +6382,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6419,7 +6402,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6439,7 +6422,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6459,7 +6442,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6479,7 +6462,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6499,7 +6482,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6519,7 +6502,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6539,7 +6522,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6559,7 +6542,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/kardia/docks.dts";
+         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6595,7 +6578,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4028";
+            botBelongsToMe = "4013";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -6606,7 +6589,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "14";
-            weapon = "JavelinWeapon";
+            weapon = "IronSpearWeapon";
       };
       new StaticShape(Guard14a_SS) {
          isAIControlled = "1";
@@ -6620,7 +6603,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4029";
+            botBelongsToMe = "4014";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -6920,7 +6903,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6940,7 +6923,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6960,7 +6943,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6980,7 +6963,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7000,7 +6983,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7037,7 +7020,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4030";
+            botBelongsToMe = "4015";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7048,7 +7031,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "13";
-            weapon = "JavelinWeapon";
+            weapon = "IronSpearWeapon";
       };
       new StaticShape(Guard13a_RB) {
          isAIControlled = "0";
@@ -7062,7 +7045,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4031";
+            botBelongsToMe = "4016";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -7073,7 +7056,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "13";
-            weapon = "JavelinWeapon";
+            weapon = "IronSpearWeapon";
       };
       new Item(Treasury_RoyalBlood) {
          static = "1";
@@ -7678,7 +7661,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7698,7 +7681,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7718,7 +7701,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7738,7 +7721,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7758,7 +7741,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -9474,7 +9457,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-39.4901 -108.998 37.3796";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9482,7 +9465,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-47.7682 -108.998 37.3796";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9490,7 +9473,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-47.7682 -127.352 44.5792";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9498,7 +9481,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-39.4825 -127.352 44.5792";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9506,7 +9489,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-39.4825 -143.918 51.78";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9514,7 +9497,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-47.764 -143.918 51.78";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -9522,8 +9505,32 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/packs/props/kardia/CastleTorch.prefab";
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
          position = "-47.764 -172.894 51.78";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new Prefab() {
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
+         position = "-39.4901 -90.6892 35.2145";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new Prefab() {
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
+         position = "-47.6981 -90.6892 35.2145";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new Prefab() {
+         fileName = "art/packs/Buildings/Spartan_Castle/CastleTorch.prefab";
+         position = "-39.4849 -172.874 51.7812";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
