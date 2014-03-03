@@ -57,6 +57,6 @@ function BoglinDts::onLoad(%this)
    %this.setSequenceCyclic("Strafe_Right", "1");
    %this.addTrigger("Strafe_Right", "11", "1");
    %this.addTrigger("Strafe_Right", "17", "2");
-   %this.setSequenceGroundSpeed("Walk", "0 1 0"); //try at maximum forward speed to start.
-   %this.setSequenceGroundSpeed("run2", "0 2 0"); //adjust by watching the AI run
+   %this.setSequenceGroundSpeed("Walk", "0 0.9 0"); //try at maximum forward speed to start.
+   %this.setSequenceGroundSpeed("run2", "0 1.95 0"); //adjust by watching the AI run
 }

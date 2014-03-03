@@ -30,4 +30,6 @@ function VelociraptorDts::onLoad(%this)
    %this.addTrigger("Walk_Back", "12", "2");
    %this.addTrigger("Strafe_Left", "10", "1");
    %this.addTrigger("Strafe_Left", "20", "2");
+   %this.setSequenceGroundSpeed("Walk", "0 1.412 0");
+   %this.setSequenceGroundSpeed("run2", "0 1.396 0");
 }

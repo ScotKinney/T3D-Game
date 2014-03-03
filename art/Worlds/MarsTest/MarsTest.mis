@@ -595,7 +595,7 @@ new SimGroup(MissionGroup) {
          weapon = "GargoyleFireball";
    };
    new Prefab(Arena) {
-      fileName = "art/packs/props/arena/ArenaPreFab.prefab";
+      fileName = "art/packs/Buildings/Spartan_Arena/ArenaPreFab.prefab";
       position = "234.076 76.6654 255.84";
       rotation = "0 0 1 54.9293";
       scale = "1 1 1";

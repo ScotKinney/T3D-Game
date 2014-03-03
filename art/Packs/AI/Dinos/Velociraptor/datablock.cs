@@ -40,6 +40,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    maxForwardSpeed = 6;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
+   run2Speed = 2;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -59,7 +60,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    cycleCounter = "5";
    weaponMode = "pattern";
    activeDodge = 1;
-   moveTolerance = 0.4;
+   moveTolerance = 0.2;
    team = 1;
    respawnTime = 60000; // 60 * 1000, 60 seconds.
    deathEffectron = "";

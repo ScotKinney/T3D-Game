@@ -116,7 +116,7 @@ datablock PlayerData(Boglin : DefaultPlayerData)
    maxForwardSpeed = 2;
    maxBackwardSpeed = 2;
    maxSideSpeed = 1;
-   run2Speed = 1;
+   run2Speed = 1.4;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,

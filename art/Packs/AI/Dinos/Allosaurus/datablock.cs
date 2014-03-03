@@ -31,7 +31,7 @@ datablock PlayerData(Allosaurus : DefaultPlayerData)
    maxForwardSpeed = 8;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
-   run2Speed = 4;
+   run2Speed = 2;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,

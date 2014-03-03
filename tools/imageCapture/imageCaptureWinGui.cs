@@ -11,6 +11,7 @@ exec("./gui/pvcSkins.gui");
 exec("./gui/pvcTexture.gui");
 exec("./gui/pvcLighting.gui");
 exec("./gui/pvcPreviewWin.gui");
+exec("./gui/pvcGroundSpeed.gui");
 
 exec("./pvcAnimationGui.cs");
 exec("./pvcMeshesGui.cs");
@@ -20,6 +21,7 @@ exec("./pvcSkinsGui.cs");
 exec("./pvcTextureGui.cs");
 exec("./pvcLightingGui.cs");
 exec("./pvcNodeGui.cs");
+exec("./pvcGroundSpeedGui.cs");
 
 function ImageCaptureWin::onWake(%this)
 {
@@ -64,6 +66,8 @@ function ImageCaptureWin::onSleep(%this)
       Canvas.popDialog(PVCSkinDlg);
    if (PVCLightingDlg.isAwake())
       Canvas.popDialog(PVCLightingDlg);
+   if (PVCGroundDlg.isAwake())
+      Canvas.popDialog(PVCGroundDlg);
 
    // Delete any materials created by the skins window
       
@@ -171,6 +175,11 @@ function ImageCaptureWin::OnLightsBtn(%this)
    PVCLightingDlg.toggle();
 }
 
+function ImageCaptureWin::OnGroundSpeedBtn(%this)
+{  // Bring up the ground speed dialog
+   PVCGroundDlg.toggle();
+}
+
 function ImageCaptureWin::UpdateShapeDisplay(%this)
 {
    // Put the shape into the view control
@@ -181,4 +190,5 @@ function ImageCaptureWin::UpdateShapeDisplay(%this)
    PVCMeshDlg.updateMeshList();
    PVCMountDlg.updateMountsList();
    PVCSkinDlg.updateSkinsList();
+   PVCGroundDlg.updateNodeList();
 }
