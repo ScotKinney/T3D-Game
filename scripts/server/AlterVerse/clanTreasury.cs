@@ -17,7 +17,7 @@ datablock ItemData(ClanTreasuryItem)
 {
    category = "AlterVerse Objects";
    className = ClanTreasury;
-   shapeFile = "art/inv/items/chests/chest.dts";
+   shapeFile = "art/inv/items/chests/MrN_BigChest.dts";
 
    mass = 2;
    friction = 1;
