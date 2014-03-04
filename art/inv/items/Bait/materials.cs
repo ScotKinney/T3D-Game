@@ -7,6 +7,9 @@ singleton Material(mat_BoglinToes)
    castShadows = "0";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_nightCrawlers)
@@ -17,6 +20,9 @@ singleton Material(mat_nightCrawlers)
    castShadows = "0";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_Minnows)
@@ -27,6 +33,9 @@ singleton Material(mat_Minnows)
    castShadows = "0";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_GHoppers)
@@ -37,4 +46,7 @@ singleton Material(mat_GHoppers)
    castShadows = "0";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
 };
