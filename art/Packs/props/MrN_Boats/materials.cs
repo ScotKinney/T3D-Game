@@ -13,7 +13,6 @@ singleton Material(mat_MrN_Boat)
    pixelSpecular[0] = "1";
    backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Props_MrN";
-
 };
 
 singleton Material(mat_MrN_Rope)
@@ -26,7 +25,6 @@ singleton Material(mat_MrN_Rope)
    specularPower[0] = "1";
    specularStrength[0] = "0";
    materialTag0 = "Props_MrN";
-
 };
 
 singleton Material(mat_MrN_Sail)
