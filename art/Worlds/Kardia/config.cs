@@ -3,19 +3,21 @@ $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = 
    "AI/horses" TAB
    "Buildings/Spartan_Arena" TAB
-   "Props/Boats_Spartan" TAB
    "Tunnels/Spartan" TAB
    "Buildings/Fort_Wood" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
    "Buildings/Spartan_Castle" TAB
    "Buildings/Spartan_GuardTowers" TAB
-   "Props/Containers" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
    "Props/RRGTS_Docks" TAB
-   "Props/FireBowl" TAB
-   "Props/BlackSmith" TAB
+   "Props/A3D_ClayPots" TAB
+   "Props/A3D_BanquetSet" TAB
+   "Props/MrN_Containers" TAB
+   "Props/MrN_OldLighting" TAB
+   "Props/MrN_Boats" TAB
+   "Props/MrN_BlackSmith" TAB
    "Props/WaterFallWall" TAB
    "props/signs" TAB
    "rocks/default" TAB
@@ -30,6 +32,5 @@ $AlterVerse::ArtPacks =
    "veg/TropicFern" TAB
    "props/default" TAB
    "env/groundcover" TAB
-   "props/caveEntrance" TAB
-   "props/kardia";
+   "props/caveEntrance";
    

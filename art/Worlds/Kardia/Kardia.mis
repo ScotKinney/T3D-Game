@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.919128";
-         time = "0.922816";
+         startTime = "0.206408";
+         time = "0.162013";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -375,11 +375,11 @@ new SimGroup(MissionGroup) {
          billboardUVs[5] = "0.242188 0 0.207031 0.507813";
          billboardUVs[6] = "0.761719 0 0.238281 0.726563";
          billboardUVs[7] = "0.765625 0.808594 0.109375 0.1875";
-         layer[0] = "grass";
-         layer[1] = "grass";
-         layer[2] = "grass";
-         layer[4] = "grass";
-         layer[5] = "grass";
+         layer[0] = "Grass";
+         layer[1] = "Grass";
+         layer[2] = "Grass";
+         layer[4] = "Grass";
+         layer[5] = "Grass";
          invertLayer[0] = "0";
          invertLayer[1] = "0";
          invertLayer[2] = "0";
@@ -502,7 +502,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new Prefab(Arena) {
-      fileName = "art/packs/buildings/Spartan_arena/ArenaPreFab.prefab";
+      fileName = "art/packs/buildings/Spartan_Arena/ArenaPreFab.prefab";
       position = "-274.351 -190.069 41.9309";
       rotation = "0 0 1 54.9293";
       scale = "1 1 1";
@@ -601,8 +601,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10268";
-         delayRespawn = "10823";
+         botBelongsToMe = "12545";
+         delayRespawn = "5359";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10002";
-         delayRespawn = "10289";
+         botBelongsToMe = "11693";
+         delayRespawn = "6062";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,7 +653,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3999";
+         botBelongsToMe = "4016";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -679,7 +679,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4000";
+         botBelongsToMe = "4017";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -705,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10054";
-         delayRespawn = "11201";
+         botBelongsToMe = "13446";
+         delayRespawn = "5859";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -731,8 +731,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "10291";
-         delayRespawn = "10898";
+         botBelongsToMe = "11874";
+         delayRespawn = "6218";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -757,8 +757,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10017";
-         delayRespawn = "10354";
+         botBelongsToMe = "12526";
+         delayRespawn = "5309";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -783,8 +783,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "10262";
-         delayRespawn = "10758";
+         botBelongsToMe = "12282";
+         delayRespawn = "6038";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -809,7 +809,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4005";
+         botBelongsToMe = "4022";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -834,7 +834,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4006";
+         botBelongsToMe = "4023";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -1213,7 +1213,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1229,7 +1229,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1245,7 +1245,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1261,7 +1261,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1277,7 +1277,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Sail.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1293,7 +1293,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Sail.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1309,7 +1309,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_damaged.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_damaged.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1325,7 +1325,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Oar.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1341,7 +1341,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Boats_Spartan/Medieval_boat_Oar.dts";
+         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1522,7 +1522,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1531,9 +1531,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-5.36844 379.089 15.3442";
+         position = "-5.36844 379.089 14.4211";
          rotation = "0 0 1 132.825";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1542,7 +1542,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1551,9 +1551,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-5.36844 331.118 15.3442";
+         position = "-5.36844 331.118 14.4274";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1562,7 +1562,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1571,9 +1571,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-5.36844 309.078 15.3442";
+         position = "-5.36844 309.078 14.4441";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1582,7 +1582,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1591,9 +1591,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-5.36844 261.147 15.3442";
+         position = "-5.36844 261.147 14.4461";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1602,7 +1602,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1611,9 +1611,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.2784 261.147 15.3442";
+         position = "-37.2784 261.147 14.4392";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1622,7 +1622,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1631,9 +1631,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.2784 309.078 15.3442";
+         position = "-37.2784 309.078 14.4433";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -1642,7 +1642,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1651,9 +1651,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.2784 331.118 15.3442";
+         position = "-37.2784 331.118 14.4088";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             amphora3 = "amphora3_mat";
@@ -1696,7 +1696,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1712,7 +1712,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1728,7 +1728,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1744,7 +1744,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1760,7 +1760,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1776,7 +1776,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1792,7 +1792,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1808,7 +1808,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Anvil.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Anvil.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1824,7 +1824,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Stool.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1840,7 +1840,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Vice.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Vice.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1856,7 +1856,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/BlackSmith/BS_Stool.dts";
+         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1872,7 +1872,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponShopFireBowl) {
-         shapeName = "art/Packs/props/FireBowl/FireBowl2.dts";
+         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1963,7 +1963,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponShopFireBowl2) {
-         shapeName = "art/Packs/props/FireBowl/FireBowl2.dts";
+         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2206,7 +2206,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "5.12052 364.304 17.1429";
-         rotation = "-0.580302 0.571401 0.580302 120";
+         rotation = "0.580302 -0.571401 -0.580302 240";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3006,7 +3006,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/MrN_BigBox.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_BigBox.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3022,7 +3022,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/MrN_CeramicPotA.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3072,7 +3072,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3092,7 +3092,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3112,7 +3112,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/Ornate_Banquet_Chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3132,7 +3132,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3152,7 +3152,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3172,7 +3172,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_table.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3192,7 +3192,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/ornate_banquet_chair.dts";
+         shapeName = "art/Packs/props/A3D_BanquetSet/Ornate_Banquet_Chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3219,7 +3219,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-42.3216 375.992 15.6485";
-         rotation = "-0.994697 -0.0694808 0.075825 95.3036";
+         rotation = "-0.994698 -0.0694808 0.075825 95.3035";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3711,19 +3711,6 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-41.8488 375.992 15.6485";
-         rotation = "-0.994698 -0.0694808 0.075825 95.3035";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Item() {
-         static = "1";
-         rotate = "0";
-         buyable = "1";
-         count = "1";
-         isAIControlled = "0";
-         dataBlock = "Fishing_Pole";
-         position = "-41.3838 375.992 15.6485";
          rotation = "-0.994697 -0.0694808 0.075825 95.3036";
          scale = "1 1 1";
          canSave = "1";
@@ -3736,8 +3723,21 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
-         position = "-40.8798 375.992 15.6485";
+         position = "-41.3838 375.992 15.6485";
          rotation = "-0.994698 -0.0694808 0.075825 95.3035";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "1";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Fishing_Pole";
+         position = "-40.8798 375.992 15.6485";
+         rotation = "-0.994697 -0.0694808 0.075825 95.3036";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -4071,7 +4071,7 @@ new SimGroup(MissionGroup) {
             respawn = "10";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4087,7 +4087,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4103,7 +4103,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4119,7 +4119,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4135,7 +4135,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4151,7 +4151,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Containers/SM_Barrel.dts";
+         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4167,7 +4167,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(MercFireBowl1) {
-         shapeName = "art/Packs/props/FireBowl/FireBowl2.dts";
+         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4258,7 +4258,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(MercFireBowl11) {
-         shapeName = "art/Packs/props/FireBowl/FireBowl2.dts";
+         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4674,7 +4674,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4683,9 +4683,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "0";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.2994 379.089 15.3442";
+         position = "-37.2994 379.089 14.4577";
          rotation = "0 0 1 219.23";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -5384,7 +5384,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4007";
+            botBelongsToMe = "4024";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5466,7 +5466,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4008";
+            botBelongsToMe = "4025";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5547,7 +5547,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4009";
+            botBelongsToMe = "4026";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5628,7 +5628,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4010";
+            botBelongsToMe = "4027";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5709,7 +5709,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4011";
+            botBelongsToMe = "4028";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5790,7 +5790,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4012";
+            botBelongsToMe = "4029";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -6578,7 +6578,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4013";
+            botBelongsToMe = "4030";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -6603,7 +6603,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4014";
+            botBelongsToMe = "4031";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -7020,7 +7020,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4015";
+            botBelongsToMe = "4032";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7045,7 +7045,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4016";
+            botBelongsToMe = "4033";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -9212,7 +9212,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9221,9 +9221,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.6911 -212.314 52.9248";
+         position = "-37.6911 -212.314 51.9819";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9232,7 +9232,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9241,9 +9241,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-49.6801 -212.314 52.8959";
+         position = "-49.6801 -212.314 51.9689";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9252,7 +9252,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9261,9 +9261,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-49.6801 -247.733 52.8959";
+         position = "-49.6801 -247.733 51.9793";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9272,7 +9272,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9281,9 +9281,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-37.0487 -247.953 52.8959";
+         position = "-37.0487 -247.953 51.9685";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9292,7 +9292,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9301,9 +9301,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "5.66756 -237.997 52.8959";
+         position = "5.66756 -237.997 51.9672";
          rotation = "0 0 1 87.654";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9312,7 +9312,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/Kardia/amphora3.dae";
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9321,9 +9321,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "5.66756 -224.621 52.8959";
+         position = "5.66756 -224.621 51.9974";
          rotation = "0 0 1 87.654";
-         scale = "1 1 1";
+         scale = "1.5 1.5 1.5";
          canSave = "1";
          canSaveDynamicFields = "1";
             gradientRange = "0 180";
@@ -9558,6 +9558,230 @@ new SimGroup(MissionGroup) {
       isAIControlled = "0";
       dataBlock = "JackHammerWeapon";
       position = "8.9858 380.169 15.4604";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/A3D_ClayPots/A3D_ClayPotA.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Bounds";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-21.2342 381.021 13.9385";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/A3D_ClayPots/A3D_ClayPotB.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Bounds";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-22.7479 381.117 13.9397";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_BigBarrel.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-19.5093 410.786 13.9468";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-18.1771 410.843 13.9497";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_BigBox.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-21.306 410.867 13.9432";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_SmBox.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-23.0023 410.994 13.9273";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_BirdCage.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-21.3629 410.96 14.8288";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotA.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-23.057 411.029 14.7294";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotB.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-19.4851 410.798 15.3402";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-23.8113 412.033 13.9582";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_SackB.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-24.9898 412.972 13.9693";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_SackC.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-25.1928 414.467 13.9518";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_StrawBasketA.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-19.0128 411.85 13.9398";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/MrN_Containers/MrN_StrawBasketB.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-18.1753 410.608 14.7919";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
