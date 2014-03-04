@@ -31,8 +31,6 @@ function AllosaurusDts::onLoad(%this)
    %this.addTrigger("Strafe_Left", "3", "1");
    %this.addTrigger("Strafe_Left", "13", "2");
    %this.setNodeTransform("mount0", "0.00669013 8.10465 7.48938 0.0888265 -0.960658 0.263146 1.59531", "1");
-   //%this.setSequenceGroundSpeed("Walk", "0 5.48 0"); // d/s
-   //%this.setSequenceGroundSpeed("run2", "0 23.23 0");
-   %this.setSequenceGroundSpeed("Walk", "0 7.305 0");  // d
-   %this.setSequenceGroundSpeed("run2", "0 7.744 0");
+   %this.setSequenceGroundSpeed("Walk", "0 17 0");  // d
+   %this.setSequenceGroundSpeed("run2", "0 18 0");
 }

@@ -1,19 +1,26 @@
 
-datablock PlayerData(GnomeArcher : DefaultPlayerData)
+datablock PlayerData(GnomeKing : DefaultPlayerData)
 {
    renderFirstPerson = false;
 
-   shapeFile = "art/Packs/AI/Gnomes/Gnome_Archer.dts";
+   shapeFile = "art/Packs/AI/Gnomes/King/GnomeKing.dts";
    
    maxDamage = 200;
    maxForwardSpeed = 2;
    maxBackwardSpeed = 2;
    maxSideSpeed = 1;
+   run2Speed = 1.25;
    
+   isAmphibious = true;
+   maxUnderwaterForwardSpeed = 2;
+   maxUnderwaterBackwardSpeed = 1.5;
+   maxUnderwaterSideSpeed = 1;
+   exitSplashSoundVelocity = 1.5;
+
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
    //but these values override the defaults
-   Weapon = "GA_Crossbow";
+   //Weapon = "GA_Crossbow";
    respawn = true;
    behavior = "GuardBehavior";
    maxRange = 20;
@@ -65,8 +72,8 @@ datablock PlayerData(GnomeArcher : DefaultPlayerData)
    numDeathAnims = 4;
    numDamageAnims = 3;
 
-   boundingBox = "2 2 3";
-   swimBoundingBox = "2 4 4";
+   boundingBox = ".7 .7 1.5";
+   swimBoundingBox = ".7 1.5 .7";
 
    // Foot Prints
    decalData   = PlayerFootprint;
@@ -79,5 +86,5 @@ datablock PlayerData(GnomeArcher : DefaultPlayerData)
 };
 
 
-// Load the Gnome Archer weapon
-exec("./weapon.cs");
+// Load the Gnome Staff
+//exec("./weapon.cs");

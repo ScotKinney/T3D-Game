@@ -52,19 +52,19 @@ singleton GameBaseData(ClubSwingFour)
    impulse = 400;
 };
 
-datablock ShapeBaseImageData(ClubImage : BaseMeleeImage)
-{
-   shapefile = "art/Packs/AI/Boglin/mace.dts";
-   item = ClubWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
-
-   // Here are the Attacks we support
-   hthNumAttacks = 4;
-   hthAttack[0]                     = ClubSwingOne;
-   hthAttack[1]                     = ClubSwingTwo;
-   hthAttack[2]                     = ClubSwingThree;
-   hthAttack[3]                     = ClubSwingFour;
-
-   // No sounds for when a club hits a player or object
-   hitStaticSound = "SwordHitStaticSound";
-   hitLiveSound = "SwordHitLiveSound";
-};
+//datablock ShapeBaseImageData(ClubImage : BaseMeleeImage)
+//{
+   //shapefile = "art/Packs/AI/Boglin/mace.dts";
+   //item = ClubWeapon; //This is the name of the WEAPON that comes from the weapons table in aureus.
+//
+   //// Here are the Attacks we support
+   //hthNumAttacks = 4;
+   //hthAttack[0]                     = ClubSwingOne;
+   //hthAttack[1]                     = ClubSwingTwo;
+   //hthAttack[2]                     = ClubSwingThree;
+   //hthAttack[3]                     = ClubSwingFour;
+//
+   //// No sounds for when a club hits a player or object
+   //hitStaticSound = "SwordHitStaticSound";
+   //hitLiveSound = "SwordHitLiveSound";
+//};

@@ -876,7 +876,7 @@ function Player::playDeathAnimation(%this)
 
    %numDeaths = %this.getDataBlock().numDeathAnims;
    if ( %numDeaths $= "" )
-      %numDeaths = 11; // If not set, assume 11 death anims
+      %numDeaths = 1; // If not set, assume 1 death anim
 
    if ( %numDeaths > 1 )
       %rand = getRandom(1, %numDeaths);

@@ -6,10 +6,10 @@ datablock PlayerData(Wizard : DefaultPlayerData)
    shapeFile = "art/Packs/AI/Wizard_M/Wizard.dts";
 
    maxDamage = 200;
-   maxForwardSpeed = 1.5;
-   maxBackwardSpeed = 1.5;
-   maxSideSpeed = 1;
-   SprintSpeedMult = 3;
+   maxForwardSpeed = 5;
+   maxBackwardSpeed = 4;
+   maxSideSpeed = 3;
+   run2Speed = 3;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -66,9 +66,13 @@ datablock PlayerData(Wizard : DefaultPlayerData)
    numDeathAnims = 1;
    numDamageAnims = 1;
 
-   boundingBox = "0.75 0.75 2";
-   swimBoundingBox = "0.75 2 0.75";
+   boundingBox = "0.7 0.7 2";
+   swimBoundingBox = "0.7 0.7 2";
    pickupRadius = 0.75;
+
+   // Foot Prints
+   decalData   = DefaultFootprint;
+   decalOffset = 0.1;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;

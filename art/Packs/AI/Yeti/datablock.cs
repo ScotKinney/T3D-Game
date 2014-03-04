@@ -4,14 +4,14 @@
 datablock SFXProfile(YetiDeathCry)   
 {   
    fileName = "art/Packs/AI/Yeti/sound/YetiDeathCry";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 }; 
 
 datablock SFXProfile(YetiPainCry)   
 {   
    fileName = "art/Packs/AI/Yeti/sound/YetiPainCry";   
-   description = AudioClosest3d;   
+   description = AudioClose3d;   
    preload = false;   
 };
 
@@ -23,8 +23,9 @@ datablock PlayerData(YetiWhite : DefaultPlayerData)
    
    maxDamage = 200;
    maxForwardSpeed = 3;
-   maxBackwardSpeed = 3;
+   maxBackwardSpeed = 2;
    maxSideSpeed =2;
+   run2Speed = 1.6;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -57,12 +58,12 @@ datablock PlayerData(YetiWhite : DefaultPlayerData)
    numDeathAnims = 2;
    numDamageAnims = 0;
 
-   boundingBox = "4 4 6";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "3 3 5.2";
+   swimBoundingBox = "3 3 5.2";
 
    // Foot Prints
    decalData   = DefaultFootprint;
-   decalOffset = 0.25;
+   decalOffset = 0.72;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;
@@ -78,8 +79,9 @@ datablock PlayerData(YetiBlack : DefaultPlayerData)
 
    maxDamage = 400;
    maxForwardSpeed = 3;
-   maxBackwardSpeed = 3;
-   maxSideSpeed = 2;
+   maxBackwardSpeed = 2;
+   maxSideSpeed =2;
+   run2Speed = 1.6;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -112,12 +114,12 @@ datablock PlayerData(YetiBlack : DefaultPlayerData)
    numDeathAnims = 2;
    numDamageAnims = 0;
 
-   boundingBox = "4 4 10";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "3 3 5.2";
+   swimBoundingBox = "3 3 5.2";
 
    // Foot Prints
    decalData   = DefaultFootprint;
-   decalOffset = 0.25;
+   decalOffset = 0.72;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;
@@ -133,13 +135,14 @@ datablock PlayerData(YetiSmall : DefaultPlayerData)
 
    maxDamage = 200;
    maxForwardSpeed = 3;
-   maxBackwardSpeed = 3;
+   maxBackwardSpeed = 2;
    maxSideSpeed = 2;
+   run2Speed = 1.6;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
    //but these values override the defaults
-   Weapon = "YetiRock";
+   Weapon = "YetiSmallRock";
    respawn = true;
    behavior = "ChaseBehavior";
    maxRange = 50;
@@ -167,13 +170,13 @@ datablock PlayerData(YetiSmall : DefaultPlayerData)
    numDeathAnims = 2;
    numDamageAnims = 0;
 
-   boundingBox = "2 2 5";
-   swimBoundingBox = "2 4 4";
+   boundingBox = "3 3 5.2";
+   swimBoundingBox = "3 3 5.2";
    pickupRadius = 0.75;
 
    // Foot Prints
-   decalData   = PlayerFootprint;
-   decalOffset = 0.25;
+   decalData   = DefaultFootprint;
+   decalOffset = 0.72;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;

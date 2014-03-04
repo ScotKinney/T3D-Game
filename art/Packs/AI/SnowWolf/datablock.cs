@@ -29,6 +29,14 @@ datablock PlayerData(WolfAI : DefaultPlayerData)
 
    maxDamage = 500;
    maxForwardSpeed = 4;
+   maxBackwardSpeed = 2;
+   maxSideSpeed = 1;
+   run2Speed = 2;
+
+   maxUnderwaterForwardSpeed = 2;
+   maxUnderwaterBackwardSpeed = 1.5;
+   maxUnderwaterSideSpeed = 1;
+   exitSplashSoundVelocity = 1.5;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -58,9 +66,12 @@ datablock PlayerData(WolfAI : DefaultPlayerData)
    DeathSound = SnowWolfDeathCry;
    PainSound = SnowWolfPainCry;
 
+   numDeathAnims = 1;
+   numDamageAnims = 0;
+
    mass = 50;
-   boundingBox = "2 2 2";
-   swimBoundingBox = "1 1 3";
+   boundingBox = "0.5 1.3 0.9";
+   swimBoundingBox = "0.5 1.3 0.9";
 
    // Foot Prints
    decalData   = SnowWolfFootprints;

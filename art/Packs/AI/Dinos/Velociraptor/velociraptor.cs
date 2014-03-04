@@ -22,14 +22,14 @@ function VelociraptorDts::onLoad(%this)
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_damage1.dsq", "damage1", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_damage2.dsq", "damage2", "0", "20");
    %this.addSequence("art/Packs/AI/Dinos/Velociraptor/velociraptor_death.dsq", "death1", "0", "20");
-   %this.addTrigger("Walk", "21", "1");
-   %this.addTrigger("Walk", "39", "2");
-   %this.addTrigger("Run2", "11", "1");
-   %this.addTrigger("Run2", "20", "2");
+   %this.addTrigger("Walk", "27", "1");
+   %this.addTrigger("Walk", "7", "2");
+   %this.addTrigger("Run2", "14", "1");
+   %this.addTrigger("Run2", "5", "2");
    %this.addTrigger("Walk_Back", "2", "1");
    %this.addTrigger("Walk_Back", "12", "2");
    %this.addTrigger("Strafe_Left", "10", "1");
    %this.addTrigger("Strafe_Left", "20", "2");
-   %this.setSequenceGroundSpeed("Walk", "0 1.412 0");
-   %this.setSequenceGroundSpeed("run2", "0 1.396 0");
+   %this.setSequenceGroundSpeed("Walk", "0 3 0");
+   %this.setSequenceGroundSpeed("run2", "0 6 0");
 }

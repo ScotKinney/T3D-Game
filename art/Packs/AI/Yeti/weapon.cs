@@ -100,3 +100,29 @@ datablock ShapeBaseImageData(YetiRockImage : BaseTriggeredImage)
    fireAnim = "Attack";
    fireSound = BaseFireSound;
 };
+
+datablock ProjectileData(YetiSmallRockProjectile : YetiRockProjectile)
+{
+   scale = "0.3 0.3 0.3";
+   directDamage = 40;
+};
+
+datablock ProjectileData(YetiSmallRockWetProjectile : YetiSmallRockProjectile)
+{
+   muzzleVelocity = 20;
+   gravityMod = 0.1;
+   particleWaterEmitter = ProjectileTrailWaterEmitter;
+};
+
+datablock ShapeBaseImageData(YetiSmallRockImage : BaseTriggeredImage)
+{
+   shapefile = "art/Packs/AI/Yeti/weapon/YetiRock.dts";
+   scale = "0.3 0.3 0.3";
+   projectile = YetiSmallRockProjectile;
+   wetProjectile = YetiSmallRockWetProjectile;
+
+   rearmDelay = 1000;
+   fullSkelAnim = true;
+   fireAnim = "Attack";
+   fireSound = BaseFireSound;
+};

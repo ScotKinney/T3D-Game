@@ -30,6 +30,8 @@ datablock PlayerData(Tolgart : DefaultPlayerData)
    
    maxDamage = 150;
    maxForwardSpeed = 3;
+   maxBackwardSpeed = 2;
+   maxSideSpeed = 1;
    
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -60,7 +62,7 @@ datablock PlayerData(Tolgart : DefaultPlayerData)
    numDamageAnims = 0;
 
    boundingBox = "1.25 1.25 2.8";
-   swimBoundingBox = "1.25 2.8 1.25";
+   swimBoundingBox = "1.25 1.25 2.8";
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 70;

@@ -1,5 +1,5 @@
 
-singleton Material(DefaultMaterial2)
+singleton Material(SnowWolf_Mat)
 {
    mapTo = "SnowWolf";
    diffuseMap[0] = "art/Packs/AI/SnowWolf/SnowWolf";

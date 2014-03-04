@@ -30,4 +30,6 @@ function GT_EaterDts::onLoad(%this)
    %this.removeSequence("Damage4");
    %this.removeSequence("DamageFromBack");
    %this.removeSequence("DamageKnockedBack");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0");
 }

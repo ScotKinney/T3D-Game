@@ -24,8 +24,14 @@ function GnomeKingDts::onLoad(%this)
    %this.addTrigger("StrafeRight", "7", "2");
    %this.addSequence("./GK_JumpStanding.dsq", "Stand_Jump", "0", "21", "1", "0");
    %this.addSequence("./GK_JumpRunning.dsq", "Move_Jump", "0", "21", "1", "0");
-   %this.addSequence("./GK_Swimming.dsq", "Swim", "0", "21", "1", "0");
-   %this.setSequenceCyclic("Swim", "1");
+   %this.addSequence("./GK_Swimming.dsq", "Swim_Root", "0", "-1", "1", "0");
+   %this.addSequence("./GK_Swimming.dsq", "Swim_Forward", "0", "-1", "1", "0");
+   %this.addSequence("./GK_Swimming.dsq", "Swim_Left", "0", "-1", "1", "0");
+   %this.addSequence("./GK_Swimming.dsq", "Swim_Surface", "0", "-1", "1", "0");
+   %this.setSequenceCyclic("Swim_Root", "1");
+   %this.setSequenceCyclic("Swim_Forward", "1");
+   %this.setSequenceCyclic("Swim_Left", "1");
+   %this.setSequenceCyclic("Swim_Surface", "1");
    %this.addSequence("./GK_Damage1.dsq", "Damage1", "0", "21", "1", "0");
    %this.addSequence("./GK_Damage2.dsq", "Damage2", "0", "21", "1", "0");
    %this.addSequence("./GK_Damage3.dsq", "Damage3", "0", "21", "1", "0");
@@ -63,4 +69,6 @@ function GnomeKingDts::onLoad(%this)
    %this.renameNode("GP_staff", "mount0");
    %this.addSequence("./GK_CombatmodeB.dsq", "CombatRoot", "0", "74", "1", "0");
    %this.setSequenceCyclic("CombatRoot", "1");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0");
 }

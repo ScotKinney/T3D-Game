@@ -50,4 +50,6 @@ function GTDts::onLoad(%this)
    %this.addTrigger("Run2", "7", "2");
    %this.addTrigger("Walk_Back", "7", "1");
    %this.addTrigger("Walk_Back", "18", "2");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0");
 }

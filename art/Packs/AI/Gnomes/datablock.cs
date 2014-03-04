@@ -155,6 +155,7 @@ datablock SFXProfile(GnomeTaunt6)
 // Exec each Gnome Datablock
 exec("./Archer/datablock.cs");
 exec("./Warrior/datablock.cs");
+exec("./King/datablock.cs");
 
 
 

@@ -17,4 +17,5 @@ function Orc01Dts::onLoad(%this)
    %this.addSequence("./orc_attack01.dsq", "attack", "0", "-1", "1", "0");
    %this.setSequenceCyclic("attack", "0");
    %this.addTrigger("attack", "33", "3");
+   %this.setSequenceGroundSpeed("Walk", "0 4 0");
 }

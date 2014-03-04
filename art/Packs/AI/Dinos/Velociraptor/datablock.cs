@@ -37,10 +37,10 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
    shapeFile = "art/Packs/AI/Dinos/Velociraptor/Velociraptor.dts";
 
    maxDamage = 500;
-   maxForwardSpeed = 6;
+   maxForwardSpeed = 8;
    maxBackwardSpeed = 3;
    maxSideSpeed = 2;
-   run2Speed = 2;
+   run2Speed = 4.2;
 
    //AI specific values that can be set for this datablock
    //These values can be overridden by the spawn marker,
@@ -89,7 +89,7 @@ datablock PlayerData(Velociraptor : DefaultPlayerData)
 
    // Foot Prints
    decalData   = VelociraptorFootprints;
-   decalOffset = 0.25;
+   decalOffset = 0.21;
 
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 89;
