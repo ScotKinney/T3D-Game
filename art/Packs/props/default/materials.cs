@@ -121,26 +121,6 @@ singleton Material(mat_firepit_diff)
    materialTag0 = "DefaultProps";
 };
 
-singleton Material(mat_ornateTable)
-{
-   mapTo = "ornate_table";
-   diffuseMap[0] = "ornate_table";
-   translucent = "0";
-   materialTag0 = "DefaultProps";
-};
-
-singleton Material(mat_BanquetChair)
-{
-   mapTo = "ornate_banquet_chair";
-   diffuseMap[0] = "ornate_banquet_chair";
-   castShadows = "0";
-   forestWindEnabled = "1";
-   materialTag0 = "DefaultProps";
-   useAnisotropic[0] = "1";
-   alphaTest = "1";
-   alphaRef = "13";
-};
-
 singleton Material(mat_plate)
 {
    mapTo = "plate";
