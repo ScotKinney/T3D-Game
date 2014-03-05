@@ -4,7 +4,7 @@ $ThisPrefab = new SimGroup() {
    canSaveDynamicFields = "1";
 
    new TSStatic() {
-      shapeName = "art/Packs/props/AV_Targets/fencePostBasic00A.dts";
+      shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -44,7 +44,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/AV_Targets/fencePostBasic00A.dts";
+      shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -64,7 +64,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/AV_Targets/fencePostBasic00A.dts";
+      shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -84,7 +84,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/AV_Targets/fencePostBasic00A.dts";
+      shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";

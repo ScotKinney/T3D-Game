@@ -1,21 +1,23 @@
-singleton Material(mat_fencepostbasic)
+singleton Material(mat_Target)
 {
-   mapTo = "fencePostBasic00A";
-   diffuseMap[0] = "art/Packs/Props/AV_Targets/fencePostBasic00A.png";
+   mapTo = "TargetFace";
+   diffuseMap[0] = "TargetFace";
    materialTag0 = "Props_AV";
-   normalMap[0] = "art/Packs/props/AV_Targets/fencePostBasic00A_NORM.png";
-   specularMap[0] = "art/Packs/props/AV_Targets/fencePostBasic00A_SPEC.png";
+   specularPower[0] = "100";
+   pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
 
-singleton Material(mat_Target)
+singleton Material(mat_TargetPost)
 {
-   mapTo = "TargetFace";
-   diffuseMap[0] = "art/Packs/Props/AV_Targets/TargetFace";
-   materialTag0 = "Props_AV";
+   mapTo = "TargetPost_dif";
+   diffuseMap[0] = "TargetPost_dif";
+   normalMap[0] = "TargetPost_nm.dds";
    specularPower[0] = "100";
+   specularStrength[0] = "2";
    pixelSpecular[0] = "1";
+   specularMap[0] = "TargetPost_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
