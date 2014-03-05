@@ -1,15 +1,4 @@
 
-singleton Material(mat_MrN_Boxes)
-{
-   mapTo = "MrN_Boxes_dif";
-   diffuseMap[0] = "MrN_Boxes_dif";
-   normalMap[0] = "MrN_Boxes_nm.dds";
-   specularMap[0] = "MrN_Boxes_spec.dds";
-   useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepWood1Sound";
-   materialTag0 = "Props_MrN";
-};
-
 singleton Material(mat_MrN_CeramicPots)
 {
    mapTo = "MrN_Ceramics_dif";
@@ -17,17 +6,6 @@ singleton Material(mat_MrN_CeramicPots)
    normalMap[0] = "MrN_Ceramics_nm.dds";
    specularMap[0] = "MrN_Ceramics_spec.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_MrN";
-};
-
-singleton Material(mat_MrN_Barrels)
-{
-   mapTo = "MrN_Barrels_dif";
-   diffuseMap[0] = "MrN_Barrels_dif";
-   customFootstepSound = "FootStepWood1Sound";
-   useAnisotropic[0] = "1";
-   normalMap[0] = "MrN_Barrels_nm.dds";
-   specularMap[0] = "MrN_Barrels_spec.dds";
    materialTag0 = "Props_MrN";
 };
 
@@ -40,6 +18,7 @@ singleton Material(mat_MrN_OldSacks)
    useAnisotropic[0] = "1";
    materialTag0 = "Props_MrN";
    customFootstepSound = "FootStepGrass1Sound";
+   translucent = "0";
 };
 
 singleton Material(mat_MrN_SackRope)
