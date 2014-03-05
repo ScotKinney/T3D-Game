@@ -107,12 +107,7 @@ singleton Material(torch_torch)
 };
 //--- torch.DAE MATERIALS END ---
 
-singleton Material(mat_fencepostbasic)
-{
-   mapTo = "fencePostBasic00A";
-   diffuseMap[0] = "fencePostBasic00A.png";
-   materialTag0 = "DefaultProps";
-};
+
 
 singleton Material(mat_firepit_diff)
 {
@@ -141,7 +136,7 @@ singleton Material(mat_Ballista)
 {
    mapTo = "ballista";
    diffuseMap[0] = "ballista.dds";
-	normalMap[0] = "ballista_normals.dds";
+   normalMap[0] = "ballista_normals.dds";
    materialTag0 = "DefaultProps";
 };
 
@@ -161,14 +156,6 @@ singleton Material(mat_innwd02)
    materialTag0 = "DefaultProps";
 };
 
-singleton Material(mat_Target)
-{
-   mapTo = "TargetFace";
-   diffuseMap[0] = "TargetFace";
-   translucent = "0";
-   materialTag0 = "DefaultProps";
-};
-
 singleton Material(mat_WhiteSquare)
 {
    mapTo = "WhiteSquare";
@@ -182,14 +169,6 @@ singleton Material(mat_Crate01_D)
    mapTo = "Crate01_D";
    diffuseMap[0] = "Crate01_D";
    customFootstepSound = FootStepWood1Sound;
-   materialTag0 = "DefaultProps";
-};
-
-singleton Material(mat_FenceSection2)
-{
-   mapTo = "fenceSection2Post2";
-   diffuseMap[0] = "fenceSection2Post2";
-   translucent = "0";
    materialTag0 = "DefaultProps";
 };
 
