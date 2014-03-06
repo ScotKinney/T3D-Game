@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.133524";
-         time = "0.174277";
+         startTime = "0.01322";
+         time = "0.0136703";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -601,8 +601,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "74419";
-         delayRespawn = "99089";
+         botBelongsToMe = "4011";
+         delayRespawn = "51854";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -627,8 +627,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "74699";
-         delayRespawn = "99813";
+         botBelongsToMe = "4013";
+         delayRespawn = "51432";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -653,7 +653,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4024";
+         botBelongsToMe = "4015";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -679,7 +679,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4025";
+         botBelongsToMe = "4016";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -705,8 +705,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "74746";
-         delayRespawn = "99950";
+         botBelongsToMe = "8446";
+         delayRespawn = "695";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -731,8 +731,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "74031";
-         delayRespawn = "100432";
+         botBelongsToMe = "4018";
+         delayRespawn = "1211";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -757,8 +757,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "74560";
-         delayRespawn = "99531";
+         botBelongsToMe = "8473";
+         delayRespawn = "1021";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -783,8 +783,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "74782";
-         delayRespawn = "100041";
+         botBelongsToMe = "4020";
+         delayRespawn = "1443";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -809,7 +809,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4030";
+         botBelongsToMe = "4021";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -834,7 +834,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4031";
+         botBelongsToMe = "4022";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -1356,6 +1356,531 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
+      new SimGroup(Dock_Props) {
+         canSave = "1";
+         canSaveDynamicFields = "1";
+
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-35.1266 452.165 6.93079";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-35.1281 440.396 6.92187";
+            rotation = "0 0 -1 11.031";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-35.1266 436.907 6.93079";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-23.4019 443.041 6.94392";
+            rotation = "-0 0 -1 90";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-43.0084 428.211 14.6291";
+            rotation = "0 0 1 178.038";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-39.3184 429.67 14.6711";
+            rotation = "0 0 1 178.038";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-40.8514 425.713 14.414";
+            rotation = "0 0 1 178.038";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-40.9634 428.961 14.414";
+            rotation = "0 0 1 178.038";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-40.9024 428.035 15.723";
+            rotation = "0 0 1 178.038";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "3.56057 429.068 14.6291";
+            rotation = "0 0 -1 76.0857";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-1.39145 427.674 14.6711";
+            rotation = "0 0 1 60.5066";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-2.95044 431.704 14.414";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-2.95044 428.454 14.414";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-2.95044 430.214 15.723";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-38.4364 432.194 14.414";
+            rotation = "0 0 1 178.038";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "7.16455 431.704 14.414";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-8.1477 438.757 6.94246";
+            rotation = "0 0 1 7.12817";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-8.14697 442.58 6.95468";
+            rotation = "0 0 1 17.6135";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-21.6276 443.019 8.25291";
+            rotation = "0 0 -1 103.304";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Bounds";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-19.8652 443.002 6.94392";
+            rotation = "-0 0 -1 89.3655";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001Fragile2StainAnimated.dts";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Collision Mesh";
+            decalType = "Collision Mesh";
+            allowPlayerStep = "1";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "2.69709 446.959 6.96002";
+            rotation = "0.0390204 -0.242788 0.969294 191.423";
+            scale = "1 1 1";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-7.10562 426.947 10.1565";
+            rotation = "0 0 1 60.5066";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-7.83333 438.838 8.50734";
+            rotation = "0 0 -1 34.0052";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-18.4704 440.839 7.15502";
+            rotation = "0 0 1 60.5066";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-19.7758 441.272 7.15502";
+            rotation = "0 0 1 60.5066";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+         new TSStatic() {
+            shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
+            playAmbient = "1";
+            meshCulling = "0";
+            originSort = "0";
+            collisionType = "Bounds";
+            decalType = "None";
+            allowPlayerStep = "0";
+            renderNormals = "0";
+            forceDetail = "-1";
+            position = "-24.3818 441.37 7.15502";
+            rotation = "0 0 1 60.5066";
+            scale = "2 2 2";
+            canSave = "1";
+            canSaveDynamicFields = "1";
+               gradientRange = "0 180";
+               ignoreZodiacs = "0";
+               invertGradientRange = "0";
+               useGradientRange = "0";
+         };
+      };
    };
    new SimGroup(KardiaPlantsVases) {
       canSave = "1";
@@ -1662,6 +2187,26 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
+      new TSStatic() {
+         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
+         playAmbient = "1";
+         meshCulling = "0";
+         originSort = "0";
+         collisionType = "Bounds";
+         decalType = "None";
+         allowPlayerStep = "0";
+         renderNormals = "0";
+         forceDetail = "-1";
+         position = "-37.2994 379.089 14.4577";
+         rotation = "0 0 1 219.23";
+         scale = "1.5 1.5 1.5";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
+      };
    };
    new SimGroup(KardiaWeaponsStore) {
       canSave = "1";
@@ -1677,7 +2222,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(weaponssign1) {
-         shapeName = "art/Packs/props/signs/WeaponsShop.dts";
+         shapeName = "art/Packs/Signs/Village/WeaponsShop.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1696,7 +2241,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1712,7 +2257,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1728,7 +2273,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1744,7 +2289,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1760,7 +2305,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3019,7 +3564,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_BigBox.dts";
+         shapeName = "art/Packs/props/MrN_Crates/MrN_BigBox.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3065,7 +3610,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(MercantileSign1) {
-         shapeName = "art/Packs/props/signs/FoodShop.dts";
+         shapeName = "art/Packs/Signs/Village/FoodShop.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3092,7 +3637,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-41.8667 375.992 14.7738";
-         rotation = "-0.992941 -0.0674446 0.0975628 79.7111";
+         rotation = "-0.992941 -0.0674446 0.0975628 79.7109";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3437,66 +3982,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             respawn = "10";
       };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/chopping_board.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-46.5559 360.985 15.4111";
-         rotation = "1 0 0 0";
-         scale = "1.90247 2.35885 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/chopping_board.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-44.7378 361.016 15.4245";
-         rotation = "1 0 0 0";
-         scale = "1.90247 2.35885 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/plate.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-47.2259 369.852 15.4284";
-         rotation = "1 0 0 0";
-         scale = "2.93753 4.35725 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
+ 
       new TSStatic(TablewFruit) {
          shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
@@ -3508,22 +3994,6 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-45.6806 360.91 14.4427";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new TSStatic(TablewScales) {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-42.5112 360.91 14.4427";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3609,26 +4079,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new TSStatic(MScales) {
-         shapeName = "art/Packs/props/default/scales.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-41.8907 361.045 15.4048";
-         rotation = "0 0 1 1.18892";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
+
       new TSStatic(FlatSack1) {
          shapeName = "art/Packs/props/MrN_Containers/MrN_SackC.dts";
          playAmbient = "1";
@@ -3724,7 +4175,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-41.3939 375.992 14.7738";
-         rotation = "-0.992941 -0.0674447 0.0975627 79.7111";
+         rotation = "-0.992941 -0.0674447 0.0975627 79.7109";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3737,7 +4188,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-40.9289 375.992 14.7738";
-         rotation = "-0.992941 -0.0674446 0.0975628 79.7111";
+         rotation = "-0.992941 -0.0674446 0.0975628 79.7109";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3904,26 +4355,6 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             respawn = "10";
       };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/chopping_board.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-45.6265 361.004 15.4158";
-         rotation = "1 0 0 0";
-         scale = "1.90247 2.35885 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
       new Item() {
          static = "1";
          rotate = "0";
@@ -4008,26 +4439,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             respawn = "10";
       };
-      new TSStatic() {
-         shapeName = "art/Packs/props/default/plate.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-47.2999 368.4 15.4255";
-         rotation = "1 0 0 0";
-         scale = "2.81964 4.35725 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
+
       new Item() {
          static = "1";
          rotate = "0";
@@ -4119,23 +4531,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-40.8238 371.117 14.4314";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4151,7 +4547,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4323,551 +4719,6 @@ new SimGroup(MissionGroup) {
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
-      };
-   };
-   new SimGroup(Kardia_Props) {
-      canSave = "1";
-      canSaveDynamicFields = "1";
-
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-35.1266 452.165 6.93079";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-35.1281 440.396 6.92187";
-         rotation = "0 0 -1 11.031";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-35.1266 436.907 6.93079";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-23.4019 443.041 6.94392";
-         rotation = "-0 0 -1 90";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-43.0084 428.211 14.6291";
-         rotation = "0 0 1 178.038";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-39.3184 429.67 14.6711";
-         rotation = "0 0 1 178.038";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-40.8514 425.713 14.414";
-         rotation = "0 0 1 178.038";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-40.9634 428.961 14.414";
-         rotation = "0 0 1 178.038";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-40.9024 428.035 15.723";
-         rotation = "0 0 1 178.038";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "3.56057 429.068 14.6291";
-         rotation = "0 0 -1 76.0857";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-1.39145 427.674 14.6711";
-         rotation = "0 0 1 60.5066";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-2.95044 431.704 14.414";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-2.95044 428.454 14.414";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-2.95044 430.214 15.723";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-38.4364 432.194 14.414";
-         rotation = "0 0 1 178.038";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "7.16455 431.704 14.414";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotC.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-37.2994 379.089 14.4577";
-         rotation = "0 0 1 219.23";
-         scale = "1.5 1.5 1.5";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-8.1477 438.757 6.94246";
-         rotation = "0 0 1 7.12817";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-8.14697 442.58 6.95468";
-         rotation = "0 0 1 17.6135";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-21.6276 443.019 8.25291";
-         rotation = "0 0 -1 103.304";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Bounds";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-19.8652 443.002 6.94392";
-         rotation = "-0 0 -1 89.3655";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001Fragile2StainAnimated.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "2.69709 446.959 6.96002";
-         rotation = "0.0390204 -0.242788 0.969294 191.423";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-7.10562 426.947 10.1565";
-         rotation = "0 0 1 60.5066";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-7.83333 438.838 8.50734";
-         rotation = "0 0 -1 34.0052";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-18.4704 440.839 7.15502";
-         rotation = "0 0 1 60.5066";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-19.7758 441.272 7.15502";
-         rotation = "0 0 1 60.5066";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Bounds";
-         decalType = "None";
-         allowPlayerStep = "0";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-24.3818 441.37 7.15502";
-         rotation = "0 0 1 60.5066";
-         scale = "2 2 2";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
       };
    };
    new SimGroup(WaterFall_Particles) {
@@ -5074,7 +4925,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5094,7 +4945,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5114,7 +4965,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5134,7 +4985,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Prefab() {
-         fileName = "art/Packs/props/default/Target.prefab";
+         fileName = "art/Packs/props/AV_Targets/Target.prefab";
          position = "374.988 206.996 16.0046";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -5142,7 +4993,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/Packs/props/default/Target.prefab";
+         fileName = "art/Packs/props/AV_Targets/Target.prefab";
          position = "364.988 231.996 16.0046";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -5154,7 +5005,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5174,7 +5025,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/target.dts";
+            shapeName = "art/Packs/props/AV_Targets/target.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5194,7 +5045,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5214,7 +5065,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5234,7 +5085,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5260,7 +5111,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5280,7 +5131,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5300,7 +5151,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fencePostBasic00A.dts";
+         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -5320,7 +5171,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new Prefab() {
-         fileName = "art/Packs/props/default/Target.prefab";
+         fileName = "art/Packs/props/AV_Targets/Target.prefab";
          position = "-407.636 203.332 15.9703";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -5328,7 +5179,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/Packs/props/default/Target.prefab";
+         fileName = "art/Packs/props/AV_Targets/Target.prefab";
          position = "-427.636 253.332 15.9703";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -5336,7 +5187,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/Packs/props/default/Target.prefab";
+         fileName = "art/Packs/props/AV_Targets/Target.prefab";
          position = "-417.636 228.332 15.9703";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -5360,7 +5211,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4032";
+            botBelongsToMe = "4023";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5442,7 +5293,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4033";
+            botBelongsToMe = "4024";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5523,7 +5374,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4034";
+            botBelongsToMe = "4025";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5604,7 +5455,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4035";
+            botBelongsToMe = "4026";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5685,7 +5536,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4036";
+            botBelongsToMe = "4027";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5766,7 +5617,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4037";
+            botBelongsToMe = "4028";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5849,7 +5700,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5869,7 +5720,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5889,7 +5740,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5909,7 +5760,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5929,7 +5780,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5949,7 +5800,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5969,7 +5820,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5989,7 +5840,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6009,7 +5860,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6029,7 +5880,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6049,7 +5900,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6069,7 +5920,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6089,7 +5940,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6278,7 +6129,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6298,7 +6149,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6318,7 +6169,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6338,7 +6189,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6358,7 +6209,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6378,7 +6229,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6398,7 +6249,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6418,7 +6269,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6438,7 +6289,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6458,7 +6309,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6478,7 +6329,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6498,7 +6349,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6518,7 +6369,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Props/RRGTS_Docks/docks.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6554,7 +6405,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4038";
+            botBelongsToMe = "4029";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -6579,7 +6430,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4039";
+            botBelongsToMe = "4030";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -6996,7 +6847,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4040";
+            botBelongsToMe = "4031";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7021,7 +6872,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4041";
+            botBelongsToMe = "4032";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -7099,26 +6950,6 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "285.695 265.234 23.3642";
-               rotation = "1 0 0 0";
-               scale = "1 1 1.20885";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
                shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
@@ -7159,26 +6990,6 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "293.422 265.338 23.765";
-               rotation = "1 0 0 0";
-               scale = "1 1 1.20885";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
                shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
@@ -7191,26 +7002,6 @@ new SimGroup(MissionGroup) {
                position = "293.474 265.34 25.3289";
                rotation = "1 0 0 0";
                scale = "0.6 0.6 1";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "293.36 262.912 23.765";
-               rotation = "1 0 0 0";
-               scale = "1 1 1.20885";
                canSave = "1";
                canSaveDynamicFields = "1";
                   gradientRange = "0 180";
@@ -7259,26 +7050,6 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "285.695 263.025 23.3642";
-               rotation = "1 0 0 0";
-               scale = "1 1 1.20885";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
                shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
@@ -7319,26 +7090,6 @@ new SimGroup(MissionGroup) {
                   useGradientRange = "0";
             };
             new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "277.524 262.957 23.8436";
-               rotation = "1 0 0 0";
-               scale = "1 1 1";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
                shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
@@ -7351,26 +7102,6 @@ new SimGroup(MissionGroup) {
                position = "277.576 262.96 25.0697";
                rotation = "1 0 0 0";
                scale = "0.6 0.6 1";
-               canSave = "1";
-               canSaveDynamicFields = "1";
-                  gradientRange = "0 180";
-                  ignoreZodiacs = "0";
-                  invertGradientRange = "0";
-                  useGradientRange = "0";
-            };
-            new TSStatic() {
-               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
-               playAmbient = "1";
-               meshCulling = "0";
-               originSort = "0";
-               collisionType = "Collision Mesh";
-               decalType = "Collision Mesh";
-               allowPlayerStep = "1";
-               renderNormals = "0";
-               forceDetail = "-1";
-               position = "277.524 265.291 23.8436";
-               rotation = "1 0 0 0";
-               scale = "1 1 1";
                canSave = "1";
                canSaveDynamicFields = "1";
                   gradientRange = "0 180";
@@ -7743,7 +7474,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7763,7 +7494,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7783,7 +7514,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7803,7 +7534,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7823,7 +7554,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7843,7 +7574,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7863,7 +7594,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7883,7 +7614,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7903,7 +7634,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7923,7 +7654,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7943,7 +7674,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7963,7 +7694,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7983,7 +7714,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8003,7 +7734,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8023,7 +7754,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8043,7 +7774,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8063,7 +7794,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8088,7 +7819,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8108,7 +7839,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8128,7 +7859,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8148,7 +7879,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8168,7 +7899,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8188,7 +7919,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8208,7 +7939,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8228,7 +7959,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8248,7 +7979,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8268,7 +7999,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8288,7 +8019,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8308,7 +8039,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8328,7 +8059,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8348,7 +8079,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8368,7 +8099,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8388,7 +8119,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8408,7 +8139,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8433,7 +8164,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8453,7 +8184,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8473,7 +8204,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8493,7 +8224,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8513,7 +8244,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8533,7 +8264,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8553,7 +8284,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8573,7 +8304,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8593,7 +8324,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8613,7 +8344,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8633,7 +8364,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8653,7 +8384,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8673,7 +8404,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8693,7 +8424,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8713,7 +8444,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8733,7 +8464,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8753,7 +8484,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8778,7 +8509,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8798,7 +8529,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8818,7 +8549,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8838,7 +8569,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8858,7 +8589,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8878,7 +8609,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8898,7 +8629,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8918,7 +8649,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8938,7 +8669,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8958,7 +8689,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8978,7 +8709,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8998,7 +8729,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9018,7 +8749,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9038,7 +8769,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9058,7 +8789,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9078,7 +8809,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9098,7 +8829,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/default/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9123,7 +8854,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/Signs/SignPointerBoyersBog.dts";
+         shapeName = "art/Packs/Signs/BoyersBog/SignPointerBoyersBog.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9143,7 +8874,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/Signs/SignPointerBoyersBog.dts";
+         shapeName = "art/Packs/Signs/BoyersBog/SignPointerBoyersBog.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9163,7 +8894,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/Signs/SignPointerBoyersBog.dts";
+         shapeName = "art/Packs/Signs/BoyersBog/SignPointerBoyersBog.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9572,7 +9303,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_BigBarrel.dts";
+      shapeName = "art/Packs/props/MrN_Barrels/MrN_BigBarrel.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9588,7 +9319,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_BigBox.dts";
+      shapeName = "art/Packs/props/MrN_Crates/MrN_BigBox.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9604,7 +9335,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_SmBox.dts";
+      shapeName = "art/Packs/props/MrN_Crates/MrN_SmBox.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
