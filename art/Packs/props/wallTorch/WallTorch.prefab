@@ -69,7 +69,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/default/torch.DAE";
+      shapeName = "art/Packs/props/GG_PacificIsland/torch.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
