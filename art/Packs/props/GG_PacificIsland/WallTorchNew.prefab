@@ -1,0 +1,81 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new SFXEmitter() {
+      fileName = "art/sound/environment/fire1.wav";
+      playOnAdd = "1";
+      useTrackDescriptionOnly = "0";
+      isLooping = "1";
+      isStreaming = "0";
+      sourceGroup = "AudioChannelEffects";
+      volume = "1";
+      pitch = "1";
+      fadeInTime = "0";
+      fadeOutTime = "0";
+      is3D = "1";
+      referenceDistance = "5";
+      maxDistance = "5";
+      scatterDistance = "0 0 0";
+      coneInsideAngle = "360";
+      coneOutsideAngle = "360";
+      coneOutsideVolume = "1";
+      position = "-0.231398 -0.17424 0.38945";
+      rotation = "1 0 0 0";
+      scale = "5 5 5";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new PointLight() {
+      radius = "4.85454";
+      isEnabled = "1";
+      color = "1 0.533333 0 1";
+      brightness = "1";
+      castShadows = "0";
+      priority = "1";
+      animate = "0";
+      animationType = "FireLightAnim";
+      animationPeriod = "3";
+      animationPhase = "4";
+      flareScale = "1";
+      attenuationRatio = "0 1 1";
+      shadowType = "DualParaboloidSinglePass";
+      texSize = "512";
+      overDarkFactor = "2000 1000 500 100";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      numSplits = "1";
+      logWeight = "0.91";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "0";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      position = "-0.244799 0.158752 0.36385";
+      rotation = "0 0 -1 15.1136";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/props/GG_PacificIsland/torch.DAE";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "0.728201 0.158752 -1.21175";
+      rotation = "-0.11922 0.898681 -0.422089 34.8955";
+      scale = "0.31 0.31 0.31";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         gradientRange = "0 180";
+         ignoreZodiacs = "0";
+         invertGradientRange = "0";
+         useGradientRange = "0";
+   };
+};
+//--- OBJECT WRITE END ---
