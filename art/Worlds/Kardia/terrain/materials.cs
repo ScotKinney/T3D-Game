@@ -32,10 +32,15 @@ singleton Material(Ter_DirtySand)
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
-singleton Material(Ter_RockTop)
+singleton Material(Spartan_rock_dif)
 {
-   mapTo = "tex_volcanic_cliffrock_base";
+   mapTo = "Spartan_rock_dif";
    customFootstepSound = FootStepSand1Sound;
+   diffuseMap[0] = "art/Packs/rocks/SP_Sparta/Spartan_rock_dif.dds";
+   detailMap[0] = "art/Packs/rocks/SP_Sparta/Spartan_rock_det.dds";
+   detailScale[0] = "3 3";
+   normalMap[0] = "art/Packs/rocks/SP_Sparta/Spartan_rock_nrm.dds";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(Ter_DarkDirt)
@@ -49,33 +54,33 @@ singleton Material(Ter_DarkDirt)
 
 
 
-// VolcanicCliffRockTop Terrain
+// Rock_Top Terrain
 
 new TerrainMaterial()
 {
-   internalName = "VolcanicCliffRockTop";
-   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
+   internalName = "Rock_Top";
+   diffuseMap = "art/packs/terrains/SP_Sparta/Spartan_rock_dif";
    diffuseSize = "300";
-   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
+   normalMap = "art/packs/terrains/SP_Sparta/Spartan_rock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/Spartan_rock_det";
    detailSize = "20";
    detailStrength = "0.6";
    detailDistance = "4000";
    useAnisotropic[0] = "1"; 
 };
 
-// VolcanicCliffSide Terrain
+// Rock_Side Terrain
 
 new TerrainMaterial()
 {
-   internalName = "VolcanicCliffSide";
-   diffuseMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_base";
-   normalMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/packs/terrains/SP_Sparta/tex_volcanic_cliffrock_dif";
+   internalName = "Rock_Side";
+   diffuseMap = "art/packs/terrains/SP_Sparta/Spartan_rock_dif";
+   diffuseSize = "300";
+   normalMap = "art/packs/terrains/SP_Sparta/Spartan_rock_nrm";
+   detailMap = "art/packs/terrains/SP_Sparta/Spartan_rock_det";
    detailSize = "80";
    detailDistance = "4000";
    useSideProjection = "1";
-   diffuseSize = "300";
    detailStrength = "0.6";
    useAnisotropic[0] = "1"; 
 };
@@ -88,29 +93,27 @@ new TerrainMaterial()
    diffuseSize = "300";
    normalMap = "art/packs/terrains/SP_Sparta/gras_01n";
    detailMap = "art/packs/terrains/SP_Sparta/gras_01";
+   detailScale = "512";
    detailSize = "4";
    detailStrength = "0.4";
+   detailBrightness = "1";
    detailDistance = "1000";
    parallaxScale = "0.01";
-   detailScale = "512";
-   useAnisotropic[0] = "1"; 
-   enabled = "1";
-   isManaged = "1";
    useAnisotropic0 = "1";
-   detailBrightness = "1";
 };
 
 new TerrainMaterial()
 {
    internalName = "DryGround";
    diffuseMap = "art/packs/terrains/SP_Sparta/dryground_base";
+   diffuseSize = "400";
    normalMap = "art/packs/terrains/SP_Sparta/dryground_normal";
    detailMap = "art/packs/terrains/SP_Sparta/dryground_detail";
    detailSize = "3";
    detailStrength = "0.5";
-   diffuseSize = "400";
    parallaxScale = "0.1";
    detailDistance = "400";
+   useAnisotropic0 = "1";
 };
 
 new TerrainMaterial()
@@ -150,11 +153,9 @@ new TerrainMaterial()
    detailStrength = "0.3";
    detailDistance = "400";
    parallaxScale = "0.01";
-   enabled = "1";
-   useAnisotropic0 = "1";
-   isManaged = "1";
    detailScale = "512";
    detailBrightness = "1";
+   useAnisotropic0 = "1";
 };
 
 
