@@ -1,11 +1,12 @@
 singleton Material(mat_GrdRoofs)
 {
    mapTo = "Med2512";
-   diffuseMap[0] = "KardRoof";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/KardRoof";
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    normalMap[0] = "art/Packs/Buildings/Spartan_Castle/svtqroof1N.dds";
+   customFootstepSound = "FootStepSand1Sound";
 };
 
 singleton Material(mat_Wood_5)
