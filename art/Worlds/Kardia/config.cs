@@ -26,9 +26,10 @@ $AlterVerse::ArtPacks =
    "Props/AV_Targets" TAB
    "Signs/BoyersBog" TAB
    "Signs/Village" TAB
-   "rocks/SP_Rocks" TAB
-   "rocks/MossRocks" TAB
+   "Rocks/SP_Rocks" TAB
+   "GroundCover/GG_PacificIsland" TAB
    "SkyBoxes/DarkSky2" TAB
+   "SkyBoxes/DefaultNight" TAB
    "trees/default" TAB
    "trees/banana" TAB
    "trees/canopy" TAB
@@ -36,6 +37,6 @@ $AlterVerse::ArtPacks =
    "veg/bigleaf" TAB
    "veg/Bush01" TAB
    "veg/Phila01" TAB
-   "veg/TropicFern" TAB
-   "env/groundcover";
+   "veg/TropicFern";
+;
    

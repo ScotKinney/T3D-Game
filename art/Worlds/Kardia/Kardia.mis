@@ -200,7 +200,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             mieScattering = "0.0001";
-            moonTexture = "art/Packs/skies/default/night/moon_wglow.png";
+            moonTexture = "art/Packs/skyboxes/defaultnight/moon_wglow.png";
             moonTint = "0.192157 0.192157 0.192157 1";
             viewerHeight = "1.004";
       };
