@@ -105,7 +105,7 @@ datablock LightFlareData( LightFlare2 )
    overallScale = 2.0;
    flareEnabled = true;
    renderReflectPass = true;
-   flareTexture = "core/art/special/lensFlareSheet0";  
+   flareTexture = "./lensFlareSheet0";  
 
    elementRect[0] = "512 512 512 512";
    elementDist[0] = 0.0;
