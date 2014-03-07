@@ -34,7 +34,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new SkyBox(NewSky) {
-         Material = "PangaeaSky01";
+         Material = "PangaeaSky";
          drawBottom = "0";
          fogBandHeight = "0.06";
          position = "-831 294 184";
