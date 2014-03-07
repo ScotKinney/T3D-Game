@@ -177,11 +177,11 @@ datablock TSForestItemData(rivergrass0)
 datablock TSForestItemData(bigrock01)
 {
    internalName = "bigrock01";
-   shapeFile = "art/packs/rocks/default/bigrock01.dts";
+   shapeFile = "art/packs/rocks/SP_Rocks/SP_SmRock1.dts";
 };
 
 datablock TSForestItemData(bigrock03)
 {
    internalName = "bigrock03";
-   shapeFile = "art/packs/rocks/default/bigrock03.dts";
+   shapeFile = "art/packs/rocks/SP_Rocks/SP_SmRock2.dts";
 };
