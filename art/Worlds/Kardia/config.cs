@@ -1,6 +1,9 @@
 // Kardia level config
 $AlterVerse::AvSet = "Base";
-$AlterVerse::ArtPacks = 
+$AlterVerse::ArtPacks = "Clouds/Default" TAB
+   "SkyBoxes/DefaultNight" TAB
+   "GroundCover/Default" TAB
+   "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
    "Buildings/Spartan_Arena" TAB
    "Tunnels/Spartan" TAB
@@ -26,18 +29,13 @@ $AlterVerse::ArtPacks =
    "Props/AV_Targets" TAB
    "Signs/BoyersBog" TAB
    "Signs/Village" TAB
-   "Rocks/SP_Rocks" TAB
-   "GroundCover/GG_PacificIsland" TAB
    "SkyBoxes/DarkSky2" TAB
-   "SkyBoxes/DefaultNight" TAB
    "Plants/GG_RiverGrass" TAB
-   "Clouds/Default" TAB
-   "trees/default" TAB
+   "Plants/SP_Sparta" TAB
+   "Trees/SP_Sparta" TAB
    "trees/banana" TAB
    "trees/canopy" TAB
-   "trees/palm" TAB
    "veg/bigleaf" TAB
    "veg/Bush01" TAB
-   "veg/Phila01" TAB
-   "veg/TropicFern";
+   "veg/Phila01";
    
