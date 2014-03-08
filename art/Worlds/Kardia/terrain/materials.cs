@@ -37,9 +37,11 @@ singleton Material(Spartan_rock_dif)
    mapTo = "Spartan_rock_dif";
    customFootstepSound = FootStepRock1Sound;
    diffuseMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif.dds";
-   detailScale[0] = "4 4";
+   detailScale[0] = "3 3";
    normalMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm.dds";
    useAnisotropic[0] = "1";
+   detailMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det.dds";
+   showFootprints = "0";
 };
 
 singleton Material(Ter_DarkDirt)
