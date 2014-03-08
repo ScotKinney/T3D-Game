@@ -30,6 +30,8 @@ $AlterVerse::ArtPacks =
    "GroundCover/GG_PacificIsland" TAB
    "SkyBoxes/DarkSky2" TAB
    "SkyBoxes/DefaultNight" TAB
+   "Plants/GG_RiverGrass" TAB
+   "Clouds/Default" TAB
    "trees/default" TAB
    "trees/banana" TAB
    "trees/canopy" TAB
@@ -38,5 +40,4 @@ $AlterVerse::ArtPacks =
    "veg/Bush01" TAB
    "veg/Phila01" TAB
    "veg/TropicFern";
-;
    

@@ -164,7 +164,7 @@ datablock TSForestItemData(TropicFern2)
 datablock TSForestItemData(rivergrass0)
 {
    internalName = "rivergrass0";
-   shapeFile = "art/packs/env/groundcover/rivergrass.DAE";
+   shapeFile = "art/packs/Plants/GG_RiverGrass/rivergrass.DAE";
    collidable = "0";
    rigidity = "1";
    windScale = "0.1";
