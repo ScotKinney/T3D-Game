@@ -1,11 +1,3 @@
-
-singleton Material(mat_bed)
-{
-   mapTo = "bed";
-   diffuseMap[0] = "bed.dds";
-   materialTag0 = "IndoorProps";
-};
-
 singleton Material(mat_innwd01)
 {
    mapTo = "inn_wd01";
