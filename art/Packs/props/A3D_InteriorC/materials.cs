@@ -96,9 +96,24 @@ singleton Material(mat_A3D_scales)
    materialTag0 = "Props_A3D";
 };
 
-singleton Material(mat_A3D_inn_wood)
+singleton Material(mat_A3D_innwd01)
+{
+   mapTo = "inn_wd01";
+   diffuseMap[0] = "inn_wood.dds";
+   materialTag0 = "Props_A3D";
+};
+
+singleton Material(mat_A3D_innwd02)
 {
    mapTo = "inn_wd02";
    diffuseMap[0] = "inn_wood.dds";
    materialTag0 = "Props_A3D";
 };
+
+singleton Material(mat_Orange_pot)
+{
+   mapTo = "orange_pot";
+   diffuseMap[0] = "orange_pot.dds";
+   materialTag0 = "Props_A3D";
+};
+
