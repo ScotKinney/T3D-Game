@@ -1,4 +1,3 @@
-
 // This is the default save location for any TSForestItemData(s) created in the
 // Forest Editor Editor (this script is executed from onServerCreated())
 
@@ -42,7 +41,7 @@ datablock TSForestItemData(canopytree_three)
 datablock TSForestItemData(PalmTree_Short_01)
 {
    internalName = "PalmTree_Short_01";
-   shapeFile = "art/packs/trees/palm/palmtree_short.dae";
+   shapeFile = "art/packs/trees/SP_Sparta/palmtree_short.dae";
    branchAmp = "0.1";
    detailAmp = "0.15";
    detailFreq = "0.04";
@@ -57,7 +56,7 @@ datablock TSForestItemData(PalmTree_Short_01)
 datablock TSForestItemData(palmtree_tall)
 {
    internalName = "palmtree_tall";
-   shapeFile = "art/packs/trees/palm/palmtree_tall.dae";
+   shapeFile = "art/packs/trees/SP_Sparta/palmtree_tall.dae";
    trunkBendScale = "0.005";
    branchAmp = "0.2";
    detailAmp = "0.3";
@@ -73,7 +72,7 @@ datablock TSForestItemData(palmtree_tall)
 datablock TSForestItemData(TallPalmLeaning)
 {
    internalName = "TallPalmLeaning";
-   shapeFile = "art/packs/trees/palm/palmtree_tall_leaning.dae";
+   shapeFile = "art/packs/trees/SP_Sparta/palmtree_tall_leaning.dae";
    trunkBendScale = "0.005";
    branchAmp = "0.02";
    detailAmp = "0.08";
@@ -153,7 +152,7 @@ datablock TSForestItemData(Phila2)
 datablock TSForestItemData(TropicFern2)
 {
    internalName = "TropicFern2";
-   shapeFile = "art/packs/veg/TropicFern/TropicFern01.DAE";
+   shapeFile = "art/packs/Plants/SP_Sparta/TropicFern01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";
