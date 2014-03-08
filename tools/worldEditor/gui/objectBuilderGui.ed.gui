@@ -697,9 +697,9 @@ function ObjectBuilderGui::buildScatterSky( %this, %dontWarnAboutSun )
    
    %this.objectClassName = "ScatterSky";
 
-   %this.addField("rayleighScattering", "TypeFloat", "Rayleigh Scattering",  "0.0035");
-   %this.addField("mieScattering", "TypeFloat", "Mie Scattering", "0.0045");
-   %this.addField("skyBrightness", "TypeFloat", "Sky Brightness", "25");   
+   %this.addField("rayleighScattering", "TypeFloat", "Rayleigh Scattering",  "0.0005");
+   %this.addField("mieScattering", "TypeFloat", "Mie Scattering", "0.0001");
+   %this.addField("skyBrightness", "TypeFloat", "Sky Brightness", "20");   
 
    %this.process();
    
@@ -716,7 +716,7 @@ function ObjectBuilderGui::buildCloudLayer(%this)
 {
    OBObjectName.setValue( "" );      
    %this.objectClassName = "CloudLayer";
-   %this.addField( "texture", "TypeImageFilename", "Texture", "art/skies/clouds/clouds_normal_displacement" );   
+   %this.addField( "texture", "TypeImageFilename", "Texture", "art/packs/clouds/default/clouds_normal_displacement" );   
 	%this.process();
 }
 
@@ -728,9 +728,9 @@ function ObjectBuilderGui::buildBasicClouds(%this)
 	
    // This is a trick... any fields added after process won't show
    // up as controls, but will be applied to the created object.
-   %this.addField( "texture[0]", "TypeImageFilename", "Texture", "art/skies/clouds/cloud1" );   
-   %this.addField( "texture[1]", "TypeImageFilename", "Texture", "art/skies/clouds/cloud2" );   
-   %this.addField( "texture[2]", "TypeImageFilename", "Texture", "art/skies/clouds/cloud3" );   	   
+   %this.addField( "texture[0]", "TypeImageFilename", "Texture", "art/packs/clouds/default/cloud1" );   
+   %this.addField( "texture[1]", "TypeImageFilename", "Texture", "art/packs/clouds/default/cloud2" );   
+   %this.addField( "texture[2]", "TypeImageFilename", "Texture", "art/packs/clouds/default/cloud3" );   	   
 }
 
 function ObjectBuilderGui::checkExists( %this, %classname )
