@@ -14,7 +14,7 @@ datablock AttractionBehaviour(ChannelAttraction)
 //----------------------------- PROJECTILE EMITTERS ----------------------------
 //------------------------------------------------------------------------------
 
-datablock ParticleData(FireballParticles)
+datablock BillboardParticleData(FireballParticles)
 {
    HighResTexture       = "core/art/particles/fireball.png";
    //MidResTexture        = "art/shapes/particles/smokeM";
@@ -69,7 +69,7 @@ datablock SphereEmitterData(FireballEmitter)
 //----------------------------- EXPLOSION EMITTERS -----------------------------
 //------------------------------------------------------------------------------
 
-datablock ParticleData(FireballBlastParticles)
+datablock BillboardParticleData(FireballBlastParticles)
 {
    HighResTexture       = "core/art/particles/fire.png";
    //MidResTexture        = "art/shapes/particles/smokeM";
@@ -124,7 +124,7 @@ datablock SphereEmitterData(FireballBlastEmitter)
 //----------------------------- CHANNELING EMITTERS ----------------------------
 //------------------------------------------------------------------------------
 
-datablock ParticleData(FireballChannelParticle : FireballParticles){ 
+datablock BillboardParticleData(FireballChannelParticle : FireballParticles){ 
    lifetimeMS = 800;
    sizes[0]      = "0";
    sizes[1]      = "1";

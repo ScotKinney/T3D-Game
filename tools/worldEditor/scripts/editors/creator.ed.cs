@@ -71,12 +71,13 @@ function EWCreatorWindow::init( %this )
    %this.endGroup();
 
    %this.beginGroup( "ParticleSystem" );
-      %this.registerMissionObject( "SphereEmitterNode", "Sphere Emitter" );
-      %this.registerMissionObject( "GraphEmitterNode", "Graph Emitter" );
-      %this.registerMissionObject( "GroundEmitterNode", "Ground Emitter" );
+      %this.registerMissionObject( "SphereEmitter", "Sphere Emitter" );
+      %this.registerMissionObject( "GraphEmitter", "Graph Emitter" );
+      %this.registerMissionObject( "GroundEmitter", "Ground Emitter" );
+      %this.registerMissionObject( "MaskEmitter", "Mask Emitter" );
       %this.registerMissionObject( "MeshEmitter", "Mesh Emitter" );
-      %this.registerMissionObject( "radiusMeshEmitter", "Radius Mesh Emitter" );                                                    
-      %this.registerMissionObject( "MaskEmitterNode", "Mask Emitter" );
+      %this.registerMissionObject( "NodeMeshEmitter", "Node Mesh Emitter" );
+      %this.registerMissionObject( "RadiusMeshEmitter", "Radius Mesh Emitter" );
       %this.registerMissionObject( "ParticleEffect", "Particle Effect" );
    %this.endGroup();
    

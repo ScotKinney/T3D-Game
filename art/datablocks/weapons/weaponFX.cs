@@ -141,7 +141,7 @@ datablock SFXProfile(ArrowHitStaticSound)
 //----------------------------------------------------------------------------
 // Debris
 //----------------------------------------------------------------------------
-datablock ParticleData(ProjectileTrailParticle)
+datablock BillboardParticleData(ProjectileTrailParticle)
 {
    textureName = "core/art/particles/impact";
    dragCoeffiecient = 0;
@@ -166,7 +166,7 @@ datablock ParticleData(ProjectileTrailParticle)
    times[3] = "1";
 };
 
-//datablock ParticleData(ProjectileDebrisTrailParticle)
+//datablock BillboardParticleData(ProjectileDebrisTrailParticle)
 //{
    //textureName = "core/art/particles/impact";
    //dragCoeffiecient = 0;
@@ -237,7 +237,7 @@ datablock DebrisData(ProjectileDebris)
 // ----------------------------------------------------------------------------
 // Particles and Emitters
 // ----------------------------------------------------------------------------
-datablock ParticleData(ProjectileExpFire)
+datablock BillboardParticleData(ProjectileExpFire)
 {
    gravityCoefficient = "-0.50061";
    lifetimeMS = "400";
@@ -268,7 +268,7 @@ datablock SphereEmitterData(ProjectileExpFireEmitter)
    blendStyle = "ADDITIVE";
 };
 
-datablock ParticleData(ProjectileExpFireball)
+datablock BillboardParticleData(ProjectileExpFireball)
 {
    textureName = "core/art/particles/fireball.png";
    lifetimeMS = "300";
@@ -301,7 +301,7 @@ datablock SphereEmitterData(ProjectileExpFireballEmitter)
    thetaMax = "120";
 };
 
-datablock ParticleData(ProjectileExpSmoke)
+datablock BillboardParticleData(ProjectileExpSmoke)
 {
    lifetimeMS = 1200;//"1250";
    lifetimeVarianceMS = 299;//200;//"250";
@@ -333,7 +333,7 @@ datablock SphereEmitterData(ProjectileExpSmokeEmitter)
    blendStyle = "NORMAL";
 };
 
-datablock ParticleData(ProjectileExpSparks)
+datablock BillboardParticleData(ProjectileExpSparks)
 {
    textureName = "core/art/particles/droplet.png";
    lifetimeMS = "100";
@@ -368,7 +368,7 @@ datablock SphereEmitterData(ProjectileExpSparksEmitter)
    orientOnVelocity = true;
 };
 
-datablock ParticleData(ProjectileExpSubFireParticles)
+datablock BillboardParticleData(ProjectileExpSubFireParticles)
 {
    textureName = "core/art/particles/fireball.png";
    gravityCoefficient = "-0.202686";
@@ -400,7 +400,7 @@ datablock SphereEmitterData(ProjectileExpSubFireEmitter)
    thetaMax = "120";
 };
 
-datablock ParticleData(ProjectileExpSubSmoke)
+datablock BillboardParticleData(ProjectileExpSubSmoke)
 {
    textureName = "core/art/particles/smoke";
    gravityCoefficient = "-0.40293";
@@ -432,7 +432,7 @@ datablock SphereEmitterData(ProjectileExpSubSmokeEmitter)
    blendStyle = "NORMAL";
 };
 
-datablock ParticleData(ProjectileSmokeTrail)
+datablock BillboardParticleData(ProjectileSmokeTrail)
 {
    textureName = "core/art/particles/smoke";
    dragCoeffiecient = 0;
@@ -474,7 +474,7 @@ datablock SphereEmitterData(ProjectileProjSmokeTrailEmitter)
    particles = "ProjectileSmokeTrail";
 };
 
-datablock ParticleData(ProjectileTrailWaterParticle)
+datablock BillboardParticleData(ProjectileTrailWaterParticle)
 {
    textureName = "core/art/particles/bubble";
    dragCoefficient = 0.0;
@@ -516,7 +516,7 @@ datablock SphereEmitterData(ProjectileTrailWaterEmitter)
    particles = ProjectileTrailWaterParticle;
 };
 
-datablock ParticleData(DefaultSparks)
+datablock BillboardParticleData(DefaultSparks)
 {
    textureName = "core/art/particles/droplet.png";
    lifetimeMS = "50";
@@ -550,7 +550,7 @@ datablock SphereEmitterData(DefaultSparksEmitter)
    orientOnVelocity = true;
 };
 
-datablock ParticleData(Basefiring2Particle)
+datablock BillboardParticleData(Basefiring2Particle)
 {
    textureName = "core/art/particles/impact";
    dragCoefficient = 5.0;
@@ -590,7 +590,7 @@ datablock SphereEmitterData(Basefiring2Emitter)
 // ----------------------------------------------------------------------------
 // Splash effects
 // ----------------------------------------------------------------------------
-datablock ParticleData(ProjectileSplashMist)
+datablock BillboardParticleData(ProjectileSplashMist)
 {
    dragCoefficient = 1.0;
    windCoefficient = 2.0;
@@ -631,7 +631,7 @@ datablock SphereEmitterData(ProjectileSplashMistEmitter)
    particles = "ProjectileSplashMist";
 };
 
-datablock ParticleData(ProjectileSplashParticle)
+datablock BillboardParticleData(ProjectileSplashParticle)
 {
    dragCoefficient = 1;
    windCoefficient = 0.9;
@@ -670,7 +670,7 @@ datablock SphereEmitterData(ProjectileSplashEmitter)
    particles = "ProjectileSplashParticle";
 };
 
-datablock ParticleData(ProjectileSplashRingParticle)
+datablock BillboardParticleData(ProjectileSplashRingParticle)
 {
    textureName = "core/art/particles/wake";
    dragCoefficient = 0.0;
@@ -876,7 +876,7 @@ datablock ProjectileData(BaseProjectile)
 
 //-------------------
 // XR75 Laser Gun
-datablock ParticleData(XRBoltsSparks)
+datablock BillboardParticleData(XRBoltsSparks)
 {
    textureName = "core/art/particles/droplet.png";
    lifetimeMS = "50";

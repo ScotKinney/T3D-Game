@@ -1346,7 +1346,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(BlackSmithFire) {
+      new ParticleEmitterNode(BlackSmithFire) {
          emitter = "SlowSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1367,7 +1367,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(BlackSmithFire1) {
+      new ParticleEmitterNode(BlackSmithFire1) {
          emitter = "SlowSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1587,7 +1587,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(ValFire12) {
+      new ParticleEmitterNode(ValFire12) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -1699,7 +1699,7 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode(ValFire1) {
+      new ParticleEmitterNode(ValFire1) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -1748,7 +1748,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ValFire13) {
+      new ParticleEmitterNode(ValFire13) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -1837,7 +1837,7 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode(ValFire131) {
+      new ParticleEmitterNode(ValFire131) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -1886,7 +1886,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ValFire11) {
+      new ParticleEmitterNode(ValFire11) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -1932,7 +1932,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(ValFire) {
+      new ParticleEmitterNode(ValFire) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -2021,7 +2021,7 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode(ValFire111) {
+      new ParticleEmitterNode(ValFire111) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -2814,7 +2814,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ValFire14) {
+      new ParticleEmitterNode(ValFire14) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";
@@ -3437,7 +3437,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ValFire1311) {
+      new ParticleEmitterNode(ValFire1311) {
          emitter = "TorchFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "45";

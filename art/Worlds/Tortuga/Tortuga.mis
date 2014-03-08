@@ -494,7 +494,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(SteamParticle4) {
+      new ParticleEmitterNode(SteamParticle4) {
          emitter = "ParticleSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -515,7 +515,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle61) {
+      new ParticleEmitterNode(SteamParticle61) {
          emitter = "ParticleSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -536,7 +536,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle611) {
+      new ParticleEmitterNode(SteamParticle611) {
          emitter = "ParticleSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -557,7 +557,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle612) {
+      new ParticleEmitterNode(SteamParticle612) {
          emitter = "ParticleSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -578,7 +578,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle6121) {
+      new ParticleEmitterNode(SteamParticle6121) {
          emitter = "ParticleSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -2051,7 +2051,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(lavaSpray111) {
+      new ParticleEmitterNode(lavaSpray111) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -2072,7 +2072,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray) {
+      new ParticleEmitterNode(lavaSpray) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -2093,7 +2093,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray1) {
+      new ParticleEmitterNode(lavaSpray1) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -2114,7 +2114,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray112) {
+      new ParticleEmitterNode(lavaSpray112) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -2135,7 +2135,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle62) {
+      new ParticleEmitterNode(SteamParticle62) {
          emitter = "LavaSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -2156,7 +2156,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle621) {
+      new ParticleEmitterNode(SteamParticle621) {
          emitter = "LavaSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -2177,7 +2177,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle622) {
+      new ParticleEmitterNode(SteamParticle622) {
          emitter = "LavaSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -2198,7 +2198,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(SteamParticle6211) {
+      new ParticleEmitterNode(SteamParticle6211) {
          emitter = "LavaSteamEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "39";
@@ -2219,7 +2219,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(LavaDIsturbance03) {
+      new ParticleEmitterNode(LavaDIsturbance03) {
          emitter = "LavaDisturbanceEmitter";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -2240,7 +2240,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(LavaDisturbance01) {
+      new ParticleEmitterNode(LavaDisturbance01) {
          emitter = "LavaDisturbanceEmitter";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -2261,7 +2261,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(LavaDisturbance02) {
+      new ParticleEmitterNode(LavaDisturbance02) {
          emitter = "LavaDisturbanceEmitter";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -2282,7 +2282,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(shrine_fire3) {
+      new ParticleEmitterNode(shrine_fire3) {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";
@@ -2303,7 +2303,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(shrine_fire31) {
+      new ParticleEmitterNode(shrine_fire31) {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";
@@ -4312,7 +4312,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray11211) {
+      new ParticleEmitterNode(lavaSpray11211) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -4333,7 +4333,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray3) {
+      new ParticleEmitterNode(lavaSpray3) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -4354,7 +4354,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(LavaDIsturbance031) {
+      new ParticleEmitterNode(LavaDIsturbance031) {
          emitter = "LavaSprayTop";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -4375,7 +4375,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray21) {
+      new ParticleEmitterNode(lavaSpray21) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -4396,7 +4396,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(lavaSpray2) {
+      new ParticleEmitterNode(lavaSpray2) {
          emitter = "LavaSprayEmitter";
          sa_thetaMin = "5";
          sa_thetaMax = "45";
@@ -4417,7 +4417,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(Drips) {
+      new ParticleEmitterNode(Drips) {
          emitter = "LavaMagmaEmitter";
          sa_thetaMin = "12";
          sa_thetaMax = "20";
@@ -5043,7 +5043,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(EmitterTest001) {
+      new ParticleEmitterNode(EmitterTest001) {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5064,7 +5064,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(EmitterTest002) {
+      new ParticleEmitterNode(EmitterTest002) {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5085,7 +5085,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(EmitterTest003) {
+      new ParticleEmitterNode(EmitterTest003) {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5106,7 +5106,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5346,7 +5346,7 @@ new SimGroup(MissionGroup) {
          Node = "-256.913940 787.074890 90.004181 21.217226 5.000000 0.000000 0.000000 1.000000";
          Node = "-271.367523 787.570801 89.595154 17.323711 5.000000 0.000000 0.000000 1.000000";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5367,7 +5367,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5388,7 +5388,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5409,7 +5409,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5430,7 +5430,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5451,7 +5451,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5472,7 +5472,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5493,7 +5493,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -5514,7 +5514,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls02";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -5535,7 +5535,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls03";
          sa_thetaMin = "0";
          sa_thetaMax = "25";
@@ -5556,7 +5556,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -5577,7 +5577,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5598,7 +5598,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5619,7 +5619,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5640,7 +5640,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5661,7 +5661,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5682,7 +5682,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5703,7 +5703,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -5724,7 +5724,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -5745,7 +5745,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterWaterDisturbance";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -5766,7 +5766,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterWaterDisturbance";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -5787,7 +5787,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5808,7 +5808,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5834,7 +5834,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterWaterDisturbance";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -5855,7 +5855,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5876,7 +5876,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5897,7 +5897,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5918,7 +5918,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5939,7 +5939,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5960,7 +5960,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -5981,7 +5981,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -6002,7 +6002,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls02";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -6023,7 +6023,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -6044,7 +6044,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -6065,7 +6065,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterWaterDisturbance";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -6086,7 +6086,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -6107,7 +6107,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -6128,7 +6128,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -6149,7 +6149,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -6170,7 +6170,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -6191,7 +6191,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -6212,7 +6212,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls03";
          sa_thetaMin = "0";
          sa_thetaMax = "25";
@@ -6233,7 +6233,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7151,7 +7151,7 @@ new SimGroup(MissionGroup) {
             radiusDamage = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7172,7 +7172,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7193,7 +7193,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7214,7 +7214,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7235,7 +7235,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7256,7 +7256,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7277,7 +7277,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -7298,7 +7298,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12002,7 +12002,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -12023,7 +12023,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls02_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -12044,7 +12044,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls03_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "25";
@@ -12065,7 +12065,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -12086,7 +12086,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12107,7 +12107,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12128,7 +12128,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12149,7 +12149,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12170,7 +12170,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12191,7 +12191,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -12212,7 +12212,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -12233,7 +12233,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterWaterDisturbance_Cave";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -12254,7 +12254,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMainFalls_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "10";
@@ -12275,7 +12275,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12296,7 +12296,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "WaterVortexEmitter";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -12317,7 +12317,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12338,7 +12338,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -12359,7 +12359,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterMist_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "165";
@@ -12380,7 +12380,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12401,7 +12401,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "WaterVortexEmitter";
          sa_thetaMin = "7";
          sa_thetaMax = "180";
@@ -12422,7 +12422,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12443,7 +12443,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12464,7 +12464,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(EmitterTestA01) {
+      new ParticleEmitterNode(EmitterTestA01) {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12485,7 +12485,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(EmitterTestA02) {
+      new ParticleEmitterNode(EmitterTestA02) {
          emitter = "EmitterTopSpray";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -12506,7 +12506,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(EmitterTestA03) {
+      new ParticleEmitterNode(EmitterTestA03) {
          emitter = "EmitterRockImpact_Cave";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -13317,7 +13317,7 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new SphereEmitterNode(shrine_fire311) {
+      new ParticleEmitterNode(shrine_fire311) {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";
@@ -13338,7 +13338,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(shrine_fire3111) {
+      new ParticleEmitterNode(shrine_fire3111) {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";
@@ -13359,7 +13359,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(shrine_fire31111) {
+      new ParticleEmitterNode(shrine_fire31111) {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";
@@ -13898,7 +13898,7 @@ new SimGroup(MissionGroup) {
          invertGradientRange = "0";
          useGradientRange = "0";
    };
-   new SphereEmitterNode(FireplaceFire) {
+   new ParticleEmitterNode(FireplaceFire) {
       emitter = "shrine_fire_emitter";
       sa_thetaMin = "0";
       sa_thetaMax = "100";
@@ -14019,7 +14019,7 @@ new SimGroup(MissionGroup) {
          invertGradientRange = "0";
          useGradientRange = "0";
    };
-   new SphereEmitterNode(FireplaceFire1) {
+   new ParticleEmitterNode(FireplaceFire1) {
       emitter = "shrine_fire_emitter";
       sa_thetaMin = "0";
       sa_thetaMax = "100";

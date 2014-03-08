@@ -424,7 +424,7 @@ function PE_ParticleEditor::createParticle( %this, %replaceSlot )
    
    %newParticle = getUniqueName( "newParticle" );
    
-   datablock ParticleData( %newParticle : DefaultParticle )
+   datablock BillboardParticleData( %newParticle : DefaultParticle )
    {
    };
          

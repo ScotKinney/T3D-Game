@@ -435,7 +435,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
 
-         new GraphEmitterNode(TestGraphEmitter) {
+         new ParticleEmitterNode(TestGraphEmitter) {
             emitter = "g_MarsTeleport";
             Grounded = "0";
             xFunc = "cos(t/25)*(2000-t)*0.0005";
@@ -456,14 +456,14 @@ new SimGroup(MissionGroup) {
             sa_ejectionVelocity = "0";
             sa_velocityVariance = "0";
             sa_ejectionOffset = "1";
-            dataBlock = "g_DefaultNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-31.3038 -14.2281 5.56461";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new GroundEmitterNode(TestGroundEmitter) {
+         new ParticleEmitterNode(TestGroundEmitter) {
             emitter = "gr_DefaultEmitter";
             sa_radius = "1";
             active = "1";
@@ -475,15 +475,15 @@ new SimGroup(MissionGroup) {
             sa_ejectionVelocity = "0";
             sa_velocityVariance = "0";
             sa_ejectionOffset = "0";
-            dataBlock = "gr_DefaultNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-41.4143 1.38955 4.19546";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new MaskEmitterNode(TestMaskEmitter) {
-            emitter = "msk_DefaultEmitter";
+         new ParticleEmitterNode(TestMaskEmitter) {
+            emitter = "DefaultEmitterNodeData";
             sa_radius = "1";
             sa_Alpha_min = "125";
             sa_Alpha_max = "255";
@@ -497,7 +497,7 @@ new SimGroup(MissionGroup) {
             sa_ejectionVelocity = "0";
             sa_velocityVariance = "0";
             sa_ejectionOffset = "1";
-            dataBlock = "msk_DefaultNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-41.0464 -16.5414 2.09244";
             rotation = "1 0 0 0";
             scale = "1 1 1";

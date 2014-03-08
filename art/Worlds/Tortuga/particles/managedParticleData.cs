@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(ParticleSteamData)
+datablock BillboardParticleData(ParticleSteamData)
 {
    textureName = "core/art/particles/smoke2.png";
    animTexName = "core/art/particles/smoke2.png";
@@ -48,7 +48,7 @@ datablock SphereEmitterData(ParticleSteamEmitter)
    lifetimeVarianceMS = "0";
 };
 
-datablock ParticleData(lavaParticle)
+datablock BillboardParticleData(lavaParticle)
 {
    textureName = "core/art/particles/waterspray.png";
    animTexName = "core/art/particles/waterspray.png";
@@ -89,7 +89,7 @@ datablock SphereEmitterData(LavaSprayEmitter)
    thetaMin = "5";
 };
 
-datablock ParticleData(LavaSteamData)
+datablock BillboardParticleData(LavaSteamData)
 {
    textureName = "core/art/particles/smoke2.png";
    animTexName = "core/art/particles/smoke2.png";
@@ -132,7 +132,7 @@ datablock SphereEmitterData(LavaSteamEmitter)
    lifetimeVarianceMS = "0";
 };
 
-datablock ParticleData(LavaDisturbanceParticle)
+datablock BillboardParticleData(LavaDisturbanceParticle)
 {
    textureName = "core/art/particles/ripple.png";
    animTexName = "core/art/particles/ripple.png";
@@ -174,7 +174,7 @@ datablock SphereEmitterData(LavaDisturbanceEmitter)
    alignDirection = "0 0 1";
 };
 
-datablock ParticleData(lavaParticleTop)
+datablock BillboardParticleData(lavaParticleTop)
 {
    textureName = "core/art/particles/waterspray.png";
    animTexName = "core/art/particles/waterspray.png";
@@ -217,7 +217,7 @@ datablock SphereEmitterData(LavaSprayTop)
    thetaMin = "5";
 };
 
-datablock ParticleData(LavaMagmaParticle)
+datablock BillboardParticleData(LavaMagmaParticle)
 {
    textureName = "core/art/particles/spark.png";
    animTexName = "core/art/particles/spark.png";
@@ -262,7 +262,7 @@ datablock SphereEmitterData(LavaMagmaEmitter)
    alignParticles = "0";
 };
 
-datablock ParticleData(ParticleRockImpactInner01)
+datablock BillboardParticleData(ParticleRockImpactInner01)
 {
    textureName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    animTexName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
@@ -291,7 +291,7 @@ datablock SphereEmitterData(EmitterRockImpact)
    ambientFactor = "0";
 };
 
-datablock ParticleData(ParticleRockImpactInner01_Cave)
+datablock BillboardParticleData(ParticleRockImpactInner01_Cave)
 {
    textureName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
    animTexName = "art/worlds/tortuga/particles/rock_impact_1_inner.png";
@@ -320,7 +320,7 @@ datablock SphereEmitterData(EmitterRockImpact_Cave)
    ambientFactor = "0.416667";
 };
 
-datablock ParticleData(ParticleRockImpactTop)
+datablock BillboardParticleData(ParticleRockImpactTop)
 {
    textureName = "art/worlds/tortuga/particles/topandtopspray.png";
    animTexName = "art/worlds/tortuga/particles/topandtopspray.png";
@@ -356,7 +356,7 @@ datablock SphereEmitterData(EmitterTopSpray)
    softParticles = "0";
 };
 
-datablock ParticleData(ParticleMainFalls01)
+datablock BillboardParticleData(ParticleMainFalls01)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls01.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls01.png";
@@ -384,7 +384,7 @@ datablock SphereEmitterData(EmitterMainFalls)
    ambientFactor = "0";
 };
 
-datablock ParticleData(ParticleMainFalls02)
+datablock BillboardParticleData(ParticleMainFalls02)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls02.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls02.png";
@@ -412,7 +412,7 @@ datablock SphereEmitterData(EmitterMainFalls02)
    ambientFactor = "0";
 };
 
-datablock ParticleData(ParticleMainFalls03)
+datablock BillboardParticleData(ParticleMainFalls03)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls03.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls03.png";
@@ -440,7 +440,7 @@ datablock SphereEmitterData(EmitterMainFalls03)
    ambientFactor = "0";
 };
 
-datablock ParticleData(ParticleMainFalls01_Cave)
+datablock BillboardParticleData(ParticleMainFalls01_Cave)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls01.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls01.png";
@@ -468,7 +468,7 @@ datablock SphereEmitterData(EmitterMainFalls_Cave)
    ambientFactor = "0.416667";
 };
 
-datablock ParticleData(ParticleMainFalls02_Cave)
+datablock BillboardParticleData(ParticleMainFalls02_Cave)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls02.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls02.png";
@@ -496,7 +496,7 @@ datablock SphereEmitterData(EmitterMainFalls02_Cave)
    ambientFactor = "0.416667";
 };
 
-datablock ParticleData(ParticleMainFalls03_Cave)
+datablock BillboardParticleData(ParticleMainFalls03_Cave)
 {
    textureName = "art/worlds/tortuga/particles/mainfalls03.png";
    animTexName = "art/worlds/tortuga/particles/mainfalls03.png";
@@ -524,7 +524,7 @@ datablock SphereEmitterData(EmitterMainFalls03_Cave)
    ambientFactor = "0.416667";
 };
 
-datablock ParticleData(ParticleMist)
+datablock BillboardParticleData(ParticleMist)
 {
    textureName = "art/worlds/tortuga/particles/mist.png";
    animTexName = "art/worlds/tortuga/particles/mist.png";
@@ -569,7 +569,7 @@ datablock SphereEmitterData(EmitterMist)
    ejectionPeriodMS = "167";
 };
 
-datablock ParticleData(ParticleMist_Cave)
+datablock BillboardParticleData(ParticleMist_Cave)
 {
    textureName = "art/worlds/tortuga/particles/mist.png";
    animTexName = "art/worlds/tortuga/particles/mist.png";
@@ -614,7 +614,7 @@ datablock SphereEmitterData(EmitterMist_Cave)
    ejectionPeriodMS = "167";
 };
 
-datablock ParticleData(ParticleWaterDisturbance)
+datablock BillboardParticleData(ParticleWaterDisturbance)
 {
    textureName = "art/worlds/tortuga/particles/ripple.png";
    animTexName = "art/worlds/tortuga/particles/ripple.png";
@@ -655,7 +655,7 @@ datablock SphereEmitterData(EmitterWaterDisturbance)
    alignDirection = "0 0 1";
 };
 
-datablock ParticleData(ParticleWaterDisturbance_Cave)
+datablock BillboardParticleData(ParticleWaterDisturbance_Cave)
 {
    textureName = "art/worlds/tortuga/particles/ripple.png";
    animTexName = "art/worlds/tortuga/particles/ripple.png";
@@ -694,7 +694,7 @@ datablock SphereEmitterData(EmitterWaterDisturbance_Cave)
    alignDirection = "0 0 1";
 };
 
-datablock ParticleData(WaterVortexParticle)
+datablock BillboardParticleData(WaterVortexParticle)
 {
    textureName = "art/worlds/tortuga/particles/rock_impacttopandsidespray.png";
    animTexName = "art/worlds/tortuga/particles/rock_impacttopandsidespray.png";

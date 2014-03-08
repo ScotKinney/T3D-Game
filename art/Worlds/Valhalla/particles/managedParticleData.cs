@@ -7,7 +7,7 @@
 // Particle Editor (this script is executed from onServerCreated())
 
 //////////////////////SLOW STEAM///////////////
-datablock ParticleData(SlowSteamParticle)
+datablock BillboardParticleData(SlowSteamParticle)
 {
    textureName          = "core/art/particles/steam";
    dragCoefficient      = 0.3;
@@ -47,7 +47,7 @@ datablock SphereEmitterData(SlowSteamEmitter)
    particles = SlowSteamParticle;
 };
 
-datablock SphereEmitterNodeData(SlowSteamEmitterNode)
+datablock ParticleEmitterNodeData(SlowSteamEmitterNode)
 {
    timeMultiple = 1;
 };

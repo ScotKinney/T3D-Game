@@ -52,7 +52,7 @@ $ThisPrefab = new SimGroup() {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SphereEmitterNode() {
+   new ParticleEmitterNode() {
       active = "1";
       emitter = "shrine_fire_emitter";
       velocity = "1";

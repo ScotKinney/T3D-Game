@@ -6,7 +6,7 @@ datablock SFXProfile(GargFireballSound)
    preload = true;
 };
 
-datablock ParticleData(GargFireballParticle)
+datablock BillboardParticleData(GargFireballParticle)
 {
    textureName = "core/art/particles/fireball.png";
    lifetimeMS = "300";

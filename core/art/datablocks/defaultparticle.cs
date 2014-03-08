@@ -20,7 +20,7 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-datablock ParticleData(DefaultParticle)
+datablock BillboardParticleData(DefaultParticle)
 {
    textureName = "core/art/defaultParticle";
    dragCoefficient = 0.498534;

@@ -1,4 +1,4 @@
-datablock ParticleData(LightningRod : DefaultParticle)
+datablock BillboardParticleData(LightningRod : DefaultParticle)
 {
    sizes[0] = "1.2";
    sizes[1] = "1";
@@ -24,7 +24,7 @@ datablock ParticleData(LightningRod : DefaultParticle)
    constantAcceleration = "-10";
 };
 
-datablock ParticleData(LightningRod1 : DefaultParticle)
+datablock BillboardParticleData(LightningRod1 : DefaultParticle)
 {
    inheritedVelFactor = "1";
    lifetimeMS = "188";
@@ -48,7 +48,7 @@ datablock ParticleData(LightningRod1 : DefaultParticle)
    constantAcceleration = "-10";
 };
 
-datablock ParticleData(LightningRod2 : DefaultParticle)
+datablock BillboardParticleData(LightningRod2 : DefaultParticle)
 {
    sizes[0] = "1.65";
    sizes[1] = "1.5";

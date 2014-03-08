@@ -62,7 +62,7 @@ datablock SFXProfile(CheetahTurretFireSound)
    preload = true;
 };
 
-datablock ParticleData(CheetahTireParticle)
+datablock BillboardParticleData(CheetahTireParticle)
 {
    textureName          = "core/art/particles/dustParticle";
    dragCoefficient      = "1.99902";

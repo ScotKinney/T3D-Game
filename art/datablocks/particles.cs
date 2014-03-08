@@ -20,45 +20,15 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-datablock SphereEmitterNodeData(DefaultEmitterNodeData)
+datablock ParticleEmitterNodeData(DefaultEmitterNodeData)
 {
    timeMultiple = 1;
 };
 
 //------------------------------------------------------------------------------
-datablock GraphEmitterNodeData(g_DefaultNode)
-{
-   timeMultiple = 1;
-};
-
-
-datablock GraphEmitterNodeData(g_nodeLightning)
+datablock ParticleEmitterNodeData(DefaultNodeTwentyTM)
 {
    timeMultiple = 20;
-};
-
-datablock GraphEmitterNodeData(g_nodeAxelTest01)
-{
-   timeMultiple = 20;
-};
-
-datablock GraphEmitterNodeData(g_nodeAxelTest02)
-{
-   timeMultiple = 20;
-};
-datablock GraphEmitterNodeData(g_nodeAxelTest03)
-{
-   timeMultiple = 20;
-};
-
-datablock GroundEmitterNodeData(gr_DefaultNode)
-{
-   timeMultiple = 1;
-};
-
-datablock MaskEmitterNodeData(msk_DefaultNode)
-{
-   timeMultiple = 1;
 };
 
 datablock GraphEmitterData(g_DefaultEmitter)
@@ -75,7 +45,7 @@ datablock GraphEmitterData(g_DefaultEmitter)
 };
 
 // Lightning Flash
-datablock ParticleData(LightningBlast0)
+datablock BillboardParticleData(LightningBlast0)
 {
    sizes[0] = "1.2";
    sizes[1] = "1";
@@ -101,7 +71,7 @@ datablock ParticleData(LightningBlast0)
    constantAcceleration = "-10";
 };
 
-datablock ParticleData(LightningRod0)
+datablock BillboardParticleData(LightningRod0)
 {
    sizes[0] = "1.65";
    sizes[1] = "1.5";
@@ -140,7 +110,7 @@ datablock GraphEmitterData(LightningFlashData)
    particles = "LightningRod0";
 };
 
-datablock ParticleData(AxelTestParticle01)
+datablock BillboardParticleData(AxelTestParticle01)
 {
    textureName          = "core/art/particles/ember";
    dragCoefficient      = 0.0;
@@ -169,7 +139,7 @@ datablock ParticleData(AxelTestParticle01)
    animTexName = "core/art/particles/ember";
 };
 
-datablock ParticleData(AxelTestParticle02)
+datablock BillboardParticleData(AxelTestParticle02)
 {
    textureName          = "core/art/particles/waterDrip";
    dragCoefficient      = 0.0;
@@ -196,7 +166,7 @@ datablock ParticleData(AxelTestParticle02)
    times[2]      = 1.0;
 };
 
-datablock ParticleData(AxelTestParticle03)
+datablock BillboardParticleData(AxelTestParticle03)
 {
    textureName          = "core/art/particles/sparkle";
    dragCoefficient      = 0.0;
@@ -225,7 +195,7 @@ datablock ParticleData(AxelTestParticle03)
 
 // Smoke
 
-datablock ParticleData(Smoke)
+datablock BillboardParticleData(Smoke)
 {
    textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.3;
@@ -260,14 +230,14 @@ datablock SphereEmitterData(SmokeEmitter)
    particles        = Smoke;
 };
 
-datablock SphereEmitterNodeData(SmokeEmitterNode)
+datablock ParticleEmitterNodeData(SmokeEmitterNode)
 {
    timeMultiple = 1;
 };
 
 // Ember
 
-datablock ParticleData(EmberParticle)
+datablock BillboardParticleData(EmberParticle)
 {
    textureName          = "core/art/particles/ember";
    dragCoefficient      = 0.0;
@@ -309,14 +279,14 @@ datablock SphereEmitterData(EmberEmitter)
    particles        = "EmberParticle";
 };
 
-datablock SphereEmitterNodeData(EmberNode)
+datablock ParticleEmitterNodeData(EmberNode)
 {
    timeMultiple = 1;
 };
 
 // Fire
 
-datablock ParticleData(FireParticle)
+datablock BillboardParticleData(FireParticle)
 {
    textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
@@ -362,14 +332,14 @@ datablock SphereEmitterData(FireEmitter)
    particles        = "FireParticle";
 };
 
-datablock SphereEmitterNodeData(FireNode)
+datablock ParticleEmitterNodeData(FireNode)
 {
    timeMultiple = 1;
 };
 
 // Torch Fire
 
-datablock ParticleData(TorchFire1)
+datablock BillboardParticleData(TorchFire1)
 {
    textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
@@ -395,7 +365,7 @@ datablock ParticleData(TorchFire1)
    times[2]      = 1.0;
 };
 
-datablock ParticleData(TorchFire2)
+datablock BillboardParticleData(TorchFire2)
 {
    textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
@@ -435,12 +405,12 @@ datablock SphereEmitterData(TorchFireEmitter)
    particles        = "TorchFire1" TAB "TorchFire2";
 };
 
-datablock SphereEmitterNodeData(TorchFireEmitterNode)
+datablock ParticleEmitterNodeData(TorchFireEmitterNode)
 {
    timeMultiple = 1;
 };
 
-datablock ParticleData(shrinefireparticle)
+datablock BillboardParticleData(shrinefireparticle)
 {
    textureName          = "core/art/particles/explosion";
    dragCoeffiecient     = 0;
@@ -487,7 +457,7 @@ datablock SphereEmitterData(shrine_fire_emitter)
    thetaMin = "0";
 };
 
-datablock ParticleData(damageAmountParticle)
+datablock BillboardParticleData(damageAmountParticle)
 {
    textureName          = "core/art/particles/SpriteNumbers01";
    dragCoeffiecient     = 0;

@@ -21,7 +21,7 @@ function SelfImmolation::onChannelBegin(%this, %spell)
    // Optional: This line forces the player into an animation and 
    // roots it.
    %spell.getSource().ForceAnimation(true, "Kneel_R");
-   %crush = new SphereEmitterNode(){       
+   %crush = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = CrushEmitter;       
       position = %pos;    
@@ -30,7 +30,7 @@ function SelfImmolation::onChannelBegin(%this, %spell)
    %src = %spell.getSource();
    %src.mountobject(%crush, 2, "0.0 0.0 0.0");
    %crush.schedule(1500, "delete");
-   %spell.baseEmitter = new SphereEmitterNode(){       
+   %spell.baseEmitter = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = EmberEmitter;       
       position = %pos;    
@@ -82,7 +82,7 @@ function AOEImpact::SelfImmolationCallback(%this, %src, %tgt)
 // Projectile callbacks------------------------------------------------------ 
 function SelfImmolationProjectile::onCollision(%this, %obj, %col, %fade, %pos, %norm) 
 {    
-   %blast = new SphereEmitterNode(){       
+   %blast = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = ImmolationEmitter;       
       position = %pos;    

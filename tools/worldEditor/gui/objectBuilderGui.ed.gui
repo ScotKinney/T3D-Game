@@ -898,21 +898,49 @@ function ObjectBuilderGui::buildPrecipitation(%this)
    %this.process();
 }
 
-function ObjectBuilderGui::buildSphereEmitterNode(%this)
+function ObjectBuilderGui::buildSphereEmitter(%this)
 {
-   %this.objectClassName = "SphereEmitterNode";
-   %this.addField("dataBlock", "TypeDataBlock", "datablock", "SphereEmitterNodeData");
-   %this.addField("emitter",   "TypeDataBlock", "Particle data", "SphereEmitterData");
+   %this.objectClassName = "ParticleEmitterNode";
+   %this.addField("dataBlock", "TypeDataBlock", "datablock",
+      "ParticleEmitterNodeData");
+   %this.addField("emitter", "TypeDataBlock", "Particle data",
+      "SphereEmitterData");
    %this.process();
 }
-
-function ObjectBuilderGui::buildGraphEmitterNode(%this)
+function ObjectBuilderGui::buildRaySphereEmitter(%this)
 {
-   %this.objectClassName = "GraphEmitterNode";
+   %this.objectClassName = "ParticleEmitterNode";
    %this.addField("dataBlock", "TypeDataBlock", "datablock",
-   "GraphEmitterNodeData");
+      "RaySphereEmitterNodeData");
    %this.addField("emitter", "TypeDataBlock", "Particle data",
-   "GraphEmitterData");
+      "RaySphereEmitterData");
+   %this.process();
+}
+function ObjectBuilderGui::buildGraphEmitter(%this)
+{
+   %this.objectClassName = "ParticleEmitterNode";
+   %this.addField("dataBlock", "TypeDataBlock", "datablock",
+      "ParticleEmitterNodeData");
+   %this.addField("emitter", "TypeDataBlock", "Particle data",
+      "GraphEmitterData");
+   %this.process();
+}
+function ObjectBuilderGui::buildGroundEmitter(%this)
+{
+   %this.objectClassName = "ParticleEmitterNode";
+   %this.addField("dataBlock", "TypeDataBlock", "datablock",
+      "ParticleEmitterNodeData");
+   %this.addField("emitter", "TypeDataBlock", "Particle data",
+      "GroundEmitterData");
+   %this.process();
+}
+function ObjectBuilderGui::buildMaskEmitter(%this)
+{
+   %this.objectClassName = "ParticleEmitterNode";
+   %this.addField("dataBlock", "TypeDataBlock", "datablock",
+      "ParticleEmitterNodeData");
+   %this.addField("emitter", "TypeDataBlock", "Particle data",
+      "MaskEmitterData");
    %this.process();
 }
 
@@ -920,35 +948,21 @@ function ObjectBuilderGui::buildMeshEmitter(%this)
 {
    %this.objectClassName = "MeshEmitter";
    %this.addField("dataBlock", "TypeDataBlock", "datablock",
-   "MeshEmitterData");
+      "MeshEmitterData");
    %this.process();
 }
-
 function ObjectBuilderGui::buildRadiusMeshEmitter(%this)
 {
    %this.objectClassName = "RadiusMeshEmitter";
    %this.addField("dataBlock", "TypeDataBlock", "datablock",
-   "RadiusMeshEmitterData");
+      "RadiusMeshEmitterData");
    %this.process();
 }
-
-function ObjectBuilderGui::buildGroundEmitterNode(%this)
+function ObjectBuilderGui::buildNodeMeshEmitter(%this)
 {
-   %this.objectClassName = "GroundEmitterNode";
+   %this.objectClassName = "NodeMeshEmitter";
    %this.addField("dataBlock", "TypeDataBlock", "datablock",
-   "GroundEmitterNodeData");
-   %this.addField("emitter", "TypeDataBlock", "Particle data",
-   "GroundEmitterData");
-   %this.process();
-}
-
-function ObjectBuilderGui::buildMaskEmitterNode(%this)
-{
-   %this.objectClassName = "MaskEmitterNode";
-   %this.addField("dataBlock", "TypeDataBlock", "datablock",
-   "MaskEmitterNodeData");
-   %this.addField("emitter", "TypeDataBlock", "Particle data",
-   "MaskEmitterData");
+      "NodeMeshEmitterData");
    %this.process();
 }
 

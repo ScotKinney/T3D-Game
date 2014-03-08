@@ -2061,7 +2061,7 @@ function EditorTree::GetTooltipSFXEmitter( %this, %obj )
 }
 
 // Tooltip for SphereEmitterNode
-function EditorTree::GetTooltipSphereEmitterNode( %this, %obj )
+function EditorTree::GetTooltipParticleEmitterNode( %this, %obj )
 {
    %text = "Datablock: " @ %obj.dataBlock;
    %text = %text NL "Emitter: " @ %obj.emitter;

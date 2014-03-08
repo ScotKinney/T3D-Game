@@ -1,4 +1,4 @@
-datablock ParticleData(ImmolationParticle : DefaultParticle)
+datablock BillboardParticleData(ImmolationParticle : DefaultParticle)
 {
    sizes[0] = "1";
    sizes[1] = "2.08143";

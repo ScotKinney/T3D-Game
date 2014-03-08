@@ -5,7 +5,7 @@
 // Splash
 //----------------------------------------------------------------------------
 
-datablock ParticleData(DefaultSplashMist)
+datablock BillboardParticleData(DefaultSplashMist)
 {
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.05;
@@ -45,7 +45,7 @@ datablock SphereEmitterData(DefaultSplashMistEmitter)
 };
 
 
-datablock ParticleData(DefaultBubbleParticle)
+datablock BillboardParticleData(DefaultBubbleParticle)
 {
    dragCoefficient      = 0.0;
    gravityCoefficient   = -0.50;
@@ -81,7 +81,7 @@ datablock SphereEmitterData(DefaultBubbleEmitter)
    particles = "DefaultBubbleParticle";
 };
 
-datablock ParticleData(DefaultFoamParticle)
+datablock BillboardParticleData(DefaultFoamParticle)
 {
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.05;
@@ -120,7 +120,7 @@ datablock SphereEmitterData(DefaultFoamEmitter)
 };
 
 
-datablock ParticleData( DefaultFoamDropletsParticle )
+datablock BillboardParticleData( DefaultFoamDropletsParticle )
 {
    dragCoefficient      = 1;
    gravityCoefficient   = 0.2;
@@ -156,7 +156,7 @@ datablock SphereEmitterData( DefaultFoamDropletsEmitter )
    particles = "DefaultFoamDropletsParticle";
 };
 
-datablock ParticleData( DefaultWakeParticle )
+datablock BillboardParticleData( DefaultWakeParticle )
 {
    textureName          = "core/art/effects/wake";
    dragCoefficient     = "0.0";
@@ -212,7 +212,7 @@ datablock SphereEmitterData( DefaultWakeEmitter )
    particles = "DefaultWakeParticle";
 };
 
-datablock ParticleData( DefaultSplashParticle )
+datablock BillboardParticleData( DefaultSplashParticle )
 {
    dragCoefficient      = 1;
    gravityCoefficient   = 0.2;
@@ -279,7 +279,7 @@ datablock SplashData(DefaultSplash)
 // Foot puffs
 //----------------------------------------------------------------------------
 
-datablock ParticleData(LightPuff)
+datablock BillboardParticleData(LightPuff)
 {
    textureName = "core/art/effects/dustParticle";
    dragCoefficient      = 2.0;
@@ -320,7 +320,7 @@ datablock SphereEmitterData(LightPuffEmitter)
 // Liftoff dust
 //----------------------------------------------------------------------------
 
-datablock ParticleData(LiftoffDust)
+datablock BillboardParticleData(LiftoffDust)
 {
    dragCoefficient      = 1.0;
    gravityCoefficient   = -0.01;

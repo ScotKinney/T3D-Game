@@ -637,7 +637,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SphereEmitterNode(TPSmoke1) {
+   new ParticleEmitterNode(TPSmoke1) {
       emitter = "SmokeEmitter";
       sa_thetaMin = "0";
       sa_thetaMax = "90";
@@ -659,7 +659,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SphereEmitterNode(TPSmoke2) {
+   new ParticleEmitterNode(TPSmoke2) {
       emitter = "SmokeEmitter";
       sa_thetaMin = "0";
       sa_thetaMax = "90";
@@ -681,7 +681,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SphereEmitterNode(TPSmoke3) {
+   new ParticleEmitterNode(TPSmoke3) {
       emitter = "SmokeEmitter";
       sa_thetaMin = "0";
       sa_thetaMax = "90";
@@ -921,7 +921,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(ShipFire1) {
+      new ParticleEmitterNode(ShipFire1) {
          emitter = "MagellanFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "120";
@@ -967,7 +967,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke1) {
+      new ParticleEmitterNode(ShipSmoke1) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -989,7 +989,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipFire2) {
+      new ParticleEmitterNode(ShipFire2) {
          emitter = "MagellanFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "120";
@@ -1035,7 +1035,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke2) {
+      new ParticleEmitterNode(ShipSmoke2) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1057,7 +1057,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipFire3) {
+      new ParticleEmitterNode(ShipFire3) {
          emitter = "MagellanFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "120";
@@ -1103,7 +1103,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke3) {
+      new ParticleEmitterNode(ShipSmoke3) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1125,7 +1125,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipFire4) {
+      new ParticleEmitterNode(ShipFire4) {
          emitter = "MagellanFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "120";
@@ -1171,7 +1171,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke4) {
+      new ParticleEmitterNode(ShipSmoke4) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1193,7 +1193,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipFire5) {
+      new ParticleEmitterNode(ShipFire5) {
          emitter = "MagellanFireEmitter";
          sa_thetaMin = "0";
          sa_thetaMax = "120";
@@ -1239,7 +1239,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke5) {
+      new ParticleEmitterNode(ShipSmoke5) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";
@@ -1261,7 +1261,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode(ShipSmoke6) {
+      new ParticleEmitterNode(ShipSmoke6) {
          emitter = "SP2_TendrilSmokeA_E";
          sa_thetaMin = "0";
          sa_thetaMax = "90";

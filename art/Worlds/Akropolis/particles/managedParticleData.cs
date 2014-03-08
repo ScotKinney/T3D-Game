@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(ParticleSteamData)
+datablock BillboardParticleData(ParticleSteamData)
 {
    textureName = "core/art/particles/smoke2.png";
    animTexName = "core/art/particles/smoke2.png";

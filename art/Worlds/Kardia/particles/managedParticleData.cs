@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(ParticleRockImpactTop)
+datablock BillboardParticleData(ParticleRockImpactTop)
 {
    textureName = "art/Worlds/Kardia/Particles/topandtopspray.png";
    animTexName = "art/Worlds/Kardia/Particles/topandtopspray.png";
@@ -42,7 +42,7 @@ datablock SphereEmitterData(EmitterTopSpray)
    softParticles = "0";
 };
 
-datablock ParticleData(ParticleMainFalls01_Cave)
+datablock BillboardParticleData(ParticleMainFalls01_Cave)
 {
    textureName = "art/Worlds/Kardia/Particles/mainfalls01.png";
    animTexName = "art/Worlds/Kardia/Particles/mainfalls01.png";

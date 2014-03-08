@@ -1222,7 +1222,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new SphereEmitterNode(campfireFlame_1) {
+         new ParticleEmitterNode(campfireFlame_1) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -1381,7 +1381,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new SphereEmitterNode(campfireFlame_2) {
+         new ParticleEmitterNode(campfireFlame_2) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -1538,7 +1538,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new SphereEmitterNode(campfireFlame_3) {
+         new ParticleEmitterNode(campfireFlame_3) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -1693,7 +1693,7 @@ new SimGroup(MissionGroup) {
                useCustomAmbientLighting = "0";
                useGradientRange = "0";
          };
-         new SphereEmitterNode(campfireFlame_4) {
+         new ParticleEmitterNode(campfireFlame_4) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -1932,7 +1932,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new SphereEmitterNode(campfireFlame_5) {
+         new ParticleEmitterNode(campfireFlame_5) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -2118,7 +2118,7 @@ new SimGroup(MissionGroup) {
                useCustomAmbientLighting = "0";
                useGradientRange = "0";
          };
-         new SphereEmitterNode(CampFireFlame_6) {
+         new ParticleEmitterNode(CampFireFlame_6) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -2326,7 +2326,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
          };
-         new SphereEmitterNode(campfireFlame_7) {
+         new ParticleEmitterNode(campfireFlame_7) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -2457,7 +2457,7 @@ new SimGroup(MissionGroup) {
                useCustomAmbientLighting = "0";
                useGradientRange = "0";
          };
-         new SphereEmitterNode(campfireFlame_8) {
+         new ParticleEmitterNode(campfireFlame_8) {
             emitter = "GenericFireEmitter";
             sa_thetaMin = "1";
             sa_thetaMax = "52";
@@ -2647,7 +2647,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new SphereEmitterNode(ShuttleTP) {
+      new ParticleEmitterNode(ShuttleTP) {
          emitter = "PCO_ExplosionSpirals_E";
          sa_thetaMin = "0";
          sa_thetaMax = "0";
@@ -2686,7 +2686,7 @@ new SimGroup(MissionGroup) {
             pathToRoot = "http://www.bloodclans.com/stream/";
             subscriberOnly = "1";
       };
-      new SphereEmitterNode(ShuttleTP1) {
+      new ParticleEmitterNode(ShuttleTP1) {
          emitter = "PCO_ExplosionSpirals_E";
          sa_thetaMin = "0";
          sa_thetaMax = "0";

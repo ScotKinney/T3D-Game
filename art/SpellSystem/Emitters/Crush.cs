@@ -1,4 +1,4 @@
-datablock ParticleData(CrushParticle : DefaultParticle)
+datablock BillboardParticleData(CrushParticle : DefaultParticle)
 {
    sizes[0] = "0.1";
    sizes[1] = "0.15";

@@ -1,5 +1,5 @@
 
-datablock ParticleData(GenericFire)
+datablock BillboardParticleData(GenericFire)
 {
    textureName          = "art/Packs/env/fire/smokeCampFire";
    dragCoefficient      = 0.0;
@@ -46,7 +46,7 @@ datablock SphereEmitterData(GenericFireEmitter)
    softParticles = "0";
 };
 
-datablock SphereEmitterNodeData(GenericFireEmitterNode)
+datablock ParticleEmitterNodeData(GenericFireEmitterNode)
 {
    timeMultiple = 1;
 };

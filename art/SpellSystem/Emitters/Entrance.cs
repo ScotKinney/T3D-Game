@@ -1,5 +1,5 @@
 
-datablock ParticleData(TeleporterFlash : DefaultParticle)
+datablock BillboardParticleData(TeleporterFlash : DefaultParticle)
 {
    dragCoefficient = "5";
    inheritedVelFactor = "0";
@@ -33,7 +33,7 @@ datablock SphereEmitterData(TeleportFlash_Emitter : DefaultEmitter)
 };
 
 // Particles to use for the emitter at the teleporter
-datablock ParticleData(TeleporterParticles)
+datablock BillboardParticleData(TeleporterParticles)
 {
    lifetimeMS = "750";
    lifetimeVarianceMS = "100";
@@ -77,7 +77,7 @@ datablock SphereEmitterData(TeleportEmitter)
    blendStyle = "ADDITIVE";
 };
 
-datablock ParticleData(RocketSplashParticle)
+datablock BillboardParticleData(RocketSplashParticle)
 {
    dragCoefficient = 1;
    windCoefficient = 0.9;

@@ -56,7 +56,7 @@ function AOEImpact::AOEFireballCallback(%this, %src, %tgt)
 function AoEFireballProjectile::onCollision( %this, %obj, %col,                                              
                                              %fade, %pos, %norm) 
 {    
-   %blast = new SphereEmitterNode(){       
+   %blast = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = FireballBlastEmitter;       
       position = %pos;    

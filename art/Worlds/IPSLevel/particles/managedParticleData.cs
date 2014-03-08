@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(ParticleRockImpactInner01)
+datablock BillboardParticleData(ParticleRockImpactInner01)
 {
    textureName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
    animTexName = "art/Worlds/IPSLevel/particles/rock_impact_1_inner.png";
@@ -113,7 +113,7 @@ datablock GroundEmitterData(gr_DefaultEmitter)
    radius = "1";
 };
 
-datablock ParticleData(StarMaskParticle : DefaultParticle)
+datablock BillboardParticleData(StarMaskParticle : DefaultParticle)
 {
    textureName = "core/art/particles/flare.png";
    animTexName = "core/art/particles/flare.png";

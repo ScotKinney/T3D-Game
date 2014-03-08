@@ -2,7 +2,7 @@
 //----------------------------- PROJECTILE EMITTERS ----------------------------
 //------------------------------------------------------------------------------
 
-datablock ParticleData(FrostShardParticles)
+datablock BillboardParticleData(FrostShardParticles)
 {
    HighResTexture       = "core/art/particles/flare.png";
    //MidResTexture        = "art/shapes/particles/smokeM";

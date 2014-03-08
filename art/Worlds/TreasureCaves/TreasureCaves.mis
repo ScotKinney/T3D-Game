@@ -7386,7 +7386,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new SphereEmitterNode() {
+      new ParticleEmitterNode() {
          emitter = "shrine_fire_emitter";
          sa_thetaMin = "0";
          sa_thetaMax = "100";

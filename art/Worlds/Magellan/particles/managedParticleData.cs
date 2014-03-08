@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(MagellanFireParticles)
+datablock BillboardParticleData(MagellanFireParticles)
 {
    textureName = "core/art/particles/fireball.png";
    gravityCoefficient = "-0.202686";
@@ -38,7 +38,7 @@ datablock SphereEmitterData(MagellanFireEmitter)
    thetaMax = "120";
 };
 
-datablock ParticleData(SP2_TendrilSmokeA_P)
+datablock BillboardParticleData(SP2_TendrilSmokeA_P)
 {
    textureName           = "art/Worlds/Magellan/particles/sp2_tendrilSmoke";
    dragCoeffiecient      = 0.5;

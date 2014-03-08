@@ -2,7 +2,7 @@
 //---------------------- Teleport Particles and Emitters -----------------------
 //------------------------------------------------------------------------------
 
-datablock ParticleData(APParticle : DefaultParticle)
+datablock BillboardParticleData(APParticle : DefaultParticle)
 {
    textureName = "core/art/particles/flare.png";
    animTexName = "core/art/particles/flare.png";
@@ -37,7 +37,7 @@ datablock SphereEmitterData(APCloudEmitter)
    lifetimeMS = 2000;
 };
 
-datablock ParticleData(APSpiralParticle : DefaultParticle)
+datablock BillboardParticleData(APSpiralParticle : DefaultParticle)
 {
    textureName = "core/art/particles/sparkle.png";
    animTexName = "core/art/particles/sparkle.png";
@@ -103,7 +103,7 @@ datablock GraphEmitterData(AP_A_DnSpiralEmitter : AP_L_DnSpiralEmitter)
    Reverse = false;
 };
 
-datablock ParticleData(APMaskParticle : DefaultParticle)
+datablock BillboardParticleData(APMaskParticle : DefaultParticle)
 {
    textureName = "core/art/particles/sparkle.png";
    animTexName = "core/art/particles/sparkle.png";

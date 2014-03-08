@@ -18,7 +18,7 @@ function LightningBolt::onChannelBegin(%this, %spell, %src)
    %spell.getSource().ForceAnimation(true, "CastSpell1");
    %src = %spell.getsource();
    %pos = %src.position;
-   %spell.baseEmitter = new SphereEmitterNode(){       
+   %spell.baseEmitter = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = LightningBall;       
       position = %pos;    
@@ -55,7 +55,7 @@ function LightningBolt::onCast(%this, %spell, %src, %pos)
 function LightningProjectile::onCollision(%this, %obj, %col) 
 {  
    %pos = %col.position;  
-   %blast = new SphereEmitterNode(){       
+   %blast = new ParticleEmitterNode(){       
       dataBlock = DefaultEmitterNodeData;       
       emitter = LightningBuzz;       
       position = %pos;    

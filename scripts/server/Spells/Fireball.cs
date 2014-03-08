@@ -16,16 +16,16 @@ function FireballSpell::onChannelBegin(%this, %spell)
    // Optional: This line forces the player into an animation and 
    // roots it.
    %spell.getSource().ForceAnimation(true, "CastSpell1");
-   %spell.baseEmitter = new GraphEmitterNode()
+   %spell.baseEmitter = new ParticleEmitterNode()
    {
-      dataBlock = g_defaultNode;
+      dataBlock = DefaultEmitterNodeData;
       emitter = FireballChannelEmitterBASE;
       ParticleBehaviour[0] = ChannelAttraction;
       standAloneEmitter = true;
       position = %spell.getSource().position;
       Grounded = true;
    };
-   %spell.baseEmitter.setBehaviorObject(0, %spell.getSource());
+   //%spell.baseEmitter.setBehaviorObject(0, %spell.getSource());
 }
 
 function FireballSpell::onChannelEnd(%this, %spell)

@@ -1,6 +1,6 @@
 // Beam: Base Beam Portion
 // ---------------
-datablock ParticleData(BeamParticle)
+datablock BillboardParticleData(BeamParticle)
 {
    textureName          = "core/art/particles/orb";
    dragCoefficient      = 0.0;
@@ -44,7 +44,7 @@ datablock SphereEmitterData(BeamEmitter)
 };
 
 // Haze particle
-datablock ParticleData(CK_SnowHazeA_P)
+datablock BillboardParticleData(CK_SnowHazeA_P)
 {
   textureName          = "art/Worlds/Illura/particles/ck_snow_haze";
   dragCoeffiecient     = 0.5;
@@ -86,7 +86,7 @@ datablock SphereEmitterData(CK_SnowFormationHaze_E)
   blendStyle = "NORMAL";
 };
 
-datablock ParticleData(SSJ_HandBoneGlow_D_P)
+datablock BillboardParticleData(SSJ_HandBoneGlow_D_P)
 {
    textureName          = "art/Worlds/Illura/particles/ssj_hand_glow";
    dragCoeffiecient     = 0;

@@ -41,7 +41,7 @@ datablock SFXProfile(SteedWaterBreathSound)
 //----------------------------------------------------------------------------
 // Splash
 //----------------------------------------------------------------------------
-datablock ParticleData(HorseSplashMist)
+datablock BillboardParticleData(HorseSplashMist)
 {
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.05;
@@ -81,7 +81,7 @@ datablock SphereEmitterData(HorseSplashMistEmitter)
 };
 
 
-datablock ParticleData(HorseBubbleParticle)
+datablock BillboardParticleData(HorseBubbleParticle)
 {
    dragCoefficient      = 0.0;
    gravityCoefficient   = -0.50;
@@ -117,7 +117,7 @@ datablock SphereEmitterData(HorseBubbleEmitter)
    particles = "HorseBubbleParticle";
 };
 
-datablock ParticleData(HorseFoamParticle)
+datablock BillboardParticleData(HorseFoamParticle)
 {
    dragCoefficient      = 2.0;
    gravityCoefficient   = -0.05;
@@ -155,7 +155,7 @@ datablock SphereEmitterData(HorseFoamEmitter)
    particles = "HorseFoamParticle";
 };
 
-datablock ParticleData( HorseFoamDropletsParticle )
+datablock BillboardParticleData( HorseFoamDropletsParticle )
 {
    dragCoefficient      = 1;
    gravityCoefficient   = 0.2;
@@ -191,7 +191,7 @@ datablock SphereEmitterData( HorseFoamDropletsEmitter )
    particles = "HorseFoamDropletsParticle";
 };
 
-datablock ParticleData( HorseWakeParticle )
+datablock BillboardParticleData( HorseWakeParticle )
 {
    textureName          = "core/art/particles/wake";
    dragCoefficient     = "0.0";
@@ -247,7 +247,7 @@ datablock SphereEmitterData( HorseWakeEmitter )
    particles = "HorseWakeParticle";
 };
 
-datablock ParticleData( HorseSplashParticle )
+datablock BillboardParticleData( HorseSplashParticle )
 {
    dragCoefficient      = 1;
    gravityCoefficient   = 0.2;
@@ -313,7 +313,7 @@ datablock SplashData(HorseSplash)
 //----------------------------------------------------------------------------
 // Foot puffs
 //----------------------------------------------------------------------------
-datablock ParticleData(HorsePuff)
+datablock BillboardParticleData(HorsePuff)
 {
    textureName = "core/art/effects/dustParticle";
    dragCoefficient      = 2.0;
@@ -353,7 +353,7 @@ datablock SphereEmitterData(HorsePuffEmitter)
 //----------------------------------------------------------------------------
 // Liftoff dust
 //----------------------------------------------------------------------------
-datablock ParticleData(HorseDust)
+datablock BillboardParticleData(HorseDust)
 {
    dragCoefficient      = 1.0;
    gravityCoefficient   = -0.01;

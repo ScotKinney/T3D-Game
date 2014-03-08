@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ParticleEffect>
   <Emitters>
-    <Emitter Type="GraphEmitter" x="0" y="0" z="0" datablock="g_defaultNode" emitter="AP_L_UpSpiralEmitter" Start="0" End="1">
+    <Emitter Type="GraphEmitter" x="0" y="0" z="0" datablock="DefaultEmitterNodeData" emitter="AP_L_UpSpiralEmitter" Start="0" End="1">
     </Emitter>
-    <Emitter Type="GraphEmitter" x="0" y="0" z="0" datablock="g_defaultNode" emitter="AP_L_DnSpiralEmitter" Start="0" End="1">
+    <Emitter Type="GraphEmitter" x="0" y="0" z="0" datablock="DefaultEmitterNodeData" emitter="AP_L_DnSpiralEmitter" Start="0" End="1">
     </Emitter>
     <Emitter Type="SphereEmitter" x="0" y="0" z="0" datablock="DefaultEmitterNodeData" emitter="APCloudEmitter" Start="0" End="0.5">
       <Value Ease="True" Name="EjectionOffset" DeltaValue="0.1">
@@ -13,7 +13,7 @@
         <Point X="1" Y="0.5" Easing="cubic" EaseIn="True" EaseOut="True" />
       </Value>
     </Emitter>
-    <Emitter Type="MaskEmitter" x="0" y="0" z="0" datablock="msk_DefaultNode" emitter="APMaskEmitter" Start="0" End="0.3">
+    <Emitter Type="MaskEmitter" x="0" y="0" z="0" datablock="DefaultEmitterNodeData" emitter="APMaskEmitter" Start="0" End="0.3">
     </Emitter>
   </Emitters>
   <Sounds>

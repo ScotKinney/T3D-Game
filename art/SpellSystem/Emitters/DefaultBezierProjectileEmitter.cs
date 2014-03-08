@@ -1,4 +1,4 @@
-datablock ParticleData(DefaultBezierProjectileParticles)
+datablock BillboardParticleData(DefaultBezierProjectileParticles)
 {
    textureName          = "core/art/particles/spark";
    dragCoeffiecient     = 0.0;

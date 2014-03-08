@@ -59,7 +59,7 @@ datablock SFXProfile(BuggysoftImpact)
 };
 
 
-datablock ParticleData(TireParticle)
+datablock BillboardParticleData(TireParticle)
 {
    textureName = "core/art/particles/dustParticle";
    dragCoefficient      = "1.99902";

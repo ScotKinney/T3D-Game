@@ -6,7 +6,7 @@
 // This is the default save location for any Particle datablocks created in the
 // Particle Editor (this script is executed from onServerCreated())
 
-datablock ParticleData(PCO_ExplosionFire_pRot_P)
+datablock BillboardParticleData(PCO_ExplosionFire_pRot_P)
 {
   textureName          = "art/Worlds/TheBog/particles/PCO_tiled_parts";
   textureCoords[0]     = "0.0 0.5";
@@ -37,13 +37,13 @@ datablock ParticleData(PCO_ExplosionFire_pRot_P)
   times[3]             = 1.0;   
 };
 
-datablock ParticleData(PCO_ExplosionFire_nRot_P : PCO_ExplosionFire_pRot_P)
+datablock BillboardParticleData(PCO_ExplosionFire_nRot_P : PCO_ExplosionFire_pRot_P)
 {
   spinRandomMin        = -900.0;
   spinRandomMax        = -700.0;
 };
 
-datablock ParticleData(PCO_SparkleA_P)
+datablock BillboardParticleData(PCO_SparkleA_P)
 {
    dragCoeffiecient     = 0.5;
    gravityCoefficient   = 1.0;
@@ -70,7 +70,7 @@ datablock ParticleData(PCO_SparkleA_P)
    textureCoords[3]     = "0.5 0.0";
 };
 
-datablock ParticleData(PCO_SparkleB_P : PCO_SparkleA_P)
+datablock BillboardParticleData(PCO_SparkleB_P : PCO_SparkleA_P)
 { 
   sizes[0]             = 0.5;
   sizes[1]             = 0.5;
@@ -83,7 +83,7 @@ datablock ParticleData(PCO_SparkleB_P : PCO_SparkleA_P)
   textureCoords[3]     = "0.75 0.00";
 };
 
-datablock ParticleData(PCO_SparkleA_pink_P : PCO_SparkleA_P)
+datablock BillboardParticleData(PCO_SparkleA_pink_P : PCO_SparkleA_P)
 {
   gravityCoefficient   = -3*1.25;
   lifetimeMS           = 400*1.5;
@@ -95,7 +95,7 @@ datablock ParticleData(PCO_SparkleA_pink_P : PCO_SparkleA_P)
   textureCoords[3]     = "1.0 0.5";
 };
 
-datablock ParticleData(PCO_SparkleB_pink_P : PCO_SparkleB_P)
+datablock BillboardParticleData(PCO_SparkleB_pink_P : PCO_SparkleB_P)
 {
   gravityCoefficient   = -3*1.6;
   lifetimeMS           = 400*2.5;
