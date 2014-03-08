@@ -12,3 +12,12 @@ singleton Material(mat_rivergrass)
    forestWindEnabled = "1";
    materialTag0 = "Plants_GG";
 };
+
+singleton Material(rivergrass)
+{
+   mapTo = "rivergrass";
+   diffuseMap[0] = "rivergrass_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
