@@ -24,4 +24,5 @@ $AlterVerse::ArtPacks = "trees/default" TAB
    "props/BlackSmith" TAB
    "AI/horses" TAB
    "Cities/Akropolis" TAB
+   "Buildings/SP_Sparta" TAB
    "props/kardia";
