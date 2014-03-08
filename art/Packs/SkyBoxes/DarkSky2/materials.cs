@@ -9,7 +9,7 @@ new CubemapData(DarkSky2Cubemap)
 };
 
 singleton Material(DarkSky2)
-{
+{ 
    cubemap = "DarkSky2Cubemap";
    materialTag0 = "SkyBoxes";
 };
