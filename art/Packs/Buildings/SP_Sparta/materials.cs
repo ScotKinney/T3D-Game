@@ -72,10 +72,10 @@ singleton Material(svspartawindow1_wall3)
 singleton Material(svspartawindow2_wood1)
 {
    mapTo = "wood1";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawood1";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1.dds";
    specularPower[0] = "20";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawood1N.dds";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1N.dds";
    materialTag0 = "Miscellaneous";
 };
 
@@ -209,6 +209,14 @@ singleton Material(svspartadoorway5_wal1l)
 singleton Material(svspartadoorway5_trim2)
 {
    mapTo = "trim2";
+   diffuseMap[0] = "svspartatrim1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svspartawindow4_trim1)
+{
+   mapTo = "trim1";
    diffuseMap[0] = "svspartatrim1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
