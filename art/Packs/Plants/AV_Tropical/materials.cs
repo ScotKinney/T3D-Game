@@ -11,12 +11,11 @@ singleton Material(mat_Phila01)
    useAnisotropic[0] = "1";
    subSurface[0] = "1";
    subSurfaceColor[0] = "0.768628 1 0 1";
-   doubleSided = "1";
    alphaTest = "1";
    alphaRef = "127";
    forestWindEnabled = 1;
    pixelSpecular[0] = "1";
-   materialTag0 = "Plants_AV";
+   materialTag0 = "Plants_Phila_AV";
 };
 
 singleton Material(mat_TropicFern01_GG)
@@ -29,7 +28,6 @@ singleton Material(mat_TropicFern01_GG)
    specularMap[0] = "fern_image2_SPEC.dds";
    subSurface[0] = "0";
    subSurfaceColor[0] = "0.643137 0.815686 0.321569 1";
-   doubleSided = "1";
    translucentBlendOp = "Sub";
    alphaTest = "1";
    alphaRef = "147";
@@ -37,7 +35,7 @@ singleton Material(mat_TropicFern01_GG)
    forestWindEnabled = 1;
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Plants_AV";
+   materialTag0 = "Plants_TropicFern_AV";
 };
 
 singleton Material(mat_TropicFernSprout_GG)
@@ -47,7 +45,6 @@ singleton Material(mat_TropicFernSprout_GG)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
    translucentBlendOp = "Sub";
    alphaTest = "1";
    alphaRef = "167";
@@ -55,5 +52,5 @@ singleton Material(mat_TropicFernSprout_GG)
    normalMap[0] = "ferntop.dds";
    pixelSpecular[0] = "1";
    specularMap[0] = "ferntop.dds";
-   materialTag0 = "Plants_AV";
+   materialTag0 = "Plants_TropicFernSprout_AV";
 };
