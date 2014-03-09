@@ -103,7 +103,7 @@ datablock TSForestItemData(TallPalmLeaning)
 datablock TSForestItemData(BananaMature)
 {
    internalName = "BananaMature";
-   shapeFile = "art/packs/trees/SP_Sparta/bananatree_mature.DAE";
+   shapeFile = "art/packs/trees/banana/bananatree_mature.DAE";
    radius = "1";
    trunkBendScale = "0.001";
    branchAmp = "0.04";
@@ -152,7 +152,7 @@ datablock TSForestItemData(Phila2)
 datablock TSForestItemData(TropicFern2)
 {
    internalName = "TropicFern2";
-   shapeFile = "art/packs/Plants/SP_Sparta/TropicFern01.DAE";
+   shapeFile = "art/packs/Plants/AV_Tropical/TropicFern01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";
