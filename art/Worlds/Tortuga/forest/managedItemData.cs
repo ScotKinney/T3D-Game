@@ -76,7 +76,7 @@ datablock TSForestItemData(BroadLeaf)
 datablock TSForestItemData(Fern_Plant)
 {
    internalName = "Fern_Plant";
-   shapeFile = "art/Packs/veg/fern/fern.DAE";
+   shapeFile = "art/Packs/Plants/SP_Caerule/fern.DAE";
    trunkBendScale = "0.002";
    branchAmp = "0.1";
    detailAmp = "0.2";
