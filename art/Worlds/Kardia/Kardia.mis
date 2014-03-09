@@ -1886,7 +1886,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1906,7 +1906,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1926,7 +1926,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1946,7 +1946,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1966,7 +1966,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1986,7 +1986,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2006,7 +2006,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2026,7 +2026,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9291,7 +9291,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9311,7 +9311,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9331,7 +9331,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9351,7 +9351,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9371,7 +9371,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9391,7 +9391,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/veg/bigleaf/bigleaf.dae";
+         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";

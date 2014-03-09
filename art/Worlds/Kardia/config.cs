@@ -2,6 +2,7 @@
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "SkyBoxes/DefaultNight" TAB
+   "SkyBoxes/DarkSky2" TAB
    "GroundCover/Default" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
@@ -29,13 +30,9 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Props/AV_Targets" TAB
    "Signs/BoyersBog" TAB
    "Signs/Village" TAB
-   "SkyBoxes/DarkSky2" TAB
-   "Plants/GG_RiverGrass" TAB
    "Plants/SP_Sparta" TAB
-   "Trees/SP_Sparta" TAB
-   "trees/banana" TAB
-   "trees/canopy" TAB
-   "veg/bigleaf" TAB
-   "veg/Bush01" TAB
-   "veg/Phila01";
+   "Plants/AV_Tropical" TAB
+   "Plants/AV_Conifer" TAB
+   "Trees/Canopy" TAB
+   "Trees/SP_Sparta";
    
