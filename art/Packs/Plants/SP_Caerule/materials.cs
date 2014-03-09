@@ -14,3 +14,18 @@ singleton Material(mat_broadleaf_GG)
    materialTag0 = "Plants_BroadLeaf_GG";
 };
 
+singleton Material(mat_fern_GG)
+{
+   mapTo = "fern";   
+   diffuseMap[0] = "fern_diffuse_transparency.dds";
+   normalMap[0] = "fern_normal.dds";
+   specular = "1 1 0.85 0.25";
+   specularPower = 10;
+   translucent = true;
+   translucentZWrite = true;
+   alphaTest = true;
+   alphaRef = 84;
+   forestWindEnabled = 1; 
+   specularMap[0] = "fern_specular.dds";
+   materialTag0 = "Plants_Fern_GG";
+};
