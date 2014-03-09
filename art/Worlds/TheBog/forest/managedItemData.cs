@@ -30,7 +30,7 @@ datablock TSForestItemData(Fern_Vert_01)
 datablock TSForestItemData(Plant001)
 {
    internalName = "Plant001";
-   shapeFile = "art/Packs/veg/largeleaf/Plant001.DAE";
+   shapeFile = "art/Packs/Plants/AV_Conifer/Plant001.DAE";
    radius = "0.5";
    windScale = "1";
    trunkBendScale = "0.01";
@@ -42,7 +42,7 @@ datablock TSForestItemData(Plant001)
 datablock TSForestItemData(Bush2)
 {
    internalName = "Bush2";
-   shapeFile = "art/Packs/veg/bush01/Bush01.DAE";
+   shapeFile = "art/Packs/Plants/AV_Conifer/Bush01.DAE";
    radius = "0.7";
    windScale = "10";
    branchAmp = "0.03";
@@ -76,7 +76,7 @@ datablock TSForestItemData(Sequia_02)
 datablock TSForestItemData(FiddleLeaf2)
 {
    internalName = "FiddleLeaf2";
-   shapeFile = "art/Packs/veg/fiddleleaf/FiddleLeaf.DAE";
+   shapeFile = "art/Packs/Plants/AV_Conifer/FiddleLeaf.DAE";
    radius = "0.25";
    windScale = "1";
    branchAmp = "0.04";
@@ -114,7 +114,7 @@ datablock TSForestItemData(DeadStandingPine02)
 datablock TSForestItemData(Fiscus2)
 {
    internalName = "Fiscus2";
-   shapeFile = "art/Packs/veg/fiscus/Fiscus01.DAE";
+   shapeFile = "art/Packs/Plants/AV_Conifer/Fiscus01.DAE";
    windScale = "8";
    trunkBendScale = "0.001";
    branchAmp = "0.03";
