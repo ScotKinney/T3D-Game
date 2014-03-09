@@ -155,7 +155,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "5196";
+         botBelongsToMe = "2982";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -180,7 +180,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "5197";
+         botBelongsToMe = "2983";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -1067,7 +1067,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-46.7417 12.3958 21.802";
+      position = "-46.0967 12.3958 21.802";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
