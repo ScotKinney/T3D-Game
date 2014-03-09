@@ -3,22 +3,19 @@ $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "trees/banana" TAB
    "trees/canopy" TAB
    "trees/longleaf" TAB
-   "trees/palm" TAB
    "veg/bigleaf" TAB
-   "veg/broadleaf" TAB
+   "veg/SP_Caerule" TAB
    "veg/deadbush" TAB
    "veg/fern" TAB
-   "env/GroundCover" TAB
-   "env/underwaterCave" TAB
-   "env/volcano" TAB
-   "env/waterfall" TAB
+   "GroundCover/Default" TAB
+   "Props/underwaterCave" TAB
+   "Props/GG_PacificIsland" TAB
+   "Props/waterfallRock" TAB
    "skies/default" TAB
    "rocks/default" TAB
-   "props/clanFort" TAB
-   "props/default" TAB
+   "Buildings/Fort_Wood" TAB
    "props/medcity" TAB
    "props/physShapes1" TAB
-   "props/signs" TAB
    "AI/Sharks" TAB
    "AI/Horses";
    
