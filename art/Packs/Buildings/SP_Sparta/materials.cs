@@ -218,3 +218,11 @@ singleton Material(svspartawindow4_trim1)
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SPSparta";
 };
+
+singleton Material(svspartadoor1a_door2)
+{
+   mapTo = "door2";
+   diffuseMap[0] = "svspartandoor2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
