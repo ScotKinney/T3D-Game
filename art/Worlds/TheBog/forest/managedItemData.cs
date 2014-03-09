@@ -19,7 +19,7 @@ datablock TSForestItemData(DTSSequia)
 datablock TSForestItemData(Fern_Vert_01)
 {
    internalName = "Fern_Vert_01";
-   shapeFile = "art/Packs/veg/fern/Fern_Vert_01.DAE";
+   shapeFile = "art/Packs/Plants/AV_Ferns/Fern_Vert_01.DAE";
    radius = "0.5";
    windScale = "1";
    branchAmp = "0.02";
@@ -87,7 +87,7 @@ datablock TSForestItemData(FiddleLeaf2)
 datablock TSForestItemData(Fern_Vert_02)
 {
    internalName = "Fern_Vert_02";
-   shapeFile = "art/Packs/veg/fern/Fern_Vert_02.DAE";
+   shapeFile = "art/Packs/Plants/AV_Ferns/Fern_Vert_02.DAE";
    radius = "0.25";
    windScale = "1";
    branchAmp = "0.02";
