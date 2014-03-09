@@ -11,7 +11,7 @@
 datablock TSForestItemData(DTSSequia)
 {
    internalName = "DTSSequia";
-   shapeFile = "art/Packs/trees/pines/DTSSequia.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/DTSSequia.DAE";
    collidable = "1";
    radius = "0.5";
 };
@@ -54,7 +54,7 @@ datablock TSForestItemData(Bush2)
 datablock TSForestItemData(DriPine01)
 {
    internalName = "DriPine01";
-   shapeFile = "art/Packs/trees/pines/DriPine01.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/DriPine01.DAE";
    windScale = "1";
    trunkBendScale = "0";
    branchAmp = "0.04";
@@ -65,7 +65,7 @@ datablock TSForestItemData(DriPine01)
 datablock TSForestItemData(Sequia_02)
 {
    internalName = "Sequia_02";
-   shapeFile = "art/Packs/trees/pines/Sequia_02.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/Sequia_02.DAE";
    tightnessCoefficient = "0.04";
    windScale = "2";
    branchAmp = "0.05";
@@ -98,7 +98,7 @@ datablock TSForestItemData(Fern_Vert_02)
 datablock TSForestItemData(scrubPine)
 {
    internalName = "scrubPine";
-   shapeFile = "art/Packs/trees/pines/scrubPine.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/scrubPine.DAE";
    windScale = "1";
    branchAmp = "0.02";
    detailAmp = "0.02";
@@ -108,7 +108,7 @@ datablock TSForestItemData(scrubPine)
 datablock TSForestItemData(DeadStandingPine02)
 {
    internalName = "DeadStandingPine02";
-   shapeFile = "art/Packs/trees/pines/DeadStandingPine02.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/DeadStandingPine02.DAE";
 };
 
 datablock TSForestItemData(Fiscus2)
@@ -125,32 +125,13 @@ datablock TSForestItemData(Fiscus2)
 datablock TSForestItemData(DeadStandingPine01)
 {
    internalName = "DeadStandingPine01";
-   shapeFile = "art/Packs/trees/pines/DeadStandingPine01.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/DeadStandingPine01.DAE";
 };
-
-//datablock TSForestItemData(ReedMod01)
-//{
-   //internalName = "ReedMod01";
-   //shapeFile = "art/worlds/theBog/Forest/Plants/Reeds/ReedMod01.DAE";
-   //radius = "0.5";
-   //windScale = "2";
-   //branchAmp = "0.2";
-   //detailAmp = "0.04";
-   //detailFreq = "0.05";
-   //trunkBendScale = "0.002";
-//};
-
-//datablock TSForestItemData(lillypad01)
-//{
-   //internalName = "lillypad01";
-   //shapeFile = "art/worlds/theBog/Forest/Plants/LillyPad/lillypad01.DAE";
-   //radius = "0.5";
-//};
 
 datablock TSForestItemData(SprucePine2)
 {
    internalName = "SprucePine2";
-   shapeFile = "art/Packs/trees/pines/SprucePine001.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/SprucePine001.DAE";
    radius = "0.75";
    windScale = "1";
    branchAmp = "0.04";
@@ -161,5 +142,5 @@ datablock TSForestItemData(SprucePine2)
 datablock TSForestItemData(PinTree002)
 {
    internalName = "PinTree002";
-   shapeFile = "art/Packs/trees/pines/PinTree002.DAE";
+   shapeFile = "art/Packs/trees/AV_Conifer/PinTree002.DAE";
 };
