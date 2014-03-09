@@ -289,7 +289,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-         dataFile = $WorldPath @ "/Tortuga.forest";
+         dataFile = $WorldPath @ "forest/Tortuga.forest";
          lodReflectScalar = "2";
             regen = "1";
       };
@@ -354,7 +354,7 @@ new SimGroup(MissionGroup) {
             viewerHeight = "1.004";
       };
       new CloudLayer(freejackClouds) {
-         texture = "art/Packs/skies/default/clouds/clouds_normal_displacement";
+         texture = "art/Packs/Clouds/Default/clouds_normal_displacement";
          texScale[0] = "1";
          texScale[1] = "1";
          texScale[2] = "3";
