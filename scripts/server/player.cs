@@ -952,7 +952,7 @@ function Player::playLeaveEffect( %this )
    };
    %effectObj.schedule(3000, delete);
 
-   %this.startFade(1000, 250, true);
+   %this.startFade(1000, 600, true);
 }
 
 function Player::playArriveEffect( %this )

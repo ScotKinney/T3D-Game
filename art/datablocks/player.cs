@@ -107,6 +107,7 @@ datablock PlayerData(DefaultPlayerData)
    footPuffRadius = 0.25;
 
    dustEmitter = LiftoffDustEmitter;
+   damageEmitter = DamageNumberEmitter;
 
    splash = DefaultSplash;
    splashVelocity = 4.0;

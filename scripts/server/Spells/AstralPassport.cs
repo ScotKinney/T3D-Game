@@ -26,7 +26,7 @@ function AstralPassport::onCast(%this, %spell)
    };
    %effectObj.schedule(3000, delete);
 
-   %src.startFade(1000, 250, true);
+   %src.startFade(1000, 600, true);
    %newPos = %this.findAppearPos(%src, %start);
    %this.schedule(3000, "Reappear", %src, %newPos);
 }

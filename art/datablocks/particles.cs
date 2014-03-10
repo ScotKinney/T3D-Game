@@ -457,7 +457,7 @@ datablock SphereEmitterData(shrine_fire_emitter)
    thetaMin = "0";
 };
 
-datablock BillboardParticleData(damageAmountParticle)
+datablock BillboardParticleData(BlBdamageAmountParticle)
 {
    textureName          = "core/art/particles/SpriteNumbers01";
    dragCoeffiecient     = 0;
@@ -488,13 +488,41 @@ datablock BillboardParticleData(damageAmountParticle)
    dragCoefficient = 0.25;
    spinSpeed = "1.0";
    animTexName = "core/art/particles/SpriteNumbers01";
-   textureCoords[0]     = "0.375 0.166667";
-   textureCoords[1]     = "0.375 0.2474";
-   textureCoords[2]     = "0.4974 0.2474";
-   textureCoords[3]     = "0.4974 0.166667";
+   textureCoords[0]     = "0.375 0.166667";  // 0, 0
+   textureCoords[1]     = "0.375 0.2474";    // 0, 1
+   textureCoords[2]     = "0.4974 0.2474";   // 1, 1
+   textureCoords[3]     = "0.4974 0.166667"; // 1, 0
 };
 
-datablock SphereEmitterData(NumberTestEmitter)
+datablock SpriteParticleData(damageAmountParticle)
+{
+   textureName          = "core/art/particles/SpriteNumbers01";
+   gridSize             = "8 12";
+   dragCoeffiecient     = 0;
+   gravityCoefficient   = -0.03;
+   inheritedVelFactor   = "0.8";
+   constantAcceleration = "0";
+   lifetimeMS           = "3000";
+   lifetimeVarianceMS   = "500";
+   useInvAlpha =  false;
+   spinRandomMin = -5;
+   spinRandomMax = 5;
+
+   sizes[0]      = 0.1;
+   sizes[1]      = 0.4;
+   sizes[2]      = 0.3;
+   sizes[3]      = 0;
+
+   times[0]      = 0.0;
+   times[1]      = 0.35;
+   times[2]      = 0.8;
+   times[3]      = 1;
+   
+   dragCoefficient = 0.25;
+   spinSpeed = "1.0";
+};
+
+datablock SpriteEmitterData(DamageNumberEmitter)
 {
    particles = "damageAmountParticle";
    blendStyle = "NORMAL";
@@ -506,4 +534,5 @@ datablock SphereEmitterData(NumberTestEmitter)
    thetaMin = "15";
    thetaMax = "30";
    phiVariance = "360";
+   useEmitterColors = true;
 };
