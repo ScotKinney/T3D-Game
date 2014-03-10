@@ -6,11 +6,12 @@ singleton Material(mat_bigleaf_GG)
    specularMap[0] = "bigleaf_specular.dds";
    specular = "1 1 0.75 0.25";
    specularPower = 10;
-   translucent = true;
-   translucentZWrite = true;
+   translucent = "0";
+   translucentZWrite = "0";
    alphaTest = true;
    alphaRef = 84;
-   forestWindEnabled = 1;   
+   forestWindEnabled = 1;
+   useAnisotropic[0] = "1";   
    materialTag0 = "Plants_GG";
 };
 
@@ -25,6 +26,7 @@ singleton Material(mat_deadbush_GG)
    alphaRef = 84;
    specularPower[0] = "54";
    forestWindEnabled = "1";
+   useAnisotropic[0] = "1";
    materialTag0 = "Plants_GG";
 };
 
@@ -37,9 +39,8 @@ singleton Material(mat_longleaf_GG)
    pixelSpecular = "1";
    specular = "1 1 1 0"; // 1 1 0 0 = pure yellow
    specularPower = "128";
-   translucent = true;
-   translucentBlendOp = None;
-   translucentZWrite = true;
+   translucent = "0";
+   translucentZWrite = "0";
    alphaTest = true;
    alphaRef = "114";
    forestWindEnabled = 1;   
