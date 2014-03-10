@@ -371,6 +371,7 @@ package GameCore
          %inventory = %inventory TAB GrenadeWeapon.ItemID SPC "10";
          %inventory = %inventory TAB BBQ_Ribs_Potion.ItemID SPC "10";
          %inventory = %inventory TAB Shards_of_Ice_Crystal.ItemID SPC "10";
+         %inventory = %inventory TAB Invisibility_Rune.ItemID SPC "100";
          %inventory = %inventory TAB Tokara_Mushroom.ItemID SPC "20";
          %inventory = %inventory TAB FlintlockWeapon.ItemID SPC "1";
          %inventory = %inventory TAB ShotAmmo.ItemID SPC "50";
