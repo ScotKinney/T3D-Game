@@ -179,3 +179,20 @@ singleton Material(mat_SpartanDoorYellow)
 
 ////////////////////////////////////
 
+
+singleton Material(svspartapillar7_wal1l)
+{
+   mapTo = "wal1l";
+   diffuseMap[0] = "svspartawall1";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svspartapillar7_iconic3)
+{
+   mapTo = "iconic3";
+   diffuseMap[0] = "sv-ionic3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
