@@ -12,6 +12,7 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
    "Buildings/Spartan_Castle" TAB
+   "Buildings/Sh3d_Pergola" TAB
    "Buildings/Spartan_GuardTowers" TAB
    "Props/CaveEntrance" TAB
    "Props/RRGTS_Crates" TAB

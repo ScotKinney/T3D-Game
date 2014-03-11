@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.197068";
-         time = "0.197734";
+         startTime = "0.143805";
+         time = "0.16981";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -142,7 +142,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "10";
+            clockSynchEvent = "5670";
       };
       new SkyBox() {
          Material = "DarkSky2";
@@ -600,8 +600,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3966";
-         delayRespawn = "1653";
+         botBelongsToMe = "50881";
+         delayRespawn = "71212";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -626,8 +626,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9439";
-         delayRespawn = "849";
+         botBelongsToMe = "51092";
+         delayRespawn = "70832";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -652,7 +652,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3970";
+         botBelongsToMe = "11627";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -678,7 +678,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3971";
+         botBelongsToMe = "11628";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -704,8 +704,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9345";
-         delayRespawn = "1838";
+         botBelongsToMe = "50783";
+         delayRespawn = "71019";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -730,8 +730,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "10128";
-         delayRespawn = "1197";
+         botBelongsToMe = "51048";
+         delayRespawn = "70571";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -756,8 +756,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10795";
-         delayRespawn = "1435";
+         botBelongsToMe = "51084";
+         delayRespawn = "70801";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -782,8 +782,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "9792";
-         delayRespawn = "1049";
+         botBelongsToMe = "50803";
+         delayRespawn = "71141";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -808,7 +808,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3976";
+         botBelongsToMe = "11633";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -833,7 +833,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3977";
+         botBelongsToMe = "11634";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -1001,7 +1001,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(KarWalk2c) {
-         shapeName = "art/Packs/Buildings/Spartan_walkway/walkway2C.dts";
+         shapeName = "art/Packs/Buildings/Spartan_Walkway/walkway2C.dts";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -1097,114 +1097,114 @@ new SimGroup(MissionGroup) {
             whiteCapAmount = "10";
       };
       new ParticleEmitterNode(DockSplash51) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-17.0589 444.637 6.34251";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash61) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-25.5709 444.776 6.24927";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash611) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-37.2822 436.428 6.88704";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash6111) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-49.3945 436.428 6.88704";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash61111) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "1.0603 448.665 6.06052";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
    };
    new SimGroup(Boats_MainDocks) {
@@ -1212,7 +1212,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1228,7 +1228,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1244,7 +1244,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1260,7 +1260,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_boat.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1276,7 +1276,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Sail.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_Boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1292,7 +1292,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Sail.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_Boat_Sail.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1308,7 +1308,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_damaged.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_boat_damaged.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1324,7 +1324,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Oar.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_Boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1340,7 +1340,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Boats/MrN_boat_Oar.dts";
+         shapeName = "art/Packs/Props/MrN_Boats/MrN_Boat_Oar.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1870,7 +1870,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-24.3818 441.37 7.15502";
-            rotation = "0 0 1 60.5066";
+            rotation = "0 0 1 90";
             scale = "2 2 2";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1886,7 +1886,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1906,7 +1906,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1926,7 +1926,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1946,7 +1946,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1966,7 +1966,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1986,7 +1986,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2006,7 +2006,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2026,7 +2026,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2240,7 +2240,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2256,7 +2256,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2272,7 +2272,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2288,7 +2288,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2304,7 +2304,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2320,7 +2320,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2336,7 +2336,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2352,7 +2352,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Anvil.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Anvil.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2368,7 +2368,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Stool.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2384,7 +2384,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Vice.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Vice.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2400,7 +2400,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Stool.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2416,7 +2416,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponShopFireBowl) {
-         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
+         shapeName = "art/Packs/Props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2432,26 +2432,26 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(FireBowl2Fire) {
-         emitter = "shrine_fire_emitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "100";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "25";
-         sa_periodVarianceMS = "23";
-         sa_ejectionVelocity = "0.5";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "shrine_fire_emitter";
          dataBlock = "TorchFireEmitterNode";
          position = "4.12743 361.712 15.9035";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "25";
+            sa_ejectionVelocity = "0.5";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "23";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "100";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new PointLight() {
          radius = "5";
@@ -2507,7 +2507,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponShopFireBowl2) {
-         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
+         shapeName = "art/Packs/Props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2523,26 +2523,26 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(FireBowl2Fire2) {
-         emitter = "shrine_fire_emitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "100";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "25";
-         sa_periodVarianceMS = "23";
-         sa_ejectionVelocity = "0.5";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "shrine_fire_emitter";
          dataBlock = "TorchFireEmitterNode";
          position = "4.34546 374.777 15.962";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "25";
+            sa_ejectionVelocity = "0.5";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "23";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "100";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new PointLight() {
          radius = "5";
@@ -2750,7 +2750,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "5.12052 364.304 17.1429";
-         rotation = "0.580302 -0.571401 -0.580302 240";
+         rotation = "-0.580302 0.571401 0.580302 120";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3563,7 +3563,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Crates/MrN_BigBox.dts";
+         shapeName = "art/Packs/Props/MrN_Crates/MrN_BigBox.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3579,7 +3579,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotA.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_CeramicPotA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3636,7 +3636,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-41.8667 375.992 14.7738";
-         rotation = "-0.992941 -0.0674446 0.0975633 79.7102";
+         rotation = "-0.992941 -0.0674446 0.0975633 79.71";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3982,7 +3982,7 @@ new SimGroup(MissionGroup) {
             respawn = "10";
       };
       new TSStatic(TablewFruit) {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3998,7 +3998,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TablewBread) {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4014,7 +4014,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TablewLampOil) {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4030,7 +4030,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TablewBait) {
-         shapeName = "art/Packs/props/MrN_BlackSmith/BS_Table.dts";
+         shapeName = "art/Packs/Props/MrN_BlackSmith/BS_Table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4046,7 +4046,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TallBasket) {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_StrawBasketA.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_StrawBasketA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4062,7 +4062,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(ShortBasket) {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_StrawBasketB.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_StrawBasketB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4078,7 +4078,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(FlatSack1) {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackC.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4094,7 +4094,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(FloorSack1) {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackB.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4110,7 +4110,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(FloorSack2) {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackB.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4185,7 +4185,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Fishing_Pole";
          position = "-40.9289 375.992 14.7738";
-         rotation = "-0.992941 -0.0674446 0.0975633 79.7102";
+         rotation = "-0.992941 -0.0674446 0.0975633 79.71";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -4479,7 +4479,7 @@ new SimGroup(MissionGroup) {
             respawn = "10";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4495,7 +4495,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4511,7 +4511,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Containers/MrN_SackA.dts";
+         shapeName = "art/Packs/Props/MrN_Containers/MrN_SackA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4527,7 +4527,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4543,7 +4543,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/MrN_Barrels/MrN_SmBarrel.dts";
+         shapeName = "art/Packs/Props/MrN_Barrels/MrN_SmBarrel.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4559,7 +4559,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(MercFireBowl1) {
-         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
+         shapeName = "art/Packs/Props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4575,26 +4575,26 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(FireBowl2Fire1) {
-         emitter = "shrine_fire_emitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "100";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "25";
-         sa_periodVarianceMS = "23";
-         sa_ejectionVelocity = "0.5";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "shrine_fire_emitter";
          dataBlock = "TorchFireEmitterNode";
          position = "-46.947 364.186 15.7597";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "25";
+            sa_ejectionVelocity = "0.5";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "23";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "100";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new PointLight() {
          radius = "5";
@@ -4650,7 +4650,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(MercFireBowl11) {
-         shapeName = "art/Packs/props/MrN_OldLighting/FireBowl2.dts";
+         shapeName = "art/Packs/Props/MrN_OldLighting/FireBowl2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4666,26 +4666,26 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(FireBowl2Fire11) {
-         emitter = "shrine_fire_emitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "100";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "25";
-         sa_periodVarianceMS = "23";
-         sa_ejectionVelocity = "0.5";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "shrine_fire_emitter";
          dataBlock = "TorchFireEmitterNode";
          position = "-47.0495 373.75 15.7415";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "25";
+            sa_ejectionVelocity = "0.5";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "23";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "100";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new PointLight() {
          radius = "5";
@@ -4722,7 +4722,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_LayeredRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_LayeredRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4738,7 +4738,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_Rock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_Rock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4754,7 +4754,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_OutCropRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4770,7 +4770,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_OvalRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OvalRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4786,7 +4786,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_PeakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4802,7 +4802,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_Rock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_Rock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4818,7 +4818,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_Rock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_Rock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4834,7 +4834,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/rocks/SP_Rocks/SP_ShortConeRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_ShortConeRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4850,7 +4850,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4866,7 +4866,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_TowerRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_TowerRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4882,7 +4882,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_LayeredRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_LayeredRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4898,7 +4898,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/rocks/SP_Rocks/SP_PrismRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4914,7 +4914,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_PrismRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4930,7 +4930,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/rocks/SP_Rocks/SP_SmRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4946,7 +4946,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4962,7 +4962,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock4.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5006,7 +5006,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls) {
-         shapeName = "art/Packs/props/WaterFallWall/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5026,70 +5026,70 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new ParticleEmitterNode(WaterFallTopMain211) {
-         emitter = "EmitterMainFalls_Cave";
-         sa_thetaMin = "0";
-         sa_thetaMax = "10";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterMainFalls_Cave";
          dataBlock = "DefaultEmitterNodeData";
          position = "-24.5254 -391.996 156.293";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "10";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(WaterFallTopMain2111) {
-         emitter = "EmitterMainFalls_Cave";
-         sa_thetaMin = "0";
-         sa_thetaMax = "10";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterMainFalls_Cave";
          dataBlock = "DefaultEmitterNodeData";
          position = "-20.4937 -391.996 159.794";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "10";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(WaterFallTopMain21111) {
-         emitter = "EmitterMainFalls_Cave";
-         sa_thetaMin = "0";
-         sa_thetaMax = "10";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterMainFalls_Cave";
          dataBlock = "DefaultEmitterNodeData";
          position = "-18.302 -391.996 157.944";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "10";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
    };
    new SimGroup(Bog_Portal) {
@@ -5136,7 +5136,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(BogCaveEntrance) {
-         shapeName = "art/Packs/rocks/SP_Rocks/CaveEntrance.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/CaveEntrance.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5177,7 +5177,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5197,7 +5197,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5217,7 +5217,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5257,7 +5257,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+            shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5277,7 +5277,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/AV_Targets/target.dts";
+            shapeName = "art/Packs/Props/AV_Targets/target.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5297,7 +5297,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+            shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5317,7 +5317,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+            shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5337,7 +5337,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+            shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5363,7 +5363,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5383,7 +5383,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5403,7 +5403,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -5463,7 +5463,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "3978";
+            botBelongsToMe = "11635";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5545,7 +5545,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "3979";
+            botBelongsToMe = "11636";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5626,7 +5626,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "3980";
+            botBelongsToMe = "11637";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5707,7 +5707,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "3981";
+            botBelongsToMe = "11638";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5788,7 +5788,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "3982";
+            botBelongsToMe = "11639";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5869,7 +5869,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3983";
+            botBelongsToMe = "11640";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5886,70 +5886,70 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new ParticleEmitterNode(DockSplash4) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-361.596 360.911 6.98004";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash3) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-357.635 360.911 6.98004";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash7) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "-354.807 362.248 6.98004";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/Props/Dex_Viking/docks.dts";
@@ -6237,48 +6237,48 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new ParticleEmitterNode(DockSplash5) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "305.293 359.337 7.03049";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(DockSplash6) {
-         emitter = "EmitterTopSpray";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "EmitterTopSpray";
          dataBlock = "DefaultEmitterNodeData";
          position = "301.167 359.815 7.03049";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new TSStatic() {
          shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4Animated.dts";
@@ -6657,7 +6657,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3984";
+            botBelongsToMe = "11641";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -6682,7 +6682,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3985";
+            botBelongsToMe = "11642";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -7099,7 +7099,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3986";
+            botBelongsToMe = "11643";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7124,7 +7124,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3987";
+            botBelongsToMe = "11644";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -7726,7 +7726,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7746,7 +7746,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7766,7 +7766,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7786,7 +7786,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7806,7 +7806,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7826,7 +7826,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7846,7 +7846,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7866,7 +7866,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7886,7 +7886,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7906,7 +7906,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7926,7 +7926,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7946,7 +7946,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7966,7 +7966,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7986,7 +7986,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8006,7 +8006,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8026,7 +8026,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8046,7 +8046,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8071,7 +8071,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8091,7 +8091,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8111,7 +8111,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8131,7 +8131,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8151,7 +8151,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8171,7 +8171,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8191,7 +8191,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8211,7 +8211,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8231,7 +8231,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8251,7 +8251,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8271,7 +8271,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8291,7 +8291,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8311,7 +8311,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8331,7 +8331,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8351,7 +8351,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8371,7 +8371,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8391,7 +8391,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8416,7 +8416,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8436,7 +8436,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8456,7 +8456,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8476,7 +8476,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8496,7 +8496,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8516,7 +8516,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8536,7 +8536,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8556,7 +8556,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8576,7 +8576,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8596,7 +8596,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8616,7 +8616,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8636,7 +8636,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8656,7 +8656,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8676,7 +8676,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8696,7 +8696,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8716,7 +8716,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8736,7 +8736,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8761,7 +8761,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8781,7 +8781,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8801,7 +8801,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8821,7 +8821,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8841,7 +8841,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8861,7 +8861,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8881,7 +8881,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8901,7 +8901,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8921,7 +8921,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8941,7 +8941,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8961,7 +8961,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8981,7 +8981,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9001,7 +9001,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9021,7 +9021,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9041,7 +9041,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9061,7 +9061,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9081,7 +9081,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9291,7 +9291,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9311,7 +9311,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9331,7 +9331,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9351,7 +9351,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9371,7 +9371,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9391,7 +9391,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Plants/SP_Sparta/bigleaf.dae";
+         shapeName = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9523,7 +9523,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/A3D_ClayPots/A3D_ClayPotA.dts";
+      shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotA.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9532,14 +9532,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-17.0856 381.021 13.9385";
+      position = "-16.2622 380.75 13.9385";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/A3D_ClayPots/A3D_ClayPotB.dts";
+      shapeName = "art/Packs/Props/A3D_ClayPots/A3D_ClayPotB.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9548,14 +9548,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-25.1229 381.117 13.9397";
+      position = "-26.4494 381.117 13.9397";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Barrels/MrN_BigBarrel.dts";
+      shapeName = "art/Packs/Props/MrN_Barrels/MrN_BigBarrel.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9571,7 +9571,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Crates/MrN_BigBox.dts";
+      shapeName = "art/Packs/Props/MrN_Crates/MrN_BigBox.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9587,7 +9587,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Crates/MrN_SmBox.dts";
+      shapeName = "art/Packs/Props/MrN_Crates/MrN_SmBox.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9603,7 +9603,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_BirdCage.dts";
+      shapeName = "art/Packs/Props/MrN_Containers/MrN_BirdCage.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9619,7 +9619,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotA.dts";
+      shapeName = "art/Packs/Props/MrN_Containers/MrN_CeramicPotA.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9635,7 +9635,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/MrN_Containers/MrN_CeramicPotB.dts";
+      shapeName = "art/Packs/Props/MrN_Containers/MrN_CeramicPotB.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9645,6 +9645,78 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-19.4851 410.798 15.3402";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Prefab() {
+      fileName = "art/Packs/Buildings/Sh3D_Pergola/PoolTop.prefab";
+      position = "-21.38 370.151 20.32";
+      rotation = "1 0 0 0";
+      scale = "1.05 1.05 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-17.1723 379.26 14.3748";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-25.5721 379.26 14.3748";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-17.1723 361.073 14.3748";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-25.5721 361.073 14.3748";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
