@@ -1,11 +1,16 @@
-
-singleton Material(svpergola1_trim15)
+singleton Material(mat_SVPergTrim)
 {
-   mapTo = "trim15";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1.dds";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1N.dds";
+   mapTo = "SVPergolaTrim_dif";
+   diffuseMap[0] = "SVPergolaTrim_dif";
+   normalMap[0] = "SVPergolaTrim_nm.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_SPSparta";
+};
+
+singleton Material(mat_SVPergWall)
+{
+   mapTo = "SVPergolaWall_dif";
+   diffuseMap[0] = "SVPergolaWall_dif";
+   normalMap[0] = "SVPergolaWall_nm.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
 };
