@@ -8,7 +8,7 @@ singleton Material(mat_GGvolcano_cave1)
    normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "Props_GG_PacificIsland";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGvolcano_cave3)
@@ -22,7 +22,8 @@ singleton Material(mat_GGvolcano_cave3)
    detailScale[0] = "12 12";
    customFootstepSound = "FootStepSand1Sound";
    detailNormalMap[0] = "rockydirt_normal";
-   materialTag0 = "Props_GG_PacificIsland";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGvolcano_cave2)
@@ -34,7 +35,7 @@ singleton Material(mat_GGvolcano_cave2)
    normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "Props_GG_PacificIsland";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGvolcano_lavaflow)
@@ -57,9 +58,8 @@ singleton Material(mat_GGvolcano_lavaflow)
    alphaRef = "80";
    glow[1] = "1";
    forestWindEnabled = "1";
-   backlight = "1";
-   backLightFactor = "0.9 1.0 0.2";
-   materialTag0 = "Props_GG_PacificIsland";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(lavaglow_ColorEffectR6G135B113_material)
@@ -71,7 +71,7 @@ singleton Material(lavaglow_ColorEffectR6G135B113_material)
    diffuseColor[0] = "0.0235294 0.529412 0.443137 1";
    specular[0] = "1 1 1 1";
    specularPower[0] = 10;
-   materialTag0 = "Props_GG_PacificIsland";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGlavaGlow)
@@ -87,7 +87,8 @@ singleton Material(mat_GGlavaGlow)
    translucentBlendOp = "Add";
    glow[0] = "1";
    emissive[0] = "1";
-   materialTag0 = "Props_GG_PacificIsland";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGlavafall)
@@ -105,7 +106,8 @@ singleton Material(mat_GGlavafall)
    emissive[0] = "1";
    glow[0] = "1";
    vertColor[0] = "1";
-   materialTag0 = "Props_GG_PacificIsland";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
 };
 
 singleton Material(mat_GGtorch)
@@ -119,5 +121,6 @@ singleton Material(mat_GGtorch)
    specularPower[0] = 10;
    alphaTest = "1";
    alphaRef = "65";
-   materialTag0 = "Props_GG_PacificIsland";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
 };
