@@ -36,6 +36,5 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Plants/AV_Conifer" TAB
    "Plants/SP_All_RiverGrass" TAB
    "Trees/Canopy" TAB
-   "Trees/banana" TAB
    "Trees/SP_Sparta";
    
