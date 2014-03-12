@@ -5573,7 +5573,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "1";
@@ -5654,7 +5654,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "1";
@@ -5667,7 +5667,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "2";
@@ -5680,7 +5680,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "3";
@@ -5735,7 +5735,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "1";
@@ -5748,7 +5748,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "2";
@@ -5761,7 +5761,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "3";
@@ -5816,7 +5816,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "1";
@@ -5829,7 +5829,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "2";
@@ -5842,7 +5842,7 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               MoveSpeed = ".1";
+               MoveSpeed = ".2";
          };
          new Marker() {
             seqNum = "3";
