@@ -95,8 +95,8 @@ singleton Material(mat_DeadPineNeedles02_AV)
 singleton Material(mat_DeadPineNeedles_AV)
 {
    mapTo = "DeadPineNeedles";
-   diffuseMap[0] = "PineBranch_DIF.dds";
-   normalMap[0] = "PineBranch_NRM.dds";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/PineBranch_DIF.dds";
+   normalMap[0] = "art/Packs/Trees/AV_Conifer/PineBranch_NRM.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "LerpAlpha";
@@ -105,6 +105,7 @@ singleton Material(mat_DeadPineNeedles_AV)
    alphaRef = "181";
    useAnisotropic[0] = "1";
    materialTag0 = "Trees";
+   doubleSided = "1";
 };
 
 singleton Material(mat_SoftPineBark_AV)
@@ -158,36 +159,12 @@ singleton Material(mat_BarePine_AV)
    materialTag0 = "Trees";
 };
 
-singleton Material(mat_DriPine_Win_AV)
-{
-   mapTo = "DriPine-Win";
-   diffuseMap[0] = "DryPine2_Snow.dds";
-   normalMap[0] = "DryPine2_Snow_NRM.dds";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "128";
-   alphaTest = "1";
-   alphaRef = "120";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
 singleton Material(mat_PineBark_AV)
 {
    mapTo = "PineBark";
    diffuseMap[0] = "PineLight_DIF.dds";
    normalMap[0] = "PineLight_NRM.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
-singleton Material(mat_PineNeedles_Win_AV)
-{
-   mapTo = "PineNeedles-Win";
-   diffuseMap[0] = "Pine_Snow.dds";
-   normalMap[0] = "Pine_Snow_NRM.dds";
-   useAnisotropic[0] = "1";
-   alphaTest = "1";
-   alphaRef = "120";
    materialTag0 = "Trees";
 };
 
@@ -261,7 +238,7 @@ singleton Material(mat_Broken01_AV)
 singleton Material(mat_Broken02_AV)
 {
    mapTo = "Broken02";
-   diffuseMap[0] = "DeadBranch02a.dds";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/DeadBranch02a.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    alphaTest = "1";
@@ -343,27 +320,12 @@ singleton Material(mat_downpinemat_AV)
 };
 
 
-
 //////////////////////Color Effects
 
 singleton Material(DeadStandingPine01_ColorEffectR28G28B177)
 {
    mapTo = "ColorEffectR28G28B177-material";
    diffuseColor[0] = "0.109804 0.109804 0.694118 1";
-   specularPower[0] = "10";
-};
-
-singleton Material(Win_Pine01_ColorEffectR87G224B143)
-{
-   mapTo = "ColorEffectR87G224B143-material";
-   diffuseColor[0] = "0.341177 0.878431 0.560784 1";
-   specularPower[0] = "10";
-};
-
-singleton Material(Win_Sequia01_ColorEffectR27G177B88)
-{
-   mapTo = "ColorEffectR27G177B88-material";
-   diffuseColor[0] = "0.105882 0.694118 0.345098 1";
    specularPower[0] = "10";
 };
 
