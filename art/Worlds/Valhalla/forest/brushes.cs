@@ -25,7 +25,6 @@ new SimGroup(ForestBrushGroup) {
       internalName = "BigPine_BushLODC";
       canSave = "1";
       canSaveDynamicFields = "1";
-      ForestItemData = "BigPine_BushLODC";
       probability = "1";
       rotationRange = "360";
       scaleMin = "1";
@@ -61,7 +60,6 @@ new SimGroup(ForestBrushGroup) {
       internalName = "Bush2";
       canSave = "1";
       canSaveDynamicFields = "1";
-      ForestItemData = "Bush02";
       probability = "1";
       rotationRange = "360";
       scaleMin = "1";

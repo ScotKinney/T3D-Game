@@ -17,17 +17,6 @@ datablock TSForestItemData(rivergrass)
    shapeFile = "art/Packs/Plants/SP_ALL_RiverGrass/rivergrass.DAE";
 };
 
-datablock TSForestItemData(Bush02)
-{
-   internalName = "Bush02";
-   shapeFile = "art/Packs/Plants/AV_Conifer/Bush01.DAE";
-   radius = "0.7";
-   windScale = "10";
-   branchAmp = "0.03";
-   detailAmp = "0.05";
-   detailFreq = "0.05";
-   trunkBendScale = "0.001";
-};
 
 datablock TSForestItemData(DeadStandingPine01)
 {
@@ -39,6 +28,11 @@ datablock TSForestItemData(DriPine01)
 {
    internalName = "DriPine01";
    shapeFile = "art/Packs/trees/AV_Conifer/DriPine01.DAE";
+   windScale = "1";
+   trunkBendScale = "0";
+   branchAmp = "0.04";
+   detailAmp = "0.04";
+   detailFreq = "0.05";
 };
 
 datablock TSForestItemData(PinTree002)
