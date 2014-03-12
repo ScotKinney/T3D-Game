@@ -16,7 +16,7 @@ singleton Material(mat_Bush01_AV)
    specularMap[0] = "GreenBirch2_SPEC.dds";
    pixelSpecular[0] = "0";
    diffuseColor[0] = "0.686275 0.596078 0.211765 1";
-   materialTag0 = "Plants_Bush01_AV";
+   materialTag0 = "Plants_AV";
 };
 
 singleton Material(mat_FiddleLeaf_AV)
@@ -35,7 +35,7 @@ singleton Material(mat_FiddleLeaf_AV)
    diffuseColor[0] = "0.996078 0.996078 0.996078 1";
    pixelSpecular[0] = "0";
    subSurfaceRolloff[0] = "0.2";
-   materialTag0 = "Plants_FiddleLeaf_AV";
+   materialTag0 = "Plants_AV";
 };
 
 singleton Material(mat_Fiscus01_AV)
@@ -54,7 +54,7 @@ singleton Material(mat_Fiscus01_AV)
    diffuseColor[0] = "0.454902 0.45098 0.427451 1";
    subSurfaceRolloff[0] = "0.3";
    pixelSpecular[0] = "1";
-   materialTag0 = "Plants_Fiscus01_AV";
+   materialTag0 = "Plants_AV";
 };
 
 singleton Material(mat_LargeLeaf01_AV)
@@ -72,5 +72,5 @@ singleton Material(mat_LargeLeaf01_AV)
    alphaRef = "30";
    diffuseColor[0] = "0.760784 0.760784 0.760784 1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Plants_LargeLeaf01_AV";
+   materialTag0 = "Plants_AV";
 };
