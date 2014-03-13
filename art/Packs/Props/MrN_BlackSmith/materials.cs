@@ -6,6 +6,7 @@ singleton Material(mat_BSAnvil)
    useAnisotropic[0] = "1";
    normalMap[0] = "BS_anvil_nm.dds";
    specularMap[0] = "BS_anvil_spec.dds";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_BSTable)
@@ -16,6 +17,7 @@ singleton Material(mat_BSTable)
    normalMap[0] = "BS_Table_nm.dds";
    specularMap[0] = "BS_Table_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_BSVice)
@@ -25,6 +27,7 @@ singleton Material(mat_BSVice)
    normalMap[0] = "BS_Vise_nm.dds";
    specularMap[0] = "BS_Vise_spec.dds";
    useAnisotropic[0] = "1";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_BSStool)
@@ -35,4 +38,5 @@ singleton Material(mat_BSStool)
    specularMap[0] = "BS_Stool_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Props_MrN";
 };

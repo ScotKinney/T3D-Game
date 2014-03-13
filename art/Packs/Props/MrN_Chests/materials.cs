@@ -6,6 +6,7 @@ singleton Material(mat_MrN_CaptainsChest)
    specularMap[0] = "MrN_CaptainsChest_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Props_MrN";
 };
 
 singleton Material(mat_MrN_CasketChest)
@@ -16,5 +17,6 @@ singleton Material(mat_MrN_CasketChest)
    specularMap[0] = "MrN_CasketChest_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "Props_MrN";
 };
 
