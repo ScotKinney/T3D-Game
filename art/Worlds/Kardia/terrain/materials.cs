@@ -1,16 +1,11 @@
 ////////////////Spartan Terrain//////////////////
-///////////FootStep Sounds////////////////////////////////////////
-//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
-//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
-//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
-//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
-///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
 
 
 singleton Material(Ter_Grass)   
 {   
    mapTo = "clearTerrain001";   
-   footstepSoundId = 0;
+   customFootstepSound = FootStepGrass1Sound;
 };
 
 singleton Material(Ter_DryGround)   
@@ -25,7 +20,7 @@ singleton Material(Ter_DryGround)
 singleton Material(Ter_Snow)   
 {   
    mapTo = "snow_detail";   
-   footstepSoundId = 3;
+   customFootstepSound = FootStepSnow1Sound;
 };
 
 singleton Material(Ter_DirtySand)
@@ -37,7 +32,16 @@ singleton Material(Ter_DirtySand)
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
-singleton Material(Spartan_rock_dif)
+singleton Material(Ter_DarkDirt)
+{
+   mapTo = "forestmix_base";
+   customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
+};
+
+singleton Material(mat_Spartan_rock_dif)//material for sp_rocks
 {
    mapTo = "Spartan_rock_dif";
    footstepSoundId = 1;
@@ -49,16 +53,7 @@ singleton Material(Spartan_rock_dif)
    showFootprints = "0";
 };
 
-singleton Material(Ter_DarkDirt)
-{
-   mapTo = "forestmix_base";
-   customFootstepSound = FootStepSand1Sound;
-   showDust = true;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
-};
-
-
+////////////////////////////////////////////////////////////
 
 // Rock_Top Terrain
 
