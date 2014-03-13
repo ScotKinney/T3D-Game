@@ -103,7 +103,7 @@ datablock TSForestItemData(TallPalmLeaning)
 datablock TSForestItemData(BananaMature)
 {
    internalName = "BananaMature";
-   shapeFile = "art/packs/trees/banana/bananatree_mature.DAE";
+   shapeFile = "art/packs/trees/SP_Sparta/bananatree_mature.DAE";
    radius = "1";
    trunkBendScale = "0.001";
    branchAmp = "0.04";
