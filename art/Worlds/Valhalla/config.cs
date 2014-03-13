@@ -19,6 +19,7 @@ $AlterVerse::ArtPacks = "skies/default" TAB
    "Props/Dex_Viking" TAB
    "Props/A3D_Carts" TAB
    "Props/A3D_GrainBags" TAB
+   "Props/MrN_OldLighting" TAB
    "env/snow" TAB
    "AI/Yeti" TAB
    "AI/SnowWolf" TAB
