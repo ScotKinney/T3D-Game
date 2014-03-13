@@ -6,13 +6,14 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "GroundCover/Default" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
-   "Buildings/Spartan_Arena" TAB
    "Tunnels/Spartan" TAB
+   "Buildings/Spartan_Arena" TAB
    "Buildings/Fort_Wood" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
    "Buildings/Spartan_Castle" TAB
    "Buildings/Sh3d_Pergola" TAB
+   "Buildings/SP_Sparta" TAB
    "Buildings/Spartan_GuardTowers" TAB
    "Props/CaveEntrance" TAB
    "Props/RRGTS_Crates" TAB
