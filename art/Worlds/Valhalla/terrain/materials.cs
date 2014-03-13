@@ -1,6 +1,10 @@
-//
-// 
-///////////FootStep Sounds///////////////////////////
+////////Viking Terrain///////////////////////// 
+///////////FootStep Sounds////////////////////////////////////////
+//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
+//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
+//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
+//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
+///////////////////////////////////////////////////////////////////
 
 singleton Material(ter_snow_detail)   
 {   
@@ -28,18 +32,29 @@ singleton Material( Ter_ForestMix_Base )
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };
+
+singleton Material(mat_GravelCobbleX_SPEC)//material for sp_rocks
+{
+   mapTo = "Spartan_rock_dif";
+   footstepSoundId = 1;
+   diffuseMap = "art/Packs/Terrains/SP_Viking/GravelCobbleX_SPEC";
+   normalMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_dif";
+   detailScale[0] = "3 3";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
+};
+
 ///////////////////////////////////////////////////////
-
-
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/Worlds/Valhalla/Terrain/GravelCobbleX_SPEC";
-   detailMap = "art/Worlds/valhalla/Terrain/tex_volcanic_cliffrock_dif";
+   internalName = "RockFar";
+   diffuseMap = "art/Packs/Terrains/SP_Viking/GravelCobbleX_SPEC";
+   detailMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_dif";
    detailSize = "80";
    detailDistance = "2000";
-   internalName = "RockFar";
-   normalMap = "art/Worlds/valhalla/Terrain/tex_volcanic_cliffrock_nrm";
+   normalMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_nrm";
    parallaxScale = "0";
    diffuseSize = "10";
    detailStrength = "0.6";
@@ -50,10 +65,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "RockClose";
-   diffuseMap = "art/Worlds/Valhalla/Terrain/GravelCobbleX_SPEC";
+   diffuseMap = "art/Packs/Terrains/SP_Viking/GravelCobbleX_SPEC";
    diffuseSize = "10";
-   normalMap = "art/Worlds/valhalla/Terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/Worlds/valhalla/Terrain/tex_volcanic_cliffrock_dif";
+   normalMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/Packs/Terrains/SP_Viking/tex_volcanic_cliffrock_dif";
    detailSize = "20";
    detailStrength = "0.6";
    detailDistance = "600";
@@ -65,13 +80,13 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "grass1";
-   diffuseMap = "art/Worlds/Valhalla/Terrain/clearTerrain001";
+   diffuseMap = "art/Packs/Terrains/SP_Viking/clearTerrain001";
    diffuseSize = "200";
-   detailMap = "art/Worlds/Valhalla/Terrain/Seaweed_detail";
+   detailMap = "art/Packs/Terrains/SP_Viking/Seaweed_detail";
    detailDistance = "100";
    detailSize = "8";
    useAnisotropic[0] = "1"; 
-   normalMap = "art/Worlds/Valhalla/Terrain/Seaweed_nrm_displacement";
+   normalMap = "art/Packs/Terrains/SP_Viking/Seaweed_nrm_displacement";
    parallaxScale = "0.01";
    enabled = "1";
    isManaged = "1";
@@ -82,15 +97,15 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/Worlds/Valhalla/Terrain/snow_detail";
+   internalName = "NewSnow";
+   diffuseMap = "art/Packs/Terrains/SP_Viking/snow_detail";
    diffuseSize = "256";
-   normalMap = "art/Worlds/Valhalla/Terrain/Seaweed_nrm_displacement";
-   detailMap = "art/Worlds/Valhalla/Terrain/Seaweed_detail";
+   normalMap = "art/Packs/Terrains/SP_Viking/Seaweed_nrm_displacement";
+   detailMap = "art/Packs/Terrains/SP_Viking/Seaweed_detail";
    detailSize = "10";
    detailStrength = "0.1";
    detailDistance = "100";
    parallaxScale = "0.1";
-   internalName = "NewSnow";
    enabled = "1";
    isManaged = "1";
    detailBrightness = "1";
@@ -99,15 +114,15 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/Worlds/Valhalla/Terrain/forestMix_base";
+   internalName = "Path";
+   diffuseMap = "art/Packs/Terrains/SP_Viking/forestMix_base";
    diffuseSize = "20";
-   normalMap = "art/Worlds/Valhalla/Terrain/Seaweed_nrm_displacement";
-   detailMap = "art/Worlds/Valhalla/Terrain/Seaweed_detail";
+   normalMap = "art/Packs/Terrains/SP_Viking/Seaweed_nrm_displacement";
+   detailMap = "art/Packs/Terrains/SP_Viking/Seaweed_detail";
    detailSize = "7";
    detailStrength = "0.2";
    detailDistance = "100";
    parallaxScale = "0";
-   internalName = "Path";
    enabled = "1";
    isManaged = "1";
    detailBrightness = "1";
