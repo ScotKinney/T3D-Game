@@ -125,3 +125,62 @@ singleton Material(mat_svspartafloor2)
 };
 
 /////////////////////////////////////////////
+
+singleton Material(DefaultMaterial11)
+{
+   mapTo = "svspartawall4";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall4";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(DefaultMaterial12)
+{
+   mapTo = "svspartawall5";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall5";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall5N.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(DefaultMaterial4)
+{
+   mapTo = "sv-iconic3";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/sv-iconic3";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/sv-iconic3N.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(DefaultMaterial14)
+{
+   mapTo = "svspartatrim1";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartatrim1N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+};
+
+singleton Material(DefaultMaterial6)
+{
+   mapTo = "svspartawall2";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall2";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall2N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+};
+
+singleton Material(DefaultMaterial5)
+{
+   mapTo = "svspartawall1";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall1";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall1N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+};
+
+singleton Material(DefaultMaterial16)
+{
+   mapTo = "svspartafloor1";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartafloor1";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartafloor1N.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+};
