@@ -114,7 +114,6 @@ singleton Material(mat_Bldg6)
    materialTag0 = "Buildings_Viking";	
 };
 
-
 new Material(mat_villagehouse2)
 {
    diffuseMap[0] = "villagehouse2_diff";
@@ -168,5 +167,25 @@ singleton Material(mat_Valwood1)
    materialTag0 = "Buildings_Viking";
 };
 
+singleton Material(mat_VikWeaponsShop)
+{
+   mapTo = "blacksmiths_1024";
+   diffuseMap[0] = "WeaponShop_2048.dds";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   materialTag0 = "Buildings_Viking";
+};
+
+singleton Material(mat_VikWeaponShopIntWalls)
+{
+   mapTo = "plaster_05_dif";
+   diffuseMap[0] = "plaster_05_dif";
+   normalMap[0] = "plaster_05_nm.dds";
+   specularMap[0] = "plaster_05_spec.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_Viking";
+};
+
 
 //////////////////////////////////////////////////////////////////////////////
+
