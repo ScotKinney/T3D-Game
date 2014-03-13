@@ -1,9 +1,9 @@
 singleton Material(mat_GrdRoofs)
 {
    mapTo = "Med2512";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartanroof1.dds";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/svspartaroof1.dds";
    doubleSided = "1";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartanroof1N.dds";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/svspartaroof1N.dds";
    customFootstepSound = "FootStepSand1Sound";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_Sparta";
