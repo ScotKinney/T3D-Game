@@ -1,11 +1,16 @@
 ////////////////Spartan Terrain//////////////////
-//////////////////////////////////////////////////////
+///////////FootStep Sounds////////////////////////////////////////
+//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
+//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
+//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
+//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
+///////////////////////////////////////////////////////////////////
 
 
 singleton Material(Ter_Grass)   
 {   
    mapTo = "clearTerrain001";   
-   customFootstepSound = FootStepGrass1Sound;
+   footstepSoundId = 0;
 };
 
 singleton Material(Ter_DryGround)   
@@ -20,7 +25,7 @@ singleton Material(Ter_DryGround)
 singleton Material(Ter_Snow)   
 {   
    mapTo = "snow_detail";   
-   customFootstepSound = FootStepSnow1Sound;
+   footstepSoundId = 3;
 };
 
 singleton Material(Ter_DirtySand)
