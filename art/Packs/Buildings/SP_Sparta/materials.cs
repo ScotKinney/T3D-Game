@@ -16,15 +16,6 @@ singleton Material(mat_SVDoor_Yellow)
    materialTag0 = "Buildings_SPSparta";
 };
 
-singleton Material(mat_sv-iconic3)
-{
-   mapTo = "sv-iconic3";
-   diffuseMap[0] = "sv-iconic3";
-   normalMap[0] = "sv-iconic3N.dds";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_SPSparta";
-};
-
 singleton Material(mat_svspartawall1)
 {
    mapTo = "svspartawall1";
@@ -140,19 +131,10 @@ singleton Material(mat_svspartafloor2)
 
 /////////////////////////////////////////////
 
-
-singleton Material(svspartapillar5_sv_iconic3)
-{
-   mapTo = "sv-iconic3";
-   diffuseMap[0] = "svspartaionic3";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-};
-
-singleton Material(svspartadoorway2_svspartaiconic3)
+singleton Material(mat_svspartaiconic3)
 {
    mapTo = "svspartaiconic3";
-   diffuseMap[0] = "svspartaionic3";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
+   diffuseMap[0] = "sv-iconic3";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SPSparta";
 };
