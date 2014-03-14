@@ -128,8 +128,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.104269";
-         time = "0.106175";
+         startTime = "0.213125";
+         time = "0.216871";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -600,8 +600,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "9484";
-         delayRespawn = "4991";
+         botBelongsToMe = "24617";
+         delayRespawn = "8819";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -626,8 +626,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10099";
-         delayRespawn = "4518";
+         botBelongsToMe = "21672";
+         delayRespawn = "9455";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -652,7 +652,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4098";
+         botBelongsToMe = "4099";
          delayRespawn = "180082";
          distDetect = "25";
          fov = "360";
@@ -678,7 +678,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4099";
+         botBelongsToMe = "4100";
          delayRespawn = "180674";
          distDetect = "25";
          fov = "360";
@@ -704,8 +704,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10031";
-         delayRespawn = "4081";
+         botBelongsToMe = "25303";
+         delayRespawn = "9228";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -730,8 +730,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "10183";
-         delayRespawn = "4808";
+         botBelongsToMe = "24196";
+         delayRespawn = "8618";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -756,8 +756,8 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10127";
-         delayRespawn = "4639";
+         botBelongsToMe = "24005";
+         delayRespawn = "8513";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -782,8 +782,8 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "9723";
-         delayRespawn = "3444";
+         botBelongsToMe = "25204";
+         delayRespawn = "9165";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -808,7 +808,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4104";
+         botBelongsToMe = "4105";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -833,7 +833,7 @@ new SimGroup(MissionGroup) {
          avOptions = "6,269,13,362,55,59,242,35";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4105";
+         botBelongsToMe = "4106";
          delayRespawn = "17533";
          distDetect = "50";
          fov = "360";
@@ -5463,7 +5463,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4106";
+            botBelongsToMe = "4107";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5545,7 +5545,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4107";
+            botBelongsToMe = "4108";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5626,7 +5626,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4108";
+            botBelongsToMe = "4109";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5707,7 +5707,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4109";
+            botBelongsToMe = "4110";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5788,7 +5788,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4110";
+            botBelongsToMe = "4111";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5869,7 +5869,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4111";
+            botBelongsToMe = "4112";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -6657,7 +6657,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4112";
+            botBelongsToMe = "4113";
             delayRespawn = "17533";
             distDetect = "50";
             fov = "360";
@@ -6682,7 +6682,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,13,362,55,59,242,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4113";
+            botBelongsToMe = "4114";
             delayRespawn = "79879";
             distDetect = "50";
             fov = "360";
@@ -7099,7 +7099,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4114";
+            botBelongsToMe = "4115";
             delayRespawn = "7892";
             distDetect = "50";
             fov = "360";
@@ -7124,7 +7124,7 @@ new SimGroup(MissionGroup) {
             avOptions = "6,269,12,362,55,59,54,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4115";
+            botBelongsToMe = "4116";
             delayRespawn = "7887";
             distDetect = "50";
             fov = "360";
@@ -9655,7 +9655,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
+         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_Straight.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9664,14 +9664,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-25.5517 379.257 14.4159";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
+         position = "-16.9766 372.796 15.1963";
+         rotation = "0 0 1 90";
+         scale = "0.882 0.882 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
+         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerL.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9680,14 +9680,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-17.1704 379.257 14.4159";
+         position = "-16.9766 379.852 15.1963";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "0.882 0.882 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
+         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerR.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9696,14 +9696,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-25.5517 361.051 14.4159";
+         position = "-25.7966 379.852 15.1963";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
+         scale = "0.882 0.882 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
+         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerR.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9712,9 +9712,9 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-17.1704 361.051 14.4159";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
+         position = "-16.9766 360.448 15.1963";
+         rotation = "0 0 1 180";
+         scale = "0.882 0.882 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -9728,7 +9728,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-16.9766 367.504 15.1963";
+         position = "-25.7966 372.796 15.1963";
          rotation = "0 0 1 90";
          scale = "0.882 0.882 1";
          canSave = "1";
@@ -9760,14 +9760,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-25.7966 372.796 15.1963";
+         position = "-16.9766 367.504 15.1963";
          rotation = "0 0 1 90";
          scale = "0.882 0.882 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerR.dts";
+         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9776,30 +9776,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-16.9766 360.448 15.1963";
-         rotation = "0 0 1 180";
-         scale = "0.882 0.882 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerR.dts";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-25.7966 379.852 15.1963";
+         position = "-17.1704 361.051 14.4159";
          rotation = "1 0 0 0";
-         scale = "0.882 0.882 1";
+         scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerL.dts";
+         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9808,14 +9792,14 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-16.9766 379.852 15.1963";
+         position = "-25.5517 361.051 14.4159";
          rotation = "1 0 0 0";
-         scale = "0.882 0.882 1";
+         scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_Straight.dts";
+         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9824,9 +9808,25 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-16.9766 372.796 15.1963";
-         rotation = "0 0 1 90";
-         scale = "0.882 0.882 1";
+         position = "-17.1704 379.257 14.4159";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
+      new TSStatic() {
+         shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
+         playAmbient = "1";
+         meshCulling = "0";
+         originSort = "0";
+         collisionType = "Collision Mesh";
+         decalType = "Collision Mesh";
+         allowPlayerStep = "1";
+         renderNormals = "0";
+         forceDetail = "-1";
+         position = "-25.5517 379.257 14.4159";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -10823,22 +10823,6 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail3.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-50.0175 353.187 14.4287";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
       shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail4.dts";
       playAmbient = "1";
       meshCulling = "0";
@@ -10976,7 +10960,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-49.3198 355.902 14.4068";
+      position = "-49.3198 355.902 18.483";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -11265,7 +11249,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-41.2118 357.439 14.4081";
+      position = "-41.2118 357.439 17.9341";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -11336,7 +11320,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof5.dae";
+      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof5.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11345,7 +11329,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-39.8141 351.139 14.5553";
+      position = "-40.5522 350.9 17.2998";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
