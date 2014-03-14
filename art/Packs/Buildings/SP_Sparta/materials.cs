@@ -140,3 +140,19 @@ singleton Material(mat_svspartafloor2)
 
 /////////////////////////////////////////////
 
+
+singleton Material(svspartapillar5_sv_iconic3)
+{
+   mapTo = "sv-iconic3";
+   diffuseMap[0] = "svspartaionic3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svspartadoorway2_svspartaiconic3)
+{
+   mapTo = "svspartaiconic3";
+   diffuseMap[0] = "svspartaionic3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
