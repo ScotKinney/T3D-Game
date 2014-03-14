@@ -138,3 +138,12 @@ singleton Material(mat_svspartaiconic3)
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SPSparta";
 };
+
+singleton Material(mat_SVIconic)
+{
+   mapTo = "sv-iconic3";
+   diffuseMap[0] = "sv-iconic3";
+   normalMap[0] = "sv-iconic3N.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SPSparta";
+};
