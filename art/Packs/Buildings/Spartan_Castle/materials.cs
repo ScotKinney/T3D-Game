@@ -318,3 +318,10 @@ singleton Material(castle1_svwood3)
    diffuseMap[0] = "svtqwood3.jpg";
    useAnisotropic[0] = "1";
 };
+
+singleton Material(castle1_default2)
+{
+   mapTo = "default2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};

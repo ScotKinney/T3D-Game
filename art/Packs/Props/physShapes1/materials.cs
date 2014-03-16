@@ -350,3 +350,11 @@ singleton Material(pier_detail_target)
    useAnisotropic[0] = "1";
    materialTag0 = "PhysShapes1";
 };
+
+singleton Material(shrine_column_C_bk_ColorEffectR28G89B177_material)
+{
+   mapTo = "ColorEffectR28G89B177-material";
+   diffuseColor[0] = "0.109804 0.34902 0.694118 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};

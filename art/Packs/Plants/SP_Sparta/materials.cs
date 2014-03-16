@@ -47,3 +47,11 @@ singleton Material(mat_longleaf_GG)
    useAnisotropic[0] = "1";
    materialTag0 = "Plants_GG";
 };
+
+singleton Material(bigleaf_ColorEffectR227G153B153_material)
+{
+   mapTo = "ColorEffectR227G153B153-material";
+   diffuseColor[0] = "0.890196 0.6 0.6 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
