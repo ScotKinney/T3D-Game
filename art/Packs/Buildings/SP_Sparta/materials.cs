@@ -1,38 +1,41 @@
 singleton Material(Base_IntWall_Sparta)
 {
    mapTo = "Base_IntWall_Sparta_dif";
-   diffuseMap[0] = "Base_IntWall_Sparta_dif";
-   normalMap[0] = "Base_IntWall_Sparta_nm";
-   specularMap[0] = "Base_IntWall_Sparta_spec";
-   pixelSpecular[0] = "1";
-   specularPower[0] = "30";
+   diffuseMap[0] = "Base_IntWall_Sparta_dif.dds";
+   normalMap[0] = "Base_IntWall_Sparta_nm.dds";
+   specularMap[0] = "Base_IntWall_Sparta_spec.dds";
+   pixelSpecular[0] = "0";
+   specularPower[0] = "50";
    specularStrength[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 singleton Material(Base_ExtWall_Sparta)
 {
    mapTo = "Base_ExtWall_Sparta_dif";
-   diffuseMap[0] = "Base_ExtWall_Sparta_dif";
-   normalMap[0] = "Base_ExtWall_Sparta_nm";
-   specularMap[0] = "Base_ExtWall_Sparta_spec";
-   specularPower[0] = "35";
+   diffuseMap[0] = "Base_ExtWall_Sparta_dif.dds";
+   normalMap[0] = "Base_ExtWall_Sparta_nm.dds";
+   specularMap[0] = "Base_ExtWall_Sparta_spec.dds";
+   specularPower[0] = "50";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 singleton Material(Base_CornerPost_Sparta)
 {
    mapTo = "Base_CornerPost_Sparta_dif";
    diffuseMap[0] = "Base_CornerPost_Sparta_dif";
-   normalMap[0] = "Base_CornerPost_Sparta_nm";
-   specularMap[0] = "Base_CornerPost_Sparta_spec";
+   normalMap[0] = "Base_CornerPost_Sparta_nm.dds";
+   specularMap[0] = "Base_CornerPost_Sparta_spec.dds";
    specularPower[0] = "50";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 singleton Material(Base_Door_Sparta)
@@ -50,12 +53,27 @@ singleton Material(Base_Door_Sparta)
 singleton Material(Base_TileRoof_Sparta)
 {
    mapTo = "Base_TileRoof_Sparta_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_dif";
-   specularPower[0] = "30";
-   pixelSpecular[0] = "0";
+   diffuseMap[0] = "Base_TileRoof_Sparta_dif.dds";
+   specularPower[0] = "50";
+   pixelSpecular[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
+   normalMap[0] = "Base_TileRoof_Sparta_nm.dds";
+   specularMap[0] = "Base_TileRoof_Sparta_spec.dds";
+};
+
+singleton Material(Base_RoofTrim_Sparta)
+{
+   mapTo = "Base_RoofTrim_Sparta_dif";
+   diffuseMap[0] = "Base_RoofTrim_Sparta_dif.dds";
+   normalMap[0] = "Base_RoofTrim_Sparta_nm.dds";
+   specularMap[0] = "Base_RoofTrim_Sparta_spec.dds";
+   specularPower[0] = "50";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SP_Sparta";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 singleton Material(Base_Ceiling_Sparta)
@@ -64,7 +82,7 @@ singleton Material(Base_Ceiling_Sparta)
    diffuseMap[0] = "Base_Ceiling_Sparta_dif";
    normalMap[0] = "Base_Ceiling_Sparta_nm";
    specularMap[0] = "Base_Ceiling_Sparta_spec";
-   specularPower[0] = "30";
+   specularPower[0] = "50";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
