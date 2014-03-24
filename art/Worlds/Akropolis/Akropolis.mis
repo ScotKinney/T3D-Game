@@ -257,7 +257,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3018";
+         botBelongsToMe = "25065";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -282,7 +282,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3019";
+         botBelongsToMe = "25066";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -296,7 +296,7 @@ new SimGroup(MissionGroup) {
          weapon = "-NoWeapon";
    };
    new TSStatic(wall2) {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Wall2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -305,14 +305,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-30.4 4.6 2.65858";
+      position = "-38.9 9.2 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic(window2) {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_WinWall2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -321,14 +321,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-12.994 0.0497793 2.56458";
+      position = "-52 9.18954 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow3.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -337,39 +337,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "3.8 9.35908 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow4.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-0.2 9.35667 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail1.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "3.8 9.38592 6.64857";
+      position = "3.8 9.38592 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -377,7 +345,7 @@ new SimGroup(MissionGroup) {
          wal1l = "wal1l_mat";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_Wall1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -386,14 +354,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-23.4 4.6 2.64649";
+      position = "-32.3 9.2 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -409,7 +377,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail4.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail4.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -425,7 +393,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail5.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail5.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -441,7 +409,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail6.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail6.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -457,7 +425,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail7.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail7.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -473,7 +441,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail8.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail8.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -489,7 +457,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow5.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_WinWall1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -498,14 +466,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-39.2132 4.55 2.64649";
+      position = "-45.6574 9.21046 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow6.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Doorway1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -514,142 +482,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-37.4 9.18772 2.64649";
+      position = "-27.6664 9.2 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall3.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-4.2 9.35307 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall4.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-7.075 9.275 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall5.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-12.4 9.35 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall6.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-15.125 9.475 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawall7.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-18.675 9.63814 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartawindow1.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-8.90878 0.0706927 2.56458";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartadoorway1.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-27.6664 9.2 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartadoorway4.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-45.8 9.17689 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Pillar1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -665,7 +505,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Pillar2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -681,7 +521,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar3.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Pillar3.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -697,7 +537,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar4.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Doorway2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -706,30 +546,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-18.3963 20.4261 2.64649";
+      position = "-27.6 9.1 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartadoorway3.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-23 9.2 2.64649";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail9.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail9.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -745,7 +569,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartabsteps1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Steps.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -754,14 +578,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-60.7983 12.3958 2.64649";
+      position = "-70.6462 12.3958 2.64649";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartabwall1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_BWall1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -770,14 +594,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-54.858 12.8 2.64649";
+      position = "-64.7059 12.8 2.64649";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartabwall2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_BWall2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -786,14 +610,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-58.2 12.8 2.64649";
+      position = "-68.0479 12.8 2.64649";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorR_Brn.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_DDoorR.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -802,14 +626,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-28.4604 9.1 2.57042";
+      position = "-28.4604 9.1 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_SDoorR_Brn.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_SDoorR.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -818,14 +642,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-23.7127 9.27864 2.64649";
+      position = "-25 9.27864 2.64649";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_SDoorL_Brn.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_SDoorL.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -834,14 +658,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-21.2146 9.70731 2.6515";
+      position = "-22.5 9.3 2.6515";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorR_Brn.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_DDoorR.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -850,14 +674,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-56.0039 10.8 2.57459";
+      position = "-62.9039 9.4 2.6";
       rotation = "1 0 0 0";
       scale = "2 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorL_Yel.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_DDoorL.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -866,221 +690,27 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-44.1987 9.4 2.6006";
+      position = "-26.8574 9.1 2.6";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_DDoorL.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-59.6961 9.4 2.6";
       rotation = "1 0 0 0";
       scale = "2 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorR_Yel.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-47.4 9.4 2.6006";
-      rotation = "1 0 0 0";
-      scale = "2 2 2";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorL_Yel.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-29.5665 10.2033 2.56361";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorR_Yel.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-31.2953 10.2296 2.5536";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_SDoorL_Yel.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-24.0805 9.46411 2.58351";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_SDoorR_Yel.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-26.5949 9.49073 2.5735";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorL_Brn.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-26.8574 9.1 2.57042";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/Sh3D_Sparta_DDoorL_Brn.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-52.7961 10.8 2.57459";
-      rotation = "1 0 0 0";
-      scale = "2 2 2";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "1";
-      isAIControlled = "0";
-      dataBlock = "ParalyzerWeapon";
-      position = "-32.0038 22.5514 -235464";
-      rotation = "0 0 1 164.725";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "8";
-      isAIControlled = "0";
-      dataBlock = "Boglin_Toes";
-      position = "-30.2495 23.3118 -235461";
-      rotation = "0 0 -1 15.52";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "2";
-      isAIControlled = "0";
-      dataBlock = "Lamp_Oil";
-      position = "-27.7889 29.5756 -235463";
-      rotation = "0 0 1 111.674";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "13";
-      isAIControlled = "0";
-      dataBlock = "ChaosBladeWeapon";
-      position = "-27.0776 32.3974 -235461";
-      rotation = "0 0 1 180.066";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "6";
-      isAIControlled = "0";
-      dataBlock = "grenadeWeapon";
-      position = "-28.9489 24.3892 -235463";
-      rotation = "0 0 1 98.4771";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "6";
-      isAIControlled = "0";
-      dataBlock = "Tokara_Mushroom";
-      position = "-39.929 20.2589 -235459";
-      rotation = "0 0 -1 30.072";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "1";
-      isAIControlled = "0";
-      dataBlock = "XR75Weapon";
-      position = "-34.2521 27.5235 -235464";
-      rotation = "0 0 -1 5.52388";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "250";
    };
    new TSStatic() {
       shapeName = "art/Packs/Buildings/Sh3D_Pergola/svpergola1.dts";
@@ -1211,7 +841,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail10.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail10.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1227,7 +857,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1236,36 +866,18 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-0.2 9.38592 6.64857";
+      position = "-0.2 9.38592 2.6";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         wal1l = "wal1l_mat";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartarail1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Stairs1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-4.2 9.38592 6.64857";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         wal1l = "wal1l_mat";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartastairs1.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
+      collisionType = "Collision Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
@@ -1277,7 +889,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1286,14 +898,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-24 -0.8 6.9";
+      position = "14.0247 -4.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1302,14 +914,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-28 -0.8 6.9";
+      position = "10.0247 -4.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof3.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof3.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1318,14 +930,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-31.4 -0.8 6.9";
+      position = "6.62469 -4.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof4.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof4.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1334,14 +946,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-34 -0.8 6.9";
+      position = "4.02469 -4.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof6.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof5.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1350,14 +962,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-43.4 0.2 6.9";
+      position = "0.827189 -3.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof7.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof6.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1366,14 +978,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-49.8 0.8 6.9";
+      position = "-5.37531 -3.375 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof8.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof7.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1382,14 +994,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-53.2 1 6.95";
+      position = "-11.7753 -2.775 2.49375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartafloor1.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Roof8.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1398,14 +1010,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-7.4 3 5.65";
+      position = "-15.1753 -2.575 2.54375";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartafloor2.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Floor1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1414,14 +1026,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-11.2 3.2 5.65";
+      position = "-7.4 3 2.6625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartafloor3.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Floor2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1430,14 +1042,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-15 3 5.65";
+      position = "-11.2 3.2 2.6625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartafloor4.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Floor3.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1446,14 +1058,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-18.8 2.2 5.65";
+      position = "-15 3 2.6625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaroof5.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Floor4.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1462,31 +1074,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-37.9955 -1.35531 6.46237";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         roof = "roof_mat";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_Straight.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "24.6 36.4 -2.63488";
+      position = "-18.8 2.2 2.6625";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerR.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Doorway1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1495,14 +1090,14 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "15.26 36.34 -2.6";
+      position = "-61.3 9.1 2.6";
       rotation = "1 0 0 0";
-      scale = "1 1 1";
+      scale = "2 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/Sh3D_Pergola/SVPergolaTop_CornerL.dts";
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Doorway2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1511,137 +1106,9 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "34.14 36.335 -2.6";
+      position = "-61.3 9 2.6";
       rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar5.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-20.5113 20.4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar6.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-22.5113 20.4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar7.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-24.5113 20.4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartapillar8.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-26.3113 20.2 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartadoorway2.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-27.8 9.4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartadoorway5.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-45.8 9.4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaCornerA.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-60 3.8 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/svspartaCornerB.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-55.8 4 2.4";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
+      scale = "2 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
    };

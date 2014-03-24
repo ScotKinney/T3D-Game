@@ -10,4 +10,6 @@ $AlterVerse::ArtPacks = "skies/default" TAB
    "Trees/SP_Sparta" TAB
    "Buildings/SP_Sparta" TAB
    "Buildings/Sh3D_Pergola" TAB
+   "Buildings/Sh3D_SPSparta_Addon" TAB
+   "TexturePacks/TRU_SP_Sparta" TAB
    "Terrains/SP_Sparta";
