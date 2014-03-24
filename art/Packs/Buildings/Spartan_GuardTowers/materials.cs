@@ -1,49 +1,44 @@
-singleton Material(mat_GrdRoofs)
+singleton Material(Base_TileRoof_GTower)
 {
-   mapTo = "Med2512";
-   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/svspartaroof1.dds";
-   doubleSided = "1";
-   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/svspartaroof1N.dds";
-   customFootstepSound = "FootStepSand1Sound";
+   mapTo = "Base_TileRoof_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_dif";
+   specularPower[0] = "30";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_spec.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sparta";
+   doubleSided = "1";
+   materialTag0 = "GuardTower_Sparta";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
-singleton Material(mat_Wood_5)
+singleton Material(Base_Rope_GTower)
 {
-   mapTo = "wood_5";
-   diffuseMap[0] = "wood_5.png";
-   normalMap[0] = "wood_5N.png";
+   mapTo = "Base_Rope_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_dif";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepGrass1Sound";
+   materialTag0 = "GuardTower_Sparta";
+};
+
+singleton Material(Base_StairBridge_GTower)
+{
+   mapTo = "Base_StairBridge_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_StairBridge_GTower_dif";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_StairBridge_GTower_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
-   materialTag0 = "Buildings_Sparta";
+   materialTag0 = "GuardTower_Sparta";
 };
 
-singleton Material(mat_Aurstone2)
+singleton Material(Base_Wall_GTower)
 {
-   mapTo = "aurstone2";
-   diffuseMap[0] = "aurstone2";
-   materialTag0 = "Buildings_Sparta";
+   mapTo = "Base_Wall_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Wall_GTower_dif";
+   specularPower[0] = "50";
+   pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sparta";
-};
-
-singleton Material(mat_GrdRopes)
-{
-   mapTo = "grdropes";
-   diffuseMap[0] = "rope_dif.dds";
-   normalMap[0] = "rope_nm.dds";
-   specularMap[0] = "rope_spec.dds";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sparta";
-};
-
-singleton Material(mat_GrdWalls)
-{
-   mapTo = "grdwalls";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall2.dds";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/svspartawall2N.dds";
    customFootstepSound = "FootStepRock1Sound";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sparta";
+   materialTag0 = "GuardTower_Sparta";
 };

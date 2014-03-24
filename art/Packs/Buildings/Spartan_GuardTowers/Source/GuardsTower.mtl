@@ -1,0 +1,48 @@
+#
+# GuardsTower.mtl
+#
+
+newmtl Base_TileRoof_GTower_dif
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd ..\Base_TileRoof_GTower_dif.dds
+
+newmtl Base_StairBridge_GTower_dif
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd ..\Base_StairBridge_GTower_dif.dds
+
+newmtl Base_Rope_GTower_dif
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd ..\Base_Rope_GTower_dif.dds
+
+newmtl Base_Wall_GTower_dif
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd ..\Base_Wall_GTower_dif.dds
+
+newmtl Base_StairBridge_GTower_dif
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd ..\Base_StairBridge_GTower_dif.dds

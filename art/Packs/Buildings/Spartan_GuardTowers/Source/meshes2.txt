@@ -1,0 +1,5 @@
+wrote mesh 0 with 98 vertices!
+wrote mesh 1 with 427 vertices!
+wrote mesh 2 with 288 vertices!
+wrote mesh 3 with 378 vertices!
+wrote mesh 4 with 1590 vertices!

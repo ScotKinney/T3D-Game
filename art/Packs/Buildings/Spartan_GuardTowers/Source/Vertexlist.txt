@@ -1,0 +1,4 @@
+Magic number: 0
+total number of verts: 1590
+number of unique verts found: 642
+number of selected vertices: 0
