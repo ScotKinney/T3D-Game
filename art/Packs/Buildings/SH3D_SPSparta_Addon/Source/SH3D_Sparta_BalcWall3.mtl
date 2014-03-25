@@ -1,0 +1,57 @@
+#
+# SH3D_Sparta_BalcWall3.mtl
+#
+
+newmtl Base_Floor2
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_Floor2_Sparta_dif.dds
+
+newmtl Base_Trim1
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_Trim1_Sparta_dif.dds
+
+newmtl Base_Pillar1
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_Pillar1_Sparta_dif.dds
+
+newmtl Base_StepsRail
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_StepsRail_Sparta_dif.dds
+
+newmtl Base_ExtWall
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_ExtWall_Sparta_dif.dds
+
+newmtl Base_IntWall
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 7.812500
+map_Kd ..\..\SP_Sparta\Base_IntWall_Sparta_dif.dds
