@@ -15,6 +15,7 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Buildings/Sh3d_Pergola" TAB
    "Buildings/SP_Sparta" TAB
    "Buildings/Spartan_GuardTowers" TAB
+   "Buildings/Sh3D_SPSparta_Addon" TAB
    "Props/CaveEntrance" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
@@ -37,5 +38,6 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Plants/AV_Conifer" TAB
    "Plants/SP_All_RiverGrass" TAB
    "Trees/Canopy" TAB
+   "TexturePacks/TRU_SP_Sparta" TAB
    "Trees/SP_Sparta";
    
