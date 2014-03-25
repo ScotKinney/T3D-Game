@@ -114,7 +114,7 @@ singleton Material(Base_Pillar2_Sparta)
 singleton Material(Base_StepsRail_Sparta)
 {
    mapTo = "Base_StepsRail_Sparta_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_StepsRail_Sparta_dif";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_StepsRail_Sparta_dif.dds";
    normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_StepsRail_Sparta_nm";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
