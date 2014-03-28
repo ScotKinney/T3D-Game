@@ -1,0 +1,21 @@
+#
+# SH3D_Sparta_WallAlcove.mtl
+#
+
+newmtl SH3D_ExtWall
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd Base_ExtWall_Sparta_dif.dds
+
+newmtl SH3D_IntWall
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 1000.000000
+map_Kd Base_IntWall_Sparta_dif.dds
