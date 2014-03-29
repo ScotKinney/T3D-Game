@@ -134,29 +134,6 @@ singleton Material(Base_Trim1_Sparta)
    materialTag0 = "Buildings_SP_Sparta";
 };
 
-singleton Material(Base_Floor1_Sparta)
-{
-   mapTo = "Base_Floor1_Sparta_dif";
-   diffuseMap[0] = "Base_Floor1_Sparta_dif";
-   normalMap[0] = "Base_Floor1_Sparta_nm";
-   customFootstepSound = "FootStepRock1Sound";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_SP_Sparta";
-};
-
-singleton Material(Base_Floor2_Sparta)
-{
-   mapTo = "Base_Floor2_Sparta_dif";
-   diffuseMap[0] = "test3.jpg";
-   customFootstepSound = "FootStepRock1Sound";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_SP_Sparta";
-   normalMap[0] = "test3_NORM.dds";
-   specularPower[0] = "50";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "test3_SPEC.dds";
-};
-
 singleton Material(Base_Iconic_Sparta)
 {
    mapTo = "Base_Iconic_Sparta_dif";
@@ -165,6 +142,32 @@ singleton Material(Base_Iconic_Sparta)
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
    specularMap[0] = "Base_Iconic_Sparta_spec.dds";
+};
+
+singleton Material(Base_Stairs_Sparta)
+{
+   mapTo = "Base_Stairs_Sparta_dif";
+   diffuseMap[0] = "Base_Stairs_Sparta_dif";
+   normalMap[0] = "Base_Stairs_Sparta_nm.dds";
+   specularMap[0] = "Base_Stairs_Sparta_spec.dds";
+   specularPower[0] = "50";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   showFootprints = "0";
+};
+
+singleton Material(Base_Floor_Sparta)
+{
+   mapTo = "Base_Floor_Sparta_dif";
+   diffuseMap[0] = "Base_Floor_Sparta_dif";
+   normalMap[0] = "Base_Floor_Sparta_nm.dds";
+   specularMap[0] = "Base_Floor_Sparta_spec.dds";
+   pixelSpecular[0] = "1";
+   specularPower[0] = "30";
+   useAnisotropic[0] = "1";
+   showFootprints = "0";
+   customFootstepSound = "FootStepRock1Sound";
 };
 
 /////////////////////////////////////////////

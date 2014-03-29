@@ -4,9 +4,9 @@
 
 newmtl Base_Door_Sparta_dif
 illum 2
-Kd 0.000000 0.000000 0.000000
-Ka 1.000000 1.000000 1.000000
-Ks 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
-Ns 7.812500
-map_Kd ..\Base_Door_Sparta_dif.dds
+Ns 1000.000000
+map_Kd C:\AV\TAP\Game\art\Packs\Buildings\SP_Sparta\SourceFiles/..\Base_Door_Sparta_dif.dds
