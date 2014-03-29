@@ -1,0 +1,12 @@
+#
+# SH3D_Sparta_StairRail.mtl
+#
+
+newmtl Base_Stairs
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ns 100.000001
+map_Kd Base_Stairs_Sparta_dif.dds
