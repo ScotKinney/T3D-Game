@@ -1,0 +1,30 @@
+#
+# SH3D_Sparta_FloorCeiling1TL.mtl
+#
+
+newmtl Base_Ceiling
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd Base_Ceiling_Sparta_dif.dds
+
+newmtl Base_Floor
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd Base_Floor_Sparta_dif.dds
+
+newmtl Base_FloorTrim
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd Base_FloorTrim_Sparta_dif.dds

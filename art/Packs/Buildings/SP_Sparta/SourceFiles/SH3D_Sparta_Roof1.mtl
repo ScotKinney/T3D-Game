@@ -9,7 +9,7 @@ Ka 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 1000.000000
-map_Kd C:\AV\TAP\Game\art\Packs\Buildings\SP_Sparta\SourceFiles/..\Base_TileRoof_Sparta_dif.dds
+map_Kd Base_TileRoof_Sparta_dif.dds
 
 newmtl Base_RoofTrim
 illum 2
@@ -20,11 +20,11 @@ Ke 0.000000 0.000000 0.000000
 Ns 1000.000000
 map_Kd Base_RoofTrim_Sparta_dif.dds
 
-newmtl Base_Ceiling
+newmtl Base_Eave
 illum 2
 Kd 1.000000 1.000000 1.000000
 Ka 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 1000.000000
-map_Kd Base_Ceiling_Sparta_dif.dds
+map_Kd Base_Eave_Sparta_dif.dds

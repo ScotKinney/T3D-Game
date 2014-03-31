@@ -86,8 +86,8 @@ f 18/9/8 20/15/8 21/13/8
 f 18/9/8 21/13/8 22/16/8
 # 8 triangles in group
 
-g Base_Ceiling0
-usemtl Base_Ceiling
+g Base_Eave0
+usemtl Base_Eave
 s 3
 f 23/17/9 24/18/9 25/6/9
 f 23/17/9 25/6/9 26/19/9
