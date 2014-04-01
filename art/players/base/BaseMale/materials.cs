@@ -38,6 +38,7 @@ singleton Material(matBM_Face)
    mapTo = "BM_Face";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Face";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBM_Body)
@@ -45,6 +46,7 @@ singleton Material(matBM_Body)
    mapTo = "BM_Body";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Body";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBM_Limbs)
@@ -52,6 +54,7 @@ singleton Material(matBM_Limbs)
    mapTo = "BM_Limbs";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Limbs";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
 };
 
 
