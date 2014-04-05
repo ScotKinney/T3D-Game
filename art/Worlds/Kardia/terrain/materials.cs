@@ -61,14 +61,15 @@ new TerrainMaterial()
 {
    internalName = "Rock_Top";
    diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
-   diffuseSize = "400";
+   diffuseSize = "100";
    normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm";
    detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
-   detailSize = "10";
+   detailSize = "12";
    detailStrength = "0.6";
-   detailDistance = "4000";
+   detailDistance = "2000";
    useAnisotropic[0] = "1"; 
    useAnisotropic0 = "1";
+   parallaxScale = "0.01";
 };
 
 // Rock_Side Terrain
@@ -77,15 +78,16 @@ new TerrainMaterial()
 {
    internalName = "Rock_Side";
    diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
-   diffuseSize = "400";
+   diffuseSize = "100";
    normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm";
    detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
-   detailSize = "80";
-   detailDistance = "4000";
+   detailSize = "60";
+   detailDistance = "3000";
    useSideProjection = "1";
-   detailStrength = "0.6";
+   detailStrength = "0.8";
    useAnisotropic[0] = "1"; 
    useAnisotropic0 = "1";
+   parallaxScale = "0.03";
 };
 
 
@@ -101,7 +103,7 @@ new TerrainMaterial()
    detailStrength = "0.4";
    detailBrightness = "1";
    detailDistance = "800";
-   parallaxScale = "0.01";
+   parallaxScale = "0.03";
    useAnisotropic0 = "1";
 };
 

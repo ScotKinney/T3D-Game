@@ -1,6 +1,7 @@
 // Kardia level config
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "Clouds/Default" TAB
+   "Skies/Default" TAB
    "SkyBoxes/DefaultNight" TAB
    "SkyBoxes/DarkSky2" TAB
    "GroundCover/Default" TAB
