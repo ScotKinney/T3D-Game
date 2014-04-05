@@ -2,14 +2,15 @@
 singleton Material(mat_granite01)
 {
    mapTo = "stone_14";
-   diffuseMap[0] = "granite_01_dif.dds";
-   normalMap[0] = "granite_01_nm_inv.dds";
-   specularMap[0] = "granite_01_spec.dds";
-   specularPower[0] = "51";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_Walkway/granite_01_dif.dds";
+   normalMap[0] = "art/Packs/Buildings/Spartan_Walkway/granite_01_nm_inv.dds";
+   specularMap[0] = "art/Packs/Buildings/Spartan_Walkway/granite_01_spec.dds";
+   specularPower[0] = "36";
    specularStrength[0] = "1";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
+   pixelSpecular[0] = "1";
 };
 
 singleton Material(mat_poolwalls)
@@ -54,14 +55,14 @@ singleton Material(mat_stones04)
 singleton Material(mat_castlefloorA)
 {
    mapTo = "brut_texcol2_058";
-   diffuseMap[0] = "CastleFloorA.dds";
-   normalMap[0] = "CastleFloorA_NRM";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_Walkway/CastleFloorA.dds";
+   normalMap[0] = "art/Packs/Buildings/Spartan_Walkway/CastleFloorA_NRM";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    customImpactSound = "FootStepRock1Sound";
    materialTag0 = "Kardia";
    pixelSpecular[0] = "1";
-   specularPower[0] = "50";
+   specularPower[0] = "128";
 };
 
 singleton Material(mat_treeSoil)
