@@ -79,9 +79,9 @@ singleton Material(Base_RoofTrim_Sparta)
 singleton Material(Base_Ceiling_Sparta)
 {
    mapTo = "Base_Ceiling_Sparta_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Ceiling_Sparta_dif.dds";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Ceiling_Sparta_nm.dds";
-   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Ceiling_Sparta_spec.dds";
+   diffuseMap[0] = "Base_Ceiling_Sparta_dif.dds";
+   normalMap[0] = "Base_Ceiling_Sparta_nm.dds";
+   specularMap[0] = "Base_Ceiling_Sparta_spec.dds";
    specularPower[0] = "50";
    pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
@@ -95,7 +95,7 @@ singleton Material(Base_Pillar1_Sparta)
    diffuseMap[0] = "Base_Pillar1_Sparta_dif";
    normalMap[0] = "Base_Pillar1_Sparta_nm";
    specularMap[0] = "Base_Pillar1_Sparta_spec";
-   specularPower[0] = "50";
+   specularPower[0] = "66";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
@@ -160,9 +160,9 @@ singleton Material(Base_Stairs_Sparta)
 singleton Material(Base_Floor_Sparta)
 {
    mapTo = "Base_Floor_Sparta_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Floor_Sparta_dif.dds";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Floor_Sparta_nm";
-   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Floor_Sparta_spec";
+   diffuseMap[0] = "Base_Floor_Sparta_dif.dds";
+   normalMap[0] = "Base_Floor_Sparta_nm";
+   specularMap[0] = "Base_Floor_Sparta_spec";
    pixelSpecular[0] = "1";
    specularPower[0] = "50";
    useAnisotropic[0] = "1";
@@ -173,13 +173,14 @@ singleton Material(Base_Floor_Sparta)
 
 /////////////////////////////////////////////
 
-singleton Material(DefaultMaterial8)
+singleton Material(Base_FloorTrim)
 {
    mapTo = "Base_FloorTrim_Sparta_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_FloorTrim_Sparta_dif";
-   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_FloorTrim_Sparta_nm.dds";
+   diffuseMap[0] = "Base_FloorTrim_Sparta_dif";
+   normalMap[0] = "Base_FloorTrim_Sparta_nm.dds";
+   specularMap[0] = "Base_FloorTrim_Sparta_spec.dds";
    specularPower[0] = "30";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_FloorTrim_Sparta_spec.dds";
+   useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
 };
