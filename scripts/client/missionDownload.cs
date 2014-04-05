@@ -40,7 +40,7 @@
 function onMissionDownloadPhase1(%missionName, %musicTrack)
 {   
    // Load the post effect presets for this mission.
-   %path = "levels/" @ fileBase( %missionName ) @ $PostFXManager::fileExtension;
+   %path = "art/Worlds/" @ fileBase( %missionName )@ "/" @ fileBase( %missionName ) @ $PostFXManager::fileExtension;
    if ( isScriptFile( %path ) )
       postFXManager::loadPresetHandler( %path ); 
    else
