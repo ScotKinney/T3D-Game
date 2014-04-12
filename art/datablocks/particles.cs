@@ -457,48 +457,10 @@ datablock SphereEmitterData(shrine_fire_emitter)
    thetaMin = "0";
 };
 
-datablock BillboardParticleData(BlBdamageAmountParticle)
-{
-   textureName          = "core/art/particles/SpriteNumbers01";
-   dragCoeffiecient     = 0;
-   gravityCoefficient   = -0.03;
-   inheritedVelFactor   = "0.8";
-   constantAcceleration = "0";
-   lifetimeMS           = "3000";
-   lifetimeVarianceMS   = "500";
-   useInvAlpha =  false;
-   spinRandomMin = -5;
-   spinRandomMax = 5;
-
-   colors[0]     = "0.5 0.1 0.1 0.8";
-   colors[1]     = "0.9 0.25 0.25 1.0";
-   colors[2]     = "0.75 0.1 0.1 0.9";
-   colors[3]     = ".5 0 0 0";
-
-   sizes[0]      = 0.1;
-   sizes[1]      = 0.4;
-   sizes[2]      = 0.3;
-   sizes[3]      = 0;
-
-   times[0]      = 0.0;
-   times[1]      = 0.35;
-   times[2]      = 0.8;
-   times[3]      = 1;
-   
-   dragCoefficient = 0.25;
-   spinSpeed = "1.0";
-   animTexName = "core/art/particles/SpriteNumbers01";
-   textureCoords[0]     = "0.375 0.166667";  // 0, 0
-   textureCoords[1]     = "0.375 0.2474";    // 0, 1
-   textureCoords[2]     = "0.4974 0.2474";   // 1, 1
-   textureCoords[3]     = "0.4974 0.166667"; // 1, 0
-};
-
 datablock SpriteParticleData(damageAmountParticle)
 {
    textureName          = "core/art/particles/SpriteNumbers01";
    gridSize             = "8 12";
-   dragCoeffiecient     = 0;
    gravityCoefficient   = -0.03;
    inheritedVelFactor   = "0.8";
    constantAcceleration = "0";
