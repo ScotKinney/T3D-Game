@@ -315,10 +315,10 @@ function TerrainMaterialDlg::newMat( %this )
       internalName = %matName;
       parentGroup = TerrainMaterialDlgNewGroup;
    };
-   %newMat.setFileName( "art/terrains/materials.cs" );
+   %newMat.setFileName( $WorldPath @ "/terrain/materials.cs" );
    
    // Mark it as dirty and to be saved in the default location.
-   ETerrainMaterialPersistMan.setDirty( %newMat, "art/terrains/materials.cs" );
+   ETerrainMaterialPersistMan.setDirty( %newMat, $WorldPath @ "/terrain/materials.cs" );
             
    %matLibTree = %this-->matLibTree;
    %matLibTree.buildVisibleTree( true );
@@ -524,7 +524,7 @@ function TerrainMaterialDlg::saveDirtyMaterial( %this, %mat )
    
    %fileName = %mat.getFileName();
    if( %fileName $= "" )
-      %fileName = "art/terrains/materials.cs";
+      %fileName = $WorldPath @ "/terrain/materials.cs";
       
    ETerrainMaterialPersistMan.setDirty( %mat, %fileName ); 
 }
@@ -606,7 +606,7 @@ function TerrainMaterialDlg::restoreMaterials( %this )
 function TerrainMaterialDlg::_selectTextureFileDialog( %this, %defaultFileName )
 {
    if( $Pref::TerrainEditor::LastPath $= "" )
-      $Pref::TerrainEditor::LastPath = "art/terrains";
+      $Pref::TerrainEditor::LastPath = $WorldPath @ "/terrain";
 
    %dlg = new OpenFileDialog()
    {

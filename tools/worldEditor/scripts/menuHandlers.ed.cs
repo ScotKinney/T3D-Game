@@ -422,7 +422,7 @@ function EditorSaveMissionAs( %missionName )
          // moved to the correct place.
          
          if( EditorGui.saveAs && %terrainFilePath $= "tools/art/terrains" )
-            %terrainFilePath = "art/terrains";
+            %terrainFilePath = $WorldPath @ "/terrain";
          
          // Try and follow the existing naming convention.
          // If we can't, use systematic terrain file names.
