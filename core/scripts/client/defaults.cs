@@ -23,6 +23,7 @@
 $pref::Player::Name = "Visitor";
 $pref::Player::defaultFov = 65;
 $pref::Player::zoomSpeed = 0;
+$pref::WorldEditor::cameraFOV = "65";
 
 $pref::Net::LagThreshold = 400;
 $pref::Net::Port = 28000;
