@@ -53,7 +53,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TerrainBlock(KardianTer) {
-         terrainFile = "levels/KardianTer.ter";
+         terrainFile = "art/worlds/Kardia/terrain/KardianTer.ter";
          castShadows = "1";
          squareSize = "1";
          baseTexSize = "2048";
