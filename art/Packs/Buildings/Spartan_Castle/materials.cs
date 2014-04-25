@@ -154,10 +154,12 @@ singleton Material(castle1_svrelief2)
 singleton Material(castle1_svroof1)
 {
    mapTo = "svroof1";
-   diffuseMap[0] = "svtqroof1";
-   normalMap[0] = "svtqroof1N.dds";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_dif.dds";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_nm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepSand1Sound";
+   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_spec.dds";
+   materialTag0 = "GuardTower_Sparta";
 };
 
 singleton Material(castle1_svsteps)

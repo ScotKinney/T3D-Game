@@ -497,7 +497,7 @@
           <extra>
             <technique profile="OpenCOLLADA">
               <user_properties>BB::DIM=256
-BB::EQUATOR_STEPS=32
+BB::EQUATOR_STEPS=16
 BB::POLAR_STEPS=0
 BB::POLAR_ANGLE=60
 BB::INCLUDE_POLES=0

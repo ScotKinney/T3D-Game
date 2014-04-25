@@ -1,11 +1,11 @@
 singleton Material(Base_TileRoof_GTower)
 {
    mapTo = "Base_TileRoof_GTower_dif";
-   diffuseMap[0] = "Base_TileRoof_GTower_dif";
-   normalMap[0] = "Base_TileRoof_GTower_nm";
-   specularMap[0] = "Base_TileRoof_GTower_spec";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_dif";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_nm.dds";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_spec.dds";
    specularPower[0] = "30";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "GuardTower_Sparta";
@@ -37,9 +37,9 @@ singleton Material(Base_Wall_GTower)
 singleton Material(Base_Ceiling_GTower)
 {
    mapTo = "Base_Ceiling_GTower_dif";
-   diffuseMap[0] = "Base_Ceiling_GTower_dif";
-   normalMap[0] = "Base_Ceiling_GTower_nm";
-   specularMap[0] = "Base_Ceiling_GTower_spec";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_dif";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_nm.dds";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "GuardTower_Sparta";
 };

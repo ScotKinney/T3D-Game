@@ -100,10 +100,3 @@ singleton Material(palmtree_tall_ColorEffectR224G86B86_material)
    translucentBlendOp = "None";
 };
 
-singleton Material(palm_bush_ColorEffectR153G228B153_material)
-{
-   mapTo = "ColorEffectR153G228B153-material";
-   diffuseColor[0] = "0.6 0.894118 0.6 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};

@@ -21,7 +21,7 @@
 //-----------------------------------------------------------------------------
 
 $pref::Player::Name = "Visitor";
-$pref::Player::defaultFov = 65;
+$pref::Player::defaultFov = 45;
 $pref::Player::zoomSpeed = 0;
 $pref::WorldEditor::cameraFOV = "65";
 

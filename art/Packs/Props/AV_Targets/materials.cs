@@ -1,10 +1,10 @@
 singleton Material(mat_Target)
 {
    mapTo = "TargetFace";
-   diffuseMap[0] = "TargetFace";
+   diffuseMap[0] = "art/Packs/Props/AV_Targets/TargetFace";
    materialTag0 = "Props_AV";
-   specularPower[0] = "100";
-   pixelSpecular[0] = "1";
+   specularPower[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };

@@ -102,6 +102,8 @@ singleton Material(Buckskin_Horse)
    specularMap[0] = "art/Packs/AI/Horses/Body_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Horses";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
 };
 
 ///Mane Colors
