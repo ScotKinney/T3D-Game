@@ -2,24 +2,24 @@
 //////////////////////////////////////////////////////
 
 
-singleton Material(Ter_Grass)   
+singleton Material(Ter_Kard_Overlay_dif)   
 {   
-   mapTo = "Kard_Overlay3";   
+   mapTo = "Kard_Overlay_dif";   
    customFootstepSound = FootStepGrass1Sound;
 };
 
-singleton Material(Ter_DryGround)   
+singleton Material(Ter_Spartan_Path_dif)   
 {   
-   mapTo = "soil_02";   
+   mapTo = "Spartan_Path_dif";   
    customFootstepSound = FootStepSand1Sound;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };  
 
-singleton Material(Ter_DirtySand)
+singleton Material(Ter_Spartan_Sand_dif)
 {
-   mapTo = "dirtysand_base";
+   mapTo = "Spartan_Sand_dif";
    customFootstepSound = FootStepSand1Sound;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
