@@ -38,7 +38,9 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Plants/AV_Tropical" TAB
    "Plants/AV_Conifer" TAB
    "Plants/SP_All_RiverGrass" TAB
+   "Plants/MK4_NP2_Bushes" TAB
    "Trees/Canopy" TAB
+   "Trees/MK4_Tropical" TAB
    "TexturePacks/TRU_SP_Sparta" TAB
    "Trees/SP_Sparta";
    
