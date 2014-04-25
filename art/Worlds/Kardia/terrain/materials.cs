@@ -4,24 +4,18 @@
 
 singleton Material(Ter_Grass)   
 {   
-   mapTo = "clearTerrain001";   
+   mapTo = "Kard_Overlay3";   
    customFootstepSound = FootStepGrass1Sound;
 };
 
 singleton Material(Ter_DryGround)   
 {   
-   mapTo = "dryground_base";   
+   mapTo = "soil_02";   
    customFootstepSound = FootStepSand1Sound;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };  
-
-singleton Material(Ter_Snow)   
-{   
-   mapTo = "snow_detail";   
-   customFootstepSound = FootStepSnow1Sound;
-};
 
 singleton Material(Ter_DirtySand)
 {
@@ -32,135 +26,120 @@ singleton Material(Ter_DirtySand)
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
-singleton Material(Ter_DarkDirt)
-{
-   mapTo = "forestmix_base";
-   customFootstepSound = FootStepSand1Sound;
-   showDust = true;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
-};
-
-singleton Material(mat_Spartan_rock_dif)//material for sp_rocks
+singleton Material(Spartan_rock_dif_mat)
 {
    mapTo = "Spartan_rock_dif";
-   footstepSoundId = 1;
-   diffuseMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif.dds";
-   normalMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm.dds";
-   detailMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det.dds";
-   detailScale[0] = "3 3";
+   diffuseMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
+   normalMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nmp";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_spec";
    useAnisotropic[0] = "1";
-   showFootprints = "0";
+   customFootstepSound = "FootStepRock1Sound";
+   materialTag0 = "Rock";
 };
-
 ////////////////////////////////////////////////////////////
 
-// Rock_Top Terrain
-
 new TerrainMaterial()
 {
-   internalName = "Rock_Top";
-   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
-   diffuseSize = "100";
-   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm";
-   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
-   detailSize = "12";
-   detailStrength = "0.6";
-   detailDistance = "2000";
-   useAnisotropic[0] = "1"; 
-   useAnisotropic0 = "1";
-   parallaxScale = "0.01";
-};
-
-// Rock_Side Terrain
-
-new TerrainMaterial()
-{
-   internalName = "Rock_Side";
-   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
-   diffuseSize = "100";
-   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm";
-   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
-   detailSize = "60";
-   detailDistance = "3000";
-   useSideProjection = "1";
-   detailStrength = "0.8";
-   useAnisotropic[0] = "1"; 
-   useAnisotropic0 = "1";
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   diffuseSize = "2048";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_det";
+   detailSize = "6";
+   detailStrength = "0.1";
+   detailDistance = "200";
    parallaxScale = "0.03";
+   useAnisotropic0 = "1";
+   internalName = "TextureMap";
 };
-
 
 new TerrainMaterial()
 {
-   internalName = "Grass";
-   diffuseMap = "art/Packs/Terrains/SP_Sparta/clearTerrain001";
-   diffuseSize = "300";
-   normalMap = "art/Packs/Terrains/SP_Sparta/gras_01n";
-   detailMap = "art/Packs/Terrains/SP_Sparta/gras_01";
-   detailScale = "512";
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
+   diffuseSize = "128";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
+   detailStrength = "0.3";
+   detailDistance = "1200";
+   parallaxScale = "0.01";
+   detailSize = "16";
+   macroMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   macroStrength = "0.1";
+   macroSize = "2048";
+   macroDistance = "500";
+   useAnisotropic0 = "1";
+   internalName = "Rock_Low";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   diffuseSize = "2048";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_det";
+   detailDistance = "100";
    detailSize = "4";
    detailStrength = "0.4";
-   detailBrightness = "1";
-   detailDistance = "800";
-   parallaxScale = "0.03";
-   useAnisotropic0 = "1";
-};
-
-new TerrainMaterial()
-{
-   internalName = "DryGround";
-   diffuseMap = "art/packs/terrains/SP_Sparta/dryground_base";
-   diffuseSize = "400";
-   normalMap = "art/packs/terrains/SP_Sparta/dryground_normal";
-   detailMap = "art/packs/terrains/SP_Sparta/dryground_detail";
-   detailSize = "3";
-   detailStrength = "0.5";
-   parallaxScale = "0.1";
-   detailDistance = "400";
-   useAnisotropic0 = "1";
-};
-
-new TerrainMaterial()
-{
-   internalName = "DirtySand";
-   diffuseMap = "art/packs/terrains/SP_Sparta/dirtysand_base";
-   diffuseSize = "900";
-   normalMap = "art/packs/terrains/SP_Sparta/dirtysand_nrm";
-   detailMap = "art/packs/terrains/SP_Sparta/dirtysand_detail";
-   detailSize = "4";
-   detailStrength = "0.8";
-   detailDistance = "100";
-   parallaxScale = "0.02";
-   detailScale = "512";
-   useAnisotropic0 = "1";
-};
-
-new TerrainMaterial()
-{
-   internalName = "Snow";
-   diffuseMap = "art/packs/terrains/SP_Sparta/snow_detail";
-   diffuseSize = "200";
-   detailMap = "art/packs/terrains/SP_Sparta/grass2_d";
-   detailDistance = "1500";
-   detailSize = "20";
-   useAnisotropic[0] = "1"; 
-};
-
-new TerrainMaterial()
-{
-   internalName = "DarkDirt";
-   diffuseMap = "art/packs/terrains/SP_Sparta/forestmix_base";
-   diffuseSize = "500";
-   normalMap = "art/packs/terrains/SP_Sparta/soil_02n";
-   detailMap = "art/packs/terrains/SP_Sparta/soil_02";
-   detailSize = "6";
-   detailStrength = "0.3";
-   detailDistance = "400";
    parallaxScale = "0.01";
-   detailScale = "512";
-   detailBrightness = "1";
+   macroMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_dif";
+   macroSize = "12";
+   macroStrength = "0.5";
+   macroDistance = "1500";
    useAnisotropic0 = "1";
+   internalName = "Grass";
 };
 
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Sand_dif";
+   diffuseSize = "128";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Sand_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Sand_det";
+   detailSize = "6";
+   detailStrength = "0.4";
+   detailDistance = "200";
+   parallaxScale = "0.03";
+   macroMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   macroSize = "2048";
+   macroStrength = "0.3";
+   macroDistance = "1500";
+   useAnisotropic0 = "1";
+   internalName = "Sand_Beach";
+};
 
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Path_dif";
+   diffuseSize = "12";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Path_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Path_det";
+   detailSize = "5";
+   detailStrength = "0.5";
+   detailDistance = "100";
+   macroMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   macroSize = "2048";
+   macroStrength = "0.2";
+   macroDistance = "2500";
+   parallaxScale = "0.03";
+   useAnisotropic0 = "1"; 
+   internalName = "Path"; 
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
+   diffuseSize = "2048";
+   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nmp";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
+   detailSize = "16";
+   detailStrength = "0.4";
+   detailDistance = "200";
+   parallaxScale = "0.01";
+   useAnisotropic0 = "1";
+   internalName = "Rock_High"; 
+   macroMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
+   macroStrength = "0.15";
+   macroSize = "128";
+   macroDistance = "2500";
+};
