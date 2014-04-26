@@ -32,8 +32,7 @@ singleton Material(Spartan_rock_dif_mat)
    diffuseMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
    normalMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nmp";
    specularPower[0] = "128";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_spec";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Rock";
