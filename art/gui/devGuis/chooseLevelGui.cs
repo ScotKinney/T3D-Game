@@ -52,6 +52,7 @@ function StartLevel( %mission, %hostingType )
    // Load mission specific audio and materials
    %missionRoot = FileBase(%mission);
    $WorldPath = "art/worlds/" @ %missionRoot;
+   $WorldName = %missionRoot;
    $AlterVerse::serverName = "dev" @ %missionRoot;
    mountWorldPacks(%missionRoot);
    loadWorldSFX(true);

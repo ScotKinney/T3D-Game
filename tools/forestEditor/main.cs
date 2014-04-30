@@ -92,22 +92,35 @@ function reinitForest()
 function ForestEditorPlugin::onWorldEditorStartup( %this )
 {       
    new PersistenceManager( ForestDataManager );
-   
+
+   // Make sure we've loaded our managed item data
+   %itemPath = $WorldPath @ "/forest/managedItemData.cs";
+   if ( !isFile( %itemPath ) )
+   {
+      createPath( %itemPath );
+      pathCopy("tools/forestEditor/managedItemData.cs", %itemPath, false);
+      exec(%itemPath);
+   }
+
+   // Make sure we've got a brush file
    %brushPath = $WorldPath @ "/forest/brushes.cs";
-   if ( !isFile( %brushPath ) )   
-      createPath( %brushPath );      
-      
+   if ( !isFile( %brushPath ) )
+   {
+      createPath( %brushPath );
+      pathCopy("tools/forestEditor/brushes.cs", %brushPath, false);
+   }
+
    // This creates the ForestBrushGroup, all brushes, and elements.
    exec( %brushpath );         
-   
+
    if ( !isObject( ForestBrushGroup ) )
    {
       new SimGroup( ForestBrushGroup );
       %this.showError = true;      
    }
-      
+
    ForestEditBrushTree.open( ForestBrushGroup );   
-            
+
    if ( !isObject( ForestItemDataSet ) )
       new SimSet( ForestItemDataSet );
       

@@ -257,7 +257,7 @@ function ForestEditorGui::okDeleteMesh( %this, %mesh )
 {
        if ($ISOneWorld)
       {
-      error("Cannot Create a delete a Forest mesh on Client");
+      error("Cannot delete a Forest mesh on Client");
       return;
       }
    // Remove mesh from file
@@ -480,11 +480,14 @@ function ForestEditorInspector::inspect( %this, %obj )
 
       case "TSForestItemData":   
          %this.groupFilters = "+Media,+Wind";
+         ForestDataManager.setDirty( %obj.name, $WorldPath @ "/forest/managedItemData.cs" );  
 
       default:
          %this.groupFilters = "";
    }
    
+   ForestEditorPlugin.dirty = true;
+   EWorldEditor.isDirty = true;   
    Parent::inspect( %this, %obj );  
 }
 
