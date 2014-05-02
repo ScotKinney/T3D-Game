@@ -76,17 +76,17 @@ new TerrainMaterial()
    diffuseMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
    diffuseSize = "2048";
    normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_nmp";
-   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_det";
-   detailDistance = "100";
+   detailDistance = "500";
    detailSize = "4";
-   detailStrength = "0.4";
-   parallaxScale = "0.01";
-   macroMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_dif";
+   detailStrength = "0.5";
+   parallaxScale = "0";
    macroSize = "12";
    macroStrength = "0.5";
    macroDistance = "1500";
    useAnisotropic0 = "1";
    internalName = "Grass";
+   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_det";
+   macroMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_dif";
 };
 
 new TerrainMaterial()
