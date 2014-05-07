@@ -36,6 +36,7 @@ singleton Material(Spartan_rock_dif_mat)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Rock";
+   showFootprints = "0";
 };
 ////////////////////////////////////////////////////////////
 
