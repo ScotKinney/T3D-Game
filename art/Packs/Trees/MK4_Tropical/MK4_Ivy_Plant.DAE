@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Scot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+      <source_data>file:///F:/AV/TAP/Game/art/Packs/Trees/MK4_Tropical/Source/MK4_Ivy_Plant.max</source_data>
+    </contributor>
+    <created>2014-05-01T10:35:59</created>
+    <modified>2014-05-01T10:35:59</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="MK4_Ivy_Plant">
+      <profile_COMMON>
+        <newparam sid="MK4_ivy_plant_dds-surface">
+          <surface type="2D">
+            <init_from>MK4_ivy_plant_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="MK4_ivy_plant_dds-sampler">
+          <sampler2D>
+            <source>MK4_ivy_plant_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0.2843671 0.2843671 0.2843671 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="MK4_ivy_plant_dds-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>1</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>0</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>1</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="MK4_Ivy_Plant-material" name="MK4_Ivy_Plant">
+      <instance_effect url="#MK4_Ivy_Plant"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-MK4_IvyPlant" name="MK4_IvyPlant">
+      <mesh>
+        <source id="geom-MK4_IvyPlant-positions">
+          <float_array id="geom-MK4_IvyPlant-positions-array" count="156">-3.553497 -2.556378 1.580471 -3.553497 14.79112 1.580471 3.553497 -2.556378 -1.580471 3.553497 14.79112 -1.580471 -3.801093 2.353973 -0.8227538 -3.801093 19.70147 -0.8227538 3.801093 2.353973 0.8227538 3.801093 19.70147 0.8227538 4.969696 19.44984 1.475583 3.450554 15.07413 3.906805 -1.605112 20.87851 -0.06135046 -3.124254 16.50279 2.369871 -0.7818071 5.97502 2.496923 -5.326802 8.364577 3.496193 1.710701 11.83161 -0.171243 -2.834294 14.22117 0.8280263 -2.911482 13.19243 2.156903 -3.525365 18.24652 -1.493123 3.248932 20.03898 -0.1504941 3.862816 14.98489 3.499531 -4.951406 13.79382 3.38541 -2.714198 16.26772 -1.917241 3.72162 13.54852 -0.4705586 1.484412 11.07462 4.832092 -1.905414 7.448383 2.588 -2.515433 12.46566 -1.113105 4.484297 13.72951 -0.5535145 5.094316 8.712233 3.147591 -3.833447 6.293642 3.381474 -0.3750858 9.133293 -1.002526 4.175952 3.638408 -0.9716024 0.7175908 0.7987556 3.412398 1.924755 12.40895 3.931839 2.345471 14.30042 -1.589881 -3.975323 12.04933 -2.842597 -4.396039 10.15785 2.679123 1.528939 13.7551 4.132627 4.607336 15.80787 -0.4009857 -1.080439 18.50159 -3.043385 -4.158835 16.44881 1.490227 2.758046 5.815906 3.668782 4.081557 10.01142 -0.1899805 -2.309545 9.829787 -2.579541 -3.633056 5.634273 1.279222 0.8432808 -2.202657 2.007069 4.718814 1.921775 0.5193257 -0.3947792 6.208375 -0.9178269 -4.270313 2.083943 0.5699162 -4.306603 18.9409 2.597588 -0.5885892 22.50612 -0.9673703 4.50638 17.5222 -0.6379414 0.7883654 13.95698 2.927017</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-positions-array" count="52" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_IvyPlant-normals">
+          <float_array id="geom-MK4_IvyPlant-normals-array" count="156">0.406383 0 0.9137028 0.4063829 0 0.9137028 0.406383 0 0.9137028 0.4063829 0 0.9137028 -0.2115528 0 0.9773666 -0.2115528 0 0.9773666 -0.2115528 0 0.9773666 -0.2115528 0 0.9773666 -0.09006839 0.5074211 0.8569781 -0.09006835 0.5074211 0.8569782 -0.09006837 0.5074211 0.8569781 -0.09006842 0.5074212 0.856978 0.3386951 0.2669033 0.9022462 0.3386951 0.2669033 0.9022462 0.3386951 0.2669033 0.9022462 0.3386951 0.2669033 0.9022462 -0.2981977 0.5347694 0.7906325 -0.2981977 0.5347694 0.7906326 -0.2981977 0.5347694 0.7906325 -0.2981977 0.5347694 0.7906325 0.242527 0.8359422 0.4923224 0.242527 0.835942 0.4923224 0.242527 0.8359422 0.4923224 0.242527 0.8359422 0.4923224 -0.1674698 0.5719813 0.8029889 -0.1674697 0.5719813 0.8029889 -0.1674698 0.5719814 0.8029889 -0.1674698 0.5719814 0.8029889 0.5369984 0.4487789 0.7143041 0.5369983 0.4487788 0.7143042 0.5369983 0.4487788 0.7143041 0.5369983 0.4487788 0.714304 -0.3705178 0.8869926 0.2756098 -0.3705178 0.8869925 0.2756098 -0.3705178 0.8869925 0.2756098 -0.3705178 0.8869925 0.2756098 0.1699445 0.8492339 0.4999206 0.1699445 0.849234 0.4999205 0.1699445 0.8492339 0.4999206 0.1699445 0.8492339 0.4999208 -0.2685439 0.6966103 0.6652956 -0.2685438 0.6966102 0.6652956 -0.2685438 0.6966103 0.6652957 -0.2685439 0.6966103 0.6652957 0.01126424 0.3299104 0.9439451 0.01126424 0.3299105 0.943945 0.01126424 0.3299104 0.943945 0.01126424 0.3299104 0.9439451 0.3712392 0.433777 0.8209866 0.3712392 0.4337769 0.8209866 0.3712392 0.433777 0.8209865 0.3712392 0.4337771 0.8209866</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-normals-array" count="52" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_IvyPlant-map-2">
+          <float_array id="geom-MK4_IvyPlant-map-2-array" count="156">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-map-2-array" count="52" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_IvyPlant-map0">
+          <float_array id="geom-MK4_IvyPlant-map0-array" count="156">0.9696888 0 1 0.4413155 0 0.2821242 0.5526922 0 0.1724489 0.9537107 0 0.7274617 0.3889234 0 0.3252011 0.4610056 0 0.7171381 0.8984877 0 0.4116103 0 0 0 0.7136323 0.3333341 0.6944623 0.10342 0.008121207 0.08256582 0.7058086 0.2192549 0.8895433 0.2335914 0 1 0.9538103 0.2384381 1 0.1241046 0 0.8867031 0.70557 0.1889496 0.9105102 0.8940138 0.006194451 0.3912219 0.7124296 0.1127818 1 0.7147906 0.004574605 0.9784828 0.6197681 0.3300245 0.8316833 0 0 0 0.758934 0 1 0.3590913 0 1 0.5339728 0 0.7544305 0 0 0.01454263 1 0.2929262 1 0 0.1079511 0.5239889 0.0420538 0.2672496 0.580667 0.3871147 0 0.1199392 0.785018 0 1 0.5668861 0 1 0.5771003 0 1 0.2687402 0 0.1197928 1 0 0.8023985 0.5380061 0 0.7428377 0.4686794 0 0.5195064 0.1365883 0 2.86735e-4 0.1254213 0 0.01949956 0.9466622 0 0.8572498 0.900619 0 0.06722733 0.07903196 0 0 0.9451035 0 0.8077655 0.8395956 0 1 0.1993592 0 0.5500987 0.03258052 0 0 1 0.1232973 0.6115705 0.591079 0.3341216 0.5666696 0.6123617 0.2779701 0.6216781 0.04118606 0 0.1100981 0.2397005 0.1289513 0.7975681 1 0.01390702 1 0.9630473 0.3061772 0.8568392 0 0 0.004571883</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-map0-array" count="52" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_IvyPlant-map1">
+          <float_array id="geom-MK4_IvyPlant-map1-array" count="156">0 0 0 0.4483778 0 0 0.4483778 1 0 0 1 0 0 0 0 0.4483778 0 0 0.4483778 1 0 0 1 0 0.5107813 0.6984462 0 0.9086223 0.6984462 0 0.9086224 1 0 0.5107813 1 0 0.5107813 0.6984462 0 0.9086223 0.6984462 0 0.9086224 1 0 0.5107813 1 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-map1-array" count="52" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_IvyPlant-map2">
+          <float_array id="geom-MK4_IvyPlant-map2-array" count="156">0 0 0 0.4483778 0 0 0.4483778 1 0 0 1 0 0 0 0 0.4483778 0 0 0.4483778 1 0 0 1 0 0.5107813 0.6984462 0 0.9086223 0.6984462 0 0.9086224 1 0 0.5107813 1 0 0.5107813 0.6984462 0 0.9086223 0.6984462 0 0.9086224 1 0 0.5107813 1 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.6065354 0.3611155 0 1 0.3611155 0 1 0.6984462 0 0.6065354 0.6984462 0 0.4483778 0 0 0.8596701 0 0 0.85967 0.3611155 0 0.4483778 0.3611155 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_IvyPlant-map2-array" count="52" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-MK4_IvyPlant-vertices">
+          <input semantic="POSITION" source="#geom-MK4_IvyPlant-positions"/>
+        </vertices>
+        <triangles material="MK4_Ivy_Plant" count="26">
+          <input semantic="VERTEX" source="#geom-MK4_IvyPlant-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MK4_IvyPlant-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-MK4_IvyPlant-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-MK4_IvyPlant-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-MK4_IvyPlant-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 2 1 1 1 1 3 2 2 2 2 3 2 2 2 2 1 3 3 3 3 0 0 0 0 0 4 4 4 4 4 6 5 5 5 5 7 6 6 6 6 7 6 6 6 6 5 7 7 7 7 4 4 4 4 4 8 8 8 8 8 10 9 9 9 9 11 10 10 10 10 11 10 10 10 10 9 11 11 11 11 8 8 8 8 8 12 12 12 12 12 14 13 13 13 13 15 14 14 14 14 15 14 14 14 14 13 15 15 15 15 12 12 12 12 12 16 16 16 16 16 19 17 17 17 17 18 18 18 18 18 18 18 18 18 18 17 19 19 19 19 16 16 16 16 16 20 20 20 20 20 23 21 21 21 21 22 22 22 22 22 22 22 22 22 22 21 23 23 23 23 20 20 20 20 20 24 24 24 24 24 27 25 25 25 25 26 26 26 26 26 26 26 26 26 26 25 27 27 27 27 24 24 24 24 24 28 28 28 28 28 31 29 29 29 29 30 30 30 30 30 30 30 30 30 30 29 31 31 31 31 28 28 28 28 28 35 32 32 32 32 32 33 33 33 33 33 34 34 34 34 33 34 34 34 34 34 35 35 35 35 35 32 32 32 32 39 36 36 36 36 36 37 37 37 37 37 38 38 38 38 37 38 38 38 38 38 39 39 39 39 39 36 36 36 36 43 40 40 40 40 40 41 41 41 41 41 42 42 42 42 41 42 42 42 42 42 43 43 43 43 43 40 40 40 40 47 44 44 44 44 44 45 45 45 45 45 46 46 46 46 45 46 46 46 46 46 47 47 47 47 47 44 44 44 44 48 48 48 48 48 51 49 49 49 49 50 50 50 50 50 50 50 50 50 50 49 51 51 51 51 48 48 48 48 48</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="MK4_ivy_plant_dds">
+      <init_from>file:///F:/AV/TAP/Game/art/Packs/Trees/MK4_Tropical/MK4_ivy_plant.dds</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-MK4_IvyPlant" name="MK4_IvyPlant">
+        <rotate>-1 0 0 -90.00001</rotate>
+        <scale>0.3937008 0.3937008 0.3937008</scale>
+        <instance_geometry url="#geom-MK4_IvyPlant">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MK4_Ivy_Plant" target="#MK4_Ivy_Plant-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>MapChannel:1 = uvset1
+MapChannel:2 = uvset2
+</user_properties>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
