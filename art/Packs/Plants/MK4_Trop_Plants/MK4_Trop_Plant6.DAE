@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Scot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+      <source_data>file:///F:/AV/TAP/Game/art/Packs/Plants/MK4_Trop_Plants/Source/MK4_Trop_Plant6.max</source_data>
+    </contributor>
+    <created>2014-05-01T18:05:35</created>
+    <modified>2014-05-01T18:05:35</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="MK4_PlantsA">
+      <profile_COMMON>
+        <newparam sid="MK4_Plants_A_dds-surface">
+          <surface type="2D">
+            <init_from>MK4_Plants_A_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="MK4_Plants_A_dds-sampler">
+          <sampler2D>
+            <source>MK4_Plants_A_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0.3577172 0.3577172 0.3577172 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="MK4_Plants_A_dds-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>1</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>0</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>1</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="MK4_PlantsA-material" name="MK4_PlantsA">
+      <instance_effect url="#MK4_PlantsA"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-MK4_Trop_Plant6" name="MK4_Trop_Plant6">
+      <mesh>
+        <source id="geom-MK4_Trop_Plant6-positions">
+          <float_array id="geom-MK4_Trop_Plant6-positions-array" count="36">-0.6262949 0.7858175 -0.8868842 0.6078085 0.7858175 -0.8868842 -0.6262949 0.7858175 0.2922059 0.6078085 0.7858175 0.2922059 0.003239743 0.545805 -0.0792321 -0.01003308 -0.04304936 0.02860022 -0.01003308 -0.0330367 0.07347536 0.02978554 -0.03804303 0.05103779 0.003239793 0.545805 -0.07923216 0.02261024 0.513373 -0.07199579 -0.002857786 0.516575 -0.05764472 -0.002857783 0.5101709 -0.08634686</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_Trop_Plant6-normals">
+          <float_array id="geom-MK4_Trop_Plant6-normals-array" count="36">0.1565257 0.9734076 0.1672647 -0.005409172 0.9923981 -0.1229494 -0.1580693 0.972562 0.1706964 0.238539 0.9484684 -0.2085833 -0.2434192 0.9458029 -0.2149509 -0.5016321 -0.1697446 -0.8482642 -0.5016322 0.2069382 0.8399653 -0.4798671 0.3879056 0.7869288 -0.4798666 0.01660332 -0.8771843 0.9999194 0.01239428 -0.002766078 0.9716323 0.230821 -0.05150122 -0.06402445 0.973998 -0.2173218</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_Trop_Plant6-map-2">
+          <float_array id="geom-MK4_Trop_Plant6-map-2-array" count="36">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-map-2-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_Trop_Plant6-map0">
+          <float_array id="geom-MK4_Trop_Plant6-map0-array" count="36">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-map0-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_Trop_Plant6-map1">
+          <float_array id="geom-MK4_Trop_Plant6-map1-array" count="99">0.5007052 0.9907674 0 0.5930882 0.8814787 0 0.6818074 0.9907674 0 0.5007052 0.8269709 0 0.5930882 0.8814787 0 0.5007052 0.9907674 0 0.5007052 0.8269709 0 0.6818074 0.8269709 0 0.5930882 0.8814787 0 0.6818074 0.9907674 0 0.5930882 0.8814787 0 0.6818074 0.8269709 0 0.9228382 0.007629573 0 0.9228383 0.018906 0 0.6537163 0.018906 0 0.6537164 0.007629693 0 0.9228383 0.018906 0 0.9228382 0.03018242 0 0.6537163 0.03018248 0 0.6537163 0.018906 0 0.9228382 0.03018242 0 0.9228383 0.0414589 0 0.6537165 0.0414589 0 0.6537163 0.03018248 0 0.6537163 0.018906 0 0.6537163 0.03018248 0 0.6378877 0.0245443 0 0.6537164 0.007629693 0 0.6537163 0.018906 0 0.6378877 0.0245443 0 0.6537163 0.03018248 0 0.6537165 0.0414589 0 0.6378877 0.0245443 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-map1-array" count="33" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-MK4_Trop_Plant6-map2">
+          <float_array id="geom-MK4_Trop_Plant6-map2-array" count="99">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-MK4_Trop_Plant6-map2-array" count="33" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-MK4_Trop_Plant6-vertices">
+          <input semantic="POSITION" source="#geom-MK4_Trop_Plant6-positions"/>
+        </vertices>
+        <triangles material="MK4_PlantsA" count="13">
+          <input semantic="VERTEX" source="#geom-MK4_Trop_Plant6-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-MK4_Trop_Plant6-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-MK4_Trop_Plant6-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-MK4_Trop_Plant6-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-MK4_Trop_Plant6-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 4 1 4 1 1 1 2 1 2 2 2 3 2 3 3 4 1 4 4 4 0 0 0 5 5 2 3 2 6 6 3 4 3 7 7 4 1 4 8 8 1 2 1 9 9 4 1 4 10 10 3 4 3 11 11 5 5 5 12 12 6 6 6 13 13 10 7 10 14 14 10 7 10 14 14 11 8 11 15 15 5 5 5 12 12 6 6 6 16 16 7 9 7 17 17 9 10 9 18 18 9 10 9 18 18 10 7 10 19 19 6 6 6 16 16 7 9 7 20 20 5 5 5 21 21 11 8 11 22 22 11 8 11 22 22 9 10 9 23 23 7 9 7 20 20 10 7 10 24 24 9 10 9 25 25 8 11 8 26 26 11 8 11 27 27 10 7 10 28 28 8 11 8 29 29 9 10 9 30 30 11 8 11 31 31 8 11 8 32 32</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="MK4_Plants_A_dds">
+      <init_from>file:///F:/AV/TAP/Game/art/Packs/Plants/MK4_Trop_Plants/MK4_Plants_A.dds</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-MK4_Trop_Plant6" name="MK4_Trop_Plant6">
+        <rotate>-1 0 0 -90.00001</rotate>
+        <scale>0.3937008 0.3937008 0.3937008</scale>
+        <instance_geometry url="#geom-MK4_Trop_Plant6">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MK4_PlantsA" target="#MK4_PlantsA-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>MapChannel:1 = uvset1
+MapChannel:2 = uvset2
+</user_properties>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
