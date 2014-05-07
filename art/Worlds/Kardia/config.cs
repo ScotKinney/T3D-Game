@@ -1,10 +1,9 @@
 // Kardia level config
 $AlterVerse::AvSet = "Base";
-$AlterVerse::ArtPacks = "Clouds/Default" TAB
-   "Skies/Default" TAB
+$AlterVerse::ArtPacks = "Skies/Default" TAB
    "SkyBoxes/DefaultNight" TAB
    "SkyBoxes/DarkSky2" TAB
-   "GroundCover/Default" TAB
+   "GroundCover/MK4_Tropical" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
    "Tunnels/Spartan" TAB
@@ -34,13 +33,8 @@ $AlterVerse::ArtPacks = "Clouds/Default" TAB
    "Props/AV_Targets" TAB
    "Signs/BoyersBog" TAB
    "Signs/Village" TAB
-   "Plants/SP_Sparta" TAB
-   "Plants/AV_Tropical" TAB
-   "Plants/AV_Conifer" TAB
    "Plants/SP_All_RiverGrass" TAB
-   "Plants/MK4_NP2_Bushes" TAB
-   "Trees/Canopy" TAB
+   "Plants/MK4_Trop_Plants" TAB
    "Trees/MK4_Tropical" TAB
-   "TexturePacks/TRU_SP_Sparta" TAB
-   "Trees/SP_Sparta";
+   "TexturePacks/TRU_SP_Sparta";
    
