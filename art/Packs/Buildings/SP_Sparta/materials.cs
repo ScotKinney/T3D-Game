@@ -15,14 +15,15 @@ singleton Material(Base_IntWall_Sparta)
 singleton Material(Base_ExtWall_Sparta)
 {
    mapTo = "Base_ExtWall_Sparta_dif";
-   diffuseMap[0] = "Base_ExtWall_Sparta_dif";
-   normalMap[0] = "Base_ExtWall_Sparta_nm";
-   specularMap[0] = "Base_ExtWall_Sparta_spec";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_ExtWall_Sparta_dif.dds";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_ExtWall_Sparta_nm";
+   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_ExtWall_Sparta_spec";
    specularPower[0] = "50";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
    customFootstepSound = "FootStepRock1Sound";
+   diffuseColor[0] = "0.854902 0.843137 0.780392 0";
 };
 
 singleton Material(Base_CornerPost_Sparta)
@@ -53,14 +54,15 @@ singleton Material(Base_Door_Sparta)
 singleton Material(Base_TileRoof_Sparta)
 {
    mapTo = "Base_TileRoof_Sparta_dif";
-   diffuseMap[0] = "Base_TileRoof_Sparta_dif";
-   normalMap[0] = "Base_TileRoof_Sparta_nm";
-   specularMap[0] = "Base_TileRoof_Sparta_spec";
-   specularPower[0] = "50";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_dif";
+   normalMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_nm";
+   specularMap[0] = "art/Packs/Buildings/SP_Sparta/Base_TileRoof_Sparta_spec";
+   specularPower[0] = "30";
    pixelSpecular[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
+   specularStrength[0] = "0.5";
 };
 
 singleton Material(Base_RoofTrim_Sparta)
