@@ -87,3 +87,108 @@ singleton Material(mat_BridgePost)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
+
+singleton Material(Fort2_guardtowerbase)
+{
+   mapTo = "guardtowerbase";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/Base_Wall_GTower_dif";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Wall_GTower_nm.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort2_rope)
+{
+   mapTo = "rope";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/Base_Rope_GTowerBRN_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_nm.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort2_tileroof)
+{
+   mapTo = "tileroof";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/Base_TileRoof_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_nm.dds";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_TileRoof_GTower_spec.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort2_woodplank)
+{
+   mapTo = "woodplank";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Source/Base_StairBridge_GTower_dif.jpg";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_StairBridge_GTower_nm.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort2_woodroof)
+{
+   mapTo = "woodroof";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/Base_Ceiling_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_nm.dds";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_spec.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort2_Fort_Wood1501)
+{
+   mapTo = "Fort_Wood1501";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/PMat_bridgeFort";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Fort_Wood/bridgeWood_Nrm.png";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Fort1_Kardia_PMat_bridgeFort)
+{
+   mapTo = "PMat_bridgeFort";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_Wood/PMat_bridgeFort";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Fort_Wood/PMat_bridgeFortN.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "GuardTower_Sparta";
+};
+
+singleton Material(Fort1_Kardia_collisionmesh)
+{
+   mapTo = "collisionmesh";
+   diffuseColor[0] = "0 0.00392157 0.00392157 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "Add";
+   translucent = "1";
+   materialTag0 = "GuardTower_Sparta";
+};
+
+singleton Material(Fort1_Kardia1_collision_1)
+{
+   mapTo = "collision-1";
+   diffuseColor[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Fort1_kardiaRopes1_cube6_auv)
+{
+   mapTo = "cube6_auv";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_dif.dds";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_nm.dds";
+   materialTag0 = "GuardTower_Sparta";
+   useAnisotropic[0] = "1";
+};

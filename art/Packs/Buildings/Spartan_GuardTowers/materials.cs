@@ -15,12 +15,13 @@ singleton Material(Base_TileRoof_GTower)
 singleton Material(Base_Rope_GTower)
 {
    mapTo = "Base_Rope_GTower_dif";
-   diffuseMap[0] = "Base_Rope_GTower_dif";
-   normalMap[0] = "Base_Rope_GTower_nm";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_dif";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_nm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepGrass1Sound";
    materialTag0 = "GuardTower_Sparta";
    parallaxScale[0] = "0.0972222";
+   specularMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Rope_GTower_spec.dds";
 };
 
 singleton Material(Base_Ceiling_GTower)
@@ -36,8 +37,8 @@ singleton Material(Base_Ceiling_GTower)
 singleton Material(Base_StairBridge_GTower)
 {
    mapTo = "Base_StairBridge_GTower_dif";
-   diffuseMap[0] = "Base_StairBridge_GTower_dif";
-   normalMap[0] = "Base_StairBridge_GTower_nm.dds";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_StairBridge_GTower_dif";
+   normalMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_StairBridge_GTower_nm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "GuardTower_Sparta";
