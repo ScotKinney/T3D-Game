@@ -576,8 +576,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10310";
-         delayRespawn = "7235";
+         botBelongsToMe = "4631";
+         delayRespawn = "2032";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -602,8 +602,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10179";
-         delayRespawn = "5514";
+         botBelongsToMe = "9541";
+         delayRespawn = "1040";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -2434,7 +2434,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "9.2 362.206 16.4565";
-         rotation = "-0.580302 0.571401 0.580302 120";
+         rotation = "0.580302 -0.571401 -0.580302 240";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -14546,12 +14546,12 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new TSStatic() {
+   new TSStatic(Fort) {
       shapeName = "art/Packs/Buildings/Fort_Wood/Fort1_Kardia1.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
@@ -14562,7 +14562,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new TSStatic() {
+   new TSStatic(fort_ropes) {
       shapeName = "art/Packs/Buildings/Fort_Wood/Fort1_kardiaRopes1.dae";
       playAmbient = "1";
       meshCulling = "0";
