@@ -2,14 +2,13 @@
 singleton Material(mat_MrN_Boat)
 {
    mapTo = "MrN_boat_dif";
-   diffuseMap[0] = "MrN_boat_dif";
-   normalMap[0] = "MrN_boat_nm.dds";
-   specularMap[0] = "MrN_boat_spec.dds";
+   diffuseMap[0] = "art/Packs/Props/MrN_Boats/MrN_boat_dif";
+   normalMap[0] = "art/Packs/Props/MrN_Boats/MrN_boat_nm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    customImpactSound = "FootStepWood1Sound";
-   specularPower[0] = "34";
-   specularStrength[0] = "2.35294";
+   specularPower[0] = "61";
+   specularStrength[0] = "1";
    pixelSpecular[0] = "1";
    backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Props_MrN";
