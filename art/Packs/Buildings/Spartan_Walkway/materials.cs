@@ -1,18 +1,3 @@
-
-singleton Material(mat_granite_01_dif)
-{
-   mapTo = "granite_01_dif";
-   diffuseMap[0] = "granite_01_dif";
-   normalMap[0] = "granite_01_nm_inv";
-   specularMap[0] = "granite_01_spec";
-   specularPower[0] = "36";
-   specularStrength[0] = "1";
-   useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "Kardia";
-   pixelSpecular[0] = "1";
-};
-
 singleton Material(mat_poolwalls)
 {
    mapTo = "Pool_walls";
@@ -23,6 +8,9 @@ singleton Material(mat_poolwalls)
    useAnisotropic[0] = "1";
    materialTag0 = "Kardia";
    customFootstepSound = "FootStepRock1Sound";
+   showFootprints = "0";
+   forestWindEnabled = "1";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_CastleFloorA)
@@ -35,6 +23,9 @@ singleton Material(mat_CastleFloorA)
    materialTag0 = "Kardia";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
+   showFootprints = "0";
+   forestWindEnabled = "1";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_sto4_D)
@@ -47,4 +38,29 @@ singleton Material(mat_sto4_D)
    useAnisotropic[0] = "1";
    materialTag0 = "Kardia";
    customFootstepSound = "FootStepRock1Sound";
+   showFootprints = "0";
+   forestWindEnabled = "1";
+   backLightFactor = "0.9 1.0 0.2";
+};
+
+singleton Material(Sidewalk2_dif)
+{
+   mapTo = "Sidewalk2_dif";
+   diffuseMap[0] = "Sidewalk2_dif.dds";
+   specularPower[0] = "50";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+   materialTag0 = "Buildings_SP_Sparta";
+   backLightFactor = "0.9 1.0 0.2";
+   forestWindEnabled = "1";
+   showFootprints = "0";
+};
+
+singleton Material(SidewalkTrim_dif)
+{
+   mapTo = "SidewalkTrim_dif";
+   diffuseMap[0] = "SidewalkTrim_dif";
+   showFootprints = "0";
+   materialTag0 = "Kardia";
 };
