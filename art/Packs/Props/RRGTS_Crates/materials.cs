@@ -1,7 +1,7 @@
 singleton Material(mat_cratesSimple001stain4)
 {
    mapTo = "CratesSimple0001stain4";
-   diffuseMap[0] = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4";
+   diffuseMap[0] = "CratesSimple0001stain4";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "Props";

@@ -2,7 +2,7 @@
 singleton Material(mat_MrN_CeramicPots)
 {
    mapTo = "MrN_Ceramics_dif";
-   diffuseMap[0] = "art/Packs/Props/MrN_Containers/MrN_Ceramics_dif";
+   diffuseMap[0] = "MrN_Ceramics_dif";
    useAnisotropic[0] = "1";
    materialTag0 = "Props_MrN";
    backLightFactor = "0.9 1.0 0.2";
@@ -24,8 +24,6 @@ singleton Material(mat_MrN_SackRope)
 {
    mapTo = "MrN_Sackrope_dif";
    diffuseMap[0] = "MrN_Sackrope_dif";
-   normalMap[0] = "MrN_Sackrope_nm.dds";
-   specularMap[0] = "MrN_Sackrope_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Props_MrN";
 };

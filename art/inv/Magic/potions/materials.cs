@@ -5,12 +5,16 @@ singleton Material(pBottle_Metal)
    diffuseMap[0] = "art/inv/Magic/Potions/scrMetal.jpg";
    pixelSpecular[0] = "1";
    specularPower[0] = "34";
-   glow[0] = "1";
+   glow[0] = "0";
    emissive[0] = "0";
    cubemap = "NewLevelSkyCubemap";
    showFootprints = "0";
    translucentBlendOp = "None";
    doubleSided = "1";
+   forestWindEnabled = "1";
+   materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(pBottle_Liquid1)
@@ -61,14 +65,15 @@ singleton Material(pBottle_Liquid5)
 {
    mapTo = "bubbl5";
    diffuseMap[0] = "art/inv/Magic/Potions/bubbl5.jpg";
-   glow[0] = "1";
-   emissive[0] = "1";
+   glow[0] = "0";
+   emissive[0] = "0";
    specularPower[0] = "1";
    pixelSpecular[0] = "1";
    showFootprints = "0";
    castShadows = "0";
    materialTag0 = "food";
    forestWindEnabled = "1";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(pBottle_Liquid6)
