@@ -65,11 +65,7 @@ singleton Material(mat_Fort_Tops1501)
    materialTag0 = "fort";
 };
 
-singleton Material(PMat_RopeCoilObject_mat)
-{
-   mapTo = "PMat_RopeCoilObject";
-   diffuseMap[0] = "RopeCoil.jpg";
-};
+
 
 singleton Material(fortLOD_Z_lambert1)
 {
@@ -162,6 +158,8 @@ singleton Material(Fort1_Kardia_PMat_bridgeFort)
    normalMap[0] = "art/Packs/Buildings/Fort_Wood/PMat_bridgeFortN.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "GuardTower_Sparta";
+   showFootprints = "0";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 singleton Material(Fort1_Kardia_collisionmesh)

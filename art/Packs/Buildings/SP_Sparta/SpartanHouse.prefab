@@ -13,6 +13,22 @@ $ThisPrefab = new SimGroup() {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
+      position = "4 5.33298 -2.13183";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_FloorCeiling.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
       position = "8 5.33298 -2.13183";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -1058,22 +1074,6 @@ $ThisPrefab = new SimGroup() {
       forceDetail = "-1";
       position = "4 1.33398 2.36817";
       rotation = "0 0 -1 90";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_FloorCeiling.dts";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "4 5.33298 -2.13183";
-      rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
