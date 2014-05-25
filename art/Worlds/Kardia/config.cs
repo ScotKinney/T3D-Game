@@ -7,15 +7,19 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
    "Tunnels/Spartan" TAB
+   "Decals/beach_debris" TAB
+   "Decals/beach_seaweed" TAB
+   "Decals/SpartanWindow" TAB
+   "Decals/Dirt" TAB
+   "Decals/RootsOnCliff" TAB
    "Buildings/Spartan_Arena" TAB
-   "Buildings/Fort_Wood" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
    "Buildings/Spartan_Castle" TAB
    "Buildings/Sh3d_Pergola" TAB
    "Buildings/SP_Sparta" TAB
    "Buildings/Spartan_GuardTowers" TAB
-   "Buildings/Sh3D_SPSparta_Addon" TAB
+   "Forts/Spartan" TAB
    "Props/CaveEntrance" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
@@ -35,6 +39,5 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Signs/Village" TAB
    "Plants/SP_All_RiverGrass" TAB
    "Plants/MK4_Trop_Plants" TAB
-   "Trees/MK4_Tropical" TAB
-   "TexturePacks/TRU_SP_Sparta";
+   "Trees/MK4_Tropical";
    
