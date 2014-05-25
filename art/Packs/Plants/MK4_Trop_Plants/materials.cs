@@ -28,3 +28,17 @@ singleton Material(MK4_Trop_Plant1_MK4_PlantsA)
    alphaTest = "1";
    alphaRef = "130";
 };
+
+singleton Material(MK4_Licuala_dif)
+{
+   mapTo = "MK4_Licuala_dif";
+   diffuseMap[0] = "art/Packs/Plants/MK4_Trop_Plants/MK4_Licuala";
+   specular[0] = "0.960784 0.960784 0.960784 1";
+   specularPower[0] = "1";
+   translucent = "0";
+   specularStrength[0] = "0";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "150";
+};
