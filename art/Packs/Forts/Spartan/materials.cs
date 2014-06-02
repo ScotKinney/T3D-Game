@@ -18,3 +18,9 @@ singleton Material(Fort_Spartan_Base_StairBridge_GTower90_dif)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
+
+singleton Material(DefaultMaterial8)
+{
+   mapTo = "Base_Ceiling_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Spartan_GuardTowers/Base_Ceiling_GTower_dif.dds";
+};
