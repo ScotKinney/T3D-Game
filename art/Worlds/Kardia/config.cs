@@ -9,7 +9,7 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Tunnels/Spartan" TAB
    "Decals/beach_debris" TAB
    "Decals/beach_seaweed" TAB
-   "Decals/SpartanWindow" TAB
+   "Decals/Spartan" TAB
    "Decals/Dirt" TAB
    "Decals/RootsOnCliff" TAB
    "Buildings/Spartan_Arena" TAB
