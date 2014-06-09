@@ -418,10 +418,15 @@ singleton Material(Sequia_02_Broken01)
 singleton Material(Sequia_02_Seq01Branch)
 {
    mapTo = "Seq01Branch";
-   diffuseMap[0] = "Pine005a";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/pinetree001.dds";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Trees/AV_Conifer/pinetree001_NRM.dds";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "147";
 };
 
 singleton Material(DeadStandingPine02_DeadPineStand02)
@@ -431,15 +436,6 @@ singleton Material(DeadStandingPine02_DeadPineStand02)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
-};
-
-//////////////////////Color Effects
-
-singleton Material(DeadStandingPine01_ColorEffectR28G28B177)
-{
-   mapTo = "ColorEffectR28G28B177-material";
-   diffuseColor[0] = "0.109804 0.109804 0.694118 1";
-   specularPower[0] = "10";
 };
 
 singleton Material(DTSSequia_TallPineBark)
@@ -452,6 +448,15 @@ singleton Material(DTSSequia_TallPineBark)
    specular[0] = "0.9 0.9 0.9 1";
    useAnisotropic[0] = "1";
    translucentBlendOp = "None";
+};
+
+//////////////////////Color Effects
+
+singleton Material(DeadStandingPine01_ColorEffectR28G28B177)
+{
+   mapTo = "ColorEffectR28G28B177-material";
+   diffuseColor[0] = "0.109804 0.109804 0.694118 1";
+   specularPower[0] = "10";
 };
 
 singleton Material(scrubPine_ColorEffectR225G88B199_material)
