@@ -40,6 +40,13 @@ datablock DecalData(SpartanWeapons)
    fadeStartPixelSize = "-1";
 };
 
+datablock DecalData(WeaponsSign)
+{
+   textureCoordCount = "0";
+   Material = "DECAL_WeaponsSign";
+   fadeStartPixelSize = "-1";
+};
+
 datablock DecalData(RootsOnCliff)
 {
    textureCoordCount = "0";
