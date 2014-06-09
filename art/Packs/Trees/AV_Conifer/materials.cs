@@ -319,6 +319,119 @@ singleton Material(mat_downpinemat_AV)
    materialTag0 = "Trees";
 };
 
+singleton Material(DTSSequia_TallPineBare)
+{
+   mapTo = "TallPineBare";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/PineBranch_DIF.dds";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Trees/AV_Conifer/PineBranch_NRM.dds";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "140";
+};
+
+singleton Material(DTSSequia_TallPineNeed)
+{
+   mapTo = "TallPineNeed";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/pinetree001.dds";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Trees/AV_Conifer/pinetree001_NRM.dds";
+   specularMap[0] = "art/Packs/Trees/AV_Conifer/DryPine2_SPEC.dds";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "140";
+   doubleSided = "1";
+};
+
+singleton Material(DTSSequia_Dead02)
+{
+   mapTo = "Dead02";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/DeadBranch02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "52";
+};
+
+singleton Material(DTSSequia_Dead01)
+{
+   mapTo = "Dead01";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/DeadBranch01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "76";
+};
+
+singleton Material(DTSSequia_TallPineBark)
+{
+   mapTo = "TallPineBark";
+   diffuseMap[0] = "PineBark02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Sequia_02_Seq02Bark)
+{
+   mapTo = "Seq02Bark";
+   diffuseMap[0] = "Piney";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Sequia_02_Broken02)
+{
+   mapTo = "Broken02";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/DeadBranch02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "207";
+};
+
+singleton Material(Sequia_02_Broken01)
+{
+   mapTo = "Broken01";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/DeadBranch01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   alphaRef = "21";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Sequia_02_Seq01Branch)
+{
+   mapTo = "Seq01Branch";
+   diffuseMap[0] = "Pine005a";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(DeadStandingPine02_DeadPineStand02)
+{
+   mapTo = "DeadPineStand02";
+   diffuseMap[0] = "DeadTree_tile";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
 
 //////////////////////Color Effects
 
@@ -329,11 +442,16 @@ singleton Material(DeadStandingPine01_ColorEffectR28G28B177)
    specularPower[0] = "10";
 };
 
-singleton Material(Sequia_02_ColorEffectR227G153B153)
+singleton Material(DTSSequia_TallPineBark)
 {
-   mapTo = "ColorEffectR227G153B153-material";
-   diffuseColor[0] = "0.890196 0.6 0.6 1";
+   mapTo = "TallPineBark";
+   diffuseColor[0] = "1 1 1 1";
    specularPower[0] = "10";
+   diffuseMap[0] = "art/Packs/Trees/AV_Conifer/SequiaBark_DIF.dds";
+   normalMap[0] = "art/Packs/Trees/AV_Conifer/SequiaBark_NRM.dds";
+   specular[0] = "0.9 0.9 0.9 1";
+   useAnisotropic[0] = "1";
+   translucentBlendOp = "None";
 };
 
 singleton Material(scrubPine_ColorEffectR225G88B199_material)
@@ -379,91 +497,10 @@ singleton Material(DeadPine_Down_ColorEffectR87G224B143)
    specularPower[0] = 10;
 };
 
-singleton Material(DTSSequia_TallPineBare)
-{
-   mapTo = "TallPineBare";
-   diffuseMap[0] = "tree_004_barebranch";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(DTSSequia_TallPineNeed)
-{
-   mapTo = "TallPineNeed";
-   diffuseMap[0] = "Pine005";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(DTSSequia_Dead02)
-{
-   mapTo = "Dead02";
-   diffuseMap[0] = "DeadBranch02";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(DTSSequia_Dead01)
-{
-   mapTo = "Dead01";
-   diffuseMap[0] = "DeadBranch01";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
 singleton Material(DTSSequia_ColorEffectR27G177B88_material)
 {
    mapTo = "ColorEffectR27G177B88-material";
    diffuseColor[0] = "0.105882 0.694118 0.345098 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(DTSSequia_TallPineBark)
-{
-   mapTo = "TallPineBark";
-   diffuseMap[0] = "PineBark02";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(Sequia_02_Seq02Bark)
-{
-   mapTo = "Seq02Bark";
-   diffuseMap[0] = "Piney";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(Sequia_02_Broken02)
-{
-   mapTo = "Broken02";
-   diffuseMap[0] = "DeadBranch02";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(Sequia_02_Broken01)
-{
-   mapTo = "Broken01";
-   diffuseMap[0] = "DeadBranch01";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(Sequia_02_Seq01Branch)
-{
-   mapTo = "Seq01Branch";
-   diffuseMap[0] = "Pine005a";
-   specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
@@ -484,11 +521,4 @@ singleton Material(DeadStandingPine02_ColorEffectR154G185B229_material)
    translucentBlendOp = "None";
 };
 
-singleton Material(DeadStandingPine02_DeadPineStand02)
-{
-   mapTo = "DeadPineStand02";
-   diffuseMap[0] = "DeadTree_tile";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
+
