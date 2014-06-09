@@ -134,3 +134,12 @@ singleton Material(Base_FloorTrim)
    materialTag0 = "Buildings_SP_Sparta";
    backLightFactor = "0.9 1.0 0.2";
 };
+
+singleton Material(pillar1)
+{
+   mapTo = "pillar1";
+   diffuseMap[0] = "plaster_04_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
