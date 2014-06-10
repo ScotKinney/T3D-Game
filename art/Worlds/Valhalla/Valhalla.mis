@@ -80,8 +80,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(ValhallaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0938491";
-         time = "0.180381";
+         startTime = "0.073655";
+         time = "0.0758573";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -94,7 +94,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "11";
+            clockSynchEvent = "10";
       };
       new Forest(theForest) {
          position = "0 0 0";
@@ -379,7 +379,7 @@ new SimGroup(MissionGroup) {
          isLooping = "1";
          isStreaming = "0";
          sourceGroup = "AudioChannelMusic";
-         volume = "0.25";
+         volume = "0.8";
          pitch = "1";
          fadeInTime = "0";
          fadeOutTime = "0";
@@ -493,7 +493,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiWhite";
-         botBelongsToMe = "3785";
+         botBelongsToMe = "3784";
          dropcount = "3";
          DropItem = "banana";
          realName = "Helga";
@@ -513,7 +513,7 @@ new SimGroup(MissionGroup) {
          avOptions = "280,279,283,55,59,50,35";
          behavior = "NPCVendorBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3786";
+         botBelongsToMe = "3785";
          distDetect = "2";
          npcAction = "7";
          realName = "Lars";
@@ -533,7 +533,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "WolfAI";
-         botBelongsToMe = "3787";
+         botBelongsToMe = "3786";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -1885,7 +1885,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "-255.047 39.5668 71.0548";
-         rotation = "-0.580302 0.571401 0.580302 120";
+         rotation = "0.580302 -0.571401 -0.580302 240";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2523,7 +2523,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.796 40.9785 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7645";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2536,7 +2536,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.79 40.6755 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7645";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2562,7 +2562,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.968 38.3208 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2575,7 +2575,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.974 38.6247 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2588,7 +2588,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.98 38.9676 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2614,7 +2614,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.784 40.3676 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7645";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -3929,7 +3929,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3788";
+            botBelongsToMe = "3787";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -3953,7 +3953,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3790";
+            botBelongsToMe = "3789";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -3966,7 +3966,7 @@ new SimGroup(MissionGroup) {
             weapon = "SoulReaverWeapon";
       };
       new Prefab(Fort_OdinsRevenge) {
-         fileName = "art/Packs/Buildings/Fort_Wood/fort.prefab";
+         fileName = "art/packs/forts/viking/fort.prefab";
          position = "-315.692 -309.971 59.7651";
          rotation = "0 0 1 92.1769";
          scale = "1 1 1";
@@ -4551,7 +4551,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3791";
+            botBelongsToMe = "3790";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -4575,7 +4575,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3793";
+            botBelongsToMe = "3792";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -4588,7 +4588,7 @@ new SimGroup(MissionGroup) {
             weapon = "SoulReaverWeapon";
       };
       new Prefab(Fort_ThunderLords) {
-         fileName = "art/Packs/Buildings/Fort_Wood/fort.prefab";
+         fileName = "art/packs/forts/viking/fort.prefab";
          position = "258.406 -315.343 59.6349";
          rotation = "0 0 1 92.9932";
          scale = "1 1 1";
@@ -5648,7 +5648,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "3794";
+            botBelongsToMe = "3793";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5730,7 +5730,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "3795";
+            botBelongsToMe = "3794";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5811,7 +5811,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "3796";
+            botBelongsToMe = "3795";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5892,7 +5892,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "3797";
+            botBelongsToMe = "3796";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5973,7 +5973,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "3798";
+            botBelongsToMe = "3797";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -6054,7 +6054,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3799";
+            botBelongsToMe = "3798";
             distDetect = "50";
             fov = "360";
             maxRange = "30";

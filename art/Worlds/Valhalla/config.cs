@@ -8,7 +8,7 @@ $AlterVerse::ArtPacks = "skies/default" TAB
    "Trees/AV_Conifer_Snow" TAB
    "Plants/AV_WinterPlants" TAB
    "Plants/SP_ALL_RiverGrass" TAB
-   "Buildings/Fort_Wood" TAB
+   "Forts/Viking" TAB
    "Buildings/Viking_Village" TAB
    "Buildings/Viking_Castle" TAB
    "Signs/Village" TAB
