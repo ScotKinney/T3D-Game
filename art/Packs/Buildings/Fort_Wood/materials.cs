@@ -65,8 +65,6 @@ singleton Material(mat_Fort_Tops1501)
    materialTag0 = "fort";
 };
 
-
-
 singleton Material(fortLOD_Z_lambert1)
 {
    mapTo = "lambert1";
