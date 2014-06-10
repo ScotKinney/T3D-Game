@@ -26,7 +26,7 @@ singleton Material(Ter_Spartan_Sand_dif)
    effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
-singleton Material(Spartan_rock_dif_mat)
+singleton Material(Spartan_rock_dif)
 {
    mapTo = "Spartan_rock_dif";
    diffuseMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif.dds";
