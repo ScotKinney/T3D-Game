@@ -1,84 +1,132 @@
-singleton Material(mat_DriPine_Win_AV)
+/////////////////////////////////////////
+
+singleton Material(LushPine_Snow)
 {
-   mapTo = "DriPine-Win";
-   diffuseMap[0] = "DryPine2_Snow.dds";
-   normalMap[0] = "DryPine2_Snow_NRM.dds";
-   specularMap[0] = "DryPine2_Snow_SPEC.dds";
+   mapTo = "LushPine_Snow";
+   diffuseMap[0] = "LushPine_Snow";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
-   alphaTest = "1";
-   alphaRef = "70";
-   doubleSided = "1";
+   translucent = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
-singleton Material(mat_TallPineNeed_Win)
-{
-   mapTo = "TallPineNeed-Win";
-   diffuseMap[0] = "Pine_Snow.dds";
-   normalMap[0] = "Pine_Snow_NRM.dds";
-   specularMap[0] = "Pine_Snow_SPEC.dds";
-   alphaTest = "1";
-   alphaRef = "51";
    doubleSided = "1";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   subSurface[0] = "1";
-   subSurfaceColor[0] = "0.996078 0.992157 0.992157 1";
-   subSurfaceRolloff[0] = "0.5";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
-singleton Material(mat_Seq01Branch_Win)
-{
-   mapTo = "Seq01Branch-Win";
-   diffuseMap[0] = "Pine_Snow.dds";
-   normalMap[0] = "Pine_Snow_NRM.dds";
-   specularMap[0] = "Pine_Snow_SPEC.dds";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   subSurface[0] = "1";
-   subSurfaceColor[0] = "0.992157 0.992157 0.992157 1";
-   alphaTest = "1";
-   alphaRef = "49";
-   subSurfaceRolloff[0] = "0.5";
-   doubleSided = "1";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
-singleton Material(mat_SoftPine2_Winter)
-{
-   mapTo = "SoftPine2_Winter";
-   diffuseMap[0] = "LushPine_Snow.dds";
    normalMap[0] = "LushPine_Snow_NRM.dds";
-   specularMap[0] = "LushPine_Snow_SPEC.dds";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   doubleSided = "1";
-   alphaTest = "1";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
 };
 
-singleton Material(mat_PineNeedles_Win)
+singleton Material(ScottPineBark)
 {
-   mapTo = "PineNeedles-Win";
-   diffuseMap[0] = "Pine_Snow.dds";
-   normalMap[0] = "Pine_Snow_NRM.dds";
-   specularMap[0] = "Pine_Snow_SPEC.dds";
+   mapTo = "ScottPineBark";
+   diffuseMap[0] = "ScottPineBark";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   subSurface[0] = "1";
-   subSurfaceColor[0] = "0.968628 0.964706 0.964706 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "ScottPineBark_nm.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(DryPine2_Snow)
+{
+   mapTo = "DryPine2_Snow";
+   diffuseMap[0] = "DryPine2_Snow";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "1";
+   normalMap[0] = "DryPine2_Snow_NRM.dds";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+};
+
+singleton Material(BareBranch1_Wint)
+{
+   mapTo = "BareBranch1_Wint";
+   diffuseMap[0] = "BareBranch1_Wint";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "0";
+   normalMap[0] = "BareBranch1_Wint_nm.dds";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "12";
+};
+
+singleton Material(Pine_Bark3_Wint)
+{
+   mapTo = "Pine_Bark03_Wint";
+   diffuseMap[0] = "Pine_Bark3_Wint";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "Pine_Bark3_Wint_nm.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(PineBranch_Wint)
+{
+   mapTo = "PineBranch_Wint";
+   diffuseMap[0] = "PineBranch_Wint";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "0";
+   normalMap[0] = "PineBranch_Wint_nm.dds";
+   useAnisotropic[0] = "1";
    doubleSided = "1";
    alphaTest = "1";
    alphaRef = "120";
-   subSurfaceRolloff[0] = "0.5";
+};
+
+singleton Material(PineLight_Wint)
+{
+   mapTo = "PineLight_Wint";
+   diffuseMap[0] = "PineLight_Wint";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "PineLight_Wint_nm.dds";
    useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
+};
+
+singleton Material(Pine_Snow)
+{
+   mapTo = "Pine_Snow";
+   diffuseMap[0] = "Pine_Snow";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "0";
+   normalMap[0] = "Pine_Snow_NRM.dds";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "144";
+};
+
+singleton Material(DeadBranch02)
+{
+   mapTo = "DeadBranch02";
+   diffuseMap[0] = "DeadBranch02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(DeadBranch01)
+{
+   mapTo = "DeadBranch01";
+   diffuseMap[0] = "DeadBranch01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(SequiaBark_Wint)
+{
+   mapTo = "SequiaBark_Wint";
+   diffuseMap[0] = "SequiaBark_Wint";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "SequiaBark_Wint_nm.dds";
+   useAnisotropic[0] = "1";
 };
 
 /////////////////////Color Effects
@@ -97,7 +145,6 @@ singleton Material(Win_Sequia01_ColorEffectR27G177B88)
    specularPower[0] = "10";
 };
 
-
 singleton Material(Win_Sequia03_ColorEffectR227G153B153_material)
 {
    mapTo = "ColorEffectR227G153B153_material";
@@ -106,4 +153,3 @@ singleton Material(Win_Sequia03_ColorEffectR227G153B153_material)
    specularPower[0] = "100";
    translucent = "1";
 };
-
