@@ -98,7 +98,7 @@ new SimGroup(MissionGroup) {
             sunBrightness = "15";
       };
       new CloudLayer(Clouds) {
-         texture = "art/Packs/skies/default/clouds/cloud2.png";
+         texture = "art/Packs/Clouds/Default/cloud2.png";
          texScale[0] = "1";
          texScale[1] = "1";
          texScale[2] = "1";
@@ -764,7 +764,8 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(EntrancePortal) {
-      shapeName = "art/Packs/props/caveEntrance/cave_entrance.dae";
+      shapeName = "art/Packs/Rocks/SP_Rocks/caveentrance.dts";
+      skin = "spartan_rock=bog_rock";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -773,16 +774,12 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "107.874 136.819 78.2976";
+      position = "107.874 136.819 67.9";
       rotation = "0 0 -1 92.8438";
-      scale = "1.5 1.5 1.5";
+      scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         gradientRange = "0 180";
          ignoreZodiacs = "0";
-         invertGradientRange = "0";
-         PMat_FJCave = "PMat_FJCave_mat";
-         useGradientRange = "0";
    };
    new TSStatic(PortalScreen) {
       shapeName = "art/Packs/props/theBog/BogToKardScreen.dae";
@@ -894,7 +891,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3084";
+            botBelongsToMe = "3149";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
@@ -922,7 +919,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3085";
+            botBelongsToMe = "3151";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "4981";
             distDetect = "150";
@@ -950,7 +947,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "BoglinBig";
-            botBelongsToMe = "3086";
+            botBelongsToMe = "3152";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
             distDetect = "150";
@@ -1127,7 +1124,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3087";
+               botBelongsToMe = "3153";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "18872";
                distDetect = "150";
@@ -1223,20 +1220,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new ParticleEmitterNode(campfireFlame_1) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-648.127 -413.104 55.9943";
             rotation = "0 0 1 88.7754";
@@ -1244,6 +1230,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new SFXEmitter(CampFireSound_1) {
             fileName = "art/sound/environment/fire1.wav";
@@ -1285,7 +1282,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3088";
+               botBelongsToMe = "3154";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1681";
                distDetect = "150";
@@ -1382,20 +1379,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new ParticleEmitterNode(campfireFlame_2) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-489.268 -109.447 75.2985";
             rotation = "0 0 1 96.966";
@@ -1403,6 +1389,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new SFXEmitter(CampFireSound_2) {
             fileName = "art/sound/environment/fire1.wav";
@@ -1444,7 +1441,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "7351";
+               botBelongsToMe = "3155";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1675";
                distDetect = "150";
@@ -1539,20 +1536,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new ParticleEmitterNode(campfireFlame_3) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-63.7887 147.258 71.3252";
             rotation = "0.0076214 -0.0356434 0.999336 204.123";
@@ -1560,6 +1546,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new TSStatic(CampFire_3) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -1572,7 +1569,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.8432";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.843";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1602,7 +1599,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3090";
+               botBelongsToMe = "3156";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
@@ -1694,20 +1691,9 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new ParticleEmitterNode(campfireFlame_4) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-351.764 -69.3378 65.8317";
             rotation = "0 0 -1 109.147";
@@ -1715,6 +1701,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new PointLight(CampFireLight_4) {
             radius = "10";
@@ -1786,7 +1783,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3091";
+               botBelongsToMe = "3157";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
@@ -1829,7 +1826,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic(Wheel_5) {
-            shapeName = "art/Packs/props/default/wheel.dts";
+            shapeName = "art/Packs/props/BogProps/wheel.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1933,20 +1930,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new ParticleEmitterNode(campfireFlame_5) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-87.9379 -353.54 64.1787";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
@@ -1954,6 +1940,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new TSStatic(CampFire_5) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -1996,7 +1993,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3092";
+               botBelongsToMe = "3158";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "4138";
                distDetect = "150";
@@ -2119,20 +2116,9 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new ParticleEmitterNode(CampFireFlame_6) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-224.71 -153.932 57.8237";
             rotation = "0 0 1 52.9022";
@@ -2140,6 +2126,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new SFXEmitter(CampFireSound_6) {
             fileName = "art/sound/environment/fire1.wav";
@@ -2181,7 +2178,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3093";
+               botBelongsToMe = "3159";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
@@ -2223,7 +2220,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic(Wheel_7) {
-            shapeName = "art/Packs/props/default/wheel.dts";
+            shapeName = "art/Packs/props/BogProps/wheel.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -2327,20 +2324,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new ParticleEmitterNode(campfireFlame_7) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-514.866 12.5199 61.0088";
             rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
@@ -2348,6 +2334,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new TSStatic(CampFire_7) {
             shapeName = "art/Packs/props/theBog/campfire.dts";
@@ -2390,7 +2387,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3094";
+               botBelongsToMe = "3160";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
@@ -2458,20 +2455,9 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new ParticleEmitterNode(campfireFlame_8) {
-            emitter = "GenericFireEmitter";
-            sa_thetaMin = "1";
-            sa_thetaMax = "52";
-            sa_phiReferenceVel = "0";
-            sa_phiVariance = "360";
             active = "1";
             velocity = "1";
-            standAloneEmitter = "0";
-            sa_emitterLifetimeMS = "0";
-            sa_ejectionPeriodMS = "100";
-            sa_periodVarianceMS = "0";
-            sa_ejectionVelocity = "2";
-            sa_velocityVariance = "1";
-            sa_ejectionOffset = "0";
+            emitter = "GenericFireEmitter";
             dataBlock = "GenericFireEmitterNode";
             position = "-687.576 -177.924 58.9444";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
@@ -2479,6 +2465,17 @@ new SimGroup(MissionGroup) {
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
+               sa_ejectionOffset = "0";
+               sa_ejectionPeriodMS = "100";
+               sa_ejectionVelocity = "2";
+               sa_emitterLifetimeMS = "0";
+               sa_periodVarianceMS = "0";
+               sa_phiReferenceVel = "0";
+               sa_phiVariance = "360";
+               sa_thetaMax = "52";
+               sa_thetaMin = "1";
+               sa_velocityVariance = "1";
+               standAloneEmitter = "0";
          };
          new PointLight(CampFireLight_8) {
             radius = "10";
@@ -2550,7 +2547,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3095";
+               botBelongsToMe = "3161";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "21673";
                distDetect = "150";
@@ -2648,26 +2645,26 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new ParticleEmitterNode(ShuttleTP) {
-         emitter = "PCO_ExplosionSpirals_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "0";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "PCO_ExplosionSpirals_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "-588.72 -499.464 54.2771";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "0";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new Trigger(ShuttleToMagellan1) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -2687,26 +2684,26 @@ new SimGroup(MissionGroup) {
             subscriberOnly = "1";
       };
       new ParticleEmitterNode(ShuttleTP1) {
-         emitter = "PCO_ExplosionSpirals_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "0";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "100";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "2";
-         sa_velocityVariance = "1";
-         sa_ejectionOffset = "0";
+         emitter = "PCO_ExplosionSpirals_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "-592.551 -487.742 54.1369";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "100";
+            sa_ejectionVelocity = "2";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "0";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "1";
+            standAloneEmitter = "0";
       };
       new Trigger(ShuttleToMagellan11) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -2940,22 +2937,6 @@ new SimGroup(MissionGroup) {
          invertGradientRange = "0";
          useGradientRange = "0";
    };
-   new TSStatic() {
-      shapeName = "art/Packs/veg/fiscus/Fiscus01.DAE";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Collision Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "71.3856 128.789 67.5546";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
    new Item() {
       static = "1";
       rotate = "0";
@@ -3043,7 +3024,7 @@ new SimGroup(MissionGroup) {
       count = "15";
       isAIControlled = "0";
       dataBlock = "Lamp_Oil";
-      position = "12.9671 7.24623 70.2007";
+      position = "12.9671 7.24623 70.195";
       rotation = "0 0 1 99.1558";
       scale = "1 1 1";
       canSave = "1";
@@ -3057,7 +3038,7 @@ new SimGroup(MissionGroup) {
       count = "20";
       isAIControlled = "0";
       dataBlock = "ChaosBladeWeapon";
-      position = "16.0471 0.219628 73.432";
+      position = "16.0471 0.219628 73.2768";
       rotation = "0 0 -1 71.261";
       scale = "1 1 1";
       canSave = "1";
@@ -3071,7 +3052,7 @@ new SimGroup(MissionGroup) {
       count = "10";
       isAIControlled = "0";
       dataBlock = "Tokara_Mushroom";
-      position = "22.1843 -0.80892 75.2174";
+      position = "22.1843 -0.80892 75.1726";
       rotation = "0 0 -1 9.38295";
       scale = "1 1 1";
       canSave = "1";
