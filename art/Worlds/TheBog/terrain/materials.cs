@@ -31,6 +31,24 @@ singleton Material( Terrain_SFX_RockTop_Mat )
    customFootstepSound = FootStepSand1Sound;
 };
 
+singleton Material(Bog_rock_dif)
+{
+   mapTo = "Bog_rock_dif";
+   diffuseMap[0] = "art/Worlds/TheBog/Terrain/tex_volcanic_cliffrock_base";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "0";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Rock";
+   showFootprints = "1";
+   detailNormalMapStrength[0] = "1";
+   specularStrength[0] = "0.8";
+   detailScale[0] = "3 3";
+   detailMap[0] = "art/Worlds/TheBog/Terrain/tex_volcanic_cliffrock_dif";
+   diffuseColor[0] = "0.647059 0.384314 0.196078 0";
+   customFootstepSound = "FootStepRock1Sound";
+   normalMap[0] = "art/Worlds/TheBog/Terrain/tex_volcanic_cliffrock_nrm";
+   castShadows = "0";
+};
 
 
 // VolcanicCliffRockTop Terrain
