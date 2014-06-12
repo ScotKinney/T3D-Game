@@ -610,7 +610,7 @@ function toggleHudCurtain(%val)
       $CurtainManager::renderGui = true;
    }
 }
-moveMap.bindCmd(keyboard, "ctrl h", "toggleHudCurtain();", "");
+//moveMap.bindCmd(keyboard, "ctrl h", "toggleHudCurtain();", "");
 
 // mouse cursor toggle by right mouse button
 globalActionMap.bind( mouse, button1, toggleCursor );
