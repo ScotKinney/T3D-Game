@@ -3,8 +3,6 @@ singleton Material(mat_ElvenBow)
 {
    mapTo = "Elven_Bow_dif";
    diffuseMap[0] = "art/inv/weapons/Bows/Elven_Bow_dif";
-   normalMap[0] = "art/inv/weapons/Bows/Elven_Bow_nm.dds";
-   specularMap[0] = "art/inv/weapons/Bows/Elven_Bow_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Weapons";
 };
