@@ -248,13 +248,13 @@ singleton Material(MK4_ivy_plant)
 singleton Material(MK4_Latania_leafs)
 {
    mapTo = "MK4_Latania_leafs";
-   diffuseMap[0] = "MK4_Latania_leafs";
+   diffuseMap[0] = "art/Packs/Trees/MK4_Tropical/MK4_Latania_leafs";
    specularPower[0] = "1";
    pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    translucent = "0";
    alphaTest = "1";
-   alphaRef = "214";
+   alphaRef = "255";
    doubleSided = "1";
    materialTag0 = "Trees";
 };
