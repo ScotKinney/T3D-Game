@@ -198,7 +198,7 @@ function PostFXManager::settingsRefreshDOF(%this)
 
 function PostFXManager::settingsRefreshAll(%this)
 {    
-   $PostFXManager::PostFX::Enabled           = $pref::enablePostEffects;
+   //$PostFXManager::PostFX::Enabled           = $pref::enablePostEffects;
    $PostFXManager::PostFX::EnableSSAO        = SSAOPostFx.isEnabled();
    $PostFXManager::PostFX::EnableHDR         = HDRPostFX.isEnabled();
    $PostFXManager::PostFX::EnableLightRays   = LightRayPostFX.isEnabled();
@@ -276,7 +276,7 @@ function PostFXManager::settingsApplyFromPreset(%this)
       $PostFXManager::PostFX::EnableHDR         = $PostFXManager::Settings::EnableHDR;
       $PostFXManager::PostFX::EnableSSAO        = $PostFXManager::Settings::EnabledSSAO;
 
-      %this.settingsSetEnabled( true );
+      %this.settingsSetEnabled( $PostFXManager::PostFX::Enabled );
    }
    
    //make sure we apply the correct settings to the DOF
