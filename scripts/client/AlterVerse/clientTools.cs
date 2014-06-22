@@ -92,6 +92,11 @@ function LoadTools(%type)
 function showMetrics(%val)
 {
    if ( %val )
-      metrics("FPS GFX");
+   {
+      if ( FrameOverlayGui.isAwake() )
+         metrics("");
+      else
+         metrics("FPS GFX");
+   }
 }
 GlobalActionMap.bind( keyboard, "alt m", showMetrics );
