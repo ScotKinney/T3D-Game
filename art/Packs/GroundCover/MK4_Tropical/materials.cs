@@ -6,7 +6,7 @@ singleton Material(GroundCover_MK4_Trop)
    alphaRef = "150";
    materialTag0 = "GroundCover";
 };
-
+/*
 singleton Material(GC_MK4_TropFlowers1)
 {
    mapTo = "GC_MK4_TropFlowers1";
@@ -24,6 +24,6 @@ singleton Material(GC_MK4_TropFlowers2)
    alphaRef = "150";
    materialTag0 = "GroundCover";
 };
-
+*/
 
 
