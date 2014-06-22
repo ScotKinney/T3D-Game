@@ -88,3 +88,10 @@ function LoadTools(%type)
    
    schedule(0, 0, toggleToolNow, %type);
 }
+
+function showMetrics(%val)
+{
+   if ( %val )
+      metrics("FPS GFX");
+}
+GlobalActionMap.bind( keyboard, "alt m", showMetrics );
