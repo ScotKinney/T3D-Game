@@ -8,8 +8,9 @@ singleton Material(mat_BoglinToes)
    materialTag0 = "food";
    forestWindEnabled = "1";
    specularPower[0] = "128";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_nightCrawlers)

@@ -68,7 +68,7 @@ singleton Material(pBottle_Liquid5)
    glow[0] = "0";
    emissive[0] = "0";
    specularPower[0] = "1";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    showFootprints = "0";
    castShadows = "0";
    materialTag0 = "food";

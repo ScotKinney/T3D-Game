@@ -4,11 +4,12 @@
 singleton Material(mat_meat_roll)
 {
    mapTo = "meat_roll";
-   diffuseMap[0] = "meat_roll";
+   diffuseMap[0] = "art/inv/Food/meat_roll";
    specularPower[0] = "50";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_lamb)
@@ -34,12 +35,13 @@ singleton Material(mat_Roast_Beef)
 singleton Material(bread_mat)
 {
    mapTo = "bread";
-   diffuseMap[0] = "bread.dds";
+   diffuseMap[0] = "art/inv/Food/bread.dds";
    specularPower[0] = "50";
    specularStrength[0] = "1";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_apple)
@@ -55,32 +57,35 @@ singleton Material(mat_apple)
 singleton Material(mat_banana)
 {
    mapTo = "PMat_banana_banana_bmp";
-   diffuseMap[0] = "banana.png";
+   diffuseMap[0] = "art/inv/Food/banana.png";
    specularPower[0] = "128";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_lime)
 {
    mapTo = "PMat_lime_lime_bmp";
-   diffuseMap[0] = "lime.png";
+   diffuseMap[0] = "art/inv/Food/lime.png";
    specularPower[0] = "100";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 
 singleton Material(PMat_lemon_lemon_bmp_mat)
 {
    mapTo = "PMat_lemon_lemon_bmp";
-   diffuseMap[0] = "lemon.png";
+   diffuseMap[0] = "art/inv/Food/lemon.png";
    specularPower[0] = "100";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "food";
+   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(mat_tokaramushroom)
