@@ -49,7 +49,7 @@ singleton Material(Base_Wall_GTower)
 singleton Material(Base_Ceiling_GTower)
 {
    mapTo = "Base_Ceiling_GTower_dif";
-   diffuseMap[0] = "Base_Ceiling_Sparta_dif.dds";
+   diffuseMap[0] = "Base_Ceiling_GTower_dif.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "GuardTower_Sparta";
 };
