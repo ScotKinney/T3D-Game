@@ -3,7 +3,7 @@ singleton Material(pBottle_Metal)
 {
    mapTo = "scrMetal";
    diffuseMap[0] = "art/inv/Magic/Potions/scrMetal.jpg";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    specularPower[0] = "34";
    glow[0] = "0";
    emissive[0] = "0";
