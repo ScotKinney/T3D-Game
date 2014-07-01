@@ -82,30 +82,6 @@ singleton Material(MK4_ivy_plant)
    materialTag0 = "Trees";
 };
 
-/////////MK4_Latania
-
-singleton Material(MK4_Latania_leafs)
-{
-   mapTo = "MK4_Latania_leafs";
-   diffuseMap[0] = "art/Packs/Trees/MK4_Tropical/MK4_Latania_leafs";
-   specularPower[0] = "1";
-   pixelSpecular[0] = "0";
-   useAnisotropic[0] = "1";
-   translucent = "0";
-   alphaTest = "1";
-   alphaRef = "255";
-   doubleSided = "1";
-   materialTag0 = "Trees";
-};
-
-singleton Material(MK4_Latania_bark)
-{
-   mapTo = "MK4_Latania_bark";
-   diffuseMap[0] = "MK4_Latania_bark";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Trees";
-};
-
 ////////MK4_MacArthur Palm
 
 singleton Material(MK4_MacArthurPalm_leaf)
