@@ -13,6 +13,7 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Decals/Dirt" TAB
    "Decals/RootsOnCliff" TAB
    "Buildings/Spartan_Arena" TAB
+   "Buildings/FPBuilding" TAB
    "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
    "Buildings/Spartan_Castle" TAB
