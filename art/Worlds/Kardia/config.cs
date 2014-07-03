@@ -12,16 +12,11 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Decals/Spartan" TAB
    "Decals/Dirt" TAB
    "Decals/RootsOnCliff" TAB
-   "Buildings/Spartan_Arena" TAB
-   "Buildings/FPBuilding" TAB
-   "Buildings/Stable_Medieval" TAB
    "Buildings/Spartan_Walkway" TAB
-   "Buildings/Spartan_Castle" TAB
    "Buildings/Sh3d_Pergola" TAB
    "Buildings/SP_Sparta" TAB
    "Buildings/Spartan_GuardTowers" TAB
    "Forts/Spartan" TAB
-   "Props/CaveEntrance" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
    "Props/Dex_Viking" TAB
@@ -34,11 +29,10 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Props/MrN_OldLighting" TAB
    "Props/MrN_Boats" TAB
    "Props/MrN_BlackSmith" TAB
-   "Props/WaterFallWall" TAB
    "Props/AV_Targets" TAB
-   "Signs/BoyersBog" TAB
-   "Signs/Village" TAB
    "Plants/SP_All_RiverGrass" TAB
    "Plants/MK4_Trop_Plants" TAB
    "Trees/MK4_Tropical";
    
+//   "Buildings/Spartan_Arena" TAB
+//   "Props/WaterFallWall" TAB
