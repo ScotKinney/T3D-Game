@@ -44,7 +44,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/default/torch.DAE";
+      shapeName = "art/Worlds/Illura/Models/torch.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";

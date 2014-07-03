@@ -241,7 +241,6 @@ new SimGroup(ForestBrushGroup) {
       internalName = "tree_003_c";
       canSave = "1";
       canSaveDynamicFields = "1";
-      ForestItemData = "tree_003_c";
       probability = "1";
       rotationRange = "360";
       scaleMin = "5";

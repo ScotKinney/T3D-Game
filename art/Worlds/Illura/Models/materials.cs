@@ -550,3 +550,17 @@ singleton Material(mat_deep_bowl_2)
    diffuseMap[0] = "deep_bowl_2.dds";
    materialTag0 = "Illura";
 };
+singleton Material(mat_GGtorch)
+{
+   mapTo = "torch";
+   diffuseMap[0] = "tex_torch_dif";
+   normalMap[0] = "tex_torch_nrm.dds";
+   specularMap[0] = "";
+   diffuseColor[0] = "1 1 1 1";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = 10;
+   alphaTest = "1";
+   alphaRef = "65";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Props_GG";
+};

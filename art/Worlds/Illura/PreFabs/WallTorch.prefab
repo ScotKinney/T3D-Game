@@ -69,7 +69,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/default/torch.DAE";
+      shapeName = "art/Worlds/Illura/Models/torch.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -84,7 +84,7 @@ $ThisPrefab = new SimGroup() {
       invertGradientRange = "0";
       position = "1.72498 0.0843506 -1.59654";
       rotation = "0 1 0 31.5449";
-      scale = "10 10 10";
+      scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
