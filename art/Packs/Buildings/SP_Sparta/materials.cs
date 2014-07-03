@@ -143,3 +143,11 @@ singleton Material(pillar1)
    translucentBlendOp = "None";
 };
 
+
+singleton Material(DefaultMaterial3)
+{
+   mapTo = "BogSignPost_dif";
+   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Eave_Sparta_dif.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SP_Sparta";
+};

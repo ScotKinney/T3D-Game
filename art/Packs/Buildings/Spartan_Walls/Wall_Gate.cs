@@ -1,10 +1,7 @@
-
-singleton TSShapeConstructor(Wall_GateDts)
+singleton TSShapeConstructor(Wall_GateDAE)
 {
-   baseShape = "./Wall_Gate.dts";
+   baseShape = "./Wall_Gate.DAE";
+   unit = "0.01";
+   lodType = "TrailingNumber";
+   loadLights = "0";
 };
-
-function Wall_GateDts::onLoad(%this)
-{
-   %this.addImposter("0", "4", "0", "0", "512", "0", "0");
-}

@@ -6,14 +6,6 @@ singleton Material(mat_SVPergolaWall2)
    materialTag0 = "Buildings_Sh3D";
 };
 
-singleton Material(mat_SvPergolaIonic)
-{
-   mapTo = "SvPergolaIonic_diff";
-   diffuseMap[0] = "SVPergolaIonic_dif";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sh3D";
-};
-
 singleton Material(mat_SCPergolaWall)
 {
    mapTo = "SCPergolaWall_diff";
@@ -30,14 +22,6 @@ singleton Material(mat_SVPergola_trim)
    materialTag0 = "Buildings_Sh3D";
 };
 
-singleton Material(mat_SVPergola_Ionic)
-{
-   mapTo = "SVPergolaIonic_dif";
-   diffuseMap[0] = "SVPergolaIonic_dif";
-   normalMap[0] = "SVPergolaIonic_nm.dds";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Buildings_Sh3D";
-};
 
 /////////////////////////////////////////////////
 
