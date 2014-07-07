@@ -2004,7 +2004,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(MagicSpellsSign) {
-         shapeName = "art/packs/buildings/Illura_Castle/IlluraMagicSpells.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/signs/IlluraMagicSpells.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
