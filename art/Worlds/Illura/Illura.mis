@@ -528,7 +528,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "FemWizard";
-         botBelongsToMe = "3474";
+         botBelongsToMe = "3475";
          delayRespawn = "5466";
          leash = "1";
          paceDist = "0";
@@ -545,7 +545,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Wizard";
-         botBelongsToMe = "3475";
+         botBelongsToMe = "3476";
          delayRespawn = "1624";
          dropcount = "1";
          DropItem = "WizardsStaffWeapon";
@@ -879,7 +879,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "CritterBehavior";
          block = "IlluraGargoyle";
-         botBelongsToMe = "10858";
+         botBelongsToMe = "3477";
          cycleCounter = "2";
          delayRespawn = "3574";
          distDetect = "100";
@@ -1294,8 +1294,8 @@ new SimGroup(MissionGroup) {
       count = "0";
       isAIControlled = "0";
       dataBlock = "Magical_Key";
-      position = "-267.034 193.163 146.064";
-      rotation = "0 0 1 66.6356";
+      position = "-263.537 215.013 146.071";
+      rotation = "0 0 -1 109.289";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -5754,7 +5754,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-271.953 211.81 147.096";
-            rotation = "-0.260474 0.285867 -0.92219 89.3152";
+            rotation = "-0.260474 0.285867 -0.92219 89.3153";
             scale = "0.2 0.2 0.2";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -6564,7 +6564,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-213.759 210.499 144.682";
-            rotation = "-0.260671 0.283431 -0.922885 89.7991";
+            rotation = "-0.260671 0.283431 -0.922885 89.799";
             scale = "0.2 0.2 0.2";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -7072,7 +7072,7 @@ new SimGroup(MissionGroup) {
             representedInLightmap = "0";
             shadowDarkenColor = "0 0 0 -1";
             includeLightmappedGeometryInShadow = "0";
-            position = "-154.492 136.671 131.638";
+            position = "-154.492 136.671 130.781";
             rotation = "1 0 0 0";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -7082,7 +7082,7 @@ new SimGroup(MissionGroup) {
             velocity = "1";
             emitter = "shrine_fire_emitter";
             dataBlock = "DefaultEmitterNodeData";
-            position = "-154.492 136.671 131.485";
+            position = "-154.492 136.671 130.628";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -7098,7 +7098,7 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-154.492 136.671 130.307";
+            position = "-154.492 136.671 129.45";
             rotation = "1 0 0 0";
             scale = "0.2 0.2 0.2";
             canSave = "1";
@@ -7137,7 +7137,7 @@ new SimGroup(MissionGroup) {
             representedInLightmap = "0";
             shadowDarkenColor = "0 0 0 -1";
             includeLightmappedGeometryInShadow = "0";
-            position = "-148.727 137.853 131.638";
+            position = "-148.727 137.853 130.924";
             rotation = "1 0 0 0";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -7147,7 +7147,7 @@ new SimGroup(MissionGroup) {
             velocity = "1";
             emitter = "shrine_fire_emitter";
             dataBlock = "DefaultEmitterNodeData";
-            position = "-148.727 137.853 131.485";
+            position = "-148.727 137.853 130.771";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
@@ -7163,7 +7163,7 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "-148.727 137.853 130.307";
+            position = "-148.727 137.853 129.593";
             rotation = "1 0 0 0";
             scale = "0.2 0.2 0.2";
             canSave = "1";
