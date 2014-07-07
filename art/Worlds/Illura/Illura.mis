@@ -346,7 +346,7 @@ new SimGroup(MissionGroup) {
             mieScattering = "0.0035";
       };
       new CloudLayer(IlluraClouds) {
-         texture = "art/Packs/skies/default/clouds/clouds_normal_displacement";
+         texture = "art/Packs/clouds/default/clouds_normal_displacement";
          texScale[0] = "0.72";
          texScale[1] = "0.75";
          texScale[2] = "0.631";
@@ -879,9 +879,9 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "CritterBehavior";
          block = "IlluraGargoyle";
-         botBelongsToMe = "7807";
+         botBelongsToMe = "10858";
          cycleCounter = "2";
-         delayRespawn = "1031";
+         delayRespawn = "3574";
          distDetect = "100";
          dropcount = "1";
          DropItem = "thunderbolt_potion";
@@ -1149,7 +1149,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(Drawbridge) {
-      shapeName = $WorldPath @ "/Models/drawbridge.dts";
+      shapeName = "art/packs/buildings/Illura_Castle/drawbridge.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1169,7 +1169,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(Castle) {
-      shapeName = $WorldPath @ "/Models/AR_CP_castle.dae";
+      shapeName = "art/packs/buildings/Illura_Castle/AR_CP_castle.dae";
       playAmbient = "0";
       meshCulling = "0";
       originSort = "0";
@@ -1294,8 +1294,8 @@ new SimGroup(MissionGroup) {
       count = "0";
       isAIControlled = "0";
       dataBlock = "Magical_Key";
-      position = "-263.537 215.013 146.071";
-      rotation = "0 0 -1 109.289";
+      position = "-267.034 193.163 146.064";
+      rotation = "0 0 1 66.6356";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1984,7 +1984,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(GreatHallSign) {
-         shapeName = $WorldPath @ "/Models/Signs/IlluraGreatHall.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/Signs/IlluraGreatHall.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2004,7 +2004,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(MagicSpellsSign) {
-         shapeName = $WorldPath @ "/Models/Signs/IlluraMagicSpells.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/IlluraMagicSpells.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2104,7 +2104,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TorchEntrance1) {
-         shapeName = $WorldPath @ "/Models/torch.DAE";
+         shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2128,7 +2128,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(TorchEntrance2) {
-         shapeName = $WorldPath @ "/Models/torch.DAE";
+         shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2232,7 +2232,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(OfficeTorch1) {
-         shapeName = $WorldPath @ "/Models/torch.DAE";
+         shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3124,7 +3124,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(cypress1) {
-         shapeName = $WorldPath @ "/Models/cypress.dae";
+         shapeName = "art/packs/buildings/Illura_Castle/cypress.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3204,7 +3204,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(flag1) {
-         shapeName = $WorldPath @ "/Models/flag.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/flag.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3268,7 +3268,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(logholder1) {
-         shapeName = $WorldPath @ "/Models/log_holder.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/log_holder.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3368,7 +3368,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(KingsBed1) {
-         shapeName = $WorldPath @ "/Models/kings_bed.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/kings_bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3608,7 +3608,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(KingdBed2) {
-         shapeName = $WorldPath @ "/Models/kings_bed.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/kings_bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3728,7 +3728,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(quill1) {
-         shapeName = $WorldPath @ "/Models/quill.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/quill.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3788,7 +3788,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(herb_1a) {
-         shapeName = $WorldPath @ "/Models/herb_1.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/herb_1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3808,7 +3808,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(herb_2a) {
-         shapeName = $WorldPath @ "/Models/herb_2.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/herb_2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4284,7 +4284,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(potatoe1) {
-         shapeName = $WorldPath @ "/Models/potatoe.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/potatoe.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4308,7 +4308,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/potatoe.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/potatoe.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4332,7 +4332,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/potatoe.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/potatoe.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4548,7 +4548,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(BowlWithGrinder) {
-         shapeName = $WorldPath @ "/Models/bowl_with_grinder.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/bowl_with_grinder.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4572,7 +4572,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(FireBlower) {
-         shapeName = $WorldPath @ "/Models/fire_blower.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/fire_blower.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4596,7 +4596,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(HangingUtensils1) {
-         shapeName = $WorldPath @ "/Models/hanging_utensils.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/hanging_utensils.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4620,7 +4620,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(knife1) {
-         shapeName = $WorldPath @ "/Models/knife.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/knife.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4644,7 +4644,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(shield1) {
-         shapeName = $WorldPath @ "/Models/shield.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/shield.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4668,7 +4668,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/shield.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/shield.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4692,7 +4692,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WoodenSpoons1) {
-         shapeName = $WorldPath @ "/Models/wooden_spoons.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/wooden_spoons.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4740,7 +4740,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(herb_3a) {
-         shapeName = $WorldPath @ "/Models/herb_3.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/herb_3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4764,7 +4764,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/deep_bowl_2.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/deep_bowl_2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4788,7 +4788,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/deep_bowl.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/deep_bowl.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4812,7 +4812,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/flag.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/flag.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4836,7 +4836,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/flag.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/flag.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4860,7 +4860,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/kings_bed.dts";
+         shapeName = "art/packs/buildings/Illura_Castle/kings_bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5079,7 +5079,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5169,7 +5169,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5259,7 +5259,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5349,7 +5349,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5439,7 +5439,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5529,7 +5529,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5619,7 +5619,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5744,7 +5744,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5754,7 +5754,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-271.953 211.81 147.096";
-            rotation = "-0.260474 0.285867 -0.92219 89.3151";
+            rotation = "-0.260474 0.285867 -0.92219 89.3152";
             scale = "0.2 0.2 0.2";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -5834,7 +5834,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5924,7 +5924,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -5984,7 +5984,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6104,7 +6104,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6194,7 +6194,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6284,7 +6284,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6374,7 +6374,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6464,7 +6464,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6554,7 +6554,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6564,7 +6564,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-213.759 210.499 144.682";
-            rotation = "-0.260671 0.283431 -0.922885 89.7992";
+            rotation = "-0.260671 0.283431 -0.922885 89.7991";
             scale = "0.2 0.2 0.2";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -6644,7 +6644,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6734,7 +6734,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6824,7 +6824,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6877,7 +6877,7 @@ new SimGroup(MissionGroup) {
             representedInLightmap = "0";
             shadowDarkenColor = "0 0 0 -1";
             includeLightmappedGeometryInShadow = "0";
-            position = "250.713 -437.902 74.774";
+            position = "250.713 -437.902 74.222";
             rotation = "1 0 0 0";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -6887,14 +6887,14 @@ new SimGroup(MissionGroup) {
             velocity = "1";
             emitter = "shrine_fire_emitter";
             dataBlock = "DefaultEmitterNodeData";
-            position = "250.713 -437.902 74.6209";
+            position = "250.713 -437.902 74.0689";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -6903,7 +6903,7 @@ new SimGroup(MissionGroup) {
             allowPlayerStep = "1";
             renderNormals = "0";
             forceDetail = "-1";
-            position = "250.713 -437.902 73.4428";
+            position = "250.713 -437.902 72.8908";
             rotation = "1 0 0 0";
             scale = "0.2 0.2 0.2";
             canSave = "1";
@@ -6959,7 +6959,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7024,7 +7024,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7089,7 +7089,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -7154,7 +7154,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = $WorldPath @ "/Models/torch.DAE";
+            shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";

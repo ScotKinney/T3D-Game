@@ -2,6 +2,7 @@
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "skies/default" TAB
    "env/rain" TAB
+   "clouds/default" TAB
    "props/A3D_BanquetSet" TAB
    "props/A3D_BedRm" TAB
    "props/A3D_Carts" TAB
@@ -10,6 +11,7 @@ $AlterVerse::ArtPacks = "skies/default" TAB
    "props/A3D_InteriorC" TAB
    "props/Dex_Viking" TAB
    "props/RRGTS_Crates" TAB
+   "Buildings/Illura_Castle" TAB
    "AI/Gargoyle" TAB
    "AI/Wizard_F" TAB
    "AI/Wizard_M";
