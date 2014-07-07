@@ -69,7 +69,7 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = ""art/packs/buildings/Illura_Castle/torch.DAE";
+      shapeName = "art/packs/buildings/Illura_Castle/torch.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
