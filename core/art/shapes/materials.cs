@@ -24,14 +24,14 @@ singleton Material(OctahedronMat)
 {
    mapTo = "green";
 
-   diffuseMap[0] = "camera";
+   diffuseMap[0] = "core/art/shapes/camera";
 
-   translucent = "1";
+   translucent = "0";
    translucentBlendOp = "LerpAlpha";
    emissive = "0";
    castShadows = "0";
 
-   colorMultiply[0] = "0 1 0 1";
+   diffuseColor[0] = "0.239216 0.239216 0.239216 1";
 };
 
 singleton Material(SimpleConeMat)
