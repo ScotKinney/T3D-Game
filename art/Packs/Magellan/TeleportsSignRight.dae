@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2011-02-21T17:10:20Z</created>
+    <modified>2011-02-21T17:10:20Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image_srf1" name="Image_srf1" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\black.jpg</init_from>
+    </image>
+    <image id="Image_srf2" name="Image_srf2" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\black.jpg</init_from>
+    </image>
+    <image id="Image_srf3" name="Image_srf3" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\teleportsSmallDown.png</init_from>
+    </image>
+    <image id="Image_srf4" name="Image_srf4" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\teleportsSmall.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PMat_srf1">
+      <instance_effect url="#Phong_srf1"/>
+    </material>
+    <material id="PMat_srf2">
+      <instance_effect url="#Phong_srf2"/>
+    </material>
+    <material id="PMat_srf3">
+      <instance_effect url="#Phong_srf3"/>
+    </material>
+    <material id="PMat_srf4">
+      <instance_effect url="#Phong_srf4"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Phong_srf1">
+      <profile_COMMON>
+        <newparam sid="srf1-surface">
+          <surface type="2D">
+            <init_from>Image_srf1</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="srf1-sampler">
+          <sampler2D>
+            <source>srf1-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.8 0.8 0.8 1.0</color></ambient>
+            <diffuse><texture texture="srf1-sampler" texcoord="srf1-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_srf2">
+      <profile_COMMON>
+        <newparam sid="srf2-surface">
+          <surface type="2D">
+            <init_from>Image_srf2</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="srf2-sampler">
+          <sampler2D>
+            <source>srf2-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.8 0.8 0.8 1.0</color></ambient>
+            <diffuse><texture texture="srf2-sampler" texcoord="srf2-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_srf3">
+      <profile_COMMON>
+        <newparam sid="srf3-surface">
+          <surface type="2D">
+            <init_from>Image_srf3</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="srf3-sampler">
+          <sampler2D>
+            <source>srf3-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.8 0.8 0.8 1.0</color></ambient>
+            <diffuse><texture texture="srf3-sampler" texcoord="srf3-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Phong_srf4">
+      <profile_COMMON>
+        <newparam sid="srf4-surface">
+          <surface type="2D">
+            <init_from>Image_srf4</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="srf4-sampler">
+          <sampler2D>
+            <source>srf4-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.8 0.8 0.8 1.0</color></ambient>
+            <diffuse><texture texture="srf4-sampler" texcoord="srf4-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="srf1" name="srf1">
+      <mesh>
+        <source id="srf1-positions">
+          <float_array id="srf1-positions-array" count="24">0 0 0.01 0 0.545703 0.01 0 0 -0.01 0 0.545703 -0.01 0.15 0 0.01 0.15 0.545703 0.01 0.15 0 -0.01 0.15 0.545703 -0.01</float_array>
+          <technique_common>
+            <accessor source="srf1-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="srf1-uvs">
+          <float_array id="srf1-uvs-array" count="8">0 0 0 1.0 0.5 0 0.5 1.0</float_array>
+          <technique_common>
+            <accessor source="srf1-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="srf1-vertices">
+          <input semantic="POSITION" source="#srf1-positions"/>
+        </vertices>
+        <polylist count="2" material="Mat_srf1">
+          <input offset="0" semantic="VERTEX" source="#srf1-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#srf1-uvs"/>
+          <vcount>4 4</vcount>
+          <p>5 1  4 0  6 2  7 3  2 0  0 2  1 3  3 1</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="srf2" name="srf2">
+      <mesh>
+        <source id="srf2-positions">
+          <float_array id="srf2-positions-array" count="24">0 0 0.01 0 0.545703 0.01 0 0 -0.01 0 0.545703 -0.01 0.15 0 0.01 0.15 0.545703 0.01 0.15 0 -0.01 0.15 0.545703 -0.01</float_array>
+          <technique_common>
+            <accessor source="srf2-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="srf2-uvs">
+          <float_array id="srf2-uvs-array" count="8">0 0 0 1.0 1.0 0 1.0 1.0</float_array>
+          <technique_common>
+            <accessor source="srf2-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="srf2-vertices">
+          <input semantic="POSITION" source="#srf2-positions"/>
+        </vertices>
+        <polylist count="2" material="Mat_srf2">
+          <input offset="0" semantic="VERTEX" source="#srf2-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#srf2-uvs"/>
+          <vcount>4 4</vcount>
+          <p>3 1  1 0  5 2  7 3  0 1  2 0  6 2  4 3</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="srf3" name="srf3">
+      <mesh>
+        <source id="srf3-positions">
+          <float_array id="srf3-positions-array" count="12">0 0 -0.01 0 0.545703 -0.01 0.15 0 -0.01 0.15 0.545703 -0.01</float_array>
+          <technique_common>
+            <accessor source="srf3-positions-array" count="4" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="srf3-uvs">
+          <float_array id="srf3-uvs-array" count="8">0.5 0 0.5 1.0 1.0 0 1.0 1.0</float_array>
+          <technique_common>
+            <accessor source="srf3-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="srf3-vertices">
+          <input semantic="POSITION" source="#srf3-positions"/>
+        </vertices>
+        <polylist count="1" material="Mat_srf3">
+          <input offset="0" semantic="VERTEX" source="#srf3-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#srf3-uvs"/>
+          <vcount>4</vcount>
+          <p>0 2  1 3  3 1  2 0</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="srf4" name="srf4">
+      <mesh>
+        <source id="srf4-positions">
+          <float_array id="srf4-positions-array" count="12">0 0 0.01 0 0.545703 0.01 0.15 0 0.01 0.15 0.545703 0.01</float_array>
+          <technique_common>
+            <accessor source="srf4-positions-array" count="4" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="srf4-uvs">
+          <float_array id="srf4-uvs-array" count="8">0 0 0 1.0 0.5 0 0.5 1.0</float_array>
+          <technique_common>
+            <accessor source="srf4-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="srf4-vertices">
+          <input semantic="POSITION" source="#srf4-positions"/>
+        </vertices>
+        <polylist count="1" material="Mat_srf4">
+          <input offset="0" semantic="VERTEX" source="#srf4-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#srf4-uvs"/>
+          <vcount>4</vcount>
+          <p>1 1  0 0  2 2  3 3</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="S_srf1">
+        <instance_geometry url="#srf1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_srf1" target="#PMat_srf1">
+                <bind_vertex_input semantic="srf1-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_srf2">
+        <instance_geometry url="#srf2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_srf2" target="#PMat_srf2">
+                <bind_vertex_input semantic="srf2-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_srf3">
+        <instance_geometry url="#srf3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_srf3" target="#PMat_srf3">
+                <bind_vertex_input semantic="srf3-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="S_srf4">
+        <instance_geometry url="#srf4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_srf4" target="#PMat_srf4">
+                <bind_vertex_input semantic="srf4-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>
