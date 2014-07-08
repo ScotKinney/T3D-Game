@@ -20,7 +20,6 @@ singleton SFXProfile(ShipWelcome)
    preload = true;   
 }; 
 
-
 singleton SFXProfile(DroidBreach7)   
 {   
    filename = "art/Worlds/Magellan/sound/DroidBreachinsector7";   

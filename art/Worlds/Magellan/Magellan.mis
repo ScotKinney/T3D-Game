@@ -29,7 +29,7 @@ new SimGroup(MissionGroup) {
          LevelName = "Magellan";
    };
    new TSStatic(SpaceStation) {
-      shapeName = $WorldPath @ "/Models/science-labs-DAE.DAE";
+      shapeName = "art/packs/magellan/science-labs-DAE.DAE";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -121,7 +121,7 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "-97.1815 -55.6982 48.8745";
+         position = "-97.1815 -55.6982 52.2456";
          rotation = "0 0 -1 88.3757";
          scale = "1 1 1";
          canSave = "1";
@@ -151,8 +151,8 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          destinationServer = "theBog";
          destinationSpawnSphere = "BogFromShip";
-         manifestURL = "http://www.bloodclans.com/stream/Manifests/TheBogmanifest.txt";
-         pathToRoot = "http://www.bloodclans.com/stream/";
+         manifestURL = "http://www.alterverse.com/stream/Manifests/TheBogmanifest.txt";
+         pathToRoot = "http://www.alterverse.com/stream/";
    };
    new PointLight(Light1) {
       radius = "10";
@@ -275,7 +275,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(TP1) {
-      shapeName = $WorldPath @ "/Models/column02.dts";
+      shapeName = "art/packs/magellan/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -296,7 +296,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(TP2) {
-      shapeName = $WorldPath @ "/Models/column02.dts";
+      shapeName = "art/packs/magellan/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -317,7 +317,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(TP3) {
-      shapeName = $WorldPath @ "/Models/column02.dts";
+      shapeName = "art/packs/magellan/column02.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -484,7 +484,7 @@ new SimGroup(MissionGroup) {
          onExitMessage = "MagNZOut";
    };
    new TSStatic(GlassWall1) {
-      shapeName = $WorldPath @ "/Models/smallpath.dts";
+      shapeName = "art/packs/magellan/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -504,7 +504,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = $WorldPath @ "/Models/smallpath.dts";
+      shapeName = "art/packs/magellan/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -524,7 +524,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = $WorldPath @ "/Models/smallpath.dts";
+      shapeName = "art/packs/magellan/smallpath.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -638,77 +638,77 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new ParticleEmitterNode(TPSmoke1) {
-      emitter = "SmokeEmitter";
-      sa_thetaMin = "0";
-      sa_thetaMax = "90";
-      sa_phiReferenceVel = "0";
-      sa_phiVariance = "360";
       active = "1";
       velocity = "1";
-      standAloneEmitter = "0";
-      sa_emitterLifetimeMS = "0";
-      sa_ejectionPeriodMS = "400";
-      sa_periodVarianceMS = "5";
-      sa_ejectionVelocity = "0";
-      sa_velocityVariance = "0";
-      sa_ejectionOffset = "0";
+      emitter = "SmokeEmitter";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -106.123 9.98604";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         sa_ejectionOffset = "0";
+         sa_ejectionPeriodMS = "400";
+         sa_ejectionVelocity = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_periodVarianceMS = "5";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         sa_thetaMax = "90";
+         sa_thetaMin = "0";
+         sa_velocityVariance = "0";
+         standAloneEmitter = "0";
    };
    new ParticleEmitterNode(TPSmoke2) {
-      emitter = "SmokeEmitter";
-      sa_thetaMin = "0";
-      sa_thetaMax = "90";
-      sa_phiReferenceVel = "0";
-      sa_phiVariance = "360";
       active = "1";
       velocity = "1";
-      standAloneEmitter = "0";
-      sa_emitterLifetimeMS = "0";
-      sa_ejectionPeriodMS = "400";
-      sa_periodVarianceMS = "5";
-      sa_ejectionVelocity = "0";
-      sa_velocityVariance = "0";
-      sa_ejectionOffset = "0";
+      emitter = "SmokeEmitter";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -103.69 10.3495";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         sa_ejectionOffset = "0";
+         sa_ejectionPeriodMS = "400";
+         sa_ejectionVelocity = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_periodVarianceMS = "5";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         sa_thetaMax = "90";
+         sa_thetaMin = "0";
+         sa_velocityVariance = "0";
+         standAloneEmitter = "0";
    };
    new ParticleEmitterNode(TPSmoke3) {
-      emitter = "SmokeEmitter";
-      sa_thetaMin = "0";
-      sa_thetaMax = "90";
-      sa_phiReferenceVel = "0";
-      sa_phiVariance = "360";
       active = "1";
       velocity = "1";
-      standAloneEmitter = "0";
-      sa_emitterLifetimeMS = "0";
-      sa_ejectionPeriodMS = "400";
-      sa_periodVarianceMS = "5";
-      sa_ejectionVelocity = "0";
-      sa_velocityVariance = "0";
-      sa_ejectionOffset = "0";
+      emitter = "SmokeEmitter";
       dataBlock = "SmokeEmitterNode";
       position = "40.9149 -100.894 9.80425";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         sa_ejectionOffset = "0";
+         sa_ejectionPeriodMS = "400";
+         sa_ejectionVelocity = "0";
+         sa_emitterLifetimeMS = "0";
+         sa_periodVarianceMS = "5";
+         sa_phiReferenceVel = "0";
+         sa_phiVariance = "360";
+         sa_thetaMax = "90";
+         sa_thetaMin = "0";
+         sa_velocityVariance = "0";
+         standAloneEmitter = "0";
    };
    new SimGroup(TPSignGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
+         shapeName = "art/packs/magellan/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -728,7 +728,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(TPSign2) {
-         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
+         shapeName = "art/packs/magellan/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -752,7 +752,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
+         shapeName = "art/packs/magellan/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -772,7 +772,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(TPSignDown) {
-         shapeName = $WorldPath @ "/Models/TeleportsSignRight.dae";
+         shapeName = "art/packs/magellan/TeleportsSignRight.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -796,7 +796,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
+         shapeName = "art/packs/magellan/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -816,7 +816,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
+         shapeName = "art/packs/magellan/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -836,7 +836,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSignLeft.dae";
+         shapeName = "art/packs/magellan/TeleportsSignLeft.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -856,7 +856,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
+         shapeName = "art/packs/magellan/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -877,7 +877,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSign.dae";
+         shapeName = "art/packs/magellan/TeleportsSign.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -897,7 +897,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/Models/TeleportsSignRight.dae";
+         shapeName = "art/packs/magellan/TeleportsSignRight.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -922,26 +922,26 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new ParticleEmitterNode(ShipFire1) {
-         emitter = "MagellanFireEmitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "120";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "10";
-         sa_periodVarianceMS = "5";
-         sa_ejectionVelocity = "4";
-         sa_velocityVariance = "2";
-         sa_ejectionOffset = "0";
+         emitter = "MagellanFireEmitter";
          dataBlock = "DefaultEmitterNodeData";
          position = "-89.3203 -26.4452 36.7264";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "10";
+            sa_ejectionVelocity = "4";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "5";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "120";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "2";
+            standAloneEmitter = "0";
       };
       new SFXEmitter(Fire1SFX) {
          fileName = "art/sound/environment/fire1.wav";
@@ -968,48 +968,48 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(ShipSmoke1) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "-89.3203 -26.7348 37.3973";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(ShipFire2) {
-         emitter = "MagellanFireEmitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "120";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "10";
-         sa_periodVarianceMS = "5";
-         sa_ejectionVelocity = "4";
-         sa_velocityVariance = "2";
-         sa_ejectionOffset = "0";
+         emitter = "MagellanFireEmitter";
          dataBlock = "DefaultEmitterNodeData";
          position = "-110.25 -48.0259 47.1411";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "10";
+            sa_ejectionVelocity = "4";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "5";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "120";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "2";
+            standAloneEmitter = "0";
       };
       new SFXEmitter(Fire2SFX) {
          fileName = "art/sound/environment/fire1.wav";
@@ -1036,48 +1036,48 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(ShipSmoke2) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "-110.694 -48.0259 48.364";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(ShipFire3) {
-         emitter = "MagellanFireEmitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "120";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "10";
-         sa_periodVarianceMS = "5";
-         sa_ejectionVelocity = "4";
-         sa_velocityVariance = "2";
-         sa_ejectionOffset = "0";
+         emitter = "MagellanFireEmitter";
          dataBlock = "DefaultEmitterNodeData";
          position = "-70.6397 -5.43187 39.2098";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "10";
+            sa_ejectionVelocity = "4";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "5";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "120";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "2";
+            standAloneEmitter = "0";
       };
       new SFXEmitter(Fire3SFX) {
          fileName = "art/sound/environment/fire1.wav";
@@ -1104,48 +1104,48 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(ShipSmoke3) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "-71.0837 -5.43187 40.4327";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(ShipFire4) {
-         emitter = "MagellanFireEmitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "120";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "10";
-         sa_periodVarianceMS = "5";
-         sa_ejectionVelocity = "4";
-         sa_velocityVariance = "2";
-         sa_ejectionOffset = "0";
+         emitter = "MagellanFireEmitter";
          dataBlock = "DefaultEmitterNodeData";
          position = "1.18829 -80.8118 18.8659";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "10";
+            sa_ejectionVelocity = "4";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "5";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "120";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "2";
+            standAloneEmitter = "0";
       };
       new SFXEmitter(Fire4SFX) {
          fileName = "art/sound/environment/fire1.wav";
@@ -1172,48 +1172,48 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(ShipSmoke4) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "0.744287 -80.8118 20.0888";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(ShipFire5) {
-         emitter = "MagellanFireEmitter";
-         sa_thetaMin = "0";
-         sa_thetaMax = "120";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "10";
-         sa_periodVarianceMS = "5";
-         sa_ejectionVelocity = "4";
-         sa_velocityVariance = "2";
-         sa_ejectionOffset = "0";
+         emitter = "MagellanFireEmitter";
          dataBlock = "DefaultEmitterNodeData";
          position = "85.8517 -131.282 9.69115";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "10";
+            sa_ejectionVelocity = "4";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "5";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "120";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "2";
+            standAloneEmitter = "0";
       };
       new SFXEmitter(Fire5SFX) {
          fileName = "art/sound/environment/fire1.wav";
@@ -1240,48 +1240,48 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new ParticleEmitterNode(ShipSmoke5) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "85.4077 -131.282 10.914";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
       new ParticleEmitterNode(ShipSmoke6) {
-         emitter = "SP2_TendrilSmokeA_E";
-         sa_thetaMin = "0";
-         sa_thetaMax = "90";
-         sa_phiReferenceVel = "0";
-         sa_phiVariance = "360";
          active = "1";
          velocity = "1";
-         standAloneEmitter = "0";
-         sa_emitterLifetimeMS = "0";
-         sa_ejectionPeriodMS = "20";
-         sa_periodVarianceMS = "0";
-         sa_ejectionVelocity = "1";
-         sa_velocityVariance = "0";
-         sa_ejectionOffset = "0";
+         emitter = "SP2_TendrilSmokeA_E";
          dataBlock = "DefaultEmitterNodeData";
          position = "43.041 -111.27 6.16014";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            sa_ejectionOffset = "0";
+            sa_ejectionPeriodMS = "20";
+            sa_ejectionVelocity = "1";
+            sa_emitterLifetimeMS = "0";
+            sa_periodVarianceMS = "0";
+            sa_phiReferenceVel = "0";
+            sa_phiVariance = "360";
+            sa_thetaMax = "90";
+            sa_thetaMin = "0";
+            sa_velocityVariance = "0";
+            standAloneEmitter = "0";
       };
    };
    new StaticShape(DroidTopLevel) {
@@ -1295,7 +1295,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2911";
+         botBelongsToMe = "2967";
          delayRespawn = "4108";
          leash = "5";
          paceDist = "0";
@@ -1316,7 +1316,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2912";
+         botBelongsToMe = "2968";
          delayRespawn = "11839";
          leash = "5";
          paceDist = "0";
@@ -1337,7 +1337,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2913";
+         botBelongsToMe = "2969";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1362,7 +1362,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2914";
+         botBelongsToMe = "2970";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1387,7 +1387,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2915";
+         botBelongsToMe = "2971";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "6208";
          leash = "5";
@@ -1412,7 +1412,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2916";
+         botBelongsToMe = "2972";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "4331";
          leash = "5";
@@ -1437,7 +1437,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2917";
+         botBelongsToMe = "2973";
          customAmbientLighting = "0 0 0 1";
          leash = "5";
          paceDist = "0";
@@ -1461,7 +1461,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2918";
+         botBelongsToMe = "2974";
          leash = "5";
          paceDist = "0";
          respawnCount = "0";
@@ -1481,7 +1481,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2919";
+         botBelongsToMe = "2975";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
@@ -1518,7 +1518,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2920";
+         botBelongsToMe = "2976";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1543,7 +1543,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2921";
+         botBelongsToMe = "2977";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1568,7 +1568,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2922";
+         botBelongsToMe = "2978";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1593,7 +1593,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2923";
+         botBelongsToMe = "2979";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1618,7 +1618,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2924";
+         botBelongsToMe = "2980";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1643,7 +1643,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2925";
+         botBelongsToMe = "2981";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
@@ -1653,20 +1653,29 @@ new SimGroup(MissionGroup) {
          team = "1";
          weapon = "DroidGun5Weapon";
    };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "XR75Weapon";
-      position = "-96.8688 -54.2262 48.4526";
+   new SFXEmitter(BGEffects1) {
+      fileName = $WorldPath @ "/sound/ShipBgEffects3.ogg";
+      playOnAdd = "1";
+      useTrackDescriptionOnly = "0";
+      isLooping = "1";
+      isStreaming = "0";
+      sourceGroup = "AudioChannelEffects";
+      volume = "0.25";
+      pitch = "1";
+      fadeInTime = "0";
+      fadeOutTime = "0";
+      is3D = "1";
+      referenceDistance = "1";
+      maxDistance = "15";
+      scatterDistance = "0 0 0";
+      coneInsideAngle = "360";
+      coneOutsideAngle = "360";
+      coneOutsideVolume = "1";
+      position = "-118.652 -57.4869 49.4001";
       rotation = "1 0 0 0";
-      scale = "1 1 1";
+      scale = "15 15 15";
       canSave = "1";
       canSaveDynamicFields = "1";
-         ammo = "999";
-         respawnTime = "30";
    };
 };
 //--- OBJECT WRITE END ---
