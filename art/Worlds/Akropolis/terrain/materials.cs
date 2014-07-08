@@ -1,7 +1,6 @@
 ////////////////Spartan Terrain//////////////////
 //////////////////////////////////////////////////////
 
-
 singleton Material(Ter_Kard_Overlay_dif)   
 {   
    mapTo = "Kard_Overlay_dif";   
@@ -45,41 +44,6 @@ singleton Material(Spartan_rock_dif)
    specularMap[0] = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_spec.png";
 };
 ////////////////////////////////////////////////////////////
-
-
-new TerrainMaterial()
-{
-   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_dif";
-   diffuseSize = "128";
-   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_det";
-   detailStrength = "0.4";
-   detailDistance = "1500";
-   parallaxScale = "0.01";
-   detailSize = "16";
-   macroMap = "art/Packs/Terrains/SP_Sparta/Kard_Overlay_dif";
-   macroStrength = "0.01";
-   macroSize = "2048";
-   macroDistance = "500";
-   useAnisotropic0 = "1";
-   internalName = "Rock_Low";
-   normalMap = "art/Packs/Terrains/SP_Sparta/Spartan_Rock_nm";
-};
-
-new TerrainMaterial()
-{
-   diffuseMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_dif";
-   diffuseSize = "512";
-   detailDistance = "1500";
-   detailSize = "4";
-   detailStrength = "0.5";
-   parallaxScale = "0";
-   macroSize = "12";
-   macroStrength = "0.4";
-   macroDistance = "1500";
-   useAnisotropic0 = "1";
-   internalName = "Grass";
-   detailMap = "art/Packs/Terrains/SP_Sparta/Spartan_Grass_det";
-};
 
 new TerrainMaterial()
 {
