@@ -15,26 +15,14 @@ singleton Material(mat_AlphaMat)
    translucent = "1";
 };
 
-singleton Material(mat_MagellanWalls)
+singleton Material(mat_misc)
 {
-   mapTo = "_8_-_Default";
-
-   diffuseMap[0] = "art/Packs/Magellan/walls.dds";
-   translucent = "0";
-   //translucentBlendOp = "LerpAlpha";
-   //translucentZWrite = "1";
-   //alphaTest = "1";
-   //alphaRef = "161";
-   castShadows = "1";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Magellan";
-   customFootstepSound = FootStepMetal1Sound;
-   specularPower[0] = "39";
+   mapTo = "_7_-_Default";
+   diffuseMap[0] = "art/Packs/Magellan/misc.dds";
+   normalMap[0] = "art/Packs/Magellan/misc_nm.png";
+   specularPower[0] = "21";
    pixelSpecular[0] = "1";
-   detailScale[0] = "2 2";
-   specular[0] = "1 1 1 1";
-   translucentBlendOp = "LerpAlpha";
-   normalMap[0] = "art/Packs/Magellan/walls_nm.png";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_MagellanWalls)
@@ -42,22 +30,13 @@ singleton Material(mat_MagellanWalls)
    mapTo = "_8_-_Default";
 
    diffuseMap[0] = "art/Packs/Magellan/walls.dds";
-
-   diffuseColor[0] = "1 1 1 1";
-   specular[0] = "1 1 1 1";
-   specularPower[0] = "8";
-   doubleSided = false;
-   translucent = false;
-   translucentBlendOp = "LerpAlpha";
-   customFootstepSound = FootStepMetal1Sound;
-   emissive[0] = "0";
-   detailScale[0] = "2 2";
-   subSurface[0] = "0";
-   materialTag0 = "Magellan";
-   pixelSpecular[0] = "1";
-   alphaRef = "1";
+   normalMap[0] = "art/Packs/Magellan/walls_nm.png";
+   castShadows = "1";
    useAnisotropic[0] = "1";
-   normalMap[0] = "art/Packs/Magellan/wallsN.dds";
+   materialTag0 = "Magellan";
+   customFootstepSound = FootStepMetal1Sound;
+   specularPower[0] = "39";
+   pixelSpecular[0] = "1";
 };
 
 singleton Material(Mat_TeleporterSign1)
