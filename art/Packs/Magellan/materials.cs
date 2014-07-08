@@ -4,12 +4,23 @@
 
 
 //--- science-labs-DAE.DAE MATERIALS BEGIN ---
-singleton Material(mat_MagellanAlpha)
+
+singleton Material(mat_AlphaMat)
 {
    mapTo = "_1_-_Default";
+   diffuseMap[0] = "art/Packs/Magellan/alpha_mat.dds";
+   normalMap[0] = "art/Packs/Magellan/alpha_mat_nm.png";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   translucent = "1";
+};
 
-   diffuseMap[0] = "alpha_mat.dds";
-   translucent = 1;
+singleton Material(mat_MagellanWalls)
+{
+   mapTo = "_8_-_Default";
+
+   diffuseMap[0] = "art/Packs/Magellan/walls.dds";
+   translucent = "0";
    //translucentBlendOp = "LerpAlpha";
    //translucentZWrite = "1";
    //alphaTest = "1";
@@ -18,42 +29,35 @@ singleton Material(mat_MagellanAlpha)
    useAnisotropic[0] = "1";
    materialTag0 = "Magellan";
    customFootstepSound = FootStepMetal1Sound;
-   normalMap[0] = "alpha_matN.dds";
-};
-
-singleton Material(mat_MagellanMisc)
-{
-   mapTo = "_7_-_Default";
-
-   diffuseMap[0] = "misc.dds";
-   specularMap[0] = "";
-
-   diffuseColor[0] = "1 1 1 1";
-   specular[0] = "0 0.835294 1 1";
-   specularPower[0] = "54";
-
-   doubleSided = false;
-   translucent = false;
-   translucentBlendOp = "None";
-   customFootstepSound = FootStepMetal1Sound;
-   emissive[0] = "0";
-   detailMap[0] = "";
-   detailScale[0] = "5 5";
-   subSurface[0] = "0";
-   materialTag0 = "Magellan";
-   pixelSpecular[0] = "0";
-   alphaRef = "1";
-   useAnisotropic[0] = "1";
+   specularPower[0] = "39";
+   pixelSpecular[0] = "1";
+   detailScale[0] = "2 2";
+   specular[0] = "1 1 1 1";
+   translucentBlendOp = "LerpAlpha";
+   normalMap[0] = "art/Packs/Magellan/walls_nm.png";
 };
 
 singleton Material(mat_MagellanWalls)
 {
    mapTo = "_8_-_Default";
-   diffuseMap[0] = "walls.dds";
-   normalMap[0] = "wallsN.dds";
-   materialTag0 = "Magellan";
+
+   diffuseMap[0] = "art/Packs/Magellan/walls.dds";
+
+   diffuseColor[0] = "1 1 1 1";
+   specular[0] = "1 1 1 1";
+   specularPower[0] = "8";
+   doubleSided = false;
+   translucent = false;
+   translucentBlendOp = "LerpAlpha";
    customFootstepSound = FootStepMetal1Sound;
+   emissive[0] = "0";
+   detailScale[0] = "2 2";
+   subSurface[0] = "0";
+   materialTag0 = "Magellan";
+   pixelSpecular[0] = "1";
+   alphaRef = "1";
    useAnisotropic[0] = "1";
+   normalMap[0] = "art/Packs/Magellan/wallsN.dds";
 };
 
 singleton Material(Mat_TeleporterSign1)
