@@ -10,9 +10,9 @@ new SimGroup(MissionGroup) {
       visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "0.619608 0.705882 0.780392 1";
-      fogDensity = "6e-005";
+      fogDensity = "0.0007";
       fogDensityOffset = "0";
-      fogAtmosphereHeight = "1000";
+      fogAtmosphereHeight = "100";
       canvasClearColor = "167 169 170 255";
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
@@ -32,8 +32,8 @@ new SimGroup(MissionGroup) {
    new TimeOfDay(AureusTime) {
       axisTilt = "23.44";
       dayLength = "86400";
-      startTime = "0.0107508";
-      time = "0.0112486";
+      startTime = "0.012103";
+      time = "0.0125064";
       play = "1";
       azimuthOverride = "0";
       dayScale = "0.634921";
@@ -606,7 +606,7 @@ new SimGroup(MissionGroup) {
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
          botBelongsToMe = "4757";
-         delayRespawn = "50927";
+         delayRespawn = "562";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -3549,7 +3549,7 @@ new SimGroup(MissionGroup) {
             isAIControlled = "0";
             dataBlock = "Square_Shield_VIIIWeapon";
             position = "9.73192 362.206 16.3224";
-            rotation = "0.580302 -0.571401 -0.580302 240";
+            rotation = "-0.580302 0.571401 0.580302 120";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
