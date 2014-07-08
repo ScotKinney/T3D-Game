@@ -2,7 +2,6 @@
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "skies/default" TAB
    "env/rain" TAB
-   "Terrains/Illura" TAB
    "clouds/default" TAB
    "groundcover/Illura" TAB
    "trees/Dex_BrushWood" TAB
