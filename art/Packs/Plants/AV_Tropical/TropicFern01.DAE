@@ -377,10 +377,10 @@ BB:DL=0</user_properties>
           <translate>0 1.49012e-8 0.0577701</translate>
           <extra>
             <technique profile="OpenCOLLADA">
-              <user_properties>BB:DIM=512
-BB:EQUATOR_STEPS=5
-BB:POLAR_STEPS=6
-BB:POLAR_ANGLE=60
+              <user_properties>BB:DIM=256
+BB:EQUATOR_STEPS=4
+BB:POLAR_STEPS=0
+BB:POLAR_ANGLE=0
 BB:INCLUDE_POLES=0
 BB:DL=0</user_properties>
             </technique>
