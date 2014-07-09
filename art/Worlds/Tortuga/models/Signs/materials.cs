@@ -28,3 +28,10 @@ singleton Material(mat_weBuyGems)
    diffuseMap[0] = "WeBuyGems";
    translucent = "0";
 };
+
+singleton Material(mat_Fencepostbasic00A)
+{
+   mapTo = "fencePostBasic00A";
+   diffuseMap[0] = "fencePostBasic00A";
+   useAnisotropic[0] = "1";
+};
