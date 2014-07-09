@@ -88,17 +88,15 @@ singleton Material(mat_canopytree_lodlo)
 singleton Material(mat_canopytree_fronds_lodhi)
 {
 	mapTo = "canopytree_fronds_lodhi";
-	diffuseMap[0] = "canopytree_fronds_diffuse_transparency.dds";
-	normalMap[0] = "canopytree_fronds_normal.dds";
-	specularMap[0] = "canopytree_fronds_specular.dds";
+	diffuseMap[0] = "art/Packs/Trees/Canopy/canopytree_fronds_diffuse_transparency.dds";
 	diffuseColor[0] = "1 1 1 1";
 	specular[0] = "0.9 0.9 0.9 1";
-	specularPower[0] = 1;
+	specularPower[0] = "19";
 	pixelSpecular[0] = 0;
 	translucent = true;
-	translucentBlendOp = "None";
-        alphaTest = "1";
-        alphaRef = "110";
+	translucentBlendOp = "LerpAlpha";
+        alphaTest = "0";
+        alphaRef = "94";
         forestWindEnabled = 1;
         materialTag0 = "Trees";
         useAnisotropic[0] = "1";
