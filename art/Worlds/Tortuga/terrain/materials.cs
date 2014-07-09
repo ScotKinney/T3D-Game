@@ -40,14 +40,31 @@ singleton Material(Ter_Seaweed)
    footstepSoundId = 0;
 };
 
+singleton Material(Spartan_rock_dif)
+{
+   mapTo = "Spartan_rock_dif";
+   diffuseMap[0] = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Rock";
+   showFootprints = "1";
+   detailNormalMapStrength[0] = "1";
+   specularStrength[0] = "0.8";
+   detailScale[0] = "3 3";
+   detailMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
+   diffuseColor[0] = "0.647059 0.384314 0.196078 0";
+   customFootstepSound = "FootStepRock1Sound";
+   normalMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
+};
 //////////////////////////////////////////////////////////
 new TerrainMaterial()
 {
    internalName = "grass";
-   diffuseMap = "art/worlds/tortuga/terrain/clearTerrain001";
+   diffuseMap = "art/packs/terrains/tortuga/clearTerrain001";
    diffuseSize = "300";
-   normalMap = "art/worlds/tortuga/terrain/gras_01n";
-   detailMap = "art/worlds/tortuga/terrain/gras_01";
+   normalMap = "art/packs/terrains/tortuga/gras_01n";
+   detailMap = "art/packs/terrains/tortuga/gras_01";
    detailSize = "4";
    detailStrength = "0.4";
    detailDistance = "1000";
@@ -66,10 +83,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "DirtySand";
-   diffuseMap = "art/worlds/tortuga/terrain/dirtysand_base";
+   diffuseMap = "art/packs/terrains/tortuga/dirtysand_base";
    diffuseSize = "900";
-   normalMap = "art/worlds/tortuga/terrain/dirtysand_2_nrm";
-   detailMap = "art/worlds/tortuga/terrain/dirtysand_detail";
+   normalMap = "art/packs/terrains/tortuga/dirtysand_2_nrm";
+   detailMap = "art/packs/terrains/tortuga/dirtysand_detail";
    detailSize = "4";
    detailStrength = "0.8";
    detailDistance = "100";
@@ -83,10 +100,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "DirtSandMix";
-   diffuseMap = "art/worlds/tortuga/terrain/dirtyandmix_base";
+   diffuseMap = "art/packs/terrains/tortuga/dirtyandmix_base";
    diffuseSize = "500";
-   normalMap = "art/worlds/tortuga/terrain/dirtsandmix_nrm";
-   detailMap = "art/worlds/tortuga/terrain/dirtsandmix_detail";
+   normalMap = "art/packs/terrains/tortuga/dirtsandmix_nrm";
+   detailMap = "art/packs/terrains/tortuga/dirtsandmix_detail";
    detailSize = "3";
    detailStrength = "0.7";
    detailDistance = "100";
@@ -100,10 +117,10 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "VolcanicCliffRockTop";
-   diffuseMap = "art/worlds/tortuga/terrain/cas_cobble2_shadow.dds";
+   diffuseMap = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
    diffuseSize = "300";
-   normalMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_dif";
+   normalMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
    detailSize = "10";
    detailStrength = "0.6";
    detailDistance = "1000";
@@ -115,9 +132,9 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "VolcanicCliffSide";
-   diffuseMap = "art/worlds/tortuga/terrain/cas_cobble2_shadow.dds";
-   normalMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/worlds/tortuga/terrain/tex_volcanic_cliffrock_dif";
+   diffuseMap = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
+   normalMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
+   detailMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
    detailSize = "20";
    detailDistance = "4000";
    useSideProjection = "1";
@@ -128,9 +145,9 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/worlds/tortuga/terrain/Seaweed_base";
-   normalMap = "art/worlds/tortuga/terrain/Seaweed_nrm_displacement";
-   detailMap = "art/worlds/tortuga/terrain/Seaweed_detail";
+   diffuseMap = "art/packs/terrains/tortuga/Seaweed_base";
+   normalMap = "art/packs/terrains/tortuga/Seaweed_nrm_displacement";
+   detailMap = "art/packs/terrains/tortuga/Seaweed_detail";
    detailSize = "5.5";
    detailStrength = "0.4";
    detailDistance = "1000";
@@ -140,9 +157,9 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/worlds/tortuga/terrain/Seaweed_base";
-   normalMap = "art/worlds/tortuga/terrain/Seaweed_nrm_displacement";
-   detailMap = "art/worlds/tortuga/terrain/Seaweed_detail";
+   diffuseMap = "art/packs/terrains/tortuga/Seaweed_base";
+   normalMap = "art/packs/terrains/tortuga/Seaweed_nrm_displacement";
+   detailMap = "art/packs/terrains/tortuga/Seaweed_detail";
    detailSize = "5.5";
    detailStrength = "0.4";
    detailDistance = "1000";

@@ -13,7 +13,7 @@ singleton Material(Mat_BogSignPost)
    materialTag0 = "Signs";
 };
 
-singleton Material(DefaultMaterial3)
+singleton Material(mat_BogSignPost_dif)
 {
    mapTo = "BogSignPost_dif";
    diffuseMap[0] = "art/Packs/Signs/BoyersBog/BogSignPost_dif";

@@ -2,7 +2,6 @@ singleton Material(mat_FortBridge)
 {
    mapTo = "Fort_Bridge";
    diffuseMap[0] = "PMat_bridgeFort";
-   normalMap[0] = "bridgeWood_Nrm.png";
    customFootstepSound = "FootStepWood1Sound";
    useAnisotropic[0] = "1";
    materialTag0 = "fort";

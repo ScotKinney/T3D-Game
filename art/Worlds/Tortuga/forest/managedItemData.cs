@@ -6,7 +6,7 @@
 datablock TSForestItemData(BananaMature)
 {
    internalName = "BananaMature";
-   shapeFile = "art/Packs/trees/banana/bananatree_mature.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/bananatree_mature.DAE";
    radius = "1";
    trunkBendScale = "0.001";
    branchAmp = "0.04";
@@ -46,7 +46,7 @@ datablock TSForestItemData(Shrub_Large)
 datablock TSForestItemData(BigLeaf_Plant)
 {
    internalName = "BigLeaf_Plant";
-   shapeFile = "art/Packs/Plants/SP_Sparta/bigleaf.DAE";
+   shapeFile = "art/Packs/Plants/AV_Tropical/bigleaf.DAE";
    trunkBendScale = "0.003";
    branchAmp = "10";
    detailAmp = "30";
@@ -62,7 +62,7 @@ datablock TSForestItemData(BigLeaf_Plant)
 datablock TSForestItemData(BroadLeaf)
 {
    internalName = "BroadLeaf";
-   shapeFile = "art/Packs/Plants/SP_Caerule/broadleaf_wskirt.DAE";
+   shapeFile = "art/Packs/Plants/AV_Tropical/broadleaf_wskirt.DAE";
    trunkBendScale = "0.006";
    branchAmp = "0";
    detailAmp = "0.04";
@@ -76,7 +76,7 @@ datablock TSForestItemData(BroadLeaf)
 datablock TSForestItemData(Fern_Plant)
 {
    internalName = "Fern_Plant";
-   shapeFile = "art/Packs/Plants/SP_Caerule/fern.DAE";
+   shapeFile = "art/Packs/Plants/AV_Tropical/fern.DAE";
    trunkBendScale = "0.002";
    branchAmp = "0.1";
    detailAmp = "0.2";
@@ -92,7 +92,7 @@ datablock TSForestItemData(Fern_Plant)
 datablock TSForestItemData(DeadBush_Plant)
 {
    internalName = "DeadBush_Plant";
-   shapeFile = "art/Packs/Plants/SP_Sparta/deadbush.dae";
+   shapeFile = "art/Packs/Plants/AV_Tropical/deadbush.dae";
    trunkBendScale = "0.002";
    branchAmp = "0.3";
    detailAmp = "0.8";
@@ -107,7 +107,7 @@ datablock TSForestItemData(DeadBush_Plant)
 datablock TSForestItemData(LongLeaf_Bush)
 {
    internalName = "LongLeaf_Bush";
-   shapeFile = "art/Packs/Plants/SP_Sparta/longleaf_plant.DAE";
+   shapeFile = "art/Packs/Plants/AV_Tropical/longleaf_plant.DAE";
    branchAmp = "0.02";
    detailAmp = "1";
    detailFreq = "0.015";
@@ -122,7 +122,7 @@ datablock TSForestItemData(LongLeaf_Bush)
 datablock TSForestItemData(PalmTree_Tall_01)
 {
    internalName = "PalmTree_Tall_01";
-   shapeFile = "art/Packs/trees/SP_Sparta/palmtree_tall.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/palmtree_tall.DAE";
    trunkBendScale = "0.005";
    branchAmp = "0.2";
    detailAmp = "0.3";
@@ -138,7 +138,7 @@ datablock TSForestItemData(PalmTree_Tall_01)
 datablock TSForestItemData(PalmTree_Short_01)
 {
    internalName = "PalmTree_Short_01";
-   shapeFile = "art/Packs/trees/SP_Sparta/palmtree_short.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/palmtree_short.DAE";
    branchAmp = "0.1";
    detailAmp = "0.15";
    detailFreq = "0.04";
@@ -153,7 +153,7 @@ datablock TSForestItemData(PalmTree_Short_01)
 datablock TSForestItemData(Palm_Bush)
 {
    internalName = "Palm_Bush";
-   shapeFile = "art/Packs/trees/SP_Sparta/palm_bush.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/palm_bush.DAE";
    trunkBendScale = "0.01";
    branchAmp = "0.05";
    detailAmp = "0.08";
@@ -167,55 +167,31 @@ datablock TSForestItemData(Palm_Bush)
 datablock TSForestItemData(SmallRock_01)
 {
    internalName = "SmallRock_01";
-   shapeFile = "art/Packs/rocks/default/15_smallrockone.DAE";
+   shapeFile = "art/Packs/rocks/SP_Rocks/SP_SmRock1.dts";
 };
 
 datablock TSForestItemData(SmallRock_02)
 {
    internalName = "SmallRock_02";
-   shapeFile = "art/Packs/rocks/default/16_smallrocktwo.DAE";
+   shapeFile = "art/Packs/rocks/SP_Rocks/SP_SmRock2.dts";
 };
 
 datablock TSForestItemData(SmallRock_03)
 {
    internalName = "SmallRock_03";
-   shapeFile = "art/Packs/rocks/default/17_smallrockthree.DAE";
+   shapeFile = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
 };
 
 datablock TSForestItemData(SmallRock_04)
 {
    internalName = "SmallRock_04";
-   shapeFile = "art/Packs/rocks/default/18_smallrockfour.DAE";
-};
-
-datablock TSForestItemData(SmallRock_05)
-{
-   internalName = "SmallRock_05";
-   shapeFile = "art/Packs/rocks/default/19_smallrockfive.DAE";
-};
-
-datablock TSForestItemData(SmallRock_06)
-{
-   internalName = "SmallRock_06";
-   shapeFile = "art/Packs/rocks/default/20_smallrocksix.DAE";
-};
-
-datablock TSForestItemData(SmallRock_07)
-{
-   internalName = "SmallRock_07";
-   shapeFile = "art/Packs/rocks/default/21_smallrockseven.DAE";
-};
-
-datablock TSForestItemData(SmallRock_08)
-{
-   internalName = "SmallRock_08";
-   shapeFile = "art/Packs/rocks/default/22_smallrockeight.DAE";
+   shapeFile = "art/Packs/rocks/SP_Rocks/SP_SMRock4.dts";
 };
 
 datablock TSForestItemData(TallPalmLeaning)
 {
    internalName = "TallPalmLeaning";
-   shapeFile = "art/Packs/trees/SP_Sparta/palmtree_tall_leaning.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/palmtree_tall_leaning.DAE";
    trunkBendScale = "0.005";
    branchAmp = "0.02";
    detailAmp = "0.08";
@@ -236,30 +212,6 @@ datablock TSForestItemData(canopytree_one_novines)
    detailFreq = "0.1";
    rigidity = "20";
    trunkBendScale = "0.005";
-   radius = "1";
-};
-
-datablock TSForestItemData(canopytree_two_dark)
-{
-   internalName = "canopytree_two_dark";
-   shapeFile = "art/Packs/trees/canopy/canopytree_two_dark.DAE";
-   windScale = "1";
-   trunkBendScale = "0.005";
-   branchAmp = "0.03";
-   detailAmp = "0.04";
-   detailFreq = "0.04";
-   radius = "1";
-};
-
-datablock TSForestItemData(canopytree_two_light)
-{
-   internalName = "canopytree_two_light";
-   shapeFile = "art/Packs/trees/canopy/canopytree_two_light.DAE";
-   windScale = "1";
-   trunkBendScale = "0.005";
-   branchAmp = "0.03";
-   detailAmp = "0.04";
-   detailFreq = "0.04";
    radius = "1";
 };
 
@@ -290,7 +242,7 @@ datablock TSForestItemData(canopytree_three)
 datablock TSForestItemData(palm_bush2)
 {
    internalName = "palm_bush2";
-   shapeFile = "art/Packs/trees/SP_Sparta/palm_bush.DAE";
+   shapeFile = "art/Packs/trees/AV_Tropical/palm_bush.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.06";
@@ -314,6 +266,3 @@ datablock TSForestItemData(Shrub_Large_NoCollision)
    detailAmp = "0.5";
    detailFreq = "0.01";
 };
-
-
-
