@@ -360,10 +360,10 @@
           <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
           <extra>
             <technique profile="OpenCOLLADA">
-              <user_properties>BB::DIM=256 
-BB::EQUATOR_STEPS=8
+              <user_properties>BB::DIM=128 
+BB::EQUATOR_STEPS=4
 BB::POLAR_STEPS=0
-BB::POLAR_ANGLE=60
+BB::POLAR_ANGLE=00
 BB::INCLUDE_POLES=0
 BB::DL=0</user_properties>
             </technique>
