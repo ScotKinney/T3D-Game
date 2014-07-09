@@ -116,31 +116,31 @@ singleton Material(bigleaf_ColorEffectR227G153B153_material)
 singleton Material(mat_broadleaf_GG)
 {
    mapTo = "broadleaf";
-   diffuseMap[0] = "broadleaf_diffuse_transparency.dds";
-   normalMap[0] = "broadleaf_normal_specular.dds";
-   specularMap[0] = "broadleaf_specular.dds";
+   diffuseMap[0] = "art/Packs/Plants/AV_Tropical/broadleaf_diffuse_transparency.dds";
    specular = "1 1 0.85 0"; // 1 1 0 0 = pure yellow
    specularPower = 1;
-   translucent = true;
-   translucentZWrite = true;
-   alphaTest = true;
-   alphaRef = 84;
+   translucent = "0";
+   translucentZWrite = "0";
+   alphaTest = "0";
+   alphaRef = "0";
    forestWindEnabled = 1;   
    materialTag0 = "Plants_BroadLeaf_GG";
+   useAnisotropic[0] = "1";
+   castShadows = "0";
+   showFootprints = "0";
 };
 
 singleton Material(mat_fern_GG)
 {
    mapTo = "fern";   
-   diffuseMap[0] = "fern_diffuse_transparency.dds";
-   normalMap[0] = "fern_normal.dds";
-   specularMap[0] = "fern_specular.dds";
+   diffuseMap[0] = "art/Packs/Plants/AV_Tropical/fern_diffuse_transparency.dds";
    specular = "1 1 0.85 0.25";
    specularPower = 10;
-   translucent = true;
+   translucent = "0";
    translucentZWrite = true;
    alphaTest = true;
    alphaRef = 84;
    forestWindEnabled = 1; 
    materialTag0 = "Plants_Fern_GG";
+   useAnisotropic[0] = "1";
 };
