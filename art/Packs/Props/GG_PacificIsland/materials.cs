@@ -8,7 +8,7 @@ singleton Material(mat_GGvolcano_cave1)
    normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGvolcano_cave3)
@@ -23,7 +23,7 @@ singleton Material(mat_GGvolcano_cave3)
    customFootstepSound = "FootStepSand1Sound";
    detailNormalMap[0] = "rockydirt_normal";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGvolcano_cave2)
@@ -35,7 +35,7 @@ singleton Material(mat_GGvolcano_cave2)
    normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGvolcano_lavaflow)
@@ -59,7 +59,7 @@ singleton Material(mat_GGvolcano_lavaflow)
    glow[1] = "1";
    forestWindEnabled = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(lavaglow_ColorEffectR6G135B113_material)
@@ -71,7 +71,7 @@ singleton Material(lavaglow_ColorEffectR6G135B113_material)
    diffuseColor[0] = "0.0235294 0.529412 0.443137 1";
    specular[0] = "1 1 1 1";
    specularPower[0] = 10;
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGlavaGlow)
@@ -88,7 +88,7 @@ singleton Material(mat_GGlavaGlow)
    glow[0] = "1";
    emissive[0] = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGlavafall)
@@ -107,7 +107,7 @@ singleton Material(mat_GGlavafall)
    glow[0] = "1";
    vertColor[0] = "1";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
 };
 
 singleton Material(mat_GGtorch)
@@ -122,5 +122,14 @@ singleton Material(mat_GGtorch)
    alphaTest = "1";
    alphaRef = "65";
    useAnisotropic[0] = "1";
-   materialTag0 = "Props_GG";
+   materialTag0 = "GG_PacificIsland";
+};
+singleton Material(mat_tex_volcano_rocks)
+{
+   mapTo = "tex_volcano_rocks";
+   diffuseMap[0] = "cas_cobble2_shadow.dds";
+   normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
+   materialTag0 = "Rocks";
+   detailMap[0] = "tex_volcanic_rock_dif.dds";
+   materialTag0 = "GG_PacificIsland";
 };
