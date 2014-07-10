@@ -26,9 +26,9 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          canBringHorses = "0";
          canTeleport = "1";
-         desc = "BugCaves";
+         desc = "The Bug Caves";
          desc0 = "Scared Yet?";
-         displayName = "Bug Caves of Tokara";
+         displayName = "Bug Caves";
          enabled = "1";
          hasTreasury = "0";
          LevelName = "BugCaves";
