@@ -26,7 +26,7 @@ new SimGroup(MissionGroup) {
          desc0 = "You are entering Boyers Bog...Beware the Boglins!";
          displayName = "Boyers Bog";
          hasTreasury = "0";
-         LevelName = "Boyers Bog";
+         levelName = "Boyers Bog";
          worldSize = "1000";
    };
    new SimGroup(environment) {
@@ -891,7 +891,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3149";
+            botBelongsToMe = "2125";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
@@ -919,7 +919,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3151";
+            botBelongsToMe = "2127";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "4981";
             distDetect = "150";
@@ -947,7 +947,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "BoglinBig";
-            botBelongsToMe = "3152";
+            botBelongsToMe = "2128";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
             distDetect = "150";
@@ -1124,7 +1124,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3153";
+               botBelongsToMe = "2129";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "18872";
                distDetect = "150";
@@ -1223,7 +1223,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-648.127 -413.104 55.9943";
             rotation = "0 0 1 88.7754";
             scale = "1 1 1";
@@ -1282,7 +1282,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3154";
+               botBelongsToMe = "2130";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1681";
                distDetect = "150";
@@ -1382,7 +1382,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-489.268 -109.447 75.2985";
             rotation = "0 0 1 96.966";
             scale = "1 1 1";
@@ -1441,7 +1441,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3155";
+               botBelongsToMe = "2131";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1675";
                distDetect = "150";
@@ -1539,7 +1539,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-63.7887 147.258 71.3252";
             rotation = "0.0076214 -0.0356434 0.999336 204.123";
             scale = "1 1 1";
@@ -1569,7 +1569,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.843";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.8429";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1599,7 +1599,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3156";
+               botBelongsToMe = "2132";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
@@ -1694,7 +1694,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-351.764 -69.3378 65.8317";
             rotation = "0 0 -1 109.147";
             scale = "1 1 1";
@@ -1783,7 +1783,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3157";
+               botBelongsToMe = "2133";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
@@ -1933,7 +1933,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-87.9379 -353.54 64.1787";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
             scale = "1 1 1";
@@ -1993,7 +1993,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3158";
+               botBelongsToMe = "2134";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "4138";
                distDetect = "150";
@@ -2119,7 +2119,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-224.71 -153.932 57.8237";
             rotation = "0 0 1 52.9022";
             scale = "1 1 1";
@@ -2178,7 +2178,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3159";
+               botBelongsToMe = "2135";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
@@ -2327,7 +2327,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-514.866 12.5199 61.0088";
             rotation = "0.0610922 -0.0159594 -0.998004 63.5637";
             scale = "1 1 1";
@@ -2387,7 +2387,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3160";
+               botBelongsToMe = "2136";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
@@ -2458,7 +2458,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "GenericFireEmitter";
-            dataBlock = "GenericFireEmitterNode";
+            dataBlock = "DefaultEmitterNodeData";
             position = "-687.576 -177.924 58.9444";
             rotation = "-0.0262979 -0.0206107 0.999442 191.077";
             scale = "1 1 1";
@@ -2547,7 +2547,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3161";
+               botBelongsToMe = "2137";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "21673";
                distDetect = "150";
@@ -2716,10 +2716,10 @@ new SimGroup(MissionGroup) {
             destinationServer = "Magellan";
             destinationSpawnSphere = "MagellanSphere";
             invRequirement = "FlexDecapitator";
-            manifestURL = "http://www.bloodclans.com/stream/manifests/magellanmanifest.txt";
+            manifestURL = "http://www.alterverse.com/stream/manifests/magellanmanifest.txt";
             migrantMessage = "sttMag";
             noInvMsg = "noFDMag";
-            pathToRoot = "http://www.bloodclans.com/stream/";
+            pathToRoot = "http://www.alterverse.com/stream/";
             subscriberOnly = "1";
       };
       new PointLight(ShipLight) {
@@ -2937,156 +2937,6 @@ new SimGroup(MissionGroup) {
          invertGradientRange = "0";
          useGradientRange = "0";
    };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "100";
-      isAIControlled = "0";
-      dataBlock = "IronSpearWeapon";
-      position = "92.3566 139.933 69.3406";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         respawnTime = "30";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "100";
-      isAIControlled = "0";
-      dataBlock = "JackHammerWeapon";
-      position = "93.3484 139.362 69.8831";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "IronPikeWeapon";
-      position = "93.0632 139.394 69.4005";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "SteelSpearWeapon";
-      position = "93.6719 139.462 69.427";
-      rotation = "0 -1 0 90";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         respawnTime = "30";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "StonePikeWeapon";
-      position = "94.5785 139.072 69.507";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "1";
-      rotate = "0";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "StoneSpearWeapon";
-      position = "94.1306 139.669 69.4551";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "15";
-      isAIControlled = "0";
-      dataBlock = "Lamp_Oil";
-      position = "12.9671 7.24623 70.195";
-      rotation = "0 0 1 99.1558";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "20";
-      isAIControlled = "0";
-      dataBlock = "ChaosBladeWeapon";
-      position = "16.0471 0.219628 73.2768";
-      rotation = "0 0 -1 71.261";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "10";
-      isAIControlled = "0";
-      dataBlock = "Tokara_Mushroom";
-      position = "22.1843 -0.80892 75.1726";
-      rotation = "0 0 -1 9.38295";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
-   };
-   new Item() {
-      static = "1";
-      rotate = "1";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "XR75Weapon";
-      position = "91.8068 134.591 69.5755";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "200";
-         respawnTime = "30";
-   };
-   new Item() {
-      static = "1";
-      rotate = "1";
-      buyable = "0";
-      count = "0";
-      isAIControlled = "0";
-      dataBlock = "FlintlockWeapon";
-      position = "94.1835 136.074 69.822";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "200";
-   };
+
 };
 //--- OBJECT WRITE END ---
