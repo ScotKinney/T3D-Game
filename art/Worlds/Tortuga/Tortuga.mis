@@ -467,7 +467,7 @@ new SimGroup(MissionGroup) {
          onExitMessage = "TortNZOut";
    };
    new TSStatic(BeachHouse1) {
-      shapeName = "art/Packs/props/medcity/medhouse6.dts";
+      shapeName = "art/packs/buildings/Caerule_Village/medhouse6.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9768,7 +9768,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(InnBldg) {
-         shapeName = "art/Packs/props/medCity/inn.dts";
+         shapeName = "art/packs/buildings/Caerule_Village/inn.dts";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -10206,7 +10206,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(FoodBldg) {
-         shapeName = "art/Packs/props/MedCity/medhouse17.dts";
+         shapeName = "art/packs/buildings/Caerule_Village/medhouse17.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";

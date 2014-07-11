@@ -13,7 +13,7 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Rocks/SP_Rocks" TAB
    "Rocks/GG_Rocks" TAB
    "Buildings/Fort_Wood" TAB
-   "props/medcity" TAB
+   "Buildings/Caerule_Village" TAB
    "props/Dex_Viking" TAB
    "props/RRGTS_Crates" TAB
    "props/physShapes1" TAB
