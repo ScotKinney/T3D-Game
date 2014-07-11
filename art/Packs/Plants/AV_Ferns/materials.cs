@@ -10,7 +10,7 @@ singleton Material(mat_FernVert01)
    useAnisotropic[0] = "1";
    alphaTest = "1";
    alphaRef = "147";
-   materialTag0 = "Plants_FernVert01_AV";
+   materialTag0 = "Plants_AV_Ferns";
 };
 
 singleton Material(mat_FernVert02)
@@ -27,6 +27,6 @@ singleton Material(mat_FernVert02)
    alphaTest = "1";
    alphaRef = "140";
    subSurfaceRolloff[0] = "5";
-   materialTag0 = "Plants_FernVert02_AV";
+   materialTag0 = "Plants_AV_Ferns";
 };
 
