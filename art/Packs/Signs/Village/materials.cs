@@ -1,5 +1,3 @@
-
-
 singleton Material(Mat_WeaponsShop)
 {
    mapTo = "WeaponsShop";
@@ -30,3 +28,23 @@ singleton Material(mat_Horses4Sale)
    materialTag0 = "signs";
 };
 
+singleton Material(mat_WeBuyGems)
+{
+   mapTo = "WeBuyGems";
+   diffuseMap[0] = "WeBuyGems";
+   materialTag0 = "signs";
+};
+
+singleton Material(mat_Shop4Sale)
+{
+   mapTo = "Shop4Sale";
+   diffuseMap[0] = "Shop4Sale";
+   materialTag0 = "signs";
+};
+
+singleton Material(mat_Pub4Sale)
+{
+   mapTo = "Pub4Sale";
+   diffuseMap[0] = "Pub4Sale";
+   materialTag0 = "signs";
+};
