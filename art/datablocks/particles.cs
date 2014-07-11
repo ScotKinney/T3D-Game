@@ -544,7 +544,7 @@ datablock BillboardParticleData(ParticleRockImpactInner01)
    textureName="core/art/particles/rock_impact_1_inner.png";
    animTexName="core/art/particles/rock_impact_1_inner.png";
    gravityCoefficient = "0.541667";
-   inheritedVelFactor = "1.875";
+   inheritedVelFactor = "1";
    spinSpeed = "0.229167";
    spinRandomMin = "-416";
    spinRandomMax = "541.9";
