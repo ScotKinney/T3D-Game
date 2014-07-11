@@ -1,7 +1,7 @@
 // Illura level config
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "skies/default" TAB
-   "env/rain" TAB
+   "Precip/rain" TAB
    "clouds/default" TAB
    "groundcover/Illura" TAB
    "trees/Dex_BrushWood" TAB
