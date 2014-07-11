@@ -11560,7 +11560,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMainFalls_Cave";
+         emitter = "EmitterMainFalls";
          dataBlock = "DefaultEmitterNodeData";
          position = "74.4699 1100.83 78.7167";
          rotation = "-0.694836 -0.501148 -0.515803 108.859";
@@ -11581,7 +11581,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMainFalls02_Cave";
+         emitter = "EmitterMainFalls02";
          dataBlock = "DefaultEmitterNodeData";
          position = "72.6112 1099.51 79.0419";
          rotation = "-0.687908 -0.496152 -0.529732 107.41";
@@ -11602,7 +11602,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMainFalls03_Cave";
+         emitter = "EmitterMainFalls03";
          dataBlock = "DefaultEmitterNodeData";
          position = "71.9641 1098.21 79.1409";
          rotation = "-0.715154 -0.515798 -0.471707 113.629";
@@ -11623,7 +11623,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMainFalls_Cave";
+         emitter = "EmitterMainFalls";
          dataBlock = "DefaultEmitterNodeData";
          position = "71.6065 1096.85 79.4075";
          rotation = "-0.756646 -0.444599 -0.479393 102.408";
@@ -11644,7 +11644,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "75.5289 1096.25 75.5327";
          rotation = "-0.658758 -0.580025 -0.479175 109.419";
@@ -11665,7 +11665,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "76.6616 1093.42 72.2818";
          rotation = "-0.658758 -0.580025 -0.479175 109.419";
@@ -11686,7 +11686,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "99.3618 1097.01 63.5885";
          rotation = "-0.658758 -0.580025 -0.479175 109.419";
@@ -11707,7 +11707,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "77.2977 1094.59 65.5455";
          rotation = "-0.658758 -0.580025 -0.479175 109.419";
@@ -11728,7 +11728,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "87.1562 1095.86 64.1422";
          rotation = "-0.658758 -0.580025 -0.479175 109.419";
@@ -11749,7 +11749,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMist_Cave";
+         emitter = "EmitterMist";
          dataBlock = "DefaultEmitterNodeData";
          position = "81.0865 1094.72 63.1459";
          rotation = "-0 0 -1 71.6017";
@@ -11770,7 +11770,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMist_Cave";
+         emitter = "EmitterMist";
          dataBlock = "DefaultEmitterNodeData";
          position = "81.6356 1099.19 63.1459";
          rotation = "-0 0 -1 71.6017";
@@ -11791,7 +11791,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterWaterDisturbance_Cave";
+         emitter = "EmitterWaterDisturbance";
          dataBlock = "DefaultEmitterNodeData";
          position = "82.242 1101.62 64.1103";
          rotation = "-0 0 -1 71.6017";
@@ -11812,7 +11812,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMainFalls_Cave";
+         emitter = "EmitterMainFalls";
          dataBlock = "DefaultEmitterNodeData";
          position = "72.5541 1097.44 79.4075";
          rotation = "-0.66107 -0.510936 -0.549483 109.9";
@@ -11833,7 +11833,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "87.6392 1088.11 63.8223";
          rotation = "0 0 1 40.1753";
@@ -11875,7 +11875,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "76.2043 1092.24 71.9162";
          rotation = "0 0 1 40.1753";
@@ -11896,7 +11896,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMist_Cave";
+         emitter = "EmitterMist";
          dataBlock = "DefaultEmitterNodeData";
          position = "83.4665 1099.18 65.2626";
          rotation = "0 0 1 40.1753";
@@ -11917,7 +11917,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterMist_Cave";
+         emitter = "EmitterMist";
          dataBlock = "DefaultEmitterNodeData";
          position = "81.6379 1093.41 65.2626";
          rotation = "0 0 1 40.1753";
@@ -11938,7 +11938,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode() {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "80.6597 1098.57 70.627";
          rotation = "0 0 1 40.1753";
@@ -12064,7 +12064,7 @@ new SimGroup(MissionGroup) {
       new ParticleEmitterNode(EmitterTestA03) {
          active = "1";
          velocity = "1";
-         emitter = "EmitterRockImpact_Cave";
+         emitter = "EmitterRockImpact";
          dataBlock = "DefaultEmitterNodeData";
          position = "89.8743 1088.1 63.515";
          rotation = "0 0 1 40.1753";
