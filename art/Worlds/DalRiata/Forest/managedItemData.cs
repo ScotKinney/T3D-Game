@@ -95,7 +95,7 @@ datablock TSForestItemData(CopalTree01)
 datablock TSForestItemData(maple)
 {
    internalName = "maple";
-   shapeFile = "art/Packs/Trees/SP_Mythriel/Forest/maple.dae";
+   shapeFile = "art/Packs/Trees/SP_Mythriel/maple.dae";
 };
 
 datablock TSForestItemData(whitePine)

@@ -125,7 +125,7 @@ new SimGroup(MissionGroup) {
             viewerHeight = "1.004";
       };
       new CloudLayer(AureusClouds) {
-         texture = "core/art/skies/clouds/clouds_normal_displacement.png";
+         texture = "art/packs/clouds/default/clouds_normal_displacement.png";
          texScale[0] = "1";
          texScale[1] = "1";
          texScale[2] = "3";
@@ -147,7 +147,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new CloudLayer(Clouds2) {
-         texture = "core/art/skies/clouds/clouds_normal_displacement";
+         texture = "art/packs/clouds/default/clouds_normal_displacement";
          texScale[0] = "0.5";
          texScale[1] = "1";
          texScale[2] = "1";
@@ -467,7 +467,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic(CastleTunnels) {
-      shapeName = "art/worlds/DalRiata/Models/CastleTunnels/DungeonLevel.dae";
+      shapeName = "art/Packs/Tunnels/Mythriel/DungeonLevel.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -487,7 +487,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic(Castle) {
-      shapeName = "art/worlds/DalRiata/Models/Castle18/castle18.dae";
+      shapeName = "art/Packs/Buildings/Mythriel_Castle/castle18.dae";
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
@@ -691,7 +691,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
 
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -712,7 +712,7 @@ new SimGroup(MissionGroup) {
                   PMat_RopeCoilObject = "PMat_RopeCoilObject_mat";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -732,7 +732,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -752,7 +752,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -772,7 +772,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -792,7 +792,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -812,7 +812,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -832,7 +832,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -852,7 +852,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -872,7 +872,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -892,7 +892,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -912,7 +912,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -932,7 +932,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_seg_1b.DAE";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_seg_1b.DAE";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -952,7 +952,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -972,7 +972,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/rope_coil_02dk.dae";
+               shapeName = "art/Packs/Buildings/Fort_Wood/rope_coil_02dk.dae";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -992,7 +992,7 @@ new SimGroup(MissionGroup) {
                canSaveDynamicFields = "1";
             };
             new TSStatic() {
-               shapeName = "art/worlds/DalRiata/Models/Forts/fencePostBasic00A.dts";
+               shapeName = "art/Packs/Buildings/Fort_Wood/fencePostBasic00A.dts";
                playAmbient = "1";
                meshCulling = "0";
                originSort = "0";
@@ -1013,7 +1013,7 @@ new SimGroup(MissionGroup) {
             };
          };
          new Prefab() {
-            fileName = "art/worlds/DalRiata/PreFabs/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-530.208 -511.609 -11.0221";
             rotation = "0 0 1 45.0334";
             scale = "1 1 1";
@@ -1021,7 +1021,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/worlds/DalRiata/PreFabs/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-505.676 -536.174 -11.0196";
             rotation = "0 0 1 45.0334";
             scale = "1 1 1";
@@ -1029,7 +1029,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new Prefab() {
-            fileName = "art/worlds/DalRiata/PreFabs/ropeBridge.prefab";
+            fileName = "art/Packs/Buildings/Fort_Wood/ropeBridge.prefab";
             position = "-505.736 -511.452 -11.0224";
             rotation = "0 0 -1 44.9666";
             scale = "1 1 1";
@@ -1037,7 +1037,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Forts/fortLOD_Z.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/fortLOD_Z.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1058,7 +1058,7 @@ new SimGroup(MissionGroup) {
                mudpack = "mudpack_mat";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Forts/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1078,7 +1078,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Forts/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1098,7 +1098,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Forts/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1118,7 +1118,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Forts/bridgeFort.dae";
+            shapeName = "art/Packs/Buildings/Fort_Wood/bridgeFort.dae";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1269,7 +1269,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1289,7 +1289,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1309,7 +1309,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1329,7 +1329,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1349,7 +1349,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1369,7 +1369,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1389,7 +1389,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1409,7 +1409,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1435,7 +1435,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1455,7 +1455,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1475,7 +1475,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1495,7 +1495,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "-510.324 -615.21 -18.6772";
          rotation = "0 0 1 43.6515";
          scale = "1 1 1";
@@ -1503,7 +1503,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "-490.281 -565.227 -19.177";
          rotation = "0 0 1 43.6515";
          scale = "1 1 1";
@@ -1511,7 +1511,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "-500.302 -590.219 -19.1768";
          rotation = "0 0 1 43.6515";
          scale = "1 1 1";
@@ -1649,7 +1649,7 @@ new SimGroup(MissionGroup) {
             onExitMessage = "You have left the Neutral Zone, be on guard!";
       };
       new Prefab(Fort_DragonKings) {
-         fileName = "art/worlds/DalRiata/PreFabs/KardiaFort061011.prefab";
+         fileName = "art/Packs/Buildings/Fort_Wood/fort.prefab";
          position = "96.0581 83.6848 -16.6662";
          rotation = "0 0 1 136.818";
          scale = "1 1 1";
@@ -1741,7 +1741,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1761,7 +1761,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1781,7 +1781,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1801,7 +1801,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1821,7 +1821,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1841,7 +1841,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1861,7 +1861,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1881,7 +1881,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
          };
          new TSStatic() {
-            shapeName = "art/worlds/DalRiata/Models/Props/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1907,7 +1907,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1927,7 +1927,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1947,7 +1947,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/models/props/fencePostBasic00A.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1967,7 +1967,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "95.9174 176.758 -18.5792";
          rotation = "0 0 1 227.01";
          scale = "1 1 1";
@@ -1975,7 +1975,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "72.9809 128.035 -19.079";
          rotation = "0 0 1 227.01";
          scale = "1 1 1";
@@ -1983,7 +1983,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/prefabs/Target.prefab";
+         fileName = "art/Packs/Props/AV_Targets/Target.prefab";
          position = "84.4487 152.397 -19.0788";
          rotation = "0 0 1 227.01";
          scale = "1 1 1";
@@ -1996,7 +1996,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Windmill) {
-         shapeName = "art/worlds/DalRiata/Models/windmill.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/windmill.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2016,7 +2016,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(waterWheel) {
-         shapeName = "art/worlds/DalRiata/Models/WaterWheelBldg.dae";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/WaterWheelBldg.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2047,7 +2047,7 @@ new SimGroup(MissionGroup) {
             onExitMessage = "You have left the Dal Riata Neutral Zone, keep your weapon at hand!";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingC.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2067,7 +2067,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingE.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingE.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2087,7 +2087,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingA.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2112,7 +2112,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Signs/FoodShop.dts";
+         shapeName = "art/Packs/Signs/Village/FoodShop.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2433,7 +2433,7 @@ new SimGroup(MissionGroup) {
             respawn = "30";
       };
       new TSStatic(MeatTable2) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2457,7 +2457,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic(MeatTable3) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2481,7 +2481,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic(MeatTable) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2505,7 +2505,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/plate.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/plate.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2529,7 +2529,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/scales.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/scales.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2553,7 +2553,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bowl.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/bowl.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2577,7 +2577,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2601,7 +2601,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2625,7 +2625,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2767,7 +2767,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/medhouse12.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/medhouse12.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2817,7 +2817,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Sign_MythWeBuyGems) {
-         shapeName = "art/worlds/DalRiata/Models/Signs/WeBuyGems.dts";
+         shapeName = "art/Packs/Signs/Village/WeBuyGems.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2837,7 +2837,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingC.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingC.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2862,7 +2862,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(FakeFloor) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2882,7 +2882,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(AngusShop) {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingF.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingF.dts";
          playAmbient = "0";
          meshCulling = "0";
          originSort = "0";
@@ -2912,7 +2912,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2932,7 +2932,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/swordfish.dts";
+         shapeName = "art/inv/food/swordfish.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2952,7 +2952,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2972,7 +2972,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2992,7 +2992,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3116,7 +3116,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3136,7 +3136,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3156,7 +3156,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/bluebarracuda.dts";
+         shapeName = "art/inv/food/bluebarracuda.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3176,7 +3176,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/orangeseabass.dts";
+         shapeName = "art/inv/food/orangeseabass.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3196,7 +3196,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/brooktrout.dts";
+         shapeName = "art/inv/food/brooktrout.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3216,7 +3216,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/brooktrout.dts";
+         shapeName = "art/inv/food/brooktrout.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3236,7 +3236,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/reddevil.dts";
+         shapeName = "art/inv/food/reddevil.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3256,7 +3256,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/food/orangeseabass.dts";
+         shapeName = "art/inv/food/orangeseabass.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3276,7 +3276,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/basket.dae";
+         shapeName = "art/packs/Props/A3D_InteriorC/basket.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3296,7 +3296,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/barrell1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3316,7 +3316,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/barrell1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3336,7 +3336,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/barrell1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3356,7 +3356,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/barrell1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3376,7 +3376,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/Bucket.dts";
+         shapeName = "art/packs/Props/A3D_Kitchen/Bucket.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3396,7 +3396,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/Bucket.dts";
+         shapeName = "art/packs/Props/A3D_Kitchen/Bucket.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3416,7 +3416,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3436,7 +3436,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest1.dts";
+         shapeName = "art/packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3456,7 +3456,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fireplace.dts";
+         shapeName = "art/packs/Props/A3D_InteriorA/fireplace.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3476,7 +3476,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3496,7 +3496,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/grainbag1.dts";
+         shapeName = "art/packs/Props/A3D_Grainbags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3516,7 +3516,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/openbook.dts";
+         shapeName = "art/packs/Props/A3D_InteriorB/openbook.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3536,7 +3536,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3556,7 +3556,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3836,7 +3836,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3856,7 +3856,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3935,7 +3935,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(BuildingF1) {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingF.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingF.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3955,7 +3955,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3975,7 +3975,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/picture.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/picture.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3995,7 +3995,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/milkjug.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/milkjug.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4015,7 +4015,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/tankard.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/tankard.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4035,7 +4035,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/grainbag1.dts";
+         shapeName = "art/Packs/Props/A3D_Grainbags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4055,7 +4055,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/plate.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/plate.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4075,7 +4075,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/herb_pot.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/herb_pot.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4095,7 +4095,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4115,7 +4115,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4135,7 +4135,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4155,7 +4155,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4175,7 +4175,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4195,7 +4195,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4220,7 +4220,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingA.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingA.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4240,7 +4240,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4260,7 +4260,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4285,7 +4285,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4323,7 +4323,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4343,7 +4343,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/dinner_chair.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/dinner_chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4363,7 +4363,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4383,7 +4383,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4403,7 +4403,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4423,7 +4423,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/log_holder.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/log_holder.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4454,7 +4454,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fireplace.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/fireplace.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4474,7 +4474,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/firepit.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/firepit.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4494,7 +4494,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/grainbag3.dts";
+         shapeName = "art/Packs/Props/A3D_Grainbags/grainbag3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4514,7 +4514,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4557,7 +4557,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4577,7 +4577,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4597,7 +4597,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/dinner_chair.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/dinner_chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4617,7 +4617,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4637,7 +4637,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4657,7 +4657,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4677,7 +4677,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/log_holder.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/log_holder.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4708,7 +4708,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fireplace.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/fireplace.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4728,7 +4728,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/firepit.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/firepit.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4748,7 +4748,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/grainbag3.dts";
+         shapeName = "art/Packs/Props/A3D_Grainbags/grainbag3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4768,7 +4768,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4793,7 +4793,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4831,7 +4831,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4851,7 +4851,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/chest2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4871,7 +4871,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4891,7 +4891,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4911,7 +4911,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4931,7 +4931,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WallPicture.dts";
+         shapeName = "art/Packs/Props/A3D_BedRm/A3D_WallPicture.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4951,7 +4951,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/Bucket.dts";
+         shapeName = "art/Packs/Props/A3D_Kitchen/Bucket.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4971,7 +4971,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/ale_jug.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/ale_jug.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4991,7 +4991,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5011,7 +5011,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5036,7 +5036,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5074,7 +5074,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(barrel1) {
-         shapeName = "art/worlds/DalRiata/Models/Props/woodBarrel01_LOD.dts";
+         shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01_LOD.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5094,7 +5094,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5114,7 +5114,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5134,7 +5134,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/wallpicture2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/wallpicture2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5154,7 +5154,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/ornate_banquet_chair.dts";
+         shapeName = "art/Packs/Props/A3D_BanquetSet/ornate_banquet_chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5174,7 +5174,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/openbook.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/openbook.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5194,7 +5194,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/herb_pot.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/herb_pot.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5214,7 +5214,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/ornate_table.dts";
+         shapeName = "art/Packs/Props/A3D_BanquetSet/ornate_table.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5234,7 +5234,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/ornate_banquet_chair.dts";
+         shapeName = "art/Packs/Props/A3D_BanquetSet/ornate_banquet_chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5259,7 +5259,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(WShopBldg) {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5279,7 +5279,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponsTable21) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5481,7 +5481,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponsTable121) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5501,7 +5501,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(WeaponsTable13) {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5521,7 +5521,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Signs/WeaponsShop.dts";
+         shapeName = "art/Packs/Signs/Village/WeaponsShop.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5564,7 +5564,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybridgecanopy.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybridgecanopy.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5588,7 +5588,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybased.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybased.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5613,7 +5613,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/tankard.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/tankard.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5637,7 +5637,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/plate.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/plate.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5661,7 +5661,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/tankard.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/tankard.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5685,7 +5685,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/plate_with_bread.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/plate_with_bread.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5709,7 +5709,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasytable.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasytable.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5733,7 +5733,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybenchb.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybenchb.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5757,7 +5757,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybenchb.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybenchb.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5786,7 +5786,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/cart2.dts";
+         shapeName = "art/Packs/Props/A3D_Carts/cart2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5810,7 +5810,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/cart3.dts";
+         shapeName = "art/Packs/Props/A3D_Carts/cart3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5835,7 +5835,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/cart4.dts";
+         shapeName = "art/Packs/Props/A3D_Carts/cart4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5860,7 +5860,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/Caravan.dts";
+         shapeName = "art/Packs/Props/A3D_Carts/Caravan.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6006,7 +6006,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new SFXEmitter() {
-         fileName = "art/sound/worldsounds/dalriata/waterfall1.wav";
+         fileName = "art/worlds/dalriata/sound/waterfall1.wav";
          playOnAdd = "1";
          useTrackDescriptionOnly = "0";
          isLooping = "1";
@@ -6030,7 +6030,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/waterfallrock_small.DAE";
+         shapeName = "art/Packs/Props/WaterFallRock/waterfallrock_small.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6050,7 +6050,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6070,7 +6070,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/waterfallrock_small.DAE";
+         shapeName = "art/Packs/Props/WaterFallRock/waterfallrock_small.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6090,7 +6090,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls) {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6110,7 +6110,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls2) {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6130,7 +6130,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls3) {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6150,7 +6150,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(TopFalls11) {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6170,7 +6170,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6190,7 +6190,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6210,7 +6210,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6230,7 +6230,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6250,7 +6250,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6270,7 +6270,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6290,7 +6290,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6310,7 +6310,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6330,7 +6330,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6350,7 +6350,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6370,7 +6370,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6390,7 +6390,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6410,7 +6410,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6430,7 +6430,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6450,7 +6450,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6470,7 +6470,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6490,7 +6490,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/WaterFallWall.dae";
+         shapeName = "art/Packs/Props/WaterFallWall/WaterFallWall.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6516,7 +6516,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybridge.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybridge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6540,7 +6540,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybridgecanopy.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybridgecanopy.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6569,7 +6569,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybridge.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybridge.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6593,7 +6593,7 @@ new SimGroup(MissionGroup) {
             useCustomAmbientLighting = "0";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fantasybridgecanopy.dts";
+         shapeName = "art/packs/Props/Dex_Elven/fantasybridgecanopy.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6622,7 +6622,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/01_ovalone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OvalRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6642,7 +6642,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/02_prismone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6662,7 +6662,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/03_prismtwo.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6682,7 +6682,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/04_peakone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6702,7 +6702,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/05_cliffwallone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_cliffwall1.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6722,7 +6722,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/06_towerone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_TowerRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6742,7 +6742,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/08_layeredone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_LayeredRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6762,7 +6762,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/09_layeredtwo.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_LayeredRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6782,7 +6782,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/10_outcroppingone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6802,7 +6802,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/02_prismone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6822,7 +6822,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/06_towerone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_TowerRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6842,7 +6842,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/07_ShortCone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_ShortConeRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6862,7 +6862,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/03_prismtwo.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6882,7 +6882,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/02_prismone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6902,7 +6902,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Rocks/01_ovalone.DAE";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OvalRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6922,35 +6922,59 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
+
    new SimGroup(HorsePaths) {
       canSave = "1";
       canSaveDynamicFields = "1";
          enabled = "1";
 
-      new SimGroup(WildHorsePath) {
+new StaticShape(WhiteHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "-24.8098 -665.495 -21.0672";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            enabled = "1";
+            behavior = "MountBehavior";
+            block = "WhiteHorse";
+            botBelongsToMe = "4759";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "WhiteHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+
+      new Path(WhiteHorsePath) {
+         isLooping = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
 
          new Marker() {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-24.8098 -665.495 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "WildHorse";
                MoveSpeed = "0.1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "62.4426 -664.418 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -6963,7 +6987,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "61.8423 -578.388 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -6976,7 +7000,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-24.5026 -577.14 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -6986,7 +7010,33 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new SimGroup(PaliminoPath) {
+
+     new StaticShape(BlackHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "-24.3466 -577.474 -21.0671";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "BlackHorse";
+            botBelongsToMe = "4760";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "BlackHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+
+      new Path(BlackHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -6994,21 +7044,20 @@ new SimGroup(MissionGroup) {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-24.3466 -577.474 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "PaliminoHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-25.3667 -665.462 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7021,7 +7070,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "61.8375 -664.152 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7034,7 +7083,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "62.0803 -578.139 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7044,7 +7093,33 @@ new SimGroup(MissionGroup) {
                MoveSpeed = "0.5";
          };
       };
-      new SimGroup(IndianHorsePath) {
+
+     new StaticShape(GrayHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "61.6853 -578.129 -21.0672";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "GrayHorse";
+            botBelongsToMe = "4761";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "GrayHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+
+      new Path(GrayHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -7052,21 +7127,20 @@ new SimGroup(MissionGroup) {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "61.6853 -578.129 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "IndianHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-24.7816 -577.525 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7079,7 +7153,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-25.2465 -666.056 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7092,7 +7166,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "61.527 -664.876 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7102,7 +7176,33 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(ArabianHorsePath) {
+
+      new StaticShape(PintoHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "-19.5584 -660.112 -21.0671";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "PintoHorse";
+            botBelongsToMe = "4762";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "PintoHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+
+      new Path(PintoHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -7110,21 +7210,20 @@ new SimGroup(MissionGroup) {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-19.5584 -660.112 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "ArabianHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-21.06 -583.571 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7137,7 +7236,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "58.1007 -582.423 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7150,7 +7249,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "58.6483 -660.984 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7160,7 +7259,33 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(LightHorsePath) {
+
+      new StaticShape(BuckskinHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "58.5443 -659.863 -21.1608";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "BuckskinHorse";
+            botBelongsToMe = "4763";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "10";
+            pathname = "BuckskinHorsePath";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+
+      new Path(BuckskinHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -7168,21 +7293,20 @@ new SimGroup(MissionGroup) {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "58.5443 -659.863 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "LightHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-18.9052 -659.448 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7195,7 +7319,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-20.5806 -582.716 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7208,7 +7332,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "57.5021 -582.759 -21.0672";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7218,7 +7342,32 @@ new SimGroup(MissionGroup) {
                MoveSpeed = ".5";
          };
       };
-      new SimGroup(BayHorsePath) {
+
+      new StaticShape(BayHorseSpawn) {
+         isAIControlled = "0";
+         dataBlock = "AIPlayerMarker";
+         position = "58.0386 -582.926 -21.0671";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         hidden = "1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            behavior = "MountBehavior";
+            block = "BayHorse";
+            botBelongsToMe = "4764";
+            distDetect = "50";
+            fov = "360";
+            maxRange = "30";
+            paceDist = "30";
+            realName = " ";
+            respawnCount = "0";
+            respawnCounter = "0";
+            team = "1";
+            weapon = "-NoWeapon";
+      };
+   };
+      new Path(BayHorsePath) {
+         isLooping = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
 
@@ -7226,21 +7375,20 @@ new SimGroup(MissionGroup) {
             seqNum = "1";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "58.0386 -582.926 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
                enabled = "1";
-               Horse = "BayHorse";
                MoveSpeed = ".1";
          };
          new Marker() {
             seqNum = "2";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "57.3436 -659.116 -21.1608";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7253,7 +7401,7 @@ new SimGroup(MissionGroup) {
             seqNum = "3";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-18.8769 -660.379 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7266,7 +7414,7 @@ new SimGroup(MissionGroup) {
             seqNum = "4";
             type = "Normal";
             msToNext = "0";
-            smoothingType = "Spline";
+            smoothingType = "Linear";
             position = "-21.3846 -582.946 -21.0671";
             rotation = "1 0 0 0";
             scale = "1 1 1";
@@ -7282,7 +7430,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7302,7 +7450,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7322,7 +7470,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7342,7 +7490,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7362,7 +7510,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7382,7 +7530,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7402,7 +7550,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7422,7 +7570,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7442,7 +7590,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7462,7 +7610,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7482,7 +7630,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7502,7 +7650,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7522,7 +7670,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7542,7 +7690,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7562,7 +7710,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7582,7 +7730,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7602,7 +7750,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7627,7 +7775,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7647,7 +7795,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7667,7 +7815,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7687,7 +7835,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7707,7 +7855,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7727,7 +7875,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7747,7 +7895,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7767,7 +7915,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7787,7 +7935,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7807,7 +7955,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7827,7 +7975,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7847,7 +7995,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7867,7 +8015,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7887,7 +8035,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7907,7 +8055,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7927,7 +8075,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7947,7 +8095,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7972,7 +8120,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7992,7 +8140,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8012,7 +8160,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8032,7 +8180,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8052,7 +8200,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8072,7 +8220,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8092,7 +8240,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8112,7 +8260,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8132,7 +8280,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8152,7 +8300,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8172,7 +8320,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8192,7 +8340,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8212,7 +8360,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8232,7 +8380,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8252,7 +8400,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8272,7 +8420,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8292,7 +8440,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8317,7 +8465,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8337,7 +8485,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8357,7 +8505,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8377,7 +8525,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8397,7 +8545,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8417,7 +8565,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8437,7 +8585,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8457,7 +8605,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8477,7 +8625,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8497,7 +8645,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8517,7 +8665,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8537,7 +8685,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8557,7 +8705,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8577,7 +8725,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8597,7 +8745,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8617,7 +8765,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -8637,7 +8785,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9013,7 +9161,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(SilverMineEntrance) {
-         shapeName = "art/worlds/DalRiata/Models/Props/cave_entrance.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/caveentrance.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9042,8 +9190,8 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             destinationServer = "silvermines";
             destinationSpawnSphere = "SilverMineFromMyth";
-            manifestURL = "http://www.bloodclans.com/stream/manifests/silverminesmanifest.txt";
-            pathToRoot = "http://www.bloodclans.com/stream/";
+            manifestURL = "http://www.alterverse.com/stream/manifests/silverminesmanifest.txt";
+            pathToRoot = "http://www.alterverse.com/stream/";
       };
       new Trigger(NZSilverMine) {
          polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -9057,7 +9205,7 @@ new SimGroup(MissionGroup) {
             onExitMessage = "You have left the Neutral Zone, be on guard!";
       };
       new TSStatic(TPPic) {
-         shapeName = "art/worlds/DalRiata/Models/Props/TP_WWToSM.dts";
+         shapeName = "art/worlds/DalRiata/Models/Signs/TP_WWToSM.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9100,7 +9248,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Signs/Horses4Sale.dts";
+      shapeName = "art/Packs/Signs/Village/Horses4Sale.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -9342,7 +9490,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9380,7 +9528,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/VillageBuildingB.dts";
+         shapeName = "art/Packs/Buildings/Mythriel_Village/VillageBuildingB.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9400,7 +9548,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9420,7 +9568,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/dinner_chair.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/dinner_chair.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9440,7 +9588,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9460,7 +9608,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+         shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9480,7 +9628,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/bench.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/bench.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9500,7 +9648,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/log_holder.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/log_holder.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9531,7 +9679,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/fireplace.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorA/fireplace.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9551,7 +9699,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/firepit.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/firepit.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9571,7 +9719,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/worlds/DalRiata/Models/Props/grainbag3.dts";
+         shapeName = "art/Packs/Props/A3D_Grainbags/grainbag3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9596,7 +9744,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(FletchsWell) {
-         shapeName = "art/worlds/DalRiata/Models/FletchsHouse/well-01.dts";
+         shapeName = "art/Packs/Buildings/FletchsHouse/well-01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9616,7 +9764,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(StrayBolt) {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/Crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9636,7 +9784,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(FletchsWorkbench) {
-         shapeName = "art/worlds/DalRiata/Models/FletchsHouse/house7-04.dts";
+         shapeName = "art/Packs/Buildings/FletchsHouse/house7-04.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9760,7 +9908,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/crossbow/weapon.dts";
+         shapeName = "art/inv/weapons/crossbows/weapon.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9780,7 +9928,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9800,7 +9948,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9820,7 +9968,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9840,7 +9988,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9860,7 +10008,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9893,7 +10041,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9913,7 +10061,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9933,7 +10081,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9953,7 +10101,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -9973,7 +10121,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10019,7 +10167,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10039,7 +10187,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10059,7 +10207,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10079,7 +10227,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10099,7 +10247,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/shapes/weapons/Crossbow/projectile.dts";
+         shapeName = "art/inv/weapons/crossbows/projectile.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10128,7 +10276,7 @@ new SimGroup(MissionGroup) {
          seqNum = "1";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-55.7119 -638.661 -21.0988";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10139,7 +10287,7 @@ new SimGroup(MissionGroup) {
          seqNum = "2";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-56.5781 -643.374 -21.0986";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10150,7 +10298,7 @@ new SimGroup(MissionGroup) {
          seqNum = "3";
          type = "Normal";
          msToNext = "5";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-49.5482 -643.562 -21.0987";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10161,7 +10309,7 @@ new SimGroup(MissionGroup) {
          seqNum = "4";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-51.711 -664.039 -21.0988";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10172,7 +10320,7 @@ new SimGroup(MissionGroup) {
          seqNum = "5";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-78.1445 -661.247 -21.0987";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10183,7 +10331,7 @@ new SimGroup(MissionGroup) {
          seqNum = "6";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-79.7529 -644.925 -21.0987";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10194,7 +10342,7 @@ new SimGroup(MissionGroup) {
          seqNum = "7";
          type = "Normal";
          msToNext = "3";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-64.9822 -644.617 -21.0987";
          rotation = "0 0 1 96.0299";
          scale = "1 1 1";
@@ -10205,7 +10353,7 @@ new SimGroup(MissionGroup) {
          seqNum = "8";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-69.2304 -638.413 -21.0987";
          rotation = "0 0 -1 93.0652";
          scale = "1 1 1";
@@ -10216,7 +10364,7 @@ new SimGroup(MissionGroup) {
          seqNum = "9";
          type = "Normal";
          msToNext = "0";
-         smoothingType = "Spline";
+         smoothingType = "Linear";
          position = "-72.9438 -627.594 -21.0988";
          rotation = "0 0 -1 93.0652";
          scale = "1 1 1";
@@ -10364,7 +10512,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-92.2667 -250.195 -7.38186";
          rotation = "0 0 1 9.31431";
          scale = "1 1 1";
@@ -10372,7 +10520,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-101.802 -244.06 -7.38186";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10380,7 +10528,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-102.444 -248.765 -7.43521";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10388,7 +10536,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-111.991 -242.499 -10.0415";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10396,7 +10544,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-114.228 -239.56 -12.9138";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10404,7 +10552,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-114.895 -235.773 -15.5053";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10412,7 +10560,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-113.093 -229.685 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10420,7 +10568,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-94.4795 -232.188 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10428,7 +10576,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-86.6595 -230.114 -14.9694";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10436,7 +10584,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-131.656 -227.129 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10444,7 +10592,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-93.7995 -225.859 -16.8252";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10452,7 +10600,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-150.154 -224.117 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10460,7 +10608,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-164.088 -222.216 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10468,7 +10616,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-173.487 -220.863 -16.0874";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10476,7 +10624,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-180.408 -217.102 -15.3564";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10484,7 +10632,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-166.474 -228.551 -15.828";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10492,7 +10640,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-169.025 -247.125 -15.828";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10500,7 +10648,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-173.932 -259.109 -16.0789";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10508,7 +10656,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-194.789 -252.995 -15.0575";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10516,7 +10664,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-186.87 -250.889 -15.8377";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10524,7 +10672,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-182.291 -251.542 -15.8377";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10532,7 +10680,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-183.235 -257.831 -16.0761";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10540,7 +10688,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-183.537 -260.798 -15.241";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10548,7 +10696,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-188.241 -260.102 -15.241";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10556,7 +10704,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-202.558 -264.982 -15.241";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10564,7 +10712,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-205.845 -288.776 -15.241";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10572,7 +10720,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-169.928 -294.779 -14.0413";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10580,7 +10728,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-166.14 -267.461 -14.0413";
          rotation = "0 0 1 8.41802";
          scale = "1 1 1";
@@ -10588,7 +10736,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-152.522 -230.483 -16.0434";
          rotation = "0 0 1 8.83637";
          scale = "1 1 1";
@@ -10596,7 +10744,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-155.072 -249.046 -16.0896";
          rotation = "0 0 1 8.83637";
          scale = "1 1 1";
@@ -10604,7 +10752,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-156.365 -258.328 -16.0896";
          rotation = "0 0 1 8.83637";
          scale = "1 1 1";
@@ -10612,7 +10760,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-159.912 -260.621 -16.0896";
          rotation = "0 0 1 8.83637";
          scale = "1 1 1";
@@ -10620,7 +10768,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-93.1007 -214.957 -12.6946";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10628,7 +10776,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-91.8279 -205.712 -6.9485";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10636,7 +10784,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-94.1139 -200.589 -4.49881";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10644,7 +10792,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-95.3684 -209.875 -10.0922";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10652,7 +10800,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-94.1118 -194.462 -4.40482";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10660,7 +10808,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-89.3916 -195.029 -4.40482";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10668,7 +10816,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-73.8 -181.028 -4.34093";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10676,7 +10824,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-104.987 -175.068 -3.24103";
          rotation = "0 0 1 6.8488";
          scale = "1 1 1";
@@ -10684,7 +10832,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-115.251 -216.665 -15.5333";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10692,7 +10840,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-115.652 -212.843 -18.1639";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10700,7 +10848,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-118.091 -209.77 -21.2996";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10708,7 +10856,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-121.509 -208.206 -24.2482";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10716,7 +10864,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-128.167 -208.317 -24.2482";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10724,7 +10872,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-127.503 -203.612 -24.2482";
          rotation = "0 0 1 8.15819";
          scale = "1 1 1";
@@ -10732,7 +10880,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-137.659 -202.184 -24.2482";
          rotation = "0 0 1 8.15819";
          scale = "1 1 1";
@@ -10740,7 +10888,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-138.307 -206.902 -24.2482";
          rotation = "0 0 1 8.15819";
          scale = "1 1 1";
@@ -10748,7 +10896,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new Prefab() {
-         fileName = "art/worlds/DalRiata/PreFabs/WallTorch.prefab";
+         fileName = "art/worlds/dalriata/prefabs/WallTorch.prefab";
          position = "-91.6177 -245.498 -7.38186";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -10811,7 +10959,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10831,7 +10979,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/chest1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorB/chest1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10851,7 +10999,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/chest2.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorB/chest2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10871,7 +11019,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10891,7 +11039,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/ornate_banquet_chair.dts";
+      shapeName = "art/Packs/Props/A3D_BanquetSet/ornate_banquet_chair.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10911,7 +11059,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/table2.dts";
+      shapeName = "art/packs/Props/A3D_InteriorC/table2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10931,7 +11079,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/WallPicture.dts";
+      shapeName = "art/Packs/Props/A3D_BedRm/A3D_WallPicture.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10951,7 +11099,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/wallpicture2.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorA/wallpicture2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10971,7 +11119,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -10991,7 +11139,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11011,7 +11159,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11031,7 +11179,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11051,7 +11199,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11071,7 +11219,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/tankard.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorA/tankard.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11091,7 +11239,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/tankard.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorA/tankard.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11111,7 +11259,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11131,7 +11279,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/stool.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/stool.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11151,7 +11299,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/plate_with_bread.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/plate_with_bread.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11171,7 +11319,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/pan.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/pan.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11191,7 +11339,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/sack_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/sack_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11211,7 +11359,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/sack_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/sack_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11231,7 +11379,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/fireplace.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorA/fireplace.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11251,7 +11399,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/basket.dae";
+      shapeName = "art/Packs/Props/A3D_InteriorC/basket.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11271,7 +11419,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11291,7 +11439,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/bed.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/bed.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11311,7 +11459,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/chest2.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorB/chest2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11331,7 +11479,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/furniture1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/furniture1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11362,7 +11510,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/log_holder.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/log_holder.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11382,7 +11530,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/woodBarrel01_LOD.dts";
+      shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01_LOD.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11402,7 +11550,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/woodBarrel01_LOD.dts";
+      shapeName = "art/Packs/Props/RRGTS_Barrels/woodBarrel01_LOD.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11422,7 +11570,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11442,7 +11590,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11462,7 +11610,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11482,7 +11630,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/cart2.dts";
+      shapeName = "art/Packs/Props/A3D_Carts/cart2.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11502,7 +11650,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+      shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11522,7 +11670,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/CratesSimple0001stain4.dts";
+      shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11542,7 +11690,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11562,7 +11710,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11582,7 +11730,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/crate_lod01.dts";
+      shapeName = "art/Packs/Props/Dex_Viking/crate_lod01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11602,7 +11750,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11622,7 +11770,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11642,7 +11790,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11662,7 +11810,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/cart3.dts";
+      shapeName = "art/Packs/Props/A3D_Carts/cart3.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11682,7 +11830,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/barrell1.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/barrell1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11702,7 +11850,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/fantasybencha.dts";
+      shapeName = "art/packs/Props/Dex_Elven/fantasybencha.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11722,7 +11870,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/fantasybenchb.dts";
+      shapeName = "art/packs/Props/Dex_Elven/fantasybenchb.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11742,7 +11890,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/fantasytable.dts";
+      shapeName = "art/packs/Props/Dex_Elven/fantasytable.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11762,7 +11910,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/fantasychair.dts";
+      shapeName = "art/packs/Props/Dex_Elven/fantasychair.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11782,7 +11930,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/bowl.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/bowl.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11802,7 +11950,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Forest/ElephantEar.DAE";
+      shapeName = "art/Packs/Plants/AV_RainForest/ElephantEar.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11822,7 +11970,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/bowl.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/bowl.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11842,7 +11990,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Forest/BirdNestPlant01.DAE";
+      shapeName = "art/Packs/Plants/AV_RainForest/BirdNestPlant01.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11862,7 +12010,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Forest/BirdNestPlant01.DAE";
+      shapeName = "art/Packs/Plants/AV_RainForest/BirdNestPlant01.DAE";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11882,7 +12030,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/bowl.dts";
+      shapeName = "art/Packs/Props/A3D_InteriorC/bowl.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11902,7 +12050,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/grainbag1.dts";
+      shapeName = "art/Packs/Props/A3D_grainbags/grainbag1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11922,7 +12070,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/grainbag1.dts";
+      shapeName = "art/Packs/Props/A3D_grainbags/grainbag1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -11942,7 +12090,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/worlds/DalRiata/Models/Props/grainbag1.dts";
+      shapeName = "art/Packs/Props/A3D_grainbags/grainbag1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
