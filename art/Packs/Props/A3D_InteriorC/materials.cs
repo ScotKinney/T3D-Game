@@ -117,3 +117,10 @@ singleton Material(mat_Orange_pot)
    materialTag0 = "Props_A3D";
 };
 
+singleton Material(mat_barrell1)
+{
+   mapTo = "barrell1";
+   diffuseMap[0] = "barrell1";
+   materialTag0 = "Props_A3D";
+};
+
