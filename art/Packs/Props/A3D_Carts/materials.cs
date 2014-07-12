@@ -25,3 +25,10 @@ singleton Material(mat_A3D_cart3)
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "Props_A3D";
 };
+
+singleton Material(mat_caravan)
+{
+   mapTo = "caravan";
+   diffuseMap[0] = "caravan";
+   materialTag0 = "Props_A3D";
+};
