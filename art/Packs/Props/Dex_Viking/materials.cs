@@ -35,3 +35,10 @@ singleton Material(mat_Sack01D)
    diffuseMap[0] = "Sack01_D.png";
    materialTag0 = "Props_Dex";
 };
+
+singleton Material(mat_bed)
+{
+   mapTo = "bed";
+   diffuseMap[0] = "bed.dds";
+   materialTag0 = "Props";
+};
