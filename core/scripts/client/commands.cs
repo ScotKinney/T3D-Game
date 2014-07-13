@@ -202,6 +202,7 @@ function clientCmdNPCMessage(%npcID, %ttlNum, %msgNum, %format, %val1, %val2)
 function clientCmdQNPCMessage(%npcID, %msgNum, %numChoices, %choice1, %choice2, %choice3)
 {  // Display generic message box for client
    %message = guiStrings.questMsgBody[%msgNum];
+   %message = %msgNum;
    %namePos = StrPos(%message, "<username>");
    if ( %namePos != -1 )
       %message = strReplace(%message, "<username>", $pref::Player::Name);

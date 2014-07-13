@@ -31,9 +31,7 @@ function ShowQuestMessageBox(%title, %message, %hasInput, %text1, %callback1,
    QuestMessageBox.btnCtrl[2] = QuestMessageBox-->Button2;
    QuestMessageBox.btnCtrl[3] = QuestMessageBox-->Button3;
       
-   //LoEMessageBoxFrame.text = %title;
    QuestMessageBoxTitle.setText(%title);
-   //LoEMessageBox.profile = "GuiOverlayProfile";
    QuestMessageBox.defaultButton = %defaultButton;
    QuestMessageBox.hasInput = %hasInput;
 

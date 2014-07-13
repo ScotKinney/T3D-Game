@@ -6928,7 +6928,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          enabled = "1";
 
-new StaticShape(WhiteHorseSpawn) {
+      new StaticShape(WhiteHorseSpawn) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
          position = "-24.8098 -665.495 -21.0672";
@@ -7365,7 +7365,6 @@ new StaticShape(WhiteHorseSpawn) {
             team = "1";
             weapon = "-NoWeapon";
       };
-   };
       new Path(BayHorsePath) {
          isLooping = "1";
          canSave = "1";
@@ -9483,7 +9482,7 @@ new StaticShape(WhiteHorseSpawn) {
          pathname = "FletchsPath";
          respawnCount = "0";
          respawnCounter = "0";
-         Weapon = "F_HammerWeapon";
+         //Weapon = "F_HammerWeapon";
    };
    new SimGroup(FletchsHouse) {
       canSave = "1";
