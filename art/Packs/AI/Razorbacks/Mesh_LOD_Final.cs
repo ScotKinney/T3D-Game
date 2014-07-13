@@ -8,22 +8,12 @@ function Mesh_LOD_FinalDts::onLoad(%this)
 {
    %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Idle_03.dsq", "root", "0", "60");
    %this.setSequenceCyclic("root", "1");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Run.dsq", "run", "0", "28");
-   %this.setSequenceCyclic("run", "1");
+   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Run.dsq", "walk", "0", "28");
+   %this.setSequenceCyclic("walk", "1");
    %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Walk.dsq", "back", "0", "10");
    %this.setSequenceCyclic("back", "1");
    %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Attack.dsq", "attack1", "0", "0");
    %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death1", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death2", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death3", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death4", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death5", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death6", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death7", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death8", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death9", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death10", "0", "0");
-   %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Death.dsq", "death11", "0", "0");
    %this.addSequence("art/packs/ai/Razorbacks/mesh_Final_Walk.dsq", "side", "0", "0");
    %this.setSequenceCyclic("side", "1");
    %this.addTrigger("run", "6", "1");
