@@ -8,8 +8,8 @@ function AngusDts::onLoad(%this)
 {
    %this.addSequence("art/packs/ai/angus/villager_Wait.dsq", "root", "0", "-1");
    %this.setSequenceCyclic("root", "1");
-   %this.addSequence("art/packs/ai/angus/villager_walk.dsq", "run", "0", "110");
-   %this.setSequenceCyclic("run", "1");
+   %this.addSequence("art/packs/ai/angus/villager_walk.dsq", "walk", "0", "110");
+   %this.setSequenceCyclic("walk", "1");
    %this.addSequence("art/packs/ai/angus/villager_Jump.dsq", "jump", "0", "36");
    %this.addSequence("art/packs/ai/angus/villager_Laugh.dsq", "Laugh", "0", "36");
    %this.addSequence("art/packs/ai/angus/villager_Boxing.dsq", "PunchRight", "0", "35");
