@@ -1,7 +1,7 @@
 singleton Material(mat_suds_scrollingwater)
 {
    mapTo = "scrollingwater";
-   diffuseMap[0] = "scrollingwater.dds";
+   diffuseMap[0] = "art/Packs/Props/WaterFallRock/scrollingwater.dds";
    diffuseColor[0] = "1 1 1 1";
    specular[0] = "1 1 1 1";
    specularPower[0] = "8";
@@ -17,6 +17,8 @@ singleton Material(mat_suds_scrollingwater)
    subSurfaceColor[0] = "1 0.2 0.2 1";
    subSurfaceRolloff[0] = "0.2";
    materialTag0 = "GG_Waterfall";
+   useAnisotropic[0] = "1";
+   emissive[0] = "1";
 };
 
 singleton Material(mat_scrollingwater)
