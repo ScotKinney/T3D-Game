@@ -14,14 +14,14 @@ singleton Material(Ter_Grass)
 singleton Material(Ter_RockTop)
 {
    mapTo = "rockfromabovebrown";
-   customFootstepSound = FootStepSand1Sound;
+   customFootstepSound = FootStepGrass1Sound;
 
 };
 
 singleton Material(Ter_DarkDirt)
 {
    mapTo = "soil_02";
-   customFootstepSound = FootStepSand1Sound;
+   customFootstepSound = FootStepGrass1Sound;
 
 };
 
