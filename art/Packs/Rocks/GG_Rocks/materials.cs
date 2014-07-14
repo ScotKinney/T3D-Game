@@ -58,3 +58,11 @@ singleton Material(_22_smallrockeight_ColorEffectR224G143B87_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(_12_ggrockOne_ColorEffectR177G28B149_material)
+{
+   mapTo = "ColorEffectR177G28B149-material";
+   diffuseColor[0] = "0.694118 0.109804 0.584314 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
