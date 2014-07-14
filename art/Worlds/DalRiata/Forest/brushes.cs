@@ -190,15 +190,15 @@ new SimGroup(ForestBrushGroup) {
       };
    };
    new ForestBrush() {
-      internalName = "Rocks";
+      internalName = "rocks";
       canSave = "1";
       canSaveDynamicFields = "1";
 
       new ForestBrushElement() {
-         internalName = "SmallRock_01";
+         internalName = "SP_SmallRock1";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "SmallRock_01";
+         ForestItemData = "SP_SmallRock1";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.1";
@@ -217,10 +217,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "SmallRock_02";
+         internalName = "SP_SmallRock2";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "SmallRock_02";
+         ForestItemData = "SP_SmallRock2";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.5";
@@ -239,10 +239,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "SmallRock_03";
+         internalName = "SP_SmallRock3";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "SmallRock_03";
+         ForestItemData = "SP_SmallRock3";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.1";
@@ -261,10 +261,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "SmallRock_04";
+         internalName = "SP_SmallRock4";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "SmallRock_04";
+         ForestItemData = "SP_SmallRock4";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.1";
@@ -283,10 +283,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "SmallRock_05";
+         internalName = "SP_SmallRock5";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "SmallRock_05";
+         ForestItemData = "SP_SmallRock5";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.1";
@@ -305,10 +305,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "GGRock_One";
+         internalName = "SP_LongRock";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "GGRock_One";
+         ForestItemData = "SP_LongRock";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.6";
@@ -327,10 +327,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "GGRock_Two";
+         internalName = "SP_PointedRock";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "GGRock_Two";
+         ForestItemData = "SP_PointedRock";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.6";
@@ -349,10 +349,10 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "GGRock_Three";
+         internalName = "SP_SmOval";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "GGRock_Three";
+         ForestItemData = "SP_SmOval";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.4";
@@ -371,10 +371,28 @@ new SimGroup(ForestBrushGroup) {
             clumpRadius = "10";
       };
       new ForestBrushElement() {
-         internalName = "ShortCone";
+         internalName = "SP_PeakRock";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "ShortCone";
+         ForestItemData = "SP_PeakRock";
+         probability = "1";
+         rotationRange = "360";
+         scaleMin = "1";
+         scaleMax = "1";
+         scaleExponent = "1";
+         sinkMin = "0";
+         sinkMax = "0";
+         sinkRadius = "1";
+         slopeMin = "0";
+         slopeMax = "90";
+         elevationMin = "-10000";
+         elevationMax = "10000";
+      };
+      new ForestBrushElement() {
+         internalName = "SP_ShortCone";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+         ForestItemData = "SP_ShortCone";
          probability = "1";
          rotationRange = "360";
          scaleMin = "0.4";

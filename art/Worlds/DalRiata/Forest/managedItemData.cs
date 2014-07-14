@@ -104,50 +104,62 @@ datablock TSForestItemData(whitePine)
    shapeFile = "art/Packs/Trees/SP_Mythriel/whitePine.dae";
 };
 
-datablock TSForestItemData(SmallRock_01)
+datablock TSForestItemData(SP_SmallRock1)
 {
-   internalName = "SmallRock_01";
+   internalName = "SP_SmallRock1";
    shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SMRock1.dts";
 };
 
-datablock TSForestItemData(SmallRock_02)
+datablock TSForestItemData(SP_SmallRock2)
 {
-   internalName = "SmallRock_02";
+   internalName = "SP_SmallRock2";
    shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SMRock2.dts";
 };
 
-datablock TSForestItemData(SmallRock_03)
+datablock TSForestItemData(SP_SmallRock3)
 {
-   internalName = "SmallRock_03";
+   internalName = "SP_SmallRock3";
    shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SMRock3.dts";
 };
 
-datablock TSForestItemData(SmallRock_04)
+datablock TSForestItemData(SP_SmallRock4)
 {
-   internalName = "SmallRock_04";
+   internalName = "SP_SmallRock4";
    shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SMRock4.dts";
 };
 
-datablock TSForestItemData(SmallRock_05)
+datablock TSForestItemData(SP_SmallRock5)
 {
-   internalName = "SmallRock_05";
-   shapeFile = "art/Packs/Rocks/GG_Rocks/19_smallrockfive.DAE";
+   internalName = "SP_SmallRock5";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SMRock5.DAE";
 };
 
-datablock TSForestItemData(GGRock_Two)
+datablock TSForestItemData(SP_LongRock)
 {
-   internalName = "GGRock_Two";
-   shapeFile = "art/Packs/Rocks/GG_Rocks/13_ggrockTwo.DAE";
+   internalName = "SP_LongRock";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_LongRock.dae";
 };
 
-datablock TSForestItemData(GGRock_Three)
+datablock TSForestItemData(SP_PointedRock)
+{
+   internalName = "SP_PointedRock";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_PointedRock.dae";
+};
+
+datablock TSForestItemData(SP_SmOval)
 {
    internalName = "GGRock_Three";
-   shapeFile = "art/Packs/Rocks/GG_Rocks/14_ggrockThree.DAE";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_SmOval.dae";
 };
 
-datablock TSForestItemData(ShortCone)
+datablock TSForestItemData(SP_ShortCone)
 {
-   internalName = "ShortCone";
+   internalName = "SP_ShortCone";
    shapeFile = "art/Packs/Rocks/SP_Rocks/SP_ShortConeRock.dts";
+};
+
+datablock TSForestItemData(SP_PeakRock)
+{
+   internalName = "SP_PeakRock";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
 };
