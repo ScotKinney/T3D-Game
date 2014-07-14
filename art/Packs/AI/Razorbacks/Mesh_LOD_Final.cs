@@ -18,8 +18,4 @@ function Mesh_LOD_FinalDts::onLoad(%this)
    %this.setSequenceCyclic("side", "1");
    %this.addTrigger("run", "6", "1");
    %this.addNode("mount0", "Tounge_Start", "-1.35851e-005 1.02187 0.480397 1 5.84737e-005 3.18235e-005 0.486429", "1");
-   %this.setMeshSize("Eyes 32", "1500");
-   %this.setMeshSize("Eyes 1500", "32");
-   %this.setDetailLevelSize("32", "500");
-   %this.addImposter("0", "6", "0", "0", "256", "0", "0");
 }
