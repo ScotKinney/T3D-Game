@@ -22,13 +22,13 @@ singleton Material(VillageBuildingE_ThatachedC)
 singleton Material(VillageBuildingE_ThatchedA)
 {
    mapTo = "ThatchedA";
-   diffuseMap[0] = "ThatchedA1024.dds";
-   specularPower[0] = "100";
+   diffuseMap[0] = "art/Packs/Buildings/Mythriel_Village/ThatchedA1024.dds";
+   specularPower[0] = "56";
    materialTag0 = "Mythriel";
-   customFootstepSound = "FootStepRock1Sound";
-   customImpactSound = "FootStepRock1Sound";
-   normalMap[0] = "ThatchedA_NRM.jpg";
+   normalMap[0] = "art/Packs/Buildings/Mythriel_Village/ThatchedA_nm.dds";
    useAnisotropic[0] = "1";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Buildings/Mythriel_Village/ThatchedA_spec.dds";
 };
 singleton Material(stone_floor_mat)
 {
