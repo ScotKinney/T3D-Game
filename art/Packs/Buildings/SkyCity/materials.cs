@@ -132,3 +132,13 @@ singleton Material(platform_default2)
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
 };
+
+new CubemapData(CCCubeMap)
+{
+   cubeFace[0] = "art/Packs/SkyBoxes/ConiferSky/skybox_1.dds";
+   cubeFace[1] = "art/Packs/SkyBoxes/ConiferSky/skybox_2.dds";
+   cubeFace[2] = "art/Packs/SkyBoxes/ConiferSky/skybox_3.dds";
+   cubeFace[3] = "art/Packs/SkyBoxes/ConiferSky/skybox_4.dds";
+   cubeFace[4] = "art/Packs/SkyBoxes/ConiferSky/skybox_5.dds";
+   cubeFace[5] = "art/Packs/SkyBoxes/ConiferSky/skybox_5.dds";
+};
