@@ -1,4 +1,14 @@
-
+singleton Material(WholeCity_WindowsOne)
+{
+   mapTo = "WindowsOne";
+   diffuseColor[0] = "0.215686 0.215686 0.215686 1";
+   specular[0] = "0.35 0.35 0.35 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   cubemap = "ConiferCubemap";
+   materialTag0 = "Miscellaneous";
+};
 singleton Material(WholeCity_WindowsTwo)
 {
    mapTo = "WindowsTwo";
@@ -11,17 +21,14 @@ singleton Material(WholeCity_WindowsTwo)
    materialTag0 = "Miscellaneous";
 };
 
-singleton Material(WholeCity_WallsFour)
+singleton Material(WholeCity_WindowsThree)
 {
-   mapTo = "WallsFour";
-   diffuseColor[0] = "0.980392 0.980392 0.980392 1";
+   mapTo = "WindowsThree";
+   diffuseColor[0] = "0.215686 0.215686 0.215686 1";
    specular[0] = "0.35 0.35 0.35 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/White1.dds";
-   useAnisotropic[0] = "1";
-   materialTag0 = "Miscellaneous";
-   customFootstepSound = "FootStepWood1Sound";
+   cubemap = "ConiferCubemap";
 };
 
 singleton Material(WholeCity_WindowsFour)
@@ -47,26 +54,17 @@ singleton Material(WholeCity_WallsOne)
    customFootstepSound = "FootStepWood1Sound";
 };
 
-singleton Material(WholeCity_WallsOne)
+singleton Material(WholeCity_WallsTwo)
 {
-   mapTo = "WallsOne";
+   mapTo = "WallsTwo";
    diffuseColor[0] = "0.862745 0.862745 0.862745 1";
    specular[0] = "0.35 0.35 0.35 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
    diffuseMap[0] = "art/Packs/Buildings/SkyCity/White1.dds";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "Miscellaneous";
-};
-
-singleton Material(WholeCity_WindowsThree)
-{
-   mapTo = "WindowsThree";
-   diffuseColor[0] = "0.215686 0.215686 0.215686 1";
-   specular[0] = "0.35 0.35 0.35 1";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-   cubemap = "ConiferCubemap";
 };
 
 singleton Material(WholeCity_WallsThree)
@@ -82,14 +80,25 @@ singleton Material(WholeCity_WallsThree)
    materialTag0 = "Miscellaneous";
 };
 
-singleton Material(WholeCity_WallsThree)
+singleton Material(WholeCity_WallsFour)
 {
-   mapTo = "WallsThree";
-   diffuseColor[0] = "0.956863 0.956863 0.956863 1";
+   mapTo = "WallsFour";
+   diffuseColor[0] = "0.980392 0.980392 0.980392 1";
    specular[0] = "0.35 0.35 0.35 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/White2.dds";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/White1.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Miscellaneous";
+   customFootstepSound = "FootStepWood1Sound";
+};
+
+singleton Material(OddThing_mat)
+{
+   mapTo = "OddThing";
+   diffuseColor[0] = "0 0.976471 1 1";
+   specularPower[0] = "16";
+   pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Miscellaneous";
 };
