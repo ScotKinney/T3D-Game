@@ -257,7 +257,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "2981";
+         botBelongsToMe = "2967";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -282,7 +282,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "2982";
+         botBelongsToMe = "2968";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -933,6 +933,22 @@ new SimGroup(MissionGroup) {
       position = "-61.3 9 2.6";
       rotation = "1 0 0 0";
       scale = "2 2 2";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = $WorldPath @ "/models/platform.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "81.3 -54.4 4.9";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
