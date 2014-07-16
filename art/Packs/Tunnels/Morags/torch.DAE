@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>adminisn</author>
+      <authoring_tool>3dsMax 8 - Feeling ColladaMax v3.05B.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=0;ExportTangents=0;ExportAnimations=0;SampleAnim=0;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=80;</comments>
+      <source_data>file:///D:/%CE%D2%B5%C4%CE%C4%B5%B5/%CF%C2%D4%D8/uderground_passage/uderground-passage-max5.max</source_data>
+    </contributor>
+    <created>2009-11-21T04:06:01Z</created>
+    <modified>2009-11-21T04:06:05Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_lights>
+    <light id="ambient-environment-light" name="Ambient">
+      <technique_common>
+        <ambient>
+          <color>0.47451 0.309804 0.176471</color>
+        </ambient>
+      </technique_common>
+      <extra>
+        <technique profile="FCOLLADA">
+          <intensity>1</intensity>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="woodsmpl01.jpg" name="woodsmpl01_jpg">
+      <init_from>file:///D:/%CE%D2%B5%C4%CE%C4%B5%B5/%CF%C2%D4%D8/uderground_passage/woodsmpl01.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="fw" name="fw">
+      <instance_effect url="#fw-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="fw-fx" name="fw">
+      <profile_COMMON>
+        <newparam sid="woodsmpl01_jpg-surface">
+          <surface type="2D">
+            <init_from>woodsmpl01.jpg</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="woodsmpl01_jpg-sampler">
+          <sampler2D>
+            <source>woodsmpl01_jpg-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.901961 0.901961 0.901961 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="woodsmpl01_jpg-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>1.46862</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0.05</float>
+              </spec_level>
+              <emission_level>
+                <float>0.5</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="torch-mesh" name="torch">
+      <mesh>
+        <source id="torch-mesh-positions">
+          <float_array id="torch-mesh-positions-array" count="66">41.3104 -0.851078 -2.32609 19.1465 -3.40134 -35.4348 11.3466 -2.52227 -5.72465 41.2759 -14.3383 -2.32609 19.1232 -11.6807 -35.4348 11.3186 -12.5144 -5.72465 67.2018 -0.167925 7.78261 8.14505 -2.37847 6.63769 9.18157 4.78451 50.1739 -22.7443 4.86282 50.0362 -4.50033 -2.34701 -1.3116 16.041 -2.40243 -88.8986 22.7427 -2.41979 -84.4493 22.6786 1.17707 -51 67.162 -15.1498 7.78261 8.11876 -12.6418 6.63769 9.11902 -19.8077 50.1739 -22.8069 -19.7293 50.0362 -4.52662 -12.6103 -1.3116 16.0165 -12.6593 -88.8986 22.7182 -12.6767 -84.4493 22.6313 -16.2763 -51</float_array>
+          <technique_common>
+            <accessor source="#torch-mesh-positions-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="torch-mesh-normals">
+          <float_array id="torch-mesh-normals-array" count="174">-0.831042 0.002152 0.556205 -0.831071 0.002342 0.556162 -0.831064 0.002297 0.556172 -0.831038 0.002123 0.556211 0.967201 -0.002723 0.253999 0.9672 -0.002712 0.254002 0.9672 -0.002715 0.254001 0.967201 -0.002725 0.253998 0.112707 -0.000308 -0.993628 0.112715 -0.000288 -0.993627 0.112713 -0.000293 -0.993627 0.112704 -0.000316 -0.993628 -0.019385 0.000051 0.999812 -0.019385 0.000049 0.999812 -0.019385 0.000049 0.999812 -0.019385 0.000051 0.999812 -0.004311 0.00001 0.999991 -0.004311 0.00001 0.999991 -0.004311 0.00001 0.999991 -0.004311 0.00001 0.999991 -0.973577 0.002482 -0.228347 -0.973581 0.002331 -0.228331 -0.973581 0.002342 -0.228332 -0.973576 0.002494 -0.228349 0.553102 -0.001324 -0.833112 0.553102 -0.001324 -0.833112 0.553102 -0.001324 -0.833112 0.553102 -0.001324 -0.833112 0.999994 -0.002489 0.002301 0.999994 -0.002712 0.002208 0.999994 -0.00265 0.002234 0.999994 -0.002394 0.00234 0.797121 -0.002155 -0.603816 0.797127 -0.002115 -0.603809 0.797126 -0.002122 -0.60381 0.79712 -0.002161 -0.603817 -0.059643 0.997154 0.046107 0.374194 0.923625 -0.083039 -0.045307 0.99779 0.048614 -0.01548 0.999606 -0.023395 -0.407027 0.886849 -0.218698 -0.575192 0.814924 0.071084 -0.181161 0.979567 0.087344 0.680865 0.722585 -0.119557 -0.697292 0.632836 -0.336604 -0.026692 0.997788 -0.060881 0.073267 0.991611 -0.106489 -0.4115 -0.884793 -0.218655 -0.700444 -0.629339 -0.336617 0.369527 -0.925506 -0.082994 0.677252 -0.725977 -0.119528 -0.06464 -0.996837 0.046233 -0.0503 -0.997544 0.048732 -0.020482 -0.999519 -0.023283 -0.579466 -0.811896 0.071018 -0.186178 -0.978626 0.087337 -0.031867 -0.99763 -0.060975 0.068183 -0.991965 -0.106571</float_array>
+          <technique_common>
+            <accessor source="#torch-mesh-normals-array" count="58" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="torch-mesh-map-channel0">
+          <float_array id="torch-mesh-map-channel0-array" count="36">1 1 1 0.9563 0.9553 0.9523 0.3725 0.3686 0.3608 0.6639 0.6639 0.6639 0.6746 0.6746 0.6746 0.2706 0.2667 0.2431 0.6599 0.6572 0.6409 0.6706 0.6706 0.6706 0.7176 0.7176 0.7176 0.902 0.902 0.902 0.9146 0.9146 0.9146 0.6667 0.6667 0.6667</float_array>
+          <technique_common>
+            <accessor source="#torch-mesh-map-channel0-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="torch-mesh-map-channel1">
+          <float_array id="torch-mesh-map-channel1-array" count="384">0.3941 0.0941 0.4769 0.8751 0.2331 0.3156 0.8751 0.8375 0.3156 0.3941 0.0941 0.4769 0.8751 0.8375 0.3156 0.3941 0.9765 0.4769 0.3156 0.2331 0.1249 0.5283 0.2331 0.1208 0.5283 0.8375 0.1208 0.3156 0.2331 0.1249 0.5283 0.8375 0.1208 0.3156 0.8375 0.1249 0.1208 0.2331 0.5283 0.6059 0.0941 0.4769 0.6059 0.9765 0.4769 0.1208 0.2331 0.5283 0.6059 0.9765 0.4769 0.1208 0.8375 0.5283 0.0894 0.231 0.5015 0.8805 0.3269 0.6168 0.8805 0.7437 0.6168 0.0894 0.231 0.5015 0.8805 0.7437 0.6168 0.0894 0.8396 0.5015 0.7529 0.0358 0.9077 1.0957 0.0358 0.9602 1.0957 1.0348 0.9602 0.7529 0.0358 0.9077 1.0957 1.0348 0.9602 0.7529 1.0348 0.9077 -0.0516 0.3269 -0.0386 0.0321 0.3269 -0.0199 0.0321 0.7437 -0.0199 -0.0516 0.3269 -0.0386 0.0321 0.7437 -0.0199 -0.0516 0.7437 -0.0386 -0.0199 0.3269 0.0321 0.2051 0.1808 0.1209 0.2051 0.8898 0.1209 -0.0199 0.3269 0.0321 0.2051 0.8898 0.1209 -0.0199 0.7437 0.0321 0.1209 0.1808 0.2051 0.9106 0.231 0.5015 0.9106 0.8396 0.5015 0.1209 0.1808 0.2051 0.9106 0.8396 0.5015 0.1209 0.8898 0.2051 0.3133 0.4332 0.0358 0.9056 0.7895 0.3269 0.3139 0.7907 0.0358 0.9053 0.4408 0.3269 0.9056 0.7895 0.3269 0.3133 0.4332 0.0358 0.1638 0.5098 0.2331 0.1771 0.7419 0.2331 0.4005 0.8011 0.3269 0.3767 -0.0271 0.3269 0.1495 -0.0318 0.3269 0.1644 0.3391 0.1808 0.1771 0.7419 0.2331 0.1638 0.5098 0.2331 0.1638 0.5098 0.2331 0.3767 -0.0271 0.3269 0.1644 0.3391 0.1808 0.3767 -0.0271 0.3269 0.4238 0.9374 0.3269 0.3508 0.4796 -0.0374 0.3508 -0.4186 -0.0516 0.4875 -0.4186 -0.0516 0.3508 0.4796 -0.0374 0.4875 -0.4186 -0.0516 0.4875 0.4796 -0.0374 0.4384 0.6959 0.0941 0.3494 0.2074 0.3269 0.4384 0.6959 0.0941 0.3494 0.2074 0.3269 0.3604 1.0068 0.231 0.4508 0.2081 0.2331 0.3826 -0.7108 0.231 0.3757 0.3133 0.1808 0.256 -0.3996 0.0941 0.3757 0.3133 0.1808 0.2563 0.2817 0.2331 0.256 -0.3996 0.0941 0.3394 0.406 0.0358 0.4767 0.9983 0.3269 0.476 0.4066 0.0358 0.3351 0.9979 0.3269 0.4767 0.9983 0.3269 0.3394 0.406 0.0358 0.4384 0.6959 0.0941 0.3494 0.2074 0.3269 0.3604 1.0068 0.231 0.1771 0.7419 0.2331 0.4005 0.8011 0.3269 0.4238 0.9374 0.3269 0.3757 0.3133 0.1808 0.256 -0.3996 0.0941 0.3826 -0.7108 0.231 0.3757 0.3133 0.1808 0.2563 0.2817 0.2331 0.256 -0.3996 0.0941 0.1943 0.0516 0.0358 0.3606 0.8042 0.3269 0.3728 0.0571 0.0358 0.3566 0.6833 0.3269 0.3606 0.8042 0.3269 0.1943 0.0516 0.0358 0.3494 0.2074 0.3269 0.4384 0.6959 0.0941 0.4508 0.2081 0.2331 0.1771 0.7419 0.2331 0.1638 0.5098 0.2331 0.1638 0.5098 0.2331 0.3767 -0.0271 0.3269 0.1644 0.3391 0.1808 0.3767 -0.0271 0.3269 0.1638 0.5098 0.2331 0.1495 -0.0318 0.3269 0.3767 -0.0271 0.3269 0.1644 0.3391 0.1808 0.1943 0.0516 0.0358 0.3728 0.0571 0.0358 0.1943 0.0516 0.0358 0.3606 0.8042 0.3269 0.3566 0.6833 0.3269 0.3606 0.8042 0.3269</float_array>
+          <technique_common>
+            <accessor source="#torch-mesh-map-channel1-array" count="128" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="torch-mesh-vertices">
+          <input semantic="POSITION" source="#torch-mesh-positions"/>
+        </vertices>
+        <triangles material="fw" count="44">
+          <input semantic="VERTEX" source="#torch-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#torch-mesh-normals" offset="1"/>
+          <input semantic="COLOR" source="#torch-mesh-map-channel0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#torch-mesh-map-channel1" offset="3" set="1"/>
+          <p>0 0 1 0 1 1 0 1 4 2 3 2 0 0 1 3 4 2 3 4 3 3 2 5 1 4 0 6 2 5 0 7 5 6 0 8 1 4 0 9 5 6 0 10 4 7 3 11 2 8 0 12 0 9 1 13 3 10 2 14 2 8 0 15 3 10 2 16 5 11 0 17 6 12 0 18 7 13 0 19 15 14 6 20 6 12 0 21 15 14 6 22 14 15 5 23 8 16 0 24 9 17 4 25 17 18 8 26 8 16 0 27 17 18 8 28 16 19 7 29 10 20 0 67 11 21 0 68 19 22 10 69 10 20 0 70 19 22 10 71 18 23 9 72 11 24 0 30 12 25 0 31 20 26 0 32 11 24 0 33 20 26 0 34 19 27 10 35 12 28 0 36 13 29 0 37 21 30 11 38 12 28 0 39 21 30 11 40 20 31 0 41 13 32 0 42 6 33 0 43 14 34 5 44 13 32 0 45 14 34 5 46 21 35 11 47 0 36 1 75 7 37 0 76 6 38 0 77 2 39 0 60 10 40 0 56 7 37 0 66 13 41 0 80 0 36 1 81 6 38 0 79 13 41 0 82 1 42 0 83 0 36 1 84 8 43 0 124 10 40 0 125 9 44 4 123 7 37 0 126 10 40 0 127 8 43 0 122 7 37 0 74 0 36 1 73 2 39 0 78 2 39 0 55 1 42 0 61 10 40 0 56 1 42 0 62 11 45 0 63 10 40 0 56 13 41 0 64 11 45 0 65 1 42 0 54 12 46 0 58 11 45 0 57 13 41 0 59 9 44 4 85 18 47 9 86 17 48 8 87 10 40 0 88 18 47 9 89 9 44 4 90 15 49 6 49 8 43 0 48 16 50 7 50 15 49 6 52 7 37 0 51 8 43 0 53 15 49 6 92 3 51 2 91 14 52 5 93 18 47 9 95 5 53 0 94 15 49 6 96 3 51 2 98 21 54 11 97 14 52 5 99 4 55 3 101 21 54 11 100 3 51 2 102 18 47 9 104 16 50 7 103 17 48 8 105 18 47 9 107 15 49 6 106 16 50 7 108 3 51 2 110 15 49 6 109 5 53 0 111 4 55 3 113 5 53 0 112 18 47 9 95 19 56 10 115 4 55 3 114 18 47 9 95 19 56 10 117 21 54 11 116 4 55 3 118 19 56 10 120 20 57 0 119 21 54 11 121</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="uderground-passage-max5.max" name="uderground-passage-max5_max">
+      <node id="torch-node" name="torch" type="NODE">
+        <translate>-0.639276 -0.353458 5.43505</translate>
+        <scale>0.078699 0.078699 0.078821</scale>
+        <node id="torch-node_PIVOT" name="torch_PIVOT" type="NODE">
+          <matrix>1 0 0 -22.1972 0 1 0 7.47196 0 0 1 19.3623 0 0 0 1</matrix>
+          <instance_geometry url="#torch-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="fw" target="#fw">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="VisualSceneNode" type="NODE">
+        <instance_light url="#ambient-environment-light"/>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>80</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#uderground-passage-max5.max"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+    <asset>
+        <contributor>
+            <author />
+            <authoring_tool>Torque 3D 2009 Interior Exporter</authoring_tool>
+            <comments />
+        </contributor>
+        <created>12/7/2009 11:14:32 AM</created>
+        <modified>12/7/2009 11:14:32 AM</modified>
+        <revision />
+        <title />
+        <subject />
+        <keywords />
+        <unit meter="1.000000" />
+        <up_axis>Z_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="PlanksOld0348_L-Diffuse" name="PlanksOld0348_L-Diffuse">
+            <init_from>file://PlanksOld0348_L.jpg</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="PlanksOld0348_L" name="PlanksOld0348_L">
+            <instance_effect url="#PlanksOld0348_L-fx" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="PlanksOld0348_L-fx" name="PlanksOld0348_L-fx">
+            <profile_COMMON>
+                <technique sid="standard">
+                    <phong>
+                        <diffuse>
+                            <texture texture="PlanksOld0348_L-Diffuse" texcoord="CHANNEL0">
+                                <extra>
+                                    <technique profile="MAYA">
+                                        <wrapU sid="wrapU0">TRUE</wrapU>
+                                        <wrapV sid="wrapV0">TRUE</wrapV>
+                                        <blend_mode>ADD</blend_mode>
+                                    </technique>
+                                </extra>
+                            </texture>
+                        </diffuse>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="PLANKBridge001-lib" name="PLANKBridge001Mesh">
+            <mesh>
+                <source id="PLANKBridge001-Position">
+                    <float_array id="PLANKBridge001-Position-array" count="72">
+                        6.9688 0.3718 -0.6250
+                        6.9688 -1.0682 -0.6250
+                        9.4063 0.3718 -0.5000
+                        9.4063 -1.0682 -0.5000
+                        6.9688 -1.0682 -0.5313
+                        6.9688 0.3718 -0.5313
+                        9.4063 -1.0682 -0.4063
+                        9.4063 0.3718 -0.4063
+                        -1.1563 0.3718 -0.5625
+                        -1.1563 -1.0682 -0.5625
+                        -1.1563 -1.0682 -0.4688
+                        -1.1563 0.3718 -0.4688
+                        -7.4688 -1.0682 -0.5000
+                        -7.4688 0.3718 -0.5000
+                        -7.4688 0.3718 -0.4063
+                        -7.4688 -1.0682 -0.4063
+                        9.1875 0.6193 -0.5000
+                        9.1875 2.0593 -0.5000
+                        -7.6563 0.6193 -0.5000
+                        -7.6563 2.0593 -0.5000
+                        9.1875 2.0593 -0.4063
+                        9.1875 0.6193 -0.4063
+                        -7.6563 2.0593 -0.4063
+                        -7.6563 0.6193 -0.4063
+                    </float_array>
+                    <technique_common>
+                        <accessor source="#PLANKBridge001-Position-array" count="24" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="PLANKBridge001-Normal">
+                    <float_array id="PLANKBridge001-Normal-array" count="36">
+                        0.0512 0.0000 -0.9987
+                        -0.0512 0.0000 0.9987
+                        1.0000 0.0000 0.0000
+                        -0.0077 -0.0000 -1.0000
+                        0.0077 0.0000 1.0000
+                        -0.0099 -0.0000 -1.0000
+                        0.0099 0.0000 1.0000
+                        -1.0000 0.0000 0.0000
+                        0.0000 -1.0000 0.0000
+                        0.0000 1.0000 0.0000
+                        0.0000 0.0000 -1.0000
+                        0.0000 0.0000 1.0000
+                    </float_array>
+                    <technique_common>
+                        <accessor source="#PLANKBridge001-Normal-array" count="12" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="PLANKBridge001-UV0">
+                    <float_array id="PLANKBridge001-UV0-array" count="72">
+                        0.3430 -7.7461
+                        -0.0171 -7.7461
+                        0.3430 -8.0508
+                        -0.0171 -8.0508
+                        -0.1016 0.0085
+                        -0.1016 -0.1715
+                        -0.1250 0.0085
+                        -0.1250 -0.1715
+                        0.3430 -6.7305
+                        -0.0171 -6.7305
+                        -0.0171 -5.9414
+                        0.3430 -5.9414
+                        -0.1016 -5.9414
+                        -0.1172 -6.7305
+                        -0.1250 -5.9414
+                        -0.1406 -6.7305
+                        -0.1328 -7.7461
+                        -0.1016 -8.0508
+                        -0.1563 -7.7461
+                        -0.1250 -8.0508
+                        0.7952 -9.1758
+                        1.1552 -9.1758
+                        0.7952 -7.0703
+                        1.1552 -7.0703
+                        -17.7343 -0.1872
+                        -17.7343 -0.0072
+                        -17.7577 -0.1872
+                        -17.7577 -0.0072
+                        -17.7343 -7.0742
+                        -17.7343 -9.1796
+                        -17.7577 -7.0742
+                        -17.7577 -9.1796
+                        -3.3594 -15.6874
+                        -3.3594 -13.5819
+                        -3.3828 -15.6874
+                        -3.3828 -13.5819
+                    </float_array>
+                    <technique_common>
+                        <accessor source="#PLANKBridge001-UV0-array" count="36" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="PLANKBridge001-Vertex">
+                    <input semantic="POSITION" source="#PLANKBridge001-Position" />
+                </vertices>
+                <triangles material="PlanksOld0348_L" count="40">
+                    <input semantic="VERTEX" offset="0" source="#PLANKBridge001-Vertex" />
+                    <input semantic="NORMAL" offset="1" source="#PLANKBridge001-Normal" />
+                    <input semantic="TEXCOORD" offset="2" set="0" source="#PLANKBridge001-UV0" />
+                    <p>
+                        3 0 3 1 0 1 0 0 0
+                        2 0 2 3 0 3 0 0 0
+                        7 1 2 5 1 0 4 1 1
+                        6 1 3 7 1 2 4 1 1
+                        2 2 7 7 2 5 6 2 4
+                        3 2 6 2 2 7 6 2 4
+                        1 3 1 9 3 9 8 3 8
+                        0 3 0 1 3 1 8 3 8
+                        5 4 0 11 4 8 10 4 9
+                        4 4 1 5 4 0 10 4 9
+                        13 5 11 8 5 8 9 5 9
+                        12 5 10 13 5 11 9 5 9
+                        15 6 10 10 6 9 11 6 8
+                        14 6 11 15 6 10 11 6 8
+                        12 7 6 15 7 4 14 7 5
+                        13 7 7 12 7 6 14 7 5
+                        9 8 15 10 8 13 15 8 12
+                        12 8 14 9 8 15 15 8 12
+                        3 8 19 6 8 17 4 8 16
+                        1 8 18 3 8 19 4 8 16
+                        1 8 18 4 8 16 10 8 13
+                        9 8 15 1 8 18 10 8 13
+                        8 9 15 11 9 13 5 9 16
+                        0 9 18 8 9 15 5 9 16
+                        13 9 14 14 9 12 11 9 13
+                        8 9 15 13 9 14 11 9 13
+                        0 9 18 5 9 16 7 9 17
+                        2 9 19 0 9 18 7 9 17
+                        19 10 23 17 10 21 16 10 20
+                        18 10 22 19 10 23 16 10 20
+                        23 11 22 21 11 20 20 11 21
+                        22 11 23 23 11 22 20 11 21
+                        18 7 27 23 7 25 22 7 24
+                        19 7 26 18 7 27 22 7 24
+                        17 2 26 20 2 24 21 2 25
+                        16 2 27 17 2 26 21 2 25
+                        16 8 31 21 8 29 23 8 28
+                        18 8 30 16 8 31 23 8 28
+                        19 9 35 22 9 33 20 9 32
+                        17 9 34 19 9 35 20 9 32
+                    </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="RootNode" name="RootNode">
+            <node id="PLANKBridge001" name="PLANKBridge001">
+                <instance_geometry url="#PLANKBridge001-lib">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="PlanksOld0348_L" target="#PlanksOld0348_L" />
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#RootNode" />
+    </scene>
+</COLLADA>

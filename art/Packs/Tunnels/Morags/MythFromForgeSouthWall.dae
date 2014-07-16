@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2011-02-16T01:17:44Z</created>
+    <modified>2011-02-16T01:17:44Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image_MythrielFromForgeSouthWall" name="Image_MythrielFromForgeSouthWall" depth="1">
+      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\MythSFromForge.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PMat_MythrielFromForgeSouthWall">
+      <instance_effect url="#Phong_MythrielFromForgeSouthWall"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Phong_MythrielFromForgeSouthWall">
+      <profile_COMMON>
+        <newparam sid="MythrielFromForgeSouthWall-surface">
+          <surface type="2D">
+            <init_from>Image_MythrielFromForgeSouthWall</init_from>
+            <format>B8G8R8A8</format>
+          </surface>
+        </newparam>
+        <newparam sid="MythrielFromForgeSouthWall-sampler">
+          <sampler2D>
+            <source>MythrielFromForgeSouthWall-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission><color>0 0 0 1.0</color></emission>
+            <ambient><color>0.6588 0.6588 0.6588 1.0</color></ambient>
+            <diffuse><texture texture="MythrielFromForgeSouthWall-sampler" texcoord="MythrielFromForgeSouthWall-TEX0"/></diffuse>
+            <specular><color>0 0 0 1.0</color></specular>
+            <transparency><float>1.0</float></transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="MythrielFromForgeSouthWall" name="MythrielFromForgeSouthWall">
+      <mesh>
+        <source id="MythrielFromForgeSouthWall-positions">
+          <float_array id="MythrielFromForgeSouthWall-positions-array" count="24">-0.5 0 0.01875 -0.5 0.8 0.01875 -0.5 0 -0.01875 -0.5 0.8 -0.01875 0.5 0 0.01875 0.5 0.8 0.01875 0.5 0 -0.01875 0.5 0.8 -0.01875</float_array>
+          <technique_common>
+            <accessor source="MythrielFromForgeSouthWall-positions-array" count="8" stride="3">
+              <param name="X" type="float"></param>
+              <param name="Y" type="float"></param>
+              <param name="Z" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MythrielFromForgeSouthWall-uvs">
+          <float_array id="MythrielFromForgeSouthWall-uvs-array" count="8">0 0 0 1.0 1.0 0 1.0 1.0</float_array>
+          <technique_common>
+            <accessor source="MythrielFromForgeSouthWall-uvs-array" count="4" stride="2">
+              <param name="S" type="float"></param>
+              <param name="T" type="float"></param>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="MythrielFromForgeSouthWall-vertices">
+          <input semantic="POSITION" source="#MythrielFromForgeSouthWall-positions"/>
+        </vertices>
+        <triangles count="12" material="Mat_MythrielFromForgeSouthWall">
+          <input offset="0" semantic="VERTEX" source="#MythrielFromForgeSouthWall-vertices"/>
+          <input offset="1" semantic="TEXCOORD" source="#MythrielFromForgeSouthWall-uvs"/>
+          <p>1 1  0 0  4 2  5 3  1 1  4 2  4 3  0 1  2 0  6 2  4 3  2 0  5 1  4 0  6 2  7 3  5 1  6 2  1 0  5 2  7 3  3 1  1 0  7 3  7 1  6 0  2 2  3 3  7 1  2 2  3 1  2 0  0 2  1 3  3 1  0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="S_MythrielFromForgeSouthWall">
+        <instance_geometry url="#MythrielFromForgeSouthWall">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mat_MythrielFromForgeSouthWall" target="#PMat_MythrielFromForgeSouthWall">
+                <bind_vertex_input semantic="MythrielFromForgeSouthWall-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>
