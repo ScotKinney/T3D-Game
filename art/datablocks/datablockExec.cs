@@ -30,6 +30,7 @@ exec("./audioProfiles.cs");
 exec("./particles.cs");
 exec("./lights.cs");
 exec("./triggers.cs");
+exec("./damageTriggers.cs");
 
 exec("./defaultEffects.cs");
 exec("./player.cs");

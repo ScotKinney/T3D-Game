@@ -223,3 +223,19 @@ function TriggerData::checkInvRequirement(%this, %trigger, %obj)
 
    return true;
 }
+
+function teleportTrigger::onEnterTrigger( %this, %trigger, %obj )
+{  // Teleport the player to the destination spawn sphere. No fade or effect is played
+
+   // check that the object entering the trigger is a player
+   if(!isObject(%obj.client))
+      return;
+
+   // Check that we have a valid destination
+   if ( !isObject(%trigger.destinationSpawnSphere) )
+      return; // Nothing to teleport to
+
+   // Get the destination transform      
+   %targetTransform = %trigger.destinationSpawnSphere.getTransform();
+   %obj.setTransform(%targetTransform);
+}

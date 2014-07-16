@@ -46,3 +46,8 @@ datablock TriggerData(serverTransferTrigger : DefaultTrigger)
 {
    tickPeriodMS = 250;  
 };
+
+datablock TriggerData(teleportTrigger : DefaultTrigger)
+{
+   tickPeriodMS = 250;  
+};
