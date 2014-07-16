@@ -42,18 +42,19 @@ singleton Material(tex_volcanic_rock_base_mat)
 singleton Material(lavafall)
 {
    mapTo = "lavafall";
-   diffuseMap[0] = "lava.png";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/lava.png";
    diffuseColor[0] = "0.588235 0.588235 0.588235 1";
     specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = 10;
+   specularPower[0] = "41";
    animFlags[0] = "0x00000001";
    scrollDir[0] = "0 -0.14";
    scrollSpeed[0] = "0.882";
    materialTag0 = "Morags";
-   emissive[0] = "0";
+   emissive[0] = "1";
    glow[0] = "1";
    vertColor[0] = "1";
    useAnisotropic[0] = "1";
+   pixelSpecular[0] = "1";
 };
 
 //--- lavafall.DAE MATERIALS END ---
@@ -308,14 +309,13 @@ singleton Material(Kennel01_chainlink01)
 singleton Material(Kennel01_Corrigate01)
 {
    mapTo = "Corrigate01";
-   diffuseMap[0] = "3TD_Corrigate_Rust_01";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "6";
    translucentBlendOp = "None";
-   normalMap[0] = "3TD_Corrigate_Rust_01_NRM.png";
-   pixelSpecular[0] = "0";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM.png";
+   pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
    alphaRef = "0";
 };
 
@@ -327,7 +327,6 @@ singleton Material(Kennel01_WoodPlank01)
    specularPower[0] = "10";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
 };
 
 singleton Material(Kennel01__5___Default)
@@ -339,33 +338,54 @@ singleton Material(Kennel01__5___Default)
    translucentBlendOp = "None";
 };
 
-singleton Material(3td_Barrel01_DrumMetal_01)
+singleton Material(singletunnel_magma)
+{
+   mapTo = "magma";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/LAVA";
+   specular[0] = "1 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   pixelSpecular[0] = "1";
+   glow[0] = "1";
+   materialTag0 = "MoragsForge";
+};
+
+singleton Material(lavadisk_PMat_lavadisk1)
+{
+   mapTo = "PMat_lavadisk1";
+   diffuseMap[0] = "LAVA";
+   specular[0] = "0 0 0 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(_3td_Barrel01_DrumMetal_01)
 {
    mapTo = "DrumMetal_01";
-   diffuseMap[0] = "3td_DrumMetal_01.jpg";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_DrumMetal_01";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
+   specularPower[0] = "69";
    translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3td_DrumMetal_01_NRM.png";
+   specularStrength[0] = "2.94118";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Tunnels/Morags/3td_DrumMetal_01_SPEC.png";
    useAnisotropic[0] = "1";
-   normalMap[0] = "3td_DrumMetal_01_NRM.png";
-   specularMap[0] = "3td_DrumMetal_01_SPEC.png";
-   doubleSided = "1";
 };
 
-singleton Material(3td_Barrel01_OilDrumTop_01)
+singleton Material(_3td_Barrel01_OilDrumTop_01)
 {
    mapTo = "OilDrumTop_01";
-   diffuseMap[0] = "3td_OilDrumTop_01.png";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_OilDrumTop_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3td_OilDrumTop_01_NRM.png";
+   specularMap[0] = "art/Packs/Tunnels/Morags/3td_OilDrumTop_01_SPEC.png";
    useAnisotropic[0] = "1";
-   normalMap[0] = "3td_OilDrumTop_01_NRM.png";
-   specularMap[0] = "3td_OilDrumTop_01_SPEC.png";
-   doubleSided = "1";
+   customFootstepSound = "FootStepMetal1Sound";
 };
 
-singleton Material(3td_Barrel01_ColorEffectR28G89B177_material)
+singleton Material(_3td_Barrel01_ColorEffectR28G89B177_material)
 {
    mapTo = "ColorEffectR28G89B177-material";
    diffuseColor[0] = "0.109804 0.34902 0.694118 1";
@@ -373,7 +393,7 @@ singleton Material(3td_Barrel01_ColorEffectR28G89B177_material)
    translucentBlendOp = "None";
 };
 
-singleton Material(3td_Pallet01_ColorEffectR228G184B153_material)
+singleton Material(_3td_Pallet01_ColorEffectR228G184B153_material)
 {
    mapTo = "ColorEffectR228G184B153-material";
    diffuseColor[0] = "0.894118 0.721569 0.6 1";
@@ -381,15 +401,85 @@ singleton Material(3td_Pallet01_ColorEffectR228G184B153_material)
    translucentBlendOp = "None";
 };
 
-singleton Material(3td_Pallet01_PalletWood01)
+singleton Material(_3td_Pallet01_PalletWood01)
 {
    mapTo = "PalletWood01";
-   diffuseMap[0] = "3td_PalletWood_01.jpg";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
-   normalMap[0] = "3td_PalletWood_01_NRM.png";
-   specularMap[0] = "3td_PalletWood_01_SPEC.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_NRM.png";
+   specularMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_SPEC.png";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(MetalFence01_FenceCorrigate01)
+{
+   mapTo = "FenceCorrigate01";
+   diffuseMap[0] = "3TD_Corrigate_Rust_01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "14";
+   translucentBlendOp = "None";
+   normalMap[0] = "3TD_Corrigate_Rust_01_NRM.png";
    useAnisotropic[0] = "1";
    doubleSided = "1";
+   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
+   pixelSpecular[0] = "1";
+};
+
+singleton Material(MetalFence01_ColorEffectR176G26B26_material)
+{
+   mapTo = "ColorEffectR176G26B26-material";
+   diffuseColor[0] = "0.690196 0.101961 0.101961 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(MetalFence01_RustyMetal05)
+{
+   mapTo = "RustyMetal05";
+   diffuseMap[0] = "3td_RustMetal_05";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "1";
+   translucentBlendOp = "None";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(MetalFence01_Corrigate02)
+{
+   mapTo = "Corrigate02";
+   diffuseMap[0] = "3TD_Corrigate_Rust_04";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   normalMap[0] = "3TD_Corrigate_Rust_04_NRM.png";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+};
+
+singleton Material(MetalFence01_ColorEffectR154G185B229_material)
+{
+   mapTo = "ColorEffectR154G185B229-material";
+   diffuseColor[0] = "0.603922 0.72549 0.898039 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(MetalFence01_Corigate04)
+{
+   mapTo = "Corigate04";
+   diffuseMap[0] = "3TD_Corrigate_Rust_04";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "29";
+   translucentBlendOp = "None";
+   normalMap[0] = "3TD_Corrigate_Rust_04_NRM.png";
+   pixelSpecular[0] = "1";
+};
+
+singleton Material(DefaultMaterial3)
+{
+   mapTo = "MoragsForgePointer";
+   diffuseMap[0] = "art/packs/tunnels/morags/MoragsForgePointer";
+   useAnisotropic[0] = "1";
 };
