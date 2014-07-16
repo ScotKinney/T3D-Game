@@ -63,7 +63,7 @@ datablock ProjectileData(FireballProjectile : BaseProjectile)
    bounceFriction = 0.01;
    isBallistic = true;
    gravityMod = 0.5;
-   decal = ScorchRXDecalSmall
+   decal = ScorchRXDecalSmall;
    retrievable = "";
 };
 
