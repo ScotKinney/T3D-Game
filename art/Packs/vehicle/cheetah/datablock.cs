@@ -240,6 +240,8 @@ datablock WheeledVehicleData(CheetahCar)
    // Absolute rotation tracking modes
    fpAbsRotationMode = "TurnCamera";
    tpAbsRotationMode = "TurnCamera";
+   
+   driverNode = 0;
 };
 
 function CheetahCar::onAdd(%this, %obj)

@@ -72,7 +72,8 @@ function PLAYERDATA::onMount(%this, %obj, %vehicle, %node)
       if ( isEventPending(%vehicle.aiLoop) )
          cancel(%vehicle.aiLoop);
 
-      %vehicle.setMountBaseSpeed(%vDB.mountBaseSpeed);
+      if ( %vDB.mountBaseSpeed !$= "" )
+         %vehicle.setMountBaseSpeed(%vDB.mountBaseSpeed);
       //%obj.setControlObject(%vehicle);
       %obj.setMountHeadAngles();
       if ( %vDB.mountHeadHThread !$= "" )
@@ -348,6 +349,7 @@ function PLAYERDATA::onCollision(%this, %obj, %col)
          %client.aiMount = %col;
          //%col.client = %client;
          %col.mountObject(%obj,%node,"0 0 0");//0 .35 -.1
+         %obj.setControlObject(%col);
       }
    }
    else if ( %obj.isBot && !isObject(%obj.owner) )
