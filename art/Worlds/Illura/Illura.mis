@@ -2155,7 +2155,7 @@ new SimGroup(MissionGroup) {
          active = "1";
          velocity = "1";
          emitter = "TorchFireEmitter";
-         dataBlock = "TorchFireEmitterNode";
+        dataBlock = "DefaultEmitterNodeData";
          position = "-153.313 159.632 140.308";
          rotation = "0 0 -1 109.289";
          scale = "1 1 1";
@@ -2166,7 +2166,7 @@ new SimGroup(MissionGroup) {
          active = "1";
          velocity = "1";
          emitter = "TorchFireEmitter";
-         dataBlock = "TorchFireEmitterNode";
+        dataBlock = "DefaultEmitterNodeData";
          position = "-157.323 158.989 140.278";
          rotation = "0 0 -1 109.289";
          scale = "1 1 1";
@@ -2259,7 +2259,7 @@ new SimGroup(MissionGroup) {
          active = "1";
          velocity = "1";
          emitter = "shrine_fire_emitter";
-         dataBlock = "TorchFireEmitterNode";
+        dataBlock = "DefaultEmitterNodeData";
          position = "-246.729 185.051 154.949";
          rotation = "0 0 -1 109.289";
          scale = "1 1 1";
@@ -6816,7 +6816,7 @@ new SimGroup(MissionGroup) {
             active = "1";
             velocity = "1";
             emitter = "shrine_fire_emitter";
-            dataBlock = "TorchFireEmitterNode";
+           dataBlock = "DefaultEmitterNodeData";
             position = "-247.192 182.217 154.48";
             rotation = "0 0 1 31.2768";
             scale = "1 1 1";
