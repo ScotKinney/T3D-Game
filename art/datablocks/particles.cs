@@ -154,6 +154,49 @@ datablock SpriteEmitterData(DamageNumberEmitter)
    useEmitterColors = true;
 };
 
+/////////////////GENERIC SMOKE//////////////////////
+
+datablock BillboardParticleData(GenericSmoke)
+{
+   textureName          = "core/art/particles/smoke";
+   dragCoefficient     = 0.3;
+   gravityCoefficient   = -0.5;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 3000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha = true;
+   spinRandomMin = -30.0;
+   spinRandomMax = 30.0;
+
+   //colors[0]     = "0.0 0.0 0.0 0.0";
+   //colors[1]     = "0.2 0.2 0.2 0.1";
+   //colors[2]     = "0.0 0.0 0.0 0.0";
+
+   sizes[0]      = 1.5;
+   sizes[1]      = 2.75;
+   sizes[2]      = 6.5;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock SphereEmitterData(GenericSmokeEmitter)
+{
+   ejectionPeriodMS = 10;
+   periodVarianceMS = 0;
+
+   ejectionVelocity = 1;
+   velocityVariance = 0.00;
+   ejectionOffset = 1.0;
+
+   thetaMin         = 1.0;
+   thetaMax         = 100.0;
+
+   particles = "GenericSmoke";
+   blendStyle = "NORMAL";
+};
+
 /////////////////SmokeEmitter//////////////////////////
 
 datablock BillboardParticleData(Smoke)
@@ -189,6 +232,216 @@ datablock SphereEmitterData(SmokeEmitter)
    thetaMax         = 90.0;
 
    particles        = Smoke;
+};
+
+/////////////////////////Large Smoke Emitter/////////////////////////////
+
+datablock BillboardParticleData(LargeSmoke)
+{
+   textureName          = "core/art/particles/smoke";
+   dragCoefficient     = 0.3;
+   gravityCoefficient   = -0.5;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 5000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha = true;
+   spinRandomMin = -30.0;
+   spinRandomMax = 30.0;
+
+   colors[0]     = "0.0 0.0 0.0 0.0";
+   colors[1]     = "0.2 0.2 0.2 0.1";
+   colors[2]     = "0.0 0.0 0.0 0.0";
+
+   sizes[0]      = 7.5;
+   sizes[1]      = 12.75;
+   sizes[2]      = 19.5;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+datablock SphereEmitterData(LargeSmokeEmitter)
+{
+   ejectionPeriodMS = 10;
+   periodVarianceMS = 0;
+
+   ejectionVelocity = 0.55;
+   velocityVariance = 0.00;
+   ejectionOffset = 2.0;
+   
+   //highResOnly = false;
+
+   thetaMin         = 1.0;
+   thetaMax         = 120.0;
+
+   particles = "LargeSmoke";
+};
+
+/////////////////////BIG SMOKE////////////////////////////
+
+datablock BillboardParticleData(BigSmoke)
+{
+   textureName          = "core/art/particles/smoke";
+   animTexName="core/art/particles/smoke";
+   HighResTexture = "core/art/particles/smoke";
+   dragCoefficient     = "0";
+   gravityCoefficient   = "-0.879336";   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 9000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha = true;
+   spinRandomMin = -30.0;
+   spinRandomMax = 30.0;
+   //colors[0]     = "0.0 0.0 0.0 0.0";
+   //colors[1]     = "0.2 0.2 0.2 0.1";
+   //colors[2]     = "0.0 0.0 0.0 0.0";
+   sizes[0]      = "50";
+   sizes[1]      = "41.6667";
+   sizes[2]      = "26.0417";
+   times[0]      = "0.104167";
+   times[1]      = "0.1875";
+   times[2]      = "0.291667";
+   colors[0] = "1 0.905882 0 1";
+   colors[2] = "0.352941 0.352941 0.352941 0.73";
+   colors[3] = "0.00787402 0.00787402 0.00787402 0";
+   sizes[3] = "21.8733";
+   sizes[4] = "20.4997";
+   sizes[5] = "20.5";
+   sizes[6] = "20.5";
+   sizes[7] = "20.5";
+   times[3] = "0.458333";
+   times[4] = "5";
+   times[5] = "5";
+   times[6] = "5";
+   times[7] = "5";
+   colors[1] = "1 0.396078 0 1";
+   spinSpeed = "0.458";
+};
+
+datablock SphereEmitterData(BigSmokeEmitter)
+{
+   ejectionPeriodMS = 120;
+   periodVarianceMS = 5;
+
+   ejectionVelocity = 0.2;
+   velocityVariance = 0.0;
+
+   thetaMin         = 0.0;
+   thetaMax         = 160.0;
+
+   particles = BigSmoke;
+   blendStyle = "NORMAL";
+};
+
+/////////////////////Huge SMOKE////////////////////////////
+
+datablock BillboardParticleData(HugeSmoke)
+{
+   textureName          = "core/art/particles/smoke";
+   dragCoefficient     = "0";
+   gravityCoefficient   = "-0.886447";   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 9000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha = true;
+   spinRandomMin = -30.0;
+   spinRandomMax = 30.0;
+
+   //colors[0]     = "0.0 0.0 0.0 0.0";
+   //colors[1]     = "0.2 0.2 0.2 0.1";
+   //colors[2]     = "0.0 0.0 0.0 0.0";
+
+   sizes[0]      = "50";
+   sizes[1]      = "37.4998";
+   sizes[2]      = "29.1661";
+
+   times[0]      = 0.0;
+   times[1]      = "0.364706";
+   times[2]      = "0.576471";
+   animTexName = "core/art/particles/smoke";
+   colors[0] = "1 0.708661 0 1";
+   colors[2] = "0.905512 0.905512 0.905512 0.00787402";
+   colors[3] = "0.00787402 0.00787402 0.00787402 0";
+   sizes[3] = "21.8746";
+   sizes[4] = "20.4997";
+   sizes[5] = "20.5";
+   sizes[6] = "20.5";
+   sizes[7] = "20.5";
+   times[3] = "1";
+   times[4] = "5";
+   times[5] = "5";
+   times[6] = "5";
+   times[7] = "5";
+   colors[1] = "0.456693 0.456693 0.456693 1";
+   spinSpeed = "0.458";
+};
+
+datablock SphereEmitterData(HugeSmokeEmitter)
+{
+   ejectionPeriodMS = 120;
+   periodVarianceMS = 5;
+   ejectionVelocity = 0.2;
+   velocityVariance = 0.0;
+   thetaMin         = 0.0;
+   thetaMax         = 160.0;
+   particles = HugeSmoke;
+   blendStyle = "NORMAL";
+};
+
+/////////////////////MoragVolcanoSmoke////////////////////////////
+
+datablock BillboardParticleData(MoragVolcanoSmoke)
+{
+   textureName          = "core/art/particles/smoke";
+   dragCoefficient     = "0";
+   gravityCoefficient   = "-0.886447";   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 9000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha = true;
+   spinRandomMin = -30.0;
+   spinRandomMax = 30.0;
+
+   //colors[0]     = "0.0 0.0 0.0 0.0";
+   //colors[1]     = "0.2 0.2 0.2 0.1";
+   //colors[2]     = "0.0 0.0 0.0 0.0";
+
+   sizes[0]      = "50";
+   sizes[1]      = "37.4998";
+   sizes[2]      = "29.1661";
+
+   times[0]      = 0.0;
+   times[1]      = "0.364706";
+   times[2]      = "0.576471";
+   animTexName = "core/art/particles/smoke";
+   colors[0] = "1 0.708661 0 1";
+   colors[2] = "0.905512 0.905512 0.905512 0.00787402";
+   colors[3] = "0.00787402 0.00787402 0.00787402 0";
+   sizes[3] = "21.8746";
+   sizes[4] = "20.4997";
+   sizes[5] = "20.5";
+   sizes[6] = "20.5";
+   sizes[7] = "20.5";
+   times[3] = "1";
+   times[4] = "5";
+   times[5] = "5";
+   times[6] = "5";
+   times[7] = "5";
+   colors[1] = "0.456693 0.456693 0.456693 1";
+   spinSpeed = "0.458";
+};
+
+datablock SphereEmitterData(MoragVolcanoSmokeEmitter)
+{
+   ejectionPeriodMS = 120;
+   periodVarianceMS = 5;
+   ejectionVelocity = 0.2;
+   velocityVariance = 0.0;
+   thetaMin         = 0.0;
+   thetaMax         = 160.0;
+   particles = MoragVolcanoSmoke;
+   blendStyle = "NORMAL";
 };
 
 /////////////////////////EmberEmitter/////////////////////////////////////
@@ -281,6 +534,57 @@ datablock SphereEmitterData(FireEmitter)
    thetaMax         = 100.0;
 
    particles        = "FireParticle";
+};
+
+///////////////////Large Fire Emitter//////////////////////////////////
+
+// LargeFire
+
+datablock BillboardParticleData(LargeFire)
+{
+   textureName          = "core/art/particles/smoke";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = -0.05;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 7000;
+   lifetimeVarianceMS   = 1000;
+   useInvAlpha = 0;
+   spinRandomMin = -90.0;
+   spinRandomMax = 90.0;
+   spinSpeed = 1.0;
+
+   colors[0]     = "0.2 0.2 0.0 0.2";
+   colors[1]     = "0.6 0.2 0.0 0.2";
+   colors[2]     = "0.4 0.0 0.0 0.1";
+   colors[3]     = "0.1 0.04 0.0 0.3";
+
+   sizes[0]      = 1.5;
+   sizes[1]      = 1.0;
+   sizes[2]      = 5.0;
+   sizes[3]      = 6.0;
+
+   times[0]      = 0.0;
+   times[1]      = 0.1;
+   times[2]      = 0.2;
+   times[3]      = 0.3;
+};
+
+datablock SphereEmitterData(LargeFireEmitter)
+{
+   ejectionPeriodMS = 10;
+   periodVarianceMS = 0;
+
+   ejectionVelocity = 0.55;
+   velocityVariance = 0.00;
+   ejectionOffset = 2.0;
+   
+   //highResOnly = false;
+
+   thetaMin         = 1.0;
+   thetaMax         = 120.0;
+
+   particles = "LargeFire";
 };
 
 ///////////////////TorchFireEmitter/////////////////////////////////////
@@ -953,131 +1257,7 @@ datablock SphereEmitterData(SplashEmitter)
    blendStyle = "ADDITIVE";
 };
 
-/////////////////////BIG SMOKE////////////////////////////
 
-datablock BillboardParticleData(BigSmoke)
-{
-   textureName          = "core/art/particles/smoke";
-   dragCoefficient     = "0";
-   gravityCoefficient   = "-0.881563";   // rises slowly
-   inheritedVelFactor   = 0.00;
-   lifetimeMS           = 9000;
-   lifetimeVarianceMS   = 250;
-   useInvAlpha = true;
-   spinRandomMin = -30.0;
-   spinRandomMax = 30.0;
-
-   //colors[0]     = "0.0 0.0 0.0 0.0";
-   //colors[1]     = "0.2 0.2 0.2 0.1";
-   //colors[2]     = "0.0 0.0 0.0 0.0";
-
-   sizes[0]      = "100";
-   sizes[1]      = "37.5";
-   sizes[2]      = "29.1667";
-
-   times[0]      = 0.0;
-   times[1]      = "0.368627";
-   times[2]      = "0.580392";
-   animTexName="core/art/particles/smoke";
-   colors[0] = "1 0.716535 0 1";
-   colors[2] = "0.905512 0.905512 0.905512 0.00787402";
-   colors[3] = "0.015748 0.015748 0.015748 0";
-   sizes[3] = "21.8746";
-   sizes[4] = "20.4997";
-   sizes[5] = "20.5";
-   sizes[6] = "20.5";
-   sizes[7] = "20.5";
-   times[3] = "1";
-   times[4] = "5";
-   times[5] = "5";
-   times[6] = "5";
-   times[7] = "5";
-   colors[1] = "0.456693 0.456693 0.456693 1";
-   spinSpeed = "0.458";
-};
-
-datablock BillboardParticleData(BigSmokeSmall)
-{
-   textureName          = "core/art/particles/smoke";
-   dragCoefficient     = 0.2;
-   gravityCoefficient   = -0.1;   // rises slowly
-   inheritedVelFactor   = 0.00;
-   lifetimeMS           = 3000;
-   lifetimeVarianceMS   = 250;
-   useInvAlpha = true;
-   spinRandomMin = -30.0;
-   spinRandomMax = 30.0;
-
-   //colors[0]     = "0.0 0.0 0.0 0.0";
-   //colors[1]     = "0.2 0.2 0.2 0.1";
-   //colors[2]     = "0.0 0.0 0.0 0.0";
-
-   sizes[0]      = 4.5;
-   sizes[1]      = 8.75;
-   sizes[2]      = 20.5;
-
-   times[0]      = 0.0;
-   times[1]      = 0.5;
-   times[2]      = 1.0;
-};
-
-datablock SphereEmitterData(BigSmokeEmitter)
-{
-   ejectionPeriodMS = 120;
-   periodVarianceMS = 5;
-
-   ejectionVelocity = 0.2;
-   velocityVariance = 0.0;
-
-   thetaMin         = 0.0;
-   thetaMax         = 160.0;
-
-   particles = BigSmoke;
-   blendStyle = "NORMAL";
-};
-
-/////////////////GENERIC SMOKE//////////////////////
-
-datablock BillboardParticleData(GenericSmoke)
-{
-   textureName          = "core/art/particles/smoke";
-   dragCoefficient     = 0.3;
-   gravityCoefficient   = -0.5;   // rises slowly
-   inheritedVelFactor   = 0.00;
-   lifetimeMS           = 3000;
-   lifetimeVarianceMS   = 250;
-   useInvAlpha = true;
-   spinRandomMin = -30.0;
-   spinRandomMax = 30.0;
-
-   //colors[0]     = "0.0 0.0 0.0 0.0";
-   //colors[1]     = "0.2 0.2 0.2 0.1";
-   //colors[2]     = "0.0 0.0 0.0 0.0";
-
-   sizes[0]      = 1.5;
-   sizes[1]      = 2.75;
-   sizes[2]      = 6.5;
-
-   times[0]      = 0.0;
-   times[1]      = 0.5;
-   times[2]      = 1.0;
-};
-
-datablock SphereEmitterData(GenericSmokeEmitter)
-{
-   ejectionPeriodMS = 10;
-   periodVarianceMS = 0;
-
-   ejectionVelocity = 1;
-   velocityVariance = 0.00;
-   ejectionOffset = 1.0;
-
-   thetaMin         = 1.0;
-   thetaMax         = 100.0;
-
-   particles = "GenericSmoke";
-   blendStyle = "NORMAL";
-};
 
 //////////////////////SLOW STEAM///////////////
 
@@ -1392,6 +1572,27 @@ datablock SphereEmitterData(LavaDisturbanceEmitter)
    ambientFactor = "0";
    softParticles = "0";
    alignDirection = "0 0 1";
+};
+
+///////////////////////LAVABALL/////////////////////////////
+
+
+datablock SphereEmitterData(LavaBallEmitter)
+{
+   ejectionPeriodMS = 10;
+   periodVarianceMS = 0;
+
+   ejectionVelocity = 0.55;
+   velocityVariance = 0.00;
+   ejectionOffset = 2.0;
+   
+   //highResOnly = false;
+
+   thetaMin         = 1.0;
+   thetaMax         = 120.0;
+   lifetimeMS       = 20000;
+
+   particles = "LargeFire" TAB "LargeSmoke";
 };
 
 //////////////////////////////Axels Tests///////////////////////////////////
