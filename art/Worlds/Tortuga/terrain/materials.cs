@@ -44,18 +44,19 @@ singleton Material(Spartan_rock_dif)
 {
    mapTo = "Spartan_rock_dif";
    diffuseMap[0] = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
-   specularPower[0] = "128";
-   pixelSpecular[0] = "1";
+   specularPower[0] = "59";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
    materialTag0 = "Rock";
    showFootprints = "1";
    detailNormalMapStrength[0] = "1";
-   specularStrength[0] = "0.8";
+   specularStrength[0] = "0.0980392";
    detailScale[0] = "3 3";
    detailMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
    diffuseColor[0] = "0.647059 0.384314 0.196078 0";
    customFootstepSound = "FootStepRock1Sound";
    normalMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
+   specular[0] = "0.576471 0.576471 0.576471 1";
 };
 //////////////////////////////////////////////////////////
 new TerrainMaterial()
