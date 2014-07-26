@@ -2268,3 +2268,6 @@ function MaterialEditorMapThumbnail::onRightClick( %this )
    
    %popup.showPopup( Canvas );
 }
+
+
+
