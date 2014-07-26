@@ -1,170 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
   <asset>
-    <created>2011-02-13T01:26:14Z</created>
-    <modified>2011-02-13T01:26:14Z</modified>
+    <contributor>
+      <author>Scot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+    </contributor>
+    <created>2014-07-24T17:25:02</created>
+    <modified>2014-07-24T17:25:02</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
   </asset>
-  <library_images>
-    <image id="Image_lavadisk1" name="Image_lavadisk1" depth="1">
-      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\LAVA.jpg</init_from>
-    </image>
-    <image id="Image_lavadisk2" name="Image_lavadisk2" depth="1">
-      <init_from>C:\BCNew\BloodClans\My Projects\BloodClans\game\art\Mats\LAVA.jpg</init_from>
-    </image>
-  </library_images>
-  <library_materials>
-    <material id="PMat_lavadisk1">
-      <instance_effect url="#Phong_lavadisk1"/>
-    </material>
-    <material id="PMat_lavadisk2">
-      <instance_effect url="#Phong_lavadisk2"/>
-    </material>
-  </library_materials>
   <library_effects>
-    <effect id="Phong_lavadisk1">
+    <effect id="LavaRock_dif">
       <profile_COMMON>
-        <newparam sid="lavadisk1-surface">
+        <newparam sid="LavaRock_dif_dds-surface">
           <surface type="2D">
-            <init_from>Image_lavadisk1</init_from>
-            <format>B8G8R8A8</format>
+            <init_from>LavaRock_dif_dds</init_from>
           </surface>
         </newparam>
-        <newparam sid="lavadisk1-sampler">
+        <newparam sid="LavaRock_dif_dds-sampler">
           <sampler2D>
-            <source>lavadisk1-surface</source>
-            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
-            <magfilter>LINEAR</magfilter>
+            <source>LavaRock_dif_dds-surface</source>
           </sampler2D>
         </newparam>
-        <technique sid="phong1">
+        <technique sid="common">
           <phong>
-            <emission><color>0 0 0 1.0</color></emission>
-            <ambient><color>0.6588 0.6588 0.6588 1.0</color></ambient>
-            <diffuse><texture texture="lavadisk1-sampler" texcoord="lavadisk1-TEX0"/></diffuse>
-            <specular><color>0 0 0 1.0</color></specular>
-            <transparency><float>1.0</float></transparency>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.6588 0.6588 0.6588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="LavaRock_dif_dds-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>1</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
           </phong>
         </technique>
       </profile_COMMON>
-    </effect>
-    <effect id="Phong_lavadisk2">
-      <profile_COMMON>
-        <newparam sid="lavadisk2-surface">
-          <surface type="2D">
-            <init_from>Image_lavadisk2</init_from>
-            <format>B8G8R8A8</format>
-          </surface>
-        </newparam>
-        <newparam sid="lavadisk2-sampler">
-          <sampler2D>
-            <source>lavadisk2-surface</source>
-            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
-            <magfilter>LINEAR</magfilter>
-          </sampler2D>
-        </newparam>
-        <technique sid="phong1">
-          <phong>
-            <emission><color>0 0 0 1.0</color></emission>
-            <ambient><color>0.6588 0.6588 0.6588 1.0</color></ambient>
-            <diffuse><texture texture="lavadisk2-sampler" texcoord="lavadisk2-TEX0"/></diffuse>
-            <specular><color>0 0 0 1.0</color></specular>
-            <transparency><float>1.0</float></transparency>
-          </phong>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>0</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
         </technique>
-      </profile_COMMON>
+      </extra>
     </effect>
   </library_effects>
+  <library_materials>
+    <material id="LavaRock_dif-material" name="LavaRock_dif">
+      <instance_effect url="#LavaRock_dif"/>
+    </material>
+  </library_materials>
   <library_geometries>
-    <geometry id="lavadisk1" name="lavadisk1">
+    <geometry id="geom-Lavadisk" name="Lavadisk">
       <mesh>
-        <source id="lavadisk1-positions">
-          <float_array id="lavadisk1-positions-array" count="24">-0.5 -0.0475 0.5 -0.5 0.0525 0.5 -0.5 -0.0475 -0.5 -0.5 0.0525 -0.5 0.5 -0.0475 0.5 0.5 0.0525 0.5 0.5 -0.0475 -0.5 0.5 0.0525 -0.5</float_array>
+        <source id="geom-Lavadisk-positions">
+          <float_array id="geom-Lavadisk-positions-array" count="48">-0.5 -0.003701746 0.5 -0.5 0.006805059 0.5 -0.5 -0.003701746 -0.5 -0.5 0.006805073 -0.5 0.5 -0.003701746 0.5 0.5 0.006805059 0.5 0.5 -0.003701746 -0.5 0.5 0.006805073 -0.5 -0.5 -0.003701746 0.5 -0.5 0.006805059 0.5 -0.5 -0.003701746 -0.5 -0.5 0.006805073 -0.5 0.5 -0.003701746 0.5 0.5 0.006805059 0.5 0.5 -0.003701746 -0.5 0.5 0.006805073 -0.5</float_array>
           <technique_common>
-            <accessor source="lavadisk1-positions-array" count="8" stride="3">
-              <param name="X" type="float"></param>
-              <param name="Y" type="float"></param>
-              <param name="Z" type="float"></param>
+            <accessor source="#geom-Lavadisk-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="lavadisk1-uvs">
-          <float_array id="lavadisk1-uvs-array" count="8">0 0 0 1.0 0.4 0 0.4 1.0</float_array>
+        <source id="geom-Lavadisk-normals">
+          <float_array id="geom-Lavadisk-normals-array" count="108">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 1.49012e-8 0 1 1.49012e-8 0 1 1.49012e-8 0 1 1.49012e-8 0 1 1.49012e-8 0 1 1.49012e-8 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
           <technique_common>
-            <accessor source="lavadisk1-uvs-array" count="4" stride="2">
-              <param name="S" type="float"></param>
-              <param name="T" type="float"></param>
+            <accessor source="#geom-Lavadisk-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="lavadisk1-vertices">
-          <input semantic="POSITION" source="#lavadisk1-positions"/>
+        <source id="geom-Lavadisk-map1">
+          <float_array id="geom-Lavadisk-map1-array" count="24">0 0 0 0 1 0 1 0 0 1 1 0 0 0 0 0 1 0 0.4 0 0 0.4 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Lavadisk-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Lavadisk-vertices">
+          <input semantic="POSITION" source="#geom-Lavadisk-positions"/>
         </vertices>
-        <triangles count="4" material="Mat_lavadisk1">
-          <input offset="0" semantic="VERTEX" source="#lavadisk1-vertices"/>
-          <input offset="1" semantic="TEXCOORD" source="#lavadisk1-uvs"/>
-          <p>5 1  4 0  6 2  7 3  5 1  6 2  3 1  2 0  0 2  1 3  3 1  0 2</p>
-        </triangles>
-      </mesh>
-    </geometry>
-    <geometry id="lavadisk2" name="lavadisk2">
-      <mesh>
-        <source id="lavadisk2-positions">
-          <float_array id="lavadisk2-positions-array" count="24">-0.5 -0.0475 0.5 -0.5 0.0525 0.5 -0.5 -0.0475 -0.5 -0.5 0.0525 -0.5 0.5 -0.0475 0.5 0.5 0.0525 0.5 0.5 -0.0475 -0.5 0.5 0.0525 -0.5</float_array>
-          <technique_common>
-            <accessor source="lavadisk2-positions-array" count="8" stride="3">
-              <param name="X" type="float"></param>
-              <param name="Y" type="float"></param>
-              <param name="Z" type="float"></param>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="lavadisk2-uvs">
-          <float_array id="lavadisk2-uvs-array" count="8">0 0 0 1.0 1.0 0 1.0 1.0</float_array>
-          <technique_common>
-            <accessor source="lavadisk2-uvs-array" count="4" stride="2">
-              <param name="S" type="float"></param>
-              <param name="T" type="float"></param>
-            </accessor>
-          </technique_common>
-        </source>
-        <vertices id="lavadisk2-vertices">
-          <input semantic="POSITION" source="#lavadisk2-positions"/>
-        </vertices>
-        <triangles count="8" material="Mat_lavadisk2">
-          <input offset="0" semantic="VERTEX" source="#lavadisk2-vertices"/>
-          <input offset="1" semantic="TEXCOORD" source="#lavadisk2-uvs"/>
-          <p>1 1  0 0  4 2  5 3  1 1  4 2  4 3  0 1  2 0  6 2  4 3  2 0  1 0  5 2  7 3  3 1  1 0  7 3  7 1  6 0  2 2  3 3  7 1  2 2</p>
+        <triangles material="LavaRock_dif" count="12">
+          <input semantic="VERTEX" source="#geom-Lavadisk-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Lavadisk-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Lavadisk-map1" offset="2" set="0"/>
+          <p>1 0 1 0 1 0 4 2 2 5 3 3 1 4 1 4 5 2 4 6 3 0 7 1 2 8 0 6 9 2 4 10 3 2 11 0 1 12 0 5 13 2 7 14 3 3 15 1 1 16 0 7 17 3 7 18 1 6 19 0 2 20 2 3 21 3 7 22 1 2 23 2 13 24 5 12 25 4 14 26 6 15 27 7 13 28 5 14 29 6 11 30 5 10 31 4 8 32 6 9 33 7 11 34 5 8 35 6</p>
         </triangles>
       </mesh>
     </geometry>
   </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="LavaRock_dif_dds">
+      <init_from>file:///F:/AV/TAP/Game/art/Packs/Terrains/Morags/LavaRock_dif.dds</init_from>
+    </image>
+  </library_images>
   <library_visual_scenes>
-    <visual_scene id="DefaultScene">
-      <node id="S_lavadisk1">
-        <instance_geometry url="#lavadisk1">
-          <bind_material>
-            <technique_common>
-              <instance_material symbol="Mat_lavadisk1" target="#PMat_lavadisk1">
-                <bind_vertex_input semantic="lavadisk1-TEX0" input_semantic="TEXCOORD" input_set="0"/>
-              </instance_material>
-            </technique_common>
-          </bind_material>
-        </instance_geometry>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
       </node>
-      <node id="S_lavadisk2">
-        <instance_geometry url="#lavadisk2">
+      <node id="node-Lavadisk" name="Lavadisk">
+        <rotate>-1 0 0 -90.00001</rotate>
+        <scale>0.3937008 0.3937008 0.3937008</scale>
+        <instance_geometry url="#geom-Lavadisk">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Mat_lavadisk2" target="#PMat_lavadisk2">
-                <bind_vertex_input semantic="lavadisk2-TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              <instance_material symbol="LavaRock_dif" target="#LavaRock_dif-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
           </bind_material>
         </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>MapChannel:1 = 
+</user_properties>
+          </technique>
+        </extra>
       </node>
     </visual_scene>
   </library_visual_scenes>
   <scene>
-    <instance_visual_scene url="#DefaultScene"/>
+    <instance_visual_scene url="#MaxScene"/>
   </scene>
 </COLLADA>
