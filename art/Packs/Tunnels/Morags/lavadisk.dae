@@ -4,9 +4,10 @@
     <contributor>
       <author>Scot</author>
       <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+      <source_data>file:///F:/AV/TAP/Game/art/Packs/Tunnels/Morags/Source/LavaDisk.max</source_data>
     </contributor>
-    <created>2014-07-24T17:25:02</created>
-    <modified>2014-07-24T17:25:02</modified>
+    <created>2014-07-26T16:13:28</created>
+    <modified>2014-07-26T16:13:28</modified>
     <unit name="inch" meter="0.0254"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -104,7 +105,7 @@
           </technique_common>
         </source>
         <source id="geom-Lavadisk-map1">
-          <float_array id="geom-Lavadisk-map1-array" count="24">0 0 0 0 1 0 1 0 0 1 1 0 0 0 0 0 1 0 0.4 0 0 0.4 1 0</float_array>
+          <float_array id="geom-Lavadisk-map1-array" count="24">-7.44972e-6 3.58218e-6 0 -7.44972e-6 3.139814 0 3.139803 3.58218e-6 0 3.139803 3.139814 0 0 0 0 0 1 0 0.4 0 0 0.4 1 0</float_array>
           <technique_common>
             <accessor source="#geom-Lavadisk-map1-array" count="8" stride="3">
               <param name="S" type="float"/>
@@ -136,7 +137,7 @@
   </library_lights>
   <library_images>
     <image id="LavaRock_dif_dds">
-      <init_from>file:///F:/AV/TAP/Game/art/Packs/Terrains/Morags/LavaRock_dif.dds</init_from>
+      <init_from>file:///F:/AV/TAP/Game/art/Packs/Tunnels/Morags/LavaRock_dif.dds</init_from>
     </image>
   </library_images>
   <library_visual_scenes>

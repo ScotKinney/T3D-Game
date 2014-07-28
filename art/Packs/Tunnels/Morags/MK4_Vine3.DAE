@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Scot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+      <source_data>file:///F:/AV/TAP/Game/art/Packs/Tunnels/Morags/Source/MK4_Vine3.max</source_data>
+    </contributor>
+    <created>2014-07-27T21:12:26</created>
+    <modified>2014-07-27T21:12:26</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="MK4_Vine">
+      <profile_COMMON>
+        <newparam sid="MK4_lianas_dds-surface">
+          <surface type="2D">
+            <init_from>MK4_lianas_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="MK4_lianas_dds-sampler">
+          <sampler2D>
+            <source>MK4_lianas_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="MK4_lianas_dds-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="MK4_lianas_dds-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>0</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="MK4_Vine-material" name="MK4_Vine">
+      <instance_effect url="#MK4_Vine"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-polySurface23" name="polySurface23">
+      <mesh>
+        <source id="geom-polySurface23-positions">
+          <float_array id="geom-polySurface23-positions-array" count="162">2.988717 16.37873 0.2614198 1.045568 17.47662 -0.04802561 -2.504106 7.003669 1.49143 -4.447257 8.101557 1.181985 2.012506 16.98335 0.5103598 -3.480317 7.60829 1.74037 -1.687128 2.414574 -0.5429235 2.769478 2.996513 -0.6542282 0.0374918 -10.63447 0.2854791 4.4941 -10.05254 0.1741745 0.5963898 2.740598 -0.1613431 2.321011 -10.30845 0.6670599 2.584604 9.439863 -2.864314 2.10895 9.758334 1.594914 1.968657 -3.705345 -1.991207 1.493005 -3.386875 2.468021 1.905166 9.619808 -0.6344409 1.289219 -3.5254 0.2386658 2.942843 9.275586 0.2917032 0.949831 9.657531 -0.6875672 0.482666 -1.343974 1.156713 -1.510345 -0.9620297 0.1774426 1.801601 9.530676 0.1775756 -0.658576 -1.088885 1.042586 -0.6622839 12.06845 1.263382 2.411141 13.04962 -1.867712 3.277616 -0.5176303 1.186725 6.351042 0.4635336 -1.944369 1.200167 12.65929 -0.02057219 5.140068 0.07320452 -0.09722972 1.149798 17.04943 -1.661671 3.559363 16.83748 2.12798 -0.251708 3.93649 -1.503931 2.157857 3.724543 2.28572 2.012506 16.98335 0.5103598 0.6109991 3.870412 0.6681013 1.871878 14.06946 2.212387 1.771694 14.76773 0.07245064 -5.391015 6.203802 -0.01418209 -5.491198 6.902071 -2.154119 1.519305 14.66397 1.262244 -5.743587 6.798318 -0.9643245 -0.7941837 12.80481 0.7999749 2.569296 10.87564 -1.475488 -4.49746 0.9900618 5.342638 -1.133982 -0.9390998 3.067176 1.187992 11.87022 -0.01481819 -2.515285 0.05547786 4.527845 1.897775 8.996967 -0.167356 3.557319 9.197164 1.343532 5.823589 -0.75195 -3.18768 7.483133 -0.5517542 -1.676793 2.942842 9.275586 0.2917037 6.868656 -0.4733312 -2.728621</float_array>
+          <technique_common>
+            <accessor source="#geom-polySurface23-positions-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-polySurface23-normals">
+          <float_array id="geom-polySurface23-normals-array" count="162">0.2395281 -0.0129693 0.9708029 -0.346724 0.3188765 0.8820999 0.2395281 -0.0129693 0.9708029 -0.346724 0.3188765 0.8820999 -0.05698754 0.1626265 0.9850406 -0.05698754 0.1626265 0.9850406 -0.1702389 0.04000599 0.9845905 0.2102591 0.08959228 0.973532 -0.1702389 0.04000599 0.9845905 0.2102591 0.08959228 0.973532 0.02038918 0.06602675 0.9976096 0.02038918 0.06602675 0.9976096 -0.955703 0.02530425 -0.2932431 -0.9947683 0.0524352 0.08767343 -0.955703 0.02530425 -0.2932431 -0.9947683 0.0524352 0.08767343 -0.9937115 0.03960611 -0.1047321 -0.9937115 0.03960611 -0.1047321 -0.07715664 0.09868725 0.9921229 -0.6800647 0.2146486 0.7010263 -0.07715664 0.09868725 0.9921229 -0.6800647 0.2146486 0.7010263 -0.4025543 0.1665757 0.9001125 -0.4025543 0.1665757 0.9001125 0.5255446 0.1594246 0.8356953 0.7869288 0.2428824 0.5672311 0.5255446 0.1594246 0.8356953 0.7869288 0.2428824 0.5672311 0.6686692 0.2049644 0.7147525 0.6686692 0.2049644 0.7147525 -0.9233384 0.1031355 0.3698774 -0.7162943 0.08488907 0.6926155 -0.9233384 0.1031355 0.3698774 -0.7162943 0.08488907 0.6926155 -0.8353478 0.09579336 0.541311 -0.8353478 0.09579336 0.541311 -0.6847023 0.4759993 0.5519126 -0.7184084 0.6894747 -0.09227151 -0.6847023 0.4759993 0.5519126 -0.7184084 0.6894747 -0.09227151 -0.7459221 0.6195896 0.2443545 -0.7459221 0.6195896 0.2443545 0.4498781 0.1941599 0.8717291 0.7361293 0.02925972 0.6762083 0.4498781 0.1941599 0.8717291 0.7361293 0.02925972 0.6762083 0.6042382 0.1138261 0.7886316 0.6042382 0.1138261 0.7886316 0.2828252 0.3859374 -0.8781016 0.785947 0.4483873 -0.4257186 0.2828252 0.3859374 -0.8781016 0.785947 0.4483873 -0.4257186 0.568181 0.4435439 -0.6931373 0.568181 0.4435439 -0.6931373</float_array>
+          <technique_common>
+            <accessor source="#geom-polySurface23-normals-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-polySurface23-map1">
+          <float_array id="geom-polySurface23-map1-array" count="162">0.6489292 1 0 0.5080088 1 0 0.6489292 0.3160979 0 0.5080088 0.3160979 0 0.5799894 1 0 0.5799894 0.3160979 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-polySurface23-map1-array" count="54" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-polySurface23-map2">
+          <float_array id="geom-polySurface23-map2-array" count="162">0.6489292 1 0 0.5080088 1 0 0.6489292 0.3160979 0 0.5080088 0.3160979 0 0.5799894 1 0 0.5799894 0.3160979 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0 0.3704498 0.1751598 0 0.5080088 0.1751598 0 0.5080088 1 0 0.3704498 1 0 0.226831 0.1751598 0 0.226831 1 0 0.5799894 0.3160979 0 0.6489292 0.3160979 0 0.6489292 1 0 0.5799894 1 0 0.5080088 0.3160979 0 0.5080088 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-polySurface23-map2-array" count="54" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-polySurface23-vertices">
+          <input semantic="POSITION" source="#geom-polySurface23-positions"/>
+        </vertices>
+        <triangles material="MK4_Vine" count="36">
+          <input semantic="VERTEX" source="#geom-polySurface23-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-polySurface23-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-polySurface23-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-polySurface23-map2" offset="3" set="1"/>
+          <p>5 5 5 5 2 2 2 2 0 0 0 0 0 0 0 0 4 4 4 4 5 5 5 5 3 3 3 3 5 5 5 5 4 4 4 4 4 4 4 4 1 1 1 1 3 3 3 3 11 11 6 6 9 9 7 7 7 7 8 8 7 7 8 8 10 10 9 9 11 11 6 6 8 8 10 10 11 11 6 6 10 10 9 9 10 10 9 9 6 6 11 11 8 8 10 10 17 17 12 12 15 15 13 13 13 13 14 14 13 13 14 14 16 16 15 15 17 17 12 12 14 14 16 16 17 17 12 12 16 16 15 15 16 16 15 15 12 12 17 17 14 14 16 16 23 23 18 18 20 20 19 19 18 18 20 20 18 18 20 20 22 22 21 21 23 23 18 18 21 21 22 22 23 23 18 18 22 22 21 21 22 22 21 21 19 19 23 23 21 21 22 22 29 29 24 24 27 27 25 25 25 25 26 26 25 25 26 26 28 28 27 27 29 29 24 24 26 26 28 28 29 29 24 24 28 28 27 27 28 28 27 27 24 24 29 29 26 26 28 28 35 35 30 30 33 33 31 31 31 31 32 32 31 31 32 32 34 34 33 33 35 35 30 30 32 32 34 34 35 35 30 30 34 34 33 33 34 34 33 33 30 30 35 35 32 32 34 34 41 41 36 36 38 38 37 37 36 36 38 38 36 36 38 38 40 40 39 39 41 41 36 36 39 39 40 40 41 41 36 36 40 40 39 39 40 40 39 39 37 37 41 41 39 39 40 40 47 47 42 42 45 45 43 43 43 43 44 44 43 43 44 44 46 46 45 45 47 47 42 42 44 44 46 46 47 47 42 42 46 46 45 45 46 46 45 45 42 42 47 47 44 44 46 46 53 53 48 48 50 50 49 49 48 48 50 50 48 48 50 50 52 52 51 51 53 53 48 48 51 51 52 52 53 53 48 48 52 52 51 51 52 52 51 51 49 49 53 53 51 51 52 52</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="MK4_lianas_dds">
+      <init_from>file:///F:/AV/TAP/Game/art/Packs/Tunnels/Morags/MK4_lianas.dds</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-polySurface23" name="polySurface23">
+        <rotate>-1 0 0 -90.00001</rotate>
+        <scale>0.3937008 0.3937008 0.3937008</scale>
+        <node>
+          <matrix>1 0 0 -1.988058 0 1 0 18.71204 0 0 1 -0.5438422 0 0 0 1</matrix>
+          <instance_geometry url="#geom-polySurface23">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="MK4_Vine" target="#MK4_Vine-material">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+            <user_properties>MapChannel:1 = map1
+MapChannel:2 = map1
+</user_properties>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
