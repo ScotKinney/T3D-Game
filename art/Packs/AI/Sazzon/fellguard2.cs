@@ -7,11 +7,10 @@ singleton TSShapeConstructor(fellguard2Dts)
 function fellguard2Dts::onLoad(%this)
 {
    %this.addSequence("art/packs/AI/Sazzon/fellguard_idle01.dsq", "root", "0", "-1");
-   %this.addSequence("art/packs/AI/Sazzon/fellguard_walk.dsq", "run", "0", "-1");
+   %this.addSequence("art/packs/AI/Sazzon/fellguard_walk.dsq", "walk", "0", "-1");
    %this.addSequence("art/packs/AI/Sazzon/fellguard_walk.dsq", "back", "0", "-1");
    %this.addSequence("art/packs/AI/Sazzon/fellguard_strafeleft.dsq", "side", "0", "-1");
-   %this.addSequence("art/packs/AI/Sazzon/fellguard_fall.dsq", "fall", "0", "-1");
-   %this.addSequence("art/packs/AI/Sazzon/fellguard_death01.dsq", "death1", "0", "-1");
+   %this.addSequence("art/packs/AI/Sazzon/fellguard_fall.dsq", "death1", "0", "-1");
    %this.addSequence("art/packs/AI/Sazzon/fellguard_death02.dsq", "death2", "0", "-1");
    %this.addSequence("art/packs/AI/Sazzon/fellguard_attack02.dsq", "attack1", "0", "-1");
    %this.addSequence("art/packs/AI/Sazzon/fellguard_gethit.dsq", "damage1", "0", "-1");
