@@ -7449,7 +7449,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
