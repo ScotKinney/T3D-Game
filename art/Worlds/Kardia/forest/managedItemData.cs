@@ -757,7 +757,7 @@ datablock TSForestItemData(SP_MK4_Rock5)
 datablock TSForestItemData(SP_OutCropRock)
 {
    internalName = "SP_OutCropRock";
-   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dts";
+   shapeFile = "art/Packs/Rocks/SP_Rocks/SP_OutCropRock.dae";
 };
 
 datablock TSForestItemData(SP_OvalRock)
