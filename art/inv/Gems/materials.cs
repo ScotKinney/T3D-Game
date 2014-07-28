@@ -68,7 +68,12 @@ singleton Material(Mat_SilverNug4)
 singleton Material(Diamond_Diamond2)
 {
    mapTo = "Diamond2";
-   diffuseMap[0] = "Oval.jpg";
+   diffuseMap[0] = "art/inv/Gems/Oval.jpg";
    glow[0] = "1";
    materialTag0 = "Gems";
+   castShadows = "0";
+   customFootstepSound = "FootStepMetal1Sound";
+   useAnisotropic[0] = "1";
+   alphaRef = "0";
+   showFootprints = "0";
 };
