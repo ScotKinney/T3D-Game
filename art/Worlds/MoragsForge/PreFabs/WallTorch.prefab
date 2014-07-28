@@ -1,0 +1,93 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new SFXEmitter() {
+      fileName = "art/sound/environment/fire1.wav";
+      sourceGroup = "AudioChannelEffects";
+      playOnAdd = "1";
+      useTrackDescriptionOnly = "0";
+      isLooping = "1";
+      isStreaming = "0";
+      volume = "3";
+      pitch = "1";
+      fadeInTime = "0";
+      fadeOutTime = "0";
+      is3D = "1";
+      referenceDistance = "1";
+      maxDistance = "20";
+      scatterDistance = "0 0 0";
+      coneInsideAngle = "360";
+      coneOutsideAngle = "360";
+      coneOutsideVolume = "1";
+      position = "-0.998688 -0.053833 0.486336";
+      rotation = "1 0 0 0";
+      scale = "20 20 20";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new PointLight() {
+      radius = "30";
+      isEnabled = "1";
+      //color = "1 0.533333 0 1";
+      color = "0.560784 0.866667 0.980392 1";
+      brightness = "4";
+      castShadows = "0";
+      priority = "1";
+      animate = "0";
+      animationType = "FireLightAnim";
+      animationPeriod = "3";
+      animationPhase = "4";
+      flareScale = "1";
+      attenuationRatio = "0 1 1";
+      shadowType = "DualParaboloidSinglePass";
+      texSize = "512";
+      overDarkFactor = "2000 1000 500 100";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      numSplits = "1";
+      logWeight = "0.91";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "1";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      position = "-0.29364 -0.0388184 0.570599";
+      rotation = "1 0 0 0";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new ParticleEmitterNode() {
+      active = "1";
+      emitter = "shrine_fire_emitter";
+      velocity = "1";
+      dataBlock = "DefaultEmitterNodeData";
+      position = "-0.432693 0.00805664 0.539608";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Tunnels/Morags/torch.DAE";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      ignoreZodiacs = "0";
+      useGradientRange = "0";
+      gradientRange = "0 180";
+      invertGradientRange = "0";
+      position = "1.72498 0.0843506 -1.59654";
+      rotation = "0 1 0 31.5449";
+      scale = "10 10 10";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+};
+//--- OBJECT WRITE END ---
