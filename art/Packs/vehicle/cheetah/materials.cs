@@ -23,12 +23,16 @@
 singleton Material(Cheetah_Main)
 {
    mapTo = "Cheetah_Main";
-   diffuseMap[0] = "art/Packs/vehicle/cheetah/Cheetah_D";
+   diffuseMap[0] = "Cheetah_D";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
+   specularPower[0] = "1";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/vehicle/cheetah/Cheetah_N";
-   specularMap[0] = "art/Packs/vehicle/cheetah/Cheetah_S";
+   normalMap[0] = "Cheetah_N";
+   specularMap[0] = "Cheetah_S";
+   specularStrength[0] = "0";
+   useAnisotropic[0] = "1";
+   emissive[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
 };
 
 singleton Material(Cheetah_TailLights)
@@ -51,10 +55,10 @@ singleton Material(Cheetah_Collider)
    translucent = "1";
 };
 
-singleton Material(Cheetah_Turret_Cheetah_MuzzleFlash)
+singleton Material(mat_Cheetah_MuzzleFlash)
 {
    mapTo = "Cheetah_MuzzleFlash";
-   diffuseMap[0] = "art/Packs/vehicle/cheetah/SkinPack1/Cheetah_MuzzleFlash_D";
+   diffuseMap[0] = "Cheetah_MuzzleFlash_D";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
