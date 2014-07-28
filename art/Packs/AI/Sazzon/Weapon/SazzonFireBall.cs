@@ -43,42 +43,45 @@ datablock SphereEmitterData(SazzonFireballEmitter)
 ///////////////////Sazzons Fireball Projectile
 
 // Fireball
-datablock ProjectileData(FireballProjectile : BaseProjectile)
+datablock ProjectileData(SazzonFireballProjectile : BaseProjectile)
 {
-   projectileShapeName = "art/Packs/AI/Sazzon/weapons/LavaRock.dts";
+   projectileShapeName = "art/Packs/AI/Sazzon/weapon/LavaRock.dts";
    scale="1 1 1";
    muzzleVelocity = 35;//25
    directDamage = 40;
    radiusDamage = 20;
    damageRadius = 5;
+   directImplulse = 100;
    areaImpulse = 100;
    shakeCamera = true;
    particleEmitter = SazzonFireballEmitter;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
+   explosion = 0;
+   waterExplosion = 0;
    lightDesc = 0;
-   velInheritFactor = 1.0;
+   gravityMod = 0.5;
    lifetime = 30000;//5000;
    fadeDelay = 5000;//5000;
+   decal = ScorchRXDecalSmall;
+   velInheritFactor = 1.0;
    bounceElasticity = 0.4;
    bounceFriction = 0.01;
    isBallistic = true;
-   gravityMod = 0.5;
-   decal = ScorchRXDecalSmall;
    retrievable = "";
 };
 
-datablock ProjectileData(FireballWetProjectile : FireballProjectile)
+datablock ProjectileData(FireballWetProjectile : SazzonFireballProjectile)
 {
    muzzleVelocity = 20;
    gravityMod = 0.1;
    particleWaterEmitter = ProjectileTrailWaterEmitter;
 };
 
-datablock ShapeBaseImageData(FireballImage : BaseTriggeredImage)
+datablock ShapeBaseImageData(SazzonFireballImage : BaseTriggeredImage)
 {
-   shapefile = "art/Packs/AI/Sazzon/weapons/LavaRock.dts";
+   shapefile = "art/Packs/AI/Sazzon/weapon/LavaRock.dts";
    scale = "1 1 1";
-   projectile = FireballProjectile;
+   projectile = SazzonFireballProjectile;
    wetProjectile = FireballWetProjectile;
    fireSound = SazzonFireballSound;
    fireAnim = "attack1";
