@@ -8,7 +8,7 @@ function MinerDts::onLoad(%this)
 {
    %this.addSequence("art/Packs/AI/MoragsMiner/Miner_Idle.dsq", "root", "0", "-1");
    %this.setSequenceCyclic("root", "1");
-   %this.addSequence("art/Packs/AI/MoragsMiner/Miner_Run.dsq", "run", "0", "337");
+   %this.addSequence("art/Packs/AI/MoragsMiner/Miner_Run.dsq", "walk", "0", "337");
    %this.setSequenceCyclic("run", "1");
    %this.addSequence("art/Packs/AI/MoragsMiner/Miner_Back.dsq", "back", "0", "51");
    %this.setSequenceCyclic("back", "1");
