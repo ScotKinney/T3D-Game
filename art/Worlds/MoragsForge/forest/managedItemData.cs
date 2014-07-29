@@ -78,3 +78,9 @@ datablock TSForestItemData(MK4_Vine1)
    internalName = "MK4_Vine1";
    shapeFile = "art/Packs/Tunnels/Morags/MK4_Vine1.DAE";
 };
+
+datablock TSForestItemData(MrN_AshTree)
+{
+   internalName = "MrN_AshTree";
+   shapeFile = "art/Packs/Tunnels/Morags/MrN_AshTree.DAE";
+};

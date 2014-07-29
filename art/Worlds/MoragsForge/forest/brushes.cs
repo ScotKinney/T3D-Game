@@ -249,5 +249,23 @@ new SimGroup(ForestBrushGroup) {
       elevationMin = "-10000";
       elevationMax = "10000";
    };
+   new ForestBrushElement() {
+      internalName = "MrN_AshTree";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      ForestItemData = "MrN_AshTree";
+      probability = "1";
+      rotationRange = "360";
+      scaleMin = "0.5";
+      scaleMax = "1.5";
+      scaleExponent = "1";
+      sinkMin = "0.1";
+      sinkMax = "0.5";
+      sinkRadius = "1";
+      slopeMin = "0";
+      slopeMax = "30";
+      elevationMin = "-10000";
+      elevationMax = "10000";
+   };
 };
 //--- OBJECT WRITE END ---
