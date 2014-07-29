@@ -73,7 +73,10 @@ singleton Material(mat_PlanksOld0348_L)
 singleton Material(fencePostBasic00A_mat)
 {
    mapTo = "fencePostBasic00A";
-   diffuseMap[0] = "fencePostBasic00A.png";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/fencePostBasic00A.png";
+   useAnisotropic[0] = "1";
+   emissive[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
 
 ////////////////////////////////
@@ -284,8 +287,10 @@ singleton Material(mat_Corigate04)
 singleton Material(mat_MoragsForgePointer)
 {
    mapTo = "MoragsForgePointer";
-   diffuseMap[0] = "MoragsForgePointer";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/MoragsForgePointer";
    useAnisotropic[0] = "1";
+   emissive[0] = "1";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(mat_ColorEffectR140G88B225)
@@ -303,17 +308,18 @@ singleton Material(mat_ColorEffectR140G88B225)
 singleton Material(mat_LavaRock_dif)
 {
    mapTo = "LavaRock_dif";
-   diffuseMap[0] = "LavaRock_dif.dds";
-   normalMap[0] = "LavaRock_nm.dds";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/LavaRock_dif.dds";
+   normalMap[0] = "art/Packs/Tunnels/Morags/LavaRock_nm.dds";
    specularPower[0] = "6";
    specularStrength[0] = "0.0980392";
    pixelSpecular[0] = "1";
-   specularMap[0] = "LavaRock_spec.dds";
+   specularMap[0] = "art/Packs/Tunnels/Morags/LavaRock_spec.dds";
    useAnisotropic[0] = "1";
    animFlags[0] = "0x00000001";
    scrollDir[0] = "0.02 0";
    scrollSpeed[0] = "0.1";
    materialTag0 = "MoragsForge";
+   glow[0] = "0";
 };
 
 singleton Material(mat_BraceWood_dif)
@@ -368,13 +374,8 @@ singleton Material(mat_CratesSimple0001stain4)
    mapTo = "CratesSimple0001stain4";
    diffuseColor[0] = "0.407843 0.407843 0.407843 1";
    diffuseMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4";
-   useAnisotropic[0] = "1";
+   normalMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4_NORM.png";
+  useAnisotropic[0] = "1";
 };
 
-singleton Material(DefaultMaterial)
-{
-   mapTo = "CratesSimple0001stain4";
-   diffuseColor[0] = "0.407843 0.407843 0.407843 1";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4";
-   normalMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4_NORM.png";
-};
+
