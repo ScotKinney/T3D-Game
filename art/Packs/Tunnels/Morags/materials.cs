@@ -369,13 +369,15 @@ singleton Material(mat_MK4_Vine)
    doubleSided = "1";
 };
 
-singleton Material(mat_CratesSimple0001stain4)
+singleton Material(mat_CrateSimple)
 {
    mapTo = "CratesSimple0001stain4";
    diffuseColor[0] = "0.407843 0.407843 0.407843 1";
    diffuseMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4";
    normalMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4_NORM.png";
   useAnisotropic[0] = "1";
+   emissive[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 
