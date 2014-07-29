@@ -1,11 +1,11 @@
-singleton Material(Mat_fGuard)
+
+singleton Material(mat_Sazzon)
 {
-    mapTo = "fguard";
-   diffuseMap[0] = "Sazzon_dif.dds";
-   translucent = "0";
-   normalMap[0] = "Sazzon_nm.dds";
-   specularPower[0] = "1";
-   pixelSpecular[0] = "0";
+   mapTo = "fguard2";
+   diffuseMap[0] = "art/Packs/AI/Sazzon/Sazzon_dif.dds";
+   normalMap[0] = "art/Packs/AI/Sazzon/Sazzon_nmp.dds";
+   specularMap[0] = "art/Packs/AI/Sazzon/Sazzon_spec.dds";
+   parallaxScale[0] = "0.0138889";
    useAnisotropic[0] = "1";
    emissive[0] = "1";
 };
