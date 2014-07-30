@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
       visibleDistance = "1200";
       visiblePlayers = "300";
       decalBias = "0.0015";
-      fogColor = "0.0862745 0.0588235 0.0392157 1";
+      fogColor = "1 0.34902 0 1";
       fogDensity = "0.0001";
       fogDensityOffset = "100";
       fogAtmosphereHeight = "1000";
@@ -24,7 +24,7 @@ new SimGroup(MissionGroup) {
          canBringHorses = "0";
          canTeleport = "1";
          desc0 = "Morags Forge";
-         displayName = "Morag\'s Forge";
+         displayName = "Morag\'\'s Forge";
          enabled = "1";
          hasTreasury = "0";
          LevelName = "Morag\'s Forge";
@@ -71,6 +71,51 @@ new SimGroup(MissionGroup) {
       rotation = "1 0 0 0";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };
+   new DecalRoad() {
+      Material = "mat_LavaRock_dif";
+      textureLength = "15";
+      breakAngle = "3";
+      renderPriority = "10";
+      position = "-52.7694 -104.839 175.092";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+
+      Node = "-52.769417 -104.838791 175.092285 5.000000";
+      Node = "-50.631218 -104.674416 175.183105 5.000000";
+      Node = "-40.550056 -103.769432 162.844727 5.000000";
+      Node = "-34.988186 -104.243546 151.140625 5.000000";
+      Node = "-28.663834 -104.458206 137.479004 5.000000";
+      Node = "-22.506329 -104.275040 125.956543 5.000000";
+      Node = "-12.586384 -104.443024 109.207520 5.000000";
+      Node = "0.810852 -101.905922 91.232910 5.000000";
+      Node = "22.762024 -96.931625 70.071289 5.000000";
+      Node = "40.558048 -90.009064 56.539063 5.000000";
+      Node = "60.708969 -80.122543 42.932129 5.000000";
+      Node = "77.600349 -71.421654 33.454590 5.000000";
+      Node = "85.882690 -67.819992 29.912109 5.000000";
+      Node = "101.154259 -60.063366 25.079102 5.000000";
+      Node = "119.649551 -49.399288 21.000000 5.000000";
+      Node = "134.409714 -39.555580 17.984375 5.000000";
+      Node = "145.363586 -31.353832 15.361328 5.000000";
+      Node = "154.611145 -24.784084 12.837891 5.000000";
+      Node = "173.434647 -12.501097 9.844238 5.000000";
+      Node = "185.372757 -4.050518 8.578613 5.000000";
+      Node = "188.242859 -1.787130 8.594727 5.000000";
+      Node = "195.352188 4.973139 7.984375 5.000000";
+      Node = "199.918045 9.615412 7.147461 5.000000";
+      Node = "203.459457 13.256144 6.877930 5.000000";
+      Node = "210.319717 20.800406 6.160645 5.000000";
+      Node = "217.553574 28.820076 5.121094 5.000000";
+      Node = "228.239868 40.740479 4.033691 5.000000";
+      Node = "233.751099 48.577332 3.630859 5.000000";
+      Node = "238.366959 54.745499 2.969727 5.000000";
+      Node = "246.603806 65.335358 1.554688 5.000000";
+      Node = "256.694489 79.100372 1.721191 5.000000";
+      Node = "265.242157 89.580475 0.441406 5.000000";
+      Node = "276.191650 102.885521 -0.911133 5.000000";
    };
    new SimGroup(TunnelZones) {
       canSave = "1";
@@ -232,8 +277,8 @@ new SimGroup(MissionGroup) {
          rayleighScattering = "0.007";
          sunScale = "0.827451 0.686275 0.415686 1";
          ambientScale = "0.996078 0.996078 0.996078 1";
-         fogScale = "0.215686 0.211765 0.211765 1";
-         exposure = "10";
+         fogScale = "1 0.34902 0 1";
+         exposure = "5";
          zoffset = "0";
          azimuth = "170";
          elevation = "25";
@@ -272,9 +317,9 @@ new SimGroup(MissionGroup) {
             mieScattering = "0.0001";
       };
       new GroundPlane() {
-         squareSize = "16";
-         scaleU = "1";
-         scaleV = "1";
+         squareSize = "32";
+         scaleU = "2";
+         scaleV = "2";
          Material = "mat_LavaRock_dif";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -499,44 +544,28 @@ new SimGroup(MissionGroup) {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "319.407 199.58 0.846313";
-      rotation = "-0.0449943 -0.0187566 -0.998811 31.4919";
+      position = "332.362 197.566 0.642536";
+      rotation = "-0.719389 -0.659474 -0.218115 1.56419";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "e2c93646-0d39-11e4-8ca6-939352804558";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2956";
+         leftBrakeLight = "2959";
          mountable = "1";
-         rightBrakeLight = "2955";
+         rightBrakeLight = "2958";
    };
    new WheeledVehicle() {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "327.735 200.882 0.773596";
-      rotation = "-0.3962 -0.0892599 -0.913815 5.02994";
+      position = "310.342 188.065 0.988004";
+      rotation = "-0.051478 -0.0670905 -0.996418 15.0161";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "8ba2adbc-0dcd-11e4-bb43-c2f59bcfb166";
-         Client = "-1";
-         driver = "-1";
-         leftBrakeLight = "2960";
-         mountable = "1";
-         rightBrakeLight = "2959";
-   };
-   new WheeledVehicle() {
-      disableMove = "0";
-      isAIControlled = "0";
-      dataBlock = "CheetahCar";
-      position = "309.715 194.344 0.980763";
-      rotation = "-0.0160089 -0.0263804 -0.999524 59.1014";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-      persistentId = "92e487ed-0dcd-11e4-bb43-c2f59bcfb166";
          Client = "-1";
          driver = "-1";
          leftBrakeLight = "2963";
@@ -547,17 +576,33 @@ new SimGroup(MissionGroup) {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "300.027 190.048 1.1631";
-      rotation = "-0.0125284 -0.0135282 -0.99983 112.297";
+      position = "323.001 194.424 0.768397";
+      rotation = "-0.14832 -0.124883 -0.981023 6.95827";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      persistentId = "92e487ed-0dcd-11e4-bb43-c2f59bcfb166";
+         Client = "-1";
+         driver = "-1";
+         leftBrakeLight = "2966";
+         mountable = "1";
+         rightBrakeLight = "2965";
+   };
+   new WheeledVehicle() {
+      disableMove = "0";
+      isAIControlled = "0";
+      dataBlock = "CheetahCar";
+      position = "316.401 191.415 0.867946";
+      rotation = "-0.166723 -0.311108 -0.935636 3.53382";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "a55c4766-0dcd-11e4-bb43-c2f59bcfb166";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2966";
+         leftBrakeLight = "2969";
          mountable = "1";
-         rightBrakeLight = "2965";
+         rightBrakeLight = "2968";
    };
    new TSStatic(SazzonsLavaFall) {
       shapeName = "art/Packs/Tunnels/Morags/lavafall.DAE";
@@ -604,7 +649,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "18.2768 -108.184 100.779";
+         position = "18.2768 -108.184 69.8861";
          rotation = "0 0 1 54.3449";
          scale = "36.592 10 10";
          canSave = "1";
@@ -1001,7 +1046,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(LittleSazzy) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-135.29 -640.834 -122.949";
+      position = "-217.904 -798.152 -107.841";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1206,8 +1251,8 @@ new SimGroup(MissionGroup) {
    new StaticShape(SazzySnapper) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-114.954 -232.628 -131.4";
-      rotation = "1 0 0 0";
+      position = "-163.303 -471.588 -146.466";
+      rotation = "0 0 1 180.001";
       scale = "0.3 0.3 0.3";
       hidden = "1";
       canSave = "1";
@@ -1232,7 +1277,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(SazzyBaby) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "88.6388 782.11 -172.977";
+      position = "111.655 562.386 -161.293";
       rotation = "0 0 1 35.4498";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1258,7 +1303,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(FatSazzy) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "88.6388 782.11 -172.977";
+      position = "50.8247 310.104 -157.74";
       rotation = "0 0 1 35.4498";
       scale = "0.5 0.5 0.3";
       hidden = "1";
@@ -1495,7 +1540,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(SurfaceSazz1) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-114.954 -232.628 9.3141";
+      position = "-114.954 -232.628 27.3329";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1568,7 +1613,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(SurfaceSazz4) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-141.127 642.744 10.8182";
+      position = "-141.127 363.596 8.78147";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1592,7 +1637,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(SurfaceSazz5) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-645.459 161.524 12.9317";
+      position = "-340.801 161.524 9.42554";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1616,7 +1661,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(SurfaceSazz6) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-645.459 -46.4258 15.2701";
+      position = "-272.83 -103.859 15.2701";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -8794,178 +8839,10 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
-   new SimGroup(LavaFireSparks) {
+   new SimGroup(LavaFireSparksTunnel) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new ParticleEmitterNode(LavaSparks711111) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "547.093 417.567 -5.37935";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire71) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "-454.726 291.238 -6.23968";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks71) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "-452.796 291.854 -4.49767";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire711) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "-535.166 302.001 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks711) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "-533.236 302.617 -5.37935";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire7111) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "327.034 165.87 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks7111) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "361.289 184.762 -0.141991";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire71111) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "527.762 278.544 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks71111) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "529.692 279.16 -5.37935";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire71112) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "105.99 47.818 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks71112) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "107.92 48.434 -5.37935";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire7111211) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "162.612 -64.7994 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaSparks7111211) {
-         active = "1";
-         velocity = "1";
-         emitter = "EmberEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "164.542 -64.1834 -5.37935";
-         rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
-      new ParticleEmitterNode(LavaFire711111) {
-         active = "1";
-         velocity = "1";
-         emitter = "LargeFireEmitter";
-         dataBlock = "DefaultEmitterNodeData";
-         position = "545.163 416.951 -7.12136";
-         rotation = "1 0 0 0";
-         scale = "14.6962 10.4084 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            enabled = "1";
-      };
       new ParticleEmitterNode(LavaSparks) {
          active = "1";
          velocity = "1";
@@ -9363,6 +9240,191 @@ new SimGroup(MissionGroup) {
             enabled = "1";
       };
    };
+   new SimGroup(LavaFireSparksGround) {
+      canSave = "1";
+      canSaveDynamicFields = "1";
+
+      new ParticleEmitterNode(LavaFire711112) {
+         active = "1";
+         velocity = "1";
+         emitter = "LargeFireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "505.933 167.798 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire711111) {
+         active = "1";
+         velocity = "1";
+         emitter = "LargeFireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "545.163 416.951 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks711111) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "499.33 345.259 0.271119";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire71) {
+         active = "1";
+         velocity = "1";
+         emitter = "LargeFireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-475.981 291.238 -0.59269";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks71) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-458.386 291.854 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire711) {
+         active = "1";
+         velocity = "1";
+         emitter = "LargeFireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-455.363 304.004 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks711) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "-533.236 302.617 -5.37935";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire7111) {
+         active = "1";
+         velocity = "1";
+         emitter = "FireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "339.061 165.87 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks7111) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "361.289 184.762 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire71111) {
+         active = "1";
+         velocity = "1";
+         emitter = "LargeFireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "505.933 278.544 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks71111) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "502.71 279.16 -0.631812";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire71112) {
+         active = "1";
+         velocity = "1";
+         emitter = "FireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "165.087 -17.1278 10.174";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks71112) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "165.087 -17.1278 10.174";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaFire7111211) {
+         active = "1";
+         velocity = "1";
+         emitter = "FireEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "194.287 4.30082 8.20522";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+      new ParticleEmitterNode(LavaSparks7111211) {
+         active = "1";
+         velocity = "1";
+         emitter = "EmberEmitter";
+         dataBlock = "DefaultEmitterNodeData";
+         position = "194.287 4.30082 8.20522";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+      };
+   };
    new SimGroup(Torch_exploded) {
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -9498,6 +9560,39 @@ new SimGroup(MissionGroup) {
       position = "-93.4823 188.802 -142.012";
       rotation = "1 0 0 0";
       scale = "4 4 4";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new ParticleEmitterNode(LavaSpray1) {
+      active = "1";
+      velocity = "1";
+      emitter = "LavaSprayTop";
+      dataBlock = "DefaultEmitterNodeData";
+      position = "366.498 167.798 -0.631812";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new ParticleEmitterNode(LavaSpray2) {
+      active = "1";
+      velocity = "1";
+      emitter = "LavaSprayTop";
+      dataBlock = "DefaultEmitterNodeData";
+      position = "365.502 173.796 -0.631812";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new ParticleEmitterNode(LavaSmoke) {
+      active = "1";
+      velocity = "1";
+      emitter = "GenericSmokeEmitter";
+      dataBlock = "DefaultEmitterNodeData";
+      position = "350.502 166.088 0.0356145";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };

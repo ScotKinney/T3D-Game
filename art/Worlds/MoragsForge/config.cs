@@ -7,7 +7,8 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "SkyBoxes/MoragSky" TAB
    "GroundCover/Default" TAB
    "Precip/Rain" TAB
-   "Rocks/SP_Rocks" TAB  
+   "Rocks/SP_Rocks" TAB 
+   "Roads/CheetahPath" TAB  
    "Tunnels/Morags" TAB
    "Vehicle/Cheetah" TAB
    "AI/Sazzon" TAB
