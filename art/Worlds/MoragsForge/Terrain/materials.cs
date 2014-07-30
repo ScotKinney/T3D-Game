@@ -1,13 +1,17 @@
 singleton Material( Ter_RockLow )
 {
    mapTo = "MoRock1_dif";
-   customFootstepSound = FootStepRock1Sound;
+   customFootstepSound = FootStepGrass1Sound;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(Ter_Ground)   
 {   
    mapTo = "MoRockGrey_dif";   
    customFootstepSound = FootStepSand1Sound; 
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 }; 
 
 singleton Material(Spartan_rock_dif)
@@ -34,27 +38,27 @@ singleton Material(Spartan_rock_dif)
 new TerrainMaterial()
 {
    diffuseMap = "art/Packs/Terrains/Morags/MoRock1_dif";
-   diffuseSize = "64";
-   detailSize = "32";
-   detailStrength = "0.1";
-   detailDistance = "1000";
-   parallaxScale = "0";
+   diffuseSize = "128";
+   detailSize = "4";
+   detailStrength = "0.2";
+   detailDistance = "500";
+   parallaxScale = "0.01";
    internalName = "Rock_Low";
    materialTag0 = "MoragsForge";
-   detailMap = "art/Packs/Terrains/Morags/MoRock1_det";
    normalMap = "art/Packs/Terrains/Morags/MoRock1_nmp";
+   detailMap = "art/Packs/Terrains/Morags/MoRock1_det";
 };
 
 new TerrainMaterial()
 {
    diffuseMap = "art/Packs/Terrains/Morags/MoRockGrey_dif";
    diffuseSize = "128";
-   detailMap = "art/Packs/Terrains/Morags/MoRock1_det";
    detailSize = "16";
-   detailStrength = "0.1";
+   detailStrength = "0.2";
    detailDistance = "500";
-   parallaxScale = "0.03";
+   parallaxScale = "0.05";
    internalName = "Ground";
    materialTag0 = "MoragsForge";
-   normalMap = "art/Packs/Terrains/Morags/MoRock1_nmp";
+   normalMap = "art/Packs/Terrains/Morags/MoGround_nmp";
+   detailMap = "art/Packs/Terrains/Morags/MoGround_det";
 };
