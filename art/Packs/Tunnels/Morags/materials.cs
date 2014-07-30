@@ -118,7 +118,7 @@ singleton Material(mat_Corrigate01)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "6";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    alphaRef = "0";
@@ -163,10 +163,10 @@ singleton Material(mat_DrumMetal)
    specularPower[0] = "24";
    translucentBlendOp = "None";
    diffuseMap[0] = "3td_DrumMetal_01";
-   normalMap[0] = "3td_DrumMetal_01_NRM.png";
+   normalMap[0] = "3td_DrumMetal_01_NRM";
    specularStrength[0] = "1.17647";
    pixelSpecular[0] = "1";
-   specularMap[0] = "3td_DrumMetal_01_SPEC.png";
+   specularMap[0] = "3td_DrumMetal_01_SPEC";
    useAnisotropic[0] = "1";
    detailSize = "4";
    diffuseSize = "128";
@@ -182,8 +182,8 @@ singleton Material(mat_OilDrumTop)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
-   normalMap[0] = "3td_OilDrumTop_01_NRM.png";
-   specularMap[0] = "3td_OilDrumTop_01_SPEC.png";
+   normalMap[0] = "3td_OilDrumTop_01_NRM";
+   specularMap[0] = "3td_OilDrumTop_01_SPEC";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepMetal1Sound";
    materialTag0 = "MoragsForge";
@@ -209,9 +209,9 @@ singleton Material(mat_PalletWood01)
 {
    mapTo = "PalletWood01";
    diffuseColor[0] = "0.231373 0.231373 0.231373 1";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01.jpg";
-   normalMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_NRM.png";
-   specularMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_SPEC.png";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_NRM";
+   specularMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_SPEC";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MoragsForge";
@@ -228,16 +228,17 @@ singleton Material(mat_FenceCorrigate01)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "14";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    diffuseColor[0] = "0.298039 0.298039 0.298039 1";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    materialTag0 = "MoragsForge";
    detailDistance = "500";
    detailSize = "4";
    diffuseSize = "128";
    detailStrength = "0.5";
+   customFootstepSound = "FootStepMetal1Sound";
 };
 
 singleton Material(mat_ColorEffectR176G26B26)
@@ -263,19 +264,28 @@ singleton Material(mat_RustyMetal05)
    detailSize = "4";
    diffuseSize = "128";
    detailStrength = "0.5";
+   customFootstepSound = "FootStepMetal1Sound";
 };
 
-singleton Material(mat_Corrigate02)
+singleton Material(mat_Corrigate04)
 {
-   mapTo = "Corrigate02";
-   diffuseMap[0] = "3TD_Corrigate_Rust_04";
+   mapTo = "Corigate04";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
+   specularPower[0] = "29";
    translucentBlendOp = "None";
-   normalMap[0] = "3TD_Corrigate_Rust_04_NRM.png";
-   useAnisotropic[0] = "1";
-   doubleSided = "1";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04_NRM";
+   useAnisotropic[0] = "0";
+   doubleSided = "0";
    materialTag0 = "MoragsForge";
+   diffuseColor[0] = "0.227451 0.227451 0.227451 1";
+   pixelSpecular[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+   specularStrength[0] = "0.294118";
 };
 
 singleton Material(mat_Corrigate04)
@@ -285,7 +295,7 @@ singleton Material(mat_Corrigate04)
    specularPower[0] = "29";
    translucentBlendOp = "None";
    diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04";
-   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04_NRM.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04_NRM";
    specular[0] = "0.9 0.9 0.9 1";
    pixelSpecular[0] = "1";
    detailSize = "4";
@@ -399,4 +409,13 @@ singleton Material(mat_CrateSimple)
    materialTag0 = "MoragsForge";
 };
 
-
+singleton Material(ColorEffectR154G185B229-material_mat)
+{
+   mapTo = "ColorEffectR154G185B229-material";
+   diffuseColor[0] = "0.0156863 0.0156863 0.0156863 1";
+   detailDistance = "500";
+   materialTag0 = "MoragsForge";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+};
