@@ -8,7 +8,7 @@ singleton Material(mat_lavafall)
    animFlags[0] = "0x00000001";
    scrollDir[0] = "0 -0.14";
    scrollSpeed[0] = "0.882";
-   materialTag0 = "Morags";
+   materialTag0 = "MoragsForge";
    emissive[0] = "1";
    glow[0] = "1";
    vertColor[0] = "1";
@@ -26,23 +26,13 @@ singleton Material(mat_bones)
 singleton Material(mat_rivergrass)
 {
    mapTo = "rivergrass";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/rivergrass_diffuse_transparency.dds";
+   diffuseMap[0] = "rivergrass_diffuse_transparency.dds";
    translucent = "1";
    materialTag0 = "trees";
    emissive[0] = "1";
    useAnisotropic[0] = "1";
    diffuseColor[0] = "0.552941 0.552941 0.552941 1";
-};
-
-singleton Material(mat_Barrel01_D)
-{
-   mapTo = "Barrel01_D";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/Barrel01_D";
-   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MoragsForge";
-   useAnisotropic[0] = "1";
-   emissive[0] = "1";
-   diffuseColor[0] = "1 1 1 1";
 };
 
 singleton Material(mat_Barrel01_D)
@@ -51,6 +41,9 @@ singleton Material(mat_Barrel01_D)
    diffuseMap[0] = "Barrel01_D";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MoragsForge";
+   useAnisotropic[0] = "1";
+   emissive[0] = "1";
+   diffuseColor[0] = "1 1 1 1";
 };
 
 singleton Material(mat_PropsA)
@@ -68,6 +61,7 @@ singleton Material(mat_PlanksOld0348_L)
    materialTag0 = "MoragsForge";
    diffuseColor[0] = "0.698039 0.698039 0.698039 1";
    emissive[0] = "1";
+   materialTag0 = "MoragsForge";
 };
 
 singleton Material(fencePostBasic00A_mat)
@@ -76,7 +70,7 @@ singleton Material(fencePostBasic00A_mat)
    diffuseMap[0] = "art/Packs/Tunnels/Morags/fencePostBasic00A.png";
    useAnisotropic[0] = "1";
    emissive[0] = "1";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "MoragsForge";
 };
 
 ////////////////////////////////
@@ -120,11 +114,11 @@ singleton Material(mat_chainlink01)
 singleton Material(mat_Corrigate01)
 {
    mapTo = "Corrigate01";
-   diffuseMap[0] = "3TD_Corrigate_Rust_01";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "6";
    translucentBlendOp = "None";
-   normalMap[0] = "3TD_Corrigate_Rust_01_NRM.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM.png";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    alphaRef = "0";
@@ -134,7 +128,7 @@ singleton Material(mat_Corrigate01)
    diffuseSize = "128";
    detailStrength = "0.5";
    detailDistance = "500";
-   diffuseColor[0] = "0.619608 0.619608 0.619608 1";
+   diffuseColor[0] = "0.219608 0.219608 0.219608 1";
 };
 
 singleton Material(mat_WoodPlank01)
@@ -154,7 +148,7 @@ singleton Material(mat_WoodPlank01)
    diffuseColor[0] = "0.615686 0.615686 0.615686 1";
 };
 
-singleton Material(mat_5_-_Default_mat)
+singleton Material(mat_5Default)
 {
    mapTo = "_5_-_Default";
    diffuseColor[0] = "0.145098 0.145098 0.145098 1";
@@ -192,6 +186,7 @@ singleton Material(mat_OilDrumTop)
    specularMap[0] = "3td_OilDrumTop_01_SPEC.png";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepMetal1Sound";
+   materialTag0 = "MoragsForge";
 };
 
 singleton Material(mat_ColorEffectR28G89B177)
@@ -213,27 +208,36 @@ singleton Material(mat_ColorEffectR228G184B153)
 singleton Material(mat_PalletWood01)
 {
    mapTo = "PalletWood01";
-   diffuseColor[0] = "0.627451 0.627451 0.627451 1";
-   diffuseMap[0] = "3td_PalletWood_01.jpg";
-   normalMap[0] = "3td_PalletWood_01_NRM.png";
-   specularMap[0] = "3td_PalletWood_01_SPEC.png";
+   diffuseColor[0] = "0.231373 0.231373 0.231373 1";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01.jpg";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_NRM.png";
+   specularMap[0] = "art/Packs/Tunnels/Morags/3td_PalletWood_01_SPEC.png";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "MoragsForge";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
 };
 
 singleton Material(mat_FenceCorrigate01)
 {
    mapTo = "FenceCorrigate01";
-   diffuseMap[0] = "3TD_Corrigate_Rust_01";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "14";
    translucentBlendOp = "None";
-   normalMap[0] = "3TD_Corrigate_Rust_01_NRM.png";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_01_NRM.png";
    useAnisotropic[0] = "1";
    doubleSided = "1";
-   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
+   diffuseColor[0] = "0.298039 0.298039 0.298039 1";
    pixelSpecular[0] = "1";
+   materialTag0 = "MoragsForge";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
 };
 
 singleton Material(mat_ColorEffectR176G26B26)
@@ -247,12 +251,18 @@ singleton Material(mat_ColorEffectR176G26B26)
 singleton Material(mat_RustyMetal05)
 {
    mapTo = "RustyMetal05";
-   diffuseMap[0] = "3td_RustMetal_05";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3td_RustMetal_05";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "1";
    translucentBlendOp = "None";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
+   materialTag0 = "MoragsForge";
+   diffuseColor[0] = "0.305882 0.305882 0.305882 1";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
 };
 
 singleton Material(mat_Corrigate02)
@@ -265,16 +275,17 @@ singleton Material(mat_Corrigate02)
    normalMap[0] = "3TD_Corrigate_Rust_04_NRM.png";
    useAnisotropic[0] = "1";
    doubleSided = "1";
+   materialTag0 = "MoragsForge";
 };
 
-singleton Material(mat_Corigate04)
+singleton Material(mat_Corrigate04)
 {
    mapTo = "Corigate04";
-   diffuseColor[0] = "0.619608 0.619608 0.619608 1";
+   diffuseColor[0] = "0.227451 0.227451 0.227451 1";
    specularPower[0] = "29";
    translucentBlendOp = "None";
-   diffuseMap[0] = "3TD_Corrigate_Rust_04";
-   normalMap[0] = "3TD_Corrigate_Rust_04_NRM.png";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04";
+   normalMap[0] = "art/Packs/Tunnels/Morags/3TD_Corrigate_Rust_04_NRM.png";
    specular[0] = "0.9 0.9 0.9 1";
    pixelSpecular[0] = "1";
    detailSize = "4";
@@ -290,7 +301,7 @@ singleton Material(mat_MoragsForgePointer)
    diffuseMap[0] = "art/Packs/Tunnels/Morags/MoragsForgePointer";
    useAnisotropic[0] = "1";
    emissive[0] = "1";
-   materialTag0 = "Miscellaneous";
+   materialTag0 = "MoragsForge";
 };
 
 singleton Material(mat_ColorEffectR140G88B225)
@@ -308,18 +319,23 @@ singleton Material(mat_ColorEffectR140G88B225)
 singleton Material(mat_LavaRock_dif)
 {
    mapTo = "LavaRock_dif";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/LavaRock_dif.dds";
-   normalMap[0] = "art/Packs/Tunnels/Morags/LavaRock_nm.dds";
-   specularPower[0] = "6";
-   specularStrength[0] = "0.0980392";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/LavaFlow_dif.dds";
+   specularPower[0] = "16";
+   specularStrength[0] = "0.196078";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/Packs/Tunnels/Morags/LavaRock_spec.dds";
    useAnisotropic[0] = "1";
    animFlags[0] = "0x00000001";
-   scrollDir[0] = "0.02 0";
+   scrollDir[0] = "0 0.1";
    scrollSpeed[0] = "0.1";
    materialTag0 = "MoragsForge";
-   glow[0] = "0";
+   glow[0] = "1";
+   parallaxScale[0] = "0";
+   emissive[0] = "1";
+   castShadows = "0";
+   showFootprints = "0";
+   customFootstepSound = "FootStepSand1Sound";
+   normalMap[0] = "art/Packs/Tunnels/Morags/LavaFlow2_nmp.dds";
+   diffuseColor[0] = "0.564706 0.564706 0.564706 1";
 };
 
 singleton Material(mat_BraceWood_dif)
@@ -354,6 +370,7 @@ singleton Material(mat_LandFromForgePic)
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
    emissive[0] = "1";
+   materialTag0 = "MoragsForge";
 };
 
 singleton Material(mat_MK4_Vine)
@@ -367,6 +384,7 @@ singleton Material(mat_MK4_Vine)
    translucent = "1";
    emissive[0] = "1";
    doubleSided = "1";
+   materialTag0 = "MoragsForge";
 };
 
 singleton Material(mat_CrateSimple)
@@ -375,9 +393,10 @@ singleton Material(mat_CrateSimple)
    diffuseColor[0] = "0.407843 0.407843 0.407843 1";
    diffuseMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4";
    normalMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4_NORM.png";
-  useAnisotropic[0] = "1";
+   useAnisotropic[0] = "1";
    emissive[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "MoragsForge";
 };
 
 
