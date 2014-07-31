@@ -40,6 +40,7 @@ function clientCmdMissionStartPhase1(%seq, %missionName, %musicTrack)
    // Make the world path from the level path and load any client data
    %missionRoot = FileBase(%missionName);
    $WorldPath = "art/worlds/" @ %missionRoot;
+   $WorldName = %missionRoot;
    LoadMissionClientData(%missionRoot);
 
    // These need to come after the cls.

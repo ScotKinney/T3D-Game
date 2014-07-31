@@ -156,6 +156,7 @@ function createServer(%serverType, %level)
    $Server::MissionFile = %level;
    $ServerName = FileBase(%level);
    $WorldPath = "art/worlds/" @ $ServerName;
+   $WorldName = $ServerName;
    onServerCreated();
 
    loadMission(%level, true);
