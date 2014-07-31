@@ -10,9 +10,23 @@ singleton SFXProfile(FootStepMetal1Sound)
    preload = true;
 };
 
+singleton SFXProfile(FootStepSheetMetal1Sound)
+{
+   filename    = "art/sound/footsteps/sheetmetalstep";
+   description = AudioClosest3d;
+   preload = true;
+};
+
 singleton SFXProfile(FootStepWood1Sound)
 {
    filename    = "art/sound/footsteps/woodstep";
+   description = AudioClosest3d;
+   preload = true;
+};
+
+singleton SFXProfile(FootStepHollowWood1Sound)
+{
+   filename    = "art/sound/footsteps/hollowwoodstep";
    description = AudioClosest3d;
    preload = true;
 };
@@ -61,14 +75,14 @@ singleton SFXProfile(FootLightShallowSplashSound)
 
 singleton SFXProfile(FootLightWadingSound)
 {
-   filename    = "art/sound/footsteps/waterwade";
+   filename    = "art/sound/footsteps/wadingwater";
    description = AudioClosest3d;
    preload = false;
 };
 
 singleton SFXProfile(FootLightUnderwaterSound)
 {
-   filename    = "art/sound/footsteps/waterwade";
+   filename    = "art/sound/footsteps/wadingwater";
    description = AudioClosest3d;
    preload = false;
 };
