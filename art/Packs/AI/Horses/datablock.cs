@@ -26,14 +26,14 @@ datablock SFXProfile(SteedRearCrySound)
 
 datablock SFXProfile(SteedMoveBubblesSound)
 {
-   filename    = "art/sound/water_splash.ogg";
+   filename    = "art/sound/waterstep";
    description = "AudioCloseLoop3D";
    preload = false;
 };
 
 datablock SFXProfile(SteedWaterBreathSound)
 {
-   filename    = "art/sound/footsteps/water_wl1";
+   filename    = "art/sound/footsteps/wadingwater";
    description = "AudioClose3D";
    preload = false;
 };
