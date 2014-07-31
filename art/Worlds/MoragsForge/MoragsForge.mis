@@ -555,7 +555,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Miner";
-         botBelongsToMe = "4030";
+         botBelongsToMe = "4032";
          distDetect = "5";
          npcAction = "7";
          realName = "Chet";
@@ -568,65 +568,65 @@ new SimGroup(MissionGroup) {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "332.409 202.98 0.739683";
-      rotation = "-0.885486 -0.454407 -0.0971037 2.87172";
+      position = "332.411 202.975 0.739642";
+      rotation = "-0.885653 -0.454201 -0.0965404 2.8739";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "e2c93646-0d39-11e4-8ca6-939352804558";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2953";
+         leftBrakeLight = "2955";
          mountable = "1";
-         rightBrakeLight = "2952";
+         rightBrakeLight = "2954";
    };
    new WheeledVehicle() {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "311.185 198.779 0.95467";
-      rotation = "-0.485544 -0.405462 -0.774498 2.0448";
+      position = "311.186 198.777 0.954645";
+      rotation = "-0.485723 -0.405715 -0.774254 2.04403";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "8ba2adbc-0dcd-11e4-bb43-c2f59bcfb166";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2957";
+         leftBrakeLight = "2959";
          mountable = "1";
-         rightBrakeLight = "2956";
+         rightBrakeLight = "2958";
    };
    new WheeledVehicle() {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "325.391 201.672 0.816202";
-      rotation = "-0.281017 -0.0506515 -0.958365 7.11421";
+      position = "325.391 201.668 0.816118";
+      rotation = "-0.280881 -0.0507627 -0.958399 7.11366";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "92e487ed-0dcd-11e4-bb43-c2f59bcfb166";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2960";
+         leftBrakeLight = "2962";
          mountable = "1";
-         rightBrakeLight = "2959";
+         rightBrakeLight = "2961";
    };
    new WheeledVehicle() {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "318.122 200.459 0.881398";
-      rotation = "-0.333807 -0.175697 -0.926123 3.54665";
+      position = "318.122 200.457 0.881367";
+      rotation = "-0.333869 -0.17582 -0.926077 3.54621";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
       persistentId = "a55c4766-0dcd-11e4-bb43-c2f59bcfb166";
          Client = "-1";
          driver = "-1";
-         leftBrakeLight = "2963";
+         leftBrakeLight = "2965";
          mountable = "1";
-         rightBrakeLight = "2962";
+         rightBrakeLight = "2964";
    };
    new TSStatic(SazzonsLavaFall) {
       shapeName = "art/Packs/Tunnels/Morags/lavafall.DAE";
@@ -1115,7 +1115,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(LittleSazzy) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-135.29 -640.834 -122.949";
+      position = "-175.62 -900.482 -111.496";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       hidden = "1";
@@ -1123,7 +1123,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4031";
+         botBelongsToMe = "4033";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "26635";
          distDetect = "150";
@@ -1149,7 +1149,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4032";
+         botBelongsToMe = "4034";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          leash = "100";
@@ -1174,7 +1174,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4033";
+         botBelongsToMe = "4035";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          leash = "100";
@@ -1199,7 +1199,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4034";
+         botBelongsToMe = "4036";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "50056";
          distDetect = "150";
@@ -1225,7 +1225,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4035";
+         botBelongsToMe = "4037";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          leash = "100";
@@ -1250,7 +1250,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4036";
+         botBelongsToMe = "4038";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          leash = "100";
@@ -1275,7 +1275,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4037";
+         botBelongsToMe = "4039";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          leash = "100";
@@ -1300,7 +1300,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Sazzon";
-         botBelongsToMe = "4038";
+         botBelongsToMe = "4040";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          dropcount = "7";
@@ -1328,7 +1328,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4039";
+         botBelongsToMe = "4041";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "28689";
          distDetect = "150";
@@ -1354,7 +1354,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4040";
+         botBelongsToMe = "4042";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "1236896";
          distDetect = "150";
@@ -1372,7 +1372,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(FatSazzy) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "88.6388 782.11 -172.977";
+      position = "111.655 562.386 -161.293";
       rotation = "0 0 1 35.4498";
       scale = "0.5 0.5 0.3";
       hidden = "1";
@@ -1380,7 +1380,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4041";
+         botBelongsToMe = "4043";
          delayRespawn = "42";
          distDetect = "150";
          maxRange = "30";
@@ -1617,7 +1617,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4042";
+         botBelongsToMe = "4044";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          maxRange = "30";
@@ -1641,7 +1641,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "SazzonSmall";
-         botBelongsToMe = "4043";
+         botBelongsToMe = "4045";
          customAmbientLighting = "0 0 0 1";
          distDetect = "150";
          maxRange = "30";
@@ -3074,7 +3074,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-210.26 -846.226 -111.321";
+         position = "-210.26 -846.226 -111.507";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3094,7 +3094,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-209.92 -845.159 -111.321";
+         position = "-209.92 -845.159 -111.475";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3114,7 +3114,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-210.991 -845.159 -111.321";
+         position = "-210.991 -845.159 -111.501";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3174,7 +3174,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-188.099 -1085.62 -108.222";
+         position = "-188.099 -1085.62 -108.362";
          rotation = "1 0 0 7.14157";
          scale = "1 1 1";
          canSave = "1";
@@ -3314,7 +3314,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-116.769 -532.824 -138.242";
+         position = "-116.769 -532.824 -138.317";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -3594,8 +3594,8 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-155.368 -395.657 -154.752";
-         rotation = "1 0 0 0";
+         position = "-155.023 -395.657 -154.43";
+         rotation = "0 1 0 99.9783";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -5088,7 +5088,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-196.959 -1107.1 -104.463";
+         position = "-193.642 -1104.03 -107.241";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -5108,7 +5108,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-194.38 -1115.53 -106.476";
+         position = "-193.342 -1115.53 -107.757";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -5548,7 +5548,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-208.581 -790.874 -114.378";
+         position = "-208.642 -790.874 -114.378";
          rotation = "1 0 0 0";
          scale = "2 2 2";
          canSave = "1";
@@ -5568,7 +5568,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-115.071 -531.061 -138.286";
+         position = "-115.071 -531.061 -137.94";
          rotation = "1 0 0 0";
          scale = "2 2 2";
          canSave = "1";
@@ -5648,7 +5648,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-161.536 -374.471 -154.896";
+         position = "-163.304 -360.531 -154.34";
          rotation = "1 0 0 0";
          scale = "2 2 2";
          canSave = "1";
@@ -7082,7 +7082,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-178.41 -897.129 -118.054";
+         position = "-178.41 -897.129 -118.195";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7124,7 +7124,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Medium_Diamond";
-         position = "-209.311 -787.009 -115.463";
+         position = "-209.311 -787.009 -115.615";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7138,7 +7138,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Medium_Diamond";
-         position = "-159.578 -724.38 -125.979";
+         position = "-159.578 -724.38 -126.082";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7152,7 +7152,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-149.802 -698.709 -126.452";
+         position = "-149.802 -698.709 -126.484";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7166,7 +7166,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-135.76 -689.169 -125.072";
+         position = "-135.76 -689.169 -125.16";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7194,7 +7194,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-129.486 -654.639 -126.936";
+         position = "-129.486 -654.639 -127.068";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7208,7 +7208,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-140.75 -654.639 -125.673";
+         position = "-138.187 -654.639 -127.021";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7222,7 +7222,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-140.595 -655.899 -125.495";
+         position = "-138.346 -655.899 -126.673";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7236,7 +7236,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Medium_Diamond";
-         position = "-131.297 -600.059 -135.588";
+         position = "-131.852 -600.059 -135.963";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7250,7 +7250,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Medium_Diamond";
-         position = "-143.918 -586.829 -134.716";
+         position = "-143.918 -586.829 -134.887";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7264,7 +7264,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-118.275 -531.759 -138.476";
+         position = "-118.275 -531.759 -138.617";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7278,7 +7278,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-118.275 -533.096 -138.415";
+         position = "-118.275 -533.096 -138.478";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7348,7 +7348,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-99.8736 -351.927 -138.976";
+         position = "-99.8736 -351.927 -139.055";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7446,7 +7446,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-151.742 -351.38 -156.064";
+         position = "-151.742 -351.38 -156.161";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7460,7 +7460,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-164.353 -381.26 -153.779";
+         position = "-163.171 -381.26 -154.789";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7488,7 +7488,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-158.228 -475.292 -153.322";
+         position = "-158.228 -475.292 -153.422";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7614,7 +7614,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Medium_Diamond";
-         position = "-130.205 -84.293 -130.383";
+         position = "-132.083 -84.293 -131.624";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7628,7 +7628,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-140.563 10.694 -142.928";
+         position = "-140.563 10.694 -143.343";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7656,7 +7656,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-131.628 83.235 -141.555";
+         position = "-131.628 83.235 -141.688";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7698,7 +7698,7 @@ new SimGroup(MissionGroup) {
          count = "1";
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
-         position = "-139.388 149.137 -138.405";
+         position = "-139.388 149.137 -138.504";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -7839,6 +7839,62 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Small_Diamond";
          position = "109.739 582.592 -164.957";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            respawnTime = "Random";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "0";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Small_Diamond";
+         position = "-152.773 173.951 -138.765";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            respawnTime = "Random";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "0";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Small_Diamond";
+         position = "-134.774 151.992 -137.3";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            respawnTime = "Random";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "0";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Small_Diamond";
+         position = "-134.774 173.951 -137.425";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            respawnTime = "Random";
+      };
+      new Item() {
+         static = "1";
+         rotate = "0";
+         buyable = "0";
+         count = "1";
+         isAIControlled = "0";
+         dataBlock = "Small_Diamond";
+         position = "-139.388 173.951 -138.422";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -9730,8 +9786,8 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-135.36 -123.94 -137.679";
-         rotation = "1 0 0 0";
+         position = "-135.36 -121.116 -137.679";
+         rotation = "0 0 1 179.961";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9792,6 +9848,22 @@ new SimGroup(MissionGroup) {
       emitter = "LavaSprayTop";
       dataBlock = "DefaultEmitterNodeData";
       position = "275.865 99.641 0.186191";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-135.36 -125.742 -137.679";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
