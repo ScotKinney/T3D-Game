@@ -49,8 +49,11 @@ singleton Material(mat_Barrel01_D)
 singleton Material(mat_PropsA)
 {
    mapTo = "PropsA";
-   diffuseMap[0] = "PropsA.dds";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/PropsA.dds";
    materialTag0 = "MoragsForge";
+   emissive[0] = "1";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepHollowWood1Sound";
 };
 
 singleton Material(mat_PlanksOld0348_L)
@@ -400,7 +403,7 @@ singleton Material(mat_MK4_Vine)
 singleton Material(mat_CrateSimple)
 {
    mapTo = "CratesSimple0001stain4";
-   diffuseColor[0] = "0.407843 0.407843 0.407843 1";
+   diffuseColor[0] = "0.760784 0.760784 0.760784 1";
    diffuseMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4";
    normalMap[0] = "art/Packs/Tunnels/Morags/CratesSimple0001stain4_NORM.png";
    useAnisotropic[0] = "1";
