@@ -345,8 +345,8 @@ singleton Material(mat_LavaRock_dif)
    parallaxScale[0] = "0";
    emissive[0] = "1";
    castShadows = "0";
-   showFootprints = "0";
-   customFootstepSound = "FootStepSand1Sound";
+   showFootprints = "1";
+   customFootstepSound = "FootStepLava1Sound";
    normalMap[0] = "art/Packs/Tunnels/Morags/LavaFlow2_nmp.dds";
    diffuseColor[0] = "0.564706 0.564706 0.564706 1";
 };
