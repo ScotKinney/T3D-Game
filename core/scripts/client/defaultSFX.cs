@@ -66,6 +66,13 @@ singleton SFXProfile(FootStepSand1Sound)
    preload = true;
 };
 
+singleton SFXProfile(FootStepLava1Sound)
+{
+   filename    = "art/sound/footsteps/lavastep";
+   description = AudioClosest3d;
+   preload = true;
+};
+
 singleton SFXProfile(FootLightShallowSplashSound)
 {
    filename    = "art/sound/footsteps/shallowsplash";
