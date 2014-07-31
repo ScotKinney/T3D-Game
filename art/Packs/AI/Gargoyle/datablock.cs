@@ -125,5 +125,95 @@ datablock PlayerData(IlluraGargoyle : DefaultPlayerData)
    maxMountYawAngle = .5;
 };
 
+/////////////////////////////////SilverMine Gargoyles//////////////////////
+
+datablock PlayerData(Gargoyle : DefaultPlayerData)
+{
+   renderFirstPerson = false;
+
+   className = Armor;
+   shapeFile = "art/Packs/AI/gargoyle/gargoyle.dts";
+   
+      maxDamage = 150;
+      maxForwardSpeed = 14;
+      maxBackwardSpeed = 10;
+      maxSideSpeed = 8;
+      attackWait = 1500; //in miliseconds
+   
+      //AI specific values that can be set for this datablock
+      //These values can be overridden by the spawn marker,
+      //but these values override the defaults
+      //Weapon = "bomb";
+      Weapon = "GargoyleFireball";
+      respawn = true;
+      behavior = "GuardBehavior";
+      maxRange = 20;
+      minRange = 10;
+      distDetect = 50;
+      sidestepDist = 5;
+      paceDist = 7;
+      npcAction = 0;
+      spawnGroup = 1;
+      fov = 180;
+      leash = 35;
+      cycleCounter = "5";
+      weaponMode = "pattern";
+      activeDodge = 1;
+      team = 1;
+   realName = " ";
+   killerName = "a Gargoyle";
+   cameraMaxDist = 3;
+   computeCRC = true;
+
+   
+   //Death Cry
+   DeathSound = GargoyleDeathCry;
+   PainSound = GargoylePainCry;
+
+   mass = 200;
+   drag = 1.3;
+   maxdrag = 1.4;
+   density = 1.1;
+   maxEnergy =  100;
+   repairRate = 0.275;
+   energyPerDamagePoint = 55.0;
+
+   rechargeRate = 0.2;
+
+   boundingBox = "2 2 4";
+   swimBoundingBox = "2 4 4";
+   pickupRadius = 0.75;
+
+   // Foot Prints
+   decalData   = PlayerFootprint;
+   decalOffset = 0.25;
+
+   // Controls over slope of runnable/jumpable surfaces
+   runSurfaceAngle  = 70;
+   jumpSurfaceAngle = 80;
+   maxStepHeight = 1.5;  //two meters
+
+};
+
+////////////////////////////////Garg Boss
+
+datablock PlayerData(GargoyleBoss : Gargoyle)
+{
+      maxDamage = 250;
+      maxForwardSpeed = 20;
+      maxBackwardSpeed = 15;
+      maxSideSpeed = 14;
+      attackWait = 1200; //in miliseconds
+      maxRange = 30;
+      minRange = 5;
+      distDetect = 100;
+      sidestepDist = 12;
+      paceDist = 10;
+
+   realName = "Dahot";
+   boundingBox = "2 2 4";
+};
+
+
 // Load the gargoyle weapon script
 exec("./weapon/fireball.cs");
