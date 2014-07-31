@@ -22,9 +22,14 @@
 
 singleton Material( BlankWhite )
 {
-   diffuseMap[0] = "core/art/white";
    mapTo = "white";
    materialTag0 = "Miscellaneous";
+   customFootstepSound = "FootStepMetal1Sound";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+   diffuseColor[0] = "0.00784314 0.00784314 0.00784314 1";
 };
 
 singleton Material(mat_FullTrans)

@@ -5,21 +5,21 @@
 ////////////////////////////////////////////////////////////////////////
 singleton SFXProfile(FootStepMetal1Sound)
 {
-   filename    = "art/sound/footsteps/wood_dl4";
+   filename    = "art/sound/footsteps/metalstep";
    description = AudioClosest3d;
    preload = true;
 };
 
 singleton SFXProfile(FootStepWood1Sound)
 {
-   filename    = "art/sound/footsteps/wood_dr1";
+   filename    = "art/sound/footsteps/woodstep";
    description = AudioClosest3d;
    preload = true;
 };
 
 singleton SFXProfile(FootStepRock1Sound)
 {
-   filename    = "art/sound/footsteps/stone_dl1";
+   filename    = "art/sound/footsteps/rockstep";
    description = AudioClosest3d;
    preload = true;
 };
@@ -33,42 +33,42 @@ singleton SFXProfile(FootStepCaveSound)
 
 singleton SFXProfile(FootStepGrass1Sound)
 {
-   filename    = "art/sound/footsteps/grass_rr1.wav";
+   filename    = "art/sound/footsteps/grassstep";
    description = AudioClosest3d;
    preload = true;
 };
 
 singleton SFXProfile(FootStepSnow1Sound)
 {
-   filename    = "art/sound/footsteps/dirt_wl2.wav";
+   filename    = "art/sound/footsteps/snowstep";
    description = AudioClosest3d;
    preload = true;
 };
 
 singleton SFXProfile(FootStepSand1Sound)
 {
-   filename    = "art/sound/footsteps/dirt_wl2.wav";
+   filename    = "art/sound/footsteps/dirtstep";
    description = AudioClosest3d;
    preload = true;
 };
 
 singleton SFXProfile(FootLightShallowSplashSound)
 {
-   filename    = "art/sound/footsteps/water_wl1";
+   filename    = "art/sound/footsteps/shallowsplash";
    description = AudioClosest3d;
    preload = false;
 };
 
 singleton SFXProfile(FootLightWadingSound)
 {
-   filename    = "art/sound/footsteps/water_wl1";
+   filename    = "art/sound/footsteps/waterwade";
    description = AudioClosest3d;
    preload = false;
 };
 
 singleton SFXProfile(FootLightUnderwaterSound)
 {
-   filename    = "art/sound/footsteps/water_wl1";
+   filename    = "art/sound/footsteps/waterwade";
    description = AudioClosest3d;
    preload = false;
 };
