@@ -9,11 +9,11 @@ singleton Material(Ter_Ground)
 singleton Material(Spartan_rock_dif)
 {
    mapTo = "Spartan_rock_dif";
-   diffuseColor[0] = "0.0980392 0.0980392 0.0980392 1";
-   diffuseMap[0] = "art/Packs/Tunnels/Morags/CaveWall_dif.dds";
-   normalMap[0] = "art/Packs/Tunnels/Morags/CaveWall_nmp.dds";
-   pixelSpecular[0] = "0";
-   specularMap[0] = "art/Packs/Tunnels/Morags/CaveWall_spec.dds";
+   diffuseColor[0] = "0.992157 0.992157 0.992157 1";
+   diffuseMap[0] = "art/Packs/Tunnels/Morags/black512.dds";
+   normalMap[0] = "art/Packs/Tunnels/Morags/CaveWall2_nm.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Tunnels/Morags/CaveWall2_spec.dds";
    specularPower[0] = "1";
    specularStrength[0] = "0.08";
    useAnisotropic[0] = "1";
@@ -21,8 +21,8 @@ singleton Material(Spartan_rock_dif)
    materialTag0 = "MoragsForge";
    castShadows = "0";
    parallaxScale[0] = "0";
-   detailNormalMap[0] = "art/Packs/Tunnels/Morags/CaveWall_detNm.dds";
-   detailNormalMapStrength[0] = "2";
+   detailNormalMapStrength[0] = "4";
+   specular[0] = "0.427451 0.423529 0.411765 1";
 };
 
 ////////////////////////////////////////////////////////
