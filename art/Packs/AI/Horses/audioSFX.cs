@@ -51,7 +51,7 @@ singleton SFXProfile(HoofLightUnderwaterSound)
 
 singleton SFXProfile(HoofLightBubblesSound)
 {
-   filename    = "art/sound/footsteps/water_wl1";
+   filename    = "art/sound/footsteps/wadingwater";
    description = AudioClose3d;
    preload = true;
 };

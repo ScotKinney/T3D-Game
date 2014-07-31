@@ -26,7 +26,7 @@ datablock SFXProfile(SteedRearCrySound)
 
 datablock SFXProfile(SteedMoveBubblesSound)
 {
-   filename    = "art/sound/waterstep";
+   filename    = "art/sound/footsteps/waterstep";
    description = "AudioCloseLoop3D";
    preload = false;
 };
