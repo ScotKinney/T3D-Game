@@ -1,11 +1,3 @@
-singleton Material( Ter_RockLow )
-{
-   mapTo = "MoRock1_dif";
-   customFootstepSound = FootStepGrass1Sound;
-   effectColor[0] = "0.53 0.52 0.46 1.0";
-   effectColor[1] = "0.65 0.64 0.58 1.0";
-};
-
 singleton Material(Ter_Ground)   
 {   
    mapTo = "MoRockGrey_dif";   
@@ -25,7 +17,7 @@ singleton Material(Spartan_rock_dif)
    specularPower[0] = "1";
    specularStrength[0] = "0.08";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepRock1Sound";
+   customFootstepSound = "FootStepCaveSound";
    materialTag0 = "MoragsForge";
    castShadows = "0";
    parallaxScale[0] = "0";
@@ -37,10 +29,10 @@ singleton Material(Spartan_rock_dif)
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/Packs/Terrains/Morags/MoRock1_dif";
+   diffuseMap = "art/Packs/Terrains/Morags/MoRockGrey_dif";
    diffuseSize = "128";
    detailSize = "4";
-   detailStrength = "0.2";
+   detailStrength = "0.1";
    detailDistance = "500";
    parallaxScale = "0.01";
    internalName = "Rock_Low";

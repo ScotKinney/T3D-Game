@@ -28,11 +28,11 @@ $ThisPrefab = new SimGroup() {
       canSaveDynamicFields = "1";
    };
    new PointLight() {
-      radius = "30";
+      radius = "25";
       isEnabled = "1";
       //color = "1 0.533333 0 1";
-      color = "0.886275 0.87451 0.85098 1";
-      brightness = "4";
+      color = "0.5 0.5 0.5 1";
+      brightness = "3";
       castShadows = "0";
       priority = "1";
       animate = "0";
