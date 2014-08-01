@@ -1,0 +1,63 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+
+   new TSStatic() {
+      shapeName = "art/packs/buildings/mayan_village/campfire.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useCustomAmbientLighting = "0";
+      customAmbientLighting = "0 0 0 1";
+      collisionType = "none";
+      decalType = "none";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "0.0626831 0.156433 -0.172302";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         enabled = "1";
+   };
+   new ParticleEmitterNode() {
+      active = "1";
+      emitter = "GenericFireEmitter";
+      velocity = "1";
+      dataBlock = "DefaultEmitterNodeData";
+      position = "-0.14032 0.109135 -0.0795975";
+      rotation = "1 0 0 0";
+      scale = "0.5 0.5 0.5";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         enabled = "1";
+   };
+   new SFXEmitter() {
+      fileName = "art/sound/environment/fire1.wav";
+      sourceGroup = "AudioChannelEffects";
+      playOnAdd = "1";
+      isLooping = "1";
+      isStreaming = "0";
+      volume = "1";
+      pitch = "1";
+      fadeInTime = "0";
+      fadeOutTime = "0";
+      is3D = "1";
+      referenceDistance = "10";
+      maxDistance = "10.01";
+      scatterDistance = "0 0 0";
+      coneInsideAngle = "360";
+      coneOutsideAngle = "360";
+      coneOutsideVolume = "0";
+      position = "0.0776672 -0.265566 0.2519";
+      rotation = "1 0 0 0";
+      scale = "10.01 10.01 10.01";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         enabled = "1";
+   };
+};
+//--- OBJECT WRITE END ---
