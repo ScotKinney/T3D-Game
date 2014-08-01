@@ -5,7 +5,3 @@ singleton TSShapeConstructor(BirdNestPlant01DAE)
    loadLights = "0";
 };
 
-function BirdNestPlant01DAE::onLoad(%this)
-{
-   %this.addImposter("64", "4", "4", "0", "128", "0", "4");
-}
