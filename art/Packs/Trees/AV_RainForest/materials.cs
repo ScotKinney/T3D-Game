@@ -134,3 +134,94 @@ singleton Material(CopalTree01_ColorEffectR88G88B225_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(Banana01_bananaBark01)
+{
+   mapTo = "bananaBark01";
+   diffuseMap[0] = "art/Packs/Trees/AV_Rainforest/banana_bark";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Trees/AV_RainForest/banana_bark_NRM.dds";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(Banana01_Ban_Leaf_02)
+{
+   mapTo = "Ban_Leaf_02";
+   diffuseMap[0] = "art/Packs/Trees/AV_Rainforest/BananaLeaf02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   useAnisotropic[0] = "1";
+   alphaTest = "1";
+   alphaRef = "13";
+   doubleSided = "1";
+   normalMap[0] = "art/Packs/Trees/AV_RainForest/BananaLeaf01_NRM.dds";
+};
+
+singleton Material(Banana01_Ban_Leaf_01)
+{
+   mapTo = "Ban_Leaf_01";
+   diffuseMap[0] = "art/Packs/Trees/AV_Rainforest/BananaLeaf01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+   alphaTest = "1";
+   alphaRef = "67";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   normalMap[0] = "art/Packs/Trees/AV_RainForest/BananaLeaf01_NRM.dds";
+};
+
+singleton Material(Banana01_ColorEffectR6G135B58_material)
+{
+   mapTo = "ColorEffectR6G135B58-material";
+   diffuseColor[0] = "0.0235294 0.529412 0.227451 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Banana02_NannerBark02)
+{
+   mapTo = "NannerBark02";
+   diffuseMap[0] = "banana_bark";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Banana02_Nanner02)
+{
+   mapTo = "Nanner02";
+   diffuseMap[0] = "BananaLeaf02";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Banana02_Nanner01)
+{
+   mapTo = "Nanner01";
+   diffuseMap[0] = "BananaLeaf01";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Banana02_ColorEffectR177G28B149_material)
+{
+   mapTo = "ColorEffectR177G28B149-material";
+   diffuseColor[0] = "0.694118 0.109804 0.584314 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Banana02_NannerBark01)
+{
+   mapTo = "NannerBark01";
+   diffuseMap[0] = "banana_bark";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
