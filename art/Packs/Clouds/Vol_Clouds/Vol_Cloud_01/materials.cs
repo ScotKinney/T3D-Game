@@ -1,8 +1,8 @@
 
-singleton Material(KapCloud_01_Kap_clouds)
+singleton Material(mat_Kap_clouds)
 {
    mapTo = "Kap_clouds";
-   diffuseMap[0] = "art/shapes/Vol_Clouds/Vol_Cloud_01/blendCloud_01.png";
+   diffuseMap[0] = "blendCloud_01.png";
    specular[0] = "0.996078 0.996078 0.996078 1";
    specularPower[0] = "34";
    translucent = "1";
@@ -19,7 +19,7 @@ singleton Material(KapCloud_01_Kap_clouds)
    pixelSpecular[0] = "0";
    diffuseColor[0] = "0.996078 0.996078 0.996078 1";
    subSurfaceColor[0] = "0.909804 0.913726 0.909804 1";
-   normalMap[0] = "art/shapes/Vol_Clouds/Vol_Cloud_01/CloudNormal_03.png";
+   normalMap[0] = "CloudNormal_03.png";
    parallaxScale[0] = "0.111111";
    emissive[0] = "0";
 };
