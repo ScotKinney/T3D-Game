@@ -28,20 +28,21 @@ singleton Material(Ter_Sand)
 singleton Material(Spartan_rock_dif)
 {
    mapTo = "Spartan_rock_dif";
-   diffuseMap[0] = "art/packs/terrains/tokara/BrownRock_diffuse.dds";
+   diffuseMap[0] = "art/Packs/Terrains/Tokara/Terra_046.jpg";
    diffuseColor[0] = "0.996078 0.996078 0.996078 1";
-   normalMap[0] = "art/packs/terrains/tokara/grayrock_normal.dds";
-   specularMap[0] = "art/packs/terrains/tokara/grayrock_specular.dds";
-   detailNormalMap[0] = "art/packs/terrains/tokara/grayrock_detailnormal.dds";
-   detailNormalMapStrength[0] = "0.1";
-   pixelSpecular[0] = "0";
-   specularStrength[0] = "0.0980392";
-   specular[0] = "1 1 1 0";
+   normalMap[0] = "art/Packs/Terrains/Tokara/TokRock_nm.dds";
+   detailNormalMapStrength[0] = "1";
+   pixelSpecular[0] = "1";
+   specularStrength[0] = "3.62745";
+   specular[0] = "0.956863 0.956863 0.956863 1";
    specularPower[0] = "49";
    useAnisotropic[0] = "1";
    materialTag0 = "Rock";
    showFootprints = "1";
    customFootstepSound = "FootStepRock1Sound";
+   detailMap[0] = "art/Packs/Terrains/Tokara/tex_volcanic_cliffrock_dif.dds";
+   detailScale[0] = "10 10";
+   specularMap[0] = "art/Packs/Terrains/Tokara/TokRock_spec.dds";
 };
 
 
@@ -88,12 +89,13 @@ new TerrainMaterial()
    internalName = "VolcanicCliffRockTop";
    diffuseMap = "art/packs/terrains/tokara/Terra_046";
    diffuseSize = "400";
-   normalMap = "art/packs/terrains/tokara/tex_volcanic_cliffrock_nrm";
+   normalMap = "art/Packs/Terrains/Tokara/TokRock_nm";
    detailMap = "art/packs/terrains/tokara/tex_volcanic_cliffrock_dif";
    detailSize = "20";
    detailStrength = "0.7";
    detailDistance = "4000";
    useAnisotropic[0] = "1"; 
+   useAnisotropic0 = "1";
 };
 
 ///Rock Far
@@ -102,7 +104,7 @@ new TerrainMaterial()
 {
    internalName = "VolcanicCliffSide";
    diffuseMap = "art/packs/terrains/tokara/Terra_046";
-   normalMap = "art/packs/terrains/tokara/tex_volcanic_cliffrock_nrm";
+   normalMap = "art/Packs/Terrains/Tokara/TokRock_nm";
    detailMap = "art/packs/terrains/tokara/tex_volcanic_cliffrock_dif";
    detailSize = "80";
    detailDistance = "2000";
@@ -110,6 +112,7 @@ new TerrainMaterial()
    diffuseSize = "400";
    detailStrength = "0.7";
    useAnisotropic[0] = "1"; 
+   useAnisotropic0 = "1";
 };
 
 ///Path
