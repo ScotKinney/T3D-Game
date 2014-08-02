@@ -1,0 +1,112 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      enabled = "1";
+
+   new LevelInfo(theLevelInfo) {
+      nearClip = "0.1";
+      visibleDistance = "1000";
+      visiblePlayers = "300";
+      decalBias = "0.0015";
+      fogColor = "0.6 0.6 0.7 1";
+      fogDensity = "0";
+      fogDensityOffset = "700";
+      fogAtmosphereHeight = "0";
+      canvasClearColor = "0 0 0 255";
+      ambientLightBlendPhase = "1";
+      ambientLightBlendCurve = "0 0 -1 -1";
+      advancedLightmapSupport = "0";
+      soundDistanceModel = "Linear";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         desc0 = "PlaceHolder for UDP port 28004";
+         displayName = "PlaceHolder04";
+         enabled = "1";
+         LevelName = "PlaceHolder04";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         enabled = "1";
+
+      new SpawnSphere() {
+         autoSpawn = "0";
+         spawnTransform = "0";
+         radius = "5";
+         sphereWeight = "1";
+         indoorWeight = "1";
+         outdoorWeight = "1";
+         isAIControlled = "0";
+         dataBlock = "SpawnSphereMarker";
+         position = "-70 0 2";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            enabled = "1";
+            homingCount = "0";
+            lockCount = "0";
+      };
+   };
+   new GroundPlane() {
+      squareSize = "128";
+      scaleU = "12";
+      scaleV = "12";
+      Material = "Grid512_ForestGreenLines_Mat";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         enabled = "1";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new ScatterSky(sky1) {
+      skyBrightness = "15";
+      sunSize = "1";
+      colorizeAmount = "0";
+      colorize = "0 0 0 1";
+      rayleighScattering = "0.0035";
+      sunScale = "1 1 1 1";
+      ambientScale = "1 1 1 1";
+      fogScale = "1 1 1 1";
+      exposure = "1";
+      zoffset = "0";
+      azimuth = "0";
+      elevation = "35";
+      moonAzimuth = "0";
+      moonElevation = "45";
+      castShadows = "1";
+      brightness = "1";
+      flareScale = "1";
+      nightColor = "0.0196078 0.0117647 0.109804 1";
+      nightFogColor = "0.0196078 0.0117647 0.109804 1";
+      moonEnabled = "1";
+      moonMat = "Moon_Glow_Mat";
+      moonScale = "0.2";
+      moonLightColor = "0.192157 0.192157 0.192157 1";
+      useNightCubemap = "1";
+      nightCubemap = "NightCubemap";
+      attenuationRatio = "0 1 1";
+      shadowType = "PSSM";
+      texSize = "512";
+      overDarkFactor = "2000 1000 500 100";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      numSplits = "4";
+      logWeight = "0.91";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "0";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      position = "2.13852 14.364 1.81194";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         mieScattering = "0.0045";
+   };
+};
+//--- OBJECT WRITE END ---
+
