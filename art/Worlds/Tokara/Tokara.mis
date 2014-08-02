@@ -23,6 +23,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          canBringHorses = "1";
          canTeleport = "1";
+         desc0 = "A Mayan Village";
          displayName = "Tokara";
          enabled = "1";
          hasTreasury = "1";
@@ -73,8 +74,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AVTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.113323";
-         time = "0.118665";
+         startTime = "0.970076";
+         time = "0.972106";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -116,6 +117,7 @@ new SimGroup(MissionGroup) {
          moonElevation = "30";
          castShadows = "1";
          brightness = "0.9";
+         flareType = "DefaultSunFlare";
          flareScale = "1.2";
          nightColor = "0.152941 0.164706 0.25098 1";
          nightFogColor = "0.160784 0.207843 0.262745 1";
@@ -436,7 +438,7 @@ new SimGroup(MissionGroup) {
             avOptions = "304,307,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3774";
+            botBelongsToMe = "3768";
             delayRespawn = "135481";
             distDetect = "50";
             fov = "360";
@@ -461,7 +463,7 @@ new SimGroup(MissionGroup) {
             avOptions = "304,307,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3776";
+            botBelongsToMe = "3770";
             delayRespawn = "135486";
             distDetect = "50";
             fov = "360";
@@ -1186,7 +1188,7 @@ new SimGroup(MissionGroup) {
             avOptions = "305,308,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3777";
+            botBelongsToMe = "3771";
             delayRespawn = "140121";
             distDetect = "50";
             fov = "360";
@@ -1211,7 +1213,7 @@ new SimGroup(MissionGroup) {
             avOptions = "305,308,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3779";
+            botBelongsToMe = "3773";
             delayRespawn = "140116";
             distDetect = "50";
             fov = "360";
@@ -2652,24 +2654,6 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
-      new Portal(TokaraFoodPortal1) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "293.79 -39.9085 59.7239";
-         rotation = "1 0 0 0";
-         scale = "2.39278 0.25 3.51115";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Portal(TokaraFoodPortal2) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "306.15 -39.9085 59.7239";
-         rotation = "1 0 0 0";
-         scale = "2.39278 0.25 3.51115";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new Item() {
          static = "1";
          rotate = "0";
@@ -3354,24 +3338,6 @@ new SimGroup(MissionGroup) {
             invertGradientRange = "0";
             useGradientRange = "0";
       };
-      new Portal(TokaraFoodPortal21) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "293.77 39.4805 59.7239";
-         rotation = "0 0 1 180.308";
-         scale = "2.39278 0.25 3.51115";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new Portal(TokaraFoodPortal11) {
-         useAmbientLightColor = "0";
-         ambientLightColor = "0.1 0.1 0.1 1";
-         position = "306.13 39.4141 59.7239";
-         rotation = "0 0 1 180.308";
-         scale = "2.39278 0.25 3.51115";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
       new Zone(TokaraFoodZone1) {
          useAmbientLightColor = "0";
          ambientLightColor = "0.1 0.1 0.1 1";
@@ -3580,7 +3546,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "3780";
+            botBelongsToMe = "3774";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3662,7 +3628,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "3781";
+            botBelongsToMe = "3775";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3743,7 +3709,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "3782";
+            botBelongsToMe = "3776";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3824,7 +3790,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "3783";
+            botBelongsToMe = "3777";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3905,7 +3871,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "3784";
+            botBelongsToMe = "3778";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3986,7 +3952,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3785";
+            botBelongsToMe = "3779";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4767,7 +4733,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "309.278 24.6636 57.6481";
+         position = "309.278 24.6636 57.2014";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -4827,7 +4793,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "326.433 10.8954 57.3825";
+         position = "326.433 10.8954 56.9878";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -4847,7 +4813,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "349.086 11.2943 57.5627";
+         position = "349.086 11.2943 56.854";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
