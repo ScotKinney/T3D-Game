@@ -16,15 +16,6 @@ datablock SFXProfile(KuduAntelopePainCry)
 
 ///////////////Foot Prints
 
-new Material(KuduAntelopeFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/KuduAntelope/FP_Antelope";
-   normalMap[0] = "art/Packs/AI/KuduAntelope/FP_Antelope";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(KuduAntelopeFootprints)
 {
    size = .3;
