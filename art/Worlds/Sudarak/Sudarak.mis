@@ -41,8 +41,8 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "-567.244 789.203 58.907";
-         rotation = "0 0 1 16.7198";
+         position = "-567.244 789.203 61.1973";
+         rotation = "0 0 -1 11.0343";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -71,8 +71,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AureusTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.142534";
-         time = "0.143488";
+         startTime = "0.150419";
+         time = "0.15181";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
