@@ -1,7 +1,3 @@
-////////////////////////////////////
-/// Mediteranian village structures
-////////////////////////////////////
-
 singleton Material(mat_medhouse6)
 {
    mapTo = "medhouse6";
@@ -161,4 +157,22 @@ new Material(mat_inn_wood)
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "MedCity";
    useAnisotropic[0] = "1";
+};
+
+singleton Material(StableFLoor_mat)
+{
+   mapTo = "StableFLoor";
+   diffuseMap[0] = "StableFLoor.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "MedCity";
+};
+
+singleton Material(hey_mat)
+{
+   mapTo = "hey";
+   diffuseMap[0] = "hey.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepGrass1Sound";
+   materialTag0 = "MedCity";
 };
