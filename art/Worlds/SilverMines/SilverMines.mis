@@ -31,7 +31,7 @@ new SimGroup(MissionGroup) {
             canBringHorses = "0";
             canTeleport = "0";
             desc0 = "A place to grab your nuggets.";
-            displayName = "Silver Mine";
+            displayName = "Silver Mines";
             enabled = "1";
             hasTreasury = "0";
             LevelName = "the Silver Mine";
