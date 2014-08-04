@@ -16,15 +16,6 @@ datablock SFXProfile(GiraffePainCry)
 
 ///////////////Foot Prints
 
-new Material(GiraffeFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Giraffe/FP_Giraffe";
-   normalMap[0] = "art/Packs/AI/Giraffe/FP_Giraffe";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(GiraffeFootprints)
 {
    size = .5;

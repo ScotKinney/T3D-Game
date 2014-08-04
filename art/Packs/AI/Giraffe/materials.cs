@@ -15,3 +15,12 @@ singleton Material(GiraffeTail)
    specularPower[0] = "100";
    translucent = "1";
 };
+
+new Material(GiraffeFootprint)
+{
+   diffuseMap[0] = "art/Packs/AI/Giraffe/FP_Giraffe";
+   normalMap[0] = "art/Packs/AI/Giraffe/FP_Giraffe";
+   translucent = true;
+   translucentZWrite = "1";
+   materialTag0 = "footprint";
+};
