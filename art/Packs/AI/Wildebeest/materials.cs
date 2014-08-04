@@ -14,3 +14,12 @@ singleton Material(mat_WildebeestTRS_mat)
    useAnisotropic[0] = "1";
    translucent = "1";
 };
+
+new Material(WildebeestFootprint)
+{
+   diffuseMap[0] = "art/Packs/AI/Wildebeest/FP_Wildebeest";
+   normalMap[0] = "art/Packs/AI/Wildebeest/FP_Wildebeest";
+   translucent = true;
+   translucentZWrite = "1";
+   materialTag0 = "footprint";
+};

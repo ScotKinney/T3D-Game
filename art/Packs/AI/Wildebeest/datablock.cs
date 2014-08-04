@@ -23,15 +23,6 @@ datablock SFXProfile(Jaw1Sound)
 
 ///////////////Foot Prints
 
-new Material(WildebeestFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Wildebeest/FP_Wildebeest";
-   normalMap[0] = "art/Packs/AI/Wildebeest/FP_Wildebeest";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(WildebeestFootprints)
 {
    size = .2;
