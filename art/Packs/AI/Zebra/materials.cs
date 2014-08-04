@@ -18,3 +18,12 @@ singleton Material(mat_Zebra)
    alphaRef = "120";
    normalMap[0] = "art/Packs/AI/Zebra/Zebra_NRM.dds";
 };
+
+new Material(ZebraFootprint)
+{
+   diffuseMap[0] = "art/Packs/AI/Zebra/FP_Zebra";
+   normalMap[0] = "art/Packs/AI/Zebra/FP_Zebra";
+   translucent = true;
+   translucentZWrite = "1";
+   materialTag0 = "footprint";
+};

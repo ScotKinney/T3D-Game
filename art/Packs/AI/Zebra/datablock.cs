@@ -16,15 +16,6 @@ datablock SFXProfile(ZebraPainCry)
 
 ///////////////Foot Prints
 
-new Material(ZebraFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Zebra/FP_Zebra";
-   normalMap[0] = "art/Packs/AI/Zebra/FP_Zebra";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(ZebraFootprints)
 {
    size = .25;
