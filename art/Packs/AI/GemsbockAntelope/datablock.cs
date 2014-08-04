@@ -16,15 +16,6 @@ datablock SFXProfile(GemsbockAntelopePainCry)
 
 ///////////////Foot Prints
 
-new Material(GemsbockAntelopeFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/GemsbockAntelope/FP_Antelope";
-   normalMap[0] = "art/Packs/AI/GemsbockAntelope/FP_Antelope";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(GemsbockAntelopeFootprints)
 {
    size = .3;
