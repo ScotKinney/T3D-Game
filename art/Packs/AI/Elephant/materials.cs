@@ -13,5 +13,5 @@ new Material(ElephantFootprint)
    normalMap[0] = "art/Packs/AI/Elephant/FP_Elephant";
    translucent = true;
    translucentZWrite = "1";
-   materialTag0 = "decal";
+   materialTag0 = "footprint";
 };
