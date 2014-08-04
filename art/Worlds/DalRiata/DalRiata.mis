@@ -27,7 +27,7 @@ new SimGroup(MissionGroup) {
          canBringHorses = "1";
          canTeleport = "1";
          desc0 = "DalRiata";
-         displayName = "DalRiata";
+         displayName = "Dal Riata";
          enabled = "1";
          hasTreasury = "1";
          LevelName = "DalRiata";
