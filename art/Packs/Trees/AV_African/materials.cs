@@ -61,47 +61,6 @@ singleton Material(mat_BK_boabab300_DIF)
 
 /////////////////////////////////
 
-singleton Material(mat_AcaciaBark04)
-{
-   mapTo = "AcaciaBark04";
-   diffuseMap[0] = "3td_acciaBark_04";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-   normalMap[0] = "3td_acciaBark_04_NRM";
-   useAnisotropic[0] = "1";
-   parallaxScale[0] = "0.05";
-   materialTag0 = "Trees_AV_African";
-};
-
-singleton Material(mat_ColorEffectR140G88B225)
-{
-   mapTo = "ColorEffectR140G88B225-material";
-   diffuseColor[0] = "0.54902 0.345098 0.882353 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(mat_AcaciaBranch02)
-{
-   mapTo = "AcaciaBranch02";
-   diffuseMap[0] = "3td_AcaciaBranch_03";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-   useAnisotropic[0] = "1";
-   subSurface[0] = "1";
-   subSurfaceColor[0] = "0.509804 0.603922 0.152941 1";
-   doubleSided = "1";
-   alphaTest = "1";
-   alphaRef = "120";
-   normalMap[0] = "3td_AcaciaBranch_03_NRM";
-   materialTag0 = "Trees_AV_African";
-};
-
-////////////////////////////////////
-
-
 singleton Material(mat_AcaciaBranch_05)
 {
    mapTo = "AcaciaBranch_05";
@@ -142,6 +101,40 @@ singleton Material(mat_ColorEffectR228G184B153)
 {
    mapTo = "ColorEffectR228G184B153-material";
    diffuseColor[0] = "0.894118 0.721569 0.6 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+/////////////////////////////////////////////////
+
+singleton Material(mat_AcaciaBark)
+{
+   mapTo = "AcaciaBark";
+   diffuseMap[0] = "3td_acciaBark_04";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+   normalMap[0] = "3td_acciaBark_04_NRM";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Trees_AV_African";
+};
+
+singleton Material(mat_AcaciaBranch)
+{
+   mapTo = "AcaciaBranch";
+   diffuseMap[0] = "3td_AcaciaBranch_03";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "128";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   materialTag0 = "Trees_AV_African";
+};
+
+singleton Material(mat_ColorEffectR140G88B225)
+{
+   mapTo = "ColorEffectR140G88B225-material";
+   diffuseColor[0] = "0.54902 0.345098 0.882353 1";
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
