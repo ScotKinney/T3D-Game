@@ -16,15 +16,6 @@ datablock SFXProfile(DeerPainCry)
 
 ///////////////Foot Prints
 
-new Material(DeerFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Deer/FP_Antelope";
-   normalMap[0] = "art/Packs/AI/Deer/FP_Antelope";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(DeerFootprints)
 {
    size = .25;
