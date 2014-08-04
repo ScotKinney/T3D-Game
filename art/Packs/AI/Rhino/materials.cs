@@ -10,3 +10,12 @@ singleton Material(mat_Rhino)
    specularMap[0] = "art/Packs/AI/Rhino/Rhino_SPEC.dds";
    customFootstepSound = "FootStepSand1Sound";
 };
+
+new Material(RhinoFootprint)
+{
+   diffuseMap[0] = "art/Packs/AI/Rhino/FP_Rhino";
+   normalMap[0] = "art/Packs/AI/Rhino/FP_Rhino";
+   translucent = true;
+   translucentZWrite = "1";
+   materialTag0 = "footprint";
+};

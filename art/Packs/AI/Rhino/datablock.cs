@@ -16,15 +16,6 @@ datablock SFXProfile(RhinoPainCry)
 
 ///////////////Foot Prints
 
-new Material(RhinoFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Rhino/FP_Rhino";
-   normalMap[0] = "art/Packs/AI/Rhino/FP_Rhino";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(RhinoFootprints)
 {
    size = .6;
