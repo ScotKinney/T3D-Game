@@ -20,10 +20,10 @@ new SimGroup(MissionGroup) {
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
-         desc0 = "PlaceHolder for UDP port 28002";
-         displayName = "PlaceHolder02";
+         desc0 = "Yeah it's Empty";
+         displayName = "EmptyRoom";
          enabled = "1";
-         LevelName = "PlaceHolder02";
+         LevelName = "EmptyRoom";
    };
    new SimGroup(PlayerDropPoints) {
       canSave = "1";
