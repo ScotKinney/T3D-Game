@@ -12,5 +12,5 @@ new Material(DeerFootprint)
    normalMap[0] = "art/Packs/AI/Deer/FP_Antelope";
    translucent = true;
    translucentZWrite = "1";
-   materialTag0 = "decal";
+   materialTag0 = "footprint";
 };
