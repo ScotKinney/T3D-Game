@@ -38,7 +38,6 @@ new SimGroup(ForestBrushGroup) {
          internalName = "ExampleElement";
          canSave = "1";
          canSaveDynamicFields = "1";
-         ForestItemData = "ExampleForestMesh";
          probability = "1";
          rotationRange = "360";
          scaleMin = "1";
