@@ -110,11 +110,11 @@ singleton Material(mat_ColorEffectR228G184B153)
 singleton Material(mat_AcaciaBark)
 {
    mapTo = "AcaciaBark";
-   diffuseMap[0] = "3td_acciaBark_04";
+   diffuseMap[0] = "art/Packs/Trees/AV_African/3td_acciaBark_04";
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "3td_acciaBark_04_NRM";
+   normalMap[0] = "art/Packs/Trees/AV_African/3td_acciaBark_04_NRM";
    useAnisotropic[0] = "1";
    materialTag0 = "Trees_AV_African";
 };
@@ -122,13 +122,17 @@ singleton Material(mat_AcaciaBark)
 singleton Material(mat_AcaciaBranch)
 {
    mapTo = "AcaciaBranch";
-   diffuseMap[0] = "3td_AcaciaBranch_03";
+   diffuseMap[0] = "art/Packs/Trees/AV_African/3td_AcaciaBranch_03";
    specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "128";
-   translucent = "1";
+   specularPower[0] = "14";
+   translucent = "0";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    materialTag0 = "Trees_AV_African";
+   normalMap[0] = "art/Packs/Trees/AV_African/3td_AcaciaBranch_03_NRM.dds";
+   pixelSpecular[0] = "1";
+   alphaTest = "1";
+   alphaRef = "89";
 };
 
 singleton Material(mat_ColorEffectR140G88B225)

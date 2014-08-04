@@ -9,5 +9,5 @@ singleton TSShapeConstructor(UmbrellaAcaciaFul_01Dae)
 
 function UmbrellaAcaciaFul_01Dae::onLoad(%this)
 {
-   %this.removeImposter();
+   %this.addImposter("0", "6", "0", "0", "256", "0", "0");
 }
