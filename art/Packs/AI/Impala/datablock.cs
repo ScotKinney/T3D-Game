@@ -16,15 +16,6 @@ datablock SFXProfile(ImpalaPainCry)
 
 ///////////////Foot Prints
 
-new Material(ImpalaFootprint)
-{
-   diffuseMap[0] = "art/Packs/AI/Impala/FP_Antelope";
-   normalMap[0] = "art/Packs/AI/Impala/FP_Antelope";
-   translucent = true;
-   translucentZWrite = "1";
-   materialTag0 = "decal";
-};
-
 datablock DecalData(ImpalaFootprints)
 {
    size = .3;
