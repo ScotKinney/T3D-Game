@@ -12,7 +12,7 @@ new SimGroup(MissionGroup) {
       fogDensity = "0.005";
       fogDensityOffset = "500";
       fogAtmosphereHeight = "100";
-      canvasClearColor = "24 23 24 255";
+      canvasClearColor = "1 1 1 255";
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
       advancedLightmapSupport = "0";
