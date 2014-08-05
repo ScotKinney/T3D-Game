@@ -411,7 +411,7 @@ new SimGroup(MissionGroup) {
          reflectMaxRateMs = "16";
          reflectDetailAdjust = "0.5";
          reflectNormalUp = "1";
-         useOcclusionQuery = "0";
+         useOcclusionQuery = "1";
          reflectTexSize = "1024";
          waterFogDensity = "0.1";
          waterFogDensityOffset = "1";
