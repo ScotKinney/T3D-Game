@@ -95,8 +95,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(TortugaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0562315";
-         time = "0.0604717";
+         startTime = "0.174456";
+         time = "0.175465";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -109,7 +109,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "10";
+            clockSynchEvent = "3616";
       };
       new SkyBox() {
          Material = "DarkSky2";
@@ -685,7 +685,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -705,7 +705,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -725,7 +725,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -745,7 +745,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -765,7 +765,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -790,7 +790,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_prismRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -815,7 +815,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -835,7 +835,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -855,7 +855,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_prismRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -880,7 +880,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -940,7 +940,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1040,7 +1040,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1089,7 +1089,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1139,7 +1139,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1227,7 +1227,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1267,7 +1267,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock4.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock4.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1287,7 +1287,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1307,7 +1307,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1327,7 +1327,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1487,7 +1487,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_prismRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1507,7 +1507,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_prismRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1527,7 +1527,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1567,7 +1567,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1587,7 +1587,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1651,7 +1651,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
 
-      new ParticleEmitterNode(lavaSpray111) {
+      new ParticleEmitterNode(LavaSpray111) {
          active = "1";
          velocity = "1";
          emitter = "LavaSprayEmitter";
@@ -1693,7 +1693,7 @@ new SimGroup(MissionGroup) {
             sa_velocityVariance = "1";
             standAloneEmitter = "0";
       };
-      new ParticleEmitterNode(lavaSpray1) {
+      new ParticleEmitterNode(LavaSpray1) {
          active = "1";
          velocity = "1";
          emitter = "LavaSprayEmitter";
@@ -2180,7 +2180,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-213.894 793.06 88.1228";
-         rotation = "0.0239963 -0.0210442 0.999491 97.547";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5471";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2340,7 +2340,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-214.181 793.06 91.288";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5469";
+         rotation = "0.0239963 -0.0210442 0.999491 97.547";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2955,7 +2955,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2975,7 +2975,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2995,7 +2995,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3015,7 +3015,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3035,7 +3035,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3055,7 +3055,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3075,7 +3075,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3095,7 +3095,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3115,7 +3115,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3135,7 +3135,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3155,7 +3155,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3175,7 +3175,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3195,7 +3195,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3215,7 +3215,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3235,7 +3235,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3255,7 +3255,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3275,7 +3275,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.dae";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_VolcanicRockOne.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3996,7 +3996,7 @@ new SimGroup(MissionGroup) {
             sa_velocityVariance = "1";
             standAloneEmitter = "0";
       };
-      new ParticleEmitterNode(lavaSpray2) {
+      new ParticleEmitterNode(LavaSpray2) {
          active = "1";
          velocity = "1";
          emitter = "LavaSprayEmitter";
@@ -5952,7 +5952,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6112,7 +6112,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6132,7 +6132,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6212,7 +6212,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6252,7 +6252,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6272,7 +6272,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6312,7 +6312,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6332,7 +6332,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6357,7 +6357,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6457,7 +6457,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SmRock2.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6497,7 +6497,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6557,7 +6557,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6677,7 +6677,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_SMRock3.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -7201,7 +7201,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4020";
+            botBelongsToMe = "10117";
             delayRespawn = "20391";
             distDetect = "50";
             fov = "360";
@@ -7226,7 +7226,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4022";
+            botBelongsToMe = "10119";
             delayRespawn = "153641";
             distDetect = "50";
             fov = "360";
@@ -7747,7 +7747,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4023";
+            botBelongsToMe = "10120";
             delayRespawn = "33278";
             distDetect = "50";
             fov = "360";
@@ -7772,7 +7772,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4025";
+            botBelongsToMe = "10122";
             delayRespawn = "153655";
             distDetect = "50";
             fov = "360";
@@ -8526,7 +8526,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "12.214 1165.54 92.3705";
+      position = "-424.948 866.468 68.8985";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8542,7 +8542,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "-186.351 892.756 65.2412";
+      position = "12.214 1165.54 92.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8567,7 +8567,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4026";
+            botBelongsToMe = "10123";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8663,7 +8663,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4027";
+            botBelongsToMe = "10124";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8758,7 +8758,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4028";
+            botBelongsToMe = "10125";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8853,7 +8853,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4029";
+            botBelongsToMe = "10126";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8948,7 +8948,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4030";
+            botBelongsToMe = "10127";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9043,7 +9043,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4031";
+            botBelongsToMe = "10128";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9142,7 +9142,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-330.882 619.97 66.8956";
+         position = "-330.882 619.97 63.5695";
          rotation = "1 0 0 3.02103";
          scale = "1 1 1";
          canSave = "1";
@@ -9167,7 +9167,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-330.865 612.853 67.0963";
+         position = "-330.865 612.853 63.7702";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          canSave = "1";
@@ -9192,7 +9192,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-331.219 605.782 67.1315";
+         position = "-331.219 605.782 63.8054";
          rotation = "0 0 1 181.224";
          scale = "1 1 1";
          canSave = "1";
@@ -9217,7 +9217,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-331.26 600.098 67.16";
+         position = "-331.26 600.098 63.8339";
          rotation = "0 0 1 180.666";
          scale = "1 1 1";
          canSave = "1";
@@ -9267,7 +9267,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-338.4 600.337 67.1323";
+         position = "-338.4 600.337 63.8062";
          rotation = "0 0 -1 90.3681";
          scale = "1 1 1";
          canSave = "1";
@@ -9342,7 +9342,7 @@ new SimGroup(MissionGroup) {
          allowPlayerStep = "1";
          renderNormals = "0";
          forceDetail = "-1";
-         position = "-324.058 600.522 67.1355";
+         position = "-324.058 600.522 63.8094";
          rotation = "0 0 -1 90.6927";
          scale = "1 1 1";
          canSave = "1";
@@ -9443,7 +9443,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.825 599.985 66.2663";
-         rotation = "0.000993943 -0.00632428 0.999979 83.8135";
+         rotation = "0.000993943 -0.00632428 0.999979 83.8134";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9518,7 +9518,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.807 600.261 64.6027";
-         rotation = "-0.00128242 -0.00115875 -0.999999 88.0956";
+         rotation = "-0.00128242 -0.00115875 -0.999999 88.0957";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -9569,7 +9569,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "NPCVendorBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4032";
+            botBelongsToMe = "10129";
             distDetect = "5";
             npcAction = "7";
             realName = "Uncle Salty";
@@ -10858,7 +10858,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/A3D_Grainbags/grainbag1.dts";
+         shapeName = "art/Packs/props/A3D_GrainBags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -10878,7 +10878,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/props/A3D_Grainbags/grainbag1.dts";
+         shapeName = "art/Packs/props/A3D_GrainBags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -11286,7 +11286,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-324.511 969.039 71.4835";
+      position = "-93.7874 1034.52 61.5073";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -11294,7 +11294,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "4018";
+         botBelongsToMe = "10115";
          delayRespawn = "41915";
          dropcount = "1";
          DropItem = "Shark_Steak";
@@ -11315,7 +11315,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "4019";
+         botBelongsToMe = "10116";
          delayRespawn = "41856";
          dropcount = "1";
          DropItem = "Shark_Steak";
@@ -11434,7 +11434,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/Packs/rocks/SP_Rocks/SP_peakRock.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_PeakRock.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -13432,7 +13432,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/rocks/SP_Rocks/SP_prismRock1.dts";
+      shapeName = "art/Packs/Rocks/SP_Rocks/SP_PrismRock1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -13594,7 +13594,7 @@ new SimGroup(MissionGroup) {
          standAloneEmitter = "0";
    };
    new TSStatic() {
-      shapeName = "art/Packs/props/A3D_Grainbags/grainbag1.dts";
+      shapeName = "art/Packs/props/A3D_GrainBags/grainbag1.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
