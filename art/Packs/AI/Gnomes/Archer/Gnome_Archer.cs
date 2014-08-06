@@ -6,13 +6,16 @@ singleton TSShapeConstructor(Gnome_ArcherDts)
 
 function Gnome_ArcherDts::onLoad(%this)
 {
+   %this.addImposter("0", "4", "0", "0", "512", "0", "0");
+   %this.removeDetailLevel("1500");
+   %this.removeDetailLevel("1200");
    %this.setNodeTransform("GA_sword01", "0.264061 -0.019973 0.566995 0.719155 -0.666956 -0.194897 2.62997", "1");
    %this.renameNode("GA_Sword01", "mount0");
    %this.addSequence("./CrossbowRoot.dsq", "Root", "0", "49", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("./CrossbowRun.dsq", "Walk", "0", "-1", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
-   %this.addSequence("./CrossbowSprint.dsq", "Run2", "0", "-1", "1", "0");
+   %this.addSequence("./CrossbowSprint.dsq", "Run2", "0", "25", "1", "0");
    %this.setSequenceCyclic("Run2", "1");
    %this.addSequence("./CrossbowBack.dsq", "Walk_Back", "0", "22", "1", "0");
    %this.setSequenceCyclic("Walk_Back", "1");
@@ -42,9 +45,8 @@ function Gnome_ArcherDts::onLoad(%this)
    %this.addSequence("./Swimming.dsq", "Swim_Surface", "0", "-1", "1", "0");
    %this.addTrigger("Attack1", "110", "3");
    %this.addTrigger("Attack2", "18", "3");
-   %this.addImposter("0", "64", "0", "0", "256", "0", "0");
-   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
-   %this.setSequenceGroundSpeed("run2", "0 2 0");
+   %this.setSequenceGroundSpeed("Walk", "0 1.25 0", "0 0 0");
+   %this.setSequenceGroundSpeed("run2", "0 2.5 0", "0 0 0");
    %this.setSequenceCyclic("Swim_Root", "1");
    %this.setSequenceCyclic("Swim_Forward", "1");
    %this.setSequenceCyclic("Swim_Left", "1");
