@@ -9,5 +9,5 @@ singleton TSShapeConstructor(MercantileDae)
 
 function MercantileDae::onLoad(%this)
 {
-   %this.addImposter("0", "4", "0", "0", "256", "0", "0");
+   %this.addImposter("0", "4", "0", "0", "512", "0", "0");
 }
