@@ -2,13 +2,17 @@
 singleton Material(mat_GGvolcano_cave1)
 {
    mapTo = "tex_volcano_cave_1";
-   diffuseMap[0] = "cas_cobble2_shadow.dds";
-   detailMap[0] = "tex_volcanic_rock_dif.dds";
-   detailScale[0] = "7 7";
-   normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
+   diffuseMap[0] = "art/Packs/Terrains/Tortuga/TortRock_diffuse.dds";
+   detailMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detail.dds";
+   detailScale[0] = "3 3";
+   normalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_normal.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "GG_PacificIsland";
+   detailNormalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detailnormal.dds";
+   specularPower[0] = "12";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/Packs/Terrains/Tortuga/grayrock_specular.dds";
 };
 
 singleton Material(mat_GGvolcano_cave3)
@@ -29,13 +33,15 @@ singleton Material(mat_GGvolcano_cave3)
 singleton Material(mat_GGvolcano_cave2)
 {
    mapTo = "tex_volcano_cave_2";
-   diffuseMap[0] = "cas_cobble2_shadow.dds";
-   detailMap[0] = "tex_volcanic_rock_dif.dds";
-   detailScale[0] = "7 7";
-   normalMap[0] = "tex_volcanic_cliffrock_nrm.dds";
+   diffuseMap[0] = "art/Packs/Terrains/Tortuga/TortRock_diffuse.dds";
+   detailMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detail.dds";
+   detailScale[0] = "3 3";
+   normalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_normal.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "GG_PacificIsland";
+   detailNormalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detailnormal.dds";
+   specularMap[0] = "art/Packs/Terrains/Tortuga/grayrock_specular.dds";
 };
 
 singleton Material(mat_GGvolcano_lavaflow)
