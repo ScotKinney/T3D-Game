@@ -1,3 +1,5 @@
+///////////////////////Shark datablock
+
 datablock PlayerData(Shark : DefaultPlayerData)
 {
    renderFirstPerson = false;
@@ -86,7 +88,7 @@ datablock GameBaseData(Shark_JawOne)
 datablock ShapeBaseImageData(SharkJawImage : BaseMeleeImage)
 {
    // Replace this when we have a weapon for the shark
-   shapefile = "art/inv/weapons/Swords/SoulReaver.dts";
+   shapefile = "art/packs/ai/sharks/weapon/sharktooth.dae";
    mountPoint = 1;   // Connects to "Mount1" not "Mount0"
 
    hthNumAttacks = 1;
