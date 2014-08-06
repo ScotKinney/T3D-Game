@@ -7,7 +7,7 @@ singleton TSShapeConstructor(GTDts)
 function GTDts::onLoad(%this)
 {
    %this.addSequence("./GT_CombatRoot.dsq", "Root", "0", "50", "1", "0");
-   %this.setSequenceCyclic("Root", "1");   
+   %this.setSequenceCyclic("Root", "1");
    %this.addSequence("./GT_Run.dsq", "Walk", "0", "22", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
    %this.addSequence("./GT_Back.dsq", "Walk_Back", "0", "22", "1", "0");
@@ -44,12 +44,13 @@ function GTDts::onLoad(%this)
    %this.addSequence("./GT_Death2.dsq", "Death2", "0", "19", "1", "0");
    %this.addSequence("./GT_Death3.dsq", "Death3", "0", "19", "1", "0");
    %this.addSequence("./GT_Death4.dsq", "Death4", "0", "17", "1", "0");
-   %this.addTrigger("Walk", "39", "1");
    %this.addTrigger("Walk", "20", "2");
    %this.addTrigger("Run2", "17", "1");
    %this.addTrigger("Run2", "7", "2");
    %this.addTrigger("Walk_Back", "7", "1");
    %this.addTrigger("Walk_Back", "18", "2");
-   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
-   %this.setSequenceGroundSpeed("run2", "0 2 0");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0", "0 0 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0", "0 0 0");
+   %this.removeDetailLevel("1500");
+   %this.addImposter("0", "4", "0", "0", "256", "0", "0");
 }

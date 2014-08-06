@@ -69,6 +69,9 @@ function GnomeKingDts::onLoad(%this)
    %this.renameNode("GP_staff", "mount0");
    %this.addSequence("./GK_CombatmodeB.dsq", "CombatRoot", "0", "74", "1", "0");
    %this.setSequenceCyclic("CombatRoot", "1");
-   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
-   %this.setSequenceGroundSpeed("run2", "0 2 0");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0", "0 0 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0", "0 0 0");
+   %this.addImposter("0", "4", "0", "0", "256", "0", "0");
+   %this.removeDetailLevel("1500");
+   %this.removeDetailLevel("1200");
 }

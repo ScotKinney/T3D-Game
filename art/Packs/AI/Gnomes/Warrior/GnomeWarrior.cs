@@ -55,8 +55,8 @@ function GnomeWarriorDts::onLoad(%this)
    %this.addTrigger("Walk_Back", "18", "2");
    %this.renameNode("GW_axe", "mount0");
    %this.renameNode("GW_shield", "mount2");
-   %this.setSequenceGroundSpeed("Walk", "0 0.75 0");
-   %this.setSequenceGroundSpeed("run2", "0 2 0");
+   %this.setSequenceGroundSpeed("Walk", "0 0.75 0", "0 0 0");
+   %this.setSequenceGroundSpeed("run2", "0 2 0", "0 0 0");
    %this.addSequence("./GW_Swimming.dsq", "Swim_Root", "0", "-1", "1", "0");
    %this.addSequence("./GW_Swimming.dsq", "Swim_Forward", "0", "-1", "1", "0");
    %this.addSequence("./GW_Swimming.dsq", "Swim_Left", "0", "-1", "1", "0");
@@ -69,4 +69,6 @@ function GnomeWarriorDts::onLoad(%this)
    %this.addTrigger("Walk", "25", "2");
    %this.addTrigger("Run2", "18", "1");
    %this.addTrigger("Run2", "8", "2");
+   %this.removeDetailLevel("1500");
+   %this.addImposter("0", "4", "0", "0", "256", "0", "0");
 }
