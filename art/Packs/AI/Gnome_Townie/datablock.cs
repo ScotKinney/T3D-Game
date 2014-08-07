@@ -326,7 +326,7 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
    realName = "Norm";
    canTalk = true;
    talkDuration = 12000; // 11 Seconds
-   talkDelay = 1000; // 1 second
+   talkDelay = 500; // 1 second
 
    // Put the goblet in the talker's right hand. ("Mount0")
    equipmentSlots = 1;
