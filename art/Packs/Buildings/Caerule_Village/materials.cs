@@ -113,3 +113,28 @@ singleton Material(LightHouse_dif)
    customFootstepSound = "FootStepRock1Sound";
    materialTag0 = "Tortuga_Bldgs";
 };
+
+singleton Material(Pub_ColorEffectR177G27B88_material)
+{
+   mapTo = "ColorEffectR177G27B88-material";
+   diffuseColor[0] = "0.694118 0.105882 0.345098 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Pub_inn_ext)
+{
+   mapTo = "inn_ext";
+   diffuseMap[0] = "inn";
+   specular[0] = "0.82 0.83 0.87 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(Pub_ColorEffectR177G28B149_material)
+{
+   mapTo = "ColorEffectR177G28B149-material";
+   diffuseColor[0] = "0.694118 0.109804 0.584314 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
