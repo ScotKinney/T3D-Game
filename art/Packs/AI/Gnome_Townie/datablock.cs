@@ -300,7 +300,7 @@ datablock PlayerData(GnomeTownie : DefaultPlayerData)
    numDeathAnims = 4;
    numDamageAnims = 4;
 
-   boundingBox = "1 1 1.5";//LR-FB-UpDN - Torque Physics
+   boundingBox = ".75 .75 1.5";//LR-FB-UpDN - Torque Physics
    swimBoundingBox = "1 1 1";
 
    // Foot Prints
@@ -319,11 +319,13 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
 {
    shapeFile = "art/Packs/AI/Gnome_Townie/GT_Talker.dts";
    paceDist = 0;
-   behavior = "KillableNPCBehavior";
+   behavior = "StationaryNPCBehavior";
    canMove = false;
    returnToMarker = true;
    npcAction = 0;
    realName = "Norm";
+   canTalk = true;
+   talkDuration = 11000; // 11 Seconds
 };
 
 ////////////////////Gnome Townie Eater datablock
@@ -332,10 +334,39 @@ datablock PlayerData(GnomeEater : GnomeTownie)
 {
    shapeFile = "art/Packs/AI/Gnome_Townie/GT_Eater.dts";
    paceDist = 0;
-   behavior = "KillableNPCBehavior";
+   behavior = "StationaryNPCBehavior";
    canMove = false;
    returnToMarker = true;
    npcAction = 0;
    realName = "Cliff";
 };
 
+datablock SFXProfile(GnomePubTalk)   
+{   
+   filename = "art/Packs/AI/Gnome_Townie/Sound/GnomePubTalk";   
+   description = NPCVoice3D;   
+   preload = false;   
+}; 
+
+function GnomeTalker::clickedByPlayer(%this, %obj, %player)
+{  // Start the Gnome's talk animation and sound effect
+   if ( %obj.isTalking )
+      return;  // Already talking, so don't restart
+
+   // Look at the player we're talking to
+   %obj.setAimObject(%player, $AISK_CHAR_HEIGHT);
+
+   %obj.setActionThread("T_LongTalk");
+   %obj.talkAnimTimer = %obj.schedule(%this.talkDuration, "setActionThread", "Root");
+   serverPlay3D(GnomePubTalk, %obj.getTransform());
+
+   %obj.isTalking = true;
+   %this.talkSeqTimer = %this.schedule(%this.talkDuration + 1000, "endTalkSequence", %obj);
+}
+
+function GnomeTalker::endTalkSequence(%this, %obj)
+{
+   %obj.isTalking = false;
+   // Turn back to the eater
+   %obj.setAimObject(Gnome_Eating);
+}

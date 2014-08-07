@@ -213,3 +213,32 @@ function serverCmdNPCDecision(%client, %npcID, %newVal)
 {
    %npcID.npcDecision = %newVal;
 }
+
+function serverCmdonAIClicked(%client, %objID)
+{
+   // prevent bogging down the server with multiple rapid clicks
+   if(%client.canClick())
+      %client.clickLock();
+   else
+      return;
+
+   // the client sends us their ghostID for the object, so we need to convert
+   // this to the server-side index for that object
+   %obj = %client.resolveObjectFromGhostIndex(%objID);
+
+   // check it exists   
+   if ( !isObject(%obj) )
+      return;
+   
+   // and we must have a player
+   if(!isObject(%client.player))
+      return;
+      
+   // and the player must be alive
+   if(%client.player.getState() $= "Dead")
+      return;
+      
+   // Tell the AI to play it's click action
+   %obj.getDataBlock().clickedByPlayer(%obj, %client.player);
+}
+

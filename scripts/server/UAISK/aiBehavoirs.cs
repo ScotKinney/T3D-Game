@@ -114,6 +114,21 @@ allBehaviorsSet.add(%behavior);
 
 // -------------------------------------------------------
 
+%behavior = new ScriptObject(StationaryNPCBehavior) {
+    isAggressive = false;
+    canMove = false;
+    returnToMarker = false;
+    isKillable = true;
+    isFollowPlayer = false;
+    isLeashed = false;
+    //leashedTo = "";
+    isSkittish = false;
+};
+
+allBehaviorsSet.add(%behavior);
+
+// -------------------------------------------------------
+
 /*%behavior = new ScriptObject(EscortBehavior) {
     isAggressive = false;
     canMove = true;

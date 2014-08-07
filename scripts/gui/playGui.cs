@@ -275,18 +275,19 @@ function PlayGui::callBack(%this, %funcName, %obj)
    %objClass = %obj.getClassName();
 
    if ( %objClass $= "AIPlayer" )
-   {  // See if it's a horse
-      %dbName = %obj.getDataBlock().getName();
-      if ( strstr(%dbName, "Horse") != -1 )
+   {  // See if it's a horse or talking AI
+      %db = %obj.getDataBlock();
+      %dbName = %db.getName();
+      if ( %db.canTalk )
+         %objClass = "AI";
+      else if ( strstr(%dbName, "Horse") != -1 )
          %objClass = "AIHorse";
       else
          %objClass = "Player";
    }
-
-   if ( (strstr(%objClass, "Terrain") != -1) || (%objClass $= "TSStatic") )
+   else if ( (strstr(%objClass, "Terrain") != -1) || (%objClass $= "TSStatic") )
       return;
-
-   if ( (%objClass $= "WaterPlane") || (%objClass $= "WaterBlock")  || (%objClass $= "River"))
+   else if ( (%objClass $= "WaterPlane") || (%objClass $= "WaterBlock")  || (%objClass $= "River"))
       %objClass = "Water";
 
    // construct the string that will be used for the object specific callback
@@ -335,6 +336,18 @@ function PlayGui::onMouseDownPlayer(%this, %target)
       
    //ServerConnection.setSelectedObj(%target);
    CommandToServer('setSpellTarget', %target.getGhostID());
+}
+
+function PlayGui::onMouseOverAI(%this, %target)
+{
+   //%this.hoverEvent = %this.schedule(%this.hovertime, "showItemPopup", %target);
+   //%this.setNeedsMoveEvent(true); // Make sure the event is canceled if the mouse moves
+   return;  
+}
+
+function PlayGui::onMouseDownAI(%this, %target)
+{
+   CommandToServer('onAIClicked', %target.getGhostID());
 }
 
 function PlayGui::onMouseDownWater(%this, %item)
