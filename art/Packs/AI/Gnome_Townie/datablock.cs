@@ -251,7 +251,7 @@ datablock PlayerData(GnomeTownie : DefaultPlayerData)
    Weapon = "";
    respawn = true;
    behavior = "GuardBehavior";
-   maxRange = 20;
+   maxRange = 2.0;
    minRange = 0;
    distDetect = 50;
    sidestepDist = 2;
@@ -320,7 +320,9 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
    shapeFile = "art/Packs/AI/Gnome_Townie/GT_Talker.dts";
    paceDist = 0;
    behavior = "KillableNPCBehavior";
-   npcAction = 2;
+   canMove = false;
+   returnToMarker = true;
+   npcAction = 0;
    realName = "Norm";
 };
 
@@ -331,7 +333,9 @@ datablock PlayerData(GnomeEater : GnomeTownie)
    shapeFile = "art/Packs/AI/Gnome_Townie/GT_Eater.dts";
    paceDist = 0;
    behavior = "KillableNPCBehavior";
-   npcAction = 2;
+   canMove = false;
+   returnToMarker = true;
+   npcAction = 0;
    realName = "Cliff";
 };
 
