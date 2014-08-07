@@ -325,7 +325,13 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
    npcAction = 0;
    realName = "Norm";
    canTalk = true;
-   talkDuration = 11000; // 11 Seconds
+   talkDuration = 12000; // 11 Seconds
+   talkDelay = 1000; // 1 second
+
+   // Put the goblet in the talker's right hand. ("Mount0")
+   equipmentSlots = 1;
+   eqShape[0] = "art/Packs/props/A3D_InteriorA/goblet.dts";
+   eqNode[0] = "mount0";
 };
 
 ////////////////////Gnome Townie Eater datablock
@@ -358,7 +364,7 @@ function GnomeTalker::clickedByPlayer(%this, %obj, %player)
 
    %obj.setActionThread("T_LongTalk");
    %obj.talkAnimTimer = %obj.schedule(%this.talkDuration, "setActionThread", "Root");
-   serverPlay3D(GnomePubTalk, %obj.getTransform());
+   schedule(%this.talkDelay, 0, ServerPlay3D, GnomePubTalk, %obj.getTransform());
 
    %obj.isTalking = true;
    %this.talkSeqTimer = %this.schedule(%this.talkDuration + 1000, "endTalkSequence", %obj);
