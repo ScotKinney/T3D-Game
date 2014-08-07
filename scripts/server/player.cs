@@ -18,8 +18,9 @@ $PlayerImpulseScale = 1;
 
 function PLAYERDATA::onAdd(%this,%obj)
 {
-   //Scale the player
-   %obj.setscale(".714 .714 .714");  
+   //Scale the player, but not bots
+   if ( !%obj.isBot )
+      %obj.setscale(".714 .714 .714");  
 
    // Vehicle timeout
    %obj.mountVehicle = true;
