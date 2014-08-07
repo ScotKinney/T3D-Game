@@ -5,7 +5,6 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Trees/Canopy" TAB
    "Trees/AV_Tropical" TAB
    "Plants/AV_Tropical" TAB
-   "SkyBoxes/DarkSky2" TAB
    "GroundCover/Default" TAB
    "Props/underwaterCave" TAB
    "Props/GG_PacificIsland" TAB
@@ -25,8 +24,8 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Props/A3D_Carts" TAB
    "Props/A3D_Grainbags" TAB
    "Props/AV_Targets" TAB
-   "Props/A3D_BanquetSet" TAB
    "Signs/Village" TAB
    "AI/Sharks" TAB
+   "AI/Gnome_Townie" TAB
    "AI/Horses";
    

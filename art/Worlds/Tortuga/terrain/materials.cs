@@ -1,8 +1,9 @@
-//-----------------------------------------------------------------------------
-// Torque 3D
-// Copyright (C) GarageGames.com, Inc.
-//-----------------------------------------------------------------------------
-
+///////////FootStep Sounds////////////////////////////////////////
+//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
+//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
+//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
+//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
+///////////////////////////////////////////////////////////////////
 
 singleton Material(Ter_Grass)   
 {   
@@ -13,7 +14,7 @@ singleton Material(Ter_Grass)
 singleton Material(Ter_DirtySand)
 {
    mapTo = "dirtysand_base";
-   footstepSoundId = 3;
+   footstepSoundId = 0;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
@@ -22,7 +23,7 @@ singleton Material(Ter_DirtySand)
 singleton Material(Ter_DirtySandmix)
 {
    mapTo = "dirtyandmix_base";
-   footstepSoundId = 3;
+   footstepSoundId = 0;
    showDust = true;
    effectColor[0] = "0.53 0.52 0.46 1.0";
    effectColor[1] = "0.65 0.64 0.58 1.0";
@@ -43,20 +44,24 @@ singleton Material(Ter_Seaweed)
 singleton Material(Spartan_rock_dif)
 {
    mapTo = "Spartan_rock_dif";
-   diffuseMap[0] = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
-   specularPower[0] = "59";
+   diffuseMap[0] = "art/Packs/Terrains/Tortuga/TortRock_diffuse.dds";
+   diffuseScale[0] = ".1 .1";
+   diffuseColor[0] = "0.968628 0.964706 0.964706 1";
+   normalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_normal.dds";
+   specularMap[0] = "art/Packs/Terrains/Tortuga/grayrock_specular.dds";
    pixelSpecular[0] = "0";
+   specular[0] = "0.933333 0.933333 0.933333 1";
+   specularPower[0] = "12";
+   specularStrength[0] = "1";
+   detailNormalMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detailnormal.dds";
+   detailNormalMapStrength[0] = "1";
+   detailScale[0] = "3 3";
    useAnisotropic[0] = "1";
    materialTag0 = "Rock";
    showFootprints = "1";
-   detailNormalMapStrength[0] = "1";
-   specularStrength[0] = "0.0980392";
-   detailScale[0] = "3 3";
-   detailMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
-   diffuseColor[0] = "0.647059 0.384314 0.196078 0";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
-   specular[0] = "0.576471 0.576471 0.576471 1";
+   diffuseScale0 = ".1 .1";
+   detailMap[0] = "art/Packs/Terrains/Tortuga/grayrock_detail.dds";
 };
 //////////////////////////////////////////////////////////
 new TerrainMaterial()
@@ -117,15 +122,18 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   internalName = "VolcanicCliffRockTop";
-   diffuseMap = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
-   diffuseSize = "300";
-   normalMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
+   internalName = "VolcanicCliffSide";
+   diffuseMap = "art/Packs/Terrains/Tortuga/TortRock_diffuse";
+   diffuseSize = "16";
+   normalMap = "art/Packs/Terrains/Tortuga/grayrock_normal_specular";
+   detailMap = "art/Packs/Terrains/Tortuga/grayrock_detail";
    detailSize = "10";
-   detailStrength = "0.6";
-   detailDistance = "1000";
+   detailStrength = "0.5";
+   detailDistance = "2000";
    useAnisotropic[0] = "1"; 
+   parallaxScale = "0";
+   useAnisotropic0 = "1";
+   useSideProjection = "1";
 };
 
 // VolcanicCliffSide Terrain
@@ -133,15 +141,16 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    internalName = "VolcanicCliffSide";
-   diffuseMap = "art/packs/terrains/tortuga/cas_cobble2_shadow.dds";
-   normalMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_nrm";
-   detailMap = "art/packs/terrains/tortuga/tex_volcanic_cliffrock_dif";
-   detailSize = "20";
-   detailDistance = "4000";
+   diffuseMap = "art/Packs/Terrains/Tortuga/TortRock_diffuse";
+   normalMap = "art/Packs/Terrains/Tortuga/grayrock_normal_specular";
+   detailMap = "art/Packs/Terrains/Tortuga/grayrock_detail";
+   detailSize = "10";
+   detailDistance = "2000";
    useSideProjection = "1";
-   diffuseSize = "300";
-   detailStrength = "0.6";
+   diffuseSize = "128";
+   detailStrength = "0.5";
    useAnisotropic[0] = "1";
+   useAnisotropic0 = "1";
 };
 
 new TerrainMaterial()
@@ -166,4 +175,44 @@ new TerrainMaterial()
    detailDistance = "1000";
    parallaxScale = "0.03";
    internalName = "Seaweed_base";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/Tortuga/TortRock_diffuse";
+   diffuseSize = "128";
+   normalMap = "art/Packs/Terrains/Tortuga/grayrock_normal_specular";
+   detailMap = "art/Packs/Terrains/Tortuga/grayrock_detail";
+   detailSize = "5";
+   detailStrength = "0.5";
+   detailDistance = "1000";
+   parallaxScale = "0";
+   internalName = "VolcanicCliffRockTop";
+   useAnisotropic0 = "1";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/Tortuga/TortRock_diffuse";
+   diffuseSize = "128";
+   normalMap = "art/Packs/Terrains/Tortuga/grayrock_normal_specular";
+   detailMap = "art/Packs/Terrains/Tortuga/grayrock_detail";
+   detailStrength = "0.5";
+   detailDistance = "1000";
+   internalName = "RockNear";
+   useAnisotropic0 = "1";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/Packs/Terrains/Tortuga/TortRock_diffuse";
+   diffuseSize = "128";
+   normalMap = "art/Packs/Terrains/Tortuga/grayrock_normal_specular";
+   detailMap = "art/Packs/Terrains/Tortuga/grayrock_detail";
+   detailSize = "10";
+   detailStrength = "0.5";
+   detailDistance = "2000";
+   useSideProjection = "1";
+   internalName = "RockFar";
+   useAnisotropic0 = "1";
 };
