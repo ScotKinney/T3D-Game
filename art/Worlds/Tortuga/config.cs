@@ -27,5 +27,6 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Signs/Village" TAB
    "AI/Sharks" TAB
    "AI/Gnome_Townie" TAB
+   "AI/A3D_Pirate" TAB
    "AI/Horses";
    
