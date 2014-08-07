@@ -374,5 +374,5 @@ function GnomeTalker::endTalkSequence(%this, %obj)
 {
    %obj.isTalking = false;
    // Turn back to the eater
-   %obj.setAimObject(Gnome_Eating);
+   %obj.setAimObject(Cliff);
 }
