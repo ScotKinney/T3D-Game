@@ -76,8 +76,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(TortugaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.0127938";
-         time = "0.0177714";
+         startTime = "0.0405716";
+         time = "0.0430316";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -578,7 +578,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-255.892 838.284 68.1193";
-         rotation = "-0.0915291 -0.00879184 -0.995764 97.0794";
+         rotation = "-0.091529 -0.00879184 -0.995764 97.0795";
          scale = "0.66334 0.403189 0.189596";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2203,7 +2203,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-213.894 793.06 88.1228";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5515";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5516";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2363,7 +2363,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-214.181 793.06 91.288";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5514";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5515";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -4493,26 +4493,6 @@ new SimGroup(MissionGroup) {
          forceDetail = "-1";
          position = "-312.524 725.455 68.7811";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
-         playAmbient = "0";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-325.979 739.598 68.8009";
-         rotation = "-0.720004 -0.414956 0.556242 1.07555";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -7224,7 +7204,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4106";
+            botBelongsToMe = "4109";
             delayRespawn = "20391";
             distDetect = "50";
             fov = "360";
@@ -7249,7 +7229,7 @@ new SimGroup(MissionGroup) {
             avOptions = "69,65,63,75,55,59,19,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4108";
+            botBelongsToMe = "4111";
             delayRespawn = "153641";
             distDetect = "50";
             fov = "360";
@@ -7770,7 +7750,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4109";
+            botBelongsToMe = "4112";
             delayRespawn = "33278";
             distDetect = "50";
             fov = "360";
@@ -7795,7 +7775,7 @@ new SimGroup(MissionGroup) {
             avOptions = "70,65,63,77,55,59,20,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4111";
+            botBelongsToMe = "4114";
             delayRespawn = "153655";
             distDetect = "50";
             fov = "360";
@@ -8534,7 +8514,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "-186.351 892.756 65.2412";
+      position = "12.214 1165.54 92.3705";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8550,7 +8530,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "126.848 1076.79 66.1988";
+      position = "92.6147 773.849 83.7363";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8575,7 +8555,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4112";
+            botBelongsToMe = "4115";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8671,7 +8651,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4113";
+            botBelongsToMe = "4116";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8766,7 +8746,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4114";
+            botBelongsToMe = "4117";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8861,7 +8841,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4115";
+            botBelongsToMe = "4118";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -8956,7 +8936,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4116";
+            botBelongsToMe = "4119";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9051,7 +9031,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4117";
+            botBelongsToMe = "4120";
             delayRespawn = "3126";
             distDetect = "50";
             fov = "360";
@@ -9475,7 +9455,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.825 599.985 66.2663";
-         rotation = "0.000993944 -0.00632428 0.999979 83.813";
+         rotation = "0.000993944 -0.00632428 0.99998 83.8129";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -10145,7 +10125,7 @@ new SimGroup(MissionGroup) {
          representedInLightmap = "0";
          shadowDarkenColor = "0 0 0 -1";
          includeLightmappedGeometryInShadow = "0";
-         position = "-319.073 735.35 71.9685";
+         position = "-319.073 735.35 71.1269";
          rotation = "1 0 0 0";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -10353,8 +10333,8 @@ new SimGroup(MissionGroup) {
          moveStuckTestDelay = "30";
          isAIControlled = "1";
          dataBlock = "Salty";
-         position = "-320.198 734.286 68.812";
-         rotation = "0 0 -1 95.5125";
+         position = "-319.377 734.286 68.812";
+         rotation = "0 0 -1 15.1734";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -10367,6 +10347,7 @@ new SimGroup(MissionGroup) {
             botWeapon = "-NOWEAPON";
             currentCycleNumber = "0";
             currentWeaponIs = "0";
+            detDis = "5";
             detDisSqr = "25";
             fireLater = "0";
             firing = "0";
@@ -11445,6 +11426,66 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
       };
+      new TSStatic() {
+         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
+         playAmbient = "0";
+         meshCulling = "0";
+         originSort = "0";
+         collisionType = "Collision Mesh";
+         decalType = "Collision Mesh";
+         allowPlayerStep = "1";
+         renderNormals = "0";
+         forceDetail = "-1";
+         position = "-326.072 739.598 68.8009";
+         rotation = "-0.720004 -0.414956 0.556242 1.07555";
+         scale = "0.5 0.5 0.5";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
+      };
+      new TSStatic() {
+         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
+         playAmbient = "0";
+         meshCulling = "0";
+         originSort = "0";
+         collisionType = "Collision Mesh";
+         decalType = "Collision Mesh";
+         allowPlayerStep = "1";
+         renderNormals = "0";
+         forceDetail = "-1";
+         position = "-326.366 738.746 68.8009";
+         rotation = "-0.720004 -0.414956 0.556242 1.07555";
+         scale = "0.5 0.5 0.5";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
+      };
+      new TSStatic() {
+         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
+         playAmbient = "0";
+         meshCulling = "0";
+         originSort = "0";
+         collisionType = "Collision Mesh";
+         decalType = "Collision Mesh";
+         allowPlayerStep = "1";
+         renderNormals = "0";
+         forceDetail = "-1";
+         position = "-326.435 738.796 69.3541";
+         rotation = "-0.720004 -0.414956 0.556242 1.07555";
+         scale = "0.5 0.5 0.5";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+            gradientRange = "0 180";
+            ignoreZodiacs = "0";
+            invertGradientRange = "0";
+            useGradientRange = "0";
+      };
    };
    new SimGroup(FJ_Mercantile) {
       canSave = "1";
@@ -11487,46 +11528,6 @@ new SimGroup(MissionGroup) {
          forceDetail = "-1";
          position = "-326.265 725.455 68.7811";
          rotation = "1 0 0 0";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
-         playAmbient = "0";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-325.979 738.021 68.8009";
-         rotation = "-0.720004 -0.414956 0.556242 1.07555";
-         scale = "1 1 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-            gradientRange = "0 180";
-            ignoreZodiacs = "0";
-            invertGradientRange = "0";
-            useGradientRange = "0";
-      };
-      new TSStatic() {
-         shapeName = "art/Packs/props/physShapes1/crate_square_unbroken.DAE";
-         playAmbient = "0";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-325.979 738.796 69.9329";
-         rotation = "-0.720004 -0.414956 0.556242 1.07555";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -12528,7 +12529,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-196.401 627.923 70.0017";
+      position = "-478.561 587.615 65.9587";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -12536,7 +12537,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "4101";
+         botBelongsToMe = "4104";
          delayRespawn = "41915";
          dropcount = "1";
          DropItem = "Shark_Steak";
@@ -12549,7 +12550,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark2) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-478.561 587.615 65.9587";
+      position = "-115.889 724.134 77.4366";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -12557,7 +12558,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Shark";
-         botBelongsToMe = "4102";
+         botBelongsToMe = "4105";
          delayRespawn = "41856";
          dropcount = "1";
          DropItem = "Shark_Steak";
@@ -14845,7 +14846,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GnomeTalker";
-         botBelongsToMe = "4103";
+         botBelongsToMe = "4106";
          delayRespawn = "2503";
          distDetect = "8";
          fov = "200";
@@ -14862,7 +14863,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GnomeEater";
-         botBelongsToMe = "4104";
+         botBelongsToMe = "4107";
          delayRespawn = "2652";
          distDetect = "8";
          fov = "200";
@@ -14880,7 +14881,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          activeDodge = "1";
          block = "GnomeTownie";
-         botBelongsToMe = "4105";
+         botBelongsToMe = "4108";
          delayRespawn = "2790";
          distDetect = "150";
          enabled = "1";
