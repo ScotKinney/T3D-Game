@@ -6,31 +6,18 @@ singleton TSShapeConstructor(A3D_PirateDts)
 
 function A3D_PirateDts::onLoad(%this)
 {
-   %this.addSequence("art/Packs/AI/A3D_Pirate/root.dsq", "root", "0", "-1");
-   %this.setSequenceCyclic("root", "1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/walk.dsq", "walk", "0", "337");
-   %this.setSequenceCyclic("run", "1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Back.dsq", "back", "0", "51");
+   %this.addSequence("./P_Root.dsq", "Root", "0", "185", "1", "0");
+   %this.setSequenceCyclic("Root", "1");
+   %this.addSequence("./walk.dsq", "Walk", "0", "337", "1", "0");
+   %this.addSequence("./Back.dsq", "back", "0", "51", "1", "0");
    %this.setSequenceCyclic("back", "1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/strafe_left.dsq", "left", "0", "-1");
-   %this.setSequenceCyclic("left", "1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/strafe_right.dsq", "right", "0", "-1");
-   %this.setSequenceCyclic("right", "1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Death1.dsq", "death1", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Death2.dsq", "death2", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Death3.dsq", "death3", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/BoringMe.dsq", "BoringMe", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Explain.dsq", "Explain", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/GoodLuckSalute.dsq", "GoodLuckSalute", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/LetMeThink.dsq", "LetMeThink", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/ListenToMe.dsq", "ListenToMe", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/NoNoNo.dsq", "NoNoNo", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/NotAChance.dsq", "NotAChance", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Shrugs.dsq", "Shrugs", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/WhatDoUWant.dsq", "WhatDoYouWant", "0", "33");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/BoringMe.dsq", "BoringMe", "0", "-1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/talking_A.dsq", "Talking", "0", "-1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Disappointed", "Disappointed", "0", "-1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Drinking.dsq", "Drinking", "0", "-1");
-   %this.addSequence("art/Packs/AI/A3D_Pirate/Eating.dsq", "Eating", "0", "-1");
+   %this.addSequence("./Death1.dsq", "death1", "0", "33", "1", "0");
+   %this.addSequence("./Death2.dsq", "death2", "0", "33", "1", "0");
+   %this.addSequence("./Death3.dsq", "death3", "0", "33", "1", "0");
+   %this.addSequence("./Explain.dsq", "GotAnyGems", "0", "33", "1", "0");
+   %this.addSequence("./LetMeThink.dsq", "TakeYorTime", "0", "33", "1", "0");
+   %this.addSequence("./ListenToMe.dsq", "BetterNotBe", "0", "33", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addSequence("./Attack1.dsq", "Attack1", "0", "51", "1", "0");
+   %this.setBounds("-0.491928 -0.124259 0.0112931 0.434437 0.415134 1.98001");
 }
