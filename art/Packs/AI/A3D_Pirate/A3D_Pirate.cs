@@ -6,7 +6,7 @@ singleton TSShapeConstructor(A3D_PirateDts)
 
 function A3D_PirateDts::onLoad(%this)
 {
-   %this.addSequence("./P_Root.dsq", "Root", "0", "185", "1", "0");
+   %this.addSequence("./Root.dsq", "Root", "0", "185", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.addSequence("./walk.dsq", "Walk", "0", "337", "1", "0");
    %this.addSequence("./Back.dsq", "back", "0", "51", "1", "0");
