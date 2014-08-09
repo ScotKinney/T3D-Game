@@ -278,7 +278,7 @@ function PlayGui::callBack(%this, %funcName, %obj)
    {  // See if it's a horse or talking AI
       %db = %obj.getDataBlock();
       %dbName = %db.getName();
-      if ( %db.canTalk )
+      if ( %db.hasClickAction )
          %objClass = "AI";
       else if ( strstr(%dbName, "Horse") != -1 )
          %objClass = "AIHorse";

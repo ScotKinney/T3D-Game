@@ -321,10 +321,11 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
    paceDist = 0;
    behavior = "StationaryNPCBehavior";
    canMove = false;
+   maxStepHeight = .25;
    returnToMarker = true;
    npcAction = 0;
    realName = "Norm";
-   canTalk = true;
+   hasClickAction = true;
    talkDuration = 12000; // 11 Seconds
    talkDelay = 500; // 1 second
 
@@ -368,6 +369,7 @@ datablock PlayerData(GnomeEater : GnomeTownie)
    paceDist = 0;
    behavior = "StationaryNPCBehavior";
    canMove = false;
+   maxStepHeight = .25;
    returnToMarker = true;
    npcAction = 0;
    realName = "Cliff";

@@ -7,11 +7,12 @@ datablock PlayerData(Salty : DefaultPlayerData)
    className = Armor;
    shapeFile = "art/Packs/AI/A3D_Pirate/A3D_Pirate.dts";
    
-      maxDamage = 300;
-      maxForwardSpeed = 2;
-      maxBackwardSpeed = 2;
-      maxSideSpeed = 1;
-      //attackWait = 900; //in miliseconds
+   maxDamage = 300;
+   maxForwardSpeed = 2;
+   maxBackwardSpeed = 2;
+   maxSideSpeed = 1;
+   maxStepHeight = .25;
+   //attackWait = 900; //in miliseconds
    
       //AI specific values that can be set for this datablock
       //These values can be overridden by the spawn marker,
@@ -24,7 +25,7 @@ datablock PlayerData(Salty : DefaultPlayerData)
       distDetect = 5;
       sidestepDist = 10;
       paceDist = 6;
-      npcAction = 7;
+      npcAction = 5;
       spawnGroup = 1;
       fov = 360;
       leash = 35;
@@ -33,6 +34,8 @@ datablock PlayerData(Salty : DefaultPlayerData)
       activeDodge = 1;
       team = 1;
    realName = "Uncle Salty";
+   hasClickAction = true;
+   willBuy = "Gems";
    cameraMaxDist = 3;
    computeCRC = true;
    
@@ -44,10 +47,11 @@ datablock PlayerData(Salty : DefaultPlayerData)
    drag = 1.3;
    maxdrag = 0.4;
 
-   boundingBox = "1 1 4";
+   boundingBox = "1 0.7 2";
 
    numDeathAnims = 3;   
    numDamageAnims = 0;
    hasLocationalAnims = false;
- 
 };
+
+exec("./salty.cs");

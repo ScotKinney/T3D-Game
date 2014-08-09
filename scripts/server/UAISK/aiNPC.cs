@@ -212,6 +212,14 @@ function AIPlayer::doingNpcAction(%this, %obj)
 function serverCmdNPCDecision(%client, %npcID, %newVal)
 {
    %npcID.npcDecision = %newVal;
+   
+   // If it's a custom NPC, see if it has it's own decision handler
+   if ( %npcID.npcAction == 5 )
+   {
+      %db = %npcID.getDatablock();
+      if ( %db.isMethod("handleNPCDecision") )
+         %db.handleNPCDecision(%client, %npcID, %newVal);
+   }
 }
 
 function serverCmdonAIClicked(%client, %objID)

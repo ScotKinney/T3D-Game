@@ -381,6 +381,8 @@ package GameCore
          %inventory = %inventory TAB boltAmmo.ItemID SPC "50";
          %inventory = %inventory TAB XR75Weapon.ItemID SPC "1";
          %inventory = %inventory TAB XRBoltsAmmo.ItemID SPC "500";
+         %inventory = %inventory TAB Emerald.ItemID SPC "50";
+         %inventory = %inventory TAB Large_Diamond.ItemID SPC "50";
          %this.startInv = %inventory;
          //%this.resetInventory(%inventory);
       }
