@@ -329,10 +329,36 @@ datablock PlayerData(GnomeTalker : GnomeTownie)
    talkDelay = 500; // 1 second
 
    // Put the goblet in the talker's right hand. ("Mount0")
-   equipmentSlots = 1;
-   eqShape[0] = "art/Packs/props/A3D_InteriorA/goblet.dts";
-   eqNode[0] = "mount0";
+   //equipmentSlots = 1;
+   //eqShape[0] = "art/Packs/props/A3D_InteriorA/goblet.dts";
+   //eqNode[0] = "mount0";
 };
+
+function GnomeTalker::onAdd(%this, %obj)
+{
+   Parent::onAdd(%this, %obj);
+
+   // Create the goblet
+   %tsGoblet = new TSStatic() {
+      shapeName = "art/Packs/props/A3D_InteriorA/goblet.dts";
+      scale = "1.2 1.2 1.2";
+   };
+   %obj.tsGoblet = %tsGoblet;
+   %obj.mountObjectEx(%tsGoblet, "Mount0", "", ".18 .03 0 0 1 0 1.57");
+}
+
+function GnomeTalker::onRemove(%this, %obj)
+{  // Unmount and delete the goblet
+   %count = %obj.getMountedObjectCount();
+   for (%i = %count-1; %i >= 0; %i--)
+   {
+      %mountObj = %obj.getMountedObject(%i);
+      %obj.unmountObject(%mountObj);
+      %mountObj.delete();
+   }
+
+   Parent::onRemove(%this, %obj);
+}
 
 ////////////////////Gnome Townie Eater datablock
 
