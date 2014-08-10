@@ -19,9 +19,10 @@ singleton Material(palmtree_tall_palm_fronds)
    specularPower[0] = "10";
    translucentBlendOp = "LerpAlpha";
    useAnisotropic[0] = "1";
-   translucent = "1";
-   alphaRef = "46";
-   castShadows = "0";
+   translucent = "0";
+   alphaRef = "20";
+   castShadows = "1";
+   alphaTest = "1";
 };
 
 singleton Material(bananatree_mature_bananatree)
