@@ -19,14 +19,12 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.setSequencePriority("Root", "1");
+   %this.addSequence("art/players/base/Seqs/Basic/WalkNew.dsq", "Walk", "0", "31", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
    %this.setSequencePriority("head", "5");
-   %this.addSequence("art/players/base/Seqs/Basic/Walk.dsq", "Walk", "0", "35", "1", "0");
-   %this.setSequenceCyclic("Walk", "1");
-   %this.addTrigger("Walk", "18", "1");
-   %this.addTrigger("Walk", "34", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Walk_Back", "0", "34", "1", "0");
    %this.addTrigger("Walk_Back", "8", "1");
    %this.addTrigger("Walk_Back", "25", "2");
@@ -301,7 +299,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Emotes/E_Wave.dsq", "E_Wave", "0", "26", "1", "0");
    %this.setSequenceCyclic("E_Wave", "0");
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
-   %this.setSequencePriority("TapLink", 3);
+   %this.setSequencePriority("TapLink", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast.dsq", "CastLine", "0", "34", "1", "0");
    %this.addTrigger("CastLine", "19", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Move.dsq", "Castline_Blend", "0", "24", "1", "0");
@@ -349,7 +347,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
-
 }
 
 $mack = true;
