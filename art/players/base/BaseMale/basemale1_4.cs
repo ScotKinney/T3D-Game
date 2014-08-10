@@ -16,7 +16,7 @@ function basemale1_4Dts::onLoad(%this)
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
    %this.addNode("mount1", "lHand", "-1.18136 0.227866 2.02225 -0.405678 0.619363 -0.672171 0.477243", "1");
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
-   %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "59", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.setSequencePriority("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
