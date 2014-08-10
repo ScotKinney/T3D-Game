@@ -31,7 +31,7 @@ singleton Material(Ter_DirtySandmix)
 
 singleton Material(Ter_Rock)
 {
-   mapTo = "cas_cobble2_shadow";
+   mapTo = "TortRock_Diffuse";
    footstepSoundId = 1;
 };
 
