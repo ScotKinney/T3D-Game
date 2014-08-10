@@ -593,7 +593,7 @@ datablock BillboardParticleData(TorchFire1)
 {
    textureName          = "core/art/particles/smoke";
    dragCoefficient      = 0.0;
-   gravityCoefficient   = -0.3;   // rises slowly
+   gravityCoefficient   = "-0.297997";   // rises slowly
    inheritedVelFactor   = 0.00;
    lifetimeMS           = 500;
    lifetimeVarianceMS   = 250;
@@ -602,17 +602,19 @@ datablock BillboardParticleData(TorchFire1)
    spinRandomMax        = 30.0;
    spinSpeed            = 1;
 
-   colors[0]     = "0.6 0.6 0.0 0.1";
-   colors[1]     = "0.8 0.6 0.0 0.1";
-   colors[2]     = "0.0 0.0 0.0 0.1";
+   colors[0]     = "0.598425 0.598425 0 0.0944882";
+   colors[1]     = "1 0.32549 0 0.257";
+   colors[2]     = "0 0 0 0.0944882";
 
-   sizes[0]      = 0.5;
-   sizes[1]      = 0.5;
-   sizes[2]      = 2.4;
+   sizes[0]      = "0.497467";
+   sizes[1]      = "0.497467";
+   sizes[2]      = "2.39883";
 
    times[0]      = 0.0;
-   times[1]      = 0.5;
+   times[1]      = "0.498039";
    times[2]      = 1.0;
+   HighResTexture = "core/art/particles/smoke";
+   animTexName = "core/art/particles/smoke";
 };
 
 datablock BillboardParticleData(TorchFire2)
