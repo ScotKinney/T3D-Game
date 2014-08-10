@@ -19,8 +19,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.setSequencePriority("Root", "1");
-   %this.addSequence("art/players/base/Seqs/Basic/WalkNew.dsq", "Walk", "0", "31", "1", "0");
-   %this.setSequenceCyclic("Walk", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
@@ -45,7 +43,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Run.dsq", "Run", "0", "19", "1", "0");
    %this.setSequenceCyclic("Run", "1");
    %this.addTrigger("Run", "6", "1");
-   %this.addTrigger("Run", "16", "2");
    %this.addSequence("art/players/base/Seqs/Basic/SprintFull_Back.dsq", "Run_Back", "0", "59", "1", "0");
    %this.setSequencePriority("Run_Back", "1");
    %this.addTrigger("Run_Back", "8", "1");
@@ -347,6 +344,11 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
+   %this.addTrigger("Run", "17", "2");
+   %this.addSequence("art/players/base/Seqs/Basic/WalkNewer.dsq", "Walk", "0", "27", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addTrigger("Walk", "11", "1");
+   %this.addTrigger("Walk", "24", "2");
 }
 
 $mack = true;
