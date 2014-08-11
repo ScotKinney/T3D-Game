@@ -5,7 +5,7 @@ singleton Material(CC_Car__3___Default2)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "56";
    translucentBlendOp = "LerpAlpha";
-   diffuseColor[0] = "0.898039 0.905882 0.898039 1";
+   diffuseColor[0] = "1 0.419608 0 1";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Miscellaneous";
