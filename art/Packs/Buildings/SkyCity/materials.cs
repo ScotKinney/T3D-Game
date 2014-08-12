@@ -837,3 +837,67 @@ singleton Material(mat_ElevatorGlass)
 };
 
 
+
+singleton Material(platform1_cube1_copy4_auv)
+{
+   mapTo = "cube1_copy4_auv";
+   diffuseMap[0] = "auvBG2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(DefaultMaterial)
+{
+   mapTo = "SushiBar";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiBar";
+   normalMap[0] = "art/Packs/Buildings/SkyCity/SushiBar_NRM.dds";
+   specularPower[0] = "34";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+};
+
+singleton Material(DefaultMaterial3)
+{
+   mapTo = "SushiA";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiA";
+   useAnisotropic[0] = "1";
+   translucent = "0";
+   translucentZWrite = "0";
+   alphaRef = "100";
+   alphaTest = "1";
+};
+
+singleton Material(DefaultMaterial4)
+{
+   mapTo = "SushiB";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiB";
+   useAnisotropic[0] = "1";
+   translucent = "0";
+   translucentZWrite = "0";
+   alphaRef = "26";
+   alphaTest = "1";
+};
+
+singleton Material(DefaultMaterial5)
+{
+   mapTo = "SushiC";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiC";
+   useAnisotropic[0] = "1";
+   translucent = "0";
+   translucentZWrite = "0";
+   alphaRef = "46";
+   castShadows = "0";
+   alphaTest = "1";
+};
+
+singleton Material(DefaultMaterial6)
+{
+   mapTo = "SushiDragon";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiDragon";
+   useAnisotropic[0] = "1";
+   doubleSided = "0";
+   translucentZWrite = "1";
+   alphaTest = "1";
+   alphaRef = "26";
+};
