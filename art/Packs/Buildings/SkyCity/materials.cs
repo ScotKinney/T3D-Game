@@ -37,7 +37,8 @@ singleton Material(mat_stairs2)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepMetal1Sound";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "SkyCity";
 };
 
 singleton Material(mat_walk1)
@@ -57,7 +58,7 @@ singleton Material(mat_walk2)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepMetal1Sound";
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
 };
 
@@ -67,8 +68,9 @@ singleton Material(mat_default2)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepMetal1Sound";
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
+   diffuseColor[0] = "0.176471 0.176471 0.176471 1";
 };
 
 /////////////////Buildings///////////////////////////////
@@ -702,3 +704,136 @@ singleton Material(SkyCity_b01w)
    cubemap = "ConiferCubemap";
    materialTag0 = "SkyCity";
 };
+
+////////////////////////////////FutureCity Materials
+
+
+singleton Material(mat_DownTownE)
+{
+   mapTo = "DownTownE";
+   diffuseMap[0] = "DownTownE";
+   specular[0] = "0.835294 0.835294 0.835294 1";
+   specularPower[0] = "54";
+   translucent = "0";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   normalMap[0] = "DownTownE_NRM.dds";
+   doubleSided = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+};
+
+singleton Material(mat_ElevatorGlass)
+{
+   mapTo = "ElevatorGlass";
+   diffuseMap[0] = "ElevatorGlassPNG.png";
+   specular[0] = "0.992157 0.992157 0.992157 1";
+   specularPower[0] = "100";
+   translucent = "1";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+};
+
+singleton Material(mat_TileFlooringB)
+{
+   mapTo = "TileFlooringB";
+   diffuseMap[0] = "TileFlooringB";
+   specular[0] = "0.890196 0.890196 0.890196 1";
+   specularPower[0] = "100";
+   translucent = "0";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepRock1Sound";
+};
+
+singleton Material(mat_FutureSignsC)
+{
+   mapTo = "FutureSignsC";
+   diffuseMap[0] = "FutureSignsC";
+   specular[0] = "0.988235 0.988235 0.988235 1";
+   specularPower[0] = "69";
+   translucent = "0";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   alphaTest = "1";
+   alphaRef = "0";
+};
+
+singleton Material(mat_FutureSignsD)
+{
+   mapTo = "FutureSignsD";
+   diffuseMap[0] = "FutureSignsD";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "1";
+};
+
+singleton Material(mat_FrontSigns)
+{
+   mapTo = "FrontSigns";
+   diffuseColor[0] = "0.2157 0.2157 0.2157 1";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "0";
+};
+
+singleton Material(mat_ClothingMall)
+{
+   mapTo = "ClothingMall";
+   diffuseMap[0] = "ClothingMall";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(mat_HighRiseF)
+{
+   mapTo = "HighRiseF";
+   diffuseMap[0] = "HighRiseF";
+   specular[0] = "0.972549 0.972549 0.972549 1";
+   specularPower[0] = "56";
+   translucent = "0";
+   customFootstepSound = "FootStepMetal1Sound";
+   normalMap[0] = "HighRiseF_NRM.dds";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+};
+
+singleton Material(mat_HighRiseD)
+{
+   mapTo = "HighRiseD";
+   diffuseMap[0] = "HighRiseD.dds";
+   normalMap[0] = "HighRiseD_NRM.dds";
+   specular[0] = "0.901961 0.901961 0.901961 1";
+   specularPower[0] = "61";
+   translucent = "0";
+   pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
+   doubleSided = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+};
+
+singleton Material(mat_A3D_Glass)
+{
+   mapTo = "A3D_Glass";
+   diffuseMap[0] = "A3D_Glass";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(mat_ElevatorGlass)
+{
+   mapTo = "ElevatorGlassNightTime";
+   diffuseMap[0] = "ElevatorGlassPNG.png";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+
