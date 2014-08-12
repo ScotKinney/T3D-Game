@@ -838,7 +838,7 @@ singleton Material(mat_ElevatorGlass)
 
 
 
-singleton Material(platform1_cube1_copy4_auv)
+singleton Material(mat_cube1_copy4_auv)
 {
    mapTo = "cube1_copy4_auv";
    diffuseMap[0] = "auvBG2";
@@ -846,21 +846,21 @@ singleton Material(platform1_cube1_copy4_auv)
    translucentBlendOp = "None";
 };
 
-singleton Material(DefaultMaterial)
+singleton Material(mat_SushiBar)
 {
    mapTo = "SushiBar";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiBar";
-   normalMap[0] = "art/Packs/Buildings/SkyCity/SushiBar_NRM.dds";
+   diffuseMap[0] = "SushiBar";
+   normalMap[0] = "SushiBar_NRM.dds";
    specularPower[0] = "34";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
 
-singleton Material(DefaultMaterial3)
+singleton Material(mat_SushiA)
 {
    mapTo = "SushiA";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiA";
+   diffuseMap[0] = "SushiA";
    useAnisotropic[0] = "1";
    translucent = "0";
    translucentZWrite = "0";
@@ -868,10 +868,10 @@ singleton Material(DefaultMaterial3)
    alphaTest = "1";
 };
 
-singleton Material(DefaultMaterial4)
+singleton Material(mat_SushiB)
 {
    mapTo = "SushiB";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiB";
+   diffuseMap[0] = "SushiB";
    useAnisotropic[0] = "1";
    translucent = "0";
    translucentZWrite = "0";
@@ -879,10 +879,10 @@ singleton Material(DefaultMaterial4)
    alphaTest = "1";
 };
 
-singleton Material(DefaultMaterial5)
+singleton Material(mat_SushiC)
 {
    mapTo = "SushiC";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiC";
+   diffuseMap[0] = "SushiC";
    useAnisotropic[0] = "1";
    translucent = "0";
    translucentZWrite = "0";
@@ -891,10 +891,10 @@ singleton Material(DefaultMaterial5)
    alphaTest = "1";
 };
 
-singleton Material(DefaultMaterial6)
+singleton Material(mat_SushiDragon)
 {
    mapTo = "SushiDragon";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/SushiDragon";
+   diffuseMap[0] = "SushiDragon";
    useAnisotropic[0] = "1";
    doubleSided = "0";
    translucentZWrite = "1";
