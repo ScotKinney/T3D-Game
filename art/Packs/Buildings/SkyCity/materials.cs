@@ -105,7 +105,7 @@ singleton Material(SkyCity_b28w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -127,7 +127,7 @@ singleton Material(SkyCity_b27w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -148,7 +148,7 @@ singleton Material(SkyCity_b26w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -170,7 +170,7 @@ singleton Material(SkyCity_b25w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -192,7 +192,7 @@ singleton Material(SkyCity_b24w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -204,7 +204,7 @@ singleton Material(SkyCity_b23a)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -216,7 +216,7 @@ singleton Material(SkyCity_b23w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -239,7 +239,7 @@ singleton Material(SkyCity_b22w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -261,7 +261,7 @@ singleton Material(SkyCity_b21w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -283,7 +283,7 @@ singleton Material(SkyCity_b20w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -305,7 +305,7 @@ singleton Material(SkyCity_b19w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -327,7 +327,7 @@ singleton Material(SkyCity_b18w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -349,7 +349,7 @@ singleton Material(SkyCity_b17w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -371,7 +371,7 @@ singleton Material(SkyCity_b16w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -393,7 +393,7 @@ singleton Material(SkyCity_b15w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -415,7 +415,7 @@ singleton Material(SkyCity_b14w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -437,7 +437,7 @@ singleton Material(SkyCity_b13w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -459,7 +459,7 @@ singleton Material(SkyCity_b12w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -481,7 +481,7 @@ singleton Material(SkyCity_b11w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -503,7 +503,7 @@ singleton Material(SkyCity_b10w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -525,7 +525,7 @@ singleton Material(SkyCity_b09w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -547,7 +547,7 @@ singleton Material(SkyCity_b08w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -569,7 +569,7 @@ singleton Material(SkyCity_b07w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -591,7 +591,7 @@ singleton Material(SkyCity_b06w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -613,7 +613,7 @@ singleton Material(SkyCity_b05w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -625,7 +625,7 @@ singleton Material(SkyCity_b04w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -647,7 +647,7 @@ singleton Material(SkyCity_b03w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -669,7 +669,7 @@ singleton Material(SkyCity_b02w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
@@ -701,7 +701,7 @@ singleton Material(SkyCity_b01w)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   cubemap = "ConiferCubemap";
+   cubemap = "SkyCity_Cubemap";
    materialTag0 = "SkyCity";
 };
 
