@@ -40,7 +40,7 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "99.4336 121.946 687.308";
+         position = "99.4336 121.946 688.578";
          rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
@@ -121,7 +121,7 @@ new SimGroup(MissionGroup) {
       foamMaxDepth = "0.51";
       foamAmbientLerp = "0.5";
       foamRippleInfluence = "0.01";
-      cubemap = "ConiferCubemap";
+      cubemap = "SkyCity_CubeMap";
       fullReflect = "1";
       reflectivity = "2";
       reflectPriority = "1";
@@ -149,7 +149,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new ScatterSky(theSky) {
-      skyBrightness = "10";
+      skyBrightness = "5";
       sunSize = "1";
       colorizeAmount = "0";
       colorize = "0 0 0 1";
@@ -160,9 +160,9 @@ new SimGroup(MissionGroup) {
       exposure = "10";
       zoffset = "0";
       azimuth = "90";
-      elevation = "60";
+      elevation = "45";
       moonAzimuth = "270";
-      moonElevation = "30";
+      moonElevation = "-45";
       castShadows = "1";
       brightness = "0.9";
       flareType = "DefaultSunFlare";
@@ -241,7 +241,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-334.252 2374 809.537";
+      position = "-300.228 -2040.57 784.79";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -257,7 +257,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "51.9264 -115.739 664.322";
+      position = "73.1805 -115.739 664.452";
       rotation = "0 0 -1 90";
       scale = "1.5 1.5 1.5";
       canSave = "1";
@@ -273,7 +273,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "52.3122 -128.015 664.323";
+      position = "73.5663 -128.015 664.453";
       rotation = "0 0 -1 90";
       scale = "1.5 1.5 1.5";
       canSave = "1";
@@ -289,8 +289,8 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "70.6863 -149.149 664.328";
-      rotation = "0 0 -1 90";
+      position = "127.601 48.9268 664.455";
+      rotation = "0 0 1 91.6668";
       scale = "1.5 1.5 1.5";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -305,8 +305,8 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "70.6863 -136.874 664.328";
-      rotation = "0 0 -1 90";
+      position = "127.244 36.657 664.455";
+      rotation = "0 0 1 90";
       scale = "1.5 1.5 1.5";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -321,7 +321,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "122.289 -142.971 664.846";
+      position = "72.652 60.8787 664.846";
       rotation = "0 0 -1 90";
       scale = "1 1 1";
       canSave = "1";
@@ -353,7 +353,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "72.6834 -46.773 691.789";
+      position = "98.8397 -46.773 691.789";
       rotation = "1 0 0 0";
       scale = "0.3 0.3 0.3";
       canSave = "1";
@@ -369,7 +369,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "173.271 -46.924 670.435";
+      position = "-15.8168 -23.1401 670.435";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
