@@ -5,7 +5,7 @@ singleton Material(CC_Car__3___Default2)
    specular[0] = "0.9 0.9 0.9 1";
    specularPower[0] = "56";
    translucentBlendOp = "LerpAlpha";
-   diffuseColor[0] = "0.270588 0.537255 0.678431 1";
+   diffuseColor[0] = "0.415686 0.607843 0.713726 1";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Miscellaneous";
@@ -45,6 +45,8 @@ singleton Material(CC_Car__3___Default)
    specularPower[0] = "108.8";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
+   diffuseColor[0] = "0.416 0.608 0.714 1";
+   materialTag0 = "Miscellaneous";
 };
 
 singleton Material(CC_Car__2___Default)
