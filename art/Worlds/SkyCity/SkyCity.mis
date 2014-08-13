@@ -40,8 +40,8 @@ new SimGroup(MissionGroup) {
          outdoorWeight = "1";
          isAIControlled = "0";
          dataBlock = "SpawnSphereMarker";
-         position = "99.4336 -209.254 674.596";
-         rotation = "0 0 1 1.06825";
+         position = "99.4336 121.946 687.308";
+         rotation = "0 0 1 180";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -63,8 +63,8 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
    };
    new SkyBox(SCSkyBox) {
-      Material = "ConiferSkyMat";
-      drawBottom = "1";
+      Material = "mat_SkyCitySky";
+      drawBottom = "0";
       fogBandHeight = "0.5";
       position = "0 0 449.611";
       rotation = "1 0 0 0";
@@ -220,7 +220,7 @@ new SimGroup(MissionGroup) {
       playAmbient = "1";
       meshCulling = "1";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
