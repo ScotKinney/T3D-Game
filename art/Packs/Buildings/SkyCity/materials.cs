@@ -16,8 +16,9 @@ singleton Material(mat_pool2)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepGrass1Sound";
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
+   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
 };
 
 singleton Material(mat_stairs)
@@ -39,16 +40,17 @@ singleton Material(mat_stairs2)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
+   diffuseColor[0] = "0.91 0.91 0.855 1";
 };
 
-singleton Material(mat_walk1)
+singleton Material(mat_walk2)
 {
-   mapTo = "walk1";
+   mapTo = "walk2";
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   diffuseColor[0] = "0.807843 0.796079 0.764706 1";
-   customFootstepSound = "FootStepMetal1Sound";
+   diffuseColor[0] = "0.85098 0.847059 0.792157 1";
+   customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
 };
 
@@ -60,6 +62,7 @@ singleton Material(mat_walk2)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
+   diffuseColor[0] = "0.909804 0.909804 0.854902 1";
 };
 
 singleton Material(mat_default2)
@@ -746,18 +749,18 @@ singleton Material(mat_TileFlooringB)
    customFootstepSound = "FootStepRock1Sound";
 };
 
-singleton Material(mat_FutureSignsC)
+singleton Material(mat_FutureSignsD)
 {
-   mapTo = "FutureSignsC";
-   diffuseMap[0] = "FutureSignsC";
-   specular[0] = "0.988235 0.988235 0.988235 1";
-   specularPower[0] = "69";
+   mapTo = "FutureSignsD";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/FutureSignsD";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
    translucent = "0";
-   pixelSpecular[0] = "1";
+   pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
-   alphaTest = "1";
-   alphaRef = "0";
+   doubleSided = "0";
+   alphaTest = "0";
+   alphaRef = "1";
 };
 
 singleton Material(mat_FutureSignsD)
@@ -841,9 +844,10 @@ singleton Material(mat_ElevatorGlass)
 singleton Material(mat_cube1_copy4_auv)
 {
    mapTo = "cube1_copy4_auv";
-   diffuseMap[0] = "auvBG2";
    specularPower[0] = "128";
    translucentBlendOp = "None";
+   materialTag0 = "SkyCity";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(mat_SushiBar)
