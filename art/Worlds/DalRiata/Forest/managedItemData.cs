@@ -70,27 +70,7 @@ datablock TSForestItemData(Fern_Vert_02)
    detailFreq = "0.01";
 };
 
-datablock TSForestItemData(CecropiaTree01)
-{
-   internalName = "CecropiaTree01";
-   shapeFile = "art/Packs/Trees/AV_RainForest/CecropiaTree01.DAE";
-   windScale = "1";
-   trunkBendScale = "0.005";
-   branchAmp = "0.02";
-   detailAmp = "0.04";
-   detailFreq = "0.04";
-   radius = "0.5";
-};
 
-datablock TSForestItemData(CopalTree01)
-{
-   internalName = "CopalTree01";
-   shapeFile = "art/Packs/Trees/AV_RainForest/CopalTree01.DAE";
-   windScale = "1";
-   branchAmp = "0.02";
-   detailAmp = "0.1";
-   detailFreq = "0.05";
-};
 
 datablock TSForestItemData(maple)
 {
@@ -101,7 +81,7 @@ datablock TSForestItemData(maple)
 datablock TSForestItemData(whitePine)
 {
    internalName = "whitePine";
-   shapeFile = "art/Packs/Trees/SP_Mythriel/whitePine.dae";
+   shapeFile = "art/Packs/Trees/SP_Mythriel/whitePinetest.dae";
 };
 
 datablock TSForestItemData(SP_SmallRock1)
