@@ -36,3 +36,20 @@ singleton Material(mat_Sound0Pointer)
 };
 
 
+
+singleton Material(svspartarail1_svspartawall3)
+{
+   mapTo = "svspartawall3";
+   diffuseMap[0] = "svspartawall3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svspartarail1_svspartawall1)
+{
+   mapTo = "svspartawall1";
+   diffuseMap[0] = "svspartawall1";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
