@@ -29,6 +29,10 @@ singleton Material(mat_A3D_cart3)
 singleton Material(mat_caravan)
 {
    mapTo = "caravan";
-   diffuseMap[0] = "caravan";
+   diffuseMap[0] = "art/Packs/Props/A3D_Carts/caravan";
    materialTag0 = "Props_A3D";
+   useAnisotropic[0] = "1";
+   normalMap[0] = "art/Packs/Props/A3D_Carts/caravan_NRM.jpg";
+   specularPower[0] = "49";
+   pixelSpecular[0] = "1";
 };
