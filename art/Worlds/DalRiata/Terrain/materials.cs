@@ -52,7 +52,7 @@ new TerrainMaterial()
    detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";
    detailScale = "256";
    detailDistance = "800";
-   parallaxScale = "0.01";
+   parallaxScale = "0.02";
    detailStrength = "0.3";
    detailSize = "7";
    diffuseSize = "100";
@@ -85,14 +85,14 @@ new TerrainMaterial()
 new TerrainMaterial()
 {
    diffuseMap = "art/packs/terrains/Dalriata/rockfromabovebrown";
-   diffuseSize = "100";
+   diffuseSize = "64";
    normalMap = "art/packs/terrains/Dalriata/grayrock_normal_specular";
    detailMap = "art/packs/terrains/Dalriata/grayrock_detail";
    detailSize = "30";
    detailDistance = "1500";
    useSideProjection = "1";
    internalName = "GrayRockFar";
-   detailStrength = "1";
+   detailStrength = "0.5";
    parallaxScale = "0.05";
 };
 
@@ -113,3 +113,30 @@ new TerrainMaterial()
 
 
 
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/packs/terrains/Dalriata/groundCoverDetail3";
+   diffuseSize = "100";
+   normalMap = "art/packs/terrains/Dalriata/Seaweed_nrm_displacement";
+   detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";
+   detailSize = "8";
+   detailStrength = "0.2";
+   detailDistance = "1000";
+   parallaxScale = "0.01";
+   internalName = "Grass";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/packs/terrains/Dalriata/soil_02";
+   diffuseSize = "20";
+   normalMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_normal_displacement";
+   detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";
+   detailSize = "7";
+   detailStrength = "0.3";
+   detailDistance = "800";
+   parallaxScale = "0";
+   internalName = "Path";
+   detailScale = "256";
+};

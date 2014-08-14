@@ -37,6 +37,5 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Plants/MK4_Trop_Plants" TAB
    "Plants/AV_Ferns" TAB
    "Plants/AV_RainForest" TAB
-   "Trees/SP_Mythriel" TAB
-   "Trees/AV_RainForest";
+   "Trees/SP_Mythriel";
    
