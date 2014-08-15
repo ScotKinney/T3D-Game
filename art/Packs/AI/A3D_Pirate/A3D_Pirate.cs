@@ -20,4 +20,6 @@ function A3D_PirateDts::onLoad(%this)
    %this.setSequenceCyclic("Walk", "1");
    %this.addSequence("./Attack1.dsq", "Attack1", "0", "51", "1", "0");
    %this.setBounds("-0.491928 -0.124259 0.0112931 0.434437 0.415134 1.98001");
+   %this.addTrigger("Walk", "25", "1");
+   %this.addTrigger("Walk", "4", "2");
 }
