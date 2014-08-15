@@ -37,12 +37,22 @@ singleton Material(mat_Sound0Pointer)
 
 
 
-singleton Material(svspartarail1_svspartawall3)
+singleton Material(svspartarail1_svspartawall1)
 {
-   mapTo = "svspartawall3";
-   diffuseMap[0] = "svspartawall3";
+   mapTo = "svspartawall1";
+   diffuseMap[0] = "art/worlds/Akropolis/models/svspartawall1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
+   normalMap[0] = "art/Worlds/Akropolis/models/svspartawall1N.dds";
+   useAnisotropic[0] = "1";
+   specular[0] = "0 0 0 1";
+   detailDistance = "500";
+   forestWindEnabled = "1";
+   detailSize = "4";
+   backLightFactor = "0.9 1.0 0.2";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+   materialTag0 = "Buildings_SP_Sparta";
 };
 
 singleton Material(svspartarail1_svspartawall1)
