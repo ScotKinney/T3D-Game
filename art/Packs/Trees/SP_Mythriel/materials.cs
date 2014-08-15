@@ -1,21 +1,23 @@
 singleton Material(MapleBranchMat)
 {
    mapTo = "mapleBranch";
-   diffuseMap[0] = "maple_branch_diffuse";
+   diffuseMap[0] = "art/Packs/Trees/SP_Mythriel/maple_branch_diffuse";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "100";
+   alphaRef = "228";
    materialTag0 = "MythTrees";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(MapleBarkMat)
 {
    mapTo = "mapleBark";
-   diffuseMap[0] = "maple_bark_diffuse.dds";
-   normalMap[0] = "maple_bark_nm.dds";
+   diffuseMap[0] = "art/Packs/Trees/SP_Mythriel/MapleBark_dif.dds";
+   normalMap[0] = "art/Packs/Trees/SP_Mythriel/MapleBark_nm.dds";
    materialTag0 = "MythTrees";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
+   specularPower[0] = "71";
 };
 
 ////////////////////White Pine///////////////////////////////////
@@ -37,13 +39,13 @@ singleton Material(mat_WhitePineBark)
 singleton Material(mat_whitePine_Branch)
 {
    mapTo = "whitePine_Branch_diffuse";
-   diffuseMap[0] = "whitePine_branch_diffuse";
+   diffuseMap[0] = "art/Packs/Trees/SP_Mythriel/whitePine_branch_diffuse.dds";
    specular[0] = "0 0 0 1";
    specularPower[0] = "128";
    useAnisotropic[0] = "1";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "52";
+   alphaRef = "255";
    materialTag0 = "MythTrees";
 };
 
