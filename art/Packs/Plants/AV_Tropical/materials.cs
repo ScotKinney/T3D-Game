@@ -32,12 +32,12 @@ singleton Material(mat_broadleaf_GG)
 singleton Material(mat_deadbush_GG)
 {
    mapTo = "deadbush";
-   diffuseMap[0] = "deadbush_diffuse_transparency.dds";
-   normalMap[0] = "deadbush_normals.dds";  
-   translucent = true;
-   translucentZWrite = true;
+   diffuseMap[0] = "art/Packs/Plants/AV_Tropical/deadbush_diffuse_transparency.dds";
+   normalMap[0] = "art/Packs/Plants/AV_Tropical/deadbush_normals.dds";  
+   translucent = "0";
+   translucentZWrite = "0";
    alphaTest = true;
-   alphaRef = 84;
+   alphaRef = "40";
    specularPower[0] = "54";
    forestWindEnabled = "1";
    useAnisotropic[0] = "1";
