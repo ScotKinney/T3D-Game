@@ -31,9 +31,9 @@ Salty.talkSound[0] = SaltyGotAnyGems;
 Salty.talkSound[1] = SaltyTakeYourTime;
 Salty.talkSound[2] = SaltyBetterNotBe;
 
-Salty.talkDuration[0] = 3000;
+Salty.talkDuration[0] = 5000;
 Salty.talkDuration[1] = 6000;
-Salty.talkDuration[2] = 2000;
+Salty.talkDuration[2] = 9000;
 
 Salty.talkDelay[0] = 500;
 Salty.talkDelay[1] = 500;
@@ -44,6 +44,11 @@ function Salty::clickedByPlayer(%this, %obj, %player)
 {
    if ( %obj.isTalking && (%obj.talkingTo == %player) )
       return;
+
+   // Stop on path
+   %obj.stop();
+   if ( isEventPending(%obj.delayedMove) )
+      cancel(%obj.delayedMove);
 
    if ((%player.saltySeq $= "") || (%player.saltySeq > 1))
       %player.saltySeq = 0;
@@ -83,12 +88,30 @@ function Salty::handleNPCDecision(%this, %client, %npcID, %newVal)
 function Salty::endTalkSequence(%this, %obj)
 {
    %obj.isTalking = false;
-   // Turn back towart the table
-   %obj.setAimObject(Cliff);
+   // Return to path following
+   %obj.moveToNode(%obj.currentNode);
+}
+
+function Salty::destinationOverride(%this, %obj)
+{
+   if ( %obj.isTalking )
+      return;  // Stop following path while talking
+
+   %node = %obj.path.getObject(%obj.currentNode);
+   if ( %node.msToNext > 0 )
+   {
+      if ( %this.nodeAnim[%obj.currentNode] !$= "" )
+      {
+         %obj.setActionThread(%this.nodeAnim[%obj.currentNode]);
+      }
+      %obj.delayedMove = %obj.schedule(%node.msToNext, "moveToNextNode", %obj);
+   }
+   else
+      %obj.moveToNextNode(%obj);
 }
 
 function Salty::customNPCAction(%this, %obj)
 {
    // Salty doesn't really need to think.
-   %obj.attentionlevel = 60;
+   %obj.attentionlevel = 10;
 }

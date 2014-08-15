@@ -19,7 +19,7 @@ datablock PlayerData(Salty : DefaultPlayerData)
       //but these values override the defaults
       //Weapon = "bomb";
       respawn = true;
-      behavior = "NPCVendorBehavior";
+      behavior = "KillableNPCBehavior";
       maxRange = 5;
       minRange = 0;
       distDetect = 5;
