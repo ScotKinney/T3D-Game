@@ -138,16 +138,17 @@ singleton Material(mat_ElephantEar_Bark)
 singleton Material(Bush01_mat)
 {
    mapTo = "Bush01";
-   diffuseMap[0] = "largeFiscus2.dds";
-   normalMap[0] = "largeFiscus2_NRM.dds";
-   specularMap[0] = "largeFiscus2_SPEC.dds";
+   diffuseMap[0] = "art/Packs/Plants/AV_RainForest/largeFiscus2.dds";
+   normalMap[0] = "art/Packs/Plants/AV_RainForest/largeFiscus2_NRM.dds";
    useAnisotropic[0] = "1";
-   subSurface[0] = "1";
+   subSurface[0] = "0";
    subSurfaceColor[0] = "0.768628 1 0 1";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "60";
+   alphaRef = "208";
    materialTag0 = "Plants_AVRainforest";
+   specularPower[0] = "96";
+   pixelSpecular[0] = "0";
 };
 
 //////////////////////Bamboo01
