@@ -5,7 +5,6 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Trees/Canopy" TAB
    "Trees/AV_Tropical" TAB
    "Plants/AV_Tropical" TAB
-   "GroundCover/Default" TAB
    "Props/underwaterCave" TAB
    "Props/GG_PacificIsland" TAB
    "Props/WaterfallRock" TAB
