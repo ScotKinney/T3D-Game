@@ -18,7 +18,7 @@ singleton Material(mat_pool2)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
-   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
+   diffuseColor[0] = "0.788235 0.890196 0.905882 1";
 };
 
 singleton Material(mat_stairs)
@@ -40,7 +40,7 @@ singleton Material(mat_stairs2)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
-   diffuseColor[0] = "0.91 0.91 0.855 1";
+   diffuseColor[0] = "0.780392 0.780392 0.772549 1";
 };
 
 singleton Material(mat_walk2)
@@ -49,7 +49,7 @@ singleton Material(mat_walk2)
    specularPower[0] = "128";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
-   diffuseColor[0] = "0.85098 0.847059 0.792157 1";
+   diffuseColor[0] = "0.807843 0.807843 0.796079 1";
    customFootstepSound = "FootStepWood1Sound";
    materialTag0 = "SkyCity";
 };
@@ -848,6 +848,7 @@ singleton Material(mat_cube1_copy4_auv)
    translucentBlendOp = "None";
    materialTag0 = "SkyCity";
    useAnisotropic[0] = "1";
+   diffuseColor[0] = "0.713726 0.713726 0.713726 1";
 };
 
 singleton Material(mat_SushiBar)
@@ -904,4 +905,231 @@ singleton Material(mat_SushiDragon)
    translucentZWrite = "1";
    alphaTest = "1";
    alphaRef = "26";
+};
+
+singleton Material(RotationBillboard_VC_FutureSignsC)
+{
+   mapTo = "FutureSignsC";
+   diffuseMap[0] = "FutureSignsC";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "100";
+   translucent = "1";
+};
+
+singleton Material(buil11_Material_building11_0_b11a_fx)
+{
+   mapTo = "Material_building11-0-b11a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.717647 0.831373 0.713726 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil11_Material_building11_0_b11w_fx)
+{
+   mapTo = "Material_building11-0-b11w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil12_Material_building12_0_b12a_fx)
+{
+   mapTo = "Material_building12-0-b12a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.811765 0.811765 0.811765 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil12_Material_building12_0_b12w_fx)
+{
+   mapTo = "Material_building12-0-b12w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   cubemap = "newCubemap_2";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil14_Material_building14_0_b14a_fx)
+{
+   mapTo = "Material_building14-0-b14a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil14_Material_building14_0_b14w_fx)
+{
+   mapTo = "Material_building14-0-b14w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.886275 0.772549 0.776471 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil15_Material_building15_0_b15a_fx)
+{
+   mapTo = "Material_building15-0-b15a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.819608 0.819608 0.819608 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil15_Material_building15_0_b15w_fx)
+{
+   mapTo = "Material_building15-0-b15w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil17_Material_building17_0_b17a_fx)
+{
+   mapTo = "Material_building17-0-b17a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.862745 0.870588 0.745098 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil17_Material_building17_0_b17w_fx)
+{
+   mapTo = "Material_building17-0-b17w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   cubemap = "newCubemap_2";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil18_Material_building18_0_b18a_fx)
+{
+   mapTo = "Material_building18-0-b18a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.662745 0.843137 0.866667 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil18_Material_building18_0_b18w_fx)
+{
+   mapTo = "Material_building18-0-b18w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil19_Material_building19_0_b19a_fx)
+{
+   mapTo = "Material_building19-0-b19a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.788235 0.788235 0.788235 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil19_Material_building19_0_b19w_fx)
+{
+   mapTo = "Material_building19-0-b19w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   materialTag0 = "SkyCity";
+   cubemap = "newCubemap_2";
+};
+
+singleton Material(buil20_Material_building20_0_b20a_fx)
+{
+   mapTo = "Material_building20-0-b20a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.819608 0.827451 0.666667 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil20_Material_building20_0_b20w_fx)
+{
+   mapTo = "Material_building20-0-b20w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil21_Material_building21_0_b21a_fx)
+{
+   mapTo = "Material_building21-0-b21a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.811765 0.815686 0.705882 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil21_Material_building21_0_b21w_fx)
+{
+   mapTo = "Material_building21-0-b21w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil22_Material_building22_0_b22a_fx)
+{
+   mapTo = "Material_building22-0-b22a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.619608 0.690196 0.796079 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil22_Material_building22_0_b22w_fx)
+{
+   mapTo = "Material_building22-0-b22w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil23_Material_building23_0_b23a_fx)
+{
+   mapTo = "Material_building23-0-b23a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil23_Material_building23_0_b23w_fx)
+{
+   mapTo = "Material_building23-0-b23w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.72549 0.72549 0.721569 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil24_Material_building24_24a)
+{
+   mapTo = "Material_building24-24a";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.333333 0.333333 0.333333 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil24_Material_building24_24w)
+{
+   mapTo = "Material_building24_24w";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(buil25_Material_building25_0_b25a_fx)
+{
+   mapTo = "Material_building25-0-b25a-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
+   diffuseColor[0] = "0.756863 0.776471 0.592157 1";
+   materialTag0 = "SkyCity";
+};
+
+singleton Material(buil25_Material_building25_0_b25w_fx)
+{
+   mapTo = "Material_building25-0-b25w-fx";
+   specular[0] = "0.35 0.35 0.35 1";
+   translucentBlendOp = "None";
 };
