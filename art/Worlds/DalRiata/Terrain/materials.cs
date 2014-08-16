@@ -1,21 +1,31 @@
+////////////////Dal Riata Terrain//////////////////
 
-////////////////Mythriel Terrain//////////////////
-//////////////////////////////////////////////////////
-
-//////////Footstep Sounds/////////////////////////////
+///////////FootStep Sounds////////////////////////////////////////
+//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
+//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
+//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
+//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
+///////////////////////////////////////////////////////////////////
 
 singleton Material(Ter_Grass)   
 {   
    mapTo = "groundCoverDetail3";   
-  customFootstepSound = FootStepGrass1Sound;
-  
+   footstepSoundId = 0;
 };
  
-singleton Material(Ter_RockTop)
+singleton Material(Ter_Rock)
 {
    mapTo = "rockfromabovebrown";
-   customFootstepSound = FootStepGrass1Sound;
+   footstepSoundId = 1;
+};
 
+singleton Material(Ter_Path)
+{
+   mapTo = "Path_dif";
+   customFootstepSound = FootStepSand1Sound;
+   showDust = true;
+   effectColor[0] = "0.53 0.52 0.46 1.0";
+   effectColor[1] = "0.65 0.64 0.58 1.0";
 };
 
 singleton Material(Spartan_rock_dif)
@@ -91,7 +101,7 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/Packs/Terrains/DalRiata/rockfromabovebrown";
+   diffuseMap = "art/Packs/Terrains/DalRiata/path_dif";
    diffuseSize = "20";
    normalMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_normal_displacement";
    detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";
