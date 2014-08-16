@@ -121,7 +121,7 @@ new TerrainMaterial()
    normalMap = "art/packs/terrains/Dalriata/Seaweed_nrm_displacement";
    detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";
    detailSize = "8";
-   detailStrength = "0.2";
+   detailStrength = "0.1";
    detailDistance = "1000";
    parallaxScale = "0.01";
    internalName = "Grass";
@@ -129,7 +129,7 @@ new TerrainMaterial()
 
 new TerrainMaterial()
 {
-   diffuseMap = "art/packs/terrains/Dalriata/soil_02";
+   diffuseMap = "art/Packs/Terrains/DalRiata/rockfromabovebrown";
    diffuseSize = "20";
    normalMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_normal_displacement";
    detailMap = "art/packs/terrains/Dalriata/rockygroundwithgrass_detail";

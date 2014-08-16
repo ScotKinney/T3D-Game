@@ -38,15 +38,6 @@ datablock TSForestItemData(Bush01)
    trunkBendScale = "0.02";
 };
 
-datablock TSForestItemData(ElephantEar)
-{
-   internalName = "ElephantEar";
-   shapeFile = "art/Packs/Plants/AV_Rainforest/ElephantEar.DAE";
-   windScale = "1";
-   branchAmp = "0.02";
-   detailAmp = "0.04";
-   detailFreq = "0.05";
-};
 
 datablock TSForestItemData(Fern_Vert_01)
 {
@@ -75,7 +66,7 @@ datablock TSForestItemData(Fern_Vert_02)
 datablock TSForestItemData(maple)
 {
    internalName = "maple";
-   shapeFile = "art/Packs/Trees/SP_Mythriel/maple.dae";
+   shapeFile = "art/Packs/Trees/SP_Mythriel/mapletree.dae";
 };
 
 datablock TSForestItemData(whitePine)

@@ -81,24 +81,6 @@ new SimGroup(ForestBrushGroup) {
          elevationMax = "10000";
       };
       new ForestBrushElement() {
-         internalName = "ElephantEar";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-         ForestItemData = "ElephantEar";
-         probability = "1";
-         rotationRange = "360";
-         scaleMin = "1";
-         scaleMax = "2";
-         scaleExponent = "1";
-         sinkMin = "0";
-         sinkMax = "0";
-         sinkRadius = "1";
-         slopeMin = "0";
-         slopeMax = "90";
-         elevationMin = "-10000";
-         elevationMax = "10000";
-      };
-      new ForestBrushElement() {
          internalName = "Bush01";
          canSave = "1";
          canSaveDynamicFields = "1";
