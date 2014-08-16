@@ -4,9 +4,10 @@ singleton Material(MapleBranchMat)
    diffuseMap[0] = "art/Packs/Trees/SP_Mythriel/maple_branch_diffuse";
    doubleSided = "1";
    alphaTest = "1";
-   alphaRef = "228";
+   alphaRef = "255";
    materialTag0 = "MythTrees";
    useAnisotropic[0] = "1";
+   specularPower[0] = "59";
 };
 
 singleton Material(MapleBarkMat)
