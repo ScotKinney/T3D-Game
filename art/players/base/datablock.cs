@@ -266,13 +266,12 @@ datablock PlayerData(MalePlayerData : DefaultPlayerData)
   // Foot Print offSet
    decalOffset = 0.22;
    
-   //DefaultSetup = "55,59,237,35,313,320,378,306,309"; //"55,59,50,35,279,282,285"; //"55,59,35,20,65,63,70,77";
    DefaultSetup = "55,59,50,35,279,282";//"55,59,35,20,65,63,70,77";
-   DefaultSetup[Caerule] = "55,59,35,20,65,63,70,77";
-   DefaultSetup[Sparta] = "55,59,35,242,6,269";
-   DefaultSetup[Mythriel] = "55,59,298,35,294,295,291";
-   DefaultSetup[Viken] = "55,59,50,35,279,282";
-   DefaultSetup[Maya] = "55,59,237,35,313,320,306,309";
+   DefaultSetup[Caerule] = "94,206,32,59,275,278,23,29,68,65,63,73";//Base set up "55,59,35,20,65,63,70,77"
+   DefaultSetup[Sparta] = "92,54,203,89,339,267,262,270,6,269,12,362";//Base setup "55,59,35,242,6,269"
+   DefaultSetup[Mythriel] = "57,37,201,88,303,291,294,295,377";//Base set up "55,59,298,35,294,295,291"
+   DefaultSetup[Viken] = "92,226,203,89,290,268,270,17,281,279,284";//Base"55,59,50,35,279,282"
+   DefaultSetup[Maya] = "57,237,201,90,316,310,312,304,307,313,320,378";//Base set up "55,59,237,35,313,320,306,309"
 
    numDeathAnims = 17;
    numDamageAnims = 0;
@@ -332,11 +331,11 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    decalOffset = 0.11;
 
    DefaultSetup = "80,99,216,330,326,325,328,324";//"80,99,216,386,393,382,379,380,390,390,393";
-   DefaultSetup[Caerule] = "80,99,216,386,393,382,379,380,390,393";
-   DefaultSetup[Sparta] = "80,99,216,356,350,348,347,351";
-   DefaultSetup[Mythriel] = "80,99,366,216,368,364,363,369";
-   DefaultSetup[Viken] = "80,99,397,216,396,406,400,403";
-   DefaultSetup[Maya] = "80,99,216,330,326,325,328,324";
+   DefaultSetup[Caerule] = "80,161,215,114,144,385,380,389,395,382,379,392";//Base set up "80,99,216,386,393,382,379,380,390,393"
+   DefaultSetup[Sparta] = "111,355,218,102,135,345,342,346,349,350,348,347,352,360";//Base set up "80,99,216,356,350,348,347,351"
+   DefaultSetup[Mythriel] = "81,173,213,102,142,373,367,370,368,364,363,374,365";//Base set up "80,99,366,216,368,364,363,369"
+   DefaultSetup[Viken] = "111,195,217,102,136,409,405,399,396,402";//Base set up "80,99,397,216,396,406,400,403"
+   DefaultSetup[Maya] = "82,192,218,114,147,337,334,321,322,326,325,361";//Base set up "80,99,216,330,326,325,328,324"
 
    numDeathAnims = 17;   
    numDamageAnims = 0;
