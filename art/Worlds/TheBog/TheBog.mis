@@ -10,8 +10,8 @@ new SimGroup(MissionGroup) {
       visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "0.27451 0.27451 0.27451 1";
-      fogDensity = "0.0005";
-      fogDensityOffset = "0.001";
+      fogDensity = "0.001";
+      fogDensityOffset = "20";
       fogAtmosphereHeight = "800";
       canvasClearColor = "1 1 1 255";
       ambientLightBlendPhase = "1";
@@ -891,7 +891,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3159";
+            botBelongsToMe = "3161";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "23309";
             distDetect = "150";
@@ -919,7 +919,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "Boglin";
-            botBelongsToMe = "3161";
+            botBelongsToMe = "3163";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "4981";
             distDetect = "150";
@@ -947,7 +947,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             activeDodge = "1";
             block = "BoglinBig";
-            botBelongsToMe = "3162";
+            botBelongsToMe = "3164";
             customAmbientLighting = "0 0 0 1";
             delayRespawn = "20414";
             distDetect = "150";
@@ -1124,7 +1124,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3163";
+               botBelongsToMe = "3165";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "18872";
                distDetect = "150";
@@ -1282,7 +1282,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3164";
+               botBelongsToMe = "3166";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "1681";
                distDetect = "150";
@@ -1441,9 +1441,9 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3165";
+               botBelongsToMe = "3722";
                customAmbientLighting = "0 0 0 1";
-               delayRespawn = "1675";
+               delayRespawn = "1152";
                distDetect = "150";
                dropcount = "1";
                DropItem = "mudfish";
@@ -1569,7 +1569,7 @@ new SimGroup(MissionGroup) {
             renderNormals = "0";
             forceDetail = "-1";
             position = "-63.7897 147.268 71.1024";
-            rotation = "-0.0411414 -0.0356142 0.998518 81.8428";
+            rotation = "-0.0411414 -0.0356142 0.998518 81.8427";
             scale = "0.35 0.35 0.35";
             canSave = "1";
             canSaveDynamicFields = "1";
@@ -1599,7 +1599,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3166";
+               botBelongsToMe = "3168";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "46621";
                distDetect = "150";
@@ -1783,7 +1783,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3167";
+               botBelongsToMe = "3169";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "487870";
                distDetect = "150";
@@ -1993,7 +1993,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3168";
+               botBelongsToMe = "3170";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "4138";
                distDetect = "150";
@@ -2178,7 +2178,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3169";
+               botBelongsToMe = "3171";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "671024";
                distDetect = "150";
@@ -2387,7 +2387,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3170";
+               botBelongsToMe = "3172";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "600950";
                distDetect = "150";
@@ -2547,7 +2547,7 @@ new SimGroup(MissionGroup) {
             canSaveDynamicFields = "1";
                activeDodge = "0";
                block = "Boglin";
-               botBelongsToMe = "3171";
+               botBelongsToMe = "3173";
                customAmbientLighting = "0 0 0 1";
                delayRespawn = "21673";
                distDetect = "150";
