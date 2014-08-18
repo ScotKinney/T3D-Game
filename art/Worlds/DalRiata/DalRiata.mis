@@ -336,7 +336,7 @@ new SimGroup(MissionGroup) {
          avOptions = "371,368,364,363,374,365,80,99,366,216";
          behavior = "NPCVendorBehavior";
          block = "FeMalePlayerData";
-         botBelongsToMe = "4306";
+         botBelongsToMe = "4308";
          distDetect = "5";
          npcAction = "7";
          realName = "Jewels";
@@ -430,7 +430,7 @@ new SimGroup(MissionGroup) {
             avOptions = "291,294,295,377,55,59,298,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4308";
+            botBelongsToMe = "4310";
             delayRespawn = "22436";
             distDetect = "50";
             fov = "360";
@@ -455,7 +455,7 @@ new SimGroup(MissionGroup) {
             avOptions = "291,294,295,377,55,59,298,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4310";
+            botBelongsToMe = "4312";
             delayRespawn = "22431";
             distDetect = "50";
             fov = "360";
@@ -1268,7 +1268,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-464.443 -534.58 -21.2284";
-         rotation = "-0.34848 -0.870128 0.34848 97.9347";
+         rotation = "-0.34848 -0.870128 0.34848 97.9346";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -1288,7 +1288,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-457.461 -541.241 -21.2599";
-         rotation = "-0.34848 -0.870128 0.34848 97.9347";
+         rotation = "-0.34848 -0.870128 0.34848 97.9346";
          scale = "2 2 4";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -1338,7 +1338,7 @@ new SimGroup(MissionGroup) {
             avOptions = "292,294,295,377,55,59,298,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4311";
+            botBelongsToMe = "4313";
             delayRespawn = "27022";
             distDetect = "50";
             fov = "360";
@@ -1363,7 +1363,7 @@ new SimGroup(MissionGroup) {
             avOptions = "292,294,295,377,55,59,298,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "4313";
+            botBelongsToMe = "4315";
             delayRespawn = "27027";
             distDetect = "50";
             fov = "360";
@@ -3693,7 +3693,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Angus";
-            botBelongsToMe = "4314";
+            botBelongsToMe = "4316";
             distDetect = "5";
             npcAction = "7";
             respawnCount = "0";
@@ -5616,6 +5616,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            ammo = "50";
       };
       new Item() {
          static = "1";
@@ -5629,12 +5630,13 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            ammo = "50";
       };
       new Item() {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ChaosBladeWeapon";
          position = "57.8161 -561.769 -20.5329";
@@ -5647,7 +5649,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "HeatNailWeapon";
          position = "57.7465 -563.189 -20.5345";
@@ -5660,7 +5662,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "QuikSilverWeapon";
          position = "57.858 -564.163 -20.5234";
@@ -5673,7 +5675,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "QuikSilverWeapon";
          position = "57.7229 -563.901 -20.5234";
@@ -5686,7 +5688,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "QuikSilverWeapon";
          position = "57.8023 -563.664 -20.5234";
@@ -5699,7 +5701,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "HeatNailWeapon";
          position = "57.7443 -562.724 -20.5345";
@@ -5712,7 +5714,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "HeatNailWeapon";
          position = "57.8412 -562.956 -20.5345";
@@ -5725,7 +5727,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ChaosBladeWeapon";
          position = "57.8083 -562.303 -20.5278";
@@ -5738,7 +5740,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ChaosBladeWeapon";
          position = "57.8338 -562.037 -20.5261";
@@ -5803,7 +5805,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "JackHammerWeapon";
          position = "42.2396 -562.276 -20.5075";
@@ -5855,7 +5857,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "42.5394 -561.275 -20.5387";
@@ -5868,7 +5870,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "42.541 -561.578 -20.5387";
@@ -5881,7 +5883,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "JackHammerWeapon";
          position = "42.2414 -562.638 -20.5075";
@@ -5894,7 +5896,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "42.3299 -563.929 -20.504";
@@ -5907,7 +5909,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "42.3286 -563.626 -20.504";
@@ -5920,7 +5922,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "42.3267 -563.283 -20.504";
@@ -5933,7 +5935,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "JackHammerWeapon";
          position = "42.2431 -562.94 -20.5075";
@@ -5946,7 +5948,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "42.5429 -561.885 -20.5387";
@@ -5972,7 +5974,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "IronSpearWeapon";
          position = "51.9394 -558.726 -19.7851";
@@ -5998,7 +6000,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "StoneSpearWeapon";
          position = "51.3636 -558.729 -19.7562";
@@ -6011,7 +6013,7 @@ new SimGroup(MissionGroup) {
          static = "1";
          rotate = "0";
          buyable = "1";
-         count = "1";
+         count = "10";
          isAIControlled = "0";
          dataBlock = "SteelSpearWeapon";
          position = "52.4757 -558.704 -19.87";
@@ -6677,7 +6679,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-79.6033 -158.759 -28.9753";
-         rotation = "-0.0981843 0.0873474 0.991328 97.8284";
+         rotation = "-0.0981842 0.0873474 0.991328 97.8285";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -7387,7 +7389,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "4315";
+            botBelongsToMe = "4317";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7468,7 +7470,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "4316";
+            botBelongsToMe = "4318";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7549,7 +7551,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "4317";
+            botBelongsToMe = "4319";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7630,7 +7632,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "4318";
+            botBelongsToMe = "4320";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7711,7 +7713,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "4319";
+            botBelongsToMe = "4321";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -7792,7 +7794,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "4320";
+            botBelongsToMe = "4322";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -9509,7 +9511,7 @@ new SimGroup(MissionGroup) {
       new StaticShape(Razorback1) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
-         position = "-476.819 -32.8108 -17.261";
+         position = "-648.44 41.3412 -10.767";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          hidden = "1";
@@ -9517,7 +9519,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "Razorback";
-            botBelongsToMe = "4321";
+            botBelongsToMe = "4323";
             delayRespawn = "50055";
             distDetect = "150";
             dropcount = "1";
@@ -9534,7 +9536,7 @@ new SimGroup(MissionGroup) {
       new StaticShape(Razorback2) {
          isAIControlled = "0";
          dataBlock = "AIPlayerMarker";
-         position = "-648.44 41.3412 -10.767";
+         position = "-525.335 -141.956 -15.1519";
          rotation = "1 0 0 0";
          scale = "1 1 1";
          hidden = "1";
@@ -9542,7 +9544,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "Razorback";
-            botBelongsToMe = "4322";
+            botBelongsToMe = "4324";
             delayRespawn = "2951";
             distDetect = "150";
             dropcount = "1";
@@ -10016,7 +10018,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "crossbowWeapon";
-      position = "-631.428 -580.323 -20.9588";
+      position = "96.3109 -563.473 -13.2862";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -10032,7 +10034,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "crossbowWeapon";
-      position = "-15.351 -378.617 -28.3805";
+      position = "-77.4677 -569.433 -15.2001";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -10051,7 +10053,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Fletch";
-         botBelongsToMe = "4307";
+         botBelongsToMe = "4309";
          delayRespawn = "2503";
          distDetect = "8";
          fov = "200";
