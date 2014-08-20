@@ -6,8 +6,8 @@
       <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
       <source_data>file:///F:/AV/TAP/Game/art/Packs/Buildings/SkyCity/Source/Tower.max</source_data>
     </contributor>
-    <created>2014-08-18T15:44:04</created>
-    <modified>2014-08-18T15:44:04</modified>
+    <created>2014-08-18T18:58:13</created>
+    <modified>2014-08-18T18:58:13</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -395,55 +395,12 @@
             </accessor>
           </technique_common>
         </source>
-        <source id="geom-TowerFloor-map-2">
-          <float_array id="geom-TowerFloor-map-2-array" count="0"/>
-          <technique_common>
-            <accessor source="#geom-TowerFloor-map-2-array" count="0" stride="3">
-              <param name="R" type="float"/>
-              <param name="G" type="float"/>
-              <param name="B" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="geom-TowerFloor-map0">
-          <float_array id="geom-TowerFloor-map0-array" count="0"/>
-          <technique_common>
-            <accessor source="#geom-TowerFloor-map0-array" count="0" stride="3">
-              <param name="R" type="float"/>
-              <param name="G" type="float"/>
-              <param name="B" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="geom-TowerFloor-map1">
-          <float_array id="geom-TowerFloor-map1-array" count="0"/>
-          <technique_common>
-            <accessor source="#geom-TowerFloor-map1-array" count="0" stride="3">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-              <param name="P" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="geom-TowerFloor-map2">
-          <float_array id="geom-TowerFloor-map2-array" count="0"/>
-          <technique_common>
-            <accessor source="#geom-TowerFloor-map2-array" count="0" stride="3">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-              <param name="P" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
         <vertices id="geom-TowerFloor-vertices">
           <input semantic="POSITION" source="#geom-TowerFloor-positions"/>
         </vertices>
         <triangles material="HighRiseD" count="0">
           <input semantic="VERTEX" source="#geom-TowerFloor-vertices" offset="0"/>
           <input semantic="NORMAL" source="#geom-TowerFloor-normals" offset="1"/>
-          <input semantic="COLOR" source="#geom-TowerFloor-map0" offset="2" set="0"/>
-          <input semantic="TEXCOORD" source="#geom-TowerFloor-map1" offset="3" set="0"/>
-          <input semantic="TEXCOORD" source="#geom-TowerFloor-map2" offset="4" set="1"/>
           <p/>
         </triangles>
       </mesh>

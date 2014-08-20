@@ -1,18 +1,21 @@
 ////////////////////////////////FutureCity Materials
 
-
+//Escalator
 singleton Material(mat_DownTownE)
 {
    mapTo = "DownTownE";
-   diffuseMap[0] = "DownTownE";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/DownTownE";
    specular[0] = "0.835294 0.835294 0.835294 1";
    specularPower[0] = "54";
    translucent = "0";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
-   normalMap[0] = "DownTownE_NRM.dds";
+   normalMap[0] = "art/Packs/Buildings/SkyCity/DownTownE_NRM.dds";
    doubleSided = "1";
    customFootstepSound = "FootStepMetal1Sound";
+   animFlags[0] = "0x00000001";
+   scrollDir[0] = "-0.28 0";
+   scrollSpeed[0] = "0.1";
 };
 
 singleton Material(mat_ElevatorGlass)
@@ -24,25 +27,15 @@ singleton Material(mat_ElevatorGlass)
    translucent = "1";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
-   doubleSided = "1";
+   materialTag0 = "SkyCity";
 };
 
-singleton Material(mat_TileFlooringB)
-{
-   mapTo = "TileFlooringB";
-   diffuseMap[0] = "TileFlooringB";
-   specular[0] = "0.890196 0.890196 0.890196 1";
-   specularPower[0] = "100";
-   translucent = "0";
-   pixelSpecular[0] = "1";
-   useAnisotropic[0] = "1";
-   customFootstepSound = "FootStepRock1Sound";
-};
+/////////RotationSigns///////////////
 
 singleton Material(mat_FutureSignsD)
 {
    mapTo = "FutureSignsD";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/FutureSignsD";
+   diffuseMap[0] = "FutureSignsD";
    specular[0] = "0 0 0 1";
    specularPower[0] = "100";
    translucent = "0";
@@ -53,47 +46,15 @@ singleton Material(mat_FutureSignsD)
    alphaRef = "1";
 };
 
-singleton Material(mat_FutureSignsD)
+singleton Material(mat_FutureSignsC)
 {
-   mapTo = "FutureSignsD";
-   diffuseMap[0] = "FutureSignsD";
+   mapTo = "FutureSignsC";
+   diffuseMap[0] = "FutureSignsC";
    specular[0] = "0 0 0 1";
    specularPower[0] = "100";
    translucent = "1";
 };
-
-singleton Material(mat_FrontSigns)
-{
-   mapTo = "FrontSigns";
-   diffuseColor[0] = "0.2157 0.2157 0.2157 1";
-   specular[0] = "0 0 0 1";
-   specularPower[0] = "100";
-   translucent = "0";
-};
-
-singleton Material(mat_ClothingMall)
-{
-   mapTo = "ClothingMall";
-   diffuseMap[0] = "ClothingMall";
-   specular[0] = "0 0 0 1";
-   specularPower[0] = "100";
-   translucent = "1";
-   useAnisotropic[0] = "1";
-};
-
-singleton Material(mat_HighRiseF)
-{
-   mapTo = "HighRiseF";
-   diffuseMap[0] = "HighRiseF";
-   specular[0] = "0.972549 0.972549 0.972549 1";
-   specularPower[0] = "56";
-   translucent = "0";
-   customFootstepSound = "FootStepMetal1Sound";
-   normalMap[0] = "HighRiseF_NRM.dds";
-   pixelSpecular[0] = "1";
-   useAnisotropic[0] = "1";
-   doubleSided = "1";
-};
+////////////////Tower Bldg///////////////////////////
 
 singleton Material(mat_HighRiseD)
 {
@@ -106,49 +67,9 @@ singleton Material(mat_HighRiseD)
    doubleSided = "1";
    customFootstepSound = "FootStepMetal1Sound";
    materialTag0 = "SkyCity";
-   diffuseColor[0] = "0.537255 0.537255 0.537255 1";
+   diffuseColor[0] = "0.996078 0.996078 0.996078 1";
    diffuseMap[0] = "art/Packs/Buildings/SkyCity/HighRiseD.dds";
    normalMap[0] = "art/Packs/Buildings/SkyCity/HighRiseD_NRM.dds";
-};
-
-singleton Material(mat_A3D_Glass)
-{
-   mapTo = "A3D_Glass";
-   diffuseMap[0] = "A3D_Glass";
-   specular[0] = "0 0 0 1";
-   specularPower[0] = "100";
-   translucent = "1";
-   useAnisotropic[0] = "1";
-};
-
-singleton Material(mat_ElevatorGlass)
-{
-   mapTo = "ElevatorGlassNightTime";
-   diffuseMap[0] = "ElevatorGlassPNG.png";
-   specular[0] = "0 0 0 1";
-   specularPower[0] = "100";
-   translucent = "1";
-   useAnisotropic[0] = "1";
-};
-
-singleton Material(mat_cube1_copy4_auv)
-{
-   mapTo = "cube1_copy4_auv";
-   specularPower[0] = "128";
-   translucentBlendOp = "None";
-   materialTag0 = "SkyCity";
-   useAnisotropic[0] = "1";
-   diffuseColor[0] = "0.713726 0.713726 0.713726 1";
-};
-
-
-singleton Material(RotationBillboard_VC_FutureSignsC)
-{
-   mapTo = "FutureSignsC";
-   diffuseMap[0] = "FutureSignsC";
-   specular[0] = "0 0 0 1";
-   specularPower[0] = "100";
-   translucent = "1";
 };
 
 /////////////////////////////Buildings
@@ -757,6 +678,8 @@ singleton Material(mat_GroundPlane_SkyCity)
    mapTo = "WholeCity_WallsOne";
    diffuseColor[0] = "0.784314 0.784314 0.784314 1";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
+   materialTag0 = "SkyCity";
 };
 
 //////////////////////////////////////New platform
@@ -767,6 +690,7 @@ singleton Material(platform1b_stairs)
    diffuseColor[0] = "0.816 0.792 0.718 1";
    materialTag0 = "SkyCity";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 singleton Material(platform1b_base)
@@ -783,6 +707,7 @@ singleton Material(platform1b_walk)
    diffuseColor[0] = "0.815686 0.792157 0.717647 1";
    materialTag0 = "SkyCity";
    useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 
@@ -800,7 +725,7 @@ singleton Material(platform1b_pool2)
 
 //////////////////Platform Tube Bottom
 
-singleton Material(Mat_walk2)
+singleton Material(Mat_PlatformTubewalk2)
 {
    mapTo = "Material_base_extract27-0-walk2-fx";
    diffuseColor[0] = "0.816 0.792 0.718 1";
@@ -816,24 +741,3 @@ singleton Material(Mat_pool2)
 };
 //////////////////////////////////////End
 
-singleton Material(SkyCityTube1_glass)
-{
-   mapTo = "Material_Cylinder1_copy2-0-glass-fx";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/A3D_Glass";
-   specular[0] = "0 0 0 1";
-   translucentBlendOp = "LerpAlpha";
-   translucent = "1";
-   useAnisotropic[0] = "1";
-   doubleSided = "0";
-};
-
-singleton Material(SkyCityTube1_trim)
-{
-   mapTo = "Material_Cylinder1_copy2-0-trim-fx";
-   diffuseMap[0] = "art/Packs/Buildings/SkyCity/HighRiseD";
-   specular[0] = "0 0 0 1";
-   translucentBlendOp = "LerpAlpha";
-   useAnisotropic[0] = "1";
-   translucent = "0";
-   pixelSpecular[0] = "1";
-};
