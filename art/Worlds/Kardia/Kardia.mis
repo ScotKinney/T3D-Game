@@ -3957,6 +3957,7 @@ new SimGroup(MissionGroup) {
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+            ammo = "50";
          };
          new Item() {
             static = "1";
@@ -3970,12 +3971,13 @@ new SimGroup(MissionGroup) {
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
+            ammo = "50";
          };
          new Item() {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ChaosBladeWeapon";
             position = "2.10072 374.886 15.3857";
@@ -3988,7 +3990,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "HeatNailWeapon";
             position = "3.26508 374.917 15.3904";
@@ -4001,7 +4003,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "QuikSilverWeapon";
             position = "3.99108 375.025 15.4015";
@@ -4014,7 +4016,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "QuikSilverWeapon";
             position = "3.75784 374.891 15.4015";
@@ -4027,7 +4029,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "QuikSilverWeapon";
             position = "3.52928 375.025 15.4015";
@@ -4040,7 +4042,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "HeatNailWeapon";
             position = "2.8004 374.917 15.3904";
@@ -4053,7 +4055,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "HeatNailWeapon";
             position = "3.03326 375.013 15.3904";
@@ -4066,7 +4068,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ChaosBladeWeapon";
             position = "2.55656 374.886 15.3857";
@@ -4079,7 +4081,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ChaosBladeWeapon";
             position = "2.30423 375.009 15.3857";
@@ -4144,7 +4146,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "JackHammerWeapon";
             position = "3.77478 357.215 15.4553";
@@ -4196,7 +4198,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ReaverWeapon";
             position = "2.77456 357.52 15.4241";
@@ -4209,7 +4211,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ReaverWeapon";
             position = "3.07766 357.52 15.4241";
@@ -4222,7 +4224,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "JackHammerWeapon";
             position = "4.13687 357.215 15.4553";
@@ -4235,7 +4237,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ThumperWeapon";
             position = "5.42802 357.297 15.4588";
@@ -4248,7 +4250,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ThumperWeapon";
             position = "5.12492 357.297 15.4588";
@@ -4261,7 +4263,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ThumperWeapon";
             position = "4.78138 357.297 15.4588";
@@ -4274,7 +4276,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "JackHammerWeapon";
             position = "4.43767 357.215 15.4553";
@@ -4287,7 +4289,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "ReaverWeapon";
             position = "3.38534 357.52 15.4241";
@@ -4313,7 +4315,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "IronSpearWeapon";
             position = "-2.00351 372.985 15.8266";
@@ -4339,7 +4341,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "StoneSpearWeapon";
             position = "-2.00357 372.409 15.8555";
@@ -4352,7 +4354,7 @@ new SimGroup(MissionGroup) {
             static = "1";
             rotate = "0";
             buyable = "1";
-            count = "1";
+            count = "10";
             isAIControlled = "0";
             dataBlock = "SteelSpearWeapon";
             position = "-2.02286 373.521 15.7417";

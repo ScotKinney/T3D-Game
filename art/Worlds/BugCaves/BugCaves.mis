@@ -1352,26 +1352,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
-   new Trigger(Skull1Trigger) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-      dataBlock = "serverTransferTrigger";
-      position = "-1.21171 -0.424793 12.4336";
-      rotation = "1 0 0 0";
-      scale = "2.97804 2.56217 2.56368";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         skulllevel = "1";
-   };
-   new Trigger(MDLAureus) {
-      polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-      position = "-1.21171 -0.424793 12.4336";
-      rotation = "1 0 0 0";
-      scale = "2.97804 2.56217 2.56368";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         manifestURL = "http://www.alterverse.com/stream/manifests/aureusmanifest.txt";
-         pathToRoot = "http://www.alterverse.com/stream/";
-   };
+
    new ParticleEmitterNode(WaterSplash) {
       active = "1";
       velocity = "1";
