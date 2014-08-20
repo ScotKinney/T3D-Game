@@ -54,7 +54,7 @@ new SimGroup(MissionGroup) {
       squareSize = "128";
       scaleU = "12";
       scaleV = "12";
-      Material = "WholeCity_WallsOne_mat";
+      Material = "mat_GroundPlane_SkyCity";
       canSave = "1";
       canSaveDynamicFields = "1";
          enabled = "1";
@@ -344,6 +344,7 @@ new SimGroup(MissionGroup) {
       scale = "1.3 1.3 1.3";
       canSave = "1";
       canSaveDynamicFields = "1";
+         A3D_Glass = "A3D_Glass_mat";
    };
    new TSStatic(Car1) {
       shapeName = "art/Packs/AI/SkyCityGCar/G_Car.dae";
@@ -1011,22 +1012,6 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "180 140 875.479";
-      rotation = "1 0 0 0";
-      scale = "1 2 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SkyCity/XTubeStraight.DAE";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
       position = "180 -220 875.479";
       rotation = "1 0 0 0";
       scale = "1 2 1";
@@ -1172,22 +1157,6 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "20 100 875.479";
-      rotation = "1 0 0 0";
-      scale = "1 2 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/SkyCity/XTubeStraight.DAE";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "20 140 875.479";
       rotation = "1 0 0 0";
       scale = "1 2 1";
       canSave = "1";
@@ -1391,7 +1360,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "180 168.5 865.5";
+      position = "180 128.5 865.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1407,7 +1376,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "20 168.5 865.5";
+      position = "20 129 865.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1439,7 +1408,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "88.5 63.0956 890";
+      position = "81 63.0956 890";
       rotation = "-6.863e-009 0.157007 0.987598 180";
       scale = "1 1 1";
       canSave = "1";
@@ -1455,7 +1424,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "127.5 45.6945 892.431";
+      position = "122.5 45.6945 892.431";
       rotation = "1 0 0 19.4326";
       scale = "1 1 1";
       canSave = "1";
