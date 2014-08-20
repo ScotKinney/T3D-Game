@@ -26,7 +26,7 @@ singleton Material(HoverCraft_Windows)
 singleton Material(HoverCraft_Chassis)
 {
    mapTo = "Chassis";
-   diffuseColor[0] = "0.533333 0.619608 0.4 1";
+   diffuseColor[0] = "0.984314 0.984314 0.980392 1";
    specular[0] = "0.870588 0.870588 0.870588 1";
    specularPower[0] = "36";
    translucentBlendOp = "None";
