@@ -21,13 +21,14 @@ singleton Material(mat_DownTownE)
 singleton Material(mat_ElevatorGlass)
 {
    mapTo = "ElevatorGlass";
-   diffuseMap[0] = "ElevatorGlassPNG.png";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/ElevatorGlassPNG.png";
    specular[0] = "0.992157 0.992157 0.992157 1";
    specularPower[0] = "100";
    translucent = "1";
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "SkyCity";
+   customFootstepSound = "FootStepWood1Sound";
 };
 
 /////////////Tower Glass////////////////FIX
