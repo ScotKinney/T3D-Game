@@ -335,7 +335,7 @@ datablock PlayerData(FemalePlayerData : DefaultPlayerData)
    DefaultSetup[Sparta] = "111,355,218,102,135,345,342,346,349,350,348,347,352,360";//Base set up "80,99,216,356,350,348,347,351"
    DefaultSetup[Mythriel] = "81,173,213,102,142,373,367,370,368,364,363,374,365";//Base set up "80,99,366,216,368,364,363,369"
    DefaultSetup[Viken] = "111,195,217,102,136,409,405,399,396,402";//Base set up "80,99,397,216,396,406,400,403"
-   DefaultSetup[Maya] = "82,192,218,114,147,337,334,321,322,326,325,361";//Base set up "80,99,216,330,326,325,328,324"
+   DefaultSetup[Maya] = "81,331,216,102,136,337,334,327,323,326,325,361";//Base set up "80,99,216,330,326,325,328,324"
 
    numDeathAnims = 17;   
    numDamageAnims = 0;
