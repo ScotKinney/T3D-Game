@@ -700,7 +700,7 @@ singleton Material(mat_GroundPlane_SkyCity)
 singleton Material(platform1b_stairs)
 {
    mapTo = "Material_base-0-stairs2-fx";
-   diffuseColor[0] = "0.816 0.792 0.718 1";
+   diffuseColor[0] = "0.91 0.91 0.906 1";
    materialTag0 = "SkyCity";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
@@ -717,7 +717,7 @@ singleton Material(platform1b_base)
 singleton Material(platform1b_walk)
 {
    mapTo = "Material_base-0-walk2-fx";
-   diffuseColor[0] = "0.815686 0.792157 0.717647 1";
+   diffuseColor[0] = "0.909804 0.909804 0.905882 1";
    materialTag0 = "SkyCity";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
@@ -753,3 +753,32 @@ singleton Material(Mat_pool2)
 };
 //////////////////////////////////////End
 
+
+singleton Material(tower2_HighRiseD)
+{
+   mapTo = "Material_A3D_Glass-0-HighRiseD-fx";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/HighRiseD";
+   translucentBlendOp = "None";
+   normalMap[0] = "art/Packs/Buildings/SkyCity/HighRiseD_NRM.dds";
+   useAnisotropic[0] = "1";
+   customFootstepSound = "FootStepMetal1Sound";
+   doubleSided = "1";
+};
+
+singleton Material(tower2_Glass)
+{
+   mapTo = "Material_A3D_Glass-0-A3D_Glass-fx";
+   diffuseMap[0] = "art/Packs/Buildings/SkyCity/ElevatorGlassPng";
+   translucentBlendOp = "LerpAlpha";
+   doubleSided = "1";
+   translucent = "1";
+   useAnisotropic[0] = "1";
+};
+
+singleton Material(tower2_default2)
+{
+   mapTo = "Material_A3D_Glass-0-default2-fx";
+   diffuseColor[0] = "0.7899 0.8133 0.694 1";
+   specular[0] = "0 0 0 1";
+   translucentBlendOp = "None";
+};
