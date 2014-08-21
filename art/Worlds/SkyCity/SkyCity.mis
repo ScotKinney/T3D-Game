@@ -718,7 +718,7 @@ new SimGroup(MissionGroup) {
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
@@ -1258,7 +1258,7 @@ new SimGroup(MissionGroup) {
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
-      collisionType = "Collision Mesh";
+      collisionType = "Visible Mesh";
       decalType = "Collision Mesh";
       allowPlayerStep = "1";
       renderNormals = "0";
