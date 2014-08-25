@@ -28,8 +28,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addTrigger("Walk", "11", "1");
    %this.addTrigger("Walk", "24", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Walk_Back", "0", "34", "1", "0");
-   %this.addTrigger("Walk_Back", "8", "1");
-   %this.addTrigger("Walk_Back", "25", "2");
+   %this.addTrigger("Walk_Back", "3", "1");
+   %this.addTrigger("Walk_Back", "21", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Left.dsq", "Strafe_Left", "0", "19", "1", "0");
    %this.setSequenceCyclic("Strafe_Left", "1");
    %this.addTrigger("Strafe_Left", "1", "1");
@@ -46,7 +46,8 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/LandFull.dsq", "Land", "0", "30", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Run.dsq", "Run", "0", "19", "1", "0");
    %this.setSequenceCyclic("Run", "1");
-   %this.addTrigger("Run", "6", "1");
+   %this.addTrigger("Run", "8", "1");
+   %this.addTrigger("Run", "18", "2");
    %this.addSequence("art/players/base/Seqs/Basic/SprintFull_Back.dsq", "Run_Back", "0", "59", "1", "0");
    %this.setSequencePriority("Run_Back", "1");
    %this.addTrigger("Run_Back", "8", "1");
