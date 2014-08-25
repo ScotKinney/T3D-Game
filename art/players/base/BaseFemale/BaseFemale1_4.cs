@@ -9,13 +9,13 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.renameNode("upperJaw", "Eye");
    %this.setNodeTransform("Eye", "0.0143051 0.114877 2.35567 0.0652936 -0.983834 -0.166756 0.0252496", "1");
    %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
+   %this.addNode("mount4", "lForeArm", "-1.01155 0.175602 2.00712 0.0145075 -0.163052 0.986511 0.193837", "1");
    %this.addNode("mount7", "mount0", "0.472093 3.16589 2.59716 0.69705 -0.68378 -0.215794 3.07014", "1");
    %this.addNode("mount2", "lHand", "-1.01155 0.175602 2.02436 1 0 0 0", "1");
    %this.addNode("mount10", "rToe", "0.174183 0.0105287 0.041622 1 0 0 0", "1");
    %this.addNode("mount12", "lToe", "-0.210012 -0.00454873 0.0478135 1 0 0 0", "1");
    %this.addNode("mount1", "lHand", "-1.04742 0.220753 1.94963 -0.296087 0.913308 -0.279644 0.479743", "1");
    %this.addNode("mount31", "root", "0 0 0 0 0 1 0", "1");
-   %this.addNode("mount4", "lForeArm", "-1.01155 0.175602 2.00712 0.0145075 -0.163052 0.986511 0.193837", "1");
    %this.addMesh("Sash_FJ 700", "./BaseFemale_FJ.dts", "Sash_FJ 700");
    %this.addMesh("WristGrd_FJ_R 700", "./BaseFemale_FJ.dts", "WristGrd_FJ_R 700");
    %this.addMesh("ChestStrap_FJ 700", "./BaseFemale_FJ.dts", "ChestStrap_FJ 700");
@@ -34,15 +34,17 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addMesh("Pants_FJ 50", "./BaseFemale_FJ.dts", "Pants_FJ 50");
    %this.addMesh("Boots_FJ 50", "./BaseFemale_FJ.dts", "Boots_FJ 50");
    %this.addMesh("WristGrd_FJ_L 50", "./BaseFemale_FJ.dts", "WristGrd_FJ_L 50");
-   %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "99", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "59", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.setSequencePriority("Root", "1");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
+   %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
+   %this.setSequencePriority("head", "5"); 
    %this.addSequence("art/players/base/Seqs/Basic/WalkFem.dsq", "Walk", "0", "27", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
    %this.addTrigger("Walk", "11", "1");
-   %this.addTrigger("Walk", "24", "2");
+   %this.addTrigger("Walk", "24", "2");  
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Walk_Back", "0", "34", "1", "0");
    %this.addTrigger("Walk_Back", "8", "1");
    %this.addTrigger("Walk_Back", "25", "2");
@@ -63,14 +65,13 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Run.dsq", "Run", "0", "19", "1", "0");
    %this.setSequenceCyclic("Run", "1");
    %this.addTrigger("Run", "6", "1");
-   %this.addTrigger("Run", "16", "2");
    %this.addSequence("art/players/base/Seqs/Basic/SprintFull_Back.dsq", "Run_Back", "0", "59", "1", "0");
    %this.setSequencePriority("Run_Back", "1");
    %this.addTrigger("Run_Back", "8", "1");
    %this.addTrigger("Run_Back", "23", "2");
    %this.addTrigger("Run_Back", "38", "3");
    %this.addTrigger("Run_Back", "52", "4");
-   %this.addSequence("art/players/base/Seqs/Basic/Jump_Sprint.dsq", "Move_Jump", "0", "39", "1", "0");
+   %this.addSequence("art/players/base/Seqs/Basic/Jump_Sprint.dsq", "Move_Jump", "0", "29", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Sitting_M.dsq", "Sitting_M", "0", "49", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/Crawling.dsq", "Prone_Root", "0", "29", "1", "0");
    %this.setSequenceCyclic("Prone_Root", "1");
@@ -317,7 +318,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Emotes/E_Wave.dsq", "E_Wave", "0", "26", "1", "0");
    %this.setSequenceCyclic("E_Wave", "0");
    %this.addSequence("art/players/base/Seqs/Basic/TapLink.dsq", "TapLink", "0", "8", "1", "0");
-   %this.setSequencePriority("TapLink", 3);
+   %this.setSequencePriority("TapLink", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast.dsq", "CastLine", "0", "34", "1", "0");
    %this.addTrigger("CastLine", "19", "3");
    %this.addSequence("art/players/base/Seqs/Basic/Cast_Move.dsq", "Castline_Blend", "0", "24", "1", "0");
@@ -365,9 +366,6 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
-   %this.setSequenceGroundSpeed("Walk", "0 2.5 0", "0 0 0");
-   %this.setSequencePriority("HeadSide", 4);
-   %this.setSequencePriority("head", 5);
 }
 
 $mack = true;
