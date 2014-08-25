@@ -23,6 +23,10 @@ function basemale1_4Dts::onLoad(%this)
    %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
    %this.setSequencePriority("head", "5");
+   %this.addSequence("art/players/base/Seqs/Basic/WalkNewer.dsq", "Walk", "0", "27", "1", "0");
+   %this.setSequenceCyclic("Walk", "1");
+   %this.addTrigger("Walk", "11", "1");
+   %this.addTrigger("Walk", "24", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Walk_Back", "0", "34", "1", "0");
    %this.addTrigger("Walk_Back", "8", "1");
    %this.addTrigger("Walk_Back", "25", "2");
@@ -344,11 +348,6 @@ function basemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Mounted/Fire_GunMount.dsq", "Fire_FlintlockMount", "0", "24", "1", "0");
    %this.addTrigger("Fire_FlintlockMount", "13", "3");
    %this.addSequence("art/players/base/Seqs/Mounted/WarCry_Mount.dsq", "WarCry_Mount", "0", "49", "1", "0");
-   %this.addTrigger("Run", "17", "2");
-   %this.addSequence("art/players/base/Seqs/Basic/WalkNewer.dsq", "Walk", "0", "27", "1", "0");
-   %this.setSequenceCyclic("Walk", "1");
-   %this.addTrigger("Walk", "11", "1");
-   %this.addTrigger("Walk", "24", "2");
 }
 
 $mack = true;
