@@ -444,7 +444,7 @@ datablock PlayerData(DefaultHorse)
    maxUnderwaterBackwardSpeed = 5.0; 
    maxUnderwaterSideSpeed = 0; // RFB -> horses don't normally strafe
 
-   jumpForce = 17 * 90; //15 - Scot
+   jumpForce = 12 * 90; 
    standJumpForce = 0;
    jumpEnergyDrain = 5.0;
    minJumpEnergy = 2.5;
