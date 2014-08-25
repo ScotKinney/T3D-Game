@@ -76,8 +76,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(TortugaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.918239";
-         time = "0.91861";
+         startTime = "0.940153";
+         time = "0.940633";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -178,7 +178,7 @@ new SimGroup(MissionGroup) {
          isLooping = "1";
          isStreaming = "0";
          sourceGroup = "AudioChannelMusic";
-         volume = "0.25";
+         volume = "0.15";
          pitch = "1";
          fadeInTime = "0";
          fadeOutTime = "0";
@@ -449,7 +449,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-255.892 838.284 68.1193";
-         rotation = "-0.091529 -0.00879182 -0.995764 97.0803";
+         rotation = "-0.091529 -0.00879182 -0.995764 97.0804";
          scale = "0.66334 0.403189 0.189596";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2074,7 +2074,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-213.894 793.06 88.1228";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5524";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5525";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2234,7 +2234,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-214.181 793.06 91.288";
-         rotation = "0.0239963 -0.0210442 0.999491 97.5523";
+         rotation = "0.0239963 -0.0210442 0.999491 97.5524";
          scale = "2.5042 2.5042 2.83027";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -8385,7 +8385,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "12.214 1165.54 92.3705";
+      position = "92.6147 773.849 83.7363";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -8401,7 +8401,7 @@ new SimGroup(MissionGroup) {
       count = "1";
       isAIControlled = "0";
       dataBlock = "FlintlockWeapon";
-      position = "-186.351 892.756 65.2412";
+      position = "-342.583 1300.77 66.2815";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -9326,7 +9326,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-322.825 599.985 66.2663";
-         rotation = "0.000993944 -0.00632428 0.99998 83.8129";
+         rotation = "0.000993944 -0.00632428 0.999979 83.813";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -12487,7 +12487,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-478.561 587.615 65.9587";
+      position = "-93.7874 1034.52 61.5073";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
@@ -12508,7 +12508,7 @@ new SimGroup(MissionGroup) {
    new StaticShape(KardShark2) {
       isAIControlled = "0";
       dataBlock = "AIPlayerMarker";
-      position = "-220.743 920.83 77.4366";
+      position = "-93.7874 1034.52 61.5073";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       hidden = "1";
