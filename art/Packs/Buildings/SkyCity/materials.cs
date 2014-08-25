@@ -29,6 +29,7 @@ singleton Material(mat_ElevatorGlass)
    useAnisotropic[0] = "1";
    materialTag0 = "SkyCity";
    customFootstepSound = "FootStepWood1Sound";
+   doubleSided = "1";
 };
 
 /////////////Tower Glass////////////////FIX
