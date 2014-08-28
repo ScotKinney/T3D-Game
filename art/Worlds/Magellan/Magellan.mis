@@ -641,7 +641,6 @@ new SimGroup(MissionGroup) {
       active = "1";
       velocity = "1";
       emitter = "SmokeEmitter";
-      dataBlock = "SmokeEmitterNode";
       position = "40.9149 -106.123 9.98604";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -663,7 +662,6 @@ new SimGroup(MissionGroup) {
       active = "1";
       velocity = "1";
       emitter = "SmokeEmitter";
-      dataBlock = "SmokeEmitterNode";
       position = "40.9149 -103.69 10.3495";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -685,7 +683,6 @@ new SimGroup(MissionGroup) {
       active = "1";
       velocity = "1";
       emitter = "SmokeEmitter";
-      dataBlock = "SmokeEmitterNode";
       position = "40.9149 -100.894 9.80425";
       rotation = "1 0 0 0";
       scale = "1 1 1";
@@ -1295,7 +1292,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2967";
+         botBelongsToMe = "8598";
          delayRespawn = "4108";
          leash = "5";
          paceDist = "0";
@@ -1316,7 +1313,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2968";
+         botBelongsToMe = "8599";
          delayRespawn = "11839";
          leash = "5";
          paceDist = "0";
@@ -1337,7 +1334,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2969";
+         botBelongsToMe = "8600";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1362,7 +1359,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2970";
+         botBelongsToMe = "8601";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1387,7 +1384,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2971";
+         botBelongsToMe = "8602";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "6208";
          leash = "5";
@@ -1412,7 +1409,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2972";
+         botBelongsToMe = "8603";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "4331";
          leash = "5";
@@ -1437,7 +1434,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2973";
+         botBelongsToMe = "8604";
          customAmbientLighting = "0 0 0 1";
          leash = "5";
          paceDist = "0";
@@ -1461,7 +1458,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2974";
+         botBelongsToMe = "8605";
          leash = "5";
          paceDist = "0";
          respawnCount = "0";
@@ -1481,7 +1478,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2975";
+         botBelongsToMe = "8606";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
@@ -1494,8 +1491,8 @@ new SimGroup(MissionGroup) {
    new Item(XR75) {
       static = "1";
       rotate = "1";
-      buyable = "0";
-      count = "0";
+      buyable = "1";
+      count = "1";
       isAIControlled = "0";
       dataBlock = "XR75Weapon";
       position = "-91.0249 24.2695 48.0188";
@@ -1503,7 +1500,7 @@ new SimGroup(MissionGroup) {
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         ammo = "200";
+         ammo = "500";
          collideable = "1";
          respawnTime = "10";
    };
@@ -1518,7 +1515,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2976";
+         botBelongsToMe = "8607";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1543,7 +1540,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2977";
+         botBelongsToMe = "8608";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1568,7 +1565,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2978";
+         botBelongsToMe = "8609";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1593,7 +1590,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2979";
+         botBelongsToMe = "8610";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1618,7 +1615,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2980";
+         botBelongsToMe = "8611";
          customAmbientLighting = "0 0 0 1";
          delayRespawn = "9056";
          leash = "5";
@@ -1643,7 +1640,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "Droid1";
-         botBelongsToMe = "2981";
+         botBelongsToMe = "8612";
          delayRespawn = "4937";
          leash = "5";
          paceDist = "0";
