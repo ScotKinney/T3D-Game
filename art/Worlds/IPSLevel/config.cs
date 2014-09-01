@@ -4,6 +4,7 @@ $AlterVerse::ArtPacks = "trees" TAB
     "rocks" TAB
 	"clouds" TAB
 	"plants" TAB
+	"inv" TAB
     "skies/default" TAB
     "AI/Horses" TAB
     "AI/Gnomes";

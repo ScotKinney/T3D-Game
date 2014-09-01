@@ -217,3 +217,11 @@ singleton Material(canopytree_two_ColorEffectR225G88B199_material)
    specularPower[0] = "10";
    translucentBlendOp = "None";
 };
+
+singleton Material(shrub_one_ColorEffectR224G86B86_material)
+{
+   mapTo = "ColorEffectR224G86B86-material";
+   diffuseColor[0] = "0.878431 0.337255 0.337255 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
