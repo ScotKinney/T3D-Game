@@ -176,19 +176,19 @@ datablock TSForestItemData(BigLeaf_Plant)
 datablock TSForestItemData(bigrock02)
 {
    internalName = "bigrock02";
-   shapeFile = "art/packs/rocks/t3d/rock2.dts";
+   shapeFile = "art/packs/rocks/MossRocks/MossRock2.dts";
 };
 
 datablock TSForestItemData(bigrock03)
 {
    internalName = "bigrock03";
-   shapeFile = "art/packs/rocks/t3d/rock3.dts";
+   shapeFile = "art/packs/rocks/MossRocks/MossRock3.dts";
 };
 
 datablock TSForestItemData(bigrock01)
 {
    internalName = "bigrock01";
-   shapeFile = "art/packs/rocks/t3d/rock1.dts";
+   shapeFile = "art/packs/rocks/MossRocks/MossRock1.dts";
 };
 
 datablock TSForestItemData(Bush2)
