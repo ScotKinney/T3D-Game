@@ -54,7 +54,7 @@ new SimGroup(MissionGroup) {
             LevelName = "IPSLevel";
       };
       new CloudLayer(clouds1) {
-         texture = "art/Packs/skies/default/clouds/clouds_normal_displacement";
+         texture = "art/Packs/skies/clouds/Vol_Cloud_02/3td_Vol_Cloud_02a";
          texScale[0] = "1";
          texScale[1] = "1";
          texScale[2] = "1";
@@ -554,7 +554,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic() {
-      shapeName = "art/Packs/trees/palm/palmtree_tall.dts";
+      shapeName = "art/Packs/trees/av_tropical/palmtree_tall.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
