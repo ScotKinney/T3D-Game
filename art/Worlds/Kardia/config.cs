@@ -2,7 +2,7 @@
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "Skies/Default" TAB
    "SkyBoxes/DefaultNight" TAB
-   "SkyBoxes/DarkSky2" TAB
+   "SkyBoxes/Kardia" TAB
    "GroundCover/MK4_Tropical" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB

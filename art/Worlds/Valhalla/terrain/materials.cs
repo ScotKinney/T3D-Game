@@ -105,7 +105,7 @@ new TerrainMaterial()
    detailSize = "10";
    detailStrength = "0.1";
    detailDistance = "100";
-   parallaxScale = "0.1";
+   parallaxScale = "0.01";
    enabled = "1";
    isManaged = "1";
    detailBrightness = "1";

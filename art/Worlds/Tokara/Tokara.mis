@@ -6,13 +6,13 @@ new SimGroup(MissionGroup) {
 
    new LevelInfo(theLevelInfo) {
       nearClip = "0.1";
-      visibleDistance = "900";
+      visibleDistance = "2000";
       visiblePlayers = "300";
       decalBias = "0.0015";
       fogColor = "1 0.0705882 0 1";
       fogDensity = "0.001";
       fogDensityOffset = "50";
-      fogAtmosphereHeight = "300";
+      fogAtmosphereHeight = "100";
       canvasClearColor = "1 1 1 255";
       ambientLightBlendPhase = "1";
       ambientLightBlendCurve = "0 0 -1 -1";
@@ -63,7 +63,7 @@ new SimGroup(MissionGroup) {
          squareSize = "2";
          baseTexSize = "1024";
          lightMapSize = "256";
-         screenError = "32";
+         screenError = "0";
          position = "-512 -512 0";
          rotation = "1 0 0 0";
          canSave = "1";
@@ -74,8 +74,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(AVTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.970076";
-         time = "0.972106";
+         startTime = "0.981452";
+         time = "0.982095";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -93,7 +93,7 @@ new SimGroup(MissionGroup) {
       new SkyBox() {
          Material = "KapSkysDarkCloud";
          drawBottom = "0";
-         fogBandHeight = "0.5";
+         fogBandHeight = "0.1";
          position = "-929.854 -341.751 396.552";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -131,9 +131,9 @@ new SimGroup(MissionGroup) {
          shadowType = "PSSM";
          texSize = "512";
          overDarkFactor = "4000 1000 300 200";
-         shadowDistance = "500";
+         shadowDistance = "1500";
          shadowSoftness = "0.5";
-         numSplits = "2";
+         numSplits = "3";
          logWeight = "0.9";
          fadeStartDistance = "100";
          lastSplitTerrainOnly = "1";
@@ -438,7 +438,7 @@ new SimGroup(MissionGroup) {
             avOptions = "304,307,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3768";
+            botBelongsToMe = "3773";
             delayRespawn = "135481";
             distDetect = "50";
             fov = "360";
@@ -463,7 +463,7 @@ new SimGroup(MissionGroup) {
             avOptions = "304,307,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3770";
+            botBelongsToMe = "3775";
             delayRespawn = "135486";
             distDetect = "50";
             fov = "360";
@@ -501,7 +501,7 @@ new SimGroup(MissionGroup) {
             coins = "1114402";
       };
       new TSStatic(FB_Flag) {
-         shapeName = $WorldPath @ "/models/ClanFlags/Flag5_Outlanders.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag5_Outlanders.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -548,7 +548,7 @@ new SimGroup(MissionGroup) {
             onExitMessage = "You have left the Neutral Zone, be on guard!";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/models/ClanFlags/Flag5_Outlanders.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag5_Outlanders.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -568,7 +568,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/models/ClanFlags/Flag5_Outlanders.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag5_Outlanders.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -588,7 +588,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/models/ClanFlags/Flag5_Outlanders.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag5_Outlanders.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -608,7 +608,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = $WorldPath @ "/models/ClanFlags/Flag5_Outlanders.dts";
+         shapeName = $WorldPath @ "/Models/ClanFlags/Flag5_Outlanders.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -632,7 +632,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -652,7 +652,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -672,7 +672,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -692,7 +692,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -712,7 +712,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -732,7 +732,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -752,7 +752,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -772,7 +772,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -798,7 +798,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Hut111) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse1.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -818,7 +818,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut12) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse1.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -838,7 +838,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut321111) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -858,7 +858,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut32112) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -878,7 +878,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut3212) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -898,7 +898,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut322) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -918,7 +918,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut33) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -938,7 +938,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut311) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -958,7 +958,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut21) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse2.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -978,7 +978,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut211) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse2.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1088,7 +1088,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1108,7 +1108,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1128,7 +1128,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1188,7 +1188,7 @@ new SimGroup(MissionGroup) {
             avOptions = "305,308,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3771";
+            botBelongsToMe = "3776";
             delayRespawn = "140121";
             distDetect = "50";
             fov = "360";
@@ -1213,7 +1213,7 @@ new SimGroup(MissionGroup) {
             avOptions = "305,308,313,320,378,55,59,237,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3773";
+            botBelongsToMe = "3778";
             delayRespawn = "140116";
             distDetect = "50";
             fov = "360";
@@ -1382,7 +1382,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
 
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1402,7 +1402,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1422,7 +1422,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1442,7 +1442,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1462,7 +1462,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1482,7 +1482,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/RRGTS_Crates/CratesSimple0001stain4.dts";
+            shapeName = "art/Packs/Props/RRGTS_Crates/CratesSimple0001stain4.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1502,7 +1502,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1522,7 +1522,7 @@ new SimGroup(MissionGroup) {
                useGradientRange = "0";
          };
          new TSStatic() {
-            shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+            shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
             playAmbient = "1";
             meshCulling = "0";
             originSort = "0";
@@ -1548,7 +1548,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Hut31) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1568,7 +1568,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut32) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1588,7 +1588,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut321) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1608,7 +1608,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut3211) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1628,7 +1628,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut32111) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1648,7 +1648,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut11) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse1.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1668,7 +1668,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut1) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse1.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1688,7 +1688,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut2) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse2.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1708,7 +1708,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut22) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse2.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1728,7 +1728,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Hut3) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanhouse3.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanhouse3.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1838,7 +1838,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1858,7 +1858,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1878,7 +1878,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1927,7 +1927,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Tok_building3a21) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building3.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building3.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1947,7 +1947,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Tok_building3a211) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building3.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building3.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1967,7 +1967,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(CastleBuilding) {
-         shapeName = "art/packs/buildings/Mayan_Village/mayanpyramidthree.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/mayanpyramidthree.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -1992,7 +1992,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(MayanPyramid) {
-         shapeName = "art/packs/buildings/Mayan_Village/MPyramid1.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/MPyramid1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2023,7 +2023,7 @@ new SimGroup(MissionGroup) {
             onExitMessage = "You have left the Neutral Zone, arm yourself!";
       };
       new TSStatic(Bldg3Coast1) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building3.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building3.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2043,7 +2043,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Bldg3Coast2) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building3.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building3.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2063,7 +2063,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(temple) {
-         shapeName = "art/packs/buildings/Mayan_Village/temple.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/temple.dae";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -2083,7 +2083,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Pedestel) {
-         shapeName = "art/packs/buildings/Mayan_Village/pedestal.dts";
+         shapeName = "art/Packs/Buildings/Mayan_Village/pedestal.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2108,7 +2108,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Horse4SaleSign) {
-         shapeName = "art/packs/signs/village/Horses4Sale.dts";
+         shapeName = "art/Packs/Signs/Village/Horses4Sale.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2128,7 +2128,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(Horse4SaleSign2) {
-         shapeName = "art/packs/signs/village/Horses4Sale.dts";
+         shapeName = "art/Packs/Signs/Village/Horses4Sale.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -2148,7 +2148,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(HorseBldg4) {
-         shapeName = "art/packs/buildings/Mayan_Village/building4.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/building4.dae";
          playAmbient = "0";
          meshCulling = "0";
          originSort = "0";
@@ -2626,7 +2626,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(FoodShop) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building2.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building2.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3033,7 +3033,7 @@ new SimGroup(MissionGroup) {
             respawn = "30";
       };
       new TSStatic(TokFoodSign1) {
-         shapeName = "art/packs/signs/village/FoodShop.dts";
+         shapeName = "art/Packs/Signs/Village/FoodShop.dts";
          playAmbient = "0";
          meshCulling = "0";
          originSort = "0";
@@ -3053,7 +3053,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(FoodTable11) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3073,7 +3073,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(FoodTable31) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3093,7 +3093,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(FoodTable111) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3194,7 +3194,7 @@ new SimGroup(MissionGroup) {
             respawn = "30";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3214,7 +3214,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3234,7 +3234,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3254,7 +3254,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/A3D_Grainbags/grainbag1.dts";
+         shapeName = "art/Packs/Props/A3D_GrainBags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3274,7 +3274,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/A3D_Grainbags/grainbag1.dts";
+         shapeName = "art/Packs/Props/A3D_GrainBags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3294,7 +3294,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/A3D_Grainbags/grainbag1.dts";
+         shapeName = "art/Packs/Props/A3D_GrainBags/grainbag1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3319,7 +3319,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(WeaponsShop) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building2.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building2.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3348,7 +3348,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3368,7 +3368,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/A3D_InteriorB/chest1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3389,7 +3389,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3409,7 +3409,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/Dex_viking/barrel_lod01.dts";
+         shapeName = "art/Packs/Props/Dex_Viking/barrel_lod01.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3429,7 +3429,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/A3D_InteriorB/chest1.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorB/chest1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3449,7 +3449,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WeaponsTable311) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3469,7 +3469,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(ValWeaponsSign1) {
-         shapeName = "art/packs/signs/village/WeaponsShop.dts";
+         shapeName = "art/Packs/Signs/Village/WeaponsShop.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3489,7 +3489,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WeaponsTable31) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3510,7 +3510,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WeaponsTable11) {
-         shapeName = "art/packs/props/A3D_InteriorC/table2.dts";
+         shapeName = "art/Packs/Props/A3D_InteriorC/table2.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -3546,7 +3546,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "3774";
+            botBelongsToMe = "3779";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3628,7 +3628,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "3775";
+            botBelongsToMe = "3780";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3709,7 +3709,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "3776";
+            botBelongsToMe = "3781";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3790,7 +3790,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "3777";
+            botBelongsToMe = "3782";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3871,7 +3871,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "3778";
+            botBelongsToMe = "3783";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -3952,7 +3952,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3779";
+            botBelongsToMe = "3784";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -4201,7 +4201,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(WallStair1) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building9.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building9.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4221,7 +4221,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WallStair2) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building9.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building9.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4241,7 +4241,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4261,7 +4261,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/main_tower.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/main_tower.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4281,7 +4281,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_large.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_large.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4301,7 +4301,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_large.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_large.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4321,7 +4321,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4341,7 +4341,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/main_tower.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/main_tower.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4361,7 +4361,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4381,7 +4381,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_large.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_large.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4401,7 +4401,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4421,7 +4421,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/main_tower.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/main_tower.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4441,7 +4441,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4461,7 +4461,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_large.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_large.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4481,7 +4481,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_large.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_large.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4501,7 +4501,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/entrance.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/entrance.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4521,7 +4521,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/main_tower.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/main_tower.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4541,7 +4541,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WallStair21) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building9.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building9.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4561,7 +4561,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(WallStair11) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building9.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building9.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4586,7 +4586,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Tok_building71) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building7.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building7.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4655,7 +4655,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(Tok_building7) {
-         shapeName = "art/packs/buildings/Mayan_Village/Tok_building7.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/Tok_building7.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4724,7 +4724,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4824,7 +4824,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Rocks/SP_Rocks/SP_SmRock1.dts";
+         shapeName = "art/Packs/Rocks/SP_Rocks/SP_SmRock1.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4869,7 +4869,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4889,7 +4889,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4914,7 +4914,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Props/AV_Torches/torch.DAE";
+         shapeName = "art/Packs/Props/AV_Torches/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4934,7 +4934,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/AV_Torches/torch.DAE";
+         shapeName = "art/Packs/Props/AV_Torches/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -4976,7 +4976,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/AV_Torches/torch.DAE";
+         shapeName = "art/Packs/Props/AV_Torches/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5018,7 +5018,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/AV_Torches/torch.DAE";
+         shapeName = "art/Packs/Props/AV_Torches/torch.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5087,7 +5087,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
       new TSStatic(CenterBldg6) {
-         shapeName = "art/packs/buildings/Mayan_Village/building6.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/building6.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5112,7 +5112,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(temple1) {
-         shapeName = "art/packs/buildings/Mayan_Village/temple.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/temple.dae";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -5132,7 +5132,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5152,7 +5152,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5177,7 +5177,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(temple11) {
-         shapeName = "art/packs/buildings/Mayan_Village/temple.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/temple.dae";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -5197,7 +5197,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5222,7 +5222,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5242,7 +5242,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(temple12) {
-         shapeName = "art/packs/buildings/Mayan_Village/temple.dae";
+         shapeName = "art/Packs/Buildings/Mayan_Village/temple.dae";
          playAmbient = "1";
          meshCulling = "1";
          originSort = "0";
@@ -5266,6 +5266,7 @@ new SimGroup(MissionGroup) {
       position = "211.352 0 51.5582";
       rotation = "1 0 0 0";
       scale = "405.824 227.383 50.6185";
+      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
    };
@@ -5274,7 +5275,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5294,7 +5295,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5314,7 +5315,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5334,7 +5335,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5354,7 +5355,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5374,7 +5375,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5394,7 +5395,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5414,7 +5415,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5434,7 +5435,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5454,7 +5455,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5474,7 +5475,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5494,7 +5495,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5514,7 +5515,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5534,7 +5535,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5555,7 +5556,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic(Jump_1) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -5575,7 +5576,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(Jump_2) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -5599,7 +5600,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5619,7 +5620,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5639,7 +5640,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5659,7 +5660,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5679,7 +5680,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5704,7 +5705,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5724,7 +5725,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5744,7 +5745,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5764,7 +5765,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5784,7 +5785,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5809,7 +5810,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5829,7 +5830,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5849,7 +5850,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5869,7 +5870,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5889,7 +5890,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5909,7 +5910,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5929,7 +5930,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5949,7 +5950,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5969,7 +5970,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
+         shapeName = "art/Packs/Props/RRGTS_OldFence/fenceSection2Post01A.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -5989,7 +5990,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic() {
-         shapeName = "art/packs/props/AV_Targets/TargetPost.dts";
+         shapeName = "art/Packs/Props/AV_Targets/TargetPost.dts";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -6010,7 +6011,7 @@ new SimGroup(MissionGroup) {
       };
    };
    new TSStatic(Jump_6) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -6030,7 +6031,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(Jump_7) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -6050,7 +6051,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(Jump_8) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -6070,7 +6071,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(Jump_9) {
-      shapeName = "art/packs/buildings/Mayan_Village/wall_small.dae";
+      shapeName = "art/Packs/Buildings/Mayan_Village/wall_small.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -6090,7 +6091,7 @@ new SimGroup(MissionGroup) {
          useGradientRange = "0";
    };
    new TSStatic(CaveEntrance) {
-      shapeName = "art/packs/buildings/mayan_village/altar-gate-01.dts";
+      shapeName = "art/Packs/Buildings/Mayan_Village/altar-gate-01.dts";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -6121,6 +6122,21 @@ new SimGroup(MissionGroup) {
          destinationSpawnSphere = "CaveSphere";
          manifestURL = "http://www.alterverse.com/stream/manifests/cavesofwisdommanifest.txt";
          pathToRoot = "http://www.alterverse.com/stream/";
+   };
+   new SimGroup(CameraBookmarks) {
+      canSave = "1";
+      canSaveDynamicFields = "1";
+
+      new CameraBookmark() {
+         isAIControlled = "0";
+         dataBlock = "CameraBookmarkMarker";
+         position = "229.489 336.418 75.6938";
+         rotation = "0.0127912 -0.0391033 0.999153 143.802";
+         scale = "1 1 1";
+         internalName = "NewCamera_0";
+         canSave = "1";
+         canSaveDynamicFields = "1";
+      };
    };
 };
 //--- OBJECT WRITE END ---
