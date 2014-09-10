@@ -146,30 +146,6 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
    };
-   new SFXEmitter(TuteVoice) {
-      fileName = $WorldPath @ "/sound/Caves_IntroVoice.ogg";
-      playOnAdd = "1";
-      useTrackDescriptionOnly = "0";
-      isLooping = "0";
-      isStreaming = "0";
-      sourceGroup = "AudioChannelEffects";
-      volume = "1";
-      pitch = "1";
-      fadeInTime = "0";
-      fadeOutTime = "0";
-      is3D = "0";
-      referenceDistance = "1";
-      maxDistance = "100";
-      scatterDistance = "0 0 0";
-      coneInsideAngle = "360";
-      coneOutsideAngle = "360";
-      coneOutsideVolume = "1";
-      position = "98.7954 2.30834 12.8752";
-      rotation = "1 0 0 0";
-      scale = "100 100 100";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
    new SFXEmitter(AmbSoundFX) {
       fileName = $WorldPath @ "/sound/CavesOfWisdom.ogg";
       playOnAdd = "1";
@@ -1352,7 +1328,6 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
       };
    };
-
    new ParticleEmitterNode(WaterSplash) {
       active = "1";
       velocity = "1";
@@ -1498,7 +1473,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3053";
+         botBelongsToMe = "3047";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1520,7 +1495,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3054";
+         botBelongsToMe = "3048";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1541,7 +1516,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3055";
+         botBelongsToMe = "3049";
          dropcount = "1";
          DropItem = "apple";
          leash = "20";
@@ -1563,7 +1538,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug3";
-         botBelongsToMe = "3056";
+         botBelongsToMe = "3050";
          dropcount = "1";
          DropItem = "apple";
          leash = "5";
@@ -1584,7 +1559,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3057";
+         botBelongsToMe = "3051";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1606,7 +1581,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3058";
+         botBelongsToMe = "3052";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1628,7 +1603,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3059";
+         botBelongsToMe = "3053";
          delayRespawn = "33703";
          dropcount = "1";
          DropItem = "apple";
@@ -1651,7 +1626,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3060";
+         botBelongsToMe = "3054";
          delayRespawn = "3748";
          dropcount = "1";
          DropItem = "apple";
@@ -1673,7 +1648,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3061";
+         botBelongsToMe = "3055";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1694,7 +1669,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3062";
+         botBelongsToMe = "3056";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1715,7 +1690,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3063";
+         botBelongsToMe = "3057";
          delayRespawn = "66530";
          dropcount = "1";
          DropItem = "apple";
@@ -1738,7 +1713,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3064";
+         botBelongsToMe = "3058";
          delayRespawn = "69041";
          dropcount = "1";
          DropItem = "apple";
@@ -1761,7 +1736,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3065";
+         botBelongsToMe = "3059";
          dropcount = "1";
          DropItem = "apple";
          leash = "20";
@@ -1783,7 +1758,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3066";
+         botBelongsToMe = "3060";
          delayRespawn = "68167";
          dropcount = "1";
          DropItem = "apple";
@@ -1806,7 +1781,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug2";
-         botBelongsToMe = "3067";
+         botBelongsToMe = "3061";
          dropcount = "1";
          DropItem = "apple";
          leash = "20";
@@ -1828,7 +1803,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3068";
+         botBelongsToMe = "3062";
          dropcount = "1";
          DropItem = "apple";
          leash = "20";
@@ -1849,7 +1824,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3069";
+         botBelongsToMe = "3063";
          dropcount = "1";
          DropItem = "apple";
          leash = "20";
@@ -1870,7 +1845,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3070";
+         botBelongsToMe = "3064";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1891,7 +1866,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug2";
-         botBelongsToMe = "3071";
+         botBelongsToMe = "3065";
          delayRespawn = "74630";
          dropcount = "1";
          DropItem = "apple";
@@ -1913,7 +1888,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3072";
+         botBelongsToMe = "3066";
          dropcount = "1";
          DropItem = "apple";
          leash = "40";
@@ -1934,7 +1909,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3073";
+         botBelongsToMe = "3067";
          dropcount = "1";
          DropItem = "apple";
          leash = "3";
@@ -1955,7 +1930,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3074";
+         botBelongsToMe = "3068";
          dropcount = "1";
          DropItem = "apple";
          leash = "1";
@@ -1976,7 +1951,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug3";
-         botBelongsToMe = "3075";
+         botBelongsToMe = "3069";
          dropcount = "1";
          DropItem = "apple";
          leash = "5";
@@ -1997,7 +1972,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "LeashedBehavior";
          block = "Bug1";
-         botBelongsToMe = "3076";
+         botBelongsToMe = "3070";
          delayRespawn = "74960";
          dropcount = "1";
          DropItem = "apple";

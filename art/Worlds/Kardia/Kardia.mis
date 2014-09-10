@@ -32,8 +32,8 @@ new SimGroup(MissionGroup) {
    new TimeOfDay(AureusTime) {
       axisTilt = "23.44";
       dayLength = "86400";
-      startTime = "0.992335";
-      time = "0.993672";
+      startTime = "0.0723323";
+      time = "0.081272";
       play = "1";
       azimuthOverride = "0";
       dayScale = "0.634921";
@@ -70,11 +70,11 @@ new SimGroup(MissionGroup) {
          density = "0.1";
          viscosity = "1";
          liquidType = "water";
-         baseColor = "254 254 254 255";
-         fresnelBias = "0.1";
-         fresnelPower = "1";
+         baseColor = "97 140 181 255";
+         fresnelBias = "0.3";
+         fresnelPower = "10";
          specularPower = "100";
-         specularColor = "0.996078 0.996078 0.996078 1";
+         specularColor = "0.486275 0.482353 0.470588 1";
          emissive = "0";
          waveDir[0] = "0 -1";
          waveDir[1] = "-1 -1";
@@ -86,7 +86,7 @@ new SimGroup(MissionGroup) {
          waveMagnitude[1] = "0.05";
          waveMagnitude[2] = "0";
          overallWaveMagnitude = "1";
-         rippleTex = "core/art/water/OceanWaves3.dds";
+         rippleTex = "core/art/water/noise02.dds";
          rippleDir[0] = "0 -1";
          rippleDir[1] = "-1 -1";
          rippleDir[2] = "0 -1";
@@ -99,7 +99,7 @@ new SimGroup(MissionGroup) {
          rippleMagnitude[0] = "0.1";
          rippleMagnitude[1] = "0.1";
          rippleMagnitude[2] = "0.2";
-         overallRippleMagnitude = "1";
+         overallRippleMagnitude = "0.1";
          foamTex = "core/art/water/wateredge512.dds";
          foamDir[0] = "0 1";
          foamDir[1] = "0 1";
@@ -109,18 +109,18 @@ new SimGroup(MissionGroup) {
          foamTexScale[1] = "10 10";
          foamOpacity[0] = "0";
          foamOpacity[1] = "0";
-         overallFoamOpacity = "1";
-         foamMaxDepth = "30";
+         overallFoamOpacity = "1.5";
+         foamMaxDepth = "5";
          foamAmbientLerp = "1";
          foamRippleInfluence = "1";
-         cubemap = "DarkSky2Cubemap";
+         cubemap = "KardSkyCubemap";
          fullReflect = "1";
          reflectivity = "1";
          reflectPriority = "-1";
          reflectMaxRateMs = "16";
          reflectDetailAdjust = "0.5";
          reflectNormalUp = "1";
-         useOcclusionQuery = "0";
+         useOcclusionQuery = "1";
          reflectTexSize = "1024";
          waterFogDensity = "0.1";
          waterFogDensityOffset = "1";
@@ -141,7 +141,7 @@ new SimGroup(MissionGroup) {
             fishStock = "Barracuda 30|Green_Gill 30|Orange_Sea_Bass 15|Red_Head 30|Swordfish 2|Junk 5";
             foamColorModulate = "0 0 0";
             foamScale = "0.2";
-            whiteCapAmount = "0";
+            whiteCapAmount = "1";
       };
       new WaterBlock(EchoLake) {
          gridElementSize = "5";
@@ -220,7 +220,7 @@ new SimGroup(MissionGroup) {
       new SkyBox() {
          Material = "KardSky";
          drawBottom = "0";
-         fogBandHeight = "0.5";
+         fogBandHeight = "0.2";
          position = "-929.854 -341.751 396.552";
          rotation = "1 0 0 0";
          scale = "1 1 1";
@@ -235,7 +235,7 @@ new SimGroup(MissionGroup) {
          rayleighScattering = "0.007";
          sunScale = "0.847059 0.85098 0.858824 1";
          ambientScale = "0.752941 0.760784 0.760784 1";
-         fogScale = "0.262745 0.360784 0.407843 1";
+         fogScale = "0.443137 0.443137 0.443137 1";
          exposure = "4";
          zoffset = "0";
          azimuth = "90";
@@ -583,8 +583,8 @@ new SimGroup(MissionGroup) {
          avOptions = "57,54,204,59,339,267,262,6,269,12,362";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10774";
-         delayRespawn = "1227";
+         botBelongsToMe = "4854";
+         delayRespawn = "7106";
          distDetect = "25";
          fov = "360";
          leash = "5";
@@ -609,8 +609,8 @@ new SimGroup(MissionGroup) {
          avOptions = "92,203,89,290,268,270,17,281,279,284,50";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "10460";
-         delayRespawn = "1453";
+         botBelongsToMe = "4856";
+         delayRespawn = "5850";
          distDetect = "25";
          fov = "360";
          leash = "5";
