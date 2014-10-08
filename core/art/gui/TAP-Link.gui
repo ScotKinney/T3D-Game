@@ -63,7 +63,7 @@
          Profile = "GuiDefaultProfile";
          HorizSizing = "right";
          VertSizing = "bottom";
-         position = "264 14";
+         position = "257 9";
          Extent = "16 16";
          MinExtent = "8 2";
          canSave = "1";
@@ -77,7 +77,7 @@
          Profile = "GuiDefaultProfile";
          HorizSizing = "right";
          VertSizing = "bottom";
-         position = "281 15";
+         position = "279 10";
          Extent = "16 15";
          MinExtent = "8 2";
          canSave = "1";
