@@ -783,3 +783,30 @@ singleton Material(tower2_default2)
    specular[0] = "0 0 0 1";
    translucentBlendOp = "None";
 };
+
+singleton Material(escalator1_HighRiseF)
+{
+   mapTo = "HighRiseF";
+   diffuseMap[0] = "HighRiseF";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(escalator1_trim)
+{
+   mapTo = "trim";
+   diffuseMap[0] = "HighRiseD";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "1";
+   translucentBlendOp = "None";
+};
+
+singleton Material(escalator1_default)
+{
+   mapTo = "default";
+   diffuseColor[0] = "0.789854 0.813333 0.694044 1";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "1";
+   translucentBlendOp = "None";
+};
