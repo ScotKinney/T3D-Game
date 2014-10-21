@@ -63,3 +63,19 @@ singleton Material(svspartarail1_svspartawall1)
    specularPower[0] = "128";
    translucentBlendOp = "None";
 };
+
+singleton Material(svpergola1_SvPergolaIonic_diff)
+{
+   mapTo = "SvPergolaIonic_diff";
+   diffuseMap[0] = "SVPergolaIonic_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(svspartabsteps1_svspartawall3)
+{
+   mapTo = "svspartawall3";
+   diffuseMap[0] = "svspartawall3";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
