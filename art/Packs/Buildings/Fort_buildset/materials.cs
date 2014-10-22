@@ -65,3 +65,76 @@ singleton Material(DefaultMaterial11)
    diffuseSize = "128";
    detailStrength = "0.5";
 };
+
+singleton Material(FortTower1_default2)
+{
+   mapTo = "default2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_StairBridge_GTower90dif)
+{
+   mapTo = "Base_StairBridge_GTower90dif";
+   diffuseMap[0] = "Base_StairBridge_GTower90_dif";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_Rope_GTower_dif)
+{
+   mapTo = "Base_Rope_GTower_dif";
+   diffuseMap[0] = "Base_Rope_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_StairBridge_GTower90dif)
+{
+   mapTo = "Base_StairBridge_GTower90dif";
+   diffuseMap[0] = "Base_StairBridge_GTower90_dif";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_StairBridge_GTower_dif)
+{
+   mapTo = "Base_StairBridge_GTower_dif";
+   diffuseMap[0] = "Base_StairBridge_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_TileRoof_GTower_dif)
+{
+   mapTo = "Base_TileRoof_GTower_dif";
+   diffuseMap[0] = "Base_TileRoof_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_Wall_GTower_dif)
+{
+   mapTo = "Base_Wall_GTower_dif";
+   diffuseMap[0] = "Base_Wall_GTower_dif";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_default2)
+{
+   mapTo = "default2";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
+
+singleton Material(FortTower1_Base_Ceiling_GTower_dif)
+{
+   mapTo = "Base_Ceiling_GTower_dif";
+   diffuseMap[0] = "Base_Ceiling_GTower_dif";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
