@@ -213,7 +213,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3013";
+         botBelongsToMe = "3020";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -238,7 +238,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3014";
+         botBelongsToMe = "3021";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -973,11 +973,13 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-59.6973 -48.3027 2.5";
+      position = "-59.5 -48.5 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+         Base_StairBridge_GTower90dif = "Base_StairBridge_GTower90dif_mat";
+         default2 = "default2_mat";
    };
    new TSStatic() {
       shapeName = "art/Packs/Buildings/Fort_buildset/FortWallCenter1.dae";
@@ -1006,7 +1008,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-40.01 -45.7 2.5";
+      position = "-40 -45.5 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1038,7 +1040,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-50.0133 -45.7 2.5";
+      position = "-50 -45.5 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1102,8 +1104,8 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-12.1 -40.4 2.5";
-      rotation = "1 0 0 0";
+      position = "-62 -65.5 2.5";
+      rotation = "0 0 -1 90";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1151,7 +1153,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-40.7583 -89.3306 2.62756";
+      position = "-40.7583 -89.3306 3.03427";
       rotation = "0 0 1 180";
       scale = "1 1 1";
       canSave = "1";
@@ -1167,7 +1169,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-30.0133 -45.69 2.5";
+      position = "-30 -45.5 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
