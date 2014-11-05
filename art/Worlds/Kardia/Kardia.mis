@@ -32,8 +32,8 @@ new SimGroup(MissionGroup) {
    new TimeOfDay(AureusTime) {
       axisTilt = "23.44";
       dayLength = "86400";
-      startTime = "0.0723323";
-      time = "0.081272";
+      startTime = "0.0941944";
+      time = "0.0975235";
       play = "1";
       azimuthOverride = "0";
       dayScale = "0.634921";
@@ -450,6 +450,7 @@ new SimGroup(MissionGroup) {
          position = "-57.9343 -72.3992 29.5184";
          rotation = "1 0 0 0";
          scale = "1 1 1";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -3553,7 +3554,7 @@ new SimGroup(MissionGroup) {
             isAIControlled = "0";
             dataBlock = "Square_Shield_VIIIWeapon";
             position = "9.73192 362.206 16.3224";
-            rotation = "0.580302 -0.571401 -0.580302 240";
+            rotation = "-0.580302 0.571401 0.580302 120";
             scale = "1 1 1";
             canSave = "1";
             canSaveDynamicFields = "1";
