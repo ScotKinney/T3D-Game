@@ -67,7 +67,7 @@ new SimGroup(MissionGroup) {
       colorize = "0 0 0 1";
       rayleighScattering = "0.006";
       sunScale = "0.784314 0.772549 0.72549 1";
-      ambientScale = "0.541176 0.529412 0.486275 1";
+      ambientScale = "0.74902 0.74902 0.741176 1";
       fogScale = "0.835294 0.835294 0.835294 1";
       exposure = "10";
       zoffset = "0";
@@ -213,7 +213,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3020";
+         botBelongsToMe = "3043";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -238,7 +238,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3021";
+         botBelongsToMe = "3044";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -983,6 +983,7 @@ new SimGroup(MissionGroup) {
    };
    new TSStatic() {
       shapeName = "art/Packs/Buildings/Fort_buildset/FortWallCenter1.dae";
+      skin = "base_wall_gtower=base_spartfortwall";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -991,7 +992,7 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-44.9 -19.3 2.5";
+      position = "-45.2 -19 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1009,22 +1010,6 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-40 -45.5 2.5";
-      rotation = "1 0 0 0";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-   };
-   new TSStatic() {
-      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallL1.dae";
-      playAmbient = "1";
-      meshCulling = "0";
-      originSort = "0";
-      collisionType = "Visible Mesh";
-      decalType = "Collision Mesh";
-      allowPlayerStep = "1";
-      renderNormals = "0";
-      forceDetail = "-1";
-      position = "-34.8932 -19.29 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
@@ -1176,7 +1161,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
    };
    new TSStatic() {
-      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallR1.dae";
+      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallL2.dae";
       playAmbient = "1";
       meshCulling = "0";
       originSort = "0";
@@ -1185,11 +1170,65 @@ new SimGroup(MissionGroup) {
       allowPlayerStep = "1";
       renderNormals = "0";
       forceDetail = "-1";
-      position = "-54.7 -19.29 2.5";
+      position = "-19.4013 -45.5 2.5";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallCenter1.dae";
+      skin = "base_wall_gtower=base2_spartfortwall";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-36 -19 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         Base_Ceiling_GTower_dif = "Base_Ceiling_GTower_dif_mat";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallCenter1.dae";
+      skin = "base_wall_gtower=base3_spartfortwall";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-54.4 -19 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         Base_Ceiling_GTower_dif = "Base_Ceiling_GTower_dif_mat";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/Fort_buildset/FortWallCenter1.dae";
+      skin = "base_wall_gtower=base_spartfortwall";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Visible Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-63.6 -19 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         Base_Ceiling_GTower_dif = "Base_Ceiling_GTower_dif_mat";
    };
 };
 //--- OBJECT WRITE END ---
