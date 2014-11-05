@@ -161,7 +161,7 @@ new SimGroup(MissionGroup) {
          shadowSoftness = "0.5";
          numSplits = "2";
          logWeight = "0.94";
-         fadeStartDistance = "20";
+         fadeStartDistance = "100";
          lastSplitTerrainOnly = "1";
          representedInLightmap = "0";
          shadowDarkenColor = "0 0 0 -1";
@@ -454,7 +454,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
 
       new TSStatic(VolCloud22) {
-         shapeName = "art/packs/clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
+         shapeName = "art/Packs/Clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -474,7 +474,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(VolCloud21) {
-         shapeName = "art/packs/clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
+         shapeName = "art/Packs/Clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -494,7 +494,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(VolCloud3) {
-         shapeName = "art/packs/clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
+         shapeName = "art/Packs/Clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -514,7 +514,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(VolCloud2) {
-         shapeName = "art/packs/clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
+         shapeName = "art/Packs/Clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -534,7 +534,7 @@ new SimGroup(MissionGroup) {
             useGradientRange = "0";
       };
       new TSStatic(VolCloud1) {
-         shapeName = "art/packs/clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
+         shapeName = "art/Packs/Clouds/Vol_Cloud_01/Vol_Cloud_01.DAE";
          playAmbient = "1";
          meshCulling = "0";
          originSort = "0";
@@ -568,7 +568,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6833";
+            botBelongsToMe = "12901";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -583,7 +583,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6834";
+            botBelongsToMe = "12902";
             delayRespawn = "15426";
             respawnCount = "0";
             respawnCounter = "0";
@@ -599,7 +599,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6835";
+            botBelongsToMe = "12903";
             delayRespawn = "9796";
             respawnCount = "0";
             respawnCounter = "0";
@@ -615,7 +615,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6836";
+            botBelongsToMe = "12904";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -630,7 +630,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6837";
+            botBelongsToMe = "12905";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -645,7 +645,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6838";
+            botBelongsToMe = "12906";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -660,7 +660,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6839";
+            botBelongsToMe = "12907";
             delayRespawn = "2947";
             respawnCount = "0";
             respawnCounter = "0";
@@ -676,7 +676,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6840";
+            botBelongsToMe = "12908";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -691,7 +691,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6841";
+            botBelongsToMe = "12909";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -706,7 +706,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Elephant";
-            botBelongsToMe = "6842";
+            botBelongsToMe = "12910";
             delayRespawn = "69316";
             respawnCount = "0";
             respawnCounter = "0";
@@ -727,7 +727,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6843";
+            botBelongsToMe = "12911";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -742,7 +742,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6844";
+            botBelongsToMe = "12912";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -757,7 +757,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6845";
+            botBelongsToMe = "12913";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -772,7 +772,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6846";
+            botBelongsToMe = "12914";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -787,7 +787,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6847";
+            botBelongsToMe = "12915";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -802,7 +802,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6848";
+            botBelongsToMe = "12916";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -817,7 +817,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6849";
+            botBelongsToMe = "12917";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -832,7 +832,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6850";
+            botBelongsToMe = "12918";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -847,7 +847,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6851";
+            botBelongsToMe = "12919";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -862,7 +862,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6852";
+            botBelongsToMe = "12920";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -877,7 +877,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6853";
+            botBelongsToMe = "12921";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -892,7 +892,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GemsbockAntelope";
-            botBelongsToMe = "6854";
+            botBelongsToMe = "12922";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -913,7 +913,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6855";
+            botBelongsToMe = "12923";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -929,7 +929,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6856";
+            botBelongsToMe = "12924";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -945,7 +945,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6857";
+            botBelongsToMe = "12925";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -962,7 +962,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6858";
+            botBelongsToMe = "12926";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -979,7 +979,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6859";
+            botBelongsToMe = "12927";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -995,7 +995,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6860";
+            botBelongsToMe = "12928";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1010,7 +1010,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6861";
+            botBelongsToMe = "12929";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1026,7 +1026,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6862";
+            botBelongsToMe = "12930";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1043,7 +1043,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6863";
+            botBelongsToMe = "12931";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1060,7 +1060,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6864";
+            botBelongsToMe = "12932";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1076,7 +1076,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6865";
+            botBelongsToMe = "12933";
             delayRespawn = "2857";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1093,7 +1093,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6866";
+            botBelongsToMe = "12934";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1114,7 +1114,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6867";
+            botBelongsToMe = "12935";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1130,7 +1130,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6868";
+            botBelongsToMe = "12936";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1146,7 +1146,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6869";
+            botBelongsToMe = "12937";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1162,7 +1162,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6870";
+            botBelongsToMe = "12938";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1179,7 +1179,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6871";
+            botBelongsToMe = "12939";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1196,7 +1196,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6872";
+            botBelongsToMe = "12940";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1212,7 +1212,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6873";
+            botBelongsToMe = "12941";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1228,7 +1228,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6874";
+            botBelongsToMe = "12942";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1244,7 +1244,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "GiraffeAI";
-            botBelongsToMe = "6875";
+            botBelongsToMe = "12943";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1260,7 +1260,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6876";
+            botBelongsToMe = "12944";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1277,7 +1277,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6877";
+            botBelongsToMe = "12945";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1294,7 +1294,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "HuntedBehavior";
             block = "GiraffeAI";
-            botBelongsToMe = "6878";
+            botBelongsToMe = "12946";
             realName = " ";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1315,7 +1315,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6879";
+            botBelongsToMe = "12947";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1330,7 +1330,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6880";
+            botBelongsToMe = "12948";
             delayRespawn = "84286";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1346,7 +1346,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6881";
+            botBelongsToMe = "12949";
             delayRespawn = "19291";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1362,7 +1362,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6882";
+            botBelongsToMe = "12950";
             delayRespawn = "49852";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1378,7 +1378,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6883";
+            botBelongsToMe = "12951";
             delayRespawn = "131310";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1394,7 +1394,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6884";
+            botBelongsToMe = "12952";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1409,7 +1409,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6885";
+            botBelongsToMe = "12953";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1424,7 +1424,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6886";
+            botBelongsToMe = "12954";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1439,7 +1439,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6887";
+            botBelongsToMe = "12955";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1454,7 +1454,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6888";
+            botBelongsToMe = "12956";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1469,7 +1469,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6889";
+            botBelongsToMe = "12957";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1484,7 +1484,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6890";
+            botBelongsToMe = "12958";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1499,7 +1499,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6891";
+            botBelongsToMe = "12959";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1514,7 +1514,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "ZebraAI";
-            botBelongsToMe = "6892";
+            botBelongsToMe = "12960";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1534,7 +1534,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6893";
+            botBelongsToMe = "12961";
             delayRespawn = "21687";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1550,7 +1550,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6894";
+            botBelongsToMe = "12962";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1565,7 +1565,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6895";
+            botBelongsToMe = "12963";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1580,7 +1580,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6896";
+            botBelongsToMe = "12964";
             delayRespawn = "20441";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1596,7 +1596,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6897";
+            botBelongsToMe = "12965";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1611,7 +1611,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6898";
+            botBelongsToMe = "12966";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1626,7 +1626,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6899";
+            botBelongsToMe = "12967";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1641,7 +1641,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6900";
+            botBelongsToMe = "12968";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1656,7 +1656,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6901";
+            botBelongsToMe = "12969";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1671,7 +1671,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6902";
+            botBelongsToMe = "12970";
             delayRespawn = "13655";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1687,7 +1687,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6903";
+            botBelongsToMe = "12971";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1702,7 +1702,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6904";
+            botBelongsToMe = "12972";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1717,7 +1717,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6905";
+            botBelongsToMe = "12973";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1732,7 +1732,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "KuduAI";
-            botBelongsToMe = "6906";
+            botBelongsToMe = "12974";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1752,7 +1752,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6907";
+            botBelongsToMe = "12975";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1767,7 +1767,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6908";
+            botBelongsToMe = "12976";
             delayRespawn = "12949";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1783,7 +1783,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6909";
+            botBelongsToMe = "12977";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1798,7 +1798,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6910";
+            botBelongsToMe = "12978";
             delayRespawn = "16041";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1814,7 +1814,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6911";
+            botBelongsToMe = "12979";
             delayRespawn = "14127";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1830,7 +1830,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6912";
+            botBelongsToMe = "12980";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1845,7 +1845,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6913";
+            botBelongsToMe = "12981";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1860,7 +1860,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6914";
+            botBelongsToMe = "12982";
             delayRespawn = "400762";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1876,7 +1876,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6915";
+            botBelongsToMe = "12983";
             delayRespawn = "10818";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1892,7 +1892,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6916";
+            botBelongsToMe = "12984";
             delayRespawn = "5649";
             respawnCount = "0";
             respawnCounter = "0";
@@ -1908,7 +1908,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6917";
+            botBelongsToMe = "12985";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1923,7 +1923,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6918";
+            botBelongsToMe = "12986";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1938,7 +1938,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "IMPALAAI";
-            botBelongsToMe = "6919";
+            botBelongsToMe = "12987";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -1959,7 +1959,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6920";
+            botBelongsToMe = "12988";
             delayRespawn = "54702";
             leash = "60";
             maxRange = "2";
@@ -1979,7 +1979,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6921";
+            botBelongsToMe = "12989";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -1998,7 +1998,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6922";
+            botBelongsToMe = "12990";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2017,7 +2017,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6923";
+            botBelongsToMe = "12991";
             delayRespawn = "34937";
             leash = "60";
             maxRange = "2";
@@ -2037,7 +2037,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6924";
+            botBelongsToMe = "12992";
             delayRespawn = "34949";
             leash = "60";
             maxRange = "2";
@@ -2057,7 +2057,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6925";
+            botBelongsToMe = "12993";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2076,7 +2076,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6926";
+            botBelongsToMe = "12994";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2095,7 +2095,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6927";
+            botBelongsToMe = "12995";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2114,7 +2114,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6928";
+            botBelongsToMe = "12996";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2133,7 +2133,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6929";
+            botBelongsToMe = "12997";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2152,7 +2152,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6930";
+            botBelongsToMe = "12998";
             delayRespawn = "35495";
             leash = "60";
             maxRange = "2";
@@ -2172,7 +2172,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6931";
+            botBelongsToMe = "12999";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2191,7 +2191,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6932";
+            botBelongsToMe = "13000";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2210,7 +2210,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6933";
+            botBelongsToMe = "13001";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2229,7 +2229,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6934";
+            botBelongsToMe = "13002";
             delayRespawn = "4823";
             leash = "60";
             maxRange = "2";
@@ -2249,7 +2249,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6935";
+            botBelongsToMe = "13003";
             delayRespawn = "6549";
             leash = "60";
             maxRange = "2";
@@ -2269,7 +2269,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6936";
+            botBelongsToMe = "13004";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2288,7 +2288,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6937";
+            botBelongsToMe = "13005";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2307,7 +2307,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6938";
+            botBelongsToMe = "13006";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2326,7 +2326,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6939";
+            botBelongsToMe = "13007";
             delayRespawn = "35159";
             leash = "60";
             maxRange = "2";
@@ -2346,7 +2346,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "RhinoAI";
-            botBelongsToMe = "6940";
+            botBelongsToMe = "13008";
             leash = "60";
             maxRange = "2";
             minRange = "1";
@@ -2370,7 +2370,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "WildebeestAI";
-            botBelongsToMe = "6941";
+            botBelongsToMe = "13009";
             delayRespawn = "6727";
             leash = "60";
             maxRange = "2";
@@ -2391,7 +2391,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "WildebeestAI";
-            botBelongsToMe = "6942";
+            botBelongsToMe = "13010";
             leash = "60";
             maxRange = "2";
             minRange = "2";
@@ -2411,7 +2411,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "LeashedBehavior";
             block = "WildebeestAI";
-            botBelongsToMe = "6943";
+            botBelongsToMe = "13011";
             leash = "60";
             maxRange = "2";
             minRange = "2";
@@ -2430,7 +2430,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6944";
+            botBelongsToMe = "13012";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2445,7 +2445,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6945";
+            botBelongsToMe = "13013";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2460,7 +2460,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6946";
+            botBelongsToMe = "13014";
             delayRespawn = "15550";
             respawnCount = "0";
             respawnCounter = "0";
@@ -2476,7 +2476,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6947";
+            botBelongsToMe = "13015";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2491,7 +2491,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6948";
+            botBelongsToMe = "13016";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2506,7 +2506,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6949";
+            botBelongsToMe = "13017";
             delayRespawn = "14066";
             respawnCount = "0";
             respawnCounter = "0";
@@ -2522,7 +2522,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6950";
+            botBelongsToMe = "13018";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2537,7 +2537,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6951";
+            botBelongsToMe = "13019";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2552,7 +2552,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "WildebeestAI";
-            botBelongsToMe = "6952";
+            botBelongsToMe = "13020";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2572,7 +2572,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6953";
+            botBelongsToMe = "13021";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2587,7 +2587,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6954";
+            botBelongsToMe = "13022";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2602,7 +2602,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6955";
+            botBelongsToMe = "13023";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2617,7 +2617,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6956";
+            botBelongsToMe = "13024";
             delayRespawn = "98447";
             respawnCount = "0";
             respawnCounter = "0";
@@ -2633,7 +2633,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6957";
+            botBelongsToMe = "13025";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2648,7 +2648,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6958";
+            botBelongsToMe = "13026";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2663,7 +2663,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6959";
+            botBelongsToMe = "13027";
             delayRespawn = "18344";
             respawnCount = "0";
             respawnCounter = "0";
@@ -2679,7 +2679,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             block = "Deer";
-            botBelongsToMe = "6960";
+            botBelongsToMe = "13028";
             respawnCount = "0";
             respawnCounter = "0";
             weapon = "-NOWEAPON";
@@ -2696,7 +2696,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "GiraffeAI";
-         botBelongsToMe = "6791";
+         botBelongsToMe = "12859";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2712,7 +2712,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GiraffeAI";
-         botBelongsToMe = "6792";
+         botBelongsToMe = "12860";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2728,7 +2728,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "GiraffeAI";
-         botBelongsToMe = "6793";
+         botBelongsToMe = "12861";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2745,7 +2745,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "GiraffeAI";
-         botBelongsToMe = "6794";
+         botBelongsToMe = "12862";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2762,7 +2762,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "GiraffeAI";
-         botBelongsToMe = "6795";
+         botBelongsToMe = "12863";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2778,7 +2778,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GiraffeAI";
-         botBelongsToMe = "6796";
+         botBelongsToMe = "12864";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2793,7 +2793,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GiraffeAI";
-         botBelongsToMe = "6797";
+         botBelongsToMe = "12865";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2809,7 +2809,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "GiraffeAI";
-         botBelongsToMe = "6798";
+         botBelongsToMe = "12866";
          realName = " ";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2825,7 +2825,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6799";
+         botBelongsToMe = "12867";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2840,7 +2840,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6800";
+         botBelongsToMe = "12868";
          delayRespawn = "15426";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2856,7 +2856,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6801";
+         botBelongsToMe = "12869";
          delayRespawn = "9796";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2872,7 +2872,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6802";
+         botBelongsToMe = "12870";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2887,7 +2887,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6803";
+         botBelongsToMe = "12871";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2902,7 +2902,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6804";
+         botBelongsToMe = "12872";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2917,7 +2917,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6805";
+         botBelongsToMe = "12873";
          delayRespawn = "2947";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2933,7 +2933,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6806";
+         botBelongsToMe = "12874";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2948,7 +2948,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Elephant";
-         botBelongsToMe = "6807";
+         botBelongsToMe = "12875";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2963,7 +2963,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6808";
+         botBelongsToMe = "12876";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2978,7 +2978,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6809";
+         botBelongsToMe = "12877";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -2993,7 +2993,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6810";
+         botBelongsToMe = "12878";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3008,7 +3008,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6811";
+         botBelongsToMe = "12879";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3023,7 +3023,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6812";
+         botBelongsToMe = "12880";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3038,7 +3038,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6813";
+         botBelongsToMe = "12881";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3053,7 +3053,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6814";
+         botBelongsToMe = "12882";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3068,7 +3068,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6815";
+         botBelongsToMe = "12883";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3083,7 +3083,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "GemsbockAntelope";
-         botBelongsToMe = "6816";
+         botBelongsToMe = "12884";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3098,7 +3098,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6817";
+         botBelongsToMe = "12885";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3113,7 +3113,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6818";
+         botBelongsToMe = "12886";
          delayRespawn = "12949";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3129,7 +3129,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6819";
+         botBelongsToMe = "12887";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3144,7 +3144,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6820";
+         botBelongsToMe = "12888";
          delayRespawn = "16041";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3160,7 +3160,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6821";
+         botBelongsToMe = "12889";
          delayRespawn = "14127";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3176,7 +3176,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6822";
+         botBelongsToMe = "12890";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3191,7 +3191,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6823";
+         botBelongsToMe = "12891";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3206,7 +3206,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6824";
+         botBelongsToMe = "12892";
          delayRespawn = "400762";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3222,7 +3222,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "IMPALAAI";
-         botBelongsToMe = "6825";
+         botBelongsToMe = "12893";
          delayRespawn = "10818";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3238,7 +3238,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6826";
+         botBelongsToMe = "12894";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3253,7 +3253,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6827";
+         botBelongsToMe = "12895";
          delayRespawn = "84286";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3269,7 +3269,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6828";
+         botBelongsToMe = "12896";
          delayRespawn = "19291";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3285,7 +3285,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6829";
+         botBelongsToMe = "12897";
          delayRespawn = "49852";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3301,7 +3301,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6830";
+         botBelongsToMe = "12898";
          delayRespawn = "131310";
          respawnCount = "0";
          respawnCounter = "0";
@@ -3317,7 +3317,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6831";
+         botBelongsToMe = "12899";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
@@ -3332,10 +3332,90 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "ZebraAI";
-         botBelongsToMe = "6832";
+         botBelongsToMe = "12900";
          respawnCount = "0";
          respawnCounter = "0";
          weapon = "-NOWEAPON";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/FletchsHouse/house7-03.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-24.4509 -872.986 113.696";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Buildings/FletchsHouse/house7-04.dts";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-31.9399 -873.493 113.599";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Trees/AV_African/umbreallAcacia_02.DAE";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-19.8713 -873.518 113.844";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Trees/AV_African/umbrellaAcaciaFul_01.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-36.5928 -868.858 113.764";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "art/Packs/Trees/AV_African/umbreallAcacia_02.DAE";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-38.5284 -871.212 114.155";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---
