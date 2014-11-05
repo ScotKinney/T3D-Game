@@ -125,17 +125,16 @@ singleton Material(FortWallCenter1_Base_TileRoof_GTower_dif)
 singleton Material(FortWallCenter1_Base_Wall_GTower_dif)
 {
    mapTo = "Base_Wall_GTower_dif";
-   diffuseMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_dif";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_buildset/Base_SpartFortWall_dif.dds";
    specular[0] = "0 0 0 1";
    specularPower[0] = "128";
    translucentBlendOp = "None";
-   normalMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_nm.dds";
-   specularMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_spec.dds";
    detailDistance = "500";
    materialTag0 = "Miscellaneous";
    detailSize = "4";
    diffuseSize = "128";
    detailStrength = "0.5";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(FortWallCenter1_default2)
@@ -220,12 +219,15 @@ singleton Material(DefaultMaterial6)
 singleton Material(DefaultMaterial7)
 {
    mapTo = "Base_Wall_GTower_dif";
-   diffuseMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_dif";
-   normalMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_nm.dds";
+   diffuseMap[0] = "art/Packs/Buildings/Fort_buildset/Base_SpartFortWall_dif.dds";
    specularPower[0] = "28";
-   specularMap[0] = "art/Packs/Buildings/Fort_buildset/Base_Wall_GTower_spec.dds";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+   materialTag0 = "Miscellaneous";
+   detailDistance = "500";
 };
 
 singleton Material(Base_StairBridge_GTower90dif_mat)
