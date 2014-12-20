@@ -315,6 +315,9 @@ function stopIntroVideo()
    // Start connection to the chat server
    connectClientChat();
 
+   // Initialize Mumble
+   initMumble();
+
    if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.
       if ( !isObject(ServerSelGui) )

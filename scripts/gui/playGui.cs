@@ -170,6 +170,16 @@ function PlayGui::ResizeCenterPrint(%this, %newWidth)
    CenterPrintText.resize(2, 2, %ctrlWidth - 4, 19);
 }
 
+function PlayGui::onFrameRender(%this)
+{  // Called once per frame for positional updates
+   if ( isObject(ServerConnection) )
+   {
+      %player = ServerConnection.getControlObject();
+      if ( isObject(%player) )
+         updateMumblePos(%player.position);
+   }
+}
+
 //------------------------------------------------------------------------------
 // health hud
 //------------------------------------------------------------------------------
