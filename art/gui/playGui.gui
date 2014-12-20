@@ -3,55 +3,63 @@
    cameraZRot = "0";
    forceFOV = "0";
    reflectPriority = "1";
-   Margin = "0 0 0 0";
-   Padding = "0 0 0 0";
-   AnchorTop = "1";
-   AnchorBottom = "0";
-   AnchorLeft = "1";
-   AnchorRight = "0";
-   isContainer = "1";
-   Profile = "GuiContentProfile";
-   HorizSizing = "right";
-   VertSizing = "bottom";
+   renderStyle = "standard";
+   margin = "0 0 0 0";
+   padding = "0 0 0 0";
+   anchorTop = "1";
+   anchorBottom = "0";
+   anchorLeft = "1";
+   anchorRight = "0";
    position = "0 0";
-   Extent = "1024 768";
-   MinExtent = "8 8";
-   canSave = "1";
-   Visible = "1";
-   tooltipprofile = "GuiToolTipProfile";
+   extent = "1440 900";
+   minExtent = "8 8";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   profile = "GuiDefaultProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
    hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
    canSaveDynamicFields = "1";
-      Enabled = "1";
+      enabled = "1";
       helpTag = "0";
+      hoverEvent = "29125";
       noCursor = "1";
 
    new GuiWebResponderCtrl() {
-      isContainer = "0";
-      Profile = "AVWebResponderProfile";
       position = "-2 -2";
       extent = "2 2";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
+      profile = "AVWebResponderProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      internalName = "WebResponder";
       canSave = "1";
-      Visible = "1";
       canSaveDynamicFields = "0";
-      InternalName = "WebResponder";
    };
-   new GuiBitmapCtrl(CenterPrintDlg) {
+   new GuiBitmapCtrl(centerPrintDlg) {
       bitmap = "art/gui/hudfill.png";
       wrap = "0";
-      isContainer = "0";
-      Profile = "CenterPrintProfile";
-      position = "18 117";
-      extent = "792 23";
+      position = "18 93";
+      extent = "1757 23";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
-      canSave = "1";
-      Visible = "0";
-      tooltipprofile = "GuiToolTipProfile";
+      profile = "CenterPrintProfile";
+      visible = "0";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
+      isContainer = "0";
+      hidden = "1";
+      canSave = "1";
       canSaveDynamicFields = "0";
 
       new GuiMLTextCtrl(CenterPrintText) {
@@ -59,34 +67,37 @@
          allowColorChars = "0";
          maxChars = "-1";
          useURLMouseCursor = "0";
-         isContainer = "0";
-         Profile = "CenterPrintTextProfile";
          position = "2 2";
-         extent = "788 19";
+         extent = "1753 19";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "bottom";
-         canSave = "1";
-         Visible = "1";
-         tooltipprofile = "GuiToolTipProfile";
+         profile = "CenterPrintTextProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
          hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
          canSaveDynamicFields = "0";
       };
    };
    new GuiBitmapCtrl(LagIcon) {
       bitmap = "art/gui/lagIcon.png";
       wrap = "0";
-      isContainer = "0";
-      Profile = "GuiDefaultProfile";
-      HorizSizing = "right";
-      VertSizing = "bottom";
       position = "572 3";
-      Extent = "32 32";
-      MinExtent = "8 8";
-      canSave = "1";
-      Visible = "0";
-      tooltipprofile = "GuiToolTipProfile";
+      extent = "32 32";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "0";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
+      isContainer = "0";
+      hidden = "1";
+      canSave = "1";
       canSaveDynamicFields = "0";
    };
    new GuiShapeNameHud(PG_ShapeNames) {
@@ -97,17 +108,18 @@
       showFrame = "0";
       verticalOffset = "0.2";
       distanceFade = "0.1";
-      isContainer = "0";
-      Profile = "AVShapeNameHud";
-      HorizSizing = "width";
-      VertSizing = "height";
       position = "0 0";
-      Extent = "1024 768";
-      MinExtent = "8 8";
-      canSave = "1";
-      Visible = "1";
-      tooltipprofile = "GuiToolTipProfile";
+      extent = "1440 900";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "AVShapeNameHud";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
       canSaveDynamicFields = "0";
    };
    new GuiCrossHairHud(Reticle) {
@@ -117,17 +129,18 @@
       damageOffset = "0 10";
       bitmap = "art/gui/weaponHud/blank.png";
       wrap = "0";
-      isContainer = "0";
-      Profile = "GuiModelessDialogProfile";
-      HorizSizing = "center";
-      VertSizing = "center";
-      position = "496 368";
-      Extent = "32 32";
-      MinExtent = "8 8";
-      canSave = "1";
-      Visible = "1";
-      tooltipprofile = "GuiToolTipProfile";
+      position = "704 434";
+      extent = "32 32";
+      minExtent = "8 8";
+      horizSizing = "center";
+      vertSizing = "center";
+      profile = "GuiModelessDialogProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
       canSaveDynamicFields = "0";
    };
    new GuiCrossHairHud(ZoomReticle) {
@@ -135,22 +148,22 @@
       damageFrameColor = "1 0.6 0 1";
       damageRect = "50 4";
       damageOffset = "0 10";
-      bitmap = "art/gui/weaponHud/bino.png";
       wrap = "0";
-      isContainer = "0";
-      Profile = "GuiModelessDialogProfile";
-      HorizSizing = "width";
-      VertSizing = "height";
       position = "0 0";
-      Extent = "1024 768";
-      MinExtent = "8 8";
-      canSave = "1";
-      Visible = "0";
-      tooltipprofile = "GuiToolTipProfile";
+      extent = "1440 900";
+      minExtent = "8 8";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "GuiModelessDialogProfile";
+      visible = "0";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
+      isContainer = "0";
+      hidden = "1";
+      canSave = "1";
       canSaveDynamicFields = "0";
    };
-
    new GuiContainer(AVToolbar) {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -159,7 +172,7 @@
       anchorLeft = "1";
       anchorRight = "0";
       position = "0 0";
-      extent = "1024 133";
+      extent = "1440 89";
       minExtent = "8 2";
       horizSizing = "width";
       vertSizing = "bottom";
@@ -180,7 +193,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "0 4";
-         extent = "1024 40";
+         extent = "1440 40";
          minExtent = "8 2";
          horizSizing = "width";
          vertSizing = "bottom";
@@ -200,7 +213,7 @@
             anchorBottom = "0";
             anchorLeft = "1";
             anchorRight = "0";
-            position = "74 0";
+            position = "282 0";
             extent = "876 40";
             minExtent = "8 2";
             horizSizing = "center";
@@ -270,6 +283,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/annihilator.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -281,6 +295,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Annihilator Sword";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon0";
@@ -326,6 +341,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/paralyzer.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -337,6 +353,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Paralyzer Axe";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon1";
@@ -382,6 +399,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/WidowMakerLH.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -393,6 +411,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Left Hand WidowMaker Sword";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon2";
@@ -438,6 +457,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/skullsplitter.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -449,6 +469,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "SkullSplitter Sword";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon3";
@@ -494,6 +515,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/RoundShield_III.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -505,6 +527,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Round Shield III";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon4";
@@ -550,6 +573,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/fishingpole.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -561,6 +585,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Fishing Pole";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon24";
@@ -617,7 +642,6 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
-                     tooltip = "Map of Aureus";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon22";
@@ -663,6 +687,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/inventory.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -731,7 +756,6 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
-                     tooltip = "AFK Avatar";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon21";
@@ -833,6 +857,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/horse.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -844,6 +869,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Summon/Hide Horse";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon25";
@@ -1001,6 +1027,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/Invisibility_Rune.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1012,6 +1039,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Invisibility Rune";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon12";
@@ -1057,6 +1085,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/shards_of_ice_crystal.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1068,6 +1097,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Shards of Ice Crystal";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon11";
@@ -1113,6 +1143,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/BBQ_Ribs_Potion.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1124,6 +1155,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "BBQ Ribs Potion";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon10";
@@ -1142,7 +1174,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "0 48";
-         extent = "1024 40";
+         extent = "1440 40";
          minExtent = "8 2";
          horizSizing = "width";
          vertSizing = "bottom";
@@ -1162,7 +1194,7 @@
             anchorBottom = "0";
             anchorLeft = "1";
             anchorRight = "0";
-            position = "74 0";
+            position = "282 0";
             extent = "876 40";
             minExtent = "8 2";
             horizSizing = "center";
@@ -1214,6 +1246,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/chaosblade.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1225,6 +1258,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Chaos Blade";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon5";
@@ -1270,6 +1304,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/grenade.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1281,6 +1316,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Grenade";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon6";
@@ -1326,6 +1362,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/flintlock.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1337,6 +1374,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Flintlock";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon7";
@@ -1382,6 +1420,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/crossbow.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1393,6 +1432,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Crossbow";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon9";
@@ -1550,6 +1590,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
+                     bitmap = "art/gui/icons/ElvenBow.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1561,6 +1602,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
+                     tooltip = "Elven Bow";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon8";
@@ -1750,11 +1792,12 @@
                horizSizing = "right";
                vertSizing = "bottom";
                profile = "AVToolbarIconProfile";
-               visible = "1";
+               visible = "0";
                active = "1";
                tooltipProfile = "GuiToolTipProfile";
                hovertime = "1000";
                isContainer = "1";
+               hidden = "1";
                canSave = "1";
                canSaveDynamicFields = "0";
 
@@ -1765,11 +1808,12 @@
                   horizSizing = "right";
                   vertSizing = "bottom";
                   profile = "AVToolbarBorderProfile";
-                  visible = "1";
+                  visible = "0";
                   active = "1";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "1";
+                  hidden = "1";
                   canSave = "1";
                   canSaveDynamicFields = "0";
 
@@ -1818,7 +1862,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "479211";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -1887,6 +1931,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
+                        text = "7";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -1955,7 +2000,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "3354477";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2037,20 +2082,20 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "0 92";
-         extent = "1024 40";
+         extent = "1440 40";
          minExtent = "8 2";
          horizSizing = "width";
          vertSizing = "bottom";
          profile = "GuiDefaultProfile";
-         visible = "1";
+         visible = "0";
          active = "1";
          tooltipProfile = "GuiToolTipProfile";
          hovertime = "1000";
          isContainer = "1";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "0";
 
-         // Data boxes
          new GuiContainer() {
             margin = "0 0 0 0";
             padding = "0 0 0 0";
@@ -2058,7 +2103,7 @@
             anchorBottom = "0";
             anchorLeft = "1";
             anchorRight = "0";
-            position = "74 0";
+            position = "282 0";
             extent = "876 40";
             minExtent = "8 2";
             horizSizing = "center";
@@ -2073,7 +2118,6 @@
             canSave = "1";
             canSaveDynamicFields = "0";
 
-            // ArnsBar Fields
             new GuiContainer() {
                margin = "0 0 0 0";
                padding = "0 0 0 0";
@@ -2155,7 +2199,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "19806";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2262,7 +2306,6 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2296,8 +2339,6 @@
                      profile = "AVToolbarIconProfile";
                      visible = "1";
                      active = "1";
-                     //command = "BankingGui.toggleGui();";
-                     command = "";
                      tooltipProfile = "AVToolTipProfile";
                      tooltip = "Click here to Deposit or Withdraw Arns.";
                      hovertime = "1000";
@@ -2388,7 +2429,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "5237";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2495,7 +2536,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "9823000";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2620,7 +2661,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "0";
+                        text = "100000";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2649,8 +2690,6 @@
          };
       };
    };
-
-   // Prefs Button
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -2658,18 +2697,19 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 0";
+      position = "0 941";
       extent = "80 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "1";
+      visible = "0";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "PrefsBtn";
+      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -2719,7 +2759,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 2";
-               extent = "70 19";
+               extent = "70 20";
                minExtent = "8 2";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -2742,7 +2782,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 17";
-               extent = "70 19";
+               extent = "70 20";
                minExtent = "8 2";
                horizSizing = "width";
                vertSizing = "bottom";
@@ -2776,8 +2816,6 @@
          };
       };
    };
-
-   // Open Web Site
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -2785,146 +2823,19 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "80 0";
-      extent = "107 40";
-      minExtent = "8 2";
-      horizSizing = "right";
-      vertSizing = "bottom";
-      profile = "AVToolbarIconProfile";
-      visible = "1";
-      active = "1";
-      tooltipProfile = "GuiToolTipProfile";
-      hovertime = "1000";
-      isContainer = "1";
-      internalName = "OpenSiteBtn";
-      canSave = "1";
-      canSaveDynamicFields = "0";
-
-      new GuiBitmapBorderCtrl() {
-         position = "0 0";
-         extent = "107 40";
-         minExtent = "8 2";
-         horizSizing = "right";
-         vertSizing = "bottom";
-         profile = "AVToolbarBorderProfile";
-         visible = "1";
-         active = "1";
-         tooltipProfile = "GuiToolTipProfile";
-         hovertime = "1000";
-         isContainer = "1";
-         canSave = "1";
-         canSaveDynamicFields = "0";
-
-         new GuiContainer() {
-            margin = "0 0 0 0";
-            padding = "0 0 0 0";
-            anchorTop = "1";
-            anchorBottom = "0";
-            anchorLeft = "1";
-            anchorRight = "0";
-            position = "5 0";
-            extent = "97 40";
-            minExtent = "8 2";
-            horizSizing = "right";
-            vertSizing = "bottom";
-            profile = "GuiDefaultProfile";
-            visible = "1";
-            active = "1";
-            tooltipProfile = "GuiToolTipProfile";
-            hovertime = "1000";
-            isContainer = "1";
-            canSave = "1";
-            canSaveDynamicFields = "0";
-
-            new GuiTextCtrl() {
-               text = "Help - Ranks";
-               maxLength = "1024";
-               margin = "0 0 0 0";
-               padding = "0 0 0 0";
-               anchorTop = "1";
-               anchorBottom = "0";
-               anchorLeft = "1";
-               anchorRight = "0";
-               position = "0 2";
-               extent = "97 19";
-               minExtent = "8 2";
-               horizSizing = "right";
-               vertSizing = "bottom";
-               profile = "AVToolbarStatTextProfile";
-               visible = "1";
-               active = "1";
-               tooltipProfile = "GuiToolTipProfile";
-               hovertime = "1000";
-               isContainer = "1";
-               canSave = "1";
-               canSaveDynamicFields = "0";
-            };
-            new GuiTextCtrl() {
-               text = "Stats & Acct";
-               maxLength = "1024";
-               margin = "0 0 0 0";
-               padding = "0 0 0 0";
-               anchorTop = "1";
-               anchorBottom = "0";
-               anchorLeft = "1";
-               anchorRight = "0";
-               position = "0 17";
-               extent = "97 19";
-               minExtent = "8 2";
-               horizSizing = "width";
-               vertSizing = "bottom";
-               profile = "AVToolbarStatTextProfile";
-               visible = "1";
-               active = "1";
-               tooltipProfile = "GuiToolTipProfile";
-               hovertime = "1000";
-               isContainer = "1";
-               canSave = "1";
-               canSaveDynamicFields = "0";
-            };
-         };
-         new GuiBitmapCtrl() {
-            wrap = "0";
-            position = "1 1";
-            extent = "105 38";
-            minExtent = "8 2";
-            horizSizing = "right";
-            vertSizing = "bottom";
-            profile = "AVToolbarIconProfile";
-            visible = "1";
-            active = "1";
-            //command = "FriendGui.toggleGui();";
-            command = "gotoWebPage(\"http://www.AlterVerse.com\");";
-            tooltipProfile = "AVToolTipProfile";
-            tooltip = "";
-            hovertime = "1000";
-            isContainer = "0";
-            canSave = "1";
-            canSaveDynamicFields = "0";
-         };
-      };
-   };
-
-   // Game Exit
-   new GuiContainer() {
-      margin = "0 0 0 0";
-      padding = "0 0 0 0";
-      anchorTop = "1";
-      anchorBottom = "0";
-      anchorLeft = "1";
-      anchorRight = "0";
-      position = "0 0";
+      position = "1713 941";
       extent = "80 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "1";
+      visible = "0";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "ExitBtn";
+      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -2974,7 +2885,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 2";
-               extent = "70 19";
+               extent = "70 20";
                minExtent = "8 2";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -2997,7 +2908,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 17";
-               extent = "70 19";
+               extent = "70 20";
                minExtent = "8 2";
                horizSizing = "width";
                vertSizing = "bottom";
@@ -3031,8 +2942,6 @@
          };
       };
    };
-
-   // Invite A Friend
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -3040,150 +2949,22 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "80 0";
-      extent = "107 40";
-      minExtent = "8 2";
-      horizSizing = "right";
-      vertSizing = "bottom";
-      profile = "AVToolbarIconProfile";
-      visible = "1";
-      active = "1";
-      tooltipProfile = "GuiToolTipProfile";
-      hovertime = "1000";
-      isContainer = "1";
-      internalName = "FriendBtn";
-      canSave = "1";
-      canSaveDynamicFields = "0";
-
-      new GuiBitmapBorderCtrl() {
-         position = "0 0";
-         extent = "107 40";
-         minExtent = "8 2";
-         horizSizing = "right";
-         vertSizing = "bottom";
-         profile = "AVToolbarBorderProfile";
-         visible = "1";
-         active = "1";
-         tooltipProfile = "GuiToolTipProfile";
-         hovertime = "1000";
-         isContainer = "1";
-         canSave = "1";
-         canSaveDynamicFields = "0";
-
-         new GuiContainer() {
-            margin = "0 0 0 0";
-            padding = "0 0 0 0";
-            anchorTop = "1";
-            anchorBottom = "0";
-            anchorLeft = "1";
-            anchorRight = "0";
-            position = "5 0";
-            extent = "97 40";
-            minExtent = "8 2";
-            horizSizing = "right";
-            vertSizing = "bottom";
-            profile = "GuiDefaultProfile";
-            visible = "1";
-            active = "1";
-            tooltipProfile = "GuiToolTipProfile";
-            hovertime = "1000";
-            isContainer = "1";
-            canSave = "1";
-            canSaveDynamicFields = "0";
-
-            new GuiTextCtrl() {
-               text = "Invite A";
-               maxLength = "1024";
-               margin = "0 0 0 0";
-               padding = "0 0 0 0";
-               anchorTop = "1";
-               anchorBottom = "0";
-               anchorLeft = "1";
-               anchorRight = "0";
-               position = "0 2";
-               extent = "97 19";
-               minExtent = "8 2";
-               horizSizing = "right";
-               vertSizing = "bottom";
-               profile = "AVToolbarStatTextProfile";
-               visible = "1";
-               active = "1";
-               tooltipProfile = "GuiToolTipProfile";
-               hovertime = "1000";
-               isContainer = "1";
-               canSave = "1";
-               canSaveDynamicFields = "0";
-            };
-            new GuiTextCtrl() {
-               text = "Friend";
-               maxLength = "1024";
-               margin = "0 0 0 0";
-               padding = "0 0 0 0";
-               anchorTop = "1";
-               anchorBottom = "0";
-               anchorLeft = "1";
-               anchorRight = "0";
-               position = "0 17";
-               extent = "97 19";
-               minExtent = "8 2";
-               horizSizing = "width";
-               vertSizing = "bottom";
-               profile = "AVToolbarStatTextProfile";
-               visible = "1";
-               active = "1";
-               tooltipProfile = "GuiToolTipProfile";
-               hovertime = "1000";
-               isContainer = "1";
-               canSave = "1";
-               canSaveDynamicFields = "0";
-            };
-         };
-         new GuiBitmapCtrl() {
-            wrap = "0";
-            position = "1 1";
-            extent = "105 38";
-            minExtent = "8 2";
-            horizSizing = "right";
-            vertSizing = "bottom";
-            profile = "AVToolbarIconProfile";
-            visible = "1";
-            active = "1";
-            command = "FriendGui.toggleGui();";
-            //command = "gotoWebPage(\"http://www.alterverse.com/navbar3.asp\");";
-            tooltipProfile = "AVToolTipProfile";
-            tooltip = "";
-            hovertime = "1000";
-            isContainer = "0";
-            canSave = "1";
-            canSaveDynamicFields = "0";
-         };
-      };
-   };
-
-   // Center boxes
-   new GuiContainer() {
-      margin = "0 0 0 0";
-      padding = "0 0 0 0";
-      anchorTop = "1";
-      anchorBottom = "0";
-      anchorLeft = "1";
-      anchorRight = "0";
-      position = "187 0";
+      position = "571 941";
       extent = "650 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "GuiDefaultProfile";
-      visible = "1";
+      visible = "0";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "RowCenter";
+      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
-      // Homeworld
       new GuiContainer() {
          margin = "0 0 0 0";
          padding = "0 0 0 0";
@@ -3251,7 +3032,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 2";
-                  extent = "207 19";
+                  extent = "207 20";
                   minExtent = "8 2";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -3265,7 +3046,6 @@
                   canSaveDynamicFields = "0";
                };
                new GuiTextCtrl() {
-                  text = "";
                   maxLength = "1024";
                   margin = "0 0 0 0";
                   padding = "0 0 0 0";
@@ -3274,7 +3054,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 17";
-                  extent = "207 19";
+                  extent = "207 20";
                   minExtent = "8 2";
                   horizSizing = "width";
                   vertSizing = "bottom";
@@ -3291,8 +3071,6 @@
             };
          };
       };
-
-      // Time Remaining
       new GuiContainer() {
          margin = "0 0 0 0";
          padding = "0 0 0 0";
@@ -3360,7 +3138,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 2";
-                  extent = "206 19";
+                  extent = "206 20";
                   minExtent = "8 2";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -3374,7 +3152,6 @@
                   canSaveDynamicFields = "0";
                };
                new GuiTextCtrl() {
-                  text = "";
                   maxLength = "1024";
                   margin = "0 0 0 0";
                   padding = "0 0 0 0";
@@ -3383,7 +3160,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 17";
-                  extent = "206 19";
+                  extent = "206 20";
                   minExtent = "8 2";
                   horizSizing = "width";
                   vertSizing = "bottom";
@@ -3400,8 +3177,6 @@
             };
          };
       };
-
-      // Clan
       new GuiContainer() {
          margin = "0 0 0 0";
          padding = "0 0 0 0";
@@ -3469,7 +3244,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 2";
-                  extent = "207 19";
+                  extent = "207 20";
                   minExtent = "8 2";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -3483,7 +3258,6 @@
                   canSaveDynamicFields = "0";
                };
                new GuiTextCtrl() {
-                  text = "";
                   maxLength = "1024";
                   margin = "0 0 0 0";
                   padding = "0 0 0 0";
@@ -3492,7 +3266,7 @@
                   anchorLeft = "1";
                   anchorRight = "0";
                   position = "0 17";
-                  extent = "207 19";
+                  extent = "207 20";
                   minExtent = "8 2";
                   horizSizing = "width";
                   vertSizing = "bottom";
@@ -3509,10 +3283,7 @@
             };
          };
       };
-
    };
-
-   // Health Block
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -3520,7 +3291,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 0";
+      position = "0 890";
       extent = "80 51";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3560,7 +3331,7 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "4 2";
-            extent = "72 19";
+            extent = "72 20";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
@@ -3574,7 +3345,7 @@
             canSaveDynamicFields = "0";
          };
          new GuiTextCtrl(numericalHealthHUD) {
-            text = "50";
+            text = "100";
             maxLength = "1024";
             margin = "0 0 0 0";
             padding = "0 0 0 0";
@@ -3598,8 +3369,6 @@
          };
       };
    };
-
-   // Weapon
    new GuiContainer(WeaponHUD) {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -3607,7 +3376,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 0";
+      position = "0 850";
       extent = "40 40";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3638,7 +3407,6 @@
          canSaveDynamicFields = "0";
 
          new GuiBitmapCtrl(previewImage) {
-            bitmap = "";
             wrap = "0";
             position = "1 1";
             extent = "37 37";
@@ -3646,11 +3414,12 @@
             horizSizing = "width";
             vertSizing = "height";
             profile = "GuiDefaultProfile";
-            visible = "1";
+            visible = "0";
             active = "1";
             tooltipProfile = "GuiToolTipProfile";
             hovertime = "1000";
             isContainer = "0";
+            hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "0";
          };
@@ -3669,18 +3438,17 @@
             horizSizing = "right";
             vertSizing = "bottom";
             profile = "HudTextBoldProfile";
-            visible = "1";
+            visible = "0";
             active = "1";
             tooltipProfile = "GuiToolTipProfile";
             hovertime = "1000";
             isContainer = "0";
+            hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "0";
          };
       };
    };
-
-   // Arn Bar Button
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -3688,18 +3456,19 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 0";
+      position = "1753 850";
       extent = "40 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "1";
+      visible = "0";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "ArnBarButton";
+      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -3749,7 +3518,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 2";
-               extent = "32 19";
+               extent = "32 20";
                minExtent = "8 2";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -3772,7 +3541,7 @@
                anchorLeft = "1";
                anchorRight = "0";
                position = "0 17";
-               extent = "32 19";
+               extent = "32 20";
                minExtent = "8 2";
                horizSizing = "width";
                vertSizing = "bottom";
@@ -3806,8 +3575,6 @@
          };
       };
    };
-
-   // FPSBlock
    new GuiContainer() {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -3815,7 +3582,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 0";
+      position = "1713 890";
       extent = "80 51";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3855,7 +3622,7 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "4 2";
-            extent = "72 19";
+            extent = "72 20";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
@@ -3870,7 +3637,7 @@
             canSaveDynamicFields = "0";
          };
          new GuiTextCtrl(lblFps) {
-            text = "50";
+            text = "41";
             maxLength = "1024";
             margin = "0 0 0 0";
             padding = "0 0 0 0";
@@ -3894,34 +3661,42 @@
          };
       };
    };
-
    new GuiControl(InfoBoxBackdrop) {
-      canSaveDynamicFields = "0";
-      Profile = "AV_HUD_InfoBox_Backdrop_Profile";
-      HorizSizing = "left";
-      VertSizing = "bottom";
-      position = "400 400";
-      Extent = "300 8";
-      MinExtent = "8 8";
+      position = "816 400";
+      extent = "300 8";
+      minExtent = "8 8";
+      horizSizing = "left";
+      vertSizing = "bottom";
+      profile = "AV_HUD_InfoBox_Backdrop_Profile";
+      visible = "0";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      hidden = "1";
       canSave = "1";
-      Visible = "0";
-      hoverTime = "1000";
+      canSaveDynamicFields = "0";
    };
    new GuiMLTextCtrl(InfoBox) {
-      canSaveDynamicFields = "1";
-      Profile = "AV_HUD_InfoBox_Profile";
-      HorizSizing = "left";
-      VertSizing = "height";
-      position = "400 400";
-      Extent = "300 8";
-      MinExtent = "8 8";
-      canSave = "1";
-      Visible = "0";
-      hoverTime = "1000";
       lineSpacing = "2";
       allowColorChars = "0";
       maxChars = "-1";
-      description = "<color:FFD200><font:Arial:18>Spell Description";
+      useURLMouseCursor = "0";
+      position = "816 400";
+      extent = "300 140";
+      minExtent = "8 8";
+      horizSizing = "left";
+      vertSizing = "height";
+      profile = "AV_HUD_InfoBox_Profile";
+      visible = "0";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      hidden = "1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         description = "<color:FFD200><font:Arial:18>Spell Description";
    };
 };
 //--- OBJECT WRITE END ---
