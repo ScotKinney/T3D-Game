@@ -644,7 +644,7 @@ function MumbleMode(%modeStr)
    if ( $Mumble::ModeVal == 0 )
       $Mumble::ModeStr = "Player+Camera";
    else if ( $Mumble::ModeVal == 1 )
-      $Mumble::ModeStr = "Player";
+      $Mumble::ModeStr = "Player Only";
    if ( $Mumble::ModeVal == 2 )
-      $Mumble::ModeStr = "Camera";
+      $Mumble::ModeStr = "Camera Only";
 }
