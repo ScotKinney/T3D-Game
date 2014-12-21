@@ -205,6 +205,15 @@ function videoMetricsCallback()
    return gfxMetricsCallback();
 }
 
+function mumbleMetricsCallback()
+{
+   return "  | Mumble |" @ 
+          "  Status: " @ $Mumble::Status @
+          ",  Context: " @ $Mumble::Context @
+          ",  Mode: " @ $Mumble::ModeStr @
+          ",  PlrPos: " @ $Mumble::PlayerPos;
+}
+
 // Add a metrics HUD.  %expr can be a vector of names where each element
 // must have a corresponding '<name>MetricsCallback()' function defined
 // that will be called on each update of the GUI control.  The results

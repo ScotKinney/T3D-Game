@@ -316,7 +316,11 @@ function stopIntroVideo()
    connectClientChat();
 
    // Initialize Mumble
-   initMumble();
+   $Mumble::Status = (initMumble($currentPlayerID) ? "Active Link" : "NO LINK");
+   $Mumble::Context = "Lobby";
+   $Mumble::ModeVal = 0;
+   $Mumble::ModeStr = "Player+Camera";
+   setMumbleContext($Mumble::Context, true);
 
    if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.
@@ -367,7 +371,7 @@ function clientCmdServerTransferStream(%manifestPath, %rootPath, %address, %spaw
    $ServerName = %serverName;
    $AlterVerse::serverPrefix = %serverPrefix;
 
-   schedule(0, 0, disconnect);//transferDisconnect);
+   schedule(0, 0, disconnect, true);
    Canvas.schedule(0, setContent, DownloadProgressGui);
    schedule(100, 0, playIntroMusic, %serverName);
    StreamManager.streamLevelAssets(%manifestPath, %rootPath, "streamFinished(\"" @ %address @ "\",\"" @ %spawnSphere @ "\");");

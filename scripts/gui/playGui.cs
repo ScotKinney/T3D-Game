@@ -176,7 +176,10 @@ function PlayGui::onFrameRender(%this)
    {
       %player = ServerConnection.getControlObject();
       if ( isObject(%player) )
-         updateMumblePos(%player.position);
+      {
+         updateMumblePos(%player);
+         $Mumble::PlayerPos = %player.position;
+      }
    }
 }
 
@@ -622,3 +625,26 @@ function InfoBox::onResize(%this, %width, %height)
    %this.resize(%box_x + %txt_margin, %box_y + %txt_margin, %width, %height);
 }
 
+function MumbleMode(%modeStr)
+{
+   switch$(%modeStr)
+   {
+      case "True":
+         $Mumble::ModeVal = 0;
+      case "Player":
+         $Mumble::ModeVal = 1;
+      case "Camera":
+         $Mumble::ModeVal = 2;
+      default:
+         $Mumble::ModeVal++;
+   }
+   if ( $Mumble::ModeVal > 2 )
+      $Mumble::ModeVal = 0;
+
+   if ( $Mumble::ModeVal == 0 )
+      $Mumble::ModeStr = "Player+Camera";
+   else if ( $Mumble::ModeVal == 1 )
+      $Mumble::ModeStr = "Player";
+   if ( $Mumble::ModeVal == 2 )
+      $Mumble::ModeStr = "Camera";
+}

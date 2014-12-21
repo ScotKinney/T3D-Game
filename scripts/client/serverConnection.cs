@@ -112,7 +112,11 @@ function GameConnection::onConnectionAccepted(%this)
    
    // Startup the physics world on the client before any
    // datablocks and objects are ghosted over.
-   physicsInitWorld( "client" );   
+   physicsInitWorld( "client" );
+
+   // Move into the mumble channel for the server we connected to
+   $Mumble::Context = $ServerName;
+   setMumbleContext($ServerName, false);
 }
 
 function GameConnection::onConnectionTimedOut(%this)
@@ -204,6 +208,10 @@ function disconnect(%isTransfer, %noMenu)
       // else physics resources will not cleanup properly.
       physicsStopSimulation( "client" );
    }
+
+   // Leave the server channel in mumble
+   $Mumble::Context = "Lobby";
+   setMumbleContext($Mumble::Context, true);
 
    $TAP::onServer = false;
    if ( %isTransfer )
