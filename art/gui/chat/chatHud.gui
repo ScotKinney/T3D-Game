@@ -769,7 +769,7 @@
    isContainer = "1";
    canSave = "1";
    canSaveDynamicFields = "1";
-      currentLength = "0";
+      currentLength = "3";
       helpTag = "0";
       localized = "1";
       logInit = "1";
@@ -783,8 +783,8 @@
       renderStyle = "standard";
 
    new GuiBitmapBorderCtrl(OuterChatHud) {
-      position = "395 853";
-      extent = "650 27";
+      position = "395 643";
+      extent = "650 237";
       minExtent = "8 8";
       horizSizing = "center";
       vertSizing = "top";
@@ -801,7 +801,7 @@
          bitmap = "core/art/gui/images/hudfill.png";
          wrap = "0";
          position = "3 3";
-         extent = "644 21";
+         extent = "644 231";
          minExtent = "8 8";
          horizSizing = "width";
          vertSizing = "height";
@@ -839,7 +839,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "4 4";
-         extent = "642 19";
+         extent = "642 229";
          minExtent = "8 2";
          horizSizing = "right";
          vertSizing = "bottom";
@@ -864,18 +864,17 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "0 19";
-            extent = "642 2";
+            extent = "642 210";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
             profile = "ChatTabPageProfile";
-            visible = "0";
+            visible = "1";
             active = "1";
             tooltipProfile = "GuiToolTipProfile";
             hovertime = "1000";
             isContainer = "1";
             internalName = "pane0";
-            hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "0";
 
@@ -895,7 +894,7 @@
                anchorLeft = "0";
                anchorRight = "0";
                position = "1 1";
-               extent = "640 8";
+               extent = "640 208";
                minExtent = "8 8";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -917,7 +916,7 @@
                   matchColor = "255 0 0 255";
                   maxColorIndex = "5";
                   position = "2 0";
-                  extent = "623 16";
+                  extent = "636 32";
                   minExtent = "8 8";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -945,7 +944,7 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "0 19";
-            extent = "642 2";
+            extent = "642 210";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
@@ -976,7 +975,7 @@
                anchorLeft = "0";
                anchorRight = "0";
                position = "1 1";
-               extent = "640 8";
+               extent = "640 208";
                minExtent = "8 8";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -998,7 +997,7 @@
                   matchColor = "255 0 0 255";
                   maxColorIndex = "5";
                   position = "2 0";
-                  extent = "623 12";
+                  extent = "636 12";
                   minExtent = "8 8";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -1026,7 +1025,7 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "0 19";
-            extent = "642 2";
+            extent = "642 210";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
@@ -1057,7 +1056,7 @@
                anchorLeft = "0";
                anchorRight = "0";
                position = "1 1";
-               extent = "640 8";
+               extent = "640 208";
                minExtent = "8 8";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -1079,7 +1078,7 @@
                   matchColor = "255 0 0 255";
                   maxColorIndex = "5";
                   position = "2 0";
-                  extent = "623 12";
+                  extent = "636 12";
                   minExtent = "8 8";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -1107,7 +1106,7 @@
             anchorLeft = "1";
             anchorRight = "0";
             position = "0 19";
-            extent = "642 2";
+            extent = "642 210";
             minExtent = "8 2";
             horizSizing = "right";
             vertSizing = "bottom";
@@ -1138,7 +1137,7 @@
                anchorLeft = "0";
                anchorRight = "0";
                position = "83 1";
-               extent = "558 8";
+               extent = "558 208";
                minExtent = "8 8";
                horizSizing = "right";
                vertSizing = "bottom";
@@ -1160,7 +1159,7 @@
                   matchColor = "255 0 0 255";
                   maxColorIndex = "5";
                   position = "3 1";
-                  extent = "539 12";
+                  extent = "552 12";
                   minExtent = "8 8";
                   horizSizing = "right";
                   vertSizing = "bottom";
@@ -1257,14 +1256,13 @@
          horizSizing = "right";
          vertSizing = "bottom";
          profile = "GuiDefaultProfile";
-         visible = "0";
+         visible = "1";
          active = "1";
          command = "MainChatHud.lastChatHudLen();";
          tooltipProfile = "GuiToolTipProfile";
          hovertime = "1000";
          isContainer = "0";
          internalName = "ShrinkButton";
-         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
@@ -1283,13 +1281,14 @@
          horizSizing = "right";
          vertSizing = "bottom";
          profile = "GuiDefaultProfile";
-         visible = "1";
+         visible = "0";
          active = "1";
          command = "MainChatHud.nextChatHudLen();";
          tooltipProfile = "GuiToolTipProfile";
          hovertime = "1000";
          isContainer = "0";
          internalName = "ExpandButton";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "0";
       };
