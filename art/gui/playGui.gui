@@ -25,7 +25,7 @@
    canSaveDynamicFields = "1";
       enabled = "1";
       helpTag = "0";
-      hoverEvent = "29125";
+      hoverEvent = "26346";
       noCursor = "1";
 
    new GuiWebResponderCtrl() {
@@ -48,7 +48,7 @@
       bitmap = "art/gui/hudfill.png";
       wrap = "0";
       position = "18 93";
-      extent = "1757 23";
+      extent = "1564 23";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
@@ -68,7 +68,7 @@
          maxChars = "-1";
          useURLMouseCursor = "0";
          position = "2 2";
-         extent = "1753 19";
+         extent = "1560 19";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "bottom";
@@ -1862,7 +1862,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "479211";
+                        text = "436661";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2000,7 +2000,7 @@
                         canSaveDynamicFields = "0";
                      };
                      new GuiTextCtrl() {
-                        text = "3354477";
+                        text = "3056627";
                         maxLength = "1024";
                         margin = "0 0 0 0";
                         padding = "0 0 0 0";
@@ -2697,19 +2697,18 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 941";
+      position = "0 840";
       extent = "80 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "0";
+      visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "PrefsBtn";
-      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -2823,19 +2822,18 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1713 941";
+      position = "1520 840";
       extent = "80 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "0";
+      visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "ExitBtn";
-      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -2949,19 +2947,18 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "571 941";
+      position = "475 840";
       extent = "650 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "GuiDefaultProfile";
-      visible = "0";
+      visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "RowCenter";
-      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -3291,7 +3288,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 890";
+      position = "0 789";
       extent = "80 51";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3376,7 +3373,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "0 850";
+      position = "0 749";
       extent = "40 40";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3456,19 +3453,18 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1753 850";
+      position = "1560 749";
       extent = "40 40";
       minExtent = "8 2";
       horizSizing = "right";
       vertSizing = "bottom";
       profile = "AVToolbarIconProfile";
-      visible = "0";
+      visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
       hovertime = "1000";
       isContainer = "1";
       internalName = "ArnBarButton";
-      hidden = "1";
       canSave = "1";
       canSaveDynamicFields = "0";
 
@@ -3582,7 +3578,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1713 890";
+      position = "1520 789";
       extent = "80 51";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3637,7 +3633,7 @@
             canSaveDynamicFields = "0";
          };
          new GuiTextCtrl(lblFps) {
-            text = "41";
+            text = "16";
             maxLength = "1024";
             margin = "0 0 0 0";
             padding = "0 0 0 0";
