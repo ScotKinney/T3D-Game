@@ -934,7 +934,12 @@ function Player::playImpulseAnim(%this, %pos, %impulse)
 function Player::playCelAnimation(%this,%anim)
 {
    if ( (%this.getState() !$= "Dead") && !%this.isMounted() )
-      %this.setActionThread("cel"@%anim);
+   {
+      if ( %anim $= "wave" )
+         %this.setActionThread("E_Wave");
+      else
+         %this.setActionThread("cel"@%anim);
+   }
 }
 
 function Player::playXtraAnimation(%this,%anim)
