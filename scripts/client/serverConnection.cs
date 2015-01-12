@@ -47,6 +47,11 @@ function GameConnection::initialControlSet(%this)
 {
    echo ("*** Initial Control Object");
 
+   // Let Mumble know we've landed on a game server
+   $Mumble::Context = $ServerName;
+   $Mumble::Status = (MumbleJoinGame($ServerName, $currentPlayerID) ? "Active Link" : "NO LINK");
+   setMumbleContext($ServerName, false);
+
    // The first control object has been set by the server
    // and we are now ready to go.
    if ( $InRiftView )
@@ -115,8 +120,8 @@ function GameConnection::onConnectionAccepted(%this)
    physicsInitWorld( "client" );
 
    // Move into the mumble channel for the server we connected to
-   $Mumble::Context = $ServerName;
-   setMumbleContext($ServerName, false);
+   //$Mumble::Context = $ServerName;
+   //setMumbleContext($ServerName, false);
 }
 
 function GameConnection::onConnectionTimedOut(%this)
@@ -209,9 +214,10 @@ function disconnect(%isTransfer, %noMenu)
       physicsStopSimulation( "client" );
    }
 
-   // Leave the server channel in mumble
+   // Let mumble know we've left a game server
    $Mumble::Context = "Lobby";
-   setMumbleContext($Mumble::Context, true);
+   $Mumble::Status = "NO LINK";
+   MumbleLeaveGame();
 
    $TAP::onServer = false;
    if ( %isTransfer )
