@@ -253,6 +253,7 @@ package GameCore
       {
          %client.authenticated = true;
          %client.buildRights = 1;
+         %client.isDev = true;
          %client.Gender = $pref::Player::Gender;
          %client.clanID = "0";
          %client.clanRole = "0";

@@ -343,7 +343,10 @@ function GameConnection::spawnPlayer(%this, %spawnPoint, %noControl)
 function serverCMDSwapAvatar(%client, %newDB)
 {  // Switch the player to the passed datablock type
    if ( !%client.isDev )
+   {
+      echo("Failed switching to " @ %newDB @ ", not marked as a developer.");
       return; // Only developers can do this
+   }
 
    if ( %newDB $= "" )
    {  // Changing back to their normal avatar
@@ -355,7 +358,10 @@ function serverCMDSwapAvatar(%client, %newDB)
    else
    {
       if ( !isObject(%newDB) )
+      {
+         echo("Failed switching to " @ %newDB @ ", datablock not found.");
          return;  // Can't find the avatar datablock
+      }
       %spawnDataBlock = %newDB;
    }
 
@@ -369,6 +375,7 @@ function serverCMDSwapAvatar(%client, %newDB)
    // Create the avatar
    %player = spawnObject($Game::DefaultPlayerClass, %spawnDatablock);
    %player.setTransform(%oldTrans);
+   echo("New " @ %newDB @ " spawned at " @ %oldTrans);
    %player.client = %client;
    %client.player = %player;
    %client.player.team = %client.team;
