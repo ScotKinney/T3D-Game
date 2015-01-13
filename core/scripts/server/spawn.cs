@@ -339,3 +339,76 @@ function GameConnection::spawnPlayer(%this, %spawnPoint, %noControl)
    if(!isDefined("%noControl"))
       %this.setControlObject(%control);
 }
+
+function serverCMDSwapAvatar(%client, %newDB)
+{  // Switch the player to the passed datablock type
+   if ( !%client.isDev )
+      return; // Only developers can do this
+
+   if ( %newDB $= "" )
+   {  // Changing back to their normal avatar
+      if (%client.gender $= "Female" )
+         %spawnDataBlock = "FemalePlayerData";
+      else
+         %spawnDataBlock = "MalePlayerData";
+   }
+   else
+   {
+      if ( !isObject(%newDB) )
+         return;  // Can't find the avatar datablock
+      %spawnDataBlock = %newDB;
+   }
+
+   if ( isObject(%client.player) )
+   {  // Get the transform from the current player
+      %oldTrans = %client.player.getTransform();
+      %oldTrans = setWord(%oldTrans, 2, (getWord(%oldTrans, 2) + 1));
+      %client.player.delete();
+   }
+
+   // Create the avatar
+   %player = spawnObject($Game::DefaultPlayerClass, %spawnDatablock);
+   %player.setTransform(%oldTrans);
+   %player.client = %client;
+   %client.player = %player;
+   %client.player.team = %client.team;
+   TeamSimSets(%client.player, %client.player.team);
+
+   // Customize the avatar
+   if ( %newDB $= "" )
+   {
+      %player.setAvOptions(%client.avOptions);
+      %player.AVResetWpnState();
+      %client.ipsSpellManager.Attach(%client.player);
+   }
+   else
+   {
+      %player.botWeapon = %newDB.Weapon;
+      equipBotWeapon(%player);
+
+      if ( (%newDB.equipmentSlots !$= "") && (%newDB.equipmentSlots > 0) )
+      {
+         for ( %i = 0; %i < %newDB.equipmentSlots; %i++ )
+         {
+            if ((%newDB.eqShape[%i] !$= "") && (%newDB.eqNode[%i] !$= ""))
+               %player.mountEquipment(%newDB.eqShape[%i], %newDB.eqNode[%i]);
+         }
+         %player.updateMountedEquipment();
+      }
+   }
+
+   MissionCleanup.add(%player);
+   
+   // Player setup...
+   if (%player.isMethod("setShapeName"))
+      %player.setShapeName(%client.nameBase);
+   if ( isObject($Server::ClanData) )
+      %player.setClanName($Server::ClanData.clan[%client.team]);
+   if (%player.isMethod("setEnergyLevel"))
+      %player.setEnergyLevel(%player.getDataBlock().maxEnergy);
+
+   // Give the client control of the player
+   %client.setControlObject(%player);
+
+   %client.player.newlyAdded = false;
+}

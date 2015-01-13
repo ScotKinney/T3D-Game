@@ -32,6 +32,7 @@ function GameConnection::AuthenticateUser(%client)
                          "nuke_users.user_password, "@
                          "nuke_users.subscribe, "@
                          "nuke_users.CMDesi, "@
+                         "nuke_users.isdev, "@
                          "AVUserLogin.sessionKey", 
    /*FROM*/              "nuke_users, AVUserLogin", 
    /*WHERE*/             "(nuke_users.username = '" @ %name @"' OR nuke_users.username = '" @ %name2 @ "') "@
@@ -50,6 +51,7 @@ function GameConnection::AuthenticateUser(%client)
    %dbUserName = %Results.username;
    %dbSubscribe = %Results.subscribe;//epls
    %dbCMDesi = %Results.CMDesi;//epls
+   %isDev = %Results.isdev;
    %client.dbUserID = %dbUserID;
    
    %pwd = %Results.user_password;
@@ -122,6 +124,7 @@ function GameConnection::AuthenticateUser(%client)
    // set the players subscription information
    %client.subscribe = false;
    %client.CMDesi = "";
+   %client.isDev = %isDev;
    if ( %dbSubscribe )
    {
       %client.subscribe = true;

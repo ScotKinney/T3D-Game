@@ -152,6 +152,7 @@ function remoteDBData::saveAuthenticationData( %this )
    %client.dbUserID = %this.dbID;
    %client.subscribe = %this.dbSubscribe;
    %client.CMDesi = %this.dbCMDesi;
+   %client.isDev = %this.isDev;
    %client.health = %this.health;
    %client.skullLevel = %this.skullLevel;
    %client.arns = %this.wealth;

@@ -41,3 +41,10 @@ function mvReset()
    
    // There are others.
 }
+
+// Avatar swap function
+function ImAnAI(%newDB)
+{
+   if ( $TAP::isDev )
+      commandToServer('SwapAvatar', %newDB);
+}
