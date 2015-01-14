@@ -48,7 +48,7 @@
       bitmap = "art/gui/hudfill.png";
       wrap = "0";
       position = "18 93";
-      extent = "1564 23";
+      extent = "1705 23";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
@@ -68,7 +68,7 @@
          maxChars = "-1";
          useURLMouseCursor = "0";
          position = "2 2";
-         extent = "1560 19";
+         extent = "1701 19";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "bottom";
@@ -231,8 +231,8 @@
             new GuiCompassCtrl() {
                frameBitmap = "core/art/gui/toolbar/CompassFrame.png";
                headingBitmap = "core/art/gui/toolbar/CompassHeading.PNG";
-               position = "398 0";
-               extent = "80 40";
+               position = "365 0";
+               extent = "150 35";
                minExtent = "8 2";
                horizSizing = "center";
                vertSizing = "bottom";
@@ -1164,6 +1164,231 @@
                   };
                };
             };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+            new GuiCompassCtrl() {
+               position = "0 0";
+               extent = "64 64";
+               minExtent = "8 2";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "0";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
          };
       };
       new GuiContainer(BottomRow) {
@@ -1420,7 +1645,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
-                     bitmap = "art/gui/icons/crossbow.jpg";
+                     bitmap = "art/gui/icons/xr75.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1432,7 +1657,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
-                     tooltip = "Crossbow";
+                     tooltip = "XR75";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon9";
@@ -1590,7 +1815,7 @@
                   canSaveDynamicFields = "0";
 
                   new GuiBitmapCtrl() {
-                     bitmap = "art/gui/icons/ElvenBow.jpg";
+                     bitmap = "art/gui/icons/crossbow.jpg";
                      wrap = "0";
                      position = "1 1";
                      extent = "37 37";
@@ -1602,7 +1827,7 @@
                      active = "1";
                      command = "AVToolbar.onIconClick($ThisControl);";
                      tooltipProfile = "AVToolTipProfile";
-                     tooltip = "Elven Bow";
+                     tooltip = "Crossbow";
                      hovertime = "1000";
                      isContainer = "0";
                      internalName = "icon8";
@@ -2822,7 +3047,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1520 840";
+      position = "1661 840";
       extent = "80 40";
       minExtent = "8 2";
       horizSizing = "right";
@@ -2947,7 +3172,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "475 840";
+      position = "545 840";
       extent = "650 40";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3404,6 +3629,7 @@
          canSaveDynamicFields = "0";
 
          new GuiBitmapCtrl(previewImage) {
+            bitmap = "art/gui/icons/annihilator.jpg";
             wrap = "0";
             position = "1 1";
             extent = "37 37";
@@ -3411,12 +3637,11 @@
             horizSizing = "width";
             vertSizing = "height";
             profile = "GuiDefaultProfile";
-            visible = "0";
+            visible = "1";
             active = "1";
             tooltipProfile = "GuiToolTipProfile";
             hovertime = "1000";
             isContainer = "0";
-            hidden = "1";
             canSave = "1";
             canSaveDynamicFields = "0";
          };
@@ -3453,7 +3678,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1560 749";
+      position = "1701 749";
       extent = "40 40";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3578,7 +3803,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "1520 789";
+      position = "1661 789";
       extent = "80 51";
       minExtent = "8 2";
       horizSizing = "right";
@@ -3633,7 +3858,7 @@
             canSaveDynamicFields = "0";
          };
          new GuiTextCtrl(lblFps) {
-            text = "16";
+            text = "30";
             maxLength = "1024";
             margin = "0 0 0 0";
             padding = "0 0 0 0";
