@@ -8,6 +8,6 @@ $AlterVerse::ArtPacks =  "skies/default" TAB
    "Buildings/SP_Sparta" TAB
    "Terrains/SP_Sparta" TAB
    "Trees/SP_Sparta" TAB
-   "Plants/SP_Sparta" TAB
+   "Plants/SP_Sparta";
 
 
