@@ -312,6 +312,7 @@ function RegisterServer()
       %args = %args @ "&wType=" @ $AlterVerse::worldType;
       %args = %args @ "&wID=" @ $AlterVerse::worldID;
       %args = %args @ "&kdom=" @ $AlterVerse::kingdom;
+      %args = %args @ "&murmur=" @ $Murmur::serverIP;
       %args = %args @ "&wOwner=" @ $AlterVerse::serverOwner;
       %args = %args @ "&port=" @ $AlterVerse::serverPort;
       if ( $AlterVerse::serverAddress !$= "" )
@@ -338,8 +339,8 @@ function RegisterServer()
          {  // We can reuse this record
             $AlterVerse::serverId = %result.serverId;
             %result.delete();
-            DB::Update("AVServerList", 
-            /*SET*/    "serverAddress='" @ $AlterVerse::serverAddress @ ":" @
+            DB::Update("AVServerList",
+            /*SET*/  "serverAddress='" @ $AlterVerse::serverAddress @ ":" @
             $AlterVerse::serverPort @ "'" @
             ", displayName='" @ $AlterVerse::displayName @ "'" @
             ", loadPrefix='" @ $AlterVerse::serverPrefix @ "'" @
@@ -349,6 +350,7 @@ function RegisterServer()
             ", worldID='" @ $AlterVerse::worldID @ "'" @
             ", kingdom='" @ $AlterVerse::kingdom @ "'" @
             ", allowInitialLogin='" @ $AlterVerse::allowInitialLogin @ "'" @
+            ", murmurAddress='" @ $Murmur::serverIP @ "'" @
             ", manifestRoot='" @ $AlterVerse::manifestRoot @ "'" @
             ", manifestFile='" @ $AlterVerse::manifestFile @ "'" @
             ", lastHeartbeat=NOW()",
@@ -382,7 +384,7 @@ function RegisterServer()
 
    // create a new record for this server
    DB::Insert("AVServerList",
-      "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverDesi, serverOwner, worldType, worldID, kingdom, manifestRoot, manifestFile",
+      "serverAddress, allowInitialLogin, serverName, displayName, loadPrefix, serverDesi, serverOwner, worldType, worldID, kingdom, murmurAddress, manifestRoot, manifestFile",
       "'"@$AlterVerse::serverAddress@":"@$AlterVerse::serverPort@"'," @
       "b'"@$AlterVerse::allowInitialLogin@"'," @
       "'"@$AlterVerse::serverName@"'," @
@@ -393,6 +395,7 @@ function RegisterServer()
       "'"@$AlterVerse::worldType@"'," @
       "'"@$AlterVerse::worldID@"'," @
       "'"@$AlterVerse::kingdom@"'," @
+      "'"@$Murmur::serverIP@"'," @
       "'"@$AlterVerse::manifestRoot@"'," @
       "'"@$AlterVerse::manifestFile@"'");
 

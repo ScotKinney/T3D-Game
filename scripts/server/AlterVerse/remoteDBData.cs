@@ -228,7 +228,8 @@ function remoteDBData::moveUserTo( %this )
                       %this.spawnPt,
                       %this.newHash,
                       %this.sName,
-                      %this.sPrefix);
+                      %this.sPrefix,
+                      %this.murmur);
    else
       schedule(%transferDelay, 0, "commandToClient", %client,
                       'serverTransfer',
@@ -236,7 +237,8 @@ function remoteDBData::moveUserTo( %this )
                       %this.spawnPt,
                       %this.newHash,
                       %this.sName,
-                      %this.sPrefix);
+                      %this.sPrefix,
+                      %this.murmur);
 }
 
 function remoteDBData::fillClanTable( %this )

@@ -126,6 +126,9 @@ function initClient()
    // Use our prefs to configure our Canvas/Window
    configureCanvas();
 
+   // Do console initialization for mumble
+   InitMumble();
+
    // Script for localizing server mesages
    exec("./localizedMsg.cs");
 

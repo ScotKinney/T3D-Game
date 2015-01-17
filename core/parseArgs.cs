@@ -214,6 +214,13 @@ function defaultParseArgs()
             $argUsed[$i]++;
 
          //-------------------
+         case "-murmur":
+            $argUsed[$i]++;
+            $Murmur::serverIP = $Game::argv[$i+1];
+            $argUsed[$i+1]++;
+            $i++;
+
+         //-------------------
          default:
             $argUsed[$i]++;
             if($userDirs $= "")

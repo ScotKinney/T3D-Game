@@ -49,11 +49,11 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
    }
 
    if ( %serverName $= "" )
-      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,manifestRoot,manifestFile", 
+      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,murmurAddress,manifestRoot,manifestFile", 
       /*FROM*/              "AVServerList", 
       /*WHERE*/             "serverId='"@%serverID@"'");
    else
-      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,manifestRoot,manifestFile", 
+      %results = DB::Select("serverId,serverName,serverAddress,loadPrefix,murmurAddress,manifestRoot,manifestFile", 
       /*FROM*/              "AVServerList", 
       /*WHERE*/             "serverName='"@%serverName@"'");
                          
@@ -66,6 +66,7 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
    }
    %destAddress = %results.serverAddress;
    %destination = %results.serverName;
+   %murmurAddress = %results.murmurAddress;
    %manifestURL = %results.manifestFile;
    %pathToRoot = %results.manifestRoot;
    %loadPrefix = %results.loadPrefix;
@@ -100,7 +101,8 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
                       %spawnSphere,
                       %hashKey,
                       %destination,
-                      %loadPrefix);
+                      %loadPrefix,
+                      %murmurAddress);
    else
       schedule(%transferDelay, 0, "commandToClient", %client, 
                       'serverTransfer', 
@@ -108,5 +110,6 @@ function TransferToServer(%client, %serverID, %spawnSphere, %serverName)
                       %spawnSphere, 
                       %hashKey,
                       %destination,
-                      %loadPrefix);
+                      %loadPrefix,
+                      %murmurAddress);
 }

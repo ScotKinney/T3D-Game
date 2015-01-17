@@ -67,6 +67,8 @@ function httpLoginStage2::process(%this)
       $serverToJoin = %this.server;
       $ServerName = %this.svrName;
       $AlterVerse::serverPrefix = %this.filePrefix;
+      // the murmur server that's used for voice chat
+      $Mumble::murmurAddress = %this.murmur;
       // and the manifest paths
       $manifestRoot = %this.manifestRoot;
       $manifestFile = %this.manifestFile;
@@ -316,7 +318,8 @@ function stopIntroVideo()
    connectClientChat();
 
    // Initialize Mumble
-   $Mumble::Status = (initMumble($currentPlayerID) ? "Active Link" : "NO LINK");
+   echo($Mumble::murmurAddress);
+   LaunchMumble($currentUsername);
    $Mumble::Context = "Lobby";
    $Mumble::ModeVal = 0;
    $Mumble::ModeStr = "Player+Camera";
@@ -351,12 +354,13 @@ function stopIntroVideo()
 
 // clientCmdServerTransfer is called by the current game server 
 // to transfer the client to a different server.
-function clientCmdServerTransfer( %address, %spawnSphere, %hash, %serverName, %serverPrefix )
+function clientCmdServerTransfer(%address, %spawnSphere, %hash, %serverName, %serverPrefix, %murmurAddress)
 {
    LagIcon.setVisible(false);
    $currentPasswordHash = %hash;
    $ServerName = %serverName;
    $AlterVerse::serverPrefix = %serverPrefix;
+   $Mumble::murmurAddress = %murmurAddress;
 
    schedule(0, 0, disconnect, true);
    schedule(100, 0, loadLoadingGui);
@@ -364,12 +368,13 @@ function clientCmdServerTransfer( %address, %spawnSphere, %hash, %serverName, %s
 }
 
 // transfer to a different server after the assets for it have been downloaded
-function clientCmdServerTransferStream(%manifestPath, %rootPath, %address, %spawnSphere, %hash, %serverName, %serverPrefix)
+function clientCmdServerTransferStream(%manifestPath, %rootPath, %address, %spawnSphere, %hash, %serverName, %serverPrefix, %murmurAddress)
 {
    LagIcon.setVisible(false);
    $currentPasswordHash = %hash;
    $ServerName = %serverName;
    $AlterVerse::serverPrefix = %serverPrefix;
+   $Mumble::murmurAddress = %murmurAddress;
 
    schedule(0, 0, disconnect, true);
    Canvas.schedule(0, setContent, DownloadProgressGui);

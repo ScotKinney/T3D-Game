@@ -78,6 +78,7 @@ $TAP::serverID = "";
 $TAP::onServer = false;
 $Server::Loaded = false;
 $AlterVerse::serverId = 0;
+$Murmur::serverIP = "69.168.242.196:64738";
 
 $dirCount = 2;
 $userDirs = $defaultGame @ ";art;levels";
