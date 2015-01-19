@@ -34,6 +34,8 @@ $pref::TL::isDocked = 1;   // Docked, not Full size
 $pref::TL::dockedPos = "0 0";
 $pref::TL::framePos = "0 0";
 
+$pref::Mumble::useVoice = 1;
+
 $AlterVerse::FishingDistance = 150;  // Maximum distance a player can cast a line
 
 // Finally load the preferences saved from the last

@@ -318,12 +318,11 @@ function stopIntroVideo()
    connectClientChat();
 
    // Initialize Mumble
-   echo($Mumble::murmurAddress);
-   LaunchMumble($currentUsername);
+   if ( $pref::Mumble::useVoice )
+      LaunchMumble($currentUsername);
    $Mumble::Context = "Lobby";
    $Mumble::ModeVal = 0;
    $Mumble::ModeStr = "Player+Camera";
-   //setMumbleContext($Mumble::Context, true);
 
    if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
    {  // If it's a developer, bring up the server selection gui.
