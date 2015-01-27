@@ -54,9 +54,9 @@ new SimGroup(MissionGroup) {
          fogScale = "0.968628 0.937255 0.835294 1";
          exposure = "1";
          zoffset = "0";
-         azimuth = "170";
+         azimuth = "100";
          elevation = "20";
-         moonAzimuth = "0";
+         moonAzimuth = "260";
          moonElevation = "-20";
          castShadows = "1";
          brightness = "1";
@@ -239,7 +239,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "compsognathus";
-         botBelongsToMe = "3166";
+         botBelongsToMe = "3187";
          delayRespawn = "69254";
          maxRange = "2";
          respawnCount = "0";
@@ -255,7 +255,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Velociraptor";
-         botBelongsToMe = "3167";
+         botBelongsToMe = "3188";
          delayRespawn = "6977";
          maxRange = "3";
          minRange = "2.75";
@@ -272,7 +272,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Allosaurus";
-         botBelongsToMe = "3168";
+         botBelongsToMe = "3189";
          delayRespawn = "10577";
          maxRange = "7";
          minRange = "5";
@@ -289,7 +289,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "TRex";
-         botBelongsToMe = "3169";
+         botBelongsToMe = "3190";
          delayRespawn = "12639";
          maxRange = "8";
          minRange = "7";
@@ -306,7 +306,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Spino";
-         botBelongsToMe = "3170";
+         botBelongsToMe = "3191";
          delayRespawn = "68075";
          respawnCount = "0";
          respawnCounter = "0";
@@ -321,7 +321,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Stego";
-         botBelongsToMe = "3171";
+         botBelongsToMe = "3192";
          delayRespawn = "13958";
          maxRange = "6.5";
          respawnCount = "0";
@@ -337,7 +337,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Tri";
-         botBelongsToMe = "3172";
+         botBelongsToMe = "3193";
          delayRespawn = "9694";
          maxRange = "6";
          respawnCount = "0";
@@ -353,7 +353,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Para";
-         botBelongsToMe = "3173";
+         botBelongsToMe = "3194";
          delayRespawn = "13596";
          maxRange = "6";
          respawnCount = "0";
@@ -369,7 +369,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Diplo";
-         botBelongsToMe = "3174";
+         botBelongsToMe = "3195";
          maxRange = "17";
          minRange = "16";
          respawnCount = "0";
@@ -385,7 +385,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Quetzal";
-         botBelongsToMe = "3175";
+         botBelongsToMe = "3196";
          delayRespawn = "17443";
          maxRange = "10";
          minRange = "9";
@@ -473,22 +473,6 @@ new SimGroup(MissionGroup) {
          position = "-598.845 -106.88 48.2814";
          rotation = "0.123483 -0.11072 0.986151 132.209";
          scale = "1.33191 1.57707 1";
-         canSave = "1";
-         canSaveDynamicFields = "1";
-      };
-      new TSStatic(DinoBlock00111) {
-         shapeName = $WorldPath @ "/Models/rocks/DinoBlock_01/DinoBlock_01.DAE";
-         playAmbient = "1";
-         meshCulling = "0";
-         originSort = "0";
-         collisionType = "Collision Mesh";
-         decalType = "Collision Mesh";
-         allowPlayerStep = "1";
-         renderNormals = "0";
-         forceDetail = "-1";
-         position = "-562.373 -80.0574 44.6784";
-         rotation = "0.208083 -0.119936 0.97073 61.4006";
-         scale = "1.42158 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
       };
@@ -583,7 +567,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "120.384 -58.9881 5.80848";
-         rotation = "0.11108 0.0394435 0.993029 173.752";
+         rotation = "0.11108 0.0394435 0.993028 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -599,7 +583,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-415.01 177.112 39.5431";
-         rotation = "0.11108 0.0394435 0.993029 173.752";
+         rotation = "0.11108 0.0394435 0.993028 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -679,7 +663,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-296.839 229.425 17.1102";
-         rotation = "0.0225772 0.146806 -0.988908 97.9108";
+         rotation = "0.0225772 0.146806 -0.988908 97.9113";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -695,7 +679,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-288.698 212.722 16.0901";
-         rotation = "0.0225772 0.146806 -0.988908 97.9108";
+         rotation = "0.0225772 0.146806 -0.988908 97.9113";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -759,7 +743,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-386.818 213.721 49.2351";
-         rotation = "0.30268 -0.320415 0.897619 97.1409";
+         rotation = "0.30268 -0.320415 0.897619 97.1414";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -775,7 +759,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-367.826 213.506 34.0808";
-         rotation = "0.30268 -0.320415 0.897619 97.141";
+         rotation = "0.30268 -0.320415 0.897619 97.1415";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -1902,7 +1886,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "compsognathus";
-         botBelongsToMe = "3176";
+         botBelongsToMe = "3197";
          delayRespawn = "69254";
          maxRange = "2";
          respawnCount = "0";
@@ -1918,7 +1902,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Velociraptor";
-         botBelongsToMe = "3177";
+         botBelongsToMe = "3198";
          delayRespawn = "6977";
          maxRange = "3";
          minRange = "2.75";
@@ -1935,7 +1919,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Allosaurus";
-         botBelongsToMe = "3178";
+         botBelongsToMe = "3199";
          delayRespawn = "10577";
          maxRange = "7";
          minRange = "5";
@@ -1952,7 +1936,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Diplo";
-         botBelongsToMe = "3179";
+         botBelongsToMe = "3200";
          maxRange = "17";
          minRange = "16";
          respawnCount = "0";
@@ -1968,7 +1952,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Para";
-         botBelongsToMe = "3180";
+         botBelongsToMe = "3201";
          delayRespawn = "13596";
          maxRange = "6";
          respawnCount = "0";
@@ -1984,7 +1968,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Quetzal";
-         botBelongsToMe = "3181";
+         botBelongsToMe = "3202";
          delayRespawn = "17443";
          maxRange = "10";
          minRange = "9";
@@ -2001,7 +1985,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Spino";
-         botBelongsToMe = "3182";
+         botBelongsToMe = "3203";
          delayRespawn = "68075";
          respawnCount = "0";
          respawnCounter = "0";
@@ -2016,7 +2000,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Stego";
-         botBelongsToMe = "3183";
+         botBelongsToMe = "3204";
          delayRespawn = "13958";
          maxRange = "6.5";
          respawnCount = "0";
@@ -2032,7 +2016,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "TRex";
-         botBelongsToMe = "3184";
+         botBelongsToMe = "3205";
          delayRespawn = "12639";
          maxRange = "8";
          minRange = "7";
@@ -2049,7 +2033,7 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          block = "Tri";
-         botBelongsToMe = "3185";
+         botBelongsToMe = "3206";
          delayRespawn = "9694";
          maxRange = "6";
          respawnCount = "0";
