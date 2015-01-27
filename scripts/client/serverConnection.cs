@@ -53,6 +53,7 @@ function GameConnection::initialControlSet(%this)
    {
       $Mumble::Status = (MumbleJoinGame($ServerName, $currentPlayerID) ? "Active Link" : "NO LINK");
       setMumbleContext($ServerName, false);
+      $Mumble::InLobby = false;
    }
 
    // The first control object has been set by the server
@@ -216,8 +217,11 @@ function disconnect(%isTransfer, %noMenu)
    // Let mumble know we've left a game server
    $Mumble::Context = "Lobby";
    $Mumble::Status = "NO LINK";
-   if ( $pref::Mumble::useVoice )
+   if ( $pref::Mumble::useVoice && !$Mumble::InLobby )
+   {
       MumbleLeaveGame();
+      $Mumble::InLobby = true;
+   }
 
    $TAP::onServer = false;
    if ( %isTransfer )

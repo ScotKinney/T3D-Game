@@ -320,6 +320,7 @@ function stopIntroVideo()
    // Initialize Mumble
    if ( $pref::Mumble::useVoice )
       LaunchMumble($currentUsername);
+   $Mumble::InLobby = true;
    $Mumble::Context = "Lobby";
    $Mumble::ModeVal = 0;
    $Mumble::ModeStr = "Player+Camera";
