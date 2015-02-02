@@ -51,9 +51,131 @@
       };
 };
 //--- OBJECT WRITE END ---
+function ConsoleEntry::eval()//http://www.garagegames.com/community/resources/view/8326/1#comment-50846
+{
+   %text = trim( ConsoleEntry.getValue() );
+   if( %text $= "" )
+      return;
+      
+   //%text = trim(%text);//Remove leading whitespace from the string. 
+   //%text = ltrim(%text); //Remove leading whitespace from the string. 
+   //%text = rtrim(%text);//Remove trailing whitespace from the string. 
 
 
-function ConsoleEntry::eval()
+   // If it's missing a trailing () and it's not a variable,
+   // append the parentheses.
+
+   if( strpos(%text, "(") == -1 && !isDefined( %text ) )//Determines if a variable exists and contains a value. 
+   {
+      if(strpos(%text, "=") == -1 && strpos(%text, " ") == -1)
+      {
+         if(strpos(%text, "{") == -1 && strpos(%text, "}") == -1)
+         {
+            %text = %text @ "()";
+         }
+      }
+   }
+   
+   // Append a semicolon if need be.
+
+   %pos = strlen(%text) - 1;
+   if(strpos(%text, ";", %pos) == -1 && strpos(%text, "}") == -1)
+   {
+      %text = %text @ ";";
+   }
+
+   if(  startsWith( %text, "exec") )
+   {
+      %p=strpos(%text, ":"); 
+      if( %p != -1)//--D:/Torque 3D 2.0/My Projects/Full/game/tools/worldEditor/gui/EditorGui.ed.gui
+      {
+         %p=strpos(%text, "game");
+         if(%p!= -1)
+         {
+            %text1=getSubStr (%text,0,6);
+             %text2=getSubStr (%text,
+                          %p+5
+                         // strchrpos( %t, ")" )
+                         );
+            %text=%text1@%text2;
+         }
+         
+      }
+      %text=strreplace (%text,"\\","/" );  //replace all \ to /
+      
+      //filePath ("D:/GMSgamedev/game/scripts/client/messageHud.cs"); D:/GMSgamedev/game/scripts/client/messageHud.cs
+  /*    %t=trim(%text);
+      %t=getSubStr (%text,4);
+       if( startsWith ( %t, "(" ))
+         if( endsWith  ( %t, ")" ))
+         {
+            %t=trim(%t);
+            %t=getSubStr (%t,
+                          strchrpos( %t, "(" ),
+                          strchrpos( %t, ")" )
+                         );
+                         
+             %t=trim(%t);     
+             if( startsWith ( %t, "\"" ))
+             {
+                 if( endsWith ( %t, "\"" ))
+                 {
+                      %t=getSubStr (%t,
+                                   strchrpos( %t, "\"" ),
+                                   strpos( %t,  "\"", strchrpos( %t, "\"" )+1 )//strchrpos( %t, ")" )
+                                  );
+                         isFile(%t); 
+                         //makeFullPath  ("./client/init.cs") ;//makeFullPath  ("./client/init.cs")           
+                        // makeRelativePath   ("./client/init.cs") //For example, "./game/art" becomes "game/art" 
+//makeRelativePath  ("D:/GMSgamedev/game/scripts/client/messageHud.cs")--../../../../GMSgamedev/game/scripts/client/messageHud.cs
+
+                                  
+                 }
+                
+             }
+
+           
+            
+         }*/
+      
+   }
+   
+   
+   
+   // Turn off warnings for assigning from void
+   // and evaluate the snippet.
+   
+   if( !isDefined( "$Con::warnVoidAssignment" ) )
+      %oldWarnVoidAssignment = true;
+   else
+      %oldWarnVoidAssignment = $Con::warnVoidAssignment;
+   $Con::warnVoidAssignment = false;
+   
+   echo("==>" @ %text);
+   if(    !startsWith( %text, "function " )
+       && !startsWith( %text, "datablock " )
+       && !startsWith( %text, "foreach(" )
+       && !startsWith( %text, "foreach$(" )
+       && !startsWith( %text, "if(" )
+       && !startsWith( %text, "while(" )
+       && !startsWith( %text, "for(" )
+       && !startsWith( %text, "switch(" )
+       && !startsWith( %text, "switch$(" ) )
+      eval( "%result = " @ %text );
+   else
+      eval( %text );
+   $Con::warnVoidAssignment = %oldWarnVoidAssignment;
+   
+   ConsoleEntry.setValue("");
+   
+   // Echo result.
+   
+   if( %result !$= "" )
+      echo( %result );
+}
+
+
+function ConsoleEntry::eval1()
 {
    %text = trim( ConsoleEntry.getValue() );
    if( %text $= "" )
