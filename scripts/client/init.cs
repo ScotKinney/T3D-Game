@@ -185,6 +185,11 @@ function initClient()
 
    // Default player key bindings
    exec("./default.bind.cs");
+   exec("art/gui/CodCustomProfiles.cs");
+   exec("art/gui/craftingGui.gui");
+   exec("art/gui/craftingGui.cs");
+   exec("./craftingGui_clientSideScripts.cs");
+	  
 
    if (isFile("./config.cs"))
       exec("./config.cs");

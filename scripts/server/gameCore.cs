@@ -684,9 +684,41 @@ function GameCore::preparePlayer(%game, %client)
    
    %client.player.newlyAdded = false;
 }
+function GameCore::loadOutWithRawCraftMaterials(%game, %player)
+{
+    //%player=%client.player;
+   %db=%player.getDatablock();    
+     
+//%rawMaterialList="";
+      %count2=rawMaterialListArray.count();
+       for(%j=0;%j<%count2;%j++)
+       {
+          %field=rawMaterialListArray.getvalue(%j);
+          if(%db.isField(%field))  
+          {    
+             %amount=%db.getFieldValue(%field);
+             if(%amount>0)
+             {
+                
+                 %player.setFieldValue(%field,%amount);
+					  //%itemCrating.onInventory(%player, 1);
+					  //%player.getDataBlock().onInventory(%itemCrating, 1);
+					  
+                  /*if(%rawMaterialList $="")                            
+                     %rawMaterialList=%field TAB %amount;
+                  else
+                     %rawMaterialList=%rawMaterialList TAB %field TAB %amount;*/
+             }
+    
+          }
+       }
+  
+}
+
 
 function GameCore::loadOut(%game, %player)
 {
+    %game.loadOutWithRawCraftMaterials(%player);
    %player.AVResetWpnState();
 }
 

@@ -62,7 +62,7 @@ function onServerCreated()
 
    // Run the other gameplay scripts in this folder
    exec("./scriptExec.cs");
-
+fillServerSideCraftItemInfoHolder(  );
    // Keep track of when the game started
    $Game::StartTime = $Sim::Time;
 }

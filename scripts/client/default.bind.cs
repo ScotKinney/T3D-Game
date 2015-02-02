@@ -849,3 +849,5 @@ function unmountWeapon(%val)
 }
 
 moveMap.bind(keyboard, u, unmountWeapon);
+moveMap.bind( keyboard, e, toggleCraftingGui );
+

@@ -113,6 +113,7 @@ function GameConnection::onFlash(%this, %state)
    }
 }
 
+//exec("scripts/client/serverConnection.cs")
 // Called on the new connection object after connect() succeeds.
 function GameConnection::onConnectionAccepted(%this)
 {
@@ -122,6 +123,10 @@ function GameConnection::onConnectionAccepted(%this)
    // Startup the physics world on the client before any
    // datablocks and objects are ghosted over.
    physicsInitWorld( "client" );
+   
+   commandToServer('SendCraftItemsInfo');
+   commandToServer('SendPlayersRawCraftMaterialsInfo');
+  
 }
 
 function GameConnection::onConnectionTimedOut(%this)
