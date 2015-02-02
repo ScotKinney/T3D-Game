@@ -22,7 +22,7 @@
 
 // Load up all datablocks.  This function is called when
 // a server is constructed.
-
+exec("./craftItems.cs");
 // Do the sounds first -- later scripts/datablocks may need them
 exec("./audioProfiles.cs");
 
@@ -71,3 +71,4 @@ if ( isFile(%dbFile) || isFile(%dbFile @ ".dso") )
 //exec("art/ParticleSystem/defaultDatablocks.cs");
 //exec("art/ParticleSystem/graphExamples.cs");
 exec("art/SpellSystem/exec.cs");
+exec("./craftingGui_triggers.cs");

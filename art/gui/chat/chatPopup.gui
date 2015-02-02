@@ -210,7 +210,7 @@
    };
 };
 //--- OBJECT WRITE BEGIN ---
-%guiContent = new GuiControl(ChatPopup) {
+%guiContent = new GuiControl(ChatPopup2) {
    position = "0 0";
    extent = "1440 900";
    minExtent = "8 8";
@@ -245,7 +245,7 @@
       canSave = "1";
       canSaveDynamicFields = "0";
    };
-   new GuiBitmapBorderCtrl(ChatPopupFrame) {
+   new GuiBitmapBorderCtrl(ChatPopupFrame2) {
       position = "655 0";
       extent = "130 100";
       minExtent = "8 8";

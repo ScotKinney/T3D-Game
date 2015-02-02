@@ -7,7 +7,7 @@
 // This is our default player datablock that all others will derive from.
 // Inherit and change at least the shapeFile, DeathSound and PainSound
 // ----------------------------------------------------------------------------
-datablock PlayerData(DefaultPlayerData)
+datablock PlayerData(DefaultPlayerData:craftingElementHolder)
 {
    name = "Default Player";
    

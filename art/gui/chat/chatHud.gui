@@ -755,7 +755,7 @@
    };
 };
 //--- OBJECT WRITE BEGIN ---
-%guiContent = new GuiControl(MainChatHud) {
+%guiContent = new GuiControl(MainChatHud2) {
    position = "0 0";
    extent = "1440 900";
    minExtent = "8 8";
@@ -782,7 +782,7 @@
       numTabPages = "5";
       renderStyle = "standard";
 
-   new GuiBitmapBorderCtrl(OuterChatHud) {
+   new GuiBitmapBorderCtrl(OuterChatHud2) {
       position = "395 643";
       extent = "650 237";
       minExtent = "8 8";
