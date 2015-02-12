@@ -363,8 +363,8 @@ singleton GuiControlProfile(aCrftTextLabel)
    fontType = "Arial Bold";
    fontSize = "18";
    justify = "Center";
-   fontColors[0] = "139 120 49 255";
-   fontColor = "139 120 49 255";
+   fontColors[0] = "255 255 0 255";
+   fontColor = "255 255 0 255";
 };
 
 singleton GuiControlProfile(aCrftProgressTextLabel)
@@ -407,3 +407,14 @@ singleton GuiControlProfile(aCraftCraftingStatus)
    fontSize = "17";
 };
 
+
+singleton GuiControlProfile(aGuiWindowCollapseProfile)
+{
+   fontType = "Arial Bold";
+   fontColors[0] = "255 160 0 255";
+   fontColor = "255 160 0 255";
+   justify = "Center";
+   bitmap = "core/art/gui/images/window";
+   hasBitmapArray = "1";
+   fillColor = "242 241 240 117";
+};
