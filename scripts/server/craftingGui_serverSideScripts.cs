@@ -10,15 +10,7 @@ if( !isObject(rawMaterialListArray) )//list of all kind of raw materials
    new ArrayObject(rawMaterialListArray);  
    rawMaterialListArray.empty();
 
-       //weapon
-	   rawMaterialListArray.add(rawMaterialListArray.count(),"Twig");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"Stone");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"FlintStoneRope");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"Rope");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"Gras");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"Wood");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedWood");
-      //food
+      // //food
       rawMaterialListArray.add(rawMaterialListArray.count(),"Salt");
       rawMaterialListArray.add(rawMaterialListArray.count(),"Lime");
       rawMaterialListArray.add(rawMaterialListArray.count(),"Grass");
@@ -30,7 +22,48 @@ if( !isObject(rawMaterialListArray) )//list of all kind of raw materials
       rawMaterialListArray.add(rawMaterialListArray.count(),"OrangeSeaBass");
       rawMaterialListArray.add(rawMaterialListArray.count(),"RainbowTrout");
       rawMaterialListArray.add(rawMaterialListArray.count(),"LoafOfBread");
-      rawMaterialListArray.add(rawMaterialListArray.count(),"Ham");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Ham");	  
+      
+      //BasicCraftingElements
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Axe");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"PickAxe");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"SkinningKnife");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Shovel");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Torch");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"FishingPole");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Rope");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"CampFire");
+         
+
+      //AdvancedCraftingElements
+      rawMaterialListArray.add(rawMaterialListArray.count(),"CraftingBench");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"SilverAxe");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"SilverPickAxe");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"SilverShovel");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"LongLastingTorch");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"ArtisanFPole");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"StrongRope");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"LargeCampFire");
+
+      //BasicCraftingMaterials
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Twig");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Grass");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Wood");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Stone");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"FlintStone");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"IronOre");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"CopperOre");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"SilverOre");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"GoldOre");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedIronBar");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedCopperBar");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedSilverBar");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedGoldBar	");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"RefinedWood	");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"BlacksmithsAnvil");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Steel");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Ruby ");
+      rawMaterialListArray.add(rawMaterialListArray.count(),"Sapphire");
 
    /*    
     //rawMaterialListArray.add(rawMaterialListArray.count(),"hitNumber");
