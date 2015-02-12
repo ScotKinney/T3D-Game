@@ -1,7 +1,7 @@
 //--- OBJECT WRITE BEGIN ---
 %guiContent = new GuiControl(craftingGui) {
    position = "0 0";
-   extent = "1280 1024";
+   extent = "1024 768";
    minExtent = "8 2";
    horizSizing = "right";
    vertSizing = "bottom";
@@ -234,7 +234,7 @@
             new GuiDynamicCtrlArrayControl(SmallPreviews) {
                colCount = "5";
                colSize = "54";
-               rowCount = "1";
+               rowCount = "2";
                rowSize = "45";
                rowSpacing = "0";
                colSpacing = "10";
@@ -258,8 +258,8 @@
                canSave = "1";
                canSaveDynamicFields = "0";
 
-               new GuiBitmapButtonCtrl(weaponCategory) {
-                  bitmap = "art/gui/craftingGui/icons/Annihilator.jpg";
+               new GuiBitmapButtonCtrl(BasicCraftingMaterials) {
+                  bitmap = "art/gui/craftingGui/icons/Twig.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -275,15 +275,15 @@
                   profile = "GuiDefaultProfile";
                   visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"weaponCategory\");";
+                  command = "categorySection.onCategorySelected(\"BasicCraftingMaterials\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl(foodCategory) {
-                  bitmap = "art/gui/craftingGui/icons/apple.jpg";
+               new GuiBitmapButtonCtrl(AdvancedCraftingElements) {
+                  bitmap = "art/gui/craftingGui/icons/BlankRune.png";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -299,15 +299,15 @@
                   profile = "GuiDefaultProfile";
                   visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"foodCategory\");";
+                  command = "categorySection.onCategorySelected(\"AdvancedCraftingElements\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl(magicCategory) {
-                  bitmap = "art/gui/craftingGui/icons/magic.jpg";
+               new GuiBitmapButtonCtrl(BasicCraftingElements) {
+                  bitmap = "art/gui/craftingGui/icons/Claw_Raptor.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -323,15 +323,140 @@
                   profile = "GuiDefaultProfile";
                   visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"magicCategory\");";
+                  command = "categorySection.onCategorySelected(\"BasicCraftingElements\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl() {
-                  bitmap = "art/gui/craftingGui/icons/gem.jpg";
+               new GuiBitmapButtonCtrl(food) {
+                  bitmap = "art/gui/craftingGui/icons/apple.jpg";
+                  bitmapMode = "Stretched";
+                  autoFitExtents = "0";
+                  useModifiers = "0";
+                  useStates = "1";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  useMouseEvents = "0";
+                  position = "0 0";
+                  extent = "54 45";
+                  minExtent = "8 2";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  profile = "GuiDefaultProfile";
+                  visible = "0";
+                  active = "1";
+                  command = "categorySection.onCategorySelected(\"food\");";
+                  tooltipProfile = "GuiToolTipProfile";
+                  hovertime = "1000";
+                  isContainer = "0";
+                  hidden = "1";
+                  canSave = "1";
+                  canSaveDynamicFields = "0";
+               };
+               new GuiBitmapButtonCtrl(magic) {
+                  bitmap = "art/gui/craftingGui/icons/magic.jpg";
+                  bitmapMode = "Stretched";
+                  autoFitExtents = "0";
+                  useModifiers = "0";
+                  useStates = "1";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  useMouseEvents = "0";
+                  position = "0 0";
+                  extent = "54 45";
+                  minExtent = "8 2";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  profile = "GuiDefaultProfile";
+                  visible = "0";
+                  active = "1";
+                  command = "categorySection.onCategorySelected(\"magic\");";
+                  tooltipProfile = "GuiToolTipProfile";
+                  hovertime = "1000";
+                  isContainer = "0";
+                  hidden = "1";
+                  canSave = "1";
+                  canSaveDynamicFields = "0";
+               };
+               new GuiBitmapButtonCtrl(Shields) {
+                  bitmap = "art/gui/craftingGui/icons/arm.jpg";
+                  bitmapMode = "Stretched";
+                  autoFitExtents = "0";
+                  useModifiers = "0";
+                  useStates = "1";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  useMouseEvents = "0";
+                  position = "192 0";
+                  extent = "54 45";
+                  minExtent = "8 2";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  profile = "GuiDefaultProfile";
+                  visible = "0";
+                  active = "1";
+                  command = "categorySection.onCategorySelected(\"Shields\");";
+                  tooltipProfile = "GuiToolTipProfile";
+                  hovertime = "1000";
+                  isContainer = "0";
+                  hidden = "1";
+                  canSave = "1";
+                  canSaveDynamicFields = "0";
+               };
+               new GuiBitmapButtonCtrl(Swords) {
+                  bitmap = "art/gui/craftingGui/icons/Annihilator.jpg";
+                  bitmapMode = "Stretched";
+                  autoFitExtents = "0";
+                  useModifiers = "0";
+                  useStates = "1";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  useMouseEvents = "0";
+                  position = "192 0";
+                  extent = "54 45";
+                  minExtent = "8 2";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  profile = "GuiDefaultProfile";
+                  visible = "0";
+                  active = "1";
+                  command = "categorySection.onCategorySelected(\"Swords\");";
+                  tooltipProfile = "GuiToolTipProfile";
+                  hovertime = "1000";
+                  isContainer = "0";
+                  hidden = "1";
+                  canSave = "1";
+                  canSaveDynamicFields = "0";
+               };
+               new GuiBitmapButtonCtrl(Axes) {
+                  bitmap = "art/gui/craftingGui/icons/Equalizer.jpg";
+                  bitmapMode = "Stretched";
+                  autoFitExtents = "0";
+                  useModifiers = "0";
+                  useStates = "1";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  useMouseEvents = "0";
+                  position = "192 0";
+                  extent = "54 45";
+                  minExtent = "8 2";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  profile = "GuiDefaultProfile";
+                  visible = "0";
+                  active = "1";
+                  command = "categorySection.onCategorySelected(\"Axes\");";
+                  tooltipProfile = "GuiToolTipProfile";
+                  hovertime = "1000";
+                  isContainer = "0";
+                  hidden = "1";
+                  canSave = "1";
+                  canSaveDynamicFields = "0";
+               };
+               new GuiBitmapButtonCtrl(ThrownWeapons) {
+                  bitmap = "art/gui/craftingGui/icons/SteelSpear.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -347,15 +472,15 @@
                   profile = "GuiDefaultProfile";
                   visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"\");";
+                  command = "categorySection.onCategorySelected(\"ThrownWeapons\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl(armorCategory) {
-                  bitmap = "art/gui/craftingGui/icons/arm.jpg";
+               new GuiBitmapButtonCtrl(BowsCrossbows) {
+                  bitmap = "art/gui/craftingGui/icons/CrossBow.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -371,15 +496,15 @@
                   profile = "GuiDefaultProfile";
                   visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"armorCategory\");";
+                  command = "categorySection.onCategorySelected(\"BowsCrossbows\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl(BowCategory) {
-                  bitmap = "art/gui/craftingGui/icons/CrossBow.jpg";
+               new GuiBitmapButtonCtrl(Spears) {
+                  bitmap = "art/gui/craftingGui/icons/IronSpear.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
                   useModifiers = "0";
@@ -393,17 +518,16 @@
                   horizSizing = "right";
                   vertSizing = "bottom";
                   profile = "GuiDefaultProfile";
-                  visible = "0";
+                  visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"BowCategory\");";
+                  command = "categorySection.onCategorySelected(\"Spears\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
-                  hidden = "1";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
-               new GuiBitmapButtonCtrl() {
+               new GuiBitmapButtonCtrl(RingsAmulet) {
                   bitmap = "art/gui/craftingGui/icons/Ring_Of_Fire_Rune.jpg";
                   bitmapMode = "Stretched";
                   autoFitExtents = "0";
@@ -412,44 +536,18 @@
                   groupNum = "-1";
                   buttonType = "PushButton";
                   useMouseEvents = "0";
-                  position = "0 45";
+                  position = "64 45";
                   extent = "54 45";
                   minExtent = "8 2";
                   horizSizing = "right";
                   vertSizing = "bottom";
                   profile = "GuiDefaultProfile";
-                  visible = "0";
+                  visible = "1";
                   active = "1";
-                  command = "categorySection.onCategorySelected(\"\");";
+                  command = "categorySection.onCategorySelected(\"RingsAmulet\");";
                   tooltipProfile = "GuiToolTipProfile";
                   hovertime = "1000";
                   isContainer = "0";
-                  hidden = "1";
-                  canSave = "1";
-                  canSaveDynamicFields = "0";
-               };
-               new GuiBitmapButtonCtrl() {
-                  bitmap = "art/gui/craftingGui/icons/HorseWhite.jpg";
-                  bitmapMode = "Stretched";
-                  autoFitExtents = "0";
-                  useModifiers = "0";
-                  useStates = "1";
-                  groupNum = "-1";
-                  buttonType = "PushButton";
-                  useMouseEvents = "0";
-                  position = "0 45";
-                  extent = "54 45";
-                  minExtent = "8 2";
-                  horizSizing = "right";
-                  vertSizing = "bottom";
-                  profile = "GuiDefaultProfile";
-                  visible = "0";
-                  active = "1";
-                  command = "categorySection.onCategorySelected(\"\");";
-                  tooltipProfile = "GuiToolTipProfile";
-                  hovertime = "1000";
-                  isContainer = "0";
-                  hidden = "1";
                   canSave = "1";
                   canSaveDynamicFields = "0";
                };
@@ -1088,7 +1186,7 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "53 112";
+      position = "152 139";
       extent = "293 161";
       minExtent = "8 2";
       horizSizing = "windowRelative";
