@@ -814,7 +814,7 @@
          canSave = "1";
          canSaveDynamicFields = "0";
       };
-      new GuiTabBookCtrl(ChatTabBook) {
+      new GuiTabBookCtrl(ChatTabBook2) {
          tabPosition = "Top";
          tabMargin = "0";
          minTabWidth = "76";
