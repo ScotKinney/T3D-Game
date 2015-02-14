@@ -22,9 +22,9 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    canObserve = true;
    cmdCategory = "Clients";
 
-   cameraDefaultFov = 65.0;
+   cameraDefaultFov = 75.0;//65.0 Scot
    cameraMinFov = 5.0;
-   cameraMaxFov = 95.0;
+   cameraMaxFov = 120.0;//95.0 Scot
 
    debrisShapeName = "core/art/effects/debris_player.dts";
    debris = DefaultDebris;
@@ -34,13 +34,14 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    //DeathSound = DeathCrySound;
    //PainSound = PainCrySound;
 
-   maxLookAngle = .5;
+   minLookAngle = -1;
+   maxLookAngle = 1;//.5;
    maxHeadYawAngle = 0;
    maxFreelookAngle = 3.0;
 
    mass = 100;
    //drag = 1.3;
-   drag = 0.3;
+   drag = 1.3;//0.3 Scot
    maxdrag = 0.4;
    density = 1.1;
    maxDamage = 300;
@@ -59,7 +60,7 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
 
    sprintEnergyDrain = 0; //how much energy to drain while printing until player cannot sprint anymore
    minSprintEnergy = 0; //the minimum amount of energy to drain
-   maxSprintForwardSpeed = 6;
+   maxSprintForwardSpeed = 7;
    maxSprintBackwardSpeed = 5;
    maxSprintSideSpeed = 3;
    sprintForce = 75 * 90;
@@ -122,9 +123,9 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    hardSplashSoundVelocity = 20.0;
 
    // Controls over slope of runnable/jumpable surfaces
-   runSurfaceAngle  = 50;
-   jumpSurfaceAngle = 60;
-   maxStepHeight = 1.5;
+   runSurfaceAngle  = 46;//50 Scot
+   jumpSurfaceAngle = 80;//60 Scot
+   maxStepHeight = .5;//1.5 Scot
    minJumpSpeed = 20;
    maxJumpSpeed = 30;
 
