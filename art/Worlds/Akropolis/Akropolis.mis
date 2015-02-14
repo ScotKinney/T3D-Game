@@ -213,7 +213,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "3043";
+         botBelongsToMe = "3940";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -224,7 +224,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "1";
-         weapon = "-NoWeapon";
+         Weapon = "-NoWeapon";
    };
    new StaticShape(Guard6_OR1) {
       isAIControlled = "0";
@@ -238,7 +238,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3044";
+         botBelongsToMe = "3941";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -249,7 +249,7 @@ new SimGroup(MissionGroup) {
          respawnCount = "0";
          respawnCounter = "0";
          team = "1";
-         weapon = "-NoWeapon";
+         Weapon = "-NoWeapon";
    };
    new TSStatic() {
       shapeName = "art/Packs/Buildings/SP_Sparta/SH3D_Sparta_Rail2.dts";
@@ -570,20 +570,6 @@ new SimGroup(MissionGroup) {
       scale = "2 2 2";
       canSave = "1";
       canSaveDynamicFields = "1";
-   };
-   new Item() {
-      static = "0";
-      rotate = "0";
-      buyable = "0";
-      count = "1";
-      isAIControlled = "0";
-      dataBlock = "ParalyzerWeapon";
-      position = "85.1753 47.9439 2.60488";
-      rotation = "0 0 -1 87.797";
-      scale = "1 1 1";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         ammo = "0";
    };
    new SkyBox() {
       drawBottom = "1";
@@ -1229,6 +1215,19 @@ new SimGroup(MissionGroup) {
       canSave = "1";
       canSaveDynamicFields = "1";
          Base_Ceiling_GTower_dif = "Base_Ceiling_GTower_dif_mat";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "200";
+      isAIControlled = "0";
+      dataBlock = "IronSpearWeapon";
+      position = "-23.0525 18.0179 3.49743";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---
