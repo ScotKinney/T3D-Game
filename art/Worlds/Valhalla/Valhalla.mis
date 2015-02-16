@@ -26,7 +26,7 @@ new SimGroup(MissionGroup) {
          displayName = "Valhalla";
          enabled = "1";
          hasTreasury = "1";
-         LevelName = "Valhalla";
+         levelName = "Valhalla";
    };
    new SimGroup(PlayerDropPoints) {
       canSave = "1";
@@ -80,8 +80,8 @@ new SimGroup(MissionGroup) {
       new TimeOfDay(ValhallaTime) {
          axisTilt = "23.44";
          dayLength = "86400";
-         startTime = "0.073655";
-         time = "0.0758573";
+         startTime = "0.930798";
+         time = "0.933614";
          play = "1";
          azimuthOverride = "0";
          dayScale = "0.634921";
@@ -94,7 +94,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
-            clockSynchEvent = "10";
+            clockSynchEvent = "1596447";
       };
       new Forest(theForest) {
          position = "0 0 0";
@@ -400,7 +400,7 @@ new SimGroup(MissionGroup) {
          numDrops = "1000";
          boxWidth = "200";
          boxHeight = "100";
-         dropSize = "0.15";
+         dropSize = "0.11";
          splashSize = "0.1";
          splashMS = "1";
          animateSplashes = "0";
@@ -418,12 +418,12 @@ new SimGroup(MissionGroup) {
          followCam = "1";
          useWind = "0";
          minSpeed = "0.4";
-         maxSpeed = "0.5";
+         maxSpeed = "0.05";
          minMass = "0.35";
          maxMass = "0.85";
-         useTurbulence = "0";
-         maxTurbulence = "0.1";
-         turbulenceSpeed = "0.9";
+         useTurbulence = "1";
+         maxTurbulence = "1";
+         turbulenceSpeed = "0.1";
          dataBlock = "HeavySnow";
          position = "0 217.341 35.4697";
          rotation = "1 0 0 0";
@@ -493,7 +493,7 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "GuardBehavior";
          block = "YetiWhite";
-         botBelongsToMe = "3784";
+         botBelongsToMe = "2778";
          dropcount = "3";
          DropItem = "banana";
          realName = "Helga";
@@ -513,13 +513,13 @@ new SimGroup(MissionGroup) {
          avOptions = "280,279,283,55,59,50,35";
          behavior = "NPCVendorBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "3785";
+         botBelongsToMe = "2779";
          distDetect = "2";
          npcAction = "7";
          realName = "Lars";
          respawnCount = "0";
          respawnCounter = "0";
-         weapon = "-NOWEAPON";
+         Weapon = "-NOWEAPON";
          willBuy = "mineral wool";
    };
    new StaticShape(Wolfie1) {
@@ -533,10 +533,10 @@ new SimGroup(MissionGroup) {
       canSaveDynamicFields = "1";
          behavior = "HuntedBehavior";
          block = "WolfAI";
-         botBelongsToMe = "3786";
+         botBelongsToMe = "2780";
          respawnCount = "0";
          respawnCounter = "0";
-         weapon = "-NOWEAPON";
+         Weapon = "-NOWEAPON";
    };
    new Trigger(NZ_ValVillage) {
       polyhedron = "-0.5000000 0.5000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
@@ -752,6 +752,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(lemon3) {
          static = "1";
@@ -766,6 +767,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(lemon2) {
          static = "1";
@@ -780,6 +782,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Lemon1) {
          static = "1";
@@ -794,6 +797,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new TSStatic(FoodTable3) {
          shapeName = "art/Packs/props/Viking_Village/table2.dts";
@@ -1036,6 +1040,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Lime2) {
          static = "1";
@@ -1050,6 +1055,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Lime1) {
          static = "1";
@@ -1064,6 +1070,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Banana3) {
          static = "1";
@@ -1078,6 +1085,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Banana2) {
          static = "1";
@@ -1092,6 +1100,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Banana1) {
          static = "1";
@@ -1106,6 +1115,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(LoafOfBread5) {
          static = "1";
@@ -1120,6 +1130,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(Roast2) {
          static = "1";
@@ -1134,6 +1145,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item(LoafOfBread3) {
          static = "1";
@@ -1148,6 +1160,7 @@ new SimGroup(MissionGroup) {
          canSave = "1";
          canSaveDynamicFields = "1";
             respawn = "30";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1161,6 +1174,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1174,6 +1188,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1187,6 +1202,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1200,6 +1216,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1213,6 +1230,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1226,6 +1244,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1239,6 +1258,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1252,6 +1272,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1317,6 +1338,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1330,6 +1352,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1343,6 +1366,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1356,6 +1380,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -1369,6 +1394,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
    };
    new SimGroup(ValWeaponsShop) {
@@ -1885,7 +1911,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "Square_Shield_VIIIWeapon";
          position = "-255.047 39.5668 71.0548";
-         rotation = "0.580302 -0.571401 -0.580302 240";
+         rotation = "-0.580302 0.571401 0.580302 120";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2523,7 +2549,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.796 40.9785 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7633";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2536,7 +2562,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.79 40.6755 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7633";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2562,7 +2588,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.968 38.3208 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2575,7 +2601,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.974 38.6247 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2588,7 +2614,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ThumperWeapon";
          position = "-264.98 38.9676 70.25";
-         rotation = "-0.127554 -0.130043 -0.983269 92.0734";
+         rotation = "-0.127554 -0.130043 -0.983269 92.0733";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2614,7 +2640,7 @@ new SimGroup(MissionGroup) {
          isAIControlled = "0";
          dataBlock = "ReaverWeapon";
          position = "-264.784 40.3676 70.2153";
-         rotation = "-0.242614 -0.247348 -0.93806 94.7634";
+         rotation = "-0.242614 -0.247348 -0.93806 94.7633";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2683,6 +2709,7 @@ new SimGroup(MissionGroup) {
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
+            respawnTime = "30";
       };
       new Item() {
          static = "1";
@@ -3929,7 +3956,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3787";
+            botBelongsToMe = "2781";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -3939,7 +3966,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            weapon = "SoulReaverWeapon";
+            Weapon = "SoulReaverWeapon";
       };
       new StaticShape(Guard6a_OR) {
          isAIControlled = "0";
@@ -3953,7 +3980,7 @@ new SimGroup(MissionGroup) {
             avOptions = "282,279,285,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3789";
+            botBelongsToMe = "2783";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -3963,7 +3990,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "6";
-            weapon = "SoulReaverWeapon";
+            Weapon = "SoulReaverWeapon";
       };
       new Prefab(Fort_OdinsRevenge) {
          fileName = "art/packs/forts/viking/fort.prefab";
@@ -4551,7 +4578,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3790";
+            botBelongsToMe = "2784";
             distDetect = "50";
             fov = "360";
             leash = "5";
@@ -4561,7 +4588,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            weapon = "SoulReaverWeapon";
+            Weapon = "SoulReaverWeapon";
       };
       new StaticShape(Guard11a_TL) {
          isAIControlled = "0";
@@ -4575,7 +4602,7 @@ new SimGroup(MissionGroup) {
             avOptions = "280,279,283,55,59,50,35";
             behavior = "LeashedBehavior";
             block = "MalePlayerData";
-            botBelongsToMe = "3792";
+            botBelongsToMe = "2786";
             distDetect = "50";
             fov = "360";
             leash = "15";
@@ -4585,7 +4612,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "11";
-            weapon = "SoulReaverWeapon";
+            Weapon = "SoulReaverWeapon";
       };
       new Prefab(Fort_ThunderLords) {
          fileName = "art/packs/forts/viking/fort.prefab";
@@ -5648,7 +5675,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "WhiteHorse";
-            botBelongsToMe = "3793";
+            botBelongsToMe = "2787";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5658,7 +5685,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
       new Path(WhiteHorsePath) {
          isLooping = "1";
@@ -5730,7 +5757,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BlackHorse";
-            botBelongsToMe = "3794";
+            botBelongsToMe = "2788";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5740,7 +5767,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
       new Path(BlackHorsePath) {
          isLooping = "1";
@@ -5811,7 +5838,8 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "GrayHorse";
-            botBelongsToMe = "3795";
+            botBelongsToMe = "114415";
+            delayRespawn = "1393650";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5821,7 +5849,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
       new Path(GrayHorsePath) {
          isLooping = "1";
@@ -5892,7 +5920,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "PintoHorse";
-            botBelongsToMe = "3796";
+            botBelongsToMe = "2790";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5902,7 +5930,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
       new Path(PintoHorsePath) {
          isLooping = "1";
@@ -5973,7 +6001,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BuckskinHorse";
-            botBelongsToMe = "3797";
+            botBelongsToMe = "2791";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -5983,7 +6011,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
       new Path(BuckskinHorsePath) {
          isLooping = "1";
@@ -6054,7 +6082,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             behavior = "MountBehavior";
             block = "BayHorse";
-            botBelongsToMe = "3798";
+            botBelongsToMe = "2792";
             distDetect = "50";
             fov = "360";
             maxRange = "30";
@@ -6063,7 +6091,7 @@ new SimGroup(MissionGroup) {
             respawnCount = "0";
             respawnCounter = "0";
             team = "1";
-            weapon = "-NoWeapon";
+            Weapon = "-NoWeapon";
       };
    };
    new TSStatic(HorseBarn) {
