@@ -353,16 +353,6 @@ singleton Material(matBM_SpartanBriefs)
    doubleSided = "1";
 };
 
-///////////Spartan Scabbard
-
-singleton Material(matBM_SpartanScabbard)
-{
-   mapTo = "BM_SpartanScabbard";
-   diffuseMap[0] = "art/players/base/BaseMale/Kardia/BM_SpartanScabbard";
-   materialTag0 = "Avatar_BM";
-};
-
-
 
 /////////////////Pirate Stuff//////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -528,24 +518,6 @@ singleton Material(matBM_Pants_Myth)
 {
    mapTo = "BM_Pants_Myth";
    diffuseMap[0] = "art/players/base/BaseMale/Mythriel/BM_Pants_Myth";
-   materialTag0 = "Avatar_BM";
-};
-
-//////////////LongSword Holster
-
-
-singleton Material(matBM_LSHolster_Metal)
-{
-   mapTo = "LS_Holster_Metal";
-   diffuseMap[0] = "art/players/base/BaseMale/Mythriel/LS_Holster_Metal.png";
-   materialTag0 = "Avatar_BM";
-   translucent = "0";
-};
-
-singleton Material(matBM_LSHolster_Leather)
-{
-   mapTo = "LS_Holster_Leather";
-   diffuseMap[0] = "art/players/base/BaseMale/Mythriel/LS_Holster_Leather.png";
    materialTag0 = "Avatar_BM";
 };
 
