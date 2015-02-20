@@ -71,7 +71,7 @@ function ChatPopup::makeCheckBox(%this, %name)
    %newCtrlID = new GuiRadioCtrl() {
       canSaveDynamicFields = "0";
       isContainer = "0";
-      Profile = "BCPopupCheckProfile";
+      Profile = "AVPopupCheckProfile";
       HorizSizing = "right";
       VertSizing = "bottom";
       Position = "0 0";

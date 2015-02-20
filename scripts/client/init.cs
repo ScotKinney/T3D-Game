@@ -177,6 +177,15 @@ function initClient()
    exec("./AlterVerse/ResolveIP.cs");
    exec("./AlterVerse/clientChat.cs");
 
+   // Avatar customizer
+   exec("art/gui/avCustomizer/customizerProfiles.cs");
+   exec("art/gui/avSelection.gui");
+   exec("art/gui/avMiscOptions.gui");
+   exec("art/gui/avOverlays.gui");
+   exec("scripts/gui/avSelectionGui.cs");
+   exec("scripts/gui/avMiscOptionsGui.cs");
+   exec("scripts/gui/avOverlaysGui.cs");
+
    exec("core/art/gui/toolsLoading.gui");
    exec("./AlterVerse/clientTools.cs");
 

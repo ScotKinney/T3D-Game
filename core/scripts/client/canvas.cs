@@ -233,6 +233,9 @@ function Canvas::onResize(%this, %newWidth, %newHeight, %forcesize)
    if ( isObject( ServerSelGui ) && ServerSelGui.isAwake() )
       ServerSelGui.onResize(%newWidth, %newHeight);
 
+   if ( isObject( AvSelectionGui ) && AvSelectionGui.isAwake() )
+      AvSelectionGui.onResize(%newWidth, %newHeight);
+
    if ( isObject( TeleportGui ) && TeleportGui.isAwake() )
       TeleportGui.onResize(%newWidth, %newHeight);
 

@@ -78,6 +78,7 @@ function httpLoginStage2::process(%this)
       $TAP::localIP = %this.your_ip;
       // the clan that the user belongs to
       $pref::Player::ClanID = %this.clan_id;
+      $pref::Player::ClanLeader = %this.clan_ldr;
       $pref::Player::WorldID = %this.world_id;
       $pref::Player::SkullLevel = %this.skulls;
       $AlterVerse::PlayerSkullLevel = %this.skulls;
@@ -91,7 +92,8 @@ function httpLoginStage2::process(%this)
       $currentUsername = $pref::Player::Name;
 
       // login stage 2 complete
-      InventoryRequest();
+      //InventoryRequest();
+      AvSelectionGui.getHomeworldData();
       $TAP::isLoggedIn = true;
       if ( !$TAP::isTappedIn )
          startIntroVideo();
@@ -200,46 +202,46 @@ function getDescriptionList::process( %this )
    %this.schedule(0, delete);
 }
 
-function ServerRequest()
-{
-   if ( isDevBuild() && $DesignMode )
-      return;  // If this is design mode, we're already in the level
-      
-   if($JoinLobbyName $= "")
-   {
-      playIntroMusic($ServerName);
-      connectToLobbyServer($serverToJoin);
-   }
-   else
-   {
-      playIntroMusic($JoinLobbyName);
-      %request = new HTTPObject() {
-         class = "lobbyServerRequest";
-         status = "failure";
-         message = "";
-      };
- 
-      // get the address of the lobby server
-      %request.get( $serverPath, $scriptPath @ "joinLobbyServer.php", "lobbyName="@$JoinLobbyName );
-   }
-}
+//function ServerRequest()
+//{
+   //if ( isDevBuild() && $DesignMode )
+      //return;  // If this is design mode, we're already in the level
+      //
+   //if($JoinLobbyName $= "")
+   //{
+      //playIntroMusic($ServerName);
+      //connectToLobbyServer($serverToJoin);
+   //}
+   //else
+   //{
+      //playIntroMusic($JoinLobbyName);
+      //%request = new HTTPObject() {
+         //class = "lobbyServerRequest";
+         //status = "failure";
+         //message = "";
+      //};
+ //
+      //// get the address of the lobby server
+      //%request.get( $serverPath, $scriptPath @ "joinLobbyServer.php", "lobbyName="@$JoinLobbyName );
+   //}
+//}
 
 // do something with the results of the query
-function lobbyServerRequest::process( %this )
-{
-   switch$( %this.status )
-   {
-   case "success":
-      connectToLobbyServer(%this.address);
-   default:
-      echo(%this.message);
-      MessageBoxOK( "Could not connect", 
-                 %this.message, 
-                 "canvas.popdialog(AvSelectionGui);");// canvas.popdialog(loginDlg);" );
-      stopIntroMusic();
-   }
-   %this.schedule(0, delete);
-}
+//function lobbyServerRequest::process( %this )
+//{
+   //switch$( %this.status )
+   //{
+   //case "success":
+      //connectToLobbyServer(%this.address);
+   //default:
+      //echo(%this.message);
+      //MessageBoxOK( "Could not connect", 
+                 //%this.message, 
+                 //"canvas.popdialog(AvSelectionGui);");// canvas.popdialog(loginDlg);" );
+      //stopIntroMusic();
+   //}
+   //%this.schedule(0, delete);
+//}
    
 // perform the actual connection process
 function connectToServer(%serverAddress, %spawnPoint, %isTransfer, %isResolved)
@@ -318,33 +320,36 @@ function stopIntroVideo()
    connectClientChat();
 
    // Initialize Mumble
-   if ( $pref::Mumble::useVoice )
-      LaunchMumble($currentUsername);
-   $Mumble::InLobby = true;
-   $Mumble::Context = "Lobby";
-   $Mumble::ModeVal = 0;
-   $Mumble::ModeStr = "Player+Camera";
+   //if ( $pref::Mumble::useVoice )
+      //LaunchMumble($currentUsername);
+   //$Mumble::InLobby = true;
+   //$Mumble::Context = "Lobby";
+   //$Mumble::ModeVal = 0;
+   //$Mumble::ModeStr = "Player+Camera";
+//
+   //if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
+   //{  // If it's a developer, bring up the server selection gui.
+      //if ( !isObject(ServerSelGui) )
+      //{
+         //exec("art/gui/devGuis/devProfiles.cs");
+         //exec("art/gui/devGuis/serverSel.gui");
+         //exec("art/gui/devGuis/serverSelGui.cs");
+//
+         //if ( $pref::HostMultiPlayer $= "" )
+            //$pref::HostMultiPlayer = "1";
+         //exec("art/gui/devGuis/chooseLevel.gui");
+         //exec("art/gui/devGuis/chooseLevelGui.cs");
+      //}
+      //canvas.pushDialog(ServerSelGui);
+   //}
+   //else
+   //{  // For all others load the level selected by the login script.
+      //loadLoadingGui();
+      //connectToServer($serverToJoin, "", false, false);
+   //}
 
-   if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
-   {  // If it's a developer, bring up the server selection gui.
-      if ( !isObject(ServerSelGui) )
-      {
-         exec("art/gui/devGuis/devProfiles.cs");
-         exec("art/gui/devGuis/serverSel.gui");
-         exec("art/gui/devGuis/serverSelGui.cs");
-
-         if ( $pref::HostMultiPlayer $= "" )
-            $pref::HostMultiPlayer = "1";
-         exec("art/gui/devGuis/chooseLevel.gui");
-         exec("art/gui/devGuis/chooseLevelGui.cs");
-      }
-      canvas.pushDialog(ServerSelGui);
-   }
-   else
-   {  // For all others load the level selected by the login script.
-      loadLoadingGui();
-      connectToServer($serverToJoin, "", false, false);
-   }
+   // Show the avatar customizer
+   Canvas.pushDialog(AvSelectionGui);
 
    Canvas.popDialog(TeleportGui);
    TeleportGui.delete();

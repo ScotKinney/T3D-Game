@@ -234,6 +234,29 @@ singleton GuiControlProfile (AVPanelCaptionProfile)
       category = "Tools";
    };
 
+   singleton GuiControlProfile (AVPopupCheckProfile : GuiCheckBoxProfile)
+   {
+      soundButtonDown = AvGuiSound;
+      opaque = true;
+      border = 1;
+      borderColor   = "255 255 255 225";
+
+      fontColor = "210 210 210 225";
+      fontColorHL = "255 255 255 225";
+      fontColorNA = "200 200 200 225";
+      fixedExtent = true;
+      justify = "left";
+
+      // fill color
+      fillColor = "10 10 10 200";
+
+      bitmap = "art/gui/avCustomizer/checkbox";
+      hasBitmapArray = true;
+
+      category = "AlterVerse";
+   };
+
+
    singleton SFXProfile(RiftGainFocusSound)
    {
       filename    = "art/sound/ui/webshape_gain_focus.ogg";
