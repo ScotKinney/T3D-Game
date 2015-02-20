@@ -947,8 +947,9 @@ function AvSelectionGui::onArrowBtn(%this, %plankNum, %direction)
       // Apply new outfit
       %this.OutfitPlayer();
       %this.UpdateMaterials();
-      %this.updateButtons();
    }
+
+   %this.updateButtons();
 }
 
 function AvSelectionGui::onSubscribePressed(%this)

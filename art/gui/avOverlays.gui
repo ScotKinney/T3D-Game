@@ -20,7 +20,7 @@
       minExtent = "169 283";
       horizSizing = "right";
       vertSizing = "bottom";
-      profile = "BCPopupProfile";
+      profile = "AVPopupProfile";
       visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";

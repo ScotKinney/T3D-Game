@@ -39,7 +39,7 @@ singleton GuiControlProfile (AVHomeworldTitleProfile)
    //fontType = "Trajan Pro Bold";
    fontType = "Tahoma Bold";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVInfoTextProfile)
@@ -51,7 +51,7 @@ singleton GuiControlProfile (AVInfoTextProfile)
    fontColor = "200 200 200 200";
    fontType = "Arial Bold";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVScrollTitleProfile)
@@ -64,7 +64,7 @@ singleton GuiControlProfile (AVScrollTitleProfile)
    //fontType = "Trajan Pro Bold";
    fontType = "Tahoma Bold";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVScrollTextProfile)
@@ -77,7 +77,7 @@ singleton GuiControlProfile (AVScrollTextProfile)
    //fontType = "Trajan Pro";
    fontType = "Tahoma";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVScrollButtonProfile : AVInputSoundProfile)
@@ -99,7 +99,7 @@ singleton GuiControlProfile (AVScrollButtonProfile : AVInputSoundProfile)
    //fontType = "Trajan Pro Bold";
    fontType = "Tahoma Bold";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVAEGLLCProfile)
@@ -112,7 +112,7 @@ singleton GuiControlProfile (AVAEGLLCProfile)
    //fontType = "Trajan Pro";
    fontType = "Tahoma";
    borderThickness = "0";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile( AVPlayButtonProfile : AVInputSoundProfile )
@@ -126,7 +126,19 @@ singleton GuiControlProfile( AVPlayButtonProfile : AVInputSoundProfile )
    border = false;
    fixedExtent = false;
    justify = "center";
-   category = "AlterVerse";
+   category = "AVCustomizer";
+};
+
+singleton GuiControlProfile (AVPopupProfile)
+{
+   opaque = true;
+   border = 1;
+   borderColor   = "255 255 255 225";
+
+   // fill color
+   fillColor = "10 10 10 235";
+
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile (AVPopupScrollProfile : GuiScrollProfile)
@@ -138,10 +150,10 @@ singleton GuiControlProfile (AVPopupScrollProfile : GuiScrollProfile)
    // fill color
    fillColor = "10 10 10 0";
 
-   bitmap = "art/gui/avCustomizer/scrollBar";
+   //bitmap = "art/gui/avCustomizer/scrollBar";
    hasBitmapArray = true;
 
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
 
 singleton GuiControlProfile( AVPopupButtonProfile : AVInputSoundProfile )
@@ -155,5 +167,5 @@ singleton GuiControlProfile( AVPopupButtonProfile : AVInputSoundProfile )
    border = false;
    fixedExtent = false;
    justify = "center";
-   category = "AlterVerse";
+   category = "AVCustomizer";
 };
