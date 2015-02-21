@@ -16,8 +16,8 @@
 
    new GuiBitmapBorderCtrl(QuestMessageBoxFrame) {
       position = "570 407";
-      extent = "300 86";
-      minExtent = "300 40";
+      extent = "340 86";
+      minExtent = "340 40";
       horizSizing = "center";
       vertSizing = "center";
       profile = "QuestMessageFrameProfile";
@@ -33,7 +33,7 @@
          bitmap = "core/art/gui/images/hudfill.png";
          wrap = "0";
          position = "3 3";
-         extent = "294 80";
+         extent = "334 80";
          minExtent = "8 8";
          horizSizing = "width";
          vertSizing = "height";
@@ -55,7 +55,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "5 4";
-         extent = "290 26";
+         extent = "330 26";
          minExtent = "8 8";
          horizSizing = "left";
          vertSizing = "bottom";
@@ -74,7 +74,7 @@
          maxChars = "-1";
          useURLMouseCursor = "0";
          position = "8 32";
-         extent = "284 16";
+         extent = "324 16";
          minExtent = "8 8";
          horizSizing = "center";
          vertSizing = "bottom";
@@ -102,7 +102,7 @@
          anchorLeft = "1";
          anchorRight = "0";
          position = "40 60";
-         extent = "220 30";
+         extent = "260 30";
          minExtent = "8 2";
          horizSizing = "right";
          vertSizing = "bottom";
@@ -126,7 +126,7 @@
          buttonType = "PushButton";
          useMouseEvents = "0";
          position = "15 94";
-         extent = "80 26";
+         extent = "100 26";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "top";
@@ -152,7 +152,7 @@
          buttonType = "PushButton";
          useMouseEvents = "0";
          position = "110 94";
-         extent = "80 26";
+         extent = "100 26";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "top";
@@ -177,7 +177,7 @@
          buttonType = "PushButton";
          useMouseEvents = "0";
          position = "205 94";
-         extent = "80 26";
+         extent = "100 26";
          minExtent = "8 8";
          horizSizing = "right";
          vertSizing = "top";

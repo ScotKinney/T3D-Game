@@ -222,7 +222,7 @@ function disconnect(%isTransfer, %noMenu)
    // Let mumble know we've left a game server
    $Mumble::Context = "Lobby";
    $Mumble::Status = "NO LINK";
-   if ( $pref::Mumble::useVoice && !$Mumble::InLobby )
+   if ( $pref::Mumble::useVoice && $Mumble::Running && !$Mumble::InLobby )
    {
       MumbleLeaveGame();
       $Mumble::InLobby = true;

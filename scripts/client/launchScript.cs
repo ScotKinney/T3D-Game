@@ -78,6 +78,7 @@ function httpLoginStage2::process(%this)
       $TAP::localIP = %this.your_ip;
       // the clan that the user belongs to
       $pref::Player::ClanID = %this.clan_id;
+      $pref::Player::ClanName = %this.clan_name;
       $pref::Player::ClanLeader = %this.clan_ldr;
       $pref::Player::WorldID = %this.world_id;
       $pref::Player::SkullLevel = %this.skulls;

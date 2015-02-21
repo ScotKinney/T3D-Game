@@ -14,6 +14,17 @@ if( isObject( QuestMessageBox ) )
 exec("./QuestMessageBox.gui");
 
 //------------------------------------------------------------------------------
+// This is a place holder until we have a separate UI message box design
+function ShowAVMessageBox(%title, %message, %hasInput, %text1, %callback1,
+                          %text2, %callback2, %text3, %callback3,
+                          %defaultButton, %initText)
+{
+   ShowQuestMessageBox(%title, %message, %hasInput, %text1, %callback1,
+                          %text2, %callback2, %text3, %callback3,
+                          %defaultButton, %initText);
+}
+
+//------------------------------------------------------------------------------
 function ShowQuestMessageBox(%title, %message, %hasInput, %text1, %callback1,
                           %text2, %callback2, %text3, %callback3,
                           %defaultButton, %initText)

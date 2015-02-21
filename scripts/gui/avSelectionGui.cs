@@ -195,7 +195,7 @@ function AvSelectionGui::initOptions(%this)
 
    if ( %this.isAwake() )
    {  // setup the correct model and install the text
-      if ( !$ImAMigrant && $IsSubscriber )
+      if ( !$ImAMigrant && $IsSubscriber && (%this.numPlanks < 11) )
          %this.MakePlanks();
 
       %this.outfit = %this.findCurrentOutfit();
@@ -919,11 +919,13 @@ function AvSelectionGui::onArrowBtn(%this, %plankNum, %direction)
 {
    if ( %plankNum == 0 )
    {  // TODO: Check to save changes before switching.
-      if ( $pref::Player::Gender $= "MALE" )
-         $pref::Player::Gender = "FEMALE";
+      if ( %this.hasChanges() )
+         %this.confirmGenderChange();
       else
-         $pref::Player::Gender = "MALE";
-      %this.genderChange();
+      {
+         %this.curGender = ( %this.curGender == 0 ) ? 1 : 0;
+         %this.genderChange();
+      }
    }
    else if ( %plankNum == 1 )
    {
@@ -1155,7 +1157,7 @@ function AvSelectionGui::makeCurrentOutfit(%this)
 
 function AvSelectionGui::setAvModel(%this)
 {
-   if ( $pref::Player::Gender $= "MALE" )
+   if ( %this.curGender == 0 )
       %this.shapePath = "art/players/base/basemale/basemale1_4.dts";
    else
       %this.shapePath = "art/players/base/basefemale/basefemale1_4.dts";
@@ -1172,7 +1174,6 @@ function AvSelectionGui::setAvModel(%this)
 
 function AvSelectionGui::genderChange(%this)
 {
-   %this.curGender = (($pref::Player::Gender $= "MALE") ? 0 : 1);
    if ( %this.curGender == 0 )
    {
       %this.curOpts = getBarWord(AvSelectionGui.savedMale, 0);
@@ -1202,75 +1203,6 @@ function AvSelectionGui::genderChange(%this)
    %this.checkOutfit();
    %this.makeCurrentOutfit();
    %this.setAvModel();
-}
-
-function AvSelectionGui::BeginMission(%this)
-{
-   // Save the users clan selection
-   %clanTeam = 2;
-   if ( %this.optionsSet )
-   {
-      %clanInfo = %this.clanData.getValue(%this.clanIndex);
-      %clanID = %clanInfo.id;
-      %clanTeam = %clanInfo.teamNum;
-   }
-   else
-      %clanID = $pref::Player::ClanID;
-
-   // Check the time remaining and see if the clan change is allowed
-   if ( $pref::Player::ClanID != %clanID )
-   {
-      if ( $DesignMode || (mFloor(getSimTime() / 1000) < $cutoffTime) ||
-         ($pref::Player::ClanID == 0) )
-      {  // The clan change is allowed
-         //%this.ClanChangeRequest(%clanID);
-         CommandToServer('SetPlayerClan', %clanID, %clanTeam);
-      }
-      else
-      {
-         MessageBoxOK("Round Ending...", "There are less than 24 hours remaining in the current round. Clan changes are not allowed at this time");
-         %this.clanIndex = %this.clanData.getIndexFromKey($pref::Player::ClanID);
-         if ( %this.clanIndex < 0 )
-            %this.clanIndex = 0;
-
-         %clanInfo = %this.clanData.getValue(%this.clanIndex);
-         %this.homeworldID = %clanInfo.homeworldID;
-         %this.homeworldIndex = %this.homeworldData.getIndexFromKey(%this.homeworldID);
-         %this.homeworldChanged(true);
-         %this.clanChanged(true);
-         return;
-      }
-   }
-   
-   // The following two lines are only needed in dev mode
-   $pref::Player::ClanID = %clanID;
-   $pref::Player::TeamNum = %clanTeam;
-
-   // Save the clan name and homeworld
-   if ( %this.optionsSet )
-   {
-      %clanInfo = %this.clanData.getValue(%this.clanIndex);
-      $AlterVerse::ClanName = %clanInfo.dispName;
-      %worldInfo = %this.homeworldData.getValue(%this.homeworldIndex);
-      $AlterVerse::Homeworld = %worldInfo.dispName;
-   }
-   else
-   {
-      $AlterVerse::ClanName = "Savage Spartans";
-      $AlterVerse::Homeworld = "Kardia";
-   }
-
-   // Save the users prefs in-case the game is aborted
-   export("$pref::*", "scripts/client/prefs.cs", False);
-
-   commandToServer('SetPlayerSelections', $pref::Player::Gender, $pref::Player::Skin,
-         $pref::Player::Avatar @ "|" @ $pref::Player::AvOverlay);
-
-   AvSelectionGui.setActive(false);
-   
-   commandToServer('MissionStartPhase3Ack', $MSeq);
-   $InitialConnection = false;
-   //InventoryRequest();
 }
 
 function AvSelectionGui::ShowOptionChoices(%this)
@@ -1394,8 +1326,6 @@ function AvSelectionGui::ShowOptionChoices(%this)
          AvOverlays.checkOption(%curOption);
    }
    AvOverlays.makeOverlayStr();
-
-   // Select the correct tint button
 }
 
 function AvSelectionGui::initMakeup(%this)
@@ -1670,10 +1600,10 @@ function AvSelectionGui::UpdateAvatarDisplay(%this)
       cancel(%this.animSchedule);
 
    // Adjust the max distance so player appears to stand on pedastal
-   if ( $pref::Player::Gender $= "FEMALE" )
-      AvSelModelView.maxOrbitDistance = 3.25;//5.43
+   if ( %this.curGender == 1 )
+      AvSelModelView.maxOrbitDistance = 3.25;// Female 5.43
    else
-      AvSelModelView.maxOrbitDistance = 3.40;//5.62
+      AvSelModelView.maxOrbitDistance = 3.40;//Male 5.62
 
    // Put the shape into the view control
    AvSelModelView.setModel(%this.shapePath);
@@ -2217,22 +2147,34 @@ function AvSelectionGui::updateButtons(%this)
 {
    %this-->PlayButton.setActive(true);
    %this-->HomesteadButton.setActive(true);
+   %this-->SaveButton.setActive(%this.hasChanges());
+}
+
+function AvSelectionGui::hasChanges(%this)
+{
+   if ( %this.curGender != (($pref::Player::Gender $= "MALE") ? 0 : 1) )
+      return true;   // Gender changed
+
+   if ( %this.homeworldID !$= $pref::Player::WorldID )
+      return true;   // Homeworld changed
 
    %compStr = ((%this.curGender == 0) ? AvSelectionGui.savedMale : AvSelectionGui.savedFemale);
-   
    %currentStr = %this.curOpts;
    if ( %this.curOverlays !$= "" )
       %currentStr = %currentStr @ "|" @ %this.curOverlays;
-   
-   %this-->SaveButton.setActive((%this.homeworldID !$= $pref::Player::WorldID) ||
-            (%compStr !$= %currentStr));
+
+   if ( %compStr !$= %currentStr )
+      return true;   // Setup changed
+
+   return false;
 }
 
-function AvSelectionGui::onPlayBtn(%this)
+function AvSelectionGui::BeginMission(%this)
 {
    // Initialize Mumble
    if ( $pref::Mumble::useVoice )
       LaunchMumble($currentUsername);
+   $Mumble::Running = true;
    $Mumble::InLobby = true;
    $Mumble::Context = "Lobby";
    $Mumble::ModeVal = 0;
@@ -2259,7 +2201,23 @@ function AvSelectionGui::onPlayBtn(%this)
       loadLoadingGui();
       connectToServer($serverToJoin, "", false, false);
    }
-   return;
+}
+
+function AvSelectionGui::onPlayBtn(%this)
+{
+   if ( %this.hasChanges() )
+   {
+      %message = "Save current avatar setup for use in game?";
+
+      %message = %this.addHomeworldMsg(%message);
+
+      ShowAVMessageBox("Avatar Setup Changed", %message, 0,
+         "Save", "AvSelectionGui.SaveChanges(2);",
+         "Discard", "AvSelectionGui.DiscardChanges(2);",
+         "Cancel", "AvSelectionGui.DiscardChanges(0);");
+   }
+   else
+      %this.BeginMission();
 }
 
 function AvSelectionGui::onHomesteadBtn(%this)
@@ -2269,8 +2227,143 @@ function AvSelectionGui::onHomesteadBtn(%this)
 
 function AvSelectionGui::onSaveBtn(%this)
 {
-   echo("Gender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
-   return;
+   //echo("Gender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
+   if ( %this.homeworldID !$= $pref::Player::WorldID )
+   {
+      %message = %this.addHomeworldMsg(%message);
+      ShowAVMessageBox("Homeworld Changed", %message, 0,
+         "Save", "AvSelectionGui.SaveChanges(0);",
+         "Cancel", "AvSelectionGui.DiscardChanges(0);");
+   }
+   else
+      AvSelectionGui.SaveChanges(0);
+}
+
+function AvSelectionGui::confirmGenderChange(%this)
+{
+   if (%this.curGender == 0)
+      %message = "Save changes to the male avatar before switching to the female avatar?";
+   else
+      %message = "Save changes to the female avatar before switching to the male avatar?";
+
+   %message = %this.addHomeworldMsg(%message);
+
+   ShowAVMessageBox("Avatar Setup Changed", %message, 0,
+      "Save", "AvSelectionGui.SaveChanges(1);",
+      "Discard", "AvSelectionGui.DiscardChanges(1);",
+      "Cancel", "AvSelectionGui.DiscardChanges(0);");
+}
+
+
+function AvSelectionGui::addHomeworldMsg(%this, %message)
+{  // Make the homeworld change message
+   if ( %this.homeworldID $= $pref::Player::WorldID )
+      return %message;
+
+   if ( $pref::Player::ClanLeader )
+   {
+      %hMsg = "<color:dd1111>Warning:<color:ffffff> You are the leader of the " @ $pref::Player::ClanName @ " clan. If you change Homeworld, your clan will be disbanded!";
+   }
+   else if ( $pref::Player::ClanID > 0 )
+   {
+      %hMsg = "Changeing your Homeworld will automatically remove you from the " @ $pref::Player::ClanName @ " clan.";
+   }
+
+   if ( %message $= "" )
+      %message = %hMsg;
+   else
+      %message = %message @ "\n\n" @ %hMsg;
+
+   return %message;
+}
+
+function AvSelectionGui::SaveChanges(%this, %changeVal)
+{
+   %genderChanged = false;
+   %hmidChanged = false;
+   %setupChanged = false;
+
+   // hash our password combined with the supplied hash
+   %pwdHash = getStringMD5( $currentHash @ $currentPasswordHash );
+
+   %args = "uid=" @ $currentPlayerID @"\t"@ "uhash=" @ %pwdHash;
+
+   if ( %this.curGender != (($pref::Player::Gender $= "MALE") ? 0 : 1) )
+   {
+      %args = %args @ "\t" @ "usex=" @ ((%this.curGender == 0) ? "Male" : "Female");
+      %genderChanged = true;
+   }
+
+   if ( %this.homeworldID !$= $pref::Player::WorldID )
+   {
+      %args = %args @ "\t" @ "hwid=" @ %this.homeworldID;
+      %hmidChanged = true;
+   }
+
+   %compStr = ((%this.curGender == 0) ? AvSelectionGui.savedMale : AvSelectionGui.savedFemale);
+   %currentStr = %this.curOpts;
+   if ( %this.curOverlays !$= "" )
+   {
+      %currentStr = %currentStr @ "|" @ %this.curOverlays;
+      %setupChanged = true;
+   }
+
+   if ( %compStr !$= %currentStr )
+      %args = %args @ "\t" @ ((%this.curGender == 0) ? "mav=" : "fav=") @ %currentStr;
+
+   %this-->PlayButton.setActive(false);
+   %this-->HomesteadButton.setActive(false);
+   %this-->SaveButton.setActive(false);
+   %this-->GenderBtnLf.setActive(false);
+   %this-->GenderBtnRt.setActive(false);
+
+   new HttpObject(httpAvatarChange){
+      status = "failure";
+      changeVal = %changeVal;
+      genderChanged = %genderChanged;
+      hmidChanged = %hmidChanged;
+      setupChanged = %setupChanged;
+      message = "";
+   };
+
+   //httpAvatarChange.get( $serverPath, $scriptPath @ "avatarChange.php", %args );  
+}
+
+function AvSelectionGui::DiscardChanges(%this, %changeVal)
+{
+   %this.homeworldID = $pref::Player::WorldID;
+   %this.homeworldIndex = %this.homeworldData.getIndexFromKey(%this.homeworldID);
+
+   if ( %changeVal == 0 )
+   {
+      if ( %this.curGender == 0 )
+      {
+         %this.curOpts = getBarWord(AvSelectionGui.savedMale, 0);
+         %this.curOverlays = getBarWord(AvSelectionGui.savedMale, 1);
+      }
+      else
+      {
+         %this.curOpts = getBarWord(AvSelectionGui.savedFemale, 0);
+         %this.curOverlays = getBarWord(AvSelectionGui.savedFemale, 1);
+      }
+      %this.outfit = %this.findCurrentOutfit();
+      %this.homeworldChanged(true);
+   }
+   else if ( %changeVal == 1 )
+   {
+      %worldInfo = %this.homeworldData.getValue(%this.homeworldIndex);
+      %name = %this-->HomeworldTitle.format @ %worldInfo.dispName;
+      %desc = %this-->HomeworldText.format @ %worldInfo.description;
+      %this.homeworldID = %worldInfo.id;
+      %this-->HomeworldTitle.setText(%name);
+      %this-->HomeworldText.setText(%desc);
+      %this.lastHomeworld = %this.homeworldIndex;
+
+      %this.curGender = ( %this.curGender == 0 ) ? 1 : 0;
+      %this.genderChange();
+   }
+   else if ( %changeVal == 2 )
+      %this.BeginMission();
 }
 
 function AvSelectionGui::getHomeworldData(%this)
@@ -2286,6 +2379,26 @@ function AvSelectionGui::getHomeworldData(%this)
    };
    
    %request.get( $serverPath, $scriptPath @ "getHomeworldInfo.php", "uid=" @ $currentPlayerID );
+}
+
+function httpAvatarChange::process( %this )
+{
+
+   switch$( %this.status )
+   {
+   case "success":
+      AvSelectionGui.initOptions();
+
+   default:
+      echo(%this.message);
+      MessageBoxOK( "Failed to contact web server", "Could not update avatar setup" SPC %this.message);
+      AvSelectionGui.DiscardChanges(0);
+   }
+   %this.schedule(0, delete);
+
+   AvSelectionGui.updateButtons();
+   AvSelectionGui-->GenderBtnLf.setActive(true);
+   AvSelectionGui-->GenderBtnRt.setActive(true);
 }
 
 function getHomeworldInfo::process( %this )
