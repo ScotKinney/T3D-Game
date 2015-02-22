@@ -2228,7 +2228,7 @@ function AvSelectionGui::onHomesteadBtn(%this)
 function AvSelectionGui::onSaveBtn(%this)
 {
    //echo("Gender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
-   if ( %this.homeworldID !$= $pref::Player::WorldID )
+   if ( (%this.homeworldID !$= $pref::Player::WorldID) && ($pref::Player::ClanID > 0) )
    {
       %message = %this.addHomeworldMsg(%message);
       ShowAVMessageBox("Homeworld Changed", %message, 0,
@@ -2326,7 +2326,7 @@ function AvSelectionGui::SaveChanges(%this, %changeVal)
       message = "";
    };
 
-   //httpAvatarChange.get( $serverPath, $scriptPath @ "avatarChange.php", %args );  
+   httpAvatarChange.get( $serverPath, $scriptPath @ "avatarChange.php", %args );  
 }
 
 function AvSelectionGui::DiscardChanges(%this, %changeVal)
@@ -2387,11 +2387,34 @@ function httpAvatarChange::process( %this )
    switch$( %this.status )
    {
    case "success":
-      AvSelectionGui.initOptions();
+      $currentPasswordHash = %this.hash;
+
+      if ( %this.hmidChanged )
+      {
+         $serverToJoin = %this.server;
+         $ServerName = %this.svrName;
+         $AlterVerse::serverPrefix = %this.filePrefix;
+         // the murmur server that's used for voice chat
+         $Mumble::murmurAddress = %this.murmur;
+         // and the manifest paths
+         $manifestRoot = %this.manifestRoot;
+         $manifestFile = %this.manifestFile;
+         $pref::Player::ClanID = %this.clan_id;
+         $pref::Player::ClanName = %this.clan_name;
+         $pref::Player::ClanLeader = %this.clan_ldr;
+      }
+
+      $pref::Player::WorldID = %this.world_id;
+      $pref::Player::Gender = %this.gender;
+      AvSelectionGui.savedMale = %this.maleAv;
+      AvSelectionGui.savedFemale = %this.femaleAv;
+
+      // Now that the new values have been set, the call to discard, just installs them
+      AvSelectionGui.DiscardChanges(%this.changeVal);
 
    default:
       echo(%this.message);
-      MessageBoxOK( "Failed to contact web server", "Could not update avatar setup" SPC %this.message);
+      MessageBoxOK( "Failed to contact web server", "Could not update avatar setup:" SPC %this.message);
       AvSelectionGui.DiscardChanges(0);
    }
    %this.schedule(0, delete);

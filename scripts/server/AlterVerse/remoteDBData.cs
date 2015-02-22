@@ -170,7 +170,7 @@ function remoteDBData::saveAuthenticationData( %this )
       %client.createPersistantStats(%this.dbID, %this.dbUserName, "");
    }
    %client.buildRights = %this.rights;
-   %client.Homeworld = %this.homeworld;
+   %client.homeworldID = %this.homeworldID;
    %client.Gender = %this.gender;
    %client.clanID = %this.clanID;
    %client.clanRole = %this.clanRole;
@@ -179,17 +179,18 @@ function remoteDBData::saveAuthenticationData( %this )
    %index = $Server::ClanData.teams.getIndexFromKey(%client.clanID);
    %client.team = $Server::ClanData.teams.getValue(%index);
 
+   if ( (%client.HomeworldID < 0) || (%client.HomeworldID > 5) )
+      %client.HomeworldID = 0;
    if ( %client.avOptions $= "" )
-   {  // They've never saved an avatar setup, get them the default
-      %client.avOptions = ( %client.Gender $= "Male" ) ?
-         MalePlayerData.DefaultSetup[%client.Homeworld] :
-         FemalePlayerData.DefaultSetup[%client.Homeworld];
+   {
+      %avDB = ( %client.Gender $= "Male" ) ? MalePlayerData : FemalePlayerData;
 
-      if ( %client.avOptions $= "" )
-         %client.avOptions = (%client.Gender $= "Male") ? 
-            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
+      if ( %client.subscribe )
+         %client.avOptions = %avDB.DefaultSetup[%client.HomeworldID];
+      else
+         %client.avOptions = %avDB.DefaultMigrantSetup[%client.HomeworldID];
    }
-   echo( %client.Gender @ " from " @ %client.Homeworld SPC 
+   echo( %client.Gender @ " from Homeworld#" @ %client.homeworldID SPC 
       $Server::ClanData.clan[%client.team] @ " Clan, Team=" @ %client.team);
 
    if ( isObject(%client.player) )

@@ -223,12 +223,12 @@ function GameConnection::GetPlayerSettings(%client)
 
    // Get the users homeworld and gender from nuke_bbxdata_data
    // Homeworld is field_id 10, Gender is  is field_id 11
-   %results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '10' AND user_id = '" @ %client.dbUserID @"'");
-   %client.Homeworld = (%results.getNumRows() > 0) ? %results.xdata_value : "Unknown";
-   %results.Delete();
-   %results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '11' AND user_id = '" @ %client.dbUserID @"'");
-   %client.Gender = (%results.getNumRows() > 0) ? %results.xdata_value : "Male";
-   %results.Delete();
+   //%results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '10' AND user_id = '" @ %client.dbUserID @"'");
+   //%client.Homeworld = (%results.getNumRows() > 0) ? %results.xdata_value : "Unknown";
+   //%results.Delete();
+   //%results = DB::Select("xdata_value", "nuke_bbxdata_data", "field_id = '11' AND user_id = '" @ %client.dbUserID @"'");
+   //%client.Gender = (%results.getNumRows() > 0) ? %results.xdata_value : "Male";
+   //%results.Delete();
 
    // Now find a clan ID
    %results = DB::Select("Clan_id, Clan_role_id", "AVClanMembers", "user_id = " @ %client.dbUserID);
@@ -258,23 +258,34 @@ function GameConnection::GetPlayerSettings(%client)
 
    // Now get the players avatar setup
    %fieldName = $AlterVerse::AvSet @ %client.Gender;
-   %results = DB::Select(%fieldName, "AvatarSetup", "user_id = " @ %client.dbUserID);
+   %results = DB::Select("gender,homeworldID,"@%fieldName, "AvatarSetup", "user_id = " @ %client.dbUserID);
    if ( %results.getNumRows() > 0 )
    {
       %evalStr = %client @ ".avOptions = " @ %results @ "." @ %fieldName @ ";";
       echo("Evaluating " @ %evalStr);
       eval(%evalStr);
+      %client.Gender = %results.gender;
+      %client.HomeworldID = %results.homeworldID;
    }
    else
    {  // They've never saved an avatar setup, get them the default
-      %client.avOptions = ( %client.Gender $= "Male" ) ?
-         MalePlayerData.DefaultSetup[%client.Homeworld] :
-         FemalePlayerData.DefaultSetup[%client.Homeworld];
-
-      if ( %client.avOptions $= "" )
-         %client.avOptions = (%client.Gender $= "Male") ? 
-            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
+      %client.avOptions = "";
+      %client.Gender = "Male";
+      %client.HomeworldID = 3;
    }
-   echo( %client.Gender @ " from " @ %client.Homeworld SPC 
+   %results.Delete();
+   
+   if ( (%client.HomeworldID < 0) || (%client.HomeworldID > 5) )
+      %client.HomeworldID = 0;
+   if ( %client.avOptions $= "" )
+   {
+      %avDB = ( %client.Gender $= "Male" ) ? MalePlayerData : FemalePlayerData;
+
+      if ( %client.subscribe )
+         %client.avOptions = %avDB.DefaultSetup[%client.HomeworldID];
+      else
+         %client.avOptions = %avDB.DefaultMigrantSetup[%client.HomeworldID];
+   }
+   echo( %client.Gender @ " from Homeworld#" @ %client.homeworldID SPC 
       $Server::ClanData.clan[%client.team] @ " Clan, Team=" @ %client.team);
 }
