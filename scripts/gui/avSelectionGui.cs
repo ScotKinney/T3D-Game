@@ -2222,7 +2222,10 @@ function AvSelectionGui::onPlayBtn(%this)
 
 function AvSelectionGui::onHomesteadBtn(%this)
 {
-   echo("\nGender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
+   %setupStr = %this.curOpts;
+   if ( %this.curOverlays !$= "" )
+      %setupStr = %setupStr @ "|" @ %this.curOverlays;
+   echo("\nGender: " @ %this.curGender @ ", Homeworld ID: " @ %this.homeworldID @ ", Outfit: #" @ %this.outfit @ ", Setup: " @ %setupStr);
    return;
 }
 
