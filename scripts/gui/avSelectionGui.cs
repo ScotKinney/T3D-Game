@@ -2222,12 +2222,12 @@ function AvSelectionGui::onPlayBtn(%this)
 
 function AvSelectionGui::onHomesteadBtn(%this)
 {
+   echo("\nGender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
    return;
 }
 
 function AvSelectionGui::onSaveBtn(%this)
 {
-   //echo("Gender: " @ %this.curGender @ ", HWID: " @ %this.homeworldID @ ", Outfit: " @ %this.outfit @ ", Setup: " @ %this.curOpts);
    if ( (%this.homeworldID !$= $pref::Player::WorldID) && ($pref::Player::ClanID > 0) )
    {
       %message = %this.addHomeworldMsg(%message);
