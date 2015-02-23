@@ -264,7 +264,7 @@ function GameConnection::GetPlayerSettings(%client)
       %client.HomeworldID = %results.homeworldID;
       %fieldName = $AlterVerse::AvSet @ %client.Gender;
       %evalStr = %client @ ".avOptions = " @ %results @ "." @ %fieldName @ ";";
-      echo("Evaluating " @ %evalStr);
+      //echo("Evaluating " @ %evalStr);
       eval(%evalStr);
    }
    else

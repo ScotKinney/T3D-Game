@@ -394,11 +394,22 @@ function streamFinished( %address, %spawnSphere)
    schedule(100, 0, connectToServer, %address, %spawnSphere, true, false);
 }
 
+function VideoFrame::PlayVideo(%this, %volume)
+{
+   if ( VideoFrame.isLoading() )
+      %this.schedule(100, "PlayVideo", %volume);
+   else
+      VideoFrame.execJavaScript("StartWormhole(" @ %volume @ ");");
+}
 
 function TeleportGui::onWake(%this)
 {
    %screenExtent = Canvas.getExtent();
    %this.onResize(getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+
+   %volume = $pref::SFX::masterVolume * $pref::SFX::channelVolume3;
+   VideoFrame.PlayVideo(%volume);
+   //VideoFrame.execJavaScript("StartWormhole(0);");
 
    PutTLOnTop();  // Bring the TL gui back onto the canvas
 }

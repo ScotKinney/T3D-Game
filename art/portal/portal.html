@@ -1,6 +1,15 @@
+<script type="text/javascript">
+	function StartWormhole(level)
+	{
+		var vidCtrl = document.getElementById("video1");
+		vidCtrl.volume = level;
+		vidCtrl.play();
+	}
+</script>
+
 <html>
   <body>
-    <video id="video1" name="video1" autoplay>
+    <video id="video1" name="video1" preload="auto">
       <source src="portal.webm" type="video/webm">
     </video>
   </body>

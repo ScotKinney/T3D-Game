@@ -1237,7 +1237,7 @@ function AvSelectionGui::ShowOptionChoices(%this)
          %baseOpts = %baseOpts @ "," @ %tmpStr;
    }
 
-   echo("\n Options: " @ %this.curOpts @ " -- Overlays: " @ %this.curOverlays);
+   //echo("\n Options: " @ %this.curOpts @ " -- Overlays: " @ %this.curOverlays);
    for ( %i = 0; %i < %this.numPlanks; %i++ )
    {
       // See if an option for this plank is selected in the current setup
@@ -1250,7 +1250,7 @@ function AvSelectionGui::ShowOptionChoices(%this)
       if (( %this.curGender == 1 ) && (%i == 4))
          %this.initMakeup();  // Initialize makup options after skin tone has been selected
 
-      echo("Plank #" @ %i @ ", " @ %this.plank[%i]->PlankText.text @ " optList:" @ %this.plank[%i].optList);
+      //echo("Plank #" @ %i @ ", " @ %this.plank[%i]->PlankText.text @ " optList:" @ %this.plank[%i].optList);
       for ( %j = 0; (%j < %this.plank[%i].numOptions) && !%optFound; %j++ )
       {
          %plankOpt = getCommaWord(%this.plank[%i].optList, %j);
@@ -1264,7 +1264,7 @@ function AvSelectionGui::ShowOptionChoices(%this)
                %optFound = true;
                %this.plank[%i].curOption = %j;
                %this.plank[%i].curValue = %plankOpt;
-               echo("Matched option: " @ %plankOpt);
+               //echo("Matched option: " @ %plankOpt);
                break;
             }
          }
@@ -1282,7 +1282,7 @@ function AvSelectionGui::ShowOptionChoices(%this)
                   %optFound = true;
                   %this.plank[%i].curOption = %j;
                   %this.plank[%i].curValue = %baseOpt;
-                  echo("Matched migrant option: " @ %baseOpt);
+                  //echo("Matched migrant option: " @ %baseOpt);
                   break;
                }
             }
@@ -1293,7 +1293,7 @@ function AvSelectionGui::ShowOptionChoices(%this)
       {  // The option was still not found, select the first item in the list
          %this.plank[%i].curOption = 0;
          %this.plank[%i].curValue = getCommaWord(%this.plank[%i].optList, 0);
-         echo("Gave default option: " @ %this.plank[%i].curValue);
+         //echo("Gave default option: " @ %this.plank[%i].curValue);
       }
    }
 
