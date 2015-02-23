@@ -918,8 +918,8 @@ function AvSelectionGui::onTintBtn(%this, %tintID)
 function AvSelectionGui::onArrowBtn(%this, %plankNum, %direction)
 {
    if ( %plankNum == 0 )
-   {  // TODO: Check to save changes before switching.
-      if ( %this.hasChanges() )
+   {  // Check to save changes before switching.
+      if ( %this.hasChanges(false) )
          %this.confirmGenderChange();
       else
       {
@@ -1203,6 +1203,7 @@ function AvSelectionGui::genderChange(%this)
    %this.checkOutfit();
    %this.makeCurrentOutfit();
    %this.setAvModel();
+   %this.updateButtons();
 }
 
 function AvSelectionGui::ShowOptionChoices(%this)
@@ -2147,12 +2148,13 @@ function AvSelectionGui::updateButtons(%this)
 {
    %this-->PlayButton.setActive(true);
    %this-->HomesteadButton.setActive(true);
-   %this-->SaveButton.setActive(%this.hasChanges());
+   %this-->SaveButton.setActive(%this.hasChanges(true));
 }
 
-function AvSelectionGui::hasChanges(%this)
+function AvSelectionGui::hasChanges(%this, %checkGender)
 {
-   if ( %this.curGender != (($pref::Player::Gender $= "MALE") ? 0 : 1) )
+   if ( %checkGender &&
+         %this.curGender != (($pref::Player::Gender $= "MALE") ? 0 : 1) )
       return true;   // Gender changed
 
    if ( %this.homeworldID !$= $pref::Player::WorldID )
@@ -2205,7 +2207,7 @@ function AvSelectionGui::BeginMission(%this)
 
 function AvSelectionGui::onPlayBtn(%this)
 {
-   if ( %this.hasChanges() )
+   if ( %this.hasChanges(true) )
    {
       %message = "Save current avatar setup for use in game?";
 

@@ -259,8 +259,12 @@ package GameCore
          %client.clanRole = "0";
          %client.team = "0";
          %client.skullLevel = 10;
-         %client.avOptions = ($pref::Player::Gender $= "Male") ? 
-            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
+
+         if ( $pref::Player::Avatar !$= "" )
+            %client.avOptions = $pref::Player::Avatar @ "|" @ $pref::Player::AvOverlay;
+         else
+            %client.avOptions = ($pref::Player::Gender $= "Male") ?
+               MalePlayerData.DefaultSetup[0] : FemalePlayerData.DefaultSetup[0];
          if(!isObject(%client.pInv))
             %client.pInv = new ArrayObject();
 
@@ -279,8 +283,11 @@ package GameCore
       if ( %client.getAddress() $= "local" )
       {  // The player will be created already, so set default
          %client.Gender = $pref::Player::Gender;
-         %client.avOptions = ($pref::Player::Gender $= "Male") ? 
-            MalePlayerData.DefaultSetup : FemalePlayerData.DefaultSetup;
+         if ( $pref::Player::Avatar !$= "" )
+            %client.avOptions = $pref::Player::Avatar @ "|" @ $pref::Player::AvOverlay;
+         else
+            %client.avOptions = ($pref::Player::Gender $= "Male") ?
+               MalePlayerData.DefaultSetup[0] : FemalePlayerData.DefaultSetup[0];
          return "";
       }
 
