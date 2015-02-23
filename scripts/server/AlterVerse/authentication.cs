@@ -257,15 +257,15 @@ function GameConnection::GetPlayerSettings(%client)
    %client.team = $Server::ClanData.teams.getValue(%index);
 
    // Now get the players avatar setup
-   %fieldName = $AlterVerse::AvSet @ %client.Gender;
-   %results = DB::Select("gender,homeworldID,"@%fieldName, "AvatarSetup", "user_id = " @ %client.dbUserID);
+   %results = DB::Select("*", "AvatarSetup", "user_id = " @ %client.dbUserID);
    if ( %results.getNumRows() > 0 )
    {
+      %client.Gender = %results.gender;
+      %client.HomeworldID = %results.homeworldID;
+      %fieldName = $AlterVerse::AvSet @ %client.Gender;
       %evalStr = %client @ ".avOptions = " @ %results @ "." @ %fieldName @ ";";
       echo("Evaluating " @ %evalStr);
       eval(%evalStr);
-      %client.Gender = %results.gender;
-      %client.HomeworldID = %results.homeworldID;
    }
    else
    {  // They've never saved an avatar setup, get them the default
