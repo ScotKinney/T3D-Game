@@ -120,14 +120,8 @@ function AvSelectionGui::onWake(%this)
    %this.LoadPlayerMats();
    exec("art/players/base/clientExec.cs");
 
-   Canvas.popDialog(AVMainGui);
-
    %this.setupAvAnimations();
    //%this.outfit = $pref::Player::Outfit;
-
-   // Startup the background music
-   stopIntroMusic();
-   %this.playSelectorMusic();
 
    if ( %this.optionsSet )
    {  // setup the correct model and install the text
@@ -144,6 +138,11 @@ function AvSelectionGui::onWake(%this)
 
    %screenExtent = Canvas.getExtent();
    %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+
+   // Startup the welcome message
+   stopIntroMusic();
+   //%this.playWelcomeMsg();
+   %this.schedule(2000, "playWelcomeMsg");
 
    // Pop/Push the chat dialog so it is on top if connected to chat server
    if ( MainChatHud.isAwake() )
@@ -225,6 +224,7 @@ function AvSelectionGui::onSleep(%this)
 
    // Stop the background music
    %this.stopSelectorMusic();
+   %this.stopWelcomeMsg();
 
    // Remove any planks created for selections
    if ( %this.hasPlanks )
@@ -2044,6 +2044,28 @@ function AvSelectionGui::cloneMaterial(%this, %matIdx, %newName, %oldMat )
    if ( !isObject(%newMat) )
       return 0;
    return %newMat;
+}
+
+function AvSelectionGui::playWelcomeMsg(%this)
+{
+   %this.welcomeSFXProfile = new SFXProfile()
+   {
+      filename    = "art/sound/ui/AvCustomizerWelcome.ogg";
+      description = AudioGui;
+   };
+   %this.welcomeMsgId = sfxPlay(%this.welcomeSFXProfile);
+   %this.schedule(12000, "stopWelcomeMsg");
+   %this.schedule(13000, "PlaySelectorMusic");
+}
+
+function AvSelectionGui::stopWelcomeMsg(%this)
+{
+   if ( isObject(%this.welcomeSFXProfile) )
+   {
+      sfxStop(%this.welcomeMsgId);
+      %this.welcomeSFXProfile.delete();
+      %this.welcomeSFXProfile = 0;
+   }
 }
 
 function AvSelectionGui::playSelectorMusic(%this)

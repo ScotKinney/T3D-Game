@@ -382,3 +382,10 @@ singleton GuiControlProfile( GuiAwesomiumProfile )
    canKeyFocus = true;   
    category = "Core";
 };
+
+singleton GuiControlProfile( GuiNIAwesomiumProfile : GuiAwesomiumProfile)
+{
+   tab = false;
+   canKeyFocus = false;   
+   category = "Core";
+};

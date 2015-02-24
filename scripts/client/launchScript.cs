@@ -303,10 +303,16 @@ function startIntroVideo()
 {
    // Play the teleport video
    if ( !isObject(TeleportGui) )
+   {
       exec("art/gui/teleportGui.gui");
+      exec("scripts/gui/teleportGui.cs");
+   }
    
    Canvas.pushDialog(TeleportGui);
-   schedule(10000, 0, "stopIntroVideo");
+   
+   // Schedule the gui to pop after the video (10s or 59s)
+   %videoTime = ($pref::shortIntro ? 10000 : 57000);
+   TeleportGui.schedule(%videoTime, "cancelVideo");
 }
 
 function stopIntroVideo()
@@ -319,35 +325,6 @@ function stopIntroVideo()
 
    // Start connection to the chat server
    connectClientChat();
-
-   // Initialize Mumble
-   //if ( $pref::Mumble::useVoice )
-      //LaunchMumble($currentUsername);
-   //$Mumble::InLobby = true;
-   //$Mumble::Context = "Lobby";
-   //$Mumble::ModeVal = 0;
-   //$Mumble::ModeStr = "Player+Camera";
-//
-   //if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
-   //{  // If it's a developer, bring up the server selection gui.
-      //if ( !isObject(ServerSelGui) )
-      //{
-         //exec("art/gui/devGuis/devProfiles.cs");
-         //exec("art/gui/devGuis/serverSel.gui");
-         //exec("art/gui/devGuis/serverSelGui.cs");
-//
-         //if ( $pref::HostMultiPlayer $= "" )
-            //$pref::HostMultiPlayer = "1";
-         //exec("art/gui/devGuis/chooseLevel.gui");
-         //exec("art/gui/devGuis/chooseLevelGui.cs");
-      //}
-      //canvas.pushDialog(ServerSelGui);
-   //}
-   //else
-   //{  // For all others load the level selected by the login script.
-      //loadLoadingGui();
-      //connectToServer($serverToJoin, "", false, false);
-   //}
 
    // Show the avatar customizer
    Canvas.pushDialog(AvSelectionGui);
@@ -392,71 +369,4 @@ function streamFinished( %address, %spawnSphere)
 {
    schedule(100, 0, loadLoadingGui);
    schedule(100, 0, connectToServer, %address, %spawnSphere, true, false);
-}
-
-function VideoFrame::PlayVideo(%this, %volume)
-{
-   if ( VideoFrame.isLoading() )
-      %this.schedule(100, "PlayVideo", %volume);
-   else
-      VideoFrame.execJavaScript("StartWormhole(" @ %volume @ ");");
-}
-
-function TeleportGui::onWake(%this)
-{
-   %screenExtent = Canvas.getExtent();
-   %this.onResize(getWord(%screenExtent, 0), getWord(%screenExtent, 1));
-
-   %volume = $pref::SFX::masterVolume * $pref::SFX::channelVolume3;
-   VideoFrame.PlayVideo(%volume);
-   //VideoFrame.execJavaScript("StartWormhole(0);");
-
-   PutTLOnTop();  // Bring the TL gui back onto the canvas
-}
-
-function TeleportGui::onResize(%this, %newWidth, %newHeight)
-{
-   // The portal opening is 691x691 at 455, 98 on the 1600x900 frame image
-   %wideAR = 16/9;
-   %cropX = 0;
-   %cropY = 0;
-   if ( (%newWidth/%newHeight) < %wideAR )
-   {
-      %frameHeight = %newHeight;
-      %frameWidth = mFloor(%newHeight * %wideAR);
-      %frameX = mFloor((%newWidth - %frameWidth) / 2);
-      %frameY = 0;
-      %portScale = %newHeight/900;
-      %cropX = mRound(((1600 * %portScale) - %newWidth) / 2);
-      %portX = mRound(455 * %portScale) - %cropX;
-      %portY = mRound(98 * %portScale);
-   }
-   else
-   {
-      %frameWidth = %newWidth;
-      %frameHeight = mFloor(%newWidth / %wideAR);
-      %frameY = mFloor((%newHeight - %frameHeight) / 2);
-      %frameX = 0;
-      %portScale = %newWidth/1600;
-      %cropY = mRound(((900 * %portScale) - %newHeight) / 2);
-      %portX = mRound(455 * %portScale);
-      %portY = mRound(98 * %portScale) - %cropY;
-   }
-   %portSize = mRound(691 * %portScale);
-
-   // The video res is 1280x720, 1296x736 with frame
-   %vidScale = %portSize/736;
-   %vidWidth = mRound(1296 * %vidScale);
-   %vidX = %portX - (mRound((%vidWidth - %portSize) / 2));
-
-   VideoFrame.resize(%vidX, %portY, %vidWidth, %portSize);
-   VideoMask.resize(%frameX, %frameY, %frameWidth, %frameHeight);
-
-   // Set the curtain scale and rotation for stereo view mode.
-   %xScale = %newWidth/%newHeight;
-   %guiScale = %xScale @ " 1 1";
-   setGuiCurtainScale(%guiScale);
-   // give a 15 degree rotation amount
-   %maxRot = mDegToRad(15) SPC "0" SPC mDegToRad(15 * %xScale);
-   setGuiCurtainMaxRot(%maxRot);
 }

@@ -1,16 +1,27 @@
 <script type="text/javascript">
-	function StartWormhole(level)
-	{
-		var vidCtrl = document.getElementById("video1");
-		vidCtrl.volume = level;
-		vidCtrl.play();
-	}
+    function StartWormhole(level, longVid)
+    {
+        var vidCtrl = document.getElementById("video1");
+        if (longVid)
+            vidCtrl.src = "portal_long.webm";
+        else
+            vidCtrl.src = "portal.webm";
+
+        vidCtrl.volume = level;
+        vidCtrl.play();
+        vidCtrl.playbackRate = 1.0;
+    }
 </script>
+<style type="text/css">
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+</style>
 
 <html>
   <body>
-    <video id="video1" name="video1" preload="auto">
-      <source src="portal.webm" type="video/webm">
+    <video id="video1" name="video1" style="position:absolute;top:0px;left:0px;overflow: hidden;">
     </video>
   </body>
 </html>

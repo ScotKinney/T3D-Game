@@ -143,7 +143,10 @@ function MainChatHud::setChatHudLength( %this, %length )
    //epls
    %h = getWord(Canvas.getExtent(),1);
    %h = %h - getWord(OuterChatHud.getExtent(),1) - $ChatAnchor;
-   OuterChatHud.setPosition(getWord(OuterChatHud.getPosition(),0), %h);
+   //OuterChatHud.setPosition(getWord(OuterChatHud.getPosition(),0), %h);
+   MainChatHud.resize(0, 0, getWord(Canvas.getExtent(),0), getWord(Canvas.getExtent(),1));
+   OuterChatHud.resize(getWord(OuterChatHud.getPosition(),0), %h,
+         getWord(OuterChatHud.extent, 0), getWord(OuterChatHud.extent, 1));
    %this.currentLength = %length;
 }
 

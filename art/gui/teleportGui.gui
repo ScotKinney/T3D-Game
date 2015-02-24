@@ -4,8 +4,8 @@ new GuiBitmapCtrl(TeleportGui) {
    position = "0 0";
    extent = "1280 720";
    minExtent = "8 8";
-   horizSizing = "width";
-   vertSizing = "height";
+   horizSizing = "right";
+   vertSizing = "bottom";
    profile = "GuiDefaultProfile";
    visible = "1";
    active = "1";
@@ -15,19 +15,20 @@ new GuiBitmapCtrl(TeleportGui) {
    canSave = "1";
    canSaveDynamicFields = "1";
    
-   new AwGui(VideoFrame)
+   new AwGui()
    {
       position = "0 0";
-      Framerate = "60";
+      Framerate = "30";
       Resolution = "1296 736";
       extent = "640 480";
       minExtent = "8 8";
       horizSizing = "right";
       vertSizing = "bottom";
       StartURL = "art/portal/portal.html";
-      Profile = "GuiAwesomiumProfile";
+      Profile = "GuiNIAwesomiumProfile";
+      internalName = "VideoFrame";
    };
-   new GuiBitmapCtrl(VideoMask) {
+   new GuiBitmapCtrl() {
       wrap = "0";
       horizBias = "center";
       vertBias = "center";
@@ -41,9 +42,20 @@ new GuiBitmapCtrl(TeleportGui) {
       visible = "1";
       active = "1";
       tooltipProfile = "GuiToolTipProfile";
+      internalName = "VideoMask";
       hovertime = "1000";
       isContainer = "1";
       canSave = "1";
       canSaveDynamicFields = "1";
+   };
+   new GuiInputCtrl(IntroInputCtrl)
+   {
+      position = "0 0";
+      extent = "1280 720";
+      minExtent = "8 8";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      Profile = "GuiInputCtrlProfile";
+      internalName = "VideoInput";
    };
 };
