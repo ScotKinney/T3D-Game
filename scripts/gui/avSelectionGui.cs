@@ -222,7 +222,11 @@ function AvSelectionGui::onSleep(%this)
    %this.RemoveMaterials();
    AvSelModelView.setModel("");
 
-   // Stop the background music
+   // Stop the background music or welcome message if playing
+   if ( isEventPending(%this.welcomeSched) )
+      cancel(%this.welcomeSched);
+   if ( isEventPending(%this.musicSched) )
+      cancel(%this.musicSched);
    %this.stopSelectorMusic();
    %this.stopWelcomeMsg();
 
@@ -2054,8 +2058,8 @@ function AvSelectionGui::playWelcomeMsg(%this)
       description = AudioGui;
    };
    %this.welcomeMsgId = sfxPlay(%this.welcomeSFXProfile);
-   %this.schedule(12000, "stopWelcomeMsg");
-   %this.schedule(13000, "PlaySelectorMusic");
+   %this.welcomeSched = %this.schedule(12000, "stopWelcomeMsg");
+   %this.musicSched = %this.schedule(13000, "PlaySelectorMusic");
 }
 
 function AvSelectionGui::stopWelcomeMsg(%this)

@@ -118,10 +118,10 @@ function PlayGui::onResize(%this, %newWidth, %newHeight)
    
    // Position the prefs and invite buttons on the left edge of the screen
    %this-->PrefsBtn.resize(0, %rowPos, 80, 40);
-   %this-->OpenSiteBtn.resize(80, %rowPos, 107, 40);
+   //%this-->OpenSiteBtn.resize(80, %rowPos, 107, 40);
 
    // Position the exit and citizen buttons on the right edge of the screen
-   %this-->FriendBtn.resize(%newWidth - 187, %rowPos, 107, 40);
+   //%this-->FriendBtn.resize(%newWidth - 187, %rowPos, 107, 40);
    %this-->ExitBtn.resize(%newWidth - 80, %rowPos, 80, 40);
 
    // and center
