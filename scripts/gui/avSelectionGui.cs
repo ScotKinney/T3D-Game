@@ -252,10 +252,12 @@ function AvSelectionGui::onSleep(%this)
    cleanupTexturePool();
    flushTextureCache();
 
-
    // restore the right mouse bind
    if ( %this.rightMouseBind !$= "" )
       globalActionMap.bind(mouse, button1, %this.rightMouseBind);
+
+   // Delete the customizer because it won't be used again
+   schedule(10, 0, "DeleteCustomizer");
 }
 
 function AvSelectionGui::onResize(%this, %newWidth, %newHeight)

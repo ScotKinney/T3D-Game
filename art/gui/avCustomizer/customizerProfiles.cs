@@ -169,3 +169,23 @@ singleton GuiControlProfile( AVPopupButtonProfile : AVInputSoundProfile )
    justify = "center";
    category = "AVCustomizer";
 };
+
+function DeleteCustomizer()
+{  // Remove the avatar customizer guis and any profiles used only by them
+   AvOverlays.delete();
+   AvMiscOptions.delete();
+   AvSelectionGui.delete();
+
+   AVPopupButtonProfile.delete();
+   AVPopupScrollProfile.delete();
+   AVPopupProfile.delete();
+   AVPlayButtonProfile.delete();
+   AVAEGLLCProfile.delete();
+   AVScrollButtonProfile.delete();
+   AVScrollTextProfile.delete();
+   AVScrollTitleProfile.delete();
+   AVInfoTextProfile.delete();
+   AVHomeworldTitleProfile.delete();
+   AVPlankButtonProfile.delete();
+   AVPlankTextProfile.delete();
+}
