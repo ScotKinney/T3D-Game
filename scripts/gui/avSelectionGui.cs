@@ -2295,11 +2295,11 @@ function AvSelectionGui::addHomeworldMsg(%this, %message)
 
    if ( $pref::Player::ClanLeader )
    {
-      %hMsg = "<color:dd1111>Warning:<color:ffffff> You are the leader of the " @ $pref::Player::ClanName @ " clan. If you change Homeworld, your clan will be disbanded!";
+      %hMsg = "<color:dd1111>Warning:<color:ffffff> You are the leader of the " @ $pref::Player::ClanName @ " alliance. If you change Homeworld, your alliance will be disbanded!";
    }
    else if ( $pref::Player::ClanID > 0 )
    {
-      %hMsg = "Changeing your Homeworld will automatically remove you from the " @ $pref::Player::ClanName @ " clan.";
+      %hMsg = "Changeing your Homeworld will automatically remove you from the " @ $pref::Player::ClanName @ " alliance.";
    }
 
    if ( %message $= "" )
