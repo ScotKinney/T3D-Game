@@ -37,6 +37,7 @@ singleton Material(matBM_Face)
 {
    mapTo = "BM_Face";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Face";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Face_spec"
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
 };
@@ -45,6 +46,7 @@ singleton Material(matBM_Body)
 {
    mapTo = "BM_Body";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Body";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Body_spec"
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
 };
@@ -53,6 +55,7 @@ singleton Material(matBM_Limbs)
 {
    mapTo = "BM_Limbs";
    diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Limbs";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Limbs_spec"
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
 };
