@@ -1,7 +1,9 @@
-//-----------------------------------------------------------------------------
-// Torque 3D
-// Copyright (C) GarageGames.com, Inc.
-//-----------------------------------------------------------------------------
+///////////FootStep Sounds////////////////////////////////////////
+//  FootSoftSound   = "FootStepGrass1Sound" =  footstepSoundId = 0;
+//  FootHardSound   = "FootStepRock1Sound" =  footstepSoundId = 1;
+//  FootMetalSound  = "FootStepMetal1Sound" =  footstepSoundId = 2;
+//  FootSnowSound   = "FootStepSnow1Sound" =   footstepSoundId = 3;
+///////////////////////////////////////////////////////////////////
 
 
 singleton Material(Ter_Grass)   
