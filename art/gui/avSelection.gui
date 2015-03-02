@@ -177,7 +177,7 @@
    };
 
    new GuiBitmapCtrl() {
-      bitmap = "art/gui/avCustomizer/Plank";
+      bitmap = "art/gui/avCustomizer/button_trans";
       wrap = "0";
       position = "591 25";
       extent = "433 148";
@@ -263,7 +263,7 @@
       internalName = "GenderBtnRt";
    };
    new GuiBitmapCtrl() {
-      bitmap = "art/gui/avCustomizer/Plank2";
+      bitmap = "art/gui/avCustomizer/button_trans";
       wrap = "0";
       position = "591 25";
       extent = "433 148";
@@ -281,7 +281,7 @@
       canSaveDynamicFields = "1";
    };
    new GuiTextCtrl() {
-      text = "HomeWorld";
+      text = "Home World";
       maxLength = "1024";
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -349,7 +349,7 @@
       internalName = "HomeworldBtnRt";
    };
    new GuiBitmapCtrl() {
-      bitmap = "art/gui/avCustomizer/Plank5";
+      bitmap = "art/gui/avCustomizer/button_trans";
       wrap = "0";
       position = "591 25";
       extent = "433 148";
@@ -437,7 +437,7 @@
 
    // Tint Plank
    new GuiBitmapCtrl() {
-      bitmap = "art/gui/avCustomizer/Plank8";
+      bitmap = "art/gui/avCustomizer/button_trans";
       wrap = "0";
       position = "591 25";
       extent = "270 30";
@@ -458,7 +458,7 @@
    // Accessories and tatoos buttons
    new GuiBitmapButtonTextCtrl() {
       text = "Tattoos";
-      bitmap = "art/gui/avCustomizer/Plank6";
+      bitmap = "art/gui/avCustomizer/button_trans";
       groupNum = "-1";
       buttonType = "PushButton";
       useMouseEvents = "1";
@@ -480,7 +480,7 @@
    };
    new GuiBitmapButtonTextCtrl() {
       text = "Accessories";
-      bitmap = "art/gui/avCustomizer/Plank7";
+      bitmap = "art/gui/avCustomizer/button_trans";
       groupNum = "-1";
       buttonType = "PushButton";
       useMouseEvents = "1";

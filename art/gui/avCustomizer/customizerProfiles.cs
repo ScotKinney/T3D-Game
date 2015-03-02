@@ -10,7 +10,7 @@ singleton GuiControlProfile (AVPlankTextProfile)
    justify = "center";
    fontColor = "210 210 210 255";
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    borderThickness = "0";
    category = "AVCustomizer";
 };
@@ -19,7 +19,7 @@ singleton GuiControlProfile( AVPlankButtonProfile : AVInputSoundProfile )
 {
    fontSize = 16;
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    fontColor = "210 210 210 255";
    fontColorHL = "255 255 255 255";
    fontColorNA = "100 100 100 255";
@@ -37,7 +37,7 @@ singleton GuiControlProfile (AVHomeworldTitleProfile)
    justify = "center";
    fontColor = "255 255 255 255";
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    borderThickness = "0";
    category = "AVCustomizer";
 };
@@ -62,7 +62,7 @@ singleton GuiControlProfile (AVScrollTitleProfile)
    justify = "center";
    fontColor = "0 0 0 255";
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    borderThickness = "0";
    category = "AVCustomizer";
 };
@@ -97,7 +97,7 @@ singleton GuiControlProfile (AVScrollButtonProfile : AVInputSoundProfile)
    justify = "center";
    fontColor = "0 0 0 255";
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    borderThickness = "0";
    category = "AVCustomizer";
 };
@@ -119,7 +119,7 @@ singleton GuiControlProfile( AVPlayButtonProfile : AVInputSoundProfile )
 {
    fontSize = 36;
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    fontColor = "210 210 210 255";
    fontColorHL = "255 255 255 255";
    fontColorNA = "100 100 100 255";
@@ -160,7 +160,7 @@ singleton GuiControlProfile( AVPopupButtonProfile : AVInputSoundProfile )
 {
    fontSize = 16;
    //fontType = "Trajan Pro Bold";
-   fontType = "Tahoma Bold";
+   fontType = "Tahoma";
    fontColor = "210 210 210 255";
    fontColorHL = "255 255 255 255";
    fontColorNA = "100 100 100 255";
