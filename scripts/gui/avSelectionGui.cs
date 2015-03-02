@@ -960,7 +960,7 @@ function AvSelectionGui::onArrowBtn(%this, %plankNum, %direction)
 
 function AvSelectionGui::onSubscribePressed(%this)
 {
-   gotoWebPage("http://www.alterverse.com/navbarnew.asp");
+   gotoWebPage("http://www.alterverse.com/modules.php?name=subscribe");
 }
 
 function AvSelectionGui::clanChanged(%this, %updateModel)
@@ -2076,7 +2076,7 @@ function AvSelectionGui::playSelectorMusic(%this)
 {
    %this.bgMusic = new SFXProfile()
    {
-      filename    = "art/sound/avConvert.ogg";
+      filename    = "art/sound/loading/SkyCityIntro.ogg";
       description = AudioMusicLoop2D;
    };
    %this.bdMusicId = sfxPlay(%this.bgMusic);
