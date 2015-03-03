@@ -48,7 +48,6 @@ singleton Material(matBM_Body)
    specularPower[0] = "1";
    pixelSpecular[0] = "0";
    diffuseMap[0] = "art/players/base/BaseMale/BM_Body.dds";
-   specularMap[0] = "art/players/base/BaseMale/BM_Body_spec.dds";
 };
 
 singleton Material(matBM_Limbs)
@@ -57,7 +56,6 @@ singleton Material(matBM_Limbs)
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
    diffuseMap[0] = "art/players/base/BaseMale/BM_Limbs.dds";
-   specularMap[0] = "art/players/base/BaseMale/BM_S4_Limbs_spec.dds";
 };
 
 
