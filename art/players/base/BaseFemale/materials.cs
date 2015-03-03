@@ -1,10 +1,12 @@
 /////////////////BODY
 
-singleton Material(matBF_Body)
+singleton Material(matBF_Face)
 {
-   mapTo = "BF_Body";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_S1_Body";
+   mapTo = "BF_Face";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_S3_FaceM1.dds";
    materialTag0 = "Avatar_BF";
+   specularMap[0] = "art/players/base/BaseFemale/BF_S3_FaceM1_spec.dds";
+   specularPower[0] = "8";
 };
 
 singleton Material(matBF_Face)
@@ -17,8 +19,9 @@ singleton Material(matBF_Face)
 singleton Material(matBF_Limbs)
 {
    mapTo = "BF_Limbs";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_S1_Limbs";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_S3_Limbs.dds";
    materialTag0 = "Avatar_BF";
+   specularMap[0] = "art/players/base/BaseFemale/BF_S3_Limbs_spec.dds";
 };
 
 singleton Material(matBF_Eyes)
