@@ -38,6 +38,7 @@ singleton Material(matBM_Face)
    mapTo = "BM_Face";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Face.dds";
 };
 
 singleton Material(matBM_Body)
