@@ -36,7 +36,7 @@ singleton Material(matBM_Eyes)
 singleton Material(matBM_Face)
 {
    mapTo = "BM_Face";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_Face.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Face.dds";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
    specularMap[0] = "art/players/base/BaseMale/BM_S1_Face_spec.dds";

@@ -1829,6 +1829,24 @@ function AvSelectionGui::cloneMaterial(%this, %matIdx, %newName, %oldMat )
    if ( %diffuseMap $= "" )
       %diffuseMap = %oldMat.diffuseMap[0];
 
+   // See if there is a matching normal or specular map to apply
+   %normalMap = "";
+   %specMap = "";
+   if ( %diffuseMap !$= "" )
+   {
+      %baseName = filePath(%diffuseMap) @ "/" @ fileBase(%diffuseMap);
+      %testStr = %baseName @ "_nrm";
+      if ( isFile(%testStr @ ".dds") || isFile(%testStr @ ".jpg") || isFile(%testStr @ ".png") )
+         %normalMap = %testStr;
+      %testStr = %baseName @ "_spec";
+      if ( isFile(%testStr @ ".dds") || isFile(%testStr @ ".jpg") || isFile(%testStr @ ".png") )
+         %specMap = %testStr;
+   }
+   if ( %normalMap $= "" )
+      %normalMap = %oldMat.normalMap[0];
+   if ( %specMap $= "" )
+      %specMap = %oldMat.specularMap[0];
+
    %newMat = new Material(%newName) 
    {
       diffuseMap[0] = %diffuseMap;
@@ -1867,7 +1885,7 @@ function AvSelectionGui::cloneMaterial(%this, %matIdx, %newName, %oldMat )
       detailScale[2] = %oldMat.detailScale[2];
       detailScale[3] = %oldMat.detailScale[3];
 
-      normalMap[0] = %oldMat.normalMap[0];
+      normalMap[0] = %normalMap;
       normalMap[1] = %oldMat.normalMap[1];
       normalMap[2] = %oldMat.normalMap[2];
       normalMap[3] = %oldMat.normalMap[3];
@@ -1897,7 +1915,7 @@ function AvSelectionGui::cloneMaterial(%this, %matIdx, %newName, %oldMat )
       pixelSpecular[2] = %oldMat.pixelSpecular[2];
       pixelSpecular[3] = %oldMat.pixelSpecular[3];
 
-      specularMap[0] = %oldMat.specularMap[0];
+      specularMap[0] = %specMap;
       specularMap[1] = %oldMat.specularMap[1];
       specularMap[2] = %oldMat.specularMap[2];
       specularMap[3] = %oldMat.specularMap[3];
