@@ -56,7 +56,7 @@ singleton Material(matBM_Limbs)
    mapTo = "BM_Limbs";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_S4_Limbs.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Limbs.dds";
    specularMap[0] = "art/players/base/BaseMale/BM_S4_Limbs_spec.dds";
 };
 
