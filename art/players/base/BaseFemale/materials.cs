@@ -3,25 +3,22 @@
 singleton Material(matBF_Face)
 {
    mapTo = "BF_Face";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_S3_FaceM1.dds";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Face.dds";
    materialTag0 = "Avatar_BF";
-   specularMap[0] = "art/players/base/BaseFemale/BF_S3_FaceM1_spec.dds";
-   specularPower[0] = "8";
 };
 
-singleton Material(matBF_Face)
+singleton Material(matBF_Body)
 {
-   mapTo = "BF_Face";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_S1_FaceM1";
+   mapTo = "BF_Body";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Body";
    materialTag0 = "Avatar_BF";
 };
 
 singleton Material(matBF_Limbs)
 {
    mapTo = "BF_Limbs";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_S3_Limbs.dds";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Limbs.dds";
    materialTag0 = "Avatar_BF";
-   specularMap[0] = "art/players/base/BaseFemale/BF_S3_Limbs_spec.dds";
 };
 
 singleton Material(matBF_Eyes)
@@ -581,4 +578,12 @@ singleton Material(BF_Boots_FJ)
    mapTo = "BF_Boots_FJ";
    diffuseMap[0] = "art/players/base/BaseFemale/FreeJack/BF_Boots_FJ";
    materialTag0 = "Avatar_BF";
+};
+
+singleton Material(DefaultMaterial8)
+{
+   mapTo = "BF_Body";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Body.dds";
+   specularMap[0] = "art/players/base/BaseFemale/BF_Body_spec.dds";
+   materialTag0 = "Avatar_BM";
 };
