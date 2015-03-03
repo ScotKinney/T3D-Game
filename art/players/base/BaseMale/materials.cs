@@ -45,12 +45,12 @@ singleton Material(matBM_Face)
 singleton Material(matBM_Body)
 {
    mapTo = "BM_Body";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Body.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Body.dds";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
    specularPower[0] = "1";
-   pixelSpecular[0] = "1";
-   specularMap[0] = "art/players/base/BaseMale/BM_S1_Body_spec.dds";
+   pixelSpecular[0] = "0";
+   specularMap[0] = "art/players/base/BaseMale/BM_Body_spec.dds";
 };
 
 singleton Material(matBM_Limbs)
