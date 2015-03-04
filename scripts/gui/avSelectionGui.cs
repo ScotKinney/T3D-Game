@@ -1618,7 +1618,7 @@ function AvSelectionGui::UpdateAvatarDisplay(%this)
    AvSelModelView.setCameraRot("0 0 0");
 
    AvSelModelView.zoom(50);//20  // Zoom out some when switching models.
-   AvSelModelView.SetThread(0, "Root", 0, 1);
+   AvSelModelView.SetThread(0, "C_Idle", 0, 1);
 
    
    // If we have animations, shedule one.
@@ -2114,7 +2114,7 @@ function AvSelectionGui::stopSelectorMusic(%this)
 
 function AvSelectionGui::playBaseAnim(%this)
 {
-   AvSelModelView.SetThread(0, "Root", 0, 1);
+   AvSelModelView.SetThread(0, "C_Idle", 0, 1);
    %this.setAnimSchedule();
 }
 
