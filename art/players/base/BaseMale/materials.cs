@@ -33,30 +33,62 @@ singleton Material(matBM_Eyes)
    materialTag0 = "Avatar_BM";
 };
 
-singleton Material(matBM_Face)
-{
-   mapTo = "BM_Face";
-   materialTag0 = "Avatar_BM";
-   useAnisotropic[0] = "1";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_Face.dds";
-};
-
 singleton Material(matBM_Body)
 {
    mapTo = "BM_Body";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Body.dds";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Body_spec.dds";
+   normalMap[0] = "art/players/base/BaseMale/BM_S1_Body_nrm.dds";
+   pixelSpecular[0] = "1";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "128";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   specularPower[0] = "1";
-   pixelSpecular[0] = "0";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_Body.dds";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+};
+
+singleton Material(matBM_Face)
+{
+   mapTo = "BM_Face";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Face.dds";
+   normalMap[0] = "art/players/base/BaseMale/BM_S1_Face_nrm.dds";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Face_spec.dds";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
+   materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
 };
 
 singleton Material(matBM_Limbs)
 {
    mapTo = "BM_Limbs";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Limbs.dds";
+   specularMap[0] = "art/players/base/BaseMale/BM_S1_Limbs_spec.dds";
+   normalMap[0] = "art/players/base/BaseMale/BM_S1_Limbs_nrm.dds";
+   specularPower[0] = "128";
+   pixelSpecular[0] = "1";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_Limbs.dds";
+   detailDistance = "500";
+   detailSize = "4";
+   diffuseSize = "128";
+   detailStrength = "0.5";
 };
 
 
@@ -616,5 +648,4 @@ singleton Material(matBM_Scabbard_Tok)
    diffuseMap[0] = "art/inv/weapons/TokSword/Scabbard_Tok";
    materialTag0 = "Avatar_BM";
 };
-
 
