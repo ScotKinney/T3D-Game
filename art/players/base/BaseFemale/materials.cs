@@ -3,22 +3,43 @@
 singleton Material(matBF_Face)
 {
    mapTo = "BF_Face";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_Face.dds";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Face";
+   pixelSpecular[0] = "1";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "128";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBF_Body)
 {
    mapTo = "BF_Body";
    diffuseMap[0] = "art/players/base/BaseFemale/BF_Body";
+   pixelSpecular[0] = "1";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "128";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBF_Limbs)
 {
    mapTo = "BF_Limbs";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_Limbs.dds";
+   diffuseMap[0] = "art/players/base/BaseFemale/BF_Limbs";
+   pixelSpecular[0] = "1";
+   specular[0] = "0.996078 0.996078 0.996078 1";
+   specularPower[0] = "128";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
+   subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BF";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBF_Eyes)
@@ -37,9 +58,7 @@ singleton Material(matBF_Eyelash)
    translucent = "1";
    translucentBlendOp = "Mul";
    alphaTest = "1";
-   backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Avatar_BF";
-   backlight = "1";
 };
 
 singleton Material(matBF_Eyelids)
@@ -52,9 +71,7 @@ singleton Material(matBF_Eyelids)
    translucent = "1";
    translucentZWrite = "1";
    alphaRef = "20";
-   backLightFactor = "0.9 1.0 0.2";
    materialTag0 = "Avatar_BF";
-   backlight = "1";
 };
 
 ////////////HAIR
