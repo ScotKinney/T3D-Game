@@ -36,9 +36,7 @@ singleton Material(matBM_Eyes)
 singleton Material(matBM_Body)
 {
    mapTo = "BM_Body";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Body.dds";
-   specularMap[0] = "art/players/base/BaseMale/BM_S1_Body_spec.dds";
-   normalMap[0] = "art/players/base/BaseMale/BM_S1_Body_nrm.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Body.dds";
    pixelSpecular[0] = "1";
    specular[0] = "0.996078 0.996078 0.996078 1";
    specularPower[0] = "128";
@@ -52,11 +50,9 @@ singleton Material(matBM_Body)
 singleton Material(matBM_Face)
 {
    mapTo = "BM_Face";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Face.dds";
-   normalMap[0] = "art/players/base/BaseMale/BM_S1_Face_nrm.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Face.dds";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
-   specularMap[0] = "art/players/base/BaseMale/BM_S1_Face_spec.dds";
    subSurface[0] = "1";
    subSurfaceColor[0] = "0.772549 0.337255 0.262745 1";
    subSurfaceRolloff[0] = ".5";
@@ -67,9 +63,7 @@ singleton Material(matBM_Face)
 singleton Material(matBM_Limbs)
 {
    mapTo = "BM_Limbs";
-   diffuseMap[0] = "art/players/base/BaseMale/BM_S1_Limbs.dds";
-   specularMap[0] = "art/players/base/BaseMale/BM_S1_Limbs_spec.dds";
-   normalMap[0] = "art/players/base/BaseMale/BM_S1_Limbs_nrm.dds";
+   diffuseMap[0] = "art/players/base/BaseMale/BM_Limbs.dds";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
    subSurface[0] = "1";
@@ -95,7 +89,7 @@ singleton Material(matBM_HairA)
    translucentZWrite = "0";
    castShadows = "0";
    translucentBlendOp = "LerpAlpha";
-   useAnisotropic[0] = "0";
+   useAnisotropic[0] = "1";
    materialTag0 = "Avatar_BM";
 };
 
@@ -114,8 +108,7 @@ singleton Material(matBM_HairB_Scalp)
    castShadows = "0";
    translucentBlendOp = "LerpAlpha";
    materialTag0 = "Avatar_BM";
-   useAnisotropic[0] = "0";
-   showFootprints = "0";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBM_HairB_Strands)
@@ -205,6 +198,7 @@ singleton Material(matBM_HairD_Strands)
    doubleSided = "1";
    specularPower[0] = "128";
    pixelSpecular[0] = "1";
+   useAnisotropic[0] = "1";
 };
 
 singleton Material(matBM_HairD_Scalp)
@@ -218,6 +212,7 @@ singleton Material(matBM_HairD_Scalp)
    castShadows = "0";
    translucentBlendOp = "None";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
 };
 
 ////HairE
@@ -238,21 +233,6 @@ singleton Material(matBM_HairE)
    specularStrength[0] = "0";
    pixelSpecular[0] = "0";
    useAnisotropic[0] = "1";
-   showFootprints = "0";
-};
-
-singleton Material(matBM_HairE)
-{
-   mapTo = "BM_HairE";
-   diffuseMap[0] = "art/players/base/BaseMale/Hair/HairE/BM_HairE_Black";
-   doubleSided = "1";
-   translucent = "1";
-   alphaTest = "1";
-   alphaRef = 50; 
-   translucentZWrite = "0";
-   castShadows = "0";
-   translucentBlendOp = "None";
-   materialTag0 = "Avatar_BM";
 };
 
 singleton Material(matBM_HairE_Tie)
@@ -260,6 +240,7 @@ singleton Material(matBM_HairE_Tie)
    mapTo = "BM_HairE_Tie";
    diffuseMap[0] = "art/players/base/BaseMale/Hair/HairE/BM_HairE_Tie";
    materialTag0 = "Avatar_BM";
+   useAnisotropic[0] = "1";
 };
 
 ///////////////////////////////////ACCESSORIES////////////////////////
