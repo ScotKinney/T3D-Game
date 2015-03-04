@@ -47,10 +47,6 @@ singleton Material(matBM_Body)
    subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   detailDistance = "500";
-   detailSize = "4";
-   diffuseSize = "128";
-   detailStrength = "0.5";
 };
 
 singleton Material(matBM_Face)
@@ -66,10 +62,6 @@ singleton Material(matBM_Face)
    subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   detailDistance = "500";
-   detailSize = "4";
-   diffuseSize = "128";
-   detailStrength = "0.5";
 };
 
 singleton Material(matBM_Limbs)
@@ -85,10 +77,6 @@ singleton Material(matBM_Limbs)
    subSurfaceRolloff[0] = ".5";
    materialTag0 = "Avatar_BM";
    useAnisotropic[0] = "1";
-   detailDistance = "500";
-   detailSize = "4";
-   diffuseSize = "128";
-   detailStrength = "0.5";
 };
 
 
