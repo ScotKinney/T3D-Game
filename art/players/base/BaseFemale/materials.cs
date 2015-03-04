@@ -597,10 +597,4 @@ singleton Material(BF_Boots_FJ)
    materialTag0 = "Avatar_BF";
 };
 
-singleton Material(DefaultMaterial8)
-{
-   mapTo = "BF_Body";
-   diffuseMap[0] = "art/players/base/BaseFemale/BF_Body.dds";
-   specularMap[0] = "art/players/base/BaseFemale/BF_Body_spec.dds";
-   materialTag0 = "Avatar_BM";
-};
+
