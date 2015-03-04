@@ -37,6 +37,7 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/Root.dsq", "Root", "0", "59", "1", "0");
    %this.setSequenceCyclic("Root", "1");
    %this.setSequencePriority("Root", "1");
+   %this.addSequence("art/players/base/Seqs/Basic/Customizer_Idle.dsq", "C_Idle", "0", "301", "1", "0");
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
