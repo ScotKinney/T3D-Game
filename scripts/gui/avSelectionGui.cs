@@ -724,7 +724,8 @@ function AvSelectionGui::addPlank(%this, %plnkID, %plnkText, %category, %pngNum,
                                   %canBeNone, %table)
 {  // Make and return a citizen selection plank
    %newPlank = new GuiBitmapCtrl() {
-      bitmap = "art/gui/avCustomizer/Plank" @ %pngNum;
+      //bitmap = "art/gui/avCustomizer/Plank" @ %pngNum;
+      bitmap = "art/gui/avCustomizer/Button_Trans";
       wrap = "0";
       position = "591 25";
       extent = "270 30";
@@ -1829,12 +1830,20 @@ function AvSelectionGui::cloneMaterial(%this, %matIdx, %newName, %oldMat )
    if ( %diffuseMap $= "" )
       %diffuseMap = %oldMat.diffuseMap[0];
 
+   // Find the root path to use when looking for a normal or specular map
+   %rootBase = strlwr(fileBase(%diffuseMap));
+   echo(strstr(%rootBase, "bf_") @ ", " @ strstr(%rootBase, "_face"));
+   if ((strstr(%rootBase, "bf_") == 0) && (strstr(%rootBase, "_face") == 5))
+   {  // Change root name if it's a female face skin
+      %rootBase = getSubStr(%rootBase, 0, 10);
+   }
+
    // See if there is a matching normal or specular map to apply
    %normalMap = "";
    %specMap = "";
    if ( %diffuseMap !$= "" )
    {
-      %baseName = filePath(%diffuseMap) @ "/" @ fileBase(%diffuseMap);
+      %baseName = filePath(%diffuseMap) @ "/" @ %rootBase;
       %testStr = %baseName @ "_nrm";
       if ( isFile(%testStr @ ".dds") || isFile(%testStr @ ".jpg") || isFile(%testStr @ ".png") )
          %normalMap = %testStr;
