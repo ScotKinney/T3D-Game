@@ -290,6 +290,13 @@ function backPackItemList::onBackPackItemSelected( %this )//backPackItemList.onB
       %db=%player.getDatablock(); */
       
       %name=backPackItemList.gettext();
+   if(%name $= "")
+   {
+     
+      return;
+      
+   }
+   
       %amountOnBackPack=0;
         %amountOnStack= craftingGui.getAddedOjectAmountInStack(%name);
         
