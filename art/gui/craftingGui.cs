@@ -1,4 +1,4 @@
-//exec("E:\muzaheed\art\gui\craftingGui.cs")
+
 
 craftingGui.verficationResult="";
 
@@ -742,9 +742,6 @@ function categorySection::nextPreviews(%this)//categorySection.nextPreviews();
 
 function categorySection::onCategorySelected(%this,%category)//categorySection.onCategorySelected("$thisControl.name");
 {
-    craftMaterialListModern.clearColumns();
-   craftMaterialListModern.clearRows();
-   
    //echo(%category);
  %count=
  //CraftAbleItemsArray
@@ -764,8 +761,7 @@ function categorySection::onCategorySelected(%this,%category)//categorySection.o
      if( (
      //%itemDbID.category
      %category2
-     //@"category"
-     ) $=%category )
+     @"category") $=%category )
      {
       %text=%name;//%itemDbID.getname();
        craftItemList.add(%text, craftItemList.getCount());
