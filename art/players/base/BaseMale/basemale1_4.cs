@@ -8,7 +8,7 @@ function basemale1_4Dts::onLoad(%this)
 {
    %this.renameNode("upperJaw", "Eye");
    %this.setNodeTransform("Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
-   %this.addNode("cam", "Eye", "0.000158001 0.126053 2.42421 1 0 0 0", "1");
+   %this.addNode("cam", "root", "0 -0.983047 2.34118 1 0 0 0", "1");
    %this.addNode("mount4", "lForeArm", "-1.09296 0.158002 2.04982 1 0 0 0", "1");
    %this.addNode("mount7", "mount0", "1.87095 2.74099 2.94576 -0.515918 0.838865 0.173593 3.33519", "1");
    %this.addNode("mount2", "lHand", "-1.09296 0.158002 2.04988 1 0 0 0", "1");
