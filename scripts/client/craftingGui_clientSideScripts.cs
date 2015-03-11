@@ -56,7 +56,7 @@ function clientCmdVerifificationResultOfCraftItemBuilding(%result,%msg)
 	 }
 	 
 	  
-	 if(craftingGui.Building $="")
+	   if(craftingGui.Building $="")
 		{
 		    onCraftingDone();
 		}

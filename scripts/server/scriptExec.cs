@@ -88,4 +88,5 @@ exec("./Spells/AstralPassport.cs");
 exec("./Spells/Immolation.cs");
 exec("./Spells/Blinding.cs");
 exec("./Spells/dupeMe.cs");
+exec("./craftingGui_serverSideInevntoryHandlers.cs");
 exec("./craftingGui_serverSideScripts.cs");

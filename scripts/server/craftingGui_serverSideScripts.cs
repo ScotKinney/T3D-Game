@@ -154,7 +154,7 @@ function serverCmdSendPlayersRawCraftMaterialsInfo(%client)// commandToServer('S
           %field=rawMaterialListArray.getvalue(%j);
           if(%player.isField(%field))  
           {    
-             %amount=%player.getFieldValue(%field);
+             %amount=getItemAmountFromPlayerInventory(%client,%field);//%player.getFieldValue(%field);
              if(%amount>0)
              {
                   if(%rawMaterialList $="")                            
@@ -209,16 +209,18 @@ function serverCmdVerifyCraftItemBuilding(%client,%itemCrating)
    
    
 					%rawMaterialListFromItemInfo=getWords(%itemInfo,8); 
-					%count3=getWordCount(%rawMaterialListFromItemInfo); if(%count3>0)%shouldPermit=true;
+					%count3=getWordCount(%rawMaterialListFromItemInfo); 
+					if(%count3>0)
+					%shouldPermit=true;
 					for(%k=0;%k<%count3;%k=%k+2)
 					{
 						
 					    %field=getWord(%rawMaterialListFromItemInfo,%k);
 					   
-						 if(%player.isField(%field))  
+						 if(isPlayerHasTheItem(%client,%field))//(%player.isField(%field))  
 						  {     
 						   %requiredAmount=getWord(%rawMaterialListFromItemInfo,%k+1);
-							%amountFound=%player.getFieldValue(%field);
+							%amountFound=getItemAmountFromPlayerInventory(%client,%field);//%player.getFieldValue(%field);
 							
 						        if(%amountFound >=%requiredAmount)
 								{
@@ -251,22 +253,21 @@ function serverCmdVerifyCraftItemBuilding(%client,%itemCrating)
 							%itemName=getWord(%itemInfo,0); 
 							%requiredAmount=getWord(%itemInfo,1);
 
-								 if(%player.isField(%itemName))
+								 if(isPlayerHasTheItem(%client,%itemName))//if(%player.isField(%itemName))
 								 { 
-									%amountOnPlayer= %player.getFieldValue(%itemName);
+									%amountOnPlayer=getItemAmountFromPlayerInventory(%client,%itemName);//%amountOnPlayer= %player.getFieldValue(%itemName);
 									%t=%amountOnPlayer-%requiredAmount;
 									if(%t<0)
 									 %t=0;
-									 
-									%player.setFieldValue(%itemName,%t);
+									setItemAmountInPlayerInventory(%client,%itemName,%t);//%player.setFieldValue(%itemName,%t);
 								 }
-
 						 } 
 					  
 					  
-					  %player.inv[%itemCrating] = 1;
+					 /* %player.inv[%itemCrating] = 1;
 					  %itemCrating.onInventory(%player, 1);
-					  %player.getDataBlock().onInventory(%itemCrating, 1);
+					  %player.getDataBlock().onInventory(%itemCrating, 1);*/
+					  addInPlayerInventory(%client,%itemCrating,1);
 					  
 					     /*%obj = new Item()
                         {
