@@ -58,8 +58,6 @@ singleton Material(Base_Pillar1_Sparta)
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
-   backLightFactor = "0.9 1.0 0.2";
-   forestWindEnabled = "1";
 };
 
 singleton Material(Base_Pillar2_Sparta)
@@ -132,7 +130,6 @@ singleton Material(Base_FloorTrim)
    pixelSpecular[0] = "1";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
-   backLightFactor = "0.9 1.0 0.2";
 };
 
 singleton Material(pillar1)
@@ -143,11 +140,32 @@ singleton Material(pillar1)
    translucentBlendOp = "None";
 };
 
+//////////Rails
 
-singleton Material(DefaultMaterial3)
+singleton Material(mat_svspartawall1)
 {
-   mapTo = "BogSignPost_dif";
-   diffuseMap[0] = "art/Packs/Buildings/SP_Sparta/Base_Eave_Sparta_dif.dds";
+   mapTo = "svspartawall1";
+   diffuseMap[0] = "svspartawall1";
+   normalMap[0] = "svspartawall1N.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SP_Sparta";
+};
+
+singleton Material(mat_svspartawall3)
+{
+   mapTo = "svspartawall3";
+   diffuseMap[0] = "svspartawall3";
+   normalMap[0] = "svspartawall3N.dds";
+   useAnisotropic[0] = "1";
+   materialTag0 = "Buildings_SP_Sparta";
+};
+
+singleton Material(Base_StepsRail_Sparta_dif_mat)
+{
+   mapTo = "Base_StepsRail_Sparta_dif";
+   diffuseMap[0] = "Base_StepsRail_Sparta_dif.dds";
+   normalMap[0] = "Base_StepsRail_Sparta_nm.dds";
+   specularMap[0] = "Base_StepsRail_Sparta_spec.dds";
    useAnisotropic[0] = "1";
    materialTag0 = "Buildings_SP_Sparta";
 };
