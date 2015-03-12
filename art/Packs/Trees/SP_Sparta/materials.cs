@@ -1,49 +1,41 @@
-//-----------------------------------------------------------------------------
-// Copyright (C) Sickhead Games, LLC
-//-----------------------------------------------------------------------------
 
-
-singleton Material(LargelICTree_leaves)
+singleton Material(mat_ItalianCypress_bark)
 {
-   mapTo = "leaves";
-   diffuseMap[0] = "art/Packs/Trees/SP_Sparta/AV_CypressLeaf_dif.dds";
+   mapTo = "bark";
+   diffuseMap[0] = "ItalianCypressBark_dif.dds";
    specularPower[0] = "128";
-   translucentBlendOp = "Sub";
+   translucentBlendOp = "None";
+   normalMap[0] = "ItalianCypressBark_nm.dds";
    useAnisotropic[0] = "1";
-   castShadows = "0";
-   materialTag0 = "Buildings_SP_Sparta";
-   backLightFactor = "0.9 1.0 0.2";
-   pixelSpecular[0] = "0";
-   specular[0] = "0 0 0 1";
-   doubleSided = "1";
-   translucent = "1";
-   alphaRef = "0";
-   specularStrength[0] = "1.37255";
+   diffuseSize = "128";
+   detailStrength = "0.5";
+   materialTag0 = "Miscellaneous";
+   detailDistance = "500";
+   detailSize = "4";
 };
 
-singleton Material(LargelICTree_leaves)
+singleton Material(mat_ItalianCypress_leaves)
 {
    mapTo = "leaves";
-   diffuseMap[0] = "art/Packs/Trees/SP_Sparta/ItalianCypress_Dif.dds";
-   specular[0] = "0.831373 0.831373 0.831373 1";
+   diffuseMap[0] = "ItalianCypress_dif.dds";
    specularPower[0] = "1";
    translucentBlendOp = "LerpAlpha";
+   normalMap[0] = "ItalianCypress_nm.dds";
+   pixelSpecular[0] = "1";
+   specularMap[0] = "ItalianCypress_spec.dds";
    useAnisotropic[0] = "1";
-   translucent = "1";
    doubleSided = "1";
-   specularStrength[0] = "1.37255";
-   pixelSpecular[0] = "0";
-   alphaTest = "0";
-   alphaRef = "0";
-   castShadows = "0";
-   materialTag0 = "Buildings_SP_Sparta";
-   backLightFactor = "0.9 1.0 0.2";
+   translucent = "1";
+   subSurface[0] = "1";
+   subSurfaceColor[0] = "0.854902 0.905882 0.356863 1";
+   alphaTest = "1";
+   alphaRef = "13";
+   showFootprints = "0";
 };
 
-singleton Material(LargelICTree_AV_CypressBark_dif)
+singleton Material(mat_ItalianCypress_default2)
 {
-   mapTo = "AV_CypressBark_dif";
-   diffuseMap[0] = "AV_CypressBark_dif";
+   mapTo = "default2";
    specularPower[0] = "128";
    translucentBlendOp = "None";
 };
