@@ -89,7 +89,7 @@ new TerrainMaterial()
    diffuseSize = "256";
    normalMap = "art/Worlds/Pangaea/Terrain/3TD_Talus_01_NRM";
    detailMap = "art/Worlds/Pangaea/Terrain/3TD_Talus_01";
-   detailSize = "8";
+   detailSize = "4";
    detailDistance = "400";
    parallaxScale = "0.05";
    detailStrength = "0.5";
@@ -102,9 +102,9 @@ new TerrainMaterial()
    diffuseMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01";
    normalMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01_NRM";
    detailMap = "art/Worlds/Pangaea/Terrain/3TD_Crevice_01_DET";
-   parallaxScale = "0.05";
+   parallaxScale = "0.02";
    diffuseSize = "500";
-   detailSize = "25";
+   detailSize = "12";
    detailStrength = "0.7";
    detailDistance = "1000";
    useSideProjection = "0";
