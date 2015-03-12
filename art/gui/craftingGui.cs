@@ -869,7 +869,7 @@ function popCraftingGui()
    Canvas.popDialog(craftingGui);
     // craftingMap.pop();
     
-   ControlChangeToPlayer(LocalClientConnection);
+   //ControlChangeToPlayer(LocalClientConnection);
     
     
 }
@@ -884,7 +884,7 @@ function toggleCraftingGui(%a)
     //commandToServer('SlowMotionToClient',%sourceClient);
 								//commandToServer('TrackObjectCameraMode',%sourceClient,%obj);
 								  
-      game.changecamera(LocalClientConnection,LocalClientConnection.player);
+      //game.changecamera(LocalClientConnection,LocalClientConnection.player);
 		//game.slow(%sourceClient);
     
    }
