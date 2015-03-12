@@ -567,7 +567,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "120.384 -58.9881 5.80848";
-         rotation = "0.11108 0.0394435 0.993028 173.752";
+         rotation = "0.11108 0.0394435 0.993029 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -583,7 +583,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-415.01 177.112 39.5431";
-         rotation = "0.11108 0.0394435 0.993028 173.752";
+         rotation = "0.11108 0.0394435 0.993029 173.752";
          scale = "1.71127 1.71127 1.71127";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -663,7 +663,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-296.839 229.425 17.1102";
-         rotation = "0.0225772 0.146806 -0.988908 97.9119";
+         rotation = "0.0225772 0.146806 -0.988908 97.912";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -679,7 +679,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-288.698 212.722 16.0901";
-         rotation = "0.0225772 0.146806 -0.988908 97.9119";
+         rotation = "0.0225772 0.146806 -0.988908 97.912";
          scale = "1.4397 1.4397 1.4397";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -743,7 +743,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-386.818 213.721 49.2351";
-         rotation = "0.30268 -0.320415 0.897619 97.142";
+         rotation = "0.30268 -0.320415 0.897619 97.1421";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -759,7 +759,7 @@ new SimGroup(MissionGroup) {
          renderNormals = "0";
          forceDetail = "-1";
          position = "-367.826 213.506 34.0808";
-         rotation = "0.30268 -0.320415 0.897619 97.1421";
+         rotation = "0.30268 -0.320415 0.897619 97.1422";
          scale = "1 1 1";
          canSave = "1";
          canSaveDynamicFields = "1";
@@ -2118,6 +2118,45 @@ new SimGroup(MissionGroup) {
 
       Node = "-545.326477 -230.217026 91.919991 10.000000 5.000000 0.000000 0.000000 1.000000";
       Node = "-545.326477 -230.217026 91.919991 10.000000 5.000000 0.000000 0.000000 1.000000";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "DoomWeapon";
+      position = "-445.618 209.064 95.0714";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "IronSpearWeapon";
+      position = "-445.352 210.273 95.2578";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new Item() {
+      static = "1";
+      rotate = "0";
+      buyable = "0";
+      count = "10";
+      isAIControlled = "0";
+      dataBlock = "ParalyzerWeapon";
+      position = "-446.845 210.396 95.4379";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
    };
 };
 //--- OBJECT WRITE END ---
