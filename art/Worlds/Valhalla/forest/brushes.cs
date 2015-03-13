@@ -31,7 +31,7 @@ new SimGroup(ForestBrushGroup) {
       scaleMax = "1.5";
       scaleExponent = "1";
       sinkMin = "0.1";
-      sinkMax = "0.1";
+      sinkMax = "0.3";
       sinkRadius = "1";
       slopeMin = "0";
       slopeMax = "40";
