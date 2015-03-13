@@ -25,3 +25,23 @@ singleton Material(cedar_01_a_cedar_01_bark)
    diffuseMap[0] = "cedar_01_bark_diffuse.dds";
    materialTag0 = "Bark";
 };
+
+singleton Material(cedar_01_medium_a_cedar_01_branch)
+{
+   mapTo = "cedar_01_branch";
+   diffuseColor[0] = "0.64 0.64 0.64 1";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "50";
+   doubleSided = "1";
+   translucent = "1";
+};
+
+singleton Material(cedar_01_medium_a_cedar_01_bark)
+{
+   mapTo = "cedar_01_bark";
+   diffuseColor[0] = "0.64 0.64 0.64 1";
+   specular[0] = "0.5 0.5 0.5 1";
+   specularPower[0] = "50";
+   doubleSided = "1";
+   translucentBlendOp = "None";
+};
