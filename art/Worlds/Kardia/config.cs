@@ -33,7 +33,9 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Plants/SP_All_RiverGrass" TAB
    "Plants/MK4_Trop_Plants" TAB
    "Terrains/SP_Sparta" TAB
-   "Trees/MK4_Tropical";
+   "Trees/SP_Sparta" TAB
+   "Trees/MK4_Tropical" TAB
+   "Trees/MK4_Tropical2";
    
 //   "Buildings/Spartan_Arena" TAB
 //   "Props/WaterFallWall" TAB

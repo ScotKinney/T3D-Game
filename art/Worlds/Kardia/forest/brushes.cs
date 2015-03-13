@@ -62,8 +62,8 @@ new SimGroup(ForestBrushGroup) {
          scaleMin = "1";
          scaleMax = "1.5";
          scaleExponent = "1";
-         sinkMin = "0";
-         sinkMax = "0";
+         sinkMin = "0.01";
+         sinkMax = "0.1";
          sinkRadius = "1";
          slopeMin = "0";
          slopeMax = "20";
@@ -170,8 +170,8 @@ new SimGroup(ForestBrushGroup) {
          scaleMin = "1";
          scaleMax = "1.5";
          scaleExponent = "1";
-         sinkMin = "0";
-         sinkMax = "0";
+         sinkMin = "0.01";
+         sinkMax = "0.1";
          sinkRadius = "1";
          slopeMin = "0";
          slopeMax = "20";
@@ -312,7 +312,7 @@ new SimGroup(ForestBrushGroup) {
          probability = "1";
          rotationRange = "360";
          scaleMin = "1";
-         scaleMax = "1.5";
+         scaleMax = "2";
          scaleExponent = "1";
          sinkMin = "0";
          sinkMax = "0";

@@ -27,7 +27,7 @@
 datablock TSForestItemData(MK4_AneityumPalm)
 {
    internalName = "MK4_AneityumPalm";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_AneityumPalm.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_AneityumPalm.DAE";
    radius = "0.5";
    mass = "2";
    rigidity = "3";
@@ -43,7 +43,7 @@ datablock TSForestItemData(MK4_AneityumPalm)
 datablock TSForestItemData(MK4_ArecaPalm1)
 {
    internalName = "MK4_ArecaPalm1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_ArecaPalm1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_ArecaPalm1.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -59,7 +59,7 @@ datablock TSForestItemData(MK4_ArecaPalm1)
 datablock TSForestItemData(MK4_ArecaPalm2)
 {
    internalName = "MK4_ArecaPalm2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_ArecaPalm2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_ArecaPalm2.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -75,7 +75,7 @@ datablock TSForestItemData(MK4_ArecaPalm2)
 datablock TSForestItemData(MK4_ArecaPalm3)
 {
    internalName = "MK4_ArecaPalm3";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_ArecaPalm3.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_ArecaPalm3.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -91,7 +91,7 @@ datablock TSForestItemData(MK4_ArecaPalm3)
 datablock TSForestItemData(MK4_ArecaPalm4)
 {
    internalName = "MK4_ArecaPalm4";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_ArecaPalm4.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_ArecaPalm4.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -107,7 +107,7 @@ datablock TSForestItemData(MK4_ArecaPalm4)
 datablock TSForestItemData(MK4_BallPalm1)
 {
    internalName = "MK4_BallPalm1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_BallPalm1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_BallPalm1.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -124,7 +124,7 @@ datablock TSForestItemData(MK4_BallPalm1)
 datablock TSForestItemData(MK4_BallPalm2)
 {
    internalName = "MK4_BallPalm2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_BallPalm2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_BallPalm2.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -140,7 +140,7 @@ datablock TSForestItemData(MK4_BallPalm2)
 datablock TSForestItemData(MK4_BananaTree1)
 {
    internalName = "MK4_BananaTree1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_BananaTree1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_BananaTree1.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -156,7 +156,7 @@ datablock TSForestItemData(MK4_BananaTree1)
 datablock TSForestItemData(MK4_BananaTree2)
 {
    internalName = "MK4_BananaTree2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_BananaTree2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_BananaTree2.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -172,7 +172,7 @@ datablock TSForestItemData(MK4_BananaTree2)
 datablock TSForestItemData(MK4_BananaTree3)
 {
    internalName = "MK4_BananaTree3";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_BananaTree3.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_BananaTree3.DAE";
    radius = "0.5";
    mass = "1";
    rigidity = "2";
@@ -282,7 +282,7 @@ datablock TSForestItemData(MK4_DisopyrosChloroxylon2)
 datablock TSForestItemData(MK4_FanPalm1)
 {
    internalName = "MK4_FanPalm1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_FanPalm1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_FanPalm1.DAE";
    radius = "0.2";
    windScale = "1";
    trunkBendScale = "0.01";
@@ -294,7 +294,7 @@ datablock TSForestItemData(MK4_FanPalm1)
 datablock TSForestItemData(MK4_FanPalm2)
 {
    internalName = "MK4_FanPalm2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_FanPalm2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_FanPalm2.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.01";
@@ -306,7 +306,7 @@ datablock TSForestItemData(MK4_FanPalm2)
 datablock TSForestItemData(MK4_Ficus1)
 {
    internalName = "MK4_Ficus1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_Ficus1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_Ficus1.DAE";
    radius = "0.5";
    windScale = "1";
    trunkBendScale = "0.1";
@@ -318,7 +318,7 @@ datablock TSForestItemData(MK4_Ficus1)
 datablock TSForestItemData(MK4_Ficus2)
 {
    internalName = "MK4_Ficus2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_Ficus2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_Ficus2.DAE";
    windScale = "1";
    trunkBendScale = "0.1";
    branchAmp = "0.01";
@@ -330,7 +330,7 @@ datablock TSForestItemData(MK4_Ficus2)
 datablock TSForestItemData(MK4_Ficus3)
 {
    internalName = "MK4_Ficus3";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_Ficus3.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_Ficus3.DAE";
    radius = "0.5";
    windScale = "1";
    trunkBendScale = "0.1";
@@ -342,7 +342,7 @@ datablock TSForestItemData(MK4_Ficus3)
 datablock TSForestItemData(MK4_LataniaPalm1)
 {
    internalName = "MK4_LataniaPalm1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_LataniaPalm1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_LataniaPalm1.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.01";
@@ -354,7 +354,7 @@ datablock TSForestItemData(MK4_LataniaPalm1)
 datablock TSForestItemData(MK4_LataniaPalm2)
 {
    internalName = "MK4_LataniaPalm2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_LataniaPalm2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_LataniaPalm2.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.01";
@@ -413,7 +413,7 @@ datablock TSForestItemData(MK4_OrangePalm2)
 datablock TSForestItemData(MK4_WindmillPalm1)
 {
    internalName = "MK4_WindmillPalm1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_WindmillPalm1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_WindmillPalm1.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.01";
@@ -425,7 +425,7 @@ datablock TSForestItemData(MK4_WindmillPalm1)
 datablock TSForestItemData(MK4_WindmillPalm2)
 {
    internalName = "MK4_WindmillPalm2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_WindmillPalm2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_WindmillPalm2.DAE";
    windScale = "1";
    trunkBendScale = "0.01";
    branchAmp = "0.01";
@@ -438,7 +438,7 @@ datablock TSForestItemData(MK4_WindmillPalm2)
 datablock TSForestItemData(MK4_Yucca1)
 {
    internalName = "MK4_Yucca1";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_Yucca1.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_Yucca1.DAE";
    radius = "0.5";
    mass = "4";
    rigidity = "4";
@@ -452,7 +452,7 @@ datablock TSForestItemData(MK4_Yucca1)
 datablock TSForestItemData(MK4_Yucca2)
 {
    internalName = "MK4_Yucca2";
-   shapeFile = "art/Packs/Trees/MK4_Tropical/MK4_Yucca2.DAE";
+   shapeFile = "art/Packs/Trees/MK4_Tropical2/MK4_Yucca2.DAE";
    radius = "0.5";
    mass = "4";
    rigidity = "4";
