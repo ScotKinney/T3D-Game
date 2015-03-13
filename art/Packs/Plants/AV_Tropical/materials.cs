@@ -83,3 +83,47 @@ singleton Material(bigleaf_ColorEffectR227G153B153_material)
 };
 
 
+
+singleton Material(bigleaf)
+{
+   mapTo = "bigleaf";
+   diffuseMap[0] = "bigleaf_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(bigleaf_ColorEffectR227G153B153_material)
+{
+   mapTo = "ColorEffectR227G153B153-material";
+   diffuseColor[0] = "0.890196 0.6 0.6 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(fern)
+{
+   mapTo = "fern";
+   diffuseMap[0] = "fern_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(longleaf_plant_longleaf_fronds)
+{
+   mapTo = "longleaf_fronds";
+   diffuseMap[0] = "longleafleaves_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
+
+singleton Material(broadleaf_wskirt_broadleaf)
+{
+   mapTo = "broadleaf";
+   diffuseMap[0] = "broadleaf_diffuse_transparency";
+   specular[0] = "0.9 0.9 0.9 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
