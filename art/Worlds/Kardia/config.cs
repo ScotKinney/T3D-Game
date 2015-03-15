@@ -4,6 +4,7 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "SkyBoxes/DefaultNight" TAB
    "SkyBoxes/Kardia" TAB
    "GroundCover/MK4_Tropical" TAB
+   "GroundCover/GrassRock" TAB
    "Rocks/SP_Rocks" TAB
    "AI/horses" TAB
    "Tunnels/Spartan" TAB
