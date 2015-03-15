@@ -41,10 +41,10 @@ new TerrainMaterial()
    detailMap = "art/Worlds/Pangaea/Terrain/rockygroundwithgrass_detail";
    detailScale = "256";
    detailDistance = "800";
-   parallaxScale = "0.02";
+   parallaxScale = "0";
    detailStrength = "0.5";
-   detailSize = "20";
-   diffuseSize = "100";
+   detailSize = "8";
+   diffuseSize = "60";
 };
 
 
@@ -72,14 +72,14 @@ new TerrainMaterial()
    diffuseSize = "150";
    normalMap = "art/Worlds/Pangaea/Terrain/rock01_NRM2a";
    detailMap = "art/Worlds/Pangaea/Terrain/rock01";
-   detailSize = "75";
-   detailStrength = "0.5";
-   detailDistance = "4000";
+   detailSize = "50";
+   detailStrength = "0.7";
+   detailDistance = "1500";
    useSideProjection = "1";
    macroSize = "100";
    macroStrength = "0.8";
    macroDistance = "4000";
-   parallaxScale = "0.5";
+   parallaxScale = "0.05";
 };
 
 new TerrainMaterial()
@@ -105,8 +105,8 @@ new TerrainMaterial()
    parallaxScale = "0.02";
    diffuseSize = "500";
    detailSize = "12";
-   detailStrength = "0.7";
-   detailDistance = "1000";
+   detailStrength = "0.5";
+   detailDistance = "500";
    useSideProjection = "0";
 };
 
