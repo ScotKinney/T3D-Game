@@ -422,3 +422,11 @@ singleton Material(ColorEffectR154G185B229-material_mat)
    diffuseSize = "128";
    detailStrength = "0.5";
 };
+
+singleton Material(MetalFence01_ColorEffectR154G185B229_material)
+{
+   mapTo = "ColorEffectR154G185B229-material";
+   diffuseColor[0] = "0.603922 0.72549 0.898039 1";
+   specularPower[0] = "10";
+   translucentBlendOp = "None";
+};
