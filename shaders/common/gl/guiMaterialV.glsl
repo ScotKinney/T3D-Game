@@ -3,11 +3,16 @@
 // Copyright GarageGames, LLC 2011
 //-----------------------------------------------------------------------------
 
-#include "./postFx.hlsl"
+uniform mat4x4 modelview;
 
-uniform sampler2D inputTex : register(S0);
+varying vec4 hpos;
+varying vec2 uv0;
 
-float4 main( PFXVertToPix IN ) : COLOR
+
+void main()
 {
-   return tex2D( inputTex, IN.uv0 );   
+   hpos = vec4( modelview * gl_Vertex );
+   gl_Position = hpos;
+
+   uv0 = gl_MultiTexCoord0.st;
 }

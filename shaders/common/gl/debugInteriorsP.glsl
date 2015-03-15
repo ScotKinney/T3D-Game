@@ -3,11 +3,15 @@
 // Copyright GarageGames, LLC 2011
 //-----------------------------------------------------------------------------
 
-#include "./postFx.hlsl"
+uniform sampler2D diffuseMap;
+uniform vec4 shadeColor;
 
-uniform sampler2D inputTex : register(S0);
+varying vec2 TEX0;
 
-float4 main( PFXVertToPix IN ) : COLOR
+void main()
 {
-   return tex2D( inputTex, IN.uv0 );   
+   vec4 diffuseColor = texture2D( diffuseMap, TEX0 );
+   
+   gl_FragColor = diffuseColor;
+   gl_FragColor *= shadeColor;
 }
