@@ -40,7 +40,6 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    maxFreelookAngle = 3.0;
 
    mass = 100;
-   //drag = 1.3;
    drag = 1.3;//0.3 Scot
    maxdrag = 0.4;
    density = 1.1;
@@ -58,7 +57,7 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    maxBackwardSpeed = 2;//5
    maxSideSpeed = 2;//5
 
-   sprintEnergyDrain = 0; //how much energy to drain while printing until player cannot sprint anymore
+   sprintEnergyDrain = 0; //how much energy to drain while sprinting until player cannot sprint anymore
    minSprintEnergy = 0; //the minimum amount of energy to drain
    maxSprintForwardSpeed = 7;
    maxSprintBackwardSpeed = 5;
@@ -76,8 +75,8 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    maxUnderwaterSideSpeed = 2.8;//7.8
    exitSplashSoundVelocity = 1.5;
 
-   jumpForce = 8.3 * 90;
-   standJumpForce = 8.3 * 90;
+   jumpForce = 6 * 90;//8.3
+   standJumpForce = 8 * 90;//8.3
    jumpEnergyDrain = 0;
    minJumpEnergy = 0;
    jumpDelay = 15;
@@ -125,7 +124,7 @@ datablock PlayerData(DefaultPlayerData:craftingElementHolder)
    // Controls over slope of runnable/jumpable surfaces
    runSurfaceAngle  = 46;//50 Scot
    jumpSurfaceAngle = 80;//60 Scot
-   maxStepHeight = .5;//1.5 Scot
+   maxStepHeight = 1;//1.5 Scot
    minJumpSpeed = 20;
    maxJumpSpeed = 30;
 
