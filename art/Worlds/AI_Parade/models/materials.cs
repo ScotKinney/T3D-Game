@@ -34,3 +34,11 @@ singleton Material(mat_Sound0Pointer)
    materialTag0 = "signs";
    customFootstepSound = "FootStepWood1Sound";
 };
+
+
+singleton Material(fencePostBasic00A_mat)
+{
+   mapTo = "fencePostBasic00A";
+   diffuseMap[0] = "fencePostBasic00A.png";
+   useAnisotropic[0] = "1";
+};
