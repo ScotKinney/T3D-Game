@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------------------
 // Intro video gui
-// If $pref::shortIntro is set, a shorter framed video will be played.
+// If $pref::startup::shortIntro is set, a shorter framed video will be played.
 // ----------------------------------------------------------------------------
 
 function TeleportGui::PlayVideo(%this, %volume)
@@ -9,7 +9,7 @@ function TeleportGui::PlayVideo(%this, %volume)
       %this.schedule(100, "PlayVideo", %volume);
    else
    {
-      %vidSel = ($pref::shortIntro ? 0 : 1);
+      %vidSel = ($pref::startup::shortIntro ? 0 : 1);
       %this-->VideoFrame.execJavaScript("StartWormhole(" @ %volume @ "," @ %vidSel @ ");");
    }
 }
@@ -17,7 +17,7 @@ function TeleportGui::PlayVideo(%this, %volume)
 function TeleportGui::onWake(%this)
 {
    // Hide the mask if we're playing the long video
-   %this-->VideoMask.setVisible($pref::shortIntro);
+   %this-->VideoMask.setVisible($pref::startup::shortIntro);
 
    %screenExtent = Canvas.getExtent();
    %this.onResize(getWord(%screenExtent, 0), getWord(%screenExtent, 1));
@@ -40,7 +40,7 @@ function TeleportGui::cancelVideo(%this)
 function TeleportGui::onResize(%this, %newWidth, %newHeight)
 {
    %this.resize(0, 0, %newWidth, %newHeight);
-   if ( $pref::shortIntro )
+   if ( $pref::startup::shortIntro )
    {  // Playing the smaller/shorter video behind a mask
       // The portal opening is 691x691 at 455, 98 on the 1600x900 frame image
       %wideAR = 16/9;

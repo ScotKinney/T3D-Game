@@ -36,7 +36,6 @@ singleton GuiControlProfile (AVHomeworldTitleProfile)
    fontSize = "26";
    justify = "center";
    fontColor = "255 255 255 255";
-   //fontType = "Trajan Pro Bold";
    fontType = "Tahoma";
    borderThickness = "0";
    category = "AVCustomizer";

@@ -186,6 +186,10 @@ function initClient()
    exec("scripts/gui/avMiscOptionsGui.cs");
    exec("scripts/gui/avOverlaysGui.cs");
 
+   // Homeworld selection
+   exec("art/gui/hwSelect.gui");
+   exec("scripts/gui/hwSelectGui.cs");
+
    exec("core/art/gui/toolsLoading.gui");
    exec("./AlterVerse/clientTools.cs");
 

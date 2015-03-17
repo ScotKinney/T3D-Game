@@ -256,6 +256,156 @@ singleton GuiControlProfile (AVPanelCaptionProfile)
       category = "AlterVerse";
    };
 
+   singleton GuiControlProfile (AVNBCheckProfile : AVPopupCheckProfile)
+   {
+      fontType = "Tahoma";
+      fontSize = "16";
+      justify = "left";
+      border = 0;
+   };
+
+   singleton GuiControlProfile (AVTitle1Profile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "36";
+      justify = "center";
+      fontColor = "255 255 255 255";
+      fontType = "Tahoma";
+      borderThickness = "0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVTitle2Profile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "24";
+      justify = "center";
+      fontColor = "255 255 255 255";
+      fontType = "Tahoma";
+      borderThickness = "0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVHWLinkProfile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "36";
+      justify = "center";
+      fontColor = "255 255 255 255";
+      fontColorSEL = "179 74 168 255";
+      fontColorHL = "215 142 212 255";
+      fontColorNA = "100 100 100 255";
+      fontType = "Tahoma";
+      borderThickness = "0";
+      
+      fillColor = "0 0 0 0";
+      fillColorHL = "0 0 0 0";
+      fillColorNA = "0 0 0 0";
+      fillColorSEL = "0 0 0 0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVHWSpacerProfile)
+   {
+      opaque = true;
+      fillColor = "255 255 255 255";
+   };
+
+   singleton GuiControlProfile (AVHWTextProfile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "16";
+      justify = "left";
+      fontColor = "215 215 215 255";
+      fontType = "Tahoma";
+      borderThickness = "0";
+      
+      fillColor = "0 0 0 0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVHWHdrProfile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "16";
+      justify = "left";
+      fontColor = "215 215 215 255";
+      fontType = "Tahoma";
+      borderThickness = "0";
+      
+      fillColor = "0 0 0 0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile ( AVDropScrollProfile )
+   {
+      opaque = true;
+      fillColor = "0 0 0 255";
+      fillColorHL = "0 0 0 255";
+      fillColorNA = "0 0 0 255";
+      fillColorSEL = "0 0 0 255";
+
+      borderColor = "129 102 68 255";
+      border = true;
+      bitmap = "core/art/gui/images/scrollBar";
+      hasBitmapArray = true;
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVDropListProfile)
+   {
+      opaque = true;
+      textOffset         = "6 4";
+      bitmap             = "core/art/gui/toolbar/AVToolBarBorder_Sq";
+      hasBitmapArray     = true;
+
+      fillColor = "0 0 0 0";
+      fillColorHL = "0 0 0 0";
+      fillColorNA = "0 0 0 0";
+      fillColorSEL = "0 0 0 0";
+
+      fontSize = "16";
+      justify = "left";
+      fontType = "Tahoma";
+      fontColor = "215 215 215 255";
+      fontColorSEL = "129 102 68 255";
+      fontColorHL = "255 255 255 255";
+      fontColorNA = "100 100 100 255";
+   };
+   
+   singleton GuiControlProfile (AVSelectProfile)
+   {
+      opaque = true;
+      textOffset         = "6 4";
+      //bitmap             = "core/art/gui/images/avDropDown";
+      //bitmap             = "core/art/gui/toolbar/AVToolBarBorder_Sq";
+      hasBitmapArray     = false;
+      border             = 1;
+      profileForChildren = AVDropListProfile;
+
+      borderColor = "129 102 68 255";
+      borderColorNA = "129 102 68 255";
+      borderColorHL = "187 152 101 255";
+      border = true;
+
+      fontSize = "16";
+      justify = "left";
+      fontType = "Tahoma";
+      fontColor = "230 230 230 255";
+      fontColorSEL = "129 102 68 255";
+      fontColorHL = "255 255 255 255";
+      fontColorNA = "200 200 200 255";
+      fillColor = "0 0 0 0";
+      fillColorHL = "0 0 0 0";
+      fillColorNA = "0 0 0 0";
+      fillColorSEL = "0 0 0 0";
+      category = "AlterVerse";
+   };
 
    singleton SFXProfile(RiftGainFocusSound)
    {

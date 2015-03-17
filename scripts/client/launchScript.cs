@@ -81,6 +81,7 @@ function httpLoginStage2::process(%this)
       $pref::Player::ClanName = %this.clan_name;
       $pref::Player::ClanLeader = %this.clan_ldr;
       $pref::Player::WorldID = %this.world_id;
+      $pref::Player::KingdomID = %this.kingdom_id;
       $pref::Player::SkullLevel = %this.skulls;
       $AlterVerse::PlayerSkullLevel = %this.skulls;
       $pref::Player::Gender = %this.gender;
@@ -95,6 +96,7 @@ function httpLoginStage2::process(%this)
       // login stage 2 complete
       //InventoryRequest();
       AvSelectionGui.getHomeworldData();
+      //GetHomeworldList();
       $TAP::isLoggedIn = true;
       if ( !$TAP::isTappedIn )
          startIntroVideo();
@@ -201,6 +203,59 @@ function getDescriptionList::process( %this )
                  //"canvas.popdialog(AvSelectionGui);");// canvas.popdialog(loginDlg);" );
    }
    %this.schedule(0, delete);
+}
+
+function GetHomeworldList()
+{
+   if( isObject($AlterVerse::worldList) )
+      $AlterVerse::worldList.delete();
+
+   %request = new HTTPObject() {
+      class = "getHomeworldList";
+      status = "failure";
+      message = "";
+   };
+   
+   %request.get( $serverPath, $scriptPath @ "getHomeworldList.php", "" );
+}
+
+function getHomeworldList::process( %this )
+{
+   // Create the array to store the worlds
+   $AlterVerse::worldList = new ArrayObject();
+
+   switch$( %this.status )
+   {
+   case "success":
+      // Fill in all fields for homeworlds
+      for (%i = 0; %i < %this.NumWorlds; %i++)
+      {
+         //%id = %this.WorldID[%i];
+         //dispName = %this.WorldName[%i];
+
+         $AlterVerse::worldList.add(%this.WorldID[%i], %this.WorldName[%i]);
+      }
+      $AlterVerse::worldList.numWorlds = %this.NumWorlds;
+      
+      if ( HWSelect.isAwake() )
+      {
+         HWSelect.makeHWButtons();
+         %screenExtent = Canvas.getExtent();
+         HWSelect.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
+         if ( HWSelect.currentHW > -1 )
+         {
+            HWSelect.HWButton[HWSelect.currentHW].setStateOn(true);
+            HWSelect.loadHWData(HWSelect.currentHW, $AlterVerse::worldList.getKey(HWSelect.currentHW));
+         }
+      }
+
+   default:
+      echo(%this.message);
+      MessageBoxOK( "Failed to contact web server", "Could not world data." SPC %this.message);
+   }
+   %this.schedule(0, delete);
+
+   InventoryRequest();
 }
 
 //function ServerRequest()
@@ -311,7 +366,7 @@ function startIntroVideo()
    Canvas.pushDialog(TeleportGui);
    
    // Schedule the gui to pop after the video (10s or 59s)
-   %videoTime = ($pref::shortIntro ? 10000 : 57000);
+   %videoTime = ($pref::startup::shortIntro ? 10000 : 57000);
    TeleportGui.schedule(%videoTime, "cancelVideo");
 }
 
@@ -328,6 +383,7 @@ function stopIntroVideo()
 
    // Show the avatar customizer
    Canvas.pushDialog(AvSelectionGui);
+   //Canvas.pushDialog(HWSelect);
 
    Canvas.popDialog(TeleportGui);
    TeleportGui.delete();

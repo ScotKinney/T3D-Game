@@ -377,8 +377,11 @@ if( !isObject( GuiScrollProfile ) )
 new GuiControlProfile( GuiScrollProfile )
 {
    opaque = true;
-   fillcolor = "255 255 255";
-   fontColor = "0 0 0";
+   fillColor = "0 0 0 0";
+   fillColorHL = "0 0 0 0";
+   fillColorNA = "0 0 0 0";
+   fillColorSEL = "0 0 0 0";
+   fontColor = "0 0 0 0";
    fontColorHL = "150 150 150";
    //borderColor = GuiDefaultProfile.borderColor;
    border = true;
