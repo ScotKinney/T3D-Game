@@ -20,7 +20,7 @@ new SimGroup(MissionGroup) {
       soundDistanceModel = "Linear";
       canSave = "1";
       canSaveDynamicFields = "1";
-         desc0 = "Yeah it's Empty";
+         desc0 = "Or is it?";
          displayName = "EmptyRoom";
          enabled = "1";
          LevelName = "EmptyRoom";
