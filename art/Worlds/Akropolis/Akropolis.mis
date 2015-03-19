@@ -213,7 +213,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "FemalePlayerData";
-         botBelongsToMe = "4169";
+         botBelongsToMe = "4276";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -238,7 +238,7 @@ new SimGroup(MissionGroup) {
          avOptions = "80,179,215,102,137,333,328,324,326,325,361";
          behavior = "LeashedBehavior";
          block = "MalePlayerData";
-         botBelongsToMe = "4170";
+         botBelongsToMe = "4277";
          delayRespawn = "592";
          distDetect = "50";
          fov = "360";
@@ -1835,7 +1835,7 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-59.7804 23.8373 7.25838";
-      rotation = "0.00729896 -0.00693115 -0.999949 91.0749";
+      rotation = "0.00729896 -0.00693115 -0.999949 91.0748";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1851,7 +1851,7 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-61.7549 25.6226 6.4214";
-      rotation = "0.00729896 -0.00693115 -0.999949 91.0748";
+      rotation = "0.00729896 -0.00693115 -0.999949 91.0747";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
@@ -1915,7 +1915,7 @@ new SimGroup(MissionGroup) {
       renderNormals = "0";
       forceDetail = "-1";
       position = "-53.905 23.5399 11.0843";
-      rotation = "0.00729896 -0.00693115 -0.999949 91.0747";
+      rotation = "0.00729896 -0.00693115 -0.999949 91.0746";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
