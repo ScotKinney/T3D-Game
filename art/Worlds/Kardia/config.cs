@@ -17,6 +17,7 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Buildings/Sh3d_Pergola" TAB
    "Buildings/SP_Sparta" TAB
    "Buildings/Spartan_GuardTowers" TAB
+   "Buildings/Fort_Buildset" TAB
    "Forts/Spartan" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
