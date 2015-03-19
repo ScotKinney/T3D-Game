@@ -238,3 +238,12 @@ singleton Material(Base_StairBridge_GTower90dif_mat)
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepWood1Sound";
 };
+
+singleton Material(FortWallCornerL1_PMat_bridgeFort)
+{
+   mapTo = "PMat_bridgeFort";
+   diffuseMap[0] = "PMat_bridgeFort";
+   specular[0] = "0 0 0 1";
+   specularPower[0] = "128";
+   translucentBlendOp = "None";
+};
