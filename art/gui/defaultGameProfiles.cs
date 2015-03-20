@@ -387,5 +387,6 @@ singleton GuiControlProfile( GuiNIAwesomiumProfile : GuiAwesomiumProfile)
 {
    tab = false;
    canKeyFocus = false;   
+   modal = false;
    category = "Core";
 };

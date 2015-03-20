@@ -9,7 +9,8 @@ the rest is 14 px, The Viken pink is b34aa8, the rest of the font on the page is
 function HWSelect::onWake(%this)
 {
    %this-->WorldPic.visible = false;
-   %this.currentHW = -1;
+   if ( %this.currentHW $= "" )
+      %this.currentHW = -1;
    if ( %this.numWorlds == 0 )
       %this.makeHWButtons();
 
@@ -37,7 +38,7 @@ function HWSelect::onSleep(%this)
       {
          %dataObj = %this.HWData.getValue(%i);
          %kArray = %dataObj.kingdoms;
-         %numKingdoms = %kingdoms.count();
+         %numKingdoms = %kArray.count();
          for (%j = 0; %j < %numKingdoms; %j++)
          {
             %kObj = %kArray.getValue(%j);
@@ -287,7 +288,7 @@ function HWSelect::layoutWIPane(%this, %useScale)
    %xExtent = mRound(696 * %useScale);
    %this-->WIShade.resize(%xPos, %yPos, %xExtent, %yShadeExt);
 
-   // The top and bottom bar is 2px tall and runs the width of the frame
+   // The bottom bar is 2px tall and runs the width of the frame
    %this-->WIBottom.resize(0, %yShadeExt-2, %xExtent, 2);
 }
 
@@ -650,6 +651,8 @@ function httpKingdomChange::process( %this )
 
       $pref::Player::WorldID = %this.world_id;
       $pref::Player::KingdomID = %this.kingdom_id;
+      $pref::Player::WorldName = %this.world_name;
+      $pref::Player::KingdomName = %this.kingdom_name;
 
       schedule(1, 0, "NextStartupStep");
    default:
