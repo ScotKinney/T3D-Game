@@ -71,7 +71,7 @@ new SimGroup(MissionGroup) {
             ignoreZodiacs = "0";
             scale = "1 1 1";
       };
-      new TimeOfDay(AVTime) {
+  /*    new TimeOfDay(AVTime) {
          axisTilt = "23.44";
          dayLength = "86400";
          startTime = "0.981452";
@@ -90,6 +90,7 @@ new SimGroup(MissionGroup) {
          canSaveDynamicFields = "1";
             clockSynchEvent = "10";
       };
+*/
       new SkyBox() {
          Material = "KapSkysDarkCloud";
          drawBottom = "0";
