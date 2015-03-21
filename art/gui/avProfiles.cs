@@ -250,7 +250,7 @@ singleton GuiControlProfile (AVPanelCaptionProfile)
       // fill color
       fillColor = "10 10 10 200";
 
-      bitmap = "art/gui/avCustomizer/checkbox";
+      bitmap = "art/gui/common/checkbox";
       hasBitmapArray = true;
 
       category = "AlterVerse";
@@ -404,6 +404,18 @@ singleton GuiControlProfile (AVPanelCaptionProfile)
       fillColorHL = "0 0 0 0";
       fillColorNA = "0 0 0 0";
       fillColorSEL = "0 0 0 0";
+      category = "AlterVerse";
+   };
+
+   singleton GuiControlProfile (AVOptionTextProfile)
+   {
+      opaque = false;
+      border = 0;
+      fontSize = "18";
+      justify = "center";
+      fontColor = "210 210 210 255";
+      fontType = "Tahoma Bold";
+      borderThickness = "0";
       category = "AlterVerse";
    };
 

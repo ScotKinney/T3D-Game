@@ -46,6 +46,9 @@ function AVSetup::onWake(%this)
    // Set the background image and text for the current kingdom
    %this.setupKingdom();
 
+   // Push the customizer onto the screen
+   Canvas.pushDialog(AVCustomizer);
+
    // Update the gui layout
    %screenExtent = Canvas.getExtent();
    %this.onResize( getWord(%screenExtent, 0), getWord(%screenExtent, 1));
@@ -59,6 +62,16 @@ function AVSetup::onBackClicked(%this)
 {
    $pref::startup::skipHW = false;
    $AlterVerse::StartupStep = 0;
+   schedule(1, 0, "NextStartupStep");
+}
+
+function AVSetup::onRealmClicked(%this)
+{  // Show the Realm setup gui
+   return;
+}
+
+function AVSetup::onKingdomClicked(%this)
+{
    schedule(1, 0, "NextStartupStep");
 }
 
@@ -92,15 +105,6 @@ function AVSetup::resizeFonts(%this, %scaleFactor)
 {  // Torque adjusts font sizes, to get the true point size we need to increase
    // the requested point size x1.2 for Tahoma
    %fontMult = 1.2;
-
-   // The main title and HW link fonts are 30 point
-   %fontPoint = mRound(30 * %scaleFactor);
-   AVTitle1Profile.fontSize = mRound(%fontPoint * %fontMult);
-   AVHWLinkProfile.fontSize = mRound(%fontPoint * %fontMult);
-
-   // The second line font is 20 point
-   %fontPoint = mRound(20 * %scaleFactor);
-   AVTitle2Profile.fontSize = mRound(%fontPoint * %fontMult);
 
    // The info and checkbox fonts are 16 point
    %fontPoint = mRound(16 * %scaleFactor);
