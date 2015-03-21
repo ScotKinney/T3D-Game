@@ -19,6 +19,7 @@ $AlterVerse::ArtPacks = "Skies/Default" TAB
    "Buildings/Spartan_GuardTowers" TAB
    "Buildings/Fort_Buildset" TAB
    "Forts/Spartan" TAB
+   "Props/AV_Torches" TAB
    "Props/RRGTS_Crates" TAB
    "Props/RRGTS_Barrels" TAB
    "Props/Dex_Viking" TAB
