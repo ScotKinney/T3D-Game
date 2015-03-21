@@ -178,6 +178,8 @@ function initClient()
    exec("./AlterVerse/clientChat.cs");
 
    // Avatar customizer
+   exec("art/gui/avCustomizer.gui");
+   exec("scripts/gui/avCustomizerGui.cs");
    exec("art/gui/avSetup.gui");
    exec("scripts/gui/avSetupGui.cs");
    exec("art/gui/avCustomizer/customizerProfiles.cs");

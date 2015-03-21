@@ -87,11 +87,19 @@ function AVSetup::onResize(%this, %newWidth, %newHeight)
 
    %rightBottom = %this.layoutCongratsPane(%newWidth, %verticalScale);
    %this.layoutNSPane(%newWidth, %verticalScale, %rightBottom);
+   
+   // Reposition the customizer
+   %gapWidth = %newWidth - getWord(%rightBottom, 0);
+   %yPos = getWord(%rightBottom, 1);
+   %custX = 2 * mRound((%gapWidth - 240) / 3);
+   if ( %custX < 0 )
+      %custX = 0;
+   AVCustomizer-->ShadeBox.setPosition(%custX, %yPos);
 
    // The Back button is 160x49
    %xExtent = mRound(160 * %verticalScale);
    %yExtent = mRound(49 * %verticalScale);
-   %this-->BackBtn.resize(0, 0, %xExtent, %yExtent);
+   %this-->BackBtn.resize(%custX, 0, %xExtent, %yExtent);
 
    // The checkbox is 250x20, 32 pixels from the left and 35 pixels from the bottom
    %xExtent = mRound(250 * %verticalScale);

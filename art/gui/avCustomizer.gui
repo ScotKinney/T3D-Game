@@ -35,7 +35,7 @@
       new GuiBitmapCtrl() {
          bitmap = "art/gui/labels/Customizer.png";
          wrap = "0";
-         position = "81 7";
+         position = "81 9";
          extent = "77 20";
          minExtent = "8 2";
          horizSizing = "right";

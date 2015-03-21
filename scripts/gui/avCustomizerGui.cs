@@ -95,7 +95,7 @@ function AVCustomizer::makeOptions(%this)
 {  // Make all of the option selection controls
    %nextY = 37;
    %this.optCtrl[0] = %this.addOption(0, %nextY, "Gender", "None", false, "None"); %nextY += 22;
-   %this.optCtrl[1] = %this.addOption(1, %nextY, "Outfit", "None", true, "None"); %nextY += 22;
+   %this.optCtrl[1] = %this.addOption(1, %nextY, "Outfit", "None", false, "None"); %nextY += 22;
    %nextY += 5; // Separator
    %this.optCtrl[2] = %this.addOption(2, %nextY, "Face Shape", "Face", false, "avOptions"); %nextY += 22;
    %this.optCtrl[3] = %this.addOption(3, %nextY, "Hair", "HairStyle", true, "avOptions"); %nextY += 22;
