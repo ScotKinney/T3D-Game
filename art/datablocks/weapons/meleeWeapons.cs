@@ -52,36 +52,9 @@ singleton GameBaseData(SwordSwing1_LH)
    impulse = 500;
 };
 
-singleton GameBaseData(SwordSwing1_RH)
-{
-   seqName = "SwordSwing1_RH";
-   fullSkelAnim = true;
-   timeScale = 1; //speed the animation plays at
-   damageAmount = 50;
-   startDamage = 0; //time in seconds during animation before damage is done
-   endDamage = 0.8;
-   soundDelay = 500; // time in ms before attack sound plays
-   swingSound = SwordSwing2Sound;
-   impulse = 500;
-};
-
 singleton GameBaseData(SwordSwing2_LH)
 {
    seqName = "SwordSwing2_LH";
-   fullSkelAnim = true;
-   timeScale = 1; //speed the animation plays at
-   damageAmount = 50;
-   startDamage = 0; //time in seconds during animation before damage is done
-   endDamage = 0.6;
-   soundDelay = 300; // time in ms before attack sound plays
-   swingSound = SwordSwing1Sound;
-   impulse = 500;
-};
-
-
-singleton GameBaseData(SwordSwing2_RH)
-{
-   seqName = "SwordSwing2_RH";
    fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
@@ -105,36 +78,9 @@ singleton GameBaseData(SwordSwing3_LH)
    impulse = 500;
 };
 
-singleton GameBaseData(SwordSwing3_RH)
-{
-   seqName = "SwordSwing3_RH";
-   fullSkelAnim = true;
-   timeScale = 1; //speed the animation plays at
-   damageAmount = 50;
-   startDamage = 0; //time in seconds during animation before damage is done
-   endDamage = 0.8;
-   soundDelay = 500; // time in ms before attack sound plays
-   swingSound = SwordSwing3Sound;
-   impulse = 500;
-};
-
 singleton GameBaseData(SwordSwing4_LH)
 {
    seqName = "SwordSwing4_LH";
-   fullSkelAnim = true;
-   timeScale = 1; //speed the animation plays at
-   damageAmount = 50;
-   startDamage = 0; //time in seconds during animation before damage is done
-   endDamage = 0.84;
-   soundDelay = 520; // time in ms before attack sound plays
-   swingSound = SwordSwing1Sound;
-   impulse = 500;
-};
-
-
-singleton GameBaseData(SwordSwing4_RH)
-{
-   seqName = "SwordSwing4_RH";
    fullSkelAnim = true;
    timeScale = 1; //speed the animation plays at
    damageAmount = 50;
@@ -374,7 +320,7 @@ datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
    item = AnnihilatorWeapon; //This is the name of the WEAPON that comes from the weapons table.
    canUseMounted = true;
 
-   hthNumAttacks = 12;
+   hthNumAttacks = 8;
 /* hthAttack[0]                     = SwordSwing1_LH;
    hthAttack[1]                     = SwordSwing2_LH;
    hthAttack[2]                     = SwordSwing3_LH;
@@ -383,18 +329,15 @@ datablock ShapeBaseImageData(AnnihilatorImage : BaseMeleeImage)
    hthAttack[5]                     = SwordSwing6_LH;
    hthAttack[6]                     = SwordSwing7_LH;
 */
-   hthAttack[0]                     = SwordSwing1_RH;
-   hthAttack[1]                     = SwordSwing2_RH;
-   hthAttack[2]                     = SwordSwing3_RH;
-   hthAttack[3]                     = SwordSwing4_RH;
-   hthAttack[4]                     = SwordSwing5_RH;
-   hthAttack[5]                     = SwordSwing6_RH;
-   hthAttack[6]                     = SwordSwing7_RH;
-   hthAttack[7]                     = SwordSwing8_RH;
-   hthAttack[8]                     = SwordSwing9_RH;
-   hthAttack[9]                     = SwordSwing10_RH;
-   hthAttack[10]                    = SwordSwing11_RH;
-   hthAttack[11]                    = SwordSwing12_RH;
+  
+   hthAttack[0]                     = SwordSwing5_RH;
+   hthAttack[1]                     = SwordSwing6_RH;
+   hthAttack[2]                     = SwordSwing7_RH;
+   hthAttack[3]                     = SwordSwing8_RH;
+   hthAttack[4]                     = SwordSwing9_RH;
+   hthAttack[5]                     = SwordSwing10_RH;
+   hthAttack[6]                    = SwordSwing11_RH;
+   hthAttack[7]                    = SwordSwing12_RH;
 
    numMovingAttacks = 1;
    movingAttack[0] = SwordSwing5_RHMove;
@@ -439,7 +382,7 @@ datablock ShapeBaseImageData(SoulReaverImage : AnnihilatorImage)
 
 ////LeftHand
 
-// All Home World swords use the same attacks and sounds. Defined once and inherited.
+// Defined once and inherited.
 datablock ShapeBaseImageData(AnnihilatorLHImage : BaseMeleeImage)
 {
    shapefile = "art/inv/weapons/Swords/AnnihilatorLH.dts";
@@ -1413,44 +1356,29 @@ datablock ShapeBaseImageData(ShieldGoldImage : BaseMeleeImage)
 
 /////////////Paralyzer War Axe Attacks and Damage////////////////
 
-singleton GameBaseData(ParalyzerSwing1 : SwordSwing1_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(ParalyzerSwing2 : SwordSwing2_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(ParalyzerSwing3 : SwordSwing3_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(ParalyzerSwing4 : SwordSwing4_RH)
-{
-   damageAmount = 70;
-};
-singleton GameBaseData(ParalyzerSwing5 : SwordSwing5_RH)
+
+singleton GameBaseData(ParalyzerSwing1 : SwordSwing5_RH)
 {
    damageAmount = 70;
 };
 
-singleton GameBaseData(ParalyzerSwing6 : SwordSwing6_RH)
+singleton GameBaseData(ParalyzerSwing2 : SwordSwing6_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(ParalyzerSwing7 : SwordSwing7_RH)
+singleton GameBaseData(ParalyzerSwing3 : SwordSwing7_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(ParalyzerSwing8 : SwordSwing8_RH)
+singleton GameBaseData(ParalyzerSwing4 : SwordSwing8_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(ParalyzerSwing9 : SwordSwing9_RH)
+singleton GameBaseData(ParalyzerSwing5 : SwordSwing9_RH)
 {
    damageAmount = 70;
 };
-singleton GameBaseData(ParalyzerSwing10 : SwordSwing10_RH)
+singleton GameBaseData(ParalyzerSwing6 : SwordSwing10_RH)
 {
    damageAmount = 70;
 };
@@ -1502,17 +1430,14 @@ datablock ShapeBaseImageData(ParalyzerImage : BaseMeleeImage)
    item = ParalyzerWeapon; //This is the name of the WEAPON that comes from the weapons table.
    canUseMounted = true;
 
-   hthNumAttacks = 10;
+   hthNumAttacks = 6;
    hthAttack[0]                     = ParalyzerSwing1;
    hthAttack[1]                     = ParalyzerSwing2;
    hthAttack[2]                     = ParalyzerSwing3;
    hthAttack[3]                     = ParalyzerSwing4;
    hthAttack[4]                     = ParalyzerSwing5;
    hthAttack[5]                     = ParalyzerSwing6;
-   hthAttack[6]                     = ParalyzerSwing7;
-   hthAttack[7]                     = ParalyzerSwing8;
-   hthAttack[8]                     = ParalyzerSwing9;
-   hthAttack[9]                     = ParalyzerSwing10;
+  
 
    numMovingAttacks = 1;
    movingAttack[0] = ParalyzerSwing5Move;
@@ -1567,43 +1492,28 @@ datablock ShapeBaseImageData(ParalyzerLHImage : BaseMeleeImage)
 
 /////////////Equalizer War Axe Attacks and Damage////////////////
 
-singleton GameBaseData(EqualizerSwing1 : SwordSwing1_RH)
+
+singleton GameBaseData(EqualizerSwing1 : SwordSwing5_RH)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(EqualizerSwing2 : SwordSwing2_RH)
+singleton GameBaseData(EqualizerSwing2 : SwordSwing6_RH)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(EqualizerSwing3 : SwordSwing3_RH)
+singleton GameBaseData(EqualizerSwing3 : SwordSwing7_RH)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(EqualizerSwing4 : SwordSwing4_RH)
+singleton GameBaseData(EqualizerSwing4 : SwordSwing8_RH)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(EqualizerSwing5 : SwordSwing5_RH)
+singleton GameBaseData(EqualizerSwing5 : SwordSwing9_RH)
 {
    damageAmount = 80;
 };
-singleton GameBaseData(EqualizerSwing6 : SwordSwing6_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(EqualizerSwing7 : SwordSwing7_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(EqualizerSwing8 : SwordSwing8_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(EqualizerSwing9 : SwordSwing9_RH)
-{
-   damageAmount = 80;
-};
-singleton GameBaseData(EqualizerSwing10 : SwordSwing10_RH)
+singleton GameBaseData(EqualizerSwing6 : SwordSwing10_RH)
 {
    damageAmount = 80;
 };
@@ -1655,17 +1565,13 @@ datablock ShapeBaseImageData(EqualizerImage : BaseMeleeImage)
    item = EqualizerWeapon;
    canUseMounted = true;
 
-   hthNumAttacks = 10;
+   hthNumAttacks = 6;
    hthAttack[0]                     = EqualizerSwing1;
    hthAttack[1]                     = EqualizerSwing2;
    hthAttack[2]                     = EqualizerSwing3;
    hthAttack[3]                     = EqualizerSwing4;
    hthAttack[4]                     = EqualizerSwing5;
    hthAttack[5]                     = EqualizerSwing6;
-   hthAttack[6]                     = EqualizerSwing7;
-   hthAttack[7]                     = EqualizerSwing8;
-   hthAttack[8]                     = EqualizerSwing9;
-   hthAttack[9]                     = EqualizerSwing10;
 
    numMovingAttacks = 1;
    movingAttack[0] = EqualizerSwing5Move;
@@ -1719,43 +1625,28 @@ datablock ShapeBaseImageData(EqualizerLHImage : BaseMeleeImage)
 
 ///////////Liberator War Axe Attacks////////////////
 
-singleton GameBaseData(LiberatorSwing1 : SwordSwing1_RH)
+
+singleton GameBaseData(LiberatorSwing1 : SwordSwing5_RH)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(LiberatorSwing2 : SwordSwing2_RH)
+singleton GameBaseData(LiberatorSwing2 : SwordSwing6_RH)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(LiberatorSwing3 : SwordSwing3_RH)
+singleton GameBaseData(LiberatorSwing3 : SwordSwing7_RH)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(LiberatorSwing4 : SwordSwing4_RH)
+singleton GameBaseData(LiberatorSwing4 : SwordSwing8_RH)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(LiberatorSwing5 : SwordSwing5_RH)
+singleton GameBaseData(LiberatorSwing5 : SwordSwing9_RH)
 {
    damageAmount = 60;
 };
-singleton GameBaseData(LiberatorSwing6 : SwordSwing6_RH)
-{
-   damageAmount = 60;
-};
-singleton GameBaseData(LiberatorSwing7 : SwordSwing7_RH)
-{
-   damageAmount = 60;
-};
-singleton GameBaseData(LiberatorSwing8 : SwordSwing8_RH)
-{
-   damageAmount = 60;
-};
-singleton GameBaseData(LiberatorSwing9 : SwordSwing9_RH)
-{
-   damageAmount = 60;
-};
-singleton GameBaseData(LiberatorSwing10 : SwordSwing10_RH)
+singleton GameBaseData(LiberatorSwing6 : SwordSwing10_RH)
 {
    damageAmount = 60;
 };
@@ -1806,17 +1697,13 @@ datablock ShapeBaseImageData(LiberatorImage : BaseMeleeImage)
    item = LiberatorWeapon;
    canUseMounted = true;
 
-   hthNumAttacks = 10;
+   hthNumAttacks = 6;
    hthAttack[0]                     = LiberatorSwing1;
    hthAttack[1]                     = LiberatorSwing2;
    hthAttack[2]                     = LiberatorSwing3;
    hthAttack[3]                     = LiberatorSwing4;
    hthAttack[4]                     = LiberatorSwing5;
    hthAttack[5]                     = LiberatorSwing6;
-   hthAttack[6]                     = LiberatorSwing7;
-   hthAttack[7]                     = LiberatorSwing8;
-   hthAttack[8]                     = LiberatorSwing9;
-   hthAttack[9]                     = LiberatorSwing10;
 
    numMovingAttacks = 1;
    movingAttack[0] = LiberatorSwing5Move;
@@ -1884,19 +1771,6 @@ singleton GameBaseData(Staff_Swing1)
 singleton GameBaseData(Staff_Swing2)
 {
    seqName = "Staff_Swing2";
-   fullSkelAnim = true;
-   timeScale = 1;
-   damageAmount = 40;
-   startDamage = 0.2;
-   endDamage = 1.3;
-   soundDelay = 500;
-   swingSound = SwordSwing1Sound;
-   impulse = 200;
-};
-
-singleton GameBaseData(Staff_Swing3)
-{
-   seqName = "Staff_Swing3";
    fullSkelAnim = true;
    timeScale = 1;
    damageAmount = 40;
@@ -2011,17 +1885,16 @@ datablock ShapeBaseImageData(WizardsStaffImage : BaseMeleeImage)
    canUseMounted = true;
 
    // Here are the Attacks we support
-   hthNumAttacks = 10;
+   hthNumAttacks = 9;
    hthAttack[0]                     = Staff_Swing1;
    hthAttack[1]                     = Staff_Swing2;
-   hthAttack[2]                     = Staff_Swing3;
-   hthAttack[3]                     = Staff_Swing4;
-   hthAttack[4]                     = Staff_Swing5;
-   hthAttack[5]                     = Staff_Swing6;
-   hthAttack[6]                     = Staff_Swing7;
-   hthAttack[7]                     = Staff_Swing8;
-   hthAttack[8]                     = Staff_Swing9;
-   hthAttack[9]                     = Staff_Swing10;
+   hthAttack[2]                     = Staff_Swing4;
+   hthAttack[3]                     = Staff_Swing5;
+   hthAttack[4]                     = Staff_Swing6;
+   hthAttack[5]                     = Staff_Swing7;
+   hthAttack[6]                     = Staff_Swing8;
+   hthAttack[7]                     = Staff_Swing9;
+   hthAttack[8]                     = Staff_Swing10;
 
    numMovingAttacks = 1;
    movingAttack[0] = Staff_Swing1Move;

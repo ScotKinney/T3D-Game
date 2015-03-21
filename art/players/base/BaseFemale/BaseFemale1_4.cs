@@ -41,11 +41,11 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Basic/HeadSide.dsq", "HeadSide", "0", "-1", "1", "0");
    %this.setSequencePriority("HeadSide", "5");
    %this.addSequence("art/players/base/Seqs/Basic/Head.dsq", "head", "0", "8", "1", "0");
-   %this.setSequencePriority("head", "5"); 
+   %this.setSequencePriority("head", "5");
    %this.addSequence("art/players/base/Seqs/Basic/WalkFem.dsq", "Walk", "0", "27", "1", "0");
    %this.setSequenceCyclic("Walk", "1");
    %this.addTrigger("Walk", "11", "1");
-   %this.addTrigger("Walk", "24", "2");  
+   %this.addTrigger("Walk", "24", "2");
    %this.addSequence("art/players/base/Seqs/Basic/Back.dsq", "Walk_Back", "0", "34", "1", "0");
    %this.addTrigger("Walk_Back", "8", "1");
    %this.addTrigger("Walk_Back", "25", "2");
@@ -200,7 +200,6 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/Spear_Thrust3_RH.dsq", "Spear_Thrust3_RH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing1.dsq", "Staff_Swing1", "0", "79", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing2.dsq", "Staff_Swing2", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing3.dsq", "Staff_Swing3", "0", "109", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing4.dsq", "Staff_Swing4", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing5.dsq", "Staff_Swing5", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/Staff_Swing6.dsq", "Staff_Swing6", "0", "34", "1", "0");
@@ -215,10 +214,6 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_LH.dsq", "SwordSwing5_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing6_LH.dsq", "SwordSwing6_LH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing7_LH.dsq", "SwordSwing7_LH", "0", "34", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing1_RH.dsq", "SwordSwing1_RH", "0", "44", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing2_RH.dsq", "SwordSwing2_RH", "0", "59", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing3_RH.dsq", "SwordSwing3_RH", "0", "69", "1", "0");
-   %this.addSequence("art/players/base/Seqs/Melee/SwordSwing4_RH.dsq", "SwordSwing4_RH", "0", "44", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing5_RH.dsq", "SwordSwing5_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing6_RH.dsq", "SwordSwing6_RH", "0", "34", "1", "0");
    %this.addSequence("art/players/base/Seqs/Melee/SwordSwing7_RH.dsq", "SwordSwing7_RH", "0", "34", "1", "0");
@@ -239,7 +234,6 @@ function BaseFemale1_4Dts::onLoad(%this)
    %this.addSequence("art/players/base/Seqs/H2H/Kick4_RF.dsq", "Kick4_RF", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Kick5_LF.dsq", "Kick5_LF", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Kick5_RF.dsq", "Kick5_RF", "0", "24", "1", "0");
-   %this.addSequence("art/players/base/Seqs/H2H/Kick1_BF.dsq", "Kick1_BF", "0", "29", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Punch1_LH.dsq", "Punch1_LH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Punch1_RH.dsq", "Punch1_RH", "0", "24", "1", "0");
    %this.addSequence("art/players/base/Seqs/H2H/Punch2_LH.dsq", "Punch2_LH", "0", "24", "1", "0");

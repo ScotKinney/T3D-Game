@@ -260,19 +260,7 @@ singleton GameBaseData(Kick5_RF)
    impulse = 250;
 };
 
-singleton GameBaseData(Kick1_BF)
-{
-   seqName = "Kick1_BF";
-   fullSkelAnim = true;
-   timeScale = 1;
-   damageAmount = 25;
-   startDamage = 0.5;
-   endDamage = 0.85;
-   //soundDelay = 600;
-   //swingSound = Kick1Sound;
-   impulse = 250;
-   dualAttack = "LeftFootImage";
-};
+
 
 datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
 {
@@ -281,13 +269,12 @@ datablock ShapeBaseImageData(RightFootImage : BaseMeleeImage)
    weaponSlot = 2;
 
    // Here are the Attacks we support
-   hthNumAttacks = 6;
+   hthNumAttacks = 5;
    hthAttack[0]                     = Kick1_RF;
    hthAttack[1]                     = Kick2_RF;
    hthAttack[2]                     = Kick3_RF;
    hthAttack[3]                     = Kick4_RF;
    hthAttack[4]                     = Kick5_RF;
-   hthAttack[5]                     = Kick1_BF;
 
    // The sound to play when this weapon hits a static object
    hitStaticSound = "SwordHit1Sound";
