@@ -440,3 +440,14 @@ singleton GuiControlProfile (AVPanelCaptionProfile)
       soundButtonOver = RiftLoseFocusSound;
       category = "Tools";
    };
+
+   singleton GuiControlProfile (AVTintButtonProfile)
+   {
+      border = 1;
+      borderThickness = 1;
+      borderColor = "180 180 180 255";
+      borderColorHL = "255 255 255 255";
+      borderColorNA = "155 155 155 225"; 
+      fontColorSEL = "129 102 68 255";
+      fontColorHL = "255 255 255 255";
+   };

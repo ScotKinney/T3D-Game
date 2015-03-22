@@ -2228,36 +2228,7 @@ function AvSelectionGui::hasChanges(%this, %checkGender)
 
 function AvSelectionGui::BeginMission(%this)
 {
-   // Initialize Mumble
-   if ( $pref::Mumble::useVoice )
-      LaunchMumble($currentUsername);
-   $Mumble::Running = true;
-   $Mumble::InLobby = true;
-   $Mumble::Context = "Lobby";
-   $Mumble::ModeVal = 0;
-   $Mumble::ModeStr = "Player+Camera";
-
-   if ( ($TAP::serverID $= "") && $TAP::isDev && isFile("art/gui/devGuis/serverSel.gui") )
-   {  // If it's a developer, bring up the server selection gui.
-      if ( !isObject(ServerSelGui) )
-      {
-         exec("art/gui/devGuis/devProfiles.cs");
-         exec("art/gui/devGuis/serverSel.gui");
-         exec("art/gui/devGuis/serverSelGui.cs");
-
-         if ( $pref::HostMultiPlayer $= "" )
-            $pref::HostMultiPlayer = "1";
-         exec("art/gui/devGuis/chooseLevel.gui");
-         exec("art/gui/devGuis/chooseLevelGui.cs");
-      }
-      canvas.pushDialog(ServerSelGui);
-      Canvas.popDialog(%this);
-   }
-   else
-   {  // For all others load the level selected by the login script.
-      loadLoadingGui();
-      connectToServer($serverToJoin, "", false, false);
-   }
+   schedule(1, 0, "NextStartupStep");
 }
 
 function AvSelectionGui::onPlayBtn(%this)

@@ -2,6 +2,8 @@
 $AlterVerse::AvSet = "Base";
 $AlterVerse::ArtPacks = "trees/default" TAB
    "skies/default" TAB
+   "Clouds/Default" TAB
+   "SkyBoxes/DefaultNight" TAB
    "props/default" TAB
    "AI/Boglin" TAB
    "AI/Dinos" TAB

@@ -81,6 +81,7 @@ function HorseItemOnUse(%user, %horseDB, %itemDB)
       %horse.respawn = false;
       %horse.mountable = true;
       %horse.newlyAdded = false;
+      %horse.mountVehicle = false;
 
       // Hide the horses armor
       %horse.setMeshHidden("Armor_Head", true);
@@ -128,6 +129,7 @@ function ThrowHorse(%user, %horseDB)
       %horse.startFade(0, 0, true);      
       %horse.respawn = false;
       %horse.newlyAdded = false;
+      %horse.mountVehicle = false;
       %horse.showBaseNMeshes(); // Take off the saddle, armor and reigns
       %horse.playArriveEffect();
    }

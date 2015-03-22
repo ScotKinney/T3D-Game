@@ -313,6 +313,7 @@ datablock SphereEmitterData(LightPuffEmitter)
    phiVariance      = 360;
    overrideAdvance = false;
    useEmitterColors = true;
+   blendStyle = "Normal";
    particles = "LightPuff";
 };
 
