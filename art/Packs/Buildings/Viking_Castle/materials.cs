@@ -186,12 +186,13 @@ singleton Material(Vcastle1_floor1)
 singleton Material(Vcastle1_vkfloor1)
 {
    mapTo = "vkfloor1";
-   diffuseMap[0] = "sv-vkfloor1.dds";
-   specularPower[0] = "128";
+   diffuseMap[0] = "art/Packs/Buildings/Viking_Castle/sv-vkfloor2.dds";
+   specularPower[0] = "21";
    translucentBlendOp = "None";
    useAnisotropic[0] = "1";
    customFootstepSound = "FootStepRock1Sound";
-   normalMap[0] = "sv-vkfloor1N.dds";
+   normalMap[0] = "art/Packs/Buildings/Viking_Castle/sv-vkfloor2N.dds";
+   pixelSpecular[0] = "1";
 };
 
 singleton Material(Vcastle1_vkroof1)
