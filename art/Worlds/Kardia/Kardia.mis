@@ -31,22 +31,21 @@ new SimGroup(MissionGroup) {
    };
    new TimeOfDay(AureusTime) {
       axisTilt = "23.44";
-      dayLength = "900";
+      dayLength = "86400";
       startTime = "0.215255";
       time = "0.224811";
       play = "1";
       azimuthOverride = "0";
-      dayScale = "0.694444";
-      nightScale = "2.22222";
+      dayScale = "0.634921";
+      nightScale = "3.55556";
       UseServerTime = "1";
-      SunriseTime = "90";
-      SunsetTime = "810";
+      SunriseTime = "7200";
+      SunsetTime = "82800";
       position = "136.655 813.577 -189.233";
       rotation = "1 0 0 0";
       scale = "1 1 1";
       canSave = "1";
       canSaveDynamicFields = "1";
-         clockSynchEvent = "19483";
    };
    new SimGroup(environment) {
       canSave = "1";
